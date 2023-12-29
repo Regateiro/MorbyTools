@@ -605,6 +605,71 @@ class IndexableFileOptFeatures_EldritchInvocations extends IndexableFile {
 	}
 }
 
+class IndexableFileOptFeatures_ElementalInfusions extends IndexableFile {
+	constructor () {
+		super({
+			category: Parser.CAT_ID_ELEMENTAL_INFUSIONS,
+			file: "optionalfeatures.json",
+			listProp: "optionalfeature",
+			baseUrl: "optionalfeatures.html",
+			isHover: true,
+			include: (it) => it.featureType.includes("EI:K"),
+		});
+	}
+}
+
+class IndexableFileOptFeatures_ApothecarySalves extends IndexableFile {
+	constructor () {
+		super({
+			category: Parser.CAT_ID_APOTHECARY_SALVES,
+			file: "optionalfeatures.json",
+			listProp: "optionalfeature",
+			baseUrl: "optionalfeatures.html",
+			isHover: true,
+			include: (it) => it.featureType.includes("A:S"),
+		});
+	}
+}
+
+class IndexableFileOptFeatures_ApothecaryTonics extends IndexableFile {
+	constructor () {
+		super({
+			category: Parser.CAT_ID_APOTHECARY_TONICS,
+			file: "optionalfeatures.json",
+			listProp: "optionalfeature",
+			baseUrl: "optionalfeatures.html",
+			isHover: true,
+			include: (it) => it.featureType.includes("A:T"),
+		});
+	}
+}
+
+class IndexableFileOptFeatures_BloodCurses extends IndexableFile {
+	constructor () {
+		super({
+			category: Parser.CAT_ID_BLOOD_CURSES,
+			file: "optionalfeatures.json",
+			listProp: "optionalfeature",
+			baseUrl: "optionalfeatures.html",
+			isHover: true,
+			include: (it) => it.featureType.includes("BC"),
+		});
+	}
+}
+
+class IndexableFileOptFeatures_MutagenFormulas extends IndexableFile {
+	constructor () {
+		super({
+			category: Parser.CAT_ID_MUTAGEN_FORMULAS,
+			file: "optionalfeatures.json",
+			listProp: "optionalfeature",
+			baseUrl: "optionalfeatures.html",
+			isHover: true,
+			include: (it) => it.featureType.includes("MF"),
+		});
+	}
+}
+
 class IndexableFileOptFeatures_Metamagic extends IndexableFile {
 	constructor () {
 		super({
@@ -1239,6 +1304,11 @@ Omnidexer.TO_INDEX = [
 	new IndexableFileFeats(),
 
 	new IndexableFileOptFeatures_EldritchInvocations(),
+	new IndexableFileOptFeatures_ElementalInfusions(),
+	new IndexableFileOptFeatures_ApothecarySalves(),
+	new IndexableFileOptFeatures_ApothecaryTonics(),
+	new IndexableFileOptFeatures_BloodCurses(),
+	new IndexableFileOptFeatures_MutagenFormulas(),
 	new IndexableFileOptFeatures_Metamagic(),
 	new IndexableFileOptFeatures_ManeuverBattlemaster(),
 	new IndexableFileOptFeatures_ManeuverCavalier(),

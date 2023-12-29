@@ -21,6 +21,55 @@ class RenderItems {
 		renderedText += this._getRenderedSeeAlso({item, prop: "seeAlsoDeck", tag: "deck"});
 		renderedText += this._getRenderedSeeAlso({item, prop: "seeAlsoVehicle", tag: "vehicle"});
 
+		let itemSource = "Uncraftable"
+		let craftMaterial = null
+		let craftIngredients = null
+		if (item.crafted) {
+			let materialArr = []
+			item.crafted.material?.forEach(function(mat) {
+				if(mat.includes("Steel") || mat.includes("Mithral") || mat.includes("Adamantite") || mat.includes("Ingot")) {
+					mat = `{@item Crafting Ingot|Ishiir|${mat}}`
+				}
+				else if(mat.includes("Wood") || mat.includes("Ironbark") || mat.includes("Livewood") || mat.includes("Mystoak")) {
+					mat = `{@item Crafting Wood|Ishiir|${mat}}`
+				}
+				else if(mat.includes("Hide")) {
+					mat = `{@item Crafting Hide|Ishiir|${mat}}`
+				}
+				else if(mat.includes("Draconic Scale")) {
+					mat = `{@item Draconic Scales|Ishiir|${mat}}`
+				}
+				else if(mat.includes("Scale")) {
+					mat = `{@item Crafting Scale|Ishiir|${mat}}`
+				}
+				materialArr.push(Renderer.get().render(`${mat}`))
+			})
+			craftMaterial = materialArr.join("<br>")
+
+			let ingredientArr = []
+			item.crafted.ingredient?.forEach(function(ing) {
+				ingredientArr.push(Renderer.get().render(`{@item ${ing}|Ishiir}`))
+			})
+			craftIngredients = ingredientArr.join("<br>") || "&mdash;"
+			
+			itemSource = `${item.crafted.skill.join("/")} (+${item.crafted.dc || 0} DC)`
+		}
+
+		let brewMasteries = null
+		if (item.brewMastery) {
+			let masteryArr = []
+			item.brewMastery.forEach(function(mastery) {
+				masteryArr.push(Renderer.get().render(`{@optfeature ${mastery}|Ishiir}`))
+			})
+			brewMasteries = masteryArr.join(", ")
+		}
+
+		let ingSource = null
+		if (item.ingredient) {
+			let count = item.ingredient.harvestCount ? `${item.ingredient.harvestCount} × ${item.ingredient?.harvestSizeScaling || false ? "size" : "creature"}` : "\u2014"
+			ingSource = `${item.ingredient.source} (${count})`
+		}
+
 		const textLeft = [Parser.itemValueToFullMultiCurrency(item), Parser.itemWeightToFull(item)].filter(Boolean).join(", ").uppercaseFirst();
 		const textRight = [damage, damageType, propertiesTxt].filter(Boolean).join(" ");
 
@@ -30,6 +79,16 @@ class RenderItems {
 			${Renderer.utils.getNameTr(item, {page: UrlUtil.PG_ITEMS})}
 
 			<tr><td class="rd-item__type-rarity-attunement" colspan="6">${Renderer.item.getTypeRarityAndAttunementHtml(typeRarityText, subTypeText, tierText)}</td></tr>
+
+			${brewMasteries ? `<tr><td class="rd-item__type-masteries" colspan="6">Masteries: ${brewMasteries}</td></tr>` : ""}
+
+			${ingSource ? `<tr><td class="rd-item__type-crafting" colspan="6">${ingSource}</td></tr>` : ""}
+			${itemSource ? `<tr><td class="rd-item__type-crafting" colspan="6">${itemSource}</td></tr>` : ""}
+
+			${craftMaterial && craftIngredients ? `<tr>
+				<td colspan="3" style="vertical-align:top">${craftIngredients}</td>
+				<td class="text-right" colspan="3" style="vertical-align:top">${craftMaterial}</td>
+			</tr>` : craftMaterial || craftIngredients ? `<tr><td colspan="6" style="vertical-align:top" class="${craftMaterial ? "text-right" : ""}">${craftIngredients || craftMaterial}</td></tr>` : ""}
 
 			${textLeft && textRight ? `<tr>
 				<td colspan="2">${textLeft}</td>

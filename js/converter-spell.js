@@ -487,16 +487,24 @@ class SpellParser extends BaseParser {
 					case "artificers": stats.classes.fromClassList.push({"name": "Artificer", "source": "TCE"}); break;
 					case "bard":
 					case "bards": stats.classes.fromClassList.push({"name": "Bard", "source": "PHB"}); break;
+					case "bloodhunter":
+					case "bloodhunters": stats.classes.fromClassList.push({"name": "Blood Hunter", "source": "Ishiir"}); break;
 					case "cleric":
 					case "clerics": stats.classes.fromClassList.push({"name": "Cleric", "source": "PHB"}); break;
 					case "druid":
 					case "druids": stats.classes.fromClassList.push({"name": "Druid", "source": "PHB"}); break;
+					case "kineticist":
+					case "kineticists": stats.classes.fromClassList.push({"name": "Kineticist", "source": "Ishiir"}); break;
 					case "paladin":
 					case "paladins": stats.classes.fromClassList.push({"name": "Paladin", "source": "PHB"}); break;
 					case "ranger":
 					case "rangers": stats.classes.fromClassList.push({"name": "Ranger", "source": "PHB"}); break;
 					case "sorcerer":
 					case "sorcerers": stats.classes.fromClassList.push({"name": "Sorcerer", "source": "PHB"}); break;
+					case "shifter":
+					case "shifters": stats.classes.fromClassList.push({"name": "Shifter", "source": "Ishiir"}); break;
+					case "spellblade":
+					case "spellblades": stats.classes.fromClassList.push({"name": "Spellblade", "source": "Other"}); break;
 					case "warlock":
 					case "warlocks": stats.classes.fromClassList.push({"name": "Warlock", "source": "PHB"}); break;
 					case "wizard":

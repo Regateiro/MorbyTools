@@ -10,7 +10,7 @@ class RenderRaces {
 		${Renderer.utils.getBorderTr()}
 		${Renderer.utils.getExcludedTr({entity: race, dataProp: "race"})}
 		${Renderer.utils.getNameTr(race, {controlRhs: race.soundClip ? RenderRaces._getPronunciationButton(race) : "", page: UrlUtil.PG_RACES})}
-		<tr><td colspan="6"><b>Ability Scores:</b> ${(race.ability ? Renderer.getAbilityData(race.ability) : {asText: "None"}).asText}</td></tr>
+		<tr><td colspan="6"><b>Ability Scores:</b> ${(race.ability ? Renderer.getAbilityData(race.ability, {increaseAbilityMax: race.increaseAbilityMax || false}) : {asText: "None"}).asText}</td></tr>
 		${(race.creatureTypes || []).filter(it => `${it}`.toLowerCase() !== "humanoid").length ? `<tr><td colspan="6"><b>Creature Type:</b> ${Parser.raceCreatureTypesToFull(race.creatureTypes)}</td></tr>` : ""}
 		<tr><td colspan="6"><b>Size:</b> ${Renderer.utils.getRenderedSize(race.size || [Parser.SZ_VARIES])}</td></tr>
 		<tr><td colspan="6"><b>Speed:</b> ${Parser.getSpeedString(race)}</td></tr>

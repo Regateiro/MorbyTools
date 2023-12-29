@@ -2412,10 +2412,10 @@ Renderer.parseScaleDice = function (tag, text) {
 	return out;
 };
 
-Renderer.getAbilityData = function (abArr, {isOnlyShort, isCurrentLineage} = {}) {
+Renderer.getAbilityData = function (abArr, {isOnlyShort, isCurrentLineage, increaseAbilityMax} = {}) {
 	if (isOnlyShort && isCurrentLineage) return new Renderer._AbilityData({asTextShort: "Lineage (choose)"});
 
-	const outerStack = (abArr || [null]).map(it => Renderer.getAbilityData._doRenderOuter(it));
+	const outerStack = (abArr || [null]).map(it => Renderer.getAbilityData._doRenderOuter(it, increaseAbilityMax));
 	if (outerStack.length <= 1) return outerStack[0];
 	return new Renderer._AbilityData({
 		asText: `Choose one of: ${outerStack.map((it, i) => `(${Parser.ALPHABET[i].toLowerCase()}) ${it.asText}`).join(" ")}`,
@@ -2425,7 +2425,7 @@ Renderer.getAbilityData = function (abArr, {isOnlyShort, isCurrentLineage} = {})
 	});
 };
 
-Renderer.getAbilityData._doRenderOuter = function (abObj) {
+Renderer.getAbilityData._doRenderOuter = function (abObj, incAbl) {
 	const mainAbs = [];
 	const asCollection = [];
 	const areNegative = [];
@@ -2433,7 +2433,7 @@ Renderer.getAbilityData._doRenderOuter = function (abObj) {
 	const toConvertToShortText = [];
 
 	if (abObj != null) {
-		handleAllAbilities(abObj);
+		handleAllAbilities(abObj, null, incAbl);
 		handleAbilitiesChoose();
 		return new Renderer._AbilityData({
 			asText: toConvertToText.join("; "),
@@ -2445,16 +2445,16 @@ Renderer.getAbilityData._doRenderOuter = function (abObj) {
 
 	return new Renderer._AbilityData();
 
-	function handleAllAbilities (abObj, targetList) {
+	function handleAllAbilities (abObj, targetList, incAbl) {
 		MiscUtil.copyFast(Parser.ABIL_ABVS)
 			.sort((a, b) => SortUtil.ascSort(abObj[b] || 0, abObj[a] || 0))
-			.forEach(shortLabel => handleAbility(abObj, shortLabel, targetList));
+			.forEach(shortLabel => handleAbility(abObj, shortLabel, targetList, incAbl));
 	}
 
-	function handleAbility (abObj, shortLabel, optToConvertToTextStorage) {
+	function handleAbility (abObj, shortLabel, optToConvertToTextStorage, incAbl) {
 		if (abObj[shortLabel] != null) {
 			const isNegMod = abObj[shortLabel] < 0;
-			const toAdd = `${shortLabel.uppercaseFirst()} ${(isNegMod ? "" : "+")}${abObj[shortLabel]}`;
+			const toAdd = `${shortLabel.uppercaseFirst()} ${(isNegMod ? "" : "+")}${abObj[shortLabel]}${incAbl && abObj[shortLabel] == 2 ? " (max 22)" : "" }`;
 
 			if (optToConvertToTextStorage) {
 				optToConvertToTextStorage.push(toAdd);
@@ -5952,6 +5952,39 @@ Renderer.background = class {
 	}
 };
 
+Renderer.crafting = {
+	getCompactRenderedString (c) {
+		return `
+		${Renderer.utils.getExcludedTr({entity: c, dataProp: "crafting", page: UrlUtil.PG_CRAFTING})}
+		${Renderer.utils.getNameTr(c, {page: UrlUtil.PG_CRAFTING})}
+		<tr class="text"><td colspan="6">
+		${Renderer.get().render({type: "entries", entries: c.entries})}
+		</td></tr>
+		`;
+	},
+
+	getSkillsSummary (skills, short, collectIn) {
+		if (!skills) return [];
+
+		return skills.map(skill => {
+			if (short) {
+				skill = skill.substring(0,3).toUpperCase();
+			} else {
+				skill = skill.toTitleCase();
+			}
+			collectIn && !collectIn.includes(skill) && collectIn.push(skill);
+			return skill;
+		}).join("/");
+	},
+
+	getToolSummary (tool, short, collectIn) {
+		if (!tool) return "";
+
+		collectIn && !collectIn.includes(tool) && collectIn.push(tool);
+		return tool.toTitleCase();
+	},
+};
+
 Renderer.backgroundFeature = class {
 	static getCompactRenderedString (ent) {
 		return Renderer.generic.getCompactRenderedString(ent);
@@ -6124,20 +6157,25 @@ Renderer.race = class {
 	}
 
 	static getHeightAndWeightEntries (race, {isStatic = false} = {}) {
-		const colLabels = ["Base Height", "Base Weight", "Height Modifier", "Weight Modifier"];
-		const colStyles = ["col-2-3 ve-text-center", "col-2-3 ve-text-center", "col-2-3 ve-text-center", "col-2 ve-text-center"];
+		const colLabels = ["Base Height", "Base Length", "Base Weight", "Height Modifier", "Length Modifier", "Weight Modifier"];
+		const colStyles = ["col-2-3 ve-text-center", "col-2-3 ve-text-center", "col-2-3 ve-text-center", "col-2-3 ve-text-center", "col-2-3 ve-text-center", "col-2 ve-text-center"];
 
 		const cellHeightMod = !isStatic
 			? `+<span data-race-heightmod="true">${race.heightAndWeight.heightMod}</span>`
 			: `+${race.heightAndWeight.heightMod}`;
+		const cellLengthMod = !isStatic
+			? `<span data-race-lengthmod="true">+${race.heightAndWeight.lengthMod || "N/A"}</span>`
+			: `+${race.heightAndWeight.lengthMod}`;
 		const cellWeightMod = !isStatic
 			? `× <span data-race-weightmod="true">${race.heightAndWeight.weightMod || "1"}</span> lb.`
 			: `× ${race.heightAndWeight.weightMod || "1"} lb.`;
 
 		const row = [
 			Renderer.race.getRenderedHeight(race.heightAndWeight.baseHeight),
+			Renderer.race.getRenderedLength(race.heightAndWeight.baseLength) || "N/A",
 			`${race.heightAndWeight.baseWeight} lb.`,
 			cellHeightMod,
+			cellLengthMod,
 			cellWeightMod,
 		];
 
@@ -6148,6 +6186,8 @@ Renderer.race = class {
 				<div class="ve-hidden race__disp-result-height-weight ve-flex-v-baseline">
 					<div class="mr-1">=</div>
 					<div class="race__disp-result-height"></div>
+					<div class="mr-1">; </div>
+					<div class="race__disp-result-length"></div>
 					<div class="mr-2">; </div>
 					<div class="race__disp-result-weight mr-1"></div>
 					<div class="small">lb.</div>
@@ -6172,6 +6212,12 @@ Renderer.race = class {
 		const heightFeet = Number(Math.floor(height / 12).toFixed(3));
 		const heightInches = Number((height % 12).toFixed(3));
 		return `${heightFeet ? `${heightFeet}'` : ""}${heightInches ? `${heightInches}"` : ""}`;
+	}
+
+	static getRenderedLength (length) {
+		const lengthFeet = Number(Math.floor(length / 12).toFixed(3));
+		const lengthInches = Number((length % 12).toFixed(3));
+		return `${lengthFeet ? `${lengthFeet}'` : "N/A"}${lengthInches ? `${lengthInches}"` : ""}`;
 	}
 
 	/**
@@ -6481,11 +6527,13 @@ Renderer.race = class {
 
 		const $dispResult = $render.find(`.race__disp-result-height-weight`);
 		const $dispHeight = $render.find(`.race__disp-result-height`);
+		const $dispLength = $render.find(`.race__disp-result-length`);
 		const $dispWeight = $render.find(`.race__disp-result-weight`);
 
 		const lock = new VeLock();
 		let hasRolled = false;
 		let resultHeight;
+		let resultLength;
 		let resultWeightMod;
 
 		const $btnRollHeight = $render
@@ -6504,6 +6552,23 @@ Renderer.race = class {
 					lock.unlock();
 				}
 			});
+
+		const isLengthRoller = race.heightAndWeight.lengthMod && isNaN(race.heightAndWeight.lengthMod);
+		const $btnRollLength = $render
+			.find(`[data-race-lengthmod="true"]`)
+			.html(isLengthRoller ? `+<span class="roller">${race.heightAndWeight.lengthMod}</span>` : race.heightAndWeight.lengthMod || "N/A")
+			.click(async () => {
+				try {
+					await lock.pLock();
+
+					if (!hasRolled) return pDoFullRoll(true);
+					await pRollLength();
+					updateDisplay();
+				} finally {
+					lock.unlock();
+				}
+			});
+		if (isLengthRoller) $btnRollLength.mousedown(evt => evt.preventDefault());
 
 		const isWeightRoller = race.heightAndWeight.weightMod && isNaN(race.heightAndWeight.weightMod);
 		const $btnRollWeight = $render
@@ -6536,6 +6601,17 @@ Renderer.race = class {
 			resultHeight = mResultHeight;
 		};
 
+		const pRollLength = async () => {
+			const lengthModRaw = race.heightAndWeight.lengthMod || "1";
+			const mResultLengthMod = isNaN(lengthModRaw) ? await Renderer.dice.pRoll2(lengthModRaw, {
+				isUser: false,
+				label: "Length Modifier",
+				name: race.name,
+			}) : Number(lengthModRaw);
+			if (mResultLengthMod == null) return;
+			resultLength = mResultLengthMod;
+		};
+
 		const pRollWeight = async () => {
 			const weightModRaw = race.heightAndWeight.weightMod || "1";
 			const mResultWeightMod = isNaN(weightModRaw) ? await Renderer.dice.pRoll2(weightModRaw, {
@@ -6549,8 +6625,10 @@ Renderer.race = class {
 
 		const updateDisplay = () => {
 			const renderedHeight = Renderer.race.getRenderedHeight(race.heightAndWeight.baseHeight + resultHeight);
-			const totalWeight = race.heightAndWeight.baseWeight + (resultWeightMod * resultHeight);
+			const renderedLength = Renderer.race.getRenderedLength(race.heightAndWeight.baseLength + resultLength);
+			const totalWeight = race.heightAndWeight.baseWeight + (resultWeightMod * (resultHeight + resultLength));
 			$dispHeight.text(renderedHeight);
+			$dispLength.text(renderedLength);
 			$dispWeight.text(Number(totalWeight.toFixed(3)));
 		};
 
@@ -6560,6 +6638,7 @@ Renderer.race = class {
 
 				$btnRoll.parent().removeClass(`ve-flex-vh-center`).addClass(`split-v-center`);
 				await pRollHeight();
+				await pRollLength();
 				await pRollWeight();
 				$dispResult.removeClass(`ve-hidden`);
 				updateDisplay();
@@ -8134,7 +8213,7 @@ Renderer.item = class {
 		// armor
 		if (item.ac != null) {
 			const prefix = item.type === "S" ? "+" : "";
-			const suffix = (item.type === "LA" || item.bardingType === "LA") || ((item.type === "MA" || item.bardingType === "MA") && item.dexterityMax === null) ? " + Dex" : (item.type === "MA" || item.bardingType === "MA") ? ` + Dex (max ${item.dexterityMax ?? 2})` : "";
+			const suffix = (item.type === "LA" || item.bardingType === "LA") || ((item.type === "MA" || item.bardingType === "MA") && item.dexterityMax === null) ? " + Dex" : ((item.type === "MA" || item.bardingType === "MA") && item.dexterityCap === undefined) ? ` + Dex (max ${item.dexterityMax ?? 2})` : (item.type === "MA" || item.bardingType === "MA") ? " + Dex (max " + item.dexterityCap + ")" : "";
 			damageParts.push(`AC ${prefix}${item.ac}${suffix}`);
 		}
 		if (item.acSpecial != null) damageParts.push(item.ac != null ? item.acSpecial : `AC ${item.acSpecial}`);
@@ -8181,7 +8260,7 @@ Renderer.item = class {
 		]
 			.filter(Boolean)
 			.join(renderer.getLineBreak());
-		const damageType = item.dmgType ? Parser.dmgTypeToFull(item.dmgType) : "";
+		const damageType = damage && item.dmgType ? Parser.dmgTypeToFull(item.dmgType) : "";
 		const propertiesTxt = Renderer.item._getPropertiesText(item, {renderer});
 
 		return [damage, damageType, propertiesTxt];
@@ -8265,6 +8344,10 @@ Renderer.item = class {
 		if (item.poison) {
 			typeHtml.push(`poison${item.poisonTypes ? ` (${item.poisonTypes.joinConjunct(", ", " or ")})` : ""}`);
 			typeListText.push("poison");
+		}
+		if (item.requires) {
+			let req = Renderer.get().render(`{@item ${item.requires}|Ishiir}`)
+			typeHtml.push(`requires ${req}`);
 		}
 		return [typeListText, typeHtml.join(", "), subTypeHtml.join(", ")];
 	}
