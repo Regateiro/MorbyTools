@@ -1,0 +1,3867 @@
+{
+	"crafting": [
+		{
+			"name": "Information",
+			"page": 1,
+			"source": "Ishiir",
+			"entries": [
+				"To further increase player customization, interesting loot, and introduce more options for progression besides the next +1 on weapons and armor, Ishiir will feature a crafting system.",
+				"Go to interesting places, meet interesting creatures, kill them and make cool stuff out of them.",
+				"<hr />",
+				{
+					"type": "entries",
+					"name": "Crafting",
+					"entries": [
+						"A crafting check requires 4 things: time, gold, ingredients, and the right tools. A table for all crafting professions can be found below.",
+						"To craft, roll three skill checks for the appropriate crafting tools while investing half the item's gold value and the necessary ingredients. The DC for these checks is determined by the item you wish to craft. Otherwise, the base DC is always 10.",
+						"If you fail all three, your crafting attempt fails and you expend all materials. If you fail two, your crafting attempt fails, and you expend half of the materials.",
+						"If you succeed two rolls, your crafting attempt is successful. If you succeed all three, your crafting attempt is successful and the resulting item is a masterwork, which nets different bonuses depending on the kind of item you were crafting.",
+						"You can also add the masterwork property to non-consumable items retroactively. To do so, you must spend half the normal gold cost and time needed to craft the base item. The DC still takes all existing properties into account, if any. If you succeed on all three rolls, you add the masterwork property to the existing item.",
+						{
+							"type": "table",
+							"caption": "Crafting Professions",
+							"colLabels": [
+								"Profession",
+								"Crafting Attribute",
+								"Produces"
+							],
+							"colStyles": [
+								"col-2",
+								"col-2 text-center",
+								"col-2 text-center"
+							],
+							"rows": [
+								[
+									"Alchemist",
+									"INT",
+									"Buff Consumables"
+								],
+								[
+									"Armorsmith",
+									"STR",
+									"Medium & Heavy Armor & Shields"
+								],
+								[
+									"Cooking",
+									"INT/WIS",
+									"Buff Consumables"
+								],
+								[
+									"Enchanter",
+									"INT/WIS/CHA",
+									"Spell Scrolls & Wondrous Items"
+								],
+								[
+									"Fletcher",
+									"DEX",
+									"Ranged & Thrown Weapons & Ammunition"
+								],
+								[
+									"Herbalist",
+									"WIS",
+									"Healing & Restoration Consumables"
+								],
+								[
+									"Leatherworker",
+									"DEX",
+									"Light & Medium Armor & Shields"
+								],
+								[
+									"Poisoner",
+									"INT",
+									"Poisons"
+								],
+								[
+									"Tinkerer",
+									"INT",
+									"Explosives & Machinery"
+								],
+								[
+									"Weaponsmith",
+									"STR",
+									"Melee & Thrown Weapons"
+								]
+							]
+						}
+					]
+				},
+				"<hr />",
+				{
+					"type": "entries",
+					"name": "Harvesting",
+					"entries": [
+						"Harvesting ingredients from monsters requires a skill check decided by the DM with a DC of 10 + 1/2 the creature's CR, rounded down. If the harvesting checks surpasses the DC by 5 or more, the ingredient is of pristine quality. If half or more of the required ingredients for a crafting check are of pristine quality, the DC gets reduced by 1. Pristine items are also 1.5 as valuable as regular items of the same kind.",
+						{
+							"type": "table",
+							"caption": "Size Modifiers",
+							"colLabels": [
+								"Monster Size",
+								"Modifier"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-2 text-center"
+							],
+							"rows": [
+								[
+									"Tiny",
+									"x 1/2"
+								],
+								[
+									"Small",
+									"x 1/2"
+								],
+								[
+									"Medium",
+									"x 1"
+								],
+								[
+									"Large",
+									"x 2"
+								],
+								[
+									"Huge",
+									"x 4"
+								],
+								[
+									"Gargantuan",
+									"x 8"
+								],
+								[
+									"Colossal",
+									"x 16"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Crafting Ingredients (Monsters)",
+					"colLabels": [
+						"Ingredient",
+						"Source",
+						"# per Harvest",
+						"Value"
+					],
+					"colStyles": [
+						"col-2",
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"Eldritch Blood",
+							"Aberrations",
+							"2 x size",
+							"35 x CR"
+						],
+						[
+							"Eldritch Heart",
+							"Aberrations",
+							"1 x",
+							"150 x CR"
+						],
+						[
+							"Eldritch Brain",
+							"Aberrations",
+							"1 x",
+							"300 x CR"
+						],
+						[
+							"Beast Claw/Fang",
+							"Beasts",
+							"16 x",
+							"1 x CR"
+						],
+						[
+							"Beast Feather",
+							"Beasts",
+							"10 x size",
+							"1 x CR"
+						],
+						[
+							"Beast Scale/Hide",
+							"Beasts",
+							"2 x size",
+							"10 x CR"
+						],
+						[
+							"Beast Heart",
+							"Beasts",
+							"1 x",
+							"30 x CR"
+						],
+						[
+							"Monstrous Scale/Hide",
+							"Beasts",
+							"2 x size",
+							"20 x CR"
+						],
+						[
+							"Ancient Scale/Hide",
+							"Beasts",
+							"2 x size",
+							"50 x CR"
+						],
+						[
+							"Mechanical Core",
+							"Constructs",
+							"1 x",
+							"60 x CR"
+						],
+						[
+							"Arcane Core",
+							"Constructs",
+							"1 x",
+							"120 x CR"
+						],
+						[
+							"Living Crystal Core",
+							"Constructs",
+							"1 x",
+							"250 x CR"
+						],
+						[
+							"Draconic Scale",
+							"Dragons",
+							"2 x size",
+							"20 x CR"
+						],
+						[
+							"Draconic Eye",
+							"Dragons",
+							"2 x",
+							"50 x CR"
+						],
+						[
+							"Draconic Heart",
+							"Dragons",
+							"1 x",
+							"120 x CR"
+						],
+						[
+							"Elder Draconic Scale",
+							"Dragons",
+							"2 x size",
+							"60 x CR"
+						],
+						[
+							"Elder Draconic Eye",
+							"Dragons",
+							"2 x",
+							"150 x CR"
+						],
+						[
+							"Elder Draconic Heart",
+							"Dragons",
+							"1 x",
+							"350 x CR"
+						],
+						[
+							"Draconic Karfunkel",
+							"Dragons",
+							"1 x",
+							"2000 x CR"
+						],
+						[
+							"Living Earth",
+							"Elementals",
+							"1 x",
+							"100 x CR"
+						],
+						[
+							"Living Fire",
+							"Elementals",
+							"1 x",
+							"100 x CR"
+						],
+						[
+							"Living Water",
+							"Elementals",
+							"1 x",
+							"100 x CR"
+						],
+						[
+							"Living Wind",
+							"Elementals",
+							"1 x",
+							"100 x CR"
+						],
+						[
+							"Living Crystal",
+							"Elementals",
+							"1 x",
+							"150 x CR"
+						],
+						[
+							"Sylvan Dust",
+							"Fey",
+							"1 x size",
+							"30 x CR"
+						],
+						[
+							"Sylvan Hair",
+							"Fey",
+							"1 x size",
+							"50 x CR"
+						],
+						[
+							"Sylvan Kiss",
+							"Fey",
+							"-",
+							"100 x CR"
+						],
+						[
+							"Sylvan Noble Blood",
+							"Fey",
+							"1 x size",
+							"150 x CR"
+						],
+						[
+							"Fiendish Fang",
+							"Fiends",
+							"4 x size",
+							"15 x CR"
+						],
+						[
+							"Fiendish Blood",
+							"Fiends",
+							"2 x size",
+							"75 x CR"
+						],
+						[
+							"Fiendish Heart",
+							"Fiends",
+							"1 x",
+							"300 x CR"
+						],
+						[
+							"Giant Blood",
+							"Giants",
+							"1 x size",
+							"35 x CR"
+						],
+						[
+							"Giant Hair",
+							"Giants",
+							"1 x size",
+							"50 x CR"
+						],
+						[
+							"Giant Heart",
+							"Giants",
+							"1 x",
+							"120 x CR"
+						],
+						[
+							"Elder Giant Blood",
+							"Giants",
+							"1 x size",
+							"100 x CR"
+						],
+						[
+							"Elder Giant Heart",
+							"Giants",
+							"1 x size",
+							"300 x CR"
+						],
+						[
+							"Ooze Slime",
+							"Oozes",
+							"2 x size",
+							"1 x CR"
+						],
+						[
+							"Ooze Nucleus",
+							"Oozes",
+							"1 x",
+							"75 x CR"
+						],
+						[
+							"Ooze Blood",
+							"Oozes",
+							"2 x size",
+							"75 x CR"
+						],
+						[
+							"Resin Blood",
+							"Plants",
+							"2 x size",
+							"2 x CR"
+						],
+						[
+							"Living Heartwood",
+							"Plants",
+							"1 x size",
+							"50 x CR"
+						],
+						[
+							"Vineheart",
+							"Plants",
+							"1 x",
+							"200 x CR"
+						],
+						[
+							"Accursed Blood",
+							"Undead",
+							"2 x size",
+							"20 x CR"
+						],
+						[
+							"Spectral Dust",
+							"Undead",
+							"1 x size",
+							"50 x CR"
+						],
+						[
+							"Accursed Heart",
+							"Undead",
+							"1 x",
+							"250 x CR"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Alchemy",
+			"page": 1,
+			"source": "Ishiir",
+			"skills": ["Intelligence"],
+			"tool": "Alchemist's Supplies",
+			"entries": [
+				"Alchemy requires the {@item Alchemist's Supplies|Ishiir} to make crafting checks.",
+				"Items with the masterwork property have their duration doubled. Any die rolls associated with the item are maximized.",
+				"Crafting with alchemy takes an amount of hours equal to the DC of the item - 9.",
+				"A creature con only have a number of potions equal to their Constitution modifier imbibed at the same time.",
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Craftable Items",
+					"colLabels": [
+						"Item",
+						"DC",
+						"Ingredient",
+						"Value"
+					],
+					"colStyles": [
+						"col-6",
+						"col-1 text-center",
+						"col-3 text-center",
+						"col-1-5 text-center"
+					],
+					"rows": [
+						[
+							"{@item Potion of Animal Friendship|Ishiir}",
+							"10",
+							"Beast Heart",
+							"50 gp"
+						],
+						[
+							"{@item Acid Vial|Ishiir}",
+							"10",
+							"-",
+							"25 gp"
+						],
+						[
+							"{@item Alchemist's Fire|Ishiir}",
+							"10",
+							"-",
+							"50 gp"
+						],
+						[
+							"{@item Blasting Powder|Ishiir}",
+							"11",
+							"-",
+							"100 gp"
+						],
+						[
+							"{@item Potion of Water Breathing|Ishiir}",
+							"11",
+							"Sylvan Kiss",
+							"100 gp"
+						],
+						[
+							"{@item Philter of Love|Ishiir}",
+							"11",
+							"Sylvan Kiss",
+							"150 gp"
+						],
+						[
+							"{@item Potion of Climbing|Ishiir}",
+							"11",
+							"Beast Claw",
+							"200 gp"
+						],
+						[
+							"{@item Potion of Mindreading|Ishiir}",
+							"11",
+							"Eldritch Blood",
+							"200 gp"
+						],
+						[
+							"{@item Bottled Breath|Ishiir}",
+							"12",
+							"Sylvan Kiss",
+							"400 gp"
+						],
+						[
+							"{@item Potion of Heroism|Ishiir}",
+							"12",
+							"Giant Heart",
+							"400 gp"
+						],
+						[
+							"{@item Potion of Invisibility|Ishiir}",
+							"13",
+							"Sylvan/Spectral Dust",
+							"500 gp"
+						],
+						[
+							"{@item Soothsalt|Ishiir}",
+							"13",
+							"Eldritch Blood",
+							"500 gp"
+						],
+						[
+							"{@item Potion of Clairvoyance|Ishiir}",
+							"13",
+							"Eldritch Blood",
+							"550 gp"
+						],
+						[
+							"{@item Potion of Diminution|Ishiir}",
+							"14",
+							"Sylvan Dust",
+							"750 gp"
+						],
+						[
+							"{@item Potion of Draconic Breath|Ishiir}",
+							"14",
+							"Draconic Heart",
+							"750 gp"
+						],
+						[
+							"{@item Potion of Growth|Ishiir}",
+							"14",
+							"Giant Hair",
+							"750 gp"
+						],
+						[
+							"{@item Potion of Gaseous Form|Ishiir}",
+							"14",
+							"Accursed Heart",
+							"1.000 gp"
+						],
+						[
+							"{@item Potion of Resistance|Ishiir}",
+							"14",
+							"Draconic Scale",
+							"1.000 gp"
+						],
+						[
+							"{@item Potion of Speed|Ishiir}",
+							"14",
+							"Living Wind",
+							"1.000 gp"
+						],
+						[
+							"{@item Oil of Slipperiness|Ishiir}",
+							"14",
+							"Ooze Slime",
+							"1.150 gp"
+						],
+						[
+							"{@item Potion of Flying|Ishiir}",
+							"15",
+							"Sylvan Dust",
+							"1.500 gp"
+						],
+						[
+							"{@item Potion of Invisibility (Greater)|Ishiir}",
+							"15",
+							"Sylvan/Spectral Dust",
+							"1.500 gp"
+						],
+						[
+							"{@item Potion of Strength|Ishiir}",
+							"15",
+							"Giant Blood",
+							"1.500 gp"
+						],
+						[
+							"{@item Potion of Mind Control (Beast)|Ishiir}",
+							"15",
+							"Sylvan Hair",
+							"2.100 gp"
+						],
+						[
+							"{@item Oil of Etherealness|Ishiir}",
+							"15",
+							"Sylvan Dust",
+							"2.250 gp"
+						],
+						[
+							"{@item Potion of Luck|Ishiir}",
+							"16",
+							"Sylvan Noble Blood",
+							"2.500 gp"
+						],
+						[
+							"{@item Potion of Mind Control (Monster)|Ishiir}",
+							"16",
+							"Eldritch Brain",
+							"3.000 gp"
+						],
+						[
+							"{@item Potion of Strength (Greater)|Ishiir}",
+							"16",
+							"Giant Blood",
+							"3.000 gp"
+						],
+						[
+							"{@item Potion of Aqueous Form|Ishiir}",
+							"16",
+							"Living Water",
+							"3.200 gp"
+						],
+						[
+							"{@item Potion of Mind Control (Humanoid)|Ishiir}",
+							"16",
+							"Sylvan Hair",
+							"3.750 gp"
+						],
+						[
+							"{@item Potion of Power|Ishiir}",
+							"16",
+							"Living Crystal",
+							"4.000 gp"
+						],
+						[
+							"{@item Oil of Sharpness|Ishiir}",
+							"16",
+							"Living Crystal",
+							"4.500 gp"
+						],
+						[
+							"{@item Potion of Strength (Superior)|Ishiir}",
+							"17",
+							"Elder Giant Blood",
+							"6.000 gp"
+						],
+						[
+							"{@item Potion of Invulnerability|Ishiir}",
+							"17",
+							"Elder Draconic Scale",
+							"6.500 gp"
+						],
+						[
+							"{@item Potion of Strength (Supreme)|Ishiir}",
+							"19",
+							"Elder Giant Blood",
+							"10.000 gp"
+						],
+						[
+							"{@item Potion of Strength (Legendary)|Ishiir}",
+							"21",
+							"Elder Giant Blood",
+							"15.000 gp"
+						],
+						[
+							"{@item Potion of Dragon's Majesty|Ishiir}",
+							"22",
+							"Elder Draconic Heart",
+							"20.000 gp"
+						],
+						[
+							"{@item Potion of Giant Size|Ishiir}",
+							"22",
+							"Elder Giant Heart",
+							"22.000 gp"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Armorsmithing",
+			"page": 1,
+			"source": "Ishiir",
+			"skills": ["Strength"],
+			"tool": "Armorsmith's Tools",
+			"entries": [
+				"When crafting using the {@item Armorsmith's Tools|Ishiir}, the DC increases based on the material used. Said material also determines which further properties the crafted item can be modified with.",
+				"This DC increment applies regardless of whether additional properties are added upon first crafting the item or after the fact.",
+				"Crafting time is an amount of days equal to the DC of the item / 2.",
+				"To do so, you must spend half the gold cost and time needed for the base item. If you succeed on all three rolls With the exception of items made from basic steel, masterwork items receive a bonus of +1 to their AC.",
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Craftable Items",
+					"colLabels": [
+						"Item",
+						"DC",
+						"Required Ingots"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-1 text-center",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"{@item Light Chain Armor|Ishiir|Light Chain}",
+							"10",
+							"4"
+						],
+						[
+							"{@item Scale Mail Armor|Ishiir|Scale Mail}",
+							"11",
+							"5"
+						],
+						[
+							"{@item Breastplate Armor|Ishiir|Breastplate}",
+							"11",
+							"5"
+						],
+						[
+							"{@item Halfplate Armor|Ishiir|Halfplate}",
+							"12",
+							"6"
+						],
+						[
+							"{@item Ring Mail Armor|Ishiir|Ring Mail}",
+							"10",
+							"5"
+						],
+						[
+							"{@item Chain Mail Armor|Ishiir|Chain Mail}",
+							"11",
+							"6"
+						],
+						[
+							"{@item Splint Mail Armor|Ishiir|Splint Mail}",
+							"11",
+							"7"
+						],
+						[
+							"{@item Full Plate Armor|Ishiir|Full Plate}",
+							"12",
+							"8"
+						],
+						[
+							"{@item Shield|Ishiir}",
+							"10",
+							"2"
+						]
+					]
+				},
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Armor Materials",
+					"colLabels": [
+						"Material",
+						"DC",
+						"Properties",
+						"Requirement",
+						"Cost/{@item Crafting Ingot|Ishiir|Ingot}"
+					],
+					"colStyles": [
+						"col-1",
+						"col-1 text-center",
+						"col-7 text-center",
+						"col-2",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"{@item Steel Ingot|Ishiir|Steel}",
+							"-",
+							"-",
+							"{@item Forge|Ishiir}",
+							"5 gp"
+						],
+						[
+							"{@item High Steel Ingot|Ishiir|High Steel}",
+							"+3",
+							"-",
+							"{@item Forge|Ishiir}",
+							"50 gp"
+						],
+						[
+							"{@item Alchemical Silver Ingot|Ishiir|Alchemical Silver}",
+							"-",
+							"Not usable as base material",
+							"{@item Forge|Ishiir}",
+							"50 gp"
+						],
+						[
+							"{@item Cold Iron Ingot|Ishiir|Cold Iron}",
+							"-",
+							"Not usable as base material",
+							"{@item Forge|Ishiir}",
+							"50 gp"
+						],
+						[
+							"{@item Mithral Ingot|Ishiir|Mithral}",
+							"+5",
+							"Initiative +2, removes disadvantage on DEX (Stealth) checks and STR requirement",
+							"{@item Enchanted Forge|Ishiir}",
+							"250 gp"
+						],
+						[
+							"{@item Adamantite Ingot|Ishiir|Adamantite}",
+							"+7",
+							"Indestructible, universal crit protection against everything but adamantite, AC +1",
+							"{@item Blessed Forge|Ishiir}",
+							"1.000 gp"
+						]
+					]
+				},
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Properties",
+					"colLabels": [
+						"Property",
+						"DC",
+						"Required Material",
+						"Ingredient",
+						"Item Type",
+						"Cost"
+					],
+					"colStyles": [
+						"col-3",
+						"col-1 text-center",
+						"col-2 text-center",
+						"col-2",
+						"col-1-5 text-center",
+						"col-1-5 text-center"
+					],
+					"rows": [
+						[
+							"{@item Alchemical Silver Coating|Ishiir|Alchemical Silver Coating (Temporary)}",
+							"-",
+							"-",
+							"Alchemical Silver Ingot",
+							"Armor/Shield",
+							"100 gp"
+						],
+						[
+							"{@item Cold Iron Coating|Ishiir|Cold Iron Coating (Temporary)}",
+							"-",
+							"-",
+							"Cold Iron Ingot",
+							"Armor/Shield",
+							"100 gp"
+						],
+						[
+							"{@item Projecting|Ishiir}",
+							"+3",
+							"High Steel or higher",
+							"Spectral Dust",
+							"Armor",
+							"500 gp"
+						],
+						[
+							"{@item Fungal|Ishiir}",
+							"+3",
+							"High Steel or higher",
+							"Resin Blood",
+							"Armor",
+							"600 gp"
+						],
+						[
+							"{@item Mariner|Ishiir}",
+							"+4",
+							"High Steel or higher",
+							"Ooze Slime",
+							"Armor",
+							"750 gp"
+						],
+						[
+							"{@item Weightlessness|Ishiir}",
+							"+4",
+							"High Steel or higher",
+							"Mechanical Core//Spectral Dust",
+							"Armor",
+							"1.200 gp"
+						],
+						[
+							"{@item Dreadful Communion|Ishiir}",
+							"+4",
+							"High Steel or higher",
+							"Spectral Dust",
+							"Armor",
+							"1.250 gp"
+						],
+						[
+							"{@item Boomerang|Ishiir}",
+							"+5",
+							"High Steel or higher",
+							"Mechanical Core//Sylvan Dust",
+							"Shield",
+							"1.500 gp"
+						],
+						[
+							"{@item Balance|Ishiir}",
+							"+5",
+							"High Steel or higher",
+							"Mechanical Core",
+							"Armor",
+							"2.000 gp"
+						],
+						[
+							"{@item Reliability|Ishiir}",
+							"+5",
+							"High Steel or higher",
+							"Mechanical Core",
+							"Armor",
+							"2.000 gp"
+						],
+						[
+							"{@item Resistance|Ishiir}",
+							"+5",
+							"High Steel or higher",
+							"Draconic Scale//Living Element",
+							"Armor",
+							"2.000 gp"
+						],
+						[
+							"{@item Alchemical Silver Coating|Ishiir}",
+							"+5",
+							"-",
+							"Alchemical Silver Ingot",
+							"Armor/Shield",
+							"2.150 gp"
+						],
+						[
+							"{@item Cold Iron Coating|Ishiir}",
+							"+5",
+							"-",
+							"Cold Iron Ingot",
+							"Armor/Shield",
+							"2.150 gp"
+						],
+						[
+							"{@item Sentinel|Ishiir}",
+							"+5",
+							"High Steel or higher",
+							"Draconic Eye",
+							"Shield",
+							"2.250 gp"
+						],
+						[
+							"{@item Reinforced|Ishiir}",
+							"+6",
+							"Mithral or higher",
+							"-",
+							"Armor/Shield",
+							"2.500 gp"
+						],
+						[
+							"{@item Gloomwrought|Ishiir}",
+							"+6",
+							"Mithral or higher",
+							"Accursed Blood",
+							"Armor",
+							"2.650 gp"
+						],
+						[
+							"{@item Arrow Catching|Ishiir}",
+							"+6",
+							"Mithral or higher",
+							"Mechanical Core",
+							"Shield",
+							"3.000 gp"
+						],
+						[
+							"{@item Dragonguard|Ishiir}",
+							"+6",
+							"Mithral or higher",
+							"Draconic Heart",
+							"Armor",
+							"4.000 gp"
+						],
+						[
+							"{@item Battering|Ishiir}",
+							"+6",
+							"Mithral or higher",
+							"Giant Heart",
+							"Shield",
+							"4.350 gp"
+						],
+						[
+							"{@item Etherealness|Ishiir}",
+							"+6",
+							"Mithral or higher",
+							"Spectral Dust",
+							"Armor",
+							"4.500 gp"
+						],
+						[
+							"{@item Animated|Ishiir}",
+							"+7",
+							"Mithral or higher",
+							"Sylvan Dust",
+							"Shield",
+							"5.000 gp"
+						],
+						[
+							"{@item Iron Will|Ishiir}",
+							"+7",
+							"Mithral or higher",
+							"Eldritch Blood",
+							"Armor",
+							"5.000 gp"
+						],
+						[
+							"{@item Veil Warden|Ishiir}",
+							"+7",
+							"Mithral or higher",
+							"Living Crystal",
+							"Armor",
+							"6.400 gp"
+						],
+						[
+							"{@item Fiendish|Ishiir}",
+							"+7",
+							"Mithral or higher",
+							"Fiendish Blood",
+							"Armor",
+							"6.500 gp"
+						],
+						[
+							"{@item Symbiotic|Ishiir}",
+							"+8",
+							"Mithral or higher",
+							"Eldritch Heart",
+							"Armor",
+							"8.750 gp"
+						],
+						[
+							"{@item Mindshield|Ishiir}",
+							"+9",
+							"Mithral or higher",
+							"Eldritch Brain",
+							"Armor",
+							"10.450 gp"
+						],
+						[
+							"{@item Reverberating|Ishiir}",
+							"+9",
+							"Mithral or higher",
+							"Living Crystal",
+							"Shield",
+							"11.550 gp"
+						],
+						[
+							"{@item Antimagic Armor|Ishiir}",
+							"+11",
+							"Adamantite or higher",
+							"Eldritch Brain",
+							"Armor",
+							"15.000 gp"
+						],
+						[
+							"{@item Spellguard|Ishiir}",
+							"+11",
+							"Adamantite or higher",
+							"Sylvan Noble Blood//Fiendish Heart",
+							"Shield",
+							"17.500 gp"
+						],
+						[
+							"{@item Heart of the Mountain|Ishiir}",
+							"+12",
+							"Adamantite or higher",
+							"Blessing of Angrosh",
+							"Heavy Armor",
+							"23.000 gp"
+						],
+						[
+							"{@item Invulnerability|Ishiir}",
+							"+13",
+							"Adamantite or higher",
+							"Blessing of Angrosh",
+							"Heavy Armor",
+							"28.500 gp"
+						],
+						[
+							"{@item Monstrous Visage|Ishiir}",
+							"+13",
+							"Adamantite or higher",
+							"Elder Draconic Eye",
+							"Shield",
+							"29.500 gp"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Cooking",
+			"page": 1,
+			"source": "Ishiir",
+			"skills": ["Intelligence", "Wisdom"],
+			"tool": "Cook's Utensils",
+			"entries": [
+				"Cooking requires the {@item Cook's Utensils|Ishiir} to make crafting checks. It can be used to craft snacks and full meals. A single crafting produces {@dice 1d8} snacks or enough helpings of a full meal to feed the entire party. A snack can be used at any point, but with a limit of one per turn. A full meal has to be consumed as part of a short or long rest. A character con only consume one meal per rest. The benefits of a snack last until the beginning of your next turn. The benefits of a meal last until the end of the next rest.",
+				"A full meal will lose its special properties if it's not consumed within 24 hours after crafting is finished unless it is preserved through magical means such as a {@item Chest of Preserving|Ishiir}. A snack does not lose its properties unless the DM rules that it has gone bad after a longer period of time or through special circumstances or effects.",
+				"When crafting using the {@item Cook's Utensils|Ishiir}, the DC increases based on the spices used. Crafting with cooking takes an amount of hours equal to the DC of the item - 9. A masterwork snack maximizes the number of snacks you obtain from this crafting. A masterwork full meal lasts for two rests instead of one.",
+				"Many recipes require special ingredients harvested from monsters that are only used for this crafting skill. You can find all of these ingredients in the following table. You can harvest these ingredients using your {@item Cook's Utensils|Ishiir} or by using the {@action Help|Ishiir} action to assist another character in harvesting the creature with the appropriate skill (e.g. {@skill Nature} or {@skill Survival} for beasts).",
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Cooking-Specific Ingredients",
+					"colLabels": [
+						"Ingredient",
+						"Source",
+						"# per Harvest",
+						"Value"
+					],
+					"colStyles": [
+						"col-3",
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"Mystery Meat",
+							"Abberations",
+							"2 x size",
+							"35 x CR"
+						],
+						[
+							"Prime Cut",
+							"Beasts",
+							"2 x size",
+							"1 x CR"
+						],
+						[
+							"Well-Aged Prime Cut",
+							"Beasts",
+							"2 x size",
+							"10 x CR"
+						],
+						[
+							"Luxurious Prime Cut",
+							"Beasts",
+							"2 x size",
+							"20 x CR"
+						],
+						[
+							"Draconic Filet",
+							"Dragons",
+							"2 x size",
+							"20 x CR"
+						],
+						[
+							"Luxurious Draconic Filet",
+							"Dragons",
+							"2 x size",
+							"60 x CR"
+						],
+						[
+							"Sylvan Sugar*",
+							"Fey",
+							"1 x size",
+							"30 x CR"
+						],
+						[
+							"Ooze Pudding",
+							"Oozes",
+							"2 x size",
+							"15 x CR"
+						],
+						[
+							"Liveseeds",
+							"Plants",
+							"4 x size",
+							"1 x CR"
+						],
+						[
+							"Black Salt**",
+							"Undead",
+							"1 x size",
+							"50 x CR"
+						]
+					]
+				},
+				"&nbsp;&nbsp;&nbsp;&nbsp;<b>*</b> Sylvan Sugar is specially treated Sylvan Dust. You can only harvest Sylvan Sugar OR Sylvan Dust, but if the creature allows you to harvest multiple Sylvan Dusts, you can decide how much of each you wish to obtain.",
+				"&nbsp;&nbsp;&nbsp;&nbsp;<b>**</b> Black Salt is specially treated Spectral Dust. You can only harvest Black Salt OR Spectral Dust, but if the creature allows you to harvest multiple Spectral Dusts, you can decide how much of each you wish to obtain.",
+				{
+					"type": "item",
+					"name": "Grades and Gourmet dishes",
+					"entries": [
+						"Materials harvested from monsters have a grade. The grade of a material is equal to the proficiency bonus of the monster -1. When crafting a full meal with a monster material, you can attempt to craft a gourmet dish.",
+						"To do so, add the grade of the monster material to the DC of the full meal. If you successfully craft the full meal and it results in a mastercraft, any character who consumes the meal also regains an additional hit die and has a chance to regain a long rest feature or spell slots (their choice) in addition to the normal effects of the meal.",
+						"To do so, the character rolls a {@dice d20}. On a 19 or 20, they regain a single use of a long rest feature or spell slots equaling the grade of the material used to craft the full meal. With each grade above 1 the range for a successful roll improves by 1 (e.g. 18-20 for grade 2, 17-20 for grade 3 etc)."
+					]
+				},
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Craftable Items",
+					"colLabels": [
+						"Item",
+						"DC",
+						"Ingredient",
+						"Item Type",
+						"Value"
+					],
+					"colStyles": [
+						"col-3",
+						"col-1 text-center",
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"{@item Pocket Treat|Ishiir}",
+							"10",
+							"-",
+							"Snack",
+							"20 gp"
+						],
+						[
+							"{@item Fistful o' Nuts|Ishiir}",
+							"10",
+							"Liveseeds",
+							"Snack",
+							"25 gp"
+						],
+						[
+							"{@item Pocket Bacon|Ishiir}",
+							"10",
+							"Prime Cut",
+							"Snack",
+							"40 gp"
+						],
+						[
+							"{@item Adventurer's Breakfast|Ishiir}",
+							"10",
+							"-",
+							"Full Meal",
+							"50 gp"
+						],
+						[
+							"{@item Campfire Classic|Ishiir}",
+							"10",
+							"-",
+							"Full Meal",
+							"50 gp"
+						],
+						[
+							"{@item Blockwurst|Ishiir}",
+							"10",
+							"Prime Cut",
+							"Snack",
+							"75 gp"
+						],
+						[
+							"{@item Jello Mounds|Ishiir}",
+							"11",
+							"Ooze Pudding",
+							"Full Meal",
+							"150 gp"
+						],
+						[
+							"{@item Bellywarmer Bowls|Ishiir}",
+							"11",
+							"-",
+							"Full Meal",
+							"200 gp"
+						],
+						[
+							"{@item Daredevil's Disjune|Ishiir}",
+							"11",
+							"Prime Cut",
+							"Full Meal",
+							"200 gp"
+						],
+						[
+							"{@item Refreshing Salad|Ishiir}",
+							"11",
+							"-",
+							"Full Meal",
+							"200 gp"
+						],
+						[
+							"{@item Traveler's Stew|Ishiir}",
+							"11",
+							"Prime Cut",
+							"Full Meal",
+							"200 gp"
+						],
+						[
+							"{@item Black Salt Bun|Ishiir}",
+							"12",
+							"Black Salt",
+							"Snack",
+							"250 gp"
+						],
+						[
+							"{@item Sylvan Candy|Ishiir}",
+							"12",
+							"Sylvan Sugar",
+							"Snack",
+							"250 gp"
+						],
+						[
+							"{@item Dragon Slice|Ishiir}",
+							"12",
+							"Draconic Filet",
+							"Snack",
+							"300 gp"
+						],
+						[
+							"{@item Gelatinous Globule|Ishiir}",
+							"12",
+							"Ooze Pudding",
+							"Snack",
+							"350 gp"
+						],
+						[
+							"{@item Marbled Mouthful|Ishiir}",
+							"12",
+							"Well-Aged Prime Cut",
+							"Snack",
+							"350 gp"
+						],
+						[
+							"{@item Wayfarer's Special|Ishiir}",
+							"12",
+							"Well-Aged Prime Cut",
+							"Full Meal",
+							"400 gp"
+						],
+						[
+							"{@item Ranger's Plate|Ishiir}",
+							"14",
+							"Luxurious Prime Cut",
+							"Full Meal",
+							"750 gp"
+						],
+						[
+							"{@item Reaper's Repast|Ishiir}",
+							"14",
+							"Black Salt",
+							"Full Meal",
+							"800 gp"
+						],
+						[
+							"{@item Mystery Soup|Ishiir}",
+							"14",
+							"Mystery Meat",
+							"Full Meal",
+							"850 gp"
+						],
+						[
+							"{@item Eyes for the Insides|Ishiir}",
+							"14",
+							"Mystery Meat",
+							"Snack",
+							"900 gp"
+						],
+						[
+							"{@item Dragon Roll|Ishiir}",
+							"14",
+							"Luxurious Draconic Filet",
+							"Snack",
+							"1.000 gp"
+						],
+						[
+							"{@item Pixie Platter|Ishiir}",
+							"15",
+							"Sylvan Sugar",
+							"Full Meal",
+							"1.600 gp"
+						],
+						[
+							"{@item Veggie Fry-up|Ishiir}",
+							"15",
+							"Liveseeds",
+							"Full Meal",
+							"1.600 gp"
+						],
+						[
+							"{@item Breakfast of Champions|Ishiir}",
+							"15",
+							"Luxurious Prime Cut",
+							"Full Meal",
+							"1.650 gp"
+						],
+						[
+							"{@item Dragon Skewers|Ishiir}",
+							"15",
+							"Draconic Filet",
+							"Full Meal",
+							"1.650 gp"
+						],
+						[
+							"{@item Dragon Feast|Ishiir}",
+							"17",
+							"Luxurious Draconic Filet",
+							"Full Meal",
+							"7.250 gp"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Enchanting",
+			"page": 1,
+			"source": "Ishiir",
+			"skills": ["Intelligence", "Wisdom", "Charisma"],
+			"tool": "Enchanter's Supplies",
+			"entries": [
+				"Enchanting requires the {@item Enchanter's Supplies|Ishiir} to make crafting checks. It can be used to craft scrolls and wondrous items.",
+				"To craft a scroll, you must know the spell and have access to a spell slot of the spell's level. To craft, you expend the spell slot and its material components once.",
+				"Crafting a scroll takes an amount of hours equal to the DC -9. Scrolls with the masterwork property can be used by any class without an ability check. The spell save DC for the scroll is that of the crafter (use your highest mental stat for the calculation if you don't have an innate spell save DC).",
+				"To craft a wondrous item, you must have access to spell slots of a level equal to the item's DC - 10. This spell slot is expended each week you spend crafting. If the DC of the item is higher it can only be crafted at an appropriate place of power determined by the DM.",
+				"You can combine the properties of non-consumable wondrous items with an existing one. In this case, you add the gold cost together. The DC increases by the original DC - 10 for each wondrous item you're adding.",
+				"Crafting a wondrous item takes an amount of days equal to the item's DC /2. Wondrous items with the masterwork property receive additional properties determined by the DM.",
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Craftable Scrolls",
+					"colLabels": [
+						"Item",
+						"DC",
+						"Value"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-1 text-center",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"{@item Spell Scroll (1st Level)|DMG|Level 1 Scroll}",
+							"11",
+							"100 gp"
+						],
+						[
+							"{@item Spell Scroll (2nd Level)|DMG|Level 2 Scroll}",
+							"12",
+							"250 gp"
+						],
+						[
+							"{@item Spell Scroll (3rd Level)|DMG|Level 3 Scroll}",
+							"13",
+							"500 gp"
+						],
+						[
+							"{@item Spell Scroll (4th Level)|DMG|Level 4 Scroll}",
+							"14",
+							"750 gp"
+						],
+						[
+							"{@item Spell Scroll (5th Level)|DMG|Level 5 Scroll}",
+							"15",
+							"1.500 gp"
+						],
+						[
+							"{@item Spell Scroll (6th Level)|DMG|Level 6 Scroll}",
+							"16",
+							"3.000 gp"
+						],
+						[
+							"{@item Spell Scroll (7th Level)|DMG|Level 7 Scroll}",
+							"17",
+							"4.500 gp"
+						],
+						[
+							"{@item Spell Scroll (8th Level)|DMG|Level 8 Scroll}",
+							"18",
+							"6.000 gp"
+						],
+						[
+							"{@item Spell Scroll (9th Level)|DMG|Level 9 Scroll}",
+							"19",
+							"10.000 gp"
+						]
+					]
+				},
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Craftable Wondrous Items",
+					"colLabels": [
+						"Item",
+						"DC",
+						"Ingredient",
+						"Value"
+					],
+					"colStyles": [
+						"col-5-5",
+						"col-1 text-center",
+						"col-3-5 text-center",
+						"col-2 text-center"
+					],
+					"rows": [
+						["{@item Hook of Fisher's Delight|Ishiir}", "11", "Sylvan Dust", "100 gp"],
+						["{@item Lantern of Warning|Ishiir}", "11", "-", "100 gp"],
+						["{@item Cleansing Stone|Ishiir}", "11", "Ooze Slime", "125 gp"],
+						["{@item Spellshard|Ishiir}", "11", "-", "125 gp"],
+						["{@item Keycharm|Ishiir}", "11", "Sylvan Dust", "175 gp"],
+						["{@item Ghostscribe Tattoo|Ishiir}", "11", "Sylvan Dust", "200 gp"],
+						["{@item Glamerweave|Ishiir}", "11", "Sylvan Dust", "200 gp"],
+						["{@item Masquerade Tattoo|Ishiir}", "11", "Ooze Slime", "200 gp"],
+						["{@item Beastskin Tattoo|Ishiir}", "12", "Beast Scale/Hide", "200 gp"],
+						["{@item Dust of Disappearance|Ishiir}", "12", "Sylvan Dust", "250 gp"],
+						["{@item Pearl of Undead Detection|Ishiir}", "12", "Holy Water", "250 gp"],
+						["{@item Quaal's Feather Token: Tree|Ishiir}", "12", "Resin Blood", "250 gp"],
+						["{@item Shiftweave|Ishiir}", "12", "Sylvan Dust", "250 gp"],
+						["{@item Wraps of Light|Ishiir}", "12", "Holy Water", "250 gp"],
+						["{@item Amulet of Protection from Turning|Ishiir}", "12", "Accursed Blood", "300 gp"],
+						["{@item Enchanted Cauldron|Ishiir}", "12", "Sylvan Dust", "300 gp"],
+						["{@item Chest of Preserving|Ishiir}", "12", "Resin Blood", "300 gp"],
+						["{@item Seed of Counsel|Ishiir}", "12", "Resin Blood//Holy Water", "300 gp"],
+						["{@item Wind Fan|Ishiir}", "12", "Living Wind", "350 gp"],
+						["{@item Bag of Tricks, Gray|Ishiir}", "12", "Beast Hide//Sylvan Dust", "450 gp"],
+						["{@item Bag of Tricks, Rust|Ishiir}", "12", "Beast Hide//Sylvan Dust", "450 gp"],
+						["{@item Bag of Tricks, Tan|Ishiir}", "12", "Beast Hide//Sylvan Dust", "450 gp"],
+						["{@item Ring of Feather Falling|Ishiir}", "12", "Beast Feather", "450 gp"],
+						["{@item Alchemy Jug|Ishiir}", "13", "Living Water", "500 gp"],
+						["{@item Amulet of the Drunkard|Ishiir}", "13", "Giant Blood", "500 gp"],
+						["{@item Boots of Elvenkind|Ishiir}", "13", "Sylvan Hair", "500 gp"],
+						["{@item Circlet of Human Perfection|Ishiir}", "13", "Sylvan Hair", "500 gp"],
+						["{@item Decanter of Endless Water|Ishiir}", "13", "Living Water", "500 gp"],
+						["{@item Dust of Sneezing and Choking|Ishiir}", "13", "Sylvan Dust", "500 gp"],
+						["{@item Eyes of the Eagle|Ishiir}", "13", "Draconic Eye", "500 gp"],
+						["{@item Gloves of Missile Snaring|Ishiir}", "13", "Mechanical Core", "500 gp"],
+						["{@item Immovable Rod|Ishiir}", "13", "Living Earth//Mechanical Core", "500 gp"],
+						["{@item Naushindhor's Stone: Sustenance|Ishiir}", "13", "Living Crystal", "500 gp"],
+						["{@item Quaal's Feather Token: Anchor|Ishiir}", "13", "Living Earth", "500 gp"],
+						["{@item Ring of Truth Telling|Ishiir}", "13", "Sylvan Dust", "500 gp"],
+						["{@item Rope of Climbing|Ishiir}", "13", "Giant Hair", "500 gp"],
+						["{@item Thermal Cube|Ishiir}", "13", "Living Fire", "500 gp"],
+						["{@item Robe of Serpents|Ishiir}", "13", "Beast Scale", "550 gp"],
+						["{@item Balance of Harmony|Ishiir}", "13", "Holy Water", "600 gp"],
+						["{@item Cloak of Displacement|Ishiir}", "13", "Spectral Dust//Sylvan Dust", "600 gp"],
+						["{@item Eyes of Charming|Ishiir}", "13", "Sylvan Hair", "600 gp"],
+						["{@item Hat of Disguise|Ishiir}", "13", "Sylvan Dust", "600 gp"],
+						["{@item Mask of the Beast|Ishiir}", "13", "Beast Heart", "600 gp"],
+						["{@item Pipes of the Sewers|Ishiir}", "13", "Beast Heart", "600 gp"],
+						["{@item Ring of Obscuring|Ishiir}", "13", "Living Water", "600 gp"],
+						["{@item Ring of Puzzler's Wit|Ishiir}", "13", "Draconic Eye//Eldritch Blood", "600 gp"],
+						["{@item Rod of Retribution|Ishiir}", "13", "Spectral Dust", "600 gp"],
+						["{@item Wand of Magic Detection|Ishiir}", "13", "Sylvan Dust", "600 gp"],
+						["{@item Boots of Speed|Ishiir}", "13", "Living Wind", "700 gp"],
+						["{@item Eversmoking Bottle|Ishiir}", "13", "Living Water", "700 gp"],
+						["{@item Bag of Beans|Ishiir}", "14", "Resin Blood//Sylvan Dust", "750 gp"],
+						["{@item Boots of Levitation|Ishiir}", "14", "Spectral Dust", "750 gp"],
+						["{@item Cap of Waterbreathing|Ishiir}", "14", "Sylvan Kiss", "750 gp"],
+						["{@item Horseshoes of Speed|Ishiir}", "14", "Living Wind", "750 gp"],
+						["{@item Night Caller|Ishiir}", "14", "Accursed Blood//Fiendish Fang", "750 gp"],
+						["{@item Periapt of Health|Ishiir}", "14", "Resin Blood", "750 gp"],
+						["{@item Quaal's Feather Token: Fan|Ishiir}", "14", "Living Wind", "750 gp"],
+						["{@item Ring of X-Ray Vision|Ishiir}", "14", "Eldritch Blood", "750 gp"],
+						["{@item Saddle of the Cavalier|Ishiir}", "14", "Beast Heart", "750 gp"],
+						["{@item Staff of the Python|Ishiir}", "14", "Beast Scale", "750 gp"],
+						["{@item Tunnel Claws|Ishiir}", "14", "Beast Claw", "750 gp"],
+						["{@item Emerald Pen|Ishiir}", "14", "Spectral Dust", "750 gp"],
+						["{@item Figurine of Wondrous Power: Onyx Dog|Ishiir}", "14", "Beast Heart", "800 gp"],
+						["{@item Ring of Jumping|Ishiir}", "14", "Beast Feather", "800 gp"],
+						["{@item Dust of Dryness|Ishiir}", "14", "Living Earth", "850 gp"],
+						["{@item Helm of the Pious|Ishiir}", "14", "Holy Water", "850 gp"],
+						["{@item Quaal's Feather Token: Whip|Ishiir}", "14", "Sylvan Dust", "850 gp"],
+						["{@item Boots of Springing and Striding|Ishiir}", "14", "Living Wind", "900 gp"],
+						["{@item Amulet of Proof against Detection and Location|Ishiir} ", "14", "Spectral Dust", "1.000 gp"],
+						["{@item Cloak of Elvenkind|Ishiir}", "14", "Beast Hide", "1.000 gp"],
+						["{@item Deceiver's Brooch|Ishiir}", "14", "Spectral Dust", "1.000 gp"],
+						["{@item Dragonscale Tattoo|Ishiir}", "14", "Draconic Scale", "1.000 gp"],
+						["{@item Eyes of Minute Seeing|Ishiir}", "14", "Draconic Eye", "1.000 gp"],
+						["{@item Gloves of Thievery|Ishiir}", "14", "Ooze Slime", "1.000 gp"],
+						["{@item Horn of Blasting|Ishiir}", "14", "Living Wind", "1.000 gp"],
+						["{@item Iron Bands of Bilarro|Ishiir}", "14", "Living Earth", "1.000 gp"],
+						["{@item Naushindhor's Stone: Awareness|Ishiir}", "14", "Living Crystal", "1.000 gp"],
+						["{@item Naushindhor's Stone: Reserve|Ishiir}", "14", "Living Crystal", "1.000 gp"],
+						["{@item Necklace of Adaptation|Ishiir}", "14", "Ooze Slime", "1.000 gp"],
+						["{@item Pearl of Power|Ishiir}", "14", "Living Crystal", "1.000 gp"],
+						["{@item Pennant of the Vind Rune|Ishiir}", "14", "Living Wind", "1.000 gp"],
+						["{@item Ring of Swimming|Ishiir}", "14", "Ooze Slime", "1.000 gp"],
+						["{@item Slippers of Spider Climbing|Ishiir}", "14", "Accursed Blood", "1.000 gp"],
+						["{@item Goggles of the Night|Ishiir}", "14", "Draconic Eye", "1.150 gp"],
+						["{@item Arcanist's Goggles|Ishiir}", "14", "Eldritch Blood", "1.200 gp"],
+						["{@item Driftglobe|Ishiir}", "14", "Sylvan Dust", "1.200 gp"],
+						["{@item Figurine of Wondrous Power: Silver Raven|Ishiir}", "14", "Beast Feather", "1.200 gp"],
+						["{@item Lyre of Charming|Ishiir}", "14", "Sylvan Kiss", "1.200 gp"],
+						["{@item Helm of Comprehending Languages|Ishiir}", "14", "Eldritch Blood", "1.200 gp"],
+						["{@item Helm of Underwater Action|Ishiir}", "14", "Living Water", "1.250 gp"],
+						["{@item Knave's Eye Patch|Ishiir}", "14", "Accursed Blood//Fiendish Fang", "1.250 gp"],
+						["{@item Ring of Mind Shielding|Ishiir}", "14", "Eldritch Blood", "1250 gp"],
+						["{@item Robe of Useful Items|Ishiir}", "14", "Sylvan Dust", "1.250 gp"],
+						["{@item Staff of the Adder|Ishiir}", "14", "Beast Scale", "1.250 gp"],
+						["{@item Everbloody Gauntlets|Ishiir}", "14", "Fiendish Claw", "1.350 gp"],
+						["{@item Coiling Grasp Tattoo|Ishiir}", "14", "Living Heartwood", "1.400 gp"],
+						["{@item Helm of Telepathy|Ishiir}", "14", "Eldritch Blood", "1.400 gp"],
+						["{@item Sage's Signet (Songbird)|Ishiir}", "14", "Sylvan Dust", "1.400 gp"],
+						["{@item Wand of Entangle|Ishiir}", "14", "Resin Blood", "1.400 gp"],
+						["{@item Wand of Magic Missile|Ishiir}", "14", "Arcane Core", "1.400 gp"],
+						["{@item Box of Paper Birds|Ishiir}", "15", "Sylvan Dust", "1.500 gp"],
+						["{@item Brooch of Shielding|Ishiir}", "15", "Arcane Core", "1.500 gp"],
+						["{@item Broom of Flying|Ishiir}", "15", "Sylvan Dust", "1.500 gp"],
+						["{@item Elemental Gem (Sapphire)|Ishiir}", "15", "Living Wind", "1.500 gp"],
+						["{@item Elemental Gem (Emerald)|Ishiir}", "15", "Living Water", "1.500 gp"],
+						["{@item Elemental Gem (Corundum)|Ishiir}", "15", "Living Fire", "1.500 gp"],
+						["{@item Elemental Gem (Diamond)|Ishiir}", "15", "Living Earth", "1.500 gp"],
+						["{@item Living Gloves|Ishiir}", "15", "Eldritch Blood", "1.500 gp"],
+						["{@item Mirror of the Past|Ishiir}", "15", "Spectral Dust", "1.500 gp"],
+						["{@item Nightstrider Cape|Ishiir}", "15", "Fiendish Blood//Spectral Dust", "1.500 gp"],
+						["{@item Periapt of Wound Closure|Ishiir}", "15", "Ooze Blood", "1.500 gp"],
+						["{@item Ring of Warmth|Ishiir}", "15", "Living Fire", "1.500 gp"],
+						["{@item Ring of Water Walking|Ishiir}", "15", "Ooze Slime", "1.500 gp"],
+						["{@item Wand of Secrets|Ishiir}", "15", "Sylvan Dust", "1.500 gp"],
+						["{@item Ring of the Ram|Ishiir}", "15", "Beast Heart", "1.600 gp"],
+						["{@item Rope of Entanglement|Ishiir}", "15", "Giant Hair//Living Heartwood", "1.600 gp"],
+						["{@item Boots of the Winterlands|Ishiir}", "15", "Beast Hide", "1.650 gp"],
+						["{@item Medallion of Thoughts|Ishiir}", "15", "Eldritch Blood", "1.700 gp"],
+						["{@item Sage's Signet (Serpent)|Ishiir}", "15", "Sylvan Dust", "1.700 gp"],
+						["{@item Lantern of Revealing|Ishiir}", "15", "Spectral Dust", "1.750 gp"],
+						["{@item Robe of Summer|Ishiir}", "15", "Living Fire", "1.750 gp"],
+						["{@item Wand of Viscid Globs|Ishiir}", "15", "Ooze Slime", "1.750 gp"],
+						["{@item Dispelling Stone|Ishiir}", "15", "Arcane Core", "1.900 gp"],
+						["{@item Ring of Free Action|Ishiir}", "15", "Living Wind//Ooze Nucleus", "1.900 gp"],
+						["{@item Feather of Terror Bird Summoning|Ishiir}", "15", "Beast Feather", "2.000 gp"],
+						["{@item Figurine of Wondrous Power: Ebony Fly|Ishiir}", "15", "Sylvan Dust", "2.000 gp"],
+						["{@item Figurine of Wondrous Power: Serpentine Owl|Ishiir}", "15", "Beast Feather", "2.000 gp"],
+						["{@item Gauntlets of Ogre Power|Ishiir}", "15", "Giant Blood", "2.000 gp"],
+						["{@item Gloves of Swimming and Climbing|Ishiir}", "15", "Beast Heart", "2.000 gp"],
+						["{@item Headband of Intellect|Ishiir}", "15", "Eldritch Blood", "2.000 gp"],
+						["{@item Nature's Mantle|Ishiir}", "15", "Sylvan Hair", "2.000 gp"],
+						["{@item Quaal's Feather Token: Swan Boat|Ishiir}", "15", "Sylvan Dust", "2.000 gp"],
+						["{@item Ring of Resistance|Ishiir}", "15", "Draconic Scale", "2.000 gp"],
+						["{@item Sending Stones|Ishiir}", "15", "Arcane Core", "2.000 gp"],
+						["{@item Sylvan Cloak|Ishiir}", "15", "Sylvan Hair", "2.000 gp"],
+						["{@item Chime of Opening|Ishiir}", "15", "Arcane Core", "2.250 gp"],
+						["{@item Horseshoes of a Zephyr|Ishiir}", "15", "Living Wind", "2.250 gp"],
+						["{@item Naushindhor's Stone: Regeneration|Ishiir}", "15", "Living Crystal", "2.250 gp"],
+						["{@item Winged Boots|Ishiir}", "15", "Sylvan Dust//Living Wind", "2.250 gp"],
+						["{@item Rod of the Treasure Hunter|Ishiir}", "15", "Living Earth", "2.400 gp"],
+						["{@item Bag of Holding|Ishiir}", "16", "Sylvan/Spectral Dust", "2.500 gp"],
+						["{@item Bracers of Archery|Ishiir}", "16", "Draconic Eye", "2.500 gp"],
+						["{@item Bracers of Defense|Ishiir}", "16", "Living Crystal", "2.500 gp"],
+						["{@item Cloak of the Manta Ray|Ishiir}", "16", "Living Water", "2.500 gp"],
+						["{@item Deck of Oracles|Ishiir}", "16", "Sylvan Dust", "2.500 gp"],
+						["{@item Dimensional Shackles|Ishiir}", "16", "Fiendish Fang//Cold Iron Ingot", "2.500 gp"],
+						["{@item Insignia of Claws|Ishiir}", "16", "Beast Claw/Fang//Fiendish Fang", "2.500 gp"],
+						["{@item Naushindhor's Stone: Agility|Ishiir}", "16", "Living Crystal", "2.500 gp"],
+						["{@item Naushindhor's Stone: Fortitude|Ishiir}", "16", "Living Crystal", "2.500 gp"],
+						["{@item Naushindhor's Stone: Insight|Ishiir}", "16", "Living Crystal", "2.500 gp"],
+						["{@item Naushindhor's Stone: Intellect|Ishiir}", "16", "Living Crystal", "2.500 gp"],
+						["{@item Naushindhor's Stone: Leadership|Ishiir}", "16", "Living Crystal", "2.500 gp"],
+						["{@item Naushindhor's Stone: Protection|Ishiir}", "16", "Living Crystal", "2.500 gp"],
+						["{@item Naushindhor's Stone: Strength|Ishiir}", "16", "Living Crystal", "2.500 gp"],
+						["{@item Quaal's Feather Token: Bird|Ishiir}", "16", "Beast Feather", "2.500 gp"],
+						["{@item Reincarnation Dust|Ishiir}", "16", "Living Heartwood", "2.500 gp"],
+						["{@item Sage's Signet (Bear)|Ishiir}", "16", "Sylvan Dust", "2.500 gp"],
+						["{@item Sage's Signet (Wolf)|Ishiir}", "16", "Sylvan Dust", "2.500 gp"],
+						["{@item Ingot of the Skold Rune|Ishiir}", "16", "Living Earth", "2.600 gp"],
+						["{@item Nightwalker Ward|Ishiir}", "16", "Living Crystal", "2.650 gp"],
+						["{@item Chest of Plenty|Ishiir}", "16", "Sylvan Dust", "2.700 gp"],
+						["{@item Libram of Soul and Flesh|Ishiir}", "16", "Accursed Blood", "2.700 gp"],
+						["{@item Ring of Animal Influence|Ishiir}", "16", "Beast Heart", "2.700 gp"],
+						["{@item Flying Chariot|Ishiir}", "16", "Living Air", "2.750 gp"],
+						["{@item Staff of Dragon Charming|Ishiir}", "16", "Draconic Heart", "2.750 gp"],
+						["{@item Wings of Flying|Ishiir}", "16", "Beast Feather//Sylvan Dust", "2.750 gp"],
+						["{@item Wand of Enemy Detection|Ishiir}", "16", "Accursed Blood", "2.800 gp"],
+						["{@item Gavel of the Venn Rune|Ishiir}", "16", "Giant Heart", "2.850 gp"],
+						["{@item Molten Bronze Skin|Ishiir}", "16", "Living Earth", "2.950 gp"],
+						["{@item Bead of Force|Ishiir}", "16", "Arcane Core", "3.000 gp"],
+						["{@item Bowl of Commanding Elementals|Ishiir}", "16", "Living Water/Wind/Earth/Fire", "3.000 gp"],
+						["{@item Cloak of the Bat|Ishiir}", "16", "Accursed Heart", "3.000 gp"],
+						["{@item Guardian Emblem|Ishiir}", "16", "Draconic Scale", "3.000 gp"],
+						["{@item Ring of Evasion|Ishiir}", "16", "Living Wind", "3.000 gp"],
+						["{@item Ring of Spell Storing|Ishiir}", "16", "Living Crystal", "3.000 gp"],
+						["{@item Charm of Plant Command|Ishiir}", "16", "Living Heartwood", "3.000 gp"],
+						["{@item Steelskin Tattoo|Ishiir}", "16", "Living Earth", "3.000 gp"],
+						["{@item Swift Greaves|Ishiir}", "16", "Living Wind", "3.000 gp"],
+						["{@item Necklace of Fireballs|Ishiir}", "16", "Living Fire", "3.250 gp"],
+						["{@item Necklace of Prayer Beads|Ishiir}", "16", "Living Crystal", "3.250 gp"],
+						["{@item Pipes of Haunting|Ishiir}", "16", "Spectral Dust", "3.250 gp"],
+						["{@item Staff of Withering|Ishiir}", "16", "Accursed Blood", "3.250 gp"],
+						["{@item Crystalline Chronicle|Ishiir}", "16", "Living Crystal", "3.350 gp"],
+						["{@item Fulminating Treatise|Ishiir}", "16", "Arcane Core", "3.500 gp"],
+						["{@item Seeker's Orb|Ishiir}", "16", "Draconic Eye", "3.500 gp"],
+						["{@item Stone of Good Luck|Ishiir}", "16", "Sylvan Kiss", "3.500 gp"],
+						["{@item Wand of Wonder|Ishiir}", "16", "Sylvan Dust", "3.500 gp"],
+						["{@item Ruby Weave Gem|Ishiir}", "16", "Living Crystal", "3.500 gp"],
+						["{@item Staff of Defense|Ishiir}", "16", "Living Heartwood", "3.600 gp"],
+						["{@item Staff of Healing|Ishiir}", "16", "Vineheart", "3.600 gp"],
+						["{@item Wand of Web|Ishiir}", "16", "Ooze Slime//Resin Blood", "3.600 gp"],
+						["{@item Staff of Charming|Ishiir}", "16", "Sylvan Noble Blood//Accursed Blood", "3.700 gp"],
+						["{@item Amulet of Health|Ishiir}", "16", "Vineheart", "3.750 gp"],
+						["{@item Atlas of Endless Horizons|Ishiir}", "16", "Fiendish/Eldritch Blood", "3.750 gp"],
+						["{@item Belt of Strength|Ishiir}", "16", "Giant Blood", "3.750 gp"],
+						["{@item Bracers of Swiftness|Ishiir}", "16", "Living Wind", "3.750 gp"],
+						["{@item Greater Molten Bronze Skin|Ishiir}", "16", "Living Earth", "3.750 gp"],
+						["{@item Naushindhor's Stone: Absorption|Ishiir}", "16", "Living Crystal", "3.750 gp"],
+						["{@item Orb of the Stein Rune|Ishiir}", "16", "Living Earth", "3.750 gp"],
+						["{@item Periapt of Wisdom|Ishiir}", "16", "Draconic Heart", "3.750 gp"],
+						["{@item Astromancy Archive|Ishiir}", "16", "Spectral Dust//Eldritch Blood", "3.800 gp"],
+						["{@item Duplicitious Manuscript|Ishiir}", "16", "Spectral Dust", "3.800 gp"],
+						["{@item Wand of Fear|Ishiir}", "16", "Spectral Dust//Fiendish Blood", "3.850 gp"],
+						["{@item Arcane Grimoire +1|Ishiir}", "16", "Arcane Core", "3.950 gp"],
+						["{@item Ebonhand Tattoo|Ishiir}", "16", "Eldritch Brain", "4.000 gp"],
+						["{@item Rogue's Mantle|Ishiir}", "16", "Spectral Dust", "4.000 gp"],
+						["{@item Instrument of the Bards: Mac-Fuirmidh Cittern|Ishiir}", "16", "Living Heartwood", "4.050 gp"],
+						["{@item Cauldron of Rebirth|Ishiir}", "16", "Sylvan Kiss", "4.100 gp"],
+						["{@item Cloak of Arachnida|Ishiir}", "16", "Spectral Dust//Fiendish Blood", "4.100 gp"],
+						["{@item Instrument of the Bards: Fochlucan Bandore|Ishiir}", "16", "Living Heartwood", "4.150 gp"],
+						["{@item Wand of Binding|Ishiir}", "16", "Ooze Nucleus", "4.200 gp"],
+						["{@item Ring of Spell Turning|Ishiir}", "16", "Arcane Core", "4.250 gp"],
+						["{@item Rhythm-Maker's Drum|Ishiir}", "16", "Sylvan Hair", "4.250 gp"],
+						["{@item Wand of the War Mage|Ishiir}", "16", "Arcane Core", "4.250 gp"],
+						["{@item Staff of the Ivory Claw|Ishiir}", "16", "Living Crystal", "4.300 gp"],
+						["{@item Instrument of the Bards: Doss Lute|Ishiir}", "16", "Living Heartwood", "4.350 gp"],
+						["{@item Elemental Essence Shard (Earth)|Ishiir}", "16", "Living Earth", "4.400 gp"],
+						["{@item Elemental Essence Shard (Water)|Ishiir}", "16", "Living Water", "4.400 gp"],
+						["{@item Moon Sickle +1|Ishiir}", "16", "Living Heartwood", "4.400 gp"],
+						["{@item Opal of the Ild Rune|Ishiir}", "16", "Living Fire", "4.400 gp"],
+						["{@item Shard of Madness|Ishiir}", "16", "Eldritch Heart//Living Crystal", "4.400 gp"],
+						["{@item Stonespeaker Crystal|Ishiir}", "16", "Sylvan Noble Blood", "4.400 gp"],
+						["{@item Figurine of Wondrous Power: Golden Saber Cats|Ishiir}", "16", "Beast Heart", "4.500 gp"],
+						["{@item Gem of Seeing|Ishiir}", "16", "Living Crystal", "4.500 gp"],
+						["{@item Ring of Regeneration|Ishiir}", "16", "Vineheart//Ooze Blood", "4.500 gp"],
+						["{@item Ring of Telekinesis|Ishiir}", "16", "Eldritch Brain", "4.500 gp"],
+						["{@item Supreme Molten Bronze Skin|Ishiir}", "16", "Living Earth", "4.500 gp"],
+						["{@item Tentacle Rod|Ishiir}", "16", "Eldritch Heart", "4.500 gp"],
+						["{@item Bracer of Flying Daggers|Ishiir}", "16", "Spectral Dust", "4.500 gp"],
+						["{@item Sage's Signet (Hart)|Ishiir}", "16", "Sylvan Dust", "4.500 gp"],
+						["{@item Sage's Signet (Lion)|Ishiir}", "16", "Sylvan Dust", "4.500 gp"],
+						["{@item Wraps of Unarmed Prowess +1|Ishiir}", "16", "Beast Heart", "4.500 gp"],
+						["{@item Amulet of the Devout +1|Ishiir}", "16", "Holy Water", "4.750 gp"],
+						["{@item Bloodwell Vial +1|Ishiir}", "16", "Draconic Heart", "4.750 gp"],
+						["{@item Dragonhide Belt +1|Ishiir}", "16", "Draconic Scale", "4.750 gp"],
+						["{@item Cloak of Protection|Ishiir}", "17", "Sylvan Noble Blood", "5.000 gp"],
+						["{@item Naushindhor's Stone of Mastery|Ishiir}", "17", "Living Crystal", "5.000 gp"],
+						["{@item Ring of Protection|Ishiir}", "17", "Sylvan Noble Blood", "5.000 gp"],
+						["{@item Sentinel Amulet|Ishiir}", "17", "Living Crystal", "5.000 gp"],
+						["{@item Sundering Sphere|Ishiir}", "17", "Arcane Core", "5.000 gp"],
+						["{@item Heart Weaver's Primer|Ishiir}", "17", "Sylvan Kiss", "5.200 gp"],
+						["{@item Crystal Ball|Ishiir}", "17", "Living Crystal", "5.250 gp"],
+						["{@item Absorbing Tattoo|Ishiir}", "17", "Elder Draconic Scale", "5.500 gp"],
+						["{@item Belt of Dwarvenkind|Ishiir}", "17", "Living Earth", "5.500 gp"],
+						["{@item Shadowmantle Tattoo|Ishiir}", "17", "Spectral Dust", "5.500 gp"],
+						["{@item Gem of Brightness|Ishiir}", "17", "Living Crystal", "5.750 gp"],
+						["{@item Instrument of Bards: Canaith Mandolin|Ishiir}", "17", "Living Heartwood", "5.750 gp"],
+						["{@item Umbral Shard|Ishiir}", "17", "Spectral Dust", "5.800 gp"],
+						["{@item Figurine of Wondrous Power: Ivory Goats|Ishiir}", "17", "Beast Heart", "6.000 gp"],
+						["{@item Staff of Gravity|Ishiir}", "17", "Eldritch Heart", "6.000 gp"],
+						["{@item Alchemical Compendium|Ishiir}", "17", "Ooze Blood", "6.050 gp"],
+						["{@item Elemental Essence Shard (Fire)|Ishiir}", "17", "Living Fire", "6.050 gp"],
+						["{@item Ring of Shooting Stars|Ishiir}", "17", "Living Crystal", "6.400 gp"],
+						["{@item Staff of Fire|Ishiir}", "17", "Living Fire", "6.400 gp"],
+						["{@item Black Crystal Tablet|Ishiir}", "17", "Eldritch Heart", "6.500 gp"],
+						["{@item Lifeward Tattoo|Ishiir}", "17", "Vineheart", "6.500 gp"],
+						["{@item All-Purpose Tool +1|Ishiir}", "17", "Arcane Core", "6.650 gp"],
+						["{@item Conch of Teleporation|Ishiir}", "17", "Eldritch Heart", "6.750 gp"],
+						["{@item Rod of the Pact Keeper|Ishiir}", "17", "Spectral Dust//Fiendish Fang//Eldritch Heart", "6.750 gp"],
+						["{@item Shadowstride Tattoo|Ishiir}", "17", "Accursed Heart", "6.750 gp"],
+						["{@item Shard of the Ise Rune|Ishiir}", "17", "Living Water", "7.000 gp"],
+						["{@item Wand of Fireballs|Ishiir}", "17", "Living Fire", "7.000 gp"],
+						["{@item Wand of Lightning Bolts|Ishiir}", "17", "Living Wind", "7.000 gp"],
+						["{@item Staff of Swarming Insects|Ishiir}", "17", "Sylvan Noble Blood", "7.050 gp"],
+						["{@item Instrument of Bards: Cli Lyre|Ishiir}", "17", "Living Heartwood", "7.250 gp"],
+						["{@item Belt of Greater Strength|Ishiir}", "18", "Elder Giant Blood", "7.500 gp"],
+						["{@item Invigorating Shard|Ishiir}", "18", "Vineheart", "7.500 gp"],
+						["{@item Living Ooze Serum|Ishiir}", "18", "Ooze Blood", "7.500 gp"],
+						["{@item Mantle of Spell Resistance|Ishiir}", "18", "Sylvan Noble Blood", "7.500 gp"],
+						["{@item Amulet of the Planes|Ishiir}", "18", "Eldritch Heart", "7.550 gp"],
+						["{@item Arcane Grimoire +2|Ishiir}", "18", "Living Crystal Core", "7.700 gp"],
+						["{@item Robe of Eyes|Ishiir}", "18", "Eldritch Brain//Elder Draconic Eye", "8.000 gp"],
+						["{@item Rhythm-Maker's Drum +2|Ishiir}", "18", "Sylvan Noble Blood", "8.000 gp"],
+						["{@item Wand of the War Mage +2|Ishiir}", "18", "Living Crystal Core", "8.000 gp"],
+						["{@item Moon Sickle +2|Ishiir}", "18", "Vineheart", "8.150 gp"],
+						["{@item Carpet of Flying|Ishiir}", "18", "Living Wind", "8.250 gp"],
+						["{@item Wraps of Unarmed Prowess +2|Ishiir}", "18", "Beast Heart", "8.250 gp"],
+						["{@item Amulet of the Devout +2|Ishiir}", "18", "8th Level Cleric Slot", "8.500 gp"],
+						["{@item Bloodwell Vial +2|Ishiir}", "18", "Draconic Heart", "8.500 gp"],
+						["{@item Dragonhide Belt +2|Ishiir}", "18", "Draconic Scale", "8.500 gp"],
+						["{@item Protective Verses|Ishiir}", "18", "Living Crystal Core", "8.750 gp"],
+						["{@item Rod of Rulership|Ishiir}", "18", "Eldritch Brain//Fiendish Heart", "9.375 gp"],
+						["{@item Shield of the Uven Rune|Ishiir}", "18", "Accursed Heart", "9.400 gp"],
+						["{@item Ring of Death Denied|Ishiir}", "18", "Accursed Heart//Sylvan Noble Blood", "9.500 gp"],
+						["{@item Scarab of Protection|Ishiir}", "18", "Vineheart//Sylvan Noble Blood", "9.900 gp"],
+						["{@item Candle of Invocation|Ishiir}", "19", "Divine Blessing", "10.000 gp"],
+						["{@item Marvelous Sylvan Pigments|Ishiir}", "19", "Ooze Blood", "10.000 gp"],
+						["{@item Periapt of Proof against Poison|Ishiir}", "19", "Vineheart", "10.000 gp"],
+						["{@item Spell Bottle|Ishiir}", "19", "Living Crystal", "10.000 gp"],
+						["{@item Sun Staff|Ishiir}", "19", "Living Fire", "10.000 gp"],
+						["{@item Tattoo of Sanguine Fury|Ishiir}", "19", "Accursed Heart", "10.000 gp"],
+						["{@item Wand of Polymorph|Ishiir}", "19", "Sylvan Noble Blood", "10.150 gp"],
+						["{@item Crystal Ball of Mindreading|Ishiir}", "19", "Eldritch Brain", "10.250 gp"],
+						["{@item All-Purpose Tool +2|Ishiir}", "19", "Living Crystal Core", "10.400 gp"],
+						["{@item Sylvan Shard|Ishiir}", "19", "Sylvan Noble Blood", "10.500 gp"],
+						["{@item Rod of the Pact Keeper +2|Ishiir}", "19", "Eldritch Brain//Fiendish/Accursed Heart", "10.500 gp"],
+						["{@item Crown of Whirling Comets|Ishiir}", "19", "Living Wind", "10.700 gp"],
+						["{@item Rod of Alertness|Ishiir}", "19", "Elder Draconic Eye", "10.700 gp"],
+						["{@item Wand of Winter|Ishiir}", "19", "Living Water", "10.700 gp"],
+						["{@item Platinum Scarf|Ishiir}", "19", "Elder Draconic Scale", "10.950 gp"],
+						["{@item Staff of Frost|Ishiir}", "19", "Living Water", "11.100 gp"],
+						["{@item Planecaller's Codex|Ishiir}", "19", "Eldritch Brain//Fiendish Heart", "11.200 gp"],
+						["{@item Figurine of Wondrous Power: Bronze Greif|Ishiir}", "19", "Beast Heart", "11.250 gp"],
+						["{@item Banner of the Krig Rune|Ishiir}", "19", "Elder Giant Heart", "12.000 gp"],
+						["{@item Claw of Wyrm Rune|Ishiir}", "19", "Draconic Heart", "12.000 gp"],
+						["{@item Dust of Deliciousness|Ishiir}", "19", "Sylvan Plum", "12.000 gp"],
+						["{@item Crystal Ball of Telepathy|Ishiir}", "19", "Eldritch Brain", "12.250 gp"],
+						["{@item Universal Solvent|Ishiir}", "20", "Ooze Blood", "12.500 gp"],
+						["{@item Deck of Dimensions|Ishiir}", "20", "Eldritch Brain", "13.100 gp"],
+						["{@item Lyre of Building|Ishiir}", "20", "Living Earth", "13.500 gp"],
+						["{@item Reveler's Concertina|Ishiir}", "20", "Sylvan Noble Blood", "13.500 gp"],
+						["{@item Elemental Essence Shard (Air)|Ishiir}", "20", "Living Air", "13.750 gp"],
+						["{@item Crystal Ball of True Seeing|Ishiir}", "20", "Eldritch Brain", "14.250 gp"],
+						["{@item Belt of Superior Strength|Ishiir}", "21", "Elder Giant Blood", "15.000 gp"],
+						["{@item Scroll of Calamity|Ishiir}", "21", "Fiendish Heart", "15.000 gp"],
+						["{@item Arcane Grimoire +3|Ishiir}", "21", "Living Crystal Core", "15.200 gp"],
+						["{@item Rhythm-Maker's Drum +3|Ishiir}", "21", "Sylvan Noble Blood", "15.500 gp"],
+						["{@item Wand of the War Mage +3|Ishiir}", "21", "Living Crystal Core", "15.500 gp"],
+						["{@item Moon Sickle +3|Ishiir}", "21", "Vineheart", "15.650 gp"],
+						["{@item Wraps of Unarmed Prowess +3|Ishiir}", "21", "Beast Heart", "15.750 gp"],
+						["{@item Amulet of the Devout +3|Ishiir}", "21", "Divine Blessing", "16.000 gp"],
+						["{@item Bloodwell Vial +3|Ishiir}", "21", "Elder Draconic Heart", "16.000 gp"],
+						["{@item Dragonhide Belt +3|Ishiir}", "21", "Elder Draconic Scale", "16.000 gp"],
+						["{@item Eldritch Crown|Ishiir}", "21", "Eldritch Brain", "16.200 gp"],
+						["{@item Staff of Thunder and Lightning|Ishiir}", "21", "Living Wind", "16.450 gp"],
+						["{@item Cloak of Invisibility|Ishiir}", "21", "Accursed Heart//Sylvan Noble Blood", "16.500 gp"],
+						["{@item Staff of Striking|Ishiir}", "21", "Living Crystal Core", "17.000 gp"],
+						["{@item Ring of Fire Elemental Command|Ishiir}", "21", "Living Fire", "17.450 gp"],
+						["{@item All-Purpose Tool +3|Ishiir}", "21", "Living Crystal Core", "17.900 gp"],
+						["{@item Holy Symbol of the Long Road|Ishiir}", "21", "Blessing of the Pale Knight", "18.000 gp"],
+						["{@item Rod of the Pact Keeper +3|Ishiir}", "21", "Eldritch Brain//Fiendish/Accursed Heart", "18.000 gp"],
+						["{@item Blast Scepter|Ishiir}", "21", "Living Crystal Core", "18.750 gp"],
+						["{@item Eyes of the Truthseeker|Ishiir}", "21", "Blessing of Naushindhor", "19.000 gp"],
+						["{@item Visage of Cunning|Ishiir}", "21", "Blessing of Azzagrazzt/Gren", "19.000 gp"],
+						["{@item Ring of Earth Elemental Command|Ishiir}", "22", "Living Earth", "20.000 gp"],
+						["{@item Ring of Air Elemental Command|Ishiir}", "22", "Living Air", "20.250 gp"],
+						["{@item Wand of Paralysis|Ishiir}", "22", "Accursed Blood//Ooze Blood", "21.000 gp"],
+						["{@item Verminshroud|Ishiir}", "22", "Blessing of G'Zarogg", "21.500 gp"],
+						["{@item Amethyst Lodestone|Ishiir}", "22", "Living Crystal", "21.500 gp"],
+						["{@item Staff of the Woods|Ishiir}", "22", "Vineheart", "21.950 gp"],
+						["{@item Chaos Shard|Ishiir}", "22", "Fiendish Heart", "22.000 gp"],
+						["{@item Shard of Greater Malison|Ishiir}", "22", "Accursed Heart", "22.000 gp"],
+						["{@item Ring of Water Elemental Command|Ishiir}", "22", "Living Water", "22.200 gp"],
+						["{@item Cube of Force|Ishiir}", "22", "Living Crystal Core", "22.350 gp"],
+						["{@item Sovereign Glue|Ishiir}", "22", "Ooze Blood", "22.500 gp"],
+						["{@item Rod of Hellish Flames|Ishiir}", "22", "Fiendish Heart", "23.250 gp"],
+						["{@item Robe of Scintillating Colors|Ishiir}", "22", "Sylvan Noble Blood", "23.300 gp"],
+						["{@item Grimoire Infinitus|Ishiir}", "22", "Blessing of Naushindhor", "24.000 gp"],
+						["{@item Gift of the Golden-Winged|Ishiir}", "22", "Elder Draconic Heart", "24.200 gp"],
+						["{@item Instrument of Bards: Anstruth Harp|Ishiir}", "22", "Living Heartwood", "24.250 gp"],
+						["{@item Belt of Supreme Strength|Ishiir}", "23", "Elder Giant Heart", "25.000 gp"],
+						["{@item Robe of Stars|Ishiir}", "23", "Eldritch Brain", "25.000 gp"],
+						["{@item Rod of Idyll|Ishiir}", "23", "Blessing of Lanathiil/Perinae/Rahya", "25.000 gp"],
+						["{@item Rod of Lordly Might|Ishiir}", "23", "Accursed/Fiendish Heart", "25.500 gp"],
+						["{@item Instrument of Bards: Ollamh Harp|Ishiir}", "23", "Living Heartwood", "25.750 gp"],
+						["{@item Helm of Teleportation|Ishiir}", "23", "Eldritch Brain", "27.000 gp"],
+						["{@item Horn of Valhalla: Silver|Ishiir}", "23", "Elder Giant Heart", "27.500 gp"],
+						["{@item Dragon Talisman|Ishiir}", "23", "Elder Draconic Heart", "29.250 gp"],
+						["{@item Helm of Brilliance|Ishiir}", "24", "Living Crystal", "30.000 gp"],
+						["{@item Nightfall Pearl|Ishiir}", "24", "Blessing of Araushneth", "30.000 gp"],
+						["{@item Ring of Three Wishes|Ishiir}", "24", "Blessing of Gren", "30.000 gp"],
+						["{@item Robe of the Archmagi|Ishiir}", "24", "Draconic Karfunkel", "30.000 gp"],
+						["{@item Talisman of Alignment|Ishiir}", "24", "Divine Blessing", "30.000 gp"],
+						["{@item Divine Shard|Ishiir}", "24", "Blessing of Perinae", "30.000 gp"],
+						["{@item Rod of Resurrection|Ishiir}", "24", "Blessing of Perinae", "34.500 gp"],
+						["{@item Stormgirdle|Ishiir}", "25", "Blessing of Krumr/Gargan", "35.750 gp"],
+						["{@item Horn of Valhalla: Brass|Ishiir}", "25", "Elder Giant Heart", "36.250 gp"],
+						["{@item Naushindhor's Stone: Greater Absorption|Ishiir}", "25", "Living Crystal", "36.250 gp"],
+						["{@item Mark of the Slayer|Ishiir}", "25", "Blessing of Golgathor", "37.100 gp"],
+						["{@item Belt of Legendary Strength|Ishiir}", "25", "Blessing of Krumr", "37.500 gp"],
+						["{@item Deck of Twisted Fate|Ishiir}", "27", "Blessing of Azzagrazzt", "45.700 gp"],
+						["{@item Horn of Valhalla, Bronze|Ishiir}", "28", "Elder Giant Heart", "50.000 gp"],
+						["{@item Bracers of Channeling|Ishiir}", "28", "Draconic Karfunkel", "52.150 gp"],
+						["{@item Crown of Domination|Ishiir}", "28", "Blessing of Aathoth/Vaasaleth", "52.500 gp"],
+						["{@item Dragon Vessel|Ishiir}", "28", "Draconic Karfunkel", "54.200 gp"],
+						["{@item Dragon Mask|Ishiir}", "28", "Blessing of Naushindhor", "59.000 gp"],
+						["{@item Staff of Power|Ishiir}", "28", "Draconic Karfunkel", "59.550 gp"],
+						["{@item Horn of Valhalla: Iron|Ishiir}", "29", "Blessing of Krumr", "62.500 gp"],
+						["{@item Rod of Absorption|Ishiir}", "29", "Living Crystal Core", "66.500 gp"],
+						["{@item Spindle of Fate|Ishiir}", "30", "Blessing of the Pale Knight", "80.800 gp"],
+						["{@item Staff of the Veil Warden|Ishiir}", "30", "Divine Blessing", "113.250 gp"],
+						["{@item Staff of the Magi|Ishiir}", "30", "Draconic Karfunkel", "175.000 gp"],
+						["{@item Demonomicon|Ishiir}", "30", "Blessing of Xarsateth/Tasfashir", "228.000 gp"]
+					]
+				}
+			]
+		},
+		{
+			"name": "Fletching",
+			"page": 1,
+			"source": "Ishiir",
+			"skills": ["Dexterity"],
+			"tool": "Fletcher's Tools",
+			"entries": [
+				"When crafting using the {@item Fletcher's Tools|Ishiir}, the DC increases based on the material used. Said material also determines which further properties the crafted item can be modified with.",
+				"This DC increment applies regardless of whether additional properties are added upon first crafting the item or after the fact.",
+				"Crafting time is an amount of day equal to the DC of the item - 9.",
+				"With the exception of items made from basic wood, masterwork ammunition receive a bonus of +1 damage, masterwork ranged weapons receive a bonus of +1 to hit. The total enhancement bonus of an item can't exceed +5.",
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Craftable Items",
+					"colLabels": [
+						"Item",
+						"DC",
+						"Required Pieces of Wood"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-1 text-center",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"Simple Ranged Weapon",
+							"10",
+							"1"
+						],
+						[
+							"Simple Two-Handed Ranged Weapon",
+							"11",
+							"2"
+						],
+						[
+							"Simple Thrown Weapon",
+							"10",
+							"1"
+						],
+						[
+							"Martial Ranged Weapon",
+							"11",
+							"2"
+						],
+						[
+							"Martial Two-Handed Ranged Weapon",
+							"12",
+							"3"
+						],
+						[
+							"Martial Thrown Weapon",
+							"11",
+							"2"
+						],
+						[
+							"Arrow (x50)",
+							"10",
+							"1"
+						],
+						[
+							"Bolt (x50)",
+							"10",
+							"1"
+						]
+					]
+				},
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Weapon Materials",
+					"colLabels": [
+						"Material",
+						"DC",
+						"Properties",
+						"Requirement",
+						"Cost/{@item Crafting Wood|Ishiir|Wood}"
+					],
+					"colStyles": [
+						"col-1",
+						"col-1 text-center",
+						"col-7 text-center",
+						"col-2",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"Wood",
+							"-",
+							"-",
+							"{@item Well|Ishiir}",
+							"5 gp"
+						],
+						[
+							"Ironbark",
+							"+3",
+							"-",
+							"{@item Well|Ishiir}",
+							"50 gp"
+						],
+						[
+							"Livewood",
+							"+5",
+							"Initiative +2, range +30",
+							"{@item Enchanted Well|Ishiir}",
+							"250 gp"
+						],
+						[
+							"Mystoak",
+							"+7",
+							"Attack/Damage +1, One addition weaponal die on crit",
+							"{@item Blessed Well|Ishiir}",
+							"1.000 gp"
+						]
+					]
+				},
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Properties",
+					"colLabels": [
+						"Property",
+						"DC",
+						"Required Material",
+						"Ingredient",
+						"Item Type",
+						"Cost"
+					],
+					"colStyles": [
+						"col-3",
+						"col-0-5 text-center",
+						"col-3 text-center",
+						"col-2-5",
+						"col-1-3 text-center",
+						"col-2-5 text-center"
+					],
+					"rows": [
+						[
+							"{@item Walloping|Ishiir}",
+							"+1",
+							"-",
+							"-",
+							"Ammunition/Thrown",
+							"20 gp"
+						],
+						[
+							"{@item Alchemical Silver Coating|Ishiir|Alchemical Silver Coating (Temporary)}",
+							"-",
+							"-",
+							"Alchemical Silver Ingot",
+							"Ammunition/Thrown",
+							"100 gp"
+						],
+						[
+							"{@item Cold Iron Coating|Ishiir|Cold Iron Coating (Temporary)}",
+							"-",
+							"-",
+							"Cold Iron Ingot",
+							"Ammunition/Thrown",
+							"100 gp"
+						],
+						[
+							"{@item Vicious|Ishiir|Vicious}",
+							"+2",
+							"-",
+							"Beast Claw/Fang",
+							"Ammunition/Thrown",
+							"350 gp"
+						],
+						[
+							"{@item Keen|Ishiir|Keen}",
+							"+2",
+							"-",
+							"Beast Claw/Fang",
+							"Ammunition/Thrown",
+							"350 gp"
+						],
+						[
+							"{@item Returning|Ishiir|Returning}",
+							"+4",
+							"Ironbark or higher",
+							"Sylvan Dust",
+							"Thrown",
+							"1.250 gp"
+						],
+						[
+							"{@item Alchemical Silver Coating|Ishiir}",
+							"+5",
+							"-",
+							"Alchemical Silver Ingot",
+							"Ammunition/Thrown",
+							"2.150 gp"
+						],
+						[
+							"{@item Cold Iron Coating|Ishiir}",
+							"+5",
+							"-",
+							"Cold Iron Ingot",
+							"Ammunition/Thrown",
+							"2.150 gp"
+						],
+						[
+							"{@item Dragonsight|Ishiir|Dragonsight (M)}",
+							"+6",
+							"Livewood or higher",
+							"Draconic Eye",
+							"Weapon",
+							"2.500 gp"
+						],
+						[
+							"{@item Refined|Ishiir|Refined}",
+							"+6",
+							"Livewood or higher",
+							"-",
+							"Weapon",
+							"2.500 gp"
+						],
+						[
+							"{@item Warning|Ishiir|Warning (M)}",
+							"+6",
+							"Livewood or higher",
+							"Beast Heart",
+							"Weapon",
+							"3.250 gp"
+						],
+						[
+							"{@item Winged|Ishiir|Winged (M)}",
+							"+6",
+							"Livewood or higher",
+							"Living Wind",
+							"Ammunition",
+							"3.750 gp"
+						],
+						[
+							"{@item Conflagration|Ishiir|Conflagration (M)}",
+							"+6",
+							"Livewood or higher",
+							"Living Fire",
+							"Weapon",
+							"4.400 gp"
+						],
+						[
+							"{@item Lightbringer|Ishiir|Lightbringer (M)}",
+							"+7",
+							"Livewood or higher",
+							"Living Crystal",
+							"Weapon",
+							"4.750 gp"
+						],
+						[
+							"{@item Melodic|Ishiir|Melodic (M)}",
+							"+7",
+							"Livewood or higher",
+							"Sylvan Kiss",
+							"Weapon",
+							"5.000 gp"
+						],
+						[
+							"{@item Seeking|Ishiir|Seeking (M)}",
+							"+7",
+							"Livewood or higher",
+							"Living Wind",
+							"Ammunition/Thrown",
+							"5.700 gp"
+						],
+						[
+							"{@item Ghoulsbane|Ishiir|Ghoulsbane (M)}",
+							"+7",
+							"Livewood or higher",
+							"Holy Water",
+							"Ammunition/Thrown",
+							"6.150 gp"
+						],
+						[
+							"{@item Giantsbane|Ishiir|Giantsbane (M)}",
+							"+7",
+							"Livewood or higher",
+							"Giant Heart",
+							"Ammunition/Thrown",
+							"6.150 gp"
+						],
+						[
+							"{@item Starshot|Ishiir|Starshot (M)}",
+							"+8",
+							"Livewood or higher",
+							"Living Crystal",
+							"Weapon",
+							"7.500 gp"
+						],
+						[
+							"{@item Envenomed|Ishiir|Envenomed (M)}",
+							"+8",
+							"Livewood or higher",
+							"Ooze Nucleus//Fiendish Blood",
+							"Ammunition/Thrown",
+							"7.650 gp"
+						],
+						[
+							"{@item Elemental Tongue|Ishiir|Elemental Tongue (M)}",
+							"+8",
+							"Livewood or higher",
+							"Living Water/Wind/Earth/Fire",
+							"Weapon",
+							"8.750 gp"
+						],
+						[
+							"{@item Glimmering|Ishiir|Glimmering (M)}",
+							"+9",
+							"Livewood or higher",
+							"Living Crystal",
+							"Weapon",
+							"11.150 gp"
+						],
+						[
+							"{@item Returning Storm|Ishiir|Returning Storm (M)}",
+							"+9",
+							"Livewood or higher",
+							"Living Wind",
+							"Thrown",
+							"11.150 gp"
+						],
+						[
+							"{@item Seeking Flight|Ishiir|Seeking Flight}",
+							"+9",
+							"Livewood or higher",
+							"Sylvan Noble Blood",
+							"Ammunition/Thrown",
+							"11.250 gp"
+						],
+						[
+							"{@item Dragonsbane|Ishiir|Dragonsbane (M)}",
+							"+11",
+							"Mystoak or higher",
+							"Elder Draconic Heart",
+							"Ammunition/Thrown",
+							"15.000 gp"
+						],
+						[
+							"{@item Avenging|Ishiir|Avenging (M)}",
+							"+11",
+							"Mystoak or higher",
+							"Accursed/Fiendish Heart",
+							"Weapon",
+							"19.750 gp"
+						],
+						[
+							"{@item Stormbringer|Ishiir|Stormbringer (M)}",
+							"+12",
+							"Mystoak or higher",
+							"Blessing of Krumr/Gargan",
+							"Ammunition/Weapon",
+							"20.500 gp"
+						],
+						[
+							"{@item Speed|Ishiir|Speed (M)}",
+							"+12",
+							"Mystoak or higher",
+							"Sylvan Noble Blood",
+							"Weapon",
+							"23.150 gp"
+						],
+						[
+							"{@item Winter's Fang|Ishiir|Winter's Fang (M)}",
+							"+14",
+							"Mystoak or higher",
+							"Blessing of Graffir",
+							"Ammunition// S/P Thrown",
+							"30.000 gp"
+						],
+						[
+							"{@item Mirror Blade|Ishiir|Mirror Blade (M)}",
+							"+14",
+							"Mystoak or higher",
+							"Blessing of Azzagrazzt",
+							"P Thrown Weapon",
+							"32.250 gp"
+						],
+						[
+							"{@item Season's Herald|Ishiir|Season's Herald (M)}",
+							"+14",
+							"Mystoak or higher",
+							"Blessing of Lanathiil",
+							"Bow/Crossbow",
+							"34.500 gp"
+						],
+						[
+							"{@item Bloodseeker|Ishiir|Bloodseeker (M)}",
+							"+15",
+							"Mystoak or higher",
+							"Blessing of Athar'Hagaz/Golgathor",
+							"Ammunition",
+							"36.000 gp"
+						],
+						[
+							"{@item Slaying|Ishiir|Slaying (M)}",
+							"+16",
+							"Mystoak or higher",
+							"Blessing of Graffir",
+							"Ammunition",
+							"41.250 gp"
+						],
+						[
+							"{@item Slaughter's Harbinger|Ishiir|Slaughter's Harbinger (M)}",
+							"+16",
+							"Mystoak or higher",
+							"Blessing of Golgathor",
+							"Thrown Weapon",
+							"41.750 gp"
+						],
+						[
+							"{@item Shining Ray|Ishiir|Shining Ray (M)}",
+							"+18",
+							"Mystoak or higher",
+							"Blessing of Rahya",
+							"Thrown Weapon",
+							"52.100 gp"
+						],
+						[
+							"{@item Thalassian Call|Ishiir|Thalassian Call (M)}",
+							"+18",
+							"Mystoak or higher",
+							"Blessing of Charyptoroth",
+							"P Thrown Weapon",
+							"53.750 gp"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Herbalism",
+			"page": 1,
+			"source": "Ishiir",
+			"skills": ["Wisdom"],
+			"tool": "Herbalist's Kit",
+			"entries": [
+				"Herbalism requires the {@item Herbalist's Kit|Ishiir} to make crafting checks.",
+				"Healing potions with the masterwork property have their die rolls maximized, other masterwork potions have their duration doubled.",
+				"If a masterwork potion has neither a duration nor dice, it instead has 2 uses.",
+				"Crafting with herbalism takes an amount of hours equal to the DC of the item - 9.",
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Craftable Items",
+					"colLabels": [
+						"Item",
+						"DC",
+						"Ingredient",
+						"Value"
+					],
+					"colStyles": [
+						"col-3",
+						"col-1 text-center",
+						"col-2 text-center",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"{@item Healer's Kit|Ishiir}",
+							"10",
+							"-",
+							"5 gp"
+						],
+						[
+							"{@item Antitoxin|Ishiir}",
+							"10",
+							"-",
+							"50 gp"
+						],
+						[
+							"{@item Potion of Healing|Ishiir}",
+							"10",
+							"-",
+							"50 gp"
+						],
+						[
+							"{@item Potion of Healing (Greater)|Ishiir}",
+							"11",
+							"-",
+							"100 gp"
+						],
+						[
+							"{@item Potion of Healing (Superior)|Ishiir}",
+							"13",
+							"-",
+							"500 gp"
+						],
+						[
+							"{@item Elixir of Health|Ishiir}",
+							"14",
+							"{@item Sylvan Berry|Ishiir}",
+							"1.000 gp"
+						],
+						[
+							"{@item Fireward Balm|Ishiir}",
+							"14",
+							"{@item Nostrian Palm|Ishiir|Nostrian Palm Oil}",
+							"1.000 gp"
+						],
+						[
+							"{@item Potion of Revitalization|Ishiir}",
+							"14",
+							"{@item Argent Lily|Ishiir}",
+							"1.000 gp"
+						],
+						[
+							"{@item Gold Oil|Ishiir}",
+							"15",
+							"{@item Sylvan Pepper|Ishiir}",
+							"1.500 gp"
+						],
+						[
+							"{@item Sylvan Tea|Ishiir}",
+							"15",
+							"{@item Sylvan Lotus|Ishiir}",
+							"1.500 gp"
+						],
+						[
+							"{@item Black Incense|Ishiir}",
+							"15",
+							"{@item Black Willow|Ishiir}",
+							"1.700 gp"
+						],
+						[
+							"{@item Keoghtom's Ointment|Ishiir}",
+							"15",
+							"{@item Sylvan Berry|Ishiir}",
+							"2.000 gp"
+						],
+						[
+							"{@item Ointment of Lucidity|Ishiir}",
+							"15",
+							"{@item Death Cap|Ishiir}",
+							"2.250 gp"
+						],
+						[
+							"{@item Potion of Healing (Supreme)|Ishiir}",
+							"15",
+							"-",
+							"2.500 gp"
+						],
+						[
+							"{@item Potion of Vitality|Ishiir}",
+							"16",
+							"{@item Sylvan Plum|Ishiir}",
+							"5.000 gp"
+						],
+						[
+							"{@item Potion of Healing (Legendary)|Ishiir}",
+							"17",
+							"{@item Sylvan Apple|Ishiir}",
+							"7.000 gp"
+						],
+						[
+							"{@item Potion of Regeneration|Ishiir}",
+							"17",
+							"{@item Blood Rose|Ishiir}",
+							"7.500 gp"
+						],
+						[
+							"{@item Potion of Longevity|Ishiir}",
+							"18",
+							"{@item Seed of Life|Ishiir}",
+							"10.000 gp"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Leatherworking",
+			"page": 1,
+			"source": "Ishiir",
+			"skills": ["Dexterity"],
+			"tool": "Leatherworker's Tools",
+			"entries": [
+				"When crafting using the {@item Leatherworker's Tools|Ishiir}, the DC increases based on the material used. Said material also determines which further properties the crafted item can be modified with.",
+				"This DC increment applies regardless of whether additional properties are added upon first crafting the item or after the fact.",
+				"Crafting time is an amount of days equal to the DC of the item / 2.",
+				"With the exception of items made from basic hide or scale, masterwork items receive a bonus of +1 to their AC.",
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Craftable Items",
+					"colLabels": [
+						"Item",
+						"DC",
+						"Required Hides"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-1 text-center",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"{@item Padded Armor|Ishiir|Padded}",
+							"10",
+							"4"
+						],
+						[
+							"{@item Leather Armor|Ishiir|Leather}",
+							"10",
+							"4"
+						],
+						[
+							"{@item Hide Armor|Ishiir|Hide}",
+							"11",
+							"5"
+						],
+						[
+							"{@item Studded Leather Armor|Ishiir|Studded Leather}",
+							"11",
+							"5"
+						],
+						[
+							"{@item Light Scale Armor|Ishiir|Light Scale}",
+							"10",
+							"4"
+						],
+						[
+							"{@item Scale Mail Armor|Ishiir|Scale Mail}",
+							"11",
+							"5"
+						],
+						[
+							"{@item Breastplate Armor|Ishiir|Breastplate}",
+							"11",
+							"5"
+						],
+						[
+							"{@item Halfplate Armor|Ishiir|Halfplate}",
+							"12",
+							"6"
+						],
+						[
+							"{@item Shield|Ishiir}",
+							"10",
+							"2"
+						]
+					]
+				},
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Armor Materials",
+					"colLabels": [
+						"Material",
+						"DC",
+						"Properties",
+						"Requirement",
+						"Cost/{@item Crafting Hide|Ishiir|Hide}"
+					],
+					"colStyles": [
+						"col-1",
+						"col-1 text-center",
+						"col-7 text-center",
+						"col-2",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"{@item Hide|Ishiir}",
+							"-",
+							"-",
+							"{@item Well|Ishiir}",
+							"5 gp"
+						],
+						[
+							"{@item Beast Hide|Ishiir}",
+							"+3",
+							"-",
+							"{@item Well|Ishiir}",
+							"50 gp"
+						],
+						[
+							"{@item Monstrous Hide|Ishiir}",
+							"+5",
+							"Initiative +2",
+							"{@item Enchanted Well|Ishiir}",
+							"250 gp"
+						],
+						[
+							"{@item Ancient Hide|Ishiir}",
+							"+7",
+							"AC +1",
+							"{@item Blessed Well|Ishiir}",
+							"1.000 gp"
+						],
+						[
+							"{@item Scale|Ishiir}",
+							"-",
+							"-",
+							"{@item Well|Ishiir}",
+							"5 gp"
+						],
+						[
+							"{@item Beast Scale|Ishiir}",
+							"+3",
+							"-",
+							"{@item Well|Ishiir}",
+							"50 gp"
+						],
+						[
+							"{@item Monstrous Scale|Ishiir}/{@item Draconic Scale|Ishiir}",
+							"+5",
+							"Initiative +2, Removes disadvantage on DEX (Stealth) checks and STR requirement",
+							"{@item Enchanted Well|Ishiir}",
+							"250 gp"
+						],
+						[
+							"{@item Ancient Scale|Ishiir}/{@item Elder Draconic Scale|Ishiir}",
+							"+7",
+							"Universal crit protection against everything but adamantite, AC +1",
+							"{@item Blessed Well|Ishiir}",
+							"1.000 gp"
+						]
+					]
+				},
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Properties",
+					"colLabels": [
+						"Property",
+						"DC",
+						"Required Material",
+						"Ingredient",
+						"Item Type",
+						"Cost"
+					],
+					"colStyles": [
+						"col-3",
+						"col-1 text-center",
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-1-5 text-center",
+						"col-1-5 text-center"
+					],
+					"rows": [
+						[
+							"{@item Projecting|Ishiir}",
+							"+3",
+							"Beast Hide/Scale or higher",
+							"Spectral Dust",
+							"Armor",
+							"500 gp"
+						],
+						[
+							"{@item Fungal|Ishiir}",
+							"+3",
+							"Beast Hide/Scale or higher",
+							"Resin Blood",
+							"Armor",
+							"600 gp"
+						],
+						[
+							"{@item Mariner|Ishiir}",
+							"+4",
+							"Beast Hide/Scale or higher",
+							"Ooze Slime",
+							"Armor",
+							"750 gp"
+						],
+						[
+							"{@item Weightlessness|Ishiir}",
+							"+4",
+							"Beast Hide/Scale or higher",
+							"Mechanical Core//Spectral Dust",
+							"Armor",
+							"1.200 gp"
+						],
+						[
+							"{@item Dreadful Communion|Ishiir}",
+							"+4",
+							"Beast Hide/Scale or higher",
+							"Spectral Dust",
+							"Armor",
+							"1.250 gp"
+						],
+						[
+							"{@item Boomerang|Ishiir}",
+							"+5",
+							"Beast Hide/Scale or higher",
+							"Mechanical Core//Sylvan Dust",
+							"Shield",
+							"1.500 gp"
+						],
+						[
+							"{@item Balance|Ishiir}",
+							"+5",
+							"Beast Hide/Scale or higher",
+							"Mechanical Core",
+							"Armor",
+							"2.000 gp"
+						],
+						[
+							"{@item Reliability|Ishiir}",
+							"+5",
+							"Beast Hide/Scale or higher",
+							"Mechanical Core",
+							"Armor",
+							"2.000 gp"
+						],
+						[
+							"{@item Resistance|Ishiir}",
+							"+5",
+							"Beast Hide/Scale or higher",
+							"Draconic Scale//Living Element",
+							"Armor",
+							"2.000 gp"
+						],
+						[
+							"{@item Sentinel|Ishiir}",
+							"+5",
+							"Beast Hide/Scale or higher",
+							"Draconic Eye",
+							"Shield",
+							"2.250 gp"
+						],
+						[
+							"{@item Reinforced|Ishiir}",
+							"+6",
+							"Monstrous Hide/Scale or higher//Draconic Scale or higher",
+							"-",
+							"Armor/Shield",
+							"2.500 gp"
+						],
+						[
+							"{@item Dragonsight|Ishiir}",
+							"+6",
+							"Monstrous Hide/Scale or higher//Draconic Scale or higher",
+							"Draconic Eye",
+							"Armor",
+							"2.500 gp"
+						],
+						[
+							"{@item Gloomwrought|Ishiir}",
+							"+6",
+							"Monstrous Hide/Scale or higher//Draconic Scale or higher",
+							"Accursed Blood",
+							"Armor",
+							"2.650 gp"
+						],
+						[
+							"{@item Dragonguard|Ishiir}",
+							"+6",
+							"Monstrous Hide/Scale or higher//Draconic Scale or higher",
+							"Draconic Heart",
+							"Armor",
+							"4.000 gp"
+						],
+						[
+							"{@item Feywrought|Ishiir}",
+							"+6",
+							"Monstrous Hide/Scale or higher//Draconic Scale or higher",
+							"Sylvan Kiss",
+							"Armor",
+							"4.100 gp"
+						],
+						[
+							"{@item Battering|Ishiir}",
+							"+6",
+							"Monstrous Hide/Scale or higher//Draconic Scale or higher",
+							"Giant Heart",
+							"Shield",
+							"4.350 gp"
+						],
+						[
+							"{@item Bloodletter's Coat|Ishiir}",
+							"+6",
+							"Monstrous Hide/Scale or higher//Draconic Scale or higher",
+							"Fiendish Blood",
+							"Armor",
+							"4.350 gp"
+						],
+						[
+							"{@item Etherealness|Ishiir}",
+							"+6",
+							"Monstrous Hide/Scale or higher//Draconic Scale or higher",
+							"Spectral Dust",
+							"Armor",
+							"4.500 gp"
+						],
+						[
+							"{@item Animated|Ishiir}",
+							"+7",
+							"Monstrous Hide/Scale or higher//Draconic Scale or higher",
+							"Sylvan Dust",
+							"Shield",
+							"5.000 gp"
+						],
+						[
+							"{@item Iron Will|Ishiir}",
+							"+7",
+							"Monstrous Hide/Scale or higher//Draconic Scale or higher",
+							"Eldritch Blood",
+							"Armor",
+							"5.000 gp"
+						],
+						[
+							"{@item Veil Warden|Ishiir}",
+							"+7",
+							"Monstrous Hide/Scale or higher//Draconic Scale or higher",
+							"Living Crystal",
+							"Armor",
+							"6.400 gp"
+						],
+						[
+							"{@item Fiendish|Ishiir}",
+							"+7",
+							"Monstrous Hide/Scale or higher//Draconic Scale or higher",
+							"Fiendish Blood",
+							"Armor",
+							"6.500 gp"
+						],
+						[
+							"{@item Mindshield|Ishiir}",
+							"+9",
+							"Monstrous Hide/Scale or higher//Draconic Scale or higher",
+							"Eldritch Brain",
+							"Armor",
+							"10.450 gp"
+						],
+						[
+							"{@item Serpent's Coil|Ishiir}",
+							"+9",
+							"Monstrous Hide/Scale or higher//Draconic Scale or higher",
+							"Monstrous Hide/Scale//Draconic Scale",
+							"Armor",
+							"10.500 gp"
+						],
+						[
+							"{@item Reverberating|Ishiir}",
+							"+9",
+							"Monstrous Hide/Scale or higher//Draconic Scale or higher",
+							"Living Crystal",
+							"Shield",
+							"11.550 gp"
+						],
+						[
+							"{@item Antimagic Armor|Ishiir}",
+							"+11",
+							"Ancient Hide/Scale or higher//Elder Draconic Scale or higher",
+							"Eldritch Brain",
+							"Armor",
+							"15.000 gp"
+						],
+						[
+							"{@item Spellguard|Ishiir}",
+							"+11",
+							"Ancient Hide/Scale or higher//Elder Draconic Scale or higher",
+							"Sylvan Noble Blood//Fiendish Heart",
+							"Shield",
+							"17.500 gp"
+						],
+						[
+							"{@item Emerald Warden|Ishiir}",
+							"+12",
+							"Ancient Hide/Scale or higher//Elder Draconic Scale or higher",
+							"Blessing of Lanathiil",
+							"Armor",
+							"23.250 gp"
+						],
+						[
+							"{@item Monstrous Visage|Ishiir}",
+							"+13",
+							"Ancient Hide/Scale or higher//Elder Draconic Scale or higher",
+							"Elder Draconic Eye",
+							"Shield",
+							"29.500 gp"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Poisonmaking",
+			"page": 1,
+			"source": "Ishiir",
+			"skills": ["Intelligence"],
+			"tool": "Poisoner's Kit",
+			"entries": [
+				"Poisonmaking requires the {@item Poisoner's Kit|Ishiir} to make crafting checks.",
+				"Items with the masterwork property have their save DC increased by 2. If it has no save DC, it instead deals an additional single die of its damage.",
+				"Crafting with poisonmaking takes an amount of hours equal to the DC of the item - 9.",
+				"Additionally, if all 3 crafting checks fail, the crafter is subjected to the effect of the poison he wanted to create.",
+				"Unless otherwise stated, poisons with a lasting effect have a duration of 1 hour when affecting a creature.",
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Poison Types",
+					"colLabels": [
+						"Poison Type",
+						"Poison Trigger",
+						"Loses potency after"
+					],
+					"colStyles": [
+						"col-1",
+						"col-4",
+						"col-2-5"
+					],
+					"rows": [
+						[
+							"Contact",
+							"Poison makes contact with exposed skin. Remains potent until contact.",
+							"First skin contact or when washed off"
+						],
+						[
+							"Ingested",
+							"Ingesting material containing poison.",
+							"24 hours"
+						],
+						[
+							"Inhaled",
+							"Poison is inhaled. 10 ft half sphere cloud.",
+							"1 minute or when dissipated by strong wind"
+						],
+						[
+							"Injury",
+							"Taking damage from slashing or piercing weapon coated in poison. Sufficent for 3 weapon hits or 3 pieces of ammunition.",
+							"1 minute"
+						]
+					]
+				},
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Craftable Items",
+					"colLabels": [
+						"Item",
+						"DC",
+						"Ingredient",
+						"Value"
+					],
+					"colStyles": [
+						"col-3-5",
+						"col-0-5 text-center",
+						"col-4-7 text-center",
+						"col-1-5 text-center"
+					],
+					"rows": [
+						[
+							"{@item Basic Venom|Ishiir}",
+							"10",
+							"-",
+							"100 gp"
+						],
+						[
+							"{@item Web Lurker's Kiss|Ishiir}",
+							"11",
+							"Web Lurker Gland",
+							"175 gp"
+						],
+						[
+							"{@item Fungus Fumes|Ishiir}",
+							"12",
+							"Sentient Fungus Spores",
+							"200 gp"
+						],
+						[
+							"{@item Stone Lung|Ishiir}",
+							"12",
+							"Cockatrice Gland",
+							"375 gp"
+						],
+						[
+							"{@item Broodmother's Kiss|Ishiir}",
+							"13",
+							"Broodmother Gland",
+							"500 gp"
+						],
+						[
+							"{@item Swampblood|Ishiir}",
+							"13",
+							"Maneater Toad Mucus",
+							"750 gp"
+						],
+						[
+							"{@item Corpse Crawler Mucus|Ishiir}",
+							"13",
+							"Corpse Crawler Gland",
+							"750 gp"
+						],
+						[
+							"{@item Manticore Venom|Ishiir}",
+							"13",
+							"Manticore Stinger",
+							"750 gp"
+						],
+						[
+							"{@item Spiketail Wyvern's Sting|Ishiir}",
+							"13",
+							"Spiketail Wyvern Tails",
+							"850 gp"
+						],
+						[
+							"{@item Cloaksman's Farewell|Ishiir}",
+							"14",
+							"-",
+							"1.000 gp"
+						],
+						[
+							"{@item Lullaby|Ishiir}",
+							"14",
+							"Spectral Dust",
+							"1.000 gp"
+						],
+						[
+							"{@item Deep Scorpion's Venom|Ishiir}",
+							"14",
+							"Deep Scorpion Stinger",
+							"1.200 gp"
+						],
+						[
+							"{@item Myststalker Venom|Ishiir}",
+							"14",
+							"Mystflower Nectar",
+							"1.250 gp"
+						],
+						[
+							"{@item Retcher|Ishiir}",
+							"15",
+							"Tatzelwurm Mucus",
+							"2.000 gp"
+						],
+						[
+							"{@item Deep Crawler Mucus|Ishiir}",
+							"16",
+							"Deep Crawler Gland",
+							"5.000 gp"
+						],
+						[
+							"{@item Choker|Ishiir}",
+							"16",
+							"Ooze Blood",
+							"5.000 gp"
+						],
+						[
+							"{@item Greater Stone Lung|Ishiir}",
+							"16",
+							"Redskin/Swamp/Greater Basilisk Gland",
+							"6.000 gp"
+						],
+						[
+							"{@item Swamp Lurker's Kiss|Ishiir}",
+							"17",
+							"Swamp Lurker Gland",
+							"7.000 gp"
+						],
+						[
+							"{@item Blackskin|Ishiir}",
+							"17",
+							"Redskin Basilisk Mucus",
+							"7.000 gp"
+						],
+						[
+							"{@item Basilisk Venom|Ishiir}",
+							"18",
+							"Swamp Basilisk Gland",
+							"10.000 gp"
+						],
+						[
+							"{@item Greater Basilisk Venom|Ishiir}",
+							"19",
+							"Greater Basilisk Gland",
+							"12.500 gp"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Tinkering",
+			"page": 1,
+			"source": "Ishiir",
+			"skills": ["Intelligence"],
+			"tool": "Tinker's Tools",
+			"entries": [
+				"Tinkering requires the {@item Tinker's Tools|Ishiir} to make crafting checks.",
+				"Items with the masterwork property have their duration doubled.",
+				"Crafting with tinkering takes an amount of hours equal to the DC of the item.",
+				"Tinkering is essentially free-form crafting, where the player formulates an idea or concept and the DM determines the cost and DC based on that."
+			]
+		},
+		{
+			"name": "Weaponsmithing",
+			"page": 1,
+			"source": "Ishiir",
+			"skills": ["Strength"],
+			"tool": "Weaponsmith's Tools",
+			"entries": [
+				"When crafting using the {@item Weaponsmith's Tools|Ishiir}, the DC increases based on the material used. Said material also determines which further properties the crafted item can be modified with.",
+				"This DC incrementally applies regardless of whether additional properties are added upon first crafting the item or after the fact.",
+				"Crafting time is an amount of days equal to the DC of the item / 2.",
+				"With the exception of items made from basic steel, masterwork items receive a bonus of +1 to their damage and attack rolls. The parrying dagger instead receives a bonus of +1 to AC. It also uses the properties from the armorsmithing table instead. The total enhancement bonus of an item can't exceed +5.",
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Craftable Items",
+					"colLabels": [
+						"Item",
+						"DC",
+						"Required Ingots"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-1 text-center",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"Simple Melee Weapon",
+							"10",
+							"1"
+						],
+						[
+							"Simple Two-Handed Melee Weapon",
+							"11",
+							"2"
+						],
+						[
+							"Simple Thrown Weapon",
+							"10",
+							"1"
+						],
+						[
+							"Martial Melee Weapon",
+							"11",
+							"2"
+						],
+						[
+							"Martial Two-Handed Melee Weapon",
+							"12",
+							"3"
+						],
+						[
+							"Martial Thrown Weapon",
+							"11",
+							"2"
+						],
+						[
+							"Parrying Dagger",
+							"10",
+							"1"
+						]
+					]
+				},
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Weapon Materials",
+					"colLabels": [
+						"Material",
+						"DC",
+						"Properties",
+						"Requirement",
+						"Cost/{@item Crafting Ingot|Ishiir|Ingot}"
+					],
+					"colStyles": [
+						"col-1",
+						"col-1 text-center",
+						"col-7 text-center",
+						"col-2",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"{@item Steel Ingot|Ishiir|Steel}",
+							"-",
+							"-",
+							"{@item Forge|Ishiir}",
+							"5 gp"
+						],
+						[
+							"{@item High Steel Ingot|Ishiir|High Steel}",
+							"+3",
+							"-",
+							"{@item Forge|Ishiir}",
+							"50 gp"
+						],
+						[
+							"{@item Alchemical Silver Ingot|Ishiir|Alchemical Silver}",
+							"-",
+							"Not usable as base material",
+							"{@item Forge|Ishiir}",
+							"50 gp"
+						],
+						[
+							"{@item Cold Iron Ingot|Ishiir|Cold Iron}",
+							"-",
+							"Not usable as base material",
+							"{@item Forge|Ishiir}",
+							"50 gp"
+						],
+						[
+							"{@item Mithral Ingot|Ishiir|Mithral}",
+							"+5",
+							"Initiative +2, removes heavy property but keeps its damage bonus, add finesse property on non-heavy weapons",
+							"{@item Enchanted Forge|Ishiir}",
+							"250 gp"
+						],
+						[
+							"{@item Adamantite Ingot|Ishiir|Adamantite}",
+							"+7",
+							"Indestructible, crit range increased by 1, attack/damage +1",
+							"{@item Blessed Forge|Ishiir}",
+							"1.000 gp"
+						]
+					]
+				},
+				"<hr />",
+				{
+					"type": "table",
+					"caption": "Properties",
+					"colLabels": [
+						"Property",
+						"DC",
+						"Required Material",
+						"Ingredient",
+						"Item Type",
+						"Cost"
+					],
+					"colStyles": [
+						"col-3",
+						"col-0-5 text-center",
+						"col-3 text-center",
+						"col-2-5",
+						"col-1-3 text-center",
+						"col-2-5 text-center"
+					],
+					"rows": [
+						[
+							"{@item Alchemical Silver Coating|Ishiir|Alchemical Silver Coating (Temporary)}",
+							"-",
+							"-",
+							"Alchemical Silver Ingot",
+							"Weapon",
+							"100 gp"
+						],
+						[
+							"{@item Cold Iron Coating|Ishiir|Cold Iron Coating (Temporary)}",
+							"-",
+							"-",
+							"Cold Iron Ingot",
+							"Weapon",
+							"100 gp"
+						],
+						[
+							"{@item Vicious|Ishiir|Vicious}",
+							"+2",
+							"-",
+							"Beast Claw/Fang//Fiendish Fang",
+							"Weapon",
+							"350 gp"
+						],
+						[
+							"{@item Keen|Ishiir|Keen}",
+							"+2",
+							"-",
+							"Beast Claw/Fang//Fiendish Fang",
+							"Weapon",
+							"350 gp"
+						],
+						[
+							"{@item Serrated|Ishiir}",
+							"+3",
+							"-",
+							"Beast Claw/Fang//Fiendish Fang",
+							"Slashing Melee Weapon",
+							"700 gp"
+						],
+						[
+							"{@item Dismembering|Ishiir|Dismembering}",
+							"+4",
+							"High Steel or higher",
+							"Living Crystal",
+							"Slashing Weapon",
+							"1.000 gp"
+						],
+						[
+							"{@item Returning|Ishiir|Returning}",
+							"+4",
+							"High Steel or higher",
+							"Sylvan Dust",
+							"Thrown",
+							"1.250 gp"
+						],
+						[
+							"{@item Alchemical Silver Coating|Ishiir}",
+							"+5",
+							"-",
+							"Alchemical Silver Ingot",
+							"Weapon",
+							"2.150 gp"
+						],
+						[
+							"{@item Cold Iron Coating|Ishiir}",
+							"+5",
+							"-",
+							"Cold Iron Ingot",
+							"Weapon",
+							"2.150 gp"
+						],
+						[
+							"{@item Dragonsight|Ishiir|Dragonsight (M)}",
+							"+6",
+							"Mithral or higher",
+							"Draconic Eye",
+							"Weapon",
+							"2.500 gp"
+						],
+						[
+							"{@item Refined|Ishiir|Refined}",
+							"+6",
+							"Mithral or higher",
+							"-",
+							"Weapon",
+							"2.500 gp"
+						],
+						[
+							"{@item Bloodrage|Ishiir|Bloodrage (M)}",
+							"+6",
+							"Mithral or higher",
+							"Beast Heart//Fiendish Blood",
+							"Weapon",
+							"3.000 gp"
+						],
+						[
+							"{@item Warning|Ishiir|Warning (M)}",
+							"+6",
+							"Mithral or higher",
+							"Beast Heart",
+							"Weapon",
+							"3.250 gp"
+						],
+						[
+							"{@item Terrifying|Ishiir|Terrifying (M)}",
+							"+6",
+							"Mithral or higher",
+							"Spectral Dust//Fiendish Blood",
+							"Melee Weapon",
+							"3.500 gp"
+						],
+						[
+							"{@item Shattering|Ishiir|Shattering (M)}",
+							"+6",
+							"Mithral or higher",
+							"Living Earth",
+							"Bludgeoning Weapon",
+							"4.250 gp"
+						],
+						[
+							"{@item Conflagration|Ishiir|Conflagration (M)}",
+							"+6",
+							"Mithral or higher",
+							"Living Fire",
+							"Weapon",
+							"4.400 gp"
+						],
+						[
+							"{@item Blackblade|Ishiir|Blackblade (M)}",
+							"+7",
+							"Mithral or higher",
+							"Fiendish Blood",
+							"Melee Weapon",
+							"4.450 gp"
+						],
+						[
+							"{@item Fate Cutter|Ishiir|Fate Cutter (M)}",
+							"+6",
+							"Mithral or higher",
+							"Eldritch Heart//Fiendish Blood",
+							"Slashing Melee Weapon",
+							"4.500 gp"
+						],
+						[
+							"{@item Lightbringer|Ishiir|Lightbringer (M)}",
+							"+7",
+							"Mithral or higher",
+							"Living Crystal",
+							"Weapon",
+							"4.750 gp"
+						],
+						[
+							"{@item Melodic|Ishiir|Melodic (M)}",
+							"+7",
+							"Mithral or higher",
+							"Sylvan Kiss",
+							"Weapon",
+							"5.000 gp"
+						],
+						[
+							"{@item Toxic|Ishiir|Toxic (M)}",
+							"+7",
+							"Mithral or higher",
+							"Ooze Blood",
+							"Weapon",
+							"5.250 gp"
+						],
+						[
+							"{@item Baleful Talon|Ishiir|Baleful Talon (M)}",
+							"+7",
+							"Mithral or higher",
+							"Accursed Heart",
+							"Weapon",
+							"5.700 gp"
+						],
+						[
+							"{@item Seeking|Ishiir|Seeking (M)}",
+							"+7",
+							"Mithral or higher",
+							"Living Wind",
+							"Thrown Weapon",
+							"5.700 gp"
+						],
+						[
+							"{@item Disruption|Ishiir|Disruption (M)}",
+							"+7",
+							"Mithral or higher",
+							"Holy Water",
+							"Melee Weapon",
+							"5.900 gp"
+						],
+						[
+							"{@item Ghoulsbane|Ishiir|Ghoulsbane (M)}",
+							"+7",
+							"Mithral or higher",
+							"Holy Water",
+							"Melee Weapon",
+							"6.150 gp"
+						],
+						[
+							"{@item Giantsbane|Ishiir|Giantsbane (M)}",
+							"+7",
+							"Mithral or higher",
+							"Giant Heart",
+							"Weapon",
+							"6.150 gp"
+						],
+						[
+							"{@item Frost Brand|Ishiir|Frost Brand (M)}",
+							"+7",
+							"Mithral or higher",
+							"Living Water",
+							"Melee Weapon",
+							"7.400 gp"
+						],
+						[
+							"{@item Runic Focus|Ishiir|Runic Focus (M)}",
+							"+8",
+							"Mithral or higher",
+							"Giant Heart",
+							"Melee Weapon",
+							"7.500 gp"
+						],
+						[
+							"{@item Envenomed|Ishiir|Envenomed (M)}",
+							"+8",
+							"Mithral or higher",
+							"Ooze Nucleus//Fiendish Blood",
+							"Piercing Weapon",
+							"7.650 gp"
+						],
+						[
+							"{@item Bloodthirster|Ishiir|Bloodthirster (M)}",
+							"+8",
+							"Mithral or higher",
+							"Accursed Heart",
+							"Melee Weapon",
+							"8.000 gp"
+						],
+						[
+							"{@item Forcebreaker|Ishiir|Forcebreaker (M)}",
+							"+8",
+							"Mithral or higher",
+							"Living Crystal",
+							"Weapon",
+							"8.250 gp"
+						],
+						[
+							"{@item Elemental Tongue|Ishiir|Elemental Tongue (M)}",
+							"+8",
+							"Mithral or higher",
+							"Living Water/Wind/Earth/Fire",
+							"Melee/Thrown Weapon",
+							"8.750 gp"
+						],
+						[
+							"{@item Mindblade|Ishiir|Mindblade (M)}",
+							"+8",
+							"Mithral or higher",
+							"Eldritch Heart",
+							"Slashing Weapon",
+							"8.750 gp"
+						],
+						[
+							"{@item Illusory|Ishiir|Illusory (M)}",
+							"+8",
+							"Mithral or higher",
+							"Eldritch Heart//Sylvan Noble Blood",
+							"Melee Weapon",
+							"9.000 gp"
+						],
+						[
+							"{@item Devotee's Censer|Ishiir|Devotee's Censer (M)}",
+							"+8",
+							"Mithral or higher",
+							"Living Crystal",
+							"Bludgeoning Melee Weapon",
+							"9.750 gp"
+						],
+						[
+							"{@item Executing|Ishiir|Executing (M)}",
+							"+9",
+							"Mithral or higher",
+							"Accursed Heart",
+							"Slashing Weapon",
+							"10.000 gp"
+						],
+						[
+							"{@item Sunblade|Ishiir|Sunblade (M)}",
+							"+9",
+							"Mithral or higher",
+							"Living Crystal",
+							"Slashing Weapon",
+							"10.850 gp"
+						],
+						[
+							"{@item Returning Storm|Ishiir|Returning Storm (M)}",
+							"+9",
+							"Mithral or higher",
+							"Living Wind",
+							"Thrown Weapon",
+							"11.150 gp"
+						],
+						[
+							"{@item Seeking Flight|Ishiir|Seeking Flight}",
+							"+9",
+							"Mithral or higher",
+							"Sylvan Noble Blood",
+							"Thrown Weapon",
+							"11.250 gp"
+						],
+						[
+							"{@item Tidecaller|Ishiir|Tidecaller (M)}",
+							"+9",
+							"Mithral or higher",
+							"Living Water",
+							"Piercing Melee Weapon",
+							"12.350 gp"
+						],
+						[
+							"{@item Lockbane|Ishiir|Lockbane (M)}",
+							"+10",
+							"Mithral or higher",
+							"Sylvan Noble Blood",
+							"Melee Weapon",
+							"13.400 gp"
+						],
+						[
+							"{@item Dragonsbane|Ishiir|Dragonsbane (M)}",
+							"+11",
+							"Adamantite or higher",
+							"Elder Draconic Heart",
+							"Weapon",
+							"15.000 gp"
+						],
+						[
+							"{@item Lifedrinker|Ishiir|Lifedrinker (M)}",
+							"+11",
+							"Adamantite or higher",
+							"Accursed Heart",
+							"S/P Weapon",
+							"15.850 gp"
+						],
+						[
+							"{@item Feywind|Ishiir|Feywind (M)}",
+							"+11",
+							"Adamantite or higher",
+							"Sylvan Noble Blood",
+							"Melee Weapon",
+							"16.500 gp"
+						],
+						[
+							"{@item Defender|Ishiir|Defender (M)}",
+							"+11",
+							"Adamantite or higher",
+							"Living Crystal Core",
+							"Melee Weapon",
+							"17.500 gp"
+						],
+						[
+							"{@item Archmage's Companion|Ishiir|Archmage's Companion (M)}",
+							"+11",
+							"Adamantite or higher",
+							"Blessing of Naushindhor",
+							"Melee Weapon",
+							"18.250 gp"
+						],
+						[
+							"{@item Dancing|Ishiir|Dancing (M)}",
+							"+12",
+							"Adamantite or higher",
+							"Sylvan Noble Blood",
+							"Melee Weapon",
+							"20.000 gp"
+						],
+						[
+							"{@item Dwarven Thrower|Ishiir|Dwarven Thrower (M)}",
+							"+12",
+							"Adamantite or higher",
+							"Blessing of Angrosh",
+							"Thrown Axe/Hammer",
+							"20.200 gp"
+						],
+						[
+							"{@item Stormbringer|Ishiir|Stormbringer (M)}",
+							"+12",
+							"Adamantite or higher",
+							"Blessing of Krumr/Gargan",
+							"Weapon",
+							"20.500 gp"
+						],
+						[
+							"{@item Moonsong Blade|Ishiir|Moonsong Blade (M)}",
+							"+12",
+							"Adamantite or higher",
+							"Blessing of Lanathiil/Vaeraustraee",
+							"Slashing Weapon",
+							"20.725 gp"
+						],
+						[
+							"{@item Dawnbringer|Ishiir|Dawnbringer (M)}",
+							"+12",
+							"Adamantite or higher",
+							"Blessing of Rahya",
+							"Melee Weapon",
+							"21.150 gp"
+						],
+						[
+							"{@item Azuredge|Ishiir|Azuredge (M)}",
+							"+12",
+							"Adamantite or higher",
+							"Blessing of Setifor//Blessing of the Pale Knight",
+							"Slashing Weapon",
+							"21.650 gp"
+						],
+						[
+							"{@item Riftmaker|Ishiir|Riftmaker (M)}",
+							"+12",
+							"Adamantite or higher",
+							"Elder Draconic Heart",
+							"Slashing Melee Weapon",
+							"21.750 gp"
+						],
+						[
+							"{@item Imperious|Ishiir|Imperious (M)}",
+							"+12",
+							"Adamantite or higher",
+							"Elder Draconic Heart",
+							"Melee Weapon",
+							"22.850 gp"
+						],
+						[
+							"{@item Speed|Ishiir|Speed (M)}",
+							"+12",
+							"Adamantite or higher",
+							"Sylvan Noble Blood",
+							"Weapon",
+							"23.150 gp"
+						],
+						[
+							"{@item Vorpal|Ishiir|Vorpal (M)}",
+							"+12",
+							"Adamantite or higher",
+							"Blessing of Angrosh/Krumr",
+							"Slashing Weapon",
+							"23.200 gp"
+						],
+						[
+							"{@item Death's Caress|Ishiir|Death's Caress (M)}",
+							"+13",
+							"Adamantite or higher",
+							"Blessing of the Pale Knight",
+							"Slashing Weapon",
+							"25.950 gp"
+						],
+						[
+							"{@item Serpent's Herald|Ishiir|Serpent's Herald (M)}",
+							"+13",
+							"Adamantite or higher",
+							"Blessing of Gargan",
+							"Piercing Weapon",
+							"26.700 gp"
+						],
+						[
+							"{@item Abysswalker|Ishiir|Abysswalker (M)}",
+							"+13",
+							"Adamantite or higher",
+							"Blessing of Araushneth",
+							"Weapon",
+							"27.550 gp"
+						],
+						[
+							"{@item Fortune's Favor|Ishiir|Fortune's Favor (M)}",
+							"+13",
+							"Adamantite or higher",
+							"Blessing of Gren",
+							"S/P Weapon",
+							"28.750 gp"
+						],
+						[
+							"{@item Starsong Blade|Ishiir|Starsong Blade (M)}",
+							"+13",
+							"Adamantite or higher",
+							"Blessing of Vaeraustraee",
+							"Slashing Weapon",
+							"29.250 gp"
+						],
+						[
+							"{@item Winter's Fang|Ishiir|Winter's Fang (M)}",
+							"+14",
+							"Adamantite or higher",
+							"Blessing of Graffir",
+							"S/P Weapon",
+							"30.000 gp"
+						],
+						[
+							"{@item Dragonsoul|Ishiir|Dragonsoul (M)}",
+							"+14",
+							"Adamantite or higher",
+							"Draconic Karfunkel",
+							"Weapon",
+							"30.150 gp"
+						],
+						[
+							"{@item Mirror Blade|Ishiir|Mirror Blade (M)}",
+							"+14",
+							"Adamantite or higher",
+							"Blessing of Azzagrazzt",
+							"P Thrown Weapon",
+							"32.250 gp"
+						],
+						[
+							"{@item Agony's Embrace|Ishiir|Agony's Embrace (M)}",
+							"+14",
+							"Adamantite or higher",
+							"Blessing of Vaasaleth",
+							"Melee Weapon",
+							"34.400 gp"
+						],
+						[
+							"{@item Blackfyre Harbinger|Ishiir|Blackfyre Harbinger (M)}",
+							"+15",
+							"Adamantite or higher",
+							"Blessing of Aathoth",
+							"Melee Weapon",
+							"35.650 gp"
+						],
+						[
+							"{@item Dragon's Wrath|Ishiir|Dragon's Wrath (M)}",
+							"+15",
+							"Adamantite or higher",
+							"Blessing of Naushindhor//Draconic Karfunkel",
+							"Melee Weapon",
+							"37.200 gp"
+						],
+						[
+							"{@item Hand of Justice|Ishiir|Hand of Justice (M)}",
+							"+15",
+							"Adamantite or higher",
+							"Blessing of Setifor",
+							"Melee Weapon",
+							"38.200 gp"
+						],
+						[
+							"{@item Entropy's Bite|Ishiir|Entropy's Bite (M)}",
+							"+16",
+							"Adamantite or higher",
+							"Blessing of Belhifeth",
+							"S/P Melee Weapon",
+							"40.850 gp"
+						],
+						[
+							"{@item Slaughter's Harbinger|Ishiir|Slaughter's Harbinger (M)}",
+							"+16",
+							"Adamantite or higher",
+							"Blessing of Golgathor",
+							"Thrown Weapon",
+							"41.750 gp"
+						],
+						[
+							"{@item Dark Queen's Reach|Ishiir|Dark Queen's Reach (M)}",
+							"+17",
+							"Adamantite or higher",
+							"Blessing of Xarsateth",
+							"Melee Weapon",
+							"48.750 gp"
+						],
+						[
+							"{@item Worldsplitter|Ishiir|Worldsplitter (M)}",
+							"+18",
+							"Adamantite or higher",
+							"Blessing of Xavarash",
+							"Bludgeoning Weapon",
+							"51.250 gp"
+						],
+						[
+							"{@item Holy Avenger|Ishiir|Holy Avenger (M)}",
+							"+18",
+							"Adamantite or higher",
+							"Blessing of Setifor",
+							"Melee Weapon",
+							"51.900 gp"
+						],
+						[
+							"{@item Shining Ray|Ishiir|Shining Ray (M)}",
+							"+18",
+							"Adamantite or higher",
+							"Blessing of Rahya",
+							"Weapon",
+							"52.100 gp"
+						],
+						[
+							"{@item Thalassian Call|Ishiir|Thalassian Call (M)}",
+							"+18",
+							"Adamantite or higher",
+							"Blessing of Charyptoroth",
+							"Piercing Weapon",
+							"53.750 gp"
+						],
+						[
+							"{@item Forgefire|Ishiir|Forgefire (M)}",
+							"+19",
+							"Adamantite or higher",
+							"Blessing of Angrosh",
+							"B Melee Weapon",
+							"60.100 gp"
+						],
+						[
+							"{@item Zenith|Ishiir|Zenith (M)}",
+							"+19",
+							"Adamantite or higher",
+							"Blessing of Rahya",
+							"Melee Weapon",
+							"60.500 gp"
+						],
+						[
+							"{@item Wrath of the Ancients|Ishiir|Wrath of the Ancients (M)}",
+							"+19",
+							"Adamantite or higher",
+							"Blessing of Naushindhor",
+							"Melee Weapon",
+							"66.250 gp"
+						],
+						[
+							"{@item Cycle's End|Ishiir|Cycle's End (M)}",
+							"+20",
+							"Adamantite or higher",
+							"Blessing of Xarsateth",
+							"S/P Melee Weapon",
+							"72.000 gp"
+						]
+					]
+				}
+			]
+		}
+	]
+}

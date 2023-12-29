@@ -42,6 +42,9 @@ class PageFilterEquipment extends PageFilter {
 			deselFn: (it) => PageFilterItems._DEFAULT_HIDDEN_TYPES.has(it),
 			displayFn: StrUtil.toTitleCase,
 		});
+		this._craftSkillFilter = new Filter({header: "Crafting Skill"});
+		this._craftDCFilter = new RangeFilter({header: "Crafting Bonus DC", min: 0, max: 30, isAllowGreater: false});
+		this._craftIngredientFilter = new Filter({header: "Crafting Ingredients"});
 		this._propertyFilter = new Filter({header: "Property", displayFn: StrUtil.toTitleCase});
 		this._categoryFilter = new Filter({
 			header: "Category",
@@ -74,12 +77,42 @@ class PageFilterEquipment extends PageFilter {
 		});
 		this._poisonTypeFilter = new Filter({header: "Poison Type", items: ["ingested", "injury", "inhaled", "contact"], displayFn: StrUtil.toTitleCase});
 		this._masteryFilter = new Filter({header: "Mastery", displayFn: this.constructor._getMasteryDisplay.bind(this)});
+		this._brewMasteryFilter = new Filter({header: "Homebrew Mastery", displayFn: StrUtil.uppercaseFirst});
 	}
 
 	static mutateForFilters (item) {
 		item._fSources = SourceFilter.getCompleteFilterSources(item);
 
 		item._fProperties = item.property ? item.property.map(p => Renderer.item.getProperty(p).name).filter(n => n) : [];
+
+		item._fCraftSkill = []
+		if (item.crafted) {
+			item.crafted.skill.forEach(function(cskill){
+				item._fCraftSkill.push(cskill)
+			})
+		} else {
+			item._fCraftSkill.push("Uncraftable")
+		}
+
+		item._fBrewMastery = []
+		if (item.brewMastery) {
+			item.brewMastery.forEach(function(mastery){
+				item._fBrewMastery.push(mastery)
+			})
+		} else {
+			item._fBrewMastery.push("None")
+		}
+
+		item._fCraftIngredient = []
+		if (item.crafted && item.crafted.ingredient) {
+			item.crafted.ingredient.forEach(function(ing){
+				item._fCraftIngredient.push(ing)
+			})
+		} else {
+			item._fCraftIngredient.push("None")
+		}
+
+		item._fCraftDC = [item.crafted?.dc || 0]
 
 		item._fMisc = [];
 		if (item._isItemGroup) item._fMisc.push("Item Group");
@@ -133,6 +166,9 @@ class PageFilterEquipment extends PageFilter {
 		if (isExcluded) return;
 
 		this._sourceFilter.addItem(item._fSources);
+		this._craftSkillFilter.addItem(item._fCraftSkill);
+		this._craftDCFilter.addItem(item._fCraftDC);
+		this._craftIngredientFilter.addItem(item._fCraftIngredient);
 		this._typeFilter.addItem(item._typeListText);
 		this._propertyFilter.addItem(item._fProperties);
 		this._damageTypeFilter.addItem(item.dmgType);
@@ -140,11 +176,15 @@ class PageFilterEquipment extends PageFilter {
 		this._poisonTypeFilter.addItem(item.poisonTypes);
 		this._miscFilter.addItem(item._fMisc);
 		this._masteryFilter.addItem(item._fMastery);
+		this._brewMasteryFilter.addItem(item._fBrewMastery);
 	}
 
 	async _pPopulateBoxOptions (opts) {
 		opts.filters = [
 			this._sourceFilter,
+			this._craftSkillFilter,
+			this._craftDCFilter,
+			this._craftIngredientFilter,
 			this._typeFilter,
 			this._propertyFilter,
 			this._categoryFilter,
@@ -156,6 +196,7 @@ class PageFilterEquipment extends PageFilter {
 			this._miscFilter,
 			this._poisonTypeFilter,
 			this._masteryFilter,
+			this._brewMasteryFilter,
 		];
 	}
 
@@ -163,6 +204,9 @@ class PageFilterEquipment extends PageFilter {
 		return this._filterBox.toDisplay(
 			values,
 			it._fSources,
+			it._fCraftSkill,
+			it._fCraftDC,
+			it._fCraftIngredient,
 			it._typeListText,
 			it._fProperties,
 			it._category,
@@ -187,6 +231,9 @@ class PageFilterItems extends PageFilterEquipment {
 	// region static
 	static sortItems (a, b, o) {
 		if (o.sortBy === "name") return SortUtil.compareListNames(a, b);
+		else if (o.sortBy === "cskill") return SortUtil.ascSort(a.values.cskill, b.values.cskill) || SortUtil.compareListNames(a, b);
+		else if (o.sortBy === "dc") return SortUtil.ascSort(a.values.dc, b.values.dc) || SortUtil.compareListNames(a, b);
+		else if (o.sortBy === "value") return SortUtil.ascSort(a.values.value, b.values.value) || SortUtil.compareListNames(a, b);
 		else if (o.sortBy === "type") return SortUtil.ascSortLower(a.values.type, b.values.type) || SortUtil.compareListNames(a, b);
 		else if (o.sortBy === "source") return SortUtil.ascSortLower(a.values.source, b.values.source) || SortUtil.compareListNames(a, b);
 		else if (o.sortBy === "rarity") return SortUtil.ascSortItemRarity(a.values.rarity, b.values.rarity) || SortUtil.compareListNames(a, b);
@@ -302,7 +349,7 @@ class PageFilterItems extends PageFilterEquipment {
 		super.mutateForFilters(item);
 
 		item._fTier = [item.tier ? item.tier : "none"];
-
+		
 		if (item.curse) item._fMisc.push("Cursed");
 		const isMundane = Renderer.item.isMundane(item);
 		item._fMisc.push(isMundane ? "Mundane" : "Magic");
@@ -370,6 +417,9 @@ class PageFilterItems extends PageFilterEquipment {
 			this._typeFilter,
 			this._tierFilter,
 			this._rarityFilter,
+			this._craftSkillFilter,
+			this._craftDCFilter,
+			this._craftIngredientFilter,
 			this._propertyFilter,
 			this._attunementFilter,
 			this._categoryFilter,
@@ -383,6 +433,7 @@ class PageFilterItems extends PageFilterEquipment {
 			this._rechargeTypeFilter,
 			this._poisonTypeFilter,
 			this._masteryFilter,
+			this._brewMasteryFilter,
 			this._lootTableFilter,
 			this._baseItemFilter,
 			this._baseSourceFilter,
@@ -398,6 +449,9 @@ class PageFilterItems extends PageFilterEquipment {
 			it._typeListText,
 			it._fTier,
 			it.rarity,
+			it._fCraftSkill,
+			it._fCraftDC,
+			it._fCraftIngredient,
 			it._fProperties,
 			it._fAttunement,
 			it._category,
@@ -411,6 +465,7 @@ class PageFilterItems extends PageFilterEquipment {
 			it.recharge,
 			it.poisonTypes,
 			it._fMastery,
+			it._fBrewMastery,
 			it.lootTables,
 			it._fBaseItemAll,
 			it._baseSource,

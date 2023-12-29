@@ -55,7 +55,7 @@ class PageFilterFeats extends PageFilter {
 		this._immuneFilter = FilterCommon.getDamageImmuneFilter();
 		this._defenceFilter = new MultiFilter({header: "Damage", filters: [this._vulnerableFilter, this._resistFilter, this._immuneFilter]});
 		this._conditionImmuneFilter = FilterCommon.getConditionImmuneFilter();
-		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Has Info", "Has Images", "SRD", "Basic Rules"], isMiscFilter: true});
+		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Has Info", "Has Images", "SRD", "Basic Rules", "Critical Effects"], isMiscFilter: true});
 	}
 
 	static mutateForFilters (feat) {
@@ -88,6 +88,7 @@ class PageFilterFeats extends PageFilter {
 		if (feat.hasFluff || feat.fluff?.entries) feat._fMisc.push("Has Info");
 		if (feat.hasFluffImages || feat.fluff?.images) feat._fMisc.push("Has Images");
 		if (feat.repeatable != null) feat._fMisc.push(feat.repeatable ? "Repeatable" : "Not Repeatable");
+		if (feat.critEffect) feat._fMisc.push("Critical Effects");
 
 		feat._slAbility = ability.asText || VeCt.STR_NONE;
 		feat._slPrereq = prereqText;

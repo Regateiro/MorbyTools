@@ -455,14 +455,18 @@ Parser.skillToShort = function (skill) {
 };
 
 Parser.LANGUAGES_STANDARD = [
+	"Aven",
 	"Common",
 	"Dwarvish",
 	"Elvish",
+	"Gatari",
 	"Giant",
 	"Gnomish",
 	"Goblin",
+	"Gnoll",
 	"Halfling",
 	"Orc",
+	"Saurian",
 ];
 
 Parser.LANGUAGES_EXOTIC = [
@@ -474,6 +478,8 @@ Parser.LANGUAGES_EXOTIC = [
 	"Deep Speech",
 	"Ignan",
 	"Infernal",
+	"Nessian",
+	"Umbral",
 	"Primordial",
 	"Sylvan",
 	"Terran",
@@ -672,14 +678,24 @@ Parser.stringToCasedSlug = function (str) {
 	return str.toAscii().replace(/[^\w ]+/g, "").replace(/ +/g, "-");
 };
 
-Parser.ITEM_SPELLCASTING_FOCUS_CLASSES = ["Artificer", "Bard", "Cleric", "Druid", "Paladin", "Ranger", "Sorcerer", "Warlock", "Wizard"];
+Parser.ITEM_SPELLCASTING_FOCUS_CLASSES = ["Artificer", "Bard", "Cleric", "Druid", "Paladin", "Ranger", "Sorcerer", "Spellblade", "Warlock", "Wizard"];
 
 Parser.itemValueToFull = function (item, opts = {isShortForm: false, isSmallUnits: false}) {
 	return Parser._moneyToFull(item, "value", "valueMult", opts);
 };
 
 Parser.itemValueToFullMultiCurrency = function (item, opts = {isShortForm: false, isSmallUnits: false}) {
-	return Parser._moneyToFullMultiCurrency(item, "value", "valueMult", opts);
+	let buyValue = null
+	if(item.value) { 
+		buyValue = `${Parser._moneyToFullMultiCurrency(item, "value", "valueMult", opts)}`
+	}
+	
+	let ingValue = null;
+	if(item.ingredient && item.ingredient.value) {
+		ingValue = `(${Parser._moneyToFullMultiCurrency(item.ingredient, "value", "valueMult", opts)} × CR)`
+	}
+
+	return [buyValue, ingValue].join(" ").trim();
 };
 
 Parser.itemVehicleCostsToFull = function (item, isShortForm) {
@@ -1439,10 +1455,12 @@ Parser.SP_MISC_TAG_TO_FULL = {
 	LGT: "Creates Light",
 	UBA: "Uses Bonus Action",
 	PS: "Plane Shifting",
+	SAD: "Setting Adjusted",
 	OBS: "Obscures Vision",
 	DFT: "Difficult Terrain",
 	AAD: "Additional Attack Damage",
 	OBJ: "Affects Objects",
+	BLD: "Uses Blood",
 	ADV: "Grants Advantage",
 };
 Parser.spMiscTagToFull = function (type) {
@@ -1697,6 +1715,8 @@ Parser.MON_LANGUAGE_TAG_TO_FULL = {
 	"GTH": "Gith",
 	"H": "Halfling",
 	"I": "Infernal",
+	"N": "Nessian",
+	"UM": "Umbral",
 	"IG": "Ignan",
 	"LF": "Languages Known in Life",
 	"O": "Orc",
@@ -1742,7 +1762,7 @@ Parser.prereqSpellToFull = function (spell, {isTextOnly = false} = {}) {
 		const [text, suffix] = spell.split("#");
 		if (!suffix) return isTextOnly ? spell : Renderer.get().render(`{@spell ${spell}}`);
 		else if (suffix === "c") return (isTextOnly ? Renderer.stripTags : Renderer.get().render.bind(Renderer.get()))(`{@spell ${text}} cantrip`);
-		else if (suffix === "x") return (isTextOnly ? Renderer.stripTags : Renderer.get().render.bind(Renderer.get()))("{@spell hex} spell or a warlock feature that curses");
+		else if (suffix === "x") return (isTextOnly ? Renderer.stripTags : Renderer.get().render.bind(Renderer.get()))("{@spell hex|Ishiir} spell or a warlock feature that curses");
 	} else return VeCt.STR_NONE;
 };
 
@@ -1764,8 +1784,16 @@ Parser.prereqPatronToShort = function (patron) {
 // NOTE: These need to be reflected in omnidexer.js to be indexed
 Parser.OPT_FEATURE_TYPE_TO_FULL = {
 	AI: "Artificer Infusion",
+	"A:S": "Apothecary Salve",
+	"A:T": "Apothecary Tonic",
 	ED: "Elemental Discipline",
 	EI: "Eldritch Invocation",
+	"EI:K": "Elemental Infusion, Kineticist",
+	"EF": "Evolution Feat",
+	"WM": "Weapon Mastery",
+	"AM": "Armor Mastery",
+	"BC": "Blood Curse",
+	"MF": "Mutagen Formula",
 	MM: "Metamagic",
 	"MV": "Maneuver",
 	"MV:B": "Maneuver, Battle Master",
@@ -1943,6 +1971,11 @@ Parser.CAT_ID_SKILLS = 50;
 Parser.CAT_ID_SENSES = 51;
 Parser.CAT_ID_DECK = 52;
 Parser.CAT_ID_CARD = 53;
+Parser.CAT_ID_ELEMENTAL_INFUSIONS = 54;
+Parser.CAT_ID_BLOOD_CURSES = 55;
+Parser.CAT_ID_MUTAGEN_FORMULAS = 56;
+Parser.CAT_ID_APOTHECARY_SALVES = 57;
+Parser.CAT_ID_APOTHECARY_TONICS = 58;
 
 Parser.CAT_ID_TO_FULL = {};
 Parser.CAT_ID_TO_FULL[Parser.CAT_ID_CREATURE] = "Bestiary";
@@ -2480,12 +2513,15 @@ Parser.WEAPON_ABV_TO_FULL = {
 Parser.CONDITION_TO_COLOR = {
 	"Blinded": "#525252",
 	"Charmed": "#f01789",
+	"Dazed": "#d3d3d3",
 	"Deafened": "#ababab",
+	"Dominated": "#8b4513",
 	"Exhausted": "#947a47",
 	"Frightened": "#c9ca18",
 	"Grappled": "#8784a0",
 	"Incapacitated": "#3165a0",
 	"Invisible": "#7ad2d6",
+	"Lacerated": "#ff0000",
 	"Paralyzed": "#c00900",
 	"Petrified": "#a0a0a0",
 	"Poisoned": "#4dc200",
@@ -2657,6 +2693,9 @@ Parser.SRC_NRH_AT = "NRH-AT";
 Parser.SRC_MGELFT = "MGELFT";
 Parser.SRC_VD = "VD";
 Parser.SRC_SjA = "SjA";
+Parser.SRC_TG = "TG";
+Parser.SRC_ISHIIR = "Ishiir";
+Parser.SRC_ARKAEOS = "Arkaeos";
 Parser.SRC_HAT_TG = "HAT-TG";
 Parser.SRC_HAT_LMI = "HAT-LMI";
 Parser.SRC_GotSF = "GotSF";
@@ -3568,12 +3607,18 @@ Parser.ITEM_TYPE_JSON_TO_ABV = {
 	"A": "ammunition",
 	"AF": "ammunition",
 	"AT": "artisan's tools",
+	"BAM": "base material",
+	"CST": "crafting station",
+	"CRF": "craftable",
 	"EM": "eldritch machine",
+	"EN": "energy weapon",
 	"EXP": "explosive",
 	"FD": "food and drink",
+	"FM": "full meal",
 	"G": "adventuring gear",
 	"GS": "gaming set",
 	"HA": "heavy armor",
+	"I": "ingredient",
 	"IDG": "illegal drug",
 	"INS": "instrument",
 	"LA": "light armor",
@@ -3583,12 +3628,14 @@ Parser.ITEM_TYPE_JSON_TO_ABV = {
 	"MR": "master rune",
 	"GV": "generic variant",
 	"P": "potion",
+	"PR": "property",
 	"R": "ranged weapon",
 	"RD": "rod",
 	"RG": "ring",
 	"S": "shield",
 	"SC": "scroll",
 	"SCF": "spellcasting focus",
+	"SN": "snack",
 	"OTH": "other",
 	"T": "tools",
 	"TAH": "tack and harness",
@@ -3615,6 +3662,7 @@ Parser.DMGTYPE_JSON_TO_FULL = {
 	"R": "radiant",
 	"S": "slashing",
 	"T": "thunder",
+	"V": "variable",
 };
 
 Parser.DMG_TYPES = ["acid", "bludgeoning", "cold", "fire", "force", "lightning", "necrotic", "piercing", "poison", "psychic", "radiant", "slashing", "thunder"];

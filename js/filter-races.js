@@ -76,6 +76,10 @@ class PageFilterRaces extends PageFilter {
 		this._languageFilter = new Filter({
 			header: "Languages",
 			items: [
+				"Aven",
+				"Gatari",
+				"Gnoll",
+				"Saurian",
 				"Abyssal",
 				"Celestial",
 				"Choose",
@@ -88,6 +92,8 @@ class PageFilterRaces extends PageFilter {
 				"Goblin",
 				"Halfling",
 				"Infernal",
+				"Nessian",
+				"Umbral",
 				"Orc",
 				"Other",
 				"Primordial",
