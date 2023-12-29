@@ -161,6 +161,20 @@ class RenderSpells {
 			renderStack.push(`</section></td></tr>`);
 		}
 
+		const wizardText = `{@class fighter|Ishiir|${Renderer.spell.STR_FIGHTER} (${Renderer.spell.STR_ELD_KNIGHT})|eldritch knight|Ishiir} and the {@class rogue|Ishiir|${Renderer.spell.STR_ROGUE} (${Renderer.spell.STR_ARC_TCKER})|arcane trickster|Ishiir} spell lists include all {@class ${Renderer.spell.STR_WIZARD}|Ishiir} spells`;
+		const warlockText = `{@class blood hunter|Ishiir|${Renderer.spell.STR_BLOOD_HUNTER} (${Renderer.spell.STR_PRO_SOUL})|profane soul|Ishiir} spell list includes all {@class ${Renderer.spell.STR_WARLOCK}|Ishiir} spells`;
+		const finishText = `Spells of 5th level or higher may be cast with the aid of a spell scroll or similar`;
+
+		renderStack.push(`<tr class="text"><td colspan="6"><section class="text-muted">`);
+		if (sp._scrollNoteIshiirWizard && sp._scrollNoteIshiirWarlock) {
+			renderer.recursiveRender(`{@italic Note: Both the ${wizardText}. Likewise, the ${warlockText}. ${finishText}.}`, renderStack, {depth: 2});
+		} else if (sp._scrollNoteIshiirWizard) {
+			renderer.recursiveRender(`{@italic Note: Both the ${wizardText}. ${finishText}.}`, renderStack, {depth: 2});
+		} else if (sp._scrollNoteIshiirWarlock) {
+			renderer.recursiveRender(`{@italic Note: The ${warlockText}. ${finishText}.}`, renderStack, {depth: 2});
+		}
+		renderStack.push(`</section></td></tr>`);
+
 		renderStack.push(`
 			${Renderer.utils.getPageTr(sp)}
 			${Renderer.utils.getBorderTr()}

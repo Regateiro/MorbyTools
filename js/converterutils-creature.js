@@ -147,8 +147,8 @@ class AcConvert {
 								if (!numMatch) throw new Error("Spell AC but no leading number?");
 
 								let spell = null;
-								if (numMatch[2] === "mage armor") spell = `{@spell mage armor}`;
-								else if (numMatch[2] === "barkskin") spell = `{@spell barkskin}`;
+								if (numMatch[2] === "mage armor") spell = `{@spell mage armor|Ishiir}`;
+								else if (numMatch[2] === "barkskin") spell = `{@spell barkskin|Ishiir}`;
 								else throw new Error(`Unhandled spell! ${numMatch[2]}`);
 
 								nuAcTail.push({
@@ -272,9 +272,9 @@ class AcConvert {
 				// endregion
 
 			// region spells
-			case "foresight bonus": return `{@spell foresight} bonus`;
-			case "natural barkskin": return `natural {@spell barkskin}`;
-			case "mage armor": return "{@spell mage armor}";
+			case "foresight bonus": return `{@spell foresight|Ishiir} bonus`;
+			case "natural barkskin": return `natural {@spell barkskin|Ishiir}`;
+			case "mage armor": return "{@spell mage armor|Ishiir}";
 			// endregion
 
 			// region armor (mostly handled by the item lookup; these are mis-named exceptions (usually for homebrew))
@@ -863,19 +863,25 @@ LanguageTag.LANGUAGE_MAP = {
 	"Abyssal": "AB",
 	"Aquan": "AQ",
 	"Auran": "AU",
+	"Aven": "AV",
 	"Celestial": "CE",
 	"Common": "C",
 	"can't speak": "CS",
 	"Draconic": "DR",
 	"Dwarvish": "D",
 	"Elvish": "E",
+	"Gatari": "GA",
 	"Giant": "GI",
 	"Gnomish": "G",
 	"Goblin": "GO",
+	"Gnoll": "GN",
 	"Halfling": "H",
 	"Infernal": "I",
+	"Nessian": "N",
+	"Umbral": "UM",
 	"Orc": "O",
 	"Primordial": "P",
+	"Saurian": "SA",
 	"Sylvan": "S",
 	"Terran": "T",
 	"Undercommon": "U",

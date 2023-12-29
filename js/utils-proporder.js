@@ -1264,6 +1264,7 @@ PropOrder._ITEM = [
 	"type",
 	"typeAlt",
 	"scfType",
+	"requires",
 
 	"immune",
 	"resist",

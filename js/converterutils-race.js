@@ -143,7 +143,7 @@ class RaceLanguageTag {
 		return outStack;
 	}
 
-	static _LANGUAGES = new Set(["Abyssal", "Aquan", "Auran", "Celestial", "Common", "Draconic", "Dwarvish", "Elvish", "Giant", "Gnomish", "Goblin", "Halfling", "Ignan", "Infernal", "Orc", "Primordial", "Sylvan", "Terran", "Undercommon"]);
+	static _LANGUAGES = new Set(["Abyssal", "Aquan", "Auran", "Celestial", "Common", "Draconic", "Dwarvish", "Elvish", "Giant", "Gnomish", "Goblin", "Halfling", "Ignan", "Infernal", "Nessian", "Orc", "Primordial", "Sylvan", "Terran", "Umbral", "Undercommon", "Aven", "Gatari", "Gnoll", "Saurian"]);
 	static _STOPWORDS = new Set(["Almost", "Elven", "Gifted", "It", "Languages", "Many", "Mimicry", "Only", "Or", "The", "Their", "They", "You", "Humans", "Conclave", "Kryta", "Hyperium", "Ithean", "Illyrian", "Speak"]);
 
 	static _isCaps (str) { return /^[A-Z]/.test(str); }
