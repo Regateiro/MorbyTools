@@ -1,0 +1,811 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Deoir",
+                "abbreviation": "Deoir",
+                "full": "Deoir",
+                "url": "https://regateiro.pt/5etools/homebrew/deoir-apothecary.json",
+                "authors": [
+                    "Roy"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "class": [
+		{
+			"name": "Apothecary",
+			"page": 1,
+			"source": "Deoir",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"int",
+				"con"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"{@item shield|Ishiir|shields}"
+				],
+				"weapons": [
+					"{@item club|Ishiir|clubs}",
+					"{@item dagger|Ishiir|daggers}",
+					"{@item dart|Ishiir|darts}",
+					"{@item quarterstaff|Ishiir|quarterstaffs}",
+					"{@item sling|Ishiir|slings}",
+					"{@item shortbow|Ishiir|shortbows}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"insight",
+								"medicine",
+								"nature",
+								"performance",
+								"persuasion",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) an {@item alchemist's supplies|phb|alchemical supplies} or (b) an {@item herbalism kit|phb}",
+					"(a) {@item leather|Ishiir|leather armor} and a {@item shield|Ishiir} or (b) {@item scale mail|Ishiir}",
+					"(a) a {@item shortbow|Ishiir} and a {@item quiver|phb} of 20 arrows or (b) 10 {@item dart|Ishiir|darts}",
+					"(a) a {@item scholar's pack|phb} or (b) an {@item explorer's pack|phb}"
+				],
+				"goldAlternative": "{@dice 4d4*10|4d4 x 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"alchemist's supplies|phb|alchemical supplies"
+						],
+						"b": [
+							"herbalism kit|phb"
+						]
+					},
+					{
+						"a": [
+							"leather|Ishiir",
+							"shield|Ishiir"
+						],
+						"b": [
+							"scale mail|Ishiir"
+						]
+					},
+					{
+						"a": [
+							"shortbow|Ishiir",
+							"arrows (20)|phb"
+						],
+						"b": [
+							{
+								"item": "dart|Ishiir",
+								"quantity": 10
+							}
+						]
+					},
+					{
+						"a": [
+							"scholar's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13,
+					"con": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium",
+						"{@item shield|Ishiir|shields}"
+					]
+				}
+			},
+			"optionalfeatureProgression": [
+				{
+					"name": "Apothecary Salves",
+					"source": "Deoir",
+					"page": 1,
+					"featureType": [
+						"A:S"
+					],
+					"progression": [
+						0,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						10,
+						11,
+						11,
+						12,
+						12,
+						13,
+						13,
+						14,
+						14,
+						15
+					]
+				},
+				{
+					"name": "Apothecary Tonics",
+					"source": "Deoir",
+					"page": 1,
+					"featureType": [
+						"A:T"
+					],
+					"progression": [
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						10,
+						11,
+						11,
+						12,
+						12,
+						13,
+						13,
+						14,
+						14,
+						15,
+						15
+					]
+				}
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Salves Known|optionalfeatures|feature type=a:s}",
+						"Salves Prepared",
+						"{@filter Tonics Known|optionalfeatures|feature type=a:t}",
+						"Tonics Propared"
+					],
+					"rows": [
+						[ "-", "-", "2", "1" ],
+						[ "2", "2", "3", "2" ],
+						[ "3", "2", "4", "2" ],
+						[ "4", "2", "5", "2" ],
+						[ "5", "3", "6", "2" ],
+						[ "6", "3", "7", "2" ],
+						[ "7", "4", "8", "2" ],
+						[ "8", "4", "9", "2" ],
+						[ "9", "5", "10", "2" ],
+						[ "10", "5", "10", "2" ],
+						[ "10", "5", "11", "3" ],
+						[ "11", "6", "11", "3" ],
+						[ "11", "6", "12", "3" ],
+						[ "12", "6", "12", "3" ],
+						[ "12", "7", "13", "3" ],
+						[ "13", "7", "13", "3" ],
+						[ "13", "7", "14", "4" ],
+						[ "14", "8", "14", "4" ],
+						[ "14", "8", "15", "4" ],
+						[ "15", "8", "15", "4" ]
+					]
+				}
+			],
+			"classFeatures": [
+				{
+					"classFeature": "Field of Study|Apothecary|Deoir|1",
+					"gainSubclassFeature": true
+				},
+				"Tonics|Apothecary|Deoir|1",
+				"Bottle of Pain|Apothecary|Deoir|1",
+				"Salves|Apothecary|Deoir|2",
+				{
+					"classFeature": "Field of Study Feature|Apothecary|Deoir|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Apothecary|Deoir|4",
+				{
+					"classFeature": "Field of Study Feature|Apothecary|Deoir|6",
+					"gainSubclassFeature": true
+				},
+				"Tool Expertise|Apothecary|Deoir|7",
+				"Ability Score Improvement|Apothecary|Deoir|8",
+				{
+					"classFeature": "Field of Study Feature|Apothecary|Deoir|9",
+					"gainSubclassFeature": true
+				},
+				"Always Prepared|Apothecary|Deoir|11",
+				"Ability Score Improvement|Apothecary|Deoir|12",
+				{
+					"classFeature": "Field of Study Feature|Apothecary|Deoir|13",
+					"gainSubclassFeature": true
+				},
+				"Master of the Salves|Apothecary|Deoir|15",
+				"Ability Score Improvement|Apothecary|Deoir|16",
+				{
+					"classFeature": "Field of Study Feature|Apothecary|Deoir|17",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Apothecary|Deoir|19",
+				{
+					"classFeature": "Field of Study Feature|Apothecary|Deoir|20",
+					"gainSubclassFeature": true
+				}
+			],
+			"subclassTitle": "Field of Study"
+		}
+	],
+	"subclass": [
+		{
+			"name": "Pharmacist",
+			"page": 1,
+			"shortName": "Pharmacist",
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassFeatures": [
+				"Pharmacist|Apothecary|Deoir|Pharmacist|Deoir|1",
+				"Bitter Medicine|Apothecary|Deoir|Pharmacist|Deoir|3",
+				"Emergency Plan|Apothecary|Deoir|Pharmacist|Deoir|6",
+				"Double Up Salves|Apothecary|Deoir|Pharmacist|Deoir|9",
+				"Extra Protection|Apothecary|Deoir|Pharmacist|Deoir|13",
+				"Wondrous Vapours|Apothecary|Deoir|Pharmacist|Deoir|17",
+				"Master of Healing|Apothecary|Deoir|Pharmacist|Deoir|20"
+			]
+		},
+		{
+			"name": "Chemist",
+			"page": 1,
+			"shortName": "Chemist",
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassFeatures": [
+				"Chemist|Apothecary|Deoir|Chemist|Deoir|1",
+				"Extra knowledge|Apothecary|Deoir|Chemist|Deoir|3",
+				"Special Concoctions|Apothecary|Deoir|Chemist|Deoir|6",
+				"Vial of Debilitating Mist|Apothecary|Deoir|Chemist|Deoir|9",
+				"Effectiveness Increased|Apothecary|Deoir|Chemist|Deoir|13",
+				"Residual Residue|Apothecary|Deoir|Chemist|Deoir|17",
+				"More Pain|Apothecary|Deoir|Chemist|Deoir|20"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Field of Study",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 1,
+			"entries": [
+				"At 1st level, you choose your field of study from: Pharmacist, Chemist. Your choice grants you features at 1st, 6th, 9th, 13th, and 17th and 20th levels."
+			]
+		},
+		{
+			"name": "Tonics",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 1,
+			"entries": [
+				"At 1st level, you gain the ability to create tonics during a short / long rest. When you gain this feature, pick two Tonics to learn, choosing from the list of the available Tonics found on the {@filter Optional Features|optionalfeatures|Feature Type=A:T} page. You prepare the amount of Tonics equal to the amount specified in the Tonics prepared column. You can prepare multiple of the same Tonic. Tonics go bad after 24 hours.",
+				"When throwing the Tonic at the Target the Tonic description will tell you out which of these 2 will take effect:",
+				"<b>Thrown Tonic attack modifier</b> = your proficiency bonus + your Intelligence modifier. (This is a ranged attack)",
+				"<b>Tonic save DC</b> = 8 + your proficiency bonus + your intelligence modifier.",
+				{
+					"type": "entries",
+					"name": "Learning Tonics",
+					"entries": [
+						"You learn new Tonics as indicated on the Tonics known column. When you level up in this class you can swap out 1 Tonic with one that you know."
+					]
+				}
+			]
+		},
+		{
+			"name": "Bottle of Pain",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 1,
+			"entries": [
+				"At 1st level, you are able to throw a Bottle of Pain at someone you do not like.",
+				"As an action make a Thrown tonic attack against a creature within 40 feet of you. On hit you deal {@damage 1d4} Fire, Cold, Poison or Acid damage (Choose before making the attack). On subsequent turns the target takes {@damage 1d4} Fire, Cold, Poison or Acid damage at the start of each of its turns. A creature can end this effect by using its Reaction during it's turn to end the effect.",
+				"The damage of both the initial damage and subsequent damage increases when you reach 5th level ({@damage 2d4}), 11th level ({@damage 3d4}) and 17th level ({@damage 4d4})."
+			]
+		},
+		{
+			"name": "Salves",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 2,
+			"entries": [
+				"At 2nd level, You gain the ability to Apply a salve up to a number of times specified in the Salves prepared column.",
+				{
+					"type": "entries",
+					"name": "Salves Known",
+					"entries": [
+						"When you gain this feature, pick two Salves to learn, choosing from the list of the available Salves found on the {@filter Optional Features|optionalfeatures|Feature Type=A:S} page. You learn additional Salves of your choice when you reach certain levels in this class, as shown in the Salves Known column of the Apothecary table.",
+						"Whenever you gain a level in this class, you can replace one of the Apothecary Salves you learned with a new one."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Salves Prepared",
+					"entries": [
+						"When you finish a long rest you choose the salves you prepare. These are the salves you can use till the next long rest. You can only prepare 1 of each salve per long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Applying a salve",
+					"entries": [
+						"During a short / long rest you can apply a salve to a creature, this effect of the salve lasts till the next short / long rest. A creature can only benefit from one salve at time and a salve cannot increase an ability modifier over the maximum."
+					]
+				}
+			]
+		},
+		{
+			"name": "Field of Study Feature",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you gain one feature granted by your Field of Study."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a feat."
+			]
+		},
+		{
+			"name": "Field of Study Feature",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain one feature granted by your Field of Study."
+			]
+		},
+		{
+			"name": "Tool Expertise",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 7,
+			"entries": [
+				"At 7th level, When making a skill check with either {@item alchemist's supplies|phb|alchemical supplies} or the {@item herbalism kit|phb} you can add your Wisdom modifier to the {@item alchemist's supplies|phb|alchemical supplies} roll and you can add your Intelligence modifier to the {@item herbalism kit|phb} roll in addition to the normal bonuses."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a feat."
+			]
+		},
+		{
+			"name": "Field of Study Feature",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 9,
+			"entries": [
+				"At 9th level, you gain one feature granted by your Field of Study."
+			]
+		},
+		{
+			"name": "Always Prepared",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 11,
+			"entries": [
+				"At 11th level, you gain the ability to seem always prepared.",
+				"As an action touch one of your prepared Salves or Tonics and change them to a different Salve or Tonic you know."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a feat."
+			]
+		},
+		{
+			"name": "Field of Study Feature",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 13,
+			"entries": [
+				"At 13th level, you gain one feature granted by your Field of Study."
+			]
+		},
+		{
+			"name": "Master of the Salves",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 15,
+			"entries": [
+				"At 15th level, your Salves are more potent than ever.",
+				"While a creature has a salve active on them they gain a +1 to all saving throws."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a feat."
+			]
+		},
+		{
+			"name": "Field of Study Feature",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 17,
+			"entries": [
+				"At 17th level, you gain one feature granted by your Field of Study."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a feat."
+			]
+		},
+		{
+			"name": "Field of Study Feature",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"level": 20,
+			"entries": [
+				"At 20th level, you gain one feature granted by your Field of Study."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Pharmacist",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassShortName": "Pharmacist",
+			"subclassSource": "Deoir",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You follow the path of health and making your patients feel better then they ever have before.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Patching Up|Apothecary|Deoir|Pharmacist|Deoir|1"
+				}
+			]
+		},
+		{
+			"name": "Patching Up",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassShortName": "Pharmacist",
+			"subclassSource": "Deoir",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"At 1st level, during a short rest you can help creatures take care of the wounds they sustained. You can care for a number of creatures equal to 3 + your proficiency bonus. At the end of the short rest, any creature you cared for and spends one or more Hit Dice to regain hit points regain an extra {@dice 1d8} hit points. This die upgrades at level 9th level to a {@dice 1d10}, at level 13th level a {@dice 1d12} and at 17th level {@dice 2d8}.",
+				"You gain proficiency with the {@item herbalism kit|phb}."
+			]
+		},
+		{
+			"name": "Bitter Medicine",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassShortName": "Pharmacist",
+			"subclassSource": "Deoir",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"At 3rd level, as a action you can touch a creature and deal {@damage 1d8} necrotic damage to them. After they take the damage and are still at or above 1 hit point they gain Hit points equal to double the damage you did. If they go below 1 hit point they lose a death save immediately. You can use this feature a number of times equal to your proficiency bonus per long rest.",
+				"At 7th level this die becomes a {@damage 1d12}, At 11th level {@damage 2d8} and at 17th level {@damage 2d12}."
+			]
+		},
+		{
+			"name": "Emergency Plan",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassShortName": "Pharmacist",
+			"subclassSource": "Deoir",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, as a reaction to seeing a creature reach 0 hit points you can throw a healing dart at them bringing them back to 1 hp. You can use this feature a number of times equal to half your proficiency bonus (rounded down)."
+			]
+		},
+		{
+			"name": "Double up Salves",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassShortName": "Pharmacist",
+			"subclassSource": "Deoir",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"At 9th level, you can use 2 salves on the same creature. If the salve increases a stat/modifier you take the highest modifier, they do not stack."
+			]
+		},
+		{
+			"name": "Extra Protection",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassShortName": "Pharmacist",
+			"subclassSource": "Deoir",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"At 13th level, when applying a Salve from the salve feature of this class to a creature they gain {@dice 3d6} max hit points and heal the same amount while the salve is active."
+			]
+		},
+		{
+			"name": "Wondrous Vapours",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassShortName": "Pharmacist",
+			"subclassSource": "Deoir",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th level, your healing Tonics become more potent. When Using a Tonic to heal a creature add your proficiency modifier per die of healing."
+			]
+		},
+		{
+			"name": "Master of Healing",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassShortName": "Pharmacist",
+			"subclassSource": "Deoir",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, when a creature that has a Salve effect on them restores any hit points add double your proficiency bonus to that amount."
+			]
+		},
+		{
+			"name": "Chemist",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassShortName": "Chemist",
+			"subclassSource": "Deoir",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"As a Chemist you Explore your concoctions ability to do harm.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Exploding Bottle|Apothecary|Deoir|Chemist|Deoir|1"
+				}
+			]
+		},
+		{
+			"name": "Exploding Bottle",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassShortName": "Chemist",
+			"subclassSource": "Deoir",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"At 1st level, when attacking with a bottle of pain you can expend a prepared Tonic to increase the initial damage by {@damage 1d8}. This extra damage increases at 5th level ({@damage 3d8}), 10th level ({@damage 5d8}), 14th level ({@damage 7d8}) and 18th level ({@damage 9d8}).",
+				"You gain proficiency with {@item alchemist supplies|phb|alchemical supplies}."
+			]
+		},
+		{
+			"name": "Extra knowledge",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassShortName": "Chemist",
+			"subclassSource": "Deoir",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"At 3rd level, you learn an extra Tonic."
+			]
+		},
+		{
+			"name": "Special Concoctions",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassShortName": "Chemist",
+			"subclassSource": "Deoir",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, You gain the ability to create Special Concoctions that you yourself are not quite sure on what they do. But you know they do something!",
+				"During a long rest, you can create up to your Proficiency bonus in Special Concoctions. When a creature would ingest one of these concoctions using their bonus action roll on this table. The roll is a d20. If the effect makes others make a save it's against the Apothecaries save DC.",
+				{
+					"type": "table",
+					"caption": "Special Concoctions",
+					"colLabels": [
+						"Roll",
+						"Effect"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-6"
+					],
+					"rows": [
+						[ "1", "The creature takes {@damage 4d6} Necrotic damage" ],
+						[ "2", "The speed of the creature increases by 10 feet for the next 4 turns" ],
+						[ "3", "Nothing happens" ],
+						[ "4", "The creature can add {@dice 1d8} to their next attack roll, saving throw or ability check" ],
+						[ "5", "The next meal they eat they feel satiated for the next week and will not have to eat again till the next week" ],
+						[ "6", "The creature losses 10 ft of movement" ],
+						[ "7", "The creature exudes pheromones and charms every creature within 20 ft of it. WIS save" ],
+						[ "8", "One part of the creature enlarges for 7 days" ],
+						[ "9", "The creature teleports up to 30ft" ],
+						[ "10", "The creature gains {@dice 2d6} Hit points" ],
+						[ "11", "The creature is {@condition blinded|Ishiir} for till the end of their next turn" ],
+						[ "12", "Other creatures have disadvantage on hitting this creature till the end of their next turn" ],
+						[ "13", "The creature becomes invisible till the end of their next turn" ],
+						[ "14", "The creature gains +1 AC for 1 hour" ],
+						[ "15", "The creature can only do one of the following during their next turn: Move, Action or Bonus action" ],
+						[ "16", "The creature gains the ability to use a telekenetic shove, STR save, to push a creature within 30 ft as a bonus action by 15 ft, for a number of turns equal to their level" ],
+						[ "17", "The creature is forced to make a WIS save, becoming {@condition Dazed|Ishiir} on a failure for 1 minute" ],
+						[ "18", "30 ft around the creature becomes {@quickref difficult terrain||3} for everyone but the creature itself" ],
+						[ "19", "The creature pukes fire in a 10ft line 5ft wide dealing {@damage 2d6} fire damage or half on a save DEX save" ],
+						[ "20", "The creature's next attack roll is considered a 20 on the d20" ]
+					]
+				}
+			]
+		},
+		{
+			"name": "Vial of Debilitating Mist",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassShortName": "Chemist",
+			"subclassSource": "Deoir",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"At 9th level, you can create a vial that holds debilitating mist during a short rest. When thrown it creates a 15ft radius mist that gives a {@dice 1d10} penalty to ability checks and saving throws to any creature within its radius."
+			]
+		},
+		{
+			"name": "Effectiveness Increased",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassShortName": "Chemist",
+			"subclassSource": "Deoir",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"At 13th level, your Tonics are more potent. When you use a Tonic that deals damage, add your intelligence modifier to the damage. In addition to that you can now add a +1 on the special Concoctions roll once per long rest."
+			]
+		},
+		{
+			"name": "Residual Residue",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassShortName": "Chemist",
+			"subclassSource": "Deoir",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th level, your constant exposure to your Tonics have made you more resistant to their damaging effects. You gain resistance to either Acid, Cold, Fire or Poison. You can change this Resistance when you level up in this class."
+			]
+		},
+		{
+			"name": "More Pain",
+			"page": 1,
+			"source": "Deoir",
+			"className": "Apothecary",
+			"classSource": "Deoir",
+			"subclassShortName": "Chemist",
+			"subclassSource": "Deoir",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, while a creature is under the effect of your Bottle of Pain you have advantage on all attacks against them and they have disadvantage on saving throws against your Tonics."
+			]
+		}
+	]
+}

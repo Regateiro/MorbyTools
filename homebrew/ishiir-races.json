@@ -1,0 +1,2336 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Ishiir",
+                "abbreviation": "Ishiir",
+                "full": "Ishiir",
+                "url": "https://regateiro.pt/5etools/homebrew/ishiir-races.json",
+                "authors": [
+                    "Sieg"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+	"race": [
+		{
+			"name": "Dwarf",
+			"page": 1,
+			"source": "Ishiir",
+			"size": [
+				"M"
+			],
+			"speed": 25,
+			"ability": [
+				{
+					"con": 2
+				}
+			],
+			"increaseAbilityMax": true,
+			"age": {
+				"mature": 20,
+				"max": 140
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Tool Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"dwarvish": true
+				}
+			],
+			"resist": [
+				"poison"
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Dwarves mature a little slower than humans, reaching adulthood between 20 and 25 years, they never lose their innate hardiness until death approaches. As a result, some dwarfs can get up to 140 years old."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dedicated Crafter",
+					"entries": [
+						"You gain proficiency with one tool of your choice."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Impeccable Memory",
+					"entries": [
+						"You have advantage on all INT-checks to recall information about something."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"You have advantage on saving throws against poison, and you have resistance against poison damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Dwarvish."
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Elf",
+			"page": 1,
+			"source": "Ishiir",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"dex": 2
+				}
+			],
+			"increaseAbilityMax": true,
+			"age": {
+				"mature": 18,
+				"max": 150
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Improved Resting"
+			],
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"elvish": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Elves mature at about the same rate as humans, but never fall victim to the frailties of old age. As a result, some elves can get up to 150 years old. There are rumors of elves several centuries old, or even immortal. However, these have never been confirmed."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Elves are slightly taller than humans, some grow up to well over 6 feet. They are built more slender, however, and thus tend to be lighter in comparison. Your size is Medium."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to twilit forests and night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"You have proficiency in the {@skill Perception} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws against being {@condition charmed|Ishiir}, and magic can't put you to sleep."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Trance",
+					"entries": [
+						"Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. While meditating, you can dream after a fashion; such dreams are actually mental excercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Elvish."
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Draaken",
+			"page": 1,
+			"source": "Ishiir",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"str": 2,
+					"choose": {
+						"from": [
+							"con",
+							"int",
+							"cha"
+						],
+						"count": 1
+					}
+				}
+			],
+			"increaseAbilityMax": true,
+			"heightAndWeight": {
+				"baseHeight": 63,
+				"heightMod": "2d12",
+				"baseWeight": 150,
+				"weightMod": "2d8"
+			},
+			"age": {
+				"mature": 30,
+				"max": 200
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
+			"resist": [
+				{
+					"choose": {
+						"from": [
+							"acid",
+							"cold",
+							"fire",
+							"lightning",
+							"poison"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Draaken have inherited some of the longevity of their Dragon forefathers. Although able to walk early after hatching, they age slowly, reaching adulthood at around 30-40 years, with variation mostly dependant on scale color. Draaken can almost reach 200 years of age."
+					]
+				},
+				{
+					"name": "Typical Alignment",
+					"entries": [
+						"Lawful Neutral. Draaken value tradition and order. They are focused on the task that was assigned to them at their birth by the Conclave, rarely interfering with anything outside their lands. Those Draaken that deviate from the norm, usually tend towards extremes, either becoming champions of good or perpetrators of great evil."
+					],
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Draaken are taller and heavier than humans, standing well over 6 feet tall and averaging 250 pounds. Your size is Medium."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Thanks to your draconic heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Draconic Ancestry",
+					"entries": [
+						{
+							"type": "table",
+							"caption": "Draconic Ancestry",
+							"colLabels": [
+								"Dragon",
+								"Damage Type",
+								"Breath Weapon"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-3 text-center",
+								"col-6"
+							],
+							"rows": [
+								[
+									"Black",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Blue",
+									"Lightning",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Brass",
+									"Fire",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Bronze",
+									"Lightning",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Copper",
+									"Acid",
+									"5 by 30 ft. line (Dex. save)"
+								],
+								[
+									"Gold",
+									"Fire",
+									"15 ft. cone (Dex. save)"
+								],
+								[
+									"Green",
+									"Poison",
+									"15 ft. cone (Con. save)"
+								],
+								[
+									"Red",
+									"Fire",
+									"15 ft. cone (Dex. save)"
+								],
+								[
+									"Silver",
+									"Cold",
+									"15 ft. cone (Con. save)"
+								],
+								[
+									"White",
+									"Cold",
+									"15 ft. cone (Con. save)"
+								]
+							]
+						}
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Knowledge of the Ages",
+					"entries": [
+						"You gain proficiency in the {@skill history} and {@skill arcana} skills."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Breath Weapon",
+					"entries": [
+						"You can use your action to exhale destructive energy. Your draconic ancestry determines size, shape, and damage of the exhalation. Every creature in the area of a effect needs to make a saving throw against a DC of 8 + your CON, INT, or CHA modifier (your choice) + your proficiency. The damage equals {@damage 4d6} on a failed save, and have as much on a successful one. The damage increases by {@dice 1d6} at levels 6, 11, and 16.",
+						"After you use your breath weapon, you can't use it again until you complete a short or long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Fighter, Wizard, Sorcerer"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Draaken Names",
+					"entries": [
+						"Male Names: Aras, Bodunayn, Eozzeg, Fryrdonth, Guthorth, Myzentig, Piargesdu, Qiervass, Reseirin, Xulzrunan",
+						"Female Names: Aissain, Chenisselth, Faimaydis, Gyrmulth, Indriedul, Nethaphat, Qaphy, Samrossu, Tiepynth, Yrrosse",
+						"Task Name: Fishherder, Graingrower, Hearthbuilder, Pathfinder, Scrollscriber, Spellbinder, Steelforger, Taskbinder, Wallwarder, Wordbearer",
+						"<a href=\"https://www.fantasynamegenerators.com/dragon_names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Gnome",
+			"page": 1,
+			"source": "Ishiir",
+			"size": [
+				"S"
+			],
+			"speed": 25,
+			"ability": [
+				{
+					"int": 2
+				}
+			],
+			"increaseAbilityMax": true,
+			"age": {
+				"mature": 18,
+				"max": 150
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"gnomish": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Gnomes mature at the same rate as humans, their lifespans, however, tend to be longer. A gnome can reach almost 150 years of age."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Gnomes average about 3 feet tall and weigh about 40 pounds. Your size is Small."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Gnome Cunning",
+					"entries": [
+						"You have advantage on all INT, WIS, and CHA saving throws against magic."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Gnomish."
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Harfolk",
+			"page": 1,
+			"source": "Ishiir",
+			"size": [
+				"L"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"str": 2,
+					"choose": {
+						"from": [
+							"con",
+							"wis",
+							"cha"
+						],
+						"count": 1
+					}
+				}
+			],
+			"increaseAbilityMax": true,
+			"heightAndWeight": {
+				"baseHeight": 96,
+				"heightMod": "2d12",
+				"baseWeight": 400,
+				"weightMod": "2d8"
+			},
+			"age": {
+				"mature": 25,
+				"max": 80
+			},
+			"skillProficiencies": [
+				{
+					"athletics": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"giant": true
+				}
+			],
+			"resist": [
+				"cold"
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Harfolk age slightly slower than humans, and reach adulthood sometime in their twenties. They grow slightly older too, averaging a lifespan of about 80 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Chaotic Good. Harfolk strive above all to live life to its fullest and accomplish heroic deeds worthy of song and legend. Some Harfolk clans can support a more Lawful bend, based on a particular of code of honor or valued traditions."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Harfolk are by far the largest race on the face of Ishiir. An average Harfolk reaches heights of over 8 feet and weighs over 300 pounds. Your size is Large. This does not increase the size of your weapon damage die."
+					]
+				},
+				{
+					"name": "Natural Athlete",
+					"entries": [
+						"You have proficiency in the {@skill Athletics} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Harfolk Hardiness",
+					"entries": [
+						"When you take damage, you can choose to use your reaction to shrug off the blow. Roll a {@dice d12} + your CON modifier. And substract the result from the damage taken. You can't use this feature again until you have finished a short or long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Mountain Born",
+					"entries": [
+						"Your are acclimatized to cold regions as per the DMG. You also have resistance to cold damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Giant."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Barbarian, Druid, Bard"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Harfolk Names",
+					"entries": [
+						"Male Names: Authulf, Bjalfi, Glum, Hafgrim, Ingifast, Njal, Orlyg, Skeggi, Thorgaut, Vebjorn",
+						"Female Names: Alfdis, Drifa, Gyda, Halla, Ingigerd, Jorunn, Osk, Skuld, Thorgunna, Vigdis",
+						"Last Name: Name of parent with greater achievements + s + son (male)/dottir (female)",
+						"<a href=\"https://www.fantasynamegenerators.com/viking_names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Awakened Forest Owl",
+			"page": 1,
+			"source": "Ishiir",
+			"size": [
+				"T"
+			],
+			"speed": {
+				"walk": 10,
+				"fly": 50
+			},
+			"ability": [
+				{
+					"dex": 2,
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1
+					}
+				}
+			],
+			"increaseAbilityMax": true,
+			"age": {
+				"mature": 1,
+				"max": 30
+			},
+			"darkvision": 120,
+			"skillProficiencies": [
+				{
+					"perception": true,
+					"stealth": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Forest Owls reach maturity at about 1 years old and can live to around 30."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Neutral."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Forest Owls can grow up to a little over 1 foot tall, with a wingspan around 3 feet. Your size is tiny."
+					]
+				},
+				{
+					"name": "Limited Flight",
+					"entries": [
+						"You have a flying speed of 50 feet, but you must end your movement on a surface you can stand on."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Flyby",
+					"entries": [
+						"You don't provoke opportunity attacks when you fly out of an enemy's reach."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to twilit forests and night sky, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"You gain proficiency in the {@skill Perception} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Silent Flight",
+					"entries": [
+						"You gain proficiency in the {@skill Stealth} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Speak with Beasts",
+					"entries": [
+						"You can communicate with other beasts as if you were sharing the same language."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read and, write Common and one additional language of your choice."
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Half-Elf",
+			"page": 1,
+			"source": "Ishiir",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"cha": 2,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis"
+						],
+						"count": 2
+					}
+				}
+			],
+			"increaseAbilityMax": true,
+			"age": {
+				"mature": 18,
+				"max": 100
+			},
+			"darkvision": 30,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"skillProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"elvish": true,
+					"any": 1
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Half-Elves mature at the same rate as humans, but live longer thanks to their Elven heritage. A Half-Elf can get close to 100 years old."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Typical Alignment",
+					"entries": [
+						"Similar to Humans, Half-Elves have no innate tendencies towards any alignment, and instead adopt one based entirely on their personal experiences."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"While they inherit some striking features from the Elven half of their parents, Half-Elves tend to be closer in build and height to Humans. Your size is Medium."
+					]
+				},
+				{
+					"name": "Skill Versatility",
+					"entries": [
+						"You gain proficiency in two skills of your choice."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Lesser Darkvision",
+					"entries": [
+						"Thanks to your Elven heritage, you have superior vision in dark and dim conditions. You can see in dim light within 30 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws against being {@condition charmed|Ishiir}, and magic can't put you to sleep."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Mixed Heritage",
+					"entries": [
+						"Choose the single strongest influence of your parentage from the following:",
+						"Human: You gain proficiency in one skill",
+						"High Elf: You gain the Cantrip racial trait.",
+						"Wood Elf: You gain the Mask of the Wild racial and Fleet of foot racial traits.",
+						"Dark Elf: Your gain the Dark Elf Spellcasting trait, excluding Healing Spirit."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Elvish, and one extra language of your choice."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Any."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Height and Weight",
+					"entries": [
+						"Roll for height and weight for both of your parents and then take the average for each."
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Orc",
+			"page": 1,
+			"source": "Ishiir",
+			"size": [
+				"M"
+			],
+			"speed": 35,
+			"ability": [
+				{
+					"str": 2,
+					"choose": {
+						"from": [
+							"dex",
+							"con",
+							"wis"
+						],
+						"count": 1
+					}
+				}
+			],
+			"increaseAbilityMax": true,
+			"heightAndWeight": {
+				"baseHeight": 62,
+				"heightMod": "2d12",
+				"baseWeight": 140,
+				"weightMod": "2d6"
+			},
+			"age": {
+				"mature": 12,
+				"max": 60
+			},
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"skillProficiencies": [
+				{
+					"intimidation": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"orc": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Orcs mature slightly faster than Humans, reaching adulthood in their early teens. They also age noticeably faster. An orc rarely lives past his 60th year."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Typical Alignment",
+					"entries": [
+						"Chaotic Neutral. Orcs are belligerent and quick to anger, always ready and willing to solve a conflict with violence.",
+						"They do, however, adhere to a code of honor, such as not using backhanded tactics or killing children. Orcs value and respect displays of great strength and glory, but find little value in laws."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Orcs are taller and much bulkier than humans. They easily surpass 6 feet in height and average over 200 pounds. Your size is Medium."
+					]
+				},
+				{
+					"name": "Menacing",
+					"entries": [
+						"You gain proficiency in the {@skill Intimidation} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Fearless",
+					"entries": [
+						"You have advantage on saving throws against being {@condition frightened|Ishiir}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Tireless",
+					"entries": [
+						"If you gain a level of {@condition exhaustion|Ishiir}, you can use a bonus action to remove it. You can't use this ability again until you finish a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Furious Charge",
+					"entries": [
+						"Once per turn, as part of a melee weapon attack, you can move up to your speed in a straight line towards a target of your choice."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Relentless Endurance",
+					"entries": [
+						"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Savage Attacks",
+					"entries": [
+						"When you score a critical hit with a melee weapon attack, you can reroll the weapon's damage dice (and only the weapon's own damage dice) again and add the result to the total."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Orcish."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Barbarian, Ranger, Druid"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Orc Names",
+					"entries": [
+						"Male Names: Angul, Brall, Ghamzull, Lonzag, Mavar, Ondok, Rhohzak, Uzzok, Xurl, Zutrall",
+						"Female Names: Auvi, Bhedkua, Himdi, Kyel, Memvual, Nef, Oddil, Rhilve, Seemo, Vaatu",
+						"Clan Names: Blackclaw, Boneshatter, Deathwind, Eyegouger, Frosttusk, Howling Axe, Marrowdrinker, Mystbraver, Raging Aurochs, Stormbringer",
+						"<a href=\"https://www.fantasynamegenerators.com/orc_names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Halfling",
+			"page": 1,
+			"source": "Ishiir",
+			"size": [
+				"S"
+			],
+			"speed": 25,
+			"ability": [
+				{
+					"dex": 2
+				}
+			],
+			"increaseAbilityMax": true,
+			"age": {
+				"mature": 18,
+				"max": 70
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"halfling": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Halflings age at the same rate as humans."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small."
+					]
+				},
+				{
+					"name": "Lucky",
+					"entries": [
+						"When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Halfling Nimbleness",
+					"entries": [
+						"You can move through the space of any creature that is of a size larger than yours."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Halfling."
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Human",
+			"page": 1,
+			"source": "Ishiir",
+			"size": [
+				"M"
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 2
+					}
+				}
+			],
+			"speed": 30,
+			"age": {
+				"mature": 18,
+				"max": 70
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Humans reach adulthood in their late teens and rarely live past 70."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Humans tend to no particular alignment by nature, although the aftermath of the Great War has made many of them bitter and resentful. One is as likely to find idealistic heroes as depraved villains among them, most of them fall somewhere in the middle."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Humans vary wildly in height and build, from barely 5 feet to well over 6 feet tall. Your size is Medium."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one extra language of your choice."
+					],
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Skill Versatility",
+					"entries": [
+						"You gain proficiency in 3 extra skills of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Natural Talent",
+					"entries": [
+						"You gain one feat of your choice."
+					]
+				}
+			]
+		},
+		{
+			"name": "Nessian",
+			"page": 1,
+			"source": "Ishiir",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"cha": 2,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"int"
+						],
+						"count": 1
+					}
+				}
+			],
+			"increaseAbilityMax": true,
+			"heightAndWeight": {
+				"baseHeight": 60,
+				"heightMod": "2d10",
+				"baseWeight": 125,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 18,
+				"max": 90
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"skillProficiencies": [
+				{
+					"persuasion": true,
+					"intimidation": true,
+					"deception": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"nessian": true
+				}
+			],
+			"resist": [
+				"fire"
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Nessians age at the same rate as humans, but the blessing of the Scarlet Emperor gives them an increased lifespan and protects them from the worst effects of old age. A Nessian can live up to 90 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Lawful Evil. Nessian society is ruled by a rigid hierarchy, and rewards ambition, calculated risks, and ruthlessness above all.",
+						"In contrast, senseless cruelty and undignified behaviour are detested. However, there are those few who seek to oppose the Scarlet Emperor or, at the very least, look for a different lot in life."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Nessians are about the same height and build as humans, not counting their horns, which can add up to a foot depending on shape. Your size is Medium."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"The blessing of the Emperor bestows upon you superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Fiendish Resistance",
+					"entries": [
+						"You have resistance to fire damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Silvertongued",
+					"entries": [
+						"You gain proficiency in the {@skill Persuasion}, {@skill Intimidation}, and {@skill Deception} skills."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Nessian."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Paladin, Wizard, Warlock"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Nessian Names",
+					"entries": [
+						"Male Names: Andrakas, Casrakir, Kilros, Lokeus, Ozlech, Rolakos, Skavir, Thenon, Uriil, Zervenom",
+						"Female Names: Aralia, Brilaia, Creseis, Daki, Lerali, Pheyis, Seiriseis, Velspira, Yaseis, Zahala",
+						"Last Names: Abellan, Cabal, Espinar, Garrido, Illescas, Lacasa, Quesada, Tassis, Venegas, Xaudiera ",
+						"<a href=\"https://www.fantasynamegenerators.com/dnd-tiefling-names.php\">First Name Generator</a>",
+						"<a href=\"https://www.fantasynamegenerators.com/catalan-names.php\">Last Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Shadowborn",
+			"page": 1,
+			"source": "Ishiir",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"con": 2,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"wis"
+						],
+						"count": 1
+					}
+				}
+			],
+			"increaseAbilityMax": true,
+			"heightAndWeight": {
+				"baseHeight": 62,
+				"heightMod": "2d12",
+				"baseWeight": 100,
+				"weightMod": "2d4"
+			},
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"umbral": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Shadowborn do not age, and if not destroyed, can live forever."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Lawful Good. In contrast to their appearance most Shadowborn are virtuous and law-abiding beings that tend to work out of altruistic motives.",
+						"A typical Shadowborn takes great care to always conduct themselves in a polite manner and responds to likewise behaviour very favorably. Evil Shadowborn are usually dealt with swiftly by members of their own race, so as not to risk further worsening an already dangerously bad reputation."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Shadowborn outside their armor can reach almost 7 feet in height, but typically weigh half as much as a humanoid of the same size. Your size is Medium."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Your affinity to the Plane of Shadow grants you superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Unsleeping",
+					"entries": [
+						"Shadowborn require neither food nor sleep. To sustain themselves they instead harness energy from the Shadowplane, for which they need to enter a state similar to deep meditation for 4 hours."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Undead",
+					"entries": [
+						"Shadowborn do not breathe, cannot benefit from regular healing, are immune to Poison and Disease, and vulnerable to Radiant Damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Siphon Shadows",
+					"entries": [
+						"You are immune to necrotic damage. When you are subject to necrotic damage from any source except cantrips, you are instead healed for half the amount of the damage you would have taken."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Siphon Life",
+					"entries": [
+						"One of the things that contributes the most to the reputation Shadowborn have among other races, is their ability to harness residual life energy from the dead. For this reason, Shadowborn are very conscious of when they use this ability.",
+						"As an action, you can siphon energy from a creature within 5 ft of you that has died within the last 24 hours. If you do so, you can spend hit dice as if you had taken a rest. You cannot use this feature more than once on the same creature."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Umbral."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Paladin, Rogue, Cleric"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Shadowborn Names",
+					"entries": [
+						"Names: Balanced Truth, Harsh Justice, Honest Offer, Piercing Vision, Pointed Inquiry, Righteous Wrath, Silken Candor, Soundless Stride, Steadfast Loyalty, Umbral Journey"
+					],
+					"type": "entries"
+				}
+			]
+		}
+	],
+	"subrace": [
+		{
+			"name": "Mountain",
+			"page": 1,
+			"source": "Ishiir",
+			"raceName": "Dwarf",
+			"raceSource": "Ishiir",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"wis"
+						],
+						"count": 1
+					}
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 48,
+				"heightMod": "2d4",
+				"baseWeight": 130,
+				"weightMod": "2d6"
+			},
+			"entries": [
+				{
+					"name": "Dwarven Toughness",
+					"entries": [
+						"Your hit point maximum increases by 1 for each level."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dwarven Combat Training",
+					"entries": [
+						"You have proficiency in light and medium armor as well as the battleaxe, warhammer, light crossbow, and heavy crossbow."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Typical Alignment",
+					"entries": [
+						"Lawful Neutral. Most Mountain Dwarves are conservative and traditional, with strong emphasis on personal honor and loyalty. They tend to stay out of other's affairs and expect outsiders to do the same."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Fighter, Ranger, Cleric."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Mountain Dwarf Names",
+					"entries": [
+						"Male Names: Artyom, Klim, Mirov, Sergey, Stannis, Vadim, Viktor, Vladis, Yuri, Zhenyok",
+						"Female Names: Asya, Irina, Kataryna, Lapulya, Masha, Nashka, Natalya, Sanka, Sasha, Tatyana",
+						"Last Name: Name of father + ovich (M) or ovna (F)",
+						"<a href=\"https://www.fantasynamegenerators.com/russian_names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Hill",
+			"page": 1,
+			"source": "Ishiir",
+			"raceName": "Dwarf",
+			"raceSource": "Ishiir",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"wis",
+							"cha"
+						],
+						"count": 1
+					}
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 44,
+				"heightMod": "2d4",
+				"baseWeight": 115,
+				"weightMod": "2d8"
+			},
+			"entries": [
+				{
+					"name": "Crafty Negotiator",
+					"entries": [
+						"You gain proficiency in the {@skill persuasion} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Insightful",
+					"entries": [
+						"You gain proficiency in the {@skill insight} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Discerning Eye",
+					"entries": [
+						"You have advantage on saving throws against Illusions and skill checks to identify illusions."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Typical Alignment",
+					"entries": [
+						"Neutral Good. Most Hill Dwarves love engaging in conversation and have a helpful streak. They see value in order and tradition like all dwarves, although personal ambition and pragmatism has greater importance to them."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Rogue, Cleric, or Sorcerer."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Hill Dwarf Names",
+					"entries": [
+						"Male Names: Borys, Fedir, Ihor, Kuzma, Oleh, Panas, Pylyp, Taras, Vitalij, Yehor",
+						"Female Names: Anzhela, Inna, Liliya, Marta, Orysya, Rayisa, Sofiya, Vita, Yeva, Zhanna",
+						"Last Name: Name of father + ovych (M) or ivna (F)",
+						"<a href=\"https://www.fantasynamegenerators.com/ukrainian-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "High",
+			"page": 1,
+			"source": "Ishiir",
+			"raceName": "Elf",
+			"raceSource": "Ishiir",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1
+					}
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 57,
+				"heightMod": "2d10",
+				"baseWeight": 100,
+				"weightMod": "1d4"
+			},
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Sorcerer (Ishiir);Cleric (Ishiir);Wizard (Ishiir)|source=Ishiir",
+								"count": 1
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"name": "High Elf Education",
+					"entries": [
+						"You have proficiency in the Arcana skill and one more INT-based skill of your choice."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Cantrip",
+					"entries": [
+						"You know one cantrip of your choice from the cleric, wizard, or sorcerer spell list. Your spellcasting ability for it is INT, WIS, or CHA (your choice)."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Extra Language",
+					"entries": [
+						"You can speak, read, and write one additional language."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Typical Alignment",
+					"entries": [
+						"Lawful Evil. While not cruel, High Elves openly practice human slavery and justify it by placing their victims at a level with livestock. Arrogant and aloof, High Elves see themselves at the pinnacle of creation, though they do afford other powerful magic users a measure of respect."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Wizard, Cleric, Sorcerer"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "High Elf Names",
+					"entries": [
+						"Male Names: Coryth, Dadarai, Erethas, Fardarai, Irarion, Riarthas, Sarnaster, Tavtorin, Urilias, Xancorin",
+						"Female Names: Anzora, Faexana, Kairiel, Korariel, Lesthaea, Menairra, Satrianna, Theilynna, Velariel, Yllaneth",
+						"Last Name: Argentflower, Faefriend, Goldenlake, Leafwarder, Moongazer, Morningdew, Nightwarder, Springbreeze, Starspeaker, Sunseeker",
+						"<a href=\"https://www.fantasynamegenerators.com/dnd-eladrin-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Wood",
+			"page": 1,
+			"source": "Ishiir",
+			"raceName": "Elf",
+			"raceSource": "Ishiir",
+			"speed": 35,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"wis"
+						],
+						"count": 1
+					}
+				}
+			],
+			"traitTags": [
+				"Weapon Proficiency"
+			],
+			"heightAndWeight": {
+				"baseHeight": 62,
+				"heightMod": "2d12",
+				"baseWeight": 115,
+				"weightMod": "1d8"
+			},
+			"entries": [
+				{
+					"name": "Elf Weapon Training",
+					"entries": [
+						"You have proficiency with the {@item elvish spear|Ishiir}, {@item greatspear|Ishiir}, {@item shortbow|Ishiir}, and {@item longbow|Ishiir}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Fleet of Foot",
+					"entries": [
+						"Your base walking increases to 35 feet."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Born Predator",
+					"entries": [
+						"You gain a +2 bonus to initiative."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "One with the Wild",
+					"entries": [
+						"You gain proficiency in the nature skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Mask of the Wild",
+					"entries": [
+						"You can attempt to hide even when you're only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Typical Alignment",
+					"entries": [
+						"Neutral. Most Wood Elf are stoic individuals that do not engage in conversation or take sides unless absolutely necessary. A Wood Elf will rarely deem an act evil or good, and instead judge it by its merit for survival."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Barbarian, Ranger, Druid"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Wood Elf Names",
+					"entries": [
+						"Male Names: Admaris, Cralar, Farren, Genran, Norfaren, Pelpetor, Rojor, Theven, Vakian, Yelro",
+						"Female Names: Bryvyre, Chaeharice, Dawenys, Eilwynn, Iarnala, Mialynn, Quifiel, Syldi, Venrieth, Yescyne",
+						"Clan Name: Biting Arrow, Bloodsoaked Leaf, Hungering Blade, Lightless Song, Mighty Hawk, Raking Claw, Silent Crane, Soothing Hand, Unsleeping Myst, Warding Owl",
+						"<a href=\"https://www.fantasynamegenerators.com/dnd-elf-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Dark",
+			"page": 1,
+			"source": "Ishiir",
+			"raceName": "Elf",
+			"raceSource": "Ishiir",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"wis",
+							"cha"
+						],
+						"count": 1
+					}
+				}
+			],
+			"traitTags": [
+				"Weapon Proficiency"
+			],
+			"heightAndWeight": {
+				"baseHeight": 60,
+				"heightMod": "2d12",
+				"baseWeight": 105,
+				"weightMod": "1d6"
+			},
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"dancing lights|Ishiir",
+									"sanctuary|Ishiir",
+									"healing spirit|Ishiir"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"wis",
+							"cha"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"name": "Dark Elf Spellcasting",
+					"entries": [
+						"All Dark Elves enjoy the protection of their patron goddess. Excepting the cantrip, you can cast the following spells once per long rest without expending material components. Your spellcasting ability for these spells is WIS or CHA (your choice).",
+						"{@spell Dancing Lights|Ishiir}, {@spell Sanctuary|Ishiir}, {@spell Healing Spirit|Ishiir}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Elf Weapon Training",
+					"entries": [
+						"You have proficiency with the {@item elvish sword|Ishiir}, {@item greatsword|Ishiir}, {@item longbow|Ishiir}, and {@item shortbow|Ishiir}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Typical Alignment",
+					"entries": [
+						"Lawful Neutral. Dark Elves live in a theocratic society that has laws and rituals for almost every aspect of life. Adhering to these and gaining favor in the eyes of their goddess is paramount for almost all of them.",
+						"They are cold and distrusting towards outsiders when encountered away from their city, but warm and hospitable when hosting them inside their walls."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Cleric, Ranger, Bard"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "High Elf Names",
+					"entries": [
+						"Male Names: Belthym, Gelas, Kyordan, Masmyr, Nalhriir, Nym, Pharaun, Ruathym, Veldrin, Xarann",
+						"Female Names: Aunquiri, Dileari, Faethra, Lirdbryn, Micarwae, Neerune, Quavwae, Rillay, Sindyrrith, T'rislindra",
+						"Last Name: Arabmtor, Auvryani, Baenrahel, Beltaulur, Despurden, Dryaalabban, Glannune, Mizzrym, Rilyntlar, Yril'Lysaen",
+						"<a href=\"https://www.fantasynamegenerators.com/dnd-drow-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Lightfoot",
+			"page": 1,
+			"source": "Ishiir",
+			"raceName": "Halfling",
+			"raceSource": "Ishiir",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1
+					}
+				}
+			],
+			"skillProficiencies": [
+				{
+					"persuasion": true,
+					"stealth": true
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 36,
+				"heightMod": "2d4",
+				"baseWeight": 40,
+				"weightMod": "1d4"
+			},
+			"entries": [
+				{
+					"name": "Nimble Dodge",
+					"entries": [
+						"You have advantage against DEX saving throws."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Friendly Face",
+					"entries": [
+						"You gain proficiency in the {@skill persuasion} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Sneaky",
+					"entries": [
+						"You gain proficiency in the {@skill stealth} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Light Steps",
+					"entries": [
+						"You make any {@skill stealth} check that is contingent on not being heard rather than not being seen with advantage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Naturally Stealthy",
+					"entries": [
+						"You can attempt to {@action hide|Ishiir} even if you are obscured only by a creature that is at least one size larger than you."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Typical Alignment",
+					"entries": [
+						"Neutral Good. Most Lightfoot Halflings are good-natured. They love making people laugh, meeting new friends and are quickly moved to action by another's plight. They do respect law, but are not above breaking it when it stands in the way of doing good in their eyes."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Rogue, Cleric, Bard"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Lightfoot Halfling Names",
+					"entries": [
+						"Male Names: Davvias, Elwrick, Falbin, Flynyas, Janzin, Lineon, Marrich, Pimrin, Teamin, Yennad",
+						"Female Names: Antina, Calelle, Eieni, Eliree, Kithgrace, Maesira, Risica, Saeni, Trynnys, Zeneni",
+						"Last Name: Brushtumble, Dayglide, Havenvale, Hearthcrest, Heartwater, Manybarrel, Merrymouth, Riverpeak, Swiftheel, Thistlebrow",
+						"<a href=\"https://www.fantasynamegenerators.com/dnd-halfling-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Strongheart",
+			"page": 1,
+			"source": "Ishiir",
+			"raceName": "Halfling",
+			"raceSource": "Ishiir",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"cha"
+						],
+						"count": 1
+					}
+				}
+			],
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"resist": [
+				"poison"
+			],
+			"traitTags": [
+				"Weapon Proficiency"
+			],
+			"heightAndWeight": {
+				"baseHeight": 38,
+				"heightMod": "2d4",
+				"baseWeight": 50,
+				"weightMod": "1d4"
+			},
+			"entries": [
+				{
+					"name": "Brave",
+					"entries": [
+						"You have advantage on saving throws against being {@condition frightened|Ishiir}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Alert Senses",
+					"entries": [
+						"You gain proficiency in the {@skill perception} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Disciplined",
+					"entries": [
+						"You can use heavy weapons despite being small."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Strongheart Toughness",
+					"entries": [
+						"Your hit point maximum increases by 1 for each level."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Strongheart Weapon Training",
+					"entries": [
+						"You gain proficiency with light and medium armor as well as the {@item longsword|Ishiir}, {@item battleaxe|Ishiir}, {@item longbow|Ishiir}, and {@item crossbow, heavy|Ishiir|heavy crossbow}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Stout Resilience",
+					"entries": [
+						"You have advantage on saving throws against poison, and you have resistance against poison damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Typical Alignment",
+					"entries": [
+						"Lawful Neutral. Strongheart Halflings have strong ties to the Mountain Dwarves and emulate them in many ways. They do, however, not share their close allies' love for strong drink and a good fight. In fact, there aren't many things they do for sheer enjoyment, earning them a reputation of stoicism and being absolute killjoys at parties."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Fighter, Ranger, Paladin"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Strongheart Halfling Names",
+					"entries": [
+						"Male Names: Arsire, Barster, Conric, Dannad, Norkas, Quinton, Sharder, Tedak, Ulsire, Uriras",
+						"Female Names: Belphina, Calwyn, Eovira, Gelkis, Hilsica, Isasira, Jilleigh, Thamgwen, Vafice, Xanvyre",
+						"Last Name: Argentshield, Bravewarder, Darkfender, Irongauntlet, Keenblade, Oathscabbard, Steelborn, Valorheart, Wallwatcher, Woodarcher",
+						"<a href=\"https://www.fantasynamegenerators.com/dnd-halfling-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Forest",
+			"page": 1,
+			"source": "Ishiir",
+			"raceName": "Gnome",
+			"raceSource": "Ishiir",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"wis",
+							"cha"
+						],
+						"count": 1
+					}
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 23,
+				"heightMod": "2d4",
+				"baseWeight": 35,
+				"weightMod": "1"
+			},
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"minor illusion|Ishiir#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"name": "Natural Illusionist",
+					"entries": [
+						"You know the {@spell Minor Illusion|Ishiir} cantrip. Your spellcasting ability for it is INT, WIS, or CHA (your choice)."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Speak with Small Beasts",
+					"entries": [
+						"Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts. Forest gnomes love animals and often keep squirrels, badgers, rabbits, moles, woodpeckers, and other creatures as beloved pets."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Naturally Stealthy",
+					"entries": [
+						"You can attempt to hide even if you are obscured only by a creature that is at least one size larger than you."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Typical Alignment",
+					"entries": [
+						"Chaotic Good. Flighty, ever curious and inquisitive, Forest Gnomes are good-hearted by nature, and will rarely venture down the path of evil. In fact, it requires terrible experiences and being removed from other gnomes for a long time for a Forest Gnome to become evil. Those that do, however, can be terrifying adversaries."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Rogue, Druid, Warlock"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Forest Gnome Names",
+					"entries": [
+						"Male Names: Alxif, Erdri, Horwor, Langim, Manhik, Ordri, Poston, Ronwin, Vorziver, Xoni",
+						"Female Names: Banci, Breeyaris, Dossa, Inarhana, Krissa, Myssa, Orceli, Prixi, Qilin, Xassa",
+						"Last Name: Ayalala, Hooproll, Joyousjump, Naglin, Kribbledips, Oxenpot, Pickleprix, Shepperdale, Tibbitop, Zamzalah",
+						"<a href=\"https://www.fantasynamegenerators.com/dnd-gnome-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Rock",
+			"page": 1,
+			"source": "Ishiir",
+			"raceName": "Gnome",
+			"raceSource": "Ishiir",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"con",
+							"wis"
+						],
+						"count": 1
+					}
+				}
+			],
+			"traitTags": [
+				"Tool Proficiency"
+			],
+			"heightAndWeight": {
+				"baseHeight": 23,
+				"heightMod": "2d4",
+				"baseWeight": 35,
+				"weightMod": "2"
+			},
+			"entries": [
+				{
+					"name": "Expert Crafter",
+					"entries": [
+						"You gain proficiency in two tools of your choice."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Artificer's Lore",
+					"entries": [
+						"Whenever you make an INT-check related to magic items, alchemical objects, or technological devices, you have advantage on the check."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Gnome Tinkerer",
+					"entries": [
+						"You have proficiency with artisan's tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp).",
+						"The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options or suggest an idea of your own to your DM.",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Clockwork Toy",
+									"entry": "This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents."
+								},
+								{
+									"type": "item",
+									"name": "Fire Starter",
+									"entry": "The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action."
+								},
+								{
+									"type": "item",
+									"name": "Music Box",
+									"entry": "When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed."
+								}
+							]
+						}
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Typical Alignment",
+					"entries": [
+						"Lawful Good. Like their cousins, Rock Gnomes are very friendly by nature, though living amongst humanoids for so long has given them a more pragmatic outlook on life. A Rock Gnome abhors lying and will always be honest in their dealings."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Rogue, Artificer, Cleric"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Rock Gnome Names",
+					"entries": [
+						"Male Names: Bracnill, Fraakneld, Gontir, Khirdrug, Krandell, Shothi, Sneti, Thoktill, Wolkull, Zhiddlin",
+						"Female Names: Almian, Buveda, Kanni, Lalgi, Nirshaili, Sirsei, Turthira, Uthrieri, Yilselka, Zuslenn",
+						"Last Name: Chalkmarker, Coalfurnace, Flintstriker, Granitesplitter, Onyxeye, Pebblesorter, Quartzgrinder, Rockmelder, Stonechisel, Whetstone",
+						"<a href=\"https://www.fantasynamegenerators.com/pathfinder-gnome-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Andragastan",
+			"page": 1,
+			"source": "Ishiir",
+			"raceName": "Human",
+			"raceSource": "Ishiir",
+			"heightAndWeight": {
+				"baseHeight": 60,
+				"heightMod": "2d12",
+				"baseWeight": 125,
+				"weightMod": "2d4"
+			},
+			"entries": [
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Fighter, Paladin"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Andragastan Names",
+					"entries": [
+						"Male Names: Aldo, Farald, Friedhelm, Grimwald, Hilger, Ludger, Meinolf, Roald, Volkbert, Wolf",
+						"Female Names: Arda, Engla, Heilgard, Hildrun, Ishilde, Kaja, Kirsa, Riccarda, Runhild, Schwanhilde",
+						"Last Name: Anders, Eichenherz, Eisenmang, Leuenzunge, Landsteiner, Metzinger, Muller, Schmiedsmann, Oberlauf, Steinward",
+						"<a href=\"https://www.fantasynamegenerators.com/old-high-german-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Dask Diirthiri",
+			"page": 1,
+			"source": "Ishiir",
+			"raceName": "Human",
+			"raceSource": "Ishiir",
+			"heightAndWeight": {
+				"baseHeight": 55,
+				"heightMod": "2d10",
+				"baseWeight": 105,
+				"weightMod": "2d4"
+			},
+			"entries": [
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Wizard, Sorcerer"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dask Diirthiri Names",
+					"entries": [
+						"Male Names: Atevius, Dolenor, Drewahl, Iuwahl, Ojwrick, Olkius, Qrynorim, Ustalius, Ycfeus, Zofeus",
+						"Female Names: Arawaelle, Drafaris, Ersaem, Ibine, Modali, Nynestrea, Pradeis, Qrohith, Uifea, Vrilabine",
+						"Last Name: Chelieth, Disainshaesh, Ezeilzosh, Gereashu, Lorallo, Maelkei, Nirekha, Ushelgre, Rothah, Tekhamath",
+						"<a href=\"https://www.fantasynamegenerators.com/wizard-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Gerlundese",
+			"page": 1,
+			"source": "Ishiir",
+			"raceName": "Human",
+			"raceSource": "Ishiir",
+			"heightAndWeight": {
+				"baseHeight": 53,
+				"heightMod": "2d10",
+				"baseWeight": 105,
+				"weightMod": "2d4"
+			},
+			"entries": [
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Druid, Barbarian"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Gerlundese Names",
+					"entries": [
+						"Male Names: Atuar, Kwalu, Losi, Mezoar, Nsi, Osaw, Otek, Selu, Weshtek, Xavar",
+						"Female Names: Azuil, Chuil, Fipya, Isi, Lorit, Mainu, Sana, Tefnek, Yafuil, Zizi",
+						"Fated Name: (of the) Beast's Heart, Blackened Path, Bountiful Womb, Charring Word, Fearless Feet, Healing Hearth, Jagged Spear, Seeing Eye, Seeking Blade, Viper's Tongue"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Mystgardian",
+			"page": 1,
+			"source": "Ishiir",
+			"raceName": "Human",
+			"raceSource": "Ishiir",
+			"heightAndWeight": {
+				"baseHeight": 55,
+				"heightMod": "2d10",
+				"baseWeight": 110,
+				"weightMod": "2d4"
+			},
+			"entries": [
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Ranger, Druid"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Mystgardian Names",
+					"entries": [
+						"Male Names: Anwir, Brys, Cedrik, Eurion, Ieuan, Llyr, Robat, Steffon, Tomos, Trahaearn",
+						"Female Names: Awen, Eira, Elinor, Fioled, Gwenifer, Lili, Meleri, Morwen, Rhona, Teleri",
+						"Last Name: Bevin, Dafis, Griffith, Hywel, Llewellyn, Owens, Pryce, Rhys, Tomos, Vaughan",
+						"<a href=\"https://www.fantasynamegenerators.com/celtic-welsh-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Nilfa",
+			"page": 1,
+			"source": "Ishiir",
+			"raceName": "Human",
+			"raceSource": "Ishiir",
+			"heightAndWeight": {
+				"baseHeight": 54,
+				"heightMod": "2d10",
+				"baseWeight": 105,
+				"weightMod": "2d4"
+			},
+			"entries": [
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Rogue, Warlock"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Nilfa Names",
+					"entries": [
+						"Male Names: Alan, Breok, Davydh, Jowan, Kenan, Mihal, Rinduran, Terithien, Tristan, Uther",
+						"Female Names: Alis, Guenneret, Jenefer, Kelyn, Lowena, Mabyn, Nessa, Rosenwyn, Senara, Tamara",
+						"Last Name: Argall, Bennets, Corrington, Fletcher, Kestle, Pomeroy, Sambells, Trevanion, Uren, Vivian",
+						"<a href=\"https://www.fantasynamegenerators.com/elizabethan-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Nostrian",
+			"page": 1,
+			"source": "Ishiir",
+			"raceName": "Human",
+			"raceSource": "Ishiir",
+			"heightAndWeight": {
+				"baseHeight": 56,
+				"heightMod": "2d10",
+				"baseWeight": 110,
+				"weightMod": "2d4"
+			},
+			"entries": [
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Cleric, Paladin"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Nostrian Names",
+					"entries": [
+						"Male Names: Adrien, Aymeric, Estienne, Florentin, Ghislain, Hector, Jules, Matthieu, Roland, Sylvain",
+						"Female Names: Alexandrine, Coralie, Évelyne, Gabrielle, Nathalie, Odile, Roseline, Solange, Tiphaine, Vivienne",
+						"Last Name: Bellegarde, Charbonneau, Colbert, Guilbert, Laurent, Le Sueur, Lièvremont, Rousselot, Suchet, Thibodeau",
+						"<a href=\"https://www.fantasynamegenerators.com/french_names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Stauffer",
+			"page": 1,
+			"source": "Ishiir",
+			"raceName": "Human",
+			"raceSource": "Ishiir",
+			"heightAndWeight": {
+				"baseHeight": 60,
+				"heightMod": "2d12",
+				"baseWeight": 120,
+				"weightMod": "2d4"
+			},
+			"entries": [
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Fighter, Paladin"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Stauffer Names",
+					"entries": [
+						"Male Names: Artaud, Goisfrid, Hrodbert, Matfrid, Odulf, Reolus, Theodemir, Theodulf, Vedast, Waleran",
+						"Female Names: Atula, Emecin, Heltrada, Ingunde, Liefhun, Murina, Odela, Ruothild, Thedela, Wivin",
+						"Last Name: Alstad, Erdahl, Grieg, Grimstad, Heimark, Kvam, Ramberg, Ritland, Skoglund, Valebrokk",
+						"<a href=\"https://www.fantasynamegenerators.com/gothic-names.php\">First Name Generator</a>",
+						"<a href=\"https://www.fantasynamegenerators.com/norwegian-names.php\">Last Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		}
+	]
+}

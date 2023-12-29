@@ -1,0 +1,1858 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Ishiir",
+                "abbreviation": "Ishiir",
+                "full": "Ishiir",
+                "url": "https://regateiro.pt/5etools/homebrew/ishiir-variantrules.json",
+                "authors": [
+                    "Sieg"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "variantrule": [
+
+        {
+            "name": "City Downtime and Activities",
+            "source": "Ishiir",
+            "ruleType": "V",
+            "page": 1,
+            "entries": [
+                "While the cities of Ishiir are certainly not free of danger, they provide many opportunities that are not found in the wilderness.",
+                "Similar to wilderness travel, the party may engage in different tasks over the course of their time in a city or a comparable safe haven. Unlike during wilderness travel, however, the party need not divide tasks up amongst them and can pursue the same tasks as other party members or even none at all without immediate negative repercussions.",
+                "As before, the adventuring day is divided into three 8-hour-segments or phases: business time, downtime, and rest.",
+                {
+                    "type": "entries",
+                    "name": "Tasks",
+                    "source": "Ishiir",
+                    "page": 1,
+                    "entries": [
+                        "A character can perform tasks during business time, downtime, or both. If the character performs tasks during both, any progress towards their long rest is reset.",
+                        {
+                            "type": "options",
+                            "entries": [
+                                {
+                                    "type": "entries",
+                                    "name": "Attend",
+                                    "source": "Ishiir",
+                                    "page": 1,
+                                    "entries": [
+                                        "A character performs this task by offering their services as a healer, physician, or surgeon. To attend the designated character makes a skill check against the area DC.",
+                                        "The result is determined by the difference between the roll and the DC and can be referenced on the Attending table." 
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Carouse",
+                                    "source": "Ishiir",
+                                    "page": 1,
+                                    "entries": [
+                                        "A character performs this task by touring the taverns of the area, getting absolutely smashed, and quite possibly into a lot of trouble. To carouse the designated character makes a Constitution saving throw against the area DC.",
+                                        "The result is determined by the difference between the roll and the DC. Regardless of the result, the character then rolls on the Carousing event table." 
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Craft",
+                                    "source": "Ishiir",
+                                    "page": 1,
+                                    "entries": [
+                                        "A character performs this task by using his proficiency with a tool to create or refine goods. To craft the designated character makes a skill check against the area DC.",
+                                        "The result is determined by the difference between the roll and the DC and can be referenced on the Crafting table." 
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Gamble",
+                                    "source": "Ishiir",
+                                    "page": 1,
+                                    "entries": [
+                                        "A character performs this task by engaging in games of chance, though often with strategic elements, and/or the opportunity to cheat. To gamble the designated character makes a skill check against the area DC. The character can choose to cheat. If they do so, they make the skill check with advantage and all die rolls associated with the result, both positive and negative, are maximized. Further, certain negative events can only occur during cheating.",
+                                        "The result is determined by the difference between the roll and the DC and can be referenced on the Gambling table " 
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Guard",
+                                    "source": "Ishiir",
+                                    "page": 1,
+                                    "entries": [
+                                        "A character performs this task by offering their services as a city guard, bodyguard, or even hired thug. To guard the designated character makes a skill check against the area DC.",
+                                        "The result is determined by the difference between the roll and the DC and can be referenced on the Guarding table." 
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Haggle",
+                                    "source": "Ishiir",
+                                    "page": 1,
+                                    "entries": [
+                                        "A character performs this task by engaging with different merchants and trying to negotiate the best deals for selling and buying goods. To haggle the designated character makes a skill check against the area DC.",
+                                        "The result is determined by the difference between the roll and the DC and can be referenced on the Haggling table." 
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Perform",
+                                    "source": "Ishiir",
+                                    "page": 1,
+                                    "entries": [
+                                        "A character performs this task by performing as an actor or musician for the entertainment of a crowd. To perform the designated character makes a skill check against the area DC.",
+                                        "The result is determined by the difference between the roll and the DC and can be referenced on the Performing table." 
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Pickpocket",
+                                    "source": "Ishiir",
+                                    "page": 1,
+                                    "entries": [
+                                        "A character performs this task by attempting to lift coin and valuables from unsuspecting victims while remaining unnoticed. To pickpocket the designated character makes a skill check against the area DC.",
+                                        "The result is determined by the difference between the roll and the DC and can be referenced on the Pickpocketing table." 
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "table",
+                            "caption": "Tasks",
+                            "source": "Ishiir",
+                            "colLabels": [
+                                "Task",
+                                "Uses skill",
+                                "May be assisted by"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-4",
+                                "col-4"
+                            ],
+                            "rows": [
+                                [
+                                    "Attend",
+                                    "Medicine",
+                                    "Herbalism"
+                                ],
+                                [
+                                    "Carouse",
+                                    "-",
+                                    "-"
+                                ],
+                                [
+                                    "Craft",
+                                    "Tool proficiency",
+                                    "Same or similar tool proficiency"
+                                ],
+                                [
+                                    "Gamble",
+                                    "Deception, Insight, Sleight of Hand",
+                                    "-"
+                                ],
+                                [
+                                    "Guard",
+                                    "Intimidation, Perception",
+                                    "Insight"
+                                ],
+                                [
+                                    "Haggle",
+                                    "Deception, Persuasion",
+                                    "Insight"
+                                ],
+                                [
+                                    "Perform",
+                                    "Performance",
+                                    "Persuasion"
+                                ],
+                                [
+                                    "Pickpocket",
+                                    "Sleight of Hand",
+                                    "Perception, Stealth"
+                                ]
+                            ]
+                        },
+                        {
+                            "type": "table",
+                            "caption": "Attend",
+                            "colLabels": [
+                                "Difference vs DC",
+                                "Result"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-8"
+                            ],
+                            "rows": [
+                                [
+                                    "+10 or higher",
+                                    "Difference x 1d8 x character level cp, positive attending event, roll twice and take higher"
+                                ],
+                                [
+                                    "+5 or higher",
+                                    "Difference x 1d6 x character level cp, positive attending event"
+                                ],
+                                [
+                                    "+1 or higher",
+                                    "Difference x 1d4 x character level cp"
+                                ],
+                                [
+                                    "0 or lower",
+                                    "No result"
+                                ],
+                                [
+                                    "-5 or lower",
+                                    "Negative attending event"
+                                ],
+                                [
+                                    "-10 or lower",
+                                    "Negative attending event, roll twice and take lower"
+                                ]
+                            ],
+                            "source": "Ishiir"
+                        },
+                        {
+                            "type": "table",
+                            "caption": "Carouse",
+                            "colLabels": [
+                                "Difference vs DC",
+                                "Result"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-8"
+                            ],
+                            "rows": [
+                                [
+                                    "+10 or higher",
+                                    "Roll thrice on the carousing table and take higher"
+                                ],
+                                [
+                                    "+5 or higher",
+                                    "Roll twice on the carousing table and take higher"
+                                ],
+                                [
+                                    "0 or higher",
+                                    "Roll once on the carousing table"
+                                ],
+                                [
+                                    "-1 or lower",
+                                    "Roll once on the carousing table"
+                                ],
+                                [
+                                    "-5 or lower",
+                                    "Roll twice on the carousing table and take lower"
+                                ],
+                                [
+                                    "-10 or lower",
+                                    "Roll thrice on the carousing table and take lower"
+                                ]
+                            ],
+                            "source": "Ishiir"
+                        },
+                        {
+                            "type": "table",
+                            "caption": "Craft",
+                            "colLabels": [
+                                "Difference vs DC",
+                                "Result"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-8"
+                            ],
+                            "rows": [
+                                [
+                                    "+10 or higher",
+                                    "Difference x 1d8 x character level cp, positive crafting event, roll twice and take higher"
+                                ],
+                                [
+                                    "+5 or higher",
+                                    "Difference x 1d6 x character level cp, positive crafting event"
+                                ],
+                                [
+                                    "+1 or higher",
+                                    "Difference x 1d4 x character level cp"
+                                ],
+                                [
+                                    "0 or lower",
+                                    "No result"
+                                ],
+                                [
+                                    "-5 or lower",
+                                    "Negative crafting event"
+                                ],
+                                [
+                                    "-10 or lower",
+                                    "Negative crafting event, roll twice and take lower"
+                                ]
+                            ],
+                            "source": "Ishiir"
+                        },
+                        {
+                            "type": "table",
+                            "caption": "Gamble",
+                            "colLabels": [
+                                "Difference vs DC",
+                                "Result"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-8"
+                            ],
+                            "rows": [
+                                [
+                                    "+10 or higher",
+                                    "Difference x 2d8 x character level cp, positive gambling event, roll twice and take higher"
+                                ],
+                                [
+                                    "+5 or higher",
+                                    "Difference x 2d6 x character level cp, positive gambling event"
+                                ],
+                                [
+                                    "+1 or higher",
+                                    "Difference x 2d4 x character level cp"
+                                ],
+                                [
+                                    "0",
+                                    "No result"
+                                ],
+                                [
+                                    "-1 or lower",
+                                    "- Difference x 2d4 x character level cp"
+                                ],
+                                [
+                                    "-5 or lower",
+                                    "- Difference x 2d6 x character level cp, negative gambling event"
+                                ],
+                                [
+                                    "-10 or lower",
+                                    "- Difference x 2d8 x character level cp, negative gambling event, roll twice and take lower"
+                                ]
+                            ],
+                            "source": "Ishiir"
+                        },
+                        {
+                            "type": "table",
+                            "caption": "Guard",
+                            "colLabels": [
+                                "Difference vs DC",
+                                "Result"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-8"
+                            ],
+                            "rows": [
+                                [
+                                    "+10 or higher",
+                                    "Difference x 1d8 x character level cp, positive guarding event, roll twice and take higher"
+                                ],
+                                [
+                                    "+5 or higher",
+                                    "Difference x 1d6 x character level cp, positive guarding event"
+                                ],
+                                [
+                                    "+1 or higher",
+                                    "Difference x 1d4 x character level cp"
+                                ],
+                                [
+                                    "0 or lower",
+                                    "No result"
+                                ],
+                                [
+                                    "-5 or lower",
+                                    "Negative guarding event"
+                                ],
+                                [
+                                    "-10 or lower",
+                                    "Negative guarding event, roll twice and take lower"
+                                ]
+                            ],
+                            "source": "Ishiir"
+                        },
+                        {
+                            "type": "table",
+                            "caption": "Haggle",
+                            "colLabels": [
+                                "Difference vs DC",
+                                "Result"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-8"
+                            ],
+                            "rows": [
+                                [
+                                    "+10 or higher",
+                                    "3d10 % discount, positive haggling event, roll twice and take higher"
+                                ],
+                                [
+                                    "+5 or higher",
+                                    "2d10 % discount, positive haggling event"
+                                ],
+                                [
+                                    "+1 or higher",
+                                    "1d10 % discount"
+                                ],
+                                [
+                                    "0",
+                                    "No result"
+                                ],
+                                [
+                                    "-1 or lower",
+                                    "1d10 % upcharge"
+                                ],
+                                [
+                                    "-5 or lower",
+                                    "2d10 % upcharge, negative haggling event"
+                                ],
+                                [
+                                    "-10 or lower",
+                                    "3d10 % upcharge, negative haggling event, roll twice and take lower"
+                                ]
+                            ],
+                            "source": "Ishiir"
+                        },
+                        {
+                            "type": "table",
+                            "caption": "Perform",
+                            "colLabels": [
+                                "Difference vs DC",
+                                "Result"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-8"
+                            ],
+                            "rows": [
+                                [
+                                    "+10 or higher",
+                                    "Difference x 1d8 x character level cp, positive performing event, roll twice and take higher"
+                                ],
+                                [
+                                    "+5 or higher",
+                                    "Difference x 1d6 x character level cp, positive performing event"
+                                ],
+                                [
+                                    "+1 or higher",
+                                    "Difference x 1d4 x character level cp"
+                                ],
+                                [
+                                    "0 or lower",
+                                    "No result"
+                                ],
+                                [
+                                    "-5 or lower",
+                                    "Negative performing event"
+                                ],
+                                [
+                                    "-10 or lower",
+                                    "Negative performing event, roll twice and take lower"
+                                ]
+                            ],
+                            "source": "Ishiir"
+                        },
+                        {
+                            "type": "table",
+                            "caption": "Pickpocket",
+                            "colLabels": [
+                                "Difference vs DC",
+                                "Result"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-8"
+                            ],
+                            "rows": [
+                                [
+                                    "+10 or higher",
+                                    "Difference x 3d8 x character level cp, positive pickpocketing event, roll twice and take higher"
+                                ],
+                                [
+                                    "+5 or higher",
+                                    "Difference x 3d6 x character level cp, positive pickpocketing event"
+                                ],
+                                [
+                                    "+1 or higher",
+                                    "Difference x 3d4 x character level cp"
+                                ],
+                                [
+                                    "0",
+                                    "No result"
+                                ],
+                                [
+                                    "-1 or lower",
+                                    "Negative pickpocketing event"
+                                ],
+                                [
+                                    "-5 or lower",
+                                    "Negative pickpocketing event, roll twice and take lower"
+                                ],
+                                [
+                                    "-10 or lower",
+                                    "Negative pickpocketing event, roll thrice and take lower"
+                                ]
+                            ],
+                            "source": "Ishiir"
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fame",
+                    "source": "Ishiir",
+                    "page": 1,
+                    "entries": [
+                        "When performing tasks, characters may earn fame in certain locations or with certain factions. All characters start at out 0 fame and may have a maximum fame equal to their proficiency. A character’s fame can be negative.",
+                        "If a character’s task is performed in a location or for a faction with which they have fame, their fame is added to each individual die they roll to determine the result of their task, e.g. with 2 fame that normally rolls 2d4, rolls 2d4+4 instead."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Area Difficulty",
+                    "source": "Ishiir",
+                    "page": 1,
+                    "entries": [
+                        "Below is the table for DC modifiers on generic location types. Note that story events and other factors can also influence the final roll result. But the table below can be used by characters to generally evaluate their chances and determine activities.",
+                        {
+                            "type": "table",
+                            "caption": "Area Modifiers",
+                            "source": "Ishiir",
+                            "colLabels": [
+                                "Area",
+                                "DC Modifier",
+                                "Result Modifier"
+                            ],
+                            "colStyles": [
+                                "col-4",
+                                "col-2",
+                                "col-2"
+                            ],
+                            "rows": [
+                                [
+                                    "Uncivilized",
+                                    "-",
+                                    "-"
+                                ],
+                                [
+                                    "Rural",
+                                    "+2",
+                                    "x2"
+                                ],
+                                [
+                                    "Provincial",
+                                    "+3",
+                                    "x3"
+                                ],
+                                [
+                                    "Urban",
+                                    "+4",
+                                    "x4"
+                                ],
+                                [
+                                    "Metropolitan",
+                                    "+6",
+                                    "x6"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Fortitude Points",
+            "source": "Ishiir",
+            "ruleType": "V",
+            "page": 1,
+            "entries": [
+                "Fortitude Points, hereafter shortened to FP, form a pool of quasi-temporary hitpoints that stack with all other forms of hitpoints. FP replace the reworked Legendary Resistance system for monsters.",
+                "When a creature with FP fails a saving throw and is at 50% HP or less, it takes an amount of damage to its FP that corresponds to the power of the effect. As an example, a spell would consume an amount of FP equal to 10 x its spell level.",
+                "If the amount of FP the effect would consume is greater than the amount of FP the creature has remaining, the remaining FP is consumed AND the creature is subject to the effect as normal. There is NOT, however, any carryover of the excess \"damage\" the ability would've caused to the FP pool.",
+                "If a creature would drop to 0 hp, but has FP remaining, the damage is subtracted from the FP first instead. This happens at a 1:1 ratio, so an attack doing 8 points of damage would consume 8 points of FP.",
+                {
+                    "type": "table",
+                    "caption": "Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
+                        [
+                            "<br/><big><b>--- General ---</b></big>",
+                            ""
+                        ],
+                        [
+                            "Concentration Saving Throw",
+                            "10/20/30 (failed/by 5 or more/by 10 or more)"
+                        ],
+                        [
+                            "Spell",
+                            "10 x Spell Level"
+                        ],
+                        [
+                            "<br/><big><b>--- Artificer ---</b><big>",
+                            ""
+                        ],
+                        [
+                            "Artillerist: Arcane Turret",
+                            "10"
+                        ],
+                        [
+                            "Artillerist: Eldritch Cannon (Flamethrower)",
+                            "20"
+                        ],
+                        [
+                            "Artillerist: Explosive Cannon",
+                            "20"
+                        ],
+                        [
+                            "<br/><big><b>--- Barbarian ---</b><big>",
+                            ""
+                        ],
+                        [
+                            "Beast: Infectious Fury",
+                            "30"
+                        ],
+                        [
+                            "Berserker: Intimidating Presence",
+                            "30"
+                        ],
+                        [
+                            "Giant: Mighty Impel",
+                            "10"
+                        ],
+                        [
+                            "Storm Herald: Storm Aura (Sea)",
+                            "10 (20 at level 20)"
+                        ],
+                        [
+                            "Storm Herald: Raging Storm (Desert)",
+                            "10"
+                        ],
+                        [
+                            "Storm Herald: Raging Storm (Sea)",
+                            "10"
+                        ],
+                        [
+                            "Storm Herald: Raging Storm (Tundra)",
+                            "10"
+                        ],
+                        [
+                            "Totem Warrior: Totemic Attunement (Elk)",
+                            "10"
+                        ],
+                        [
+                            "Wild Magic: Wild Surge (1,3,8)",
+                            "10"
+                        ],
+                        [
+                            "<br/><big><b>--- Bard ---</b><big>",
+                            ""
+                        ],
+                        [
+                            "Eloquence: Unsettling Words",
+                            "10"
+                        ],
+                        [
+                            "Glamour: Enthralling Performance",
+                            "20"
+                        ],
+                        [
+                            "Glamour: Unbreakable Majesty",
+                            "20"
+                        ],
+                        [
+                            "Spirits: Spirit Tales (Tale of the Beguiler)",
+                            "20"
+                        ],
+                        [
+                            "Spirits: Spirit Tales (Tale of the Brute)",
+                            "20"
+                        ],
+                        [
+                            "Spirits: Spirit Tales (Tale of the Dragon)",
+                            "20 (30 at Lvl 10, 40 at Lvl 15)"
+                        ],
+                        [
+                            "Spirits: Spirit Tales (Tale of the Mind-Bender)",
+                            "30"
+                        ],
+                        [
+                            "Whispers: Words of Terror",
+                            "20"
+                        ],
+                        [
+                            "Whispers: Shadow Lore",
+                            "30"
+                        ],
+                        [
+                            "<br/><big><b>--- Blood Hunter ---</b><big>",
+                            ""
+                        ],
+                        [
+                            "Brand of Tethering",
+                            "20"
+                        ],
+                        [
+                            "Mutant: Brand of Axiom",
+                            "40"
+                        ],
+                        [
+                            "<br/><big><b>--- Cleric ---</b><big>",
+                            ""
+                        ],
+                        [
+                            "Turn Undead",
+                            "20"
+                        ],
+                        [
+                            "Arcana: Arcane Abjuration",
+                            "20"
+                        ],
+                        [
+                            "Beauty: Rebuke the Defiler",
+                            "= Damage (max 90)"
+                        ],
+                        [
+                            "Beauty: Beauty's Truce",
+                            "40"
+                        ],
+                        [
+                            "Destruction: Sundering Invocation",
+                            "= Damage (max 90)"
+                        ],
+                        [
+                            "Knowledge: Read Thoughts",
+                            "30"
+                        ],
+                        [
+                            "Light: Radiance of the Dawn",
+                            "30 (40 at Lvl 10, 50 at Lvl 13, 60 at Lvl 17)"
+                        ],
+                        [
+                            "Nature: Charm Animals or Plants",
+                            "10"
+                        ],
+                        [
+                            "Order: Order's Demand",
+                            "30"
+                        ],
+                        [
+                            "Tempest: Wrath of the Storm",
+                            "10"
+                        ],
+                        [
+                            "Water: Cleansing Current",
+                            "20"
+                        ],
+                        [
+                            "Winter: Bone-Chilling Cold",
+                            "50"
+                        ],
+                        [
+                            "<br/><big><b>--- Druid ---</b><big>",
+                            ""
+                        ],
+                        [
+                            "Land: Nature's Sanctuary",
+                            "10"
+                        ],
+                        [
+                            "Primeval: Titanic Bond",
+                            "10"
+                        ],
+                        [
+                            "Spores: Halo of Spores",
+                            "10"
+                        ],
+                        [
+                            "Spores: Spreading Spores",
+                            "10"
+                        ],
+                        [
+                            "Wildfire: Summon Wildfire Spirit",
+                            "10"
+                        ],
+                        [
+                            "Witherbloom: Witherbloom Brew (Toxifying)",
+                            "30"
+                        ],
+                        [
+                            "<br/><big><b>--- Fighter ---</b><big>",
+                            ""
+                        ],
+                        [
+                            "Arcane Archer: Arcane Shot (Banishing Arrow)",
+                            "30 (40 at lvl 18)"
+                        ],
+                        [
+                            "Arcane Archer: Arcane Shot (Beguiling Arrow)",
+                            "10 (20 at lvl 18)"
+                        ],
+                        [
+                            "Arcane Archer: Arcane Shot (Bursting Arrow)",
+                            "10 (20 at lvl 18)"
+                        ],
+                        [
+                            "Arcane Archer: Arcane Shot (Enfeebling Arrow)",
+                            "20 (30 at lvl 18)"
+                        ],
+                        [
+                            "Arcane Archer: Arcane Shot (Grasping Arrow)",
+                            "30 (50 at lvl 18)"
+                        ],
+                        [
+                            "Arcane Archer: Arcane Shot (Piercing Arrow)",
+                            "10 (20 at lvl 18)"
+                        ],
+                        [
+                            "Arcane Archer: Arcane Shot (Shadow Arrow)",
+                            "10 (20 at lvl 18)"
+                        ],
+                        [
+                            "Battle Master: Maneuvers",
+                            "10"
+                        ],
+                        [
+                            "Cavalier: Ferocious Charger",
+                            "10"
+                        ],
+                        [
+                            "Psi Knight: Telekinetic Adept (Telekinetic Thrust)",
+                            "10"
+                        ],
+                        [
+                            "Rune Knight: Rune Carver (Fire Rune)",
+                            "20"
+                        ],
+                        [
+                            "Rune Knight: Rune Carver (Stone Rune)",
+                            "30"
+                        ],
+                        [
+                            "<br/><big><b>--- Kineticist ---</b><big>",
+                            ""
+                        ],
+                        [
+                            "Air: Hurricane Queen",
+                            "20"
+                        ],
+                        [
+                            "Earth: Striding Giant",
+                            "20"
+                        ],
+                        [
+                            "Water: Empress of the Fathoms",
+                            "30"
+                        ],
+                        [
+                            "<br/><big><b>--- Monk ---</b><big>",
+                            ""
+                        ],
+                        [
+                            "Stunning Strike",
+                            "20"
+                        ],
+                        [
+                            "Ascendant Dragon: Breath of the Dragon",
+                            "10 (20 at Lvl 11)"
+                        ],
+                        [
+                            "Ascendant Dragon: Aspect of the Wyrm (Frightful Presence)",
+                            "20"
+                        ],
+                        [
+                            "Ascendant Dragon: Ascendant Aspect (Augment Breath)",
+                            "30"
+                        ],
+                        [
+                            "Ascendant Dragon: Explosive Fury",
+                            "20"
+                        ],
+                        [
+                            "Astral Self: (Arms of the Astral Self)",
+                            "10"
+                        ],
+                        [
+                            "Four Elements: E. Disciplines",
+                            "10 x (Ki Point Cost - 1)"
+                        ],
+                        [
+                            "Long Death: Hour of Reaping",
+                            "20"
+                        ],
+                        [
+                            "Long Death: Touch of the L. Death",
+                            "10 x Ki Point Cost (max 90)"
+                        ],
+                        [
+                            "Open Hand: Open Hand Technique",
+                            "10"
+                        ],
+                        [
+                            "Open Hand: Quivering Palm",
+                            "80"
+                        ],
+                        [
+                            "Soul Knife: Psychic Slash",
+                            "10"
+                        ],
+                        [
+                            "Soul Knife: Aura Sight",
+                            "10 (limited to once within 24 hours)"
+                        ],
+                        [
+                            "Soul Knife: Spectral Blades",
+                            "10"
+                        ],
+                        [
+                            "Sun Soul: Searing Sunburst",
+                            "10 + 10 x Ki Point Cost (max 40)"
+                        ],
+                        [
+                            "Tranquility: Douse the Flames of War",
+                            "10"
+                        ],
+                        [
+                            "<br/><big><b>--- Paladin ---</b><big>",
+                            ""
+                        ],
+                        [
+                            "Ancients: Channel Divinity (Nature's Wrath)",
+                            "10"
+                        ],
+                        [
+                            "Ancients: Turn the Faithless",
+                            "20"
+                        ],
+                        [
+                            "Conquest: Conquering Presence",
+                            "30"
+                        ],
+                        [
+                            "Crown: Champion Challenge",
+                            "20"
+                        ],
+                        [
+                            "Devotion: Turn the Unholy",
+                            "20"
+                        ],
+                        [
+                            "Oathbreaker: Control Undead",
+                            "80"
+                        ],
+                        [
+                            "Oathbreaker: Dreadful Aspect",
+                            "30"
+                        ],
+                        [
+                            "Redemption: Rebuke the Violent",
+                            "= Damage (max 90)"
+                        ],
+                        [
+                            "Treachery: Icon of Deceit",
+                            "90"
+                        ],
+                        [
+                            "Vengeance: Abjure Enemy",
+                            "20"
+                        ],
+                        [
+                            "Vengeance: Avenging Angel",
+                            "20"
+                        ],
+                        [
+                            "Watchers: Mortal Bulwark",
+                            "60"
+                        ],
+                        [
+                            "<br/><big><b>--- Ranger ---</b><big>",
+                            ""
+                        ],
+                        [
+                            "Drake Warden: Drake's Breath",
+                            "50 (60 at Lvl 15)"
+                        ],
+                        [
+                            "Fey Wanderer: Beguiling Twist",
+                            "10"
+                        ],
+                        [
+                            "Monster Slayer: Magic-User's Nemesis",
+                            "30"
+                        ],
+                        [
+                            "Swarmkeeper: Gathered Swarm",
+                            "10"
+                        ],
+                        [
+                            "<br/><big><b>--- Rogue ---</b><big>",
+                            ""
+                        ],
+                        [
+                            "Arcane Trickster: Spell Thief",
+                            "50"
+                        ],
+                        [
+                            "Assassin: Death Strike",
+                            "= Damage (before doubling, max 90)"
+                        ],
+                        [
+                            "Soulknife: Rend Mind",
+                            "30"
+                        ],
+                        [
+                            "Thug: Mob Rule",
+                            "10"
+                        ],
+                        [
+                            "Thug: Brutal Beating",
+                            "10 x Number of Sneak Attack dice spent"
+                        ],
+                        [
+                            "<br/><big><b>--- Shifter ---</b><big>",
+                            ""
+                        ],
+                        [
+                            "Autumn's Wing: Improved Winged Aspect",
+                            "10"
+                        ],
+                        [
+                            "Autumn's Wing: Greater Winged Aspect",
+                            "10"
+                        ],
+                        [
+                            "Summer's Claw: Clawed Aspect",
+                            "10"
+                        ],
+                        [
+                            "Winter's Fang: Winged Aspect",
+                            "10"
+                        ],
+                        [
+                            "<br/><big><b>--- Sorcerer ---</b><big>",
+                            ""
+                        ],
+                        [
+                            "Aberrant Mind: Warping Implosion",
+                            "20"
+                        ],
+                        [
+                            "Draconic: Draconic Presence",
+                            "30"
+                        ],
+                        [
+                            "Giant Soul: Soul of Lost Ostoria (Hill Giant)",
+                            "10"
+                        ],
+                        [
+                            "Lunar Magic: Lunar Phenomenon (Full Moon) ",
+                            "20"
+                        ],
+                        [
+                            "Lunar Magic: Lunar Phenomenon (New Moon)",
+                            "30"
+                        ],
+                        [
+                            "Storm: Storm's Fury",
+                            "10"
+                        ],
+                        [
+                            "<br/><big><b>--- Warlock ---</b><big>",
+                            ""
+                        ],
+                        [
+                            "Archfey: Fey Presence",
+                            "20"
+                        ],
+                        [
+                            "Archfey: Beguiling Defenses",
+                            "20"
+                        ],
+                        [
+                            "Archfey: Dark Delirium",
+                            "20"
+                        ],
+                        [
+                            "Kraken: Grasp of the Kraken",
+                            "10"
+                        ],
+                        [
+                            "Kraken: Unleash the Kraken",
+                            "60"
+                        ],
+                        [
+                            "Lolth: Poisoned Beauty",
+                            "20"
+                        ],
+                        [
+                            "Lolth: Kiss of the Spider Queen",
+                            "70"
+                        ],
+                        [
+                            "Lurker in the Deep: Devouring Maw",
+                            "40"
+                        ],
+                        [
+                            "Lurker in the Deep: Unleash the Depths",
+                            "50"
+                        ],
+                        [
+                            "Undead: Form of Dread",
+                            "10"
+                        ],
+                        [
+                            "Undying: Among the Dead",
+                            "10"
+                        ],
+                        [
+                            "<br/><big><b>--- Wizard ---</b><big>",
+                            ""
+                        ],
+                        [
+                            "Chronurgy: Momentar Stasis",
+                            "10"
+                        ],
+                        [
+                            "Enchantment: Hypnotic Gaze",
+                            "10"
+                        ],
+                        [
+                            "Enchantment: Instinctive Charm",
+                            "20"
+                        ],
+                        [
+                            "Enchantment: Alter Memories",
+                            "50"
+                        ],
+                        [
+                            "Graviturgy: Event Horizon",
+                            "20"
+                        ],
+                        [
+                            "Necromancy: Command Undead",
+                            "60"
+                        ],
+                        [
+                            "Onomancy: Extract Name",
+                            "10"
+                        ],
+                        [
+                            "Runecrafter: Engraved Enmity (Runecrafter's Bane)",
+                            "40"
+                        ],
+                        [
+                            "Runecrafter: Engraved Enmity (Unveiled Enemy)",
+                            "20"
+                        ],
+                        [
+                            "Runecrafter: Engraved Enmity (Woeful Curse)",
+                            "10"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Overland Travel and Survival",
+            "source": "Ishiir",
+            "ruleType": "V",
+            "page": 1,
+            "entries": [
+                "Traveling Ishiir, especially its wilderness, is a dangerous undertaking. Dividing labor among the characters wisely goes a long way towards making sure the party survives their challenges.",
+                "The adventuring day is divided into three 8-hour-segments or phases: travel, downtime, and rest.",
+                {
+                    "type": "entries",
+                    "name": "Travel",
+                    "page": 1,
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Travel Pace",
+                            "page": 1,
+                            "entries": [
+                                "While traveling, a group of Adventurers can move at a normal, fast, or slow pace, as shown on the Travel Pace table. The table states how far the party can move in a period of time and whether the pace has any additional effect. A fast pace gives characters less time to be thorough in performing their tasks, while a slow pace makes it possible to sneak around and to search an area more carefully during this phase.",
+                                {
+                                    "type": "table",
+                                    "caption": "Travel Pace and Effects",
+                                    "colLabels": [
+                                        "Pace",
+                                        "Distance/h",
+                                        "Distance/day",
+                                        "Effect"
+                                    ],
+                                    "colStyles": [
+                                        "col-2",
+                                        "col-2",
+                                        "col-2",
+                                        "col-4"
+                                    ],
+                                    "rows": [
+                                        [
+                                            "Fast",
+                                            "3,75 miles",
+                                            "30 miles",
+                                            "-5 penalty on Tasks"
+                                        ],
+                                        [
+                                            "Normal",
+                                            "2,5 miles",
+                                            "20 miles",
+                                            "-"
+                                        ],
+                                        [
+                                            "Slow",
+                                            "1,25 miles",
+                                            "10 miles",
+                                            "Advantage on Tasks"
+                                        ]
+                                    ],
+                                    "source": "Ishiir"
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Forced March",
+                                    "page": 1,
+                                    "entries": [
+                                        "The Travel Pace table assumes that Characters Travel for 8 hours in a day. They can push on beyond that limit, at the risk of Exhaustion.",
+                                        "For each additional hour of Travel beyond 8 hours, the Characters cover the distance shown in the Hour column for their pace, but once the characters stop traveling, they have to make a Constitution saving throw.",
+                                        "The DC is 10 + 1 for each hour past 8 hours. On a failed saving throw, a character suffers one level of Exhaustion (see {@filter Conditions|conditionsdiseases|source=Ishiir})."
+                                    ],
+                                    "source": "Ishiir"
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Difficult Terrain",
+                                    "page": 1,
+                                    "entries": [
+                                        "The Travel speeds given in the Travel Pace table assume relatively simple terrain: roads, open plains, or clear dungeon corridors.",
+                                        "But Adventurers often face dense forests, deep swamps, rubble-filled ruins, steep mountains, and ice-covered ground—all considered {@quickref Difficult Terrain||3}. Characters moving through {@quickref difficult terrain||3} only cover half the distance in the same amount of time."
+                                    ],
+                                    "source": "Ishiir"
+                                }
+                            ],
+                            "source": "Ishiir"
+                        }
+                    ],
+                    "source": "Ishiir"
+                },
+                {
+                    "type": "entries",
+                    "name": "Tasks",
+                    "page": 1,
+                    "entries": [
+                        "At the beginning of each phase, the party can choose to designate tasks to each of their members. Tasks can range from leading the party through the wilderness, over foraging for food or looking for tracks, to tracking an adversary. Tasks can be assigned for any phase during which the party isn't resting.",
+                        "Unless they have a feature that says otherwise, a character can only work on one assigned task during each phase.",
+                        "The party may also choose to assign an additional character to assist another one in the same task. If they do so, the originally assigned character benefits from the Help action. A character may only assist in the task if they are proficient in the skill used by the check or another appropriate one as laid out in the Task table below.",
+                        "If no character is assigned to a task, a d20 without any modifiers is rolled in place of a skill check. In the case of foraging, the roll and check against the DC is omitted entirely.",
+                        {
+                            "type": "entries",
+                            "name": "Pathfind",
+                            "page": 1,
+                            "entries": [
+                                "A character that performs this task is leading the group through whichever area they're traveling. This check includes finding the quickest and safest path for the group to their destination as well as avoiding random encounters.",
+                                "To pathfind, the designated character makes a skill check against the area DC. The result is determined by the difference between the roll and the DC and can be referenced on the Pathfinding table."
+                            ],
+                            "source": "Ishiir"
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Forage",
+                            "page": 1,
+                            "entries": [
+                                "A character that forages, gathers, fishes, or hunts for food while the party is traveling. Alternatively, a character can instead forage for ingredients used in crafting for Herbalism and Alchemy.",
+                                "To forage, the designated character makes a skill check opposed by an area DC roll from the DM. The result is determined by the difference between the roll and the DC and can be referenced on the Foraging table."
+                            ],
+                            "source": "Ishiir"
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Lookout",
+                            "page": 1,
+                            "entries": [
+                                "A character on lookout duty surveys the surrounding area, scouts ahead, or otherwise keeps an eye out. In the case of a hostile encounter, a lookout can prevent the party being surprised or even grant the party surprise in turn. A lookout may also notice things farther in the distance like hints, treasure, or points of interest.",
+                                "To look out, the designated character makes a skill check opposed by an area DC roll from the DM. The result is determined by the difference between the roll and the DC and can be referenced on the Lookout table."
+                            ],
+                            "source": "Ishiir"
+                        },
+                        "There can be up to two random combat encounters over the course of the adventuring day, either during the travel or rest phase. If multiple rolls result in a combat encounter for a given phase, its difficulty is treated as higher (1 for medium, 2 for hard, 3 for deadly), up to a maximum of triple deadly.",
+                        {
+                            "type": "table",
+                            "caption": "Tasks",
+                            "colLabels": [
+                                "Task",
+                                "Main Skills",
+                                "Assist Skills"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-4",
+                                "col-4"
+                            ],
+                            "rows": [
+                                [
+                                    "Pathfind",
+                                    "{@skill Survival}",
+                                    "{@skill Nature}, {@skill Perception}"
+                                ],
+                                [
+                                    "Forage",
+                                    "Alchemy, Cooking, Herbalism, {@skill Survival}",
+                                    "{@skill Nature}, {@skill Perception}"
+                                ],
+                                [
+                                    "Lookout",
+                                    "{@skill Perception}",
+                                    "{@skill Survival}, {@skill Stealth}"
+                                ]
+                            ],
+                            "source": "Ishiir"
+                        },
+                        {
+                            "type": "table",
+                            "caption": "Pathfind",
+                            "colLabels": [
+                                "Difference vs DC",
+                                "Result"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-8"
+                            ],
+                            "rows": [
+                                [
+                                    "+10 or higher",
+                                    "No encounter, the party travels as if 1 speed category faster (+10 miles if already using fast pace), positive pathfinding event"
+                                ],
+                                [
+                                    "+5 or higher",
+                                    "No encounter, the party travels as if 1 speed category faster (+10 miles if already using fast pace)"
+                                ],
+                                [
+                                    "0 or higher",
+                                    "No encounter"
+                                ],
+                                [
+                                    "-1 or lower",
+                                    "Negative pathfinding event"
+                                ],
+                                [
+                                    "-5 or lower",
+                                    "Medium encounter"
+                                ],
+                                [
+                                    "-10 or lower",
+                                    "Hard encounter"
+                                ]
+                            ],
+                            "source": "Ishiir"
+                        },
+                        {
+                            "type": "table",
+                            "caption": "Forage (Food)",
+                            "colLabels": [
+                                "Difference vs DC",
+                                "Result"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-8"
+                            ],
+                            "rows": [
+                                [
+                                    "+10 or higher",
+                                    "{@dice 2d4} rations, positive foraging event"
+                                ],
+                                [
+                                    "+5 or higher",
+                                    "{@dice 2d4} rations"
+                                ],
+                                [
+                                    "0 or higher",
+                                    "{@dice 1d4} rations"
+                                ],
+                                [
+                                    "-1 or lower",
+                                    "No rations"
+                                ],
+                                [
+                                    "-5 or lower",
+                                    "Negative foraging event"
+                                ],
+                                [
+                                    "-10 or lower",
+                                    "Negative foraging event, roll twice and take lower"
+                                ]
+                            ],
+                            "source": "Ishiir"
+                        },
+                        {
+                            "type": "table",
+                            "caption": "Forage (Ingredients)",
+                            "colLabels": [
+                                "Difference vs DC",
+                                "Result"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-8"
+                            ],
+                            "rows": [
+                                [
+                                    "+10 or higher",
+                                    "Difference x {@dice 1d8} x character level sp worth of ingredients, positive foraging event"
+                                ],
+                                [
+                                    "+5 or higher",
+                                    "Difference x {@dice 1d8} x character level sp worth of ingredients"
+                                ],
+                                [
+                                    "0 or higher",
+                                    "Difference x {@dice 1d4} x character level sp worth of ingredients"
+                                ],
+                                [
+                                    "-1 or lower",
+                                    "No ingredients"
+                                ],
+                                [
+                                    "-5 or lower",
+                                    "Negative foraging event"
+                                ],
+                                [
+                                    "-10 or lower",
+                                    "Negative foraging event, roll twice and take lower"
+                                ]
+                            ],
+                            "source": "Ishiir"
+                        },
+                        {
+                            "type": "table",
+                            "caption": "Lookout",
+                            "colLabels": [
+                                "Difference vs DC",
+                                "Result"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-8"
+                            ],
+                            "rows": [
+                                [
+                                    "+10 or higher",
+                                    "+{@dice 1d8} to initiative for first combat on this day, positive lookout event"
+                                ],
+                                [
+                                    "+5 or higher",
+                                    "Party receives +5 to stealth check, counts towards Prepare Campsite checks if no encounter happens during Travel phase"
+                                ],
+                                [
+                                    "0 or higher",
+                                    "+{@dice 1d8} to initiative for first combat on this day"
+                                ],
+                                [
+                                    "-1 or lower",
+                                    "No event"
+                                ],
+                                [
+                                    "-5 or lower",
+                                    "Negative lookout event"
+                                ],
+                                [
+                                    "-10 or lower",
+                                    "Negative lookout event, roll twice and take lower"
+                                ]
+                            ],
+                            "source": "Ishiir"
+                        }
+                    ],
+                    "source": "Ishiir"
+                },
+                {
+                    "type": "entries",
+                    "name": "Downtime",
+                    "page": 1,
+                    "entries": [
+                        "During downtime, characters can craft, forage, and look out as during the Travel phase (albeit with disadvantage), and prepare the campsite for the rest phase.",
+                        "To prepare the campsite, the designated character makes a skill check opposed by an area DC roll from the DM. The result is determined by the difference between the roll and the DC and can be referenced on the Prepare Campsite table.",
+                        {
+                            "type": "table",
+                            "caption": "Tasks",
+                            "colLabels": [
+                                "Task",
+                                "Main Skills",
+                                "Assist Skills"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-4",
+                                "col-4"
+                            ],
+                            "rows": [
+                                [
+                                    "Prepare Campsite",
+                                    "{@skill Survival}, {@skill Stealth}",
+                                    "{@skill Nature}"
+                                ]
+                            ],
+                            "source": "Ishiir"
+                        },
+                        {
+                            "type": "table",
+                            "caption": "Prepare Campsite",
+                            "colLabels": [
+                                "Difference vs DC",
+                                "Result"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-8"
+                            ],
+                            "rows": [
+                                [
+                                    "+10 or higher",
+                                    "Lower difficulty of nighttime encounter from events by 2 steps (lower than medium = no encounter)"
+                                ],
+                                [
+                                    "+5 or higher",
+                                    "Lower difficulty of nighttime encounter from events by 1 step (lower than medium = no encounter)"
+                                ],
+                                [
+                                    "0 or higher",
+                                    "No encounter"
+                                ],
+                                [
+                                    "-1 or lower",
+                                    "Medium encounter"
+                                ],
+                                [
+                                    "-5 or lower",
+                                    "Hard encounter"
+                                ],
+                                [
+                                    "-10 or lower",
+                                    "Deadly encounter"
+                                ]
+                            ],
+                            "source": "Ishiir"
+                        }
+                    ],
+                    "source": "Ishiir"
+                },
+                {
+                    "type": "entries",
+                    "name": "Rest",
+                    "page": 1,
+                    "entries": [
+                        "The characters complete a short rest. The rest is divided into four 2-hour shifts, during which at least one character should keep watch. If any of the previous checks resulted in a nighttime encounter, the result of a {@dice d4} determines during which shift the encounter happens."
+                    ],
+                    "source": "Ishiir"
+                },
+                {
+                    "type": "entries",
+                    "name": "Area Difficulty",
+                    "page": 1,
+                    "entries": [
+                        "Below is the table for DC modifiers on generic terrain types. Note that story events and other factors can also influence the final roll result. But the table below can be used by characters to generally evaluate their chances and determine travel paths.",
+                        {
+                            "type": "table",
+                            "caption": "Area DC Roll Modifiers",
+                            "colLabels": [
+                                "Area",
+                                "vs Pathfinding",
+                                "vs Foraging",
+                                "vs Lookout",
+                                "vs Camp Security"
+                            ],
+                            "colStyles": [
+                                "col-4",
+                                "col-2",
+                                "col-2",
+                                "col-2",
+                                "col-2"
+                            ],
+                            "rows": [
+                                [
+                                    "Road",
+                                    "0 (no negative events)",
+                                    "0 (no events)",
+                                    "0 (no events)",
+                                    "-5"
+                                ],
+                                [
+                                    "Open Field",
+                                    "0",
+                                    "0",
+                                    "0 (no events)",
+                                    "0"
+                                ],
+                                [
+                                    "Wildnerness",
+                                    "+2",
+                                    "+2",
+                                    "+2",
+                                    "+2"
+                                ],
+                                [
+                                    "Forest (1 hex deep)",
+                                    "+3",
+                                    "+3",
+                                    "+4",
+                                    "+3"
+                                ],
+                                [
+                                    "Hills",
+                                    "+3",
+                                    "+4",
+                                    "+3",
+                                    "+3"
+                                ],
+                                [
+                                    "Forest (2 hexes deep)",
+                                    "+5",
+                                    "+4",
+                                    "+5",
+                                    "+5"
+                                ],
+                                [
+                                    "Mountains",
+                                    "+7",
+                                    "+7",
+                                    "+5",
+                                    "+5"
+                                ],
+                                [
+                                    "Swamp",
+                                    "+7",
+                                    "+7",
+                                    "+6",
+                                    "+7"
+                                ],
+                                [
+                                    "Forest (3 hexes deep or more)",
+                                    "+9",
+                                    "+7",
+                                    "+8",
+                                    "+9"
+                                ],
+                                [
+                                    "Wasteland",
+                                    "+9",
+                                    "+10",
+                                    "+8",
+                                    "+10"
+                                ],
+                                [
+                                    "Underground",
+                                    "+10",
+                                    "+10",
+                                    "+9",
+                                    "+11"
+                                ],
+                                [
+                                    "Frozen Wasteland",
+                                    "+13",
+                                    "+13",
+                                    "+12",
+                                    "+13"
+                                ],
+                                [
+                                    "Frozen Mountains",
+                                    "+14",
+                                    "+15",
+                                    "+12",
+                                    "+13"
+                                ],
+                                [
+                                    "Corrupted Swamp",
+                                    "+14",
+                                    "+15",
+                                    "+13",
+                                    "+13"
+                                ],
+                                [
+                                    "Underground (Deep)",
+                                    "+16",
+                                    "+16",
+                                    "+15",
+                                    "+16"
+                                ],
+                                [
+                                    "Underground (Deeper Still)",
+                                    "+18",
+                                    "+18",
+                                    "+18",
+                                    "+18"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Carrying Capacity",
+			"source": "Ishiir",
+			"ruleType": "V",
+            "page": 1,
+            "entries": [
+                "The carrying capacity of a creature is halved if the creature is small, and halved again if the creature is tiny."
+            ]
+        },
+        {
+            "name": "Class and Subclass Features",
+			"source": "Ishiir",
+			"ruleType": "V",
+            "page": 1,
+            "entries": [
+                "ALL classes and subclasses that gain a fighting style from a feature can choose from all styles available to the Fighter class, rather than only a limited selection.",
+                "Barbarians may add their rage damage bonus to ranged weapon attacks with thrown weapons.",
+                "Prepared spellcasters can now change their prepared spells at the end of a short or long rest.",
+                "Class features that require a saving throw and do not normally use the spell save DC of the class and do not have a dedicated item to increase their DC, instead receive the enhancement bonus of an item used through the feature (where appropriate). Features that do not involve any items, such as certain racial abilities or other class features, instead receive a bonus to their DC equal to half proficiency, rounded down."
+            ]
+        },
+        {
+            "name": "Combat",
+			"source": "Ishiir",
+			"ruleType": "V",
+            "page": 1,
+            "entries": [
+                "Features that refer to a weapon damage die, reference the entire base damage of the weapon. E.g. for the Barbarian's Brutal Critical feature, you can roll an additional {@dice 2d6} on a critical hit with a greatsword, rather than only {@dice 1d6}.",
+                "Death Saving Throws do not reset once a creature heals, they instead recharge on a short or long rest.",
+                "Dodging also gives disadvantage on attempts to grapple against the dodging creature."
+            ]
+        },
+        {
+            "name": "Feats",
+			"source": "Ishiir",
+			"ruleType": "V",
+            "page": 1,
+            "entries": [
+                "A grapple attempt counts as melee attack for the purpose of interacting with the Mobile feat."
+            ]
+        },
+        {
+            "name": "Magic",
+			"source": "Ishiir",
+			"ruleType": "V",
+            "page": 1,
+            "entries": [
+                "Being raised from the dead removes ALL exhaustion levels rather than one if the spell creates a new body as part of its effect.",
+                "Creatures that are levitating, such as through the {@spell Levitate|Ishiir} spell, can use half their fly speed to move around if they have any."
+            ]
+        },
+        {
+            "name": "Armor Mastery",
+            "source": "Ishiir",
+			"ruleType": "V",
+            "page": 1,
+            "entries": [
+                "If you possess the Martial Mastery class feature, you can apply a mastery to any {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} you have proficiency in once per rest. You can change your choice when you finish a short or long rest.",
+                {
+                    "type": "list",
+                    "name": "List of Armor Masteries",
+                    "items": [
+                        "{@optfeature Light|Ishiir}",
+                        "{@optfeature Medium|Ishiir}",
+                        "{@optfeature Heavy|Ishiir}",
+                        "{@optfeature Unarmored Defense|Ishiir}"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Weapon Mastery",
+            "source": "Ishiir",
+			"ruleType": "V",
+            "page": 1,
+            "entries": [
+                "When you make a weapon attack, you can choose a mastery available to your {@filter weapon|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} if you possess the Martial Mastery class feature. Only one mastery may be applied to any given attack.",
+                "<b>Mastery save DC</b> = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice)",
+                {
+                    "type": "list",
+                    "name": "List of Weapon Masteries",
+                    "items": [
+                        "{@optfeature Cleave|Ishiir}",
+                        "{@optfeature Flurry|Ishiir}",
+                        "{@optfeature Gash|Ishiir}",
+                        "{@optfeature Lunge|Ishiir}",
+                        "{@optfeature Pierce|Ishiir}",
+                        "{@optfeature Push|Ishiir}",
+                        "{@optfeature Sap|Ishiir}",
+                        "{@optfeature Slow|Ishiir}"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Spell Slot Conversion",
+			"source": "Ishiir",
+			"ruleType": "V",
+            "page": 1,
+            "entries": [
+                "Characters that have the Spellcasting class feature can use an action to convert unexpended spell slots of any level into spell slots of a different level.",
+                "You may choose to convert multiple spell slots into a single larger spell slot, vice versa, or a mix thereof, e.g. you can choose to convert two 3rd level spell slots into a single 6th level slot, a 4th and three 1st level spell slots, or two 2nd level and four 1st level spell slots.",
+                "The table below shows the point value of each spell level. The point value sum of the spell slots you convert must be equal to the point value sum of the resulting spell levels.",
+                "Note that you cannot have more spell slots for a given spell level than shown on your class progression table at any point.",
+                {
+                    "type": "table",
+                    "colLabels": [
+                        "Spell level",
+                        "Point value"
+                    ],
+                    "colStyles": [
+                        "col-4 text-center",
+                        "col-4 text-center"
+                    ],
+                    "rows": [
+                        [
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "2",
+                            "2"
+                        ],
+                        [
+                            "3",
+                            "4"
+                        ],
+                        [
+                            "4",
+                            "5"
+                        ],
+                        [
+                            "5",
+                            "6"
+                        ],
+                        [
+                            "6",
+                            "8"
+                        ],
+                        [
+                            "7",
+                            "9"
+                        ],
+                        [
+                            "8",
+                            "10"
+                        ],
+                        [
+                            "9",
+                            "12"
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+}

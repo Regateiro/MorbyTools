@@ -1,0 +1,1931 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Ishiir",
+                "abbreviation": "Ishiir",
+                "full": "Ishiir",
+                "url": "https://regateiro.pt/5etools/homebrew/ishiir-bloodhunter.json",
+                "authors": [
+                    "Matt Mercer"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "class": [
+        {
+            "name": "Blood Hunter",
+            "page": 1,
+            "source": "Ishiir",
+            "hd": {
+                "number": 1,
+                "faces": 10
+            },
+            "proficiency": [
+                "dex",
+                "int"
+            ],
+            "startingProficiencies": {
+                "armor": [
+                    "light",
+                    "medium",
+                    "{@item shield|Ishiir|shields}"
+                ],
+                "weapons": [
+                    "simple",
+                    "martial"
+                ],
+                "tools": [
+                    "{@item alchemist's supplies|Ishiir}"
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "acrobatics",
+                                "arcana",
+                                "athletics",
+                                "history",
+                                "insight",
+                                "investigation",
+                                "religion",
+                                "survival"
+                            ],
+                            "count": 3
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "default": [
+                    "(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=simple weapon}",
+                    "(a) {@item studded leather|Ishiir} or (b) {@item scale mail|Ishiir}",
+                    "a {@item crossbow, light|Ishiir|light crossbow} and 20 {@item crossbow bolt|phb|bolts}",
+                    "an {@item explorer's pack|phb} and {@item alchemist's supplies|Ishiir}"
+                ],
+                "defaultData": [
+                    {
+                        "a": [
+                            {
+                                "equipmentType": "weaponMartial"
+                            }
+                        ],
+                        "b": [
+                            {
+                                "equipmentType": "weaponSimple",
+                                "quantity": 2
+                            }
+                        ]
+                    },
+                    {
+                        "a": [
+                            "studded leather armor|phb"
+                        ],
+                        "b": [
+                            "scale mail armor|phb"
+                        ]
+                    },
+                    {
+                        "_": [
+                            "light crossbow|phb",
+                            "crossbow bolts (20)|phb"
+                        ]
+                    },
+                    {
+                        "_": [
+                            "explorer's pack|phb",
+                            "alchemist's supplies|Ishiir"
+                        ]
+                    }
+                ]
+            },
+            "multiclassing": {
+                "requirements": {
+                    "or": [
+                        {
+                            "str": 13,
+                            "dex": 13
+                        }
+                    ],
+                    "int": 13
+                },
+                "proficienciesGained": {
+                    "armor": [
+                        "light",
+                        "medium",
+                        "{@item shield|Ishiir|shields}"
+                    ],
+                    "weapons": [
+                        "simple",
+                        "martial"
+                    ],
+                    "tools": [
+                        "{@item alchemist's supplies|Ishiir}"
+                    ]
+                },
+                "entries": [
+                    {
+                        "name": "Multiclassing with Warlock",
+                        "type": "item",
+                        "entries": [
+                            "If your blood hunter is part of the Order of the Profane Soul and also has warlock levels, add one-third of your blood hunter levels (rounded down) to your warlock level and consult the warlock progression table in the Player's Handbook for total spell slots, cantrips known, and spell slot level. You should consider aligning your otherworldly Patron feature between both classes, but your DM might allow you to have two different patrons at their discretion."
+                        ]
+                    }
+                ]
+            },
+            "classTableGroups": [
+                {
+                    "colLabels": [
+                        "Hemocraft Die",
+                        "{@filter Blood Curses|optionalfeatures|Feature Type=BC|source=Ishiir}"
+                    ],
+                    "rows": [
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 4
+                                    }
+                                ]
+                            },
+                            "1"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 4
+                                    }
+                                ]
+                            },
+                            "1"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 4
+                                    }
+                                ]
+                            },
+                            "1"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 4
+                                    }
+                                ]
+                            },
+                            "1"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "1"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "2"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "2"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "2"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "2"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "3"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            "3"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            "3"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            "3"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            "4"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            "4"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            "4"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            "4"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            "5"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            "5"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            "5"
+                        ]
+                    ]
+                }
+            ],
+            "classFeatures": [
+                "Variant Hemocraft Ability Score|Blood Hunter|Ishiir|1",
+                "Hunter's Bane|Blood Hunter|Ishiir|1",
+                "Blood Maledict|Blood Hunter|Ishiir|1",
+                "Fighting Style|Blood Hunter|Ishiir|2",
+                "Crimson Rite|Blood Hunter|Ishiir|2",
+                {
+                    "classFeature": "Blood Hunter Order|Blood Hunter|Ishiir|3",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Blood Hunter|Ishiir|4",
+                "Martial Mastery|Blood Hunter|Ishiir|4",
+                "Extra Attack|Blood Hunter|Ishiir|5",
+                "Brand of Castigation|Blood Hunter|Ishiir|6",
+                "Blood Maledict Improvement|Blood Hunter|Ishiir|6",
+                {
+                    "classFeature": "Blood Hunter Order Feature|Blood Hunter|Ishiir|7",
+                    "gainSubclassFeature": true
+                },
+                "Crimson Rite Improvement|Blood Hunter|Ishiir|7",
+                "Ability Score Improvement|Blood Hunter|Ishiir|8",
+                "Grim Psychometry|Blood Hunter|Ishiir|9",
+                "Dark Augmentation|Blood Hunter|Ishiir|10",
+                {
+                    "classFeature": "Blood Hunter Order Feature|Blood Hunter|Ishiir|11",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Blood Hunter|Ishiir|12",
+                "Brand of Tethering|Blood Hunter|Ishiir|13",
+                "Blood Maledict Improvement|Blood Hunter|Ishiir|13",
+                "Hardened Soul|Blood Hunter|Ishiir|14",
+                "Crimson Rite Improvement|Blood Hunter|Ishiir|14",
+                {
+                    "classFeature": "Blood Hunter Order Feature|Blood Hunter|Ishiir|15",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Blood Hunter|Ishiir|16",
+                "Blood Maledict Improvement|Blood Hunter|Ishiir|17",
+                {
+                    "classFeature": "Blood Hunter Order Feature|Blood Hunter|Ishiir|18",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Blood Hunter|Ishiir|19",
+                "Sanguine Mastery|Blood Hunter|Ishiir|20"
+            ],
+            "subclassTitle": "Blood Hunter Order"
+        }
+    ],
+    "subclass": [
+        {
+            "name": "Order of the Ghostslayer",
+            "page": 1,
+            "shortName": "Ghostslayer",
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassFeatures": [
+                "Order of the Ghostslayer|Blood Hunter|Ishiir|Ghostslayer|Ishiir|3",
+                "Rite of Dawn|Blood Hunter|Ishiir|Ghostslayer|Ishiir|3",
+                "Curse Specialist|Blood Hunter|Ishiir|Ghostslayer|Ishiir|3",
+                "Aether Walk|Blood Hunter|Ishiir|Ghostslayer|Ishiir|7",
+                "Brand of Sundering|Blood Hunter|Ishiir|Ghostslayer|Ishiir|11",
+                "Blood Curse of the Exorcist|Blood Hunter|Ishiir|Ghostslayer|Ishiir|15",
+                "Rite Revival|Blood Hunter|Ishiir|Ghostslayer|Ishiir|18"
+            ]
+        },
+        {
+            "name": "Order of the Lycan",
+            "page": 1,
+            "shortName": "Lycan",
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassFeatures": [
+                "Order of the Lycan|Blood Hunter|Ishiir|Lycan|Ishiir|3",
+                "Heightened Senses|Blood Hunter|Ishiir|Lycan|Ishiir|3",
+                "Hybrid Transformation|Blood Hunter|Ishiir|Lycan|Ishiir|3",
+                "Stalker's Prowess|Blood Hunter|Ishiir|Lycan|Ishiir|7",
+                "Advanced Transformation|Blood Hunter|Ishiir|Lycan|Ishiir|11",
+                "Brand of the Voracious|Blood Hunter|Ishiir|Lycan|Ishiir|15",
+                "Hybrid Transformation Mastery|Blood Hunter|Ishiir|Lycan|Ishiir|18"
+            ]
+        },
+        {
+            "name": "Order of the Mutant",
+            "page": 1,
+            "shortName": "Mutant",
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassFeatures": [
+                "Order of the Mutant|Blood Hunter|Ishiir|Mutant|Ishiir|3",
+                "Mutagencraft|Blood Hunter|Ishiir|Mutant|Ishiir|3",
+                "Strange Metabolism|Blood Hunter|Ishiir|Mutant|Ishiir|7",
+                "Brand of Axiom|Blood Hunter|Ishiir|Mutant|Ishiir|11",
+                "Blood Curse of Corrosion|Blood Hunter|Ishiir|Mutant|Ishiir|15",
+                "Exalted Mutation|Blood Hunter|Ishiir|Mutant|Ishiir|18"
+            ]
+        },
+        {
+            "name": "Order of the Profane Soul",
+            "page": 1,
+            "shortName": "Profane Soul",
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "additionalSpells": [
+                {
+                    "name": "The Archfey",
+                    "known": {
+                        "7": [
+                            "blur|Ishiir"
+                        ],
+                        "15": [
+                            "slow|Ishiir"
+                        ]
+                    }
+                },
+                {
+                    "name": "The Celestial",
+                    "known": {
+                        "7": [
+                            "lesser restoration|Ishiir"
+                        ],
+                        "15": [
+                            "revivify|Ishiir"
+                        ]
+                    }
+                },
+                {
+                    "name": "The Fathomless",
+                    "known": {
+                        "7": [
+                            "gust of wind|Ishiir"
+                        ],
+                        "15": [
+                            "lightning bolt|Ishiir"
+                        ]
+                    }
+                },
+                {
+                    "name": "The Fiend",
+                    "known": {
+                        "7": [
+                            "scorching ray|Ishiir"
+                        ],
+                        "15": [
+                            "fireball|Ishiir"
+                        ]
+                    }
+                },
+                {
+                    "name": "The Genie",
+                    "known": {
+                        "7": [
+                            "phantasmal force|Ishiir"
+                        ],
+                        "15": [
+                            "protection from energy|Ishiir"
+                        ]
+                    }
+                },
+                {
+                    "name": "The Great Old One",
+                    "known": {
+                        "7": [
+                            "detect thoughts|Ishiir"
+                        ],
+                        "15": [
+                            "haste|Ishiir"
+                        ]
+                    }
+                },
+                {
+                    "name": "The Hexblade",
+                    "known": {
+                        "7": [
+                            "branding smite|Ishiir"
+                        ],
+                        "15": [
+                            "blink|Ishiir"
+                        ]
+                    }
+                },
+                {
+                    "name": "The Undead",
+                    "known": {
+                        "7": [
+                            "blindness/deafness|Ishiir"
+                        ],
+                        "15": [
+                            "speak with dead|Ishiir"
+                        ]
+                    }
+                },
+                {
+                    "name": "The Undying",
+                    "known": {
+                        "7": [
+                            "silence|Ishiir"
+                        ],
+                        "15": [
+                            "bestow curse|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Order of the Profane Soul|Blood Hunter|Ishiir|Profane Soul|Ishiir|3",
+                "Otherworldly Patron|Blood Hunter|Ishiir|Profane Soul|Ishiir|3",
+                "Pact Magic|Blood Hunter|Ishiir|Profane Soul|Ishiir|3",
+                "Rite Focus|Blood Hunter|Ishiir|Profane Soul|Ishiir|3",
+                "Mystic Frenzy|Blood Hunter|Ishiir|Profane Soul|Ishiir|7",
+                "Revealed Arcana|Blood Hunter|Ishiir|Profane Soul|Ishiir|7",
+                "Brand of the Sapping Scar|Blood Hunter|Ishiir|Profane Soul|Ishiir|11",
+                "Unsealed Arcana|Blood Hunter|Ishiir|Profane Soul|Ishiir|15",
+                "Blood Curse of the Souleater|Blood Hunter|Ishiir|Profane Soul|Ishiir|18"
+            ]
+        }
+    ],
+    "classFeature": [
+        {
+            "name": "Variant Hemocraft Ability Score",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "As a blood hunter, you use your Intelligence modifier for some of your class and subclass features. However, with your DM's permission, you can choose to instead use your Wisdom modifier for all your blood hunter features that use your Intelligence modifier by default."
+            ]
+        },
+        {
+            "name": "Hunter's Bane",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "At 1st level, you have survived the Hunter's Bane—a dangerous, long-guarded ritual that alters your life's blood, forever binding you to the darkness and honing your senses against it. You have advantage on Wisdom ({@skill Survival}) checks to track fey, fiends, or undead, as well as on Intelligence checks to recall information about such creatures.",
+                "The Hunter's Bane also empowers your body to control and shape hemocraft magic, using your own blood and life essence to fuel your abilities. Some of your features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:",
+                "<b>Hemocraft save DC</b> = 8 + your proficiency bonus + your Hemocraft modifier (your choice between Intelligence or Wisdom)"
+            ]
+        },
+        {
+            "name": "Blood Maledict",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "Also at 1st level, you gain the ability to channel—or sometimes sacrifice—a part of your vital essence to curse and manipulate creatures through hemocraft magic. You know one blood curse of your choice. A list of the available blood curses can be found on the {@filter Optional Features|optionalfeatures|Feature Type=BC|source=Ishiir} page. You learn one additional blood curse of your choice at 6th, 10th, 14th, and 18th level. Each time you learn a new blood curse, you can also choose one of the blood curses you know and replace it with another blood curse.",
+                "Each time you use your Blood Maledict feature, you choose which curse to invoke from the curses you know. While invoking a blood curse, but before it affects the target, you can choose to amplify the curse by taking necrotic damage equal to one roll of your hemocraft die. This damage can't be reduced in any way. An amplified curse gains an additional effect, noted in the curse's description. Creatures that do not have blood are immune to blood curses unless you have amplified the curse.",
+                "Once you use this feature, you must finish a short or long rest before you can use it again. You can use Blood Maledict twice between rests starting at 6th level, three times starting at 13th level, and four times starting at 17th level."
+            ]
+        },
+        {
+            "name": "Fighting Style",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.",
+                {
+                    "type": "options",
+                    "count": 1,
+                    "entries": [
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Archery|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Dueling|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Great Weapon Fighting|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Two-Weapon Fighting|Ishiir"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Crimson Rite",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "Also at 2nd level, you learn to invoke a rite of hemocraft that infuses your weapon strikes with elemental energy. As a bonus action, you can activate any rite you know on one weapon you're holding. The effect of the rite lasts until you finish a short or long rest. When you activate a rite, you take necrotic damage equal to one roll of your hemocraft die. This damage can't be reduced in any way.",
+                "While the rite is in effect, attacks you make with this weapon are magical, and deal extra damage equal to your hemocraft die of the type determined by the chosen rite. A weapon can hold only one active rite at a time. Other creatures can't gain the benefit of your rite.",
+                "You choose one rite from the crimson rites below when you first gain this feature. You learn an additional crimson rite at 7th level, and again at 14th level.",
+                {
+                    "name": "Rite of the Flame",
+                    "type": "item",
+                    "entries": [
+                        "The extra damage dealt by your rite is fire damage."
+                    ]
+                },
+                {
+                    "name": "Rite of the Frozen",
+                    "type": "item",
+                    "entries": [
+                        "The extra damage dealt by your rite is cold damage."
+                    ]
+                },
+                {
+                    "name": "Rite of the Storm",
+                    "type": "item",
+                    "entries": [
+                        "The extra damage dealt by your rite is lightning damage."
+                    ]
+                },
+                {
+                    "name": "Rite of the Dead",
+                    "type": "item",
+                    "entries": [
+                        "The extra damage dealt by your rite is necrotic damage. (Prerequisite: 14th level)"
+                    ]
+                },
+                {
+                    "name": "Rite of the Oracle",
+                    "type": "item",
+                    "entries": [
+                        "The extra damage dealt by your rite is psychic damage. (Prerequisite: 14th level)"
+                    ]
+                },
+                {
+                    "name": "Rite of the Roar",
+                    "type": "item",
+                    "entries": [
+                        "The extra damage dealt by your rite is thunder damage. (Prerequisite: 14th level)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blood Hunter Order",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "At 3rd level, you commit to an order of blood hunters whose philosophy will guide you throughout your life: the Order of the Ghostslayer, the Order of the Lycan, the Order of the Mutant, or the Order of the Profane Soul, each of which is detailed at the end of the class description. Your choice grants you features at 7th level and again at 11th, 15th, and 18th level."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 4,
+            "entries": [
+                "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Martial Mastery",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 4,
+            "entries": [
+                "Starting at 4th level, you gain the mastery benefits for two {@filter weapons|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} of your choice as well as an {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} type (see {@variantrule Armor Mastery|Ishiir} and {@variantrule Weapon Mastery|Ishiir} variant rules). You must be proficient in the chosen weapons and armor. If you possess the Unarmored Defense feature, you may {@optfeature Unarmored Defense|Ishiir|choose it} in place of an armor type.",
+                "You can change your choices when you finish a short or long rest."
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 5,
+            "entries": [
+                "Starting at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
+            ]
+        },
+        {
+            "name": "Brand of Castigation",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "At 6th level, when you damage a creature with a weapon for which you have an active crimson rite, you can channel hemocraft magic to sear an arcane brand into that creature (no action required). You always know the direction to the branded creature as long as it's on the same plane as you. Further, each time the branded creature deals damage to you or a creature you can see within 5 feet of you, the branded creature takes psychic damage equal to your Hemocraft modifier (minimum of 1).",
+                "Your brand lasts until you dismiss it or until you use this feature to apply a brand to another creature. Your brand can be dispelled with {@spell dispel magic|Ishiir}, and is treated as a spell with a level equal to half your blood hunter level (maximum 9th level).",
+                "Once you use this feature, you can't use it again until you finish a short or long rest."
+            ]
+        },
+        {
+            "name": "Blood Maledict Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "When you reach 6th level, you can use your Blood Maledict feature twice between rests."
+            ]
+        },
+        {
+            "name": "Blood Hunter Order Feature",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 7,
+            "entries": [
+                "At 7th level, you gain a feature from your Blood Hunter Order."
+            ]
+        },
+        {
+            "name": "Crimson Rite Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 7,
+            "entries": [
+                "At 7th level, you gain an additional Crimson Rite."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 8,
+            "entries": [
+                "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Grim Psychometry",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 9,
+            "entries": [
+                "When you reach 9th level, you gain a supernatural talent for discerning the secrets surrounding mysterious relics or places touched by evil. Whenever you make an Intelligence ({@skill History}) check to recall information about the sinister or tragic history of an object you are touching or your current location, you have advantage on the check. At the DM's discretion, a suitably high roll might cause your character to experience brief visions of the past connected to the object or location."
+            ]
+        },
+        {
+            "name": "Dark Augmentation",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 10,
+            "entries": [
+                "Starting at 10th level, the magic of hemocraft suffuses your body to permanently reinforce your resilience. Your speed increases by 5 feet, and you have a bonus to Strength, Dexterity, and Constitution saving throws equal to your Hemocraft modifier (minimum of +1)."
+            ]
+        },
+        {
+            "name": "Blood Hunter Order Feature",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 11,
+            "entries": [
+                "At 11th level, you gain a feature from your Blood Hunter Order."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 12,
+            "entries": [
+                "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Brand of Tethering",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 13,
+            "entries": [
+                "Starting at 13th level, the psychic damage from your Brand of Castigation increases to twice your Hemocraft modifier (minimum of 2). Additionally, a branded creature can't take the {@action Dash|Ishiir} action, and if it attempts to teleport or to leave its current plane by any means, it takes {@damage 4d6} psychic damage and must make a Wisdom saving throw. On a failure, the attempt to teleport or leave the plane fails."
+            ]
+        },
+        {
+            "name": "Blood Maledict Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 13,
+            "entries": [
+                "When you reach 13th level, you can use your Blood Maledict feature three times between rests."
+            ]
+        },
+        {
+            "name": "Hardened Soul",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "When you reach 14th level, you have advantage on saving throws against being {@condition charmed|Ishiir} and {@condition frightened|Ishiir}."
+            ]
+        },
+        {
+            "name": "Crimson Rite Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "At 14th level, you gain an additional Crimson Rite."
+            ]
+        },
+        {
+            "name": "Blood Hunter Order Feature",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 15,
+            "entries": [
+                "At 15th level, you gain a feature from your Blood Hunter Order."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 16,
+            "entries": [
+                "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Blood Maledict Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 17,
+            "entries": [
+                "When you reach 17th level, you can use your Blood Maledict feature four times between rests."
+            ]
+        },
+        {
+            "name": "Blood Hunter Order Feature",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 18,
+            "entries": [
+                "At 18th level, you gain a feature from your Blood Hunter Order."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 19,
+            "entries": [
+                "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Sanguine Mastery",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "level": 20,
+            "entries": [
+                "Upon reaching 20th level, your mastery of blood magic reaches its height, mitigating your sacrifice and empowering your expertise. Once per turn, whenever a blood hunter feature requires you to roll a hemocraft die, you can reroll the die and use either roll.",
+                "Additionally, whenever you score a critical hit with a weapon for which you have an active crimson rite, you regain one expended use of your Blood Maledict feature."
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Order of the Ghostslayer",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ghostslayer",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "The Order of the Ghostslayer is the oldest of the blood hunter orders, its members having originally rediscovered the secrets of hemocraft and refined them for combat against the scourge of undeath. Ghostslayers seek out and study the moment of death, obsessing over the mystery of the transition from life, and the unholy power that can cause the dead to rise once more. These zealous blood hunters make it their life's work to destroy the scourge of undeath wherever it is found, tuning their abilities to engage undead creatures and those who manipulate the necromancy that creates them."
+            ]
+        },
+        {
+            "name": "Rite of Dawn",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ghostslayer",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you join this order at 3rd level, you learn the Rite of the Dawn as part of your Crimson Rite feature. When you activate the Rite of the Dawn, the extra damage dealt by your rite is radiant damage. Additionally, while that rite is active on your weapon, you gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Your weapon sheds bright light out to a range of 20 feet.",
+                        "You have resistance to necrotic damage.",
+                        "When you hit an undead creature with a weapon for which the Rite of the Dawn is active, you roll an additional hemocraft die when determining the extra damage from the rite."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Curse Specialist",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ghostslayer",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Starting at 3rd level, you learn to master blood curses. You gain an additional use of your Blood Maledict feature. In addition, your blood curses can target any creature, whether it has blood or not."
+            ]
+        },
+        {
+            "name": "Aether Walk",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ghostslayer",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 1,
+            "entries": [
+                "Upon reaching 7th level, at the start of your turn, you can magically step into the veil between the planes as long as you aren't {@condition incapacitated|Ishiir}. You can move through other creatures and objects as if they were {@quickref difficult terrain||3}, as well as see and affect creatures and objects on the Ethereal Plane. You take {@damage 1d10} force damage if you end your turn inside an object.",
+                "This feature lasts for a number of rounds equal to your Hemocraft modifier (minimum of 1 round). If you are inside an object when it ends, you are immediately shunted to the nearest unoccupied space and you take force damage equal to twice the number of feet you moved.",
+                "Once you use this feature, you must finish a short or long rest before you can use it again. You can use Aether Walk twice between rests starting at 15th level."
+            ]
+        },
+        {
+            "name": "Brand of Sundering",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ghostslayer",
+            "subclassSource": "Ishiir",
+            "level": 11,
+            "header": 1,
+            "entries": [
+                "Starting at 11th level, your Brand of Castigation exposes a fragment of your foe's essence, leaving them vulnerable to your Crimson Rite feature. Whenever you hit a creature with a weapon for which you have an active crimson rite, you roll an additional hemocraft die when determining the extra damage from the rite. Additionally, if a branded creature has the Incorporeal Movement trait or a similar feature, it can't move through creatures or objects while branded."
+            ]
+        },
+        {
+            "name": "Blood Curse of the Exorcist",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ghostslayer",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 1,
+            "entries": [
+                "At 15th level, you hone your hemocraft to tear corruption from the minds and bodies of your allies—and to punish those responsible for it. You gain the Blood Curse of the Exorcist for your Blood Maledict feature. This doesn't count against your number of blood curses known."
+            ]
+        },
+        {
+            "name": "Rite Revival",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ghostslayer",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "Upon reaching 18th level, you learn to protect your fading life by reabsorbing the energy you feed to your weapons. If you have one or more crimson rites active and you are reduced to 0 hit points but don't die outright, you can choose to have all your active crimson rites end and drop to 1 hit point instead."
+            ]
+        },
+        {
+            "name": "Order of the Lycan",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Lycan",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "The ancient curse of lycanthropy is feared by nearly all peoples and cultures, passed through blood and seeding a host with the savage strength and hunger for violence of a wicked beast. The Order of the Lycan is a proud group of blood hunters who undergo “the Taming”—the ceremonial infliction of lycanthropy by a senior member of the order, for those who do not already carry the curse before seeking this path. These hunters then use the magic of their blood to harness the power of the monster they harbor, without losing themselves to it. Using intense will and secret blood magic rituals, members of the Order of the Lycan learn to control and unleash their hybrid forms for short periods of time. Enhanced physical prowess, unnatural resilience, and razor-sharp claws make these warriors a terrible foe to any evil that crosses their path. Yet no training is perfect, and without care and complete focus, even the greatest of blood hunters can temporarily lose themselves to their own hunger.",
+                {
+                    "type": "inset",
+                    "name": "The Burden of Lycanthropy",
+                    "entries": [
+                        "Those inducted into the Order of the Lycan choose this path with conviction, understanding the terrible weight it imposes on them and the challenges it brings. Where most afflicted by the curse of lycanthropy grow wicked, deranged, and even murderous, Lycan blood hunters accept the gifts of the beast while maintaining control through intense training and the power of their blood magic. A member of the Order of the Lycan cannot spread their curse through blood unless they wish to, and one of the most sacred oaths of this order is to never infect another creature without the order's sanction.",
+                        "If a member of the Order of the Lycan is ever cured of their lycanthropic curse, it brings terrible shame to their name and the order. Members who have been cleansed against their will readily return to the order to undergo a renewed initiation of the Taming, reintroducing the curse to their bodies and restoring their honor.",
+                        "Lycanthropy comes in many forms bound to specific beasts, with wolf, bear, tiger, boar, and rat the best-known variations. The particular strain of the lycanthropic curse defines the physical traits that manifest in a Lycan blood hunter's hybrid transformation, even as the benefits the curse bestows remain relatively uniform."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Heightened Senses",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Lycan",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you choose this archetype at 3rd level, you gain the improved senses of a natural predator. You have advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+            ]
+        },
+        {
+            "name": "Hybrid Transformation",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Lycan",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Also at 3rd level, you learn to control the lycanthropic curse that courses through your veins. As a bonus action, you transform into a special hybrid form for up to 1 hour. You can speak, use equipment, and wear armor while in this form, and can revert to your normal form as a bonus action. You automatically revert to your normal form if you fall unconscious or die.",
+                "This feature replaces the rules for lycanthropy in the Monster Manual. Once you use this feature, you must finish a short or long rest before you can use it again.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Hybrid Transformation Features|Blood Hunter|Ishiir|Lycan|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Hybrid Transformation Features",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Lycan",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "While you are transformed, you gain the following benefits and drawbacks:",
+                {
+                    "type": "entries",
+                    "name": "Feral Might",
+                    "entries": [
+                        "You have advantage on Strength checks and Strength saving throws, and you have a +1 bonus to melee damage rolls. This bonus increases to +2 at 11th level and to +3 at 18th level."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Resilient Hide",
+                    "entries": [
+                        "You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks not made with silvered weapons. Additionally, while you are not wearing heavy armor, you have a +1 bonus to AC."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Predatory Strikes",
+                    "entries": [
+                        "You can apply your Crimson Rite feature to your unarmed strikes, which you treat as one weapon. You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes, which deal {@damage 1d6} bludgeoning or slashing damage (your choice). This damage increases to {@damage 1d8} at 11th level.",
+                        "Additionally, when you use the {@action Attack|Ishiir} action to make an unarmed strike, you can make one additional unarmed strike as a bonus action."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Bloodlust",
+                    "entries": [
+                        "If you start your turn with fewer hit points than half your hit point maximum, you must succeed on a DC 8 Wisdom saving throw or move directly toward the nearest creature and use the Attack action against that creature. If you're concentrating on a spell or are under an effect that prevents you from concentrating (such as the barbarian's Rage feature), you automatically fail this saving throw.",
+                        "If you have your Extra Attack feature, you can choose whether to use it for this frenzied attack. If more than one creature is equally near to you, roll randomly to determine your target. Once your attack is resolved, you regain control of yourself."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Stalker's Prowess",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Lycan",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 1,
+            "entries": [
+                "At 7th level, your speed increases by 10 feet, and you add 10 feet to your long jump distance and 3 feet to your high jump distance. Your hybrid form also gains the following additional benefit.",
+                {
+                    "type": "entries",
+                    "name": "Improved Predatory Strikes",
+                    "entries": [
+                        "You have a +1 bonus to attack rolls made with your unarmed strike. This bonus increases to +2 at 11th level and to +3 at 18th level. Additionally, when you have an active crimson rite on your unarmed strike while in your hybrid form, your unarmed strikes are considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Transformation",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Lycan",
+            "subclassSource": "Ishiir",
+            "level": 11,
+            "header": 1,
+            "entries": [
+                "At 11th level, you learn to unleash and control more of the beast within. You can use your Hybrid Transformation feature twice, regaining all expended uses when you finish a short or long rest. Your hybrid form also gains the following additional benefit.",
+                {
+                    "type": "entries",
+                    "name": "Lycan Regeneration",
+                    "entries": [
+                        "At the start of each of your turns when you have at least 1 hit point but fewer hit points than half your hit point maximum, you gain hit points equal to 1 + your Constitution modifier (minimum of 1). If you are in hybrid form, you gain these hit points before you must make the saving throw for your bloodlust."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Brand of the Voracious",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Lycan",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 1,
+            "entries": [
+                "Starting at 15th level, you have advantage on the saving throw for your bloodlust while in hybrid form. Additionally, your Brand of Castigation can now bind a foe to your hunter's ferocity. While in your hybrid form, you have advantage on attack rolls against a creature branded by you."
+            ]
+        },
+        {
+            "name": "Hybrid Transformation Mastery",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Lycan",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "At 18th level, you have mastered your inner predator. You can use your Hybrid Transformation feature an unlimited number of times, and your hybrid form lasts until you revert to your normal form, fall {@condition unconscious|Ishiir}, or die.",
+                "You also gain the Blood Curse of the Howl for your Blood Maledict feature. This doesn't count against your number of blood curses known."
+            ]
+        },
+        {
+            "name": "Order of the Mutant",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mutant",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "The process of undertaking the Hunter's Bane ritual is a painful, scarring, and sometimes fatal experience. Those who survive are irrevocably changed—and not always for the better. Over generations of experimentation, a splinter order of blood hunters honed the way in which hemocraft alters the body, using corrupted alchemy and toxic elixirs to alter their blood even further. Over time, they have modified their capabilities in battle, becoming something beyond what they once were. Calling themselves the Order of the Mutant, these blood hunters now specialize in assessing the strengths and weaknesses of their foes, altering their biology to be best prepared for any conflict."
+            ]
+        },
+        {
+            "name": "Mutagencraft",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mutant",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you choose this archetype at 3rd level, you learn to master forbidden alchemical formulas—known as mutagens—that can temporarily alter your mental and physical abilities.",
+                "As a bonus action, you consume a mutagen, whose effects and side effects last until you finish a short or long rest unless otherwise specified. While one or more mutagens are affecting you, you can use an action to focus and flush all mutagens from your system, ending their effects and side effects.",
+                "Mutagens are designed for the specific biology of the character who concocted them, and your mutagens have no effect on other creatures. They are also unstable by nature, losing their potency over time and becoming inert if not used before you finish your next short or long rest.",
+                {
+                    "type": "table",
+                    "caption": "Mutagencraft",
+                    "colLabels": [
+                        "Blood Hunter Level",
+                        "Mutagens Created",
+                        "Formulas Known"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-2 text-center",
+                        "col-2 text-center"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "1",
+                            "4"
+                        ],
+                        [
+                            "7th",
+                            "2",
+                            "5"
+                        ],
+                        [
+                            "11th",
+                            "2",
+                            "6"
+                        ],
+                        [
+                            "15th",
+                            "3",
+                            "7"
+                        ],
+                        [
+                            "18th",
+                            "3",
+                            "8"
+                        ]
+                    ]
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Formulas|Blood Hunter|Ishiir|Mutant|Ishiir|7"
+                }
+            ]
+        },
+        {
+            "name": "Formulas",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mutant",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 1,
+            "entries": [
+                "The number of mutagens you can concoct when you finish a rest, and the number of formulas you know, increases as you gain levels in the blood hunter class, as shown on the Mutagencraft table above. Additionally, when you learn a new mutagen formula, you can replace one formula you already know with a new mutagen formula. You choose four mutagen formulas to learn from the {@filter Optional Features|optionalfeatures|Feature Type=MF|source=Ishiir} page, and you can concoct one mutagen when you finish a short or long rest."
+            ]
+        },
+        {
+            "name": "Strange Metabolism",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mutant",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 1,
+            "entries": [
+                "When you reach 7th level, your body begins to adapt to toxins and venoms, ignoring their corrupting effects. You gain immunity to poison damage and the {@condition poisoned|Ishiir} condition.",
+                "Additionally, you can trigger a burst of adrenaline that lets you temporarily resist the negative effects of a mutagen. As a bonus action, you can ignore the negative side effect of one mutagen affecting you for 1 minute. Once you do so, you can't do so again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Brand of Axiom",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mutant",
+            "subclassSource": "Ishiir",
+            "level": 11,
+            "header": 1,
+            "entries": [
+                "At 11th level, your mutagenic hemocraft lets your Brand of Castigation reveal a foe's true nature. Any illusion or invisibility in effect on a creature when you brand it ends, and the creature can't benefit from {@condition invisible|Ishiir|invisibility} or illusion effects while branded by you. If a creature branded by you is in an alternative form (by way of the {@spell polymorph|Ishiir} spell, the Change Shape action or Shapechanger trait, the Wild Shape feature, and similar effects), it must succeed on a Wisdom saving throw or revert to its true form and be {@condition stunned|Ishiir} until the end of your next turn. Whenever a branded creature attempts to alter its form, it must succeed on a Wisdom saving throw or have the attempt fail, and it is {@condition stunned|Ishiir} until the end of your next turn."
+            ]
+        },
+        {
+            "name": "Blood Curse of Corrosion",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mutant",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 1,
+            "entries": [
+                "Starting at 15th level, your blood curse can infuse a creature's body with terrible toxins. You gain the Blood Curse of Corrosion for your Blood Maledict feature. This doesn't count against your number of blood curses known."
+            ]
+        },
+        {
+            "name": "Exalted Mutation",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mutant",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "At 18th level, your body has adapted to produce mutagens naturally in a moment of need. As a bonus action, choose one mutagen currently affecting you. Its effects and side effects end, and you can immediately have a mutagen you know the formula for take effect in its place.",
+                "You can use this feature a number of times equal to your Hemocraft modifier (minimum of once). You regain all expended uses when you finish a long rest."
+            ]
+        },
+        {
+            "name": "Order of the Profane Soul",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Profane Soul",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Blood hunters belonging to the Order of the Profane Soul have pushed the limits of hemocraft for use against some of the most terrifying creatures corrupting the world. Ancient fiends and cruel magic-users have long counted on their ability to meld into the background and escape those who hunt them, vanishing into noble courts without a trace, or bending the minds of the most stalwart warriors with but a glance. So the blood hunters who founded this order trusted to their resilience as they delved into the same well of corrupting arcane knowledge, making pacts with lesser evils to better combat the greater threats. And though they might have traded a part of themselves for their power, the members of this order know the benefits of that power far outweigh the price."
+            ]
+        },
+        {
+            "name": "Otherworldly Patron",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Profane Soul",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you reach 3rd level, you strike a bargain with an otherworldly being of your choice:",
+                {
+                    "type": "list",
+                    "items": [
+                        "The Archfey, the Fiend, or the Great Old One, detailed in the Player's Handbook.",
+                        "The Undying, from Sword Coast Adventurer's Guide.",
+                        "The Celestial or the Hexblade, from Xanathar's Guide to Everything",
+                        "The Fathomless or the Genie, from Tasha's Cauldron of Everything",
+                        "The Undead, from Van Richten's Guide to Ravenloft"
+                    ]
+                },
+                "The choice you make augments some of your subclass features, as noted below."
+            ]
+        },
+        {
+            "name": "Pact Magic",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Profane Soul",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Also at 3rd level, you augment your combat techniques with the ability to cast spells. See chapter 10 of the Player's Handbook for the general rules of spellcasting and chapter 11 of the Player's Handbook for the warlock spell list.",
+                {
+                    "type": "item",
+                    "name": "Cantrips",
+                    "entries": [
+                        "You learn two cantrips of your choice from the warlock spell list. You learn an additional warlock cantrip of your choice at 10th level."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Spell Slots",
+                    "entries": [
+                        "The Profane Soul Spellcasting table shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.",
+                        "For example, when you are 8th level, you have two 2nd-level spell slots. To cast the 1st-level spell {@spell witch bolt|Ishiir}, you must spend one of those slots, and you cast it as a 2nd-level spell."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Spells Known of 1st Level and Higher",
+                    "entries": [
+                        "At 3rd level, you know two 1st-level spells of your choice from the warlock spell list.",
+                        "The Spells Known column of the Profane Soul Spellcasting table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 13th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.",
+                        "Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Spellcasting Ability.",
+                    "entries": [
+                        "Your chosen Hemocraft ability (Intelligence or Wisdom) is your spellcasting ability for your warlock spells, so you use your Hemocraft ability whenever a spell refers to your spellcasting ability. In addition, you use your Hemocraft modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.",
+                        "<b>Spell save DC</b> = 8 + your proficiency bonus + your Hemocraft modifier",
+                        "<b>Spell attack modifier</b> = your proficiency bonus + your Hemocraft modifier"
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Profane Soul Spellcasting",
+                    "colLabels": [
+                        "Blood Hunter Level",
+                        "Cantrips Known",
+                        "Spells Known",
+                        "Spell Slots",
+                        "Slot Level"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-2 text-center",
+                        "col-2 text-center",
+                        "col-2 text-center",
+                        "col-2 text-center"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "2",
+                            "2",
+                            "1",
+                            "1st"
+                        ],
+                        [
+                            "4th",
+                            "2",
+                            "2",
+                            "1",
+                            "1st"
+                        ],
+                        [
+                            "5th",
+                            "2",
+                            "3",
+                            "1",
+                            "1st"
+                        ],
+                        [
+                            "6th",
+                            "2",
+                            "3",
+                            "2",
+                            "1st"
+                        ],
+                        [
+                            "7th",
+                            "2",
+                            "4",
+                            "2",
+                            "2nd"
+                        ],
+                        [
+                            "8th",
+                            "2",
+                            "4",
+                            "2",
+                            "2nd"
+                        ],
+                        [
+                            "9th",
+                            "2",
+                            "5",
+                            "2",
+                            "2nd"
+                        ],
+                        [
+                            "10th",
+                            "3",
+                            "5",
+                            "2",
+                            "2nd"
+                        ],
+                        [
+                            "11th",
+                            "3",
+                            "6",
+                            "2",
+                            "2nd"
+                        ],
+                        [
+                            "12th",
+                            "3",
+                            "6",
+                            "2",
+                            "2nd"
+                        ],
+                        [
+                            "13th",
+                            "3",
+                            "7",
+                            "2",
+                            "3rd"
+                        ],
+                        [
+                            "14th",
+                            "3",
+                            "7",
+                            "2",
+                            "3rd"
+                        ],
+                        [
+                            "15th",
+                            "3",
+                            "8",
+                            "2",
+                            "3rd"
+                        ],
+                        [
+                            "16th",
+                            "3",
+                            "8",
+                            "2",
+                            "3rd"
+                        ],
+                        [
+                            "17th",
+                            "3",
+                            "9",
+                            "2",
+                            "3rd"
+                        ],
+                        [
+                            "18th",
+                            "3",
+                            "9",
+                            "2",
+                            "3rd"
+                        ],
+                        [
+                            "19th",
+                            "3",
+                            "10",
+                            "2",
+                            "4th"
+                        ],
+                        [
+                            "20th",
+                            "3",
+                            "11",
+                            "2",
+                            "4th"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Rite Focus",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Profane Soul",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Starting at 3rd level, your weapon becomes a conduit for the power of your pact with your chosen patron. While you have an active crimson rite, you can use your weapon as a spellcasting focus for your warlock spells, and you gain a specific benefit based on your chosen pact.",
+                {
+                    "type": "item",
+                    "name": "The Archfey",
+                    "entries": [
+                        "When you damage a creature with a weapon for which you have an active crimson rite, that creature glows with faint light until the end of your next turn. For the duration, the creature gains no benefit from any cover or from being {@condition invisible|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Celestial",
+                    "entries": [
+                        "As a bonus action, you expend one use of your Blood Maledict feature to heal one creature you can see within 60 feet of you. That creature regains a number of hit points equal to one roll of your hemocraft die + your Hemocraft modifier (minimum of +1)."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Fathomless",
+                    "entries": [
+                        "You can breathe underwater. Additionally, once per turn when you damage a creature with a weapon for which you have an active crimson rite, you can reduce that creature's speed by 10 feet until the start of your next turn."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Fiend",
+                    "entries": [
+                        "While using the Rite of the Flame, if you roll a 1 or 2 on a damage die when you roll the extra damage from the rite, you can reroll the die and choose which roll to use."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Genie",
+                    "entries": [
+                        "As a bonus action, you expend a use of your Blood Maledict feature to give yourself a flying speed of 30 feet, which lasts for a number of rounds equal to your Hemocraft modifier (minimum of 1 round)."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Great Old One",
+                    "entries": [
+                        "When you score a critical hit against a creature, that creature and any other creatures of your choice within 10 feet of it are {@condition frightened|Ishiir} of you until the end of your next turn."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Hexblade",
+                    "entries": [
+                        "When you successfully target a creature with a blood curse, the next time you hit that creature with an attack while the curse is in effect, the attack deals additional damage equal to your proficiency modifier."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Undead",
+                    "entries": [
+                        "When you take necrotic damage, you can use your reaction to halve that damage. In addition, your appearance changes to reflect some aspect of your patron while you have any crimson rite active."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Undying",
+                    "entries": [
+                        "When you reduce a hostile creature of at least mild threat (DM's discretion) to 0 hit points, you regain a number of hit points equal to one roll of your hemocraft die."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mystic Frenzy",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Profane Soul",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 1,
+            "entries": [
+                "Starting at 7th level, when you use your action to cast a cantrip, you can immediately make one weapon attack as a bonus action."
+            ]
+        },
+        {
+            "name": "Revealed Arcana",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Profane Soul",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 1,
+            "entries": [
+                "At 7th level, your patron grants you the use of a distinctive spell based on your pact. You cast this spell using any pact magic spell slot, and can't do so again until you finish a long rest.",
+                {
+                    "type": "item",
+                    "name": "The Archfey",
+                    "entries": [
+                        "You can cast {@spell blur|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Celestial",
+                    "entries": [
+                        "You can cast {@spell lesser restoration|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Fathomless",
+                    "entries": [
+                        "You can cast {@spell gust of wind|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Fiend",
+                    "entries": [
+                        "You can cast {@spell scorching ray|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Genie",
+                    "entries": [
+                        "You can cast {@spell phantasmal force|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Great Old One",
+                    "entries": [
+                        "You can cast {@spell detect thoughts|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Hexblade",
+                    "entries": [
+                        "You can cast {@spell branding smite|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Undead",
+                    "entries": [
+                        "You can cast {@spell blindness/deafness|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Undying",
+                    "entries": [
+                        "You can cast {@spell silence|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Brand of the Sapping Scar",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Profane Soul",
+            "subclassSource": "Ishiir",
+            "level": 11,
+            "header": 1,
+            "entries": [
+                "Upon reaching 11th level, your Brand of Castigation feature digs dark arcane scars into your target, leaving them vulnerable to your magic. A creature branded by you has disadvantage on saving throws against your warlock spells."
+            ]
+        },
+        {
+            "name": "Unsealed Arcana",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Profane Soul",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 1,
+            "entries": [
+                "At 15th level, your patron grants you the use of an additional spell based on your pact. You cast this spell without expending a spell slot, and can't do so again until you finish a long rest.",
+                {
+                    "type": "item",
+                    "name": "The Archfey",
+                    "entries": [
+                        "You can cast {@spell slow|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Celestial",
+                    "entries": [
+                        "You can cast {@spell revivify|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Fathomless",
+                    "entries": [
+                        "You can cast {@spell lightning bolt|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Fiend",
+                    "entries": [
+                        "You can cast {@spell fireball|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Genie",
+                    "entries": [
+                        "You can cast {@spell protection from energy|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Great Old One",
+                    "entries": [
+                        "You can cast {@spell haste|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Hexblade",
+                    "entries": [
+                        "You can cast {@spell blink|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Undead",
+                    "entries": [
+                        "You can cast {@spell speak with dead|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Undying",
+                    "entries": [
+                        "You can cast {@spell bestow curse|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blood Curse of the Souleater",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Profane Soul",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "Starting at 18th level, you learn to siphon the life energy from your fallen prey. You gain the Blood Curse of the Soul Eater for your Blood Maledict feature. This doesn't count against your number of blood curses known."
+            ]
+        }
+    ]
+}

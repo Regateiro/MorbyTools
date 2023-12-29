@@ -1,0 +1,3950 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Ishiir",
+                "abbreviation": "Ishiir",
+                "full": "Ishiir",
+                "url": "https://regateiro.pt/5etools/homebrew/ishiir-paladin.json",
+                "authors": [
+                    "Sieg"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "class": [
+        {
+            "name": "Paladin",
+            "source": "Ishiir",
+            "page": 1,
+            "hd": {
+                "number": 1,
+                "faces": 10
+            },
+            "proficiency": [
+                "wis",
+                "cha"
+            ],
+            "spellcastingAbility": "cha",
+            "casterProgression": "1/2",
+            "preparedSpells": "<$level$> / 2 + <$cha_mod$>",
+            "optionalfeatureProgression": [
+                {
+                    "name": "Fighting Style",
+                    "featureType": [
+                        "FS:P"
+                    ],
+                    "progression": {
+                        "2": 1
+                    }
+                }
+            ],
+            "startingProficiencies": {
+                "armor": [
+                    "light",
+                    "medium",
+                    "heavy",
+                    "{@item shield|phb|shields}"
+                ],
+                "weapons": [
+                    "simple",
+                    "martial"
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "athletics",
+                                "insight",
+                                "intimidation",
+                                "medicine",
+                                "persuasion",
+                                "religion"
+                            ],
+                            "count": 2
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "default": [
+                    "(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
+                    "(a) five {@item javelin|phb|javelins} or (b) any {@filter simple melee weapon|items|source=phb|category=basic|type=simple weapon;melee weapon=sand}",
+                    "(a) a {@item priest's pack|phb} or (b) an {@item explorer's pack|phb}",
+                    "{@item Chain mail|phb} and a {@item holy symbol|phb}"
+                ],
+                "goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+                "defaultData": [
+                    {
+                        "a": [
+                            {
+                                "equipmentType": "weaponMartial"
+                            },
+                            "shield|phb"
+                        ],
+                        "b": [
+                            {
+                                "equipmentType": "weaponMartial",
+                                "quantity": 2
+                            }
+                        ]
+                    },
+                    {
+                        "a": [
+                            {
+                                "item": "javelin|phb",
+                                "quantity": 5
+                            }
+                        ],
+                        "b": [
+                            {
+                                "equipmentType": "weaponSimpleMelee"
+                            }
+                        ]
+                    },
+                    {
+                        "a": [
+                            "priest's pack|phb"
+                        ],
+                        "b": [
+                            "explorer's pack|phb"
+                        ]
+                    },
+                    {
+                        "_": [
+                            "Chain mail|phb",
+                            "holy symbol|phb"
+                        ]
+                    }
+                ]
+            },
+            "multiclassing": {
+                "requirements": {
+                    "str": 13,
+                    "cha": 13
+                },
+                "proficienciesGained": {
+                    "armor": [
+                        "light",
+                        "medium",
+                        "{@item shield|phb|shields}"
+                    ],
+                    "weapons": [
+                        "simple",
+                        "martial"
+                    ]
+                }
+            },
+            "classTableGroups": [
+                {
+                    "title": "Spell Slots per Spell Level",
+                    "colLabels": [
+                        "{@filter 1st|spells|level=1|class=Paladin (Ishiir)|source=Ishiir}",
+                        "{@filter 2nd|spells|level=2|class=Paladin (Ishiir)|source=Ishiir}",
+                        "{@filter 3rd|spells|level=3|class=Paladin (Ishiir)|source=Ishiir}",
+                        "{@filter 4th|spells|level=4|class=Paladin (Ishiir)|source=Ishiir}",
+                        "{@filter 5th|spells|level=5|class=Paladin (Ishiir)|source=Ishiir}"
+                    ],
+                    "rowsSpellProgression": [
+                        [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2
+                        ]
+                    ]
+                }
+            ],
+            "classFeatures": [
+                "Divine Sense|Paladin|Ishiir|1",
+                "Lay on Hands|Paladin|Ishiir|1",
+                "Divine Smite|Paladin|Ishiir|2",
+                "Fighting Style|Paladin|Ishiir|2",
+                "Martial Versatility|Paladin|Ishiir|2",
+                "Spellcasting|Paladin|Ishiir|2",
+                "Divine Health|Paladin|Ishiir|3",
+                {
+                    "classFeature": "Sacred Oath|Paladin|Ishiir|3",
+                    "gainSubclassFeature": true,
+                    "gainSubclassFeatureHasContent": true
+                },
+                "Ability Score Improvement|Paladin|Ishiir|4",
+                "Martial Mastery|Paladin|Ishiir|4",
+                "Proficiency Versatility|Paladin|Ishiir|4",
+                "Martial Versatility|Paladin|Ishiir|4",
+                "Extra Attack|Paladin|Ishiir|5",
+                "Aura of Protection|Paladin|Ishiir|6",
+                {
+                    "classFeature": "Sacred Oath feature|Paladin|Ishiir|7",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Paladin|Ishiir|8",
+                "Proficiency Versatility|Paladin|Ishiir|8",
+                "Aura of Courage|Paladin|Ishiir|10",
+                "Improved Divine Smite|Paladin|Ishiir|11",
+                "Ability Score Improvement|Paladin|Ishiir|12",
+                "Proficiency Versatility|Paladin|Ishiir|12",
+                "Cleansing Touch|Paladin|Ishiir|14",
+                {
+                    "classFeature": "Sacred Oath feature|Paladin|Ishiir|15",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Paladin|Ishiir|16",
+                "Proficiency Versatility|Paladin|Ishiir|16",
+                "Aura improvements|Paladin|Ishiir|18",
+                "Ability Score Improvement|Paladin|Ishiir|19",
+                "Proficiency Versatility|Paladin|Ishiir|19",
+                {
+                    "classFeature": "Sacred Oath feature|Paladin|Ishiir|20",
+                    "gainSubclassFeature": true
+                }
+            ],
+            "subclassTitle": "Sacred Oath",
+            "fluff": [
+                {
+                    "name": "Paladin",
+                    "type": "section",
+                    "entries": [
+                        "Clad in plate armor that gleams in the sunlight despite the dust and grime of long travel, a human lays down her sword and shield and places her hands on a mortally wounded man. Divine radiance shines from her hands, the man's wounds knit closed, and his eyes open wide with amazement.",
+                        "A dwarf crouches behind an outcrop, his black cloak making him nearly invisible in the night, and watches an orc war band celebrating its recent victory. Silently, he stalks into their midst and whispers an oath, and two orcs are dead before they even realize he is there.",
+                        "Silver hair shining in a shaft of light that seems to illuminate only him, an elf laughs with exultation. His spear flashes like his eyes as he jabs again and again at a twisted giant, until at last his light overcomes its hideous darkness.",
+                        "Whatever their origin and their mission, paladins are united by their oaths to stand against the forces of evil. Whether sworn before a god's altar and the witness of a priest, in a sacred glade before nature spirits and fey beings, or in a moment of desperation and grief with the dead as the only witness, a paladin's oath is a powerful bond. It is a source of power that turns a devout warrior into a blessed champion.",
+                        {
+                            "type": "entries",
+                            "name": "The Cause of Righteousness",
+                            "entries": [
+                                "A paladin swears to uphold justice and righteousness, to stand with the good things of the world against the encroaching darkness, and to hunt the forces of evil wherever they lurk. Different paladins focus on various aspects of the cause of righteousness, but all are bound by the oaths that grant them power to do their sacred work. Although many paladins are devoted to gods of good, a paladin's power comes as much from a commitment to justice itself as it does from a god.",
+                                "Paladins train for years to learn the skills of combat, mastering a variety of weapons and armor. Even so, their martial skills are secondary to the magical power they wield: power to heal the sick and injured, to smite the wicked and the undead, and to protect the innocent and those who join them in the fight for justice."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Beyond the Mundane Life",
+                            "entries": [
+                                "Almost by definition, the life of a paladin is an adventuring life. Unless a lasting injury has taken him or her away from adventuring for a time, every paladin lives on the front lines of the cosmic struggle against evil. Fighters are rare enough among the ranks of the militias and armies of the world, but even fewer people can claim the true calling of a paladin. When they do receive the call, these warriors turn from their former occupations and take up arms to fight evil. Sometimes their oaths lead them into the service of the crown as leaders of elite groups of knights, but even then their loyalty is first to the cause of righteousness, not to crown and country.",
+                                "Adventuring paladins take their work seriously. A delve into an ancient ruin or dusty crypt can be a quest driven by a higher purpose than the acquisition of treasure. Evil lurks in dungeons and primeval forests, and even the smallest victory against it can tilt the cosmic balance away from oblivion."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Creating a Paladin",
+                            "entries": [
+                                "The most important aspect of a paladin character is the nature of his or her holy quest. Although the class features related to your oath don't appear until you reach 3rd level, plan ahead for that choice by reading the oath descriptions at the end of the class. Are you a devoted servant of good, loyal to the gods of justice and honor, a holy knight in shining armor venturing forth to smite evil? Are you a glorious champion of the light, cherishing everything beautiful that stands against the shadow, a knight whose oath descends from traditions older than many of the gods? Or are you an embittered loner sworn to take vengeance on those who have done great evil, sent as an angel of death by the gods or driven by your need for revenge? Appendix B lists many deities worshiped by paladins throughout the multiverse, such as Torm, Tyr, Heironeous, Paladine, Kiri-Jolith, Dol Arrah, the Silver Flame, Bahamut, Athena, Re-Horakhty, and Heimdall.",
+                                "How did you experience your call to serve as a paladin? Did you hear a whisper from an unseen god or angel while you were at prayer? Did another paladin sense the potential within you and decide to train you as a squire? Or did some terrible event—the destruction of your home, perhaps—drive you to your quests? Perhaps you stumbled into a sacred grove or a hidden elven enclave and found yourself called to protect all such refuges of goodness and beauty. Or you might have known from your earliest memories that the paladin's life was your calling, almost as if you had been sent into the world with that purpose stamped on your soul.",
+                                "As guardians against the forces of wickedness, paladins are rarely of any evil alignment. Most of them walk the paths of charity and justice. Consider how your alignment colors the way you pursue your holy quest and the manner in which you conduct yourself before gods and mortals. Your oath and alignment might be in harmony, or your oath might represent standards of behavior that you have not yet attained.",
+                                {
+                                    "type": "entries",
+                                    "name": "Quick Build",
+                                    "entries": [
+                                        "You can make a paladin quickly by following these suggestions. First, Strength should be your highest ability score, followed by Charisma. Second, choose the {@background noble} background."
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "page": 1,
+                    "source": "Ishiir"
+                },
+                {
+                    "type": "section",
+                    "entries": [
+                        {
+                            "type": "quote",
+                            "entries": [
+                                "The true worth of a paladin is measured not in foes defeated or dungeons plundered. It is measured in lives saved and hearts turned to the causes of mercy and justice."
+                            ],
+                            "by": "Isteval"
+                        },
+                        "A paladin is a living embodiment of an oath—a promise or a vow made manifest in the person of a holy warrior who has the skill and the determination to see the cause through to the end. Some paladins devote themselves expressly to protecting the innocent and spreading justice in the world, while others resolve to attain that goal by conquering those who stand defiant and bringing them under the rule of law.",
+                        "Although no paladin in the world could be described as typical, a number of them are narrow-minded do-gooders who refuse to tolerate even the smallest deviation from their own outlook. Paladins who take up the adventuring life, however, rarely remain so rigid in their attitudes—if only to keep from alienating their companions.",
+                        "You can flesh out your paladin character by using the suggestions below. It's important to keep in mind that most paladins aren't robots. They have doubts and prejudices and harbor contradictory thoughts just as any other character does. Some are compelled by an internal motivation that might sometimes be at odds with the principles of their oaths.",
+                        {
+                            "type": "entries",
+                            "name": "Personal Goal",
+                            "entries": [
+                                "The precepts of a paladin's oath provide purpose to the character and dictate an ultimate goal or an overall intent that the paladin abides by and advances. Aside from that, some paladins are driven by a personal goal that either complements or transcends the dictates of their oaths. Paladins who swear different oaths might have the same personal goal, differing only in how they apply that goal to their actions when upholding their oaths.",
+                                "If your paladin character has a personal goal, it might be drawn from some life event and thus not directly tied to the oath.",
+                                {
+                                    "type": "table",
+                                    "caption": "Personal Goal",
+                                    "colLabels": [
+                                        "{@dice d6}",
+                                        "Personal Goal"
+                                    ],
+                                    "colStyles": [
+                                        "col-1 text-center",
+                                        "col-11"
+                                    ],
+                                    "rows": [
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 1
+                                                }
+                                            },
+                                            "Peace. You fight so that future generations will not have to."
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 2
+                                                }
+                                            },
+                                            "Revenge. Your oath is the vehicle through which you will right an ancient wrong."
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 3
+                                                }
+                                            },
+                                            "Duty. You will live up to what you have sworn to do, or die trying."
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 4
+                                                }
+                                            },
+                                            "Leadership. You will win a great battle that bards will sing about, and in so doing, you will become an example to inspire others."
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 5
+                                                }
+                                            },
+                                            "Faith. You know your path is righteous, or else the gods would not have set you upon it."
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 6
+                                                }
+                                            },
+                                            "Glory. You will lead the world into a grand new era, one that will be branded with your name."
+                                        ]
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Symbol",
+                            "entries": [
+                                "Paladins are mindful of the influence of symbols, and many of them adopt or design an artistic device that bears a distinctive image. Your symbol exemplifies the oath you have taken and communicates that message to those around you, friend and foe alike.",
+                                "Your symbol might be displayed on a banner, a flag, or your clothing for all to see. Or it could be less obvious, such as a trinket or a token that you carry concealed on your person.",
+                                {
+                                    "type": "table",
+                                    "caption": "Symbol",
+                                    "colLabels": [
+                                        "{@dice d6}",
+                                        "Symbol"
+                                    ],
+                                    "colStyles": [
+                                        "col-1 text-center",
+                                        "col-11"
+                                    ],
+                                    "rows": [
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 1
+                                                }
+                                            },
+                                            "A dragon, emblematic of your nobility in peace and your ferocity in combat"
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 2
+                                                }
+                                            },
+                                            "A clenched fist, because you are always ready to fight for your beliefs"
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 3
+                                                }
+                                            },
+                                            "An upraised open hand, indicating your preference for diplomacy over combat"
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 4
+                                                }
+                                            },
+                                            "A red heart, showing the world your commitment to justice"
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 5
+                                                }
+                                            },
+                                            "A black heart, signifying that emotions such as pity do not sway your dedication to your oath"
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 6
+                                                }
+                                            },
+                                            "An unblinking eye, meaning that you are ever alert to all threats against your cause"
+                                        ]
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Nemesis",
+                            "entries": [
+                                "Their adherence to a sacred oath demands that paladins take an active stance in carrying their beliefs into the world. This activity naturally leads to conflict with creatures or entities that oppose those beliefs. Among those opponents, one often stands out as a paladin's most persistent or most formidable foe—a nemesis whose presence or influence is a constant factor in a paladin's life.",
+                                "Your paladin character might have an enemy that dates from the days before you took up your path. Or you could be a target because when you became a paladin, you immediately attracted the attention of those that would do you in. If you have a nemesis, who or what is it? Whom among your enemies do you consider to be the biggest threat to achieving your goals?",
+                                {
+                                    "type": "table",
+                                    "caption": "Nemesis",
+                                    "colLabels": [
+                                        "{@dice d6}",
+                                        "Nemesis"
+                                    ],
+                                    "colStyles": [
+                                        "col-1 text-center",
+                                        "col-11"
+                                    ],
+                                    "rows": [
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 1
+                                                }
+                                            },
+                                            "A mighty orc war chief who threatens to overrun and destroy everything you hold sacred"
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 2
+                                                }
+                                            },
+                                            "A fiend or a celestial, the agent of a power of the Outer Planes, who has been charged with corrupting or redeeming you, as appropriate"
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 3
+                                                }
+                                            },
+                                            "A dragon whose servants dog your steps"
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 4
+                                                }
+                                            },
+                                            "A high priest who sees you as a misguided fool and wants you to abandon your religion"
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 5
+                                                }
+                                            },
+                                            "A rival paladin who trained with you but became an oath-breaker and holds you responsible"
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 6
+                                                }
+                                            },
+                                            "A vampire who has sworn revenge against all paladins after being defeated by one"
+                                        ]
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Temptation",
+                            "entries": [
+                                "Although paladins are dedicated to their oaths, they are mortals, and thus they are flawed. Many of them exhibit a type of behavior or hold to an attitude that is not in keeping with the highest ideals of their calling.",
+                                "What is the temptation that your character succumbs to or finds it difficult to resist?",
+                                {
+                                    "type": "table",
+                                    "caption": "Temptation",
+                                    "colLabels": [
+                                        "{@dice d6}",
+                                        "Temptation"
+                                    ],
+                                    "colStyles": [
+                                        "col-1 text-center",
+                                        "col-11"
+                                    ],
+                                    "rows": [
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 1
+                                                }
+                                            },
+                                            "Fury. When your anger is roused, you have trouble thinking straight, and you fear you might do something you'll regret."
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 2
+                                                }
+                                            },
+                                            "Pride. Your deeds are noteworthy, and no one takes note of them more often than you."
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 3
+                                                }
+                                            },
+                                            "Lust. You can't resist an attractive face and a pleasant smile."
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 4
+                                                }
+                                            },
+                                            "Envy. You are mindful of what some famous folk have accomplished, and you feel inadequate when your deeds don't compare to theirs."
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 5
+                                                }
+                                            },
+                                            "Despair. You consider the great strength of the enemies you must defeat, and at times you see no way to achieve final victory."
+                                        ],
+                                        [
+                                            {
+                                                "type": "cell",
+                                                "roll": {
+                                                    "exact": 6
+                                                }
+                                            },
+                                            "Greed. Regardless of how much glory and treasure you amass, it's never enough for you."
+                                        ]
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "source": "Ishiir",
+                    "page": 1
+                }
+            ]
+        }
+    ],
+    "classFeature": [
+        {
+            "name": "Divine Sense",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As a bonus action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the {@spell hallow|Ishiir} spell.",
+                "You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses."
+            ]
+        },
+        {
+            "name": "Lay on Hands",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level × 5.",
+                "As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.",
+                "Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.",
+                "This feature has no effect on undead and constructs."
+            ]
+        },
+        {
+            "name": "Divine Smite",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is {@dice 2d8} for a 1st-level spell slot, plus {@dice 1d8} for each spell level higher than 1st, to a maximum of {@dice 5d8}. The damage increases by {@dice 1d8} if the target is an undead or a fiend, to a maximum of {@dice 6d8}."
+            ]
+        },
+        {
+            "name": "Fighting Style",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again.",
+                {
+                    "type": "options",
+                    "count": 1,
+                    "entries": [
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Close Quarters Shooter|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Defense|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Dueling|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Great Weapon Fighting|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Mariner|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Protection|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Tunnel Fighter|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Blind Fighting|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Interception|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Thrown Weapon Fighting|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Unarmed Fighting|Ishiir"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Martial Versatility",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "Whenever you gain a level in this class, you can replace a fighting style you know with another style available to your class. This change represents a shift of focus in your martial training and practice, causing you to lose the benefits of one style and gain the benefits of another style."
+            ]
+        },
+        {
+            "name": "Spellcasting",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter paladin spell list|spells|class=paladin (Ishiir)|source=Ishiir}.",
+                {
+                    "type": "entries",
+                    "name": "Preparing and Casting Spells",
+                    "entries": [
+                        "The Paladin table shows how many spell slots you have to cast your {@filter paladin spells|spells|class=paladin (Ishiir)|source=Ishiir}. To cast one of your paladin spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+                        "You prepare the list of paladin spells that are available for you to cast, choosing from the paladin spell list. When you do so, choose a number of paladin spells equal to your Charisma modifier + half your paladin level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
+                        "For example, if you are a 5th-level paladin, you have four 1st-level and two 2nd-level spell slots. With a Charisma of 14, your list of prepared spells can include four spells of 1st or 2nd-level, in any combination. If you prepare the 1st-level spell {@spell cure wounds|Ishiir}, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+                        "You can change your list of prepared spells when you finish a long rest. Preparing a new list of paladin spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Ability",
+                    "entries": [
+                        "Charisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one.",
+                        {
+                            "type": "abilityDc",
+                            "name": "Spell",
+                            "attributes": [
+                                "cha"
+                            ]
+                        },
+                        {
+                            "type": "abilityAttackMod",
+                            "name": "Spell",
+                            "attributes": [
+                                "cha"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Focus",
+                    "entries": [
+                        "You can use a {@item holy symbol|phb} as a spellcasting focus for your paladin spells."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.",
+                "When you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.",
+                "Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Harness Divine Power",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 3,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 3rd level, once; 7th level, twice; and 15th level, thrice. You regain all expended uses when you finish a long rest."
+            ]
+        },
+        {
+            "name": "Divine Health",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "By 3rd level, the divine magic flowing through you makes you immune to disease."
+            ]
+        },
+        {
+            "name": "Sacred Oath",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose from the list of available oaths.",
+                "Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.",
+                {
+                    "name": "Oath Spells",
+                    "type": "entries",
+                    "entries": [
+                        "Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.",
+                        "If you gain an oath spell that doesn't appear on the paladin spell list, the spell is nonetheless a paladin spell for you."
+                    ]
+                },
+                {
+                    "type": "refClassFeature",
+                    "classFeature": "Channel Divinity|Paladin|Ishiir|3"
+                },
+                {
+                    "type": "refClassFeature",
+                    "classFeature": "Channel Divinity: Harness Divine Power|Paladin|Ishiir|3"
+                },
+                {
+                    "name": "Breaking Your Oath",
+                    "type": "inset",
+                    "entries": [
+                        "A paladin tries to hold to the highest standards of conduct, but even the most virtuous paladin is fallible. Sometimes the right path proves too demanding, sometimes a situation calls for the lesser of two evils, and sometimes the heat of emotion causes a paladin to transgress his or her oath.",
+                        "A paladin who has broken a vow typically seeks absolution from a cleric who shares his or her faith or from another paladin of the same order. The paladin might spend an all-night vigil in prayer as a sign of penitence, or undertake a fast or similar act of self-denial. After a rite of confession and forgiveness, the paladin starts fresh.",
+                        "If a paladin willfully violates his or her oath and shows no sign of repentance, the consequences can be more serious. At the DM's discretion, an impenitent paladin might be forced to abandon this class and adopt another, or perhaps to take the Oathbreaker paladin option that appears in the Dungeon Master's Guide."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 4,
+            "entries": [
+                "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Martial Versatility",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 4,
+            "entries": [
+                "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a {@filter fighting style|optionalfeatures|feature type=FS:P|source=Ishiir} you know with another fighting style available to paladins. This replacement represents a shift of focus in your martial practice."
+            ]
+        },
+        {
+            "name": "Proficiency Versatility",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 4,
+            "entries": [
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "This change represents one of your skills atrophying as you focus on a different skill."
+            ]
+        },
+        {
+            "name": "Martial Mastery",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 4,
+            "entries": [
+                "Starting at 4th level, you gain the mastery benefits for two {@filter weapons|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} of your choice as well as an {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} type (see {@variantrule Armor Mastery|Ishiir} and {@variantrule Weapon Mastery|Ishiir} variant rules). You must be proficient in the chosen weapons and armor. If you possess the Unarmored Defense feature, you may {@optfeature Unarmored Defense|Ishiir|choose it} in place of an armor type.",
+                "You can change your choices when you finish a short or long rest."
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 5,
+            "entries": [
+                "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
+            ]
+        },
+        {
+            "name": "Aura of Protection",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.",
+                "At 18th level, the range of this aura increases to 30 feet."
+            ]
+        },
+        {
+            "name": "Sacred Oath feature",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 7,
+            "entries": [
+                "At 7th level, you gain a feature granted to you by your Sacred Oath."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 8,
+            "entries": [
+                "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Proficiency Versatility",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 8,
+            "entries": [
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "This change represents one of your skills atrophying as you focus on a different skill."
+            ]
+        },
+        {
+            "name": "Aura of Courage",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 10,
+            "entries": [
+                "Starting at 10th level, you and friendly creatures within 10 feet of you can't be {@condition frightened|Ishiir} while you are conscious.",
+                "At 18th level, the range of this aura increases to 30 feet."
+            ]
+        },
+        {
+            "name": "Improved Divine Smite",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 11,
+            "entries": [
+                "By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra {@damage 1d8} radiant damage. The damage increases by {@damage 1d8} if the target is an undead or a fiend."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 12,
+            "entries": [
+                "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Proficiency Versatility",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 12,
+            "entries": [
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "This change represents one of your skills atrophying as you focus on a different skill."
+            ]
+        },
+        {
+            "name": "Cleansing Touch",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "Beginning at 14th level, when you lose Lay on Hands on a creature, you can also remove one or more of the following conditions: {@condition blinded|Ishiir}, {@condition charmed|Ishiir}, {@condition confused|Ishiir}, {@condition dazed|Ishiir}, {@condition deafened|Ishiir}, {@condition dominated|Ishiir}, {@condition frightened|Ishiir}, {@condition paralyzed|Ishiir}, or {@condition stunned|Ishiir} by spending 5 points per condition from your pool of healing."
+            ]
+        },
+        {
+            "name": "Sacred Oath feature",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 15,
+            "entries": [
+                "At 15th level, you gain a feature granted to you by your Sacred Oath."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 16,
+            "entries": [
+                "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Proficiency Versatility",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 16,
+            "entries": [
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "This change represents one of your skills atrophying as you focus on a different skill."
+            ]
+        },
+        {
+            "name": "Aura improvements",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 18,
+            "entries": [
+                "At 18th level, the range of your Aura of Protection increases to 30 feet."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 19,
+            "entries": [
+                "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Proficiency Versatility",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 19,
+            "entries": [
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "This change represents one of your skills atrophying as you focus on a different skill."
+            ]
+        },
+        {
+            "name": "Sacred Oath feature",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "level": 20,
+            "entries": [
+                "At 20th level, you gain a feature granted to you by your Sacred Oath."
+            ]
+        }
+    ],
+    "subclass": [
+        {
+            "name": "Oath of Devotion",
+            "shortName": "Devotion",
+            "source": "Ishiir",
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "protection from evil and good|Ishiir",
+                            "sanctuary|Ishiir"
+                        ],
+                        "5": [
+                            "lesser restoration|Ishiir",
+                            "zone of truth|Ishiir"
+                        ],
+                        "9": [
+                            "beacon of hope|Ishiir",
+                            "dispel magic|Ishiir"
+                        ],
+                        "13": [
+                            "freedom of movement|Ishiir",
+                            "guardian of faith|Ishiir"
+                        ],
+                        "17": [
+                            "commune|Ishiir",
+                            "flame strike|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Oath of Devotion|Paladin|Ishiir|Devotion|Ishiir|3",
+                "Aura of Devotion|Paladin|Ishiir|Devotion|Ishiir|7",
+                "Purity of Spirit|Paladin|Ishiir|Devotion|Ishiir|15",
+                "Holy Nimbus|Paladin|Ishiir|Devotion|Ishiir|20"
+            ]
+        },
+        {
+            "name": "Oath of the Ancients",
+            "shortName": "Ancients",
+            "source": "Ishiir",
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "ensnaring strike|Ishiir",
+                            "speak with animals|Ishiir"
+                        ],
+                        "5": [
+                            "moonbeam|Ishiir",
+                            "misty step|Ishiir"
+                        ],
+                        "9": [
+                            "plant growth|Ishiir",
+                            "protection from energy|Ishiir"
+                        ],
+                        "13": [
+                            "ice storm|Ishiir",
+                            "stoneskin|Ishiir"
+                        ],
+                        "17": [
+                            "commune with nature|Ishiir",
+                            "tree stride|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Oath of the Ancients|Paladin|Ishiir|Ancients|Ishiir|3",
+                "Aura of Warding|Paladin|Ishiir|Ancients|Ishiir|7",
+                "Undying Sentinel|Paladin|Ishiir|Ancients|Ishiir|15",
+                "Elder Champion|Paladin|Ishiir|Ancients|Ishiir|20"
+            ]
+        },
+        {
+            "name": "Oath of Vengeance",
+            "shortName": "Vengeance",
+            "source": "Ishiir",
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "bane|Ishiir",
+                            "hunter's mark|Ishiir"
+                        ],
+                        "5": [
+                            "hold person|Ishiir",
+                            "misty step|Ishiir"
+                        ],
+                        "9": [
+                            "haste|Ishiir",
+                            "protection from energy|Ishiir"
+                        ],
+                        "13": [
+                            "banishment|Ishiir",
+                            "dimension door|Ishiir"
+                        ],
+                        "17": [
+                            "hold monster|Ishiir",
+                            "scrying|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Oath of Vengeance|Paladin|Ishiir|Vengeance|Ishiir|3",
+                "Relentless Avenger|Paladin|Ishiir|Vengeance|Ishiir|7",
+                "Soul of Vengeance|Paladin|Ishiir|Vengeance|Ishiir|15",
+                "Avenging Angel|Paladin|Ishiir|Vengeance|Ishiir|20"
+            ]
+        },
+        {
+            "name": "Oathbreaker",
+            "shortName": "Oathbreaker",
+            "source": "Ishiir",
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "hellish rebuke|Ishiir",
+                            "inflict wounds|Ishiir"
+                        ],
+                        "5": [
+                            "crown of madness|Ishiir",
+                            "darkness|Ishiir"
+                        ],
+                        "9": [
+                            "animate dead|Ishiir",
+                            "bestow curse|Ishiir"
+                        ],
+                        "13": [
+                            "blight|Ishiir",
+                            "confusion|Ishiir"
+                        ],
+                        "17": [
+                            "contagion|Ishiir",
+                            "dominate person|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Oathbreaker|Paladin|Ishiir|Oathbreaker|Ishiir|3",
+                "Aura of Hate|Paladin|Ishiir|Oathbreaker|Ishiir|7",
+                "Supernatural Resistance|Paladin|Ishiir|Oathbreaker|Ishiir|15",
+                "Dread Lord|Paladin|Ishiir|Oathbreaker|Ishiir|20"
+            ]
+        },
+        {
+            "name": "Oath of the Crown",
+            "shortName": "Crown",
+            "source": "Ishiir",
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "command|Ishiir",
+                            "compelled duel|Ishiir"
+                        ],
+                        "5": [
+                            "warding bond|Ishiir",
+                            "zone of truth|Ishiir"
+                        ],
+                        "9": [
+                            "aura of vitality|Ishiir",
+                            "spirit guardians|Ishiir"
+                        ],
+                        "13": [
+                            "banishment|Ishiir",
+                            "guardian of faith|Ishiir"
+                        ],
+                        "17": [
+                            "circle of power|Ishiir",
+                            "geas|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Oath of the Crown|Paladin|Ishiir|Crown|Ishiir|3",
+                "Divine Allegiance|Paladin|Ishiir|Crown|Ishiir|7",
+                "Unyielding Spirit|Paladin|Ishiir|Crown|Ishiir|15",
+                "Exalted Champion|Paladin|Ishiir|Crown|Ishiir|20"
+            ]
+        },
+        {
+            "name": "Oath of Treachery",
+            "shortName": "Treachery",
+            "source": "Ishiir",
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "charm person|Ishiir",
+                            "expeditious retreat|Ishiir"
+                        ],
+                        "5": [
+                            "invisibility|Ishiir",
+                            "mirror image|Ishiir"
+                        ],
+                        "9": [
+                            "gaseous form|Ishiir",
+                            "haste|Ishiir"
+                        ],
+                        "13": [
+                            "confusion|Ishiir",
+                            "greater invisibility|Ishiir"
+                        ],
+                        "17": [
+                            "dominate person|Ishiir",
+                            "passwall|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Oath of Treachery|Paladin|Ishiir|Treachery|Ishiir|3",
+                "Aura of Treachery|Paladin|Ishiir|Treachery|Ishiir|7",
+                "Blackguard's Escape|Paladin|Ishiir|Treachery|Ishiir|15",
+                "Icon of Deceit|Paladin|Ishiir|Treachery|Ishiir|20"
+            ]
+        },
+        {
+            "name": "Oath of Conquest",
+            "shortName": "Conquest",
+            "source": "Ishiir",
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "armor of Agathys|Ishiir",
+                            "command|Ishiir"
+                        ],
+                        "5": [
+                            "hold person|Ishiir",
+                            "spiritual weapon|Ishiir"
+                        ],
+                        "9": [
+                            "bestow curse|Ishiir",
+                            "fear|Ishiir"
+                        ],
+                        "13": [
+                            "dominate beast|Ishiir",
+                            "stoneskin|Ishiir"
+                        ],
+                        "17": [
+                            "cloudkill|Ishiir",
+                            "dominate person|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Oath of Conquest|Paladin|Ishiir|Conquest|Ishiir|3",
+                "Aura of Conquest|Paladin|Ishiir|Conquest|Ishiir|7",
+                "Scornful Rebuke|Paladin|Ishiir|Conquest|Ishiir|15",
+                "Invincible Conqueror|Paladin|Ishiir|Conquest|Ishiir|20"
+            ]
+        },
+        {
+            "name": "Oath of Redemption",
+            "shortName": "Redemption",
+            "source": "Ishiir",
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "sanctuary|Ishiir",
+                            "sleep|Ishiir"
+                        ],
+                        "5": [
+                            "calm emotions|Ishiir",
+                            "hold person|Ishiir"
+                        ],
+                        "9": [
+                            "counterspell|Ishiir",
+                            "hypnotic pattern|Ishiir"
+                        ],
+                        "13": [
+                            "Otiluke's resilient sphere|Ishiir",
+                            "stoneskin|Ishiir"
+                        ],
+                        "17": [
+                            "hold monster|Ishiir",
+                            "wall of force|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Oath of Redemption|Paladin|Ishiir|Redemption|Ishiir|3",
+                "Aura of the Guardian|Paladin|Ishiir|Redemption|Ishiir|7",
+                "Protective Spirit|Paladin|Ishiir|Redemption|Ishiir|15",
+                "Emissary of Redemption|Paladin|Ishiir|Redemption|Ishiir|20"
+            ]
+        },
+        {
+            "name": "Oath of Glory",
+            "shortName": "Glory",
+            "source": "Ishiir",
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "guiding bolt|Ishiir",
+                            "heroism|Ishiir"
+                        ],
+                        "5": [
+                            "enhance ability|Ishiir",
+                            "magic weapon|Ishiir"
+                        ],
+                        "9": [
+                            "haste|Ishiir",
+                            "protection from energy|Ishiir"
+                        ],
+                        "13": [
+                            "compulsion|Ishiir",
+                            "freedom of movement|Ishiir"
+                        ],
+                        "17": [
+                            "commune|Ishiir",
+                            "flame strike|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Oath of Glory|Paladin|Ishiir|Glory|Ishiir|3",
+                "Aura of Alacrity|Paladin|Ishiir|Glory|Ishiir|7",
+                "Glorious Defense|Paladin|Ishiir|Glory|Ishiir|15",
+                "Living Legend|Paladin|Ishiir|Glory|Ishiir|20"
+            ]
+        },
+        {
+            "name": "Oath of the Watchers",
+            "shortName": "Watchers",
+            "source": "Ishiir",
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "alarm|Ishiir",
+                            "detect magic|Ishiir"
+                        ],
+                        "5": [
+                            "moonbeam|Ishiir",
+                            "see invisibility|Ishiir"
+                        ],
+                        "9": [
+                            "counterspell|Ishiir",
+                            "nondetection|Ishiir"
+                        ],
+                        "13": [
+                            "aura of purity|Ishiir",
+                            "banishment|Ishiir"
+                        ],
+                        "17": [
+                            "hold monster|Ishiir",
+                            "scrying|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Oath of the Watchers|Paladin|Ishiir|Watchers|Ishiir|3",
+                "Aura of the Sentinel|Paladin|Ishiir|Watchers|Ishiir|7",
+                "Vigilant Rebuke|Paladin|Ishiir|Watchers|Ishiir|15",
+                "Mortal Bulwark|Paladin|Ishiir|Watchers|Ishiir|20"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Oath of the Ancients",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ancients",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "The Oath of the Ancients is as old as the race of elves and the rituals of the druids. Sometimes called fey knights, green knights, or horned knights, paladins who swear this oath cast their lot with the side of the light in the cosmic struggle against darkness because they love the beautiful and life-giving things of the world, not necessarily because they believe in principles of honor, courage, and justice. They adorn their armor and clothing with images of growing things—leaves, antlers, or flowers—to reflect their commitment to preserving life and light in the world.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tenets of the Ancients|Paladin|Ishiir|Ancients|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath Spells|Paladin|Ishiir|Ancients|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Nature's Wrath|Paladin|Ishiir|Ancients|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Turn the Faithless|Paladin|Ishiir|Ancients|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity: Nature's Wrath",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ancients",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "You can use your Channel Divinity to invoke primeval forces to ensnare a foe. As an action, you can cause spectral vines to spring up and reach for a creature within 10 feet of you that you can see. The creature must succeed on a Strength or Dexterity saving throw (its choice) or be {@condition restrained|Ishiir}. While {@condition restrained|Ishiir} by the vines, the creature repeats the saving throw at the end of each of its turns. On a success, it frees itself and the vines vanish."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Turn the Faithless",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ancients",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "You can use your Channel Divinity to utter ancient words that are painful for fey and fiends to hear. As an action, you present your holy symbol, and each fey or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.",
+                "A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash|Ishiir} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the {@action Dodge|Ishiir} action.",
+                "If the creature's true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned."
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ancients",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain oath spells at the paladin levels listed.",
+                {
+                    "type": "table",
+                    "caption": "Oath of the Ancients Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell ensnaring strike|Ishiir}, {@spell speak with animals|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell moonbeam|Ishiir}, {@spell misty step|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell plant growth|Ishiir}, {@spell protection from energy|Ishiir}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell ice storm|Ishiir}, {@spell stoneskin|Ishiir}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell commune with nature|Ishiir}, {@spell tree stride|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tenets of the Ancients",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ancients",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "The tenets of the Oath of the Ancients have been preserved for uncounted centuries. This oath emphasizes the principles of good above any concerns of law or chaos. Its four central principles are simple.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Kindle the Light",
+                            "entries": [
+                                "Through your acts of mercy, kindness, and forgiveness, kindle the light of hope in the world, beating back despair."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Shelter the Light",
+                            "entries": [
+                                "Where there is good, beauty, love, and laughter in the world, stand against the wickedness that would swallow it. Where life flourishes, stand against the forces that would render it barren."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Preserve Your Own Light",
+                            "entries": [
+                                "Delight in song and laughter, in beauty and art. If you allow the light to die in your own heart, you can't preserve it in the world."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Be the Light",
+                            "entries": [
+                                "Be a glorious beacon for all who live in despair. Let the light of your joy and courage shine forth in all your deeds."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Aura of Warding",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ancients",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Beginning at 7th level, ancient magic lies so heavily upon you that it forms an eldritch ward. You and friendly creatures within 10 feet of you have resistance to damage from spells.",
+                "At 18th level, the range of this aura increases to 30 feet."
+            ]
+        },
+        {
+            "name": "Undying Sentinel",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ancients",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "Starting at 15th level, when you are reduced to 0 hit points and are not killed outright, you can choose to drop to 1 hit point instead. Once you use this ability, you can't use it again until you finish a long rest.",
+                "Additionally, you suffer none of the drawbacks of old age, and you can't be aged magically."
+            ]
+        },
+        {
+            "name": "Elder Champion",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ancients",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "At 20th level, you can assume the form of an ancient force of nature, taking on an appearance you choose. For example, your skin might turn green or take on a bark-like texture, your hair might become leafy or mosslike, or you might sprout antlers or a lion-like mane.",
+                "Using your action, you undergo a transformation. For 1 minute, you gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "At the start of each of your turns, you regain 10 hit points.",
+                        "Whenever you cast a paladin spell that has a casting time of 1 action, you can cast it using your bonus action instead.",
+                        "Enemy creatures within 10 feet of you have disadvantage on saving throws against your paladin spells and Channel Divinity options."
+                    ]
+                },
+                "Once you use this feature, you can't use it again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Oath of Conquest",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Conquest",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "The Oath of Conquest calls to paladins who seek glory in battle and the subjugation of their enemies. It isn't enough for these paladins to establish order. They must crush the forces of chaos. Sometimes called knight tyrants or iron mongers, those who swear this oath gather into grim orders that serve gods or philosophies of war and well-ordered might.",
+                "Some of these paladins go so far as to consort with the powers of the Nine Hells, valuing the rule of law over the balm of mercy. The archdevil Bel, warlord of Avernus, counts many of these paladins—called hell knights—as his most ardent supporters. Hell knights cover their armor with trophies taken from fallen enemies, a grim warning to any who dare oppose them and the decrees of their lords. These knights are often most fiercely resisted by other paladins of this oath, who believe that the hell knights have wandered too far into darkness.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tenets of Conquest|Paladin|Ishiir|Conquest|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath Spells|Paladin|Ishiir|Conquest|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Conquering Presence|Paladin|Ishiir|Conquest|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Guided Strike|Paladin|Ishiir|Conquest|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity: Conquering Presence",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Conquest",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "You can use your Channel Divinity to exude a terrifying presence. As an action, you force each creature of your choice that you can see within 30 feet of you to make a Wisdom saving throw. On a failed save, a creature becomes {@condition frightened|Ishiir} of you for 1 minute. The {@condition frightened|Ishiir} creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Guided Strike",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Conquest",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "You can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Conquest",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain oath spells at the paladin levels listed.",
+                {
+                    "type": "table",
+                    "caption": "Oath of Conquest Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell armor of Agathys|Ishiir}, {@spell command|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell hold person|Ishiir}, {@spell spiritual weapon|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell bestow curse|Ishiir}, {@spell fear|Ishiir}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell dominate beast|Ishiir}, {@spell stoneskin|Ishiir}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell cloudkill|Ishiir}, {@spell dominate person|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tenets of Conquest",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Conquest",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "A paladin who takes this oath has the tenets of conquest seared on the upper arm.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Douse the Flame of Hope",
+                            "entries": [
+                                "It is not enough to merely defeat an enemy in battle. Your victory must be so overwhelming that your enemies' will to fight is shattered forever. A blade can end a life. Fear can end an empire."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Rule with an Iron Fist",
+                            "entries": [
+                                "Once you have conquered, tolerate no dissent. Your word is law. Those who obey it shall be favored. Those who defy it shall be punished as an example to all who might follow."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Strength Above All",
+                            "entries": [
+                                "You shall rule until a stronger one arises. Then you must grow mightier and meet the challenge, or fall to your own ruin."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Aura of Conquest",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Conquest",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Starting at 7th level, you constantly emanate a menacing aura while you're not {@condition incapacitated|Ishiir}. The aura extends 10 feet from you in every direction, but not through total cover.",
+                "If a creature is {@condition frightened|Ishiir} of you, its speed is reduced to 0 while in the aura, and that creature takes psychic damage equal to half your paladin level if it starts its turn there.",
+                "At 18th level, the range of this aura increases to 30 feet."
+            ]
+        },
+        {
+            "name": "Scornful Rebuke",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Conquest",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "Starting at 15th level, those who dare to strike you are psychically punished for their audacity. Whenever a creature hits you with an attack, that creature takes psychic damage equal to your Charisma modifier (minimum of 1) if you're not {@condition incapacitated|Ishiir}."
+            ]
+        },
+        {
+            "name": "Invincible Conqueror",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Conquest",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "At 20th level, you gain the ability to harness extraordinary martial prowess. As an action, you can magically become an avatar of conquest, gaining the following benefits for 1 minute:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You have resistance to all damage.",
+                        "When you take the {@action Attack|Ishiir} action on your turn, you can make one additional attack as part of that action.",
+                        "Your melee weapon attacks score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+                    ]
+                },
+                "Once you use this feature, you can't use it again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Oath of the Crown",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Crown",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "The Oath of the Crown is sworn to the ideals of civilization, be it the spirit of a nation, fealty to a sovereign, or service to a deity of law and rulership. The paladins who swear this oath dedicate themselves to serving society and, in particular, the laws that hold society together. These paladins are the watchful guardians on the walls, standing against the chaotic tides of barbarism that threaten to tear down all that civilization has built, and are commonly known as guardians, exemplars, or sentinels. Often, paladins who swear this oath are members of an order of knighthood in service to a nation or sovereign, and undergo their oath as part of their admission to the order's ranks.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tenets of the Crown|Paladin|Ishiir|Crown|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath Spells|Paladin|Ishiir|Crown|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Champion Challenge|Paladin|Ishiir|Crown|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Turn the Tide|Paladin|Ishiir|Crown|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity: Turn the Tide",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Crown",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "As a bonus action, you can bolster injured creatures with your Channel Divinity. Each creature of your choice that can hear you within 30 feet of you regains hit points equal to {@dice 1d6} + half your proficiency bonus (rounded down) + your Charisma modifier (minimum of 1).",
+                "If an creature has half its hit points or less, the healing it receives from this feature is doubled."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Champion Challenge",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Crown",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "As a bonus action, you issue a challenge that compels other creatures to do battle with you. Each creature of your choice that you can see within 30 feet of you must make a Wisdom saving throw. On a failed save, a creature can't willingly move more than 30 feet away from you. This effect ends on the creature if you are {@condition incapacitated|Ishiir} or die or if the creature is more than 30 feet away from you."
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Crown",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain oath spells at the paladin levels listed.",
+                {
+                    "type": "table",
+                    "caption": "Oath of the Crown Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell command|Ishiir}, {@spell compelled duel|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell warding bond|Ishiir}, {@spell zone of truth|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell aura of vitality|Ishiir}, {@spell spirit guardians|Ishiir}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell banishment|Ishiir}, {@spell guardian of faith|Ishiir}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell circle of power|Ishiir}, {@spell geas|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tenets of the Crown",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Crown",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "The tenets of the Oath of the Crown are often set by the sovereign to which their oath is sworn, but generally emphasize the following tenets.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Law",
+                            "entries": [
+                                "The law is paramount. It is the mortar that holds the stones of civilization together, and it must be respected."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Loyalty",
+                            "entries": [
+                                "Your word is your bond. Without loyalty, oaths and laws are meaningless."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Courage",
+                            "entries": [
+                                "You must be willing to do what needs to be done for the sake of order, even in the face of overwhelming odds. If you don't act, then who will?"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Responsibility",
+                            "entries": [
+                                "You must deal with the consequences of your actions, and you are responsible for fulfilling your duties and obligations."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Divine Allegiance",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Crown",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Starting at 7th level, when a creature within 5 feet of you takes damage, you can use your reaction to magically substitute your own health for that of the target creature, causing that creature not to take the damage. Instead, you take the damage. This damage to you can't be reduced or prevented in any way."
+            ]
+        },
+        {
+            "name": "Unyielding Spirit",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Crown",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "Starting at 15th level, you have advantage on saving throws to avoid becoming {@condition paralyzed|Ishiir} or {@condition stunned|Ishiir}."
+            ]
+        },
+        {
+            "name": "Exalted Champion",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Crown",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "At 20th level, your presence on the field of battle is an inspiration to those dedicated to your cause. You can use your bonus action to gain the following benefits for 1 hour:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You have resistance to bludgeoning, piercing, and slashing damage.",
+                        "Your allies have advantage on death saving throws while within 30 feet of you.",
+                        "You have advantage on Wisdom saving throws, as do your allies within 30 feet of you."
+                    ]
+                },
+                "This effect ends early if you are {@condition incapacitated|Ishiir} or die. Once you use this feature, you can't use it again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Oath of Devotion",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Devotion",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "The Oath of Devotion binds a paladin to the loftiest ideals of justice, virtue, and order. Sometimes called cavaliers, white knights, or holy warriors, these paladins meet the ideal of the knight in shining armor, acting with honor in pursuit of justice and the greater good. They hold themselves to the highest standards of conduct, and some, for better or worse, hold the rest of the world to the same standards. Many who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of their devotion. They hold angels—the perfect servants of good—as their ideals, and incorporate images of angelic wings into their helmets or coats of arms.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tenets of Devotion|Paladin|Ishiir|Devotion|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath Spells|Paladin|Ishiir|Devotion|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Sacred Weapon|Paladin|Ishiir|Devotion|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Turn the Unholy|Paladin|Ishiir|Devotion|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity: Sacred Weapon",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Devotion",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.",
+                "You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall {@condition unconscious|Ishiir}, this effect ends."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Turn the Unholy",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Devotion",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.",
+                "A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash|Ishiir} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the {@action Dodge|Ishiir} action."
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Devotion",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain oath spells at the paladin levels listed.",
+                {
+                    "type": "table",
+                    "caption": "Oath of Devotion Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell protection from evil and good|Ishiir}, {@spell sanctuary|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell lesser restoration|Ishiir}, {@spell zone of truth|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell beacon of hope|Ishiir}, {@spell dispel magic|Ishiir}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell freedom of movement|Ishiir}, {@spell guardian of faith|Ishiir}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell commune|Ishiir}, {@spell flame strike|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tenets of Devotion",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Devotion",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Though the exact words and strictures of the Oath of Devotion vary, paladins of this oath share these tenets.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Honesty",
+                            "entries": [
+                                "Don't lie or cheat. Let your word be your promise."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Courage",
+                            "entries": [
+                                "Never fear to act, though caution is wise."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Compassion",
+                            "entries": [
+                                "Aid others, protect the weak, and punish those who threaten them. Show mercy to your foes, but temper it with wisdom."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Honor",
+                            "entries": [
+                                "Treat others with fairness, and let your honorable deeds be an example to them. Do as much good as possible while causing the least amount of harm."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Duty",
+                            "entries": [
+                                "Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Aura of Devotion",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Devotion",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Starting at 7th level, you and friendly creatures within 10 feet of you can't be {@condition charmed|Ishiir} while you are conscious.",
+                "At 18th level, the range of this aura increases to 30 feet."
+            ]
+        },
+        {
+            "name": "Purity of Spirit",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Devotion",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "Beginning at 15th level, you are always under the effects of a {@spell protection from evil and good|Ishiir} spell."
+            ]
+        },
+        {
+            "name": "Holy Nimbus",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Devotion",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "At 20th level, as a bonus action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that.",
+                "Whenever an enemy creature starts its turn in the bright light, the creature takes 10 radiant damage.",
+                "In addition, for the duration, you have advantage on saving throws against spells cast by fiends or undead.",
+                "Once you use this feature, you can't use it again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Oath of Glory",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Glory",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "Paladins who take the Oath of Glory believe they and their companions are destined to achieve glory through deeds of heroism. They train diligently and encourage their companions so they're all ready when destiny calls.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tenets of Glory|Paladin|Ishiir|Glory|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath Spells|Paladin|Ishiir|Glory|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity|Paladin|Ishiir|Glory|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Glory",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "{@i 3rd-level Oath of Glory feature}",
+                "You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Peerless Athlete|Paladin|Ishiir|Glory|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Inspiring Smite|Paladin|Ishiir|Glory|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Glory",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "{@i 3rd-level Oath of Glory feature}",
+                "You gain oath spells at the paladin levels listed in the Oath of Glory Spells table. See the Sacred Oath class feature for how oath spells work.",
+                {
+                    "type": "table",
+                    "caption": "Oath of Glory Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell guiding bolt|Ishiir}, {@spell heroism|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell enhance ability|Ishiir}, {@spell magic weapon|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell haste|Ishiir}, {@spell protection from energy|Ishiir}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell compulsion|Ishiir}, {@spell freedom of movement|Ishiir}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell commune|Ishiir}, {@spell flame strike|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tenets of Glory",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Glory",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "The tenets of the Oath of Glory drive a paladin to attempt heroics that might one day shine in legend.",
+                {
+                    "type": "entries",
+                    "name": "Actions over Words",
+                    "entries": [
+                        "Strive to be known by glorious deeds, not words."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Challenges Are but Tests",
+                    "entries": [
+                        "Face hardships with courage, and encourage your allies to face them with you."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Hone the Body",
+                    "entries": [
+                        "Like raw stone, your body must be worked so its potential can be realized."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Discipline the Soul",
+                    "entries": [
+                        "You must marshal the discipline to overcome failings within yourself that threaten to dim the glory of you and your friends."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity: Inspiring Smite",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Glory",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "Immediately after you deal damage to a creature with your Divine Smite feature, you can use your Channel Divinity as a bonus action and distribute temporary hit points to creatures of your choice within 30 feet of you, which can include you. The total number of temporary hit points equals {@dice 2d8} + your level in this class, divided among the chosen creatures however you like."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Peerless Athlete",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Glory",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "As a bonus action, you can use your Channel Divinity to augment your athleticism. For the next 10 minutes, you have advantage on Strength ({@skill Athletics}) and Dexterity ({@skill Acrobatics}) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal)."
+            ]
+        },
+        {
+            "name": "Aura of Alacrity",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Glory",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "{@i 7th-level Oath of Glory feature}",
+                "You emanate an aura that fills you and your companions with supernatural speed, allowing you to race across a battlefield in formation. Your walking speed increases by 10 feet. In addition, if you aren't {@condition incapacitated|Ishiir}, the walking speed of any ally who starts their turn within 10 feet of you increases by 10 feet until the end of that turn.",
+                "When you reach 18th level in this class, the range of the aura increases to 30 feet."
+            ]
+        },
+        {
+            "name": "Glorious Defense",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Glory",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "{@i 15th-level Oath of Glory feature}",
+                "You can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can use your reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one weapon attack against the attacker as part of this reaction, provided the attacker is within your weapon's range.",
+                "You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+            ]
+        },
+        {
+            "name": "Living Legend",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Glory",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "{@i 20th-level Oath of Glory feature}",
+                "You can empower yourself with the legends—whether true or exaggerated—of your great deeds. As a bonus action, you gain the following benefits for 1 minute:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You are blessed with an otherworldly presence, gaining advantage on all Charisma checks.",
+                        "Once on each of your turns when you make a weapon attack and miss, you can cause that attack to hit instead.",
+                        "If you fail a saving throw, you can use your reaction to reroll it and use either result."
+                    ]
+                },
+                "Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
+            ]
+        },
+        {
+            "name": "Oath of Heroism",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Heroism",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "The Oath of Heroism is an affirmation of a destined path, one laid out for you by divine hands. For whatever reason, a god or a group of gods has included you in their machinations. You are not a reluctant hero, but one who fully embraces the idea that great deeds are yours to achieve. You train diligently, sculpting your body and refining your skills so you're ready when destiny calls.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tenets of Heroism|Paladin|Ishiir|Heroism|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath Spells|Paladin|Ishiir|Heroism|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity|Paladin|Ishiir|Heroism|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Heroism",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "{@i 3rd-level Oath of Heroism feature}",
+                "You gain the following two Channel Divinity options.",
+                {
+                    "type": "entries",
+                    "name": "Peerless Athlete",
+                    "entries": [
+                        "You can use your Channel Divinity to augment your athleticism with divine favor. As a bonus action, you gain advantage on all Strength ({@skill Athletics}) and Dexterity ({@skill Acrobatics}) checks for the next 10 minutes. "
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Legendary Strike",
+                    "entries": [
+                        "You can use your Channel Divinity as a bonus action to guide your attacks: for 1 minute, your weapon attacks score a critical hit on a roll of 19 or 20 on the {@dice d20}. "
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Heroism",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "{@i 3rd-level Oath of Heroism feature}",
+                "You gain oath spells at the paladin levels listed in the Oath of Heroism Spells table.",
+                {
+                    "type": "table",
+                    "caption": "Oath of Heroism Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell expeditious retreat|Ishiir}, {@spell guiding bolt|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell enhance ability|Ishiir}, {@spell enthrall|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell haste|Ishiir}, {@spell protection from energy|Ishiir}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell compulsion|Ishiir}, {@spell freedom of movement|Ishiir}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell commune|Ishiir}, {@spell conjure volley|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tenets of Heroism",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Heroism",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "The tenets of the Oath of Heroism reflect a paladin's commitment to fulfilling their calling as a hero worthy of legend.",
+                {
+                    "type": "entries",
+                    "name": "Actions over Words",
+                    "entries": [
+                        "Strive to be known by deeds not words."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Challenges Are but Tests",
+                    "entries": [
+                        "Every hardship serves to challenge your abilities and harden your resolve."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Embrace Destiny",
+                    "entries": [
+                        "You didn't choose this path, but it's yours to walk. And it will carry you into legend."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Hone the Body",
+                    "entries": [
+                        "Like raw stone, your body must be worked so its potential can be realized."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mighty Deed",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Heroism",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "{@i 7th-level Oath of Heroism feature}",
+                "Your actions on the battlefield can supernaturally bolster your allies and demoralize your enemies. Whenever you score a critical hit or reduce a creature to 0 hit points, you can choose one or more creatures that you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). All the chosen creatures are affected by one of the following effects of your choice:",
+                {
+                    "type": "list",
+                    "items": [
+                        "The creature gains temporary hit points equal to {@dice 1d6} + your Charisma modifier (minimum of 1 temporary hit point).",
+                        "The creature must succeed on a Wisdom saving throw against your spell save DC or be {@condition frightened|Ishiir} of you until the start of your next turn."
+                    ]
+                },
+                "Once you use this feature, you can't use it again until the start of your next turn."
+            ]
+        },
+        {
+            "name": "Glorious Defense",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Heroism",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "{@i 15th-level Oath of Heroism feature}",
+                "Your blessed glory on the battlefield can misdirect an attack. When a creature you can see hits you with an attack roll, you can use your reaction to gain a bonus to AC against that attack, potentially causing it to miss you. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one weapon attack against the attacker as part of this reaction."
+            ]
+        },
+        {
+            "name": "Living Myth",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Heroism",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "{@i 20th-level Oath of Heroism feature}",
+                "You can now empower yourself with the legends—whether true or exaggerated—told of your great deeds. As a bonus action, you gain the following benefits for 10 minutes:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You are blessed with otherworldly comeliness, gaining advantage on all Charisma checks.",
+                        "Once on each of your turns when you make a weapon attack and miss, you can cause that attack to hit instead.",
+                        "If you fail a saving throw, you can use your reaction to succeed instead."
+                    ]
+                },
+                "Once you use this feature, you can't use it again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Oathbreaker",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Oathbreaker",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "An Oathbreaker is a paladin who breaks his or her sacred oaths to pursue some dark ambition or serve an evil power. Whatever light burned in the paladin's heart has been extinguished. Only darkness remains.",
+                "A paladin must be evil and at least 3rd level to become an Oathbreaker. The paladin replaces the features specific to his or her Sacred Oath with Oathbreaker features.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oathbreaker Spells|Paladin|Ishiir|Oathbreaker|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oathbreaker Channel Divinity: Control Undead|Paladin|Ishiir|Oathbreaker|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oathbreaker Channel Divinity: Dreadful Aspect|Paladin|Ishiir|Oathbreaker|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Oathbreaker Channel Divinity: Control Undead",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Oathbreaker",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "As an action, the paladin targets one undead creature he or she can see within 30 feet of him or her. The target must make a Wisdom saving throw. On a failed save, the target must obey the paladin's commands for the next 24 hours, or until the paladin uses this Channel Divinity option again. An undead whose challenge rating is equal to or greater than the paladin's level is immune to this effect."
+            ]
+        },
+        {
+            "name": "Oathbreaker Channel Divinity: Dreadful Aspect",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Oathbreaker",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "As an action, the paladin channels the darkest emotions and focuses them into a burst of magical menace. Each creature of the paladin's choice within 30 feet of the paladin must make a Wisdom saving throw if it can see the paladin. On a failed save, the target is {@condition frightened|Ishiir} of the paladin for 1 minute. If a creature {@condition frightened|Ishiir} by this effect ends its turn more than 30 feet away from the paladin, it can attempt another Wisdom saving throw to end the effect on it."
+            ]
+        },
+        {
+            "name": "Oathbreaker Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Oathbreaker",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain oathbreaker spells at the paladin levels listed.",
+                {
+                    "type": "table",
+                    "caption": "Oathbreaker Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell hellish rebuke|Ishiir}, {@spell inflict wounds|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell crown of madness|Ishiir}, {@spell darkness|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell animate dead|Ishiir}, {@spell bestow curse|Ishiir}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell blight|Ishiir}, {@spell confusion|Ishiir}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell contagion|Ishiir}, {@spell dominate person|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Aura of Hate",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Oathbreaker",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Starting at 7th level, the paladin, as well any fiends and undead within 10 feet of the paladin, gains a bonus to melee weapon damage rolls equal to the paladin's Charisma modifier (minimum of +1). A creature can benefit from this feature from only one paladin at a time.",
+                "At 18th level, the range of this aura increases to 30 feet."
+            ]
+        },
+        {
+            "name": "Supernatural Resistance",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Oathbreaker",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "At 15th level, the paladin gains resistance to radiant and necrotic damage."
+            ]
+        },
+        {
+            "name": "Dread Lord",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Oathbreaker",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "At 20th level, the paladin can, as an action, surround himself or herself with an aura of gloom that lasts for 1 minute. The aura reduces any bright light in a 30-foot radius around the paladin to dim light. Whenever an enemy that is {@condition frightened|Ishiir} by the paladin starts its turn in the aura, it takes {@damage 4d10} psychic damage. Additionally, the paladin and creatures he or she chooses in the aura are draped in deeper shadow. Creatures that rely on sight have disadvantage on attack rolls against creatures draped in this shadow.",
+                "While the aura lasts, the paladin can use a bonus action on his or her turn to cause the shadows in the aura to attack one creature. The paladin makes a melee spell attack against the target. If the attack hits, the target takes necrotic damage equal to {@dice 3d10} + the paladin's Charisma modifier.",
+                "After activating the aura, the paladin can't do so again until he or she finishes a long rest."
+            ]
+        },
+        {
+            "name": "Oath of Redemption",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Redemption",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "The Oath of Redemption sets a paladin on a difficult path, one that requires a holy warrior to use violence only as a last resort. Paladins who dedicate themselves to this oath believe that any person can be redeemed and that the path of benevolence and justice is one that anyone can walk. These paladins face evil creatures in the hope of turning their foes to the light, and they slay their enemies only when such a deed will clearly save other lives. Paladins who follow this path are known as redeemers.",
+                "While redeemers are idealists, they are no fools. Redeemers know that undead, demons, devils, and other supernatural threats can be inherently evil. Against such foes, paladins who swear this oath bring the full wrath of their weapons and spells to bear. Yet the redeemers still pray that, one day, even creatures of wickedness will invite their own redemption.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tenets of Redemption|Paladin|Ishiir|Redemption|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath Spells|Paladin|Ishiir|Redemption|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Emissary of Peace|Paladin|Ishiir|Redemption|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin|Ishiir|Redemption|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity: Emissary of Peace",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Redemption",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "You can use your Channel Divinity to augment your presence with divine power. As a bonus action, you grant yourself a +5 bonus to Charisma ({@skill Persuasion}) checks for the next 10 minutes."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Rebuke the Violent",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Redemption",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "You can use your Channel Divinity to rebuke those who use violence. Immediately after an attacker within 30 feet of you deals damage with an attack against a creature other than you, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt. On a successful save, it takes half as much damage."
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Redemption",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain oath spells at the paladin levels listed.",
+                {
+                    "type": "table",
+                    "caption": "Oath of Redemption Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell sanctuary|Ishiir}, {@spell sleep|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell calm emotions|Ishiir}, {@spell hold person|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell counterspell|Ishiir}, {@spell hypnotic pattern|Ishiir}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell Otiluke's resilient sphere|Ishiir}, {@spell stoneskin|Ishiir}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell hold monster|Ishiir}, {@spell wall of force|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tenets of Redemption",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Redemption",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "The tenets of the Oath of Redemption hold a paladin to a high standard of peace and justice.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Peace",
+                            "entries": [
+                                "Violence is a weapon of last resort. Diplomacy and understanding are the paths to long-lasting peace."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Innocence",
+                            "entries": [
+                                "All people begin life in an innocent state, and it is their environment or the influence of dark forces that drives them to evil. By setting the proper example, and working to heal the wounds of a deeply flawed world, you can set anyone on a righteous path."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Patience",
+                            "entries": [
+                                "Change takes time. Those who have walked the path of the wicked must be given reminders to keep them honest and true. Once you have planted the seed of righteousness in a creature, you must work day after day to allow that seed to survive and flourish."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Wisdom",
+                            "entries": [
+                                "Your heart and mind must stay clear, for eventually you will be forced to admit defeat. While every creature can be redeemed, some are so far along the path of evil that you have no choice but to end their lives for the greater good. Any such action must be carefully weighed and the consequences fully understood, but once you have made the decision, follow through with it knowing your path is just."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Aura of the Guardian",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Redemption",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Starting at 7th level, you can shield others from harm at the cost of your own health. When a creature within 10 feet of you takes damage, you can use your reaction to magically take that damage, instead of that creature taking it. This feature doesn't transfer any other effects that might accompany the damage, and this damage can't be reduced in any way.",
+                "At 18th level, the range of this aura increases to 30 feet."
+            ]
+        },
+        {
+            "name": "Protective Spirit",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Redemption",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "Starting at 15th level, a holy presence mends your wounds in battle. You regain hit points equal to {@dice 1d6} + half your paladin level if you end your turn in combat with fewer than half of your hit points remaining and you aren't {@condition incapacitated|Ishiir}."
+            ]
+        },
+        {
+            "name": "Emissary of Redemption",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Redemption",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "At 20th level, you become an avatar of peace, which gives you two benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You have resistance to all damage dealt by other creatures (their attacks, spells, and other effects).",
+                        "Whenever a creature hits you with an attack, it takes radiant damage equal to half the damage you take from the attack."
+                    ]
+                },
+                "If you attack a creature, cast a spell on it, or deal damage to it by any means but this feature, neither benefit works against that creature until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Oath of Treachery",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Treachery",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "The Oath of Treachery is the path followed by paladins who have forsworn other oaths or who care only for their own power and survival. Commonly known as blackguards, these profane warriors are faithful only to themselves. Anyone desperate enough to follow one of these paladins does so because, while deceitful, these paladins command great power. Those who follow them without falling prey to their treachery hope to indulge in wanton violence and accumulate great treasure. Many of these paladins pay homage to demon lords, especially Grazz't and Orcus. Even the Lords of Hell are loath to ally with these champions of chaos, but sometimes Baalzebul and Glasya find a kindred spirit in a blackguard's penchant for double dealing and treachery.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tenets of Treachery|Paladin|Ishiir|Treachery|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath Spells|Paladin|Ishiir|Treachery|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Conjure Duplicate|Paladin|Ishiir|Treachery|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Poison Strike|Paladin|Ishiir|Treachery|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity: Conjure Duplicate",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Treachery",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "As an action, you create a visual illusion of yourself that lasts for 1 minute. The illusion appears in an unoccupied space of your choice that you can see within 30 feet of you. The illusion looks exactly like you; it is silent; it is your size, is insubstantial, doesn't occupy its space; and it is unaffected by attacks and damage. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but the illusion must remain within 120 feet of you.",
+                "For the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how uncanny the illusion is."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Poison Strike",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Treachery",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "You can use your Channel Divinity to make a weapon deadlier. As a bonus action, you touch one weapon or piece of ammunition and conjure a special poison on it. The poison lasts for 1 minute. The next time you hit a target with an attack using that weapon or ammunition, the target takes poison damage immediately after the attack. The poison damage equals {@dice 2d10} + your paladin level, or 20 + your paladin level if you had advantage on the attack roll."
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Treachery",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain oath spells at the paladin levels listed.",
+                {
+                    "type": "table",
+                    "caption": "Oath of Treachery Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell charm person|Ishiir}, {@spell expeditious retreat|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell invisibility|Ishiir}, {@spell mirror image|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell gaseous form|Ishiir}, {@spell haste|Ishiir}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell confusion|Ishiir}, {@spell greater invisibility|Ishiir}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell dominate person|Ishiir}, {@spell passwall|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tenets of Treachery",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Treachery",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "A paladin who embraces the Oath of Treachery owes allegiance to no one. There are no tenets of this oath, for it lacks any substance. Those who are unfortunate enough to have close contact with blackguards have observed that a blackguard's overwhelming concern is power and safety, especially if both can be obtained at the expense of others."
+            ]
+        },
+        {
+            "name": "Aura of Treachery",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Treachery",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Starting at 7th level, you emanate an aura of discord, which gives you the following benefits.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Cull the Herd",
+                            "entries": [
+                                "You have advantage on melee attack rolls against any creature that has one or more of its allies within 5 feet of it."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Treacherous Strike",
+                            "entries": [
+                                "If a creature within 5 feet of you misses you with a melee attack, you can use your reaction to force the attacker to reroll that attack against a creature of your choice that is also within 5 feet of the attacker. The ability fails and is wasted if the attacker is immune to being {@condition charmed|Ishiir}.",
+                                "You can use this ability three times. You regain expended uses of it when you finish a short or long rest."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blackguard's Escape",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Treachery",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "At 15th level, you have the ability to slip away from your foes. Immediately after you are hit by an attack, you can use your reaction to turn {@condition invisible|Ishiir} and teleport up to 60 feet to a spot you can see. You remain {@condition invisible|Ishiir} until the end of your next turn or until you attack, deal damage, or force a creature to make a saving throw. Once you use this feature, you must finish a short or long rest before you can use it again."
+            ]
+        },
+        {
+            "name": "Icon of Deceit",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Treachery",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "At 20th level, you gain the ability to emanate feelings of treachery. As an action, you can magically become an avatar of deceit, gaining the following benefits for 1 minute:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You are {@condition invisible|Ishiir}.",
+                        "If a creature damages you on its turn, it must succeed on a Wisdom saving throw (DC equal to your spell save DC) or you control its next action, provided that you aren't {@condition incapacitated|Ishiir} when it takes the action. A creature automatically succeeds on the save if the creature is immune to being {@condition charmed|Ishiir}.",
+                        "If you have advantage on an attack roll, you gain a bonus to its damage roll equal to your paladin level."
+                    ]
+                },
+                "Once you use this feature, you can't use it again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Oath of Vengeance",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Vengeance",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "The Oath of Vengeance is a solemn commitment to punish those who have committed a grievous sin. When evil forces slaughter helpless villagers, when an entire people turns against the will of the gods, when a thieves' guild grows too violent and powerful, when a dragon rampages through the countryside—at times like these, paladins arise and swear an Oath of Vengeance to set right that which has gone wrong. To these paladins—sometimes called avengers or dark knights—their own purity is not as important as delivering justice.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tenets of Vengeance|Paladin|Ishiir|Vengeance|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath Spells|Paladin|Ishiir|Vengeance|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Abjure Enemy|Paladin|Ishiir|Vengeance|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Vow of Enmity|Paladin|Ishiir|Vengeance|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity: Abjure Enemy",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Vengeance",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom saving throw, unless it is immune to being {@condition frightened|Ishiir}. Fiends and undead have disadvantage on this saving throw.",
+                "On a failed save, the creature is {@condition frightened|Ishiir} for 1 minute or until it takes any damage. While {@condition frightened|Ishiir}, the creature's speed is 0, and it can't benefit from any bonus to its speed.",
+                "On a successful save, the creature's speed is halved for 1 minute or until the creature takes any damage."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Vow of Enmity",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Vengeance",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "As a bonus action, you can utter a vow of enmity against a creature you can see within 30 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute or until it drops to 0 hit points or falls {@condition unconscious|Ishiir}."
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Vengeance",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain oath spells at the paladin levels listed.",
+                {
+                    "type": "table",
+                    "caption": "Oath of Vengeance Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell bane|Ishiir}, {@spell hunter's mark|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell hold person|Ishiir}, {@spell misty step|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell haste|Ishiir}, {@spell protection from energy|Ishiir}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell banishment|Ishiir}, {@spell dimension door|Ishiir}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell hold monster|Ishiir}, {@spell scrying|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tenets of Vengeance",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Vengeance",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "The tenets of the Oath of Vengeance vary by paladin, but all the tenets revolve around punishing wrongdoers by any means necessary. Paladins who uphold these tenets are willing to sacrifice even their own righteousness to mete out justice upon those who do evil, so the paladins are often neutral or lawful neutral in alignment. The core principles of the tenets are brutally simple.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Fight the Greater Evil",
+                            "entries": [
+                                "Faced with a choice of fighting my sworn foes or combating a lesser evil, I choose the greater evil."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "No Mercy for the Wicked",
+                            "entries": [
+                                "Ordinary foes might win my mercy, but my sworn enemies do not."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "By Any Means Necessary",
+                            "entries": [
+                                "My qualms can't get in the way of exterminating my foes."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Restitution",
+                            "entries": [
+                                "If my foes wreak ruin on the world, it is because I failed to stop them. I must help those harmed by their misdeeds."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Relentless Avenger",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Vengeance",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "By 7th level, your supernatural focus helps you close off a foe's retreat. When you hit a creature with an opportunity attack, you can move up to your speed immediately after the attack and as part of the same reaction. This movement doesn't provoke opportunity attacks."
+            ]
+        },
+        {
+            "name": "Soul of Vengeance",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Vengeance",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "Starting at 15th level, the authority with which you speak your Vow of Enmity gives you greater power over your foe. When a creature under the effect of your Vow of Enmity makes an attack, you can use your reaction to make a melee weapon attack against that creature if it is within range."
+            ]
+        },
+        {
+            "name": "Avenging Angel",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Vengeance",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "At 20th level, you can assume the form of an angelic avenger. Using your action, you undergo a transformation. For 1 hour, you gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Wings sprout from your back and grant you a flying speed of 60 feet.",
+                        "You emanate an aura of menace in a 30-foot radius. The first time any enemy creature enters the aura or starts its turn there during a battle, the creature must succeed on a Wisdom saving throw or become {@condition frightened|Ishiir} of you for 1 minute. Affected creatures can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. {@action Attack|Ishiir} rolls against the {@condition frightened|Ishiir} creature have advantage."
+                    ]
+                },
+                "Once you use this feature, you can't use it again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Oath of the Watchers",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Watchers",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "The Oath of the Watchers binds paladins to protect mortal realms from the predations of extraplanar creatures, many of which can lay waste to mortal soldiers. Thus, the Watchers hone their minds, spirits, and bodies to be the ultimate weapons against such threats.",
+                "Paladins who follow the Watchers' oath are ever vigilant in spotting the influence of extraplanar forces, often establishing a network of spies and informants to gather information on suspected cults. To a Watcher, keeping a healthy suspicion and awareness about one's surroundings is as natural as wearing armor in battle.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tenets of the Watchers|Paladin|Ishiir|Watchers|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath Spells|Paladin|Ishiir|Watchers|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity|Paladin|Ishiir|Watchers|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Watchers",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "{@i 3rd-level Oath of the Watchers feature}",
+                "You gain the following Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.",
+                {
+                    "type": "entries",
+                    "name": "Watcher's Will",
+                    "entries": [
+                        "You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Abjure the Extraplanar",
+                    "entries": [
+                        "You can use your Channel Divinity to castigate unworldly beings. As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.",
+                        "A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. For its action, it can use only the {@action Dash|Ishiir} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can take the {@action Dodge|Ishiir} action."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Watchers",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "{@i 3rd-level Oath of the Watchers feature}",
+                "You gain oath spells at the paladin levels listed in the Oath of the Watchers table. See the Sacred Oath class feature for how oath spells work.",
+                {
+                    "type": "table",
+                    "caption": "Oath of the Watchers Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell alarm|Ishiir}, {@spell detect magic|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell moonbeam|Ishiir}, {@spell see invisibility|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell counterspell|Ishiir}, {@spell nondetection|Ishiir}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell aura of purity|Ishiir}, {@spell banishment|Ishiir}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell hold monster|Ishiir}, {@spell scrying|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tenets of the Watchers",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Watchers",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "A paladin who assumes the Oath of the Watchers swears to safeguard mortal realms from otherworldly threats.",
+                {
+                    "type": "entries",
+                    "name": "Vigilance",
+                    "entries": [
+                        "The threats you face are cunning, powerful, and subversive. Be ever alert for their corruption."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Loyalty",
+                    "entries": [
+                        "Never accept gifts or favors from fiends or those who truck with them. Stay true to your order, your comrades, and your duty."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Discipline",
+                    "entries": [
+                        "You are the shield against the endless terrors that lie beyond the stars. Your blade must be forever sharp and your mind keen to survive what lies beyond."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Aura of the Sentinel",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Watchers",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "{@i 7th-level Oath of the Watchers feature}",
+                "You emit an aura of alertness while you aren't {@condition incapacitated|Ishiir}. When you and any creatures of your choice within 10 feet of you roll initiative, you all gain a bonus to initiative equal to your proficiency bonus.",
+                "At 18th level, the range of this aura increases to 30 feet."
+            ]
+        },
+        {
+            "name": "Vigilant Rebuke",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Watchers",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "{@i 15th-level Oath of the Watchers feature}",
+                "You've learned how to chastise anyone who dares wield beguilements against you and your wards. Whenever you or a creature you can see within 30 feet of you succeeds on an Intelligence, a Wisdom, or a Charisma saving throw, you can use your reaction to deal {@damage 2d8} + your Charisma modifier force damage to the creature that forced the saving throw."
+            ]
+        },
+        {
+            "name": "Mortal Bulwark",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Watchers",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "{@i 20th-level Oath of the Watchers feature}",
+                "You manifest a spark of divine power in defense of the mortal realms. As a bonus action, you gain the following benefits for 1 minute:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain {@sense truesight} with a range of 120 feet.",
+                        "You have advantage on attack rolls against aberrations, celestials, elementals, fey, and fiends.",
+                        "When you hit a creature with an attack roll and deal damage to it, you can also force it to make a Charisma saving throw against your spell save DC. On a failed save, the creature is magically banished to its native plane of existence if it's currently not there. On a successful save, the creature can't be banished by this feature for 24 hours."
+                    ]
+                },
+                "Once you use this bonus action, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
+            ]
+        }
+    ]
+}
