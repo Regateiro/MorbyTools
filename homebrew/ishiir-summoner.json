@@ -1,0 +1,1197 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Ishiir",
+                "abbreviation": "Ishiir",
+                "full": "Ishiir",
+                "url": "https://regateiro.pt/5etools/homebrew/ishiir-summoner.json",
+                "authors": [
+                    "Sieg"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "class": [
+        {
+            "name": "Summoner",
+            "source": "Ishiir",
+            "page": 1,
+            "hd": {
+                "number": 1,
+                "faces": 8
+            },
+            "proficiency": [
+                "con",
+                "cha"
+            ],
+            "spellcastingAbility": "cha",
+            "casterProgression": "1/2",
+            "cantripProgression": [
+                0,
+                4,
+                4,
+                4,
+                4,
+                4,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6
+            ],
+            "spellsKnownProgression": [
+                0,
+                2,
+                3,
+                3,
+                4,
+                4,
+                5,
+                5,
+                6,
+                6,
+                7,
+                7,
+                8,
+                8,
+                9,
+                9,
+                10,
+                10,
+                11,
+                11
+            ],
+            "optionalfeatureProgression": [
+                {
+                    "name": "Evolution Feats",
+                    "featureType": [
+                        "EF"
+                    ],
+                    "progression": {
+                        "1": 2,
+                        "3": 3,
+                        "5": 4,
+                        "7": 5,
+                        "10": 6,
+                        "13": 7,
+                        "16": 8,
+                        "19": 9
+                    }
+                }
+            ],
+            "startingProficiencies": {
+                "weapons": [
+                    "{@item dagger|Ishiir|daggers}",
+                    "{@item dart|Ishiir|darts}",
+                    "{@item sling|Ishiir|slings}",
+                    "{@item quarterstaff|Ishiir|quarterstaffs}",
+                    "{@item crossbow, light|Ishiir|light crossbows}"
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "arcana",
+                                "deception",
+                                "insight",
+                                "intimidation",
+                                "persuasion",
+                                "religion"
+                            ],
+                            "count": 2
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "default": [
+                    "(a) a {@item crossbow, light|Ishiir|light crossbow} and a quiver of {@item crossbow bolts (20)|Ishiir|20 bolts} or (b) any {@filter simple weapon|items|source=Ishiir|category=basic|type=simple weapon}",
+                    "(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
+                    "(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+                    "Two {@item dagger|Ishiir|daggers}"
+                ],
+                "goldAlternative": "{@dice 3d4 × 10|3d4 × 10|Starting Gold}",
+                "defaultData": [
+                    {
+                        "a": [
+                            "crossbow, light|Ishiir",
+                            "crossbow bolts (20)|Ishiir"
+                        ],
+                        "b": [
+                            {
+                                "equipmentType": "weaponSimple"
+                            }
+                        ]
+                    },
+                    {
+                        "a": [
+                            "component pouch|phb"
+                        ],
+                        "b": [
+                            "arcane focus|phb"
+                        ]
+                    },
+                    {
+                        "a": [
+                            "dungeoneer's pack|phb"
+                        ],
+                        "b": [
+                            "explorer's pack|phb"
+                        ]
+                    },
+                    {
+                        "_": [
+                            {
+                                "item": "dagger|Ishiir",
+                                "quantity": 2
+                            }
+                        ]
+                    }
+                ]
+            },
+            "multiclassing": {
+                "requirements": {
+                    "cha": 13
+                }
+            },
+            "classTableGroups": [
+                {
+                    "colLabels": [
+                        "{@filter Evolution Feats|optionalfeatures|feature type=ef|source=Ishiir}"
+                    ],
+                    "rows": [
+                        [
+                            2
+                        ],
+                        [
+                            2
+                        ],
+                        [
+                            3
+                        ],
+                        [
+                            3
+                        ],
+                        [
+                            4
+                        ],
+                        [
+                            4
+                        ],
+                        [
+                            5
+                        ],
+                        [
+                            5
+                        ],
+                        [
+                            5
+                        ],
+                        [
+                            6
+                        ],
+                        [
+                            6
+                        ],
+                        [
+                            6
+                        ],
+                        [
+                            7
+                        ],
+                        [
+                            7
+                        ],
+                        [
+                            7
+                        ],
+                        [
+                            8
+                        ],
+                        [
+                            8
+                        ],
+                        [
+                            8
+                        ],
+                        [
+                            9
+                        ],
+                        [
+                            9
+                        ]
+                    ]
+                },
+                {
+                    "colLabels": [
+                        "{@filter Cantrips Known|spells|level=0|class=Summoner (Ishiir)|source=Ishiir}",
+                        "{@filter Spells Known|spells|class=Summoner (Ishiir)|source=Ishiir}"
+                    ],
+                    "rows": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2
+                        ],
+                        [
+                            4,
+                            3
+                        ],
+                        [
+                            4,
+                            3
+                        ],
+                        [
+                            4,
+                            4
+                        ],
+                        [
+                            4,
+                            4
+                        ],
+                        [
+                            5,
+                            5
+                        ],
+                        [
+                            5,
+                            5
+                        ],
+                        [
+                            5,
+                            6
+                        ],
+                        [
+                            5,
+                            6
+                        ],
+                        [
+                            5,
+                            7
+                        ],
+                        [
+                            5,
+                            7
+                        ],
+                        [
+                            5,
+                            8
+                        ],
+                        [
+                            5,
+                            8
+                        ],
+                        [
+                            6,
+                            9
+                        ],
+                        [
+                            6,
+                            9
+                        ],
+                        [
+                            6,
+                            10
+                        ],
+                        [
+                            6,
+                            10
+                        ],
+                        [
+                            6,
+                            11
+                        ],
+                        [
+                            6,
+                            11
+                        ]
+                    ]
+                },
+                {
+                    "title": "Spell Slots per Spell Level",
+                    "colLabels": [
+                        "{@filter 1st|spells|level=1|class=Summoner (Ishiir)|source=Ishiir}",
+                        "{@filter 2nd|spells|level=2|class=Summoner (Ishiir)|source=Ishiir}",
+                        "{@filter 3rd|spells|level=3|class=Summoner (Ishiir)|source=Ishiir}",
+                        "{@filter 4th|spells|level=4|class=Summoner (Ishiir)|source=Ishiir}",
+                        "{@filter 5th|spells|level=5|class=Summoner (Ishiir)|source=Ishiir}"
+                    ],
+                    "rowsSpellProgression": [
+                        [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2
+                        ]
+                    ]
+                }
+            ],
+            "classFeatures": [
+                "Eidolon|Summoner|Ishiir|1",
+                "Evolution Feats|Summoner|Ishiir|1",
+                "Spellcasting|Summoner|Ishiir|2",
+                {
+                    "classFeature": "Summoner Specialization|Summoner|Ishiir|3",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Summoner|Ishiir|4",
+                "Extra Attack|Summoner|Ishiir|5",
+                "Summoner's Guardian|Summoner|Ishiir|5",
+                "Infused Attacks|Summoner|Ishiir|6",
+                {
+                    "classFeature": "Summoner Specialization Feature|Summoner|Ishiir|7",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Summoner|Ishiir|8",
+                {
+                    "classFeature": "Summoner Specialization Feature|Summoner|Ishiir|10",
+                    "gainSubclassFeature": true
+                },
+                "Greater Infusion|Summoner|Ishiir|11",
+                "Ability Score Improvement|Summoner|Ishiir|12",
+                {
+                    "classFeature": "Summoner Specialization Feature|Summoner|Ishiir|14",
+                    "gainSubclassFeature": true
+                },
+                "Life Link|Summoner|Ishiir|15",
+                "Ability Score Improvement|Summoner|Ishiir|16",
+                {
+                    "classFeature": "Summoner Specialization Feature|Summoner|Ishiir|18",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Summoner|Ishiir|19",
+                "Twin Eidolon|Summoner|Ishiir|20"
+            ],
+            "subclassTitle": "Summoner Specialization"
+        }
+    ],
+    "classFeature": [
+        {
+            "name": "Eidolon",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "By studying the magic of the planes, coming into contact with an extraplanar entity, or other circumstances you have acquired the ability to call forth a magical entity called an Eidolon.",
+                "To summon your Eidolon, you have to spend 10 minutes performing a magical ritual. Upon completion, your Eidolon appears in an unoccupied space you can see within 10 feet of you.",
+                "When the Eidolon drops to 0 hit points, it disappears, leaving behind no physical form. If your Eidolon is more than 1000 feet away from you or you die, it also disappears. You can also dismiss your Eidolon as a bonus action.",
+                "Your Eidolon can understand and speak all languages you speak. While it is on the same plane of existence as you, you can communicate with your Eidolon telepathically.",
+                "Additionally, as an action, you can see through your Eidolon's eyes and hear what it hears until you end the effect (no action required), gaining the benefits of any special senses that the Eidolon has. During this time, you are deaf and blind with regard to your own senses.",
+                "Your Eidolon acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn.",
+                "When you acquire this feature, you choose a template for your Eidolon that determines it's base statistics. Your options are: {@creature Aquatic Eidolon|Ishiir|aquatic}, {@creature Avian Eidolon|Ishiir|avian}, {@creature Biped Eidolon|Ishiir|biped}, {@creature Quadruped Eidolon|Ishiir|quadruped}, {@creature Serpentine Eidolon|Ishiir|serpentine}, and {@creature Tauric Eidolon|Ishiir|tauric}. Your Eidolon shares your mental ability scores and saving throw proficiencies.",
+                "Additionally, your Eidolon learns two skills of your choice.",
+                "If you have a bonus to spell save DC, you also apply this bonus to your Eidolon's attack rolls, damage rolls, and armor class."
+            ]
+        },
+        {
+            "name": "Evolution Feats",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "In your study of planar lore, you have unearthed ways to augment your Eidolon, changing its form or otherwise imbuing it with new abilities.",
+                "At 1st level, you gain two evolution feats of your choice. A list of the available options can be found on the {@filter Optional Features|optionalfeatures|feature type=ef|source=Ishiir} page. When you gain certain summoner levels, you gain additional evolution feats of your choice, as shown in the Evolution Feats column of the Summoner table.",
+                "Additionally, when you gain a level in this class, you can choose one of the evolution feats you know and replace it with another evolution feat that you could learn at that level.",
+                "If an evolution feat has prerequisites, you must meet them to learn it. You can learn the evolution feat at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class."
+            ]
+        },
+        {
+            "name": "Spellcasting",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "By the time you reach 2nd level, you have learned to use the magical essence of the planes to cast spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting. Check the {@filter Summoner spell list|spells|class=Summoner (Ishiir)|source=Ishiir} for the list of spells available to summoner.",
+                {
+                    "type": "entries",
+                    "name": "Cantrips",
+                    "entries": [
+                        "At 2nd level, you know four cantrips of your choice from the Summoner spell list. You learn an additional Summoner cantrip of your choice at 7th level and another at 15th level."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spell Slots",
+                    "entries": [
+                        "The Summoner table shows how many spell slots you have to cast your summoner spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+                        "For example, if you know the 1st-level spell {@spell mage armor|Ishiir} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell mage armor|Ishiir} using either slot."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spells Known of 1st Level and Higher",
+                    "entries": [
+                        "You know two 1st-level spells of your choice from the summoner spell list.",
+                        "The Spells Known column of the Summoner table shows when you learn more summoner spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
+                        "Additionally, when you gain a level in this class, you can choose one of the summoner spells you know and replace it with another spell from the summoner spell list, which also must be of a level for which you have spell slots."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Ability",
+                    "entries": [
+                        "Charisma is your spellcasting ability for your summoner spells, since your magic draws on your attunement to nature. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a summoner spell you cast and when making an attack roll with one.",
+                        {
+                            "type": "abilityDc",
+                            "name": "Spell",
+                            "attributes": [
+                                "cha"
+                            ]
+                        },
+                        {
+                            "type": "abilityAttackMod",
+                            "name": "Spell",
+                            "attributes": [
+                                "cha"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Ritual Casting",
+                    "entries": [
+                        "You can cast a summoner spell as a ritual if that spell has the ritual tag and you know the spell."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Focus",
+                    "entries": [
+                        "You can use an {@item arcane focus|phb} as a spellcasting focus for your Summoner spells."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Summoner Specialization",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "At 3rd level, you choose a specialization in the field of summoning and planar magic to focus on. Your choice grants you features at 3rd level and again at 7th, 14th, and 18th level."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 4,
+            "entries": [
+                "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 5,
+            "entries": [
+                "Starting at 5th level, your Eidolon can attack twice, instead of once, whenever it takes the {@action Attack} action on its turn."
+            ]
+        },
+        {
+            "name": "Summoner's Guardian",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 5,
+            "entries": [
+                "Beginning at 5th level, your improved connection with your Eidolon allows it to defend you more effectively. You can use your bonus action to command your Eidolon to take a guarding stance while it is within 5 feet of you.",
+                "The stance lasts until the start of your next turn. It ends early if your Eidolon is no longer within 5 feet of you or it is {@condition incapacitated|Ishiir}.",
+                "While the stance is active, all attack rolls that target you have disadvantage."
+            ]
+        },
+        {
+            "name": "Infused Attacks",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "Starting at 6th level, your Eidolon's Attacks are treated as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+            ]
+        },
+        {
+            "name": "Summoner Specialization Feature",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 7,
+            "entries": [
+                "At 7th level, you gain one feature granted by your Summoner Specialization."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 8,
+            "entries": [
+                "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Summoner Specialization Feature",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 10,
+            "entries": [
+                "At 10th level, you gain one feature granted by your Summoner Specialization."
+            ]
+        },
+        {
+            "name": "Greater Infusion",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 11,
+            "entries": [
+                "At 11th level, you add your Charisma modifier to your Eidolon's damage rolls."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 12,
+            "entries": [
+                "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Summoner Specialization Feature",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "At 14th level, you gain one feature granted by your Summoner Specialization."
+            ]
+        },
+        {
+            "name": "Life Link",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 15,
+            "entries": [
+                "At 15th level, you create magical bond between your lifeforce and that of your Eidolon. When you or your Eidolon take damage that would reduce you to 0 hitpoints, you are reduced 1 hitpoint instead and the other takes the remainder of the damage.",
+                "The link has no effect on features that outright kill you when you are reduced to 0 hitpoints, such as the {@spell disintegrate|Ishiir} spell."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 16,
+            "entries": [
+                "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Summoner Specialization Feature",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 18,
+            "entries": [
+                "At 18th level, you gain one feature granted by your Summoner Specialization."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 19,
+            "entries": [
+                "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Twin Eidolon",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 20,
+            "entries": [
+                "Once you reach 20th level, you can use an action to assume the shape of your Eidolon, adopting its Strength, Dexterity, Constitution, armor class, and hitpoints, and all its features and evolution feats.",
+                "You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the Eidolon.",
+                "You retain the benefit of any features from your class, race, or other source and can use them, provided that your new form is physically capable of doing so. You can't use any special senses you have (for example, {@sense darkvision}) unless your new form also has that sense.",
+                "When you transform, you choose whether your equipment falls to the ground, merges into the new form, or is worn by it. Worn equipment functions as normal. The DM determines whether it is practical for the new form to wear a piece of equipment, based on the form's shape and size. Your equipment doesn't change shape or size to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge into your new form. Equipment that merges has no effect in that state.",
+                "You can maintain this form up to 1 hour while concentrating (as if concentrating on a spell) and you cannot assume it again until you finish a long rest."
+            ]
+        }
+    ],
+    "subclass": [
+        {
+            "name": "Eidolon Master",
+            "shortName": "Eidolon Master",
+            "source": "Ishiir",
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassFeatures": [
+                "Eidolon Master|Summoner|Ishiir|Eidolon Master|Ishiir|3",
+                "Empower Eidolon|Summoner|Ishiir|Eidolon Master|Ishiir|7",
+                "Summoner's Call|Summoner|Ishiir|Eidolon Master|Ishiir|10",
+                "Transposition|Summoner|Ishiir|Eidolon Master|Ishiir|10",
+                "Additional Evolution Feat|Summoner|Ishiir|Eidolon Master|Ishiir|14",
+                "Grand Eidolon|Summoner|Ishiir|Eidolon Master|Ishiir|18"
+            ]
+        },
+        {
+            "name": "Host Caller",
+            "shortName": "Host Caller",
+            "source": "Ishiir",
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassFeatures": [
+                "Host Caller|Summoner|Ishiir|Host Caller|Ishiir|3",
+                "Army of One|Summoner|Ishiir|Host Caller|Ishiir|7",
+                "Summoner's Call|Summoner|Ishiir|Host Caller|Ishiir|10",
+                "Transposition|Summoner|Ishiir|Host Caller|Ishiir|10",
+                "Host Caller's Link|Summoner|Ishiir|Host Caller|Ishiir|14",
+                "Throw Wide the Gates|Summoner|Ishiir|Host Caller|Ishiir|18"
+            ]
+        },
+        {
+            "name": "Symbiosist",
+            "shortName": "Symbiosist",
+            "source": "Ishiir",
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassFeatures": [
+                "Symbiosist|Summoner|Ishiir|Symbiosist|Ishiir|3",
+                "Symbiotic Reflexes|Summoner|Ishiir|Symbiosist|Ishiir|7",
+                "Dimensional Step|Summoner|Ishiir|Symbiosist|Ishiir|10",
+                "Two Minds, One Body|Summoner|Ishiir|Symbiosist|Ishiir|14",
+                "Perfected Coordination|Summoner|Ishiir|Symbiosist|Ishiir|18"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Eidolon Master",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Eidolon Master",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Bonded Spells|Summoner|Ishiir|Eidolon Master|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Additional Evolution Feat|Summoner|Ishiir|Eidolon Master|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Bonded Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Eidolon Master",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "Beginning at 3rd level, if you cast a spell on yourself, you can choose to cast the spell on your Eidolon instead if you can see it within 60 feet of you."
+            ]
+        },
+        {
+            "name": "Additional Evolution Feat",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Eidolon Master",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "At 3rd level, you learn an additional evolution feat for which you meet the prequisites."
+            ]
+        },
+        {
+            "name": "Empower Eidolon",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Eidolon Master",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "entries": [
+                "At 7th level, you learn how to spend your own magical reserves to empower your Eidolon's attacks. As a bonus action, you can spend a spell slot if you can see your Eidolon within 60 feet of you. For 1 hour, you add {@dice 1d8} times the level of the spell slot expended to your Eidolon's damage rolls."
+            ]
+        },
+        {
+            "name": "Summoner's Call",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Eidolon Master",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "entries": [
+                "Beginning at 10th level, you can use an action to call your Eidolon to your side. It appears in an unoccupied space within 5 feet of you that you can see."
+            ]
+        },
+        {
+            "name": "Transposition",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Eidolon Master",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "entries": [
+                "Beginning at 10th level, you can use an action to switch positions with your Eidolon if you can see it."
+            ]
+        },
+        {
+            "name": "Additional Evolution Feat",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Eidolon Master",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "At 14th level, you learn an additional evolution feat for which you meet the prequisites."
+            ]
+        },
+        {
+            "name": "Grand Eidolon",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Eidolon Master",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "entries": [
+                "At 18th level, your Eidolon becomes an absolutely monstrosity. A true thing of legend and terror. Your Eidolon's Strength or Dexterity (your choice) and Constitution increase by 4. And its maximum for those scores is now 24."
+            ]
+        },
+        {
+            "name": "Host Caller",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Host Caller",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Planar Recovery|Summoner|Ishiir|Host Caller|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Planar Focus|Summoner|Ishiir|Host Caller|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Planar Recovery",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Host Caller",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "Starting at 3rd level, you have learned to regain some of your magical energy by drawning from the essence of the planes. Once per long rest when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your summoner level (rounded up), and none of the slots can be 3rd level or higher.",
+                "For example, if you're a 4th-level summoner, you can recover up to two levels worth of spell slots.",
+                "You can recover either a 2nd-level spell slot or two 1st-level spell slots."
+            ]
+        },
+        {
+            "name": "Planar Focus",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Host Caller",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "Starting at 3rd level, you learn how to read the barriers between the planes, making it easier for you to draw forth more powerful creatures. You have a number of planar focus points equal to your summoner level.",
+                "When you expend a spell slot to cast a conjuration or necromancy spell to summon one or more creatures, you can spend a number of planar focus points up to half your proficiency modifier (rounded down). You can treat the spell slot as a number of levels higher equal to the number of planar focus points spent.",
+                "You regain all planar focus points when you finish a long rest."
+            ]
+        },
+        {
+            "name": "Army of One",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Host Caller",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "entries": [
+                "Beginning at 7th level, you learn how to summon an ever-increasing number of creatures to your side. When you cast a conjuration or necromancy spell to summon a creature, you can choose to ignore the concentration limit on that spell. But if you do so, you reduce the spell's duration to 1 minute.",
+                "If you lose concentration, you lose it on all spells you're concentrating on."
+            ]
+        },
+        {
+            "name": "Summoner's Call",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Host Caller",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "entries": [
+                "Beginning at 10th level, you can use an action to call your Eidolon to your side. It appears in an unoccupied space within 5 feet of you that you can see."
+            ]
+        },
+        {
+            "name": "Transposition",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Host Caller",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "entries": [
+                "Beginning at 10th level, you can use an action to switch positions with your Eidolon if you can see it."
+            ]
+        },
+        {
+            "name": "Host Caller's Link",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Host Caller",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "Beginning at 14th level, when you use the Summoner's Call or Transposition class feature, you can target another creature you have summoned instead of your Eidolon."
+            ]
+        },
+        {
+            "name": "Throw Wide the Gates",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Host Caller",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "entries": [
+                "Starting at 18th level, you can cast the {@spell Gate|Ishiir} spell without expending a spell slot and without a material component. You must finish a long rest before you can do so again."
+            ]
+        },
+        {
+            "name": "Symbiosist",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Symbiosist",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Symbiosis|Summoner|Ishiir|Symbiosist|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Symbiotic Defense|Summoner|Ishiir|Symbiosist|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Symbiosis",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Symbiosist",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "At 3rd level, you learn to meld with your Eidolon's essence, two creatures merged as one, fighting in perfect unison.",
+                "As an action, when you are within 5 feet of your Eidolon, you can merge forms with it, entering Symbiosis. The resulting form can be that of your Eidolon, your own, or something in-between.",
+                "In this form, you gain all your Eidolon's features and evolution feats, and you choose whether to use your own or your Eidolon's stats for each ability score and armor class. You gain your Eidolon's hitpoints as temporary hitpoints. All features and effects that normally affect your Eidolon's hitpoints affect these temporary hitpoints as well. If these temporary hitpoints reach 0, your Eidolon disappears and you lose the benefits of Symbiosis and revert to your normal form. You can also relinquish the Symbiosis and split up into a summoner and Eidolon as an action.",
+                "You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the Eidolon.",
+                "You retain the benefit of any features from your class, race, or other source and can use them. And you can use any special senses available to your Eidolon and you.",
+                "When you transform, you choose whether your equipment merges into the new form, or is worn by it. Worn equipment functions as normal. The DM determines whether it is practical for the new form to wear a piece of equipment, based on the form's shape and size. Your equipment doesn't change shape or size to match the new form, and any equipment that the new form can't wear must merge into your new form. Equipment that merges has no effect in that state.",
+                "While in this form, you can cast all summoner spells as a bonus action. Summoner class features that normally require you to be separate entities to work, allow you to target a different beneficiary instead, treating it as the summoner. In the case of Twin Eidolon, you instead completely duplicate your merged form for the duration and it receives all benefits from equipment that you are wearing and currently using in that form as well."
+            ]
+        },
+        {
+            "name": "Symbiotic Defense",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Symbiosist",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "Beginning at 3rd level, when you are in Symbiosis, you can gain a bonus to your AC and saving throws equal to half your proficiency (rounded down)."
+            ]
+        },
+        {
+            "name": "Symbiotic Reflexes",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Symbiosist",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "entries": [
+                "Beginning at 7th level, you have advantage on Dexterity saving throws and you gain a second reaction."
+            ]
+        },
+        {
+            "name": "Dimensional Step",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Symbiosist",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "entries": [
+                "Beginning at 10th level, you can cast {@spell Dimension Door|Ishiir} without a verbal component. You cannot use this feature again until you finish a short rest."
+            ]
+        },
+        {
+            "name": "Two Minds, One Body",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Symbiosist",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "Beginning at 14th level, you have advantage on all Intelligence, Wisdom, and Charisma saving throws while you are in Symbiosis."
+            ]
+        },
+        {
+            "name": "Perfected Coordination",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "subclassShortName": "Symbiosist",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "entries": [
+                "Beginning at 18th level, you can take an additional action and bonus action on your turn.",
+                "You cannot use this feature again until you finish a short rest or you spend a spell slot of 4th level to use it again."
+            ]
+        }
+    ]
+}

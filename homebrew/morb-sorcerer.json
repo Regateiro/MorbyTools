@@ -1,0 +1,655 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Morb",
+                "abbreviation": "Morb",
+                "full": "Morb",
+                "url": "https://regateiro.pt/5etools/homebrew/morb-sorcerer.json",
+                "authors": [
+                    "Morb"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "subclass": [
+        {
+            "name": "Primal",
+            "shortName": "Primal",
+            "source": "Morb",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "page": 1,
+            "subclassFeatures": [
+                "Primal Vessel|Sorcerer||Primal|Morb|1",
+                "Nature's Craddle|Sorcerer||Primal|Morb|6",
+                "Wild Conduit|Sorcerer||Primal|Morb|14",
+                "Champion of Nature|Sorcerer||Primal|Morb|18"
+            ]
+        },
+        {
+            "name": "Planeswalker Spark",
+            "shortName": "Planeswalker",
+            "source": "Morb",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "page": 1,
+            "subclassFeatures": [
+                "Planeswalker Spark|Sorcerer||Planeswalker|Morb|1",
+                "Into The Unknown|Sorcerer||Planeswalker|Morb|6",
+                "Far Traveler|Sorcerer||Planeswalker|Morb|14",
+                "One With The Planes|Sorcerer||Planeswalker|Morb|18"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Primal Vessel",
+            "source": "Morb",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Primal",
+            "subclassSource": "Morb",
+            "level": 1,
+            "entries": [
+                "Sometimes the spark of magic that fuels a sorcerer comes from its connection to the natural world around them. Having such a connection is a sign that your innate magic might come from the world itself. Perhaps your ancestor was a powerful druid, one that nature itself still remembers to this day and now empowers you in return.",
+                "Or your birth might align with an ancient prophecy, marking you as a servant of the natural order or a chosen primal champion.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Primal Magic|Sorcerer||Primal|Morb|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Natural Connection|Sorcerer||Primal|Morb|1"
+                }
+            ]
+        },
+        {
+            "name": "Primal Magic",
+            "source": "Morb",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Primal",
+            "subclassSource": "Morb",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "Your link with nature allows you to learn spells from the druid class. When your Spellcasting feature lets you learn or replace a sorcerer cantrip or a sorcerer spell of 1st level or higher, you can choose the new spell from the druid spell list or the sorcerer spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes a sorcerer spell for you.",
+                "In addition, starting at 1st level, you learn two additional 1st-level spells of your choice from the druid spell list. These spells count as sorcerer spells for you, but they don't count against the number of sorcerer spells you know.",
+                "When you reach 3rd level, 5th, 7th, and 9th level in this class, you also learn two additional spells of 2nd, 3rd, 4th, and 5th level of your choice from the druid spell, respectively."
+            ]
+        },
+        {
+            "name": "Natural Connection",
+            "source": "Morb",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Primal",
+            "subclassSource": "Morb",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "Starting at 1st level, you gain the ability to comprehend and verbally communicate with beasts.",
+                "Additionally, you become proficient in your choice of two of the following skills: {@skill Animal Handling}, {@skill Nature}, {@skill Perception}, or {@skill Survival}. Your proficiency bonus is doubled for any ability check you make that uses either of those skills."
+            ]
+        },
+        {
+            "name": "Nature's Craddle",
+            "source": "Morb",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Primal",
+            "subclassSource": "Morb",
+            "level": 6,
+            "header": 1,
+            "entries": [
+                "Starting at 6th level, you can cast {@spell Detect Evil and Good|Ishiir} and {@spell Protection from Evil and Good|Ishiir} without expending a spell slot and with a range of self.",
+                "You can cast both spells once with this feature, and you cannot do so again until you finish a short or a long rest unless you spend 1 sorcery point to do so again."
+            ]
+        },
+        {
+            "name": "Wild Conduit",
+            "source": "Morb",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Primal",
+            "subclassSource": "Morb",
+            "level": 14,
+            "header": 1,
+            "entries": [
+                "At 14h level, you gain the ability to align your consciousness with the will of the world around you. As a bonus action, you can enter this state for 1 minute. For the duration, the targets of your spells cannot benefit from advantange on their saving throws, while you have advantage on yours.",
+                "Once you use this bonus action, you can't use it again until you finish a long rest, unless you spend 5 sorcery points to use it again."
+            ]
+        },
+        {
+            "name": "Champion of Nature",
+            "source": "Morb",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Primal",
+            "subclassSource": "Morb",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "At 18th level, your connection with nature is so strong that you're now a permanent extension of its will and power. You gain the following effects:",
+                {
+                    "type": "list",
+                    "items": [
+                        "While using your Wild Conduit feature, you have advantage on attack rolls against aberrations, celestials, elementals, fey, fiends, and undead. They also have disadvantage on saving throws against your spells.",
+                        "Moving through difficult terrain costs you no extra movement. You can also pass through natural or magically created plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.",
+                        "You are immune to poison and disease.",
+                        "For every 10 years that pass, your body ages only 1 year."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Planeswalker Spark",
+            "source": "Morb",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Planeswalker",
+            "subclassSource": "Morb",
+            "level": 1,
+            "entries": [
+                "Planeswalkers have the \"Spark\", which usually awakens after a major event in their lives that changes them forever and grants them their power. Some, however, may have their Spark awakened since they were born or it may have been forcefully awakened by another Planeswalker. Althought anyone may possess the Spark, many live and die without knowing about it. The Spark grants many different abilities, which can change between planeswalkers, but they all share the ability to move through the planes easily. Because of this natural ability, they tend to keep a low profile to not be captured by other spellcasters wanting to study/steal the power of the Spark for themselves.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Planeswalker Magic|Sorcerer||Planeswalker|Morb|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Spark Manifestation|Sorcerer||Planeswalker|Morb|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Awakened Spark|Sorcerer||Planeswalker|Morb|1"
+                }
+            ]
+        },
+        {
+            "name": "Planeswalker Magic",
+            "source": "Morb",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Planeswalker",
+            "subclassSource": "Morb",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "Starting at 1st level, you learn additional spells when you reach certain levels in this class. These spells depend on your own affinity with the world. Perhaps you feel at home helping others, marveling a group of people with illusions, or perhaps something different or in between. While most planeswalkers start using their abilities to better the world, this desire can be twisted by taking it to the extreme.",
+                "You learn additional spells when you reach certain levels in this class. Choose one or two affinities from the list below. If you choose one, you get all the spells in that list when you reach the appropriate level. If you choose two, you must choose one spell from each table when you reach the appropriate level. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
+                {
+                    "type": "entries",
+                    "name": "White Affinity",
+                    "entries": [
+                        "White affinity planeswalkers are known to possess a natural ability to heal or keep others from injury. However, they can also become tyrants who see themselves as the only ones capable of making decisions that keep everyone safe.",
+                        {
+                            "type": "table",
+                            "caption": "White Affinity Spells",
+                            "colLabels": [
+                                "Sorcerer Level",
+                                "Spells"
+                            ],
+                            "colStyles": [
+                                "col-2 text-center",
+                                "col-10"
+                            ],
+                            "rows": [
+                                [
+                                    "1st",
+                                    "{@spell Cure Wounds}, {@spell Sanctuary}"
+                                ],
+                                [
+                                    "3rd",
+                                    "{@spell Aid}, {@spell Lesser Restoration}"
+                                ],
+                                [
+                                    "5th",
+                                    "{@spell Protection from Energy}, {@spell Revivify}"
+                                ],
+                                [
+                                    "7th",
+                                    "{@spell Aura of Life}, {@spell Death Ward}"
+                                ],
+                                [
+                                    "9th",
+                                    "{@spell Greater Restoration}, {@spell Mass Cure Wounds}"
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Blue Affinity",
+                    "entries": [
+                        "Blue affinity planeswalkers are known to be able to create great illusions and to manipulate the senses of others. However, they can also use their powers to manipulate others to do things against their will.",
+                        {
+                            "type": "table",
+                            "caption": "Blue Affinity Spells",
+                            "colLabels": [
+                                "Sorcerer Level",
+                                "Spells"
+                            ],
+                            "colStyles": [
+                                "col-2 text-center",
+                                "col-10"
+                            ],
+                            "rows": [
+                                [
+                                    "1st",
+                                    "{@spell Cause Fear|XGE}, {@spell Color Spray}"
+                                ],
+                                [
+                                    "3rd",
+                                    "{@spell Mirror Image}, {@spell Enthrall}"
+                                ],
+                                [
+                                    "5th",
+                                    "{@spell Counterspell}, {@spell Major Image}"
+                                ],
+                                [
+                                    "7th",
+                                    "{@spell Greater Invisibility}, {@spell Dominate Beast}"
+                                ],
+                                [
+                                    "9th",
+                                    "{@spell Mislead}, {@spell Dominate Person}"
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Red Affinity",
+                    "entries": [
+                        "Red affinity planeswalkers are known to be able to manipulate the elements and to bring about great feats of power. However, they can also cause great destruction wherever they walk.",
+                        {
+                            "type": "table",
+                            "caption": "Red Affinity Spells",
+                            "colLabels": [
+                                "Sorcerer Level",
+                                "Spells"
+                            ],
+                            "colStyles": [
+                                "col-2 text-center",
+                                "col-10"
+                            ],
+                            "rows": [
+                                [
+                                    "1st",
+                                    "{@spell Witch Bolt}, {@spell Hellish Rebuke}"
+                                ],
+                                [
+                                    "3rd",
+                                    "{@spell Dragon's Breath|XGE}, {@spell Scorching Ray}"
+                                ],
+                                [
+                                    "5th",
+                                    "{@spell Fireball}, {@spell Lightning Bolt}"
+                                ],
+                                [
+                                    "7th",
+                                    "{@spell Storm Sphere|XGE}, {@spell Wall of Fire}"
+                                ],
+                                [
+                                    "9th",
+                                    "{@spell Destructive Wave}, {@spell Immolation|XGE}"
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Black Affinity",
+                    "entries": [
+                        "Black affinity planeswalkers are known to manipulate raw power and fate to their advantage. However, this can lead them to sacrificing others to attain said power.",
+                        {
+                            "type": "table",
+                            "caption": "Black Affinity Spells",
+                            "colLabels": [
+                                "Sorcerer Level",
+                                "Spells"
+                            ],
+                            "colStyles": [
+                                "col-2 text-center",
+                                "col-10"
+                            ],
+                            "rows": [
+                                [
+                                    "1st",
+                                    "{@spell Absorb Elements|XGE}, {@spell Armor of Agathys}"
+                                ],
+                                [
+                                    "3rd",
+                                    "{@spell Enhance Ability}, {@spell Fortune's Favor|EGW}"
+                                ],
+                                [
+                                    "5th",
+                                    "{@spell Haste}, {@spell Fly}"
+                                ],
+                                [
+                                    "7th",
+                                    "{@spell Freedom of Movement}, {@spell Stoneskin}"
+                                ],
+                                [
+                                    "9th",
+                                    "{@spell Spell Mantle|Ishiir}, {@spell Skill Empowerment|XGE}"
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Green Affinity",
+                    "entries": [
+                        "Green planeswalkers are known for their alignment with the natural order and creating life. However, this can lead them to become apathetic to the plight of others unless the natural order is being broken in some way, in which case they'll try to maintain it at any cost.",
+                        {
+                            "type": "table",
+                            "caption": "Green Affinity Spells",
+                            "colLabels": [
+                                "Sorcerer Level",
+                                "Spells"
+                            ],
+                            "colStyles": [
+                                "col-2 text-center",
+                                "col-10"
+                            ],
+                            "rows": [
+                                [
+                                    "1st",
+                                    "{@spell Entangle}, {@spell Beast Bond|XGE}"
+                                ],
+                                [
+                                    "3rd",
+                                    "{@spell Enlarge/Reduce}, {@spell Summon Beast|TCE}"
+                                ],
+                                [
+                                    "5th",
+                                    "{@spell Conjure Animals}, {@spell Plant Growth}"
+                                ],
+                                [
+                                    "7th",
+                                    "{@spell Banishment}, {@spell Guardian of Nature|XGE}"
+                                ],
+                                [
+                                    "9th",
+                                    "{@spell Commune with Nature}, {@spell Insect Plague}"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Spark Manifestation",
+            "source": "Morb",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Planeswalker",
+            "subclassSource": "Morb",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "Starting at 1st level, your affinity to the world molds your Spark as it grows, gifting you with strange powers. You gain the features described below for the affinities chosen in your {@subclassFeature Planeswalker Magic|Sorcerer|PHB|Planeswalker|Morb|1|Morb} feature.",
+                {
+                    "type": "entries",
+                    "name": "White Affinity",
+                    "entries": [
+                        "Your desire to help and protect others has extended to the battlefield. When you or a creature you can see within 30 feet of you is hit by an attack roll, you can use your reaction to shield the target, increasing their AC by your proficiency bonus for the attack.",
+                        "If you only have affinity to white, the target also heals for half the amount of damage (rounded down) the attack would have dealt/did to it.",
+                        "Once you use this feature, you can't do so again until you finish a short or long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Blue Affinity",
+                    "entries": [
+                        "You must always be in control of any situation you find yourself in. When you cast a spell that forces a target to make a Charisma saving throw, you may use a bonus action to impose disadvantage on the save.",
+                        "If you only have affinity to blue, you may impose disadvantage on the save for any spell you cast that forces a target to make a saving throw.",
+                        "You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Red Affinity",
+                    "entries": [
+                        "You feel the need to unleash the energy within you. When you use an action to cast a cantrip that deals damage to a creature, you may use your bonus action to cast the same cantrip again, dealing half the amount of damage (rounded down).",
+                        "Once you use this feature, you can't do so again until you finish a short or a long rest.",
+                        "If you only have affinity to red, you can use this feature a number of times equal to your proficiency bonus, you regain one expended use when you finish a short rest and all expended uses when you finish a long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Black Affinity",
+                    "entries": [
+                        "Power is only within reach of those who dare to risk everything for it. After you deal damage to a creature, you may use a bonus action and spend any amount of HP to strike with your very own life force. This loss of HP cannot be prevented in any way. The target then takes necrotic damage equal to the amount of HP lost this way.",
+                        "You recover the HP spent on this feature when you finish a short rest.",
+                        "If you only have affinity to black, this damage ignores resistance and immunity, and can't be reduced or avoided by any means.",
+                        "You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Green Affinity",
+                    "entries": [
+                        "The natural order is for the strong to defeat the weak. Choose Strength, Dexterity or Constitution. You gain proficiency with saving throws using the chosen attribute and with one skill that uses the chosen attribute.",
+                        "If you only have affinity to green, you may add your Charisma modifier to skill checks and saving throws using the chosen attribute."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Awakened Spark",
+            "source": "Morb",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Planeswalker",
+            "subclassSource": "Morb",
+            "level": 1,
+            "header": 1,
+            "consumes": {
+                "name": "Sorcery Points"
+            },
+            "entries": [
+                "The Spark manifests itself as the power to move faster and phase through space at will.",
+                "Starting at 1st level, you know the {@spell expeditious retreat} spell, which doesn't count against your number of spells known. Additionally, the following table shows the spells you can cast using your Spark when you reach certain levels in this class and how many sorcery points you must spend to do so. These spells do not require material components when cast this way. Note that you can only cast these spells using your sorcery points unless you've learned the spell through other means.",
+                {
+                    "type": "table",
+                    "caption": "Spark Spells",
+                    "colLabels": [
+                        "Sorcerer Level",
+                        "Spells",
+                        "Sorcery Point Cost"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-5",
+                        "col-2 text-center"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Misty Step}",
+                            "2"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Thunder Step|XGE}",
+                            "3"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Dimension Door}",
+                            "4"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Far Step|XGE}",
+                            "5"
+                        ],
+                        [
+                            "11th",
+                            "{@spell Arcane Gate}",
+                            "6"
+                        ],
+                        [
+                            "13th",
+                            "{@spell Plane Shift}, {@spell Teleport}",
+                            "7"
+                        ],
+                        [
+                            "15th",
+                            "{@spell Demiplane}",
+                            "8"
+                        ],
+                        [
+                            "17th",
+                            "{@spell Gate}",
+                            "9"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Into The Unknown",
+            "source": "Morb",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Planeswalker",
+            "subclassSource": "Morb",
+            "level": 6,
+            "header": 2,
+            "consumes": {
+                "name": "Sorcery Points"
+            },
+            "entries": [
+                "Starting at 6th level, whenever you teleport with {@spell misty step}, {@spell thunder step|XGE} or {@spell far step|XGE}, you may choose to gain the effect of the {@spell blink} spell until the start of your next turn as you try to push your Spark magic further. You may also spend 1 sorcery point to gain the benefits described below for one of the affinities chosen in your {@subclassFeature Planeswalker Magic|Sorcerer|PHB|Planeswalker|Morb|1|Morb} feature.",
+                {
+                    "type": "entries",
+                    "name": "White Affinity",
+                    "entries": [
+                        "You gain temporary hit points equal to your proficiency bonus. If you only have affinity to white, you gain twice as many temporary hit points instead."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Blue Affinity",
+                    "entries": [
+                        "The spot where you were standing becomes the center of the effect of a {@spell nathair's mischief} spell that lasts until your next turn. If you only have affinity to blue, the effect lasts one extra round."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Red Affinity",
+                    "entries": [
+                        "You deal damage to all creatures within 5 feet of where you were standing equal to twice your proficiency bonus. If you only have affinity to red, the range increases to 10 feet."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Black Affinity",
+                    "entries": [
+                        "You gain the effect of the {@spell blur} spell until your next turn or until you're hit with an attack. If you only have affinity to black, attack hits do not cancel the effect."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Green Affinity",
+                    "entries": [
+                        "The spot where you were standing becomes the center of the effect of a {@spell spike growth} spell that lasts until your next turn. If you only have affinity to green, its duration increased to 1 minute."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Far Traveler",
+            "source": "Morb",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Planeswalker",
+            "subclassSource": "Morb",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "Starting at 14th level, the range of your {@spell misty step}, {@spell thunder step} and {@spell far step} spells increases by 30 feet. Furthermore, the range on your {@spell dimension door} and {@spell arcane gate} spells is doubled.",
+                "Whenever you cast the {@spell teleport} spell, you're always on target as long as you've seen the destination at least once."
+            ]
+        },
+        {
+            "name": "One With The Planes",
+            "source": "Morb",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Planeswalker",
+            "subclassSource": "Morb",
+            "level": 18,
+            "header": 2,
+            "consumes": {
+                "name": "Sorcery Points",
+                "amount": 5
+            },
+            "entries": [
+                "Starting at 18th level, you can connect yourself to one of the various planes of existance as a bonus action, drawing power from it until you release it with a burst, causing an effect depending on the affinities chosen in your {@subclassFeature Planeswalker Magic|Sorcerer|PHB|Planeswalker|Morb|1|Morb} feature.",
+                {
+                    "type": "entries",
+                    "name": "White Affinity",
+                    "entries": [
+                        "Each creature of your choice within 30 feet of you must succeed on a Constitution saving throw against your spell save DC or be {@condition blinded} until the end of its next turn. If you only have affinity to white, each creature of your choice within 30 feet of you gains {@dice 3d4} temporary hit points."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Blue Affinity",
+                    "entries": [
+                        "Each creature of your choice within 30 feet of you must succeed on a Charisma saving throw against your spell save DC or be {@condition charmed} by you until the end of its next turn. If you only have affinity to blue, after the {@condition charmed} effect ends the affected creatures suffer the effect of the {@spell confusion} spell until the end of their next turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Red Affinity",
+                    "entries": [
+                        "Each creature of your choice within 30 feet of you must succeed on a Dexterity saving throw against your spell save DC or be {@condition lacerated|Ishiir}. If you only have affinity to red, the affected creatures are also {@condition dazed|Ishiir} until the start of their next turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Black Affinity",
+                    "entries": [
+                        "Each creature of your choice within 30 feet of you must succeed on a Wisdom saving throw against your spell save DC or be {@condition frightened} of you until the end of its next turn. If you only have affinity to black, the creatures have disadvantage on the saving throw."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Green Affinity",
+                    "entries": [
+                        "Each creature of your choice within 30 feet of you must succeed on a Constitution saving throw against your spell save DC or be {@condition poisoned} until the end of its next turn. If you only have affinity to green, the creatures are {@condition stunned} instead."
+                    ]
+                },
+                "Once you use this feature, you can't do so again until you finish a long rest, unless you spend 5 sorcery points to use it again."
+            ]
+        }
+    ]
+}
