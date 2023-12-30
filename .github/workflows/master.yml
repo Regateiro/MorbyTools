@@ -10,7 +10,7 @@ on:
 
 env:
    # See: https://docs.github.com/en/packages/managing-github-packages-using-github-actions-workflows/publishing-and-installing-a-package-with-github-actions#upgrading-a-workflow-that-accesses-ghcrio
-   IMAGE_NAME: 5etools
+   IMAGE_NAME: morbytools
 
    # Used to force a clean (i.e., non-incremental) Docker build
 #   DO_CLEAN_BUILD: 1
@@ -45,7 +45,7 @@ jobs:
                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
    create-image:
-      runs-on: ubuntu-latest
+      runs-on: [self-hosted, Linux, X64]
       steps:
          -  uses: actions/checkout@master
 
@@ -76,7 +76,7 @@ jobs:
          -  name: Build SEO Pages
             env:
                VET_SEO_IS_DEV_MODE: true
-               VET_BASE_SITE_URL: https://5etools-mirror-1.github.io/
+               VET_BASE_SITE_URL: https://regateiro.github.io/
                VET_SEO_IS_SKIP_UA_ETC: true
             run: |
                npm run build:seo -- ${{ github.ref_name }}
