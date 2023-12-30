@@ -57,7 +57,7 @@ jobs:
 
          -  name: Cleanup
             run: |
-               rm -rf node_modules node .gitmodules *.md *.zip scss spellcheck prerelease
+               rm -rf node_modules node .gitmodules *.md *.zip scss spellcheck
                ls -lah
 
          -  name: Setup Pages
