@@ -45,7 +45,7 @@ jobs:
                npm run build:sw:prod
                sed -i 's/sw.js//g' .gitignore
                sed -i 's/sw-injector.js//g' .gitignore
-               sed -i 's/IS_DEPLOYED="master"/IS_DEPLOYED=undefined/g'
+               sed -i 's/IS_DEPLOYED="master"/IS_DEPLOYED=undefined/g' js/utils.js
 
          -  name: Build SEO Pages
             env:
