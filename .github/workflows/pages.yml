@@ -42,7 +42,7 @@ jobs:
                node --version
                npm --version
                npm i
-               npm run build:sw:prod
+               npm run build:sw
                sed -i 's/sw.js//g' .gitignore
                sed -i 's/sw-injector.js//g' .gitignore
 
