@@ -2212,6 +2212,60 @@
             ]
         },
         {
+            "name": "Arcane Sight",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 7,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "For the duration, you can clearly perceive magic within 120 feet of you. You automatically see through magical illusions and magical darkness. You also automatically succeed on identifying any spells that are being cast or are already active in that radius. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+                "As an action, you concentrate on a creature you can see. If you do so, you learn what spellcasting abilities the creature has, if any, as well as the highest spell level it has access to."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Armor of Agathys",
             "page": 1,
             "source": "Ishiir",
@@ -4837,6 +4891,68 @@
                             "source": "Ishiir",
                             "shortName": "Witherbloom"
                         }
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Blindsense",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 5,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a tuft of hair from a mole"
+            },
+            "duration": [
+                {
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "type": "timed"
+                }
+            ],
+            "entries": [
+                "You touch a willing creature to grant it the ability to perceive the world around it without its eyes. For the duration, that creature has {@sense blindsight} out to a range of 60 feet."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -14417,6 +14533,64 @@
                             "source": "Ishiir",
                             "shortName": "Lolth"
                         }
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Discern Location",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "D",
+            "time": [
+                {
+                    "number": 10,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You name an object or creature you have seen at least once. You learn the current location of the target. The spell tells you the plane of existence and exact information about the location, such as the name of a city and an address. If the specific location does not have a name, the spell gives a short description of it with basic directions instead. If the target is an object, the spell tells you who currently has ownership of it.",
+                "This spell ignores protection from divination magic except for the {@spell mind blank|Ishiir} spell."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
                     }
                 ]
             },
