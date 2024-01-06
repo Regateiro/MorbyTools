@@ -1,14 +1,45 @@
 {
     "spell_metadata": {
-        "Abi-Dalzim's Horrid Wilting": {},
+        "Abi-Dalzim's Horrid Wilting": {
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "areaTags": [
+                "MT"
+            ]
+        },
         "Acid Fog": {},
         "Acid Pit": {},
+        "Aid": {
+            "duration": [
+                {
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    },
+                    "type": "timed"
+                }
+            ]
+        },
         "Animal Shapes": {},
         "Antipathy/Sympathy": {
             "time": [
                 {
                     "number": 1,
                     "unit": "action"
+                }
+            ],
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 30
+                    }
                 }
             ]
         },
@@ -96,9 +127,46 @@
         },
         "Conjure Barrage": {},
         "Conjure Celestial": {},
+        "Contingency": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 30
+                    }
+                }
+            ]
+        },
         "Cordon of Arrows": {},
         "Create Undead": {},
-        "Death Ward": {},
+        "Dark Star": {
+            "savingThrow": [
+                "strength"
+            ]
+        },
+        "Darkvision": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
+            ]
+        },
+        "Death Ward": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
+            ]
+        },
         "Divine Word": {
             "savingThrow": [
                 "charisma",
@@ -110,6 +178,17 @@
                 "thunder"
             ]
         },
+        "Druid Grove": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
+            ]
+        },
         "Dust Devil": {},
         "Earth Tremor": {},
         "Earthquake": {},
@@ -117,6 +196,18 @@
         "Elemental Weapon": {},
         "Enervation": {},
         "Erupting Earth": {},
+        "Etherealness": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7,
+                        "upTo": true
+                    }
+                }
+            ]
+        },
         "Eyebite": {
             "time": [
                 {
@@ -128,6 +219,17 @@
         "Feeblemind": {},
         "Find Greater Steed": {},
         "Find Steed": {},
+        "Find the Path": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 21
+                    }
+                }
+            ]
+        },
         "Flame Arrows": {
             "duration": [
                 {
@@ -158,8 +260,30 @@
                 }
             ]
         },
+        "Foresight": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
+            ]
+        },
         "Fortify": {},
         "Geas": {},
+        "Gift of Alacrity": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
+            ]
+        },
         "Grand Impact": {},
         "Grasping Vine": {
             "savingThrow": [
@@ -178,6 +302,16 @@
                 "slashing"
             ]
         },
+        "Gravity Fissure": {
+            "savingThrow": [
+                "strength"
+            ]
+        },
+        "Gravity Sinkhole": {
+            "savingThrow": [
+                "strength"
+            ]
+        },
         "Greater Restoration": {},
         "Green-Flame Blade": {
             "components": {
@@ -189,6 +323,28 @@
             "range": {
                 "type": "special"
             }
+        },
+        "Guards and Wards": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
+            ]
+        },
+        "Hallucinatory Terrain": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
+            ]
         },
         "Harm": {},
         "Heal": {},
@@ -310,8 +466,24 @@
         "Locate Creature": {},
         "Maddening Darkness": {},
         "Maelstrom": {},
+        "Mage Armor": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
+            ]
+        },
         "Magic Stone": {},
         "Magic Weapon": {},
+        "Magnify Gravity": {
+            "savingThrow": [
+                "strength"
+            ]
+        },
         "Mass Polymorph": {
             "savingThrow": [
                 "constitution"
@@ -319,11 +491,31 @@
         },
         "Melf's Acid Arrow": {},
         "Mind Blank": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 30
+                    }
+                }
+            ],
             "conditionImmune": [
                 "charmed",
                 "confused",
                 "dominated",
                 "frightened"
+            ]
+        },
+        "Mirage Arcane": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 30
+                    }
+                }
             ]
         },
         "Mislead": {
@@ -344,6 +536,28 @@
         "Moon Bolt": {},
         "Moonfall": {},
         "Moonfire": {},
+        "Mordenkainen's Magnificent Mansion": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
+            ]
+        },
+        "Mordenkainen's Private Sanctum": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
+            ]
+        },
         "Mordenkainen's Sword": {
             "duration": [
                 {
@@ -356,6 +570,28 @@
             ]
         },
         "Negative Energy Flood": {},
+        "Nondetection": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
+            ]
+        },
+        "Nystul's Magic Aura": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 21
+                    }
+                }
+            ]
+        },
         "Phantasmal Force": {},
         "Phantasmal Killer": {},
         "Poison Spray": {
@@ -403,10 +639,21 @@
                 }
             ]
         },
+        "Pulse Wave": {
+            "savingThrow": [
+                "strength"
+            ]
+        },
         "Raulothim's Psychic Lance": {},
         "Ravage from Within": {},
         "Ravenous Void": {},
         "Ray of Sickness": {},
+        "Reality Break": {
+            "savingThrow": [
+                "charisma",
+                "dexterity"
+            ]
+        },
         "Regenerate": {
             "time": [
                 {
@@ -415,11 +662,27 @@
                 }
             ]
         },
+        "Reverse Gravity": {
+            "savingThrow": [
+                "strength"
+            ]
+        },
         "Rupture": {},
         "Sanguine Echo": {},
         "Sanguine Vortex": {},
         "Seamantle": {},
         "Searing Smite": {},
+        "Seeming": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
+            ]
+        },
         "Shield": {
             "time": [
                 {
@@ -460,7 +723,23 @@
                 "ST"
             ]
         },
+        "Slow": {
+            "savingThrow": [
+                "charisma"
+            ]
+        },
         "Snilloc's Snowball Swarm": {},
+        "Soul Cage": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
+            ]
+        },
         "Spell Mantle": {},
         "Spell Turning": {},
         "Staggering Smite": {
@@ -496,8 +775,28 @@
             }
         },
         "Telepathy": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 30
+                    }
+                }
+            ],
             "savingThrow": [
                 "wisdom"
+            ]
+        },
+        "Temple of the Gods": {
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
             ]
         },
         "Temporal Shunt": {
