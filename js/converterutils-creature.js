@@ -1374,6 +1374,7 @@ class SpellcastingTraitConvert {
 				{re: /\/rest/i, prop: "rest"},
 				{re: /\/day/i, prop: "daily"},
 				{re: /\/week/i, prop: "weekly"},
+				{re: /\/month/i, prop: "monthly"},
 				{re: /\/yeark/i, prop: "yearly"},
 			];
 
