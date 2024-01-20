@@ -7435,31 +7435,6 @@
             }
         },
         {
-            "name": "Insignia of Claws",
-            "source": "Ishiir",
-            "page": 1,
-            "rarity": "uncommon",
-            "wondrous": true,
-            "bonusWeapon": "+1",
-            "entries": [
-                "The jewels in the insignia of the Cult of the Dragon flare with purple light when you enter combat, empowering your natural fists or natural weapons.",
-                "While wearing the insignia you gain a +1 bonus to the attack rolls and the damage rolls you make with unarmed strikes and natural weapons. Such attacks are considered to be magical."
-            ],
-            "type": "CRF",
-            "value": 375000,
-            "crafted": {
-                "skill": [
-                    "Enchanting"
-                ],
-                "dc": 16,
-                "ingredient": [
-                    "Beast Claw",
-                    "Beast Fang",
-                    "Fiendish Fang"
-                ]
-            }
-        },
-        {
             "name": "Naushindhor's Stone: Agility",
             "source": "Ishiir",
             "page": 1,
@@ -19213,6 +19188,40 @@
                 "When you attack an object with the weapon, maximize your weapon damage dice against the target.",
                 "When you attack a creature with the weapon and score a critical hit, that target takes an extra 14 damage of the weapon's type. Then roll another {@dice d20}. If you roll a 20, you lop off one of the target's limbs, with the effect of such loss determined by the DM. If the creature has no limb to sever, you lop off a portion of its body instead.",
                 "In addition, you can speak a command word to cause the weapon to shed bright light in a 10-foot radius and dim light for an additional 10 feet. Speaking the command word again or sheathing the weapon puts out the light."
+            ]
+        },
+        {
+            "name": "Perfect Balance",
+            "page": 1,
+            "source": "Ishiir",
+            "type": "PR",
+            "typeAlt": "CRF",
+            "rarity": "none",
+            "reqAttune": "by a monk",
+            "reqAttuneTags": [
+                {
+                    "class": "monk|Ishiir"
+                }
+            ],
+            "value": 100000,
+            "crafted": {
+                "skill": [
+                    "Weaponsmithing"
+                ],
+                "dc": 4,
+                "material": [
+                    "High Steel or higher"
+                ],
+                "ingredient": [
+                    "Beast Feather"
+                ],
+                "requiresItemType": [
+                    "Monk Weapon"
+                ]
+            },
+            "entries": [
+                "{@i Requirement: Monk Weapons.}",
+                "Once per day, you can use your Patience Defense feature using a reaction."
             ]
         },
         {
