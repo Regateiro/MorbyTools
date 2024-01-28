@@ -1,0 +1,1237 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Ishiir",
+                "abbreviation": "Ishiir",
+                "full": "Ishiir",
+                "url": "https://regateiro.pt/5etools/homebrew/ishiir-warlord.json",
+                "authors": [
+                    "Sieg"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "class": [
+        {
+            "name": "Warlord",
+            "source": "Ishiir",
+            "page": 1,
+            "hd": {
+                "number": 1,
+                "faces": 8
+            },
+            "proficiency": [
+				"Wisdom",
+				"and your choice of Intelligence or Charisma"
+			],
+            "startingProficiencies": {
+                "armor": [
+                    "light",
+                    "medium",
+                    "heavy",
+                    "{@item shield|phb|shields}"
+                ],
+                "weapons": [
+                    "simple",
+                    "martial"
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "athletics",
+                                "deception",
+                                "history",
+                                "insight",
+                                "intimidation",
+                                "perception",
+                                "persuasion",
+                                "religion"
+                            ],
+                            "count": 3
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "default": [
+                    "(a) {@item chain mail|phb} or (b) {@item leather armor|phb}, {@item longbow|phb}, and {@item arrows (20)|phb|20 arrows}",
+                    "(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
+                    "(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) two {@item handaxe|phb|handaxes}",
+                    "(a) a {@item diplomat's pack|phb} or (b) an {@item explorer's pack|phb}"
+                ],
+                "goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+                "defaultData": [
+                    {
+                        "a": [
+                            "chain mail|phb"
+                        ],
+                        "b": [
+                            "leather armor|phb",
+                            "longbow|phb",
+                            "arrows (20)|phb"
+                        ]
+                    },
+                    {
+                        "a": [
+                            {
+                                "equipmentType": "weaponMartial"
+                            },
+                            "shield|phb"
+                        ],
+                        "b": [
+                            {
+                                "equipmentType": "weaponMartial",
+                                "quantity": 2
+                            }
+                        ]
+                    },
+                    {
+                        "a": [
+                            "light crossbow|phb",
+                            "crossbow bolts (20)|phb"
+                        ],
+                        "b": [
+                            {
+                                "item": "handaxe|phb",
+                                "quantity": 2
+                            }
+                        ]
+                    },
+                    {
+                        "a": [
+                            "diplomat's pack|phb"
+                        ],
+                        "b": [
+                            "explorer's pack|phb"
+                        ]
+                    }
+                ]
+            },
+            "multiclassing": {
+                "requirements": {
+                    "or": [
+                        {
+                            "str": 13,
+                            "dex": 13
+                        },
+                        {
+                            "int": 13,
+                            "wis": 13,
+                            "cha": 13
+                        }
+                    ]
+                },
+                "proficienciesGained": {
+                    "armor": [
+                        "light",
+                        "medium",
+                        "{@item shield|phb|shields}"
+                    ],
+                    "weapons": [
+                        "simple",
+                        "martial"
+                    ]
+                }
+            },
+            "classFeatures": [
+                "Leadership Ability Score|Warlord|Ishiir|1",
+                "Field Commander|Warlord|Ishiir|1",
+                "Tactical Mind|Warlord|Ishiir|2",
+                "Inspiring Surge|Warlord|Ishiir|2",
+                {
+                    "classFeature": "Leadership Path|Warlord|Ishiir|3",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Warlord|Ishiir|4",
+                "Martial Mastery|Warlord|Ishiir|4",
+                "Concerted Attack|Warlord|Ishiir|5",
+                {
+                    "classFeature": "Leadership Path feature|Warlord|Ishiir|6",
+                    "gainSubclassFeature": true
+                },
+                "Improved Inspiring Surge|Warlord|Ishiir|7",
+                "Ability Score Improvement|Warlord|Ishiir|8",
+                "Call to Arms|Warlord|Ishiir|9",
+                {
+                    "classFeature": "Leadership Path feature|Warlord|Ishiir|10",
+                    "gainSubclassFeature": true
+                },
+                "Veteran Field Commander|Warlord|Ishiir|11",
+                "Ability Score Improvement|Warlord|Ishiir|12",
+                "Improved Concerted Attack|Warlord|Ishiir|13",
+                {
+                    "classFeature": "Leadership Path feature|Warlord|Ishiir|14",
+                    "gainSubclassFeature": true
+                },
+                "Tactical Flexibility|Warlord|Ishiir|15",
+                "Ability Score Improvement|Warlord|Ishiir|16",
+                "Legendary Field Commander|Warlord|Ishiir|17",
+                {
+                    "classFeature": "Leadership Path feature|Warlord|Ishiir|18",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Warlord|Ishiir|19",
+                "Finest Hour|Warlord|Ishiir|20"
+            ],
+            "subclassTitle": "Leadership Path"
+        }
+    ],
+    "classFeature": [
+        {
+            "name": "Leadership Ability Score",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "Some of your features reference your leadership ability score. It represents how you command the respect and loyalty of those around you, as well as how you lead them in battle. Perhaps you are an experienced veteran, survivor of dozens of military conflicts both large and small, a cunning tactician with an academic background in the study of warfare, or a driven idealist with a larger-than-life personality.",
+                "At 1st level, choose Intelligence, Wisdom, or Charisma. The chosen ability score becomes your leadership ability score."
+            ]
+        },
+        {
+            "name": "Field Commander",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "Beginning at 1st level, you learn how to become the centerpiece of a fighting unit and direct others to fight more effectively. Choose an ally within 60 feet that can see or hear you and isn't incapacitated and select one of the options below. You can use any number of the listed options on the same ally or divide them up between multiple allies.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        "On your turn, you can use your bonus action to give the target an additional bonus action on their next turn. Alternatively, the target can use its reaction to use this bonus action immediately.",
+                        "You can use your reaction to give the target an additional reaction until the start of your next turn. This reaction cannot be used on the same turn as their normal reaction.",
+                        "On your turn, you can subtract a multiple of 5 from your speed and add the amount to the target's speed for its next turn. The amount of speed the target gains in this manner cannot be higher than its base speed. This feature has no effect on a target whose speed is currently 0. You can choose multiple targets. If you do so, you have to divide the amount you subtract among the targets in multiples of 5. Any one of the targets can choose to use their reaction to move up to the speed gained in this manner immediately. This movement does not provoke opportunity attacks. If it does not use up all speed gained in this manner, it loses the rest."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tactical Mind",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "Beginning at 2nd level, you add your leadership ability modifier to your initiative."
+            ]
+        },
+        {
+            "name": "Inspiring Surge",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "Beginning at 2nd level, you learn to inspire your allies to draw on their hidden reserves and keep fighting. As a bonus action, choose a number of allies equal to half your proficiency (rounded up) within 60 feet that can see or hear you and aren't incapacitated. A target can immediately spend a hit die as if it had taken a rest, gaining hit points as normal."
+            ]
+        },
+        {
+            "name": "Leadership Path",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "At 3rd level, you choose an archetype from the list available that you strive to emulate in your combat styles and techniques. The archetype you choose grants you features at 3rd level and again at 6th, 10th, 14th, and 18th level."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 4,
+            "entries": [
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+            ]
+        },
+        {
+            "name": "Martial Mastery",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 4,
+            "entries": [
+                "Starting at 2nd level, you gain the mastery benefits for two {@filter weapons|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} of your choice as well as an {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} type (see {@variantrule Armor Mastery|Ishiir} and {@variantrule Weapon Mastery|Ishiir} variant rules). You must be proficient in the chosen weapons and armor. If you possess the Unarmored Defense feature, you may {@optfeature Unarmored Defense|Ishiir|choose it} in place of an armor type.",
+                "You can change your choices when you finish a short or long rest."
+            ]
+        },
+        {
+            "name": "Concerted Attack",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 5,
+            "entries": [
+                "Beginning at 5th level, you and your allies form a more effective fighting force. When you use the attack action on your turn, an ally of your choice within 60 feet that can see or hear you can use its reaction to make a weapon attack."
+            ]
+        },
+        {
+            "name": "Leadership Path feature",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "At 6th level, you gain a feature granted by your Leadership Path."
+            ]
+        },
+        {
+            "name": "Improved Inspiring Surge",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 7,
+            "entries": [
+                "Beginning at 7th level, you add your leadership ability modifier to the number of hitpoints targets regain from your Inspiring Surge."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 8,
+            "entries": [
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+            ]
+        },
+        {
+            "name": "Call to Arms",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 9,
+            "entries": [
+                "Beginning at 9th level, if you are not incapacitated or surprised at the start of combat, you can add your leadership modifier to the initiative roll of all allies of your choice within 60 feet that can see or you and aren't incapacitated or surprised."
+            ]
+        },
+        {
+            "name": "Leadership Path feature",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 10,
+            "entries": [
+                "At 10th level, you gain a feature granted by your Leadership Path."
+            ]
+        },
+        {
+            "name": "Veteran Field Commander",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 11,
+            "entries": [
+                "Beginning at 11th level, when you give your bonus action or reaction to an ally, you can target two allies instead of one. You can do so only once per turn. "
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 12,
+            "entries": [
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+            ]
+        },
+        {
+            "name": "Improved Concerted Attack",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 13,
+            "entries": [
+                "Beginning at 13th level, you can choose up to two allies for your Concerted Attack. Alternatively, you can choose to make two weapon attacks instead of one with your attack action."
+            ]
+        },
+        {
+            "name": "Leadership Path feature",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "At 14th level, you gain a feature granted by your Leadership Path."
+            ]
+        },
+        {
+            "name": "Tactical Flexibility",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 15,
+            "entries": [
+                "Beginning at 15th level, you can grant your allies attacks as per the Concerted Strike class feature even when you use your action for something other than the attack action."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 16,
+            "entries": [
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+            ]
+        },
+        {
+            "name": "Legendary Field Commander",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 17,
+            "entries": [
+                "Beginning at 17th level, as an action, you can choose one ally within 60 feet of you that can see or hear you. That ally gains an additional action on their next turn. Alternatively, the target can take its reaction to use this action immediately."
+            ]
+        },
+        {
+            "name": "Leadership Path feature",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 18,
+            "entries": [
+                "At 18th level, you gain a feature granted by your Leadership Path."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 19,
+            "entries": [
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+            ]
+        },
+        {
+            "name": "Finest Hour",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "level": 20,
+            "entries": [
+                "Beginning at 20th level, your leadership can temporarily inspire your companions to transcend their limits. On your turn, choose an ally within 60 feet that can see or hear you and isn't incapacitated. That ally gains an additional turn immediately after your current one.",
+                "You cannot use this feature again until you have completed a long rest."
+            ]
+        }
+    ],
+    "subclass": [
+        {
+            "name": "Captain",
+            "shortName": "Captain",
+            "source": "Ishiir",
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "page": 1,
+            "subclassFeatures": [
+                "Captain|Warlord|Ishiir|Captain|Ishiir|3",
+                "Hold the Line|Warlord|Ishiir|Captain|Ishiir|6",
+                "Contingency Plans|Warlord|Ishiir|Captain|Ishiir|10",
+                "Focused Strikes|Warlord|Ishiir|Captain|Ishiir|14",
+                "Outmaneuver|Warlord|Ishiir|Captain|Ishiir|18"
+            ]
+        },
+        {
+            "name": "Crusader",
+            "shortName": "Crusader",
+            "source": "Ishiir",
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "page": 1,
+            "spellcastingAbility": "Leadership",
+            "casterProgression": "1/3",
+            "cantripProgression": [
+                0,
+                0,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3
+            ],
+            "spellsKnownProgression": [
+                0,
+                0,
+                3,
+                4,
+                4,
+                4,
+                5,
+                6,
+                6,
+                7,
+                8,
+                8,
+                9,
+                10,
+                10,
+                11,
+                11,
+                11,
+                12,
+                13
+            ],
+            "additionalSpells": [
+				{
+                    "ability": "Leadership",
+					"expanded": {
+						"3": [
+							{
+								"all": "level=0|class=Cleric (Ishiir)|source=Ishiir"
+							},
+							{
+								"all": "level=1|class=Cleric (Ishiir)|source=Ishiir"
+							}
+						],
+						"7": [
+							{
+								"all": "level=2|class=Cleric (Ishiir)|source=Ishiir"
+							}
+						],
+						"13": [
+							{
+								"all": "level=3|class=Cleric (Ishiir)|source=Ishiir"
+							}
+						],
+						"19": [
+							{
+								"all": "level=4|class=Cleric (Ishiir)|source=Ishiir"
+							}
+						]
+					}
+				}
+			],
+            "subclassTableGroups": [
+                {
+                    "subclasses": [
+                        {
+                            "name": "Crusader",
+                            "source": "Ishiir"
+                        }
+                    ],
+                    "colLabels": [
+                        "{@filter Cantrips Known|spells|level=0|class=Cleric (Ishiir)|source=Ishiir}",
+                        "{@filter Spells Known|spells|class=Cleric (Ishiir)|source=Ishiir}"
+                    ],
+                    "rows": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            3
+                        ],
+                        [
+                            2,
+                            4
+                        ],
+                        [
+                            2,
+                            4
+                        ],
+                        [
+                            2,
+                            4
+                        ],
+                        [
+                            2,
+                            5
+                        ],
+                        [
+                            2,
+                            6
+                        ],
+                        [
+                            2,
+                            6
+                        ],
+                        [
+                            3,
+                            7
+                        ],
+                        [
+                            3,
+                            8
+                        ],
+                        [
+                            3,
+                            8
+                        ],
+                        [
+                            3,
+                            9
+                        ],
+                        [
+                            3,
+                            10
+                        ],
+                        [
+                            3,
+                            10
+                        ],
+                        [
+                            3,
+                            11
+                        ],
+                        [
+                            3,
+                            11
+                        ],
+                        [
+                            3,
+                            11
+                        ],
+                        [
+                            3,
+                            12
+                        ],
+                        [
+                            3,
+                            13
+                        ]
+                    ]
+                },
+                {
+                    "title": "Spell Slots per Spell Level",
+                    "subclasses": [
+                        {
+                            "name": "Crusader",
+                            "source": "Ishiir"
+                        }
+                    ],
+                    "colLabels": [
+                        "{@filter 1st|spells|level=1|class=Cleric (Ishiir)|source=Ishiir}",
+                        "{@filter 2nd|spells|level=2|class=Cleric (Ishiir)|source=Ishiir}",
+                        "{@filter 3rd|spells|level=3|class=Cleric (Ishiir)|source=Ishiir}",
+                        "{@filter 4th|spells|level=4|class=Cleric (Ishiir)|source=Ishiir}"
+                    ],
+                    "rowsSpellProgression": [
+                        [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1
+                        ]
+                    ]
+                }
+            ],
+            "subclassFeatures": [
+                "Crusader|Warlord|Ishiir|Crusader|Ishiir|3",
+                "Holy Arms|Warlord|Ishiir|Crusader|Ishiir|6",
+                "Smite Infidel|Warlord|Ishiir|Crusader|Ishiir|10",
+                "Litany of Purgation|Warlord|Ishiir|Crusader|Ishiir|14",
+                "Aegis of Faith|Warlord|Ishiir|Crusader|Ishiir|18"
+            ]
+        },
+        {
+            "name": "Warchief",
+            "shortName": "Warchief",
+            "source": "Ishiir",
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "page": 1,
+            "subclassFeatures": [
+                "Warchief|Warlord|Ishiir|Warchief|Ishiir|3",
+                "Intimidating Shout|Warlord|Ishiir|Warchief|Ishiir|6",
+                "Thrill of Victory|Warlord|Ishiir|Warchief|Ishiir|10",
+                "Defy Death|Warlord|Ishiir|Warchief|Ishiir|14",
+                "Inspired Ferocity|Warlord|Ishiir|Warchief|Ishiir|18"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Captain",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Captain",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Fighting Style|Warlord|Ishiir|Captain|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Formation Fighting|Warlord|Ishiir|Captain|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Fighting Style",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Captain",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again.",
+                {
+                    "type": "options",
+                    "count": 1,
+                    "entries": [
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Archery|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Close Quarters Shooter|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Defense|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Dueling|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Great Weapon Fighting|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Mariner|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Protection|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Tunnel Fighter|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Two-Weapon Fighting|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Superior Technique|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Blind Fighting|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Interception|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Thrown Weapon Fighting|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Unarmed Fighting|Ishiir"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Formation Fighting",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Captain",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "Beginning at 3rd level, while you are not incapacitated, allies within 5 ft of you have half-cover against weapon attacks and you add your leadership ability modifier to the damage roll of the first weapon attack they hit with on a turn. You can extend this benefit to allies that are farther than 5 ft away from you, as long as they are within 5 ft of an ally that already is under the effect of this feature and isn't incapacitated."
+            ]
+        },
+        {
+            "name": "Hold the Line",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Captain",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "Beginning at 6th level, while you are not incapacitated, attack rolls against allies that benefit from your Formation Fighting cannot have advantage. Additionally, you and all allies under the effect of your Formation Fighting add your leadership ability modifier to saving throws and ability checks against being knocked prone, pushed, or otherwise forced to move."
+            ]
+        },
+        {
+            "name": "Contingency Plans",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Captain",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "entries": [
+                "Beginning at 10th level, as long as you are not incapacitated, you and allies within 60 feet that can see or hear you cannot be surprised."
+            ]
+        },
+        {
+            "name": "Focused Strikes",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Captain",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "Beginning at 14th level, when you hit a creature with a weapon attack, all attacks granted to your allies through your Concerted Attack that target the same creature are made with advantage."
+            ]
+        },
+        {
+            "name": "Outmaneuver",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Captain",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "Beginning at 18th level, after initiative has been rolled, but before the first turn of combat, you and all allies within 60 feet that can see or hear you can move up to your speed without provoking opportunity attacks. This feature has no effect if you're incapacitated."
+            ]
+        },
+        {
+            "name": "Crusader",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Crusader",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Spellcasting|Warlord|Ishiir|Crusader|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Armor of Faith|Warlord|Ishiir|Crusader|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Spellcasting",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Crusader",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter cleric spell list|spells|class=cleric (Ishiir)|source=Ishiir}.",
+                {
+                    "type": "entries",
+                    "name": "Cantrips",
+                    "entries": [
+                        "You learn two cantrips of your choice from the {@filter cleric spell list|spells|class=cleric (Ishiir)|source=Ishiir}. You learn an additional cleric cantrip of your choice at 10th level."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Spell Slots",
+                            "entries": [
+                                "The Crusader Spellcasting table shows how many spell slots you have to cast your {@filter cleric spells|spells|class=cleric (Ishiir)|source=Ishiir} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+                                "For example, if you know the 1st-level spell {@spell bless|Ishiir} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell bless|Ishiir} using either slot."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Spells Known of 1st-Level and Higher",
+                            "entries": [
+                                "You know three 1st-level cleric spells of your choice.",
+                                "The Spells Known column of the Crusader Spellcasting table shows when you learn more cleric spells of 1st level or higher. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.",
+                                "Whenever you gain a level in this class, you can replace one of the cleric spells you know with another spell of your choice from the cleric spell list. The new spell must be of a level for which you have spell slots."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Spellcasting Ability",
+                            "entries": [
+                                "Your leadership ability modifier is your spellcasting ability for your cleric spells. You use your leadership ability modifier whenever a spell refers to your spellcasting ability. In addition, you use your leadership ability modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.",
+                                {
+                                    "type": "abilityDc",
+                                    "name": "Spell",
+                                    "attributes": [
+                                        "leadership"
+                                    ]
+                                },
+                                {
+                                    "type": "abilityAttackMod",
+                                    "name": "Spell",
+                                    "attributes": [
+                                        "leadership"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Armor of Faith",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Crusader",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "Beginning at 3rd level, you can target yourself with your Inspiring Surge. When you affect a creature with your Inspiring Surge and the target regains hitpoints in excess of its hitpoint maximum, it gains the difference as temporary hitpoints."
+            ]
+        },
+        {
+            "name": "Holy Arms",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Crusader",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "At 6th level, you learn the Sanctified Strike cantrip if you do not know it already. Additionally, you can cast Sanctified Strike in place of one attack when you take the attack action."
+            ]
+        },
+        {
+            "name": "Smite Infidel",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Crusader",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "entries": [
+                "Beginning at 10th level, once per turn, when you hit a creature with a weapon attack, you can mark that creature until the end of your next turn. The first attack that hits the marked creature deals additional radiant damage equal to half your warlord level (rounded down) + your leadership ability modifier."
+            ]
+        },
+        {
+            "name": "Litany of Purgation",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Crusader",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "Beginning at 14th level, when a creature is affected by your Inspiring Surge, it can immediately repeat a saving throw against one on-going effect on it that normally allows for repeated saving throws at the end of its turn. If it spends an additional hit die, it can make this saving throw with advantage. The target does not regain additional hitpoints from spending this additional hit die."
+            ]
+        },
+        {
+            "name": "Aegis of Faith",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Crusader",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "Beginning at 18th level, any creature that currently has temporary hitpoints from your Armor of Faith, is also considered to be under the effect of the {@spell Protection from Evil and Good|Ishiir} spell."
+            ]
+        },
+        {
+            "name": "Warchief",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Warchief",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Savage Resilience|Warlord|Ishiir|Warchief|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Warcry|Warlord|Ishiir|Warchief|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Savage Resilience",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Warchief",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "At 3rd level, your hit point maximum increases by 3 and increases by 1 again whenever you gain a level in this class.",
+                "Additionally, allies within 60 feet that can see or you, take reduced damage from bludgeoning, piercing, and slashing damage while you are not incapacitated. The reduction is equal to your leadership ability modifier."
+            ]
+        },
+        {
+            "name": "Warcry",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Warchief",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "Beginning at 3th level, when your allies are affected by your Inspiring Surge, you can choose to apply one of the following additional effects per ally:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        "The target has resistance to bludgeoning, piercing, and slashing damage until the start of your next turn.",
+                        "The target's speed is doubled until the start of your next turn.",
+                        "The target has advantage on melee weapon attack rolls until the start of your next turn, but attack rolls against it also have advantage for the duration."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Intimidating Shout",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Warchief",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "Beginning at 6th level, as an action, you force all hostile creatures within 60 feet that can hear you to make a Wisdom saving throw. On a failure, a target deals half damage on its weapon attacks that hit until the start of your next turn.",
+                "This feature has no effect against creatures that are immune to the frightened condition."
+            ]
+        },
+        {
+            "name": "Thrill of Victory",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Warchief",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "entries": [
+                "Beginning at 10th level, when an ally that you can see within 60 ft of you and that can see or hear you, reduces a creature to 0 hitpoints, it can immediately regain a hit die. This feature has no effect if you're incapacitated."
+            ]
+        },
+        {
+            "name": "Defy Death",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Warchief",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "Beginning at 14th level, if an ally that is currently affected by your Warcry is reduced to 0 hitpoints but not killed outright, it can spend hit dice up to a number equal to your leadership ability modifier as if it had taken a rest. Any excess damage from the instance of damage that reduced the ally to 0 hitpoints is then subtracted from the regained hitpoints."
+            ]
+        },
+        {
+            "name": "Inspired Ferocity",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlord",
+            "classSource": "Ishiir",
+            "subclassShortName": "Warchief",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "Beginning at 18th level, when an ally that is currently affected by your Warcry lands a critical hit, it deals additional damage equal to half your warlord level (rounded down) + your leadership ability modifier."
+            ]
+        }
+    ]
+}
