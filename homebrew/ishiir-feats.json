@@ -4990,53 +4990,48 @@
                 }
             ],
             "entries": [
+                "Your maximum amount of Sorcery point increases by an amount equal to your proficiency modifier. You can choose one additional kind of Metamagic.",
+                "You also gain the following additional Metamagic options. Each of these can be combined with any other Metamagic option that you know and does not cost any sorcery points.",
                 {
                     "type": "list",
                     "items": [
-                        "Your maximum amount of Sorcery point increases by an amount equal to your proficiency modifier. You can choose one additional kind of Metamagic.",
-                        "You also gain the following additional Metamagic options. Each of these can be combined with any other Metamagic option that you know and does not cost any sorcery points.",
+                        "Shape Spell: When you cast a spell with an area of effect that is either a cone, line, circle, or square, you can change the area of effect to a different one from the aforementioned. The size of the area of effect changes depending on the shape as below, rounded down to increments of 5:",
                         {
-                            "type": "list",
-                            "items": [
-                                "Shape Spell: When you cast a spell with an area of effect that is either a cone, line, circle, or square, you can change the area of effect to a different one from the aforementioned. The size of the area of effect changes depending on the shape as below, rounded down to increments of 5:",
-                                {
-                                    "type": "table",
-                                    "colLabels": [
-                                        "Shape",
-                                        "To Square/Circle",
-                                        "To Cone",
-                                        "To Line"
-                                    ],
-                                    "colStyles": [
-                                        "col-1 text-center",
-                                        "col-1 text-center",
-                                        "col-1 text-center",
-                                        "col-1 text-center"
-                                    ],
-                                    "rows": [
-                                        [
-                                            "Square/Circle",
-                                            "x1",
-                                            "x3",
-                                            "x5"
-                                        ],
-                                        [
-                                            "Cone",
-                                            "/3",
-                                            "x1",
-                                            "x5/3"
-                                        ],
-                                        [
-                                            "Line",
-                                            "/5",
-                                            "x3/5",
-                                            "x1"
-                                        ]
-                                    ]
-                                },
-                                "Shape Energy: When you cast a spell that deals damage, you can change the spell's element to a different one of your choice."
+                            "type": "table",
+                            "colLabels": [
+                                "Shape",
+                                "To Square/Circle",
+                                "To Cone",
+                                "To Line"
+                            ],
+                            "colStyles": [
+                                "col-1 text-center",
+                                "col-1 text-center",
+                                "col-1 text-center",
+                                "col-1 text-center"
+                            ],
+                            "rows": [
+                                [
+                                    "Square/Circle",
+                                    "x1",
+                                    "x3",
+                                    "x5"
+                                ],
+                                [
+                                    "Cone",
+                                    "/3",
+                                    "x1",
+                                    "x5/3"
+                                ],
+                                [
+                                    "Line",
+                                    "/5",
+                                    "x3/5",
+                                    "x1"
+                                ]
                             ]
-                        }
+                        },
+                        "Shape Energy: When you cast a spell that deals damage, you can change the spell's damage type to a different one of your choice."
                     ]
                 }
             ]
