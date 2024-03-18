@@ -1424,6 +1424,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Form of the Beast|Barbarian|Ishiir|Beast|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Beastial Fury|Barbarian|Ishiir|Beast|Ishiir|3"
                 }
             ]
         },
@@ -1439,31 +1443,73 @@
             "header": 1,
             "entries": [
                 "{@i 3rd-level Path of the Beast feature}",
-                "When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal.",
-                "You choose the weapon's form each time you rage:",
-                {
-                    "type": "list",
-                    "style": "list-hang-notitle",
-                    "items": [
-                        {
-                            "type": "item",
-                            "name": "Bite",
-                            "entry": "Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals {@damage 1d8} piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus."
-                        },
-                        {
-                            "type": "item",
-                            "name": "Claws",
-                            "entry": "Each of your hands transforms into a claw, which you can use as a weapon if it's empty. It deals {@damage 1d6} slashing damage on a hit. Once on each of your turns when you attack with a claw using the {@action Attack|Ishiir} action, you can make one additional claw attack as part of the same action."
-                        },
-                        {
-                            "type": "item",
-                            "name": "Tail",
-                            "entry": "You grow a lashing, spiny tail, which deals {@damage 1d8} piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a {@dice d8}, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you."
-                        }
-                    ]
-                }
+                "Your bestial spark manifests in the form of natural weapons.",
+                "Choose one of the following options: bite, claws, horns, hooves, pincers, or tail. You permanently gain the selected option as a natural weapon. It deals {@damage 1d8} damage on a hit. You can choose whether it deals bludgeoning, piercing, or slashing damage when you select it. It counts as a simple weapon for you and you use your Strength modifier for attack and damage rolls with it.",
+                "You can choose how the natural weapon looks exactly. For example, the bite option might give you long fangs, mandibles, or even a beak."
             ]
         },
+		{
+			"name": "Bestial Fury",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Barbarian",
+            "classSource": "Ishiir",
+            "subclassShortName": "Beast",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+			"entries": [
+				"When you enter your rage, the influence of your bestial spark on your form intensifies. You gain the listed benefit for your natural weapon for the duration of your rage. This effect only applies to attacks with your chosen natural weapon.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Bite",
+							"entries": [
+								"When you damage a creature, you regain hitpoints equal to half your proficiency (rounded up). This amount is doubled against creatures that have half or less of their maximum hitpoints and tripled if you reduce it to 0 hitpoints."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Claws",
+							"entries": [
+								"Once on each of your turns when you attack a creature, you can immediately make another attack."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Horns",
+							"entries": [
+								"Your critical range increases by 1. On your turn, when you move towards a creature in a straight line for the first time, you can add 1 damage for every 5 ft spent as part of that movement to the first melee weapon damage roll you make against that creature."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Hooves",
+							"entries": [
+								"Once per turn, when you hit a creature that is no more than 1 size larger than you, you can attempt to {@action shove|Ishiir} the target as part of this attack. Attacks against {@condition prone|Ishiir} creatures deal additional damage equal to your proficiency."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Pincers",
+							"entries": [
+								"Once per turn, when you hit a creature that is no more than 1 size larger than you, you can attempt to {@action grapple|Ishiir} the target as part of this attack. Creatures {@condition grappled|Ishiir} by you have disadvantage on attack rolls."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Tail",
+							"entries": [
+								"Your reach increases by 5 feet and when an enemy provokes an opportunity attack from you, you can make the attack without spending a reaction, but you cannot make another opportunity attack until the start of your next turn.",
+                                "If a creature you can see within your reach hits you with an attack roll, you can use your reaction to add your Strength modifier to your AC against that attack, possibly causing it to miss."
+							]
+						}
+					]
+				}
+			]
+		},
         {
             "name": "Bestial Soul",
             "source": "Ishiir",
