@@ -166,21 +166,21 @@
                                     "type": "item",
                                     "name": "Brass",
                                     "entries": [
-                                        "You can choose to exhale sleep gas with your breath weapon instead. Every creature in the area of effect must succed on a CON saving throw against your breath weapon DC or fall {@condition unconscious|Ishiir} for 10 minutes. This effect ends if the creature takes damage or another creature uses it's action to wake it."
+                                        "You can choose to exhale sleep gas in a 15 ft. cone with your breath weapon instead. Every creature in the area of effect must succed on a CON saving throw against your breath weapon DC or fall {@condition unconscious|Ishiir} for 10 minutes. This effect ends if the creature takes damage or another creature uses it's action to wake it."
                                     ]
                                 },
                                 {
                                     "type": "item",
                                     "name": "Bronze",
                                     "entries": [
-                                        "You can choose to exhale repulsive energy with your breath weapon instead. Every creature in the area of effect must succed on a STR saving throw against your breath weapon DC or take bludgeoning damage equal to half your breath weapon damage and be pushed away 30 feet and knocked {@condition prone|Ishiir}. If it collides with a creature or object, both it and the creature or object take bludgeoning damage equal to half your breath weapon damage."
+                                        "You can choose to exhale repulsive energy in a 15 ft. cone with your breath weapon instead. Every creature in the area of effect must succed on a STR saving throw against your breath weapon DC or take bludgeoning damage equal to half your breath weapon damage and be pushed away 30 feet and knocked {@condition prone|Ishiir}. If it collides with a creature or object, both it and the creature or object take bludgeoning damage equal to half your breath weapon damage."
                                     ]
                                 },
                                 {
                                     "type": "item",
                                     "name": "Copper",
                                     "entries": [
-                                        "You can choose exhale befuddling gas with your breath weapon instead. Every creature in the area of effect must succed on a WIS saving throw against your breath weapon DC or fall {@condition prone|Ishiir} laughing incontrollably for 1 minute. While under this effect, a creature is {@condition incapacitated|Ishiir} and cannot stand up. A creature with an Intelligence score of 4 or less isn't affected.",
+                                        "You can choose exhale befuddling gas in a 15 ft. cone with your breath weapon instead. Every creature in the area of effect must succed on a WIS saving throw against your breath weapon DC or fall {@condition prone|Ishiir} laughing incontrollably for 1 minute. While under this effect, a creature is {@condition incapacitated|Ishiir} and cannot stand up. A creature with an Intelligence score of 4 or less isn't affected.",
                                         "At the end of each of its turns, and when it takes damage, an affected creature can repeat the saving throw, ending the effect on a success."
                                     ]
                                 },
@@ -210,7 +210,7 @@
                                     "type": "item",
                                     "name": "Silver",
                                     "entries": [
-                                        "You can choose to exhale paralyzing energy with your breath weapon instead. Every creature in the area of effect must succed on a CON saving throw against your breath weapon DC or be {@condition paralyzed|Ishiir} for 1 minute. A creature can make a CON save at the end of each of its turns to end this effect."
+                                        "You can choose to exhale paralyzing energy in a 15 ft. cone with your breath weapon instead. Every creature in the area of effect must succed on a CON saving throw against your breath weapon DC or be {@condition paralyzed|Ishiir} for 1 minute. A creature can make a CON save at the end of each of its turns to end this effect."
                                     ]
                                 },
                                 {
@@ -1549,7 +1549,14 @@
             "source": "Ishiir",
             "ability": [
                 {
-                    "cha": 1
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
                 }
             ],
             "optionalfeatureProgression": [
@@ -1594,7 +1601,14 @@
             ],
             "ability": [
                 {
-                    "cha": 1
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
                 }
             ],
             "entries": [
