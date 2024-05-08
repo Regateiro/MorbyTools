@@ -1983,6 +1983,82 @@
             ]
         },
         {
+            "name": "Draconic Companion",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EI"
+            ],
+            "prerequisite": [
+                {
+                    "pact": "Chain",
+                    "patron": "The Dragon"
+                }
+            ],
+            "entries": [
+                "Your familiar takes on draconic features and changes its creature type to dragon if it wasn't already one. It has resistance against the damage type associated with your draconic patron. Additionally, its size increases to Medium.",
+                "As an action, your familiar can exhale destructive energy in a 30 ft cone. Each creature in the area has to make a DEX saving throw against your Spell Save DC. A target takes damage of the type associated with your patron equal to 2d6 + an additional 1d6 x your proficiency on a failed saved and half as much on a successful one.",
+                "Your familiar cannot use this action again until you have finished a short or long rest."
+            ]
+        },
+        {
+            "name": "Draconic Scales",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EI"
+            ],
+            "prerequisite": [
+                {
+                    "pact": "Blade",
+                    "patron": "The Dragon"
+                }
+            ],
+            "entries": [
+                "You gain the benefits of {@variantrule Armor Mastery|Ishiir} for {@optfeature Unarmored Defense|Ishiir} and you have resistance to the damage type associated with your draconic patron."
+            ]
+        },
+        {
+            "name": "Draconic Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EI"
+            ],
+            "prerequisite": [
+                {
+                    "pact": "Tome",
+                    "patron": "The Dragon"
+                }
+            ],
+            "entries": [
+                "When you roll a 1 or 2 on a damage die for a spell you cast that deals damage of the type associated with your draconic patron, you can reroll the die. You must use the new roll, even if it is a 1 or 2.",
+                "Additionally, you can also replace any of the spells learned through your Mystic Arcana with a spell that deals damage of the type associated with your draconic patron and is of the same spell level as the spell replaced in this manner."
+            ]
+        },
+        {
+            "name": "Draconic Wings",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EI"
+            ],
+            "prerequisite": [
+                {
+                    "patron": "The Dragon",
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Warlock"
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "You grow a pair of dragon wings and gain a flying speed equal to your walking speed. Any armor and clothing you want to don must accomodate them."
+            ]
+        },
+        {
             "name": "Dreadful Word",
             "source": "Ishiir",
             "page": 1,
@@ -2463,6 +2539,28 @@
             ],
             "entries": [
                 "As a bonus action, you cause a psychic disturbance around the target cursed by your {@spell hex|Ishiir} spell or by a warlock feature of yours, such as Hexblade's Curse or Sign of Ill Omen. When you do so, you deal psychic damage to the cursed target and each creature of your choice that you can see within 5 feet of it. The psychic damage equals your Charisma modifier (minimum of 1 damage). To use this invocation, you must be able to see the cursed target, and it must be within 30 feet of you."
+            ]
+        },
+        {
+            "name": "Magic Resistance",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EI"
+            ],
+            "prerequisite": [
+                {
+                    "patron": "The Dragon",
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "name": "Warlock"
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "You have advantage on saving throws against spells and other magical effects."
             ]
         },
         {
@@ -2966,6 +3064,52 @@
             "entries": [
                 "You can use any weapon you summon with your Pact of the Blade feature as a spellcasting focus for your warlock spells.",
                 "In addition, the weapon gains a +2 bonus to its attack and damage rolls, stacking with existing bonuses on the weapon except other Pact Weapon invocations, up to a maximum of +5 for the attack roll bonus."
+            ]
+        },
+        {
+            "name": "The Master's Boon",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EI"
+            ],
+            "prerequisite": [
+                {
+                    "patron": "The Dragon",
+                    "level": {
+                        "level": 18,
+                        "class": {
+                            "name": "Warlock"
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "Choose two ability scores from Strength, your Spellcasting Ability, and Constitution. The chosen ability scores and their maximums increase by 2.",
+                "Additionally, your average life expectancy is doubled."
+            ]
+        },
+        {
+            "name": "The Master's Presence",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EI"
+            ],
+            "prerequisite": [
+                {
+                    "patron": "The Dragon",
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Warlock"
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "As an action, you can exude your patron's frightening presence in a radius of 60 feet. Every creature of your choice in the area that is aware of you, must make a Wisdom saving throw against your spell save DC. On a failure, it is {@condition frightened|Ishiir} of you for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to your Frightful Presence for the next 24 hours.",
+                "You cannot use this feature again until you have finished a long rest."
             ]
         },
         {
