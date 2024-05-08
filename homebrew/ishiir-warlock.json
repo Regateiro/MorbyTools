@@ -1808,6 +1808,57 @@
                 "Kiss of the Spider Queen|Warlock|Ishiir|Lolth|Ishiir|14"
             ],
             "classSource": "Ishiir"
+        },
+        {
+            "name": "The Dragon",
+            "shortName": "Dragon",
+            "source": "Ishiir",
+            "className": "Warlock",
+            "subclassSpells": [
+                "cause fear",
+                "command",
+                "darkvision",
+                "dragon's breath",
+                "counterspell",
+                "dispel magic",
+                "elemental bane",
+                "spell turning",
+                "blindsense",
+                "spell mantle"
+            ],
+            "additionalSpells": [
+                {
+                    "expanded": {
+                        "s1": [
+                            "cause fear|Ishiir",
+                            "command|Ishiir"
+                        ],
+                        "s2": [
+                            "darkvision|Ishiir",
+                            "dragon's breath|Ishiir"
+                        ],
+                        "s3": [
+                            "counterspell|Ishiir",
+                            "dispel magic|Ishiir"
+                        ],
+                        "s4": [
+                            "elemental bane|Ishiir",
+                            "spell turning|Ishiir"
+                        ],
+                        "s5": [
+                            "blindsense|Ishiir",
+                            "spell mantle|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "The Dragon|Warlock|Ishiir|Dragon|Ishiir|1",
+                "Bonus Invocation|Warlock|Ishiir|Dragon|Ishiir|6",
+                "Legendary Resistance|Warlock|Ishiir|Dragon|Ishiir|10",
+                "The Master's Odem|Warlock|Ishiir|Dragon|Ishiir|14"
+            ],
+            "classSource": "Ishiir"
         }
     ],
     "subclassFeature": [
@@ -2092,6 +2143,294 @@
             "entries": [
                 "Starting at 14th level, the radiant energy you channel allows you to resist death. When you have to make a death saving throw at the start of your turn, you can instead spring back to your feet with a burst of radiant energy. You regain hit points equal to half your hit point maximum, and then you stand up if you so choose. Each creature of your choice that is within 30 feet of you takes radiant damage equal to {@dice 2d8} + your Charisma modifier, and it is {@condition blinded|Ishiir} until the end of the current turn.",
                 "Once you use this feature, you can't use it again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "The Dragon",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlock",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dragon",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Expanded Spell List",
+                    "entries": [
+                        "The Dragon lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+                        {
+                            "type": "table",
+                            "caption": "Celestial Expanded Spells",
+                            "colLabels": [
+                                "Spell Level",
+                                "Spells"
+                            ],
+                            "colStyles": [
+                                "col-2 text-center",
+                                "col-10"
+                            ],
+                            "rows": [
+                                [
+                                    "1st",
+                                    "{@spell Cause Fear|Ishiir}, {@spell Command|Ishiir}"
+                                ],
+                                [
+                                    "2nd",
+                                    "{@spell Darkvision|Ishiir}, {@spell Dragon's Breath|Ishiir}"
+                                ],
+                                [
+                                    "3rd",
+                                    "{@spell Counterspell|Ishiir}, {@spell Dispel Magic|Ishiir}"
+                                ],
+                                [
+                                    "4th",
+                                    "{@spell Elemental Bane|Ishiir}, {@spell Spell Turning|Ishiir}"
+                                ],
+                                [
+                                    "5th",
+                                    "{@spell Blindsense|Ishiir}, {@spell Spell Mantle|Ishiir}"
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Draconic Arcana|Warlock|Ishiir|Dragon|Ishiir|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Draconic Fortitude|Warlock|Ishiir|Dragon|Ishiir|1"
+                }
+            ]
+        },
+        {
+            "name": "Draconic Arcana",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlock",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dragon",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "Starting at 1st level, choose a draconic patron from the following table. Each patron is associated with a damage type.",
+                "Every time you gain access to a new spell level on your Dragon Expanded Spells table, including this one, you can replace one of the spells listed for that spell level with another spell of the same level that deals damage of the chosen type. You can change your choice for one spell learned in this manner whenever you gain another level in this class.",
+                "Additionally, you can change the damage type of any of your cantrips to the chosen type above when you cast them.",
+				{
+					"name": "Draconic Patron",
+					"entries": [
+						{
+							"type": "table",
+							"caption": "Draconic Patron",
+							"colLabels": [
+								"Draconic Patron",
+								"Damage Type"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-3 text-center"
+							],
+							"rows": [
+								[
+									"Black",
+									"Acid"
+								],
+								[
+									"Blue",
+									"Lightning"
+								],
+								[
+									"Brass",
+									"Fire"
+								],
+								[
+									"Bronze",
+									"Lightning"
+								],
+								[
+									"Copper",
+									"Acid"
+								],
+								[
+									"Gold",
+									"Radiant"
+								],
+								[
+									"Green",
+									"Poison"
+								],
+								[
+									"Jabberwock",
+									"Fire"
+								],
+								[
+									"Night",
+									"Force"
+								],
+								[
+									"Red",
+									"Fire"
+								],
+								[
+									"Shadow",
+									"Necrotic"
+								],
+								[
+									"Silver",
+									"Radiant"
+								],
+								[
+									"Sylvan",
+									"Poison"
+								],
+								[
+									"White",
+									"Cold"
+								]
+							]
+						}
+					],
+					"type": "entries"
+				}
+            ]
+        },
+        {
+            "name": "Draconic Fortitude",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlock",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dragon",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "Starting at 1st level, while you are wearing no armor, your AC equals 10 + your Strength or your Spellcasting Ability modifier (your choice) + your Constitution modifier.",
+                "Your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class."
+            ]
+        },
+        {
+            "name": "Bonus Invocation",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlock",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dragon",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Starting at 6th level, you learn an additional Eldritch Invocation."
+            ]
+        },
+        {
+            "name": "Legendary Resistance",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlock",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dragon",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "Starting at 10th level, when you fail a saving throw, you can succeed instead. You cannot use this feature again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "The Master's Odem",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlock",
+            "classSource": "Ishiir",
+            "subclassShortName": "Celestial",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "Starting at 14th level, as an action, you open a small portal and call upon the raw energy of your patron's powerful breath weapon.",
+                "Every creature in the area of effect, which originates from your position, has to make a saving throw against your spell save DC. A target takes {@damage 15d10} damage on a failed save, and half as much on a successful one. The shape, saving throw, and damage type of the breath weapon depends on your draconic patron.",
+                "You cannot use this feature again until you have finished a long rest.",
+				{
+					"name": "Master's Odem",
+					"entries": [
+						{
+							"type": "table",
+							"caption": "Master's Odem",
+							"colLabels": [
+								"Draconic Patron",
+								"Breath Weapon"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-6"
+							],
+							"rows": [
+								[
+									"Black",
+									"120x10 ft line (DEX save)"
+								],
+								[
+									"Blue",
+									"120x10 ft line (DEX save)"
+								],
+								[
+									"Brass",
+									"90 ft cone (DEX save)"
+								],
+								[
+									"Bronze",
+									"120x10 ft line (DEX save)"
+								],
+								[
+									"Copper",
+									"120x10 ft line (DEX save)"
+								],
+								[
+									"Gold",
+									"90 ft cone (DEX save)"
+								],
+								[
+									"Green",
+									"90 ft cone (CON save)"
+								],
+								[
+									"Jabberwock",
+									"120x10 ft line (DEX save)"
+								],
+								[
+									"Night",
+									"120x10 ft line (DEX save)"
+								],
+								[
+									"Red",
+									"90 ft cone (DEX save)"
+								],
+								[
+									"Shadow",
+									"90 ft cone (CON save)"
+								],
+								[
+									"Silver",
+									"120x10 ft line (DEX save)"
+								],
+								[
+									"Sylvan",
+									"90 ft cone (CON save)"
+								],
+								[
+									"White",
+									"90 ft cone (CON save)"
+								]
+							]
+						}
+					],
+					"type": "entries"
+				}
             ]
         },
         {
