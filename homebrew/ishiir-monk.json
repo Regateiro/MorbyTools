@@ -100,8 +100,15 @@
             },
             "multiclassing": {
                 "requirements": {
-                    "dex": 13,
-                    "wis": 13
+                    "or": [
+                        {
+                            "str": 13,
+                            "dex": 13
+                        },
+                        {
+                            "wis": 13
+                        }
+                    ]
                 },
                 "proficienciesGained": {
                     "weapons": [
@@ -821,7 +828,7 @@
             "classSource": "Ishiir",
             "level": 1,
             "entries": [
-                "Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier."
+                "Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Strength or Dexterity modifier (your choice) + your Wisdom modifier."
             ]
         },
         {

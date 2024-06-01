@@ -124,8 +124,15 @@
             },
             "multiclassing": {
                 "requirements": {
-                    "str": 13,
-                    "cha": 13
+                    "or": [
+                        {
+                            "str": 13,
+                            "dex": 13
+                        },
+                        {
+                            "cha": 13
+                        }
+                    ]
                 },
                 "proficienciesGained": {
                     "armor": [
