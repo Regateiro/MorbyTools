@@ -140,10 +140,17 @@
                 ]
             },
 			"multiclassing": {
-				"requirements": {
-					"dex": 13,
-					"wis": 13
-				},
+                "requirements": {
+                    "or": [
+                        {
+                            "str": 13,
+                            "dex": 13
+                        },
+                        {
+                            "wis": 13
+                        }
+                    ]
+                },
 				"proficienciesGained": {
 					"armor": [
 						"light",
