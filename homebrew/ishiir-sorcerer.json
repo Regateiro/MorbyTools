@@ -1588,9 +1588,9 @@
             "page": 1,
             "subclassFeatures": [
                 "Pyromancer|Sorcerer|Ishiir|Pyromancer|Ishiir|1",
-                "Fire in the Veins|Sorcerer|Ishiir|Pyromancer|Ishiir|6",
-                "Pyromancer's Fury|Sorcerer|Ishiir|Pyromancer|Ishiir|14",
-                "Fiery Soul|Sorcerer|Ishiir|Pyromancer|Ishiir|18"
+                "Wildfire|Sorcerer|Ishiir|Pyromancer|Ishiir|6",
+                "Living Bomb|Sorcerer|Ishiir|Pyromancer|Ishiir|14",
+                "Blazing Soul|Sorcerer|Ishiir|Pyromancer|Ishiir|18"
             ]
         },
         {
@@ -3659,7 +3659,7 @@
             ]
         },
         {
-            "name": "Fire in the Veins",
+            "name": "Wildfire",
             "source": "Ishiir",
             "page": 1,
             "className": "Sorcerer",
@@ -3669,7 +3669,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "At 6th level, you gain resistance to fire damage. In addition, you ignore resistance to fire damage."
+                "Starting at 6th level, you gain resistance to fire damage and when you cast a spell that deals fire damage, you can choose any creature you can see within 120 ft of you that is currently affected by your Heart of Fire feature as the point of origin. If you do so, the effect of Heart of Fire ends on it."
             ]
         },
         {
@@ -3683,11 +3683,13 @@
             "level": 1,
             "header": 1,
             "entries": [
-                "At 1st level, whenever you start casting a spell of 1st level or higher that deals fire damage, fiery magic erupts from you. This eruption causes creatures of your choice that you can see within 10 feet of you to take fire damage equal to half your sorcerer level (minimum of 1)."
+                "Starting at 1st level, whenever you hit a creature with a spell of 1st level or higher that deals fire damage or it fails a save against such a spell, you also set it aflame.",
+                "A creature that is aflame takes fire damage equal to twice your proficiency at the start of each of its turns and sheds bright light in a radius of 10 feet and dim light light in a radius of 10 feet beyond that for 1 minute.",
+                "At the end of each of its turns, an affected creature can make a DEX saving throw against your spell save DC to end the effect on itself. Alternatively, it or another creature can spend an action to put out the flames."
             ]
         },
         {
-            "name": "Pyromancer's Fury",
+            "name": "Living Bomb",
             "source": "Ishiir",
             "page": 1,
             "className": "Sorcerer",
@@ -3697,11 +3699,12 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "Starting at 14th level, when you are hit by a melee attack, you can use your reaction to deal fire damage to the attacker. The damage equals your sorcerer level, and ignores resistance to fire damage."
+                "Starting at 14th level, the damage dealt by your Heart of Fire feature increases to three times your proficiency.",
+                "When a creature affected by your Heart of Fire feature that you can see is reduced to 0 hit points by fire damage, you can use your reaction to make it explode violently. Any creature in a 20 feet radius around the target has to make a DEX saving throw against your spell save DC. On a failure, a creature takes fire damage equal to a number of d6 x your proficiency and is then set aflame as per your Heart of Fire feature. On a success, it takes half as much damage and isn't set aflame."
             ]
         },
         {
-            "name": "Fiery Soul",
+            "name": "Blazing Soul",
             "source": "Ishiir",
             "page": 1,
             "className": "Sorcerer",
@@ -3711,7 +3714,9 @@
             "level": 18,
             "header": 2,
             "entries": [
-                "At 18th level, you gain immunity to fire damage. In addition, any spell or effect you create ignores resistance to fire damage and treats immunity to fire damage as resistance to fire damage."
+                "Starting at 18th level, you can spend 6 sorcery points as a bonus action to magically transform into a creature of living flame. In this form, you have resistance to piercing, bludgeoning, and slashing damage as well as immunity to fire damage and poison.",
+                "Additionally, if a creature hits you with a melee attack from within 5 ft or touches you, it takes fire damage equal to half your sorcerer level and you add your Charisma modifier to the damage of all the other features gained from this subclass that deal fire damage.",
+                "You remain in this form for 1 minute. It ends early if you are incapacitated, if you die, or if you dismiss it as a bonus action."
             ]
         },
         {
