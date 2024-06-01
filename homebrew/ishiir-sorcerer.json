@@ -1945,7 +1945,7 @@
             ],
             "subclassFeatures": [
                 "Cryomancer|Sorcerer|Ishiir|Cryomancer|Ishiir|1",
-                "Icy Veins|Sorcerer|Ishiir|Cryomancer|Ishiir|6",
+                "Aegis of Rime|Sorcerer|Ishiir|Cryomancer|Ishiir|6",
                 "Deep Freeze|Sorcerer|Ishiir|Cryomancer|Ishiir|14",
                 "Frozen Soul|Sorcerer|Ishiir|Cryomancer|Ishiir|18"
             ]
@@ -4945,7 +4945,7 @@
             "header": 2,
             "entries": [
                 "Beginning at 18th level, immediately after you cast a sorcerer spell with a spell slot, you can create an effect of your choice from the {@table Wild Magic Surge|PHB} table, provided the effect casts a spell or restores all your expended Sorcery Points.",
-                "Once you use this feature, you can’t do so again until you finish {@dice 1d4} Long Rests."
+                "Once you use this feature, you can't do so again until you finish {@dice 1d4} Long Rests."
             ]
         },
         {
@@ -4964,7 +4964,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Aegis of Rime|Sorcerer|Ishiir|Cryomancer|Ishiir|1"
+                    "subclassFeature": "Clinging Frost|Sorcerer|Ishiir|Cryomancer|Ishiir|1"
                 }
             ]
         },
@@ -4979,7 +4979,7 @@
             "level": 1,
             "header": 1,
             "entries": [
-                "Starting at 1st level, you learn additional spells when you reach certain levels in this class, as shown on the table below. Each of these spells counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know.",
+                "Starting at 1st level, you learn additional spells when you reach certain levels in this class, as shown on the table below. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
                 {
                     "type": "table",
                     "caption": "Cryomancer Spells",
@@ -5017,7 +5017,7 @@
             ]
         },
         {
-            "name": "Aegis of Rime",
+            "name": "Clinging Frost",
             "source": "Ishiir",
             "page": 1,
             "className": "Sorcerer",
@@ -5027,11 +5027,34 @@
             "level": 1,
             "header": 1,
             "entries": [
-                "At 1st level, When you aren’t wearing armor, your AC equals 10 + your Constitution modifier + your Charisma modifier."
+                "Starting at 1st level, whenever you hit a creature with a spell of 1st level or higher that deals cold damage or it fails a save against such a spell, the magical cold you command starts clinging to it for 1 minute, reducing its speed by 10 feet.",
+                "At the end of each of its turns, an affected creature can make a Constitution saving throw against your spell save DC. Each time it fails this saving throw, it suffers additional effects as per below. If it succeeds three times, the effect of your Clinging Frost ends on it.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "One failed save:",
+                            "entry": "The affected creature cannot take reactions."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Two failed save:",
+                            "entry": "The affected creature has disadvantage on attack rolls and ability checks."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Three failed save:",
+                            "entry": "The affected creature is frozen for 1 minute but does not have resistance against cold damage caused by your spells and the effect of your Clinging Frost ends on it."
+                        }
+                    ]
+                },
+                "This feature has no effect on creatures that cannot be frozen."
             ]
         },
         {
-            "name": "Icy Veins",
+            "name": "Aegis of Rime",
             "source": "Ishiir",
             "page": 1,
             "className": "Sorcerer",
@@ -5039,9 +5062,11 @@
             "subclassShortName": "Cryomancer",
             "subclassSource": "Ishiir",
             "level": 6,
-            "header": 2,
+            "header": 1,
             "entries": [
-                "At 6th level, you gain resistance to cold damage. In addition, you ignore resistance to cold damage."
+                "At 6th level, you gain resistance to cold damage.",
+                "Additionally, when you cast a spell of 1st level or higher that deals cold damage, you form a protective layer of magical ice on yourself.",
+                "While under this effect, the first time you take damage, that damage is reduced by an amount equal to your sorcerer level + your Charisma modifier. The effect then ends on you."
             ]
         },
         {
@@ -5055,16 +5080,28 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "Starting at 14th level, when one or more creatures fail a saving throw against one of your spells that deal cold damage, you can use your reaction to intensify the cold of the spell, causing additional effects depending on the saving throw:",
+                "Starting at 14th level, the speed reduction from your Clinging Frost feature increases to 20 feet and subsequent failed saving throws against it have additional effects as per below:",
                 {
                     "type": "list",
+                    "style": "list-hang-notitle",
                     "items": [
-                        "<b>Strength saving throw</b>: The creature’s speed is reduced to 0 until the end of your next turn.",
-                        "<b>Dexterity saving throw</b>: The creature is knocked prone.",
-                        "<b>Constitution saving throw</b>: The creature is dazed until the end of your next turn."
+                        {
+                            "type": "item",
+                            "name": "One failed save:",
+                            "entry": "The affected creature has disadvantage on its next attack roll."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Two failed save:",
+                            "entry": "The affected creature's speed is reduced to 0."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Three failed save:",
+                            "entry": "The affected creature has vulnerability against the damage of the next spell you cast that deals cold damage."
+                        }
                     ]
-                },
-                "You can use this feature a number of times equal to your proficiency and regain all expended uses on a long rest. Alternatively, you can spend 2 sorcery points to regain a use of this feature. "
+                }
             ]
         },
         {
@@ -5078,7 +5115,10 @@
             "level": 18,
             "header": 2,
             "entries": [
-                "At 18th level, you gain immunity to cold damage. In addition, any spell or effect you create ignores resistance to cold damage and treats immunity to cold damage as resistance to cold damage."
+                "Starting at 18th level, you can spend 6 sorcery points as a bonus action to magically transform into a creature of living ice. In this form, you have resistance to piercing, bludgeoning, and slashing damage as well as immunity to cold damage and poison.",
+                "Additionally, if a creature hits you with a melee attack from within 5 ft or touches you while you are under the effect of your Aegis of Rime feature, it is immediately affected by your Clinging Frost feature. If it was already affected, it instead immediately makes a Constitution saving throw as if at the end of its turn, suffering the usual effect on a failure. Succeeding on this saving throw does not count towards the three successes needed to clear the effect.",
+                "Finally, creatures affected by your Clinging Frost suffer a -2 penalty to Constitution saving throws against your spells that deal cold damage.",
+                "You remain in this form for 1 minute. It ends early if you are incapacitated, if you die, or if you dismiss it as a bonus action."
             ]
         }
     ]
