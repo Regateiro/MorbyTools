@@ -30959,7 +30959,7 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": true
+                "m": "a pinch of phosphorus"
             },
             "duration": [
                 {
@@ -59170,6 +59170,80 @@
                     "name": "Mystic Adept",
                     "source": "Ishiir"
                 },
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Yolande's Regal Presence",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 5,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a miniature tiara"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You surround yourself with unearthly majesty in a 10-foot Emanation. Whenever the Emanation enters the space of a creature you can see and whenever a creature you can see enters the Emanation or ends its turn there, you can force that creature to make a Wisdom saving throw. On a failed save, the target takes {@damage 4d6} Psychic damage, has the {@condition Prone|Ishiir} condition, and you can push it up to 10 feet away. On a successful save, the target takes half as much damage only. A creature makes this save only once per turn."
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "miscTags": [
+                "FMV"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
                 {
                     "name": "Circle Adept",
                     "source": "Ishiir"
