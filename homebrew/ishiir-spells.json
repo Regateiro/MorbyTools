@@ -4245,34 +4245,34 @@
             ],
             "entries": [
                 "You create a Large hand of shimmering, translucent force in an unoccupied space that you can see within range. The hand lasts for the spell's duration, and it moves at your command, mimicking the movements of your own hand.",
-                "The hand is an object that has AC 20 and hit points equal to your hit point maximum. If it drops to 0 hit points, the spell ends. It has a Strength of 26 ({@d20 8}) and a Dexterity of 10 ({@d20 0}). The hand doesn't fill its space.",
+                "The hand is an object that has AC 20 and hit points equal to your hit point maximum. If it drops to 0 hit points, the spell ends. The hand doesn't fill its space.",
                 "When you cast the spell and as a bonus action on your subsequent turns, you can move the hand up to 60 feet and then cause one of the following effects with it.",
                 {
                     "type": "entries",
                     "name": "Clenched Fist",
                     "entries": [
-                        "The hand strikes one creature or object within 5 feet of it. Make a melee spell attack for the hand using your game statistics. On a hit, the target takes {@damage 4d8} force damage."
+                        "The hand strikes one creature or object within 5 feet of it. Make a melee spell attack for the hand using your game statistics. On a hit, the target takes {@damage 5d8} force damage."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Forceful Hand",
                     "entries": [
-                        "The hand attempts to push a creature within 5 feet of it in a direction you choose. Make a check with the hand's Strength contested by the Strength ({@skill Athletics}) check of the target. If the target is Medium or smaller, you have advantage on the check. If you succeed, the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it."
+                        "The hand attempts to push a Huge or smaller creature within 5 feet of it in a direction you choose. The target has to succeed on a Strength saving throw against your spell save DC or be pushed up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Grasping Hand",
                     "entries": [
-                        "The hand attempts to grapple a Huge or smaller creature within 5 feet of it. You use the hand's Strength score to resolve the grapple. If the target is Medium or smaller, you have advantage on the check. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes bludgeoning damage equal to {@damage 2d6} + your spellcasting ability modifier."
+                        "The hand attempts to grapple a Huge or smaller creature within 5 feet of it. The target has to succeed on a Dexterity saving throw against your spell save DC or be grappled. The target can use an Action on its turn to make a Strength or Dexterity check against your spell save DC to escape the grapple. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes bludgeoning damage equal to {@damage 4d6} + your spellcasting ability modifier."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Interposing Hand",
                     "entries": [
-                        "The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is {@quickref difficult terrain||3} for the target."
+                        "The hand grants you Half Cover against attacks and other effects that originate from its space or that pass through it. In addition, its space counts as {@quickref difficult terrain||3} for your enemies."
                     ]
                 }
             ],
@@ -8043,14 +8043,15 @@
                 }
             ],
             "entries": [
-                "You hurl a 4-inch-diameter sphere of energy at a creature that you can see within range. You choose acid, cold, fire, lightning, poison, or thunder for the type of orb you create, and then make a ranged spell attack against the target. If the attack hits, the creature takes {@damage 3d8} damage of the type you chose."
+                "You hurl a 4-inch-diameter sphere of energy at a creature that you can see within range. You choose acid, cold, fire, lightning, poison, or thunder for the type of orb you create, and then make a ranged spell attack against the target. If the attack hits, the creature takes {@damage 3d8} damage of the type you chose.",
+                "If you roll the same number on two or more of the d8s, the orb leaps to a different target of your choice within 30 feet of the target. Make an attack roll against the new target, and make a new damage roll. The orb can't leap again unless you cast the spell with a level 2+ spell slot."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 3d8|1-9|1d8} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 3d8|1-9|1d8} for each slot level above 1st. The orb can leap a maximum number of times equal to the level of the slots expended, and a creature can be targeted only once by each casting of this spell."
                     ]
                 }
             ],
@@ -12870,7 +12871,7 @@
             "time": [
                 {
                     "number": 1,
-                    "unit": "action"
+                    "unit": "bonus"
                 }
             ],
             "range": {
@@ -21601,7 +21602,7 @@
             ],
             "entries": [
                 "You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action.",
-                "You can use your action to make a melee spell attack with the fiery blade. On a hit, the target takes {@damage 3d6} fire damage.",
+                "You can use your action to make a melee spell attack with the fiery blade. On a hit, the target takes {@damage 3d6} + your spellcasting ability modifier fire damage.",
                 "The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
             ],
             "entriesHigherLevel": [
@@ -21768,7 +21769,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by {@scaledamage 5d6|5-9|1d6} for each slot level above 5th."
+                        "When you cast this spell using a spell slot of 6th level or higher, the fire damage and the radiant damage increase by {@scaledamage 5d6|5-9|1d6} for each slot level above 5th."
                     ]
                 }
             ],
@@ -28775,7 +28776,7 @@
                 }
             ],
             "entries": [
-                "A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes {@damage 2d8} bludgeoning damage and {@damage 4d6} cold damage on a failed save, or half as much damage on a successful one.",
+                "A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes {@damage 2d10} bludgeoning damage and {@damage 4d6} cold damage on a failed save, or half as much damage on a successful one.",
                 "Hailstones turn the storm's area of effect into {@quickref difficult terrain||3} until the end of your next turn."
             ],
             "entriesHigherLevel": [
@@ -28783,7 +28784,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by {@scaledamage 2d8|4-9|1d8} for each slot level above 4th."
+                        "When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by {@scaledamage 2d10|4-9|1d10} and the cold damage increases by {@scaledamage 4d6|4-9|1d6} for each slot level above 4th."
                     ]
                 }
             ],
@@ -37490,14 +37491,14 @@
             "time": [
                 {
                     "number": 1,
-                    "unit": "action"
+                    "unit": "bonus"
                 }
             ],
             "range": {
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 60
+                    "amount": 90
                 }
             },
             "components": {
@@ -37519,7 +37520,7 @@
             ],
             "entries": [
                 "You create a sword-shaped plane of force that hovers within range. It lasts for the duration.",
-                "When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes {@damage 4d10} force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 20 feet to a spot you can see and repeat this attack against the same target or a different one."
+                "When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes {@damage 4d12} force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 30 feet to a spot you can see and repeat this attack against the same target or a different one."
             ],
             "damageInflict": [
                 "force"
@@ -43998,7 +43999,7 @@
                 }
             ],
             "entries": [
-                "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take {@damage 1d8} radiant damage. The target gains no benefit from cover for this saving throw.",
+                "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take {@damage 1d8} radiant damage. The target gains no benefit from Half Cover and Three-Quarters Cover for this saving throw.",
                 "The spell's damage increases by {@dice 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
             ],
             "scalingLevelDice": {
@@ -46029,7 +46030,7 @@
                 }
             ],
             "entries": [
-                "A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes {@damage 3d8} thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.",
+                "A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes {@damage 3d8} thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw, and the spell deals maximum damage to it.",
                 "A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area."
             ],
             "entriesHigherLevel": [
@@ -51998,7 +51999,7 @@
                 }
             ],
             "entries": [
-                "A beam of brilliant light flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes {@damage 6d8} radiant damage and is {@condition blinded|Ishiir} until your next turn. On a successful save, it takes half as much damage and isn't {@condition blinded|Ishiir} by this spell. Undead and oozes have disadvantage on this saving throw.",
+                "A beam of brilliant light flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes {@damage 6d8} radiant damage and is {@condition blinded|Ishiir} until your next turn. On a successful save, it takes half as much damage and isn't {@condition blinded|Ishiir} by this spell. Undead and oozes have disadvantage on this saving throw, and the spell deals maximum damage to them.",
                 "You can create a new line of radiance as your action on any turn until the spell ends.",
                 "For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight."
             ],
@@ -52074,7 +52075,7 @@
                 }
             ],
             "entries": [
-                "Brilliant sunlight flashes in a 60-foot radius centered on a point you choose within range. Each creature in that light must make a Constitution saving throw. On a failed save, a creature takes {@damage 12d6} radiant damage and is {@condition blinded|Ishiir} for 1 minute. On a successful save, it takes half as much damage and isn't {@condition blinded|Ishiir} by this spell. Undead and oozes have disadvantage on this saving throw.",
+                "Brilliant sunlight flashes in a 60-foot radius centered on a point you choose within range. Each creature in that light must make a Constitution saving throw. On a failed save, a creature takes {@damage 10d8} radiant damage and is {@condition blinded|Ishiir} for 1 minute. On a successful save, it takes half as much damage and isn't {@condition blinded|Ishiir} by this spell. Undead and oozes have disadvantage on this saving throw, and the spell deals maximum damage to them.",
                 "A creature {@condition blinded|Ishiir} by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer {@condition blinded|Ishiir}.",
                 "This spell dispels any darkness in its area that was created by a spell."
             ],
@@ -54403,6 +54404,15 @@
             ],
             "entries": [
                 "When you hit a creature with a melee weapon attack, you may use a bonus action to make your weapon ring with thunder that is audible within 300 feet of you, and the attack deals an extra {@damage 2d6} thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked {@condition prone|Ishiir}."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage dealt increases by {@scaledamage 2d6|1-9|1d6} for each slot level above 1st."
+                    ]
+                }
             ],
             "damageInflict": [
                 "thunder"
@@ -56789,7 +56799,7 @@
             "entries": [
                 "You create a wall of ice on a solid surface within range. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-square panels. Each panel must be contiguous with another panel. In any form, the wall is 1 foot thick and lasts for the duration.",
                 "If the wall cuts through a creature's space when it appears, the creature within its area is pushed to one side of the wall and must make a Dexterity saving throw. On a failed save, the creature takes {@damage 10d6} cold damage, or half as much damage on a successful save.",
-                "The wall is an object that can be damaged and thus breached. It has AC 12 and 30 hit points per 10-foot section, and it is vulnerable to fire damage. Reducing a 10-foot section of wall to 0 hit points destroys it and leaves behind a sheet of frigid air in the space the wall occupied. A creature moving through the sheet of frigid air for the first time on a turn must make a Constitution saving throw. That creature takes {@damage 5d6} cold damage on a failed save, or half as much damage on a successful one."
+                "The wall is an object that can be damaged and thus breached. It has AC 12 and 30 hit points per 10-foot section. It is immune to cold, poison, and psychic damage and vulnerable to fire damage. Reducing a 10-foot section of wall to 0 hit points destroys it and leaves behind a sheet of frigid air in the space the wall occupied. A creature moving through the sheet of frigid air for the first time on a turn must make a Constitution saving throw. That creature takes {@damage 5d6} cold damage on a failed save, or half as much damage on a successful one."
             ],
             "entriesHigherLevel": [
                 {
@@ -56861,16 +56871,16 @@
             ],
             "entries": [
                 "A shimmering wall of bright light appears at a point you choose within range. The wall appears in any orientation you choose: horizontally, vertically, or diagonally. It can be free floating, or it can rest on a solid surface. The wall can be up to 60 feet long, 10 feet high, and 5 feet thick. The wall blocks line of sight, but creatures and objects can pass through it. It emits bright light out to 120 feet and dim light for an additional 120 feet.",
-                "When the wall appears, each creature in its area must make a Constitution saving throw. On a failed save, a creature takes {@damage 4d8} radiant damage, and it is {@condition blinded|Ishiir} for 1 minute. On a successful save, it takes half as much damage and isn't {@condition blinded|Ishiir}. A {@condition blinded|Ishiir} creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.",
-                "A creature that ends its turn in the wall's area takes {@damage 4d8} radiant damage.",
-                "Until the spell ends, you can use an action to launch a beam of radiance from the wall at one creature you can see within 60 feet of it. Make a ranged spell attack. On a hit, the target takes {@damage 4d8} radiant damage. Whether you hit or miss, reduce the length of the wall by 10 feet. If the wall's length drops to 0 feet, the spell ends."
+                "When the wall appears, each creature in its area must make a Constitution saving throw. On a failed save, a creature takes {@damage 5d8} radiant damage, and it is {@condition blinded|Ishiir} for 1 minute. On a successful save, it takes half as much damage and isn't {@condition blinded|Ishiir}. A {@condition blinded|Ishiir} creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.",
+                "A creature that ends its turn in the wall's area takes {@damage 5d8} radiant damage.",
+                "Until the spell ends, you can use an action to launch a beam of radiance from the wall at one creature you can see within 60 feet of it. Make a ranged spell attack. On a hit, the target takes {@damage 5d8} radiant damage. Whether you hit or miss, reduce the length of the wall by 10 feet. If the wall's length drops to 0 feet, the spell ends."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 4d8|5-9|1d8} for each slot level above 5th."
+                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 5d8|5-9|1d8} for each slot level above 5th."
                     ]
                 }
             ],
@@ -57025,7 +57035,7 @@
                 "If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the wall.",
                 "The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp.",
                 "If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create crenellations, battlements, and so on.",
-                "The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the DM's discretion.",
+                "The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness and is immune to poison and psychic damage. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the DM's discretion.",
                 "If you maintain your concentration on this spell for its whole duration, the wall becomes permanent and can't be dispelled. Otherwise, the wall disappears when the spell ends."
             ],
             "savingThrow": [
@@ -58522,7 +58532,7 @@
             ],
             "entries": [
                 "A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration.",
-                "When the wall appears, each creature within its area must make a Strength saving throw. A creature takes {@damage 3d8} bludgeoning damage on a failed save, or half as much damage on a successful one.",
+                "When the wall appears, each creature within its area must make a Strength saving throw. A creature takes {@damage 4d8} bludgeoning damage on a failed save, or half as much damage on a successful one.",
                 "The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in gaseous form can't pass through it."
             ],
             "damageInflict": [
@@ -58726,7 +58736,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 30
+                    "amount": 60
                 }
             },
             "components": {
@@ -58745,14 +58755,14 @@
                 }
             ],
             "entries": [
-                "A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes {@damage 1d12} lightning damage, and on each of your turns for the duration, you can use your action to deal {@damage 1d12} lightning damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell's range or if it has total cover from you."
+                "A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes {@damage 2d12} lightning damage, and on each of your turns for the duration, you can use your action to deal {@damage 1d12} lightning damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell's range or if it has total cover from you."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 1d12|1-9|1d12} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d12|1-9|1d12} for each slot level above 1st."
                     ]
                 }
             ],
