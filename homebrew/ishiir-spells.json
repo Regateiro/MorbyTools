@@ -4099,14 +4099,14 @@
                 }
             ],
             "entries": [
-                "You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:",
+                "You touch a creature, and that creature must succeed on a Charisma saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:",
                 {
                     "type": "list",
                     "items": [
                         "Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.",
-                        "While cursed, the target has disadvantage on attack rolls against you.",
+                        "While cursed, the target has disadvantage on attack rolls and it cannot target you with attacks rolls.",
                         "While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.",
-                        "While the target is cursed, your attacks and spells deal an extra {@damage 1d8} necrotic damage to the target."
+                        "While the target is cursed, attacks and spells deal an extra {@damage 1d6} necrotic damage to the target."
                     ]
                 },
                 "A {@spell remove curse|Ishiir} spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect."
@@ -4124,6 +4124,7 @@
                 "necrotic"
             ],
             "savingThrow": [
+                "charisma",
                 "wisdom"
             ],
             "areaTags": [
@@ -4770,7 +4771,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 30
+                    "amount": 60
                 }
             },
             "components": {
@@ -4784,7 +4785,7 @@
             ],
             "entries": [
                 "Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes {@damage 8d8} necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs.",
-                "If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it.",
+                "If you target a plant creature, a magical plant, or a water elemental, it makes the saving throw with disadvantage, and the spell deals maximum damage to it.",
                 "If you target a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw, it simply withers and dies."
             ],
             "entriesHigherLevel": [
@@ -4792,7 +4793,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage 8d8|4-9|1d8} for each slot level above 4th."
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage 8d8|4-9|2d8} for each slot level above 4th."
                     ]
                 }
             ],
@@ -7917,8 +7918,7 @@
             "range": {
                 "type": "point",
                 "distance": {
-                    "type": "feet",
-                    "amount": 120
+                    "type": "touch"
                 }
             },
             "components": {
@@ -7935,24 +7935,23 @@
                 }
             ],
             "entries": [
-                "You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes {@damage 1d8} necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.",
-                "If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.",
-                "This spell's damage increases by {@dice 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+                "Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes {@damage 1d10} necrotic damage, and it can't regain hit points until the start of your next turn.",
+                "This spell's damage increases by {@dice 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10})."
             ],
             "scalingLevelDice": {
                 "label": "necrotic damage",
                 "scaling": {
-                    "1": "1d8",
-                    "5": "2d8",
-                    "11": "3d8",
-                    "17": "4d8"
+                    "1": "1d10",
+                    "5": "2d10",
+                    "11": "3d10",
+                    "17": "4d10"
                 }
             },
             "damageInflict": [
                 "necrotic"
             ],
             "spellAttack": [
-                "R"
+                "M"
             ],
             "miscTags": [
                 "SCL"
@@ -8132,14 +8131,14 @@
                 }
             ],
             "entries": [
-                "A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature in that area must make a Constitution saving throw. A target takes {@damage 10d6} necrotic damage on a failed save, or half as much damage on a successful one."
+                "A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature in that area must make a Constitution saving throw. A target takes {@damage 8d8} necrotic damage on a failed save, or half as much damage on a successful one."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@scaledamage 8d6|6-9|2d6} for each slot level above 6th."
+                        "When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@scaledamage 8d6|6-9|2d8} for each slot level above 6th."
                     ]
                 }
             ],
@@ -8795,17 +8794,11 @@
             },
             "duration": [
                 {
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    },
-                    "type": "timed",
-                    "concentration": true
+                    "type": "instant"
                 }
             ],
             "entries": [
-                "A dazzling array of flashing, colored light springs from your hand. Creatures in a 15-foot cone originating from you have to make a Constitution saving throw or become affected by the spell for the duration.",
-                "An affected creature is {@condition blinded|Ishiir} for the spell's duration. At the end of each of its turns, the target can make another Constitution saving throw. On a success, the spell ends on the target."
+                "You launch a dazzling array of flashing, colorful light. Each creature in a 15-foot Cone originating from you must succeed on a Constitution saving throw or have the {@condition Blinded|Ishiir} condition until the end of your next turn."
             ],
             "entriesHigherLevel": [
                 {
@@ -10854,55 +10847,11 @@
                 }
             ],
             "entries": [
-                "Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, the target is {@condition poisoned|Ishiir}.",
-                "At the end of each of the {@condition poisoned|Ishiir} target's turns, the target must make a Constitution saving throw. If the target succeeds on three of these saves, it is no longer {@condition poisoned|Ishiir}, and the spell ends. If the target fails three of these saves, the target is no longer {@condition poisoned|Ishiir}, but choose one of the diseases below. The target is subjected to the chosen disease for the spell's duration.",
-                "Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease's effects apply to it.",
-                {
-                    "type": "entries",
-                    "name": "Blinding Sickness",
-                    "entries": [
-                        "Pain grips the creature's mind, and its eyes turn milky white. The creature has disadvantage on Wisdom checks and Wisdom saving throws and is {@condition blinded|Ishiir}."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Filth Fever",
-                    "entries": [
-                        "A raging fever sweeps through the creature's body. The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Flesh Rot",
-                    "entries": [
-                        "The creature's flesh decays. The creature has disadvantage on Charisma checks and vulnerability to all damage."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Mindfire",
-                    "entries": [
-                        "The creature's mind becomes feverish. The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the {@spell confusion|Ishiir} spell during combat."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Seizure",
-                    "entries": [
-                        "The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Slimy Doom",
-                    "entries": [
-                        "The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is {@condition stunned|Ishiir} until the end of its next turn."
-                    ]
-                }
+                "Your touch inflicts a magical contagion. The target must succeed on a Constitution saving throw or take {@damage 11d8} Necrotic damage and have the {@condition Poisoned|Ishiir} condition. Also, choose one ability when you cast the spell. While {@condition Poisoned|Ishiir}, the target has Disadvantage on saving throws made with the chosen ability.",
+                "The target must repeat the saving throw at the end of each of its turns until it gets three successes or failures. If the target succeeds on three of these saves, the spell ends on the target. If the target fails three of the saves, the spell ends on the target. If the target fails three of the saves, the spell lasts for 7 days on it.",
+                "Whenever the {@condition Poisoned|Ishiir} target receives an effect that would end the {@condition Poisoned|Ishiir} condition, the target must succeed on a Constitution saving throw, or the {@condition Poisoned|Ishiir} condition doesn't end on it."
             ],
             "conditionInflict": [
-                "blinded",
-                "stunned",
                 "poisoned"
             ],
             "spellAttack": [
@@ -12950,7 +12899,7 @@
             "page": 1,
             "source": "Ishiir",
             "level": 1,
-            "school": "V",
+            "school": "N",
             "time": [
                 {
                     "number": 1,
@@ -12973,14 +12922,14 @@
                 }
             ],
             "entries": [
-                "A creature you touch regains a number of hit points equal to {@dice 1d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+                "A creature you touch regains a number of hit points equal to {@dice 2d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@scaledice 1d8|1-9|1d8} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@scaledice 2d8|1-9|2d8} for each slot level above 1st."
                     ]
                 }
             ],
@@ -14122,7 +14071,7 @@
             ],
             "entries": [
                 "A beam of yellow light flashes from your pointing finger, then condenses to linger at a chosen point within range as a glowing bead for the duration. When the spell ends, either because your concentration is broken or because you decide to end it, the bead blossoms with a low roar into an explosion of flame that spreads around corners. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes fire damage equal to the total accumulated damage on a failed save, or half as much damage on a successful one.",
-                "The spell's base damage is {@damage 12d6}. If at the end of your turn the bead has not yet detonated, the damage increases by {@dice 1d6}.",
+                "The spell's base damage is {@damage 12d6}. If at the end of your turn the bead has not yet detonated, the damage increases by {@dice 2d6}.",
                 "If the glowing bead is touched before the interval has expired, the creature touching it must make a Dexterity saving throw. On a failed save, the spell ends immediately, causing the bead to erupt in flame. On a successful save, the creature can throw the bead up to 40 feet. When it strikes a creature or a solid object, the spell ends, and the bead explodes.",
                 "The fire damages objects in the area and ignites flammable objects that aren't being worn or carried."
             ],
@@ -14131,7 +14080,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 8th level or higher, the base damage increases by {@scaledamage 12d6|7-9|1d6} for each slot level above 7th."
+                        "When you cast this spell using a spell slot of 8th level or higher, the base damage increases by {@scaledamage 12d6|7-9|2d6} for each slot level above 7th."
                     ]
                 }
             ],
@@ -15822,8 +15771,7 @@
                     "duration": {
                         "type": "minute",
                         "amount": 1
-                    },
-                    "concentration": true
+                    }
                 }
             ],
             "entries": [
@@ -17490,7 +17438,7 @@
                     "type": "entries",
                     "name": "Structures",
                     "entries": [
-                        "The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure's height must make a Dexterity saving throw. On a failed save, the creature takes {@damage 8d6} bludgeoning damage, is knocked {@condition prone|Ishiir}, and is buried in the rubble, requiring a DC 20 Strength ({@skill Athletics}) check as an action to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn't fall {@condition prone|Ishiir} or become buried."
+                        "The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure's height must make a Dexterity saving throw. On a failed save, the creature takes {@damage 8d6} bludgeoning damage, is knocked {@condition prone|Ishiir}, and is buried in the rubble, requiring a DC 20 Strength check as an action to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn't fall {@condition prone|Ishiir} or become buried."
                     ]
                 }
             ],
@@ -18134,7 +18082,7 @@
                 }
             ],
             "entries": [
-                "A tendril of inky darkness reaches out from you, touching a creature you can see within range to drain life from it. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 5d8} necrotic damage, and until the spell ends, you can use your action on each of your turns to automatically deal {@damage 5d8} necrotic damage to the target. On a successful save, the target takes half as much damage, and the spell ends. The spell also ends if you use your action to do anything else, if the target is ever outside the spell's range, or if the target has total cover from you.",
+                "A tendril of inky darkness reaches out from you, touching a creature you can see within range to drain life from it. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 10d8} necrotic damage, and until the spell ends, you can use your action on each of your turns to automatically deal {@damage 10d8} necrotic damage to the target. On a successful save, the target takes half as much damage, and the spell ends. The spell also ends if you use your action to do anything else, if the target is ever outside the spell's range, or if the target has total cover from you.",
                 "Whenever the spell deals damage to a target, you regain hit points equal to half the amount of necrotic damage the target takes."
             ],
             "entriesHigherLevel": [
@@ -18142,7 +18090,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 5d8;2d8|5-9|1d8} for each slot level above 5th."
+                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 10d8;10d8|5-9|2d8} for each slot level above 5th."
                     ]
                 }
             ],
@@ -20668,7 +20616,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 60
+                    "amount": 90
                 }
             },
             "components": {
@@ -20681,19 +20629,19 @@
                 }
             ],
             "entries": [
-                "You send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a Constitution saving throw. It takes {@damage 7d8 + 30} necrotic damage on a failed save, or half as much damage on a successful one. A creature reduced to 0 hit points by this spell is slain instantly.",
+                "You send negative energy towards a creature that you can see within range, causing it searing pain. Make a ranged spell attack. On a hit, the target takes {@damage 10d8 + 30} necrotic damage on a failed save, or half as much damage on a successful one. A creature reduced to 0 hit points by this spell is slain instantly.",
                 "A humanoid killed by this spell rises at the start of your next turn as a {@creature zombie} that is permanently under your command, following your verbal orders to the best of its ability."
             ],
             "damageInflict": [
                 "necrotic"
             ],
-            "savingThrow": [
-                "constitution"
-            ],
             "miscTags": [
                 "PRM",
                 "SGT",
                 "SMN"
+            ],
+            "spellAttack": [
+                "R"
             ],
             "areaTags": [
                 "ST"
@@ -21082,11 +21030,16 @@
             },
             "duration": [
                 {
-                    "type": "instant"
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
                 }
             ],
             "entries": [
-                "A storm made up of sheets of roaring flame appears in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a Dexterity saving throw. It takes {@damage 7d10} fire damage on a failed save, or half as much damage on a successful one.",
+                "A storm made up of sheets of roaring flame appears in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a Dexterity saving throw. It takes {@damage 7d10} fire damage on a failed save, or half as much damage on a successful one. On each of your turns until the spell ends, you can use your action to call down fire in this way again, targeting the same cubes or different ones.",
                 "The fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell."
             ],
             "damageInflict": [
@@ -21602,7 +21555,7 @@
             ],
             "entries": [
                 "You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action.",
-                "You can use your action to make a melee spell attack with the fiery blade. On a hit, the target takes {@damage 3d6} + your spellcasting ability modifier fire damage.",
+                "You can use your action to make a melee spell attack with the fiery blade. On a hit, the target takes fire damage equal to {@damage 3d6} + your spellcasting ability modifier.",
                 "The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
             ],
             "entriesHigherLevel": [
@@ -27067,7 +27020,7 @@
             "page": 1,
             "source": "Ishiir",
             "level": 1,
-            "school": "V",
+            "school": "N",
             "time": [
                 {
                     "number": 1,
@@ -27090,14 +27043,14 @@
                 }
             ],
             "entries": [
-                "A creature of your choice that you can see within range regains hit points equal to {@dice 1d4} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+                "A creature of your choice that you can see within range regains hit points equal to {@dice 2d4} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@scaledice 1d4|1-9|1d4} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@scaledice 2d4|1-9|2d4} for each slot level above 1st."
                     ]
                 }
             ],
@@ -31989,7 +31942,7 @@
                 }
             ],
             "entries": [
-                "You sacrifice some of your health to mend another creature's injuries. You take {@damage 4d8} necrotic damage, which can't be reduced in any way, and one creature of your choice that you can see within range regains a number of hit points equal to twice the necrotic damage you take."
+                "You sacrifice some of your health to mend another creature's injuries. You take necrotic damage equal to {@damage 4d8} + your spellcasting ability modifier, which can't be reduced in any way, and one creature of your choice that you can see within range regains a number of hit points equal to twice the necrotic damage you take."
             ],
             "entriesHigherLevel": [
                 {
@@ -32420,7 +32373,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 30
+                    "amount": 60
                 }
             },
             "components": {
@@ -33050,8 +33003,62 @@
                 }
             ],
             "entries": [
-                "Magical darkness spreads from a point you choose within range to fill a 60-foot-radius sphere until the spell ends. The darkness spreads around corners. A creature with {@sense darkvision} can't see through this darkness. Non-magical light, as well as light created by spells of 8th level or lower, can't illuminate the area.",
-                "Shrieks, gibbering, and mad laughter can be heard within the sphere. Whenever a creature starts its turn in the sphere or enters it for the first time on a turn, it must make a Wisdom saving throw, taking {@damage 10d8} psychic damage on a failed save, or half as much damage on a successful one."
+                "Magical darkness spreads from a point you choose within range to fill a 60-foot-radius sphere until the spell ends. The darkness spreads around corners. A creature with darkvision can't see through this darkness. Non-magical light, as well as light created by spells of 8th level or lower, can't illuminate the area.",
+                "Shrieks, gibbering, and mad laughter can be heard within the sphere. Whenever a creature starts its turn in the sphere or enters it for the first time on a turn, it must make a Wisdom saving throw. On a failed save, it takes {@damage 10d8} psychic damage and suffers additional effects until the end of its next turn. On a successful one, it takes half as much damage and suffers no additional effects.",
+                "An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.",
+                {
+                    "type": "table",
+                    "caption": "Behavior",
+                    "colLabels": [
+                        "{@dice d10}",
+                        "Behavior"
+                    ],
+                    "colStyles": [
+                        "col-1 text-center",
+                        "col-11"
+                    ],
+                    "rows": [
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 1
+                                }
+                            },
+                            "The creature uses all its movement to move in a random direction. To determine the direction, roll a {@dice d8} and assign a direction to each die face. The creature doesn't take an action this turn."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "min": 2,
+                                    "max": 6
+                                }
+                            },
+                            "The creature doesn't move or take actions this turn."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "min": 7,
+                                    "max": 8
+                                }
+                            },
+                            "The creature drops {@condition prone|Ishiir} and starts laughing or screaming hysterically. It cannot move afterwards or take any actions this turn. The next time it makes a saving throw against this spell, it does so with disadvantage."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "min": 9,
+                                    "max": 10
+                                }
+                            },
+                            "The creature can act and move normally."
+                        ]
+                    ]
+                }
             ],
             "damageInflict": [
                 "psychic"
@@ -33080,8 +33087,13 @@
                     "source": "Ishiir"
                 }
             ],
+            "conditionInflict": [
+                "prone"
+            ],
             "miscTags": [
-                "SAD"
+                "SAD",
+                "RO",
+                "FMV"
             ]
         },
         {
@@ -34199,7 +34211,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration."
+                        "When you cast this spell using a spell slot of 4th level or higher, the spell lasts until dispelled, without requiring your concentration."
                     ]
                 }
             ],
@@ -34255,7 +34267,7 @@
             "page": 1,
             "source": "Ishiir",
             "level": 5,
-            "school": "V",
+            "school": "N",
             "time": [
                 {
                     "number": 1,
@@ -34279,14 +34291,14 @@
                 }
             ],
             "entries": [
-                "A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to {@dice 3d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+                "A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to {@dice 5d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 6th level or higher, the healing increases by {@scaledice 3d8|5-9|1d8} for each slot level above 5th."
+                        "When you cast this spell using a spell slot of 6th level or higher, the healing increases by {@scaledice 5d8|5-9|1d8} for each slot level above 5th."
                     ]
                 }
             ],
@@ -34544,7 +34556,7 @@
             "page": 1,
             "source": "Ishiir",
             "level": 3,
-            "school": "V",
+            "school": "N",
             "time": [
                 {
                     "number": 1,
@@ -34567,14 +34579,14 @@
                 }
             ],
             "entries": [
-                "As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to {@dice 1d4} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+                "As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to {@dice 2d4} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the healing increases by {@scaledice 1d4|3-9|1d4} for each slot level above 3rd."
+                        "When you cast this spell using a spell slot of 4th level or higher, the healing increases by {@scaledice 2d4|3-9|1d4} for each slot level above 3rd."
                     ]
                 }
             ],
@@ -36245,11 +36257,9 @@
                 }
             ],
             "entries": [
-                "Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real. You can use your action to dismiss the illusory duplicates.",
-                "Each time a creature targets you with an attack during the spell's duration, roll a {@dice d20} to determine whether the attack instead targets one of your duplicates.",
-                "If you have three duplicates, you must roll a 6 or higher to change the attack's target to a duplicate. With two duplicates, you must roll an 8 or higher. With one duplicate, you must roll an 11 or higher.",
-                "A duplicate's AC equals 10 + your Dexterity modifier. If an attack hits a duplicate, the duplicate is destroyed. A duplicate can be destroyed only by an attack that hits it. It ignores all other damage and effects. The spell ends when all three duplicates are destroyed.",
-                "A creature is unaffected by this spell if it can't see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with {@sense truesight}."
+                "Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real.",
+                "Each time a creature hits you with an attack roll during the spell's duration, roll a d6 for each of your remaining duplicates. If any of the d6s rolls a 3 or higher, one of the duplicates is hit instead of you, and the duplicate is destroyed. The duplicates otherwise ignore all other damage and effects. The spell ends when all three duplicates are destroyed.",
+                "A creature is unaffected by this spell if it has the {@condition Blinded|Ishiir} condition, {@sense Blindsight}, or {@sense Truesight}."
             ],
             "classes": {
                 "fromClassList": [
@@ -36921,7 +36931,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 10d8|5-9|1d8} for each slot above 5th."
+                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 10d8|5-9|2d8} for each slot above 5th."
                     ]
                 }
             ],
@@ -37520,7 +37530,7 @@
             ],
             "entries": [
                 "You create a sword-shaped plane of force that hovers within range. It lasts for the duration.",
-                "When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes {@damage 4d12} + your spellcasting ability modifier force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 30 feet to a spot you can see and repeat this attack against the same target or a different one."
+                "When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes force damage equal to {@damage 4d12} + your spellcasting ability modifier. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 30 feet to a spot you can see and repeat this attack against the same target or a different one."
             ],
             "damageInflict": [
                 "force"
@@ -38046,14 +38056,14 @@
             "entries": [
                 "A frigid globe of cold energy streaks from your fingertips to a point of your choice within range, where it explodes in a 60-foot-radius sphere. Each creature within the area must make a Constitution saving throw. On a failed save, a creature takes {@damage 10d6} cold damage. On a successful save, it takes half as much damage.",
                 "If the globe strikes a body of water or a liquid that is principally water (not including water-based creatures), it freezes the liquid to a depth of 6 inches over an area 30 feet square. This ice lasts for 1 minute. Creatures that were swimming on the surface of frozen water are trapped in the ice. A trapped creature can use an action to make a Strength check against your spell save DC to break free.",
-                "You can refrain from firing the globe after completing the spell, if you wish. A small globe about the size of a sling stone, cool to the touch, appears in your hand. At any time, you or a creature you give the globe to can throw the globe (to a range of 40 feet) or hurl it with a sling (to the sling's normal range). It shatters on impact, with the same effect as the normal casting of the spell. You can also set the globe down without shattering it. After 1 minute, if the globe hasn't already shattered, it explodes."
+                "You can refrain from firing the globe after completing the spell, if you wish. A small globe about the size of a sling stone, cool to the touch, appears in your hand. At any time, you or a creature you give the globe to can throw the globe or hurl it with a sling. The range for either is equal to the spell's range. It shatters on impact, with the same effect as the normal casting of the spell. You can also set the globe down without shattering it. After 1 minute, if the globe hasn't already shattered, it explodes."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@scaledamage 10d6|6-9|1d6} for each slot level above 6th."
+                        "When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@scaledamage 10d6|6-9|2d6} for each slot level above 6th."
                     ]
                 }
             ],
@@ -38744,14 +38754,15 @@
                 }
             ],
             "entries": [
-                "You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make a Wisdom saving throw. On a failed save, the target becomes {@condition frightened|Ishiir} for the duration. At the end of each of the target's turns before the spell ends, the target must succeed on a Wisdom saving throw or take {@damage 6d10} psychic damage. On a successful save, the spell ends."
+                "You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make a Wisdom saving throw. On a failed save, the target takes {@damage 5d10} Psychic damage and has Disadvantage on ability checks and attack rolls for the duration. On a successful save, the target takes half as much damage, and the spell ends.",
+                "For the duration, the target makes a Wisdom saving throw at the end of each of its turns. On a failed save, it takes Psychic damage again. On a successful save, the spell ends."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage 6d10|4-9|1d10} for each slot level above 4th."
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage 5d10|4-9|1d10} for each slot level above 4th."
                     ]
                 }
             ],
@@ -39819,7 +39830,7 @@
             "page": 1,
             "source": "Ishiir",
             "level": 9,
-            "school": "V",
+            "school": "E",
             "time": [
                 {
                     "number": 1,
@@ -39842,7 +39853,7 @@
                 }
             ],
             "entries": [
-                "A wave of healing energy washes over the creature you touch. The target regains all its hit points. If the creature is {@condition charmed|Ishiir}, {@condition frightened|Ishiir}, {@condition paralyzed|Ishiir}, or {@condition stunned|Ishiir}, or has its maximum hitpoints reduced, the effect ends. If the creature is {@condition prone|Ishiir}, it can use its reaction to stand up. This spell has no effect on undead or constructs."
+                "A wave of healing energy washes over the creature you touch. The target regains all its hit points. If the creature is {@condition blinded|Ishiir}, {@condition charmed|Ishiir}, {@condition deafened|Ishiir}, {@condition frightened|Ishiir}, {@condition paralyzed|Ishiir}, {@condition poisoned|Ishiir}, {@condition stunned|Ishiir}, suffers from a disease, or has its maximum hitpoints reduced, the effect ends. If the creature is {@condition prone|Ishiir}, it can use its reaction to stand up. This spell has no effect on undead or constructs."
             ],
             "affectsCreatureType": [
                 "aberration",
@@ -40251,7 +40262,7 @@
                 }
             ],
             "entries": [
-                "Up to six creatures of your choice that you can see within range each regain hit points equal to {@dice 2d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+                "Up to five creatures of your choice who remain within range for the spell's entire casting gain the benefits of a Short Rest and also regain {@dice 2d8} Hit Points. A creature can't be affected by this spell again until that creature finishes a Long Rest."
             ],
             "entriesHigherLevel": [
                 {
@@ -42430,7 +42441,7 @@
             "entries": [
                 "You create a 20-foot-radius sphere of destructive gravitational force centered on a point you can see within range. For the spell's duration, the sphere and any space within 100 feet of it are {@quickref difficult terrain||3}, and nonmagical objects fully inside the sphere are destroyed if they aren't being worn or carried.",
                 "When the sphere appears and at the start of each of your turns until the spell ends, unsecured objects within 100 feet of the sphere are pulled toward the sphere's center, ending in an unoccupied space as close to the center as possible.",
-                "A creature that starts its turn within 100 feet of the sphere must succeed on a Strength saving throw or be pulled straight toward the sphere's center, ending in an unoccupied space as close to the center as possible. A creature that enters the sphere for the first time on a turn or starts its turn there takes {@damage 6d10} force damage and is {@condition restrained|Ishiir} until it is no longer in the sphere. If the sphere is in the air, the {@condition restrained|Ishiir} creature hovers inside the sphere. A creature can use its action to make a Strength check against your spell save DC, ending this {@condition restrained|Ishiir} condition on itself or another creature in the sphere that it can reach. A creature reduced to 0 hit points by this spell is annihilated, along with any nonmagical items it is wearing or carrying."
+                "A creature that starts its turn within 100 feet of the sphere must succeed on a Strength saving throw or be pulled straight toward the sphere's center, ending in an unoccupied space as close to the center as possible. A creature that enters the sphere for the first time on a turn or starts its turn there takes {@damage 10d10} force damage and is {@condition restrained|Ishiir} until it is no longer in the sphere. If the sphere is in the air, the {@condition restrained|Ishiir} creature hovers inside the sphere. A creature can use its action to make a Strength check against your spell save DC, ending this {@condition restrained|Ishiir} condition on itself or another creature in the sphere that it can reach. A creature reduced to 0 hit points by this spell is annihilated, along with any nonmagical items it is wearing or carrying."
             ],
             "damageInflict": [
                 "force"
@@ -42509,11 +42520,8 @@
                 }
             ],
             "entries": [
-                "A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target deals only half damage with weapon attacks that use Strength until the spell ends.",
+                "A black beam of enervating energy springs from your finger toward a creature within range. The target has to make a Constitution saving throw or deal half damage with weapon attacks that use Strength until the spell ends and have disadvantage on all D20 tests using Strength.",
                 "At the end of each of the target's turns, it can make a Constitution saving throw against the spell. On a success, the spell ends."
-            ],
-            "spellAttack": [
-                "R"
             ],
             "savingThrow": [
                 "constitution"
@@ -43926,7 +43934,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@damage 1d6} for each slot level above 5th."
+                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 12d6|6-9|2d6} for each slot level above 5th."
                     ]
                 }
             ],
@@ -47054,7 +47062,7 @@
                 "v": true,
                 "s": true,
                 "m": {
-                    "text": "snow or ice in quantities sufficient to make a life-size copy of the duplicated creature; some hair, fingernail clippings, or other piece of that creature's body placed inside the snow or ice; and powdered ruby worth 1,500 gp, sprinkled over the duplicate and consumed by the spell",
+                    "text": "powdered ruby worth 1,500 gp, consumed by the spell",
                     "cost": 150000,
                     "consume": true
                 }
@@ -47068,10 +47076,9 @@
                 }
             ],
             "entries": [
-                "You shape an illusory duplicate of one beast or humanoid that is within range for the entire casting time of the spell. The duplicate is a creature, partially real and formed from ice or snow, and it can take actions and otherwise be affected as a normal creature. It appears to be the same as the original, but it has half the creature's hit point maximum and is formed without any equipment. Otherwise, the illusion uses all the statistics of the creature it duplicates, except that it is a construct.",
-                "The simulacrum is friendly to you and creatures you designate. It obeys your spoken commands, moving and acting in accordance with your wishes and acting on your turn in combat. The simulacrum lacks the ability to learn or become more powerful, so it never increases its level or other abilities, nor can it regain expended spell slots.",
-                "If the simulacrum is damaged, you can repair it in an alchemical laboratory, using rare herbs and minerals worth 100 gp per hit point it regains. The simulacrum lasts until it drops to 0 hit points, at which point it reverts to snow and melts instantly.",
-                "If you cast this spell again, any currently active duplicates you created with this spell are instantly destroyed."
+                "You create a simulacrum of one Beast or Humanoid that is within 10 feet of you for the entire casting of the spell. You finish the casting by touching both the creature and a pile of ice or snow that is the same size as that creature, and the pile turns into the simulacrum, which is a creature. It uses the game statistics of the original creature at the time of casting, except it is a Construct, its Hit Point maximum is half as much, and it can't cast this spell.",
+                "The simulacrum is Friendly to you and creatures you designate. It obeys your commands and acts on your turn in combat. The simulacrum can't gain levels, and it can't take Short or Long Rests. If the simulacrum takes damage, the only way to restore its Hit Points is to repair it as you take a Long Rest, during which you expend components worth 100 GP per Hit Point restored. The simulacrum must stay within 5 feet of you for the repair.",
+                "The simulacrum lasts until it drops to 0 Hit Points, at which point it reverts to snow and melts away. If you cast this spell again, any simulacrum you created with this spell is instantly destroyed."
             ],
             "affectsCreatureType": [
                 "beast",
@@ -48120,7 +48127,8 @@
             "range": {
                 "type": "point",
                 "distance": {
-                    "type": "touch"
+                    "type": "feet",
+                    "amount": 15
                 }
             },
             "components": {
@@ -48133,7 +48141,8 @@
                 }
             ],
             "entries": [
-                "You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs."
+                "Choose a living creature that has 0 hit points. The creature becomes Stable. This spell has no effect on undead or constructs.",
+                "This spell's range doubles when you reach 5th level (30 feet), 11th level (60 feet), and 17th level (120 feet)."
             ],
             "affectsCreatureType": [
                 "aberration",
@@ -50418,8 +50427,8 @@
                 }
             ],
             "entries": [
-                "A 20-foot-radius sphere of whirling air springs into existence, centered on a point you choose within range. The sphere remains for the spell's duration. Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength saving throw or take {@damage 2d6} bludgeoning damage. The sphere's space is {@quickref difficult terrain||3}.",
-                "Until the spell ends, you can use a bonus action on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one creature you choose within 60 feet of the center. Make a ranged spell attack. You have advantage on the attack roll if the target is in the sphere. On a hit, the target takes {@damage 4d6} lightning damage.",
+                "A 20-foot-radius sphere of whirling air springs into existence, centered on a point you choose within range. The sphere remains for the spell's duration. Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength saving throw or take {@damage 4d6} bludgeoning damage. The sphere's space is {@quickref difficult terrain||3}.",
+                "Until the spell ends, you can use a bonus action on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one creature you choose within 60 feet of the center. Make a ranged spell attack. You have advantage on the attack roll if the target is in the sphere. On a hit, the target takes {@damage 6d6} lightning damage.",
                 "Creatures within 30 feet of the sphere have disadvantage on Wisdom ({@skill Perception}) checks made to listen."
             ],
             "entriesHigherLevel": [
@@ -50427,7 +50436,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the damage for each of its effects increases by {@scaledamage 2d6;4d6|4-9|1d6} for each slot level above 4th."
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage for its initial effect increases by {@scaledamage 4d6|4-9|2d6} and the damage for its repeatable effect increases by {@scaledamage 6d6|4-9|1d6} for each slot level above 4th."
                     ]
                 }
             ],
@@ -52585,23 +52594,18 @@
             },
             "duration": [
                 {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    },
-                    "concentration": true
+                    "type": "instant"
                 }
             ],
             "entries": [
-                "A stream of acid emanates from you in a line 30 feet long and 5 feet wide in a direction you choose. Each creature in the line must succeed on a Dexterity saving throw or be covered in acid for the spell's duration or until a creature uses its action to scrape or wash the acid off itself or another creature. A creature covered in the acid takes {@damage 2d4} acid damage at start of each of its turns."
+                "A stream of acid emanates from you in a line 30 feet long and 5 feet wide in a direction you choose. Each creature in the line must succeed on a Dexterity saving throw or take {@damage 2d4} acid damage and be covered in acid. A creature covered in the acid takes {@damage 2d4} acid damage at the end of its next turn."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d4|1-9|2d4} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage (both initial and later) increases by {@scaledamage 2d4|1-9|1d4} for each slot level above 1st."
                     ]
                 }
             ],
@@ -56231,7 +56235,7 @@
             ],
             "entries": [
                 "You inflict up to 10 creatures that you can see within range with a deadly magical disease.",
-                "Each target must succeed on a Constitution saving throw. On a failed save, a target suffers {@damage 7d12} poison damage and is {@condition poisoned|Ishiir} for the duration. On a successful save, it takes half as much damage and isn't {@condition poisoned|Ishiir}.",
+                "Each target must succeed on a Constitution saving throw. On a failed save, a target suffers {@damage 7d12} poison damage and is {@condition poisoned|Ishiir} for the duration. All targets poisoned in this manner also have disadvantage on saving throws using an ability score of your choice. On a successful save, it takes half as much damage and isn't {@condition poisoned|Ishiir}.",
                 "At the end of each of a target's {@condition poisoned|Ishiir} turns, it must make a Constitution saving throw. If a target succeeds on 3 of these saves, it is no longer poisoned. If a target fails 3 of these saves, it dies."
             ],
             "damageInflict": [
@@ -58279,13 +58283,11 @@
                 }
             ],
             "entries": [
-                "Drawing on the deepest fears of a group of creatures, you create illusory creatures in their minds, visible only to them. Each creature in a 30-foot-radius sphere centered on a point of your choice within range must make a Wisdom saving throw. On a failed save, a creature becomes {@condition frightened|Ishiir} for the duration. The illusion calls on the creature's deepest fears, manifesting its worst nightmares as an implacable threat. At the end of each of the {@condition frightened|Ishiir} creature's turns, it must succeed on a Wisdom saving throw or take {@damage 11d10} psychic damage. On a successful save, the spell ends for that creature."
+                "Drawing on the deepest fears of a group of creatures, you create illusory creatures in their minds, visible only to them. Each creature in a 30-foot-radius sphere⁠ centered on a point of your choice within range must make a Wisdom saving throw. On a failed save, a creature takes {@damage 10d10} psychic damage and has disadvantage on attack rolls and ability checks for the Duration. On a successful one, a creature takes half as much damage and the spell ends.",
+                "The illusion⁠ calls on the creature's deepest fears, manifesting its worst nightmares as an implacable threat. The illusion is so powerful that it can even cause a creature to outright die from fear. At the end of each of the affected creature's turns, it must succeed on a Wisdom saving throw or take {@damage 5d10} psychic damage. On a successful save, the spell ends for that creature. If a creature failed this saving throw three times over the course of the Duration, it dies. Creatures that are immune to the {@condition Frightened|Ishiir} condition cannot be killed by the spell in this manner."
             ],
             "damageInflict": [
                 "psychic"
-            ],
-            "conditionInflict": [
-                "frightened"
             ],
             "savingThrow": [
                 "wisdom"
@@ -59129,6 +59131,15 @@
             ],
             "entries": [
                 "When you hit a creature with a melee weapon attack, you may use a bonus action have your weapon deal an extra {@damage 1d6} psychic damage. Additionally, if the target is a creature, it must make a Wisdom saving throw or be {@condition frightened|Ishiir} of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by {@scaledamage 1d6|1-9|1d6} for each slot level above 1st."
+                    ]
+                }
             ],
             "damageInflict": [
                 "psychic"
