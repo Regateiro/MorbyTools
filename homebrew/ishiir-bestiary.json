@@ -25,8 +25,7 @@
 				"MM"
 			]
 		}
-	},
-	"monster": [
+	},	"monster": [
 		{
 			"name": "Shadow Spirit",
 			"source": "Ishiir",
@@ -617,7 +616,7 @@
 				{
 					"name": "Fell Glare (Fiend Only; Recharges after a Long Rest)",
 					"entries": [
-						"{@actSave wis} DC equals your spell save DC, one creature within 60 feet the steed can see. {@actSaveFail} The target has the {@condition Frightened|XPHB} condition until the end of your next turn."
+						"{@i Wisdom Saving Throw}: DC equals your spell save DC, one creature within 60 feet the steed can see. {@i Failure}: The target has the {@condition Frightened|Ishiir} condition until the end of your next turn."
 					]
 				},
 				{
@@ -718,7 +717,7 @@
 				{
 					"name": "Venomous Spew (Centipede Only)",
 					"entries": [
-						"{@actSave con} Your spell save DC, one creature the insect can see within 10 feet. {@actSaveFail} The target has the {@condition Poisoned|XPHB} condition until the start of the insect's next turn."
+						"{@i Constitution Saving Throw}: Your spell save DC, one creature the insect can see within 10 feet. {@i Failure}: The target has the {@condition Poisoned|Ishiir} condition until the start of the insect's next turn."
 					]
 				}
 			],
