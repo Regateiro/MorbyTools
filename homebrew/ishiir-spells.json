@@ -46,7 +46,8 @@
                 }
             ],
             "entries": [
-                "You draw the moisture from up to ten creatures you can see within range. Each creature must make a Constitution saving throw. A creature takes {@damage 12d8} necrotic damage on a failed save, or half as much damage on a successful one. Plants and water elementals make this saving throw with disadvantage, and the spells deals maximum damage to them."
+                "You draw the moisture from up to ten creatures you can see within range. Each creature must make a Constitution saving throw. A creature takes {@damage 12d8} necrotic damage on a failed save, or half as much damage on a successful one. Plants and water elementals make this saving throw with disadvantage, and the spells deals maximum damage to them.",
+                "Each creature that failed its saving throw also has disadvantage on attack rolls and ability checks until the end of your next turn. Creatures that don't depend on moisture to function, such as certain constructs or undead, ignore this effect."
             ],
             "damageInflict": [
                 "necrotic"
@@ -3454,7 +3455,10 @@
                 }
             ],
             "entries": [
-                "When you hit a creature with a melee weapon attack, you may use a bonus action to make your weapon crackle with force, and the attack deals an extra {@damage 5d10} force damage to the target. Additionally, if this attack reduces the target to 50 hit points or fewer, you banish it. If the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is {@condition incapacitated|Ishiir}. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
+                "When you hit a creature with a melee weapon attack, you may use a bonus action to make your weapon crackle with force, and the attack deals an extra {@damage 5d10} force damage to the target. The target must succeed on a Charisma saving throw or be banished. If the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is {@condition incapacitated|Ishiir}. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
+            ],
+            "savingThrow": [
+                "charisma"
             ],
             "damageInflict": [
                 "force"
@@ -8542,7 +8546,7 @@
                 }
             ],
             "entries": [
-                "You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes {@damage 4d4} slashing damage when it enters the spell's area for the first time on a turn or starts its turn there."
+                "You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes {@damage 4d4} slashing damage when it enters the spell's area for the first time on a turn or starts its turn there. A creature takes this damage only once per turn. On your later turns, you can use an Action to teleport the cloud up to 30 feet to a place that you can see."
             ],
             "entriesHigherLevel": [
                 {
@@ -10186,7 +10190,7 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "one piece of ammunition or a thrown weapon"
+                "m": "a melee or ranged weapon"
             },
             "duration": [
                 {
@@ -10194,10 +10198,13 @@
                 }
             ],
             "entries": [
-                "You throw a weapon or fire a piece of ammunition into the air to create a cone of identical weapons that shoot forward and then disappear. Each creature in a 60-foot cone must succeed on a Dexterity saving throw. A creature takes {@damage 5d8} damage on a failed save, or half as much damage on a successful one. The damage type is the same as that of the weapon or ammunition used as a component."
+                "You brandish the weapon used to cast the spell and conjure similar spectral weapons (or ammunition appropriate to the weapon) that launch forward and then disappear. Each creature in a 60-foot cone must succeed on a Dexterity saving throw. A creature takes {@damage 5d8} force damage on a failed save, or half as much damage on a successful one."
             ],
             "savingThrow": [
                 "dexterity"
+            ],
+            "damageInflict": [
+                "force"
             ],
             "areaTags": [
                 "N"
@@ -10295,6 +10302,100 @@
                 "SGT",
                 "SMN",
                 "SAD"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Conjure Celestial Pillar",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 7,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You conjure a conduit of energy to the Upper Planes, which manifests as a pillar of light in a 10-foot-radius, 40-foot-high Cylinder centered on a point within range. For each creature you can see in the Cylinder, choose which of these lights shines on it:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Healing Light",
+                            "entries": [
+                                "The target regains Hit Points equal to {@dice 4d12} plus your spellcasting ability modifier."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Searing Light",
+                            "entries": [
+                                "The target makes a Dexterity saving throw, taking {@damage 6d12} Radiant damage on a failed save or half as much on a successful one.",
+                                "Until the spell ends, Bright Light fills the Cylinder, and when you move on your turn, you can also move the Cylinder up to 30 feet. Whenever the Cylinder moves into the space of a creature you can see and whenever a creature you can see enters the Cylinder or ends its turn there, you can bathe it in one of the lights. A creature can be affected by this spell only once per turn."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 8th level or higher, the damage and healing increase by {@scaledice 4d12;6d12|7-9|1d12} for each slot level above 7th."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "HL",
+                "LGT"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "areaTags": [
+                "Y"
             ],
             "classes": {
                 "fromClassList": [
@@ -10432,6 +10533,86 @@
                     "source": "Ishiir"
                 }
             ],
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Conjure Elemental Spirit",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 5,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You conjure a Large, intangible spirit from the Elemental Planes that appears in an unoccupied space within range. Choose the spirit's element, which determines its damage type: air (Lightning), earth (Bludgeoning), fire (Fire), or water (Cold). The spirit lasts for the duration.",
+                "Whenever a creature you can see enters the spirit's space or starts its turn within 5 feet of the spirit, you can force that creature to make a Dexterity saving throw if the spirit has no creature {@condition Restrained|Ishiir}. On a failed save, the target takes {@damage 8d8} damage of the spirit's type, and the target has the {@condition Restrained|Ishiir} condition until the spell ends."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledice 8d8|5-9|2d8} for each slot level above 5th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "lightning",
+                "bludgeoning",
+                "fire",
+                "cold"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "conditionInflict": [
+                "restrained"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
             "feats": [
                 {
                     "name": "Circle Adept",
@@ -10608,6 +10789,157 @@
             ]
         },
         {
+            "name": "Conjure Nature Spirits",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 4,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You conjure nature spirits that flit around you in a 10-foot Emanation for the duration. Whenever the Emanation enters the space of a creature you can see and whenever a creature you can see enters the Emanation or ends its turn there, you can force that creature to make a Wisdom saving throw. The creature takes {@damage 5d8} Force damage on a failed save or half as much damage on a successful one. A creature makes this save only once per turn.",
+                "In addition, you can take the {@action Disengage|Ishiir} action as a Bonus Action for the spell's duration."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledice 5d8|4-9|1d8} for each slot level above 4th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "miscTags": [
+                "UBA"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Conjure Spirit Animals",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 3,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You conjure nature spirits that appear as a Large pack of spectral, intangible animals in an unoccupied space you can see within range. The pack lasts for the duration, and you choose the spirits' animal forms, such as wolves, serpents, or birds.",
+                "You have Advantage on Strength saving throws while you're within 5 feet of the pack, and when you move on your turn, you can also move the pack up to 30 feet to an unoccupied space you can see.",
+                "Whenever the pack moves within 10 feet of a creature you can see and whenever a creature you can see enters a space within 10 feet of the pack or ends its turn there, you can force that creature to make a Dexterity saving throw. On a failed save, the creature takes {@damage 3d10} Slashing damage. A creature makes this save only once per turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage and healing increase by {@scaledice 3d10|3-9|1d10} for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "slashing"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Conjure Volley",
             "page": 1,
             "source": "Ishiir",
@@ -10629,7 +10961,7 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "one piece of ammunition or one thrown weapon"
+                "m": "one melee or ranged weapon"
             },
             "duration": [
                 {
@@ -10637,7 +10969,11 @@
                 }
             ],
             "entries": [
-                "You fire a piece of nonmagical ammunition from a ranged weapon or throw a nonmagical weapon into the air and choose a point within range. Hundreds of duplicates of the ammunition or weapon fall in a volley from above and then disappear. Each creature in a 40-foot-radius, 20-foot-high cylinder centered on that point must make a Dexterity saving throw. A creature takes {@damage 8d8} damage on a failed save, or half as much damage on a successful one. The damage type is the same as that of the ammunition or weapon."
+                "You brandish the weapon used to cast the spell and choose a point within range. Hundreds of similar spectral weapons (or ammunition appropriate to the weapon) fall in a volley and then disappear.",
+                "Each creature in a 40-foot-radius, 20-foot-high cylinder centered on that point must make a Dexterity saving throw. A creature takes {@damage 8d8} force damage on a failed save, or half as much damage on a successful one."
+            ],
+            "damageInflict": [
+                "force"
             ],
             "savingThrow": [
                 "dexterity"
@@ -17704,6 +18040,87 @@
             ]
         },
         {
+            "name": "Elemental Shroud",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 4,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You become a conduit for elemental energy that surrounds you like a corona. Choose one of the following elements when you cast the spell: bludgeoning, cold, fire, or lightning. For the duration, any attack you make deals an extra 1d10 damage of the chose type.",
+                "In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can use your Reaction to dismiss the spell and force the creature to make a Dexterity saving throw. On a failed save, the creature takes 4d10 damage of the chosen type. On a successful save, it takes half as much damage."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the extra damage for your attacks increases by {@scaledice 1d10|4-9|1d10} and the damage of the special reaction increases by {@scaledice 4d10|4-9|2d10} for every two slot levels above 4th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "bludgeoning",
+                "cold",
+                "fire",
+                "lightning"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "miscTags": [
+                "AAD",
+                "SGT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Elemental Weapon",
             "page": 1,
             "source": "Ishiir",
@@ -18504,7 +18921,7 @@
                 }
             ],
             "entries": [
-                "The next time you hit a creature with a weapon attack before this spell ends, a writhing mass of thorny vines appears at the point of impact, and the target must succeed on a Strength saving throw or be {@condition restrained|Ishiir} by the magical vines until the spell ends. A Large or larger creature has advantage on this saving throw. If the target succeeds on the save, the vines shrivel away.",
+                "As you hit the target, grasping vines appear on it, and it makes a Strength saving throw. A large or larger creature has Advantage on this save. On a failed save, the target has the {@condition Restrained|Ishiir} condition until the spell ends. On a successful save, the vines shrivel away, and the spell ends.",
                 "While {@condition restrained|Ishiir} by this spell, the target takes {@damage 1d6} piercing damage at the start of each of its turns. A creature {@condition restrained|Ishiir} by the vines or one that can touch the creature can use its action to make a Strength check against your spell save DC. On a success, the target is freed."
             ],
             "entriesHigherLevel": [
@@ -18815,7 +19232,7 @@
             "page": 1,
             "source": "Ishiir",
             "level": 7,
-            "school": "T",
+            "school": "C",
             "time": [
                 {
                     "number": 1,
@@ -18934,7 +19351,7 @@
             "entries": [
                 "Squirming, ebony tentacles fill a 20-foot square on ground that you can see within range. For the duration, these tentacles turn the ground in the area into {@quickref difficult terrain||3}.",
                 "When a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take {@damage 3d6} bludgeoning damage and be {@condition restrained|Ishiir} by the tentacles until the spell ends. A creature that starts its turn in the area and is already {@condition restrained|Ishiir} by the tentacles takes {@damage 3d6} bludgeoning damage.",
-                "A creature {@condition restrained|Ishiir} by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself."
+                "A creature {@condition restrained|Ishiir} by the tentacles can use its action to make a Strength check against your spell save DC. On a success, it frees itself."
             ],
             "damageInflict": [
                 "bludgeoning"
@@ -18946,8 +19363,7 @@
                 "dexterity"
             ],
             "abilityCheck": [
-                "strength",
-                "dexterity"
+                "strength"
             ],
             "miscTags": [
                 "SGT"
@@ -20323,8 +20739,9 @@
                 "You gain the service of a familiar, a spirit that takes an animal form you choose: {@creature bat}, {@creature cat}, {@creature crab}, {@creature frog} (toad), {@creature hawk}, {@creature lizard}, {@creature octopus}, {@creature owl}, {@creature poisonous snake}, fish ({@creature quipper}), {@creature rat}, {@creature raven}, {@creature sea horse}, {@creature spider}, or {@creature weasel}. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast.",
                 "{@note Additional {@filter animal form choices|bestiary|Miscellaneous=Familiar} may be available at the DM's discretion.}",
                 "Your familiar acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal.",
-                "When the familiar drops to 0 hit points, it disappears, leaving behind no physical form. It reappears after you cast this spell again. As an action, you can temporarily dismiss the familiar to a pocket dimension. Alternatively, you can dismiss it forever. As an action while it is temporarily dismissed, you can cause it to reappear in any unoccupied space within 30 feet of you. Whenever the familiar drops to 0 hit points or disappears into the pocket dimension, it leaves behind in its space anything it was wearing or carrying.",
-                "While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as an action, you can see through your familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has. During this time, you are {@condition deafened|Ishiir|deaf} and {@condition blinded|Ishiir|blind} with regard to your own senses.",
+                "When the familiar drops to 0 hit points, it disappears, leaving behind no physical form. It reappears after you cast this spell again.",
+                "While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as a bonus action, you can see through your familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has.",
+                "As an action, you can temporarily dismiss your familiar. It disappears into a pocket dimension where it awaits your summons. Alternatively, you can dismiss it forever. As an action while it is temporarily dismissed, you can cause it to reappear in any unoccupied space within 30 feet of you.",
                 "You can't have more than one familiar at a time. If you cast this spell while you already have a familiar, you instead cause it to adopt a new form. Choose one of the forms from the above list. Your familiar transforms into the chosen creature.",
                 "Finally, when you cast a spell with a range of touch, your familiar can deliver the spell as if it had cast the spell. Your familiar must be within 100 feet of you, and it must use its reaction to deliver the spell when you cast it. If the spell requires an attack roll, you use your attack modifier for the roll."
             ],
@@ -20371,61 +20788,6 @@
             ]
         },
         {
-            "name": "Find Greater Steed",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 4,
-            "school": "C",
-            "time": [
-                {
-                    "number": 10,
-                    "unit": "minute"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 30
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "You summon a spirit that assumes the form of a loyal, majestic mount. Appearing in an unoccupied space within range, the spirit takes on a form of a beast of CR 4 or lower. The creature has the statistics provided in the Monster Manual for the chosen form, though it is a celestial, a fey, or a fiend (your choice) instead of its normal creature type. Additionally, if it has an Intelligence score of 5 or lower, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.",
-                "You control the mount in combat. While the mount is within 1 mile of you, you can communicate with it telepathically. While mounted on it, you can make any spell you cast that targets only you also target the mount.",
-                "The mount disappears temporarily when it drops to 0 hit points or when you dismiss it as an action. Casting this spell again re-summons the bonded mount, with all its hit points restored and any conditions removed.",
-                "You can't have more than one mount bonded by this spell or {@spell find steed|Ishiir} at the same time. As an action, you can release a mount from its bond, causing it to disappear permanently.",
-                "Whenever the mount disappears, it leaves behind any objects it was wearing or carrying."
-            ],
-            "miscTags": [
-                "PRM",
-                "SMN",
-                "SAD"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Paladin",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
             "name": "Find Steed",
             "page": 1,
             "source": "Ishiir",
@@ -20454,11 +20816,37 @@
                 }
             ],
             "entries": [
-                "You summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Appearing in an unoccupied space within range, the steed takes on a form a beast of your choice of CR 2 or lower. (Your DM might allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.",
-                "Your steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. While mounted on your steed, you can make any spell you cast that targets only you also target your steed.",
-                "When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.",
-                "While your steed is within 1 mile of you, you can communicate with each other telepathically.",
-                "You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear."
+                "You summon an otherwordly being that appears as a loyal steed in an unoccupied space of your choice within range. This creature uses the {@creature Otherworldly Steed|Ishiir} stat block. If you already have a steed from this spell, the speed is replaced by the new one.",
+                "The steed resembles a Large, rideable animal of your choice, such as a horse, a camel, a dire wolf, or an elk. Whenever you cast the spell, choose the steed's creature type - Celestial, Fey, or Fiend - which determines certain traits in the stat block.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Combat",
+                            "entries": [
+                                "The steed is friendly to you and your allies. In combat, it shares your Initiative count, and it functions as a controlled mount while you ride it (as defined in the rules on mounted combat). If you have the {@condition Incapacitated|Ishiir} condition, the steed takes its turn immediately after yours and acts independently, focusing on protecting you."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Disappearance of the Steed",
+                            "entries": [
+                                "The steed disappears if it drops 0 Hit Points or if you die. When it disappears, it leaves behind anything it was wearing or carrying. If you cast this spell again, you decide whether you summon the steed that disappeared or a different one."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "Use the spell slot's level for the spell's level in the stat block."
+                    ]
+                }
             ],
             "miscTags": [
                 "PRM",
@@ -23885,7 +24273,7 @@
             "page": 1,
             "source": "Ishiir",
             "level": 4,
-            "school": "T",
+            "school": "C",
             "time": [
                 {
                     "number": 1,
@@ -23896,7 +24284,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 30
+                    "amount": 60
                 }
             },
             "components": {
@@ -23914,16 +24302,23 @@
                 }
             ],
             "entries": [
-                "You transform up to ten centipedes, three spiders, five wasps, or one scorpion within range into giant versions of their natural forms for the duration. A centipede becomes a {@creature giant centipede}, a spider becomes a {@creature giant spider}, a wasp becomes a {@creature giant wasp}, and a scorpion becomes a {@creature giant scorpion}.",
-                "Each creature obeys your verbal commands, and in combat, they act on your turn each round. The DM has the statistics for these creatures and resolves their actions and movement.",
-                "A creature remains in its giant size for the duration, until it drops to 0 hit points, or until you use an action to dismiss the effect on it.",
-                "The DM might allow you to choose different targets. For example, if you transform a bee, its giant version might have the same statistics as a {@creature giant wasp}."
+                "You summon a giant {@creature Giant Insect (Centipede)|Ishiir|centipede}, {@creature Giant Insect (Spider)|Ishiir|spider}, or {@creature Giant Insect (Wasp)|Ishiir|wasp} (chosen when you cast the spell). It manifests in an unoccupied space you can see within range and uses the {@creature Giant Insect|Ishiir} stat block. the form you choose determines certain details in its stat block.",
+                "The creature disappears when it drops to 0 Hit Points or when the spell ends. The creature is friendly to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge|Ishiir} action and uses its movement to avoid danger."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "Use the spell slot's level for the spell's level in the stat block."
+                    ]
+                }
             ],
             "miscTags": [
                 "SMN"
             ],
             "areaTags": [
-                "MT"
+                "ST"
             ],
             "classes": {
                 "fromClassList": [
@@ -24478,7 +24873,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 30
+                    "amount": 60
                 }
             },
             "components": {
@@ -24496,11 +24891,26 @@
                 }
             ],
             "entries": [
-                "You conjure a vine that sprouts from the ground in an unoccupied space of your choice that you can see within range. The vine is a large plant with a speed of 0, 100 hp, and an AC of 10. It has vulnerability to slashing and fire damage and resistance to piercing and bludgeoning damage.",
-                "When you cast this spell, you can direct the vine to lash out at a creature within 30 feet of it that you can see. That creature must succeed on a Dexterity saving throw or be {@condition grappled|Ishiir}. A medium or smaller creature is {@condition restrained|Ishiir} while grappled in this manner. As part of the same bonus action, you can pull the grappled creature up to 20 feet towards the vine. A grappled creature or one of its allies can use their action to make a Strength check against your spell DC to break out of the grapple.",
-                "Until the spell ends, you can direct the vine to lash out at the same creature or another one as a bonus action on each of your turns. If you target a different creature, the previous one is no longer {@condition grappled|Ishiir} by the vine."
+                "You conjure a nature spirit in the form of a Large vine that sprouts from a surface in an unoccupied space that you can see within range. The vine cannot move or be moved, is immune to all damage and conditions, and lasts for the duration.",
+                "Make a melee spell attack against a creature within 30 feet of the vine. On a hit, the target takes {@damage 4d8} Bludgeoning damage. If the target is Huge or smaller, it is {@condition grappled|Ishiir} and can be moved up to 30 feet, but must remain within 30 feet of the vine during the whole movement. To escape the grapple, the creature has to succeed on a Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check against your spell save DC.",
+                "The vine can only grapple one creature at a time, and you can cause the vine to release a Grappled creature (no action required). As a Bonus action on your later turns, you can repeat the attack against a creature within 30 feet of the vine."
             ],
-            "savingThrow": [
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the number of creatures the vine can have grappled simultaneously increases by 1 for each slot level above 4th."
+                    ]
+                }
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "damageInflict": [
+                "bludgeoning"
+            ],
+            "abilityCheck": [
                 "dexterity",
                 "strength"
             ],
@@ -24544,14 +24954,6 @@
                     "name": "Circle Adept",
                     "source": "Ishiir"
                 }
-            ],
-            "damageResist": [
-                "bludgeoning",
-                "piercing"
-            ],
-            "damageVulnerable": [
-                "fire",
-                "slashing"
             ],
             "conditionInflict": [
                 "restrained"
@@ -31181,7 +31583,7 @@
             ],
             "entries": [
                 "You choose a point within range you can see and create a blast of vicious entropic energy that envelops everything in a 60-foot-radius sphere.",
-                "Each creature in that area must make a Constitution saving throw. On a failed save, a creature takes {@damage 8d12} acid damage and half as much on a successful one. On a failed save, the creature also begins to corrode rapidly, taking {@damage 4d12} acid damage at the end of each of its turns for the duration. While affected in this manner, healing the target receives is halved.",
+                "Each creature in that area must make a Constitution saving throw. On a failed save, a creature takes {@damage 8d12} acid damage and half as much on a successful one. On a failed save, the creature also begins to corrode rapidly, taking {@damage 4d12} acid damage at the end of each of its turns for the duration. While affected in this manner, healing the target receives is halved and its AC is reduced by 4.",
                 "At the end of each of its turns, the target can repeat the saving throw, ending the spell on a success.",
                 "If a creature is reduced to 0 hitpoints by the damage from this spell, its body is dissolved into nothingness."
             ],
@@ -31218,7 +31620,8 @@
                 }
             ],
             "miscTags": [
-                "SAD"
+                "SAD",
+                "MAC"
             ]
         },
         {
