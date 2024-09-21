@@ -24893,7 +24893,7 @@
             "entries": [
                 "You conjure a nature spirit in the form of a Large vine that sprouts from a surface in an unoccupied space that you can see within range. The vine cannot move or be moved, is immune to all damage and conditions, and lasts for the duration.",
                 "Make a melee spell attack against a creature within 30 feet of the vine. On a hit, the target takes {@damage 4d8} Bludgeoning damage. If the target is Huge or smaller, it is {@condition grappled|Ishiir} and can be moved up to 30 feet, but must remain within 30 feet of the vine during the whole movement. To escape the grapple, the creature has to succeed on a Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check against your spell save DC.",
-                "The vine can only grapple one creature at a time, and you can cause the vine to release a Grappled creature (no action required). As a Bonus action on your later turns, you can repeat the attack against a creature within 30 feet of the vine."
+                "The vine can only grapple one creature at a time, and you can cause the vine to release a {@condition Grappled|Ishiir} creature (no action required). As a Bonus action on your later turns, you can repeat the attack against a creature within 30 feet of the vine."
             ],
             "entriesHigherLevel": [
                 {
@@ -24903,6 +24903,43 @@
                         "When you cast this spell using a spell slot of 5th level or higher, the number of creatures the vine can have grappled simultaneously increases by 1 for each slot level above 4th."
                     ]
                 }
+            ],
+            "damageImmune": [
+                "acid",
+                "bludgeoning",
+                "cold",
+                "fire",
+                "force",
+                "lightning",
+                "necrotic",
+                "piercing",
+                "poison",
+                "psychic",
+                "radiant",
+                "slashing",
+                "thunder"
+            ],
+            "conditionImmune": [
+                "blinded",
+                "charmed",
+                "confused",
+                "dazed",
+                "deafened",
+                "dominated",
+                "exhaustion",
+                "frightened",
+                "frozen",
+                "grappled",
+                "incapacitated",
+                "invisible",
+                "lacerated",
+                "paralyzed",
+                "petrified",
+                "poisoned",
+                "prone",
+                "restrained",
+                "stunned",
+                "unconscious"
             ],
             "spellAttack": [
                 "R"
