@@ -1000,7 +1000,7 @@
                 }
             ],
             "entries": [
-                "This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be {@condition charmed|Ishiir} by you for the spell's duration. If you or one of your companions harms the target, the spell ends."
+                "This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. The beast must succeed on a Wisdom saving throw or be {@condition charmed|Ishiir} by you for the spell's duration. If you or one of your companions harms the target, the spell ends."
             ],
             "entriesHigherLevel": [
                 {
@@ -1806,7 +1806,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 60
+                    "amount": 120
                 }
             },
             "components": {
@@ -1824,32 +1824,31 @@
                 }
             ],
             "entries": [
-                "This spell attracts or repels creatures of your choice. You target something within range, either a Huge or smaller object or creature or an area that is no larger than a 200-foot cube. Then specify a kind of intelligent creature, such as red dragons, goblins, or vampires. The kind of creature can as broad as a creature type (humanoids, undead). You invest the target with an aura that either attracts or repels the specified creatures for the duration. Choose antipathy or sympathy as the aura's effect.",
+                "As you cast the spell, choose whether it creates antipathy or sympathy, and target one creature or object that is Huge or smaller. Then specify a kind of creature, such as red dragons, goblins, or vampires. The kind of creature can as broad as a creature type (humanoids, undead).A creature of the chosen kind makes a Wisdom saving throw when it comes within 120 feet of the target. Your choice of antipathy or sympathy determines what happens to a creature when it fails that save:",
                 {
                     "type": "entries",
                     "name": "Antipathy",
                     "entries": [
-                        "The enchantment causes creatures of the kind you designated to feel an intense urge to leave the area and avoid the target. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or become {@condition frightened|Ishiir}. The creature remains {@condition frightened|Ishiir} while it can see the target or is within 60 feet of it. While {@condition frightened|Ishiir} by the target, the creature must use its movement to move to the nearest safe spot from which it can't see the target. If the creature moves more than 60 feet from the target and can't see it, the creature is no longer {@condition frightened|Ishiir}, but the creature becomes {@condition frightened|Ishiir} again if it regains sight of the target or moves within 60 feet of it."
+                        "The creature has the {@condition frightened|Ishiir} condition. The Frightened creature must use its movement on its turns to get as far away as possible from the target, moving by the safest route."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Sympathy",
                     "entries": [
-                        "The enchantment causes the specified creatures to feel an intense urge to approach the target while within 60 feet of it or able to see it. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or use its movement on each of its turns to enter the area or move within reach of the target. When the creature has done so, it can't willingly move away from the target.",
-                        "If the target damages or otherwise harms an affected creature, the affected creature can make a Wisdom saving throw to end the effect, as described below."
+                        "The creature has the {@condition Charmed|Ishiir} condition. The Charmed creature must use its movement on its turns to get as close as possible to the target, moving by the safest route. If the creature is within 5 feet of the target, the creature can't willingly move away. If the target damages the Charmed creature, that creature can make a Wisdom saving throw to end the effect, as described below."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Ending the Effect",
                     "entries": [
-                        "If an affected creature ends its turn while not within 60 feet of the target or able to see it, the creature makes a Wisdom saving throw. On a successful save, the creature is no longer affected by the target and recognizes the feeling of repugnance or attraction as magical. In addition, a creature affected by the spell is allowed another Wisdom saving throw every 24 hours while the spell persists."
+                        "If the Frightened or Charmed creature ends its turn more than 120 feet away from the target, the creature makes a Wisdom saving throw. On a successful save, the creature is no longer affected by the target. A creature that successfully saves against this effect is immune to it for 1 minute, after which it can be affected again."
                     ]
-                },
-                "A creature that successfully saves against this effect is immune to it for 1 minute, after which time it can be affected again."
+                }
             ],
             "conditionInflict": [
+                "charmed",
                 "frightened"
             ],
             "savingThrow": [
@@ -7643,7 +7642,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th. The creatures must be within 30 feet of each other when you target them."
+                        "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th."
                     ]
                 }
             ],
@@ -7754,7 +7753,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
+                        "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
                     ]
                 }
             ],
@@ -8852,7 +8851,7 @@
                 }
             ],
             "entries": [
-                "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.",
+                "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the command is directly harmful to it.",
                 "Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.",
                 {
                     "type": "entries",
@@ -8895,7 +8894,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
+                        "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st."
                     ]
                 }
             ],
@@ -8918,7 +8917,8 @@
                 "humanoid",
                 "monstrosity",
                 "ooze",
-                "plant"
+                "plant",
+                "undead"
             ],
             "miscTags": [
                 "SGT"
@@ -9340,8 +9340,8 @@
                 }
             ],
             "entries": [
-                "You attempt to compel a creature into a duel. One creature that you can see within range must make a Wisdom saving throw. On a failed save, the creature is drawn to you, compelled by your divine demand. For the duration, it has disadvantage on attack rolls against creatures other than you, and must make a Wisdom saving throw each time it attempts to move to a space that is more than 30 feet away from you; if it succeeds on this saving throw, this spell doesn't restrict the target's movement for that turn.",
-                "The spell ends if you attack any other creature, if you cast a spell that targets a hostile creature other than the target, if a creature friendly to you damages the target or casts a harmful spell on it, or if you end your turn more than 30 feet away from the target."
+                "You try to compel a creature into a duel. One creature that you can see within range makes a Wisdom saving throw. On a failed save, the target has Disadvantage on attack rolls against creatures other than you, and it can't willingly move to a space that is more than 30 feet away from you.",
+                "The spell ends if you make an attack roll against a creature other than the target, if you cast a spell on an enemy other than the target, if an ally of yours damages the target, or if you end your turn more than 30 feet away from the target."
             ],
             "savingThrow": [
                 "wisdom"
@@ -9539,8 +9539,11 @@
                 }
             ],
             "entries": [
-                "Creatures of your choice that you can see within range and that can hear you must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can't be {@condition charmed|Ishiir}. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction that is horizontal to you. Each affected target must use as much of its movement as possible to move in that direction on its next turn. It can take its action before it moves. After moving in this way, it can make another Wisdom saving throw to try to end the effect.",
-                "A target isn't compelled to move into an obviously deadly hazard, such as a fire or pit, but it will provoke opportunity attacks to move in the designated direction."
+                "Each creature of your choice that you can see within range must succeed on a Wisdom saving throw or have the {@condition charmed|Ishiir} condition until the spell ends.",
+                "For the duration, you can take a Bonus Action to designate a direction that is horizontal to you. Each {@condition charmed|Ishiir} target must use as much of its movement as possible to move in that direction on its next turn, taking the safest route. After moving in this way, a target repeats the save, ending the spell on itself on a success."
+            ],
+            "conditionInflict": [
+                "charmed"
             ],
             "savingThrow": [
                 "wisdom"
@@ -19038,11 +19041,12 @@
                     "duration": {
                         "type": "minute",
                         "amount": 1
-                    }
+                    },
+                    "concentration": true
                 }
             ],
             "entries": [
-                "You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that can't be {@condition charmed|Ishiir} succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, the target has disadvantage on Wisdom ({@skill Perception}) checks made to perceive any creature other than you until the spell ends or until the target can no longer hear you. The spell ends if you are {@condition incapacitated|Ishiir} or can no longer speak."
+                "You weave a distracting string of words, causing creatures of your choice that you can see within range to make a Wisdom saving throw. Any creature you or your companions are fighting automatically succeeds on this save. On a failed save, a target has a -10 penalty to Wisdom ({@skill Perception}) checks and Passive Perception until the spell ends."
             ],
             "savingThrow": [
                 "wisdom"
@@ -23509,7 +23513,8 @@
             "range": {
                 "type": "point",
                 "distance": {
-                    "type": "self"
+                    "type": "feet",
+                    "amount": 10
                 }
             },
             "components": {
@@ -23527,7 +23532,11 @@
                 }
             ],
             "entries": [
-                "For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM's discretion), depending on the nature of your interaction with it."
+                "You magically emanate a sense of friendship toward one creature you can see within range. The target must succeed on a Wisdom saving throw or have the {@condition Charmed|Ishiir} condition for the duration. The target succeeds automatically if it isn't a Humanoid, if you're fighting it, or if you have cast this spell on it within the past 24 hours.",
+                "The spell ends early if the target takes damage or if you make an attack roll, deal damage, or force anyone to make a saving throw. When the spell ends, the target knows it was {@condition Charmed|Ishiir} by you."
+            ],
+            "conditionInflict": [
+                "charmed"
             ],
             "areaTags": [
                 "ST"
@@ -27847,7 +27856,7 @@
                 }
             ],
             "entries": [
-                "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being {@condition frightened|Ishiir} and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell."
+                "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being {@condition frightened|Ishiir} and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns."
             ],
             "entriesHigherLevel": [
                 {
@@ -40271,7 +40280,8 @@
             "range": {
                 "type": "point",
                 "distance": {
-                    "type": "touch"
+                    "type": "feet",
+                    "amount": 60
                 }
             },
             "components": {
@@ -40284,7 +40294,7 @@
                 }
             ],
             "entries": [
-                "A wave of healing energy washes over the creature you touch. The target regains all its hit points. If the creature is {@condition blinded|Ishiir}, {@condition charmed|Ishiir}, {@condition deafened|Ishiir}, {@condition frightened|Ishiir}, {@condition paralyzed|Ishiir}, {@condition poisoned|Ishiir}, {@condition stunned|Ishiir}, suffers from a disease, or has its maximum hitpoints reduced, the effect ends. If the creature is {@condition prone|Ishiir}, it can use its reaction to stand up. This spell has no effect on undead or constructs."
+                "A wave of healing energy washes over a creature within 60 feet that you can see. The target regains all its hit points. If the creature is {@condition blinded|Ishiir}, {@condition charmed|Ishiir}, {@condition deafened|Ishiir}, {@condition frightened|Ishiir}, {@condition paralyzed|Ishiir}, {@condition poisoned|Ishiir}, {@condition stunned|Ishiir}, suffers from a disease, or has its maximum hitpoints reduced, the effect ends. If the creature is {@condition prone|Ishiir}, it can use its reaction to stand up. This spell has no effect on undead or constructs."
             ],
             "affectsCreatureType": [
                 "aberration",
@@ -40358,7 +40368,10 @@
                 }
             ],
             "entries": [
-                "You utter a word of power that can compel one creature you can see within range to die instantly. If the creature you choose has 100 hit points or fewer, it dies. Otherwise, the spell has no effect."
+                "You utter a word of power that can compel one creature you can see within range to die instantly. If the creature you choose has 100 hit points or fewer, it dies. Otherwise, Otherwise, it takes {@damage 12d12} Psychic damage."
+            ],
+            "damageInflict": [
+                "psychic"
             ],
             "miscTags": [
                 "SGT"
@@ -40561,8 +40574,8 @@
                 }
             ],
             "entries": [
-                "You speak a word of power that can overwhelm the mind of one creature you can see within range, leaving it dumbfounded. If the target has 150 hit points or fewer, it is {@condition stunned|Ishiir}. Otherwise, the spell has no effect.",
-                "The {@condition stunned|Ishiir} target must make a Constitution saving throw at the end of each of its turns. On a successful save, this stunning effect ends."
+                "You overwhelm the mind of one creature you can see within range. If the target has 150 Hit Points or fewer, it has the {@condition stunned|Ishiir}. Otherwise, its Speed is 0 until the start of your next turn.",
+                "The {@condition stunned|Ishiir} target makes a Constitution saving throw at the end of each of its turns, ending the condition on itself on a success."
             ],
             "conditionInflict": [
                 "stunned"
@@ -45609,8 +45622,7 @@
                     "duration": {
                         "type": "minute",
                         "amount": 1
-                    },
-                    "concentration": true
+                    }
                 }
             ],
             "entries": [
@@ -49919,11 +49931,7 @@
             },
             "duration": [
                 {
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    },
-                    "type": "timed"
+                    "type": "instant"
                 }
             ],
             "entries": [
@@ -52900,15 +52908,14 @@
                 }
             ],
             "entries": [
-                "You choose a point within range and cause psychic energy to explode there. Each creature in a 20-foot-radius sphere centered on that point must make an Intelligence saving throw. A creature with an Intelligence score of 2 or lower can't be affected by this spell. A target takes {@damage 8d6} psychic damage on a failed save, or half as much damage on a successful one.",
-                "After a failed save, a target has muddled thoughts for 1 minute. During that time, it rolls a {@dice d6} and subtracts the number rolled from all its attack rolls and ability checks, as well as its Constitution saving throws to maintain concentration. The target can make an Intelligence saving throw at the end of each of its turns, ending the effect on itself on a success."
+                "You cause psychic energy to erupt at a point within range. Each creature in a 20-foot-radius Sphere centered on that point makes an Intelligence saving throw, taking {@damage 8d6} Psychic damage on a failed save or half as much damage on a successful one.",
+                "On a failed save, a target also has muddled thoughts for 1 minute. During that time, it subtracts {@dice 1d6} from all its attack rolls and ability checks, as well as any Constitution saving throws to maintain Concentration. The target makes an Intelligence saving throw at the end of each of its turns, ending the effect on itself on a success."
             ],
             "damageInflict": [
                 "psychic"
             ],
             "savingThrow": [
-                "intelligence",
-                "constitution"
+                "intelligence"
             ],
             "areaTags": [
                 "S"
@@ -53132,8 +53139,17 @@
                 }
             ],
             "entries": [
-                "A creature of your choice that you can see within range perceives everything as hilariously funny and falls into fits of laughter if this spell affects it. The target must succeed on a Wisdom saving throw or fall {@condition prone|Ishiir}, becoming {@condition incapacitated|Ishiir} and unable to stand up for the duration. A creature with an Intelligence score of 4 or less isn't affected.",
-                "At the end of each of its turns, and each time it takes damage, the target can make another Wisdom saving throw. The target has advantage on the saving throw if it's triggered by damage. On a success, the spell ends."
+                "One creature of your choice that you can see within range makes a Wisdom saving throw. On a failed save, it has the {@condition Prone|Ishiir} and {@condition Incapacitated|Ishiir} conditions for the duration. During that time, it laughs uncontrollably if it's capable of laughter, and it can't end the {@condition Prone|Ishiir} condition on itself.",
+                "At the end of each of its turns and each time it takes damage, it makes another Wisdom saving throw. The target has Advantage on the save if the save is triggered by damage. On a successful save, the spell ends."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "You can target one additional creature for each spell slot level about 1."
+                    ]
+                }
             ],
             "conditionInflict": [
                 "incapacitated",
@@ -54872,11 +54888,7 @@
             },
             "duration": [
                 {
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    },
-                    "type": "timed"
+                    "type": "instant"
                 }
             ],
             "entries": [
