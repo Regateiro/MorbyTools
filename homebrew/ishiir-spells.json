@@ -924,7 +924,7 @@
                     "type": "entries",
                     "name": "Natural Weapons",
                     "entries": [
-                        "You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal {@damage 1d6} bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it."
+                        "You grow claws (Slashing), fangs (Piercing), horns (Piercing), or hooves (Bludgeoning). When you use your Unarmed Strike to deal damage with that new growth, it deals {@damage 1d6} damage of the type in parentheses instead of dealing the normal damage for your Unarmed Strike, and you use your spellcasting ability modifier for the attack and damage rolls rather than using Strength."
                     ]
                 }
             ],
@@ -935,6 +935,10 @@
             ],
             "classes": {
                 "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
                     {
                         "name": "Sorcerer",
                         "source": "Ishiir"
@@ -1203,10 +1207,8 @@
             ],
             "entries": [
                 "Your magic turns others into beasts. Choose any number of willing creatures that you can see within range. You transform each target into the form of a {@filter Huge or smaller beast with a challenge rating of 6 or lower|bestiary|challenge rating=[&0;&6]|type=beast|size=f;d;t;s;m;l;h|miscellaneous=!swarm}. On subsequent turns, you can use your action to transform affected creatures into new forms.",
-                "The transformation lasts for the duration for each target, or until the target drops to 0 hit points or dies. You can choose a different form for each target. A target's game statistics are replaced by the statistics of the chosen beast, though the target retains its alignment and Intelligence, Wisdom, and Charisma scores.",
-                "The target retains its own hit points and hit dice. If the beast's maximum hit points are higher than the target's, it gains the difference as temporary hit points. These temporary hit points stack with all other sources of temporary hit points and do not protect it from effects that are normally blocked by temporary hit points. It loses all temporary hit points gained in this manner if it reverts to its original form.",
-                "The creature is limited in the actions it can perform by the nature of its new form, and it can't speak or cast spells.",
-                "The target's gear melds into the new form. The target can't activate, wield, or otherwise benefit from any of its equipment."
+                "A target's game statistics are replaced by the chosen Beast's statistics, but the target retains its creature type; Hit Points; Hit Point Dice; alignment; ability to communicate; and Intelligence, Wisdom, and Charisma scores. The target's actions are limited by the Beast form's anatomy, and it can't cast spells. The target's equipment melds into the new form, and the target can't use any of that equipment while in that form.",
+                "The target gains a number of Temporary Hit Points equal to the Beast form's Hit Points. The transformation lasts for the duration for each target, until the target has no Temporary Hit Points, or until the target leaves the form as a Bonus Action."
             ],
             "miscTags": [
                 "SGT",
@@ -1391,79 +1393,16 @@
                 }
             ],
             "entries": [
-                "Objects come to life at your command. Choose up to ten nonmagical objects within range that are not being worn or carried. Medium targets count as two objects, Large targets count as four objects, Huge targets count as eight objects. You can't animate any object larger than Huge. Each target animates and becomes a creature under your control until the spell ends or until reduced to 0 hit points.",
-                "As a bonus action, you can mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
-                {
-                    "type": "table",
-                    "caption": "Animated Object Statistics",
-                    "colLabels": [
-                        "Size",
-                        "HP",
-                        "AC",
-                        "Attack",
-                        "Str",
-                        "Dex"
-                    ],
-                    "colStyles": [
-                        "col-2",
-                        "col-1 text-center",
-                        "col-1 text-center",
-                        "col-6",
-                        "col-1 text-center",
-                        "col-1 text-center"
-                    ],
-                    "rows": [
-                        [
-                            "{@creature animated object (tiny)|phb|Tiny}",
-                            "20",
-                            "18",
-                            "{@hit +8} to hit, {@damage 1d4 + 4} damage",
-                            "{@dice 1d20 - 3|4}",
-                            "{@dice 1d20 + 4|18}"
-                        ],
-                        [
-                            "{@creature animated object (small)|phb|Small}",
-                            "25",
-                            "16",
-                            "{@hit +6} to hit, {@damage 1d8 + 2} damage",
-                            "{@dice 1d20 - 2|6}",
-                            "{@dice 1d20 + 2|14}"
-                        ],
-                        [
-                            "{@creature animated object (medium)|phb|Medium}",
-                            "40",
-                            "13",
-                            "{@hit +5} to hit, {@damage 2d6 + 1} damage",
-                            "{@dice 1d20|10}",
-                            "{@dice 1d20 + 1|12}"
-                        ],
-                        [
-                            "{@creature animated object (large)|phb|Large}",
-                            "50",
-                            "10",
-                            "{@hit +6} to hit, {@damage 2d10 + 2} damage",
-                            "{@dice 1d20 + 2|14}",
-                            "{@dice 1d20|10}"
-                        ],
-                        [
-                            "{@creature animated object (huge)|phb|Huge}",
-                            "80",
-                            "10",
-                            "{@hit +8} to hit, {@damage 2d12 + 4} damage",
-                            "{@dice 1d20 + 4|18}",
-                            "{@dice 1d20 - 3|6}"
-                        ]
-                    ]
-                },
-                "An animated object is a construct with AC, hit points, attacks, Strength, and Dexterity determined by its size. Its Constitution is 10 and its Intelligence and Wisdom are 3, and its Charisma is 1. Its speed is 30 feet; if the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or a larger object, such as a chain bolted to a wall, its speed is 0. It has blindsight with a radius of 30 feet and is blind beyond that distance. When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
-                "If you command an object to attack, it can make a single melee attack against a creature within 5 feet of it. It makes a slam attack with an attack bonus and bludgeoning damage determined by its size. The DM might rule that a specific object inflicts slashing or piercing damage based on its form."
+                "Objects animate at your command. Choose a number of nonmagical objects within range that aren't being worn or carried, aren't fixed to a surface, and aren't Gargantuan. The maximum number of objects is equal to your spellcasting ability modifier; for this number, a Medium or smaller target counts as one object, a Large target counts as two, and a Huge target counts as three.",
+                "Each target animates, sprouts legs, and becomes a Construct that uses the Animated Object ({@create Animated Object (Tiny)|phb|Tiny}, {@create Animated Object (Small)|phb|Small}, {@create Animated Object (Medium)|phb|Medium}, {@create Animated Object (Large)|phb|Large}, {@create Animated Object (Huge)|phb|Huge}) stat block; this creature is under your control until the spell ends or until it is reduced to 0 Hit Points. Each creature you make with this spell is an ally to you and your allies. In combat, it shares your Initiative count and takes its turn immediately after yours.",
+                "Until the spell ends, you can take a Bonus Action to mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to each one). If you issue no commands, the creature takes the {@action Dodge|Ishiir} action and moves only to avoid harm. When the creature drops to 0 Hit Points, it reverts to its object form, and any remaining damage carries over to that form."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "If you cast this spell using a spell slot of 6th level or higher, you can animate two additional objects for each slot level above 5th."
+                        "The creature's Slam damage increases by 1d4 (Medium or smaller), 1d6 (Large), or 1d12 (Huge) for each spell slot level above 5."
                     ]
                 }
             ],
@@ -3455,7 +3394,7 @@
                 }
             ],
             "entries": [
-                "When you hit a creature with a melee weapon attack, you may use a bonus action to make your weapon crackle with force, and the attack deals an extra {@damage 5d10} force damage to the target. The target must succeed on a Charisma saving throw or be banished. If the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is {@condition incapacitated|Ishiir}. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
+                "Your weapon crackles with force, and the attack deals an extra {@damage 5d10} force damage to the target. The target must succeed on a Charisma saving throw or be banished. If the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is {@condition incapacitated|Ishiir}. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
             ],
             "savingThrow": [
                 "charisma"
@@ -3692,7 +3631,7 @@
             "time": [
                 {
                     "number": 1,
-                    "unit": "action"
+                    "unit": "bonus"
                 }
             ],
             "range": {
@@ -3716,7 +3655,16 @@
                 }
             ],
             "entries": [
-                "You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing."
+                "ou touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and when the target takes bludgeoning, piercing, or slashing damage, that damage is reduced by 3. This reduction applies before all other calculations."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "For each spell level above 2nd, the reduction increases by 1."
+                    ]
+                }
             ],
             "miscTags": [
                 "MAC",
@@ -5073,7 +5021,7 @@
                 }
             ],
             "entries": [
-                "When you hit a creature with a melee weapon attack, you may use a bonus action to make your weapon flare with bright light, and the attack deals an extra {@damage 3d8} radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be {@condition blinded|Ishiir} until the spell ends.",
+                "Your weapon flares with bright light, and the attack deals an extra {@damage 3d8} radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be {@condition blinded|Ishiir} until the spell ends.",
                 "A creature {@condition blinded|Ishiir} by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer {@condition blinded|Ishiir}."
             ],
             "damageInflict": [
@@ -5159,7 +5107,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 30
+                    "amount": 120
                 }
             },
             "components": {
@@ -6226,7 +6174,7 @@
                 }
             ],
             "entries": [
-                "When you hit a creature with a melee weapon attack, you may use a bonus action to make your weapon gleam with astral radiance as you strike. The attack deals an extra {@damage 2d6} radiant damage to the target, which becomes visible if it's {@condition invisible|Ishiir}. The target then sheds dim light in a 5-foot radius and all attacks have advantage against it for the spell's duration. Additionally, the target can't become {@condition invisible|Ishiir} until the spell ends."
+                "The weapon gleams with astral radiance as you strike. The attack deals an extra {@damage 2d6} radiant damage to the target, which becomes visible if it's {@condition invisible|Ishiir}. The target then sheds dim light in a 5-foot radius and all attacks have advantage against it for the spell's duration. Additionally, the target can't become {@condition invisible|Ishiir} until the spell ends."
             ],
             "entriesHigherLevel": [
                 {
@@ -12155,7 +12103,7 @@
                 }
             ],
             "entries": [
-                "You plant four pieces of ammunition\u2014{@item arrow|phb|arrows} or {@item crossbow bolt|phb|crossbow bolts}\u2014in the ground within range and lay magic upon them to protect an area. Until the spell ends, whenever a creature other than you comes within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take {@damage 1d8} piercing damage. The piece of ammunition is then destroyed. The spell ends when no ammunition remains.",
+                "You plant four pieces of ammunition\u2014{@item arrow|phb|arrows} or {@item crossbow bolt|phb|crossbow bolts}\u2014in the ground within range and lay magic upon them to protect an area. Until the spell ends, whenever a creature other than you comes within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take {@damage 2d8} force damage. The piece of ammunition is then destroyed. The spell ends when no ammunition remains.",
                 "When you cast this spell, you can designate any creatures you choose, and the spell ignores them."
             ],
             "entriesHigherLevel": [
@@ -12163,12 +12111,12 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the amount of ammunition that can be affected increases by two for each slot level above 2nd."
+                        "When you cast this spell using a spell slot of 3rd level or higher, the amount of ammunition that can be affected increases by one for each slot level above 2nd."
                     ]
                 }
             ],
             "damageInflict": [
-                "piercing"
+                "force"
             ],
             "savingThrow": [
                 "dexterity"
@@ -13887,7 +13835,7 @@
                 }
             ],
             "entries": [
-                "You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has {@sense darkvision} out to a range of 60 feet."
+                "You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has {@sense darkvision} out to a range of 150 feet."
             ],
             "areaTags": [
                 "ST"
@@ -16084,7 +16032,7 @@
             "page": 1,
             "source": "Ishiir",
             "level": 1,
-            "school": "V",
+            "school": "T",
             "time": [
                 {
                     "number": 1,
@@ -17728,7 +17676,7 @@
             "page": 1,
             "source": "Ishiir",
             "level": 8,
-            "school": "V",
+            "school": "T",
             "time": [
                 {
                     "number": 1,
@@ -17760,21 +17708,20 @@
             "entries": [
                 "You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 100-foot-radius circle centered on that point and shakes creatures and structures in contact with the ground in that area.",
                 "The ground in the area becomes {@quickref difficult terrain||3}. Each creature on the ground that is concentrating must make a Constitution saving throw. On a failed save, the creature's concentration is broken.",
-                "When you cast this spell and at the end of each turn you spend concentrating on it, each creature on the ground in the area must make a Dexterity saving throw. On a failed save, the creature is knocked {@condition prone|Ishiir}.",
-                "This spell can have additional effects depending on the terrain in the area, as determined by the DM.",
+                "When you cast this spell and at the end of each turn you spend concentrating on it, each creature on the ground in the area must make a Dexterity saving throw. On a failed save, the creature is knocked {@condition prone|Ishiir} and loses concentration, if it is concentrating on any spell.",
+                "Additionally, you can also cause one of the effects below.",
                 {
                     "type": "entries",
                     "name": "Fissures",
                     "entries": [
-                        "Fissures open throughout the spell's area at the start of your next turn after you cast the spell. A total of {@dice 1d6} such fissures open in locations of your choice. Each is {@dice 1d10 x 10} feet deep, 10 feet wide, and extends from one edge of the spell's area to the opposite side. A creature standing on a spot where a fissure opens must succeed on a Dexterity saving throw or fall in. A creature that successfully saves moves with the fissure's edge as it opens.",
-                        "A fissure that opens beneath a structure causes it to automatically collapse (see below)."
+                        "Fissures open throughout the spell's area at the start of your next turn after you cast the spell. A total of {@dice 1d6} such fissures open in locations of your choice. Each is {@dice 1d10 x 10} feet deep, 10 feet wide, and extends from one edge of the spell's area to the opposite side. A creature standing on a spot where a fissure opens must succeed on a Dexterity saving throw or fall in. A creature that successfully saves moves with the fissure's edge as it opens."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Structures",
                     "entries": [
-                        "The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure's height must make a Dexterity saving throw. On a failed save, the creature takes {@damage 8d6} bludgeoning damage, is knocked {@condition prone|Ishiir}, and is buried in the rubble, requiring a DC 20 Strength check as an action to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn't fall {@condition prone|Ishiir} or become buried."
+                        "The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure's height must make a Dexterity saving throw. On a failed save, the creature takes {@damage 12d6} bludgeoning damage, is knocked {@condition prone|Ishiir}, and is buried in the rubble, requiring a DC 20 Strength check as an action to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn't fall {@condition prone|Ishiir} or become buried."
                     ]
                 }
             ],
@@ -23876,9 +23823,18 @@
                 }
             ],
             "entries": [
-                "You transform a willing creature you touch, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends if the creature drops to 0 hit points. An incorporeal creature isn't affected.",
-                "While in this form, the target's only method of movement is a flying speed of 10 feet. The target can enter and occupy the space of another creature. The target has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains hovering in the air even when {@condition stunned|Ishiir} or otherwise {@condition incapacitated|Ishiir}.",
-                "While in the form of a misty cloud, the target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. The target can't attack or cast spells."
+                "A willing creature you touch shape-shifts, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends on the target if it drops to 0 Hit Points or if it takes a Magic action to end the spell on itself.",
+                "While in this form, the target's only method of movement is a Fly Speed of 10 feet, and it can hover. The target can enter and occupy the space of another creature. The target has Resistance to Bludgeoning, Piercing, and Slashing damage; it has Immunity to the {@condition Prone|Ishiir} condition; and it has Advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through narrow openings, but it treats liquids as though they were solid surfaces.",
+                "The target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. Finally, the target can't attack or cast spells."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "You can target one additional creature for each spell slot level above 3."
+                    ]
+                }
             ],
             "areaTags": [
                 "ST"
@@ -30972,7 +30928,7 @@
                         "You are immune to cold damage and have resistance to fire damage.",
                         "You can move across {@quickref difficult terrain||3} created by ice or snow without spending extra movement.",
                         "The ground in a 10-foot radius around you is icy and is {@quickref difficult terrain||3} for creatures other than you. The radius moves with you.",
-                        "Any creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes {@damage 3d8} cold damage.",
+                        "Any creature that moves within 10 feet of you for the first time on a turn or ends its turn there takes {@damage 3d8} cold damage.",
                         "In addition, any creature within 5 feet of you that hits you with a melee attack takes the same damage."
                     ]
                 }
@@ -31484,7 +31440,7 @@
             "time": [
                 {
                     "number": 1,
-                    "unit": "action"
+                    "unit": "bonus"
                 }
             ],
             "range": {
@@ -31508,7 +31464,16 @@
                 }
             ],
             "entries": [
-                "You touch a creature. The creature's {@book jump distance|phb|8|Jumping} is tripled until the spell ends."
+                "You touch a willing creature. Once on each of its turns until the spell ends, that creature can jump up to 30 feet by spending 10 feet of movement."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "You can target one additional creature for each spell slot level above 1."
+                    ]
+                }
             ],
             "areaTags": [
                 "ST"
@@ -32605,12 +32570,11 @@
                     "duration": {
                         "type": "minute",
                         "amount": 1
-                    },
-                    "concentration": true
+                    }
                 }
             ],
             "entries": [
-                "The next time you make a ranged weapon attack during the spell's duration, the weapon's ammunition, or the weapon itself if it's a thrown weapon, enchanting it with lightning. Make the attack roll as normal. The target takes an additional {@damage 2d8} lightning damage on a hit. All damage of this attack counts as magical for the purpose of overcoming resistance and immunity.",
+                "When you hit with a ranged weapon attack, you enchant your weapon or the ammunition you fired with it with lightning. The target takes an additional {@damage 2d8} lightning damage on a hit. All damage of this attack counts as magical for the purpose of overcoming resistance and immunity.",
                 "Whether you hit or miss, each creature within 10 feet of the target must make a Dexterity saving throw. Each of these creatures takes {@damage 2d8} lightning damage on a failed save, or half as much damage on a successful one.",
                 "The piece of ammunition or weapon then returns to its normal form."
             ],
@@ -35149,12 +35113,12 @@
                 }
             ],
             "entries": [
-                "You transform up to ten creatures of your choice that you can see within range. An unwilling target must succeed on a Constitution saving throw to resist the transformation. An unwilling shapechanger automatically succeeds on the save.",
+                "You transform up to ten creatures of your choice that you can see within range. An unwilling target must succeed on a Constitution saving throw to resist the transformation.",
                 "Each target assumes a beast form of your choice, and you can choose the same form or different ones for each target. The new form can be {@filter any beast|bestiary|type=beast|miscellaneous=!swarm} you have seen whose challenge rating is equal to or less than 10. The target's game statistics, including mental ability scores, are replaced by the statistics of the chosen beast, but the target retains its hit points, alignment, and personality.",
-                "The target's maximum hitpoints change to that of the target creature. If they are higher, it gains the difference to its current hitpoints as well. If they are lower, it loses any hitpoints in excess of its new hitpoint maximum until the spell ends. The spell ends early if the target reaches 0 hitpoints. If the target regains lost current hitpoints due to reverting to its original form, any excess damage is subtracted from those hitpoints.",
-                "The creature is limited in the actions it can perform by the nature of its new form. It can't speak, cast spells, or do anything else that requires hands or speech.",
-                "The target's gear melds into the new form. The target can't activate, use, wield, or otherwise benefit from any of its equipment.",
-                "Immediately after the spell ends on a target, it must make a DC 15 Constitution saving throw or suffer 1 level of exhaustion."
+                "The target gains a number of Temporary Hit Points equal to the Hit Points of the Beast form. The spell ends early on the target if it has no Temporary Hit Points left.",
+                "The target is limited in the actions it can perform by the anatomy of its new form, and it can't speak or cast spells.",
+                "The target's gear melds into the new form. The creature can't use or otherwise benefit from any of that equipment.",
+                "Immediately after the spell ends on the target, it must make a DC 15 Constitution saving throw or suffer 1 level of exhaustion."
             ],
             "savingThrow": [
                 "constitution"
@@ -35473,10 +35437,10 @@
             "entries": [
                 "You step into a stone object or surface large enough to fully contain your body, melding yourself and all the equipment you carry with the stone for the duration. Using your movement, you step into the stone at a point you can touch. Nothing of your presence remains visible or otherwise detectable by nonmagical senses.",
                 "While merged with the stone, you can't see what occurs outside it, and any Wisdom ({@skill Perception}) checks you make to hear sounds outside it are made with disadvantage. You remain aware of the passage of time and can cast spells on yourself while merged in the stone. You can use your movement to leave the stone where you entered it, which ends the spell. You otherwise can't move.",
-                "Minor physical damage to the stone doesn't harm you, but its partial destruction or a change in its shape (to the extent that you no longer fit within it) expels you and deals {@damage 6d6} bludgeoning damage to you. The stone's complete destruction (or transmutation into a different substance) expels you and deals 50 bludgeoning damage to you. If expelled, you fall {@condition prone|Ishiir} in an unoccupied space closest to where you first entered."
+                "Minor physical damage to the stone doesn't harm you, but its partial destruction or a change in its shape (to the extent that you no longer fit within it) expels you and deals {@damage 6d6} force damage to you. The stone's complete destruction (or transmutation into a different substance) expels you and deals 50 force damage to you. If expelled, you fall {@condition prone|Ishiir} in an unoccupied space closest to where you first entered."
             ],
             "damageInflict": [
-                "bludgeoning"
+                "force"
             ],
             "conditionInflict": [
                 "prone"
@@ -40011,8 +39975,8 @@
             ],
             "entries": [
                 "A blue beam of concentrated freezing energy springs from your finger to a creature you can see within range.",
-                "The target has to make a Constitution saving throw. On a failed save the target takes {@damage 11d10} cold damage and is {@condition dazed|Ishiir} for 1 minute. On a failure, the target takes half as much damage and isn't {@condition dazed|Ishiir}.",
-                "At the end of each of its turns, the creature can make another Constitution saving throw. On a success, the spell ends on the target."
+                "The target has to make a Constitution saving throw. On a failed save the target takes {@damage 12d10} cold damage and is {@condition dazed|Ishiir} for 1 minute. On a success, the target takes half as much damage and isn't {@condition dazed|Ishiir}. A creature dazed by this spell must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails its saves three times, it is frozen solid and subjected to the frozen condition for the duration. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.",
+                "If the creature is physically broken while frozen, it suffers from similar deformities if it reverts to its original state."
             ],
             "damageInflict": [
                 "cold"
@@ -40081,11 +40045,10 @@
                 }
             ],
             "entries": [
-                "This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Constitution saving throw to avoid the effect. The spell has no effect on a shapechanger or a creature with 0 hit points.",
-                "The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be {@filter any beast|bestiary|type=beast|miscellaneous=!swarm} whose challenge rating is equal to or less than the target's (or the target's level, if it doesn't have a challenge rating), up to a maximum of 8. The target's game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality.",
-                "The target's maximum hitpoints change to that of the target creature. If they are higher, it gains the difference to its current hitpoints as well. If they are lower, it loses any hitpoints in excess of its new hitpoint maximum until the spell ends. The spell ends early if the target reaches 0 hitpoints. If the target regains lost current hitpoints due to reverting to its original form, any excess damage is subtracted from those hitpoints.",
-                "The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech.",
-                "The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.",
+                "You attempt to transform a creature that you can see within range into a Beast. The target must succeed on a Constitution saving throw or shape-shift into Beast form for the duration. That form can be {@filter any beast|bestiary|type=beast|miscellaneous=!swarm} you choose that has a Challenge Rating equal to or less than the target's (or the target's level if it doesn't have a Challenge Rating), up to a maximum of 7. The target's game statistics are replaced by the stat block of the chosen Beast, but the target retains its alignment, personality, creature type, Hit Points, and Hit Point Dice.",
+                "The target gains a number of Temporary Hit Points equal to the Hit Points of the Beast form. The spell ends early on the target if it has no Temporary Hit Points left.",
+                "The target is limited in the actions it can perform by the anatomy of its new form, and it can't speak or cast spells.",
+                "The target's gear melds into the new form. The creature can't use or otherwise benefit from any of that equipment.",
                 "Immediately after the spell ends on the target, it must make a DC 15 Constitution saving throw or suffer 1 level of exhaustion."
             ],
             "entriesHigherLevel": [
@@ -40093,7 +40056,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the maximum CR of the beat you can turn turn the target into increases by 2 for each slot level above 4."
+                        "When you cast this spell using a spell slot of 5th level or higher, the maximum CR of the beast you can turn the target into increases by 1 for each slot level above 4."
                     ]
                 }
             ],
@@ -44317,10 +44280,8 @@
                 }
             ],
             "entries": [
-                "You touch a length of rope that is up to 60 feet long. One end of the rope then rises into the air until the whole rope hangs perpendicular to the ground. At the upper end of the rope, an invisible entrance opens to an extradimensional space that lasts until the spell ends.",
-                "The extradimensional space can be reached by climbing to the top of the rope. The space can hold as many as eight Medium or smaller creatures. The rope can be pulled into the space, making the rope disappear from view outside the space.",
-                "Attacks and spells can't cross through the entrance into or out of the extradimensional space, but those inside can see out of it as if through a 3-foot-by-5-foot window centered on the rope.",
-                "Anything inside the extradimensional space drops out when the spell ends."
+                "You touch a rope. One end of it hovers upward until the rope hangs perpendicular to the ground or the rope reaches a ceiling. At the rope's upper end, an Invisible 3-foot-by-5-foot portal opens to an extradimensional space that lasts until the spell ends. That space can be reached by climbing the rope, which can be pulled into or dropped out of it.",
+                "The space can hold up to eight Medium or smaller creatures. Attacks, spells, and other effects can't pass into or out of the space, but creatures inside it can see through the portal. Anything inside the space drops out when the spell ends."
             ],
             "classes": {
                 "fromClassList": [
@@ -45649,7 +45610,7 @@
                 }
             ],
             "entries": [
-                "When you hit a creature with a melee weapon attack, you may use a bonus action to make your weapon flare with white-hot intensity. When you do so, the attack deals an extra {@damage 1d6} fire damage to the target and causes the target to ignite in flames. At the start of each of its turns until the spell ends, the target must make a Constitution saving throw. On a failed save, it takes {@damage 1d6} fire damage. On a successful save, the spell ends. If the target or a creature within 5 feet of it uses an action to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the spell ends."
+                "Your weapon flares with white-hot intensity, and the attack deals an extra {@damage 1d6} fire damage to the target and causes the target to ignite in flames. At the start of each of its turns until the spell ends, the target must make a Constitution saving throw. On a failed save, it takes {@damage 1d6} fire damage. On a successful save, the spell ends. If the target or a creature within 5 feet of it uses an action to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the spell ends."
             ],
             "entriesHigherLevel": [
                 {
@@ -46429,12 +46390,10 @@
                 }
             ],
             "entries": [
-                "You assume the form of a different creature for the duration. The new form can be of any creature with a challenge rating equal to your level or lower. The creature can't be a construct or an undead, and you must have seen the sort of creature at least once. You transform into an average example of that creature, one without any class levels or the Spellcasting trait.",
-                "Your game statistics are replaced by the statistics of the chosen creature, though you retain your alignment and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus listed in its statistics is higher than yours, use the creature's bonus in place of yours. You can't use any legendary actions or lair actions of the new form.",
-                "Your hitpoint maximum changes to that of the target creature. If it is higher than your own, you gain the difference to your current hitpoints as well. You lose any excess hitpoints gained in this manner if you return to your normal form or when you choose a new form with a lower hitpoint maximum.",
-                "You retain the benefit of any features from your class, race, or other source and can use them, provided that your new form is physically capable of doing so. You can't use any special senses you have (for example, {@sense darkvision}) unless your new form also has that sense. You can only speak if the creature can normally speak.",
-                "When you transform, you choose whether your equipment falls to the ground, merges into the new form, or is worn by it. Worn equipment functions as normal. The DM determines whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change shape or size to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge into your new form. Equipment that merges has no effect in that state.",
-                "During this spell's duration, you can use your action to assume a different form following the same restrictions and rules for the original form, with one exception: if your new form has more hit points than your current one, your hit points remain at their current value."
+                "You shape-shift into another creature for the duration or until you take a Magic action to shape-shift into a different eligible form. The new form must be of a creature that has a Challenge Rating no higher than your level or Challenge Rating. You must have seen the sort of creature before, and it can't be a Construct or an Undead.",
+                "When you shape-shift, you gain a number of Temporary Hit Points equal to the Hit Points of the form. The spell ends early if you have no Temporary Hit Points left.",
+                "Your game statistics are replaced by the stat block of the chosen form, but you retain your creature type; alignment; personality; Intelligence, Wisdom, and Charisma scores; Hit Points; Hit Point Dice; proficiencies; and ability to communicate. If you have the Spellcasting feature, you retain it too.",
+                "Upon shape-shifting, you determine whether your equipment drops to the ground, merges into your form, or changes in size and shape to fit the new form while you're in it."
             ],
             "affectsCreatureType": [
                 "aberration",
@@ -46894,8 +46853,19 @@
                 }
             ],
             "entries": [
-                "The wood of a {@item club|Ishiir} or {@item quarterstaff|Ishiir} you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a {@dice d8}. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon."
+                "A {@item club|Ishiir} or {@item quarterstaff|Ishiir} you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. If the attack deals damage, it can be Force damage or the weapon's normal damage type (your choice).",
+                "The spell ends early if you cast it again or if you let go of the weapon.",
+                "The damage die changes when you reach levels 5 (d10), 11 (d12), and 17 (2d6)."
             ],
+            "scalingLevelDice": {
+                "label": "fire damage",
+                "scaling": {
+                    "1": "1d8",
+                    "5": "1d10",
+                    "11": "1d12",
+                    "17": "2d6"
+                }
+            },
             "classes": {
                 "fromClassList": [
                     {
@@ -49445,8 +49415,8 @@
                 }
             ],
             "entries": [
-                "The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes {@quickref difficult terrain||3} for the duration. When a creature moves into or within the area, it takes {@damage 2d4} piercing damage for every 5 feet it travels.",
-                "The transformation of the ground is camouflaged to look natural. Any creature that can't see the area at the time the spell is cast must make a Wisdom ({@skill Perception}) check against your spell save DC to recognize the terrain as hazardous before entering it."
+                "The ground in a 20-foot-radius Sphere centered on a point within range sprouts hard spikes and thorns. The area becomes Difficult Terrain for the duration. When a creature moves into or within the area, it takes {@damage 2d4} Piercing damage for every 5 feet it travels.",
+                "The transformation of the ground is camouflaged to look natural. Any creature that can't see the area at the time the spell is cast must make a Search action and succeed on a Wisdom ({@skill Perception} or {@skill Survival}) check against your spell save DC to recognize the terrain as hazardous before entering it."
             ],
             "damageInflict": [
                 "piercing"
@@ -49952,7 +49922,7 @@
                 }
             ],
             "entries": [
-                "When you hit a creature with a melee weapon attack, you may use a bonus action to make your weapon pierce both body and mind, and the attack deals an extra {@damage 4d6} psychic damage to the target. The target must make a Wisdom saving throw. On a failed save, it is {@condition stunned|Ishiir} until the end of your next turn."
+                "Your weapon pierces both body and mind, and the attack deals an extra {@damage 4d6} psychic damage to the target. The target must make a Wisdom saving throw. On a failed save, it is {@condition stunned|Ishiir} until the end of your next turn."
             ],
             "damageInflict": [
                 "psychic"
@@ -53427,21 +53397,20 @@
                 }
             ],
             "entries": [
-                "You gain the ability to move or manipulate creatures or objects by thought. When you cast the spell, and as your action each round for the duration, you can exert your will on one creature or object that you can see within range, causing the appropriate effect below. You can affect the same target round after round, or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.",
+                "You gain the ability to move or manipulate creatures or objects by thought. When you cast the spell and as a Magic action on your later turns before the spell ends, you can exert your will on one creature or object that you can see within range, causing the appropriate effect below. You can affect the same target round after round or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.",
                 {
                     "type": "entries",
                     "name": "Creature",
                     "entries": [
-                        "You can try to move a Huge or smaller creature. Make an ability check with your spellcasting ability contested by the creature's Strength check. If you win the contest, you move the creature up to 30 feet in any direction, including upward but not beyond the range of this spell. Until the end of your next turn, the creature is {@condition restrained|Ishiir} in your telekinetic grip. A creature lifted upward is suspended in mid-air.",
-                        "On subsequent rounds, you can use your action to attempt to maintain your telekinetic grip on the creature by repeating the contest."
+                        "You can try to move a Huge or smaller creature. The target must succeed on a Strength saving throw, or you move it up to 30 feet in any direction within the spell's range. Until the end of your next turn, the creature has the {@condition restrained|Ishiir} condition, and if you lift it into the air, it is suspended there. It falls at the end of your next turn unless you use this option on it again and it fails the save."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Object",
                     "entries": [
-                        "You can try to move an object that weighs up to 1,000 pounds. If the object isn't being worn or carried, you automatically move it up to 30 feet in any direction, but not beyond the range of this spell.",
-                        "If the object is worn or carried by a creature, you must make an ability check with your spellcasting ability contested by that creature's Strength check. If you succeed, you pull the object away from that creature and can move it up to 30 feet in any direction but not beyond the range of this spell.",
+                        "You can try to move a Huge or smaller object. If the object isn't being worn or carried, you automatically move it up to 30 feet in any direction within the spell's range.",
+                        "If the object is worn or carried by a creature, that creature must succeed on a Strength saving throw, or you pull the object away and move it up to 30 feet in any direction within the spell's range.",
                         "You can exert fine control on objects with your telekinetic grip, such as manipulating a simple tool, opening a door or a container, stowing or retrieving an item from an open container, or pouring the contents from a vial."
                     ]
                 }
@@ -54333,19 +54302,55 @@
                 }
             ],
             "entries": [
-                "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:",
+                "You manifest a minor wonder within range. You create one of the effects below within range. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time.",
                 {
                     "type": "list",
+                    "style": "list-hang-notitle",
                     "items": [
-                        "Your voice booms up to three times as loud as normal for 1 minute.",
-                        "You cause flames to flicker, brighten, dim, or change color for 1 minute.",
-                        "You cause harmless tremors in the ground for 1 minute.",
-                        "You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.",
-                        "You instantaneously cause an unlocked door or window to fly open or slam shut.",
-                        "You alter the appearance of your eyes for 1 minute."
+                        {
+                            "type": "item",
+                            "name": "Altered Eyes",
+                            "entries": [
+                                "You alter the appearance of your eyes for 1 minute."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Booming Voice",
+                            "entries": [
+                                "Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on Charisma ({@skill Intimidation}) checks."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Fire Play",
+                            "entries": [
+                                "You cause flames to flicker, brighten, dim, or change color for 1 minute."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Invisible Hand",
+                            "entries": [
+                                "You instantaneously cause an unlocked door or window to fly open or slam shut."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Phantom Sound",
+                            "entries": [
+                                "You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Termors",
+                            "entries": [
+                                "You cause harmless tremors in the ground for 1 minute."
+                            ]
+                        }
                     ]
-                },
-                "If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action."
+                }
             ],
             "classes": {
                 "fromClassList": [
@@ -54423,16 +54428,16 @@
                 }
             ],
             "entries": [
-                "You create a long, vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. If the attack hits, the creature takes {@damage 1d6} piercing damage, and if the creature is Large or smaller, you pull the creature up to 10 feet closer to you.",
-                "This spell's damage increases by {@dice 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
+                "You create a long, vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. If the attack hits, the creature takes {@damage 1d8} piercing damage, and if the creature is Large or smaller, you pull the creature up to 10 feet closer to you.",
+                "This spell's damage increases by {@dice 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
             ],
             "scalingLevelDice": {
                 "label": "piercing damage",
                 "scaling": {
-                    "1": "1d6",
-                    "5": "2d6",
-                    "11": "3d6",
-                    "17": "4d6"
+                    "1": "1d8",
+                    "5": "2d8",
+                    "11": "3d8",
+                    "17": "4d8"
                 }
             },
             "damageInflict": [
@@ -54869,7 +54874,7 @@
                 }
             ],
             "entries": [
-                "When you hit a creature with a melee weapon attack, you may use a bonus action to make your weapon ring with thunder that is audible within 300 feet of you, and the attack deals an extra {@damage 2d6} thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked {@condition prone|Ishiir}."
+                "Your weapon rings with thunder that is audible within 300 feet of you, and the attack deals an extra {@damage 2d6} thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked {@condition prone|Ishiir}."
             ],
             "entriesHigherLevel": [
                 {
@@ -55927,31 +55932,31 @@
                 }
             ],
             "entries": [
-                "Choose one creature or nonmagical object that you can see within range. You transform the creature into a different creature, the creature into a nonmagical object, or the object into a creature (the object must be neither worn nor carried by another creature). The transformation lasts for the duration, or until the target drops to 0 hit points or dies. If you concentrate on this spell for the full duration, the transformation lasts until it is dispelled.",
-                "This spell has no effect on a shapechanger or a creature with 0 hit points. An unwilling creature can make a Constitution saving throw, and if it succeeds, it isn't affected by this spell.",
+                "Choose one creature or nonmagical object that you can see within range. The creature shape-shifts into a different creature or a nonmagical object, or the object shape-shifts into a creature (the object must be neither worn nor carried). The transformation lasts for the duration or until the target dies or is destroyed, but if you maintain Concentration on this spell for the full duration, the spell lasts until dispelled.",
+                "An unwilling creature can make a Constitution saving throw, and if it succeeds, it isn't affected by this spell.",
                 {
                     "type": "entries",
                     "name": "Creature into Creature",
                     "entries": [
-                        "If you turn a creature into another kind of creature, the new form can be any kind you choose whose challenge rating is equal to or less than the target's (or its level, if the target doesn't have a challenge rating), up to a maximum of 20. The target's game statistics, including mental ability scores, are replaced by the statistics of the new form. It retains its alignment and personality."
+                        "If you turn a creature into another kind of creature, the new form can be any kind you choose that has a Challenge Rating equal to or less than the target's Challenge Rating or level. The target's game statistics are replaced by the stat block of the new form, but it retains its Hit Points, Hit Point Dice, alignment, and personality.",
+                        "The target gains a number of Temporary Hit Points equal to the Hit Points of the new form. The spell ends early on the target if it has no Temporary Hit Points left.",
+                        "The target is limited in the actions it can perform by the anatomy of its new form, and it can't speak or cast spells.",
+                        "The target's gear melds into the new form. The creature can't use or otherwise benefit from any of that equipment."
                     ]
                 },
-                "The target's maximum hitpoints change to that of the target creature. If they are higher, it gains the difference to its current hitpoints as well. If they are lower, it loses any hitpoints in excess of its new hitpoint maximum until the spell ends. The spell ends early if the target reaches 0 hitpoints. If the target regains lost current hitpoints due to reverting to its original form, any excess damage is subtracted from those hitpoints.",
-                "The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech unless its new form is capable of such actions.",
-                "The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.",
                 {
                     "type": "entries",
                     "name": "Object into Creature",
                     "entries": [
-                        "You can turn an object into any kind of creature, as long as the creature's size is no larger than the object's size and the creature's challenge rating is {@filter 9 or lower|bestiary|challenge rating=[&0;&9]|miscellaneous=!swarm}. The creature is friendly to you and your companions. It acts on each of your turns. You decide what action it takes and how it moves. The DM has the creature's statistics and resolves all of its actions and movement."
+                        "You can turn an object into any kind of creature, as long as the creature's size is no larger than the object's size and the creature has a Challenge Rating of {@filter 9 or lower|bestiary|challenge rating=[&0;&9]|miscellaneous=!swarm}. The creature is Friendly to you and your allies. In combat, it takes its turns immediately after yours, and it obeys your commands.",
+                        "If the spell lasts more than an hour, you no longer control the creature. It might remain Friendly to you, depending on how you have treated it."
                     ]
                 },
-                "If the spell becomes permanent, you no longer control the creature. It might remain friendly to you, depending on how you have treated it.",
                 {
                     "type": "entries",
                     "name": "Creature into Object",
                     "entries": [
-                        "If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature's statistics become those of the object, and the creature has no memory of time spent in this form, after the spell ends and it returns to its normal form."
+                        "If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature's statistics become those of the object, and the creature has no memory of time spent in this form after the spell ends and it returns to normal."
                     ]
                 },
                 "Immediately after the spell ends on a target that is not an object, it must make a DC 15 Constitution saving throw or suffer 1 level of exhaustion."
@@ -58341,7 +58346,7 @@
             },
             "entries": [
                 "This spell grants the ability to move across any liquid surface\u2014such as water, acid, mud, snow, quicksand, or lava\u2014as if it were harmless solid ground (creatures crossing molten lava can still take damage from the heat). Up to ten willing creatures you can see within range gain this ability for the duration.",
-                "If you target a creature submerged in a liquid, the spell carries the target to the surface of the liquid at a rate of 60 feet per round."
+                "If you target an incapacitated creature submerged in a liquid, the spell carries the target to the surface of the liquid at a rate of 60 feet per round. An affected target can otherwise take a Bonus Action to pass from the liquid's surface into the liquid itself and vice versa at the same rate, but if the target falls into the liquid, the target passes through the surface into the liquid below."
             ],
             "miscTags": [
                 "SGT"
@@ -58923,11 +58928,11 @@
                 }
             ],
             "entries": [
-                "You and up to ten willing creatures you can see within range assume a gaseous form for the duration, appearing as wisps of cloud. While in this cloud form, a creature has a flying speed of 300 feet and has resistance to damage from nonmagical weapons. The only actions a creature can take in this form are the {@action Dash|Ishiir} action or to revert to its normal form. Reverting takes 1 minute, during which time a creature is {@condition incapacitated|Ishiir} and can't move. Until the spell ends, a creature can revert to cloud form, which also requires the 1-minute transformation.",
-                "If a creature is in cloud form and flying when the effect ends, the creature descends 60 feet per round for 1 minute until it lands, which it does safely. If it can't land after 1 minute, the creature falls the remaining distance."
+                "You and up to ten willing creatures of your choice within range assume gaseous forms for the duration, appearing as wisps of cloud. While in this cloud form, a target has a Fly Speed of 300 feet and can hover; it has Immunity to the {@condition Prone|Ishiir} condition; and it has Resistance to Bludgeoning, Piercing, and Slashing damage. The only actions a target can take in this form are the {@action Dash|Ishiir} action or a Magic action to begin reverting to its normal form. Reverting takes 1 minute, during which the target has the {@condition Stunned|Ishiir} condition. Until the spell ends, the target can revert to cloud form, which also requires a Magic action followed by a 1-minute transformation.",
+                "If a target is in cloud form and flying when the effect ends, the target descends 60 feet per round for 1 minute until it lands, which it does safely. If it can't land after 1 minute, it falls the remaining distance."
             ],
             "conditionInflict": [
-                "incapacitated"
+                "stunned"
             ],
             "miscTags": [
                 "SGT"
@@ -59601,7 +59606,7 @@
                 }
             ],
             "entries": [
-                "When you hit a creature with a melee weapon attack, you may use a bonus action have your weapon deal an extra {@damage 1d6} psychic damage. Additionally, if the target is a creature, it must make a Wisdom saving throw or be {@condition frightened|Ishiir} of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell."
+                "Your attack deals an extra {@damage 1d6} psychic damage. Additionally, if the target is a creature, it must make a Wisdom saving throw or be {@condition frightened|Ishiir} of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell."
             ],
             "entriesHigherLevel": [
                 {
@@ -59882,13 +59887,20 @@
                     "duration": {
                         "type": "minute",
                         "amount": 1
-                    },
-                    "concentration": true
+                    }
                 }
             ],
             "entries": [
-                "You move like the wind. Until the spell ends, your movement doesn't provoke opportunity attacks.",
-                "Once before the spell ends, you can give yourself advantage on one weapon attack roll on your turn. That attack deals an extra {@damage 1d8} force damage on a hit. Whether you hit or miss, your walking speed increases by 30 feet until the end of that turn."
+                "You can give yourself advantage on one weapon attack roll on your turn. That attack deals an extra {@damage 1d8} force damage on a hit. Whether you hit or miss, your walking speed increases by 30 feet until the end of that turn and your movement doesn't provoke attacks of opportunity during that time."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "The damage increases by {@scaledamage 1d8|1-9|1d8} for every spell level above 1st."
+                    ]
+                }
             ],
             "damageInflict": [
                 "force"
