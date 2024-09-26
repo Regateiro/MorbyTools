@@ -1919,9 +1919,11 @@
                 }
             ],
             "entries": [
-                "You create an invisible, magical eye within range that hovers in the air for the duration.",
-                "You mentally receive visual information from the eye, which has normal vision and {@sense darkvision} out to 30 feet. The eye can look in every direction.",
-                "As an action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
+                "You create an Invisible, invulnerable eye within range that hovers for the duration. You mentally receive visual information from the eye, which can see in every direction. It also has {@sense Darkvision} with a range of 30 feet.",
+                "As a Bonus Action, you can move the eye up to 30 feet in any direction. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
+            ],
+            "miscTags":[
+                "UBA"
             ],
             "classes": {
                 "fromClassList": [
@@ -2231,7 +2233,7 @@
             "time": [
                 {
                     "number": 1,
-                    "unit": "action"
+                    "unit": "bonus"
                 }
             ],
             "range": {
@@ -2255,14 +2257,14 @@
                 }
             ],
             "entries": [
-                "A protective magical force surrounds you, manifesting as a spectral frost that covers you and your gear. You gain 5 temporary hit points for the duration. If a creature hits you with a melee attack while you have these hit points, the creature takes 5 cold damage."
+                "Protective magical frost surrounds you. You gain 5 Temporary Hit Points. If a creature hits you with a melee attack roll before the spell ends, the creature takes 5 Cold damage. The spell ends early if you have no Temporary Hit Points."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the cold damage increase by 5 for each slot level above 1st."
+                        "The Temporary Hit Points and the Cold damage both increase by 5 for each spell slot level above 1."
                     ]
                 }
             ],
@@ -3977,7 +3979,7 @@
                 "ritual": true
             },
             "entries": [
-                "You touch a willing beast. For the duration of the spell, you can use your action to see through the beast's eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses. While perceiving through the beast's senses, you gain the benefits of any special senses possessed by that creature, though you are {@condition blinded|Ishiir} and {@condition deafened|Ishiir} to your own surroundings."
+                "You touch a willing Beast. For the duration, you can perceive through the Beast's senses as well as your own. When perceiving through the Beast's senses, you benefit from any special senses it has."
             ],
             "areaTags": [
                 "ST"
@@ -9453,8 +9455,7 @@
                 "ritual": true
             },
             "entries": [
-                "For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text.",
-                "This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language."
+                "For the duration, you understand the literal meaning of any language that you hear or see signed. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode symbols or secret messages."
             ],
             "classes": {
                 "fromClassList": [
@@ -12177,7 +12178,8 @@
                 }
             ],
             "entries": [
-                "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect."
+                "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect, but any actions, components, and spell slots required for its casting are still expended.",
+                "Otherwise, both you and the target creature have to make a contested ability check with your spellcasting ability modifiers. The target receives a bonus to its roll equal to the difference between the spell slot level used for your counterspell and that of its own spell. If the target's result is equal to or higher than yours, their spell takes effect as normal."
             ],
             "entriesHigherLevel": [
                 {
@@ -15647,7 +15649,7 @@
                 }
             ],
             "entries": [
-                "Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends."
+                "Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the caster's spellcasting ability modifier + the difference between the spell slot level used for your dispel magic and that of the target spell. On a successful check, the spell ends."
             ],
             "entriesHigherLevel": [
                 {
@@ -21163,7 +21165,7 @@
             "entries": [
                 "Thin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell early by using an action to dismiss it.",
                 "The flames provide you with a warm shield or a chill shield, as you choose. The warm shield grants you resistance to cold damage, and the chill shield grants you resistance to fire damage.",
-                "In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes {@damage 2d8} fire damage from a warm shield, or {@damage 2d8} cold damage from a cold shield."
+                "In addition, whenever a creature within 10 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes {@damage 2d8} fire damage from a warm shield, or {@damage 2d8} cold damage from a cold shield."
             ],
             "damageResist": [
                 "cold",
@@ -23277,8 +23279,17 @@
                 }
             ],
             "entries": [
-                "You touch a willing creature. For the duration, the target's movement is unaffected by {@quickref difficult terrain||3}, and spells and other magical effects can neither reduce the target's speed nor cause the target to be {@condition paralyzed|Ishiir} or {@condition restrained|Ishiir}.",
-                "The target can also spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it {@condition grappled|Ishiir}. Finally, being underwater imposes no penalties on the target's movement or attacks."
+                "You touch a willing creature. For the duration, the target's movement is unaffected by {@quickref difficult terrain||3}, and spells and other magical effects can neither reduce the target's Speed nor cause the target to have the {@condition Paralyzed|Ishiir} or {@condition Restrained|Ishiir} conditions. The target also has a Swim Speed equal to its Speed.",
+                "In addition, the target can spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature imposing the Grappled condition on it."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "You can target one additional creature within 30 ft of the original target for each spell slot level above 4."
+                    ]
+                }
             ],
             "conditionImmune": [
                 "paralyzed",
@@ -25447,7 +25458,7 @@
             "time": [
                 {
                     "number": 1,
-                    "unit": "action"
+                    "unit": "bonus"
                 }
             ],
             "range": {
@@ -26214,6 +26225,89 @@
                 },
                 {
                     "name": "Druidic Warrior",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Guided Strike",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 0,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "s": true,
+                "m": "a weapon"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Guided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice).",
+                "Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach levels 5 ({@damage 1d6}), 11 ({@damage 2d6}), and 17 ({@damage 3d6})."
+            ],
+            "scalingLevelDice": {
+                "label": "radiant/weapon damage",
+                "scaling": {
+                    "5": "1d6",
+                    "11": "2d6",
+                    "17": "3d6"
+                }
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                },
+                {
+                    "name": "Magic Initiate",
+                    "source": "Ishiir"
+                }
+            ],
+            "optionalfeatures": [
+                {
+                    "name": "Pact of the Tome",
                     "source": "Ishiir"
                 }
             ]
@@ -28141,14 +28235,14 @@
                 }
             ],
             "entries": [
-                "Choose a creature that you can see within range. The target must succeed on a Wisdom saving throw or be {@condition paralyzed|Ishiir} for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target."
+                "Choose a creature that you can see within range. The target must succeed on a Wisdom saving throw or have the {@condition paralyzed|Ishiir} condition for the duration. At the end of each of its turns, the target repeats the save, ending the spell on itself on a success."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them."
+                        "You can target one additional creature for each spell slot level above 5."
                     ]
                 }
             ],
@@ -28340,14 +28434,14 @@
                 }
             ],
             "entries": [
-                "Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be {@condition paralyzed|Ishiir} for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target."
+                "Choose a Humanoid that you can see within range. The target must succeed on a Wisdom saving throw or have the {@condition Paralyzed|Ishiir} condition for the duration. At the end of each of its turns, the target repeats the save, ending the spell on itself on a success."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them."
+                        "You can target one additional Humanoid for each spell slot level above 2."
                     ]
                 }
             ],
@@ -28847,14 +28941,15 @@
                 }
             ],
             "entries": [
-                "You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra {@damage 1d6} damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom ({@skill Perception}) or Wisdom ({@skill Survival}) check you make to find it. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to mark a new creature."
+                "You magically mark one creature you can see within range as your quarry. Until the spell ends, you deal an extra {@damage 1d6} Force damage to the target whenever you hit it with an attack roll. You also have Advantage on any Wisdom ({@skill Perception} or {@skill Survival}) check you make to find it.",
+                "If the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action to move the mark to a new creature you can see within range."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for up to 24 hours."
+                        "Your Concentration can last longer with a spell slot of level 3-4 (up to 8 hours) or 5+ (up to 24 hours)."
                     ]
                 }
             ],
@@ -29362,7 +29457,16 @@
                 }
             ],
             "entries": [
-                "You unleash a torrent of conflicting desires in the mind of one creature you can see within range, impairing its ability to make decisions. The target must succeed on a Wisdom saving throw or be incapacitated. At the end of each of its turns, it takes {@damage 1d12} psychic damage, and it can then make another Wisdom saving throw. On a success, the spell ends on the target."
+                "You unleash a torrent of conflicting desires in the mind of one creature you can see within range, impairing its ability to make decisions. The target must succeed on a Wisdom saving throw or be {@condition incapacitated|Ishiir}. At the end of each of its turns, it takes {@damage 2d6} psychic damage, and it can then make another Wisdom saving throw. On a success, the spell ends on the target."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "The initial damage increases by {@scaledamage 2d6|1-9|1d6} for each slot level above 1st."
+                    ]
+                }
             ],
             "damageInflict": [
                 "psychic"
@@ -30765,7 +30869,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd. The creatures must be within 30 feet of each other when you target them."
+                        "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd."
                     ]
                 }
             ],
@@ -32067,7 +32171,7 @@
             "time": [
                 {
                     "number": 1,
-                    "unit": "action"
+                    "unit": "bonus"
                 }
             ],
             "range": {
@@ -32086,7 +32190,7 @@
                 }
             ],
             "entries": [
-                "You touch a creature and can end either one disease or one condition afflicting it. The condition can be {@condition blinded|Ishiir}, {@condition deafened|Ishiir}, {@condition paralyzed|Ishiir}, or {@condition poisoned|Ishiir}."
+                "You touch a creature and end one condition on it: {@condition blinded|Ishiir}, {@condition deafened|Ishiir}, {@condition paralyzed|Ishiir}, or {@condition poisoned|Ishiir}. Alternatively, you can end one disease afflicting it."
             ],
             "areaTags": [
                 "ST"
@@ -34949,7 +35053,7 @@
                 }
             ],
             "entries": [
-                "A flood of healing energy flows from you into injured creatures around you. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of all diseases and any effect making them {@condition blinded|Ishiir} or {@condition deafened|Ishiir}. This spell has no effect on undead or constructs."
+                "A flood of healing energy flows from you into injured creatures around you. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of all diseases and any effect making them {@condition blinded|Ishiir}, {@condition deafened|Ishiir}, or {@condition poisoned|Ishiir}. This spell has no effect on undead or constructs."
             ],
             "affectsCreatureType": [
                 "aberration",
@@ -36415,7 +36519,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 60
+                    "amount": 120
                 }
             },
             "components": {
@@ -36432,14 +36536,14 @@
                 }
             ],
             "entries": [
-                "You reach into the mind of one creature you can see within range. The target must make a Wisdom saving throw, taking {@damage 3d8} psychic damage on a failed save, or half as much damage on a successful one. On a failed save, you also always know the target's location until the spell ends, but only while the two of you are on the same plane of existence. While you have this knowledge, the target can't become hidden from you, and if it's {@condition invisible|Ishiir}, it gains no benefit from that condition against you."
+                "You drive a spike of psionic energy into the mind of one creature you can see within range. The target makes a Wisdom saving throw, taking {@damage 3d8} Psychic damage on a failed save or half as much damage on a successful one. On a failed save, you also always know the target's location until the spell ends, but only while the two of you are on the same plane of existence. While you have this knowledge, the target can't become hidden from you, and if it has the {@condition invisible|Ishiir}condition, it gains no benefit from that condition against you."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 3d8|2-9|1d8} for each slot level above 2nd."
+                        "The damage increases by {@scaledamage 3d8|2-9|1d8} for each spell slot level above 2."
                     ]
                 }
             ],
@@ -40167,8 +40271,8 @@
                 }
             ],
             "entries": [
-                "You speak a word of power that robs one creature you can see within range of its sight. If the target has 100 hit points or fewer, it is blinded. Otherwise, the spell has no effect on it.",
-                "The blinded target must make a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends."
+                "You speak a word of power that robs one creature you can see of its sight. If the target has 100 hit points or fewer, it is {@condition blinded|Ishiir}. Otherwise, the target has disadvantage on its next attack roll or next Wisdom ({@skill Perception}) check before the start of your next turn.",
+                "The {@condition blinded|Ishiir} target must make a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends."
             ],
             "savingThrow": [
                 "constitution"
@@ -40434,7 +40538,7 @@
                 }
             ],
             "entries": [
-                "You speak a word of power that causes waves of intense pain to assail one creature you can see within range. If the target has 150 hit points or fewer, it is subject to crippling pain. Otherwise, the spell has no effect on it. A target is also unaffected if it is immune to being {@condition charmed|Ishiir}.",
+                "You speak a word of power that causes waves of intense pain to assail one creature you can see within range. If the target has 150 hit points or fewer, it is subject to crippling pain. Otherwise, the target has disadvantage on the next attack roll, ability check, or saving throw (except a Constitution saving throw) that it makes before the start of your next turn.",
                 "While the target is affected by crippling pain, any speed it has can be no higher than 10 feet. The target also has disadvantage on attack rolls, ability checks, and saving throws, other than Constitution saving throws. Finally, if the target tries to cast a spell, it must first succeed on a Constitution saving throw, or the casting fails and the spell is wasted.",
                 "A target suffering this pain can make a Constitution saving throw at the end of each of its turns. On a successful save, the pain ends."
             ],
@@ -40503,7 +40607,7 @@
                 }
             ],
             "entries": [
-                "You speak a word of power that silences one creature you can see within range. If the target has 100 hit points or fewer, it loses its ability to create any sound with its voice. Otherwise, the spell has no effect on it.",
+                "You speak a word of power that silences one creature you can see within range. If the target has 100 hit points or fewer, it loses its ability to create any sound with its voice. Otherwise, the spell has no effect on it. Otherwise, the target can only speak in hushed tones until the start of your next turn. If it casts a spell with a verbal component during that time, roll a 6. On a roll of 5 or 6 the spell fails and has no effect, but the spell slot is still consumed.",
                 "The silenced target must make a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends."
             ],
             "savingThrow": [
@@ -42106,7 +42210,7 @@
                 }
             ],
             "entries": [
-                "You unleash the power of your mind to blast the intellect of up to ten creatures of your choice that you can see within range. Creatures that have an Intelligence score of 2 or lower are unaffected.",
+                "You unleash the power of your mind to blast the intellect of up to ten creatures of your choice that you can see within range.",
                 "Each target must make an Intelligence saving throw. On a failed save, a target takes {@damage 14d6} psychic damage and is {@condition stunned|Ishiir}. On a successful save, a target takes half as much damage and isn't {@condition stunned|Ishiir}. If a target is killed by this damage, its head explodes, assuming it has one.",
                 "A {@condition stunned|Ishiir} target can make an Intelligence saving throw at the end of each of its turns. On a successful save, the stunning effect ends."
             ],
@@ -45942,8 +46046,9 @@
                 }
             ],
             "entries": [
-                "You send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message.",
-                "You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a {@chance 5|||Message lost!|Message arrives} chance that the message doesn't arrive."
+                "You send a short message of 25 words or fewer to a creature you have met or a creature described to you by someone who has met it. The target hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables targets to understand the meaning of your message.",
+                "You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a {@chance 5|||Message lost!|Message arrives} chance that the message doesn't arrive. You know if the delivery fails.",
+                "Upon receiving your message, a creature can block your ability to reach it again with this spell for 7 days. If you try to send another message during that time, you learn that you are blocked, and the spell fails."
             ],
             "classes": {
                 "fromClassList": [
@@ -49230,7 +49335,7 @@
             "entries": [
                 "You attempt to redirect a spell targeted at you. Choose a spell of third level or lower you can see being cast at you that is either magic missile, requires a ranged spell attack roll, is targeting only you and requires you to make a Dexterity saving throw, or whose area of effect is a line originating from the caster.",
                 "You reflect the spell back at the caster, using yourself as the point of origin. The spell uses the original caster's spell save DC and spell attack bonus as well as any special features and effects that were used when casting it to determine its effects, such as metamagic or the evocation wizard's overchannel subclass feature.",
-                "If the spell is 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the spell is redirected. On a failure, the spell affects you normally and is not redirected."
+                "Otherwise, both you and the original caster have to make a contested ability check with your spellcasting ability modifiers. The original caster receives a bonus to its roll equal to the difference between the spell slot level used for your spell turning and that of its own spell. If the target's result is equal to or higher than yours, their spell takes effect as normal."
             ],
             "entriesHigherLevel": [
                 {
@@ -55601,7 +55706,7 @@
                 }
             ],
             "entries": [
-                "This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says."
+                "This spell grants the creature you touch the ability to understand any spoken or signed language that it hears or sees. Moreover, when the target communicates by speaking or signing, any creature that knows at least one language can understand it if that creature can hear the speech or see the signing."
             ],
             "areaTags": [
                 "ST"
@@ -56596,16 +56701,16 @@
                 }
             ],
             "entries": [
-                "You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take {@damage 1d4} psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.",
-                "This spell's damage increases by {@dice 1d4} when you reach 5th level ({@damage 2d4}), 11th level ({@damage 3d4}), and 17th level ({@damage 4d4})."
+                "You unleash a string of insults laced with subtle enchantments at one creature you can see or hear within range. The target must succeed on a Wisdom saving throw or take {@damage 1d6} Psychic damage and have Disadvantage on the next attack roll it makes before the end of its next turn.",
+                "This spell's damage increases by {@dice 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
             ],
             "scalingLevelDice": {
                 "label": "psychic damage",
                 "scaling": {
-                    "1": "1d4",
-                    "5": "2d4",
-                    "11": "3d4",
-                    "17": "4d4"
+                    "1": "1d6",
+                    "5": "2d6",
+                    "11": "3d6",
+                    "17": "4d6"
                 }
             },
             "damageInflict": [
@@ -57956,7 +58061,7 @@
                 }
             ],
             "entries": [
-                "When you cast the spell and as an action on your subsequent turns, you can choose one creature, object, or magical effect within range. Any spell of 7th level or lower on the target ends. For each spell of 8th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends."
+                "When you cast the spell and as an action on your subsequent turns, you can choose one creature, object, or magical effect within range. Any spell of 7th level or lower on the target ends. For each spell of 8th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the caster's spellcasting ability modifier + the difference between the spell slot level used for your warding whip and that of the target spell. On a successful check, the spell ends."
             ],
             "classes": {
                 "fromClassList": [
