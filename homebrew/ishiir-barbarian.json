@@ -707,11 +707,9 @@
             "classSource": "Ishiir",
             "subclassFeatures": [
                 "Path of the Raging Serpent|Barbarian|Ishiir|Raging Serpent|Ishiir|3",
-                "Mighty Coils|Barbarian|Ishiir|Raging Serpent|Ishiir|3",
-                "One with the Waves|Barbarian|Ishiir|Raging Serpent|Ishiir|3",
-                "Crushing Tide|Barbarian|Ishiir|Raging Serpent|Ishiir|6",
+                "Blessing of the Serpent|Barbarian|Ishiir|Raging Serpent|Ishiir|6",
                 "Calm before the Storm|Barbarian|Ishiir|Raging Serpent|Ishiir|10",
-                "Aspect of Gargan|Barbarian|Ishiir|Raging Serpent|Ishiir|14"
+                "Wrath of the Raging Serpent|Barbarian|Ishiir|Raging Serpent|Ishiir|14"
             ]
         },
         {
@@ -729,8 +727,8 @@
             ]
         },
         {
-            "name": "Path of the Totem Warrior",
-            "shortName": "Totem Warrior",
+            "name": "Path of the Wild Heart",
+            "shortName": "Wild Heart",
             "source": "Ishiir",
             "className": "Barbarian",
             "classSource": "Ishiir",
@@ -753,10 +751,10 @@
                 }
             ],
             "subclassFeatures": [
-                "Path of the Totem Warrior|Barbarian|Ishiir|Totem Warrior|Ishiir|3",
-                "Aspect of the Beast|Barbarian|Ishiir|Totem Warrior|Ishiir|6",
-                "Spirit Walker|Barbarian|Ishiir|Totem Warrior|Ishiir|10",
-                "Totemic Attunement|Barbarian|Ishiir|Totem Warrior|Ishiir|14"
+                "Path of the Wild Heart|Barbarian|Ishiir|Wild Heart|Ishiir|3",
+                "Aspect of the Wilds|Barbarian|Ishiir|Wild Heart|Ishiir|6",
+                "Spirit Walker|Barbarian|Ishiir|Wild Heart|Ishiir|10",
+                "Power of the Wilds|Barbarian|Ishiir|Wild Heart|Ishiir|14"
             ]
         },
         {
@@ -798,7 +796,7 @@
                 "Path of the Zealot|Barbarian|Ishiir|Zealot|Ishiir|3",
                 "Fanatical Focus|Barbarian|Ishiir|Zealot|Ishiir|6",
                 "Zealous Presence|Barbarian|Ishiir|Zealot|Ishiir|10",
-                "Rage beyond Death|Barbarian|Ishiir|Zealot|Ishiir|14"
+                "Rage of the Gods|Barbarian|Ishiir|Zealot|Ishiir|14"
             ]
         }
     ],
@@ -1455,7 +1453,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "Starting at 14th level, when you enter a rage, you also gain temporary hit points equal to the AC of your spiked armor. These temporary hit points last until your rage ends."
+                "Starting at 14th level, when you enter a rage, you gain the temporary hit points from your armor mastery again, which stack with any existing temporary hit points from that feature. These temporary hit points last until your rage ends."
             ]
         },
         {
@@ -1724,7 +1722,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "Starting at 14th level, when you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature."
+                "Starting at 14th level, when you take damage from a creature that is within range of your equipped melee weapon, you can use your reaction to make a melee weapon attack against that creature."
             ]
         },
         {
@@ -1857,23 +1855,16 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "Among the barbarians whose fury is inspired by their divine patron, none are more feared than the Fangs of the Raging Serpent. Heralds of Gargan's wrath, they punish heretics and those who have, in particular, drawn the eye of the ocean god. Tattooing their bodies in tribute to him, the Fangs emulate their patron in many ways, adopting his dualistic nature: calm like the still sea or violent and undeniable like the storm tide."
-            ]
-        },
-        {
-            "name": "Mighty Coils",
-            "page": 1,
-            "source": "Ishiir",
-            "className": "Barbarian",
-            "classSource": "Ishiir",
-            "subclassShortName": "Raging Serpent",
-            "subclassSource": "Ishiir",
-            "level": 3,
-            "header": 2,
-            "entries": [
-                "Starting when you choose this path at 3rd level, you no longer have need for weapons. You learn to throw your weight around with the might of the waves and your hands become instruments of Gargan's will - and with that, his crushing, inescapable grasp.",
-                "The damage of your unarmed strike becomes a d4. You also deal this damage when you successfully {@condition grappled|Ishiir|grapple} a creature. If you do so, you can add your Strength modifier and (if you are raging) your Rage damage bonus to the damage dealt. You can also choose to {@condition grappled|Ishiir|grapple} or make an unarmed attack with two hands instead of one. If you do so, increase your damage die by two steps. You must have both hands free and not wear armor heavier than medium to use this feature.",
-                "The damage die of your unarmed strike changes into a {@dice d6} at 5th, {@dice d8} at 11th, {@dice d10} at 17th level of this class."
+                "Among the barbarians whose fury is inspired by their divine patron, none are more feared than the Fangs of the Raging Serpent. Heralds of Gargan's wrath, they punish heretics and those who have, in particular, drawn the eye of the ocean god. Tattooing their bodies in tribute to him, the Fangs emulate their patron in many ways, adopting his dualistic nature: calm as the still sea one moment and violent and undeniable as the storm tide the next.",
+                "Those with a particularly profound connection to their patron even exhibit some physical changes when they enter their rage, such as serpent-like eyes of startling blue, a constant sheen of water on their skin, or small arcs of electricity dancing across their bodies.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "One with the Waves|Barbarian|Ishiir|Raging Serpent|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Mighty Coils|Barbarian|Ishiir|Raging Serpent|Ishiir|3"
+                }
             ]
         },
         {
@@ -1887,11 +1878,28 @@
             "level": 3,
             "header": 2,
             "entries": [
-                "At 3rd level, you gain a swimming speed equal to your walking speed. If you already have a swimming speed, that swimming speed instead increases by 30 feet."
+                "Starting at 3rd level, you no longer have need for weapons. You learn to throw your weight around with the might of the waves and your hands become instruments of Gargan's will - and with that, his crushing, inescapable grasp. You can roll a {@dice d8} in place of the normal damage of your unarmed strike. If you have both hands free or are attacking a target that you have grappled, this die changes to a {@dice d12}.",
+                "Additionally, you gain a swimming speed equal to your walking speed. If you already have a swimming speed, that swimming speed instead increases by 30 feet."
             ]
         },
         {
-            "name": "Crushing Tide",
+            "name": "Mighty Coils",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Barbarian",
+            "classSource": "Ishiir",
+            "subclassShortName": "Raging Serpent",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "Starting at 3rd level, spectral coils start appearing around you when you enter your rage. While you are raging, your reach with unarmed strikes increases by 5 ft and you ignore all size restrictions and immunities for attempting grapples.",
+                "Once per turn, if you successfully hit a creature with an unarmed strike while raging, you can attempt to grapple it.",
+                "You can use your bonus action to force a creature you grappled in this manner to make a STR saving throw. The DC is equal to 8 + your proficiency + your STR modifier. On a failure, the creature takes force damage equal to your proficiency + your STR modifier + your rage bonus damage and is {@condition restrained|Ishiir} until the end of your next turn. On a success, the creature takes half as much damage and isn't {@condition restrained|Ishiir}."
+            ]
+        },
+        {
+            "name": "Blessing of the Serpent",
             "page": 1,
             "source": "Ishiir",
             "className": "Barbarian",
@@ -1901,7 +1909,8 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Starting at 6th level, your unarmed strikes and the damage caused by your Mighty Coils class feature in this class count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+                "Starting at 6th level, your connection to Gargan deepens, causing your unarmed attacks to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
+                "Additionally, you gain resistance to lightning damage."
             ]
         },
         {
@@ -1915,11 +1924,11 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "At 10th level, you gain resistance to lightning damage. Additionally, when you roll hit dice, you can maximize the result of the roll."
+                "Starting at 10th level, you have proficiency in Wisdom saving throws."
             ]
         },
         {
-            "name": "Aspect of Gargan",
+            "name": "Wrath of the Raging Serpent",
             "page": 1,
             "source": "Ishiir",
             "className": "Barbarian",
@@ -1929,16 +1938,8 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "At 14th level, you learn to channel a small fraction of Gargan's power when you enter your rage, which can even change your appearance in certain ways, such as giving you serpent-like eyes of startling blue, a constant sheen of water on your skin or small arcs of electricity extending from your body.",
-                "When you enter a rage, you can choose to spend two daily uses of your Rage class feature instead of one. If you do so, you gain the following benefits for the duration of this rage:",
-                {
-                    "type": "list",
-                    "items": [
-                        "You deal an additional {@damage 1d8} lightning damage when using your Mighty Coils class feature or when you make an unarmed attack.",
-                        "Any creature that you successfully {@condition grappled|Ishiir|grapple} is also {@condition restrained|Ishiir} for the duration of the {@condition grappled|Ishiir|grapple}.",
-                        "When you take damage, you can deal the damage from your Mighty Coils class feature to any one creature that you are currently grappling as a reaction."
-                    ]
-                }
+                "At 14th level, while you are raging you can call down your god's fury in the form of a powerful lightning bolt when you hit a creature with a melee weapon attack. The target has to make a Dexterity saving throw. The DC is equal to 8 + your proficiency + your STR modifier. On a failure, the creature takes {@damage 12d10} lightning damage, and half as much on a successful one. Any creature that you have grappled has disadvantage on this saving throw.",
+                "You cannot use this feature again until you have finished a long rest, unless you spend a use of your rage to use it again."
             ]
         },
         {
@@ -1972,7 +1973,7 @@
             "entries": [
                 "Starting at 3rd level, you emanate a stormy, magical aura while you rage. The aura extends 10 feet from you in every direction, but not through total cover.",
                 "Your aura has an effect that is active for the duration of your rage, and an additional empowered effect.",
-                "You can empower your aura only once per rage (up to a maximum of 6 times). You regain all expended uses of this feature when you finish a long rest.",
+                "You can empower your aura only once per rage.",
                 "Choose blaze, thunderstorm, or blizzard. Your aura's effect depends on your choice, as detailed below. You can change this choice whenever you finish a short or long rest.",
                 "If your aura's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.",
                 {
@@ -2188,77 +2189,76 @@
             ]
         },
         {
-            "name": "Path of the Totem Warrior",
+            "name": "Path of the Wild Heart",
             "source": "Ishiir",
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "The Path of the Totem Warrior is a spiritual journey, as the barbarian accepts a spirit animal as guide, protector, and inspiration. In battle, your totem spirit fills you with supernatural might, adding magical fuel to your barbarian rage.",
+                "The Path of the Wild Heart is a spiritual journey, as the barbarian accepts a spirit animal as guide, protector, and inspiration. In battle, your totem spirit fills you with supernatural might, adding magical fuel to your barbarian rage.",
                 "Most barbarian tribes consider a totem animal to be kin to a particular clan. In such cases, it is unusual for an individual to have more than one totem animal spirit, though exceptions exist.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Spirit Seeker|Barbarian|Ishiir|Totem Warrior|Ishiir|3"
+                    "subclassFeature": "Animal Speaker|Barbarian|Ishiir|Wild Heart|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Totem Spirit|Barbarian|Ishiir|Totem Warrior|Ishiir|3"
+                    "subclassFeature": "Rage of the Wilds|Barbarian|Ishiir|Wild Heart|Ishiir|3"
                 }
             ]
         },
         {
-            "name": "Spirit Seeker",
+            "name": "Animal Speaker",
             "source": "Ishiir",
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 3,
             "header": 1,
             "entries": [
-                "Yours is a path that seeks attunement with the natural world, giving you a kinship with beasts. At 3rd level when you adopt this path, you gain the ability to cast the {@spell beast sense|Ishiir} and {@spell speak with animals|Ishiir} spells, but only as rituals, as described in {@book chapter 10|PHB|10|rituals}."
+                "At 3rd level when you adopt this path, you can cast the {@spell beast sense|Ishiir} and {@spell speak with animals|Ishiir} spells, but only as rituals. Wisdom is your spellcasting ability for them."
             ]
         },
         {
-            "name": "Totem Spirit",
+            "name": "Rage of the Wilds",
             "source": "Ishiir",
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 3,
             "header": 1,
             "entries": [
-                "At 3rd level, when you adopt this path, you choose a totem spirit and gain its feature. You must make or acquire a physical totem object—an amulet or similar adornment—that incorporates fur or feathers, claws, teeth, or bones of the totem animal. At your option, you also gain minor physical attributes that are reminiscent of your totem spirit. For example, if you have a bear totem spirit, you might be unusually hairy and thick-skinned, or if your totem is the eagle, your eyes turn bright yellow.",
-                "Your totem animal might be an animal related to those listed here but more appropriate to your homeland. For example, you could choose a hawk or vulture in place of an eagle.",
+                "Your Rage taps into the primal power of animals. Whenever you activate your Rage, you gain one of the following options of your choice.",
                 {
                     "type": "options",
                     "count": 1,
                     "entries": [
                         {
                             "type": "refSubclassFeature",
-                            "subclassFeature": "Bear|Barbarian|Ishiir|Totem Warrior|Ishiir|3"
+                            "subclassFeature": "Bear|Barbarian|Ishiir|Wild Heart|Ishiir|3"
                         },
                         {
                             "type": "refSubclassFeature",
-                            "subclassFeature": "Eagle|Barbarian|Ishiir|Totem Warrior|Ishiir|3"
+                            "subclassFeature": "Eagle|Barbarian|Ishiir|Wild Heart|Ishiir|3"
                         },
                         {
                             "type": "refSubclassFeature",
-                            "subclassFeature": "Elk|Barbarian|Ishiir|Totem Warrior|Ishiir|3"
+                            "subclassFeature": "Elk|Barbarian|Ishiir|Wild Heart|Ishiir|3"
                         },
                         {
                             "type": "refSubclassFeature",
-                            "subclassFeature": "Tiger|Barbarian|Ishiir|Totem Warrior|Ishiir|3"
+                            "subclassFeature": "Tiger|Barbarian|Ishiir|Wild Heart|Ishiir|3"
                         },
                         {
                             "type": "refSubclassFeature",
-                            "subclassFeature": "Wolf|Barbarian|Ishiir|Totem Warrior|Ishiir|3"
+                            "subclassFeature": "Wolf|Barbarian|Ishiir|Wild Heart|Ishiir|3"
                         }
                     ]
                 }
@@ -2270,11 +2270,11 @@
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment."
+                "While your Rage is active, you have Resistance to every damage type except Force, Necrotic, Psychic, and Radiant."
             ]
         },
         {
@@ -2283,11 +2283,11 @@
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "When you activate your Rage and as a Bonus Action while it’s active, you can take both the Disengage and the Dash action. The spirit of the eagle makes you into a predator who can weave through the fray with ease."
+                "When you activate your Rage, you can take the {@action Disengage|Ishiir} and {@action Dash|Ishiir} actions as part of that Bonus Action. While your Rage is active, you can take a Bonus Action to take both of those actions."
             ]
         },
         {
@@ -2296,7 +2296,7 @@
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
@@ -2309,11 +2309,11 @@
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "While you're raging, your friends have advantage on melee attack rolls against any creature within 10 feet of you that is hostile to you. The spirit of the wolf makes you a leader of hunters."
+                "While your Rage is active, your allies have Advantage on attack rolls against any enemy of yours within 10 feet of you."
             ]
         },
         {
@@ -2322,7 +2322,7 @@
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
@@ -2330,12 +2330,12 @@
             ]
         },
         {
-            "name": "Aspect of the Beast",
+            "name": "Aspect of the Wilds",
             "source": "Ishiir",
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 6,
             "header": 2,
@@ -2347,23 +2347,31 @@
                     "entries": [
                         {
                             "type": "refSubclassFeature",
-                            "subclassFeature": "Bear|Barbarian|Ishiir|Totem Warrior|Ishiir|6"
+                            "subclassFeature": "Bear|Barbarian|Ishiir|Wild Heart|Ishiir|6"
                         },
                         {
                             "type": "refSubclassFeature",
-                            "subclassFeature": "Eagle|Barbarian|Ishiir|Totem Warrior|Ishiir|6"
+                            "subclassFeature": "Eagle|Barbarian|Ishiir|Wild Heart|Ishiir|6"
                         },
                         {
                             "type": "refSubclassFeature",
-                            "subclassFeature": "Elk|Barbarian|Ishiir|Totem Warrior|Ishiir|6"
+                            "subclassFeature": "Elk|Barbarian|Ishiir|Wild Heart|Ishiir|6"
                         },
                         {
                             "type": "refSubclassFeature",
-                            "subclassFeature": "Tiger|Barbarian|Ishiir|Totem Warrior|Ishiir|6"
+                            "subclassFeature": "Tiger|Barbarian|Ishiir|Wild Heart|Ishiir|6"
                         },
                         {
                             "type": "refSubclassFeature",
-                            "subclassFeature": "Wolf|Barbarian|Ishiir|Totem Warrior|Ishiir|6"
+                            "subclassFeature": "Owl|Barbarian|Ishiir|Wild Heart|Ishiir|6"
+                        },
+                        {
+                            "type": "refSubclassFeature",
+                            "subclassFeature": "Panther|Barbarian|Ishiir|Wild Heart|Ishiir|6"
+                        },
+                        {
+                            "type": "refSubclassFeature",
+                            "subclassFeature": "Salmon|Barbarian|Ishiir|Wild Heart|Ishiir|6"
                         }
                     ]
                 }
@@ -2375,7 +2383,7 @@
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 6,
             "entries": [
@@ -2388,24 +2396,11 @@
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 6,
             "entries": [
                 "You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Long range no longer imposes disadvantage on your ranged weapon attacks."
-            ]
-        },
-        {
-            "name": "Wolf",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Barbarian",
-            "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
-            "subclassSource": "Ishiir",
-            "level": 6,
-            "entries": [
-                "You gain the hunting sensibilities of a wolf. You gain {@sense darkvision} out to a range of 60 feet. If you already have {@sense darkvision} from your race, its range increases by 30 feet."
             ]
         },
         {
@@ -2414,7 +2409,7 @@
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 6,
             "entries": [
@@ -2427,11 +2422,50 @@
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 6,
             "entries": [
                 "You gain proficiency in two skills from the following list: {@skill Athletics}, {@skill Acrobatics}, {@skill Stealth}, and {@skill Survival}. The cat spirit hones your survival instincts."
+            ]
+        },
+        {
+            "name": "Owl",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Barbarian",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wild Heart",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "You have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet."
+            ]
+        },
+        {
+            "name": "Panther",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Barbarian",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wild Heart",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "You gain a climb speed equal to your walking speed. Your long jump distance increases 30 ft and your high jump distance to 15 ft."
+            ]
+        },
+        {
+            "name": "Salmon",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Barbarian",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wild Heart",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "You gain a swim speed equal to your walking speed and you can breathe underwater."
             ]
         },
         {
@@ -2440,7 +2474,7 @@
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 10,
             "header": 2,
@@ -2449,12 +2483,12 @@
             ]
         },
         {
-            "name": "Totemic Attunement",
+            "name": "Power of the Wilds",
             "source": "Ishiir",
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 14,
             "header": 2,
@@ -2466,23 +2500,23 @@
                     "entries": [
                         {
                             "type": "refSubclassFeature",
-                            "subclassFeature": "Bear|Barbarian|Ishiir|Totem Warrior|Ishiir|14"
+                            "subclassFeature": "Wolf|Barbarian|Ishiir|Wild Heart|Ishiir|14"
                         },
                         {
                             "type": "refSubclassFeature",
-                            "subclassFeature": "Eagle|Barbarian|Ishiir|Totem Warrior|Ishiir|14"
+                            "subclassFeature": "Elk|Barbarian|Ishiir|Wild Heart|Ishiir|14"
                         },
                         {
                             "type": "refSubclassFeature",
-                            "subclassFeature": "Elk|Barbarian|Ishiir|Totem Warrior|Ishiir|14"
+                            "subclassFeature": "Tiger|Barbarian|Ishiir|Wild Heart|Ishiir|14"
                         },
                         {
                             "type": "refSubclassFeature",
-                            "subclassFeature": "Tiger|Barbarian|Ishiir|Totem Warrior|Ishiir|14"
+                            "subclassFeature": "Falcon|Barbarian|Ishiir|Wild Heart|Ishiir|14"
                         },
                         {
                             "type": "refSubclassFeature",
-                            "subclassFeature": "Wolf|Barbarian|Ishiir|Totem Warrior|Ishiir|14"
+                            "subclassFeature": "Lion|Barbarian|Ishiir|Wild Heart|Ishiir|14"
                         }
                     ]
                 }
@@ -2494,7 +2528,7 @@
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 14,
             "entries": [
@@ -2507,7 +2541,7 @@
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 14,
             "entries": [
@@ -2520,7 +2554,7 @@
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 14,
             "entries": [
@@ -2533,7 +2567,7 @@
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 14,
             "entries": [
@@ -2546,11 +2580,37 @@
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
-            "subclassShortName": "Totem Warrior",
+            "subclassShortName": "Wild Heart",
             "subclassSource": "Ishiir",
             "level": 14,
             "entries": [
                 "While you're raging, if you move at least 20 feet in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it."
+            ]
+        },
+        {
+            "name": "Falcon",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Barbarian",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wild Heart",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "While your Rage is active, you have a Fly Speed equal to your Speed if you aren't wearing any armor."
+            ]
+        },
+        {
+            "name": "Lion",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Barbarian",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wild Heart",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "While your Rage is active, any of your enemies within 5 feet of you have Disadvantage on attack rolls against targets other than you or another Barbarian who has this option active."
             ]
         },
         {
@@ -2750,7 +2810,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "While your Rage is active, whenever a creature you can see ends its turn within 20 feet of you, you can use your Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength saving throw (DC equal to 8 + your Proficiency Bonus + your Strength modifier) or be teleported to an unoccupied space you can see within 5 feet of yourself or in the nearest unoccupied space you can see. The space the target teleports to must be on a surface or liquid that can support it; otherwise, the target doesn’t teleport."
+                "Whenever a creature you can see starts its turn within 30 feet of you while your Rage is active, you can take a Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus) or be teleported to an unoccupied space you can see within 5 feet of yourself or in the nearest unoccupied space you can see. After the target teleports, you can reduce its Speed to 0 until the end of the current turn."
             ]
         },
         {
@@ -2779,8 +2839,8 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "As an action, you touch a Huge or larger tree or a Teleportation Circle to create a link through the World Tree to a Teleportation Circle somewhere else on the same world or on another plane of existence. When you do so, you can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire, and you and up to five willing creatures within 30 feet of you appear at the Teleportation Circle closest to that destination. If a Teleportation Circle is too small to hold all the creatures you transported, they appear in the unoccupied spaces closest to the circle.",
-                "Once you use this feature, you can’t use it again until you finish a Long Rest. If you’ve run out of uses of this feature, you can expend one use of your Rage, choosing to activate this feature instead of Rage."
+                "When you activate your Rage and as a Bonus Action while your Rage is active, you can teleport up to 60 feet to an unoccupied space you can see.",
+                "In addition, once per Rage, you can increase the range of that teleport to 150 feet. When you do so, you can also bring up to six willing creatures who are within 10 feet of you. Each creature teleports to an unoccupied space of your choice within 10 feet of your destination space."
             ]
         },
         {
@@ -2830,8 +2890,9 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "At 3rd level, your soul is marked for endless battle. If a spell, such as {@spell raise dead|Ishiir}, has the sole effect of restoring you to life (but not undeath), the caster doesn't need material components to cast the spell on you.",
-                "When you receive healing, you roll a number of d12 equal to half your proficiency (rounded down) and add them to the total healing done. You can use this feature a number of times equal to your proficiency."
+                "A divine entity helps ensure you can continue the fight. You have a pool of four d12s that you can spend to heal yourself. As a Bonus Action, you can expend dice from the pool, roll them, and regain a number of Hit Points equal to the roll's total.",
+                "Your pool regains one die when you finish a Short Rest, and all expended dice when you finish a Long Rest.",
+                "The pool's maximum number of dice increases by one when you reach Barbarian levels 6 (5 dice), 12 (6 dice), and 17 (7 dice)."
             ]
         },
         {
@@ -2864,7 +2925,7 @@
             ]
         },
         {
-            "name": "Rage beyond Death",
+            "name": "Rage of the Gods",
             "source": "Ishiir",
             "page": 1,
             "className": "Barbarian",
@@ -2874,8 +2935,29 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "Beginning at 14th level, the divine power that fuels your rage allows you to shrug off fatal blows.",
-                "While you're raging, having 0 hit points doesn't knock you {@condition unconscious|Ishiir}. You still must make death saving throws, and you suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don't die until your rage ends, and you die then only if you still have 0 hit points."
+                "When you activate your Rage, you can assume the form of a divine warrior. This form lasts for 1 minute or until you drop to 0 Hit Points. Once you use this feature, you can't do so again until you finish a Long Rest.",
+                "While in this form, you gain the benefits below.",
+                {
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Flight.",
+							"entry": "You have a Fly Speed equal to your Speed and can hover."
+						},
+						{
+							"type": "item",
+							"name": "Resistance.",
+							"entry": "You have Resistance to Necrotic, Psychic, and Radiant damage."
+						},
+						{
+							"type": "item",
+							"name": "Revivification.",
+							"entry": "When a creature within 30 feet of you would drop to 0 Hit Points, you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level."
+						}
+					]
+				}
             ]
         }
     ]
