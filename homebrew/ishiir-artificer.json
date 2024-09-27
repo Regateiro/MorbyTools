@@ -175,108 +175,129 @@
                     "colLabels": [
                         "{@filter Infusions Known|optionalfeatures|feature type=ai|source=Ishiir}",
                         "Infused Items",
-                        "{@filter Cantrips Known|spells|level=0|class=artificer (Ishiir)|source=Ishiir}"
+                        "{@filter Cantrips Known|spells|level=0|class=artificer (Ishiir)|source=Ishiir}",
+                        "Prepared Spells"
                     ],
                     "rows": [
                         [
                             0,
                             0,
-                            2
-                        ],
-                        [
-                            4,
                             2,
                             2
                         ],
                         [
                             4,
                             2,
-                            2
+                            2,
+                            3
                         ],
                         [
                             4,
                             2,
-                            2
+                            2,
+                            4
                         ],
                         [
                             4,
                             2,
-                            2
+                            2,
+                            5
+                        ],
+                        [
+                            4,
+                            2,
+                            2,
+                            6
                         ],
                         [
                             6,
                             3,
-                            2
+                            2,
+                            6
                         ],
                         [
                             6,
                             3,
-                            2
+                            2,
+                            7
                         ],
                         [
                             6,
                             3,
-                            2
+                            2,
+                            7
                         ],
                         [
                             6,
                             3,
-                            2
+                            2,
+                            9
                         ],
                         [
                             8,
                             4,
-                            3
+                            3,
+                            9
                         ],
                         [
                             8,
                             4,
-                            3
+                            3,
+                            10
                         ],
                         [
                             8,
                             4,
-                            3
+                            3,
+                            10
                         ],
                         [
                             8,
                             4,
-                            3
+                            3,
+                            11
                         ],
                         [
                             10,
                             5,
-                            4
+                            4,
+                            11
                         ],
                         [
                             10,
                             5,
-                            4
+                            4,
+                            12
                         ],
                         [
                             10,
                             5,
-                            4
+                            4,
+                            12
                         ],
                         [
                             10,
                             5,
-                            4
+                            4,
+                            14
                         ],
                         [
                             12,
                             6,
-                            4
+                            4,
+                            14
                         ],
                         [
                             12,
                             6,
-                            4
+                            4,
+                            15
                         ],
                         [
                             12,
                             6,
-                            4
+                            4,
+                            15
                         ]
                     ]
                 },
@@ -848,7 +869,7 @@
                     "name": "Preparing and Casting Spells",
                     "entries": [
                         "The Artificer table shows how many spell slots you have to cast your artificer spells. To cast one of your artificer spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-                        "You prepare the list of artificer spells that are available for you to cast, choosing from the {@filter artificer spell list|spells|class=Artificer (Ishiir)|source=Ishiir}. When you do so, choose a number of artificer spells equal to your Intelligence modifier + half your artificer level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
+                        "You prepare the list of artificer spells that are available for you to cast, choosing from the {@filter artificer spell list|spells|class=Artificer (Ishiir)|source=Ishiir}. When you do so, choose a number of artificer spells as shown in the Prepared Spells column of the Artificer Features table. The spells must be of a level for which you have spell slots.",
                         "For example, if you are a 5th-level artificer, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell cure wounds|Ishiir}, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
                         "You can change your list of prepared spells when you finish a long rest. Preparing a new list of artificer spells requires time spent tinkering with your spellcasting focuses: at least 1 minute per spell level for each spell on your list."
                     ]
@@ -872,13 +893,6 @@
                                 "int"
                             ]
                         }
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Ritual Casting",
-                    "entries": [
-                        "You can cast an artificer spell as a ritual if that spell has the ritual tag and you have the spell prepared."
                     ]
                 }
             ]
