@@ -217,87 +217,108 @@
             "classTableGroups": [
                 {
                     "colLabels": [
+                        "Bardic Die",
                         "{@filter Cantrips Known|spells|level=0|class=bard (Ishiir)|source=Ishiir}",
-                        "{@filter Spells Known|spells|class=bard (Ishiir)|source=Ishiir}"
+                        "{@filter Prepared Spells|spells|class=bard (Ishiir)|source=Ishiir}"
                     ],
                     "rows": [
                         [
+                            "{@dice 1d6}",
                             2,
                             4
                         ],
                         [
+                            "{@dice 1d6}",
                             2,
                             5
                         ],
                         [
+                            "{@dice 1d6}",
                             2,
                             6
                         ],
                         [
+                            "{@dice 1d6}",
                             3,
                             7
                         ],
                         [
-                            3,
-                            8
-                        ],
-                        [
+                            "{@dice 1d8}",
                             3,
                             9
                         ],
                         [
+                            "{@dice 1d8}",
                             3,
                             10
                         ],
                         [
+                            "{@dice 1d8}",
                             3,
                             11
                         ],
                         [
+                            "{@dice 1d8}",
                             3,
                             12
                         ],
                         [
-                            4,
+                            "{@dice 1d8}",
+                            3,
                             14
                         ],
                         [
+                            "{@dice 1d10}",
                             4,
                             15
                         ],
                         [
-                            4,
-                            15
-                        ],
-                        [
+                            "{@dice 1d10}",
                             4,
                             16
                         ],
                         [
+                            "{@dice 1d10}",
+                            4,
+                            16
+                        ],
+                        [
+                            "{@dice 1d10}",
+                            4,
+                            17
+                        ],
+                        [
+                            "{@dice 1d10}",
+                            4,
+                            17
+                        ],
+                        [
+                            "{@dice 1d12}",
                             4,
                             18
                         ],
                         [
+                            "{@dice 1d12}",
+                            4,
+                            18
+                        ],
+                        [
+                            "{@dice 1d12}",
                             4,
                             19
                         ],
                         [
-                            4,
-                            19
-                        ],
-                        [
+                            "{@dice 1d12}",
                             4,
                             20
                         ],
                         [
+                            "{@dice 1d12}",
                             4,
-                            22
+                            21
                         ],
                         [
-                            4,
-                            22
-                        ],
-                        [
+                            "{@dice 1d12}",
                             4,
                             22
                         ]
@@ -542,35 +563,33 @@
             ],
             "classFeatures": [
                 "Bardic Inspiration|Bard|Ishiir|1",
-                "Magical Inspiration|Bard|Ishiir|1",
                 "Spellcasting|Bard|Ishiir|1",
                 "Spell Versatility|Bard|Ishiir|1",
                 "Jack of All Trades|Bard|Ishiir|2",
                 "Song of Rest|Bard|Ishiir|2",
                 "Magical Inspiration|Bard|Ishiir|2",
+                "Expertise|Bard|Ishiir|2",
                 {
                     "classFeature": "Bard College|Bard|Ishiir|3",
                     "gainSubclassFeature": true
                 },
-                "Expertise|Bard|Ishiir|3",
                 "Ability Score Improvement|Bard|Ishiir|4",
                 "Proficiency Versatility|Bard|Ishiir|4",
                 "Bardic Versatility|Bard|Ishiir|4",
                 "Bardic Inspiration (d8)|Bard|Ishiir|5",
                 "Font of Inspiration|Bard|Ishiir|5",
-                "Countercharm|Bard|Ishiir|6",
                 {
                     "classFeature": "Bard College feature|Bard|Ishiir|6",
                     "gainSubclassFeature": true
                 },
+                "Countercharm|Bard|Ishiir|7",
                 "Ability Score Improvement|Bard|Ishiir|8",
                 "Proficiency Versatility|Bard|Ishiir|8",
+                "Expertise|Bard|Ishiir|9",
                 "Bardic Inspiration (d10)|Bard|Ishiir|10",
-                "Expertise|Bard|Ishiir|10",
                 "Magical Secrets|Bard|Ishiir|10",
                 "Ability Score Improvement|Bard|Ishiir|12",
                 "Proficiency Versatility|Bard|Ishiir|12",
-                "Magical Secrets|Bard|Ishiir|14",
                 {
                     "classFeature": "Bard College feature|Bard|Ishiir|14",
                     "gainSubclassFeature": true
@@ -578,10 +597,10 @@
                 "Bardic Inspiration (d12)|Bard|Ishiir|15",
                 "Ability Score Improvement|Bard|Ishiir|16",
                 "Proficiency Versatility|Bard|Ishiir|16",
-                "Magical Secrets|Bard|Ishiir|18",
+                "Superior Inspiration|Bard|Ishiir|18",
                 "Ability Score Improvement|Bard|Ishiir|19",
                 "Proficiency Versatility|Bard|Ishiir|19",
-                "Superior Inspiration|Bard|Ishiir|20"
+                "Words of Creation|Bard|Ishiir|20"
             ],
             "subclassTitle": "Bard College",
             "fluff": [
@@ -923,21 +942,28 @@
             "classSource": "Ishiir",
             "level": 1,
             "entries": [
-                "You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a {@dice d6}.",
-                "Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the {@dice d20} before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.",
-                "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.",
-                "Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a {@dice d8} at 5th level, a {@dice d10} at 10th level, and a {@dice d12} at 15th level."
-            ]
-        },
-        {
-            "name": "Magical Inspiration",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Bard",
-            "classSource": "Ishiir",
-            "level": 1,
-            "entries": [
-                "If a creature has a Bardic Inspiration die from you and casts a spell, the creature can roll that die and add the number rolled to one damage or healing roll of the spell. The Bardic Inspiration die is then lost."
+                "You can supernaturally inspire others through words, music, or dance. This inspiration is represented by your Bardic Inspiration die, which is a d6.",
+                {
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Using Bardic Inspiration.",
+							"entry": "As a Bonus Action, you can inspire another creature within 60 feet of yourself who can see or hear you. That creature gains one of your Bardic Inspiration dice. A creature can have only one Bardic Inspiration die at a time. Once within the next hour when the creature fails a D20 Test, the creature can roll the Bardic Inspiration die and add the number rolled to the d20, potentially turning the failure into a success. A Bardic Inspiration die is expended when it's rolled."
+						},
+						{
+							"type": "item",
+							"name": "Number of Uses.",
+							"entry": "You can confer a Bardic Inspiration die a number of times equal to your Charisma modifier (minimum of once). You regain one die when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest."
+						},
+						{
+							"type": "item",
+							"name": "At Higher Levels.",
+							"entry": "Your Bardic Inspiration die changes when you reach certain Bard levels, as shown in the Bardic Die column of the Bard Features table. The die becomes a d8 at level 5, a d10 at level 10, and a d12 at level 15."
+						}
+					]
+				}
             ]
         },
         {
@@ -978,11 +1004,18 @@
                 },
                 {
                     "type": "entries",
-                    "name": "Spells Known of 1st Level and Higher",
+                    "name": "Prepared Spells of Level 1+.",
                     "entries": [
-                        "You know four 1st-level spells of your choice from the bard spell list.",
-                        "You learn an additional bard spell of your choice at each level except 12th, 16th, 19th, and 20th. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.",
-                        "Additionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots."
+                        "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the Bard {@filter spell list|spells|class=bard (Ishiir)|source=Ishiir}. {@spell Charm Person|Ishiir}, {@spell Color Spray|Ishiir}, {@spell Dissonant Whispers|Ishiir}, and {@spell Healing Word|Ishiir} are recommended.",
+                        "The number of spells on your list increases as you gain Bard levels, as shown in the Prepared Spells column of the Bard Features table. Whenever that number increases, choose additional spells from the Bard spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Bard, your list of prepared spells can include six spells of levels 1 and 2 in any combination.",
+                        "If another Bard feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Bard spells for you."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Changing Your Prepared Spells.",
+                    "entries": [
+                        "Whenever you gain a Bard level, you can replace one spell on your list with another Bard spell for which you have spell slots."
                     ]
                 },
                 {
@@ -1004,13 +1037,6 @@
                                 "cha"
                             ]
                         }
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Ritual Casting",
-                    "entries": [
-                        "You can cast any bard spell you know as a ritual if that spell has the ritual tag."
                     ]
                 },
                 {
@@ -1057,6 +1083,19 @@
             ]
         },
         {
+            "name": "Expertise",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Bard",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "At 2nd level, You gain Expertise in two of your skill proficiencies of your choice. {@skill Performance} and {@skill Persuasion} are recommended if you have proficiency in them.",
+                "At Bard level 9, you gain Expertise in two more of your skill proficiencies of your choice."
+            ]
+        },
+        {
             "name": "Bard College",
             "source": "Ishiir",
             "page": 1,
@@ -1066,19 +1105,6 @@
             "level": 3,
             "entries": [
                 "At 3rd level, you delve into the advanced techniques of a bard college of your choice from the list of available colleges. Your choice grants you features at 3rd level and again at 6th and 14th level."
-            ]
-        },
-        {
-            "name": "Expertise",
-            "source": "Ishiir",
-            "page": 1,
-            "srd": true,
-            "className": "Bard",
-            "classSource": "Ishiir",
-            "level": 3,
-            "entries": [
-                "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
-                "At 10th level, you can choose another two skill proficiencies to gain this benefit."
             ]
         },
         {
@@ -1145,7 +1171,8 @@
             "classSource": "Ishiir",
             "level": 5,
             "entries": [
-                "Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest."
+                "Beginning when you reach 5th level, you now regain all your expended uses of Bardic Inspiration when you finish a Short or Long Rest.",
+                "In addition, you can expend a spell slot (no action required) to regain one expended use of Bardic Inspiration."
             ]
         },
         {
@@ -1167,10 +1194,9 @@
             "srd": true,
             "className": "Bard",
             "classSource": "Ishiir",
-            "level": 6,
+            "level": 7,
             "entries": [
-                "At 6th level, you can use musical notes or words of power to disrupt mind-influencing effects. If you or a creature within 30 feet of you fails a saving throw against an effect that applies the {@condition charmed|Ishiir} or {@condition frightened|Ishiir} condition, you can use your reaction to cause the save to be rerolled.",
-                "You can choose to add your CHA modifier to the roll, but you have to do so before the roll is made. You can add this bonus a number of times equal to your proficiency and you regain all expended uses when you finish a long rest."
+                "At 7th level, you can use musical notes or words of power to disrupt mind-influencing effects. If you or a creature within 30 feet of you fails a saving throw against an effect that applies the {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir} condition, you can take a Reaction to cause the save to be rerolled, and the new roll has Advantage."
             ]
         },
         {
@@ -1199,6 +1225,18 @@
             ]
         },
         {
+            "name": "Expertise",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Bard",
+            "classSource": "Ishiir",
+            "level": 9,
+            "entries": [
+                "At 9th level, you gain Expertise in two of your Skill Proficiencies of your choice."
+            ]
+        },
+        {
             "name": "Bardic Inspiration (d10)",
             "source": "Ishiir",
             "page": 1,
@@ -1211,18 +1249,6 @@
             ]
         },
         {
-            "name": "Expertise",
-            "source": "Ishiir",
-            "page": 1,
-            "srd": true,
-            "className": "Bard",
-            "classSource": "Ishiir",
-            "level": 10,
-            "entries": [
-                "At 10th level, you can choose another two skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
-            ]
-        },
-        {
             "name": "Magical Secrets",
             "source": "Ishiir",
             "page": 1,
@@ -1231,9 +1257,7 @@
             "classSource": "Ishiir",
             "level": 10,
             "entries": [
-                "By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.",
-                "The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table.",
-                "You learn two additional spells from any classes at 14th level and again at 18th level."
+                "By 10th level, you've learned secrets from various magical traditions. Whenever you reach a Bard level (including this level) and the Prepared Spells number in the Bard Features table increases, you can choose any of your new prepared spells from the Bard, Cleric, Druid, and Wizard spell lists, and the chosen spells count as Bard spells for you (see a class's section for its spell list). In addition, whenever you replace a spell prepared for this class, you can replace it with a spell from those lists."
             ]
         },
         {
@@ -1274,19 +1298,6 @@
             ]
         },
         {
-            "name": "Magical Secrets",
-            "source": "Ishiir",
-            "page": 1,
-            "srd": true,
-            "className": "Bard",
-            "classSource": "Ishiir",
-            "level": 14,
-            "entries": [
-                "At 14th level, choose two additional spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.",
-                "The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table."
-            ]
-        },
-        {
             "name": "Bardic Inspiration (d12)",
             "source": "Ishiir",
             "page": 1,
@@ -1324,7 +1335,7 @@
             ]
         },
         {
-            "name": "Magical Secrets",
+            "name": "Superior Inspiration",
             "source": "Ishiir",
             "page": 1,
             "srd": true,
@@ -1332,8 +1343,7 @@
             "classSource": "Ishiir",
             "level": 18,
             "entries": [
-                "At 18th level, choose two additional spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.",
-                "The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table."
+                "At 18th level, when you roll Initiative, you regain expended uses of Bardic Inspiration until you have two if you have fewer than that."
             ]
         },
         {
@@ -1362,15 +1372,14 @@
             ]
         },
         {
-            "name": "Superior Inspiration",
+            "name": "Words of Creation",
             "source": "Ishiir",
             "page": 1,
-            "srd": true,
             "className": "Bard",
             "classSource": "Ishiir",
             "level": 20,
             "entries": [
-                "At 20th level, when you roll initiative, you regain a number of uses of Bardic Inspiration equal to half your maximum."
+                "When you reach 20th level, you have mastered two of the Words of Creation: the words of life and death. You therefore always have the {@spell Power Word Heal|Ishiir} and {@spell Power Word Kill|Ishiir} spells prepared. When you cast either spell, you can target a second creature with it if that creature is within 10 feet of the first target. You can cast either spell once without expending a spell slot. You regain the ability to cast these spells this way when you finish a long rest."
             ]
         }
     ],
@@ -1449,7 +1458,7 @@
             "page": 1,
             "additionalSpells": [
                 {
-                    "name": "Additional Magical Secrets",
+                    "name": "Magical Discoveries",
                     "known": {
                         "6": [
                             {
@@ -1464,7 +1473,7 @@
             ],
             "subclassFeatures": [
                 "College of Lore|Bard|Ishiir|Lore|Ishiir|3",
-                "Additional Magical Secrets|Bard|Ishiir|Lore|Ishiir|6",
+                "Magical Discoveries|Bard|Ishiir|Lore|Ishiir|6",
                 "Peerless Skill|Bard|Ishiir|Lore|Ishiir|14"
             ]
         },
@@ -1749,25 +1758,30 @@
             "header": 1,
             "entries": [
                 "{@i 3rd-level College of Dance feature}",
-                "Your practice of dance gives you the ability to gracefully dodge and make agile strikes. While you aren’t wearing armor or wielding a Shield, you gain the following benefits:",
+                "While you aren't wearing armor or wielding a Shield, you gain the following benefits.",
                 {
                     "type": "list",
                     "style": "list-hang-notitle",
                     "items": [
                         {
                             "type": "item",
-                            "name": "Unarmored Defense",
-                            "entry": "Your base Armor Class equals 10 + your Dexterity modifier + your Charisma modifier."
+                            "name": "Dance Virtuoso.",
+                            "entry": "You have Advantage on any Charisma ({@skill Performance}) check you make that involves you dancing."
                         },
                         {
                             "type": "item",
-                            "name": "Agile Strikes",
+                            "name": "Unarmored Defense.",
+                            "entry": "Your base Armor Class equals 10 plus your Dexterity and Charisma modifiers."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Agile Strikes.",
                             "entry": "When you expend a use of your Bardic Inspiration as part of an action, a Bonus Action, or a Reaction, you can make one Unarmed Strike as part of that action, Bonus Action, or Reaction."
                         },
                         {
                             "type": "item",
-                            "name": "Bardic Damage",
-                            "entry": "You can use Dexterity instead of Strength for the attack rolls of your Unarmed Strikes, and when you deal damage with an Unarmed Strike, you can deal Bludgeoning damage equal to a roll of your Bardic Inspiration die plus your Dexterity modifier. This roll doesn’t expend the die."
+                            "name": "Bardic Damage.",
+                            "entry": "You can use Dexterity instead of Strength for the attack rolls of your Unarmed Strikes. When you deal damage with an Unarmed Strike, you can deal Bludgeoning damage equal to a roll of your Bardic Inspiration die plus your Dexterity modifier, instead of the strike's normal damage. This roll doesn't expend the die."
                         }
                     ]
                 }
@@ -1785,7 +1799,8 @@
             "header": 2,
             "entries": [
                 "{@i 3th-level College of Dance feature}",
-                "When an enemy you can see moves or ends its turn within 5 feet of you or an ally of yours who is within 60 feet of you, you can use your Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then roll your Bardic Inspiration die, and the ally can move up to a number of feet equal to 5 times the number rolled. None of this feature’s movement provokes Opportunity Attacks."
+                "When an enemy you can see ends its turn within 5 feet of you, you can take a Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then one ally of your choice within 30 feet of you can also move up to half their Speed using their Reaction.",
+                "None of this feature's movement provokes Opportunity Attacks."
             ]
         },
         {
@@ -1815,7 +1830,7 @@
             "header": 2,
             "entries": [
                 "{@i 6th-level College of Dance feature}",
-                "When you roll Initiative, you can spend one use of your Bardic Inspiration if you don’t have the {@condition incapacitated|Ishiir} condition. When you do so, roll your Bardic Inspiration die, and choose a number of creatures within 60 feet of yourself (you can choose yourself), up to a number equal to your Charisma modifier (minimum of one creature). Each of them gains a bonus to their Initiative equal to the number rolled."
+                "When you roll Initiative, you can expend one use of your Bardic Inspiration if you don't have the {@condition Incapacitated|Ishiir} condition. When you do so, roll your Bardic Inspiration die; you and each ally within 30 feet of you who can see or hear you gains a bonus to Initiative equal to the number rolled."
             ]
         },
         {
@@ -1944,7 +1959,7 @@
             "entries": [
                 "{@i 14th-level College of Eloquence feature}",
                 "When you successfully inspire someone, the power of your eloquence can now spread to someone else. When a creature within 60 feet of you adds one of your Bardic Inspiration dice to its ability check, attack roll, or saving throw and the roll succeeds, you can use your reaction to encourage a different creature (other than yourself) that can hear you within 60 feet of you, giving it a Bardic Inspiration die without expending any of your Bardic Inspiration uses.",
-                "You can use this reaction a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+                "You can use this reaction a number of times equal to your Charisma modifier (minimum of once). You regain one use when you finish a Short Rest, and you regain all expended uses when you finish a long rest."
             ]
         },
         {
@@ -1965,12 +1980,12 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Enthralling Performance|Bard|Ishiir|Glamour|Ishiir|3"
+                    "subclassFeature": "Beguiling Magic|Bard|Ishiir|Glamour|Ishiir|3"
                 }
             ]
         },
         {
-            "name": "Enthralling Performance",
+            "name": "Beguiling Magic",
             "source": "Ishiir",
             "page": 1,
             "className": "Bard",
@@ -1980,10 +1995,9 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Starting at 3rd level, you can charge your performance with seductive, fey magic.",
-                "If you perform for at least 1 minute, you can attempt to inspire wonder in your audience by singing, reciting a poem, or dancing. At the end of the performance, choose a number of humanoids within 60 feet of you who watched and listened to all of it, up to a number equal to your Charisma modifier (minimum of one). Each target must succeed on a Wisdom saving throw against your spell save DC or be {@condition charmed|Ishiir} by you. While {@condition charmed|Ishiir} in this way, the target idolizes you, it speaks glowingly of you to anyone who talks to it, and it hinders anyone who opposes you, although it avoids violence unless it was already inclined to fight on your behalf. This effect ends on a target after 1 hour, if it takes any damage, if you attack it, or if it witnesses you attacking or damaging any of its allies.",
-                "If a target succeeds on its saving throw, the target has no hint that you tried to charm it.",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+                "Starting at 3rd level, you always have the {@spell Charm Person|Ishiir} and {@spell Mirror Image|Ishiir} spells prepared.",
+                "In addition, immediately after you cast an Enchantment or Illusion spell using a spell slot, you can cause a creature you can see within 60 feet of yourself to make a Wisdom saving throw against your spell save DC. On a failed save, the target has the {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir} condition (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success.",
+                "Once you use this benefit, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending one use of your Bardic Inspiration (no action required)."
             ]
         },
         {
@@ -1997,9 +2011,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "When you join the College of Glamour at 3rd level, you gain the ability to weave a song of fey magic that imbues your allies with vigor and speed.",
-                "As a bonus action, you can expend one use of your Bardic Inspiration to grant yourself a wondrous appearance. When you do so, choose a number of creatures you can see and that can see you within 60 feet of you, up to a number equal to your Charisma modifier (minimum of one). Each of them gains 2x the number rolled on the bardic inspiration die as temporary hit points. When a creature gains these temporary hit points, it can immediately use its reaction to move up to its speed, without provoking opportunity attacks.",
-                "The number of temporary hit points increases when you reach certain levels in this class, increasing to 8 at 5th level, 11 at 10th level, and 14 at 15th level."
+                "Starting at 3rd level, you can weave fey magic into a song or dance to fill others with vigor. As a Bonus Action, you can expend a use of Bardic Inspiration, rolling a Bardic Inspiration die. When you do so, choose a number of other creatures within 60 feet of yourself, up to a number equal to your Charisma modifier (minimum of one creature). Each of those creatures gains a number of Temporary Hit Points equal to two times the number rolled on the Bardic Inspiration die, and then each can use its Reaction to move up to its Speed without provoking Opportunity Attacks."
             ]
         },
         {
@@ -2013,10 +2025,10 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "At 6th level, you gain the ability to cloak yourself in a fey magic that makes others want to serve you. As a bonus action, you cast {@spell command|Ishiir}, without expending a spell slot, and you take on an appearance of unearthly beauty for 1 minute or until your concentration ends (as if you were concentrating on a spell). During this time, you can cast {@spell command|Ishiir} as a bonus action on each of your turns, without expending a spell slot.",
-                "Any creature {@condition charmed|Ishiir} by you automatically fails its saving throw against the {@spell command|Ishiir} you cast with this feature.",
-                "You can use this feature a number of times equal to your half your proficiency (rounded down). You regain all expended uses when you finish a long rest.",
-                "Additionally, you can expend a spell slot of 3rd level or higher to regain a use."
+                "At 6th level, you always have the {@spell Command|Ishiir} spell prepared.",
+                "As a Bonus Action, you cast {@spell Command|Ishiir} without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your Concentration ends. During this time, you can cast {@spell Command|Ishiir} as a Bonus Action without expending a spell slot.",
+                "Any creature {@condition Charmed|Ishiir} by you automatically fails its saving throw against the {@spell Command|Ishiir} you cast with this feature.",
+                "Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 3+ spell slot (no action required)."
             ]
         },
         {
@@ -2030,9 +2042,8 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "At 14th level, your appearance permanently gains an otherworldly aspect that makes you look more lovely and fierce.",
-                "In addition, as a bonus action, you can assume a magically majestic presence for 1 minute or until you are {@condition incapacitated|Ishiir}. For the duration, whenever any creature tries to attack you for the first time on a turn, the attacker must make a Charisma saving throw against your spell save DC. On a failed save, it can't attack you on this turn, and it must choose a new target for its attack or the attack is wasted. On a successful save, it can attack you on this turn, but it has disadvantage on any saving throw it makes against your spells on your next turn.",
-                "Once you assume this majestic presence, you can't do so again until you finish a short or long rest."
+                "At 14th level, as a Bonus Action, you can assume a magically majestic presence for 1 minute or until you have the {@condition Incapacitated|Ishiir} condition. For the duration, whenever any creature hits you with an attack roll for the first time on a turn, the attacker must succeed on a Charisma saving throw against your spell save DC, or the attack misses instead, as the creature recoils from your majesty.",
+                "Once you assume this majestic presence, you can't do so again until you finish a Short or Long Rest."
             ]
         },
         {
@@ -2086,11 +2097,11 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Also at 3rd level, you learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll. You can choose to use this feature after the creature makes its roll, but before the DM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can't hear you or if it's immune to being {@condition charmed|Ishiir}."
+                "Also at 3rd level, you learn to use your wit to supernaturally distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of yourself makes a damage roll or succeeds on an ability check or attack roll, you can take a Reaction to expend one use of your Bardic Inspiration; roll your Bardic Inspiration die, and subtract the number rolled from the creature's roll, reducing the damage or potentially turning the success into a failure."
             ]
         },
         {
-            "name": "Additional Magical Secrets",
+            "name": "Magical Discoveries",
             "source": "Ishiir",
             "page": 1,
             "srd": true,
@@ -2101,7 +2112,8 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don't count against the number of bard spells you know."
+                "At 6th level, You learn two spells of your choice. These spells can come from the {@filter Cleric|spells|class=cleric (Ishiir)|source=Ishiir}, {@filter Druid|spells|class=druid (Ishiir)|source=Ishiir}, or {@filter Wizard|spells|class=wizard (Ishiir)|source=Ishiir} spell list or any combination thereof (see a class's section for its spell list). A spell you choose must be a cantrip or a spell for which you have spell slots, as shown in the Bard Features table.",
+                "You always have the chosen spells prepared, and whenever you gain a Bard level, you can replace one of the spells with another spell that meets these requirements."
             ]
         },
         {
@@ -2116,7 +2128,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "Starting at 14th level, when you make an ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add the number rolled to your ability check. You can choose to do so after you roll the die for the ability check, but before the DM tells you whether you succeed or fail."
+                "Starting at 14th level, when you make an ability check or attack roll and fail, you can expend one use of Bardic Inspiration; roll the Bardic Inspiration die, and add the number rolled to the d20, potentially turning a failure into a success. On a failure, the Bardic Inspiration isn't expended."
             ]
         },
         {
@@ -2611,7 +2623,7 @@
                 "Bards of the College of Valor are daring skalds whose tales keep alive the memory of the great heroes of the past, and thereby inspire a new generation of heroes. These bards gather in mead halls or around great bonfires to sing the deeds of the mighty, both past and present. They travel the land to witness great events firsthand and to ensure that the memory of those events doesn't pass from the world. With their songs, they inspire others to reach the same heights of accomplishment as the heroes of old.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiencies|Bard|Ishiir|Valor|Ishiir|3"
+                    "subclassFeature": "Martial Training|Bard|Ishiir|Valor|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
@@ -2624,7 +2636,7 @@
             ]
         },
         {
-            "name": "Bonus Proficiencies",
+            "name": "Martial Training",
             "source": "Ishiir",
             "page": 1,
             "className": "Bard",
@@ -2634,7 +2646,8 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "When you join the College of Valor at 3rd level, you gain proficiency with medium armor, shields, and martial weapons."
+                "When you join the College of Valor at 3rd level, you gain proficiency with Martial weapons and training with Medium armor and Shields.",
+                "In addition, you can use a Simple or Martial weapon as a Spellcasting Focus to cast spells from your Bard spell list."
             ]
         },
         {
@@ -2648,7 +2661,23 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Also at 3rd level, you learn to inspire others in battle. A creature that has a Bardic Inspiration die from you can roll that die and add 2x the number rolled to a weapon damage roll it just made. Alternatively, when an attack roll is made against the creature, it can use its reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, after seeing the roll but before knowing whether it hits or misses."
+                "You can use your wit to turn the tide of battle. A creature that has a Bardic Inspiration die from you can use it for one of the following effects.",
+                {
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Defence.",
+							"entry": "When the creature is hit by an attack roll, that creature can use its Reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, potentially causing the attack to miss."
+						},
+						{
+							"type": "item",
+							"name": "Offence.",
+							"entry": "Immediately after the creature hits a target with an attack roll, the creature can roll the Bardic Inspiration die and add 2x the number rolled to the attack's damage against the target."
+						}
+					]
+				}
             ]
         },
         {
