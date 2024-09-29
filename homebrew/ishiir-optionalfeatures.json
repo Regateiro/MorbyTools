@@ -839,7 +839,7 @@
                 "BC"
             ],
             "entries": [
-                "As a bonus action, you curse a creature that you can see within 30 feet of you, causing its body to swell until the end of your next turn. For the duration, the creature has disadvantage on Strength checks and Dexterity checks, and takes {@damage 1d8} necrotic damage if it makes more than one attack during its turn.",
+                "As a bonus action, you curse a creature that you can see within 30 feet of you, causing its body to swell until the end of your next turn. For the duration, the creature has disadvantage on Strength checks and Dexterity checks, and takes {@damage 1d8} necrotic damage each time it makes an attack.",
                 {
                     "name": "Amplify",
                     "type": "item",
@@ -875,12 +875,12 @@
                 }
             ],
             "entries": [
-                "As a bonus action, you cause a creature within 30 feet of you to become {@condition poisoned|Ishiir}. The cursed creature can make a Constitution saving throw at the end of each of its turns, ending the curse on itself on a success.",
+                "As a bonus action, you deal acid damage equal to 2 x proficiency to a creature you can see within 30 feet of you and reduce its AC by 2 until the start of your next turn. The target then has to make a Constitution saving throw. On a failure, the target takes this damage again and has disadvantage on attack rolls and ability checks and the AC reduction lasts until the end of its next turn. The cursed creature can make a Constitution saving throw at the end of each of its turns, ending the curse on itself on a success.",
                 {
                     "name": "Amplify",
                     "type": "item",
                     "entries": [
-                        "The cursed creature takes {@damage 4d6} necrotic damage when you inflict this curse, and it takes this damage again each time it fails a Constitution saving throw to end the curse."
+                        "The cursed creature has disadvantage on the initial saving throw."
                     ]
                 }
             ]
@@ -893,12 +893,48 @@
                 "BC"
             ],
             "entries": [
-                "When a creature you can see within 30 feet of you takes damage from an attack or spell, you can use your reaction to temporarily weaken its resilience. Until the end of the target's next turn, it loses resistance to all the damage types dealt by the triggering attack or spell (including for that triggering effect).",
+                "When a creature you can see within 30 feet of you takes damage, you can use your reaction to temporarily weaken its resilience. Until the end of the target's next turn, it loses resistance to all the damage types dealt by the triggering effect (including for that triggering effect).",
                 {
                     "name": "Amplify",
                     "type": "item",
                     "entries": [
-                        "The target instead loses invulnerability to the damage types of the triggering attack or spell, but has resistance to those damage types until the end of its next turn."
+                        "This curse lasts for 1 minute. The cursed creature can make a Constitution saving throw at the end of each of its turns, ending the curse on itself on a success."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blood Curse of The Blackened Gaze",
+            "page": 1,
+            "source": "Ishiir",
+            "featureType": [
+                "BC"
+            ],
+            "entries": [
+                "As a reaction, when a creature you can see within 30 feet of you makes a weapon attack, you can cause that attack to have disadvantage. If the attack still hits, the target creature takes half damage from it. This curse has no effect on creatures that do not rely on sight or are otherwise immune to the {@condition blinded|Ishiir} condition.",
+                {
+                    "name": "Amplify",
+                    "type": "item",
+                    "entries": [
+                        "The target creature has to make a Constitution save or be {@condition blinded|Ishiir} until the end of your next turn."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blood Curse of The Infirm",
+            "page": 1,
+            "source": "Ishiir",
+            "featureType": [
+                "BC"
+            ],
+            "entries": [
+                "As a bonus action, you weaken the health of a creature within 30 feet of you. Until the start of your next turn, whenever the target takes poison or necrotic damage, it takes additional damage of the same type equal to a roll of your hemocraft die.",
+                {
+                    "name": "Amplify",
+                    "type": "item",
+                    "entries": [
+                        "The next Constitution saving throw the cursed creature makes before this curse ends has disadvantage."
                     ]
                 }
             ]
@@ -911,7 +947,7 @@
                 "BC"
             ],
             "entries": [
-                "As a bonus action, you harry the body or mind of a creature within 30 feet of you, making them susceptible to forceful influence. Until the end of your next turn, Charisma ({@skill Intimidation}) checks made against the cursed creature have advantage.",
+                "As a bonus action, you harry the body or mind of a creature you can see within 30 feet of you, making them susceptible to mental influence. Until the end of your next turn, Charisma ({@skill Intimidation}) checks made against the cursed creature have advantage and whenever the target takes psychic damage, it takes additional damage of the same type equal to a roll of your hemocraft die.",
                 {
                     "name": "Amplify",
                     "type": "item",
@@ -1001,8 +1037,7 @@
                 }
             ],
             "entries": [
-                "As an action, you unleash a bloodcurdling howl. Each creature within 30 feet of you that can hear you must succeed on a Wisdom saving throw or become {@condition frightened|Ishiir} of you until the end of your next turn. If a creature fails its saving throw by 5 or more, it is {@condition stunned|Ishiir} while {@condition frightened|Ishiir} in this way. A creature that succeeds on its saving throw is immune to this blood curse for the next 24 hours.",
-                "You can choose any number of creatures you can see to be unaffected by the howl.",
+                "As a bonus action, you unleash a bloodcurdling howl. Each creature within 30 feet of you that can hear you must succeed on a Wisdom saving throw or have disadvantage on attack rolls and ability checks until the end of your next turn. You can choose any number of creatures you can see to be unaffected by the howl.",
                 {
                     "name": "Amplify",
                     "type": "item",
@@ -1038,12 +1073,12 @@
                 "BC"
             ],
             "entries": [
-                "As a bonus action, you curse a creature that you can see within 30 feet of you that is concentrating on a spell or using a feature that requires concentration. That creature has disadvantage on the next Constitution saving throw it makes to maintain concentration before the end of your next turn.",
+                "The target has to make a Charisma saving throw. On a failure, the affected creature has disadvantage on Wisdom, Intelligence, and Concentration saving throws until the start of your next turn.",
                 {
                     "name": "Amplify",
                     "type": "item",
                     "entries": [
-                        "The cursed creature has disadvantage on all Constitution saving throws made to maintain concentration until the end of your next turn."
+                        "This curse lasts for 1 minute. The cursed creature can make a Charisma saving throw at the end of each of its turns, ending the curse on itself on a success. You can choose any number of creatures you can see to be unaffected by the howl."
                     ]
                 }
             ]
@@ -4572,7 +4607,7 @@
                 }
             ],
             "entries": [
-                "You have a flying speed of 20 feet for 1 hour. However, you have disadvantage on Strength checks and Dexterity checks during this time."
+                "You have a flying speed equal to your walking speed for 1 hour. However, you have disadvantage on Strength checks and Dexterity checks during this time."
             ]
         },
         {
@@ -4583,7 +4618,29 @@
                 "MF"
             ],
             "entries": [
-                "Your skin and voice become malleable, allowing you to enhance your appearance and presence. You have advantage on Charisma checks. However, you have disadvantage on initiative rolls."
+                "Your skin and voice become malleable, allowing you to enhance your appearance and presence. You have advantage on Charisma checks. However, you have disadvantage on STR checks."
+            ]
+        },
+        {
+            "name": "Black Blood",
+            "page": 1,
+            "source": "Ishiir",
+            "featureType": [
+                "MF"
+            ],
+            "entries": [
+                "If a creature within 5 feet of you deals piercing or slashing to you, it takes acid damage equal to your proficiency and it cannot regain hit points until the start of its next turn. However, all healing you receive is halved."
+            ]
+        },
+        {
+            "name": "Breath",
+            "page": 1,
+            "source": "Ishiir",
+            "featureType": [
+                "MF"
+            ],
+            "entries": [
+                "You can breathe underwater and gain a swim speed equal to your walking speed, but you have disadvantage on initiative rolls."
             ]
         },
         {
@@ -4594,7 +4651,7 @@
                 "MF"
             ],
             "entries": [
-                "Your Dexterity score increases by 3, as does your maximum for that score. However, you have disadvantage on Wisdom saving throws. Your Dexterity score and your maximum increase by 4 if you consume this mutagen at 11th level, and by 5 at 18th level."
+                "Your Dexterity score increases by 4, as does your maximum for that score. However, you have disadvantage on Wisdom saving throws."
             ]
         },
         {
@@ -4647,6 +4704,17 @@
             ]
         },
         {
+            "name": "Earthed",
+            "page": 1,
+            "source": "Ishiir",
+            "featureType": [
+                "MF"
+            ],
+            "entries": [
+                "You have resistance to lightning damage, and you have vulnerability to acid damage."
+            ]
+        },
+        {
             "name": "Gelid",
             "page": 1,
             "source": "Ishiir",
@@ -4676,7 +4744,7 @@
                 "MF"
             ],
             "entries": [
-                "You have immunity to the {@condition grappled|Ishiir} and {@condition restrained|Ishiir} conditions. However, you have disadvantage on Strength checks. At 11th level, you are also immune to the {@condition paralyzed|Ishiir} condition."
+                "You have immunity to the {@condition grappled|Ishiir} and {@condition restrained|Ishiir} conditions. However, you have disadvantage on Constitution saving throws. At 11th level, you are also immune to the {@condition paralyzed|Ishiir} condition."
             ]
         },
         {
@@ -4709,7 +4777,7 @@
                 "MF"
             ],
             "entries": [
-                "Your Strength score increases by 3, as does your maximum for that score. However, you have disadvantage on Dexterity saving throws. Your Strength score and your maximum increase by 4 if you consume this mutagen at 11th level, and by 5 at 18th level."
+                "Your Strength score increases by 4, as does your maximum for that score. However, you have disadvantage on Dexterity saving throws."
             ]
         },
         {
@@ -4752,7 +4820,7 @@
                 }
             ],
             "entries": [
-                "For 1 hour, at the start of each of your turns when you have at least 1 hit point but fewer hit points than half your hit point maximum, you regain hit points equal to your proficiency bonus. However, your speed is reduced by 10 feet during this time."
+                "For 1 hour, at the start of each of your turns when you have at least 1 hit point, you regain hit points equal to your proficiency bonus. However, your speed is reduced by 10 feet during this time."
             ]
         },
         {
@@ -4763,7 +4831,18 @@
                 "MF"
             ],
             "entries": [
-                "Your Intelligence score increases by 3, as does your maximum for that score. However, you have disadvantage on Charisma saving throws. Your Intelligence score and your maximum increase by 4 if you consume this mutagen at 11th level, and by 5 at 18th level."
+                "Your Intelligence or Wisdom score increases by 4, as does your maximum for that score. However, you have disadvantage on Constitution saving throws."
+            ]
+        },
+        {
+            "name": "Saturated",
+            "page": 1,
+            "source": "Ishiir",
+            "featureType": [
+                "MF"
+            ],
+            "entries": [
+                "You have resistance to acid damage, and you have vulnerability to lightning damage."
             ]
         },
         {

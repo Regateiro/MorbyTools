@@ -967,7 +967,7 @@
             "entries": [
                 "At 6th level, when you damage a creature with a weapon for which you have an active crimson rite, you can channel hemocraft magic to sear an arcane brand into that creature (no action required). You always know the direction to the branded creature as long as it's on the same plane as you. Further, each time the branded creature deals damage to you or a creature you can see within 5 feet of you, the branded creature takes psychic damage equal to your Hemocraft modifier (minimum of 1).",
                 "Your brand lasts until you dismiss it or until you use this feature to apply a brand to another creature. Your brand can be dispelled with {@spell dispel magic|Ishiir}, and is treated as a spell with a level equal to half your blood hunter level (maximum 9th level).",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+                "Once you use this feature, you can't use it again until you finish a short or long rest - or until you spend a use of your Blood Maledict to regain it."
             ]
         },
         {
@@ -1245,8 +1245,8 @@
             "header": 1,
             "entries": [
                 "Upon reaching 7th level, at the start of your turn, you can magically step into the veil between the planes as long as you aren't {@condition incapacitated|Ishiir}. You can move through other creatures and objects as if they were {@quickref difficult terrain||3}, as well as see and affect creatures and objects on the Ethereal Plane. You take {@damage 1d10} force damage if you end your turn inside an object.",
-                "This feature lasts for a number of rounds equal to your Hemocraft modifier (minimum of 1 round). If you are inside an object when it ends, you are immediately shunted to the nearest unoccupied space and you take force damage equal to twice the number of feet you moved.",
-                "Once you use this feature, you must finish a short or long rest before you can use it again. You can use Aether Walk twice between rests starting at 15th level."
+                "This feature lasts for one minute. If you are inside an object when it ends, you are immediately shunted to the nearest unoccupied space and you take force damage equal to twice the number of feet you moved.",
+                "Once you use this feature, you can't use it again until you finish a short or long rest - or until you spend a use of your Blood Maledict to regain it. You can use Aether Walk twice between rests starting at 15th level."
             ]
         },
         {
@@ -1260,7 +1260,8 @@
             "level": 11,
             "header": 1,
             "entries": [
-                "Starting at 11th level, your Brand of Castigation exposes a fragment of your foe's essence, leaving them vulnerable to your Crimson Rite feature. Whenever you hit a creature with a weapon for which you have an active crimson rite, you roll an additional hemocraft die when determining the extra damage from the rite. Additionally, if a branded creature has the Incorporeal Movement trait or a similar feature, it can't move through creatures or objects while branded."
+                "Starting at 11th level, your strikes expose a fragment of your foe's essence, leaving them vulnerable to your Crimson Rite feature.",
+                "Additionally, if a branded creature has the Incorporeal Movement trait or a similar feature, it can't move through creatures or objects while branded and it cannot benefit from being {@condition invisible|Ishiir}."
             ]
         },
         {
@@ -1288,7 +1289,7 @@
             "level": 18,
             "header": 1,
             "entries": [
-                "Upon reaching 18th level, you learn to protect your fading life by reabsorbing the energy you feed to your weapons. If you have one or more crimson rites active and you are reduced to 0 hit points but don't die outright, you can choose to have all your active crimson rites end and drop to 1 hit point instead."
+                "Upon reaching 18th level, you learn to protect your fading life by reabsorbing the energy you feed to your weapons. If you have one or more crimson rites active and you are reduced to 0 hit points but don't die outright, you can choose to have all your active crimson rites end and immediately regain hit points equal to twice your blood hunter level. You can't use this feature again until you finish a short or long rest."
             ]
         },
         {
@@ -1333,7 +1334,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "When you choose this archetype at 3rd level, you gain the improved senses of a natural predator. You have advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+                "When you choose this archetype at 3rd level, you gain the improved senses of a natural predator. You learn the {@skill Perception} skill or gain expertise in it if you already know it."
             ]
         },
         {
@@ -1370,30 +1371,22 @@
                     "type": "entries",
                     "name": "Feral Might",
                     "entries": [
-                        "You have advantage on Strength checks and Strength saving throws, and you have a +1 bonus to melee damage rolls. This bonus increases to +2 at 11th level and to +3 at 18th level."
+                        "You have advantage on Strength checks and Strength saving throws, and you have a +2 bonus to melee damage rolls. This bonus increases to +3 at 9th level and to +4 at 16th level."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Resilient Hide",
                     "entries": [
-                        "You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks not made with silvered weapons. Additionally, while you are not wearing heavy armor, you have a +1 bonus to AC."
+                        "While you are not wearing heavy armor, you have a +1 bonus to AC. This bonus increases to +2 at 11th level."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Predatory Strikes",
                     "entries": [
-                        "You can apply your Crimson Rite feature to your unarmed strikes, which you treat as one weapon. You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes, which deal {@damage 1d6} bludgeoning or slashing damage (your choice). This damage increases to {@damage 1d8} at 11th level.",
+                        "You can apply your Crimson Rite feature to your unarmed strikes, which you treat as one weapon. You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes, which deal {@damage 1d8} bludgeoning, piercing, or slashing damage (your choice). This damage increases to {@damage 1d10} at 11th level and {@damage 1d12} at 17th level.",
                         "Additionally, when you use the {@action Attack|Ishiir} action to make an unarmed strike, you can make one additional unarmed strike as a bonus action."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Bloodlust",
-                    "entries": [
-                        "If you start your turn with fewer hit points than half your hit point maximum, you must succeed on a DC 8 Wisdom saving throw or move directly toward the nearest creature and use the Attack action against that creature. If you're concentrating on a spell or are under an effect that prevents you from concentrating (such as the barbarian's Rage feature), you automatically fail this saving throw.",
-                        "If you have your Extra Attack feature, you can choose whether to use it for this frenzied attack. If more than one creature is equally near to you, roll randomly to determine your target. Once your attack is resolved, you regain control of yourself."
                     ]
                 }
             ]
@@ -1409,14 +1402,7 @@
             "level": 7,
             "header": 1,
             "entries": [
-                "At 7th level, your speed increases by 10 feet, and you add 10 feet to your long jump distance and 3 feet to your high jump distance. Your hybrid form also gains the following additional benefit.",
-                {
-                    "type": "entries",
-                    "name": "Improved Predatory Strikes",
-                    "entries": [
-                        "You have a +1 bonus to attack rolls made with your unarmed strike. This bonus increases to +2 at 11th level and to +3 at 18th level. Additionally, when you have an active crimson rite on your unarmed strike while in your hybrid form, your unarmed strikes are considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
-                    ]
-                }
+                "At 7th level, your speed increases by 10 feet, and you add 10 feet to your long jump distance and 3 feet to your high jump distance. You also learn the {@skill stealth} skill or gain expertise in it if you already know it."
             ]
         },
         {
@@ -1726,7 +1712,7 @@
                     "colLabels": [
                         "Blood Hunter Level",
                         "Cantrips Known",
-                        "Spells Known",
+                        "Spells Prepared",
                         "Spell Slots",
                         "Slot Level",
                         "Invocations Known"
@@ -1743,7 +1729,7 @@
                         [
                             "3rd",
                             "2",
-                            "2",
+                            "3",
                             "1",
                             "1st",
                             "-"
@@ -1751,7 +1737,7 @@
                         [
                             "4th",
                             "2",
-                            "2",
+                            "4",
                             "1",
                             "1st",
                             "-"
@@ -1759,7 +1745,7 @@
                         [
                             "5th",
                             "2",
-                            "3",
+                            "4",
                             "1",
                             "1st",
                             "-"
@@ -1767,7 +1753,7 @@
                         [
                             "6th",
                             "2",
-                            "3",
+                            "4",
                             "2",
                             "1st",
                             "-"
@@ -1775,7 +1761,7 @@
                         [
                             "7th",
                             "2",
-                            "4",
+                            "5",
                             "2",
                             "2nd",
                             "1"
@@ -1783,7 +1769,7 @@
                         [
                             "8th",
                             "2",
-                            "4",
+                            "6",
                             "2",
                             "2nd",
                             "1"
@@ -1791,7 +1777,7 @@
                         [
                             "9th",
                             "2",
-                            "5",
+                            "6",
                             "2",
                             "2nd",
                             "1"
@@ -1799,7 +1785,7 @@
                         [
                             "10th",
                             "3",
-                            "5",
+                            "7",
                             "2",
                             "2nd",
                             "1"
@@ -1807,7 +1793,7 @@
                         [
                             "11th",
                             "3",
-                            "6",
+                            "8",
                             "2",
                             "2nd",
                             "1"
@@ -1815,7 +1801,7 @@
                         [
                             "12th",
                             "3",
-                            "6",
+                            "8",
                             "2",
                             "2nd",
                             "1"
@@ -1823,7 +1809,7 @@
                         [
                             "13th",
                             "3",
-                            "7",
+                            "9",
                             "2",
                             "3rd",
                             "1"
@@ -1831,7 +1817,7 @@
                         [
                             "14th",
                             "3",
-                            "7",
+                            "10",
                             "2",
                             "3rd",
                             "1"
@@ -1839,7 +1825,7 @@
                         [
                             "15th",
                             "3",
-                            "8",
+                            "10",
                             "2",
                             "3rd",
                             "2"
@@ -1847,7 +1833,7 @@
                         [
                             "16th",
                             "3",
-                            "8",
+                            "11",
                             "2",
                             "3rd",
                             "2"
@@ -1855,7 +1841,7 @@
                         [
                             "17th",
                             "3",
-                            "9",
+                            "11",
                             "2",
                             "3rd",
                             "2"
@@ -1863,7 +1849,7 @@
                         [
                             "18th",
                             "3",
-                            "9",
+                            "11",
                             "2",
                             "3rd",
                             "2"
@@ -1871,7 +1857,7 @@
                         [
                             "19th",
                             "3",
-                            "10",
+                            "12",
                             "2",
                             "4th",
                             "2"
@@ -1879,7 +1865,7 @@
                         [
                             "20th",
                             "3",
-                            "11",
+                            "13",
                             "2",
                             "4th",
                             "2"
@@ -1905,6 +1891,13 @@
                     "name": "The Archfey",
                     "entries": [
                         "Once on your turn, when you damage a creature with a weapon for which you have an active crimson rite, you can expend one use of your Blood Maledict to force the creature to make a Dexterity saving throw against your hemocraft save DC. On a failure, the creature casts dim light in a 10 feet radius and cannot benefit from being {@condition invisible|Ishiir} until the end of your next turn. Additionally, attack rolls against the creature have advantage for the duration."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "The Dragon",
+                    "entries": [
+                        "When you activate your Crimson Rite, you can change the damage type of your rite to that associated with your draconic patron (as per the warlord dragon patron's Draconic Arcana feature). Additionally, you gain {@sense blindsight} out to a range of 10 ft. "
                     ]
                 },
                 {
@@ -2063,6 +2056,36 @@
                         [
                             "4th",
                             "{@spell Guardian of Faith|Ishiir}, {@spell Wall of Fire|Ishiir}"
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Dragon Expanded Spells",
+                    "colLabels": [
+                        "Spell Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell Cause Fear|Ishiir}, {@spell Command|Ishiir}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell Darkvision|Ishiir}, {@spell Dragon's Breath|Ishiir}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell Counterspell|Ishiir}, {@spell Dispel Magic|Ishiir}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell Elemental Bane|Ishiir}, {@spell Spell Turning|Ishiir}"
                         ]
                     ]
                 },
