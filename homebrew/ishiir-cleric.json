@@ -1393,7 +1393,7 @@
                 "charm monster|Ishiir",
                 "compulsion|Ishiir",
                 "dominate person|Ishiir",
-                "hold monster|Ishiir"
+                "yolande's regal presence|Ishiir"
             ],
             "additionalSpells": [
                 {
@@ -1416,14 +1416,13 @@
                         ],
                         "9": [
                             "dominate person|Ishiir",
-                            "hold monster|Ishiir"
+                            "yolande's regal presence|Ishiir"
                         ]
                     }
                 }
             ],
             "subclassFeatures": [
-                "Beauty Domain|Cleric|Ishiir|Beauty|Ishiir|1",
-                "Channel Divinity: Beauty's Truce|Cleric|Ishiir|Beauty|Ishiir|2",
+                "Beauty Domain|Cleric|Ishiir|Beauty|Ishiir|3",
                 "Blessed Elegance|Cleric|Ishiir|Beauty|Ishiir|6",
                 "Soul of Beauty|Cleric|Ishiir|Beauty|Ishiir|17"
             ],
@@ -2520,7 +2519,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "When you choose this domain at 1st level, you can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be {@condition blinded|Ishiir} is immune to this feature.",
+                "When you choose this domain at 3rd level, you can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be {@condition blinded|Ishiir} is immune to this feature.",
                 "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
             ]
         },
@@ -2719,7 +2718,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Beauty",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Beauty can both bend minds and inspire hearts. It is the force that compels others to lose control and give in to their impulses, but it can also awaken strength and determination to steel a forlorn heart.",
                 "Clerics of Beauty bring joy and hope to the world. They are the beacon of light that reminds us that some things are worth fighting for. They seek to bring peace and amity among the world's folk. They fight only when they must, and prefer to use their magic to end fights with as little bloodshed as possible.",
@@ -2754,17 +2753,21 @@
                         ],
                         [
                             "9th",
-                            "{@spell dominate person|Ishiir}, {@spell hold monster|Ishiir}"
+                            "{@spell dominate person|Ishiir}, {@spell yolande's regal presence|Ishiir}"
                         ]
                     ]
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Beauty's Refuge|Cleric|Ishiir|Beauty|Ishiir|1"
+                    "subclassFeature": "Beauty's Refuge|Cleric|Ishiir|Beauty|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Rebuke the Defiler|Cleric|Ishiir|Beauty|Ishiir|1"
+                    "subclassFeature": "Channel Divinity: Rebuke the Defiler|Cleric|Ishiir|Beauty|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Beauty's Elegance|Cleric|Ishiir|Beauty|Ishiir|3"
                 }
             ]
         },
@@ -2776,43 +2779,41 @@
             "classSource": "Ishiir",
             "subclassShortName": "Beauty",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "Starting at 1st level, your mere presence is enough to inspire hope and determination in others. When you complete a short or long rest, up to 6 allies of your choice gain temporary hit points equal to your Charisma modifier (minimum 1) plus twice your proficiency bonus."
+                "Starting at 3rd level, your mere presence is enough to inspire hope and determination in others. When you complete a short or long rest, up to 6 allies of your choice gain temporary hit points equal to your Charisma modifier (minimum 1) plus twice your proficiency bonus."
             ]
         },
         {
-            "name": "Rebuke the Defiler",
+            "name": "Channel Divinity: Rebuke the Defiler",
             "source": "Ishiir",
             "page": 1,
             "className": "Cleric",
             "classSource": "Ishiir",
             "subclassShortName": "Beauty",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "When you select this domain at 1st level, you gain the ability to rebuke those who lash out at your in violence.",
+                "When you select this domain at 3rd level, you gain the ability to rebuke those who lash out at your in violence.",
                 "As a reaction when a creature you can see within 30 feet of you inflicts damage, you force that creature to make a Wisdom save. On a failed saving throw, it takes psychic damage equal to the damage dealt. On a successful save, it takes half that damage.",
                 "If the creature made multiple attacks, select one attack to determine the damage dealt. If the creature used one or more effects that damaged multiple targets, choose the damage take by one of those targets from one of the effects.",
                 "Once you use this feature, you can't use it again until you complete a short or long rest."
             ]
         },
         {
-            "name": "Channel Divinity: Beauty's Truce",
+            "name": "Beauty's Elegance",
             "source": "Ishiir",
             "page": 1,
             "className": "Cleric",
             "classSource": "Ishiir",
             "subclassShortName": "Beauty",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to quell the flame of violence.",
-                "As an action, you force all creatures within 100 feet of you to make Charisma saving throws. Each creature that fails this saved is {@condition charmed|Ishiir} by every other creature that also failed the saving throw. This benefit lasts for one hour. While {@condition charmed|Ishiir} by this ability, creatures consider all other creatures {@condition charmed|Ishiir} by it to be their allies. They fight to defend them from attackers.",
-                "While this ability persists, absent any threat creatures {@condition charmed|Ishiir} by it will rest, talk among themselves, share stories of their lives, create a communal feast using food and drink they carry, and generally act as if they are old friends, long separated and brought together again for a joyous reunion."
+                "Starting at 3rd level, you gain proficiency in two out of the follwing skills: in {@skill Deception}, {@skill Performance}, and {@skill Persuasion}."
             ]
         },
         {
