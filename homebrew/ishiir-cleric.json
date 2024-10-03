@@ -1827,7 +1827,7 @@
             ],
             "subclassFeatures": [
                 "Light Domain|Cleric|Ishiir|Light|Ishiir|3",
-                "Improved Flare|Cleric|Ishiir|Light|Ishiir|6",
+                "Improved Warding Flare|Cleric|Ishiir|Light|Ishiir|6",
                 "Corona of Light|Cleric|Ishiir|Light|Ishiir|17"
             ]
         },
@@ -3809,32 +3809,12 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiency|Cleric|Ishiir|Life|Ishiir|3"
-                },
-                {
-                    "type": "refSubclassFeature",
                     "subclassFeature": "Disciple of Life|Cleric|Ishiir|Life|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Channel Divinity: Preserve Life|Cleric|Ishiir|Life|Ishiir|3"
                 }
-            ]
-        },
-        {
-            "name": "Bonus Proficiency",
-            "source": "Ishiir",
-            "page": 1,
-            "srd": true,
-            "basicRules": true,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Life",
-            "subclassSource": "Ishiir",
-            "level": 3,
-            "header": 1,
-            "entries": [
-                "When you choose this domain at 3rd level, you gain proficiency with heavy armor."
             ]
         },
         {
@@ -3850,7 +3830,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Also starting at 3rd level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
+                "Also starting at 3rd level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 × the spell's level."
             ]
         },
         {
@@ -3870,7 +3850,7 @@
             },
             "entries": [
                 "Starting at 3rd level, you can use your Channel Divinity to heal the badly injured.",
-                "As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level. Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can't use this feature on an undead or a construct."
+                "As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level. Choose any creatures within 30 feet of you, and divide those hit points among them. You can't use this feature on an undead or a construct."
             ]
         },
         {
@@ -3886,7 +3866,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Beginning at 6th level, the healing spells you cast on others heal you as well. When you cast a spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 + the spell's level."
+                "Beginning at 6th level, the healing spells you cast on others heal you as well. When you cast a spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 × the spell's level."
             ]
         },
         {
@@ -3902,7 +3882,8 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "Starting at 17th level, when you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die. For example, instead of restoring {@dice 2d6} hit points to a creature, you restore 12."
+                "Starting at 17th level, when you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die. For example, instead of restoring {@dice 2d6} hit points to a creature, you restore 12.",
+                "If the healing formula of the spell involves a static number (beside your spellcasting ability modifier), you increase that number by half, rounded down."
             ]
         },
         {
@@ -3990,8 +3971,8 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Also at 3rd level, you can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be {@condition blinded|Ishiir} is immune to this feature.",
-                "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+                "Also at 3rd level, when a creature that you can see within 30 feet of yourself makes an attack roll, you can take a Reaction to impose Disadvantage on the attack roll, causing light to flare before it hits or misses.",
+                "You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest."
             ]
         },
         {
@@ -4013,7 +3994,7 @@
             ]
         },
         {
-            "name": "Improved Flare",
+            "name": "Improved Warding Flare",
             "source": "Ishiir",
             "page": 1,
             "className": "Cleric",
@@ -4023,7 +4004,8 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Starting at 6th level, you can also use your Warding Flare feature when a creature that you can see within 30 feet of you attacks a creature other than you."
+                "Starting at 6th level, you regain all expended uses of your Warding Flare when you finish a Short or Long Rest.",
+                "In addition, whenever you use Warding Flare, you can give the target of the triggering attack a number of Temporary Hit Points equal to {@dice 2d6} plus your Wisdom modifier."
             ]
         },
         {
@@ -4037,7 +4019,8 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "Starting at 17th level, you can use your action to activate an aura of sunlight that lasts for 1 minute or until you dismiss it using another action. You emit bright light in a 60-foot radius and dim light 30 feet beyond that. Your enemies in the bright light have disadvantage on saving throws against any spell that deals fire or radiant damage."
+                "Starting at 17th level, as a Magic action, you cause yourself to emit an aura of sunlight that lasts for 1 minute or until you dismiss it (no action required). You emit Bright Light in a 60-foot radius and Dim Light for an additional 30 feet. Your enemies in the Bright Light have Disadvantage on saving throws against your Radiance of the Dawn and any spell that deals Fire or Radiant damage.",
+                "You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
             ]
         },
         {
