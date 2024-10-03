@@ -1290,7 +1290,7 @@
                             "expeditious retreat|Ishiir"
                         ],
                         "3": [
-                            "fortune's favour|Ishiir",
+                            "fortune's favor|Ishiir",
                             "suggestion|Ishiir"
                         ],
                         "5": [
@@ -1601,7 +1601,7 @@
                         ],
                         "3": [
                             "see invisibility|Ishiir",
-                            "warding bond|Ishiir"
+                            "fortune's favor|Ishiir"
                         ],
                         "5": [
                             "beacon of hope|Ishiir",
@@ -2433,7 +2433,7 @@
                         ],
                         [
                             "3rd",
-                            "{@spell fortune's favour|Ishiir}, {@spell suggestion|Ishiir}"
+                            "{@spell fortune's favor|Ishiir}, {@spell suggestion|Ishiir}"
                         ],
                         [
                             "5th",
@@ -3173,36 +3173,6 @@
             "entries": [
                 "Gods of fate perceive the future and how the choices mortals make drive them toward their destinies. Some deities consider the future preordained, while others understand the multiverse as a place of infinite possibility. Clerics who draw power from the forces of fate sometimes receive visions directly from their deity and receive fleeting omens of the future. They share impossible knowledge with their allies and prophesize their enemies' doom.",
                 {
-                    "type": "table",
-                    "caption": "Fate Domain Deities",
-                    "colLabels": [
-                        "Example Deity",
-                        "Pantheon"
-                    ],
-                    "colStyles": [
-                        "col-6",
-                        "col-6"
-                    ],
-                    "rows": [
-                        [
-                            "Savras",
-                            "Forgotten Realms"
-                        ],
-                        [
-                            "Istus",
-                            "Greyhawk"
-                        ],
-                        [
-                            "Gilean",
-                            "Dragonlance"
-                        ],
-                        [
-                            "Labelas Enorath",
-                            "Elven"
-                        ]
-                    ]
-                },
-                {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Domain Spells|Cleric|Ishiir|Fate|Ishiir|3"
                 },
@@ -3213,6 +3183,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Ties That Bind|Cleric|Ishiir|Fate|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Strands of Fate|Cleric|Ishiir|Fate|Ishiir|3"
                 }
             ]
         },
@@ -3247,7 +3221,7 @@
                         ],
                         [
                             "3rd",
-                            "{@spell see invisibility|Ishiir}, {@spell warding bond|Ishiir}"
+                            "{@spell see invisibility|Ishiir}, {@spell fortune's favor|Ishiir}"
                         ],
                         [
                             "5th",
@@ -3404,6 +3378,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Blessing of the Forge|Cleric|Ishiir|Forge|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Artisan's Blessing|Cleric|Ishiir|Forge|Ishiir|3"
                 }
             ]
         },
@@ -3418,7 +3396,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "At 3rd level, you gain the ability to imbue magic into a weapon or armor. At the end of a long rest, you can touch one object that is a suit of armor or a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Until the end of your next long rest or until you die, the object becomes a magic item, granting a +1 bonus to AC if it's armor or a +1 bonus to attack and damage rolls if it's a weapon.",
+                "At 3rd level, you gain the ability to imbue magic into a weapon or armor. At the end of a long rest, you can touch one object that is a suit of armor or a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Until the end of your next long rest or until you die, the object becomes a magic item, granting a +1 bonus to AC if it's armor or a +1 bonus to attack and damage rolls if it's a weapon. These bonuses increases +2 once you reach level 11 in this class.",
                 "Once you use this feature, you can't use it again until you finish a long rest."
             ]
         },
@@ -3452,7 +3430,8 @@
             "entries": [
                 "Starting at 3rd level, you can use your Channel Divinity to create simple items.",
                 "You conduct an hour-long ritual that crafts a nonmagical item that must include some metal: a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}, a suit of armor, ten pieces of ammunition, a set of tools, or another metal object (see chapter 5, \"Equipment,\" in the Player's Handbook for examples of these items). The creation is completed at the end of the hour, coalescing in an unoccupied space of your choice on a surface within 5 feet of you.",
-                "The thing you create can be something that is worth no more than 1500 gp. As part of this ritual, you must lay out metal, which can include coins, with a value equal to the creation. The metal irretrievably coalesces and transforms into the creation at the ritual's end, magically forming even nonmetal parts of the creation. The ritual can create a duplicate of a nonmagical item that contains metal, such as a key, if you possess the original during the ritual."
+                "The thing you create can be something that is worth no more than 1500 gp. As part of this ritual, you must lay out metal, which can include coins, with a value equal to the creation. The metal irretrievably coalesces and transforms into the creation at the ritual's end, magically forming even nonmetal parts of the creation. The ritual can create a duplicate of a nonmagical item that contains metal, such as a key, if you possess the original during the ritual.",
+                "The item you are creating automatically has the masterwork property if it can have it."
             ]
         },
         {
@@ -3549,6 +3528,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Eyes of the Grave|Cleric|Ishiir|Grave|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Path to the Grave|Cleric|Ishiir|Grave|Ishiir|3"
                 }
             ]
         },
@@ -3678,6 +3661,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Blessings of Knowledge|Cleric|Ishiir|Knowledge|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Knowledge of the Ages|Cleric|Ishiir|Knowledge|Ishiir|3"
                 }
             ]
         },
@@ -3710,7 +3697,7 @@
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 3rd level, you can use your Channel Divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. For 10 minutes, you have proficiency with the chosen skill or tool."
+                "Starting at 3rd level, you can use your Channel Divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. You have proficiency with the chosen skill or tool until you finish a short or long rest."
             ]
         },
         {
@@ -3827,6 +3814,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Disciple of Life|Cleric|Ishiir|Life|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Preserve Life|Cleric|Ishiir|Life|Ishiir|3"
                 }
             ]
         },
@@ -3967,6 +3958,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Warding Flare|Cleric|Ishiir|Light|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Radiance of the Dawn|Cleric|Ishiir|Light|Ishiir|3"
                 }
             ]
         },
@@ -4089,6 +4084,18 @@
                             "{@spell holy weapon|Ishiir}, {@spell steel wind strike|Ishiir}"
                         ]
                     ]
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Training in War and Dance|Cleric|Ishiir|Moondancer|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Crescent Dance|Cleric|Ishiir|Moondancer|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Dancer's Fervor|Cleric|Ishiir|Moondancer|Ishiir|3"
                 }
             ]
         },
@@ -4254,6 +4261,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Bonus Proficiency|Cleric|Ishiir|Nature|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Charm Animals and Plants|Cleric|Ishiir|Nature|Ishiir|3"
                 }
             ]
         },
@@ -4386,6 +4397,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Voice of Authority|Cleric|Ishiir|Order|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Order's Demand|Cleric|Ishiir|Order|Ishiir|3"
                 }
             ]
         },
@@ -4479,52 +4494,6 @@
                 "The balm of peace thrives at the heart of healthy communities, between friendly nations, and in the souls of the kindhearted. The gods of peace inspire people of all sorts to resolve conflict and to stand up against those forces that try to prevent peace from flourishing. See the Peace Deities table for a list of some of the gods associated with this domain.",
                 "Clerics of the Peace Domain preside over the signing of treaties, and they are often asked to arbitrate in disputes. These clerics' blessings draw people together and help them shoulder one another's burdens, and the clerics' magic aids those who are driven to fight for the way of peace.",
                 {
-                    "type": "table",
-                    "caption": "Peace Deities",
-                    "colLabels": [
-                        "Example Deity",
-                        "Pantheon"
-                    ],
-                    "colStyles": [
-                        "col-6 text-center",
-                        "col-6 text-center"
-                    ],
-                    "rows": [
-                        [
-                            "{@deity Angharradh|Elven|SCAG}",
-                            "Elven"
-                        ],
-                        [
-                            "{@deity Berronar Truesilver|Dwarven|SCAG}",
-                            "Dwarven"
-                        ],
-                        [
-                            "{@deity Boldrei|Eberron}",
-                            "Eberron"
-                        ],
-                        [
-                            "{@deity Cyrrollalee|Halfling|SCAG}",
-                            "Halfling"
-                        ],
-                        [
-                            "{@deity Eldath}",
-                            "Forgotten Realms"
-                        ],
-                        [
-                            "Gaerdal",
-                            "Ironhand Gnomish"
-                        ],
-                        [
-                            "{@deity Paladine|Dragonlance}",
-                            "Dragonlance"
-                        ],
-                        [
-                            "{@deity Rao|Greyhawk}",
-                            "Greyhawk"
-                        ]
-                    ]
-                },
-                {
                     "name": "Domain Spells",
                     "type": "entries",
                     "entries": [
@@ -4573,6 +4542,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Emboldening Bond|Cleric|Ishiir|Peace|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Balm of Peace|Cleric|Ishiir|Peace|Ishiir|3"
                 }
             ]
         },
@@ -4708,6 +4681,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Shield of the Faithful|Cleric|Ishiir|Protection|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Radiant Defense|Cleric|Ishiir|Protection|Ishiir|3"
                 }
             ]
         },
@@ -4840,6 +4817,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Solidarity's Action|Cleric|Ishiir|Solidarity|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Preserve Life|Cleric|Ishiir|Solidarity|Ishiir|3"
                 }
             ]
         },
@@ -4971,6 +4952,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Strength|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Feat of Strength|Cleric|Ishiir|Strength|Ishiir|3"
                 }
             ]
         },
@@ -5100,6 +5085,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Wrath of the Storm|Cleric|Ishiir|Tempest|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Destructive Wrath|Cleric|Ishiir|Tempest|Ishiir|3"
                 }
             ]
         },
@@ -5228,6 +5217,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Blessing of the Trickster|Cleric|Ishiir|Trickery|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Invoke Duplicity|Cleric|Ishiir|Trickery|Ishiir|3"
                 }
             ]
         },
@@ -5309,52 +5302,6 @@
                 "The twilit transition from light into darkness often brings calm and even joy, as the day's labors end and the hours of rest begin. The darkness can also bring terrors, but the gods of twilight guard against the horrors of the night.",
                 "Clerics who serve these deities-examples of which appear on the Twilight Deities table-bring comfort to those who seek rest and protect them by venturing into the encroaching darkness to ensure that the dark is a comfort, not a terror.",
                 {
-                    "type": "table",
-                    "caption": "Twilight Deities",
-                    "colLabels": [
-                        "Example Deity",
-                        "Pantheon"
-                    ],
-                    "colStyles": [
-                        "col-6 text-center",
-                        "col-6 text-center"
-                    ],
-                    "rows": [
-                        [
-                            "{@deity Boldrei|Eberron}",
-                            "Eberron"
-                        ],
-                        [
-                            "{@deity Celestian|Greyhawk}",
-                            "Greyhawk"
-                        ],
-                        [
-                            "{@deity Dol Arrah|Eberron}",
-                            "Eberron"
-                        ],
-                        [
-                            "{@deity Helm}",
-                            "Forgotten Realms"
-                        ],
-                        [
-                            "{@deity Ilmater}",
-                            "Forgotten Realms"
-                        ],
-                        [
-                            "{@deity Mishakal|Dragonlance}",
-                            "Dragonlance"
-                        ],
-                        [
-                            "{@deity Selûne}",
-                            "Forgotten Realms"
-                        ],
-                        [
-                            "{@deity Yondalla|Nonhuman}",
-                            "Halfling"
-                        ]
-                    ]
-                },
-                {
                     "name": "Domain Spells",
                     "type": "entries",
                     "entries": [
@@ -5407,6 +5354,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Vigilant Blessing|Cleric|Ishiir|Twilight|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Twilight Sanctuary|Cleric|Ishiir|Twilight|Ishiir|3"
                 }
             ]
         },
@@ -5565,6 +5516,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "War Priest|Cleric|Ishiir|War|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Guided Strike|Cleric|Ishiir|War|Ishiir|3"
                 }
             ]
         },
@@ -5685,6 +5640,18 @@
                             "{@spell conjure elemental|Ishiir}, {@spell maelstrom|Ishiir}"
                         ]
                     ]
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Aquatic Blessing|Cleric|Ishiir|Water|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Bonus Proficiency|Cleric|Ishiir|Water|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Cleansing Current|Cleric|Ishiir|Water|Ishiir|3"
                 }
             ]
         },
@@ -5809,6 +5776,18 @@
                             "{@spell cone of cold|Ishiir}, {@spell conjure elemental|Ishiir}"
                         ]
                     ]
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Winter|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Winter's Touch|Cleric|Ishiir|Winter|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Bone-Chilling Cold|Cleric|Ishiir|Winter|Ishiir|3"
                 }
             ]
         },
@@ -5956,6 +5935,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Priest of Zeal|Cleric|Ishiir|Zeal|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Consuming Fervor|Cleric|Ishiir|Zeal|Ishiir|3"
                 }
             ]
         },
