@@ -1443,7 +1443,7 @@
                 "blight",
                 "Evard's black tentacles",
                 "contagion",
-                "enervation|xge"
+                "enervation"
             ],
             "additionalSpells": [
                 {
@@ -1516,15 +1516,15 @@
                         ],
                         "9": [
                             "antilife shell|Ishiir",
-                            "cloudkill|Ishiir"
+                            "enervation|Ishiir"
                         ]
                     }
                 }
             ],
             "subclassFeatures": [
                 "Death Domain|Cleric|Ishiir|Death|Ishiir|3",
-                "Inescapable Destruction|Cleric|Ishiir|Death|Ishiir|6",
-                "Improved Reaper|Cleric|Ishiir|Death|Ishiir|17"
+                "Inescapable End|Cleric|Ishiir|Death|Ishiir|6",
+                "Death Mastery|Cleric|Ishiir|Death|Ishiir|17"
             ]
         },
         {
@@ -1572,7 +1572,7 @@
             ],
             "subclassFeatures": [
                 "Destruction Domain|Cleric|Ishiir|Destruction|Ishiir|3",
-                "Appetite for Destruction|Cleric|Ishiir|Destruction|Ishiir|6",
+                "Extra Attack|Cleric|Ishiir|Destruction|Ishiir|6",
                 "Hand of Devastation|Cleric|Ishiir|Destruction|Ishiir|17"
             ],
             "classSource": "Ishiir"
@@ -2808,7 +2808,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Darkness",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "At each indicated cleric level, you add the listed spells to your spells prepared.",
                 {
@@ -2847,11 +2847,15 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Child of Night|Cleric|Ishiir|Darkness|Ishiir|1"
+                    "subclassFeature": "Child of Night|Cleric|Ishiir|Darkness|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Shield of Ineffable Darkness|Cleric|Ishiir|Darkness|Ishiir|1"
+                    "subclassFeature": "Shield of Ineffable Darkness|Cleric|Ishiir|Darkness|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Shadow Spawn|Cleric|Ishiir|Darkness|Ishiir|3"
                 }
             ]
         },
@@ -2863,10 +2867,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Darkness",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "Starting at 1st level, you have {@sense darkvision} out to a range of 90 feet. If you already have {@sense darkvision}, you increase its range by 30 feet."
+                "Starting at 3rd level, you have {@sense darkvision} out to a range of 90 feet. If you already have {@sense darkvision}, you increase its range by 30 feet."
             ]
         },
         {
@@ -2877,11 +2881,11 @@
             "classSource": "Ishiir",
             "subclassShortName": "Darkness",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "Starting at 1st level, you can invoke the power of darkness to punish anyone fool enough to harm you. As a reaction when a creature you can see damages you, that creature has to make a CON saving throw or become {@condition blinded|Ishiir} until the end of your next turn.",
-                "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+                "Starting at 3rd level, you can invoke the power of darkness to punish anyone fool enough to harm you. As a reaction when a creature you can see damages you, that creature has to make a CON saving throw or become {@condition blinded|Ishiir} until the end of your next turn.",
+                "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain one use when you finish a short rest and all expended uses when you finish a long rest."
             ]
         },
         {
@@ -2892,7 +2896,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Darkness",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "entries": [
                 "As a bonus action, you envelope yourself in a coat of shadows for 1 minute. For the duration, you gain advantage on all Dexterity ({@skill Stealth}) checks while you are in dim light or darkness. This benefit lasts for one minute or until you are {@condition incapacitated|Ishiir}. It is also suppressed until the end of your next turn if you are in bright light or you take radiant damage.",
@@ -2936,7 +2940,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Death",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "The Death domain is concerned with the forces that cause death, as well as the negative energy that gives rise to undead creatures. Deities such as {@deity Chemosh|Dragonlance}, {@deity Myrkul}, and {@deity Wee Jas|Greyhawk} are patrons of necromancers, death knights, liches, mummy lords, and vampires. Gods of the Death domain also embody murder ({@deity Anubis|Egyptian}, {@deity Bhaal}, and Pyremius), pain ({@deity Iuz|Greyhawk} or {@deity Loviatar}), disease or poison ({@deity Incabulos|Greyhawk}, {@deity Talona}, or {@deity Morgion|Dragonlance}), and the underworld ({@deity Hades|Greek} and {@deity Hel|Norse}).",
                 "At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit.",
@@ -2970,32 +2974,18 @@
                         ],
                         [
                             "9th",
-                            "{@spell antilife shell|Ishiir}, {@spell cloudkill|Ishiir}"
+                            "{@spell antilife shell|Ishiir}, {@spell enervation|Ishiir}"
                         ]
                     ]
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiency|Cleric|Ishiir|Death|Ishiir|1"
+                    "subclassFeature": "Reaper|Cleric|Ishiir|Death|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Reaper|Cleric|Ishiir|Death|Ishiir|1"
+                    "subclassFeature": "Channel Divinity: Touch of Death|Cleric|Ishiir|Death|Ishiir|3"
                 }
-            ]
-        },
-        {
-            "name": "Bonus Proficiency",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Death",
-            "subclassSource": "Ishiir",
-            "level": 1,
-            "header": 1,
-            "entries": [
-                "When the cleric chooses this domain at 1st level, he or she gains proficiency with martial weapons."
             ]
         },
         {
@@ -3006,10 +2996,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Death",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "At 1st level, the cleric learns one {@filter necromancy cantrip|spells|level=0|school=N|source=Ishiir} of his or her choice from any spell list. When the cleric casts a necromancy cantrip that normally targets only one creature, the spell can instead target two creatures within range and within 5 feet of each other."
+                "At 3rd level, the cleric learns one {@filter necromancy cantrip|spells|level=0|school=N|source=Ishiir} of his or her choice from any spell list. When the cleric reduces a creature to 0 hit points with an effect that deals necrotic damage, it regains hit points equal to 1d6 + half its cleric level."
             ]
         },
         {
@@ -3020,18 +3010,18 @@
             "classSource": "Ishiir",
             "subclassShortName": "Death",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, the cleric can use Channel Divinity to destroy another creature's life force by touch.",
-                "When the cleric hits a creature with a melee attack, the cleric can use Channel Divinity to deal extra necrotic damage to the target. The damage equals 5 + twice his or her cleric level."
+                "Starting at 3rd level, the cleric can use Channel Divinity to destroy another creature's life force by touch.",
+                "When the cleric hits a creature with a weapon attack or deals necrotic damage to it with a spell, the cleric can use Channel Divinity to deal extra necrotic damage to the target. The damage equals 5 + twice his or her cleric level."
             ]
         },
         {
-            "name": "Inescapable Destruction",
+            "name": "Inescapable End",
             "source": "Ishiir",
             "page": 1,
             "className": "Cleric",
@@ -3041,11 +3031,11 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Starting at 6th level, the cleric's ability to channel negative energy becomes more potent. Necrotic damage dealt by the character's cleric spells and Channel Divinity options ignores resistance to necrotic damage."
+                "Starting at 6th level, the cleric's ability to channel negative energy becomes more potent. Necrotic damage dealt by the character ignores resistance to necrotic damage."
             ]
         },
         {
-            "name": "Improved Reaper",
+            "name": "Death Mastery",
             "source": "Ishiir",
             "page": 1,
             "className": "Cleric",
@@ -3055,7 +3045,7 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "Starting at 17th level, when the cleric casts a Necromancy spell that targets only one creature, the spell can instead target two creatures within range."
+                "Starting at 17th level, you choose four spells of the necromancy school from any spell list, one from each of the following levels: 6th, 7th, 8th, and 9th. You add them to your list of domain spells. Like your other domain spells, they are always prepared and count as cleric spells for you."
             ]
         },
         {
@@ -3066,7 +3056,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Destruction",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "At each indicated cleric level, you add the listed spells to your spells prepared.",
                 {
@@ -3105,56 +3095,12 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Armed for Destruction|Cleric|Ishiir|Destruction|Ishiir|1"
+                    "subclassFeature": "Appetite for Destruction|Cleric|Ishiir|Destruction|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Destructive Fury|Cleric|Ishiir|Destruction|Ishiir|1"
+                    "subclassFeature": "Channel Divinity: Sundering Invocation|Cleric|Ishiir|Destruction|Ishiir|3"
                 }
-            ]
-        },
-        {
-            "name": "Armed for Destruction",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Destruction",
-            "subclassSource": "Ishiir",
-            "level": 1,
-            "header": 1,
-            "entries": [
-                "When you choose this domain at 1st level, you gain proficiency with martial weapons."
-            ]
-        },
-        {
-            "name": "Destructive Fury",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Destruction",
-            "subclassSource": "Ishiir",
-            "level": 1,
-            "header": 1,
-            "entries": [
-                "Starting at 1st level, you can channel divine energy to enter a destructive frenzy. As a bonus action, you gain 5 temporary hit points and a +1 bonus to weapon damage rolls. This benefit lasts for one minute. Once you use this ability, you cannot use it again until you complete a short or long rest.",
-                "When you use this ability, you can expend a spell slot to augment its effects. You gain additional temporary hit points equal to three times the slot's level and a bonus to weapon damage rolls equal to half the slot's level (minimum 1). This benefit lasts for one minute."
-            ]
-        },
-        {
-            "name": "Channel Divinity: Sundering Invocation",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Destruction",
-            "subclassSource": "Ishiir",
-            "level": 2,
-            "header": 2,
-            "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to channel destructive energy.",
-                "As an action, you touch a creature or a an unattended object within reach. A creature must make a Constitution saving throw, taking 5 times your cleric level force damage on a failed saving throw and half as much on a successful one. An unattended object takes 5 times your cleric level force damage."
             ]
         },
         {
@@ -3165,11 +3111,40 @@
             "classSource": "Ishiir",
             "subclassShortName": "Destruction",
             "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "Starting at 3rd level, your destructive acts fuel further expressions of devastation. If you reduce a creature to 0 hit points, you can use your reaction to immediately make one weapon attack or cast a cantrip.",
+                "You cannot use this feature again until you finish a short rest."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Sundering Invocation",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Destruction",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "Starting at 3rd level, you can use your Channel Divinity to channel destructive energy.",
+                "As an action, you touch a creature or a an unattended object within reach. A creature must make a Constitution saving throw, taking 5 times your cleric level force damage on a failed saving throw and half as much on a successful one. An unattended object takes 5 times your cleric level force damage."
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Destruction",
+            "subclassSource": "Ishiir",
             "level": 6,
             "header": 2,
             "entries": [
-                "Starting at 6th level, your destructive acts fuel further expressions of devastation. If you kill a creature or destroy an object with a weapon attack, you can use your reaction to immediately make one additional weapon attack.",
-                "You can use this ability a number of times equal to your Wisdom modifier (minimum 1). You regain all expended uses when you complete a long rest."
+                "Beginning at 6th level, you can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn. You can attack with your {@spell Spiritual Weapon|Ishiir} in place of one of those attacks, if you have one summoned."
             ]
         },
         {
@@ -3194,7 +3169,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Fate",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Gods of fate perceive the future and how the choices mortals make drive them toward their destinies. Some deities consider the future preordained, while others understand the multiverse as a place of infinite possibility. Clerics who draw power from the forces of fate sometimes receive visions directly from their deity and receive fleeting omens of the future. They share impossible knowledge with their allies and prophesize their enemies' doom.",
                 {
@@ -3229,15 +3204,15 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Domain Spells|Cleric|Ishiir|Fate|Ishiir|1"
+                    "subclassFeature": "Domain Spells|Cleric|Ishiir|Fate|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Omens and Portents|Cleric|Ishiir|Fate|Ishiir|1"
+                    "subclassFeature": "Omens and Portents|Cleric|Ishiir|Fate|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Ties That Bind|Cleric|Ishiir|Fate|Ishiir|1"
+                    "subclassFeature": "Ties That Bind|Cleric|Ishiir|Fate|Ishiir|3"
                 }
             ]
         },
@@ -3249,10 +3224,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Fate",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "{@i 1st-level Fate Domain Feature}",
+                "{@i 3rd-level Fate Domain Feature}",
                 "You gain domain spells at the cleric levels listed on the Fate Domain Spells table. See the Divine Domain class feature for how domain spells work.",
                 {
                     "type": "table",
@@ -3298,10 +3273,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Fate",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "{@i 1st-level Fate Domain Feature}",
+                "{@i 3rd-level Fate Domain Feature}",
                 "You can perceive signs of the future in everyday objects and events, such as flights of birds or ripples made in water by a thrown stone. You can cast the {@spell augury|Ishiir} spell without expending a spell slot and, when you cast the spell in this way, the spell has no verbal, somatic, or material components. Once you cast the spell in this way, you cannot do so again until you finish a long rest.",
                 "In addition, until you finish a long rest, when you cast a divination spell that includes a chance the DM gives you no answer or a random reading—such as augury, commune, or divination—reduce that chance by 25 percent."
             ]
@@ -3314,10 +3289,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Fate",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "{@i 1st-level Fate Domain Feature}",
+                "{@i 3rd-level Fate Domain Feature}",
                 "You can temporarily tie your fate to others. As an action, you can touch one object or creature and magically tie a strand of fate from yourself to it for 1 hour or until you use this feature again. An unwilling creature must succeed on a Wisdom saving throw against your spell save DC to resist this effect. While the target is bound to you and on the same plane of existence as you, you can sense the direction to the target's location, and you know the direction of its movement if it is in motion.",
                 "In addition, once per turn when you cast a spell using a spell slot to deal damage or restore hit points to the target, roll a {@dice d6}, and the target receives extra damage or healing, respectively, equal to the number rolled.",
                 "You can use this feature's action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
@@ -3331,10 +3306,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Fate",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "entries": [
-                "{@i 2nd-level Fate Domain Feature}",
+                "{@i 3rd-level Fate Domain Feature}",
                 "You can use your Channel Divinity to see and manipulate the strands of fate that weave around other individuals. As a bonus action, you can enter this state for up to 1 minute or until you lose your concentration (as if you were concentrating on a spell). For the duration, whenever another creature you can see makes an attack roll or an ability check, you can use a reaction to give the roll advantage or disadvantage (your choice)."
             ]
         },
@@ -3384,7 +3359,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Forge",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "The gods of the forge are patrons of artisans who work with metal, from a humble blacksmith who keeps a village in horseshoes and plow blades to the mighty elf artisan whose diamond-tipped arrows of mithral have felled demon lords. The gods of the forge teach that, with patience and hard work, even the most intractable metal can be transformed from a lump of ore to a beautifully wrought object. Clerics of these deities search for objects lost to the forces of darkness, liberate mines overrun by orcs, and uncover rare and wondrous materials necessary to create potent magic items. Followers of these gods take great pride in their work, and they are willing to craft and use heavy armor and powerful weapons to protect them. Deities of this domain include {@deity Gond}, {@deity Reorx|Dragonlance}, {@deity Onatar|Eberron}, {@deity Moradin|Nonhuman}, {@deity Hephaestus|Greek}, and {@deity Goibhniu|Celtic}.",
                 "At each indicated cleric level, add the listed spells to your spells prepared.",
@@ -3424,11 +3399,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Forge|Ishiir|1"
+                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Forge|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Blessing of the Forge|Cleric|Ishiir|Forge|Ishiir|1"
+                    "subclassFeature": "Blessing of the Forge|Cleric|Ishiir|Forge|Ishiir|3"
                 }
             ]
         },
@@ -3440,10 +3415,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Forge",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "At 1st level, you gain the ability to imbue magic into a weapon or armor. At the end of a long rest, you can touch one object that is a suit of armor or a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Until the end of your next long rest or until you die, the object becomes a magic item, granting a +1 bonus to AC if it's armor or a +1 bonus to attack and damage rolls if it's a weapon.",
+                "At 3rd level, you gain the ability to imbue magic into a weapon or armor. At the end of a long rest, you can touch one object that is a suit of armor or a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Until the end of your next long rest or until you die, the object becomes a magic item, granting a +1 bonus to AC if it's armor or a +1 bonus to attack and damage rolls if it's a weapon.",
                 "Once you use this feature, you can't use it again until you finish a long rest."
             ]
         },
@@ -3455,10 +3430,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Forge",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "When you choose this domain at 1st level, you gain proficiency with heavy armor, {@item armorsmith's tools|Ishiir} and {@item weaponsmith's tools|Ishiir}."
+                "When you choose this domain at 3rd level, you gain proficiency with heavy armor, {@item armorsmith's tools|Ishiir} and {@item weaponsmith's tools|Ishiir}."
             ]
         },
         {
@@ -3469,13 +3444,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Forge",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to create simple items.",
+                "Starting at 3rd level, you can use your Channel Divinity to create simple items.",
                 "You conduct an hour-long ritual that crafts a nonmagical item that must include some metal: a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}, a suit of armor, ten pieces of ammunition, a set of tools, or another metal object (see chapter 5, \"Equipment,\" in the Player's Handbook for examples of these items). The creation is completed at the end of the hour, coalescing in an unoccupied space of your choice on a surface within 5 feet of you.",
                 "The thing you create can be something that is worth no more than 1500 gp. As part of this ritual, you must lay out metal, which can include coins, with a value equal to the creation. The metal irretrievably coalesces and transforms into the creation at the ritual's end, magically forming even nonmetal parts of the creation. The ritual can create a duplicate of a nonmagical item that contains metal, such as a key, if you possess the original during the ritual."
             ]
@@ -3530,7 +3505,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Grave",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Gods of the grave watch over the line between life and death. To these deities, death and the afterlife are a foundational part of the multiverse. To desecrate the peace of the dead is an abomination. Deities of the grave include {@deity Kelemvor}, {@deity Wee Jas|Greyhawk}, the ancestral spirits of {@deity the Undying Court|Eberron}, {@deity Hades|Greek}, {@deity Anubis|Egyptian}, and {@deity Osiris|Egyptian}. Followers of these deities seek to put wandering spirits to rest, destroy the undead, and ease the suffering of the dying. Their magic also allows them to stave off death for a time, particularly for a person who still has some great work to accomplish in the world. This is a delay of death, not a denial of it, for death will eventually get its due.",
                 {
@@ -3569,11 +3544,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Circle of Mortality|Cleric|Ishiir|Grave|Ishiir|1"
+                    "subclassFeature": "Circle of Mortality|Cleric|Ishiir|Grave|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Eyes of the Grave|Cleric|Ishiir|Grave|Ishiir|1"
+                    "subclassFeature": "Eyes of the Grave|Cleric|Ishiir|Grave|Ishiir|3"
                 }
             ]
         },
@@ -3585,10 +3560,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Grave",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "At 1st level, you gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use the highest number possible for each die.",
+                "At 3rd level, you gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use the highest number possible for each die.",
                 "In addition, you learn the {@spell spare the dying|Ishiir} cantrip, which doesn't count against the number of cleric cantrips you know. For you, it has a range of 30 feet, and you can cast it as a bonus action."
             ]
         },
@@ -3600,10 +3575,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Grave",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "At 1st level, you gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. Until the end of your next turn, you know the location of any undead within 60 feet of you that isn't behind total cover and that isn't protected from divination magic. This sense doesn't tell you anything about a creature's capabilities or identity.",
+                "At 3rd level, you gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. Until the end of your next turn, you know the location of any undead within 60 feet of you that isn't behind total cover and that isn't protected from divination magic. This sense doesn't tell you anything about a creature's capabilities or identity.",
                 "You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest."
             ]
         },
@@ -3615,13 +3590,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Grave",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to mark another creature's life force for termination.",
+                "Starting at 3rd level, you can use your Channel Divinity to mark another creature's life force for termination.",
                 "As an action, you choose one creature you can see within 30 feet of you, cursing it until the end of your next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack's damage, and then the curse ends."
             ]
         },
@@ -3662,7 +3637,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Knowledge",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "The gods of knowledge—including {@deity Oghma}, {@deity Boccob|Greyhawk}, {@deity Gilean|Dragonlance}, {@deity Aureon|Eberron}, and {@deity Thoth|Egyptian}—value learning and understanding above all. Some teach that knowledge is to be gathered and shared in libraries and universities, or promote the practical knowledge of craft and invention. Some deities hoard knowledge and keep its secrets to themselves. And some promise their followers that they will gain tremendous power if they unlock the secrets of the multiverse. Followers of these gods study esoteric lore, collect old tomes, delve into the secret places of the earth, and learn all they can. Some gods of knowledge promote the practical knowledge of craft and invention, including smith deities like {@deity Gond}, {@deity Reorx|Dragonlance}, {@deity Onatar|Eberron}, {@deity Moradin|Nonhuman}, {@deity Hephaestus|Greek}, and {@deity Goibhniu|Celtic}.",
                 "At each indicated cleric level, you add the listed spells to your spells prepared.",
@@ -3702,7 +3677,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Blessings of Knowledge|Cleric|Ishiir|Knowledge|Ishiir|1"
+                    "subclassFeature": "Blessings of Knowledge|Cleric|Ishiir|Knowledge|Ishiir|3"
                 }
             ]
         },
@@ -3714,10 +3689,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Knowledge",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "At 1st level, you learn two languages of your choice. You also become proficient in your choice of two of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}.",
+                "At 3rd level, you learn two languages of your choice. You also become proficient in your choice of two of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}.",
                 "Your proficiency bonus is doubled for any ability check you make that uses either of those skills."
             ]
         },
@@ -3729,13 +3704,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Knowledge",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. For 10 minutes, you have proficiency with the chosen skill or tool."
+                "Starting at 3rd level, you can use your Channel Divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. For 10 minutes, you have proficiency with the chosen skill or tool."
             ]
         },
         {
@@ -3807,7 +3782,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Life",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "The Life domain focuses on the vibrant positive energy—one of the fundamental forces of the universe—that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities (such as {@deity Chauntea}, {@deity Arawai|Eberron}, and {@deity Demeter|Greek}), sun gods (such as {@deity Lathander}, {@deity Pelor|Greyhawk}, and {@deity Re-Horakhty|Egyptian}), gods of healing or endurance (such as {@deity Ilmater}, {@deity Mishakal|Dragonlance}, {@deity Apollo|Greek}, and {@deity Diancecht|Celtic}), and gods of home and community (such as {@deity Hestia|Greek}, {@deity Hathor|Egyptian}, and {@deity Boldrei|Eberron}).",
                 "At each indicated cleric level, you add the listed spells to your spells prepared.",
@@ -3847,11 +3822,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiency|Cleric|Ishiir|Life|Ishiir|1"
+                    "subclassFeature": "Bonus Proficiency|Cleric|Ishiir|Life|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Disciple of Life|Cleric|Ishiir|Life|Ishiir|1"
+                    "subclassFeature": "Disciple of Life|Cleric|Ishiir|Life|Ishiir|3"
                 }
             ]
         },
@@ -3865,10 +3840,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Life",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "When you choose this domain at 1st level, you gain proficiency with heavy armor."
+                "When you choose this domain at 3rd level, you gain proficiency with heavy armor."
             ]
         },
         {
@@ -3881,10 +3856,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Life",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "Also starting at 1st level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
+                "Also starting at 3rd level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
             ]
         },
         {
@@ -3897,13 +3872,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Life",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to heal the badly injured.",
+                "Starting at 3rd level, you can use your Channel Divinity to heal the badly injured.",
                 "As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level. Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can't use this feature on an undead or a construct."
             ]
         },
@@ -3947,7 +3922,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Light",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Gods of light—including {@deity Helm}, {@deity Lathander}, {@deity Pholtus|Greyhawk}, {@deity Branchala|Dragonlance}, {@deity the Silver Flame|Eberron}, {@deity Belenus|Celtic}, {@deity Apollo|Greek}, and {@deity Re-Horakhty|Egyptian}—promote the ideals of rebirth and renewal, truth, vigilance, and beauty, often using the symbol of the sun. Some of these gods are portrayed as the sun itself or as a charioteer who guides the sun across the sky. Others are tireless sentinels whose eyes pierce every shadow and see through every deception. Some are deities of beauty and artistry, who teach that art is a vehicle for the soul's improvement. Clerics of a god of light are enlightened souls infused with radiance and the power of their gods' discerning vision, charged with chasing away lies and burning away darkness.",
                 "At each indicated cleric level, you add the listed spells to your spells prepared.",
@@ -3987,11 +3962,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Cantrip|Cleric|Ishiir|Light|Ishiir|1"
+                    "subclassFeature": "Bonus Cantrip|Cleric|Ishiir|Light|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Warding Flare|Cleric|Ishiir|Light|Ishiir|1"
+                    "subclassFeature": "Warding Flare|Cleric|Ishiir|Light|Ishiir|3"
                 }
             ]
         },
@@ -4003,10 +3978,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Light",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "When you choose this domain at 1st level, you gain the {@spell light|Ishiir} cantrip if you don't already know it. This cantrip doesn't count against the number of cleric cantrips you know."
+                "When you choose this domain at 3rd level, you gain the {@spell light|Ishiir} cantrip if you don't already know it. This cantrip doesn't count against the number of cleric cantrips you know."
             ]
         },
         {
@@ -4017,10 +3992,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Light",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "Also at 1st level, you can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be {@condition blinded|Ishiir} is immune to this feature.",
+                "Also at 3rd level, you can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be {@condition blinded|Ishiir} is immune to this feature.",
                 "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
             ]
         },
@@ -4032,13 +4007,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Light",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to harness sunlight, banishing darkness and dealing radiant damage to your foes.",
+                "Starting at 3rd level, you can use your Channel Divinity to harness sunlight, banishing darkness and dealing radiant damage to your foes.",
                 "As an action, you present your holy symbol, and any magical darkness within 30 feet of you is dispelled. Additionally, each hostile creature within 30 feet of you must make a Constitution saving throw. A creature takes radiant damage equal to {@dice 2d10} + your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected."
             ]
         },
@@ -4078,7 +4053,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Moondancer",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "At each indicated cleric level, add the listed spells to your spells prepared.",
                 {
@@ -4125,10 +4100,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Moondancer",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 2,
             "entries": [
-                "At 1st level, you gain proficiency in the {@skill Performance} skill and one of the following: {@item elvish sword|Ishiir}, {@item greatsword|Ishiir}, {@item rapier|Ishiir}, {@item scimitar|Ishiir}, {@item shortsword|Ishiir}."
+                "At 3rd level, you gain proficiency in the {@skill Performance} skill and one of the following: {@item elvish sword|Ishiir}, {@item greatsword|Ishiir}, {@item rapier|Ishiir}, {@item scimitar|Ishiir}, {@item shortsword|Ishiir}."
             ]
         },
         {
@@ -4139,10 +4114,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Moondancer",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 2,
             "entries": [
-                "Starting at 1st level, you can harness your connection to Vaeraustraee to emulate her warrior aspect, entering the Cresent Dance. To do so, you can't be wearing medium or heavy armor or using a shield. It graces you with supernatural speed, agility, and focus.",
+                "Starting at 3rd level, you can harness your connection to Vaeraustraee to emulate her warrior aspect, entering the Cresent Dance. To do so, you can't be wearing medium or heavy armor or using a shield. It graces you with supernatural speed, agility, and focus.",
                 "You can use a bonus action to start the Crescent Dance, which lasts for 1 minute. It ends early if you are {@condition incapacitated|Ishiir}, if you don medium or heavy armor or a shield. You can also dismiss the Crescent Dance at any time you choose (no action required).",
                 "While your Crescent Dance is active, you gain the following benefits:",
                 {
@@ -4166,13 +4141,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Moondancer",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can spend one use of your Channel Divinity as part of the same bonus action you use to enter your Crescent Dance to enhance it further. Choose one of the following benefits. You gain the chosen benefit for the duration of your Crescent Dance.",
+                "Starting at 3rd level, you can spend one use of your Channel Divinity as part of the same bonus action you use to enter your Crescent Dance to enhance it further. Choose one of the following benefits. You gain the chosen benefit for the duration of your Crescent Dance.",
                 {
                     "type": "entries",
                     "name": "Dance Partner",
@@ -4234,7 +4209,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Nature",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Gods of nature are as varied as the natural world itself, from inscrutable gods of the deep forests (such as {@deity Silvanus}, {@deity Obad-Hai|Greyhawk}, {@deity Chislev|Dragonlance}, {@deity Balinor|Eberron}, and {@deity Pan|Greek}) to friendly deities associated with particular springs and groves (such as {@deity Eldath}). Druids revere nature as a whole and might serve one of these deities, practicing mysterious rites and reciting all-but-forgotten prayers in their own secret tongue. But many of these gods have clerics as well, champions who take a more active role in advancing the interests of a particular nature god. These clerics might hunt the evil monstrosities that despoil the woodlands, bless the harvest of the faithful, or wither the crops of those who anger their gods.",
                 "At each indicated cleric level, you add the listed spells to your spells prepared.",
@@ -4274,11 +4249,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Acolyte of Nature|Cleric|Ishiir|Nature|Ishiir|1"
+                    "subclassFeature": "Acolyte of Nature|Cleric|Ishiir|Nature|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiency|Cleric|Ishiir|Nature|Ishiir|1"
+                    "subclassFeature": "Bonus Proficiency|Cleric|Ishiir|Nature|Ishiir|3"
                 }
             ]
         },
@@ -4290,10 +4265,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Nature",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "At 1st level, you learn one druid cantrip of your choice. This cantrip doesn't count against the number of cleric cantrips you know. You also gain proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill Nature}, or {@skill Survival}."
+                "At 3rd level, you learn one druid cantrip of your choice. This cantrip doesn't count against the number of cleric cantrips you know. You also gain proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill Nature}, or {@skill Survival}."
             ]
         },
         {
@@ -4304,10 +4279,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Nature",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "Also at 1st level, you gain proficiency with heavy armor."
+                "Also at 3rd level, you gain proficiency with heavy armor."
             ]
         },
         {
@@ -4318,13 +4293,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Nature",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to charm animals and plants.",
+                "Starting at 3rd level, you can use your Channel Divinity to charm animals and plants.",
                 "As an action, you present your holy symbol and invoke the name of your deity. Each beast or plant creature that can see you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is {@condition charmed|Ishiir} by you for 1 minute or until it takes damage. While it is {@condition charmed|Ishiir} by you, it is friendly to you and other creatures you designate."
             ]
         },
@@ -4364,7 +4339,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Order",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "The Order Domain represents discipline, as well as devotion to a society or an institution and strict obedience to the laws governing it. On Ravnica, the domain is favored by clerics of the Azorius Senate, who use it to maintain and enforce the law, and of the Orzhov Syndicate, who exploit law and order for their personal gain. On other worlds, gods who grant access to this domain include {@deity Bane}, {@deity Tyr}, {@deity Majere|Dragonlance}, {@deity Erathis|Dawn War|DMG}, {@deity Pholtus|Greyhawk}, {@deity Wee Jas|Greyhawk}, {@deity Aureon|Eberron}, {@deity Maglubiyet|Nonhuman}, {@deity Nuada|Celtic}, {@deity Athena|Greek}, {@deity Anubis|Egyptian}, {@deity Forseti|Norse}, and {@deity Asmodeus|Dawn War|DMG}.",
                 "The ideal of order is obedience to the law above all else, rather than to a specific individual or the passing influence of emotion or popular rule. Clerics of order are typically concerned with how things are done, rather than whether an action's results are just. Following the law and obeying its edicts is critical, especially when it benefits these clerics and their guilds or deities.",
@@ -4406,11 +4381,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Order|Ishiir|1"
+                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Order|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Voice of Authority|Cleric|Ishiir|Order|Ishiir|1"
+                    "subclassFeature": "Voice of Authority|Cleric|Ishiir|Order|Ishiir|3"
                 }
             ]
         },
@@ -4422,10 +4397,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Order",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "When you choose this domain at 1st level, you gain proficiency with heavy armor. You also gain proficiency in the {@skill Intimidation} or {@skill Persuasion} skill (your choice)."
+                "When you choose this domain at 3rd level, you gain proficiency with heavy armor. You also gain proficiency in the {@skill Intimidation} or {@skill Persuasion} skill (your choice)."
             ]
         },
         {
@@ -4436,10 +4411,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Order",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "Starting at 1st level, you can invoke the power of law to drive an ally to attack. If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to make one weapon attack against a creature of your choice that you can see.",
+                "Starting at 3rd level, you can invoke the power of law to drive an ally to attack. If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to make one weapon attack against a creature of your choice that you can see.",
                 "If the spell targets more than one ally, you choose the ally who can make the attack."
             ]
         },
@@ -4451,13 +4426,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Order",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to exert an intimidating presence over others.",
+                "Starting at 3rd level, you can use your Channel Divinity to exert an intimidating presence over others.",
                 "As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 30 feet of you must succeed on a Wisdom saving throw or be {@condition charmed|Ishiir} by you until the end of your next turn or until the {@condition charmed|Ishiir} creature takes any damage. You can also cause any of the {@condition charmed|Ishiir} creatures to drop what they are holding when they fail the saving throw."
             ]
         },
@@ -4499,7 +4474,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Peace",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "The balm of peace thrives at the heart of healthy communities, between friendly nations, and in the souls of the kindhearted. The gods of peace inspire people of all sorts to resolve conflict and to stand up against those forces that try to prevent peace from flourishing. See the Peace Deities table for a list of some of the gods associated with this domain.",
                 "Clerics of the Peace Domain preside over the signing of treaties, and they are often asked to arbitrate in disputes. These clerics' blessings draw people together and help them shoulder one another's burdens, and the clerics' magic aids those who are driven to fight for the way of peace.",
@@ -4553,7 +4528,7 @@
                     "name": "Domain Spells",
                     "type": "entries",
                     "entries": [
-                        "{@i 1st-level Peace Domain feature}",
+                        "{@i 3rd-level Peace Domain feature}",
                         "You gain domain spells at the cleric levels listed in the Peace Domain Spells table. See the Divine Domain class feature for how domain spells work.",
                         {
                             "type": "table",
@@ -4593,11 +4568,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Implement of Peace|Cleric|Ishiir|Peace|Ishiir|1"
+                    "subclassFeature": "Implement of Peace|Cleric|Ishiir|Peace|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Emboldening Bond|Cleric|Ishiir|Peace|Ishiir|1"
+                    "subclassFeature": "Emboldening Bond|Cleric|Ishiir|Peace|Ishiir|3"
                 }
             ]
         },
@@ -4609,10 +4584,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Peace",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "{@i 1st-level Peace Domain feature}",
+                "{@i 3rd-level Peace Domain feature}",
                 "You can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 30 feet of you (this can include yourself) equal to your proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 30 feet of another, the creature can roll a {@dice d4} and add the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the {@dice d4} no more than once per turn.",
                 "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
             ]
@@ -4625,10 +4600,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Peace",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "{@i 1st-level Peace Domain feature}",
+                "{@i 3rd-level Peace Domain feature}",
                 "You gain proficiency in the {@skill Insight}, {@skill Performance}, or {@skill Persuasion} skill (your choice)."
             ]
         },
@@ -4640,13 +4615,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Peace",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "{@i 2nd-level Peace Domain feature}",
+                "{@i 3rd-level Peace Domain feature}",
                 "You can use your Channel Divinity to make your very presence a soothing balm. As an action, you can move up to your speed, without provoking opportunity attacks, and when you move within 5 feet of any other creature during this action, you can restore a number of hit points to that creature equal to {@dice 2d6} + your Wisdom modifier (minimum of 1 hit point). A creature can receive this healing only once whenever you take this action."
             ]
         },
@@ -4688,7 +4663,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Protection",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "The protection domain is the purview of deities who charge their followers to shield the weak from the strong. The gods' faithful dwell in villages and towns on the borderlands, where they help bolster defenses and seek out evils to defeat. These gods believe that a strong shield and a suit of armor is the best defense against evil, second only to a stout mace on hand to respond to any attacks in kind. Deities who grant this domain include {@deity Helm}, {@deity Ilmater}, {@deity Torm}, {@deity Tyr}, {@deity Heironeous|Greyhawk}, {@deity St. Cuthbert|Greyhawk}, {@deity Paladine|Dragonlance}, {@deity Dol Dorn|Eberron}, {@deity the Silver Flame|Eberron}, {@deity Bahamut|Nonhuman}, {@deity Yondalla|Nonhuman}, {@deity Athena|Greek}, and {@deity Odin|Norse}.",
                 "At each indicated cleric level, add the listed spells to your spells prepared.",
@@ -4728,11 +4703,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiency|Cleric|Ishiir|Protection|Ishiir|1"
+                    "subclassFeature": "Bonus Proficiency|Cleric|Ishiir|Protection|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Shield of the Faithful|Cleric|Ishiir|Protection|Ishiir|1"
+                    "subclassFeature": "Shield of the Faithful|Cleric|Ishiir|Protection|Ishiir|3"
                 }
             ]
         },
@@ -4744,10 +4719,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Protection",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "When you choose this domain at 1st level, you gain proficiency with heavy armor."
+                "When you choose this domain at 3rd level, you gain proficiency with heavy armor."
             ]
         },
         {
@@ -4758,10 +4733,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Protection",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "Starting at 1st level, you gain the ability to hinder attacks intended for others. When a creature attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. To do so, you must be able to see both the attacker and the target. You interpose an arm, a shield, or some other part of yourself to try to throw the attack off target."
+                "Starting at 3rd level, you gain the ability to hinder attacks intended for others. When a creature attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. To do so, you must be able to see both the attacker and the target. You interpose an arm, a shield, or some other part of yourself to try to throw the attack off target."
             ]
         },
         {
@@ -4772,13 +4747,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Protection",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to cloak your allies in radiant armor.",
+                "Starting at 3rd level, you can use your Channel Divinity to cloak your allies in radiant armor.",
                 "As an action, you channel blessed energy into an ally that you can see within 30 feet of you. The first time that ally is hit by an attack within the next minute, the attacker takes radiant damage equal to {@dice 2d10} + your cleric level."
             ]
         },
@@ -4819,7 +4794,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Solidarity",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "\"The worthy must know and respect all others whom the God-Pharaoh deems worthy, for in the afterlife, all will be united in purpose and action.\"",
                 "Oketra is charged with expounding upon this teaching of the God-Pharaoh, instilling in every initiate the virtue of solidarity. She forges each group of children into a crop of acolytes with just one purpose: to be judged worthy of a glorious afterlife. And she instills in each crop the ability to unite in a single action in pursuit of that purpose. She is fond of poetic imagery to communicate her ideals.",
@@ -4860,11 +4835,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiency|Cleric|Ishiir|Solidarity|Ishiir|1"
+                    "subclassFeature": "Bonus Proficiency|Cleric|Ishiir|Solidarity|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Solidarity's Action|Cleric|Ishiir|Solidarity|Ishiir|1"
+                    "subclassFeature": "Solidarity's Action|Cleric|Ishiir|Solidarity|Ishiir|3"
                 }
             ]
         },
@@ -4876,10 +4851,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Solidarity",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "When you choose this domain at 1st level, you gain proficiency with heavy armor."
+                "When you choose this domain at 3rd level, you gain proficiency with heavy armor."
             ]
         },
         {
@@ -4890,10 +4865,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Solidarity",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "Also at 1st level, when you take the {@action Help|Ishiir} action to aid an ally's attack, you can make one weapon attack as a bonus action. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain expended uses when you finish a long rest."
+                "Also at 3rd level, when you take the {@action Help|Ishiir} action to aid an ally's attack, you can make one weapon attack as a bonus action. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain expended uses when you finish a long rest."
             ]
         },
         {
@@ -4904,13 +4879,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Solidarity",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to heal the badly injured.",
+                "Starting at 3rd level, you can use your Channel Divinity to heal the badly injured.",
                 "As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level. Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can't use this feature on an undead or a construct."
             ]
         },
@@ -4950,7 +4925,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Strength",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "\"The worthy shall hone a strong body that can withstand the boundless energies of the afterlife.\"",
                 "It falls to Rhonas to instill this teaching in those who would enter the afterlife—but to his mind, the words themselves don't matter. Strength can't be taught. It must be built through practice and training. Rhonas demonstrates his teachings by his example, rather than by giving his students any kind of academic instruction. He welcomes the people of Naktamun to stand by the Hekma and watch him as he storms into the desert to battle the greatest horrors. He encourages them to observe his indomitable strength, for though they will never equal it, they can aspire to mimicry. He invites them to scrutinize every move and practice what they see.",
@@ -4991,11 +4966,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Acolyte of Strength|Cleric|Ishiir|Strength|Ishiir|1"
+                    "subclassFeature": "Acolyte of Strength|Cleric|Ishiir|Strength|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Strength|Ishiir|1"
+                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Strength|Ishiir|3"
                 }
             ]
         },
@@ -5007,10 +4982,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Strength",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "Also at 1st level, you gain proficiency with heavy armor and martial weapons."
+                "Also at 3rd level, you gain proficiency with heavy armor and martial weapons."
             ]
         },
         {
@@ -5021,10 +4996,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Strength",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "At 1st level, you learn one druid cantrip of your choice. You also gain proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill Athletics}, {@skill Nature}, or {@skill Survival}."
+                "At 3rd level, you learn one druid cantrip of your choice. You also gain proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill Athletics}, {@skill Nature}, or {@skill Survival}."
             ]
         },
         {
@@ -5035,13 +5010,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Strength",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "At 2nd level, you can use your Channel Divinity to enhance your physical might. When you make an attack roll, ability check, or saving throw using Strength, you can use your Channel Divinity to gain a +10 bonus to the roll. Alternatively, when a creature within 30 feet of you makes an attack roll, ability check, or saving throw using Strength, you can use your reaction to grant that creature a +10 bonus to the roll, using your Channel Divinity. You make this choice after you see the roll, but before the DM says whether the roll succeeds or fail."
+                "At 3rd level, you can use your Channel Divinity to enhance your physical might. When you make an attack roll, ability check, or saving throw using Strength, you can use your Channel Divinity to gain a +10 bonus to the roll. Alternatively, when a creature within 30 feet of you makes an attack roll, ability check, or saving throw using Strength, you can use your reaction to grant that creature a +10 bonus to the roll, using your Channel Divinity. You make this choice after you see the roll, but before the DM says whether the roll succeeds or fail."
             ]
         },
         {
@@ -5080,7 +5055,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Tempest",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Gods whose portfolios include the Tempest domain—including {@deity Talos}, {@deity Umberlee}, {@deity Kord|Greyhawk}, {@deity Zeboim|Dragonlance}, {@deity the Devourer|Eberron}, {@deity Zeus|Greek}, and {@deity Thor|Norse}—govern storms, sea, and sky. They include gods of lightning and thunder, gods of earthquakes, some fire gods, and certain gods of violence, physical strength, and courage. In some pantheons, a god of this domain rules over other deities and is known for swift justice delivered by thunderbolts. In the pantheons of seafaring people, gods of this domain are ocean deities and the patrons of sailors. Tempest gods send their clerics to inspire fear in the common folk, either to keep those folk on the path of righteousness or to encourage them to offer sacrifices of propitiation to ward off divine wrath.",
                 "At each indicated cleric level, you add the listed spells to your spells prepared.",
@@ -5120,11 +5095,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Tempest|Ishiir|1"
+                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Tempest|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Wrath of the Storm|Cleric|Ishiir|Tempest|Ishiir|1"
+                    "subclassFeature": "Wrath of the Storm|Cleric|Ishiir|Tempest|Ishiir|3"
                 }
             ]
         },
@@ -5136,10 +5111,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Tempest",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "Also at 1st level, you can thunderously rebuke attackers. When a creature within 5 feet of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a Dexterity saving throw. The creature takes {@damage 1d8} x your proficiency bonus lightning or thunder damage (your choice) on a failed saving throw, and half as much damage on a successful one.",
+                "Also at 3rd level, you can thunderously rebuke attackers. When a creature within 5 feet of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a Dexterity saving throw. The creature takes {@damage 1d8} x your proficiency bonus lightning or thunder damage (your choice) on a failed saving throw, and half as much damage on a successful one.",
                 "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
             ]
         },
@@ -5151,10 +5126,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Tempest",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "At 1st level, you gain proficiency with martial weapons and heavy armor."
+                "At 3rd level, you gain proficiency with martial weapons and heavy armor."
             ]
         },
         {
@@ -5165,13 +5140,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Tempest",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to wield the power of the storm with unchecked ferocity.",
+                "Starting at 3rd level, you can use your Channel Divinity to wield the power of the storm with unchecked ferocity.",
                 "When you roll lightning or thunder damage, you can use your Channel Divinity to deal maximum damage, instead of rolling."
             ]
         },
@@ -5212,7 +5187,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Trickery",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Gods of trickery—such as {@deity Tymora}, {@deity Beshaba}, {@deity Olidammara|Greyhawk}, {@deity the Traveler|Eberron}, {@deity Garl Glittergold|Nonhuman}, and {@deity Loki|Norse}—are mischief-makers and instigators who stand as a constant challenge to the accepted order among both gods and mortals. They're patrons of thieves, scoundrels, gamblers, rebels, and liberators. Their clerics are a disruptive force in the world, puncturing pride, mocking tyrants, stealing from the rich, freeing captives, and flouting hollow traditions. They prefer subterfuge, pranks, deception, and theft rather than direct confrontation.",
                 "At each indicated cleric level, you add the listed spells to your spells prepared.",
@@ -5252,7 +5227,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Blessing of the Trickster|Cleric|Ishiir|Trickery|Ishiir|1"
+                    "subclassFeature": "Blessing of the Trickster|Cleric|Ishiir|Trickery|Ishiir|3"
                 }
             ]
         },
@@ -5264,10 +5239,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Trickery",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "Starting when you choose this domain at 1st level, you can use your action to touch a willing creature other than yourself to give it advantage on Dexterity ({@skill Stealth}) checks. This blessing lasts for 1 hour or until you use this feature again."
+                "Starting when you choose this domain at 3rd level, you can use your action to touch a willing creature other than yourself to give it advantage on Dexterity ({@skill Stealth}) checks. This blessing lasts for 1 hour or until you use this feature again."
             ]
         },
         {
@@ -5278,13 +5253,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Trickery",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to create an illusory duplicate of yourself.",
+                "Starting at 3rd level, you can use your Channel Divinity to create an illusory duplicate of yourself.",
                 "As an action, you create a perfect illusion of yourself that lasts for 1 minute. The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but it must remain within 120 feet of you.",
                 "For the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target."
             ]
@@ -5329,7 +5304,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Twilight",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "The twilit transition from light into darkness often brings calm and even joy, as the day's labors end and the hours of rest begin. The darkness can also bring terrors, but the gods of twilight guard against the horrors of the night.",
                 "Clerics who serve these deities-examples of which appear on the Twilight Deities table-bring comfort to those who seek rest and protect them by venturing into the encroaching darkness to ensure that the dark is a comfort, not a terror.",
@@ -5383,7 +5358,7 @@
                     "name": "Domain Spells",
                     "type": "entries",
                     "entries": [
-                        "{@i 1st-level Twilight Domain feature}",
+                        "{@i 3rd-level Twilight Domain feature}",
                         "You gain domain spells at the cleric levels listed in the Twilight Domain Spells table. See the Divine Domain class feature for how domain spells work.",
                         {
                             "type": "table",
@@ -5423,15 +5398,15 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Twilight|Ishiir|1"
+                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Twilight|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Eyes of Night|Cleric|Ishiir|Twilight|Ishiir|1"
+                    "subclassFeature": "Eyes of Night|Cleric|Ishiir|Twilight|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Vigilant Blessing|Cleric|Ishiir|Twilight|Ishiir|1"
+                    "subclassFeature": "Vigilant Blessing|Cleric|Ishiir|Twilight|Ishiir|3"
                 }
             ]
         },
@@ -5443,10 +5418,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Twilight",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "{@i 1st-level Twilight Domain feature}",
+                "{@i 3rd-level Twilight Domain feature}",
                 "You gain proficiency with martial weapons and heavy armor."
             ]
         },
@@ -5458,10 +5433,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Twilight",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "{@i 1st-level Twilight Domain feature}",
+                "{@i 3rd-level Twilight Domain feature}",
                 "You can see through the deepest gloom. You have {@sense darkvision} out to a range of 300 feet. In that radius, you can see in dim light as if it were bright light and in darkness as if it were dim light.",
                 "As an action, you can magically share the {@sense darkvision} of this feature with willing creatures you can see within 10 feet of you, up to a number of creatures equal to your Wisdom modifier (minimum of one creature). The shared {@sense darkvision} lasts for 1 hour. Once you share it, you can't do so again until you finish a long rest, unless you expend a spell slot of any level to share it again."
             ]
@@ -5474,10 +5449,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Twilight",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "{@i 1st-level Twilight Domain feature}",
+                "{@i 3rd-level Twilight Domain feature}",
                 "The night has taught you to be vigilant. As an action, you give one creature you touch (including possibly yourself) advantage on the next initiative roll the creature makes. This benefit ends immediately after the roll or if you use this feature again."
             ]
         },
@@ -5489,13 +5464,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Twilight",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "{@i 2nd-level Twilight Domain feature}",
+                "{@i 3rd-level Twilight Domain feature}",
                 "You can use your Channel Divinity to refresh your allies with soothing twilight.",
                 "As an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 30-foot radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are {@condition incapacitated|Ishiir} or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:",
                 {
@@ -5545,7 +5520,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "War",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "War has many manifestations. It can make heroes of ordinary people. It can be desperate and horrific, with acts of cruelty and cowardice eclipsing instances of excellence and courage. In either case, the gods of war watch over warriors and reward them for their great deeds. The clerics of such gods excel in battle, inspiring others to fight the good fight or offering acts of violence as prayers. Gods of war include champions of honor and chivalry (such as {@deity Torm}, {@deity Heironeous|Greyhawk}, and {@deity Kiri-Jolith|Dragonlance}) as well as gods of destruction and pillage (such as {@deity Erythnul|Greyhawk}, {@deity the Fury|Eberron}, {@deity Gruumsh|Nonhuman}, and {@deity Ares|Greek}) and gods of conquest and domination (such as {@deity Bane}, {@deity Hextor|Greyhawk}, and {@deity Maglubiyet|Nonhuman}). Other war gods (such as {@deity Tempus}, {@deity Nike|Greek}, and {@deity Nuada|Celtic}) take a more neutral stance, promoting war in all its manifestations and supporting warriors in any circumstance.",
                 "At each indicated cleric level, add the listed spells to your spells prepared.",
@@ -5585,11 +5560,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|War|Ishiir|1"
+                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|War|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "War Priest|Cleric|Ishiir|War|Ishiir|1"
+                    "subclassFeature": "War Priest|Cleric|Ishiir|War|Ishiir|3"
                 }
             ]
         },
@@ -5601,10 +5576,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "War",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "At 1st level, you gain proficiency with martial weapons and heavy armor."
+                "At 3rd level, you gain proficiency with martial weapons and heavy armor."
             ]
         },
         {
@@ -5615,10 +5590,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "War",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "From 1st level, your god delivers bolts of inspiration to you while you are engaged in battle. Once per turn when you use the {@action Attack|Ishiir} action or cast a spell as an action, you can also make one additional weapon attack as part of the same action. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+                "From 3rd level, your god delivers bolts of inspiration to you while you are engaged in battle. Once per turn when you use the {@action Attack|Ishiir} action or cast a spell as an action, you can also make one additional weapon attack as part of the same action. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
             ]
         },
         {
@@ -5629,13 +5604,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "War",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. Alternatively, when a creature within 30 feet of you makes an attack roll, you can use your reaction to grant that creature a +10 bonus to the roll, using your Channel Divinity. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
+                "Starting at 3rd level, you can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. Alternatively, when a creature within 30 feet of you makes an attack roll, you can use your reaction to grant that creature a +10 bonus to the roll, using your Channel Divinity. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
             ]
         },
         {
@@ -5674,7 +5649,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Water",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "At each indicated cleric level, add the listed spells to your spells prepared.",
                 {
@@ -5721,10 +5696,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Water",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 2,
             "entries": [
-                "Starting at 1st level, you can breathe underwater and you gain a swimming speed equal to your walking speed. If you already have a swimming speed, that swimming speed instead increases by 30 feet."
+                "Starting at 3rd level, you can breathe underwater and you gain a swimming speed equal to your walking speed. If you already have a swimming speed, that swimming speed instead increases by 30 feet."
             ]
         },
         {
@@ -5735,10 +5710,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Water",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 2,
             "entries": [
-                "When you choose this domain at 1st level, you gain proficiency in the {@skill Athletics} and {@skill Nature} skill."
+                "When you choose this domain at 3rd level, you gain proficiency in the {@skill Athletics} and {@skill Nature} skill."
             ]
         },
         {
@@ -5749,13 +5724,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Water",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to summon a current of magical water to cleanse allies and wash away your foes.",
+                "Starting at 3rd level, you can use your Channel Divinity to summon a current of magical water to cleanse allies and wash away your foes.",
                 "The current rushes from your position in a line 15 ft wide and 30 ft long. You can end one disease or poison currently affecting any of your allies in the area of effect. If an ally is afflicted by multiple such effects, you choose which one to remove.",
                 "All hostile creatures in the area of effect have to make a STR saving throw against your spell save DC. On a failure, they are pushed 10 ft away from you in a straight line and knocked {@condition prone|Ishiir}."
             ]
@@ -5798,7 +5773,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Winter",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "At each indicated cleric level, add the listed spells to your spells prepared.",
                 {
@@ -5845,10 +5820,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Winter",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 2,
             "entries": [
-                "At 1st level, you gain proficiency with martial weapons and heavy armor."
+                "At 3rd level, you gain proficiency with martial weapons and heavy armor."
             ]
         },
         {
@@ -5859,10 +5834,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Winter",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 2,
             "entries": [
-                "Starting at 1st level, you learn the {@spell Frostbite|Ishiir} cantrip. Additionally, you can start to use your control over cold to hamper your foes. Once per turn, when you damage one or more creatures with a weapon attack or a spell that does cold damage, you can use your reaction to reduce the movement speed of any of those creatures by 10 feet until the end of your next turn."
+                "Starting at 3rd level, you learn the {@spell Frostbite|Ishiir} cantrip. Additionally, you can start to use your control over cold to hamper your foes. Once per turn, when you damage one or more creatures with a weapon attack or a spell that does cold damage, you can use your reaction to reduce the movement speed of any of those creatures by 10 feet until the end of your next turn."
             ]
         },
         {
@@ -5873,13 +5848,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Winter",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to inflict your enemies with a deep, biting cold that cripples their ability to fight or cast spells.",
+                "Starting at 3rd level, you can use your Channel Divinity to inflict your enemies with a deep, biting cold that cripples their ability to fight or cast spells.",
                 "As an action, you present your holy symbol and choose a number of creatures up to equal to your proficiency you can see within 30 feet of you. Each affected creature has to make a CON saving throw. Any creature affected by your Winter's Touch class feature has disadvantage on this saving throw.",
                 "On a failure, their movement speed is halved and they have disadvantage on ability checks and attack rolls for 1 minute. If the creature attempts to cast a spell with a casting time of 1 action, roll a {@dice d20}. On an 11 or higher, the creature completes the spell as normal. On a 10 or lower, the spell is lost. At the end of their turn, they can repeat the saving throw, ending the effect on a success.",
                 "This feature has no effect on creatures that are immune to cold damage."
@@ -5935,7 +5910,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Zeal",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "\"The worthy shall rush to the God-Pharaoh's side with relentless zeal, rising to overcome every obstacle in their way.\"",
                 "The God-Pharaoh expects those he welcomes into the afterlife to desire it above all other pleasures and achievements, and for them to show their dedication, passion, and fervor through their actions. Hazoret is charged with cultivating this zeal in the initiates who come under her care, and she has undertaken the task with appropriate enthusiasm. She recognizes, however, that the best way to teach zeal is by demonstrating it.",
@@ -5976,11 +5951,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Zeal|Ishiir|1"
+                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Zeal|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Priest of Zeal|Cleric|Ishiir|Zeal|Ishiir|1"
+                    "subclassFeature": "Priest of Zeal|Cleric|Ishiir|Zeal|Ishiir|3"
                 }
             ]
         },
@@ -5992,10 +5967,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Zeal",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "From 1st level, your god delivers bolts of inspiration to you while you are engaged in battle. Once per turn when you use the {@action Attack|Ishiir} action or cast a spell as an action, you can also make one additional weapon attack as part of the same action. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+                "From 3rd level, your god delivers bolts of inspiration to you while you are engaged in battle. Once per turn when you use the {@action Attack|Ishiir} action or cast a spell as an action, you can also make one additional weapon attack as part of the same action. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
             ]
         },
         {
@@ -6006,10 +5981,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Zeal",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "At 1st level, you gain proficiency with martial weapons and heavy armor."
+                "At 3rd level, you gain proficiency with martial weapons and heavy armor."
             ]
         },
         {
@@ -6020,13 +5995,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Zeal",
             "subclassSource": "Ishiir",
-            "level": 2,
+            "level": 3,
             "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to channel your zeal into unchecked ferocity.",
+                "Starting at 3rd level, you can use your Channel Divinity to channel your zeal into unchecked ferocity.",
                 "When you roll fire or thunder damage, you can use your Channel Divinity to deal maximum damage instead of rolling."
             ]
         },
