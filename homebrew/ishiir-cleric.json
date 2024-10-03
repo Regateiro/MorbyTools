@@ -515,10 +515,6 @@
                 "Blessed Strikes|Cleric|Ishiir|7",
                 "Ability Score Improvement|Cleric|Ishiir|8",
                 "Proficiency Versatility|Cleric|Ishiir|8",
-                {
-                    "classFeature": "Divine Domain feature|Cleric|Ishiir|8",
-                    "gainSubclassFeature": true
-                },
                 "Divine Intervention|Cleric|Ishiir|10",
                 "Ability Score Improvement|Cleric|Ishiir|12",
                 "Proficiency Versatility|Cleric|Ishiir|12",
@@ -1376,9 +1372,9 @@
                 }
             ],
             "subclassFeatures": [
-                "Arcana Domain|Cleric|Ishiir|Arcana|Ishiir|1",
-                "Channel Divinity: Arcane Abjuration|Cleric|Ishiir|Arcana|Ishiir|2",
+                "Arcana Domain|Cleric|Ishiir|Arcana|Ishiir|3",
                 "Spell Breaker|Cleric|Ishiir|Arcana|Ishiir|6",
+                "Blessed Arcana|Cleric|Ishiir|Arcana|Ishiir|6",
                 "Arcane Mastery|Cleric|Ishiir|Arcana|Ishiir|17"
             ]
         },
@@ -2592,7 +2588,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Arcana",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Magic is an energy that suffuses the multiverse and that fuels both destruction and creation. Gods of the Arcana domain know the secrets and potential of magic intimately. For some of these gods, magical knowledge is a great responsibility that comes with a special understanding of the nature of reality. Other gods of Arcana see magic as pure power, to be used as its wielder sees fit.",
                 "The gods of this domain are often associated with knowledge, as learning and arcane power tend to go hand-in-hand. In the Realms, deities of this domain include {@deity Azuth|Faerûnian|SCAG} and {@deity Mystra|Faerûnian|SCAG}, as well as {@deity Corellon|Dawn War|DMG} Larethian of the elven pantheon. In other worlds, this domain includes {@deity Hecate|Greek}, {@deity Math Mathonwy|Celtic}, and {@deity Isis|Egyptian}; the triple moon gods of {@deity Solinari|Dragonlance}, {@deity Lunitari|Dragonlance}, and {@deity Nuitari|Dragonlance} of Krynn; and {@deity Boccob|Greyhawk}, {@deity Vecna|Greyhawk}, and {@deity Wee Jas|Greyhawk} of Greyhawk.",
@@ -2633,7 +2629,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Arcane Initiate|Cleric|Ishiir|Arcana|Ishiir|1"
+                    "subclassFeature": "Arcane Initiate|Cleric|Ishiir|Arcana|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Arcane Abjuration|Cleric|Ishiir|Arcana|Ishiir|3"
                 }
             ]
         },
@@ -2645,10 +2645,11 @@
             "classSource": "Ishiir",
             "subclassShortName": "Arcana",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "When you choose this domain at 1st level, you gain proficiency in the {@skill Arcana} skill, and you gain two cantrips of your choice from the {@filter wizard spell list|spells|class=wizard (Ishiir)|level=0|source=Ishiir}. For you, these cantrips count as cleric cantrips."
+                "When you choose this domain at 3rd level, you gain proficiency in the {@skill Arcana} skill, and you gain two cantrips of your choice from the {@filter wizard spell list|spells|class=wizard (Ishiir)|level=0|source=Ishiir}. For you, these cantrips count as cleric cantrips.",
+                "Additionally, whenever you gain access to a new spell level of your domain spells, including at this level, you can exchange one domain spell from that spell level for another spell from the wizard spell list."
             ]
         },
         {
@@ -2659,50 +2660,13 @@
             "classSource": "Ishiir",
             "subclassShortName": "Arcana",
             "subclassSource": "Ishiir",
-            "level": 2,
-            "header": 2,
+            "level": 3,
+            "header": 1,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to abjure otherworldly creatures.",
-                "As an action, you present your holy symbol, and one celestial, elemental, fey, or fiend of your choice that is within 30 feet of you must make a Wisdom saving throw, provided that the creature can see or hear you. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.",
-                "A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash|Ishiir} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, then the creature can use the {@action Dodge|Ishiir} action.",
-                "After you reach 5th level, when a creature fails its saving throw against your Arcane Abjuration feature, the creature is banished for 1 minute (as in the {@spell banishment|Ishiir} spell, no concentration required) if it isn't on its plane of origin, and its challenge rating is at or below a certain threshold, as shown below.",
-                {
-                    "type": "table",
-                    "caption": "Arcane Banishment",
-                    "colLabels": [
-                        "Cleric level",
-                        "Banishes Creatures of CR..."
-                    ],
-                    "colStyles": [
-                        "col-2 text-center",
-                        "col-10"
-                    ],
-                    "rows": [
-                        [
-                            "5th",
-                            "1/2 or lower"
-                        ],
-                        [
-                            "8th",
-                            "1 or lower"
-                        ],
-                        [
-                            "11th",
-                            "2 or lower"
-                        ],
-                        [
-                            "14th",
-                            "3 or lower"
-                        ],
-                        [
-                            "17th",
-                            "4 or lower"
-                        ]
-                    ]
-                }
+                "Starting at 3rd level as a Magic action, you present your Holy Symbol and censure extraplanar creatures. Each celestial, elemental, fey, and fiend of your choice within 30 feet of you must make a Wisdom saving throw. If the creature fails its save, it has the {@condition Frightened|Ishiir} and {@condition Incapacitated|Ishiir} conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die."
             ]
         },
         {
@@ -2714,9 +2678,23 @@
             "subclassShortName": "Arcana",
             "subclassSource": "Ishiir",
             "level": 6,
-            "header": 2,
+            "header": 1,
             "entries": [
                 "Starting at 6th level, when you restore hit points to an ally with a spell of 1st level or higher, you can also end one spell of your choice on that creature. The level of the spell you end must be equal to or lower than the level of the spell slot you use to cast the healing spell."
+            ]
+        },
+        {
+            "name": "Blessed Arcana",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Arcana",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 1,
+            "entries": [
+                "Starting at 6th level, you add your Wisdom modifier to {@skill Arcana} checks."
             ]
         },
         {
@@ -2728,7 +2706,7 @@
             "subclassShortName": "Arcana",
             "subclassSource": "Ishiir",
             "level": 17,
-            "header": 2,
+            "header": 1,
             "entries": [
                 "At 17th level, you choose four spells from the Wizard spell list, one from each of the following levels: 6th, 7th, 8th, and 9th. You add them to your list of domain spells. Like your other domain spells, they are always prepared and count as cleric spells for you."
             ]
