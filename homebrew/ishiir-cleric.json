@@ -149,68 +149,110 @@
             "classTableGroups": [
                 {
                     "colLabels": [
-                        "{@filter Cantrips Known|spells|level=0|class=Cleric (Ishiir)|source=Ishiir}"
+                        "Channel Divinity",
+                        "{@filter Cantrips Known|spells|level=0|class=Cleric (Ishiir)|source=Ishiir}",
+                        "Prepared Spells"
                     ],
                     "rows": [
                         [
-                            3
-                        ],
-                        [
-                            3
-                        ],
-                        [
-                            3
-                        ],
-                        [
+                            "-",
+                            3,
                             4
                         ],
                         [
-                            4
-                        ],
-                        [
-                            4
-                        ],
-                        [
-                            4
-                        ],
-                        [
-                            4
-                        ],
-                        [
-                            4
-                        ],
-                        [
+                            2,
+                            3,
                             5
                         ],
                         [
-                            5
+                            2,
+                            3,
+                            6
                         ],
                         [
-                            5
+                            2,
+                            4,
+                            7
                         ],
                         [
-                            5
+                            2,
+                            4,
+                            9
                         ],
                         [
-                            5
+                            3,
+                            4,
+                            10
                         ],
                         [
-                            5
+                            3,
+                            4,
+                            11
                         ],
                         [
-                            5
+                            3,
+                            4,
+                            12
                         ],
                         [
-                            5
+                            3,
+                            4,
+                            14
                         ],
                         [
-                            5
+                            3,
+                            5,
+                            15
                         ],
                         [
-                            5
+                            3,
+                            5,
+                            16
                         ],
                         [
-                            5
+                            3,
+                            5,
+                            16
+                        ],
+                        [
+                            3,
+                            5,
+                            17
+                        ],
+                        [
+                            3,
+                            5,
+                            17
+                        ],
+                        [
+                            3,
+                            5,
+                            18
+                        ],
+                        [
+                            3,
+                            5,
+                            18
+                        ],
+                        [
+                            3,
+                            5,
+                            19
+                        ],
+                        [
+                            4,
+                            5,
+                            20
+                        ],
+                        [
+                            4,
+                            5,
+                            21
+                        ],
+                        [
+                            4,
+                            5,
+                            22
                         ]
                     ]
                 },
@@ -454,53 +496,38 @@
             "classFeatures": [
                 "Spellcasting|Cleric|Ishiir|1",
                 "Cantrip Versatility|Cleric|Ishiir|1",
+                "Divine Order|Cleric|Ishiir|1",
                 {
-                    "classFeature": "Divine Domain|Cleric|Ishiir|1",
-                    "gainSubclassFeature": true
+                    "classFeature": "Channel Divinity|Cleric|Ishiir|2"
                 },
                 {
-                    "classFeature": "Channel Divinity|Cleric|Ishiir|2",
-                    "tableDisplayName": "Channel Divinity (1/rest)"
-                },
-                "Channel Divinity: Harness Divine Power|Cleric|Ishiir|2",
-                {
-                    "classFeature": "Divine Domain feature|Cleric|Ishiir|2",
+                    "classFeature": "Divine Domain|Cleric|Ishiir|3",
                     "gainSubclassFeature": true
                 },
                 "Ability Score Improvement|Cleric|Ishiir|4",
                 "Proficiency Versatility|Cleric|Ishiir|4",
                 "Cantrip Versatility|Cleric|Ishiir|4",
-                "Destroy Undead (CR 1/2)|Cleric|Ishiir|5",
-                {
-                    "classFeature": "Channel Divinity|Cleric|Ishiir|6",
-                    "tableDisplayName": "Channel Divinity (2/rest)"
-                },
+                "Sear Undead|Cleric|Ishiir|5",
                 {
                     "classFeature": "Divine Domain feature|Cleric|Ishiir|6",
                     "gainSubclassFeature": true
                 },
+                "Blessed Strikes|Cleric|Ishiir|7",
                 "Ability Score Improvement|Cleric|Ishiir|8",
                 "Proficiency Versatility|Cleric|Ishiir|8",
-                "Destroy Undead (CR 1)|Cleric|Ishiir|8",
                 {
                     "classFeature": "Divine Domain feature|Cleric|Ishiir|8",
                     "gainSubclassFeature": true
                 },
                 "Divine Intervention|Cleric|Ishiir|10",
-                "Destroy Undead (CR 2)|Cleric|Ishiir|11",
                 "Ability Score Improvement|Cleric|Ishiir|12",
                 "Proficiency Versatility|Cleric|Ishiir|12",
-                "Destroy Undead (CR 3)|Cleric|Ishiir|14",
+                "Improved Blessed Strikes|Cleric|Ishiir|14",
                 "Ability Score Improvement|Cleric|Ishiir|16",
                 "Proficiency Versatility|Cleric|Ishiir|16",
-                "Destroy Undead (CR 4)|Cleric|Ishiir|17",
                 {
                     "classFeature": "Divine Domain feature|Cleric|Ishiir|17",
                     "gainSubclassFeature": true
-                },
-                {
-                    "classFeature": "Channel Divinity|Cleric|Ishiir|18",
-                    "tableDisplayName": "Channel Divinity (3/rest)"
                 },
                 "Ability Score Improvement|Cleric|Ishiir|19",
                 "Proficiency Versatility|Cleric|Ishiir|19",
@@ -823,27 +850,6 @@
             ]
         },
         {
-            "name": "Divine Domain",
-            "source": "Ishiir",
-            "page": 1,
-            "srd": true,
-            "basicRules": true,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "level": 1,
-            "entries": [
-                "Choose one domain related to your deity from the list of available domains. Each domain is detailed in their own feature, and each one provides examples of gods associated with it. Your choice grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels.",
-                {
-                    "type": "entries",
-                    "name": "Domain Spells",
-                    "entries": [
-                        "Each domain has a list of spells—its domain spells—that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.",
-                        "If you have a domain spell that doesn't appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
-                    ]
-                }
-            ]
-        },
-        {
             "name": "Spellcasting",
             "source": "Ishiir",
             "page": 1,
@@ -863,12 +869,25 @@
                 },
                 {
                     "type": "entries",
-                    "name": "Preparing and Casting Spells",
+                    "name": "Spell Slots",
                     "entries": [
-                        "The Cleric table shows how many spell slots you have to cast your {@filter cleric spells|spells|class=cleric (Ishiir)|source=Ishiir} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-                        "You prepare the list of cleric spells that are available for you to cast, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to your Wisdom modifier + your cleric level (minimum of one spell). The spells must be of a level for which you have spell slots.",
-                        "For example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell cure wounds|Ishiir}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
-                        "You can change your list of prepared spells when you finish a long rest. Preparing a new list of cleric spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
+                        "The Cleric Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Prepared Spells of Level 1+",
+                    "entries": [
+                        "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the {@filter cleric spell list|spells|class=cleric (Ishiir)|source=Ishiir}.",
+                        "The number of spells on your list increases as you gain Cleric levels, as shown in the Prepared Spells column of the Cleric Features table. Whenever that number increases, choose additional spells from the Cleric spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Cleric, your list of prepared spells can include six spells of levels 1 and 2 in any combination.",
+                        "If another Cleric feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Cleric spells for you."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Changing Your Prepared Spells",
+                    "entries": [
+                        "Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells there with other Cleric spells for which you have spell slots."
                     ]
                 },
                 {
@@ -894,13 +913,6 @@
                 },
                 {
                     "type": "entries",
-                    "name": "Ritual Casting",
-                    "entries": [
-                        "You can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared."
-                    ]
-                },
-                {
-                    "type": "entries",
                     "name": "Spellcasting Focus",
                     "entries": [
                         "You can use a {@item holy symbol|phb} as a spellcasting focus for your cleric spells."
@@ -909,68 +921,85 @@
             ]
         },
         {
+            "name": "Divine Order",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "At 1st level, you have dedicated yourself to one of the following sacred roles of your choice.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Protector.",
+							"entry": "Trained for battle, you gain proficiency with Martial weapons and training with Heavy armor."
+						},
+						{
+							"type": "item",
+							"name": "Thaumaturge.",
+							"entry": "You know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you a bonus to your Intelligence ({@skill Arcana} or {@skill Religion}) checks. The bonus equals your Wisdom modifier (minimum of +1)."
+						}
+					]
+				}
+            ]
+        },
+        {
             "name": "Channel Divinity",
             "source": "Ishiir",
             "page": 1,
-            "srd": true,
-            "basicRules": true,
             "className": "Cleric",
             "classSource": "Ishiir",
             "level": 2,
             "entries": [
-                "At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.",
-                "When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.",
-                "Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.",
-                "Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.",
+                "At 2nd level, you can channel divine energy directly from the Outer Planes to fuel magical effects. You start with three such effects: Divine Spark, Turn Undead and Harness Divine Power, each of which is described below. Each time you use this class's Channel Divinity, choose which Channel Divinity effect from this class to create. You gain additional effect options at higher Cleric levels.",
+                "You can use this class's Channel Divinity twice. You regain one of its expended uses when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain additional uses when you reach certain Cleric levels, as shown in the Channel Divinity column of the Cleric Features table.",
+                "If a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting feature.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Divine Spark.",
+							"entry": "As a Magic action, you point your Holy Symbol at another creature you can see within 30 feet of yourself and focus divine energy at it. Roll {@dice 2d8} and add your Cleric level and your Wisdom modifier. You either restore Hit Points to the creature equal to that total or force the creature to make a Constitution saving throw. On a failed save, the creature takes Necrotic or Radiant damage (your choice) equal to that total. On a successful save, the creature takes half as much damage (round down)."
+						},
+						{
+							"type": "item",
+							"name": "Turn Undead.",
+							"entry": "As a Magic action, you present your Holy Symbol and censure Undead creatures. Each Undead of your choice within 30 feet of you must make a Wisdom saving throw. If the creature fails its save, it has the Frightened and Incapacitated conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die."
+						},
+						{
+							"type": "item",
+							"name": "Harness Divine Power.",
+							"entry": "As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 2nd level, once; 6th level, twice; and 18th level, thrice. You regain all expended uses when you finish a long rest."
+						}
+					]
+				}
+            ]
+        },
+        {
+            "name": "Divine Domain",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "basicRules": true,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "Choose one domain related to your deity from the list of available domains. Each domain is detailed in their own feature, and each one provides examples of gods associated with it. Your choice grants you domain spells and other features when you choose it at 3rd level. It also grants you additional ways to use Channel Divinity when you gain that feature at 3rd level, and additional benefits at 6th, 8th, and 17th levels.",
                 {
-                    "type": "refClassFeature",
-                    "classFeature": "Channel Divinity: Turn Undead|Cleric|Ishiir|2"
+                    "type": "entries",
+                    "name": "Domain Spells",
+                    "entries": [
+                        "Each domain has a list of spells—its domain spells—that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.",
+                        "If you have a domain spell that doesn't appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
+                    ]
                 }
-            ]
-        },
-        {
-            "name": "Channel Divinity: Harness Divine Power",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "level": 2,
-            "consumes": {
-                "name": "Channel Divinity"
-            },
-            "entries": [
-                "You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 2nd level, once; 6th level, twice; and 18th level, thrice. You regain all expended uses when you finish a long rest."
-            ]
-        },
-        {
-            "name": "Channel Divinity: Turn Undead",
-            "source": "Ishiir",
-            "page": 1,
-            "srd": true,
-            "basicRules": true,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "level": 2,
-            "header": 2,
-            "consumes": {
-                "name": "Channel Divinity"
-            },
-            "entries": [
-                "As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.",
-                "A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash|Ishiir} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the {@action Dodge|Ishiir} action."
-            ]
-        },
-        {
-            "name": "Divine Domain feature",
-            "source": "Ishiir",
-            "page": 1,
-            "srd": true,
-            "basicRules": true,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "level": 2,
-            "entries": [
-                "At 2nd level, you gain a feature from your Divine Domain."
             ]
         },
         {
@@ -1011,7 +1040,7 @@
             ]
         },
         {
-            "name": "Destroy Undead (CR 1/2)",
+            "name": "Sear Undead",
             "source": "Ishiir",
             "page": 1,
             "srd": true,
@@ -1020,20 +1049,7 @@
             "classSource": "Ishiir",
             "level": 5,
             "entries": [
-                "Starting at 5th level, when an {@filter undead of CR 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
-            ]
-        },
-        {
-            "name": "Channel Divinity",
-            "source": "Ishiir",
-            "page": 1,
-            "srd": true,
-            "basicRules": true,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "level": 6,
-            "entries": [
-                "Beginning at 6th level, you can use your Channel Divinity twice between rests."
+                "At 5th level, whenever you use Turn Undead, you can roll a number of d8s equal to your Wisdom modifier (minimum of {@dice 1d8}) and add the rolls together. Each Undead that fails its saving throw against that use of Turn Undead takes Radiant damage equal to the roll's total. This damage doesn't end the turn effect."
             ]
         },
         {
@@ -1050,6 +1066,35 @@
             ]
         },
         {
+            "name": "Blessed Strikes",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "basicRules": true,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "level": 7,
+            "entries": [
+                "At 7th level, divine power infuses you in battle. You gain one of the following options of your choice (if you get either option from a Cleric subclass in an older book, use only the option you choose for this feature).",
+                {
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Divine Strike.",
+							"entry": "Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra {damage 1d8} Necrotic or Radiant damage (your choice). At your DM's discretion, you can replace one of these options with a different damage type appropriate for your cleric subclass."
+						},
+						{
+							"type": "item",
+							"name": "Potent Spellcasting.",
+							"entry": "Add your Wisdom modifier to the damage you deal with any Cleric cantrip."
+						}
+					]
+				}
+            ]
+        },
+        {
             "name": "Ability Score Improvement",
             "source": "Ishiir",
             "page": 1,
@@ -1061,19 +1106,6 @@
             "entries": [
                 "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
                 "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-            ]
-        },
-        {
-            "name": "Destroy Undead (CR 1)",
-            "source": "Ishiir",
-            "page": 1,
-            "srd": true,
-            "basicRules": true,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "level": 8,
-            "entries": [
-                "Starting at 8th level, when an {@filter undead of CR 1 or lower|bestiary|challenge rating=[&0;&1]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
             ]
         },
         {
@@ -1109,20 +1141,7 @@
             "classSource": "Ishiir",
             "level": 10,
             "entries": [
-                "Beginning at 10th level, You can call on your deity or pantheon to intervene on your behalf. As an action, choose any spell of 5th level or lower from the cleric spell list or your domain spells that doesn’t require a Reaction to cast. As part of the same action, you cast that spell without expending a spell slot or needing material components. You then can’t use this feature again until you finish a Long Rest."
-            ]
-        },
-        {
-            "name": "Destroy Undead (CR 2)",
-            "source": "Ishiir",
-            "page": 1,
-            "srd": true,
-            "basicRules": true,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "level": 11,
-            "entries": [
-                "Starting at 11th level, when an {@filter undead of CR 2 or lower|bestiary|challenge rating=[&0;&2]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+                "Beginning at 10th level, you can call on your deity or pantheon to intervene on your behalf. As a Magic action, choose any Cleric spell of level 5 or lower that requires an Action or a Bonus action to cast. As part of the same action, you cast that spell without expending a spell slot or needing Material components. You can't use this feature again until you finish a Long Rest."
             ]
         },
         {
@@ -1152,7 +1171,7 @@
             ]
         },
         {
-            "name": "Destroy Undead (CR 3)",
+            "name": "Improved Blessed Strikes",
             "source": "Ishiir",
             "page": 1,
             "srd": true,
@@ -1161,7 +1180,23 @@
             "classSource": "Ishiir",
             "level": 14,
             "entries": [
-                "Starting at 14th level, when an {@filter undead of CR 3 or lower|bestiary|challenge rating=[&0;&3]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+                "At 14th level, the option you chose for Blessed Strikes grows more powerful.",
+                {
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Divine Strike.",
+							"entry": "The extra damage of your Divine Strike increases to {@damage 2d8}."
+						},
+						{
+							"type": "item",
+							"name": "Potent Spellcasting.",
+							"entry": "When you cast a spell that deals damage, you can add your Wisdom modifier to one damage roll of that spell."
+						}
+					]
+				}
             ]
         },
         {
@@ -1191,19 +1226,6 @@
             ]
         },
         {
-            "name": "Destroy Undead (CR 4)",
-            "source": "Ishiir",
-            "page": 1,
-            "srd": true,
-            "basicRules": true,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "level": 17,
-            "entries": [
-                "Starting at 17th level, when an {@filter undead of CR 4 or lower|bestiary|challenge rating=[&0;&4]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
-            ]
-        },
-        {
             "name": "Divine Domain feature",
             "source": "Ishiir",
             "page": 1,
@@ -1214,19 +1236,6 @@
             "level": 17,
             "entries": [
                 "At 17th level, you gain a feature from your Divine Domain."
-            ]
-        },
-        {
-            "name": "Channel Divinity",
-            "source": "Ishiir",
-            "page": 1,
-            "srd": true,
-            "basicRules": true,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "level": 18,
-            "entries": [
-                "Beginning at 18th level, you can use your Channel Divinity three times between rests."
             ]
         },
         {
@@ -1265,7 +1274,7 @@
             "classSource": "Ishiir",
             "level": 20,
             "entries": [
-                "At 20th level, you are able to call on even more powerful divine intervention. When you use your Divine Intervention feature, you can select spells from the cleric spell list of up to 8th level. Additionally, you can select {@spell wish|Ishiir} when you select a spell. If you do so, you can’t use Divine Intervention again until you finish 2d4 Long Rests. When you cast {@spell wish|Ishiir} with this feature, you are immune to the stress caused by using {@spell wish|Ishiir} to do something other than casting a spell, other than the chance to lose the ability to cast the spell again."
+                "At 20th level, you are able to call on even more powerful divine intervention. When you use your Divine Intervention feature, you can select cleric spells up to 8th level. Additionally, you can select {@spell Wish|Ishiir} when you select a spell. If you do so, you can't use Divine Intervention again until you finish {@dice 2d4} Long Rests. When you cast {@spell Wish|Ishiir} with this feature, you are immune to the stress caused by using Wish to do something other than casting a spell, other than the chance to lose the ability to cast the spell again."
             ]
         }
     ],
@@ -1281,36 +1290,32 @@
                 {
                     "prepared": {
                         "1": [
-                            "bane|Ishiir",
-                            "disguise self|Ishiir"
+                            "charm person|Ishiir",
+                            "expeditious retreat|Ishiir"
                         ],
                         "3": [
-                            "mirror image|Ishiir",
-                            "ray of enfeeblement|Ishiir"
+                            "fortune's favour|Ishiir",
+                            "suggestion|Ishiir"
                         ],
                         "5": [
-                            "bestow curse|Ishiir",
-                            "vampiric touch|Ishiir"
+                            "antagonize|Ishiir",
+                            "nondetection|Ishiir"
                         ],
                         "7": [
-                            "death ward|Ishiir",
-                            "dimension door|Ishiir"
+                            "dimension door|Ishiir",
+                            "freedom of movement|Ishiir"
                         ],
                         "9": [
                             "dominate person|Ishiir",
-                            "modify memory|Ishiir"
+                            "mislead|Ishiir"
                         ]
                     }
                 }
             ],
             "subclassFeatures": [
-                "Ambition Domain|Cleric|Ishiir|Ambition|Ishiir|1",
-                "Channel Divinity: Invoke Duplicity|Cleric|Ishiir|Ambition|Ishiir|2",
-                "Channel Divinity: Cloak of Shadows|Cleric|Ishiir|Ambition|Ishiir|6",
-                "Potent Spellcasting|Cleric|Ishiir|Ambition|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Ambition|Ishiir|8",
-                "Improved Potent Spellcasting|Cleric|Ishiir|Ambition|Ishiir|14",
-                "Improved Duplicity|Cleric|Ishiir|Ambition|Ishiir|17"
+                "Ambition Domain|Cleric|Ishiir|Ambition|Ishiir|3",
+                "Blessed Ambition|Cleric|Ishiir|Ambition|Ishiir|6",
+                "Undeniable Ambition|Cleric|Ishiir|Ambition|Ishiir|17"
             ]
         },
         {
@@ -1374,9 +1379,6 @@
                 "Arcana Domain|Cleric|Ishiir|Arcana|Ishiir|1",
                 "Channel Divinity: Arcane Abjuration|Cleric|Ishiir|Arcana|Ishiir|2",
                 "Spell Breaker|Cleric|Ishiir|Arcana|Ishiir|6",
-                "Potent Spellcasting|Cleric|Ishiir|Arcana|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Arcana|Ishiir|8",
-                "Improved Potent Spellcasting|Cleric|Ishiir|Arcana|Ishiir|14",
                 "Arcane Mastery|Cleric|Ishiir|Arcana|Ishiir|17"
             ]
         },
@@ -1427,8 +1429,6 @@
                 "Beauty Domain|Cleric|Ishiir|Beauty|Ishiir|1",
                 "Channel Divinity: Beauty's Truce|Cleric|Ishiir|Beauty|Ishiir|2",
                 "Blessed Elegance|Cleric|Ishiir|Beauty|Ishiir|6",
-                "Potent Spellcasting|Cleric|Ishiir|Beauty|Ishiir|8",
-                "Improved Potent Spellcasting|Cleric|Ishiir|Beauty|Ishiir|14",
                 "Soul of Beauty|Cleric|Ishiir|Beauty|Ishiir|17"
             ],
             "classSource": "Ishiir"
@@ -1480,8 +1480,6 @@
                 "Darkness Domain|Cleric|Ishiir|Darkness|Ishiir|1",
                 "Channel Divinity: Shadow Spawn|Cleric|Ishiir|Darkness|Ishiir|2",
                 "Hungry Darkness|Cleric|Ishiir|Darkness|Ishiir|6",
-                "Potent Spellcasting|Cleric|Ishiir|Darkness|Ishiir|8",
-                "Improved Potent Spellcasting|Cleric|Ishiir|Darkness|Ishiir|14",
                 "Soul of Darkness|Cleric|Ishiir|Darkness|Ishiir|17"
             ],
             "classSource": "Ishiir"
@@ -1534,7 +1532,6 @@
                 "Channel Divinity: Touch of Death|Cleric|Ishiir|Death|Ishiir|2",
                 "Inescapable Destruction|Cleric|Ishiir|Death|Ishiir|6",
                 "Divine Strike|Cleric|Ishiir|Death|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Death|Ishiir|8",
                 "Improved Reaper|Cleric|Ishiir|Death|Ishiir|17"
             ]
         },
@@ -1586,7 +1583,6 @@
                 "Channel Divinity: Sundering Invocation|Cleric|Ishiir|Destruction|Ishiir|2",
                 "Appetite for Destruction|Cleric|Ishiir|Destruction|Ishiir|6",
                 "Divine Strike|Cleric|Ishiir|Destruction|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Destruction|Ishiir|8",
                 "Hand of Devastation|Cleric|Ishiir|Destruction|Ishiir|17"
             ],
             "classSource": "Ishiir"
@@ -1636,9 +1632,6 @@
                 "Fate Domain|Cleric|Ishiir|Fate|Ishiir|1",
                 "Channel Divinity: Strands of Fate|Cleric|Ishiir|Fate|Ishiir|2",
                 "Insightful Striking|Cleric|Ishiir|Fate|Ishiir|6",
-                "Potent Spellcasting|Cleric|Ishiir|Fate|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Fate|Ishiir|8",
-                "Improved Potent Spellcasting|Cleric|Ishiir|Fate|Ishiir|14",
                 "Visions of the Future|Cleric|Ishiir|Fate|Ishiir|17"
             ]
         },
@@ -1680,7 +1673,6 @@
                 "Channel Divinity: Artisan's Blessing|Cleric|Ishiir|Forge|Ishiir|2",
                 "Soul of the Forge|Cleric|Ishiir|Forge|Ishiir|6",
                 "Divine Strike|Cleric|Ishiir|Forge|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Forge|Ishiir|8",
                 "Saint of Forge and Fire|Cleric|Ishiir|Forge|Ishiir|17"
             ]
         },
@@ -1726,9 +1718,6 @@
                 "Grave Domain|Cleric|Ishiir|Grave|Ishiir|1",
                 "Channel Divinity: Path to the Grave|Cleric|Ishiir|Grave|Ishiir|2",
                 "Sentinel at Death's Door|Cleric|Ishiir|Grave|Ishiir|6",
-                "Potent Spellcasting|Cleric|Ishiir|Grave|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Grave|Ishiir|8",
-                "Improved Potent Spellcasting|Cleric|Ishiir|Grave|Ishiir|14",
                 "Keeper of Souls|Cleric|Ishiir|Grave|Ishiir|17"
             ]
         },
@@ -1769,9 +1758,6 @@
                 "Knowledge Domain|Cleric|Ishiir|Knowledge|Ishiir|1",
                 "Channel Divinity: Knowledge of the Ages|Cleric|Ishiir|Knowledge|Ishiir|2",
                 "Channel Divinity: Read Thoughts|Cleric|Ishiir|Knowledge|Ishiir|6",
-                "Potent Spellcasting|Cleric|Ishiir|Knowledge|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Knowledge|Ishiir|8",
-                "Improved Potent Spellcasting|Cleric|Ishiir|Knowledge|Ishiir|14",
                 "Visions of the Past|Cleric|Ishiir|Knowledge|Ishiir|17"
             ]
         },
@@ -1815,7 +1801,6 @@
                 "Channel Divinity: Preserve Life|Cleric|Ishiir|Life|Ishiir|2",
                 "Blessed Healer|Cleric|Ishiir|Life|Ishiir|6",
                 "Divine Strike|Cleric|Ishiir|Life|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Life|Ishiir|8",
                 "Supreme Healing|Cleric|Ishiir|Life|Ishiir|17"
             ]
         },
@@ -1861,9 +1846,6 @@
                 "Light Domain|Cleric|Ishiir|Light|Ishiir|1",
                 "Channel Divinity: Radiance of the Dawn|Cleric|Ishiir|Light|Ishiir|2",
                 "Improved Flare|Cleric|Ishiir|Light|Ishiir|6",
-                "Potent Spellcasting|Cleric|Ishiir|Light|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Light|Ishiir|8",
-                "Improved Potent Spellcasting|Cleric|Ishiir|Light|Ishiir|14",
                 "Corona of Light|Cleric|Ishiir|Light|Ishiir|17"
             ]
         },
@@ -1957,7 +1939,6 @@
                 "Channel Divinity: Charm Animals and Plants|Cleric|Ishiir|Nature|Ishiir|2",
                 "Dampen Elements|Cleric|Ishiir|Nature|Ishiir|6",
                 "Divine Strike|Cleric|Ishiir|Nature|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Nature|Ishiir|8",
                 "Master of Nature|Cleric|Ishiir|Nature|Ishiir|17"
             ]
         },
@@ -1999,7 +1980,6 @@
                 "Channel Divinity: Order's Demand|Cleric|Ishiir|Order|Ishiir|2",
                 "Embodiment of the Law|Cleric|Ishiir|Order|Ishiir|6",
                 "Divine Strike|Cleric|Ishiir|Order|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Order|Ishiir|8",
                 "Order's Wrath|Cleric|Ishiir|Order|Ishiir|17"
             ]
         },
@@ -2040,9 +2020,6 @@
                 "Peace Domain|Cleric|Ishiir|Peace|Ishiir|1",
                 "Channel Divinity: Balm of Peace|Cleric|Ishiir|Peace|Ishiir|2",
                 "Protective Bond|Cleric|Ishiir|Peace|Ishiir|6",
-                "Potent Spellcasting|Cleric|Ishiir|Peace|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Peace|Ishiir|8",
-                "Improved Potent Spellcasting|Cleric|Ishiir|Peace|Ishiir|14",
                 "Expansive Bond|Cleric|Ishiir|Peace|Ishiir|17"
             ]
         },
@@ -2084,7 +2061,6 @@
                 "Channel Divinity: Radiant Defense|Cleric|Ishiir|Protection|Ishiir|2",
                 "Blessed Healer|Cleric|Ishiir|Protection|Ishiir|6",
                 "Divine Strike|Cleric|Ishiir|Protection|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Protection|Ishiir|8",
                 "Indomitable Defense|Cleric|Ishiir|Protection|Ishiir|17"
             ]
         },
@@ -2126,7 +2102,6 @@
                 "Channel Divinity: Preserve Life|Cleric|Ishiir|Solidarity|Ishiir|2",
                 "Oketra's Blessing|Cleric|Ishiir|Solidarity|Ishiir|6",
                 "Divine Strike|Cleric|Ishiir|Solidarity|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Solidarity|Ishiir|8",
                 "Supreme Healing|Cleric|Ishiir|Solidarity|Ishiir|17"
             ]
         },
@@ -2177,7 +2152,6 @@
                 "Channel Divinity: Feat of Strength|Cleric|Ishiir|Strength|Ishiir|2",
                 "Extra Attack|Cleric|Ishiir|Strength|Ishiir|6",
                 "Divine Strike|Cleric|Ishiir|Strength|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Strength|Ishiir|8",
                 "Avatar of Strength|Cleric|Ishiir|Strength|Ishiir|17"
             ]
         },
@@ -2219,7 +2193,6 @@
                 "Channel Divinity: Destructive Wrath|Cleric|Ishiir|Tempest|Ishiir|2",
                 "Thunderbolt Strike|Cleric|Ishiir|Tempest|Ishiir|6",
                 "Divine Strike|Cleric|Ishiir|Tempest|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Tempest|Ishiir|8",
                 "Stormborn|Cleric|Ishiir|Tempest|Ishiir|17"
             ]
         },
@@ -2261,7 +2234,6 @@
                 "Channel Divinity: Invoke Duplicity|Cleric|Ishiir|Trickery|Ishiir|2",
                 "Channel Divinity: Cloak of Shadows|Cleric|Ishiir|Trickery|Ishiir|6",
                 "Divine Strike|Cleric|Ishiir|Trickery|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Trickery|Ishiir|8",
                 "Improved Duplicity|Cleric|Ishiir|Trickery|Ishiir|17"
             ]
         },
@@ -2303,7 +2275,6 @@
                 "Channel Divinity: Twilight Sanctuary|Cleric|Ishiir|Twilight|Ishiir|2",
                 "Steps of Night|Cleric|Ishiir|Twilight|Ishiir|6",
                 "Divine Strike|Cleric|Ishiir|Twilight|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Twilight|Ishiir|8",
                 "Twilight Shroud|Cleric|Ishiir|Twilight|Ishiir|17"
             ]
         },
@@ -2345,7 +2316,6 @@
                 "Channel Divinity: Guided Strike|Cleric|Ishiir|War|Ishiir|2",
                 "Extra Attack|Cleric|Ishiir|War|Ishiir|6",
                 "Divine Strike|Cleric|Ishiir|War|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|War|Ishiir|8",
                 "Avatar of Battle|Cleric|Ishiir|War|Ishiir|17"
             ]
         },
@@ -2388,8 +2358,6 @@
                 "Bonus Proficiency|Cleric|Ishiir|Water|Ishiir|1",
                 "Channel Divinity: Cleansing Current|Cleric|Ishiir|Water|Ishiir|2",
                 "Riptide|Cleric|Ishiir|Water|Ishiir|6",
-                "Potent Spellcasting|Cleric|Ishiir|Water|Ishiir|8",
-                "Improved Potent Spellcasting|Cleric|Ishiir|Water|Ishiir|14",
                 "Saint of the Currents|Cleric|Ishiir|Water|Ishiir|17"
             ]
         },
@@ -2479,7 +2447,6 @@
                 "Channel Divinity: Consuming Fervor|Cleric|Ishiir|Zeal|Ishiir|2",
                 "Resounding Strike|Cleric|Ishiir|Zeal|Ishiir|6",
                 "Divine Strike|Cleric|Ishiir|Zeal|Ishiir|8",
-                "Blessed Strikes|Cleric|Ishiir|Zeal|Ishiir|8",
                 "Blaze of Glory|Cleric|Ishiir|Zeal|Ishiir|17"
             ]
         }
@@ -2493,7 +2460,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Ambition",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "\"The worthy shall strive for greatness—supremacy in life leads to supremacy in the afterlife.\"",
                 "Bontu has fully embraced this dictum, and though she expends little effort in teaching it, she surely leads by example. Her viziers subtly plant the seeds that flower into the ambition the God-Pharaoh desires. Through insinuation, they remind acolytes and initiates alike that achieving one's place in the afterlife at the expense of others is not shameful, but is proof of the initiate's determination and drive. Nothing is more important than that drive, they suggest—not the bonds of a crop, not friendship or love. Not even devotion to a deity.",
@@ -2512,29 +2479,37 @@
                     "rows": [
                         [
                             "1st",
-                            "{@spell bane|Ishiir}, {@spell disguise self|Ishiir}"
+                            "{@spell charm person|Ishiir}, {@spell expeditious retreat|Ishiir}"
                         ],
                         [
                             "3rd",
-                            "{@spell mirror image|Ishiir}, {@spell ray of enfeeblement|Ishiir}"
+                            "{@spell fortune's favour|Ishiir}, {@spell suggestion|Ishiir}"
                         ],
                         [
                             "5th",
-                            "{@spell bestow curse|Ishiir}, {@spell vampiric touch|Ishiir}"
+                            "{@spell antagonize|Ishiir}, {@spell nondetection|Ishiir}"
                         ],
                         [
                             "7th",
-                            "{@spell death ward|Ishiir}, {@spell dimension door|Ishiir}"
+                            "{@spell dimension door|Ishiir}, {@spell freedom of movement|Ishiir}"
                         ],
                         [
                             "9th",
-                            "{@spell dominate person|Ishiir}, {@spell modify memory|Ishiir}"
+                            "{@spell dominate person|Ishiir}, {@spell mislead|Ishiir}"
                         ]
                     ]
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Warding Flare|Cleric|Ishiir|Ambition|Ishiir|1"
+                    "subclassFeature": "Warding Flare|Cleric|Ishiir|Ambition|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Ambition|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Reject Failure|Cleric|Ishiir|Ambition|Ishiir|3"
                 }
             ]
         },
@@ -2546,7 +2521,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Ambition",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "When you choose this domain at 1st level, you can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be {@condition blinded|Ishiir} is immune to this feature.",
@@ -2554,26 +2529,35 @@
             ]
         },
         {
-            "name": "Channel Divinity: Invoke Duplicity",
+            "name": "Bonus Proficiencies",
             "source": "Ishiir",
             "page": 1,
             "className": "Cleric",
             "classSource": "Ishiir",
             "subclassShortName": "Ambition",
             "subclassSource": "Ishiir",
-            "level": 2,
-            "header": 2,
-            "consumes": {
-                "name": "Channel Divinity"
-            },
+            "level": 3,
+            "header": 1,
             "entries": [
-                "Starting at 2nd level, you can use your Channel Divinity to create an illusory duplicate of yourself.",
-                "As an action, you create a perfect illusion of yourself that lasts for 1 minute. The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but it must remain within 120 feet of you.",
-                "For the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target."
+                "Starting at 3rd level, you gain proficiency in two of the following skills of your choice: {@skill Deception}, {@skill Intimidation}, and {@skill Persuasion}."
             ]
         },
         {
-            "name": "Channel Divinity: Cloak of Shadows",
+            "name": "Channel Divinity: Reject Failure",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ambition",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Starting at 3rd level, when you fail a D20 Test, you can use your Reaction to reroll it and take the higher result."
+            ]
+        },
+        {
+            "name": "Blessed Ambition",
             "source": "Ishiir",
             "page": 1,
             "className": "Cleric",
@@ -2581,60 +2565,13 @@
             "subclassShortName": "Ambition",
             "subclassSource": "Ishiir",
             "level": 6,
-            "header": 2,
-            "consumes": {
-                "name": "Channel Divinity"
-            },
+            "header": 1,
             "entries": [
-                "Starting at 6th level, you can use your Channel Divinity to vanish. As a bonus action, you become {@condition invisible|Ishiir} until the end of your next turn."
+                "Starting at 6th level, you add your Wisdom modifier to {@skill Deception}, {@skill Intimidation}, and {@skill Persuasion} checks. Additionally, you do not expend a use of your Channel Divinity on Reject Failure if the D20 test does not succeed after the reroll."
             ]
         },
         {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Ambition",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Potent Spellcasting feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-            ]
-        },
-        {
-            "name": "Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Ambition",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "header": 2,
-            "entries": [
-                "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
-            ]
-        },
-        {
-            "name": "Improved Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Ambition",
-            "subclassSource": "Ishiir",
-            "level": 14,
-            "header": 2,
-            "entries": [
-                "Starting at 14th level, you also add your Wisdom modifier to the damage of spells of 1st level or higher."
-            ]
-        },
-        {
-            "name": "Improved Duplicity",
+            "name": "Undeniable Ambition",
             "source": "Ishiir",
             "page": 1,
             "className": "Cleric",
@@ -2642,9 +2579,9 @@
             "subclassShortName": "Ambition",
             "subclassSource": "Ishiir",
             "level": 17,
-            "header": 2,
+            "header": 1,
             "entries": [
-                "At 17th level, you can create up to four duplicates of yourself, instead of one, when you use Invoke Duplicity. As a bonus action on your turn, you can move any number of them up to 30 feet, to a maximum range of 120 feet."
+                "Beginning at 17th level, also add your Wisdom modifier to the D20 test when you use Reject Failure. If you fail the D20 test, you can choose to use Reject Failure again immediately without a Reaction, rerolling again and taking the highest result. You can only do so once per initial use of Reject Failure."
             ]
         },
         {
@@ -2783,50 +2720,6 @@
             ]
         },
         {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Arcana",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Potent Spellcasting feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-            ]
-        },
-        {
-            "name": "Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Arcana",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "header": 2,
-            "entries": [
-                "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
-            ]
-        },
-        {
-            "name": "Improved Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Arcana",
-            "subclassSource": "Ishiir",
-            "level": 14,
-            "header": 2,
-            "entries": [
-                "Starting at 14th level, you also add your Wisdom modifier to the damage of spells of 1st level or higher."
-            ]
-        },
-        {
             "name": "Arcane Mastery",
             "source": "Ishiir",
             "page": 1,
@@ -2959,34 +2852,6 @@
             ]
         },
         {
-            "name": "Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Beauty",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "header": 2,
-            "entries": [
-                "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
-            ]
-        },
-        {
-            "name": "Improved Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Beauty",
-            "subclassSource": "Ishiir",
-            "level": 14,
-            "header": 2,
-            "entries": [
-                "Starting at 14th level, you also add your Wisdom modifier to the damage of spells of 1st level or higher."
-            ]
-        },
-        {
             "name": "Soul of Beauty",
             "source": "Ishiir",
             "page": 1,
@@ -3112,34 +2977,6 @@
             "header": 2,
             "entries": [
                 "Starting at 6th level, your Shield of Ineffable Darkness becomes more powerful. When you use it, you can select up to three additional, hostile creatures you can see within 30 feet of you. They have to make a CON saving throw or become {@condition blinded|Ishiir} until the end of your next turn."
-            ]
-        },
-        {
-            "name": "Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Darkness",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "header": 2,
-            "entries": [
-                "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
-            ]
-        },
-        {
-            "name": "Improved Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Darkness",
-            "subclassSource": "Ishiir",
-            "level": 14,
-            "header": 2,
-            "entries": [
-                "Starting at 14th level, you also add your Wisdom modifier to the damage of spells of 1st level or higher."
             ]
         },
         {
@@ -3271,22 +3108,6 @@
             "header": 2,
             "entries": [
                 "Starting at 6th level, the cleric's ability to channel negative energy becomes more potent. Necrotic damage dealt by the character's cleric spells and Channel Divinity options ignores resistance to necrotic damage."
-            ]
-        },
-        {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Death",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
             ]
         },
         {
@@ -3429,21 +3250,6 @@
             "entries": [
                 "Starting at 6th level, your destructive acts fuel further expressions of devastation. If you kill a creature or destroy an object with a weapon attack, you can use your reaction to immediately make one additional weapon attack.",
                 "You can use this ability a number of times equal to your Wisdom modifier (minimum 1). You regain all expended uses when you complete a long rest."
-            ]
-        },
-        {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Destruction",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric Divine Domain feature (replaces Divine Strike)}",
-                "In battle, you are blessed with divine might. When a creature takes damage from one of your spells or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
             ]
         },
         {
@@ -3650,51 +3456,6 @@
             ]
         },
         {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Fate",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Potent Spellcasting feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-            ]
-        },
-        {
-            "name": "Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Fate",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level Fate Domain Feature}",
-                "You add your Wisdom modifier to the damage you deal with any cleric cantrip."
-            ]
-        },
-        {
-            "name": "Improved Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Fate",
-            "subclassSource": "Ishiir",
-            "level": 14,
-            "header": 2,
-            "entries": [
-                "Starting at 14th level, you also add your Wisdom modifier to the damage of spells of 1st level or higher."
-            ]
-        },
-        {
             "name": "Visions of the Future",
             "source": "Ishiir",
             "page": 1,
@@ -3832,22 +3593,6 @@
                         "While wearing heavy armor, you gain a +1 bonus to AC."
                     ]
                 }
-            ]
-        },
-        {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Forge",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
             ]
         },
         {
@@ -4004,50 +3749,6 @@
             ]
         },
         {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Grave",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Potent Spellcasting feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-            ]
-        },
-        {
-            "name": "Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Grave",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "header": 2,
-            "entries": [
-                "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
-            ]
-        },
-        {
-            "name": "Improved Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Grave",
-            "subclassSource": "Ishiir",
-            "level": 14,
-            "header": 2,
-            "entries": [
-                "Starting at 14th level, you also add your Wisdom modifier to the damage of spells of 1st level or higher."
-            ]
-        },
-        {
             "name": "Keeper of Souls",
             "source": "Ishiir",
             "page": 1,
@@ -4163,50 +3864,6 @@
                 "As an action, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you can't use this feature on it again until you finish a long rest.",
                 "If the creature fails its save, you can read its surface thoughts (those foremost in its mind, reflecting its current emotions and what it is actively thinking about) when it is within 60 feet of you. This effect lasts for 1 minute.",
                 "During that time, you can use your action to end this effect and cast the {@spell suggestion|Ishiir} spell on the creature without expending a spell slot. The target automatically fails its saving throw against the spell."
-            ]
-        },
-        {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Knowledge",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Potent Spellcasting feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-            ]
-        },
-        {
-            "name": "Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Knowledge",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "header": 2,
-            "entries": [
-                "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
-            ]
-        },
-        {
-            "name": "Improved Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Knowledge",
-            "subclassSource": "Ishiir",
-            "level": 14,
-            "header": 2,
-            "entries": [
-                "Starting at 14th level, you also add your Wisdom modifier to the damage of spells of 1st level or higher."
             ]
         },
         {
@@ -4375,22 +4032,6 @@
             ]
         },
         {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Life",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-            ]
-        },
-        {
             "name": "Divine Strike",
             "source": "Ishiir",
             "page": 1,
@@ -4537,50 +4178,6 @@
             "header": 2,
             "entries": [
                 "Starting at 6th level, you can also use your Warding Flare feature when a creature that you can see within 30 feet of you attacks a creature other than you."
-            ]
-        },
-        {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Light",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Potent Spellcasting feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-            ]
-        },
-        {
-            "name": "Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Light",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "header": 2,
-            "entries": [
-                "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
-            ]
-        },
-        {
-            "name": "Improved Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Light",
-            "subclassSource": "Ishiir",
-            "level": 14,
-            "header": 2,
-            "entries": [
-                "Starting at 14th level, you also add your Wisdom modifier to the damage of spells of 1st level or higher."
             ]
         },
         {
@@ -4884,22 +4481,6 @@
             ]
         },
         {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Nature",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-            ]
-        },
-        {
             "name": "Divine Strike",
             "source": "Ishiir",
             "page": 1,
@@ -5046,22 +4627,6 @@
                 "At 6th level, you become remarkably adept at channeling magical energy to compel others.",
                 "If you cast a spell of the enchantment school using a spell slot of 1st level or higher, you can change the spell's casting time to 1 bonus action for this casting, provided the spell's casting time is normally 1 action.",
                 "You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
-            ]
-        },
-        {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Order",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
             ]
         },
         {
@@ -5267,51 +4832,6 @@
             ]
         },
         {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Peace",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Potent Spellcasting feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-            ]
-        },
-        {
-            "name": "Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Peace",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level Peace Domain feature}",
-                "You add your Wisdom modifier to the damage you deal with any cleric cantrip."
-            ]
-        },
-        {
-            "name": "Improved Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Peace",
-            "subclassSource": "Ishiir",
-            "level": 14,
-            "header": 2,
-            "entries": [
-                "Starting at 14th level, you also add your Wisdom modifier to the damage of spells of 1st level or higher."
-            ]
-        },
-        {
             "name": "Expansive Bond",
             "source": "Ishiir",
             "page": 1,
@@ -5440,22 +4960,6 @@
             "header": 2,
             "entries": [
                 "Beginning at 6th level, the healing spells you cast on others can heal you as well. When you cast a spell with a spell slot and it restores hit points to any creature other than you this turn, you regain hit points equal to 2 + the spell's level."
-            ]
-        },
-        {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Protection",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
             ]
         },
         {
@@ -5605,22 +5109,6 @@
             ]
         },
         {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Solidarity",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-            ]
-        },
-        {
             "name": "Divine Strike",
             "source": "Ishiir",
             "page": 1,
@@ -5762,22 +5250,6 @@
             "header": 2,
             "entries": [
                 "Beginning at 6th level, you can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
-            ]
-        },
-        {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Strength",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
             ]
         },
         {
@@ -5926,22 +5398,6 @@
             ]
         },
         {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Tempest",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-            ]
-        },
-        {
             "name": "Divine Strike",
             "source": "Ishiir",
             "page": 1,
@@ -6085,22 +5541,6 @@
             "header": 2,
             "entries": [
                 "At 8th level, you gain the ability to infuse your weapon strikes with poison—a gift from your deity. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} necrotic, poison, or psychic damage (your choice) to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
-            ]
-        },
-        {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Trickery",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
             ]
         },
         {
@@ -6319,22 +5759,6 @@
             ]
         },
         {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Twilight",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-            ]
-        },
-        {
             "name": "Divine Strike",
             "source": "Ishiir",
             "page": 1,
@@ -6480,22 +5904,6 @@
             ]
         },
         {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "War",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-            ]
-        },
-        {
             "name": "Divine Strike",
             "source": "Ishiir",
             "page": 1,
@@ -6630,34 +6038,6 @@
             "entries": [
                 "Starting at 6th level, When one or more creatures have to make a Strength saving throw against one of your features or spells, you can use your reaction to impose disadvantage on that saving throw.",
                 "You can use this feature a number of times equal to your proficiency modifier and you regain all expended uses when you finish a long rest."
-            ]
-        },
-        {
-            "name": "Potent Spellcasting",
-            "page": 1,
-            "source": "Ishiir",
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Water",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "header": 2,
-            "entries": [
-                "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip and you can replace their damage type with bludgeoning damage."
-            ]
-        },
-        {
-            "name": "Improved Potent Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Water",
-            "subclassSource": "Ishiir",
-            "level": 14,
-            "header": 2,
-            "entries": [
-                "Starting at 14th level, you also add your Wisdom modifier to the damage of spells of 1st level or higher."
             ]
         },
         {
@@ -6941,22 +6321,6 @@
             "header": 2,
             "entries": [
                 "At 6th level, when you deal thunder damage to a Large or smaller creature, you can also push it up to 10 feet away from you."
-            ]
-        },
-        {
-            "name": "Blessed Strikes",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Zeal",
-            "subclassSource": "Ishiir",
-            "level": 8,
-            "isClassFeatureVariant": true,
-            "header": 2,
-            "entries": [
-                "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-                "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
             ]
         },
         {
