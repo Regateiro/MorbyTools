@@ -1184,7 +1184,7 @@
                         "_": {
                             "resource": {
                                 "3": [
-                                    "hold person|Ishiir"
+                                    "rime's binding ice|Ishiir"
                                 ]
                             }
                         }
@@ -1194,7 +1194,45 @@
                 }
             ],
             "entries": [
-                "You can spend 3 ki points to cast {@spell hold person|Ishiir}."
+                "You can spend 3 ki points to cast {@spell Rime's Binding Ice|Ishiir}."
+            ]
+        },
+        {
+            "name": "Hand of Ore",
+            "page": 1,
+            "source": "Ishiir",
+            "featureType": [
+                "ED"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "class": {
+                            "name": "Monk"
+                        },
+                        "subclass": {
+                            "name": "Four Elements"
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "resource": {
+                                "2": [
+                                    "maximilian's earthen grasp|Ishiir"
+                                ]
+                            }
+                        }
+                    },
+                    "resourceName": "Ki",
+					"ability": "wis"
+                }
+            ],
+            "entries": [
+                "You can spend 2 ki points to cast {@spell Maximilian's Earthen Grasp|Ishiir}."
             ]
         },
         {
