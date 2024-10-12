@@ -922,19 +922,25 @@
             "entries": [
                 "When you gain the Ki feature at 2nd level, you get access to the following features.",
                 {
-                    "type": "entries",
-                    "name": "Distant Eye",
-                    "entries": [
-                        "When you make a ranged weapon attack, you can spend 1 ki point to prevent attacking at long range from imposing disadvantage on your attack rolls until the end of the current turn."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Quickened Healing",
-                    "entries": [
-                        "At the start of your turn, you can spend 2 ki points and roll a Martial Arts die. You regain a number of hit points equal to the number rolled."
-                    ]
-                }
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Distant Eye.",
+                            "entries": [
+                                "When you make a ranged weapon attack, you can spend 1 ki point to prevent attacking at long range from imposing disadvantage on your attack rolls until the end of the current turn."
+                            ]
+						},
+						{
+							"type": "item",
+							"name": "Quickened Healing.",
+                            "entries": [
+                                "At the start of your turn, you can spend 2 ki points and roll a Martial Arts die. You regain a number of hit points equal to the number rolled."
+                            ]
+						}
+					]
+				}
             ]
         },
         {
