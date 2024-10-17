@@ -1383,6 +1383,7 @@
                     "type": "list",
                     "items": [
                         "You gain an additional use of your Channel Divinity feature.",
+                        "You learn an additional cantrip from the {@filter cleric spell list|spells|level=0|class=cleric (Ishiir)|source=Ishiir}.",
                         "When you use your Harness Divine Power class feature, you can regain multiple spell slots, up to a combined level equal to your proficiency bonus. The level of individual spell slots you regain in this manner is still limited to up to half your proficiency bonus (rounded up)."
                     ]
                 }
@@ -2235,12 +2236,9 @@
                 {
                     "type": "list",
                     "items": [
-                        "You gain an additional use of your Channel Divinity class feature.",
-                        "When you use your Divine Smite feature, the weapon you used for the attack ignites with radiant energy. For 1 minute, your attacks with this weapon deal an additional {@damage 1d4} radiant damage and it sheds bright light in a radius of 10 feet and dim light in a radius of 10 feet beyond that. This light is not smothered by magical darkness but does not dispel it.",
-                        "When you use a 3rd or 4th level spell slot for this Divine Smite, the damage increases to {@damage 2d4}. If you use a 5th level spell slot, the damage increases to {@damage 3d4}.",
-                        "If the target of your attacks with this weapon is an undead or a fiend, the damage increases by an additional {@damage 1d4}.",
-                        "Multiple applications of this effect do not stack, but if you use a higher level spell slot for a subsequent Divine Smite as described above, a lower damage effect is replaced by a higher one.",
-                        "The effect ends early if are no longer wielding the affected weapon or you become {@condition incapacitated|Ishiir}."
+                        "You learn a cantrip from the {@filter cleric spell list|spells|level=0|class=cleric (Ishiir)|source=Ishiir}.",
+                        "The number of times you can use Divine Smite without a spell slot now equals your proficiency. After you use Divine Smite, your weapon sheds bright light in a radius of 10 feet and dim light in a radius of 10 feet beyond that. This light is not smothered by magical darkness but does not dispel it.",
+                        "The range of your Lay on Hands increases to 30 feet."
                     ]
                 }
             ]

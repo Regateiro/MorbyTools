@@ -1485,7 +1485,7 @@
             "subclassFeatures": [
                 "Oathbreaker|Paladin|Ishiir|Oathbreaker|Ishiir|3",
                 "Aura of Hate|Paladin|Ishiir|Oathbreaker|Ishiir|7",
-                "Supernatural Resistance|Paladin|Ishiir|Oathbreaker|Ishiir|15",
+                "Dark Presence|Paladin|Ishiir|Oathbreaker|Ishiir|15",
                 "Dread Lord|Paladin|Ishiir|Oathbreaker|Ishiir|20"
             ]
         },
@@ -1564,8 +1564,8 @@
             ],
             "subclassFeatures": [
                 "Oath of Treachery|Paladin|Ishiir|Treachery|Ishiir|3",
-                "Aura of Treachery|Paladin|Ishiir|Treachery|Ishiir|7",
-                "Blackguard's Escape|Paladin|Ishiir|Treachery|Ishiir|15",
+                "Blackguard's Escape|Paladin|Ishiir|Treachery|Ishiir|7",
+                "Aura of Treachery|Paladin|Ishiir|Treachery|Ishiir|15",
                 "Icon of Deceit|Paladin|Ishiir|Treachery|Ishiir|20"
             ]
         },
@@ -1645,8 +1645,8 @@
             "subclassFeatures": [
                 "Oath of Redemption|Paladin|Ishiir|Redemption|Ishiir|3",
                 "Aura of the Guardian|Paladin|Ishiir|Redemption|Ishiir|7",
-                "Protective Spirit|Paladin|Ishiir|Redemption|Ishiir|15",
-                "Emissary of Redemption|Paladin|Ishiir|Redemption|Ishiir|20"
+                "Tranquil Spirit|Paladin|Ishiir|Redemption|Ishiir|15",
+                "Emissary of Peace|Paladin|Ishiir|Redemption|Ishiir|20"
             ]
         },
         {
@@ -1756,7 +1756,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity: Turn the Faithless|Paladin|Ishiir|Ancients|Ishiir|3"
+                    "subclassFeature": "Beautiful Soul|Paladin|Ishiir|Ancients|Ishiir|3"
                 }
             ]
         },
@@ -1774,11 +1774,11 @@
                 "name": "Channel Divinity"
             },
             "entries": [
-                "You can use your Channel Divinity to invoke primeval forces to ensnare a foe. As an action, you can cause spectral vines to spring up and reach for a creature within 10 feet of you that you can see. The creature must succeed on a Strength or Dexterity saving throw (its choice) or be {@condition restrained|Ishiir}. While {@condition restrained|Ishiir} by the vines, the creature repeats the saving throw at the end of each of its turns. On a success, it frees itself and the vines vanish."
+                "As a Magic action, you can expend one use of your Channel Divinity to conjure spectral vines around nearby creatures. Each creature of your choice that you can see within 15 feet of yourself must succeed on a Strength saving throw or have the {@condition Restrained|Ishiir} condition for 1 minute. A {@condition Restrained|Ishiir} creature repeats the save at the end of each of its turns, ending the effect on itself on a success."
             ]
         },
         {
-            "name": "Channel Divinity: Turn the Faithless",
+            "name": "Beautiful Soul",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
@@ -1787,13 +1787,8 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "header": 1,
-            "consumes": {
-                "name": "Channel Divinity"
-            },
             "entries": [
-                "You can use your Channel Divinity to utter ancient words that are painful for fey and fiends to hear. As an action, you present your holy symbol, and each fey or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.",
-                "A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash|Ishiir} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the {@action Dodge|Ishiir} action.",
-                "If the creature's true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned."
+                "You gain proficiency in one of {@skill animal handling}, {@skill performance}, and {@skill persuasion}. Additionally, your pool for Lay on Hands increases by an amount equal to your paladin level."
             ]
         },
         {
@@ -1932,8 +1927,8 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "Starting at 15th level, when you are reduced to 0 hit points and are not killed outright, you can choose to drop to 1 hit point instead. Once you use this ability, you can't use it again until you finish a long rest.",
-                "Additionally, you suffer none of the drawbacks of old age, and you can't be aged magically."
+                "Starting at 15th level, when you are reduced to 0 Hit Points and not killed outright, you can drop to 1 Hit Point instead, and you regain a number of Hit Points equal to three times your Paladin level. Once you use this feature, you can't do so again until you finish a Long Rest.",
+                "Additionally, you can't be aged magically, and you cease visibly aging."
             ]
         },
         {
@@ -1947,17 +1942,28 @@
             "level": 20,
             "header": 2,
             "entries": [
-                "At 20th level, you can assume the form of an ancient force of nature, taking on an appearance you choose. For example, your skin might turn green or take on a bark-like texture, your hair might become leafy or mosslike, or you might sprout antlers or a lion-like mane.",
-                "Using your action, you undergo a transformation. For 1 minute, you gain the following benefits:",
-                {
-                    "type": "list",
-                    "items": [
-                        "At the start of each of your turns, you regain 10 hit points.",
-                        "Whenever you cast a paladin spell that has a casting time of 1 action, you can cast it using your bonus action instead.",
-                        "Enemy creatures within 10 feet of you have disadvantage on saving throws against your paladin spells and Channel Divinity options."
-                    ]
-                },
-                "Once you use this feature, you can't use it again until you finish a long rest."
+                "At 20th level, as a Bonus Action, you can imbue your Aura of Protection with primal power, granting the benefits below for 1 minute or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Diminish Defiance.",
+							"entry": "Enemies in the aura have Disadvantage on saving throws against your spells and Channel Divinity options."
+						},
+						{
+							"type": "item",
+							"name": "Regeneration.",
+							"entry": "At the start of each of your turns, you regain 10 Hit Points."
+						},
+						{
+							"type": "item",
+							"name": "Swift Spells.",
+							"entry": "Whenever you cast a spell that has a casting time of an action, you can cast it using a Bonus Action instead."
+						}
+					]
+				}
             ]
         },
         {
@@ -1986,7 +1992,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity: Guided Strike|Paladin|Ishiir|Conquest|Ishiir|3"
+                    "subclassFeature": "Conqueror's Countenance|Paladin|Ishiir|Conquest|Ishiir|3"
                 }
             ]
         },
@@ -2008,7 +2014,7 @@
             ]
         },
         {
-            "name": "Channel Divinity: Guided Strike",
+            "name": "Conqueror's Countenance",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
@@ -2017,11 +2023,8 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "header": 1,
-            "consumes": {
-                "name": "Channel Divinity"
-            },
             "entries": [
-                "You can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
+                "At 3rd level, you gain proficiency in Intimidation. Additionally, the bonus damage of your Divine Smite also applies to any creature that is frightened."
             ]
         },
         {
@@ -2124,7 +2127,7 @@
             "header": 2,
             "entries": [
                 "Starting at 7th level, you constantly emanate a menacing aura while you're not {@condition incapacitated|Ishiir}. The aura extends 10 feet from you in every direction, but not through total cover.",
-                "If a creature is {@condition frightened|Ishiir} of you, its speed is reduced to 0 while in the aura, and that creature takes psychic damage equal to half your paladin level if it starts its turn there.",
+                "Any creature of your choice that starts its turn in the aura takes psychic damage equal to your Charisma modifier. If that creature is {@condition frightened|Ishiir}, this damage is doubled. Additionally, any creature in the aura that is {@condition frightened|Ishiir}, has its speed reduced to 0.",
                 "At 18th level, the range of this aura increases to 30 feet."
             ]
         },
@@ -2153,16 +2156,16 @@
             "level": 20,
             "header": 2,
             "entries": [
-                "At 20th level, you gain the ability to harness extraordinary martial prowess. As an action, you can magically become an avatar of conquest, gaining the following benefits for 1 minute:",
+                "At 20th level, you gain the ability to harness extraordinary martial prowess. As a bonus action, you can magically become an avatar of conquest, gaining the following benefits for 1 minute:",
                 {
                     "type": "list",
                     "items": [
-                        "You have resistance to all damage.",
+                        "You have resistance to bludgeoning, piercing, and slashing damage.",
                         "When you take the {@action Attack|Ishiir} action on your turn, you can make one additional attack as part of that action.",
-                        "Your melee weapon attacks score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+                        "The damage of your Aura of Conquest and Scornful Rebuke is doubled."
                     ]
                 },
-                "Once you use this feature, you can't use it again until you finish a long rest."
+                "Once you use this feature, you can't use it again until you finish a long rest. You can also restore your use of it by expending a level 5 spell slot (no action required)."
             ]
         },
         {
@@ -2186,11 +2189,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity: Champion Challenge|Paladin|Ishiir|Crown|Ishiir|3"
+                    "subclassFeature": "Channel Divinity: Turn the Tide|Paladin|Ishiir|Crown|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity: Turn the Tide|Paladin|Ishiir|Crown|Ishiir|3"
+                    "subclassFeature": "Champion Challenge|Paladin|Ishiir|Crown|Ishiir|3"
                 }
             ]
         },
@@ -2213,7 +2216,7 @@
             ]
         },
         {
-            "name": "Channel Divinity: Champion Challenge",
+            "name": "Champion Challenge",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
@@ -2222,11 +2225,9 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "header": 1,
-            "consumes": {
-                "name": "Channel Divinity"
-            },
             "entries": [
-                "As a bonus action, you issue a challenge that compels other creatures to do battle with you. Each creature of your choice that you can see within 30 feet of you must make a Wisdom saving throw. On a failed save, a creature can't willingly move more than 30 feet away from you. This effect ends on the creature if you are {@condition incapacitated|Ishiir} or die or if the creature is more than 30 feet away from you."
+                "As a bonus action, you issue a challenge that compels other creatures to do battle with you. Each creature of your choice that you can see within 30 feet of you must make a Wisdom saving throw. On a failed save, a creature can't willingly move more than 30 feet away from you. This effect ends on the creature if you are {@condition incapacitated|Ishiir} or die or if the creature is more than 30 feet away from you.",
+                "You can use this feature a number of times equal to half your proficiency (rounded down). And you regain one expended use on a Short Rest and all expended uses on a Long Rest."
             ]
         },
         {
@@ -2364,7 +2365,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "Starting at 15th level, you have advantage on saving throws to avoid becoming {@condition paralyzed|Ishiir} or {@condition stunned|Ishiir}."
+                "Starting at 15th level, you have advantage on Wisdom saving throws."
             ]
         },
         {
@@ -2383,11 +2384,11 @@
                     "type": "list",
                     "items": [
                         "You have resistance to bludgeoning, piercing, and slashing damage.",
-                        "Your allies have advantage on death saving throws while within 30 feet of you.",
-                        "You have advantage on Wisdom saving throws, as do your allies within 30 feet of you."
+                        "You gain a Heroic Inspiration at the start of every one of your turns if you do not currently have one. Alternatively, you can give a Heroic Inspiration to one ally you can see within 30 ft of you and who does not already have one. You can do so even if you already have a Heroic Inspiration yourself.",
+                        "All allies within 30 ft of you have advantage on Wisdom saving throws."
                     ]
                 },
-                "This effect ends early if you are {@condition incapacitated|Ishiir} or die. Once you use this feature, you can't use it again until you finish a long rest."
+                "This effect ends early if you are {@condition incapacitated|Ishiir} or die. Once you use this feature, you can't use it again until you finish a long rest. You can also restore your use of it by expending a level 5 spell slot (no action required)."
             ]
         },
         {
@@ -2416,7 +2417,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity: Turn the Unholy|Paladin|Ishiir|Devotion|Ishiir|3"
+                    "subclassFeature": "Inner Light|Paladin|Ishiir|Devotion|Ishiir|3"
                 }
             ]
         },
@@ -2435,12 +2436,13 @@
                 "name": "Channel Divinity"
             },
             "entries": [
-                "As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.",
-                "You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall {@condition unconscious|Ishiir}, this effect ends."
+                "When you take the Attack action, you can expend one use of your Channel Divinity to imbue one Melee weapon that you are holding with positive energy. For 10 minutes or until you use this feature again, you add your Charisma modifier to attack rolls you make with that weapon (minimum bonus of +1), and each time you hit with it, you cause it to deal its normal damage type or Radiant damage.",
+                "The weapon also emits Bright Light in a 20-foot radius and Dim Light 20 feet beyond that.",
+                "You can end this effect early (no action required). This effect also ends if you aren't carrying the weapon."
             ]
         },
         {
-            "name": "Channel Divinity: Turn the Unholy",
+            "name": "Inner Light",
             "source": "Ishiir",
             "page": 1,
             "srd": true,
@@ -2450,12 +2452,8 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "header": 1,
-            "consumes": {
-                "name": "Channel Divinity"
-            },
             "entries": [
-                "As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.",
-                "A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash|Ishiir} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the {@action Dodge|Ishiir} action."
+                "You gain proficiency in {@skill persuasion}. Additionally, when you use your Lay on Hands on a creature, it also gains a {@dice 1d4} bonus to the next saving throw it makes before the start of your next turn."
             ]
         },
         {
@@ -2624,10 +2622,28 @@
             "level": 20,
             "header": 2,
             "entries": [
-                "At 20th level, as a bonus action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that.",
-                "Whenever an enemy creature starts its turn in the bright light, the creature takes 10 radiant damage.",
-                "In addition, for the duration, you have advantage on saving throws against spells cast by fiends or undead.",
-                "Once you use this feature, you can't use it again until you finish a long rest."
+                "At 20th level, as a Bonus Action, you can imbue your Aura of Protection with holy power, granting the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Holy Ward.",
+							"entry": "You and allies in the aura have Advantage on any saving throw they are forced to make by a Fiend or an Undead."
+						},
+						{
+							"type": "item",
+							"name": "Radiant Damage.",
+							"entry": "Whenever an enemy starts its turn in the aura, that creature takes Radiant damage equal to your Charisma modifier plus your Proficiency Bonus. This damage is doubled against Fiends and Undead."
+						},
+						{
+							"type": "item",
+							"name": "Sunlight.",
+							"entry": "The aura is filled with Bright Light that is sunlight."
+						}
+					]
+				}
             ]
         },
         {
@@ -2673,11 +2689,11 @@
                 "You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity: Peerless Athlete|Paladin|Ishiir|Glory|Ishiir|3"
+                    "subclassFeature": "Channel Divinity: Inspiring Smite|Paladin|Ishiir|Glory|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity: Inspiring Smite|Paladin|Ishiir|Glory|Ishiir|3"
+                    "subclassFeature": "Peerless Athlete|Paladin|Ishiir|Glory|Ishiir|3"
                 }
             ]
         },
@@ -2724,7 +2740,7 @@
                         ],
                         [
                             "17th",
-                            "{@spell commune|Ishiir}, {@spell flame strike|Ishiir}"
+                            "{@spell legend lore|Ishiir}, {@spell yolande's regal presence|Ishiir}"
                         ]
                     ]
                 }
@@ -2787,7 +2803,7 @@
             ]
         },
         {
-            "name": "Channel Divinity: Peerless Athlete",
+            "name": "Peerless Athlete",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
@@ -2797,7 +2813,7 @@
             "level": 3,
             "header": 2,
             "entries": [
-                "As a bonus action, you can use your Channel Divinity to augment your athleticism. For the next 10 minutes, you have advantage on Strength ({@skill Athletics}) and Dexterity ({@skill Acrobatics}) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal)."
+                "At 3rd level, you gain proficiency in {@skill acrobatics} or {@skill athletics}. When you make Strength or Dexterity check, you can add your Charisma modifier to it. You can do so a number of times equal to your proficiency and you regain all expended uses on a long rest."
             ]
         },
         {
@@ -2829,7 +2845,7 @@
             "entries": [
                 "{@i 15th-level Oath of Glory feature}",
                 "You can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can use your reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one weapon attack against the attacker as part of this reaction, provided the attacker is within your weapon's range.",
-                "You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+                "You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain one expended use on a Short Rest and all expended uses on a Long Rest."
             ]
         },
         {
@@ -2844,226 +2860,16 @@
             "header": 2,
             "entries": [
                 "{@i 20th-level Oath of Glory feature}",
-                "You can empower yourself with the legends—whether true or exaggerated—of your great deeds. As a bonus action, you gain the following benefits for 1 minute:",
+                "You can empower yourself with the legends—whether true or exaggerated—of your great deeds. As a bonus action, you gain the following benefits for 10 minutes:",
                 {
                     "type": "list",
                     "items": [
-                        "You are blessed with an otherworldly presence, gaining advantage on all Charisma checks.",
-                        "Once on each of your turns when you make a weapon attack and miss, you can cause that attack to hit instead.",
-                        "If you fail a saving throw, you can use your reaction to reroll it and use either result."
+                        "If your total for a Strength, Dexterity, or Charisma check is less than your Charisma score, you can use that score in place of the total.",
+                        "Your weapon attacks deal additional damage equal to half your Paladin level. The damage type is the same as the weapon's.",
+                        "When you're not {@condition incapacitated|Ishiir} and subjected to an effect that allows you to make a Strength, Dexterity, or Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature again until the start of your next turn."
                     ]
                 },
                 "Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
-            ]
-        },
-        {
-            "name": "Oath of Heroism",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Paladin",
-            "classSource": "Ishiir",
-            "subclassShortName": "Heroism",
-            "subclassSource": "Ishiir",
-            "level": 3,
-            "entries": [
-                "The Oath of Heroism is an affirmation of a destined path, one laid out for you by divine hands. For whatever reason, a god or a group of gods has included you in their machinations. You are not a reluctant hero, but one who fully embraces the idea that great deeds are yours to achieve. You train diligently, sculpting your body and refining your skills so you're ready when destiny calls.",
-                {
-                    "type": "refSubclassFeature",
-                    "subclassFeature": "Tenets of Heroism|Paladin|Ishiir|Heroism|Ishiir|3"
-                },
-                {
-                    "type": "refSubclassFeature",
-                    "subclassFeature": "Oath Spells|Paladin|Ishiir|Heroism|Ishiir|3"
-                },
-                {
-                    "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity|Paladin|Ishiir|Heroism|Ishiir|3"
-                }
-            ]
-        },
-        {
-            "name": "Channel Divinity",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Paladin",
-            "classSource": "Ishiir",
-            "subclassShortName": "Heroism",
-            "subclassSource": "Ishiir",
-            "level": 3,
-            "header": 1,
-            "consumes": {
-                "name": "Channel Divinity"
-            },
-            "entries": [
-                "{@i 3rd-level Oath of Heroism feature}",
-                "You gain the following two Channel Divinity options.",
-                {
-                    "type": "entries",
-                    "name": "Peerless Athlete",
-                    "entries": [
-                        "You can use your Channel Divinity to augment your athleticism with divine favor. As a bonus action, you gain advantage on all Strength ({@skill Athletics}) and Dexterity ({@skill Acrobatics}) checks for the next 10 minutes. "
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Legendary Strike",
-                    "entries": [
-                        "You can use your Channel Divinity as a bonus action to guide your attacks: for 1 minute, your weapon attacks score a critical hit on a roll of 19 or 20 on the {@dice d20}. "
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Oath Spells",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Paladin",
-            "classSource": "Ishiir",
-            "subclassShortName": "Heroism",
-            "subclassSource": "Ishiir",
-            "level": 3,
-            "header": 1,
-            "entries": [
-                "{@i 3rd-level Oath of Heroism feature}",
-                "You gain oath spells at the paladin levels listed in the Oath of Heroism Spells table.",
-                {
-                    "type": "table",
-                    "caption": "Oath of Heroism Spells",
-                    "colLabels": [
-                        "Paladin Level",
-                        "Spells"
-                    ],
-                    "colStyles": [
-                        "col-2 text-center",
-                        "col-10"
-                    ],
-                    "rows": [
-                        [
-                            "3rd",
-                            "{@spell expeditious retreat|Ishiir}, {@spell guiding bolt|Ishiir}"
-                        ],
-                        [
-                            "5th",
-                            "{@spell enhance ability|Ishiir}, {@spell enthrall|Ishiir}"
-                        ],
-                        [
-                            "9th",
-                            "{@spell haste|Ishiir}, {@spell protection from energy|Ishiir}"
-                        ],
-                        [
-                            "13th",
-                            "{@spell compulsion|Ishiir}, {@spell freedom of movement|Ishiir}"
-                        ],
-                        [
-                            "17th",
-                            "{@spell commune|Ishiir}, {@spell conjure volley|Ishiir}"
-                        ]
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Tenets of Heroism",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Paladin",
-            "classSource": "Ishiir",
-            "subclassShortName": "Heroism",
-            "subclassSource": "Ishiir",
-            "level": 3,
-            "header": 1,
-            "entries": [
-                "The tenets of the Oath of Heroism reflect a paladin's commitment to fulfilling their calling as a hero worthy of legend.",
-                {
-                    "type": "entries",
-                    "name": "Actions over Words",
-                    "entries": [
-                        "Strive to be known by deeds not words."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Challenges Are but Tests",
-                    "entries": [
-                        "Every hardship serves to challenge your abilities and harden your resolve."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Embrace Destiny",
-                    "entries": [
-                        "You didn't choose this path, but it's yours to walk. And it will carry you into legend."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Hone the Body",
-                    "entries": [
-                        "Like raw stone, your body must be worked so its potential can be realized."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Mighty Deed",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Paladin",
-            "classSource": "Ishiir",
-            "subclassShortName": "Heroism",
-            "subclassSource": "Ishiir",
-            "level": 7,
-            "header": 2,
-            "entries": [
-                "{@i 7th-level Oath of Heroism feature}",
-                "Your actions on the battlefield can supernaturally bolster your allies and demoralize your enemies. Whenever you score a critical hit or reduce a creature to 0 hit points, you can choose one or more creatures that you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). All the chosen creatures are affected by one of the following effects of your choice:",
-                {
-                    "type": "list",
-                    "items": [
-                        "The creature gains temporary hit points equal to {@dice 1d6} + your Charisma modifier (minimum of 1 temporary hit point).",
-                        "The creature must succeed on a Wisdom saving throw against your spell save DC or be {@condition frightened|Ishiir} of you until the start of your next turn."
-                    ]
-                },
-                "Once you use this feature, you can't use it again until the start of your next turn."
-            ]
-        },
-        {
-            "name": "Glorious Defense",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Paladin",
-            "classSource": "Ishiir",
-            "subclassShortName": "Heroism",
-            "subclassSource": "Ishiir",
-            "level": 15,
-            "header": 2,
-            "entries": [
-                "{@i 15th-level Oath of Heroism feature}",
-                "Your blessed glory on the battlefield can misdirect an attack. When a creature you can see hits you with an attack roll, you can use your reaction to gain a bonus to AC against that attack, potentially causing it to miss you. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one weapon attack against the attacker as part of this reaction."
-            ]
-        },
-        {
-            "name": "Living Myth",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Paladin",
-            "classSource": "Ishiir",
-            "subclassShortName": "Heroism",
-            "subclassSource": "Ishiir",
-            "level": 20,
-            "header": 2,
-            "entries": [
-                "{@i 20th-level Oath of Heroism feature}",
-                "You can now empower yourself with the legends—whether true or exaggerated—told of your great deeds. As a bonus action, you gain the following benefits for 10 minutes:",
-                {
-                    "type": "list",
-                    "items": [
-                        "You are blessed with otherworldly comeliness, gaining advantage on all Charisma checks.",
-                        "Once on each of your turns when you make a weapon attack and miss, you can cause that attack to hit instead.",
-                        "If you fail a saving throw, you can use your reaction to succeed instead."
-                    ]
-                },
-                "Once you use this feature, you can't use it again until you finish a long rest."
             ]
         },
         {
@@ -3084,16 +2890,16 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Oathbreaker Channel Divinity: Control Undead|Paladin|Ishiir|Oathbreaker|Ishiir|3"
+                    "subclassFeature": "Channel Divinity: Dreadful Gaze|Paladin|Ishiir|Oathbreaker|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Oathbreaker Channel Divinity: Dreadful Aspect|Paladin|Ishiir|Oathbreaker|Ishiir|3"
+                    "subclassFeature": "Dark Harbinger|Paladin|Ishiir|Oathbreaker|Ishiir|3"
                 }
             ]
         },
         {
-            "name": "Oathbreaker Channel Divinity: Control Undead",
+            "name": "Channel Divinity: Dreadful Gaze",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
@@ -3103,11 +2909,11 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "As an action, the paladin targets one undead creature he or she can see within 30 feet of him or her. The target must make a Wisdom saving throw. On a failed save, the target must obey the paladin's commands for the next 24 hours, or until the paladin uses this Channel Divinity option again. An undead whose challenge rating is equal to or greater than the paladin's level is immune to this effect."
+                "As a bonus action, you focus your negative emotion into a lance of magical menace. Choose one creature you can see within 60 ft of you that can also you. The creature has to make a Wisdom saving throw. On a failure, the creature has disadvantage on attack rolls and contested ability checks against you for 1 minute. At the end of each of its turns, the creature can repeat the saving throw, ending the effect on a success."
             ]
         },
         {
-            "name": "Oathbreaker Channel Divinity: Dreadful Aspect",
+            "name": "Dark Harbinger",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
@@ -3117,7 +2923,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "As an action, the paladin channels the darkest emotions and focuses them into a burst of magical menace. Each creature of the paladin's choice within 30 feet of the paladin must make a Wisdom saving throw if it can see the paladin. On a failed save, the target is {@condition frightened|Ishiir} of the paladin for 1 minute. If a creature {@condition frightened|Ishiir} by this effect ends its turn more than 30 feet away from the paladin, it can attempt another Wisdom saving throw to end the effect on it."
+                "At 3rd level, you gain proficiency in {@skill intimidation}. Additionally, the bonus damage of your Divine Smite also applies to good-aligned creatures. Additionally, if a feature or spell allows you to do radiant damage, you can cause it to deal necrotic damage instead."
             ]
         },
         {
@@ -3184,7 +2990,7 @@
             ]
         },
         {
-            "name": "Supernatural Resistance",
+            "name": "Dark Presence",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
@@ -3194,7 +3000,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "At 15th level, the paladin gains resistance to radiant and necrotic damage."
+                "At 15th level, you and your allies have resistance to radiant and necrotic damage while within your Aura of Protection."
             ]
         },
         {
@@ -3208,9 +3014,16 @@
             "level": 20,
             "header": 2,
             "entries": [
-                "At 20th level, the paladin can, as an action, surround himself or herself with an aura of gloom that lasts for 1 minute. The aura reduces any bright light in a 30-foot radius around the paladin to dim light. Whenever an enemy that is {@condition frightened|Ishiir} by the paladin starts its turn in the aura, it takes {@damage 4d10} psychic damage. Additionally, the paladin and creatures he or she chooses in the aura are draped in deeper shadow. Creatures that rely on sight have disadvantage on attack rolls against creatures draped in this shadow.",
-                "While the aura lasts, the paladin can use a bonus action on his or her turn to cause the shadows in the aura to attack one creature. The paladin makes a melee spell attack against the target. If the attack hits, the target takes necrotic damage equal to {@dice 3d10} + the paladin's Charisma modifier.",
-                "After activating the aura, the paladin can't do so again until he or she finishes a long rest."
+                "At 20th level, you can empower yourself with dark forces and exude a corrupting presence. As a bonus action, you gain the following benefits for 10 minutes:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You emanate an aura of magical gloom within 30 ft. This counts as dim light and sunlight cannot illuminate this area.",
+                        "Enemy creatures have disadvantage on saving throws against any of your features and spells, as well as those of undead and fiends while within the gloom.",
+                        "When an enemy creature starts its turn in the gloom, it takes 10 necrotic damage. This damage is doubled if the creature is good-aligned. "
+                    ]
+                },
+                "Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
             ]
         },
         {
@@ -3235,16 +3048,16 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity: Emissary of Peace|Paladin|Ishiir|Redemption|Ishiir|3"
+                    "subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin|Ishiir|Redemption|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity: Rebuke the Violent|Paladin|Ishiir|Redemption|Ishiir|3"
+                    "subclassFeature": "Emissary of Peace|Paladin|Ishiir|Redemption|Ishiir|3"
                 }
             ]
         },
         {
-            "name": "Channel Divinity: Emissary of Peace",
+            "name": "Emissary of Peace",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
@@ -3253,11 +3066,8 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "header": 1,
-            "consumes": {
-                "name": "Channel Divinity"
-            },
             "entries": [
-                "You can use your Channel Divinity to augment your presence with divine power. As a bonus action, you grant yourself a +5 bonus to Charisma ({@skill Persuasion}) checks for the next 10 minutes."
+                "At 3rd level, you gain proficiency in {@skill persuasion}. Additionally, when you use your Lay on Hands, you can spend 5 points from the pool to cast the sanctuary spell on the target without components and a spell slot."
             ]
         },
         {
@@ -3403,7 +3213,7 @@
             ]
         },
         {
-            "name": "Protective Spirit",
+            "name": "Tranquil Spirit",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
@@ -3413,11 +3223,12 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "Starting at 15th level, a holy presence mends your wounds in battle. You regain hit points equal to {@dice 1d6} + half your paladin level if you end your turn in combat with fewer than half of your hit points remaining and you aren't {@condition incapacitated|Ishiir}."
+                "At 15th level, as long as you have at least 1 hit point, you regain hit points equal to half your paladin level + your Charisma modifier at the start of every one of your turns.",
+                "If you deal damage to a creature, force it to make a saving throw, or otherwise target it with a harmful effect, this feature stops working until the end of your next turn."
             ]
         },
         {
-            "name": "Emissary of Redemption",
+            "name": "Emissary of Peace",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
@@ -3427,15 +3238,16 @@
             "level": 20,
             "header": 2,
             "entries": [
-                "At 20th level, you become an avatar of peace, which gives you two benefits:",
+                "At 20th level, you mantle yourself in magical serenity. As a bonus action, you gain the following benefits for 10 minutes:",
                 {
                     "type": "list",
                     "items": [
-                        "You have resistance to all damage dealt by other creatures (their attacks, spells, and other effects).",
-                        "Whenever a creature hits you with an attack, it takes radiant damage equal to half the damage you take from the attack."
+                        "You have resistance to all damage and advantage on all saving throws. If you deal damage to a creature, force it to make a saving throw, or otherwise target it with a harmful effect, this feature stops working until the end of your next turn.",
+                        "Any creature that damages or your allies you while in your Aura of Protection takes 10 radiant damage. It takes this damage only once per turn. This damage does not suspend any of your subclass features.",
+                        "If you heal a target with your Lay on Hands, the amount of healing it receives per point is doubled. "
                     ]
                 },
-                "If you attack a creature, cast a spell on it, or deal damage to it by any means but this feature, neither benefit works against that creature until you finish a long rest."
+                "Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
             ]
         },
         {
@@ -3459,16 +3271,16 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity: Conjure Duplicate|Paladin|Ishiir|Treachery|Ishiir|3"
+                    "subclassFeature": "Channel Divinity: Poison Strike|Paladin|Ishiir|Treachery|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity: Poison Strike|Paladin|Ishiir|Treachery|Ishiir|3"
+                    "subclassFeature": "Treacherous Nature|Paladin|Ishiir|Treachery|Ishiir|3"
                 }
             ]
         },
         {
-            "name": "Channel Divinity: Conjure Duplicate",
+            "name": "Treacherous Nature",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
@@ -3481,8 +3293,8 @@
                 "name": "Channel Divinity"
             },
             "entries": [
-                "As an action, you create a visual illusion of yourself that lasts for 1 minute. The illusion appears in an unoccupied space of your choice that you can see within 30 feet of you. The illusion looks exactly like you; it is silent; it is your size, is insubstantial, doesn't occupy its space; and it is unaffected by attacks and damage. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but the illusion must remain within 120 feet of you.",
-                "For the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how uncanny the illusion is."
+                "At 3rd level, you gain proficiency in deception or stealth. Additionally, you can use your Lay on Hands to target creature that cannot see you, that is not aware you are hostile to it or that is under some other effect that makes it non-hostile to you, e.g. the {@condition Charmed|Ishiir} condition.",
+                "The target has to make a Constitution saving throw. On a failure, the creature takes necrotic damage equal to the number of points spent from the pool. On a success, the creature takes half as much damage. You then regain hit points equal to the damage dealt."
             ]
         },
         {
@@ -3565,7 +3377,7 @@
             ]
         },
         {
-            "name": "Aura of Treachery",
+            "name": "Blackguard's Escape",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
@@ -3575,7 +3387,21 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "Starting at 7th level, you emanate an aura of discord, which gives you the following benefits.",
+                "At 7th level, you have the ability to slip away from your foes. Immediately after you are hit by an attack, you can use your reaction to turn {@condition invisible|Ishiir} and teleport up to 60 feet to a spot you can see. You remain {@condition invisible|Ishiir} until the end of your next turn or until you attack, deal damage, or force a creature to make a saving throw. Once you use this feature, you must finish a short or long rest before you can use it again."
+            ]
+        },
+        {
+            "name": "Aura of Treachery",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Treachery",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "Starting at 15th level, you emanate an aura of discord, which gives you the following benefits.",
                 {
                     "type": "entries",
                     "entries": [
@@ -3596,25 +3422,11 @@
                             "name": "Treacherous Strike",
                             "entries": [
                                 "If a creature within 5 feet of you misses you with a melee attack, you can use your reaction to force the attacker to reroll that attack against a creature of your choice that is also within 5 feet of the attacker. The ability fails and is wasted if the attacker is immune to being {@condition charmed|Ishiir}.",
-                                "You can use this ability three times. You regain expended uses of it when you finish a short or long rest."
+                                "You can use this ability three times. You regain one expended use on a Short Rest and all expended uses on a Long Rest."
                             ]
                         }
                     ]
                 }
-            ]
-        },
-        {
-            "name": "Blackguard's Escape",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Paladin",
-            "classSource": "Ishiir",
-            "subclassShortName": "Treachery",
-            "subclassSource": "Ishiir",
-            "level": 15,
-            "header": 2,
-            "entries": [
-                "At 15th level, you have the ability to slip away from your foes. Immediately after you are hit by an attack, you can use your reaction to turn {@condition invisible|Ishiir} and teleport up to 60 feet to a spot you can see. You remain {@condition invisible|Ishiir} until the end of your next turn or until you attack, deal damage, or force a creature to make a saving throw. Once you use this feature, you must finish a short or long rest before you can use it again."
             ]
         },
         {
@@ -3628,16 +3440,16 @@
             "level": 20,
             "header": 2,
             "entries": [
-                "At 20th level, you gain the ability to emanate feelings of treachery. As an action, you can magically become an avatar of deceit, gaining the following benefits for 1 minute:",
+                "At 20th level, you become of an avatar of deceit and emit an aura of treacherous magic in a 30-ft emanation. As a bonus action, you gain the following benefits for 10 minutes:",
                 {
                     "type": "list",
                     "items": [
-                        "You are {@condition invisible|Ishiir}.",
-                        "If a creature damages you on its turn, it must succeed on a Wisdom saving throw (DC equal to your spell save DC) or you control its next action, provided that you aren't {@condition incapacitated|Ishiir} when it takes the action. A creature automatically succeeds on the save if the creature is immune to being {@condition charmed|Ishiir}.",
-                        "If you have advantage on an attack roll, you gain a bonus to its damage roll equal to your paladin level."
+                        "When a creature targets you with an attack, but any of your allies are within the aura and within range of the attack, it makes the roll with disadvantage.",
+                        "As part of the bonus action to activate this feature and as a bonus action on every subsequent turn, you can give yourself advantage on one attack roll.",
+                        "When you use your Treacherous Strikes feature, the new target of the attack can be anywhere in the aura. "
                     ]
                 },
-                "Once you use this feature, you can't use it again until you finish a long rest."
+                "Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
             ]
         },
         {
@@ -3661,16 +3473,16 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity: Abjure Enemy|Paladin|Ishiir|Vengeance|Ishiir|3"
+                    "subclassFeature": "Channel Divinity: Vow of Enmity|Paladin|Ishiir|Vengeance|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity: Vow of Enmity|Paladin|Ishiir|Vengeance|Ishiir|3"
+                    "subclassFeature": "Avenger's Focus|Paladin|Ishiir|Vengeance|Ishiir|3"
                 }
             ]
         },
         {
-            "name": "Channel Divinity: Abjure Enemy",
+            "name": "Avenger's Focus",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
@@ -3679,13 +3491,8 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "header": 1,
-            "consumes": {
-                "name": "Channel Divinity"
-            },
             "entries": [
-                "As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom saving throw, unless it is immune to being {@condition frightened|Ishiir}. Fiends and undead have disadvantage on this saving throw.",
-                "On a failed save, the creature is {@condition frightened|Ishiir} for 1 minute or until it takes any damage. While {@condition frightened|Ishiir}, the creature's speed is 0, and it can't benefit from any bonus to its speed.",
-                "On a successful save, the creature's speed is halved for 1 minute or until the creature takes any damage."
+                "At 3rd level, you gain proficiency in {@skill insight} or {@skill intimidation}. Additionally, the bonus damage of your Divine Smite also applies to any creature that is under the effect of your Vow of Enmity."
             ]
         },
         {
@@ -3702,7 +3509,8 @@
                 "name": "Channel Divinity"
             },
             "entries": [
-                "As a bonus action, you can utter a vow of enmity against a creature you can see within 30 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute or until it drops to 0 hit points or falls {@condition unconscious|Ishiir}."
+                "When you take the Attack action, you can expend one use of your Channel Divinity to utter a vow of enmity against a creature you can see within 30 feet of yourself. You have Advantage on attack rolls against the creature for 1 minute or until you use this feature again.",
+                "If the creature drops to 0 Hit Points before the vow ends, you can transfer the vow to a different creature within 30 feet of yourself (no action required)."
             ]
         },
         {
@@ -3826,7 +3634,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "By 7th level, your supernatural focus helps you close off a foe's retreat. When you hit a creature with an opportunity attack, you can move up to your speed immediately after the attack and as part of the same reaction. This movement doesn't provoke opportunity attacks."
+                "By 7th level, your supernatural focus helps you close off a foe's retreat. When you hit a creature with an Opportunity Attacks, you can reduce the creature's Speed to 0 until the end of the current turn. You can then move up to half your Speed as part of the same Reaction. This movement doesn't provoke Opportunity Attacks."
             ]
         },
         {
@@ -3854,15 +3662,16 @@
             "level": 20,
             "header": 2,
             "entries": [
-                "At 20th level, you can assume the form of an angelic avenger. Using your action, you undergo a transformation. For 1 hour, you gain the following benefits:",
+                "At 20th level, you become an avatar of vengeance. As a bonus action, you gain the following benefits for 10 minutes:",
                 {
                     "type": "list",
                     "items": [
-                        "Wings sprout from your back and grant you a flying speed of 60 feet.",
-                        "You emanate an aura of menace in a 30-foot radius. The first time any enemy creature enters the aura or starts its turn there during a battle, the creature must succeed on a Wisdom saving throw or become {@condition frightened|Ishiir} of you for 1 minute. Affected creatures can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. {@action Attack|Ishiir} rolls against the {@condition frightened|Ishiir} creature have advantage."
+                        "You sprout spectral wings on your back, have a Fly Speed of 60 feet, and can hover.",
+                        "If an enemy creature within your Aura of Protection damages you or your allies, it is automatically affected by your Vow of Enmity (no action required). This does not consume a use of your Channel Divinity.",
+                        "If an enemy creature starts its turn in your Aura of Protection or enters it for the first time on a turn, it has to make a Wisdom saving throw or become {@condition frightened|Ishiir} for 1 minute. If the creature is under the effect of your Vow of Enmity, it has disadvantage on this saving throw. At the end of each of its turns, the creature can repeat the saving throw, ending the effect on a success. "
                     ]
                 },
-                "Once you use this feature, you can't use it again until you finish a long rest."
+                "Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
             ]
         },
         {
@@ -3916,15 +3725,22 @@
                     "entries": [
                         "You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws."
                     ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Abjure the Extraplanar",
-                    "entries": [
-                        "You can use your Channel Divinity to castigate unworldly beings. As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.",
-                        "A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. For its action, it can use only the {@action Dash|Ishiir} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can take the {@action Dodge|Ishiir} action."
-                    ]
                 }
+            ]
+        },
+        {
+            "name": "Vigilant Watcher",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Watchers",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "{@i 3rd-level Oath of the Watchers feature}",
+                "At 3rd level, you gain proficiency in {@skill arcana}, {@skill insight}, or {@skill perception}. When you use your Lay on Hands, the target also has half cover until the start of your next turn while it is within 5 feet of you and you aren't {@condition incapacitated|Ishiir}. Starting at 7th level, it gains this benefit while within your Aura of Protection."
             ]
         },
         {
