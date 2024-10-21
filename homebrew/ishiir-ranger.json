@@ -183,12 +183,9 @@
             "classTableGroups": [
                 {
                     "colLabels": [
-                        "{@filter Spells Known|spells|class=ranger (Ishiir)|source=Ishiir}"
+                        "{@filter Prepared Spells|spells|class=ranger (Ishiir)|source=Ishiir}"
                     ],
                     "rows": [
-                        [
-                            0
-                        ],
                         [
                             2
                         ],
@@ -196,16 +193,7 @@
                             3
                         ],
                         [
-                            3
-                        ],
-                        [
                             4
-                        ],
-                        [
-                            4
-                        ],
-                        [
-                            5
                         ],
                         [
                             5
@@ -221,12 +209,6 @@
                         ],
                         [
                             7
-                        ],
-                        [
-                            8
-                        ],
-                        [
-                            8
                         ],
                         [
                             9
@@ -245,6 +227,24 @@
                         ],
                         [
                             11
+                        ],
+                        [
+                            12
+                        ],
+                        [
+                            12
+                        ],
+                        [
+                            14
+                        ],
+                        [
+                            14
+                        ],
+                        [
+                            15
+                        ],
+                        [
+                            15
                         ]
                     ]
                 },
@@ -259,7 +259,7 @@
                     ],
                     "rowsSpellProgression": [
                         [
-                            0,
+                            2,
                             0,
                             0,
                             0,
@@ -402,9 +402,10 @@
                 }
             ],
             "classFeatures": [
+                "Spellcasting|Ranger|Ishiir|1",
                 "Favored Enemy|Ranger|Ishiir|1",
                 "Natural Explorer|Ranger|Ishiir|1",
-                "Spellcasting|Ranger|Ishiir|2",
+                "Deft Explorer|Ranger|Ishiir|2",
                 "Fighting Style|Ranger|Ishiir|2",
                 "Martial Versatility|Ranger|Ishiir|2",
                 "Primeval Awareness|Ranger|Ishiir|3",
@@ -416,20 +417,17 @@
                 "Martial Mastery|Ranger|Ishiir|4",
                 "Proficiency Versatility|Ranger|Ishiir|4",
                 "Martial Versatility|Ranger|Ishiir|4",
-                {
-                    "classFeature": "Ranger Conclave feature|Ranger|Ishiir|5",
-                    "gainSubclassFeature": true
-                },
-                "Greater Favored Enemy|Ranger|Ishiir|6",
+                "Extra Attack|Ranger|Ishiir|5",
+                "Improved Favored Enemy|Ranger|Ishiir|6",
+                "Roving|Ranger|Ishiir|6",
                 {
                     "classFeature": "Ranger Conclave feature|Ranger|Ishiir|7",
                     "gainSubclassFeature": true
                 },
-                "Expertise|Ranger|Ishiir|7",
                 "Ability Score Improvement|Ranger|Ishiir|8",
                 "Proficiency Versatility|Ranger|Ishiir|8",
-                "Fleet of Foot|Ranger|Ishiir|8",
-                "Hide in Plain Sight|Ranger|Ishiir|10",
+                "Expertise|Ranger|Ishiir|9",
+                "Tireless Wanderer|Ranger|Ishiir|10",
                 {
                     "classFeature": "Ranger Conclave feature|Ranger|Ishiir|11",
                     "gainSubclassFeature": true
@@ -743,6 +741,68 @@
     ],
     "classFeature": [
         {
+            "name": "Spellcasting",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "You have learned to channel the magical essence of nature to cast spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting.",
+                {
+                    "type": "entries",
+                    "name": "Spell Slots",
+                    "entries": [
+                        "The Ranger Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Prepared Spells of Level 1+.",
+                    "entries": [
+                        "You prepare the list of level 1+ spells that are available for you to cast with this feature.",
+                        "The number of spells on your list increases as you gain Ranger levels, as shown in the Prepared Spells column of the Ranger Features table. Whenever that number increases, choose additional Ranger spells until the number of spells on your list matches the number in the Ranger Features table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Ranger, your list of prepared spells can include six Ranger spells of level 1 or 2 in any combination.",
+                        "If another Ranger feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Ranger spells for you."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Changing Your Prepared Spells.",
+                    "entries": [
+                        "Whenever you finish a Long Rest, you can replace one spell on your list with another Ranger spell for which you have spell slots."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Ability.",
+                    "entries": [
+                        "Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.",
+                        {
+                            "type": "abilityDc",
+                            "name": "Spell",
+                            "attributes": [
+                                "wis"
+                            ]
+                        },
+                        {
+                            "type": "abilityAttackMod",
+                            "name": "Spell",
+                            "attributes": [
+                                "wis"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": " Spellcasting Focus.",
+                    "entries": [
+                        "You can use a Druidic Focus as a Spellcasting Focus for your Ranger spells."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Favored Enemy",
             "source": "Ishiir",
             "page": 1,
@@ -751,8 +811,8 @@
             "level": 1,
             "entries": [
                 "Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy commonly encountered in the wilds.",
-                "Choose a type of favored enemy: {@filter aberrations|bestiary|type=aberration}, {@filter beasts|bestiary|type=beast}, {@filter celestials|bestiary|type=celestial}, {@filter constructs|bestiary|type=construct}, {@filter dragons|bestiary|type=dragon}, {@filter elementals|bestiary|type=elemental}, {@filter fey|bestiary|type=fey}, {@filter fiends|bestiary|type=fiend}, {@filter giants|bestiary|type=giant}, {@filter humanoids|bestiary|type=humanoid}, {@filter oozes|bestiary|type=ooze}, {@filter plants|bestiary|type=plant} or {@filter undead|bestiary|type=undead}. You gain a +2 bonus to damage rolls with weapon attacks or ranger spells that use a weapon or piece of ammunition as a material component against creatures of the chosen type. Additionally, you have advantage on Wisdom ({@skill Survival}) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.",
-                "When you gain this feature, you also learn one language of your choice, typically one spoken by your favored enemy or creatures associated with it. However, you are free to pick any language you wish to learn."
+                "Choose a creature type. You gain a +2 bonus to damage rolls with weapon attacks or ranger spells that use a weapon or piece of ammunition as a material component against the chosen type.",
+                "Additionally, you have advantage on Wisdom and Intelligence checks that pertain to your favored enemies."
             ]
         },
         {
@@ -784,6 +844,33 @@
                         "While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Deft Explorer",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "Starting at 2nd level, thanks to your travels, you gain the following benefits.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Expertise.",
+							"entry": "Choose one of your skill proficiencies with which you lack Expertise. You gain Expertise in that skill."
+						},
+						{
+							"type": "item",
+							"name": "Languages.",
+							"entry": "You know two languages of your choice."
+						}
+					]
+				}
             ]
         },
         {
@@ -857,55 +944,6 @@
             "entries": [
                 "{@note Note that this feature is intended for use with the Ranger class presented in the Player's Handbook. It is presented here for convenience, and may be unsuitable for use as a Revised Ranger feature.}",
                 "Whenever you gain a level in this class, you can replace a fighting style you know with another style available to your class. This change represents a shift of focus in your martial training and practice, causing you to lose the benefits of one style and gain the benefits of another style."
-            ]
-        },
-        {
-            "name": "Spellcasting",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Ranger",
-            "classSource": "Ishiir",
-            "level": 2,
-            "entries": [
-                "By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter ranger spell list|spells|class=ranger (Ishiir)|source=Ishiir}.",
-                {
-                    "type": "entries",
-                    "name": "Spell Slots",
-                    "entries": [
-                        "The Ranger table shows how many spell slots you have to cast your {@filter ranger spells|spells|class=ranger (Ishiir)|source=Ishiir} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-                        "For example, if you know the 1st-level spell {@spell animal friendship|Ishiir} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell animal friendship|Ishiir} using either slot."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Spells Known of 1st Level and Higher",
-                    "entries": [
-                        "You know two 1st-level spells of your choice from the ranger spell list.",
-                        "The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
-                        "Additionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Spellcasting Ability",
-                    "entries": [
-                        "Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.",
-                        {
-                            "type": "abilityDc",
-                            "name": "Spell",
-                            "attributes": [
-                                "wis"
-                            ]
-                        },
-                        {
-                            "type": "abilityAttackMod",
-                            "name": "Spell",
-                            "attributes": [
-                                "wis"
-                            ]
-                        }
-                    ]
-                }
             ]
         },
         {
@@ -984,6 +1022,17 @@
             ]
         },
         {
+            "name": "Extra Attack",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "level": 5,
+            "entries": [
+                "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
+            ]
+        },
+        {
             "name": "Ranger Conclave feature",
             "source": "Ishiir",
             "page": 1,
@@ -995,15 +1044,25 @@
             ]
         },
         {
-            "name": "Greater Favored Enemy",
+            "name": "Improved Favored Enemy",
             "source": "Ishiir",
             "page": 1,
             "className": "Ranger",
             "classSource": "Ishiir",
             "level": 6,
             "entries": [
-                "At 6th level, you are ready to hunt even deadlier game. Choose a type of greater favored enemy: {@filter aberrations|bestiary|type=aberration}, {@filter beasts|bestiary|type=beast}, {@filter celestials|bestiary|type=celestial}, {@filter constructs|bestiary|type=construct}, {@filter dragons|bestiary|type=dragon}, {@filter elementals|bestiary|type=elemental}, {@filter fey|bestiary|type=fey}, {@filter fiends|bestiary|type=fiend}, {@filter giants|bestiary|type=giant}, {@filter humanoids|bestiary|type=humanoid}, {@filter oozes|bestiary|type=ooze}, {@filter plants|bestiary|type=plant} or {@filter undead|bestiary|type=undead}. You gain all the benefits against this chosen enemy that you normally gain against your favored enemy, including an additional language. Your bonus to damage rolls against all your favored enemies increases to +4.",
-                "Additionally, you have advantage on saving throws against the spells and abilities used by a favored enemy."
+                "At 6th level, you become more adept at fighting your favored foes. Choose a second creature type as favored enemy. Your damage bonus against all your favored enemies increases to +4. Additionally, you have advantage on saving throws against the spells and abilities used by a favored enemy."
+            ]
+        },
+        {
+            "name": "Roving",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "At 6th level, your Speed increases by 10 feet while you aren't wearing Heavy armor. You also have a Climb Speed and a Swim Speed equal to your Speed."
             ]
         },
         {
@@ -1018,17 +1077,6 @@
             ]
         },
         {
-            "name": "Expertise",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Ranger",
-            "classSource": "Ishiir",
-            "level": 7,
-            "entries": [
-                "At 7th level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with {@item thieves' tools|phb}. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
-            ]
-        },
-        {
             "name": "Ability Score Improvement",
             "source": "Ishiir",
             "page": 1,
@@ -1038,17 +1086,6 @@
             "entries": [
                 "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
                 "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-            ]
-        },
-        {
-            "name": "Fleet of Foot",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Ranger",
-            "classSource": "Ishiir",
-            "level": 8,
-            "entries": [
-                "Beginning at 8th level, you can use the {@action Dash|Ishiir} action as a bonus action on your turn."
             ]
         },
         {
@@ -1065,16 +1102,25 @@
             ]
         },
         {
-            "name": "Hide in Plain Sight",
+            "name": "Expertise",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "level": 9,
+            "entries": [
+                "At 9th level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with {@item thieves' tools|phb}. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
+            ]
+        },
+        {
+            "name": "Tireless Wanderer",
             "source": "Ishiir",
             "page": 1,
             "className": "Ranger",
             "classSource": "Ishiir",
             "level": 10,
             "entries": [
-                "Starting at 10th level, you can remain perfectly still for long periods of time to set up ambushes.",
-                "When you attempt to hide on your turn, you can opt to not move on that turn. If you avoid moving, creatures that attempt to detect you take a -10 penalty to their Wisdom ({@skill Perception}) checks until the start of your next turn. You lose this benefit if you move or fall {@condition prone|Ishiir}, either voluntarily or because of some external effect. You are still automatically detected if any effect or action causes you to no longer be hidden.",
-                "If you are still hidden on your next turn, you can continue to remain motionless and gain this benefit until you are detected."
+                "At 10th level, your speed increases by an additional 10 feet. Additionally, whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1."
             ]
         },
         {
@@ -1168,7 +1214,7 @@
             "classSource": "Ishiir",
             "level": 18,
             "entries": [
-                "At 18th level, you gain preternatural senses that help you fight creatures you can't see. When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it. You are also aware of the location of any {@condition invisible|Ishiir} creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't {@condition blinded|Ishiir} or {@condition deafened|Ishiir}."
+                "At 18th level, your connection to the forces of nature grants you {@sense Blindsight} with a range of 30 feet."
             ]
         },
         {
@@ -1243,7 +1289,6 @@
             ],
             "subclassFeatures": [
                 "Drakewarden|Ranger|Ishiir|Drakewarden|Ishiir|3",
-                "Extra Attack|Ranger|Ishiir|Drakewarden|Ishiir|5",
                 "Bond of Fang and Scale|Ranger|Ishiir|Drakewarden|Ishiir|7",
                 "Drake's Breath|Ranger|Ishiir|Drakewarden|Ishiir|11",
                 "Perfected Bond|Ranger|Ishiir|Drakewarden|Ishiir|15"
@@ -1279,7 +1324,6 @@
             ],
             "subclassFeatures": [
                 "Fey Wanderer|Ranger|Ishiir|Fey Wanderer|Ishiir|3",
-                "Extra Attack|Ranger|Ishiir|Fey Wanderer|Ishiir|5",
                 "Beguiling Twist|Ranger|Ishiir|Fey Wanderer|Ishiir|7",
                 "Fey Reinforcements|Ranger|Ishiir|Fey Wanderer|Ishiir|11",
                 "Misty Wanderer|Ranger|Ishiir|Fey Wanderer|Ishiir|15"
@@ -1315,7 +1359,6 @@
             ],
             "subclassFeatures": [
                 "Gloom Stalker|Ranger|Ishiir|Gloom Stalker|Ishiir|3",
-                "Extra Attack|Ranger|Ishiir|Gloom Stalker|Ishiir|5",
                 "Iron Mind|Ranger|Ishiir|Gloom Stalker|Ishiir|7",
                 "Stalker's Flurry|Ranger|Ishiir|Gloom Stalker|Ishiir|11",
                 "Shadowy Dodge|Ranger|Ishiir|Gloom Stalker|Ishiir|15"
@@ -1351,7 +1394,6 @@
             ],
             "subclassFeatures": [
                 "Horizon Walker|Ranger|Ishiir|Horizon Walker|Ishiir|3",
-                "Extra Attack|Ranger|Ishiir|Horizon Walker|Ishiir|5",
                 "Ethereal Step|Ranger|Ishiir|Horizon Walker|Ishiir|7",
                 "Distant Strike|Ranger|Ishiir|Horizon Walker|Ishiir|11",
                 "Spectral Defense|Ranger|Ishiir|Horizon Walker|Ishiir|15"
@@ -1366,7 +1408,6 @@
             "page": 1,
             "subclassFeatures": [
                 "Hunter Conclave|Ranger|Ishiir|Hunter Conclave|Ishiir|3",
-                "Extra Attack|Ranger|Ishiir|Hunter Conclave|Ishiir|5",
                 "Defensive Tactics|Ranger|Ishiir|Hunter Conclave|Ishiir|7",
                 "Multiattack|Ranger|Ishiir|Hunter Conclave|Ishiir|11",
                 "Superior Hunter's Defense|Ranger|Ishiir|Hunter Conclave|Ishiir|15"
@@ -1402,7 +1443,6 @@
             ],
             "subclassFeatures": [
                 "Monster Slayer|Ranger|Ishiir|Monster Slayer|Ishiir|3",
-                "Extra Attack|Ranger|Ishiir|Monster Slayer|Ishiir|5",
                 "Supernatural Defense|Ranger|Ishiir|Monster Slayer|Ishiir|7",
                 "Magic-User's Nemesis|Ranger|Ishiir|Monster Slayer|Ishiir|11",
                 "Slayer's Counter|Ranger|Ishiir|Monster Slayer|Ishiir|15"
@@ -1438,7 +1478,6 @@
             ],
             "subclassFeatures": [
                 "Primeval Guardian|Ranger|Ishiir|Primeval Guardian|Ishiir|3",
-                "Extra Attack|Ranger|Ishiir|Primeval Guardian|Ishiir|5",
                 "Ancient Fortitude|Ranger|Ishiir|Primeval Guardian|Ishiir|7",
                 "Rooted Defense|Ranger|Ishiir|Primeval Guardian|Ishiir|11",
                 "Guardian Aura|Ranger|Ishiir|Primeval Guardian|Ishiir|15"
@@ -1475,7 +1514,6 @@
             ],
             "subclassFeatures": [
                 "Swarmkeeper|Ranger|Ishiir|Swarmkeeper|Ishiir|3",
-                "Extra Attack|Ranger|Ishiir|Swarmkeeper|Ishiir|5",
                 "Writhing Tide|Ranger|Ishiir|Swarmkeeper|Ishiir|7",
                 "Mighty Swarm|Ranger|Ishiir|Swarmkeeper|Ishiir|11",
                 "Swarming Dispersal|Ranger|Ishiir|Swarmkeeper|Ishiir|15"
@@ -1593,7 +1631,7 @@
                 "For each level you gain after 3rd, your animal companion gains an additional hit die and increases its hit points accordingly.",
                 "Whenever you gain the Ability Score Improvement class feature, your companion's abilities also improve. Your companion can increase one ability score of your choice by 2, or it can increase two ability scores of your choice by 1. As normal, your companion can't increase an ability score above 20 using this feature unless its description specifies otherwise.",
                 "Your companion shares your alignment, and has a personality trait and a flaw that you can roll for or select from the tables below. Your companion shares your ideal, and its bond is always, \"The ranger who travels with me is a beloved companion for whom I would gladly give my life.\"",
-                "Your animal companion gains the benefits of your Favored Enemy feature, and of your Greater Favored Enemy feature when you gain that feature at 6th level. It uses the favored enemies you selected for those features.",
+                "Your animal companion gains the benefits of your Favored Enemy feature, and of your Improved Favored Enemy feature when you gain that feature at 6th level. It uses the favored enemies you selected for those features.",
                 {
                     "type": "table",
                     "caption": "Companion Trait",
@@ -1890,20 +1928,6 @@
             ]
         },
         {
-            "name": "Extra Attack",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Ranger",
-            "classSource": "Ishiir",
-            "subclassShortName": "Drakewarden",
-            "subclassSource": "Ishiir",
-            "level": 5,
-            "header": 2,
-            "entries": [
-                "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
-            ]
-        },
-        {
             "name": "Bond of Fang and Scale",
             "source": "Ishiir",
             "page": 1,
@@ -2152,20 +2176,6 @@
             ]
         },
         {
-            "name": "Extra Attack",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Ranger",
-            "classSource": "Ishiir",
-            "subclassShortName": "Fey Wanderer",
-            "subclassSource": "Ishiir",
-            "level": 5,
-            "header": 2,
-            "entries": [
-                "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
-            ]
-        },
-        {
             "name": "Beguiling Twist",
             "source": "Ishiir",
             "page": 1,
@@ -2318,20 +2328,6 @@
             ]
         },
         {
-            "name": "Extra Attack",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Ranger",
-            "classSource": "Ishiir",
-            "subclassShortName": "Gloom Stalker",
-            "subclassSource": "Ishiir",
-            "level": 5,
-            "header": 2,
-            "entries": [
-                "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
-            ]
-        },
-        {
             "name": "Iron Mind",
             "source": "Ishiir",
             "page": 1,
@@ -2476,20 +2472,6 @@
             "entries": [
                 "At 3rd level, you learn to draw on the energy of the multiverse to augment your attacks.",
                 "As a bonus action, choose one creature you can see within 30 feet of you. The next time you hit that creature on this turn with a weapon attack, all damage dealt by the attack becomes force damage, and the creature takes an extra {@damage 1d8} force damage from the attack. When you reach 11th level in this class, the extra damage increases to {@dice 2d8}."
-            ]
-        },
-        {
-            "name": "Extra Attack",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Ranger",
-            "classSource": "Ishiir",
-            "subclassShortName": "Horizon Walker",
-            "subclassSource": "Ishiir",
-            "level": 5,
-            "header": 2,
-            "entries": [
-                "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
             ]
         },
         {
@@ -2676,20 +2658,6 @@
             "header": 2,
             "entries": [
                 "When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature."
-            ]
-        },
-        {
-            "name": "Extra Attack",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Ranger",
-            "classSource": "Ishiir",
-            "subclassShortName": "Hunter Conclave",
-            "subclassSource": "Ishiir",
-            "level": 5,
-            "header": 2,
-            "entries": [
-                "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
             ]
         },
         {
@@ -2999,20 +2967,6 @@
             ]
         },
         {
-            "name": "Extra Attack",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Ranger",
-            "classSource": "Ishiir",
-            "subclassShortName": "Monster Slayer",
-            "subclassSource": "Ishiir",
-            "level": 5,
-            "header": 2,
-            "entries": [
-                "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
-            ]
-        },
-        {
             "name": "Supernatural Defense",
             "source": "Ishiir",
             "page": 1,
@@ -3166,20 +3120,6 @@
             "header": 1,
             "entries": [
                 "At 3rd level, your command of primal magic allows you to enhance your attacks with thorns. Once during each of your turns, you can deal an additional {@damage 1d6} piercing damage to one creature you hit with a weapon attack."
-            ]
-        },
-        {
-            "name": "Extra Attack",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Ranger",
-            "classSource": "Ishiir",
-            "subclassShortName": "Primeval Guardian",
-            "subclassSource": "Ishiir",
-            "level": 5,
-            "header": 2,
-            "entries": [
-                "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
             ]
         },
         {
@@ -3356,20 +3296,6 @@
                         ]
                     ]
                 }
-            ]
-        },
-        {
-            "name": "Extra Attack",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Ranger",
-            "classSource": "Ishiir",
-            "subclassShortName": "Swarmkeeper",
-            "subclassSource": "Ishiir",
-            "level": 5,
-            "header": 2,
-            "entries": [
-                "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
             ]
         },
         {
