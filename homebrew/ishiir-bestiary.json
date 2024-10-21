@@ -1407,6 +1407,98 @@
 			"conditionInflict": [
 				"prone"
 			]
+		},
+		{
+			"name": "Drake Companion",
+			"source": "Ishiir",
+			"page": 15,
+			"summonedByClass": "Ranger|Ishiir",
+			"size": [
+				"M"
+			],
+			"type": "dragon",
+			"ac": [
+				{
+					"special": "14 + PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "5 + five times your ranger level (the drake has a number of Hit Dice [d10s] equal to your ranger level)"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 15,
+			"int": 8,
+			"wis": 14,
+			"cha": 8,
+			"save": {
+				"dex": "+1 + PB",
+				"wis": "+2 + PB"
+			},
+			"senses": [
+				"blindsight 20 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				{
+					"special": "determined by the drake's draconic essence trait"
+				}
+			],
+			"languages": [
+				"Draconic"
+			],
+			"pbNote": "equals your bonus",
+			"trait": [
+				{
+					"name": "Draconic Essence",
+					"entries": [
+						"When you summon the drake, choose a damage type: acid, cold, fire, lightning, or poison. The chosen type determines the drake's damage immunity and the damage of its Infused Strikes trait."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Skills",
+					"entries": [
+						"The drake is proficient in the {@skill Perception} and {@skill Stealth} skills."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} +3 plus PB to hit, reach 5 ft., one target. {@h}{@dice 1d6} plus PB plus Strength modifier piercing damage."
+					]
+				},
+				{
+					"name": "Elemental Bolt",
+					"entries": [
+						"{@atk rw} +3 plus PB to hit, reach 120 ft., one target. {@h}{@dice 1d6} plus PB damage of the type chosen for Draconic Essence."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Infused Strikes",
+					"entries": [
+						"Choose a creature within 30 feet of your Drake Companion. Until the end of its next turn that creature deals {@damage 1d6} additional damage of the type chosen for Draconic Essence with its weapon attacks."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
 		}
     ]
 }
