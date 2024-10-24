@@ -1718,6 +1718,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 		},
 	) {
 		const depthData = MiscUtil.get(this._outlineData.classFeatures, ixLvl, ixFeature);
+		depthData.forEach(it => it.level = feature.level);
 
 		if (!this._state.isHideFeatures && depthData) {
 			depthData.filter(it => it.name).forEach(it => {
