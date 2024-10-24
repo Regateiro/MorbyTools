@@ -1695,7 +1695,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 		) return;
 
 		const displayDepth = Math.min(depthData.depth + 1, 2);
-		$(`<div class="cls-nav__item cls-nav__item--depth-${displayDepth} ${additionalCssClasses}">${depthData.depth == 0 ? "Level " + depthData.level + ": " : ""}${depthData.name}</div>`)
+		$(`<div class="cls-nav__item cls-nav__item--depth-${displayDepth} ${additionalCssClasses}">${depthData.level && depthData.depth == 0 ? "Level " + depthData.level + ": " : ""}${depthData.name}</div>`)
 			.click(() => {
 				const $it = $(`[data-title-index="${depthData.ixHeader}"]`);
 				if ($it.get()[0]) $it.get()[0].scrollIntoView();
