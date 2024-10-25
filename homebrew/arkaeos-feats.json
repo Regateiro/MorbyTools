@@ -517,12 +517,27 @@
 			"source": "Arkaeos",
 			"prerequisite": [
 				{
-					"other": "You can only choose this feat as origin feat."
+					"other": "You can only choose this feat as the origin feat."
 				}
 			],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
 			"entries": [
+				"Your maximum for the chosen ability score increases by 2.",
 				"You age at half speed and the expected maximum age for your race doubles.",
-				"Choose one ability score. The chosen ability score increases by 1. Your maximum for that ability score increases by 2.",
 				"When you make an attack roll, an ability check, or a saving throw, you can roll a {@dice d4} and add it to the result. You can choose to use this feature after you see the roll, but before the DM determineds the result. Once you use this ability, you can't use it again until you finish a short or long rest."
 			]
 		}
