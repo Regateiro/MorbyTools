@@ -719,10 +719,11 @@
                 }
             ],
             "entries": [
+                "You have the unusual ability to assume the form of a beast.",
                 {
                     "type": "list",
                     "items": [
-                        "You have the unusual ability to assume the form of a beast. When you gain this feat, choose a single beast of no larger than your own actual size, with a CR no greater than 1/4, or 1/8 if the beast has a flying speed. As an action, you can assume the shape of this beast (and only this beast) as if you were using the druid's Wild Shape feature. You can remain in the shape of this beast for a number of hours equal to your level. Except as noted here, this ability functions identically to the druid's Wild Shape feature. Once you have used this feat, you cannot do so again until you have completed a short or long rest."
+                        "When you gain this feat, choose a single beast of no larger than your own actual size, with a CR no greater than 1/4, or 1/8 if the beast has a flying speed. As an action, you can assume the shape of this beast (and only this beast) as if you were using the druid's Wild Shape feature. You can remain in the shape of this beast for a number of hours equal to your level. Except as noted here, this ability functions identically to the druid's Wild Shape feature. Once you have used this feat, you cannot do so again until you have completed a short or long rest."
                     ]
                 }
             ]
@@ -807,10 +808,10 @@
                 }
             ],
             "entries": [
+                "Your people have extraordinary luck, which you have learned to mystically lend to your companions when you see them falter. You're not sure how you do it; you just wish it, and it happens. Surely a sign of fortune's favor!",
                 {
                     "type": "list",
                     "items": [
-                        "Your people have extraordinary luck, which you have learned to mystically lend to your companions when you see them falter. You're not sure how you do it; you just wish it, and it happens. Surely a sign of fortune's favor!",
                         "When an ally you can see within 30 feet of you rolls a 1 on the {@dice d20} for an attack roll, an ability check, or a saving throw, you can use your reaction to let the ally reroll the die. The ally must use the new roll."
                     ]
                 }
@@ -1728,13 +1729,18 @@
             ],
             "entries": [
                 "You have some elven blood, or, if you are an elf, some other elven blood.",
-                "You gain proficiency in Perception. Choose an elven sub-race to which you do not belong, and gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
-                        "High Elf: Your Intelligence, Wisdom, or Charisma (your choice) increases by 1, to a maximum of 20, and you gain your choice of one of the following High Elf subrace features: one skill from High Elf Education, Cantrip, or Extra Language.",
-                        "Wood Elf: Your Strength, Constitution, or Wisdom (your choice) increases by 1, to a maximum of 20, and you gain your choice of one of the following Wood Elf subrace features: Elf Weapon Training, Fleet of Foot, Born Predator, One with the Wild, Mask of the Wild.",
-                        "Dark Elf: Your Strength, Wisdom, or Charisma (your choice) increases by 1, to a maximum of 20, and you gain your choice of one the following Dark Elf subrace features: Elf Weapon Training, Dark Elf Spellcasting (except Healing Spirit)."
+                        "You gain proficiency in Perception. Choose an elven sub-race to which you do not belong, and gain the following benefits:",
+                        {
+                            "type": "list",
+                            "items": [
+                                "High Elf: Your Intelligence, Wisdom, or Charisma (your choice) increases by 1, to a maximum of 20, and you gain your choice of one of the following High Elf subrace features: one skill from High Elf Education, Cantrip, or Extra Language.",
+                                "Wood Elf: Your Strength, Constitution, or Wisdom (your choice) increases by 1, to a maximum of 20, and you gain your choice of one of the following Wood Elf subrace features: Elf Weapon Training, Fleet of Foot, Born Predator, One with the Wild, Mask of the Wild.",
+                                "Dark Elf: Your Strength, Wisdom, or Charisma (your choice) increases by 1, to a maximum of 20, and you gain your choice of one the following Dark Elf subrace features: Elf Weapon Training, Dark Elf Spellcasting (except Healing Spirit)."
+                            ]
+                        }
                     ]
                 }
             ]
@@ -1893,10 +1899,15 @@
                 }
             ],
             "entries": [
-                "You receive a bonus to your initiative rolls equal to your DEX, WIS, INT, or CHA modifier (your choice).",
-                "When you or a creature you can see within 30 feet of you makes an ability check or an attack roll, you can use your reaction to add your DEX, WIS, INT, or CHA modifier to the roll (your choice).",
-                "You can use this feature a number of times equal to the your proficiency modifier. You regain all expended uses on a long rest.",
-                "When initiative is rolled and you are not surprised, you can choose a number of hostile creatures equal to half your proficiency modifier (rounded down) to reroll their initiative and keep the lower result."
+                {
+                    "type": "list",
+                    "items": [
+                        "You receive a bonus to your initiative rolls equal to your DEX, WIS, INT, or CHA modifier (your choice).",
+                        "When you or a creature you can see within 30 feet of you makes an ability check or an attack roll, you can use your reaction to add your DEX, WIS, INT, or CHA modifier to the roll (your choice).",
+                        "You can use this feature a number of times equal to the your proficiency modifier. You regain all expended uses on a long rest.",
+                        "When initiative is rolled and you are not surprised, you can choose a number of hostile creatures equal to half your proficiency modifier (rounded down) to reroll their initiative and keep the lower result."
+                    ]
+                }
             ]
         },
         {
@@ -1940,9 +1951,14 @@
             "page": 1,
             "source": "Ishiir",
             "entries": [
-                "You have the ability to heal with a touch, represented by a pool of hp equal to 5 x your proficiency bonus. As an action, touch a creature and spend any amount of points from this pool to heal them of an equal amount of hit points. You may spend 5 points to cure the creature of a disease or poison that afflicts them instead. You regain all expended points after you complete a long rest.",
-                "If you have the paladin Lay On Hands feature, the points of healing you gain from this feat are combined with the points granted by that feature.",
-                "Additionally, by spending an action touching a creature who died within 1 minute, you may roll percentile dice. If the amount rolled is lower than or equal to your level, you cast revivify on the creature, without using a spell slot or any material components. You may only attempt this roll once per creature (unless it returns to life and then dies), and once you have succeeded on the roll you may not attempt to raise another creature in this fashion until you have completed a long rest."
+                {
+                    "type": "list",
+                    "items": [
+                        "You have the ability to heal with a touch, represented by a pool of hp equal to 5 x your proficiency bonus. As an action, touch a creature and spend any amount of points from this pool to heal them of an equal amount of hit points. You may spend 5 points to cure the creature of a disease or poison that afflicts them instead. You regain all expended points after you complete a long rest.",
+                        "If you have the paladin Lay On Hands feature, the points of healing you gain from this feat are combined with the points granted by that feature.",
+                        "Additionally, by spending an action touching a creature who died within 1 minute, you may roll percentile dice. If the amount rolled is lower than or equal to your level, you cast revivify on the creature, without using a spell slot or any material components. You may only attempt this roll once per creature (unless it returns to life and then dies), and once you have succeeded on the roll you may not attempt to raise another creature in this fashion until you have completed a long rest."
+                    ]
+                }
             ]
         },
         {
@@ -2002,8 +2018,13 @@
                 }
             ],
             "entries": [
-                "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.",
-                "As a bonus action, you can become magically {@condition invisible|Ishiir} for 1 hour. Anything you are wearing or carrying is invisible with you. The effect ends if you attack or cast a spell. You can use this feature a number of times equal to half your proficiency modifier (rounded down). You regain all expended uses when you finish a long rest."
+                {
+                    "type": "list",
+                    "items": [
+                        "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.",
+                        "As a bonus action, you can become magically {@condition invisible|Ishiir} for 1 hour. Anything you are wearing or carrying is invisible with you. The effect ends if you attack or cast a spell. You can use this feature a number of times equal to half your proficiency modifier (rounded down). You regain all expended uses when you finish a long rest."
+                    ]
+                }
             ]
         },
         {
@@ -2165,9 +2186,14 @@
                 }
             ],
             "entries": [
-                "Choose Persuasion, Intimidation, or Deception. Your proficiency bonus is doubled for checks using the chosen skill.",
-                "You see normally in darkness, magical and nonmagical, to a distance equal to your darkvision range.",
-                "Once on your turn, when you deal damage with a weapon attack or a spell, you can add fire damage equal to your proficiency bonus to the damage dealt against one creature."
+                {
+                    "type": "list",
+                    "items": [
+                        "Choose Persuasion, Intimidation, or Deception. Your proficiency bonus is doubled for checks using the chosen skill.",
+                        "You see normally in darkness, magical and nonmagical, to a distance equal to your darkvision range.",
+                        "Once on your turn, when you deal damage with a weapon attack or a spell, you can add fire damage equal to your proficiency bonus to the damage dealt against one creature."
+                    ]
+                }
             ]
         },
         {
@@ -2323,12 +2349,17 @@
                 }
             ],
             "entries": [
-                "You have advantage on saving throwing throws against becoming charmed or cursed.",
-                "You can use your bonus action to curse a creature of your choice you can see within 90 ft. The creature is treated as under the effect of the Hex spell, except that you do not concentrate on it and it only lasts for 1 minute.",
-                "You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses after you finish a long rest.",
-                "When you are forced to make a saving throw or take damage from a creature you can see within 30 ft you, you can use your reaction to force the creature to make a saving throw against a DC equal to 8 + your proficiency + your CON, INT, WIS or CHA modifier (your choice).",
-                "On a failure, the creature is under the effect of the Bane spell, which does not require concentration and lasts until its full duration.",
-                "You can use this feature a number of times equal to half your proficiency bonus (rounded down). You regain all expended uses after you finish a long rest."
+                {
+                    "type": "list",
+                    "items": [
+                        "You have advantage on saving throwing throws against becoming charmed or cursed.",
+                        "You can use your bonus action to curse a creature of your choice you can see within 90 ft. The creature is treated as under the effect of the Hex spell, except that you do not concentrate on it and it only lasts for 1 minute.",
+                        "You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses after you finish a long rest.",
+                        "When you are forced to make a saving throw or take damage from a creature you can see within 30 ft you, you can use your reaction to force the creature to make a saving throw against a DC equal to 8 + your proficiency + your CON, INT, WIS or CHA modifier (your choice).",
+                        "On a failure, the creature is under the effect of the Bane spell, which does not require concentration and lasts until its full duration.",
+                        "You can use this feature a number of times equal to half your proficiency bonus (rounded down). You regain all expended uses after you finish a long rest."
+                    ]
+                }
             ]
         },
         {
@@ -2346,10 +2377,15 @@
                 }
             ],
             "entries": [
-                "You radiate bad luck in a radius of 30 ft around you.",
-                "When a creature inside this area rolls a d20 to make an attack, a saving throw, or a skill check, you can roll a d8 and subtract the result of your roll from theirs.",
-                "Once you reach level 11, you roll a {@dice d10} instead.",
-                "You can use this feature three times. You can regain all expended uses on a long rest."
+                {
+                    "type": "list",
+                    "items": [
+                        "You radiate bad luck in a radius of 30 ft around you.",
+                        "When a creature inside this area rolls a d20 to make an attack, a saving throw, or a skill check, you can roll a d8 and subtract the result of your roll from theirs.",
+                        "Once you reach level 11, you roll a {@dice d10} instead.",
+                        "You can use this feature three times. You can regain all expended uses on a long rest."
+                    ]
+                }
             ]
         },
         {
@@ -2367,9 +2403,14 @@
                 }
             ],
             "entries": [
-                "When you take damage that drops you below 0 hitpoints but doesn't outright kill you, you drop to 1 hitpoint instead. You can't use this feature again until you finish a long rest. In addition, you make death saving throws with advantage.",
-                "When you drop to 50% of your maximum hitpoints or lower in combat, you make saving throws against ongoing effects on you at the beginning of your turn instead of at the end.",
-                "You roll these saving throws before determining any of the effects that happen at the beginning of your turn."
+                {
+                    "type": "list",
+                    "items": [
+                        "When you take damage that drops you below 0 hitpoints but doesn't outright kill you, you drop to 1 hitpoint instead. You can't use this feature again until you finish a long rest. In addition, you make death saving throws with advantage.",
+                        "When you drop to 50% of your maximum hitpoints or lower in combat, you make saving throws against ongoing effects on you at the beginning of your turn instead of at the end.",
+                        "You roll these saving throws before determining any of the effects that happen at the beginning of your turn."
+                    ]
+                }
             ]
         },
         {
@@ -2472,10 +2513,15 @@
                 }
             ],
             "entries": [
-                "You can reroll your initiative and take either result.",
-                "When initiative is rolled, you can choose to give up to 6 creatures (including you) temporary HP equal to your proficiency + your INT, WIS, or CHA (your choice). A creature can't benefit from this feature again until it has finished a short or long rest.",
-                "When a creature within 30 ft of you is making a saving throw, you can use your reaction to add your INT, WIS, or CHA (your choice) to their roll. You can use this feature after seeing the roll but before the result is announced.",
-                "After you've used this feature, you can't use it again until you've finished a long rest."
+                {
+                    "type": "list",
+                    "items": [
+                        "You can reroll your initiative and take either result.",
+                        "When initiative is rolled, you can choose to give up to 6 creatures (including you) temporary HP equal to your proficiency + your INT, WIS, or CHA (your choice). A creature can't benefit from this feature again until it has finished a short or long rest.",
+                        "When a creature within 30 ft of you is making a saving throw, you can use your reaction to add your INT, WIS, or CHA (your choice) to their roll. You can use this feature after seeing the roll but before the result is announced.",
+                        "After you've used this feature, you can't use it again until you've finished a long rest."
+                    ]
+                }
             ]
         },
         {
@@ -2603,10 +2649,15 @@
                 }
             ],
             "entries": [
-                "When you or a creature that you can see within 30 ft of you makes a saving throw, you can spend your reaction to add your proficiency modifier to the roll.",
-                "You can choose to use this feature after the seeing the roll but have to decide before the DM announces whether it succeeds or fails. You can use this feature a number of times equal to your proficiency modifier.",
-                "You regain all expended uses when you finish a long rest.",
-                "When initiative is rolled, you chan choose a number of allies you can see within 30 feet of you up to a number equal to half your proficiency modifier (rounded down). Those allies can replace their intitiative result with yours if theirs is lower. You can choose to use this effect after seeing their roll."
+                {
+                    "type": "list",
+                    "items": [
+                        "When you or a creature that you can see within 30 ft of you makes a saving throw, you can spend your reaction to add your proficiency modifier to the roll.",
+                        "You can choose to use this feature after the seeing the roll but have to decide before the DM announces whether it succeeds or fails. You can use this feature a number of times equal to your proficiency modifier.",
+                        "You regain all expended uses when you finish a long rest.",
+                        "When initiative is rolled, you chan choose a number of allies you can see within 30 feet of you up to a number equal to half your proficiency modifier (rounded down). Those allies can replace their intitiative result with yours if theirs is lower. You can choose to use this effect after seeing their roll."
+                    ]
+                }
             ]
         },
         {
@@ -2666,9 +2717,15 @@
             "page": 1,
             "source": "Ishiir",
             "entries": [
-                "When it comes to bad luck, you seem to be a carrier. When a creature you can see makes a saving throw, ability check, or attack roll, you can force them to roll an additional die and use the lowest die roll from among those rolled. A creature with the legendary resistance feature can expend a use of that feature to negate this effect.",
-                "If the same attempt is being affected by both the Luck feat and this feat, all die rolls are thrown out and a single die roll is rolled. This roll cannot then be altered by any ability that allows for a reroll or rolling additional d20s.",
-                "Once you've used this feat, you cannot do so again until you've completed a short or long rest."
+                "When it comes to bad luck, you seem to be a carrier.",
+                {
+                    "type": "list",
+                    "items": [
+                        "When a creature you can see makes a saving throw, ability check, or attack roll, you can force them to roll an additional die and use the lowest die roll from among those rolled. A creature with the legendary resistance feature can expend a use of that feature to negate this effect.",
+                        "If the same attempt is being affected by both the Luck feat and this feat, all die rolls are thrown out and a single die roll is rolled. This roll cannot then be altered by any ability that allows for a reroll or rolling additional d20s.",
+                        "Once you've used this feat, you cannot do so again until you've completed a short or long rest."
+                    ]
+                }
             ]
         },
         {
@@ -2784,9 +2841,14 @@
             "source": "Ishiir",
             "entries": [
                 "You have inexplicable luck that seems to kick in at just the right moment.",
-                "You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional {@dice d20}. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the {@dice d20}s is used for the attack roll, ability check, or saving throw.",
-                "You can also spend one luck point when an attack roll is made against you. Roll a {@dice d20}, and then choose whether the attack uses the attacker's roll or yours. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled.",
-                "You regain your expended luck points when you finish a long rest."
+                {
+                    "type": "list",
+                    "items": [
+                        "You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional {@dice d20}. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the {@dice d20}s is used for the attack roll, ability check, or saving throw.",
+                        "You can also spend one luck point when an attack roll is made against you. Roll a {@dice d20}, and then choose whether the attack uses the attacker's roll or yours. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled.",
+                        "You regain your expended luck points when you finish a long rest."
+                    ]
+                }
             ]
         },
         {
@@ -2962,9 +3024,14 @@
                 }
             ],
             "entries": [
-                "Choose a class: {@filter bard|spells|level=0;1|class=bard (Ishiir)|source=Ishiir}, {@filter cleric|spells|level=0;1|class=cleric (Ishiir)|source=Ishiir}, {@filter druid|spells|level=0;1|class=druid (Ishiir)|source=Ishiir}, {@filter sorcerer|spells|level=0;1|class=sorcerer (Ishiir)|source=Ishiir}, {@filter warlock|spells|level=0;1|class=warlock (Ishiir)|source=Ishiir}, or {@filter wizard|spells|level=0;1|class=wizard (Ishiir)|source=Ishiir}. You learn two cantrips of your choice from that class's spell list.",
-                "In addition, choose one 1st-level spell from that same list. You learn that spell and can cast it at its lowest level. Once you cast it, you must finish a long rest before you can cast it again using this feat.",
-                "Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (your choice)."
+                {
+                    "type": "list",
+                    "items": [
+                        "Choose a class: {@filter bard|spells|level=0;1|class=bard (Ishiir)|source=Ishiir}, {@filter cleric|spells|level=0;1|class=cleric (Ishiir)|source=Ishiir}, {@filter druid|spells|level=0;1|class=druid (Ishiir)|source=Ishiir}, {@filter sorcerer|spells|level=0;1|class=sorcerer (Ishiir)|source=Ishiir}, {@filter warlock|spells|level=0;1|class=warlock (Ishiir)|source=Ishiir}, or {@filter wizard|spells|level=0;1|class=wizard (Ishiir)|source=Ishiir}. You learn two cantrips of your choice from that class's spell list.",
+                        "In addition, choose one 1st-level spell from that same list. You learn that spell and can cast it at its lowest level. Once you cast it, you must finish a long rest before you can cast it again using this feat.",
+                        "Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (your choice)."
+                    ]
+                }
             ]
         },
         {
@@ -3034,9 +3101,14 @@
                 }
             ],
             "entries": [
-                "When you make a crafting skill check with the {@item Tinker's Tools|Ishiir}, you only expend half the materials upon rolling three failures, and you expend no materials on any other failure.",
-                "Items you craft using {@item Tinker's Tools|Ishiir} or {@item Alchemist's Supplies|Ishiir} receive the Masterwork property even if you only roll two successes for the crafting check. If you roll three successes, they receive the bonus of the Masterwork property twice (e.g. a potion that normally lasts 1 hour, lasts 2 hours with 2 successful crafting rolls, and 3 with three successful rolls).",
-                "Additionally you may research or try to craft new devices by rolling three intelligence skill checks. The possibilities are determined only by the audacity of your ideas and the DM."
+                {
+                    "type": "list",
+                    "items": [
+                        "When you make a crafting skill check with the {@item Tinker's Tools|Ishiir}, you only expend half the materials upon rolling three failures, and you expend no materials on any other failure.",
+                        "Items you craft using {@item Tinker's Tools|Ishiir} or {@item Alchemist's Supplies|Ishiir} receive the Masterwork property even if you only roll two successes for the crafting check. If you roll three successes, they receive the bonus of the Masterwork property twice (e.g. a potion that normally lasts 1 hour, lasts 2 hours with 2 successful crafting rolls, and 3 with three successful rolls).",
+                        "Additionally you may research or try to craft new devices by rolling three intelligence skill checks. The possibilities are determined only by the audacity of your ideas and the DM."
+                    ]
+                }
             ]
         },
         {
@@ -3518,7 +3590,12 @@
             ],
             "entries": [
                 "You are in touch with a higher plane or supernatural forces, allowing you to cast certain spells as a ritual.",
-                "They are {@spell augury|Ishiir}, {@spell divination|Ishiir}, and one of the following: {@spell commune|Ishiir}, {@spell commune with nature|Ishiir}, {@spell contact other plane|Ishiir}. Make the choice when you gain this feat. Your spellcasting ability with these spells is Intelligence, Wisdom, or Charisma (your choice). You may cast each of these spells once, and you can do so without any material components. You regain your use of all of them when you complete a long rest."
+                {
+                    "type": "list",
+                    "items": [
+                        "They are {@spell augury|Ishiir}, {@spell divination|Ishiir}, and one of the following: {@spell commune|Ishiir}, {@spell commune with nature|Ishiir}, {@spell contact other plane|Ishiir}. Make the choice when you gain this feat. Your spellcasting ability with these spells is Intelligence, Wisdom, or Charisma (your choice). You may cast each of these spells once, and you can do so without any material components. You regain your use of all of them when you complete a long rest."
+                    ]
+                }
             ]
         },
         {
@@ -4045,8 +4122,13 @@
                     "type": "list",
                     "items": [
                         "You have learned a number of spells that you can cast as rituals. These spells are written in a ritual book, which you must have in hand while casting one of them.",
-                        "When you choose this feat, you acquire a ritual book holding two 1st-level spells of your choice. Choose one of the following classes: {@filter bard|spells|level=1|class=bard (Ishiir)|components & miscellaneous=ritual|source=Ishiir}, {@filter cleric|spells|level=1|class=cleric (Ishiir)|components & miscellaneous=ritual|source=Ishiir}, {@filter druid|spells|level=1|class=druid (Ishiir)|components & miscellaneous=ritual|source=Ishiir}, {@filter sorcerer|spells|level=1|class=sorcerer (Ishiir)|components & miscellaneous=ritual|source=Ishiir}, {@filter warlock|spells|level=1|class=warlock (Ishiir)|components & miscellaneous=ritual|source=Ishiir}, or {@filter wizard|spells|level=1|class=wizard (Ishiir)|components & miscellaneous=ritual|source=Ishiir}. You must choose your spells from that class's spell list, and the spells you choose must have the ritual tag. The class you choose also determines your spellcasting ability for these spells: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid; or Intelligence for wizard.",
-                        "If you come across a spell in written form, such as a magical {@item spell scroll} or a wizard's spellbook, you might be able to add it to your ritual book. The spell must be on the spell list for the class you chose, the spell's level can be no higher than half your level (rounded up), and it must have the ritual tag. The process of copying the spell into your ritual book takes 2 hours per level of the spell, and costs 50 gp per level. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it."
+                        {
+                            "type": "list",
+                            "items": [
+                                "When you choose this feat, you acquire a ritual book holding two 1st-level spells of your choice. Choose one of the following classes: {@filter bard|spells|level=1|class=bard (Ishiir)|components & miscellaneous=ritual|source=Ishiir}, {@filter cleric|spells|level=1|class=cleric (Ishiir)|components & miscellaneous=ritual|source=Ishiir}, {@filter druid|spells|level=1|class=druid (Ishiir)|components & miscellaneous=ritual|source=Ishiir}, {@filter sorcerer|spells|level=1|class=sorcerer (Ishiir)|components & miscellaneous=ritual|source=Ishiir}, {@filter warlock|spells|level=1|class=warlock (Ishiir)|components & miscellaneous=ritual|source=Ishiir}, or {@filter wizard|spells|level=1|class=wizard (Ishiir)|components & miscellaneous=ritual|source=Ishiir}. You must choose your spells from that class's spell list, and the spells you choose must have the ritual tag. The class you choose also determines your spellcasting ability for these spells: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid; or Intelligence for wizard.",
+                                "If you come across a spell in written form, such as a magical {@item spell scroll} or a wizard's spellbook, you might be able to add it to your ritual book. The spell must be on the spell list for the class you chose, the spell's level can be no higher than half your level (rounded up), and it must have the ritual tag. The process of copying the spell into your ritual book takes 2 hours per level of the spell, and costs 50 gp per level. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it."
+                            ]
+                        }
                     ]
                 }
             ]
@@ -4837,35 +4919,45 @@
                 }
             ],
             "entries": [
-                "Your Cunning Action choices gain the following additional benefits:",
                 {
                     "type": "list",
-                    "style": "list-hang-notitle",
                     "items": [
+                        "Your Cunning Action choices gain the following additional benefits:",
                         {
-                            "type": "item",
-                            "name": "Dash",
-                            "entries": [
-                                "You ignore {@quickref difficult terrain||3} for the current turn."
+                            "type": "list",
+                            "items": [
+                                {
+                                    "type": "list",
+                                    "style": "list-hang-notitle",
+                                    "items": [
+                                        {
+                                            "type": "item",
+                                            "name": "Dash",
+                                            "entries": [
+                                                "You ignore {@quickref difficult terrain||3} for the current turn."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Disengage",
+                                            "entries": [
+                                                "You can move through the space of hostile creatures, treating it as {@quickref difficult terrain||3}, but you can't willingly end your turn in an occupied space. The next attack roll against you before the start of your next turn has disadvantage."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Hide",
+                                            "entries": [
+                                                "If you hide successfully, you can also spend a hit die as if you had taken a rest, regaining hit points as normal."
+                                            ]
+                                        }
+                                    ]
+                                }
                             ]
                         },
-                        {
-                            "type": "item",
-                            "name": "Disengage",
-                            "entries": [
-                                "You can move through the space of hostile creatures, treating it as {@quickref difficult terrain||3}, but you can't willingly end your turn in an occupied space. The next attack roll against you before the start of your next turn has disadvantage."
-                            ]
-                        },
-                        {
-                            "type": "item",
-                            "name": "Hide",
-                            "entries": [
-                                "If you hide successfully, you can also spend a hit die as if you had taken a rest, regaining hit points as normal."
-                            ]
-                        }
+                        "If you use your Sneak Attack feature on a creature that is suffering from one or more conditions that allow it to repeat the saving throw at the end of its turn, it makes all saving throws against on-going conditions at the end of its next turn with disadvantage."
                     ]
-                },
-                "If you use your Sneak Attack feature on a creature that is suffering from one or more conditions that allow it to repeat the saving throw at the end of its turn, it makes all saving throws against on-going conditions at the end of its next turn with disadvantage."
+                }
             ]
         },
         {
@@ -5025,48 +5117,53 @@
                 }
             ],
             "entries": [
-                "Your maximum amount of Sorcery point increases by an amount equal to your proficiency modifier. You can choose one additional kind of Metamagic.",
-                "You also gain the following additional Metamagic options. Each of these can be combined with any other Metamagic option that you know and does not cost any sorcery points.",
                 {
                     "type": "list",
                     "items": [
-                        "Shape Spell: When you cast a spell with an area of effect that is either a cone, line, circle, or square, you can change the area of effect to a different one from the aforementioned. The size of the area of effect changes depending on the shape as below, rounded down to increments of 5:",
+                        "Your maximum amount of Sorcery point increases by an amount equal to your proficiency modifier. You can choose one additional kind of Metamagic.",
+                        "You also gain the following additional Metamagic options. Each of these can be combined with any other Metamagic option that you know and does not cost any sorcery points.",
                         {
-                            "type": "table",
-                            "colLabels": [
-                                "Shape",
-                                "To Square/Circle",
-                                "To Cone",
-                                "To Line"
-                            ],
-                            "colStyles": [
-                                "col-1 text-center",
-                                "col-1 text-center",
-                                "col-1 text-center",
-                                "col-1 text-center"
-                            ],
-                            "rows": [
-                                [
-                                    "Square/Circle",
-                                    "x1",
-                                    "x3",
-                                    "x5"
-                                ],
-                                [
-                                    "Cone",
-                                    "/3",
-                                    "x1",
-                                    "x5/3"
-                                ],
-                                [
-                                    "Line",
-                                    "/5",
-                                    "x3/5",
-                                    "x1"
-                                ]
+                            "type": "list",
+                            "items": [
+                                "Shape Spell: When you cast a spell with an area of effect that is either a cone, line, circle, or square, you can change the area of effect to a different one from the aforementioned. The size of the area of effect changes depending on the shape as below, rounded down to increments of 5:",
+                                {
+                                    "type": "table",
+                                    "colLabels": [
+                                        "Shape",
+                                        "To Square/Circle",
+                                        "To Cone",
+                                        "To Line"
+                                    ],
+                                    "colStyles": [
+                                        "col-1 text-center",
+                                        "col-1 text-center",
+                                        "col-1 text-center",
+                                        "col-1 text-center"
+                                    ],
+                                    "rows": [
+                                        [
+                                            "Square/Circle",
+                                            "x1",
+                                            "x3",
+                                            "x5"
+                                        ],
+                                        [
+                                            "Cone",
+                                            "/3",
+                                            "x1",
+                                            "x5/3"
+                                        ],
+                                        [
+                                            "Line",
+                                            "/5",
+                                            "x3/5",
+                                            "x1"
+                                        ]
+                                    ]
+                                },
+                                "Shape Energy: When you cast a spell that deals damage, you can change the spell's damage type to a different one of your choice."
                             ]
-                        },
-                        "Shape Energy: When you cast a spell that deals damage, you can change the spell's damage type to a different one of your choice."
+                        }
                     ]
                 }
             ]
