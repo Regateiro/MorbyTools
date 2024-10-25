@@ -1676,14 +1676,14 @@
                 "You augment your combat techniques with the ability to cast spells. See chapter 10 of the Player's Handbook for the general rules of spellcasting and chapter 11 of the Player's Handbook for the warlock spell list.",
                 {
                     "type": "item",
-                    "name": "Cantrips",
+                    "name": "Cantrips.",
                     "entries": [
-                        "You learn two cantrips of your choice from the warlock spell list. You learn an additional warlock cantrip of your choice at 10th level."
+                        "You learn two cantrips of your choice from the {@filter Warlock spell list|spells|class=warlock (Ishiir)|source=Ishiir}. You learn an additional warlock cantrip of your choice at 10th level, as shown in the Cantrips Known column of the Blood Hunter Spellcasting table below."
                     ]
                 },
                 {
                     "type": "item",
-                    "name": "Spell Slots",
+                    "name": "Spell Slots.",
                     "entries": [
                         "The Profane Soul Spellcasting table shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.",
                         "For example, when you are 8th level, you have two 2nd-level spell slots. To cast the 1st-level spell {@spell witch bolt|Ishiir}, you must spend one of those slots, and you cast it as a 2nd-level spell."
@@ -1691,9 +1691,10 @@
                 },
                 {
                     "type": "item",
-                    "name": "Prepared Spells of Level 1+",
+                    "name": "Prepared Spells of Level 1+.",
                     "entries": [
-                        "You know two 1st-level spells of your choice from the warlock spell list.",
+                        "You prepare the list of level 1+ spells that are available for you to cast with this feature.",
+                        "You know three 1st-level spells of your choice from the {@filter Warlock spell list|spells|class=warlock (Ishiir)|source=Ishiir}.",
                         "The number of spells on your list increases as you gain Blood Hunter levels, as shown in the Prepared Spells column of the Blood Hunter Spellcasting table below. Whenever that number increases, choose additional Warlock spells until the number of spells on your list matches the number in the table. The chosen spells must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach level 7, for example, you learn a new Warlock spell, which can be of levels 1–2."
                     ]
                 },
@@ -1708,9 +1709,14 @@
                     "type": "item",
                     "name": "Spellcasting Ability.",
                     "entries": [
-                        "Your chosen Hemocraft ability (Intelligence or Wisdom) is your spellcasting ability for your warlock spells, so you use your Hemocraft ability whenever a spell refers to your spellcasting ability. In addition, you use your Hemocraft modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.",
-                        "<b>Spell save DC</b> = 8 + your proficiency bonus + your Hemocraft modifier",
-                        "<b>Spell attack modifier</b> = your proficiency bonus + your Hemocraft modifier"
+                        "Your chosen Hemocraft ability (Intelligence or Wisdom) is your spellcasting ability for your Warlock spells."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Spellcasting Focus.",
+                    "entries": [
+                        "You can use an Arcane Focus as a Spellcasting Focus for your Warlock spells."
                     ]
                 },
                 {

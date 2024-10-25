@@ -1391,7 +1391,7 @@
                     ],
                     "colLabels": [
                         "{@filter Cantrips Known|spells|level=0|class=Wizard (Ishiir)|source=Ishiir}",
-                        "{@filter Spells Known|spells|class=Wizard (Ishiir)|source=Ishiir}"
+                        "{@filter Spells Prepared|spells|class=Wizard (Ishiir)|source=Ishiir}"
                     ],
                     "rows": [
                         [
@@ -2956,65 +2956,43 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You augment your martial prowess with the ability to cast spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter wizard spell list|spells|class=wizard (Ishiir)|source=Ishiir}.",
+                "Eldritch Knights combine the martial mastery common to all Fighters with a careful study of magic. Their spells both complement and extend their combat skills, providing additional protection to shore up their armor and also allowing them to engage many foes at once with explosive magic.",
                 {
                     "type": "entries",
-                    "name": "Cantrips",
+                    "name": "Cantrips.",
                     "entries": [
-                        "You learn two cantrips of your choice from the {@filter wizard spell list|spells|class=wizard (Ishiir)|source=Ishiir}. You learn an additional wizard cantrip of your choice at 10th level."
+                        "You know two cantrips of your choice from the {@filter wizard spell list|spells|class=wizard (Ishiir)|source=Ishiir}. Whenever you gain a Fighter level, you can replace one of these cantrips with another cantrip of your choice from the Wizard spell list.",
+                        "When you reach Fighter level 10, you learn another Wizard cantrip of your choice, as shown in this subclass' progression table."
                     ]
                 },
                 {
                     "type": "entries",
+                    "name": "Spell Slots.",
                     "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Spell Slots",
-                            "entries": [
-                                "The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your {@filter wizard spells|spells|class=wizard (Ishiir)|source=Ishiir} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-                                "For example, if you know the 1st-level spell {@spell shield|Ishiir} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell shield|Ishiir} using either slot."
-                            ]
-                        }
+                        "The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest."
+                    ]
+                        
+                },
+                {
+                    "type": "entries",
+                    "name": "Prepared Spells of Level 1+.",
+                    "entries": [
+                        "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the Wizard spell list.",
+                        "The number of spells on your list increases as you gain Fighter levels, as shown in the Prepared Spells column of the Eldritch Knight Spellcasting table. Whenever that number increases, choose additional spells from the Wizard spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 7 Fighter, your list of prepared spells can include five Wizard spells of levels 1 and 2 in any combination."
                     ]
                 },
                 {
                     "type": "entries",
+                    "name": "Spellcasting Ability.",
                     "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Spells Known of 1st-Level and Higher",
-                            "entries": [
-                                "You know three 1st-level wizard spells of your choice.",
-                                "The Spells Known column of the Eldritch Knight Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.",
-                                "Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots."
-                            ]
-                        }
+                        "Intelligence is your spellcasting ability for your Wizard spells."
                     ]
                 },
                 {
                     "type": "entries",
+                    "name": "Spellcasting Focus.",
                     "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Spellcasting Ability.",
-                            "entries": [
-                                "Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.",
-                                {
-                                    "type": "abilityDc",
-                                    "name": "Spell",
-                                    "attributes": [
-                                        "int"
-                                    ]
-                                },
-                                {
-                                    "type": "abilityAttackMod",
-                                    "name": "Spell",
-                                    "attributes": [
-                                        "int"
-                                    ]
-                                }
-                            ]
-                        }
+                        "You can use an Arcane Focus as a Spellcasting Focus for your Wizard spells."
                     ]
                 }
             ]
