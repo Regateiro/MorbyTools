@@ -31,9 +31,14 @@
 				}
 			],
 			"entries": [
-				"When you deal damage to a creature, you can inflict them with a brand that lasts until the start of your next turn (no action required). The next time the creature takes damage, it takes additional radiant damage equal to your proficiency modifier and you can choose to convert all of the damage that triggered the effect to radiant damage as well.",
-				"Additionally, when a creature you can see within 60 feet that is branded in this manner deals damage to one of your allies, you can use your reaction to force that creature to make a CON saving throw. The DC equals 8 + your proficiency + WIS or CHA (your choice). On a failure, it is {@condition blinded|Ishiir} until the start of your next turn.",
-				"You can use this reaction an amount of times equal to half your proficiency bonus (rounded down) and you regain all expended uses when you finish a long rest. You also regain a use if an ally you can see within 60 feet of you suffers a critical hit or is reduced to 0 hitpoints."
+				{
+					"type": "list",
+					"items": [
+						"When you deal damage to a creature, you can inflict them with a brand that lasts until the start of your next turn (no action required). The next time the creature takes damage, it takes additional radiant damage equal to your proficiency modifier and you can choose to convert all of the damage that triggered the effect to radiant damage as well.",
+						"Additionally, when a creature you can see within 60 feet that is branded in this manner deals damage to one of your allies, you can use your reaction to force that creature to make a CON saving throw. The DC equals 8 + your proficiency + WIS or CHA (your choice). On a failure, it is {@condition blinded|Ishiir} until the start of your next turn.",
+						"You can use this reaction an amount of times equal to half your proficiency bonus (rounded down) and you regain all expended uses when you finish a long rest. You also regain a use if an ally you can see within 60 feet of you suffers a critical hit or is reduced to 0 hitpoints."
+					]
+				}
 			]
 		},
 		{
@@ -50,8 +55,13 @@
 				}
 			],
 			"entries": [
-				"You gain proficiency in Intelligence or Charisma saving throws (your choice).",
-				"The number of spells you can prepare increases by a number equal to twice your proficiency bonus. Your spells known increase by a number equal to your proficiency bonus."
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency in Intelligence or Charisma saving throws (your choice).",
+						"The number of spells you can prepare increases by a number equal to twice your proficiency bonus. Your spells known increase by a number equal to your proficiency bonus."
+					]
+				}
 			]
 		},
 		{
@@ -68,7 +78,12 @@
 				}
 			],
 			"entries": [
-				"Choose a feat that has a class or race other than your own as prerequisite. You cannot choose a feat that has additional requirements, such as class-specific resources or racial features. You gain the full effects of the chosen feat."
+				{
+					"type": "list",
+					"items": [
+						"Choose a feat that has a class or race other than your own as prerequisite. You cannot choose a feat that has additional requirements, such as class-specific resources or racial features. You gain the full effects of the chosen feat."
+					]
+				}
 			]
 		},
 		{
@@ -85,8 +100,13 @@
 				}
 			],
 			"entries": [
-				"When you use your Steppe Skirmisher racial feature to make a melee weapon attack against a creature after moving at least 30 ft in a straight line towards it, you also add 1 dmg for every 5 ft travelled as part of that movement if that attack hits.",
-				"You can now use your Steppe Skirmisher racial feature to move up to half your speed as a reaction immediately when an enemy ends its movement within 10 ft of you rather than when it ends its turn within 10 ft of you. All other restrictions apply as normal."
+				{
+					"type": "list",
+					"items": [
+						"When you use your Steppe Skirmisher racial feature to make a melee weapon attack against a creature after moving at least 30 ft in a straight line towards it, you also add 1 dmg for every 5 ft travelled as part of that movement if that attack hits.",
+						"You can now use your Steppe Skirmisher racial feature to move up to half your speed as a reaction immediately when an enemy ends its movement within 10 ft of you rather than when it ends its turn within 10 ft of you. All other restrictions apply as normal."
+					]
+				}
 			]
 		},
 		{
@@ -104,8 +124,13 @@
 				}
 			],
 			"entries": [
-				"When you cast a spell that targets allied creatures with a beneficial effect, is at least 1st level or higher and has a verbal component, each affected allied creature gains temporary hitpoints equal to twice the spell's level + your proficiency bonus. If the spell in question already gives a creature temporary hitpoints, they stack with those granted by this feat.",
-				"When you cast a spell that targets hostile creatures with a harmful effect, is at least 1st level or higher, has a verbal component, and forces the target to make an INT, WIS, or CHA saving throw, each creature that failed their saving throw also subtracts 1d4 from their next saving throw before the end of your next turn."
+				{
+					"type": "list",
+					"items": [
+						"When you cast a spell that targets allied creatures with a beneficial effect, is at least 1st level or higher and has a verbal component, each affected allied creature gains temporary hitpoints equal to twice the spell's level + your proficiency bonus. If the spell in question already gives a creature temporary hitpoints, they stack with those granted by this feat.",
+						"When you cast a spell that targets hostile creatures with a harmful effect, is at least 1st level or higher, has a verbal component, and forces the target to make an INT, WIS, or CHA saving throw, each creature that failed their saving throw also subtracts 1d4 from their next saving throw before the end of your next turn."
+					]
+				}
 			]
 		},
 		{
@@ -123,9 +148,14 @@
 				}
 			],
 			"entries": [
-				"When you finish a long rest, you regain all hit dice rather than half of them.",
-				"When you take a rest, you can give any number of your hit dice to any other allied creature within 30 ft of you. If a creatures uses hit dice it gained from you, it uses its own hit die size to determine the amount healed.",
-				"When a creature within 30 ft of you takes necrotic or poison damage, you can use your reaction to grant resistance to the creature against that instance of the damage."
+				{
+					"type": "list",
+					"items": [
+						"When you finish a long rest, you regain all hit dice rather than half of them.",
+						"When you take a rest, you can give any number of your hit dice to any other allied creature within 30 ft of you. If a creatures uses hit dice it gained from you, it uses its own hit die size to determine the amount healed.",
+						"When a creature within 30 ft of you takes necrotic or poison damage, you can use your reaction to grant resistance to the creature against that instance of the damage."
+					]
+				}
 			]
 		},
 		{
@@ -142,8 +172,13 @@
 				}
 			],
 			"entries": [
-				"Once per long rest when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than your proficiency bonus.",
-				"When you finish a short rest and spend at least one hit die, you can reroll one hit die and take the higher result, regaining hitpoints as normal."
+				{
+					"type": "list",
+					"items": [
+						"Once per long rest when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than your proficiency bonus.",
+						"When you finish a short rest and spend at least one hit die, you can reroll one hit die and take the higher result, regaining hitpoints as normal."
+					]
+				}
 			]
 		},
 		{
@@ -160,8 +195,13 @@
 				}
 			],
 			"entries": [
-				"You double your proficiency bonus for Charisma ({@skill Persuasion}) checks.",
-				"When you start your turn and you are not incapacitated, all allies within 30 feet of you gain a {@dice d4} that they can add to the first attack roll or saving throw they make before the start of your next turn."
+				{
+					"type": "list",
+					"items": [
+						"You double your proficiency bonus for Charisma ({@skill Persuasion}) checks.",
+						"When you start your turn and you are not incapacitated, all allies within 30 feet of you gain a {@dice d4} that they can add to the first attack roll or saving throw they make before the start of your next turn."
+					]
+				}
 			]
 		},
 		{
@@ -178,8 +218,13 @@
 				}
 			],
 			"entries": [
-				"Once per turn, when you deal piercing or slashing damage to a creature, you can force it to make a CON saving throw. The DC equals 8 + your proficiency modifier + your STR or DEX bonus (your choice). On a failure, the creature is {@condition lacerated|Ishiir}. If your attack already inflicts this condition, e.g. through a class feature or weapon property, the creature instead has disadvantage on the saving throw against that effect. At the end of each of its turns, the creature can repeat the saving throw, ending the effect on a success.",
-				"If you start your turn hidden or lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena, you can start your movement that turn with a long or high jump as if you had a running start. If you end this jump while a creature is within your reach, your first attack against that creature deals an additional {@damage 1d8} points of damage."
+				{
+					"type": "list",
+					"items": [
+						"Once per turn, when you deal piercing or slashing damage to a creature, you can force it to make a CON saving throw. The DC equals 8 + your proficiency modifier + your STR or DEX bonus (your choice). On a failure, the creature is {@condition lacerated|Ishiir}. If your attack already inflicts this condition, e.g. through a class feature or weapon property, the creature instead has disadvantage on the saving throw against that effect. At the end of each of its turns, the creature can repeat the saving throw, ending the effect on a success.",
+						"If you start your turn hidden or lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena, you can start your movement that turn with a long or high jump as if you had a running start. If you end this jump while a creature is within your reach, your first attack against that creature deals an additional {@damage 1d8} points of damage."
+					]
+				}
 			]
 		},
 		{
@@ -196,8 +241,13 @@
 				}
 			],
 			"entries": [
-				"When you craft something, you can choose to increase the amount of time required by 1/2 of the original (rounded down). If you do so, the DC decreases by an amount equal to half your proficiency bonus (rounded down) and the item receives the masterwork property even if you only roll two successes for the crafting check.",
-				"When you craft an item that requires a base material, e.g. steel or high steel for weaponsmithing, you can treat the material you use as one step higher for the purposes of allowing the item to be a mastercraft and qualifying for additional properties. If you do so, you calculate the DC for the crafting attempt as if you had used the higher material. You must still fulfill all other requirements for the crafting attempt, such as crafting station."
+				{
+					"type": "list",
+					"items": [
+						"When you craft something, you can choose to increase the amount of time required by 1/2 of the original (rounded down). If you do so, the DC decreases by an amount equal to half your proficiency bonus (rounded down) and the item receives the masterwork property even if you only roll two successes for the crafting check.",
+						"When you craft an item that requires a base material, e.g. steel or high steel for weaponsmithing, you can treat the material you use as one step higher for the purposes of allowing the item to be a mastercraft and qualifying for additional properties. If you do so, you calculate the DC for the crafting attempt as if you had used the higher material. You must still fulfill all other requirements for the crafting attempt, such as crafting station."
+					]
+				}
 			]
 		},
 		{
@@ -214,9 +264,14 @@
 				}
 			],
 			"entries": [
-				"You have resistance to fire damage.",
-				"Once per turn, when you deal damage to a creature, you can cause it to take additional fire damage equal to your proficiency bonus.",
-				"When you are reduced to 0 hitpoints by an enemy creature that you can see within 60 ft of you, you can immediately cause that creature to take fire damage equal to twice your character level. You can use this feature once and regain this use when you finish a short or long rest."
+				{
+					"type": "list",
+					"items": [
+						"You have resistance to fire damage.",
+						"Once per turn, when you deal damage to a creature, you can cause it to take additional fire damage equal to your proficiency bonus.",
+						"When you are reduced to 0 hitpoints by an enemy creature that you can see within 60 ft of you, you can immediately cause that creature to take fire damage equal to twice your character level. You can use this feature once and regain this use when you finish a short or long rest."
+					]
+				}
 			]
 		},
 		{
@@ -234,8 +289,13 @@
 				}
 			],
 			"entries": [
-				"As a bonus action, you can choose one allied creature within 30 ft that you can see. This creature also benefits from your Pack Tactics racial feature until the beginning of your next turn.",
-				"When an allied creature critically hits a creature you can see within 5 ft of you or knocks it prone, you can immediately use your reaction to make a melee weapon attack with the natural weapons gained from your Vicious Fangs racial feature against that creature."
+				{
+					"type": "list",
+					"items": [
+						"As a bonus action, you can choose one allied creature within 30 ft that you can see. This creature also benefits from your Pack Tactics racial feature until the beginning of your next turn.",
+						"When an allied creature critically hits a creature you can see within 5 ft of you or knocks it prone, you can immediately use your reaction to make a melee weapon attack with the natural weapons gained from your Vicious Fangs racial feature against that creature."
+					]
+				}
 			]
 		},
 		{
@@ -253,8 +313,13 @@
 				}
 			],
 			"entries": [
-				"When you hit a creature with a melee weapon attack, you gain advantage on the next saving throw before the end of your next turn.",
-				"If you succeed on a saving throw caused by a hostile creature, you have advantage on melee weapon attack rolls until the end of your next turn."
+				{
+					"type": "list",
+					"items": [
+						"When you hit a creature with a melee weapon attack, you gain advantage on the next saving throw before the end of your next turn.",
+						"If you succeed on a saving throw caused by a hostile creature, you have advantage on melee weapon attack rolls until the end of your next turn."
+					]
+				}
 			]
 		},
 		{
@@ -272,8 +337,13 @@
 				}
 			],
 			"entries": [
-				"When you are not {@condition incapacitated|Ishiir} and within 5 ft of an allied creature that is not {@condition incapacitated|Ishiir}, no attack roll has advantage against you.",
-				"When an allied creature within 5 ft of you has to make an ability check or saving throw against the {@condition charmed|Ishiir}, {@condition frightened|Ishiir}, {@condition paralyzed|Ishiir}, {@condition prone|Ishiir}, or {@condition stunned|Ishiir} condition or against being pushed, you can use your reaction to give that creature advantage on the roll."
+				{
+					"type": "list",
+					"items": [
+						"When you are not {@condition incapacitated|Ishiir} and within 5 ft of an allied creature that is not {@condition incapacitated|Ishiir}, no attack roll has advantage against you.",
+						"When an allied creature within 5 ft of you has to make an ability check or saving throw against the {@condition charmed|Ishiir}, {@condition frightened|Ishiir}, {@condition paralyzed|Ishiir}, {@condition prone|Ishiir}, or {@condition stunned|Ishiir} condition or against being pushed, you can use your reaction to give that creature advantage on the roll."
+					]
+				}
 			]
 		},
 		{
@@ -291,8 +361,13 @@
 				}
 			],
 			"entries": [
-				"When you miss a ranged weapon attack against a creature, your next ranged weapon attack against that creature before the end of your next turn has advantage.",
-				"If you hit a creature with a ranged weapon attack, the next ranged attack originating from a creature other than you before the start of your next turn has advantage and does not suffer disadvantage if it is made from long range."
+				{
+					"type": "list",
+					"items": [
+						"When you miss a ranged weapon attack against a creature, your next ranged weapon attack against that creature before the end of your next turn has advantage.",
+						"If you hit a creature with a ranged weapon attack, the next ranged attack originating from a creature other than you before the start of your next turn has advantage and does not suffer disadvantage if it is made from long range."
+					]
+				}
 			]
 		},
 		{
@@ -334,8 +409,13 @@
 				}
 			],
 			"entries": [
-				"When you successfully grapple a creature using your Strong Jaws racial feature, you can make another attack using your Tooth & Tail racial feature against that creature as a bonus action. You make this attack roll with advantage.",
-				"You can repeat this bonus action attack on subsequent turns as long as you are still {@action grapple|Ishiir|grappling} the creature."
+				{
+					"type": "list",
+					"items": [
+						"When you successfully grapple a creature using your Strong Jaws racial feature, you can make another attack using your Tooth & Tail racial feature against that creature as a bonus action. You make this attack roll with advantage.",
+						"You can repeat this bonus action attack on subsequent turns as long as you are still {@action grapple|Ishiir|grappling} the creature."
+					]
+				}
 			]
 		},
 		{
@@ -352,9 +432,14 @@
 				}
 			],
 			"entries": [
-				"When you finish a short rest or long rest, you also regain a hit die.",
-				"When you receive healing you can choose to not let it take effect and instead store the effect until you finish your next long rest. You can store only one instance of healing at the same time.",
-				"While you have the healing stored in this manner, you can use your reaction to let the healing take effect immediately."
+				{
+					"type": "list",
+					"items": [
+						"When you finish a short rest or long rest, you also regain a hit die.",
+						"When you receive healing you can choose to not let it take effect and instead store the effect until you finish your next long rest. You can store only one instance of healing at the same time.",
+						"While you have the healing stored in this manner, you can use your reaction to let the healing take effect immediately."
+					]
+				}
 			]
 		},
 		{
@@ -371,8 +456,13 @@
 				}
 			],
 			"entries": [
-				"When you move at least 20 feet in a straight line before hitting a creature with an attack using the natural weapons gained from your Horns & Hooves racial feature, you double the weapon dice for this attack. If you use your Hammering Blows racial feature for this attack, you have advantage on the ability check to {@action shove|Ishiir}.",
-				"When you successfully knock a creature {@condition prone|Ishiir} with your Hammering Blows feature, the creature has to spend all of its movement rather than half of it to stand up."
+				{
+					"type": "list",
+					"items": [
+						"When you move at least 20 feet in a straight line before hitting a creature with an attack using the natural weapons gained from your Horns & Hooves racial feature, you double the weapon dice for this attack. If you use your Hammering Blows racial feature for this attack, you have advantage on the ability check to {@action shove|Ishiir}.",
+						"When you successfully knock a creature {@condition prone|Ishiir} with your Hammering Blows feature, the creature has to spend all of its movement rather than half of it to stand up."
+					]
+				}
 			]
 		},
 		{
@@ -390,9 +480,14 @@
 				}
 			],
 			"entries": [
-				"At the start of each of its turns, a creature that you are currently {@action grapple|Ishiir|grappling} using your Constricting Coils racial feature takes bludgeoning damage equal to twice your proficiency modifier. If the creature is {@condition incapacitated|Ishiir}, this damage is doubled.",
-				"Once per turn, when you take the {@action Attack|Ishiir} action against a creature you have grappled in this manner, you can replace one of your attacks with an attempt to choke the creature. To do so, make a contested {@action grapple|Ishiir|grappling} check as normal. If you succeed, the creature is {@quickref suffocating||2}. If you use this feature again on subsequent turns while the creature is still {@quickref suffocating||2}, it loses an additional round of time until it drops to 0 hitpoints.",
-				"Additionally, when you take the {@action Attack|Ishiir} action on your turn and you aren't currently {@action grapple|Ishiir|grappling} a creature with your Constricting Coils racial feature, you can use your reaction to increase the range for any of your attacks, features, or spells by 5 ft for that turn."
+				{
+					"type": "list",
+					"items": [
+						"At the start of each of its turns, a creature that you are currently {@action grapple|Ishiir|grappling} using your Constricting Coils racial feature takes bludgeoning damage equal to twice your proficiency modifier. If the creature is {@condition incapacitated|Ishiir}, this damage is doubled.",
+						"Once per turn, when you take the {@action Attack|Ishiir} action against a creature you have grappled in this manner, you can replace one of your attacks with an attempt to choke the creature. To do so, make a contested {@action grapple|Ishiir|grappling} check as normal. If you succeed, the creature is {@quickref suffocating||2}. If you use this feature again on subsequent turns while the creature is still {@quickref suffocating||2}, it loses an additional round of time until it drops to 0 hitpoints.",
+						"Additionally, when you take the {@action Attack|Ishiir} action on your turn and you aren't currently {@action grapple|Ishiir|grappling} a creature with your Constricting Coils racial feature, you can use your reaction to increase the range for any of your attacks, features, or spells by 5 ft for that turn."
+					]
+				}
 			]
 		},
 		{
@@ -410,9 +505,14 @@
 				}
 			],
 			"entries": [
-				"You gain proficiency in one tool of your choice.",
-				"When you make a crafting check, you can substitute your CHA for the ability score you would normally use for the crafting attempt.",
-				"When you or another creature you can see within 30 ft fails an ability check or saving throw that you are proficient in, you can use your reaction to add your CHA bonus to it. You can use this feature a number of times equal to half your proficiency bonus (rounded down) and you regain all expended uses on a long rest."
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency in one tool of your choice.",
+						"When you make a crafting check, you can substitute your CHA for the ability score you would normally use for the crafting attempt.",
+						"When you or another creature you can see within 30 ft fails an ability check or saving throw that you are proficient in, you can use your reaction to add your CHA bonus to it. You can use this feature a number of times equal to half your proficiency bonus (rounded down) and you regain all expended uses on a long rest."
+					]
+				}
 			]
 		},
 		{
@@ -430,9 +530,14 @@
 				}
 			],
 			"entries": [
-				"If you make a ranged weapon attack against a creature that is within 30 ft or less of you, the critical range for that attack increases by 1.",
-				"Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.",
-				"When you are wielding a ranged weapon, other creatures provoke an opportunity attack from you when they enter a space you can see within 10 ft of you."
+				{
+					"type": "list",
+					"items": [
+						"If you make a ranged weapon attack against a creature that is within 30 ft or less of you, the critical range for that attack increases by 1.",
+						"Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.",
+						"When you are wielding a ranged weapon, other creatures provoke an opportunity attack from you when they enter a space you can see within 10 ft of you."
+					]
+				}
 			]
 		},
 		{
@@ -450,9 +555,14 @@
 				}
 			],
 			"entries": [
-				"You are immune to lightning damage.",
-				"You can move through the spaces of other creatures regardless of their size and their space does not count as {@quickref difficult terrain||3} for you.",
-				"When you are targeted by an opportunity attack, you can use your reaction to impose disadvantage on that attack roll."
+				{
+					"type": "list",
+					"items": [
+						"You are immune to lightning damage.",
+						"You can move through the spaces of other creatures regardless of their size and their space does not count as {@quickref difficult terrain||3} for you.",
+						"When you are targeted by an opportunity attack, you can use your reaction to impose disadvantage on that attack roll."
+					]
+				}
 			]
 		},
 		{
@@ -470,8 +580,13 @@
 				}
 			],
 			"entries": [
-				"You are immune to poison damage and the {@condition poisoned|Ishiir} condition.",
-				"If you are pushed or knocked {@condition prone|Ishiir}, you can use your reaction to not be pushed or knocked {@condition prone|Ishiir}."
+				{
+					"type": "list",
+					"items": [
+						"You are immune to poison damage and the {@condition poisoned|Ishiir} condition.",
+						"If you are pushed or knocked {@condition prone|Ishiir}, you can use your reaction to not be pushed or knocked {@condition prone|Ishiir}."
+					]
+				}
 			]
 		},
 		{
@@ -490,9 +605,14 @@
 				}
 			],
 			"entries": [
-				"You are immune to fire damage.",
-				"As an action, you can emit bright light in a radius up to 15 feet around you and dim light in a radius double the chosen radius beyond that. You can dismiss this effect at any time without an action.",
-				"When you critically hit a creature, it takes additional fire damage equal to your character level."
+				{
+					"type": "list",
+					"items": [
+						"You are immune to fire damage.",
+						"As an action, you can emit bright light in a radius up to 15 feet around you and dim light in a radius double the chosen radius beyond that. You can dismiss this effect at any time without an action.",
+						"When you critically hit a creature, it takes additional fire damage equal to your character level."
+					]
+				}
 			]
 		},
 		{
@@ -511,9 +631,14 @@
 				}
 			],
 			"entries": [
-				"You are immune to acid damage.",
-				"If you are {@condition grappled|Ishiir}, you can use your reaction to not be {@condition grappled|Ishiir}.",
-				"If you suffer a critical hit, you can use your reaction to turn that critical hit into a normal hit. All effects triggered by a critical hit are cancelled. You can use this feature a number of times equal to half your proficiency modifier (rounded down) and you regain all expended uses when you finish a long rest."
+				{
+					"type": "list",
+					"items": [
+						"You are immune to acid damage.",
+						"If you are {@condition grappled|Ishiir}, you can use your reaction to not be {@condition grappled|Ishiir}.",
+						"If you suffer a critical hit, you can use your reaction to turn that critical hit into a normal hit. All effects triggered by a critical hit are cancelled. You can use this feature a number of times equal to half your proficiency modifier (rounded down) and you regain all expended uses when you finish a long rest."
+					]
+				}
 			]
 		},
 		{
@@ -545,9 +670,14 @@
 				{
 					"type": "list",
 					"items": [
-						"Your maximum for the chosen ability score increases by 2.",
-						"You age at half speed and the expected maximum age for your race doubles.",
-						"When you make an attack roll, an ability check, or a saving throw, you can roll a {@dice d4} and add it to the result. You can choose to use this feature after you see the roll, but before the DM determineds the result. Once you use this ability, you can't use it again until you finish a short or long rest."
+						{
+							"type": "list",
+							"items": [
+								"Your maximum for the chosen ability score increases by 2.",
+								"You age at half speed and the expected maximum age for your race doubles.",
+								"When you make an attack roll, an ability check, or a saving throw, you can roll a {@dice d4} and add it to the result. You can choose to use this feature after you see the roll, but before the DM determineds the result. Once you use this ability, you can't use it again until you finish a short or long rest."
+							]
+						}
 					]
 				}
 			]
