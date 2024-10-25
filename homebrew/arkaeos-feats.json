@@ -1,21 +1,21 @@
 {
-    "_meta": {
-        "sources": [
-            {
-                "json": "Arkaeos",
-                "abbreviation": "Arkaeos",
-                "full": "Arkaeos",
-                "url": "https://regateiro.pt/5etools/homebrew/arkaeos-feats.json",
-                "authors": [
-                    "Sieg"
-                ],
-                "convertedBy": [
-                    "Morb"
-                ]
-            }
-        ]
-    },
-    "feat": [
+	"_meta": {
+		"sources": [
+			{
+				"json": "Arkaeos",
+				"abbreviation": "Arkaeos",
+				"full": "Arkaeos",
+				"url": "https://regateiro.pt/5etools/homebrew/arkaeos-feats.json",
+				"authors": [
+					"Sieg"
+				],
+				"convertedBy": [
+					"Morb"
+				]
+			}
+		]
+	},
+	"feat": [
 		{
 			"name": "Brand of Hor",
 			"page": 1,
@@ -310,9 +310,14 @@
 				}
 			],
 			"entries": [
-				"When you cast a spell that forces one or more creatures to make a STR, DEX, or CON saving throw, you can instead force them to make a different saving throw from among these three.",
-				"When you cast a spell that forces one or more creatures to make a INT, WIS, or CHA saving throw, you can instead force them to make a different saving throw from among these three.",
-				"Ability checks to counterspell, dispel, or otherwise disrupt or remove your spells have disadvantage."
+				{
+					"type": "list",
+					"items": [
+						"When you cast a spell that forces one or more creatures to make a STR, DEX, or CON saving throw, you can instead force them to make a different saving throw from among these three.",
+						"When you cast a spell that forces one or more creatures to make a INT, WIS, or CHA saving throw, you can instead force them to make a different saving throw from among these three.",
+						"Ability checks to counterspell, dispel, or otherwise disrupt or remove your spells have disadvantage."
+					]
+				}
 			]
 		},
 		{
@@ -520,26 +525,26 @@
 					"other": "You can only choose this feat as the origin feat."
 				}
 			],
-            "ability": [
-                {
-                    "choose": {
-                        "from": [
-                            "str",
-                            "dex",
-                            "con",
-                            "int",
-                            "wis",
-                            "cha"
-                        ],
-                        "amount": 1
-                    },
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					},
 					"max": 22
-                }
-            ],
+				}
+			],
 			"entries": [
-                {
-                    "type": "list",
-                    "items": [
+				{
+					"type": "list",
+					"items": [
 						"Your maximum for the chosen ability score increases by 2.",
 						"You age at half speed and the expected maximum age for your race doubles.",
 						"When you make an attack roll, an ability check, or a saving throw, you can roll a {@dice d4} and add it to the result. You can choose to use this feature after you see the roll, but before the DM determineds the result. Once you use this ability, you can't use it again until you finish a short or long rest."

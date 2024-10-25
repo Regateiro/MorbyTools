@@ -534,7 +534,7 @@
             "name": "Artisan of War",
             "page": 1,
             "source": "Ishiir",
-			"critEffect": true,
+            "critEffect": true,
             "prerequisite": [
                 {
                     "level": {
@@ -547,98 +547,103 @@
                 }
             ],
             "entries": [
-                "When you use your Second Wind class feature, roll additional {@dice d10} equal to half your proficiency modifier (rounded down) and add the result to the amount healed. You can do so only once until you finish a Short or Long Rest.",
-                "In addition, choose from one of the following expert fighting styles. You can only choose a style for which you have attained the base version.",
                 {
                     "type": "list",
                     "items": [
+                        "When you use your Second Wind class feature, roll additional {@dice d10} equal to half your proficiency modifier (rounded down) and add the result to the amount healed. You can do so only once until you finish a Short or Long Rest.",
+                        "In addition, choose from one of the following expert fighting styles. You can only choose a style for which you have attained the base version.",
                         {
                             "type": "list",
-                            "style": "list-hang-notitle",
                             "items": [
                                 {
-                                    "type": "item",
-                                    "name": "Expert Archery",
-                                    "entries": [
-                                        "Your attacks no longer suffer from disadvantage because your target is prone. When you hit a target that currently benefits from half or three-quarters cover with a ranged weapon attack, that target can no longer benefit from half or three-quarters cover until the start of its next turn."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Expert Blindfighting",
-                                    "entries": [
-                                        "The range of your blindsight increases to 20 ft."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Expert Defense",
-                                    "entries": [
-                                        "While wearing armor, you also receive a +1 bonus to all saving throws."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Expert Dueling",
-                                    "entries": [
-                                        "When combat begins but before any initiative is rolled, you can draw a one-handed melee weapon immediately and add your proficiency bonus to your initiative roll. Your attack rolls with this weapon have advantage against any target that hasn't yet acted during the first turn of combat."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Expert Great-Weapon Fighting",
-                                    "entries": [
-                                        "You add half your STR modifier (rounded down) to any damage roll made with a two-handed melee weapon or versatile weapon wielded in two hands. If you land a critical hit with such a weapon, you add an additional weapon die to the damage dice rolled."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Expert Interception",
-                                    "entries": [
-                                        "If you use the feature from the Interception fighting style to reduce the damage of an attack, you add your highest class level to the result of the roll."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Expert Mariner",
-                                    "entries": [
-                                        "As long as you are not wearing heavy armor or using a shield, you receive a +1 bonus to all saving throws."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Expert Protection",
-                                    "entries": [
-                                        "If you use the feature from the Protection fighting style to impose disadvantage on a creature's attack roll and the attack hits, the target of the attack has resistance to the attack's damage."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Expert Superior Technique",
-                                    "entries": [
-                                        "You gain an additional superiority die and learn an additional maneuver available to the Battle Master archetype. Additionally, the die size of the superiority die increases by one."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Expert Thrown Weapon Fighting",
-                                    "entries": [
-                                        "Your attacks with a thrown weapon have their range increased by 10 feet, and their long range increased by 30 ft. Additionally, your critical range for ranged attacks with thrown weapons increases by 1."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Expert Two-Weapon Fighting",
-                                    "entries": [
-                                        "The damage die of your weapons increases by one size if you dual wield them.",
-                                        "When you make a melee weapon attack using your reaction (excluding readied actions) you may also make an attack with your off-hand weapon as part of the same reaction."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Expert Unarmed Fighting",
-                                    "entries": [
-                                        "The damage die of your unarmed strikes and the extra damage you inflict against grappled creatures is increased by one size. Additionally, this damage counts as magical for the purpose of ignoring resistance and immunity."
+                                    "type": "list",
+                                    "style": "list-hang-notitle",
+                                    "items": [
+                                        {
+                                            "type": "item",
+                                            "name": "Expert Archery",
+                                            "entries": [
+                                                "Your attacks no longer suffer from disadvantage because your target is prone. When you hit a target that currently benefits from half or three-quarters cover with a ranged weapon attack, that target can no longer benefit from half or three-quarters cover until the start of its next turn."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Expert Blindfighting",
+                                            "entries": [
+                                                "The range of your blindsight increases to 20 ft."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Expert Defense",
+                                            "entries": [
+                                                "While wearing armor, you also receive a +1 bonus to all saving throws."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Expert Dueling",
+                                            "entries": [
+                                                "When combat begins but before any initiative is rolled, you can draw a one-handed melee weapon immediately and add your proficiency bonus to your initiative roll. Your attack rolls with this weapon have advantage against any target that hasn't yet acted during the first turn of combat."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Expert Great-Weapon Fighting",
+                                            "entries": [
+                                                "You add half your STR modifier (rounded down) to any damage roll made with a two-handed melee weapon or versatile weapon wielded in two hands. If you land a critical hit with such a weapon, you add an additional weapon die to the damage dice rolled."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Expert Interception",
+                                            "entries": [
+                                                "If you use the feature from the Interception fighting style to reduce the damage of an attack, you add your highest class level to the result of the roll."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Expert Mariner",
+                                            "entries": [
+                                                "As long as you are not wearing heavy armor or using a shield, you receive a +1 bonus to all saving throws."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Expert Protection",
+                                            "entries": [
+                                                "If you use the feature from the Protection fighting style to impose disadvantage on a creature's attack roll and the attack hits, the target of the attack has resistance to the attack's damage."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Expert Superior Technique",
+                                            "entries": [
+                                                "You gain an additional superiority die and learn an additional maneuver available to the Battle Master archetype. Additionally, the die size of the superiority die increases by one."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Expert Thrown Weapon Fighting",
+                                            "entries": [
+                                                "Your attacks with a thrown weapon have their range increased by 10 feet, and their long range increased by 30 ft. Additionally, your critical range for ranged attacks with thrown weapons increases by 1."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Expert Two-Weapon Fighting",
+                                            "entries": [
+                                                "The damage die of your weapons increases by one size if you dual wield them.",
+                                                "When you make a melee weapon attack using your reaction (excluding readied actions) you may also make an attack with your off-hand weapon as part of the same reaction."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Expert Unarmed Fighting",
+                                            "entries": [
+                                                "The damage die of your unarmed strikes and the extra damage you inflict against grappled creatures is increased by one size. Additionally, this damage counts as magical for the purpose of ignoring resistance and immunity."
+                                            ]
+                                        }
                                     ]
                                 }
                             ]
@@ -806,31 +811,31 @@
                 }
             ]
         },
-		{
-			"name": "Brawny",
-			"source": "Ishiir",
-			"page": 1,
-			"ability": [
-				{
-					"str": 1
-				}
-			],
-			"skillProficiencies": [
-				{
-					"athletics": true
-				}
-			],
-			"entries": [
-				"You become stronger, gaining the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You gain proficiency in the {@skill Athletics} skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
-						"You count as if you were one size larger for the purpose of determining your carrying capacity."
-					]
-				}
-			]
-		},
+        {
+            "name": "Brawny",
+            "source": "Ishiir",
+            "page": 1,
+            "ability": [
+                {
+                    "str": 1
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "athletics": true
+                }
+            ],
+            "entries": [
+                "You become stronger, gaining the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain proficiency in the {@skill Athletics} skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
+                        "You count as if you were one size larger for the purpose of determining your carrying capacity."
+                    ]
+                }
+            ]
+        },
         {
             "name": "Burglar",
             "page": 1,
@@ -1123,7 +1128,7 @@
             "name": "Crusher",
             "page": 1,
             "source": "Ishiir",
-			"critEffect": true,
+            "critEffect": true,
             "ability": [
                 {
                     "choose": {
@@ -1289,7 +1294,7 @@
             "name": "Disciple of Eisenherz",
             "page": 1,
             "source": "Ishiir",
-			"critEffect": true,
+            "critEffect": true,
             "prerequisite": [
                 {
                     "race": [
@@ -1316,7 +1321,7 @@
             "name": "Disciple of La Lis de Fer",
             "page": 1,
             "source": "Ishiir",
-			"critEffect": true,
+            "critEffect": true,
             "prerequisite": [
                 {
                     "race": [
@@ -1964,7 +1969,7 @@
             "name": "Fell Handed",
             "page": 1,
             "source": "Ishiir",
-			"critEffect": true,
+            "critEffect": true,
             "entries": [
                 "You master the {@item light hammer|Ishiir}, {@item handaxe|Ishiir}, {@item battleaxe|Ishiir}, {@item flail|Ishiir}, {@item greataxe|Ishiir}, {@item greatclub|Ishiir}, {@item mace|Ishiir}, {@item morningstar|Ishiir}, {@item warhammer|Ishiir}, {@item war pick|Ishiir}, and {@item maul|Ishiir}. You gain the following benefits when using any of them:",
                 {
@@ -2205,7 +2210,7 @@
             "name": "Great Weapon Master",
             "page": 1,
             "source": "Ishiir",
-			"critEffect": true,
+            "critEffect": true,
             "entries": [
                 "You've learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:",
                 {
@@ -3237,7 +3242,7 @@
             "name": "Myst Seer",
             "page": 1,
             "source": "Ishiir",
-			"critEffect": true,
+            "critEffect": true,
             "prerequisite": [
                 {
                     "race": [
@@ -3678,7 +3683,7 @@
             "name": "Piercer",
             "page": 1,
             "source": "Ishiir",
-			"critEffect": true,
+            "critEffect": true,
             "ability": [
                 {
                     "choose": {
@@ -4310,7 +4315,7 @@
             "name": "Slasher",
             "page": 1,
             "source": "Ishiir",
-			"critEffect": true,
+            "critEffect": true,
             "ability": [
                 {
                     "choose": {
@@ -5065,7 +5070,7 @@
             "name": "Wildheart",
             "page": 1,
             "source": "Ishiir",
-			"critEffect": true,
+            "critEffect": true,
             "prerequisite": [
                 {
                     "level": {
