@@ -46,10 +46,7 @@
                 ],
                 "weapons": [
                     "simple",
-                    "{@item hand crossbow|phb|hand crossbows}",
-                    "{@item longsword|phb|longswords}",
-                    "{@item rapier|phb|rapiers}",
-                    "{@item shortsword|phb|shortswords}"
+                    "martial (light or finesse)"
                 ],
                 "tools": [
                     "{@item thieves' tools|PHB}"
@@ -404,6 +401,7 @@
                 "Cunning Strike|Rogue|Ishiir|5",
                 "Expertise|Rogue|Ishiir|6",
                 "Evasion|Rogue|Ishiir|7",
+                "Reliable Talent|Rogue|Ishiir|7",
                 "Ability Score Improvement|Rogue|Ishiir|8",
                 "Proficiency Versatility|Rogue|Ishiir|8",
                 {
@@ -412,7 +410,7 @@
                 },
                 "Ability Score Improvement|Rogue|Ishiir|10",
                 "Proficiency Versatility|Rogue|Ishiir|10",
-                "Reliable Talent|Rogue|Ishiir|11",
+                "Improved Cunning Strike|Rogue|Ishiir|11",
                 "Ability Score Improvement|Rogue|Ishiir|12",
                 "Proficiency Versatility|Rogue|Ishiir|12",
                 {
@@ -800,8 +798,8 @@
                         }
                     ],
                     "colLabels": [
-                        "{@filter Cantrips Known|spells|level=0|subclass=Rogue: Arcane Trickster (Ishiir)|source=Ishiir}",
-                        "{@filter Spells Known|spells|subclass=Rogue: Arcane Trickster (Ishiir)|source=Ishiir}"
+                        "{@filter Cantrips Known|spells|level=0|class=Wizard (Ishiir)|source=Ishiir}",
+                        "{@filter Prepared Spells|spells|class=Wizard (Ishiir)|source=Ishiir}"
                     ],
                     "rows": [
                         [
@@ -895,10 +893,10 @@
                         }
                     ],
                     "colLabels": [
-                        "{@filter 1st|spells|level=1|subclass=Rogue: Arcane Trickster (Ishiir)|source=Ishiir}",
-                        "{@filter 2nd|spells|level=2|subclass=Rogue: Arcane Trickster (Ishiir)|source=Ishiir}",
-                        "{@filter 3rd|spells|level=3|subclass=Rogue: Arcane Trickster (Ishiir)|source=Ishiir}",
-                        "{@filter 4th|spells|level=4|subclass=Rogue: Arcane Trickster (Ishiir)|source=Ishiir}"
+                        "{@filter 1st|spells|level=1|class=Wizard (Ishiir)|source=Ishiir}",
+                        "{@filter 2nd|spells|level=2|class=Wizard (Ishiir)|source=Ishiir}",
+                        "{@filter 3rd|spells|level=3|class=Wizard (Ishiir)|source=Ishiir}",
+                        "{@filter 4th|spells|level=4|class=Wizard (Ishiir)|source=Ishiir}"
                     ],
                     "rowsSpellProgression": [
                         [
@@ -1040,7 +1038,7 @@
             "page": 1,
             "subclassFeatures": [
                 "Assassin|Rogue|Ishiir|Assassin|Ishiir|3",
-                "Preparation|Rogue|Ishiir|Assassin|Ishiir|9",
+                "Roving Aim|Rogue|Ishiir|Assassin|Ishiir|9",
                 "Death Dealer|Rogue|Ishiir|Assassin|Ishiir|13",
                 "Lethality|Rogue|Ishiir|Assassin|Ishiir|17"
             ]
@@ -1060,17 +1058,296 @@
             ]
         },
         {
-            "name": "Inquisitive",
-            "shortName": "Inquisitive",
+            "name": "Inquisitor",
+            "shortName": "Inquisitor",
             "source": "Ishiir",
             "className": "Rogue",
             "classSource": "Ishiir",
             "page": 1,
+            "spellcastingAbility": "wis",
+            "casterProgression": "1/3",
+            "cantripProgression": [
+                0,
+                0,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3
+            ],
+            "spellsKnownProgression": [
+                0,
+                0,
+                3,
+                4,
+                4,
+                4,
+                5,
+                6,
+                6,
+                7,
+                8,
+                8,
+                9,
+                10,
+                10,
+                11,
+                11,
+                11,
+                12,
+                13
+            ],
+            "subclassTableGroups": [
+                {
+                    "subclasses": [
+                        {
+                            "name": "Inquisitor",
+                            "source": "Ishiir"
+                        }
+                    ],
+                    "colLabels": [
+                        "{@filter Cantrips Known|spells|level=0|class=Cleric (Ishiir)|source=Ishiir}",
+                        "{@filter Prepared Spells|spells|class=Cleric (Ishiir)|source=Ishiir}"
+                    ],
+                    "rows": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            3
+                        ],
+                        [
+                            3,
+                            4
+                        ],
+                        [
+                            3,
+                            4
+                        ],
+                        [
+                            3,
+                            4
+                        ],
+                        [
+                            3,
+                            5
+                        ],
+                        [
+                            3,
+                            6
+                        ],
+                        [
+                            3,
+                            6
+                        ],
+                        [
+                            4,
+                            7
+                        ],
+                        [
+                            4,
+                            8
+                        ],
+                        [
+                            4,
+                            8
+                        ],
+                        [
+                            4,
+                            9
+                        ],
+                        [
+                            4,
+                            10
+                        ],
+                        [
+                            4,
+                            10
+                        ],
+                        [
+                            4,
+                            11
+                        ],
+                        [
+                            4,
+                            11
+                        ],
+                        [
+                            4,
+                            11
+                        ],
+                        [
+                            4,
+                            12
+                        ],
+                        [
+                            4,
+                            13
+                        ]
+                    ]
+                },
+                {
+                    "title": "Spell Slots per Spell Level",
+                    "subclasses": [
+                        {
+                            "name": "Arcane Trickster",
+                            "source": "Ishiir"
+                        }
+                    ],
+                    "colLabels": [
+                        "{@filter 1st|spells|level=1|class=Cleric (Ishiir)|source=Ishiir}",
+                        "{@filter 2nd|spells|level=2|class=Cleric (Ishiir)|source=Ishiir}",
+                        "{@filter 3rd|spells|level=3|class=Cleric (Ishiir)|source=Ishiir}",
+                        "{@filter 4th|spells|level=4|class=Cleric (Ishiir)|source=Ishiir}"
+                    ],
+                    "rowsSpellProgression": [
+                        [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1
+                        ]
+                    ]
+                }
+            ],
             "subclassFeatures": [
-                "Inquisitive|Rogue|Ishiir|Inquisitive|Ishiir|3",
-                "Steady Eye|Rogue|Ishiir|Inquisitive|Ishiir|9",
-                "Unerring Eye|Rogue|Ishiir|Inquisitive|Ishiir|13",
-                "Eye for Weakness|Rogue|Ishiir|Inquisitive|Ishiir|17"
+                "Inquisitor|Rogue|Ishiir|Inquisitor|Ishiir|3",
+                "Piercing Gaze|Rogue|Ishiir|Inquisitor|Ishiir|9",
+                "Persecutor's Strikes|Rogue|Ishiir|Inquisitor|Ishiir|13",
+                "Unflinching Gaze|Rogue|Ishiir|Inquisitor|Ishiir|17"
             ]
         },
         {
@@ -1137,10 +1414,250 @@
             "className": "Rogue",
             "classSource": "Ishiir",
             "page": 1,
+            "subclassTableGroups": [
+                {
+                    "subclasses": [
+                        {
+                            "name": "Soulknife",
+                            "source": "Ishiir"
+                        }
+                    ],
+                    "colLabels": [
+                        "Die Size",
+                        "Number"
+                    ],
+                    "rows": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            4
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            4
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            6
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            6
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            6
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            6
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            8
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            8
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            8
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            8
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            10
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            10
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            10
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            10
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 12
+                                    }
+                                ]
+                            },
+                            12
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 12
+                                    }
+                                ]
+                            },
+                            12
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 12
+                                    }
+                                ]
+                            },
+                            12
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 12
+                                    }
+                                ]
+                            },
+                            12
+                        ]
+                    ]
+                }
+            ],
             "subclassFeatures": [
                 "Soulknife|Rogue|Ishiir|Soulknife|Ishiir|3",
-                "Soul Blades|Rogue|Ishiir|Soulknife|Ishiir|9",
-                "Psychic Veil|Rogue|Ishiir|Soulknife|Ishiir|13",
+                "Psychic Veil|Rogue|Ishiir|Soulknife|Ishiir|9",
+                "Psychic Strikes|Rogue|Ishiir|Soulknife|Ishiir|13",
                 "Rend Mind|Rogue|Ishiir|Soulknife|Ishiir|17"
             ]
         },
@@ -1182,6 +1699,7 @@
             "subclassFeatures": [
                 "Shadowdancer|Rogue|Ishiir|Shadowdancer|Ishiir|3",
                 "Cunning Action: Umbral Shroud|Rogue|Ishiir|Shadowdancer|Ishiir|9",
+                "Dagger in the Dark|Rogue|Ishiir|Shadowdancer|Ishiir|9",
                 "Umbral Strikes|Rogue|Ishiir|Shadowdancer|Ishiir|13",
                 "Nightwalker|Rogue|Ishiir|Shadowdancer|Ishiir|17"
             ]
@@ -1381,7 +1899,20 @@
             "classSource": "Ishiir",
             "level": 7,
             "entries": [
-                "You can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an {@spell ice storm|Ishiir} spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+                "You can nimbly dodge out of the way of certain dangers. When you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the {@condition Incapacitated|Ishiir} condition."
+            ]
+        },
+        {
+            "name": "Reliable Talent",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "basicRules": true,
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "level": 7,
+            "entries": [
+                "Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a {@dice d20} roll of 9 or lower as a 10."
             ]
         },
         {
@@ -1450,7 +1981,7 @@
             ]
         },
         {
-            "name": "Reliable Talent",
+            "name": "Improved Cunning Strike",
             "source": "Ishiir",
             "page": 1,
             "srd": true,
@@ -1459,7 +1990,7 @@
             "classSource": "Ishiir",
             "level": 11,
             "entries": [
-                "You have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a {@dice d20} roll of 9 or lower as a 10."
+                "You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect."
             ]
         },
         {
@@ -1638,8 +2169,8 @@
             "classSource": "Ishiir",
             "level": 20,
             "entries": [
-                "You have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the {@dice d20} roll as a 20.",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+                "You have a marvelous knack for succeeding when you need to. If you fail a D20 Test, you can turn the roll into a 20.",
+                "Once you use this feature, you can't use it again until you finish a Short or Long Rest."
             ]
         }
     ],
@@ -1654,7 +2185,7 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "Some rogues enhance their fine-honed skills of stealth and agility with magic, learning tricks of enchantment and illusion. These rogues include pickpockets and burglars, but also pranksters, mischief-makers, and a significant number of adventurers.",
+                "Some Rogues enhance their fine-honed skills of stealth and agility with spells, learning magical tricks to aid them in their trade. Some Arcane Tricksters use their talents as pickpockets and burglars, while others are pranksters.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Spellcasting|Rogue|Ishiir|Arcane Trickster|Ishiir|3"
@@ -1676,7 +2207,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain the ability to cast spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter wizard spell list|spells|class=wizard (Ishiir)|source=Ishiir}.",
+                "You have learned to cast spells. The information below details how you use those rules as an Arcane Trickster.",
                 {
                     "type": "entries",
                     "entries": [
@@ -1684,7 +2215,9 @@
                             "type": "entries",
                             "name": "Cantrips",
                             "entries": [
-                                "You learn three cantrips: {@spell mage hand|Ishiir} and two other cantrips of your choice from the wizard spell list. You learn another wizard cantrip of your choice at 10th level."
+                                "You know three cantrips: {@spell Mage Hand|Ishiir} and two other cantrips of your choice from the {@filter Wizard spell list|spells|class=wizard (Ishiir)|source=Ishiir}.",
+                                "Whenever you gain a Rogue level, you can replace one of your cantrips, except {@spell Mage Hand|Ishiir}, with another Wizard cantrip of your choice.",
+                                "When you reach Rogue level 10, you learn another Wizard cantrip of your choice, as shown in this subclass' progression table."
                             ]
                         }
                     ]
@@ -1696,8 +2229,7 @@
                             "type": "entries",
                             "name": "Spell Slots",
                             "entries": [
-                                "The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your {@filter wizard spells|spells|class=wizard (Ishiir)|source=Ishiir} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-                                "For example, if you know the 1st-level spell {@spell charm person|Ishiir} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell charm person|Ishiir} using either slot."
+                                "The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended spell slots when you finish a Long Rest."
                             ]
                         }
                     ]
@@ -1707,11 +2239,22 @@
                     "entries": [
                         {
                             "type": "entries",
-                            "name": "Spells Known of 1st-Level and Higher",
+                            "name": "Prepared Spells of 1st+ Level.",
                             "entries": [
-                                "You know three 1st-level wizard spells of your choice.",
-                                "The Spells Known column of the Arcane Trickster Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.",
-                                "Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots."
+                                "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 Wizard spells.",
+                                "The number of spells on your list increases as you gain Rogue levels, as shown in the Prepared Spells column of the Arcane Trickster Spellcasting table. Whenever that number increases, choose additional Wizard spells until the number of spells on your list matches the number in the Arcane Trickster Spellcasting table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 7 Rogue, your list of prepared spells can include five Wizard spells of level 1 or 2 in any combination."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Changing Your Prepared Spells.",
+                            "entries": [
+                                "Whenever you gain a Rogue level, you can replace one spell on your list with another Wizard spell for which you have spell slots."
                             ]
                         }
                     ]
@@ -1723,21 +2266,19 @@
                             "type": "entries",
                             "name": "Spellcasting Ability.",
                             "entries": [
-                                "Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.",
-                                {
-                                    "type": "abilityDc",
-                                    "name": "Spell",
-                                    "attributes": [
-                                        "int"
-                                    ]
-                                },
-                                {
-                                    "type": "abilityAttackMod",
-                                    "name": "Spell",
-                                    "attributes": [
-                                        "int"
-                                    ]
-                                }
+                                "Intelligence is your spellcasting ability for your wizard spells."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Spellcasting Focus.",
+                            "entries": [
+                                "You can use an Arcane Focus as a Spellcasting Focus for your Wizard spells."
                             ]
                         }
                     ]
@@ -1755,17 +2296,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "When you cast {@spell mage hand|Ishiir}, you can make the spectral hand {@condition invisible|Ishiir}, and you can perform the following additional tasks with it:",
-                {
-                    "type": "list",
-                    "items": [
-                        "You can stow one object the hand is holding in a container worn or carried by another creature.",
-                        "You can retrieve an object in a container worn or carried by another creature.",
-                        "You can use {@item thieves' tools|phb} to pick locks and disarm traps at range."
-                    ]
-                },
-                "You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity ({@skill Sleight of Hand}) check contested by the creature's Wisdom ({@skill Perception}) check.",
-                "In addition, you can use the bonus action granted by your Cunning Action to control the hand."
+                "When you cast {@spell Mage Hand|Ishiir}, you can cast it as a Bonus Action, and you can make the spectral hand {@condition Invisible|Ishiir}. You can control the hand as a Bonus Action, and through it, you can make Dexterity ({@skill Sleight of Hand}) checks."
             ]
         },
         {
@@ -1808,8 +2339,8 @@
             "header": 2,
             "entries": [
                 "You gain the ability to magically steal the knowledge of how to cast a spell from another spellcaster.",
-                "Immediately after a creature casts a spell that targets you or includes you in its area of effect, you can use your reaction to force the creature to make a saving throw with its spellcasting ability modifier. The DC equals your spell save DC. On a failed save, you negate the spell's effect against you, and you steal the knowledge of the spell if it is at least 1st level and of a level you can cast (it doesn't need to be a wizard spell). For the next 8 hours, you know the spell and can cast it using your spell slots. The creature can't cast that spell until the 8 hours have passed.",
-                "You can use this feature a number of times equal to your Intelligence modifier (minimum 1), and you regain all expended uses when you finish a long rest."
+                "Immediately after a creature casts a spell that targets you or includes you in its area of effect, you can take a Reaction to force the creature to make a saving throw with its spellcasting ability. The DC equals your spell save DC. On a failed save, you negate the spell's effect, and you steal the knowledge of the spell. For the next 7 days, you have the spell prepared. You can cast this spell once without expending a spell slot. You can also cast this spell normally if you have spell slots for its level (it doesn't have to be a Wizard spell). The creature can't cast it until the 7 days have passed.",
+                "Once you have stolen a spell with this feature, you can't use it again until you have finished a long rest."
             ]
         },
         {
@@ -1831,6 +2362,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Bonus Proficiencies|Rogue|Ishiir|Assassin|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Preparation|Rogue|Ishiir|Assassin|Ishiir|3"
                 }
             ]
         },
@@ -1870,10 +2405,24 @@
             "classSource": "Ishiir",
             "subclassShortName": "Assassin",
             "subclassSource": "Ishiir",
-            "level": 9,
+            "level": 3,
             "header": 2,
             "entries": [
                 "You have proficiency in initiative."
+            ]
+        },
+        {
+            "name": "Roving Aim",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "subclassShortName": "Assassin",
+            "subclassSource": "Ishiir",
+            "level": 9,
+            "header": 2,
+            "entries": [
+                "Your Speed isn't reduced to 0 by using Steady Aim."
             ]
         },
         {
@@ -2038,114 +2587,189 @@
             ]
         },
         {
-            "name": "Inquisitive",
+            "name": "Inquisitor",
             "source": "Ishiir",
             "page": 1,
             "className": "Rogue",
             "classSource": "Ishiir",
-            "subclassShortName": "Inquisitive",
+            "subclassShortName": "Inquisitor",
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
                 "As an archetypal Inquisitive, you excel at rooting out secrets and unraveling mysteries. You rely on your sharp eye for detail, but also on your finely honed ability to read the words and deeds of other creatures to determine their true intent. You excel at defeating creatures that hide among and prey upon ordinary folk, and your mastery of lore and your keen deductions make you well equipped to expose and end hidden evils.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Ear for Deceit|Rogue|Ishiir|Inquisitive|Ishiir|3"
+                    "subclassFeature": "Spellcasting|Rogue|Ishiir|Inquisitor|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Eye for Detail|Rogue|Ishiir|Inquisitive|Ishiir|3"
-                },
-                {
-                    "type": "refSubclassFeature",
-                    "subclassFeature": "Insightful Fighting|Rogue|Ishiir|Inquisitive|Ishiir|3"
+                    "subclassFeature": "Inquisitor's Gaze|Rogue|Ishiir|Inquisitor|Ishiir|3"
                 }
             ]
         },
         {
-            "name": "Ear for Deceit",
+            "name": "Spellcasting",
             "source": "Ishiir",
             "page": 1,
             "className": "Rogue",
             "classSource": "Ishiir",
-            "subclassShortName": "Inquisitive",
+            "subclassShortName": "Inquisitor",
             "subclassSource": "Ishiir",
             "level": 3,
             "header": 1,
             "entries": [
-                "You develop a talent for picking out lies. Whenever you make a Wisdom ({@skill Insight}) check to determine whether a creature is lying, treat a roll of 7 or lower on the {@dice d20} as an 8.",
-                "Once you reach level 11, you can instead treat a roll of 14 or lower on the d20 as a 15."
+                "You have learned to cast spells. The information below details how you use those rules as an Inquisitor.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Cantrips",
+                            "entries": [
+                                "You know three cantrips of your choice from the {@filter Cleric spell list|spells|class=cleric (Ishiir)|source=Ishiir}.",
+                                "Whenever you gain a Rogue level, you can replace one of your cantrips, with another Cleric cantrip of your choice.",
+                                "When you reach Rogue level 10, you learn another Cleric cantrip of your choice, as shown in this subclass' progression table."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Spell Slots",
+                            "entries": [
+                                "The Inquisitor Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended spell slots when you finish a Long Rest."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Prepared Spells of 1st+ Level.",
+                            "entries": [
+                                "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 Cleric spells.",
+                                "The number of spells on your list increases as you gain Rogue levels, as shown in the Prepared Spells column of the Inquisitor Spellcasting table. Whenever that number increases, choose additional Cleric spells until the number of spells on your list matches the number in the Inquisitor Spellcasting table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 7 Rogue, your list of prepared spells can include five Cleric spells of level 1 or 2 in any combination."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Changing Your Prepared Spells.",
+                            "entries": [
+                                "Whenever you gain a Rogue level, you can replace one spell on your list with another Cleric spell for which you have spell slots."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Spellcasting Ability.",
+                            "entries": [
+                                "Wisdom is your spellcasting ability for your Cleric spells."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Spellcasting Focus.",
+                            "entries": [
+                                "You can use a Holy Symbol as a Spellcasting Focus for your Cleric spells."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
-            "name": "Eye for Detail",
+            "name": "Inquisitor's Gaze",
             "source": "Ishiir",
             "page": 1,
             "className": "Rogue",
             "classSource": "Ishiir",
-            "subclassShortName": "Inquisitive",
+            "subclassShortName": "Inquisitor",
             "subclassSource": "Ishiir",
             "level": 3,
             "header": 1,
             "entries": [
-                "You can use a bonus action to make a Wisdom ({@skill Perception}) check to spot a hidden creature or object or to make an Intelligence ({@skill Investigation}) check to uncover or decipher clues."
+                "When you use Cunning Action: Aim, you can choose one creature you can see. You have advantage on the first attack roll against that creature each turn for 1 minute instead. This effect ends early if you can no longer see the target, you are {@condition incapacitated|Ishiir}, you perform a hostile action against a different creature (such as an attack or forcing it to make a saving throw), or you use Inquisitor's Gaze on a different creature."
             ]
         },
         {
-            "name": "Insightful Fighting",
+            "name": "Piercing Gaze",
             "source": "Ishiir",
             "page": 1,
             "className": "Rogue",
             "classSource": "Ishiir",
-            "subclassShortName": "Inquisitive",
-            "subclassSource": "Ishiir",
-            "level": 3,
-            "header": 1,
-            "entries": [
-                "You gain the ability to decipher an opponent's tactics and develop a counter to them. As a bonus action, you can make a Wisdom ({@skill Insight}) check against a creature you can see that isn't {@condition incapacitated|Ishiir}, contested by the target's Charisma ({@skill Deception}) check. If you succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have disadvantage on it.",
-                "This benefit lasts for 1 minute or until you successfully use this feature against a different target."
-            ]
-        },
-        {
-            "name": "Steady Eye",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Rogue",
-            "classSource": "Ishiir",
-            "subclassShortName": "Inquisitive",
+            "subclassShortName": "Inquisitor",
             "subclassSource": "Ishiir",
             "level": 9,
             "header": 2,
             "entries": [
-                "You add your Wisdom modifier to {@skill Investigation} checks and initiative rolls."
+                "You add your Wisdom modifier to Initiative rolls and to {@skill Investigation} and {@skill Intimidation} checks."
             ]
         },
         {
-            "name": "Unerring Eye",
+            "name": "Persecutor's Strikes",
             "source": "Ishiir",
             "page": 1,
             "className": "Rogue",
             "classSource": "Ishiir",
-            "subclassShortName": "Inquisitive",
+            "subclassShortName": "Inquisitor",
             "subclassSource": "Ishiir",
             "level": 13,
             "header": 2,
             "entries": [
-                "When you are attacking the target of your Insightful Fighting feature, you ignore all effects on it that impose disadvantage on your attack rolls as long as you are within 30 feet of it and you are not {@condition blinded|Ishiir} or {@condition deafened|Ishiir}."
+                "You learn the following new ways to use your Sneak Attack:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Brand (Cost:3d6)",
+                            "entries": [
+                                "The target must succeed on a Constitution saving throw or lose the ability to cast spells and turn {@condition invisible|Ishiir} until the end of your next turn."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Castigate (Cost:2d6)",
+                            "entries": [
+                                "The target must succeed on a Wisdom saving throw or become {@condition frightened|Ishiir} of you until the end of your next turn."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
-            "name": "Eye for Weakness",
+            "name": "Unflinching Gaze",
             "source": "Ishiir",
             "page": 1,
             "className": "Rogue",
             "classSource": "Ishiir",
-            "subclassShortName": "Inquisitive",
+            "subclassShortName": "Inquisitor",
             "subclassSource": "Ishiir",
             "level": 17,
             "header": 2,
             "entries": [
-                "You learn to exploit a creature's weaknesses by carefully studying its tactics and movement. While your Insightful Fighting feature applies to a creature, your Sneak Attack damage against that creature increases by {@dice 3d6}."
+                "You have advantage on all saving throws caused by the target of your Inquisitor's Gaze."
             ]
         },
         {
@@ -2302,7 +2926,6 @@
             "level": 3,
             "header": 1,
             "entries": [
-
                 "As you nudge someone closer to the grave, you can channel the power of death to harm someone else as well. Immediately after you deal your Sneak Attack damage to a creature on your turn, you can target a second creature that you can see within 30 feet of the first creature. Roll half the number of Sneak Attack dice for your level (round up), and the second creature takes necrotic damage equal to the roll's total, as wails of the dead sound around them for a moment.",
                 "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
             ]
@@ -2318,7 +2941,6 @@
             "level": 3,
             "header": 1,
             "entries": [
-
                 "Echoes of those who have died cling to you. Whenever you finish a short or long rest, you can choose one skill or tool proficiency that you lack and gain it, as a ghostly presence shares its knowledge with you. You lose this proficiency when you use this feature to choose a different proficiency that you lack."
             ]
         },
@@ -2333,7 +2955,6 @@
             "level": 9,
             "header": 2,
             "entries": [
-
                 "When a life ends in your presence, you're able to snatch a token from the departing soul, a sliver of its life essence that takes physical form: as a reaction when a creature you can see dies within 30 feet of you, you can open your free hand and cause a Tiny trinket to appear there, a soul trinket. The DM determines the trinket's form or has you roll on the {@item Trinket|phb|Trinkets} table in the {@i Player's Handbook} to generate it. You can have a maximum number of soul trinkets equal to your proficiency bonus, and you can't create one while at your maximum.",
                 "You can use soul trinkets in the following ways:",
                 {
@@ -2357,7 +2978,6 @@
             "level": 13,
             "header": 2,
             "entries": [
-
                 "You can phase partially into the realm of the dead, becoming like a ghost. As a bonus action, you assume a spectral form. While in this form, you have a flying speed of 10 feet, you can hover, and attack rolls have disadvantage against you. You can also move through creatures and objects as if they were {@quickref difficult terrain||3}, but you take {@damage 1d10} force damage if you end your turn inside a creature or an object.",
                 "You stay in this form for 10 minutes or until you end it as a bonus action. To use this feature again, you must finish a long rest or destroy one of your soul trinkets as part of the bonus action you use to activate Ghost Walk."
             ]
@@ -2373,7 +2993,6 @@
             "level": 17,
             "header": 2,
             "entries": [
-
                 "Your association with death has become so close that you gain the following benefits:",
                 {
                     "type": "list",
@@ -2401,7 +3020,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Survivalist|Rogue|Ishiir|Scout|Ishiir|3"
+                    "subclassFeature": "Natural Explorer|Rogue|Ishiir|Scout|Ishiir|3"
                 }
             ]
         },
@@ -2416,11 +3035,11 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn't provoke opportunity attacks."
+                "You are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 10 feet of you. This movement doesn't provoke opportunity attacks."
             ]
         },
         {
-            "name": "Survivalist",
+            "name": "Natural Explorer",
             "source": "Ishiir",
             "page": 1,
             "className": "Rogue",
@@ -2430,7 +3049,27 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain proficiency in the {@skill Nature} and {@skill Survival} skills if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies."
+                "You are a master of navigating the natural world, and you react with swift and decisive action when attacked. This grants you the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You ignore {@quickref difficult terrain||3}.",
+                        "You have advantage on initiative rolls.",
+                        "On your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted."
+                    ]
+                },
+                "In addition, you are skilled at navigating the wilderness. You gain the following benefits when traveling for an hour or more:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Difficult terrain doesn't slow your group's travel.",
+                        "Your group can't become lost except by magical means.",
+                        "Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.",
+                        "If you are traveling alone, you can move stealthily at a normal pace.",
+                        "When you forage, you find twice as much food as you normally would.",
+                        "While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
+                    ]
+                }
             ]
         },
         {
@@ -2459,7 +3098,7 @@
             "header": 2,
             "entries": [
                 "You excel at leading ambushes and acting first in a fight.",
-                "You have advantage on initiative rolls. In addition, the first creature you hit during the first round of a combat becomes easier for you and others to strike; attack rolls against that target have advantage until the start of your next turn."
+                "You are proficient in Initiative. In addition, the first creature you hit during the first round of a combat becomes easier for you and others to strike; attack rolls against that target have advantage until the start of your next turn."
             ]
         },
         {
@@ -2473,7 +3112,7 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "You can strike with deadly speed. If you take the {@action Attack|Ishiir} action on your turn, you can make one additional attack as a bonus action. This attack can benefit from your Sneak Attack even if you have already used it this turn, but you can't use your Sneak Attack against the same target more than once in a turn."
+                "When you attack a creature that you are hidden from, you can make an additional attack as part of your attack action. On the first turn of combat, you can apply your Sneak Attack to both of these attacks."
             ]
         },
         {
@@ -2492,7 +3131,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Shadow Step|Rogue|Ishiir|Shadowdancer|Ishiir|3"
+                    "subclassFeature": "Shadowdance|Rogue|Ishiir|Shadowdancer|Ishiir|3"
                 }
             ]
         },
@@ -2511,7 +3150,7 @@
             ]
         },
         {
-            "name": "Shadow Step",
+            "name": "Shadowdance",
             "page": 1,
             "source": "Ishiir",
             "className": "Rogue",
@@ -2521,7 +3160,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain the ability to step from one shadow into another. When you use your Cunning Action while in dim light or darkness, you can teleport to a different unoccupied space you can see that is also in dim light or darkness. You can apply the effects of your Cunning Action before or after you teleport. You use your speed for teleporting in this manner, as if using the Move action."
+                "You gain the ability to step from one shadow into another. When you use your Cunning Action while in dim light or darkness, you can teleport up to 60 feet to a different unoccupied space you can see that is also in dim light or darkness. You can apply the effects of your Cunning Action before or after you teleport. This does not count as movement for the purpose of Cunning Action: Aim."
             ]
         },
         {
@@ -2535,8 +3174,22 @@
             "level": 9,
             "header": 2,
             "entries": [
-                "You gain the ability to use your Cunning Action to shape the shadows around you into a 30-feet radius sphere around your position. The area inside the sphere counts as dim light and persists for 1 minute. It disappears early if you become {@condition incapacitated|Ishiir} or if its area overlaps with light created by a spell of 3rd level or higher.",
+                "You gain the ability to use your Cunning Action to shape the shadows around you into a 30-feet radius sphere around your position. The area inside the sphere counts as dim light and persists for 10 minutes. It disappears early if you become {@condition incapacitated|Ishiir} or if its area overlaps with light created by a spell of 3rd level or higher.",
                 "You can only have one Umbral Shroud active at a time."
+            ]
+        },
+        {
+            "name": "Dagger in the Dark",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "subclassShortName": "Shadowdancer",
+            "subclassSource": "Ishiir",
+            "level": 9,
+            "header": 2,
+            "entries": [
+                "While you are in dim light or darkness, you can reduce the cost of any feature that uses your Sneak Attack dice by 1 (to a minimum of 0). You can do so only once per turn."
             ]
         },
         {
@@ -2570,7 +3223,8 @@
                             ]
                         }
                     ]
-                }
+                },
+                "Additionally, while you are in darkness, you can reduce the cost of any feature that uses your Sneak Attack dice by 2 instead of 1 (to a minimum of 0). You can do so only once per turn."
             ]
         },
         {
@@ -2622,9 +3276,8 @@
             "level": 3,
             "header": 1,
             "entries": [
-
-                "You can manifest your psionic power as shimmering blades of psychic energy. Whenever you make a weapon attack, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to {@dice 1d6} plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage.",
-                "After you attack with the blade, you can make a melee or ranged weapon attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The damage die of this bonus attack is {@dice 1d4}, instead of {@dice 1d6}."
+                "You can manifest your psionic power as shimmering blades of psychic energy. Whenever you make a weapon attack, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to your Psionic Energy Die plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage.",
+                "After you attack with the blade, you can make a melee or ranged weapon attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it."
             ]
         },
         {
@@ -2638,7 +3291,6 @@
             "level": 3,
             "header": 1,
             "entries": [
-
                 "You harbor a wellspring of psionic energy within yourself. This energy is represented by your Psionic Energy dice, which are each a {@dice d6}. You have a number of these dice equal to twice your proficiency bonus, and they fuel various psionic powers you have, which are detailed below.",
                 "Some of your powers expend the Psionic Energy die they use, as specified in a power's description, and you can't use a power if it requires you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can't do so again until you finish a short or long rest.",
                 "When you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level ({@dice d8}), 11th level ({@dice d10}), and 17th level ({@dice d12}).",
@@ -2689,7 +3341,7 @@
             ]
         },
         {
-            "name": "Soul Blades",
+            "name": "Psychic Veil",
             "source": "Ishiir",
             "page": 1,
             "className": "Rogue",
@@ -2699,21 +3351,9 @@
             "level": 9,
             "header": 2,
             "entries": [
-
-                "Your Psychic Blades are now an expression of your psi-suffused soul, giving you these powers that use your Psionic Energy dice:",
-                {
-                    "type": "options",
-                    "entries": [
-                        {
-                            "type": "refSubclassFeature",
-                            "subclassFeature": "Homing Strikes|Rogue|Ishiir|Soulknife|Ishiir|9"
-                        },
-                        {
-                            "type": "refSubclassFeature",
-                            "subclassFeature": "Psychic Teleportation|Rogue|Ishiir|Soulknife|Ishiir|9"
-                        }
-                    ]
-                }
+                "You can weave a veil of psychic static to mask yourself. As an action, you can magically become {@condition invisible|Ishiir}, along with anything you are wearing or carrying, for 1 hour or until you dismiss this effect (no action required). This invisibility ends early immediately after you deal damage to a creature or you force a creature to make a saving throw.",
+                "If you expend a Psionic Energy Die, you can also affect all creatures of your choice while they are within 20 feet of you. The effect ends early on all affected creatures when any of them deal damage to a creature or force it to make a saving throw.",
+                "Once you use this feature, you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to use this feature again."
             ]
         },
         {
@@ -2743,7 +3383,7 @@
             ]
         },
         {
-            "name": "Psychic Veil",
+            "name": "Psychic Strikes",
             "source": "Ishiir",
             "page": 1,
             "className": "Rogue",
@@ -2753,9 +3393,27 @@
             "level": 13,
             "header": 2,
             "entries": [
-
-                "You can weave a veil of psychic static to mask yourself. As an action, you can magically become {@condition invisible|Ishiir}, along with anything you are wearing or carrying, for 1 hour or until you dismiss this effect (no action required). This invisibility ends early immediately after you deal damage to a creature or you force a creature to make a saving throw.",
-                "Once you use this feature, you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to use this feature again."
+                "You learn the following new ways to use your Sneak Attack:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Chivy (Cost:3d6)",
+                            "entries": [
+                                "The target must make a Wisdom saving throw or use its Reaction to move as far from you as it can, taking the safest route."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Stupefy (Cost:2d6)",
+                            "entries": [
+                                "The target must make an Intelligence saving throw or have disadvantage on the next saving throw it makes before the end of your next turn."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -2769,7 +3427,6 @@
             "level": 17,
             "header": 2,
             "entries": [
-
                 "You can sweep your Psychic Blades directly through a creature's mind. When you use your Psychic Blades to deal Sneak Attack damage to a creature, you can force that target to make an Intelligence saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier). If the save fails, the target is {@condition stunned|Ishiir} for 1 minute. The {@condition stunned|Ishiir} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
                 "Once you use this feature, you can't do so again until you finish a long rest, unless you expend three Psionic Energy dice to use it again."
             ]
@@ -2822,7 +3479,7 @@
             "header": 1,
             "entries": [
                 "Your confidence propels you into battle. You can give yourself a bonus to your initiative rolls equal to your Charisma modifier.",
-                "You also gain an additional way to use your Sneak {@action Attack|Ishiir}; you don't need advantage on your attack roll to use Sneak {@action Attack|Ishiir} against a creature if you are within 5 feet of it, no other creatures are within 5 feet of you, and you don't have disadvantage on the attack roll. All the other rules for Sneak {@action Attack|Ishiir} still apply to you."
+                "You also gain an additional way to use your Sneak Attack; .you don't need advantage on your attack roll to use Sneak Attack against a creature if it is within your melee reach, no other creatures are within 5 feet of you, and you don't have disadvantage on the attack roll. All the other rules for Sneak {@action Attack|Ishiir} still apply to you."
             ]
         },
         {
@@ -2836,7 +3493,7 @@
             "level": 9,
             "header": 2,
             "entries": [
-                "When you use your Cunning Strike feature, you can choose up to two different effects, paying the cost for each. You also learn the following new ways to use your Sneak Attack:",
+                "You also learn the following new ways to use your Sneak Attack:",
                 {
                     "type": "list",
                     "style": "list-hang-notitle",
@@ -2930,7 +3587,27 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You can use the bonus action granted by your Cunning Action to make a Dexterity ({@skill Sleight of Hand}) check, use your {@item thieves' tools|phb} to disarm a trap or open a lock, or take the {@action Use an Object|Ishiir} action."
+                "As a Bonus Action, you can do one of the following.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Sleight of Hand.",
+                            "entries": [
+                                "Make a Dexterity ({@skill Sleight of Hand}) check to pick a lock or disarm a trap with Thieves' Tools or to pick a pocket."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Use an Object.",
+                            "entries": [
+                                "Take the Utilize action, or take the Magic action to use a magic item that requires that action."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -2946,8 +3623,27 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain the ability to climb faster than normal; climbing no longer costs you extra movement.",
-                "In addition, when you jump, the distance you cover increases by a number of feet equal to your Dexterity modifier."
+                "You've trained to get into especially hard-to-reach places, granting you these benefits.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Climber.",
+                            "entries": [
+                                "You gain a Climb Speed equal to your Speed."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Jumper.",
+                            "entries": [
+                                "You can determine your jump distance using your Dexterity rather than your Strength."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -2979,7 +3675,34 @@
             "level": 13,
             "header": 2,
             "entries": [
-                "You have learned enough about the workings of magic that you can improvise the use of items even when they are not intended for you. You ignore all class, race, and level requirements on the use of magic items and you can attune to up to four items."
+                "You've learned how to maximize use of magic items, granting you the following benefits.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Attunement.",
+                            "entries": [
+                                "You can attune to up to four magic items at once."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Charges.",
+                            "entries": [
+                                "Whenever you use a magic item property that expends charges, roll {@dice 1d6}. On a roll of 6, you use the property without expending the charges."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Scrolls.",
+                            "entries": [
+                                "You can use any Spell Scroll, using Intelligence as your spellcasting ability for the spell. If the spell is a cantrip or a level 1 spell, you can cast it reliably. If the scroll contains a higher-level spell, you must first succeed on an Intelligence ({@skill Arcana}) check (DC 10 plus the spell's level). On a successful check, you cast the spell from the scroll. On a failed check, the scroll disintegrates."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -3014,11 +3737,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Ear to the Ground|Rogue|Ishiir|Thug|Ishiir|3"
-                },
-                {
-                    "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiency|Rogue|Ishiir|Thug|Ishiir|3"
+                    "subclassFeature": "Bruiser's Arsenal|Rogue|Ishiir|Thug|Ishiir|3"
                 }
             ]
         },
@@ -3033,11 +3752,12 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain an additional way to use your Sneak Attack; you don't need advantage on the attack roll to use your Sneak Attack against a creature if you are within 5 feet of it, none of its allies are within 5 feet of it, and you don't have disadvantage on the attack roll. All the other rules for Sneak Attack still apply to you."
+                "You don't need advantage on the attack roll to use your Sneak Attack against a creature if its within your melee reach, none of its allies are within 5 feet of it, and you don't have disadvantage on the attack roll. All the other rules for Sneak Attack still apply to you.",
+                "Additionally, you can Sneak Attack with any melee weapon."
             ]
         },
         {
-            "name": "Ear to the Ground",
+            "name": "Bruiser's Arsenal",
             "page": 1,
             "source": "Ishiir",
             "className": "Rogue",
@@ -3047,22 +3767,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You have advantage on initiative rolls.",
-                "You also make any Intelligence or Wisdom check related to gathering information in an urban environment (such as investigating connections between people or perceiving hidden threats) with advantage."
-            ]
-        },
-        {
-            "name": "Bonus Proficiency",
-            "page": 1,
-            "source": "Ishiir",
-            "className": "Rogue",
-            "classSource": "Ishiir",
-            "subclassShortName": "Thug",
-            "subclassSource": "Ishiir",
-            "level": 3,
-            "header": 1,
-            "entries": [
-                "You gain proficiency in medium armor and shields, as well as the {@skill intimidation} skill, if you don't already have it."
+                "You gain proficiency in martial weapons, medium armor, shields, as well as the {@skill Intimidation} skill. If you are already proficient in {@skill Intimidation}, you gain expertise in it."
             ]
         },
         {
@@ -3076,7 +3781,7 @@
             "level": 9,
             "header": 2,
             "entries": [
-                "Your hit point maximum increases by 1 for every level in this class and increases by 1 again when you gain a level in this class."
+                "You gain proficiency in Constitution saving throws and your hit point maximum increases by 1 for every level in this class and increases by 1 again when you gain a level in this class."
             ]
         },
         {
@@ -3090,21 +3795,28 @@
             "level": 13,
             "header": 2,
             "entries": [
-                "You make {@skill intimidation} checks with advantage if you and your allies outnumber the target of your check.",
-                "Additionally, when you use your Cunning Strike feature, you can choose up to two different effects, paying the cost for each and you learn the following new way to use your Sneak Attack:",
+                "You use your Cunning Strike feature, you learn the following new way to use your Sneak Attack:",
                 {
                     "type": "list",
                     "style": "list-hang-notitle",
                     "items": [
                         {
                             "type": "item",
-                            "name": "Frighten (Cost: 2d6)",
+                            "name": "Bully (Cost: 3d6)",
                             "entries": [
-                                "The target has to make a Wisdom saving throw or become {@condition frightened|Ishiir} of you until the end of your next turn."
+                                "The target has to make a Constitution saving throw or all attack rolls against it have advantage until the end of your next turn."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Cow (Cost: 2d6)",
+                            "entries": [
+                                "The target has to make a Wisdom saving throw or it has disadvantage on attack rolls against you."
                             ]
                         }
                     ]
-                }
+                },
+                "Additionally, you can reduce the die cost of any of your Cunning Strike options by 1 (to a minimum of 0) while none of your target's allies are within 5 feet of it and at least 1 of your allies is within their melee reach. You can do so only once per turn."
             ]
         },
         {
@@ -3118,7 +3830,7 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "You no longer have to pay the die cost for your Cunning Strike feature if the target of your attack is already suffering from a condition.",
+                "When you take the Attack action and use your Sneak Attack, you can immediately make another attack. If the target is suffering from a condition, you can add half your Sneak Attack dice (rounded down) to that attack.",
                 "You also learn the following new way to use your Sneak Attack:",
                 {
                     "type": "list",
