@@ -17,6 +17,197 @@
 	},
 	"race": [
 		{
+			"name": "Draconian",
+			"page": 1,
+			"source": "Deoir",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"cha"
+						],
+						"count": 1
+					}
+				}
+			],
+			"increaseAbilityMax": true,
+			"heightAndWeight": {
+				"baseHeight": 63,
+				"heightMod": "2d12",
+				"baseWeight": 150,
+				"weightMod": "2d8"
+			},
+			"age": {
+				"mature": 30,
+				"max": 400
+			},
+			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
+			"resist": [
+				{
+					"choose": {
+						"from": [
+							"acid",
+							"cold",
+							"fire",
+							"lightning",
+							"poison"
+						]
+					}
+				}
+			],
+			"skillProficiencies": [
+				{
+					"history": true,
+					"intimidation": true
+				}
+			],
+			"entries": [
+				"Being thought of as a different race branched from the dragon line, they are a proud race fully believing this fact even though it has never been confirmed. While Draconians societies are not common as they are known to be nomads traveling alone or in small groups, they congregate before floods in the sanctuary. Draconians hatch after the floods are over.",
+				{
+					"name": "Ability Score Enhancement",
+					"type": "entries",
+					"entries": [
+						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
+						"Chose your Strength or Charisma ability score. Increase that ability score's maximum by 2."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Draconians have inherited some of the longevity of their Dragon forefathers. Although able to walk early after hatching, they age slowly, reaching adulthood at around 30-40 years, with variation mostly dependant on scale color. Draconians can almost reach 400 years of age."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Draconians are taller and heavier than humans, standing well over 6 feet tall and averaging 250 pounds. Your size is Medium."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Thanks to your draconic heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Draconic Ancestry",
+					"entries": [
+						"Your draconic ancestry gives you special abilities. Choose a type of dragon from the table below. The type you choose influences your breath weapon and your damage resistance.",
+						{
+							"type": "table",
+							"caption": "Draconic Ancestry",
+							"colLabels": [
+								"Dragon",
+								"Damage Type",
+								"Breath Weapon"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-3 text-center",
+								"col-6"
+							],
+							"rows": [
+								[
+									"Black",
+									"Acid",
+									"5 by 30 ft. line (DEX save)"
+								],
+								[
+									"Blue",
+									"Lightning",
+									"5 by 30 ft. line (DEX save)"
+								],
+								[
+									"Brass",
+									"Fire",
+									"5 by 30 ft. line (DEX save)"
+								],
+								[
+									"Bronze",
+									"Lightning",
+									"5 by 30 ft. line (DEX save)"
+								],
+								[
+									"Copper",
+									"Acid",
+									"5 by 30 ft. line (DEX save)"
+								],
+								[
+									"Gold",
+									"Fire",
+									"15 ft. cone (DEX save)"
+								],
+								[
+									"Green",
+									"Poison",
+									"15 ft. cone (CON save)"
+								],
+								[
+									"Red",
+									"Fire",
+									"15 ft. cone (DEX save)"
+								],
+								[
+									"Silver",
+									"Cold",
+									"15 ft. cone (CON save)"
+								],
+								[
+									"White",
+									"Cold",
+									"15 ft. cone (CON save)"
+								]
+							]
+						}
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Knowledge of the Ages",
+					"entries": [
+						"You gain proficiency in the {@skill history} and {@skill intimidation} skills."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Breath Weapon",
+					"entries": [
+						"You can use your action to exhale destructive energy. Your draconic ancestry determines size, shape, and damage of the exhalation. Every creature in the area of a effect needs to make a saving throw against a DC of 8 + any ability score bonus of your choice + your proficiency. The damage equals {@damage 4d6} on a failed save, and have as much on a successful one. The damage increases by {@damage 1d6} at levels 6, 11, and 16.",
+						"After you use Breath Weapon, you can't use it again until you finish a short or long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Draaken Names",
+					"entries": [
+						"<a href=\"https://www.fantasynamegenerators.com/dragon-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
 			"name": "Gnome",
 			"page": 1,
 			"source": "Deoir",
