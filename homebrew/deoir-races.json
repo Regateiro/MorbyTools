@@ -1,0 +1,128 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Deoir",
+                "abbreviation": "Deoir",
+                "full": "Deoir",
+                "url": "https://regateiro.pt/5etools/homebrew/deoir-races.json",
+                "authors": [
+                    "Roy"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+	"race": [
+		{
+			"name": "Gnoll",
+			"page": 1,
+			"source": "Deoir",
+			"size": [
+				"M"
+			],
+			"speed": 35,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 2
+					}
+				},
+				{
+					"choose": {
+						"from": [
+							"con",
+							"dex"
+						],
+						"count": 1
+					}
+				}
+			],
+			"increaseAbilityMax": true,
+			"age": {
+				"mature": 10,
+				"max": 50
+			},
+			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"gnoll": true
+				}
+			],
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Gnolls have shorter lifespans than humans. They reach maturity at about 10 years old and can live to 50."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Your size is Medium."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Your eyes are used to a cathemeral lifestyle and grant you superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition incapacitated|Ishiir}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Vicious Fangs",
+					"entries": [
+						"Your unarmed attacks deal piercing damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your fangs to attack."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"You have proficiency in the {@skill Perception} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Tireless Wanderer",
+					"entries": [
+						"You have advantage on Constitution saving throws against exhaustion made as a result of a forced march."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Gnoll."
+					],
+					"type": "entries"
+				}
+			]
+		}
+	]
+}
