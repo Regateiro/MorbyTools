@@ -17,6 +17,92 @@
 	},
 	"race": [
 		{
+			"name": "Dwarf",
+			"page": 1,
+			"source": "Deoir",
+			"size": [
+				"M"
+			],
+			"speed": 25,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"con",
+							"str"
+						],
+						"count": 1
+					}
+				}
+			],
+			"age": {
+				"mature": 50,
+				"max": 350
+			},
+			"darkvision": 60,
+			"resist": [
+				"poison"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"dwarvish": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Ability Score Enhancement",
+					"type": "entries",
+					"entries": [
+						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
+						"Chose your Constitution or Strength ability score. Increase that ability score's maximum by 2."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to twilit forests and night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+					]
+				},
+				{
+					"name": "Impeccable Memory",
+					"entries": [
+						"You have advantage on all INT-checks to recall information about something."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"You have advantage on saving throws against poison, and resistance against poison damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Dwarvish."
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
 			"name": "Elf",
 			"page": 1,
 			"source": "Deoir",
@@ -36,7 +122,7 @@
 				}
 			],
 			"age": {
-				"mature": 40,
+				"mature": 50,
 				"max": 350
 			},
 			"darkvision": 60,
@@ -634,7 +720,7 @@
 				}
 			],
 			"entries": [
-				"The Gigas are a race that is told to be decendant from giants, however similarly to Draconians this has never been confirmed. Unlike the Draconians thought, they are known to stay and protect places they like.",
+				"The Gigas are a race that is told to be descendant from giants, however similarly to Draconians this has never been confirmed. Unlike the Draconians thought, they are known to stay and protect places they like.",
 				{
 					"name": "Ability Score Enhancement",
 					"type": "entries",
@@ -1090,6 +1176,173 @@
 		}
 	],
 	"subrace": [
+		{
+			"name": "Mountain",
+			"page": 1,
+			"source": "Deoir",
+			"raceName": "Dwarf",
+			"raceSource": "Deoir",
+			"heightAndWeight": {
+				"baseHeight": 48,
+				"heightMod": "2d4",
+				"baseWeight": 130,
+				"weightMod": "2d6"
+			},
+			"traitTags": [
+				"Tool Proficiency",
+				"Weapon Proficiency"
+			],
+			"resist": [
+				"cold"
+			],
+			"entries": [
+				"<hr/>The mountain dwarves dwell most often in the Frozen Embrace. Since they are known for their mastery in metalwork, others started seeking them out, braving the terrible nature that stood between them and the dwarves. Each dwarven craftsman has their own way of determining the worth of a customer. Some will ask for a duel, others maybe a task. For this reason, and them being very stuck in their ways and adverse to change, most other races see them as aloof and don't enjoy interacting with them much.",
+				{
+					"name": "Dwarven Toughness",
+					"entries": [
+						"Your hit point maximum increases by 1 for each level."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dwarven Combat Training",
+					"entries": [
+						"You have proficiency in light and medium armor as well as the battleaxe, warhammer, light crossbow, and heavy crossbow."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Heavy Armor Expertise",
+					"entries": [
+						"Your speed is not reduced by wearing heavy armor."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dedicated Crafter",
+					"entries": [
+						"You gain proficiency in one tool of your choice. At 10th level you gain expertise with this tool."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Mountain Born",
+					"entries": [
+						"You are acclimatized to cold regions as per the DMG. You also have resistance to cold damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Typical Alignment",
+					"entries": [
+						"Lawful Neutral. Most Mountain Dwarves are conservative and traditional, with strong emphasis on personal honor and loyalty. They tend to stay out of another's affairs and expect outsiders to do the same."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Mountain Dwarf Names",
+					"entries": [
+						"<a href=\"https://www.fantasynamegenerators.com/german-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Hill",
+			"page": 1,
+			"source": "Deoir",
+			"raceName": "Dwarf",
+			"raceSource": "Deoir",
+			"heightAndWeight": {
+				"baseHeight": 44,
+				"heightMod": "2d4",
+				"baseWeight": 115,
+				"weightMod": "2d8"
+			},
+			"skillProficiencies": [
+				{
+					"insight": true,
+					"persuasion": true
+				}
+			],
+			"traitTags": [
+				"Tool Proficiency"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"alarm|Ishiir"
+								],
+								"3": [
+									"arcane lock|Ishiir"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int"
+						]
+					}
+				}
+			],
+			"entries": [
+				"<hr/>The Hill Dwarves seem almost like the complete opposite of their mountain dwelling siblings. They settle in big settlements to make and sell their wares. They have a great love for gold and riches almost to the point where some races consider them the descendants of dragons instead of the Draconians. This however does not push them to less savory means of gaining said coin because in their culture, coin gained from anything but your wares might as well be rocks. For this reason the hill dwarves favor quantity over quality.",
+				{
+					"name": "Crafty Negotiator",
+					"entries": [
+						"You gain proficiency in the {@skill persuasion} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Insightful",
+					"entries": [
+						"You gain proficiency in the {@skill insight} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Discerning Eye",
+					"entries": [
+						"You have advantage on saving throws against Illusions and skill checks to identify illusions."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dedicated Crafter",
+					"entries": [
+						"You gain proficiency in two tools of your choice."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Wards and Seals",
+					"entries": [
+						"You can cast the {@spell alarm|Ishiir} as a ritual with this trait. Starting at 3rd level, you can also cast the {@spell arcane lock|Ishiir} spell with it. Intelligence is your spellcasting ability for these spells, and you don't need material components for them when you cast them with this trait."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Typical Alignment",
+					"entries": [
+						"Neutral Good. Most Hill Dwarves love engaging in conversation and have a helpful streak. They see value in order and tradition like all dwarves, although personal ambition and pragmatism has greater importance to them."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Hill Dwarf Names",
+					"entries": [
+						"<a href=\"https://www.fantasynamegenerators.com/czech-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
 		{
 			"name": "Forest",
 			"page": 1,
