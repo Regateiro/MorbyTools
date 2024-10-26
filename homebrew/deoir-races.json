@@ -243,6 +243,136 @@
 					"type": "entries"
 				}
 			]
+		},
+		{
+			"name": "Orc",
+			"page": 1,
+			"source": "Deoir",
+			"size": [
+				"M"
+			],
+			"speed": 35,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con"
+						],
+						"count": 1
+					}
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 62,
+				"heightMod": "2d12",
+				"baseWeight": 140,
+				"weightMod": "2d6"
+			},
+			"age": {
+				"mature": 15,
+				"max": 60
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"orcish": true
+				}
+			],
+			"skillProficiencies": [
+				{
+					"intimidation": true,
+					"survival": true
+				}
+			],
+			"entries": [
+				"Orcs are known to be strong fighters, often seen in gladiatorial arenas. They are not known to make their own cities, instead claiming their own territory as they are satisfied with what is already there for them.",
+				{
+					"name": "Ability Score Enhancement",
+					"type": "entries",
+					"entries": [
+						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
+						"Chose your Strength or Constitution ability score. Increase that ability score's maximum by 2."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Orcs mature slightly faster than Humans, reaching adulthood in their early teens. They also age noticeably faster. An orc rarely lives past his 60th year."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Orcs are taller and much bulkier than humans. They easily surpass 6 feet in height and average over 200 pounds. Your size is Medium."
+					]
+				},
+				{
+					"name": "Menacing",
+					"entries": [
+						"You gain proficiency in the {@skill Intimidation} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Fearless",
+					"entries": [
+						"You have advantage on saving throws against being {@condition frightened|Ishiir}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Tireless",
+					"entries": [
+						"If you gain a level of exhaustion, you can use a bonus action to remove it. You can't use this ability again until you finish a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Furious Charge",
+					"entries": [
+						"Once per turn, as part of a melee weapon attack, you can move up to your speed in a straight line towards a target of your choice."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Relentless Endurance",
+					"entries": [
+						"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Savage Attacks",
+					"entries": [
+						"When you score a critical hit with a melee weapon attack, you can reroll the weapon's damage dice (and only the weapon's own damage dice) again and add the result to the total."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Powerful Build",
+					"entries": [
+						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Primal Intuition",
+					"entries": [
+						"You have proficiency in {@skill Survival}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Orcish."
+					],
+					"type": "entries"
+				}
+			]
 		}
 	]
 }
