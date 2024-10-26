@@ -17,6 +17,83 @@
 	},
 	"race": [
 		{
+			"name": "Gnome",
+			"page": 1,
+			"source": "Deoir",
+			"size": [
+				"S"
+			],
+			"speed": 25,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"int"
+						],
+						"count": 1
+					}
+				}
+			],
+			"age": {
+				"mature": 18,
+				"max": 150
+			},
+			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"gnomish": true
+				}
+			],
+			"entries": [
+				"Gnomes, unlike their amicable brethren the Halflings, are known to be a bit more distant and crude. They care more for themselves and others of their race and will almost never help others without a reward in return.",
+				{
+					"name": "Ability Score Enhancement",
+					"type": "entries",
+					"entries": [
+						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
+						"Chose your Dexterity or Intelligence ability score. Increase that ability score's maximum by 2."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Gnomes mature at the same rate as humans, their lifespans, however, tend to be longer. A gnome can reach almost 150 years of age."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Gnomes average about 3 feet tall and weigh about 40 pounds. Your size is Small."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Gnome Cunning",
+					"entries": [
+						"You have advantage on all INT, WIS, and CHA saving throws against magic."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Gnomish."
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
 			"name": "Gigas",
 			"page": 1,
 			"source": "Deoir",
@@ -125,6 +202,13 @@
 						"You can speak, read, and write Common and Giant."
 					],
 					"type": "entries"
+				},
+				{
+					"name": "Gigas Names",
+					"entries": [
+						"<a href=\"https://www.fantasynamegenerators.com/guardian-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
 				}
 			]
 		},
@@ -210,7 +294,7 @@
 				{
 					"name": "Pack Tactics",
 					"entries": [
-						"You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition incapacitated|Ishiir}."
+						"You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition incapacitated|Deoir}."
 					],
 					"type": "entries"
 				},
@@ -239,6 +323,13 @@
 					"name": "Languages",
 					"entries": [
 						"You can speak, read, and write Common and Gnoll."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Gigas Names",
+					"entries": [
+						"<a href=\"https://www.fantasynamegenerators.com/gnoll-names.php\">Name Generator</a>"
 					],
 					"type": "entries"
 				}
@@ -319,7 +410,7 @@
 				{
 					"name": "Fearless",
 					"entries": [
-						"You have advantage on saving throws against being {@condition frightened|Ishiir}."
+						"You have advantage on saving throws against being {@condition frightened|Deoir}."
 					],
 					"type": "entries"
 				},
@@ -369,6 +460,197 @@
 					"name": "Languages",
 					"entries": [
 						"You can speak, read, and write Common and Orcish."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Gigas Names",
+					"entries": [
+						"<a href=\"You have advantage on Dexterity (Stealth) checks to hide in Natural terrain.\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		}
+	],
+	"subrace": [
+		{
+			"name": "Forest",
+			"page": 1,
+			"source": "Deoir",
+			"raceName": "Gnome",
+			"raceSource": "Deoir",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"wis",
+							"cha"
+						],
+						"count": 1
+					}
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 23,
+				"heightMod": "2d4",
+				"baseWeight": 35,
+				"weightMod": "1"
+			},
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"minor illusion|Ishiir#c"
+						]
+					}
+				}
+			],
+			"skillProficiencies": [
+				{
+					"stealth": true
+				}
+			],
+			"entries": [
+				"Forest Gnomes are known tricksters and bandits, often seen with animals in tow to help rob their unfortunate victims. For this reason, forest gnomes are scorned in the cities and not trusted. This forces more Gnomes to turn to robbery to sustain themselves.",
+				{
+					"name": "Natural Illusionist",
+					"entries": [
+						"You know the {@spell Minor Illusion|Ishiir} cantrip. Your spellcasting ability for it is INT, WIS, or CHA (your choice)."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Speak with Small Beasts",
+					"entries": [
+						"Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts. Forest gnomes love animals and often keep squirrels, badgers, rabbits, moles, woodpeckers, and other creatures as beloved pets."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Naturally Stealthy",
+					"entries": [
+						"You can attempt to hide even if you are obscured only by a creature that is at least one size larger than you."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Forest Camouflage",
+					"entries": [
+						"You have advantage on Dexterity ({@skill Stealth}) checks to hide in natural terrain."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Forest Gnome Names",
+					"entries": [
+						"<a href=\"https://www.fantasynamegenerators.com/nature-names.php\">First Name</a>, <a href=\"https://www.fantasynamegenerators.com/plant-names.php\">Last Name</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Rock",
+			"page": 1,
+			"source": "Deoir",
+			"raceName": "Gnome",
+			"raceSource": "Deoir",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"con",
+							"wis"
+						],
+						"count": 1
+					}
+				}
+			],
+			"traitTags": [
+				"Tool Proficiency"
+			],
+			"heightAndWeight": {
+				"baseHeight": 23,
+				"heightMod": "2d4",
+				"baseWeight": 35,
+				"weightMod": "2"
+			},
+			"skillProficiencies": [
+				{
+					"stealth": true
+				}
+			],
+			"entries": [
+				"Rock Gnomes are known crafters like the Dwarves, although unlike them they are also known to try to extort their customers.",
+				{
+					"name": "Expert Crafter",
+					"entries": [
+						"You gain proficiency in two tools of your choice."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Artificer's Lore",
+					"entries": [
+						"Whenever you make an INT-check related to magic items, alchemical objects, or technological devices, you have advantage on the check."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Gnome Tinkerer",
+					"entries": [
+						"You have proficiency with artisan's tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp).",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Clockwork Toy",
+									"entry": "This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents."
+								},
+								{
+									"type": "item",
+									"name": "Fire Starter",
+									"entry": "The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action."
+								},
+								{
+									"type": "item",
+									"name": "Music Box",
+									"entry": "When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed."
+								}
+							]
+						}
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Stone Camouflage",
+					"entries": [
+						"You have advantage on Dexterity ({@skill Stealth}) checks to hide in rocky terrain."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Favored Classes",
+					"entries": [
+						"Rogue, Artificer, Cleric"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Rock Gnome Names",
+					"entries": [
+						"<a href=\"https://www.fantasynamegenerators.com/bulgarian-names.php\">Name Generator</a>"
 					],
 					"type": "entries"
 				}
