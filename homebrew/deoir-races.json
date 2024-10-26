@@ -17,6 +17,125 @@
 	},
 	"race": [
 		{
+			"name": "Half-Elf",
+			"page": 1,
+			"source": "Deoir",
+			"size": [
+				"M"
+			],
+			"speed": 25,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 2
+					}
+				}
+			],
+			"age": {
+				"mature": 18,
+				"max": 100
+			},
+			"darkvision": 30,
+			"skillProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"elvish": true,
+					"any": 1
+				}
+			],
+			"entries": [
+				"Being born form a bond that crossed species is not something common on the world of Deoir. A cross bred child is not able to bare children of its own. For this reason they are commonly written off as life partners but are found to engage in flings quite often.",
+				{
+					"name": "Ability Score Enhancement",
+					"type": "entries",
+					"entries": [
+						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
+						"Chose any ability score. Increase that ability score's maximum by 2."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Half-Elves mature at the same rate as humans, but live longer thanks to their Elven heritage. A Half-Elf can get close to 100 years old."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Skill Versatility",
+					"entries": [
+						"You gain proficiency in two skills of your choice."
+					]
+				},
+				{
+					"name": "Lesser Darkvision",
+					"entries": [
+						"Thanks to your Elven heritage, you have superior vision in dark and dim conditions. You can see in dim light within 30 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws against being {@condition charmed|Ishiir}, and magic can't put you to sleep."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Mixed Heritage",
+					"entries": [
+						"Choose the single strongest influence of your parentage from the following:",
+						"Human: You gain proficiency in one skill",
+						"High Elf: You gain the Cantrip racial trait.",
+						"Wood Elf: You gain the Mask of the Wild racial and Fleet of foot racial traits.",
+						"Sea Elf: Your gain the Sea Elf Spellcasting trait, excluding the ritual spells. And gain the Child of the Sea trait. "
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Elvish, and one other language of your choice."
+					],
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Typical Alignment",
+					"entries": [
+						"None."
+					]
+				},
+				{
+					"name": "Half-Elf Names",
+					"entries": [
+						"Often derrived from the same naming conventions as their parents."
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
 			"name": "Halfling",
 			"page": 1,
 			"source": "Deoir",
@@ -664,24 +783,7 @@
 			],
 			"skillProficiencies": [
 				{
-					"acrobatics": true,
-					"animal_handling": true,
-					"arcana": true,
-					"athletics": true,
-					"deception": true,
-					"history": true,
-					"insight": true,
-					"intimidation": true,
-					"investigation": true,
-					"medicine": true,
-					"nature": true,
-					"perception": true,
-					"performance": true,
-					"persuasion": true,
-					"religion": true,
-					"sleight_of_hand": true,
-					"stealth": true,
-					"survival": true
+					"any": 3
 				}
 			],
 			"entries": [
