@@ -1355,10 +1355,10 @@
             "page": 1,
             "subclassFeatures": [
                 "Mastermind|Rogue|Ishiir|Mastermind|Ishiir|3",
-                "Insightful Manipulator|Rogue|Ishiir|Mastermind|Ishiir|9",
+                "Swift Tactics|Rogue|Ishiir|Mastermind|Ishiir|9",
                 "Infiltration Expertise|Rogue|Ishiir|Mastermind|Ishiir|9",
-                "Misdirection|Rogue|Ishiir|Mastermind|Ishiir|13",
-                "Soul of Deceit|Rogue|Ishiir|Mastermind|Ishiir|17"
+                "Tactical Strikes|Rogue|Ishiir|Mastermind|Ishiir|13",
+                "Labyrinthine Mind|Rogue|Ishiir|Mastermind|Ishiir|17"
             ]
         },
         {
@@ -2800,8 +2800,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain proficiency with the {@item disguise kit|phb}, the {@item forgery kit|phb}, and one {@item gaming set|PHB} of your choice. You also learn two languages of your choice.",
-                "Additionally, you can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, enabling you to pass yourself off as a native speaker of a particular land, provided that you know the language."
+                "You gain proficiency with the {@item disguise kit|phb}, the {@item forgery kit|phb}. Additionally, you can use your Intelligence for {@skill Deception}, {@skill Insight}, {@skill Intimidation}, and {@skill Persuasion} checks."
             ]
         },
         {
@@ -2815,11 +2814,11 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You can use the {@action Help|Ishiir} action as a bonus action. Additionally, when you use the {@action Help|Ishiir} action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you, if the target can see or hear you."
+                "You can use the {@action Help|Ishiir} action as a bonus action. Additionally, when you use the {@action Help|Ishiir} action to aid an ally in attacking a creature, the target of that attack can be within 60 feet of you, rather than within 5 feet of you, if the target can see or hear you."
             ]
         },
         {
-            "name": "Insightful Manipulator",
+            "name": "Swift Tactics",
             "source": "Ishiir",
             "page": 1,
             "className": "Rogue",
@@ -2829,17 +2828,8 @@
             "level": 9,
             "header": 2,
             "entries": [
-                "If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to the following characteristics:",
-                {
-                    "type": "list",
-                    "items": [
-                        "Intelligence score",
-                        "Wisdom score",
-                        "Charisma score",
-                        "Class levels (if any)"
-                    ]
-                },
-                "At the DM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any."
+                "Your add your Intelligence modifier to Initiative rolls.",
+                "Additionally, you can use your Cunning Action and Master of Tactics as part of the same bonus action."
             ]
         },
         {
@@ -2860,7 +2850,7 @@
             ]
         },
         {
-            "name": "Misdirection",
+            "name": "Tactical Strikes",
             "source": "Ishiir",
             "page": 1,
             "className": "Rogue",
@@ -2870,11 +2860,31 @@
             "level": 13,
             "header": 2,
             "entries": [
-                "You can sometimes cause another creature to suffer an attack meant for you. When you are targeted by an attack while a creature within 5 feet of you is granting you cover against that attack, you can use your reaction to have the attack target that creature instead of you."
+                "You learn the following new ways to use your Sneak Attack:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Confound (Cost: 1d6)",
+                            "entries": [
+                                "The target must make a Wisdom saving throw or have disadvantage on attack rolls against you until the start of your next turn while any of your allies are within reach of its attacks."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Instigate (Cost: 3d6)",
+                            "entries": [
+                                "An ally of your choice within 60 feet of you can use its reaction to make a weapon attack against the same target, provided it is within reach."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
-            "name": "Soul of Deceit",
+            "name": "Labyrinthine Mind",
             "source": "Ishiir",
             "page": 1,
             "className": "Rogue",
@@ -2885,7 +2895,9 @@
             "header": 2,
             "entries": [
                 "Your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by succeeding on a Charisma ({@skill Deception}) check contested by the mind reader's Wisdom ({@skill Insight}) check. You are also immune to the {@condition charmed|Ishiir} condition.",
-                "Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful if you so choose, and you can't be compelled to tell the truth by magic."
+                "Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful if you so choose, and you can't be compelled to tell the truth by magic.",
+                "If you fail a Intelligence, Wisdom, or Charisma saving throw, you can use your reaction to reroll the saving throw and add your Intelligence modifier to it, even if it was already added, taking whichever result was higher.",
+                "You can use this feature three times and you regain all expended uses when you finish a long rest."
             ]
         },
         {
@@ -2922,7 +2934,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "As you nudge someone closer to the grave, you can channel the power of death to harm someone else as well. Immediately after you deal your Sneak Attack damage to a creature on your turn, you can target a second creature that you can see within 30 feet of the first creature. Roll half the number of Sneak Attack dice for your level (round up), and the second creature takes necrotic damage equal to the roll's total, as wails of the dead sound around them for a moment.",
+                "As you nudge someone closer to the grave, you can channel the power of death to push them over the threshold or harm someone else as well. When you deal your Sneak Attack damage to a creature on your turn, you can cause that creature to take additional damage. Alternatively, you can target a second creature that you can see within 30 feet of the first creature. Roll half the number of Sneak Attack dice for your level (round up), the original target or the second creature takes necrotic damage equal to the roll's total, as wails of the dead sound around them for a moment.",
                 "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
             ]
         },
@@ -2951,7 +2963,7 @@
             "level": 9,
             "header": 2,
             "entries": [
-                "When a life ends in your presence, you're able to snatch a token from the departing soul, a sliver of its life essence that takes physical form: as a reaction when a creature you can see dies within 30 feet of you, you can open your free hand and cause a Tiny trinket to appear there, a soul trinket. The DM determines the trinket's form or has you roll on the {@item Trinket|phb|Trinkets} table in the {@i Player's Handbook} to generate it. You can have a maximum number of soul trinkets equal to your proficiency bonus, and you can't create one while at your maximum.",
+                "When a life ends in your presence, you're able to snatch a token from the departing soul, a sliver of its life essence that takes physical form: when a creature you can see dies within 30 feet of you, you can open your free hand and cause a Tiny trinket to appear there, a soul trinket. The DM determines the trinket's form or has you roll on the {@item Trinket|phb|Trinkets} table in the {@i Player's Handbook} to generate it. You can have a maximum number of soul trinkets equal to your proficiency bonus, and you can't create one while at your maximum.",
                 "You can use soul trinkets in the following ways:",
                 {
                     "type": "list",
@@ -2964,7 +2976,7 @@
             ]
         },
         {
-            "name": "Ghost Walk",
+            "name": "Death's Friend",
             "source": "Ishiir",
             "page": 1,
             "className": "Rogue",
@@ -2974,12 +2986,19 @@
             "level": 13,
             "header": 2,
             "entries": [
-                "You can phase partially into the realm of the dead, becoming like a ghost. As a bonus action, you assume a spectral form. While in this form, you have a flying speed of 10 feet, you can hover, and attack rolls have disadvantage against you. You can also move through creatures and objects as if they were {@quickref difficult terrain||3}, but you take {@damage 1d10} force damage if you end your turn inside a creature or an object.",
-                "You stay in this form for 10 minutes or until you end it as a bonus action. To use this feature again, you must finish a long rest or destroy one of your soul trinkets as part of the bonus action you use to activate Ghost Walk."
+                "Your association with death has become so close that you gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When you use your Wails from the Grave, you can deal the necrotic damage to both the first and the second creature.",
+                        "At the end of a long rest, a soul trinket appears in your hand if you don't have any soul trinkets, as the spirits of the dead are drawn to you.",
+                        "You also ignore resistance to necrotic damage from your Wails from the Grave feature and treat immunity to it as resistance instead."
+                    ]
+                }
             ]
         },
         {
-            "name": "Death's Friend",
+            "name": "Ghost Walk",
             "source": "Ishiir",
             "page": 1,
             "className": "Rogue",
@@ -2989,14 +3008,8 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "Your association with death has become so close that you gain the following benefits:",
-                {
-                    "type": "list",
-                    "items": [
-                        "When you use your Wails from the Grave, you can deal the necrotic damage to both the first and the second creature.",
-                        "At the end of a long rest, a soul trinket appears in your hand if you don't have any soul trinkets, as the spirits of the dead are drawn to you."
-                    ]
-                }
+                "You can phase partially into the realm of the dead, becoming like a ghost. As a bonus action, you assume a spectral form. While in this form, you have a flying speed equal to your walking speed, you can hover, and attack rolls have disadvantage against you. You can also move through creatures and objects as if they were {@quickref difficult terrain||3}, but you take {@damage 1d10} force damage if you end your turn inside a creature or an object.",
+                "You stay in this form for 10 minutes or until you end it as a bonus action. To use this feature again, you must finish a long rest or destroy one of your soul trinkets as part of the bonus action you use to activate Ghost Walk."
             ]
         },
         {
