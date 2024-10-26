@@ -949,12 +949,12 @@
 						{
 							"type": "item",
 							"name": "Divine Spark.",
-							"entry": "As a Magic action, you point your Holy Symbol at another creature you can see within 30 feet of yourself and focus divine energy at it. Roll {@dice 2d8} and add your Cleric level and your Wisdom modifier. You either restore Hit Points to the creature equal to that total or force the creature to make a Constitution saving throw. On a failed save, the creature takes Necrotic or Radiant damage (your choice) equal to that total. On a successful save, the creature takes half as much damage (round down)."
+							"entry": "As a {@action Magic|Ishiir} action, you point your Holy Symbol at another creature you can see within 30 feet of yourself and focus divine energy at it. Roll {@dice 2d8} and add your Cleric level and your Wisdom modifier. You either restore Hit Points to the creature equal to that total or force the creature to make a Constitution saving throw. On a failed save, the creature takes Necrotic or Radiant damage (your choice) equal to that total. On a successful save, the creature takes half as much damage (round down)."
 						},
 						{
 							"type": "item",
 							"name": "Turn Undead.",
-							"entry": "As a Magic action, you present your Holy Symbol and censure Undead creatures. Each Undead of your choice within 30 feet of you must make a Wisdom saving throw. If the creature fails its save, it has the Frightened and Incapacitated conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die."
+							"entry": "As a {@action Magic|Ishiir} action, you present your Holy Symbol and censure Undead creatures. Each Undead of your choice within 30 feet of you must make a Wisdom saving throw. If the creature fails its save, it has the Frightened and Incapacitated conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die."
 						},
 						{
 							"type": "item",
@@ -1125,7 +1125,7 @@
             "classSource": "Ishiir",
             "level": 10,
             "entries": [
-                "You can call on your deity or pantheon to intervene on your behalf. As a Magic action, choose any Cleric spell of level 5 or lower that requires an Action or a Bonus action to cast. As part of the same action, you cast that spell without expending a spell slot or needing Material components. You can't use this feature again until you finish a Long Rest."
+                "You can call on your deity or pantheon to intervene on your behalf. As a {@action Magic|Ishiir} action, choose any Cleric spell of level 5 or lower that requires an Action or a Bonus action to cast. As part of the same action, you cast that spell without expending a spell slot or needing Material components. You can't use this feature again until you finish a Long Rest."
             ]
         },
         {
@@ -2548,7 +2548,7 @@
                 "name": "Channel Divinity"
             },
             "entries": [
-                "As a Magic action, you present your Holy Symbol and censure extraplanar creatures. Each celestial, elemental, fey, and fiend of your choice within 30 feet of you must make a Wisdom saving throw. If the creature fails its save, it has the {@condition Frightened|Ishiir} and {@condition Incapacitated|Ishiir} conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die."
+                "As a {@action Magic|Ishiir} action, you present your Holy Symbol and censure extraplanar creatures. Each celestial, elemental, fey, and fiend of your choice within 30 feet of you must make a Wisdom saving throw. If the creature fails its save, it has the {@condition Frightened|Ishiir} and {@condition Incapacitated|Ishiir} conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die."
             ]
         },
         {
@@ -3187,7 +3187,7 @@
             "level": 3,
             "header": 2,
             "entries": [
-                "You can use your Channel Divinity to see and manipulate the strands of fate that weave around other individuals. As a bonus action, you can enter this state for up to 1 minute or until you lose your concentration (as if you were concentrating on a spell). For the duration, whenever another creature you can see makes an attack roll or an ability check, you can use a reaction to give the roll advantage or disadvantage (your choice)."
+                "You can use your Channel Divinity to see and manipulate the strands of fate that weave around other individuals. As a bonus action, you can enter this state for up to 1 minute or until you lose your {@condition Concentration|Ishiir} (as if you were concentrating on a spell). For the duration, whenever another creature you can see makes an attack roll or an ability check, you can use a reaction to give the roll advantage or disadvantage (your choice)."
             ]
         },
         {
@@ -3620,7 +3620,7 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "You can call up visions of the past that relate to an object you hold or your immediate surroundings. You spend at least 1 minute in meditation and prayer, then receive dreamlike, shadowy glimpses of recent events. You can meditate in this way for a number of minutes equal to your Wisdom score and must maintain concentration during that time, as if you were casting a spell.",
+                "You can call up visions of the past that relate to an object you hold or your immediate surroundings. You spend at least 1 minute in meditation and prayer, then receive dreamlike, shadowy glimpses of recent events. You can meditate in this way for a number of minutes equal to your Wisdom score and must maintain {@condition Concentration|Ishiir} during that time, as if you were casting a spell.",
                 "Once you use this feature, you can't use it again until you finish a short or long rest.",
                 {
                     "type": "entries",
@@ -3900,7 +3900,7 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "As a Magic action, you cause yourself to emit an aura of sunlight that lasts for 1 minute or until you dismiss it (no action required). You emit Bright Light in a 60-foot radius and Dim Light for an additional 30 feet. Your enemies in the Bright Light have Disadvantage on saving throws against your Radiance of the Dawn and any spell that deals Fire or Radiant damage.",
+                "As a {@action Magic|Ishiir} action, you cause yourself to emit an aura of sunlight that lasts for 1 minute or until you dismiss it (no action required). You emit Bright Light in a 60-foot radius and Dim Light for an additional 30 feet. Your enemies in the Bright Light have Disadvantage on saving throws against your Radiance of the Dawn and any spell that deals Fire or Radiant damage.",
                 "You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
             ]
         },
@@ -3993,7 +3993,7 @@
                         "You gain a bonus to your AC equal to your Wisdom modifier (minimum of +1).",
                         "Your walking speed increases by 10 feet.",
                         "You have advantage on Dexterity ({@skill Acrobatics}) checks.",
-                        "You gain a bonus to any Constitution saving throws you make to maintain concentration on a spell. The bonus equals your Wisdom modifier (minimum of +1).",
+                        "You gain a bonus to any Constitution saving throws you make to maintain {@condition Concentration|Ishiir} on a spell. The bonus equals your Wisdom modifier (minimum of +1).",
                         "If you currently have a {@spell Spiritual Weapon|Ishiir} summoned via the spell of the same name and you move on your turn, you can move your {@spell Spiritual Weapon|Ishiir} the same distance."
                     ]
                 },
@@ -4437,7 +4437,7 @@
             "header": 2,
             "entries": [
                 "You always have the {@spell Sanctuary|Ishiir} spell prepared.",
-                "As a Reaction when you or another creature you can see within 30 feet of you is targeted by an attack or other harmful effect, you can cast {@spell Sanctuary|Ishiir} without expending a spell slot, and you adopt a presence of tranquility for 1 minute or until your Concentration ends. During this time, you can cast {@spell Sanctuary|Ishiir} again as a Reaction without expending a spell slot.",
+                "As a Reaction when you or another creature you can see within 30 feet of you is targeted by an attack or other harmful effect, you can cast {@spell Sanctuary|Ishiir} without expending a spell slot, and you adopt a presence of tranquility for 1 minute or until your {@condition Concentration|Ishiir} ends. During this time, you can cast {@spell Sanctuary|Ishiir} again as a Reaction without expending a spell slot.",
                 "Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 3+ spell slot (no action required)."
             ]
         },
@@ -4521,7 +4521,7 @@
             "header": 1,
             "entries": [
                 "You always have the {@spell Shield of Faith|Ishiir} spell prepared.",
-                "You can cast it without concentration and without expending a spell slot. You can do so a number of times equal to your Wisdom modifier and regain all expended uses on Long Rest. You can also restore a use by expending a level 2+ spell slot (no action required)."
+                "You can cast it without {@condition Concentration|Ishiir} and without expending a spell slot. You can do so a number of times equal to your Wisdom modifier and regain all expended uses on Long Rest. You can also restore a use by expending a level 2+ spell slot (no action required)."
             ]
         },
         {
@@ -4973,7 +4973,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "As a Magic action, you can choose yourself or a willing creature within 30 feet of yourself to have Advantage on Dexterity (Stealth) checks. This blessing lasts until you finish a Long Rest or you use this feature again."
+                "As a {@action Magic|Ishiir} action, you can choose yourself or a willing creature within 30 feet of yourself to have Advantage on Dexterity (Stealth) checks. This blessing lasts until you finish a Long Rest or you use this feature again."
             ]
         },
         {
