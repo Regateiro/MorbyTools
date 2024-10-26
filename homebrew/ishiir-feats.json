@@ -337,7 +337,7 @@
                     "type": "list",
                     "items": [
                         "You may bless a container of water or other reasonably pure liquid in an equivalent amount to a flask of holy water to convert it into a single use of short-lived holy water. This holy water has all the properties of normal holy water, but it becomes normal liquid again after you use this ability again, or 24 hours later. Once you have used this ability, you cannot do so again until you have completed a short rest.",
-                        "You may expend a flask of holy water to cast the {@spell bless|Ishiir} or {@spell heroism|Ishiir} spell on a single target you touch with the water. The spell requires no slot and requires no concentration from you, but lasts as long as the recipient of it concentrates on it, up to its normal duration. Once you have reached level 3, you may choose to cast the {@spell magic weapon|Ishiir} spell instead as a 2nd level spell, with concentration of the spell passing to a creature you touch as part of the casting. Once you have cast any spell in this fashion, you cannot use this ability again until you have completed a short rest."
+                        "You may expend a flask of holy water to cast the {@spell bless|Ishiir} or {@spell heroism|Ishiir} spell on a single target you touch with the water. The spell requires no slot and requires no {@condition Concentration|Ishiir} from you, but lasts as long as the recipient of it concentrates on it, up to its normal duration. Once you have reached level 3, you may choose to cast the {@spell magic weapon|Ishiir} spell instead as a 2nd level spell, with {@condition Concentration|Ishiir} of the spell passing to a creature you touch as part of the casting. Once you have cast any spell in this fashion, you cannot use this ability again until you have completed a short rest."
                     ]
                 }
             ]
@@ -370,7 +370,7 @@
                     "items": [
                         "Choose {@skill Animal Handling}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}. You gain proficiency in the chosen skill. If you are already proficient with it, your proficiency bonus is doubled for any check you make with it. If roll a 7 or lower on the 20 for a check with the chosen skill, treat the roll as an 8.",
                         "When you take the {@action Attack|Ishiir} action while hidden, all your attacks benefit from advantage rather than only the first one. Additionally, you deal your favorite enemy bonus damage to all of these attacks. If the target is already one of your favorite enemies, this damage stacks with the usual bonus damage.",
-                        "You learn the {@spell Hunter's Mark|Ishiir} spell or a different spell from the ranger spell list if you already know it. Hunter's Mark no longer requires concentration when you cast it and instead lasts for the duration or until you are {@condition incapacitated|Ishiir}.",
+                        "You learn the {@spell Hunter's Mark|Ishiir} spell or a different spell from the ranger spell list if you already know it. Hunter's Mark no longer requires {@condition Concentration|Ishiir} when you cast it and instead lasts for the duration or until you are {@condition incapacitated|Ishiir}.",
                         "Choose a creature type and add it to your favored enemies, gaining the usual benefits. Additinally, the bonus damage you deal to your favored enemies increases by an amount equal to your Wisdom modifier."
                     ]
                 }
@@ -416,9 +416,9 @@
                 {
                     "type": "list",
                     "items": [
-                        "You have advantage on Constitution saving throws that you make to maintain your concentration on a spell when you take damage.",
-                        "Additionally, when you hold concentration on a spell, you can maintain concentration of one additional spell for a number of rounds equal to half your proficiency (rounded down).",
-                        "At the end of your turn when this effect ends, you can choose which spell to maintain concentration on."
+                        "You have advantage on Constitution saving throws that you make to maintain your {@condition Concentration|Ishiir} on a spell when you take damage.",
+                        "Additionally, when you hold {@condition Concentration|Ishiir} on a spell, you can maintain {@condition Concentration|Ishiir} of one additional spell for a number of rounds equal to half your proficiency (rounded down).",
+                        "At the end of your turn when this effect ends, you can choose which spell to maintain {@condition Concentration|Ishiir} on."
                     ]
                 }
             ]
@@ -2356,7 +2356,7 @@
                         "You can use your bonus action to curse a creature of your choice you can see within 90 ft. The creature is treated as under the effect of the Hex spell, except that you do not concentrate on it and it only lasts for 1 minute.",
                         "You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses after you finish a long rest.",
                         "When you are forced to make a saving throw or take damage from a creature you can see within 30 ft you, you can use your reaction to force the creature to make a saving throw against a DC equal to 8 + your proficiency + your CON, INT, WIS or CHA modifier (your choice).",
-                        "On a failure, the creature is under the effect of the Bane spell, which does not require concentration and lasts until its full duration.",
+                        "On a failure, the creature is under the effect of the Bane spell, which does not require {@condition Concentration|Ishiir} and lasts until its full duration.",
                         "You can use this feature a number of times equal to half your proficiency bonus (rounded down). You regain all expended uses after you finish a long rest."
                     ]
                 }
@@ -2866,7 +2866,7 @@
                     "type": "list",
                     "items": [
                         "When a creature within 5 feet of you casts a spell, you can use your reaction to make a melee weapon attack against that creature.",
-                        "When you damage a creature that is concentrating on a spell, that creature has disadvantage on the saving throw it makes to maintain its concentration.",
+                        "When you damage a creature that is concentrating on a spell, that creature has disadvantage on the saving throw it makes to maintain its {@condition Concentration|Ishiir}.",
                         "You have advantage on saving throws against spells cast by creatures within 5 feet of you."
                     ]
                 }
@@ -5053,7 +5053,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "You have advantage on Constitution saving throws that you make to maintain your concentration on a spell when you take damage.",
+                        "You have advantage on Constitution saving throws that you make to maintain your {@condition Concentration|Ishiir} on a spell when you take damage.",
                         "You can perform the somatic components of spells even when you have weapons or a {@item shield|Ishiir} in one or both hands.",
                         "When a hostile creature's movement provokes an opportunity attack from you, you can use your reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature."
                     ]
