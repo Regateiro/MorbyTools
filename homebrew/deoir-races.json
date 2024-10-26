@@ -17,13 +17,109 @@
 	},
 	"race": [
 		{
+			"name": "Elf",
+			"page": 1,
+			"source": "Deoir",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"int"
+						],
+						"count": 1
+					}
+				}
+			],
+			"age": {
+				"mature": 40,
+				"max": 350
+			},
+			"darkvision": 60,
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"elvish": true
+				}
+			],
+			"entries": [
+				"The Elves were tasked with a duty after the Ascension. Each of the Elf tribes was tasked to protect the three trees that hold other realms from entering this one. Elves are known to be intelligent but also quite taken in their duty. Most people that would even step foot in their forests won't make it out again. Elves are allowed to travel away from their forests, but when the call to return is put out everyone of them must return.",
+				{
+					"name": "Ability Score Enhancement",
+					"type": "entries",
+					"entries": [
+						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
+						"Chose your Dexterity or Intelligence ability score. Increase that ability score's maximum by 2."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Elves mature slower than humans, and never fall victim to the frailties of old age. As a result, some elves can get up to 350 years old. There are rumors of elves that have seen the dawn of creation. However, these have never been confirmed."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Elves are slightly taller than humans, some grow up to well over 6 feet. They are built more slender, however, and thus tend to be lighter in comparison. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to twilit forests and night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+					]
+				},
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"You have proficiency in the {@skill Perception} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws against being {@condition charmed|Ishiir}, and magic can't put you to sleep."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Trance",
+					"entries": [
+						"Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. While meditating, you can dream after a fashion; such dreams are actually mental excercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Elvish."
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
 			"name": "Half-Elf",
 			"page": 1,
 			"source": "Deoir",
 			"size": [
 				"M"
 			],
-			"speed": 25,
+			"speed": 30,
 			"ability": [
 				{
 					"choose": {
@@ -77,7 +173,7 @@
 					"type": "entries",
 					"name": "Size",
 					"entries": [
-						"Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small."
+						"While they inherit some striking features from the Elven half of their parents, Half-Elves tend to be closer in build and height to Humans. Your size is Medium."
 					]
 				},
 				{
@@ -108,7 +204,7 @@
 						"Human: You gain proficiency in one skill",
 						"High Elf: You gain the Cantrip racial trait.",
 						"Wood Elf: You gain the Mask of the Wild racial and Fleet of foot racial traits.",
-						"Sea Elf: Your gain the Sea Elf Spellcasting trait, excluding the ritual spells. And gain the Child of the Sea trait. "
+						"Sea Elf: Your gain the Sea Elf Spellcasting trait, excluding the ritual spells. And gain the Child of the Sea trait."
 					],
 					"type": "entries"
 				},
@@ -1316,6 +1412,259 @@
 					"name": "Stout Halfling Names",
 					"entries": [
 						"<a href=\"https://www.fantasynamegenerators.com/finnish-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "High",
+			"page": 1,
+			"source": "Deoir",
+			"raceName": "Elf",
+			"raceSource": "Deoir",
+			"heightAndWeight": {
+				"baseHeight": 57,
+				"heightMod": "2d10",
+				"baseWeight": 100,
+				"weightMod": "1d4"
+			},
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Sorcerer (Ishiir);Cleric (Ishiir);Wizard (Ishiir)|source=Ishiir",
+								"count": 1
+							},
+							"produce flame|Ishiir#c"
+						],
+						"3": [
+							"hellish rebuke|Ishiir"
+						],
+						"5": [
+							"flaming sphere|Ishiir"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"any": 1
+				}
+			],
+			"entries": [
+				"<hr/>These elves were tasked to protect the Burning forest and do so with a fiery passion. Sadly, after the birth of the corrupted gods, their essence has been tainted and their passion has been often twisted into a blind agression. Because of this they are prone to exert violence and bloodshed to reach their goals.",
+				{
+					"name": "High Elf Education",
+					"entries": [
+						"Choose one skill or tool proficiency. Your proficiency bonus is doubled for any ability check you make that uses this chosen proficiency."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Cantrip",
+					"entries": [
+						"You know one cantrip of your choice from the cleric, wizard, or sorcerer spell list. Your spellcasting ability for it is INT, WIS, or CHA (your choice)."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Extra Language",
+					"entries": [
+						"You can speak, read, and write one additional language."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "High Elven Magics",
+					"entries": [
+						"You know the {@spell Produce Flame|Ishiir} cantrip. When you reach 3rd level, you can cast the {@spell Hellish Rebuke|Ishiir} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell Flaming Sphere} spell once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Your spellcasting ability for these spells is the same as you chose for the cantrip."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Typical Alignment",
+					"entries": [
+						"Evil of any kind, as the corruption runs deep and their passion even deeper."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "High Elf Names",
+					"entries": [
+						"<a href=\"https://www.fantasynamegenerators.com/elf-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Wood",
+			"page": 1,
+			"source": "Deoir",
+			"raceName": "Elf",
+			"raceSource": "Deoir",
+			"speed": 35,
+			"traitTags": [
+				"Weapon Proficiency"
+			],
+			"heightAndWeight": {
+				"baseHeight": 62,
+				"heightMod": "2d12",
+				"baseWeight": 115,
+				"weightMod": "1d8"
+			},
+			"skillProficiencies": [
+				{
+					"nature": true
+				}
+			],
+			"entries": [
+				"<hr/>The wood elves were tasked to protect the Frozen Forest. They are not often seen in the places they protect but are known to be there despite that. They have become more open with their existance over time, and are integraded in the trade with Reothadh.",
+				{
+					"name": "Elf Weapon Training",
+					"entries": [
+						"You have proficiency with the {@item elvish spear|Ishiir}, {@item greatspear|Ishiir}, {@item shortbow|Ishiir}, and {@item longbow|Ishiir}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Fleet of Foot",
+					"entries": [
+						"Your base walking increases to 35 feet."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Born Predator",
+					"entries": [
+						"You gain a +2 bonus to initiative."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "One with the Wild",
+					"entries": [
+						"You gain proficiency in the {@skill nature} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Mask of the Wild",
+					"entries": [
+						"You can attempt to hide even when you're only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Fey Step",
+					"entries": [
+						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. Once you use this trait, you can't do so again until you finish a short or long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Typical Alignment",
+					"entries": [
+						"Neutral. Most Wood Elf are stoic individuals that do not engage in conversation or take sides unless absolutely necessary. A Wood Elf will rarely deem an act evil or good, and instead judge it by its merit for survival."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Wood Elf Names",
+					"entries": [
+						"<b>Clan Name:</b> Often clan names are words the clan is known for, like: Formers of the wood, Stalker, Gatherer, ect.",
+						"<a href=\"https://www.fantasynamegenerators.com/ent-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Sea",
+			"page": 1,
+			"source": "Deoir",
+			"raceName": "Elf",
+			"raceSource": "Deoir",
+			"traitTags": [
+				"Weapon Proficiency"
+			],
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"heightAndWeight": {
+				"baseHeight": 60,
+				"heightMod": "2d12",
+				"baseWeight": 105,
+				"weightMod": "1d6"
+			},
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"control water|Ishiir",
+									"create or destroy water|Ishiir",
+									"fog cloud|Ishiir",
+									"water walk|Ishiir",
+									"water breathing|Ishiir"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"wis",
+							"cha"
+						]
+					}
+				}
+			],
+			"entries": [
+				"<hr/>Sea elves were tasked to protect The Forest of Life. Sea elves are known to have a kind and welcoming behavior and to help boats close to their forest during the flood if they are in peril. Strangely enough their want for sharing lately has been going to the extreme and some of their kind have started to leave, believing that the weird is the cause for this behavior and abandoning their duty of protecting the forest.",
+				{
+					"name": "Sea Elf Spellcasting",
+					"entries": [
+						"All Sea Elves were gifted an innate ability to control water. Excepting the cantrip, you can cast the following spells once per long rest without expending material components. Your spellcasting ability for these spells is WIS or CHA (your choice).",
+						"{@spell Control Water|Ishiir}, {@spell Create or Destroy Water|Ishiir}, {@spell Fog cloud|Ishiir}. And both {@spell Water Walk|Ishiir} and {@spell Water Breathing|Ishiir} as rituals."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Child of the Sea",
+					"entries": [
+						"You have a swimming speed of 30 feet, and you can breathe air and water. When swiming you ignore strong currents in the water with no effort (Swiming against the flow of a river)."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Elf Weapon Training",
+					"entries": [
+						"You have proficiency with the {@item elvish sword|Ishiir}, {@item greatsword|Ishiir}, {@item longbow|Ishiir}, and {@item shortbow|Ishiir}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Typical Alignment",
+					"entries": [
+						"Chaotic Good, the sea elves always try to bring the best out in people even if the people in question do not feel like they need to be helped."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "High Elf Names",
+					"entries": [
+						"<a href=\"https://www.fantasynamegenerators.com/selkie-names.php\">Name Generator</a>"
 					],
 					"type": "entries"
 				}
