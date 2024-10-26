@@ -1,20 +1,20 @@
 {
-    "_meta": {
-        "sources": [
-            {
-                "json": "Deoir",
-                "abbreviation": "Deoir",
-                "full": "Deoir",
-                "url": "https://regateiro.pt/5etools/homebrew/deoir-races.json",
-                "authors": [
-                    "Roy"
-                ],
-                "convertedBy": [
-                    "Morb"
-                ]
-            }
-        ]
-    },
+	"_meta": {
+		"sources": [
+			{
+				"json": "Deoir",
+				"abbreviation": "Deoir",
+				"full": "Deoir",
+				"url": "https://regateiro.pt/5etools/homebrew/deoir-races.json",
+				"authors": [
+					"Roy"
+				],
+				"convertedBy": [
+					"Morb"
+				]
+			}
+		]
+	},
 	"race": [
 		{
 			"name": "Gnoll",
@@ -26,26 +26,27 @@
 			"speed": 35,
 			"ability": [
 				{
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 2
-					}
-				},
-				{
-					"choose": {
-						"from": [
-							"con",
-							"dex"
-						],
-						"count": 1
-					}
+					"choose": [
+						{
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"count": 2
+						},
+						{
+							"from": [
+								"con",
+								"dex"
+							],
+							"count": 1
+						}
+					]
+					
 				}
 			],
 			"increaseAbilityMax": true,
