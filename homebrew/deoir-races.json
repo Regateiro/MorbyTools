@@ -17,6 +17,118 @@
 	},
 	"race": [
 		{
+			"name": "Gigas",
+			"page": 1,
+			"source": "Deoir",
+			"size": [
+				"L"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"wis"
+						],
+						"count": 1
+					}
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 96,
+				"heightMod": "2d12",
+				"baseWeight": 400,
+				"weightMod": "2d8"
+			},
+			"age": {
+				"mature": 75,
+				"max": 500
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"giant": true
+				}
+			],
+			"resist": [
+				{
+					"choose": {
+						"from": [
+							"cold",
+							"fire",
+							"poison"
+						]
+					}
+				}
+			],
+			"skillProficiencies": [
+				{
+					"athletics": true
+				}
+			],
+			"entries": [
+				"The Gigas are a race that is told to be decendant from giants, however similarly to Draconians this has never been confirmed. Unlike the Draconians thought, they are known to stay and protect places they like.",
+				{
+					"name": "Ability Score Enhancement",
+					"type": "entries",
+					"entries": [
+						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
+						"Chose your Strength or Wisdom ability score. Increase that ability score's maximum by 2."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Gigas age slower than humans, and reach adulthood once they have seen 75 summers. averaging a lifespan of about 500 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Gigas are by far the largest race on the face of Deoir. An average Gigas reaches heights of over 8 feet and weighs over 300 pounds. Your size is Large."
+					]
+				},
+				{
+					"name": "Natural Athlete",
+					"entries": [
+						"You gain proficiency in the {@skill Athletics} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Gigas Hardiness",
+					"entries": [
+						"When you take damage, you can choose to use your reaction to shrug off the blow. Roll a d12 + your CON modifier. And substract the result from the damage taken. You can't use this feature again until you have finished a short or long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Mountain Born",
+					"entries": [
+						"Your are acclimatized to a region of your choice as per the DMG. You also have resistance to cold, fire or poison damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Brutal Attacks",
+					"entries": [
+						"When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Giant."
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
 			"name": "Gnoll",
 			"page": 1,
 			"source": "Deoir",
