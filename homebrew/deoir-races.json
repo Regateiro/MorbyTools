@@ -199,7 +199,14 @@
 					"type": "entries"
 				},
 				{
-					"name": "Draaken Names",
+					"type": "entries",
+					"name": "Typical Alignment",
+					"entries": [
+						"True neutral, they live nomadic lifes often avoiding contact with other races as their pights are not their own and the challenges of their nomadic way of life are their own just the same."
+					]
+				},
+				{
+					"name": "Draconian Names",
 					"entries": [
 						"<a href=\"https://www.fantasynamegenerators.com/dragon-names.php\">Name Generator</a>"
 					],
@@ -395,6 +402,13 @@
 					"type": "entries"
 				},
 				{
+					"type": "entries",
+					"name": "Typical Alignment",
+					"entries": [
+						"Lawful good, they uphold the laws of the cities they have decided becomes their home and oft found in the guard of said city upholding the values of the populace."
+					]
+				},
+				{
 					"name": "Gigas Names",
 					"entries": [
 						"<a href=\"https://www.fantasynamegenerators.com/guardian-names.php\">Name Generator</a>"
@@ -518,9 +532,139 @@
 					"type": "entries"
 				},
 				{
-					"name": "Gigas Names",
+					"type": "entries",
+					"name": "Typical Alignment",
+					"entries": [
+						"None."
+					]
+				},
+				{
+					"name": "Gnoll Names",
 					"entries": [
 						"<a href=\"https://www.fantasynamegenerators.com/gnoll-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Human",
+			"page": 1,
+			"source": "Deoir",
+			"size": [
+				"M"
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1
+					}
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 55,
+				"heightMod": "2d10",
+				"baseWeight": 105,
+				"weightMod": "2d4"
+			},
+			"speed": 30,
+			"age": {
+				"mature": 18,
+				"max": 70
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"skillProficiencies": [
+				{
+					"acrobatics": true,
+					"animal_handling": true,
+					"arcana": true,
+					"athletics": true,
+					"deception": true,
+					"history": true,
+					"insight": true,
+					"intimidation": true,
+					"investigation": true,
+					"medicine": true,
+					"nature": true,
+					"perception": true,
+					"performance": true,
+					"persuasion": true,
+					"religion": true,
+					"sleight_of_hand": true,
+					"stealth": true,
+					"survival": true
+				}
+			],
+			"entries": [
+				"Humans inhabit all kinds of places on Deoir. Not really known for anything specific except for being quite versitile and having a broad spectrum of views.",
+				{
+					"name": "Ability Score Enhancement",
+					"type": "entries",
+					"entries": [
+						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
+						"Chose any ability score. Decrease that ability score by 1.",
+						"Chose any ability score. Increase that ability score's maximum by 2."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Humans reach adulthood in their late teens and rarely live past 70."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Humans vary wildly in height and build, from barely 5 feet to well over 6 feet tall. Your size is Medium."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one extra language of your choice."
+					],
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Skill Versatility",
+					"entries": [
+						"You gain proficiency in 3 extra skills of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Natural Talent",
+					"entries": [
+						"You gain one feat of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Typical Alignment",
+					"entries": [
+						"Humans tend to no particular alignment by nature, although the aftermath of the Great War has made many of them bitter and resentful. One is as likely to find idealistic heroes as depraved villains among them, most of them fall somewhere in the middle."
+					]
+				},
+				{
+					"name": "Human Names",
+					"entries": [
+						"Often similar to the names of the cultures they are apart of. Dominantly human settlements often use names like: <a href=\"https://www.fantasynamegenerators.com/anglo-saxon-names.php\">Name Generator</a>"
 					],
 					"type": "entries"
 				}
@@ -655,7 +799,14 @@
 					"type": "entries"
 				},
 				{
-					"name": "Gigas Names",
+					"type": "entries",
+					"name": "Typical Alignment",
+					"entries": [
+						"None."
+					]
+				},
+				{
+					"name": "Orc Names",
 					"entries": [
 						"<a href=\"You have advantage on Dexterity (Stealth) checks to hide in Natural terrain.\">Name Generator</a>"
 					],
@@ -739,6 +890,13 @@
 						"You have advantage on Dexterity ({@skill Stealth}) checks to hide in natural terrain."
 					],
 					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Typical Alignment",
+					"entries": [
+						"True Neutral, while often forced into a life of crime most forest gnomes do not take pleasure in this way of life and likely would choose otherwise should they have the chance."
+					]
 				},
 				{
 					"name": "Forest Gnome Names",
@@ -830,6 +988,13 @@
 						"You have advantage on Dexterity ({@skill Stealth}) checks to hide in rocky terrain."
 					],
 					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Typical Alignment",
+					"entries": [
+						"Lawful evil, cunning in their trade while upholding laws and values they have, they will always be twisted in favor of themselves."
+					]
 				},
 				{
 					"name": "Rock Gnome Names",
