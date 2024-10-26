@@ -17,6 +17,82 @@
 	},
 	"race": [
 		{
+			"name": "Halfling",
+			"page": 1,
+			"source": "Deoir",
+			"size": [
+				"S"
+			],
+			"speed": 25,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"wis"
+						],
+						"count": 1
+					}
+				}
+			],
+			"age": {
+				"mature": 18,
+				"max": 70
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"halfling": true
+				}
+			],
+			"entries": [
+				"Halflings are one of the two races of smaller stature. They are commonly seen as amicable and are often found in places with little discord.",
+				{
+					"name": "Ability Score Enhancement",
+					"type": "entries",
+					"entries": [
+						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
+						"Chose your Dexterity or Wisdom ability score. Increase that ability score's maximum by 2."
+					]
+				},
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Halflings age at the same rate as humans."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small."
+					]
+				},
+				{
+					"name": "Lucky",
+					"entries": [
+						"When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Halfling Nimbleness",
+					"entries": [
+						"You can move through the space of any creature that is of a size larger than yours."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Halfling."
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
 			"name": "Draconian",
 			"page": 1,
 			"source": "Deoir",
@@ -822,18 +898,6 @@
 			"source": "Deoir",
 			"raceName": "Gnome",
 			"raceSource": "Deoir",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"dex",
-							"wis",
-							"cha"
-						],
-						"count": 1
-					}
-				}
-			],
 			"heightAndWeight": {
 				"baseHeight": 35,
 				"heightMod": "2d4",
@@ -913,18 +977,6 @@
 			"source": "Deoir",
 			"raceName": "Gnome",
 			"raceSource": "Deoir",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"dex",
-							"con",
-							"wis"
-						],
-						"count": 1
-					}
-				}
-			],
 			"traitTags": [
 				"Tool Proficiency"
 			],
@@ -1000,6 +1052,168 @@
 					"name": "Rock Gnome Names",
 					"entries": [
 						"<a href=\"https://www.fantasynamegenerators.com/bulgarian-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Lightfoot",
+			"page": 1,
+			"source": "Deoir",
+			"raceName": "Halfling",
+			"raceSource": "Deoir",
+			"heightAndWeight": {
+				"baseHeight": 36,
+				"heightMod": "2d4",
+				"baseWeight": 40,
+				"weightMod": "1d4"
+			},
+			"skillProficiencies": [
+				{
+					"persuasion": true,
+					"stealth": true
+				}
+			],
+			"entries": [
+				"<hr/>Lightfoot Halflings are known to be quick on their feet and are seen in and around settlements helping people of all walks of life. They are even found in places of strife and war, as often they serve as relief units in those places and times.",
+				{
+					"name": "Friendly Face",
+					"entries": [
+						"You gain proficiency in the {@skill persuasion} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Sneaky",
+					"entries": [
+						"You gain proficiency in the {@skill stealth} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Light Steps",
+					"entries": [
+						"You make any stealth check that is contingent on not being heard rather than not being seen with advantage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Naturally Stealthy",
+					"entries": [
+						"You can attempt to hide even if you are obscured only by a creature that is at least one size larger than you."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Medically Trained",
+					"entries": [
+						"You gain proficiency in {@skill Medicine}. When you make a Wisdom ({@skill Medicine}) check or an ability check using an herbalism kit, you can roll a {@dice d4} and add the number rolled to the ability check."
+					],
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Typical Alignment",
+					"entries": [
+						"Neutral Good. Most Lightfoot Halflings are good-natured. They love making people laugh, meeting new friends and are quickly moved to action by another's plight. They do respect law, but are not above breaking it when it stands in the way of doing good in their eyes."
+					]
+				},
+				{
+					"name": "Lightfoot Halfling Names",
+					"entries": [
+						"<a href=\"https://www.fantasynamegenerators.com/swiss-names.php\">Name Generator</a>"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Stout",
+			"page": 1,
+			"source": "Deoir",
+			"raceName": "Halfling",
+			"raceSource": "Deoir",
+			"heightAndWeight": {
+				"baseHeight": 38,
+				"heightMod": "2d4",
+				"baseWeight": 50,
+				"weightMod": "1d4"
+			},
+			"resist": [
+				"poison"
+			],
+			"skillProficiencies": [
+				{
+					"perception": true,
+					"persuasion": true
+				}
+			],
+			"traitTags": [
+				"Weapon Proficiency"
+			],
+			"entries": [
+				"<hr/>Stout Halflings became more adapted at harsher conditions on the lands they inhabit. Often seen drinking with Dwarves and known to be a Dwarf's best friend in the pub.",
+				{
+					"name": "Brave",
+					"entries": [
+						"You have advantage on saving throws against being {@condition frightened|Ishiir}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Alert Senses",
+					"entries": [
+						"You gain proficiency in the {@skill perception} skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Disciplined",
+					"entries": [
+						"You can use heavy weapons despite being small."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Stout Toughness",
+					"entries": [
+						"Your hit point maximum increases by 1 for each level."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Stout Weapon Training",
+					"entries": [
+						"You gain proficiency with light and medium armor as well as the longsword, battleaxe, longbow, and heavy crossbow."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Stout Resilience",
+					"entries": [
+						"You have advantage on saving throws against poison, and you have resistance against poison damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Ever Hospitable",
+					"entries": [
+						"You gain proficiency in {@skill Persuasion}. When you make a Charisma ({@skill Persuasion}) check or an ability check involving brewer's supplies or cook's utensils, you can roll a {@dice d4} and add the number rolled to the ability check."
+					],
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Typical Alignment",
+					"entries": [
+						"Lawful neutral, very adapted to the ways of life of the mountain dwarves. So much so they have taken their values as their own. "
+					]
+				},
+				{
+					"name": "Stout Halfling Names",
+					"entries": [
+						"<a href=\"https://www.fantasynamegenerators.com/finnish-names.php\">Name Generator</a>"
 					],
 					"type": "entries"
 				}
