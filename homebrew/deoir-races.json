@@ -26,29 +26,23 @@
 			"speed": 35,
 			"ability": [
 				{
-					"choose": [
-						{
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"count": 2
-						},
-						{
-							"from": [
-								"con",
-								"dex"
-							],
-							"count": 1
-						}
-					]
+					"any": 2,
+					"choose": {
+						"from": [
+							"con",
+							"dex"
+						],
+						"count": 1
+					}
 					
 				}
 			],
+			"heightAndWeight": {
+				"baseHeight": 61,
+				"heightMod": "2d12",
+				"baseWeight": 130,
+				"weightMod": "2d4"
+			},
 			"increaseAbilityMax": true,
 			"age": {
 				"mature": 10,
