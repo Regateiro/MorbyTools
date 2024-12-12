@@ -524,7 +524,330 @@
 				"Greater Fanged Aspect|Shifter|Ishiir|Winter's Fang|Ishiir|13",
 				"Superior Fanged Aspect|Shifter|Ishiir|Winter's Fang|Ishiir|18"
 			]
-		}
+		},
+        {
+            "name": "Spring's Branch",
+            "shortName": "Spring's Branch",
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "page": 1,
+            "spellcastingAbility": "wis",
+            "casterProgression": "1/3",
+            "cantripProgression": [
+                0,
+                0,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3
+            ],
+            "spellsKnownProgression": [
+                0,
+                0,
+                3,
+                4,
+                4,
+                4,
+                5,
+                6,
+                6,
+                7,
+                8,
+                8,
+                9,
+                10,
+                10,
+                11,
+                11,
+                11,
+                12,
+                13
+            ],
+            "additionalSpells": [
+				{
+                    "ability": "wis",
+					"expanded": {
+						"3": [
+							{
+								"all": "level=0|class=Druid (Ishiir)|source=Ishiir"
+							},
+							{
+								"all": "level=1|class=Druid (Ishiir)|source=Ishiir"
+							}
+						],
+						"7": [
+							{
+								"all": "level=2|class=Druid (Ishiir)|source=Ishiir"
+							}
+						],
+						"13": [
+							{
+								"all": "level=3|class=Druid (Ishiir)|source=Ishiir"
+							}
+						],
+						"19": [
+							{
+								"all": "level=4|class=Druid (Ishiir)|source=Ishiir"
+							}
+						]
+					}
+				}
+			],
+            "subclassTableGroups": [
+                {
+                    "subclasses": [
+                        {
+                            "name": "Spring's Branch",
+                            "source": "Ishiir"
+                        }
+                    ],
+                    "colLabels": [
+                        "{@filter Cantrips Known|spells|level=0|class=Druid (Ishiir)|source=Ishiir}",
+                        "{@filter Spells Prepared|spells|class=Druid (Ishiir)|source=Ishiir}"
+                    ],
+                    "rows": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            3
+                        ],
+                        [
+                            2,
+                            4
+                        ],
+                        [
+                            2,
+                            4
+                        ],
+                        [
+                            2,
+                            4
+                        ],
+                        [
+                            2,
+                            5
+                        ],
+                        [
+                            2,
+                            6
+                        ],
+                        [
+                            2,
+                            6
+                        ],
+                        [
+                            3,
+                            7
+                        ],
+                        [
+                            3,
+                            8
+                        ],
+                        [
+                            3,
+                            8
+                        ],
+                        [
+                            3,
+                            9
+                        ],
+                        [
+                            3,
+                            10
+                        ],
+                        [
+                            3,
+                            10
+                        ],
+                        [
+                            3,
+                            11
+                        ],
+                        [
+                            3,
+                            11
+                        ],
+                        [
+                            3,
+                            11
+                        ],
+                        [
+                            3,
+                            12
+                        ],
+                        [
+                            3,
+                            13
+                        ]
+                    ]
+                },
+                {
+                    "title": "Spell Slots per Spell Level",
+                    "subclasses": [
+                        {
+                            "name": "Spring's Branch",
+                            "source": "Ishiir"
+                        }
+                    ],
+                    "colLabels": [
+                        "{@filter 1st|spells|level=1|class=Druid (Ishiir)|source=Ishiir}",
+                        "{@filter 2nd|spells|level=2|class=Druid (Ishiir)|source=Ishiir}",
+                        "{@filter 3rd|spells|level=3|class=Druid (Ishiir)|source=Ishiir}",
+                        "{@filter 4th|spells|level=4|class=Druid (Ishiir)|source=Ishiir}"
+                    ],
+                    "rowsSpellProgression": [
+                        [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1
+                        ]
+                    ]
+                }
+            ],
+            "subclassFeatures": [
+                "Green Aspect|Shifter|Ishiir|Spring's Branch|Ishiir|3",
+                "Improved Green Aspect|Shifter|Ishiir|Spring's Branch|Ishiir|7",
+                "Greater Green Aspect|Shifter|Ishiir|Spring's Branch|Ishiir|13",
+                "Superior Green Aspect|Shifter|Ishiir|Spring's Branch|Ishiir|18"
+            ]
+        }
 	],
 	"classFeature": [
 		{
@@ -1224,6 +1547,205 @@
 							"type": "item",
 							"name": "Feral Defiance.",
 							"entry": "Your Ferocious Vitality recharges on a Short or Long Rest and heals for 1x Shifter level additional hit points."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Green Aspect",
+			"page": 1,
+			"source": "Ishiir",
+			"className": "Shifter",
+			"classSource": "Ishiir",
+			"subclassShortName": "Spring's Branch",
+			"subclassSource": "Ishiir",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You adopt a plantlike aspect, granting you physical traits such as floral skin color, twiglike fingers, and leafs or flowers sprouting from your hair.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Natural Casting|Shifter|Ishiir|Spring's Branch|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Spellcasting|Shifter|Ishiir|Spring's Branch|Ishiir|3"
+                }
+			]
+		},
+		{
+			"name": "Natural Casting",
+			"page": 1,
+			"source": "Ishiir",
+			"className": "Shifter",
+			"classSource": "Ishiir",
+			"subclassShortName": "Spring's Branch",
+			"subclassSource": "Ishiir",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You ignore all restrictions on casting or concentrating on spells caused by being shifted. Additionally, when you cast a spell that heals or gives the target temporary hit points, you increase the healing or temporary hit points by an amount equal to your Formshift Damage.",
+				"Once you reach level 10 in this class, this bonus doubles."
+			]
+		},
+        {
+            "name": "Spellcasting",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spring's Branch",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Cantrips.",
+                    "entries": [
+                        "You know two cantrips of your choice from the {@filter Druid spell list|spells|class=druid (Ishiir)|source=Ishiir}. Whenever you gain a Shifter level, you can replace one of these cantrips with another cantrip of your choice from the Druid spell list.",
+                        "When you reach Shifter level 10, you learn another Druid cantrip of your choice, as shown in this subclass' progression table."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spell Slots.",
+                    "entries": [
+                        "The Spring's Branch Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest."
+                    ]
+                        
+                },
+                {
+                    "type": "entries",
+                    "name": "Prepared Spells of Level 1+.",
+                    "entries": [
+                        "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the Druid spell list.",
+                        "The number of spells on your list increases as you gain Shifter levels, as shown in the Prepared Spells column of the Spring's Branch Spellcasting table. Whenever that number increases, choose additional spells from the Druid spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 7 Shifter, your list of prepared spells can include five Druid spells of levels 1 and 2 in any combination."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Ability.",
+                    "entries": [
+                        "Wisdom is your spellcasting ability for your Druid spells."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Focus.",
+                    "entries": [
+                        "You can use a Druidic Focus as a Spellcasting Focus for your Druid spells."
+                    ]
+                }
+            ]
+        },
+		{
+			"name": "Improved Green Aspect",
+			"page": 1,
+			"source": "Ishiir",
+			"className": "Shifter",
+			"classSource": "Ishiir",
+			"subclassShortName": "Spring's Branch",
+			"subclassSource": "Ishiir",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"You gain one of the following features of your choice.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Hardened Bark.",
+							"entry": "When you take bludgeoning, piercing, or slashing damage, that damage is reduced by an amount equal to half your Shifter level. This reduction applies before all other calculations."
+						},
+						{
+							"type": "item",
+							"name": "Dryadic Bond.",
+							"entries": [
+								"You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
+								"Additionally, you can form a ranged weapon from plant material as a bonus action. As part of an attack, you can automatically form ammunition for this weapon if it requires it. The ammunition disappears are hitting or missing. The weapon remains while it is within 100 feet of you and otherwise disappears. This weapon counts as a natural weapon for you and has a range of 90/360 feet."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Defensive Spores.",
+							"entry": "When a creature within 10 feet of you hits or misses you with a melee attack, you can use your reaction to force it to make a Constitution saving throw against your Spell Save DC. On a failure, the target is {@condition Poisoned|Ishiir} for 1 minute. At the end of each of its turns, the target can repeat the saving throw, ending the effect on a success."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Greater Green Aspect",
+			"page": 1,
+			"source": "Ishiir",
+			"className": "Shifter",
+			"classSource": "Ishiir",
+			"subclassShortName": "Spring's Branch",
+			"subclassSource": "Ishiir",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"You gain one of the following features of your choice.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Twisting Roots.",
+							"entry": "While shifted, the ground in a 10 feet circle around you is {@quickref difficult terrain||3} for your enemies. When a creature starts its turn in that area or enters it for the first time on a turn, you can use your reaction to force it to make a Strength saving throw against your Spell Save DC. On a failure, its speed is reduced to 0 until the end of your next turn."
+						},
+						{
+							"type": "item",
+							"name": "Fey Step.",
+							"entry": "As a bonus action, you can teleport up to 30 feet to an unoccupied space that you can see. You can use this feature a number of times equal to your Formshift Damage and you regain all expended uses on a Long Rest. Alternatively, you can spend a 2nd Level Spell Slot to use this feature again."
+						},
+						{
+							"type": "item",
+							"name": "Addling Spores.",
+							"entries": [
+								"As an action, you launch a cloud of befuddling spores at a location within 30 feet of you. Each creature within a 10 feet radius sphere around that point has to make a Constitution a saving throw or be {@condition Confused|Ishiir} until the end of your next turn.",
+								"You can use this feature a number of times equal to your Formshift Damage and you regain all expended uses on a Long Rest. Alternatively, you can spend a 3rd Level Spell Slot to use this feature again."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Superior Green Aspect",
+			"page": 1,
+			"source": "Ishiir",
+			"className": "Shifter",
+			"classSource": "Ishiir",
+			"subclassShortName": "Spring's Branch",
+			"subclassSource": "Ishiir",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"You gain one of the following features of your choice.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Protective Canopy.",
+							"entry": "While you are shifted, your reach increases by 10 feet and allies within 10 feet of you have half-cover."
+						},
+						{
+							"type": "item",
+							"name": "Blinding Beauty.",
+							"entries": [
+								"As an action, you can force every creature of your choice within 30 feet of you that you can see and that can see you to make a Wisdom saving throw against your Spell Save DC. On a failure, a target is {@condition Blinded|Ishiir} for 1 minute. At the end of each of its turns, the target can repeat the saving throw, ending the effect on a success. Once a creature has succeeded on the saving throw, it is immune to this feature for the next 24 hours.",
+								"You can use this feature a number of times equal to your Formshift Damage and you regain all expended uses on a Long Rest. Alternatively, you can spend a 4th Level Spell Slot to use this feature again."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Aggressive Effluvia.",
+							"entry": "Hostile creatures that start their turn within 30 feet of you or enter that space for the first time on a turn, take necrotic damage equal to double your Formshift Damage. Creatures that are {@condition Poisoned|Ishiir} or have hit points equal to half or less of their maximum, take double damage from this feature. If you are {@condition Unconscious|Ishiir} or dead, this effect disappears after {@dice 1d4} days."
 						}
 					]
 				}
