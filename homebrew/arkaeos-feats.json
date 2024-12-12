@@ -35,7 +35,7 @@
 					"type": "list",
 					"items": [
 						"When you deal damage to a creature, you can inflict them with a brand that lasts until the start of your next turn (no action required). The next time the creature takes damage, it takes additional radiant damage equal to your proficiency modifier and you can choose to convert all of the damage that triggered the effect to radiant damage as well.",
-						"Additionally, when a creature you can see within 60 feet that is branded in this manner deals damage to one of your allies, you can use your reaction to force that creature to make a CON saving throw. The DC equals 8 + your proficiency + WIS or CHA (your choice). On a failure, it is {@condition blinded|Ishiir} until the start of your next turn.",
+						"Additionally, when a creature you can see within 60 feet that is branded in this manner deals damage to one of your allies, you can use your reaction to force that creature to make a CON saving throw. The DC equals 8 + your proficiency + WIS or CHA (your choice). On a failure, it is {@condition Blinded|Ishiir} until the start of your next turn.",
 						"You can use this reaction an amount of times equal to half your proficiency bonus (rounded down) and you regain all expended uses when you finish a long rest. You also regain a use if an ally you can see within 60 feet of you suffers a critical hit or is reduced to 0 hitpoints."
 					]
 				}
@@ -221,7 +221,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Once per turn, when you deal piercing or slashing damage to a creature, you can force it to make a CON saving throw. The DC equals 8 + your proficiency modifier + your STR or DEX bonus (your choice). On a failure, the creature is {@condition lacerated|Ishiir}. If your attack already inflicts this condition, e.g. through a class feature or weapon property, the creature instead has disadvantage on the saving throw against that effect. At the end of each of its turns, the creature can repeat the saving throw, ending the effect on a success.",
+						"Once per turn, when you deal piercing or slashing damage to a creature, you can force it to make a CON saving throw. The DC equals 8 + your proficiency modifier + your STR or DEX bonus (your choice). On a failure, the creature is {@condition Lacerated|Ishiir}. If your attack already inflicts this condition, e.g. through a class feature or weapon property, the creature instead has disadvantage on the saving throw against that effect. At the end of each of its turns, the creature can repeat the saving throw, ending the effect on a success.",
 						"If you start your turn hidden or lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena, you can start your movement that turn with a long or high jump as if you had a running start. If you end this jump while a creature is within your reach, your first attack against that creature deals an additional {@damage 1d8} points of damage."
 					]
 				}
@@ -340,8 +340,8 @@
 				{
 					"type": "list",
 					"items": [
-						"When you are not {@condition incapacitated|Ishiir} and within 5 ft of an allied creature that is not {@condition incapacitated|Ishiir}, no attack roll has advantage against you.",
-						"When an allied creature within 5 ft of you has to make an ability check or saving throw against the {@condition charmed|Ishiir}, {@condition frightened|Ishiir}, {@condition paralyzed|Ishiir}, {@condition prone|Ishiir}, or {@condition stunned|Ishiir} condition or against being pushed, you can use your reaction to give that creature advantage on the roll."
+						"When you are not {@condition Incapacitated|Ishiir} and within 5 ft of an allied creature that is not {@condition Incapacitated|Ishiir}, no attack roll has advantage against you.",
+						"When an allied creature within 5 ft of you has to make an ability check or saving throw against the {@condition Charmed|Ishiir}, {@condition Frightened|Ishiir}, {@condition Paralyzed|Ishiir}, {@condition Prone|Ishiir}, or {@condition Stunned|Ishiir} condition or against being pushed, you can use your reaction to give that creature advantage on the roll."
 					]
 				}
 			]
@@ -460,7 +460,7 @@
 					"type": "list",
 					"items": [
 						"When you move at least 20 feet in a straight line before hitting a creature with an attack using the natural weapons gained from your Horns & Hooves racial feature, you double the weapon dice for this attack. If you use your Hammering Blows racial feature for this attack, you have advantage on the ability check to {@action shove|Ishiir}.",
-						"When you successfully knock a creature {@condition prone|Ishiir} with your Hammering Blows feature, the creature has to spend all of its movement rather than half of it to stand up."
+						"When you successfully knock a creature {@condition Prone|Ishiir} with your Hammering Blows feature, the creature has to spend all of its movement rather than half of it to stand up."
 					]
 				}
 			]
@@ -483,7 +483,7 @@
 				{
 					"type": "list",
 					"items": [
-						"At the start of each of its turns, a creature that you are currently {@action grapple|Ishiir|grappling} using your Constricting Coils racial feature takes bludgeoning damage equal to twice your proficiency modifier. If the creature is {@condition incapacitated|Ishiir}, this damage is doubled.",
+						"At the start of each of its turns, a creature that you are currently {@action grapple|Ishiir|grappling} using your Constricting Coils racial feature takes bludgeoning damage equal to twice your proficiency modifier. If the creature is {@condition Incapacitated|Ishiir}, this damage is doubled.",
 						"Once per turn, when you take the {@action Attack|Ishiir} action against a creature you have grappled in this manner, you can replace one of your attacks with an attempt to choke the creature. To do so, make a contested {@action grapple|Ishiir|grappling} check as normal. If you succeed, the creature is {@quickref suffocating||2}. If you use this feature again on subsequent turns while the creature is still {@quickref suffocating||2}, it loses an additional round of time until it drops to 0 hitpoints.",
 						"Additionally, when you take the {@action Attack|Ishiir} action on your turn and you aren't currently {@action grapple|Ishiir|grappling} a creature with your Constricting Coils racial feature, you can use your reaction to increase the range for any of your attacks, features, or spells by 5 ft for that turn."
 					]
@@ -583,8 +583,8 @@
 				{
 					"type": "list",
 					"items": [
-						"You are immune to poison damage and the {@condition poisoned|Ishiir} condition.",
-						"If you are pushed or knocked {@condition prone|Ishiir}, you can use your reaction to not be pushed or knocked {@condition prone|Ishiir}."
+						"You are immune to poison damage and the {@condition Poisoned|Ishiir} condition.",
+						"If you are pushed or knocked {@condition Prone|Ishiir}, you can use your reaction to not be pushed or knocked {@condition Prone|Ishiir}."
 					]
 				}
 			]
@@ -635,7 +635,7 @@
 					"type": "list",
 					"items": [
 						"You are immune to acid damage.",
-						"If you are {@condition grappled|Ishiir}, you can use your reaction to not be {@condition grappled|Ishiir}.",
+						"If you are {@condition Grappled|Ishiir}, you can use your reaction to not be {@condition Grappled|Ishiir}.",
 						"If you suffer a critical hit, you can use your reaction to turn that critical hit into a normal hit. All effects triggered by a critical hit are cancelled. You can use this feature a number of times equal to half your proficiency modifier (rounded down) and you regain all expended uses when you finish a long rest."
 					]
 				}
