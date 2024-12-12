@@ -493,8 +493,8 @@
 			"subclassFeatures": [
 				"Winged Aspect|Shifter|Ishiir|Autumn's Wing|Ishiir|1",
 				"Improved Winged Aspect|Shifter|Ishiir|Autumn's Wing|Ishiir|7",
-				"Strong Wings|Shifter|Ishiir|Autumn's Wing|Ishiir|13",
-				"Greater Winged Aspect|Shifter|Ishiir|Autumn's Wing|Ishiir|18"
+				"Greater Winged Aspect|Shifter|Ishiir|Autumn's Wing|Ishiir|13",
+				"Superior Winged Aspect|Shifter|Ishiir|Autumn's Wing|Ishiir|18"
 			]
 		},
 		{
@@ -856,7 +856,7 @@
 			"header": 2,
 			"entries": [
 				"You adopt an avian aspect, granting you physical traits such as the piercing eyes of a bird of prey, sharp nails, and wings sprouting from your back.",
-				"You gain a flying speed equal to your walking speed. If you are not shifted, you have to end your flying movement on the ground."
+				"You gain a flying speed equal to your walking speed. If you are not shifted, you have to end your flying movement on the ground. Once you reach level 10 in this class, you no longer need to end your flying movement on the ground while not shifted."
 			]
 		},
 		{
@@ -874,15 +874,27 @@
 				{
 					"type": "list",
 					"items": [
-						"You gain a {@sense darkvision} range of 120 feet. If you already possess {@sense darkvision}, add 120 ft to its range.",
-						"Your speed increases by 10 feet and you do not provoke opportunity attacks when you fly out of an enemy's reach.",
-						"If you move at a downwards angle for at least 20 ft in a straight line before making a melee attack with your natural weapons, you can add 1 point of damage for every 5 ft travelled in this manner to the damage roll of that attack and force the target to make a Strength saving throw. On a failure, the target is knocked {@condition prone|Ishiir}. The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice)."
+						{
+                            "type": "item",
+                            "name": "Night Flyer.",
+                            "entry": "You gain a {@sense darkvision} range of 120 feet. If you already possess {@sense darkvision}, add 120 ft to its range."
+                        },
+						{
+                            "type": "item",
+                            "name": "Agile Flyer.",
+                            "entry": "Your speed increases by 10 feet and you do not provoke opportunity attacks when you fly out of an enemy's reach."
+                        },
+						{
+                            "type": "item",
+                            "name": "Diving Raptor.",
+                            "entry": "When you use Primal Pounce, you can move up to double your speed if your target is below you. If you moved at least 20 feet in this manner, the attack adds your Natural Weapons die to the damage again once."
+                        }
 					]
 				}
 			]
 		},
 		{
-			"name": "Strong Wings",
+			"name": "Greater Winged Aspect",
 			"page": 1,
 			"source": "Ishiir",
 			"className": "Shifter",
@@ -892,11 +904,31 @@
 			"level": 13,
 			"header": 2,
 			"entries": [
-				"You no longer need to end your flying movement on the ground while not shifted."
+				"You gain one of the following features of your choice.",
+				{
+					"type": "list",
+					"items": [
+						{
+                            "type": "item",
+                            "name": "Silent Flight.",
+                            "entry": "While flying, you can {@action hide|Ishiir} as a bonus action and your wings cause no sound when you move while flying. If you attack while hidden, the benefits of being hidden persist against the target of your attack until the end of your turn."
+                        },
+						{
+                            "type": "item",
+                            "name": "On Swift Wings.",
+                            "entry": "When you move, you can choose a creature that is within 5 ft and at least one size smaller than you and move the creature with you until the end of the current turn. The creature's movement doesn't provoke Opportunity Attacks."
+                        },
+						{
+                            "type": "item",
+                            "name": "Deadly Talons.",
+                            "entry": "The critical range with your natural weapons increases by 1. When you critically hit with your natural weapons, you roll your weapon damage dice two additional times and add them to the damage."
+                        }
+					]
+				}
 			]
 		},
 		{
-			"name": "Greater Winged Aspect",
+			"name": "Superior Winged Aspect",
 			"page": 1,
 			"source": "Ishiir",
 			"className": "Shifter",
@@ -910,9 +942,50 @@
 				{
 					"type": "list",
 					"items": [
-						"While flying, you can hide as a bonus action and your wings cause no sound when you move while flying.",
-						"When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.",
-						"Your critical range with your natural weapons increases by 1. When you critically hit a creature it has to make a Constitutions saving throw. On a failure, the target is {@condition dazed|Ishiir} until the end of your next turn. The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice)."
+						{
+                            "type": "item",
+                            "name": "Death from the Dark.",
+                            "entries": [
+								"Once per turn, when you hit a creature you are hidden from with your natural weapons, you deal additional damage equal to two rolls of your Natural Weapons die and the target has to make a Wisdom saving throw.",
+								"The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice). On a failure, the target is {@condition Frightened|Ishiir} until the end of your next turn."
+							]
+                        },
+						{
+                            "type": "item",
+                            "name": "Evasive Flight.",
+                            "entries": [
+								"When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.",
+								"If you succeed on the saving throw, you can use your reaction to move up to half your speed to an unoccupied space that you can see. If you are carrying an ally or otherwise moving them with you, they also automatically succeed on the saving throw and take no damage.",
+								"You don't benefit from this feature if you have the {@condition Incapacitated|Ishiir} condition."
+							]
+                        },
+						{
+                            "type": "item",
+                            "name": "Concussive Impact.",
+                            "entries": [
+								"When you use Primal Pounce and hit the target, it has to make a Constitution saving throw. The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice). On a failure, the target suffers an effect based on the distance you travelled as part of Primal Pounce.",
+								{
+									"type": "list",
+									"items": [
+										{
+											"type": "item",
+											"name": "20 feet or more:",
+											"entry": "The target is knocked {@condition Prone|Ishiir}."
+										},
+										{
+											"type": "item",
+											"name": "40 feet or more:",
+											"entry": "The target is {@condition Dazed|Ishiir} until the end of your next turn."
+										},
+										{
+											"type": "item",
+											"name": "60 feet or more:",
+											"entry": "The target is {@condition Stunned|Ishiir} until the end of your next turn."
+										}
+									]
+								}
+							]
+                        }
 					]
 				}
 			]
