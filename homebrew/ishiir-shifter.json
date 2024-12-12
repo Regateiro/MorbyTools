@@ -847,7 +847,21 @@
                 "Greater Green Aspect|Shifter|Ishiir|Spring's Branch|Ishiir|13",
                 "Superior Green Aspect|Shifter|Ishiir|Spring's Branch|Ishiir|18"
             ]
-        }
+        },
+		{
+			"name": "Dragon's Scale",
+			"page": 1,
+			"shortName": "Dragon's Scale",
+			"source": "Ishiir",
+			"className": "Shifter",
+			"classSource": "Ishiir",
+			"subclassFeatures": [
+				"Draconic Aspect|Shifter|Ishiir|Dragon's Scale|Ishiir|3",
+				"Improved Draconic Aspect|Shifter|Ishiir|Dragon's Scale|Ishiir|7",
+				"Greater Draconic Aspect|Shifter|Ishiir|Dragon's Scale|Ishiir|13",
+				"Superior Draconic Aspect|Shifter|Ishiir|Dragon's Scale|Ishiir|18"
+			]
+		}
 	],
 	"classFeature": [
 		{
@@ -1749,6 +1763,154 @@
 						}
 					]
 				}
+			]
+		},
+		{
+			"name": "Draconic Aspect",
+			"page": 1,
+			"source": "Ishiir",
+			"className": "Shifter",
+			"classSource": "Ishiir",
+			"subclassShortName": "Dragon's Scale",
+			"subclassSource": "Ishiir",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You adopt a draconic aspect, granting you physical traits such as scaled skin, vertical pupils, and sharp nails.",
+				"You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
+				"As an action, you can exhale destructive energy. All creatues in the area of effect take damage equal to a number of rolls of your Natural Weapons die equal to your proficiency. The shape, saving throw, and damage type of your breath weapon is determined by your draconic form, which you choose when you gain this feature. You can find all available options in the table below. The DC for this is 8 + your proficiency + your Constitution modifier. Once you have used your breath weapon, you have to roll a d6 at the start of each of your turns. On a roll of 5 or 6, you regain your use of this feature.",
+				"Once you reach level 10 in this class, the size of your breath weapon doubles.",
+				{
+                    "type": "table",
+                    "caption": "Character Advancement",
+                    "colLabels": [
+                        "Dragon",
+                        "Damage Type",
+						"Breath Weapon Shape (Saving Throw)"
+                    ],
+                    "colStyles": [
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-6"
+                    ],
+                    "rows": [
+                        [
+                            "Black",
+                            "Acid",
+							"60x5 ft line (DEX save)"
+                        ],
+                        [
+                            "Blue",
+                            "Lightning",
+							"60x5 ft line (DEX save)"
+                        ],
+                        [
+                            "Brass",
+                            "Fire",
+							"30 ft cone (DEX save)"
+                        ],
+                        [
+                            "Bronze",
+                            "Lightning",
+							"60x5 ft line (DEX save)"
+                        ],
+                        [
+                            "Copper",
+                            "Acid",
+							"60x5 ft line (DEX save)"
+                        ],
+                        [
+                            "Gold",
+                            "Radiant",
+							"30 ft cone (DEX save)"
+                        ],
+                        [
+                            "Green",
+                            "Poison",
+							"30 ft cone (CON save)"
+                        ],
+                        [
+                            "Jabberwock",
+                            "Fire",
+							"60x5 ft line (DEX save)"
+                        ],
+                        [
+                            "Night",
+                            "Force",
+							"60x5 ft line (DEX save)"
+                        ],
+                        [
+                            "Red",
+                            "Fire",
+							"30 ft cone (DEX save)"
+                        ],
+                        [
+                            "Shadow",
+                            "Necrotic",
+							"30 ft cone (CON save)"
+                        ],
+                        [
+                            "Silver",
+                            "Radiant",
+							"60x5 ft line (CON save)"
+                        ],
+                        [
+                            "Sylvan",
+                            "Poison",
+							"30 ft cone (CON save)"
+                        ],
+                        [
+                            "White",
+                            "Cold",
+							"30 ft cone (CON save)"
+                        ]
+                    ]
+				}
+			]
+		},
+		{
+			"name": "Improved Draconic Aspect",
+			"page": 1,
+			"source": "Ishiir",
+			"className": "Shifter",
+			"classSource": "Ishiir",
+			"subclassShortName": "Dragon's Scale",
+			"subclassSource": "Ishiir",
+			"level": 7,
+			"header": 1,
+			"entries": [
+				"You gain a flying speed equal to your walking speed when you are shifted, but you have to end your flying movement on the ground.",
+				"Additionally, you gain resistance to the damage type associated with your Draconic Form."
+			]
+		},
+		{
+			"name": "Greater Draconic Aspect",
+			"page": 1,
+			"source": "Ishiir",
+			"className": "Shifter",
+			"classSource": "Ishiir",
+			"subclassShortName": "Dragon's Scale",
+			"subclassSource": "Ishiir",
+			"level": 13,
+			"header": 1,
+			"entries": [
+				"You no longer have to end your flying movement on the ground when you are shifted.",
+				"Additionally, you gain {@sense blindsight} with a range of 20 feet."
+			]
+		},
+		{
+			"name": "Superior Draconic Aspect",
+			"page": 1,
+			"source": "Ishiir",
+			"className": "Shifter",
+			"classSource": "Ishiir",
+			"subclassShortName": "Dragon's Scale",
+			"subclassSource": "Ishiir",
+			"level": 18,
+			"header": 1,
+			"entries": [
+				"While you are shifted, any hostile creature that starts its turn within 60 feet of you or enters that area for the first time on a turn, must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Constitution modifier) or be {@condition Frightened|Ishiir} or {@condition Charmed|Ishiir} by you (your choice) until the end of your next turn. Any affected creature also has disadvantage on saving throws against your breath weapon.",
+				"Once a creature succeeds on this save, it is immune against this feature for the next 24 hours."
 			]
 		}
 	]
