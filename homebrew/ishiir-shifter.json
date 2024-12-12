@@ -507,8 +507,8 @@
 			"subclassFeatures": [
 				"Clawed Aspect|Shifter|Ishiir|Summer's Claw|Ishiir|1",
 				"Improved Clawed Aspect|Shifter|Ishiir|Summer's Claw|Ishiir|7",
-				"Sharp Claws|Shifter|Ishiir|Summer's Claw|Ishiir|13",
-				"Greater Clawed Aspect|Shifter|Ishiir|Summer's Claw|Ishiir|18"
+				"Greater Clawed Aspect|Shifter|Ishiir|Summer's Claw|Ishiir|13",
+				"Superior Clawed Aspect|Shifter|Ishiir|Summer's Claw|Ishiir|18"
 			]
 		},
 		{
@@ -1003,7 +1003,8 @@
 			"entries": [
 				"You adopt a feline aspect, granting you physical traits such as the vertical pupils, sharp nails, and elongated canines.",
 				"You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
-				"Additionally, once per turn when you hit a creature with your natural weapons, you can force the target to make a Constitution saving throw. On a failure, the target is {@condition lacerated|Ishiir}. The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice). The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Creatures who cannot bleed are immune to this feature."
+				"Additionally, once per turn when you hit a creature with your natural weapons, you can force the target to make a Constitution saving throw. On a failure, the target is {@condition lacerated|Ishiir}. The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice). The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Creatures who cannot bleed are immune to this feature.",
+				"Once you reach level 10 in this class, any {@condition lacerated|Ishiir|laceration} inflicted with your natural weapons deals damage equal to thrice your proficiency, rather than twice."
 			]
 		},
 		{
@@ -1021,15 +1022,27 @@
 				{
 					"type": "list",
 					"items": [
-						"You gain proficiency in the {@skill Stealth} skill. If you are already proficient, you double your proficiency bonus for all checks made with this skill. You have advantage on attack rolls against creatures that are surprised.",
-						"You gain a climb speed equal to your walking speed and when you take fall damage, you can use your reaction to decrease that damage by an amount equal to five times your Shifter level.",
-						"When you make an attack with your natural weapons against a creature that is {@condition prone|Ishiir} or {@condition incapacitated|Ishiir}, you can use your bonus action to attempt to {@condition grappled|Ishiir|grapple} the creature."
+						{
+							"type": "item",
+							"name": "Stalker's Ambush.",
+							"entry": "Any attack with your natural weapons against a creature that is surprised has advantage and adds an additional roll of your Natural Weapons die to the damage."
+						},
+						{
+							"type": "item",
+							"name": "Swift Climber.",
+							"entry": "You gain a climb speed equal to your walking speed and when you take fall damage, you can use your reaction to decrease that damage by an amount equal to five times your Shifter level."
+						},
+						{
+							"type": "item",
+							"name": "Feral Pounce.",
+							"entry": "When you use Primal Pounce and your attack hits, you can force the target to make a Strength saving throw if it is no more than one size larger than you. The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice). On a failure, the target is knocked {@condition Prone|Ishiir}."
+						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Sharp Claws",
+			"name": "Greater Clawed Aspect",
 			"page": 1,
 			"source": "Ishiir",
 			"className": "Shifter",
@@ -1039,11 +1052,31 @@
 			"level": 13,
 			"header": 2,
 			"entries": [
-				"When you inflict the {@condition lacerated|Ishiir} condition on a creature using your Clawed Aspect feature, the damage the creature takes is equal to thrice your proficiency modifier, rather than twice."
+				"You gain one of the following features of your choice.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Stalker's Rake.",
+							"entry": "You can {@action Hide|Ishiir} as a bonus action. If you hit a creature with your natural weapons while hidden, it has disadvantage on the next saving throw against your Clawed Aspect. Additionally, creatures {@condition Lacerated|Ishiir} by you cannot make opportunity attacks."
+						},
+						{
+							"type": "item",
+							"name": "Big Game Hunter.",
+							"entry": "When you use Primal Pounce and your attack hits, you can also attempt to {@action Climb onto a Bigger Creature|Ishiir} as per the Additional Combat Actions as a bonus action."
+						},
+						{
+							"type": "item",
+							"name": "Disembowel.",
+							"entry": "If you hit a {@condition Prone|Ishiir} creature with your natural weapons, you can force it to make the saving throw against your Clawed Aspect again, ignoring the usual per-turn limit. Once per turn, if the {@condition Prone|Ishiir} creature is already {@condition Lacerated|Ishiir}, it takes the damage from the condition immediately after the attack if it fails the saving throw."
+						}
+					]
+				}
 			]
 		},
 		{
-			"name": "Greater Clawed Aspect",
+			"name": "Superior Clawed Aspect",
 			"page": 1,
 			"source": "Ishiir",
 			"className": "Shifter",
@@ -1057,9 +1090,21 @@
 				{
 					"type": "list",
 					"items": [
-						"If you attack a creature that you are hidden from, all your attacks that turn deal an additional {@damage 1d12} damage. If the target creature is also surprised, that damage increases to {@damage 2d12}.",
-						"On your turn, you can use your bonus action to give yourself a +2 bonus to your AC.",
-						"When you make an attack with your natural weapons against a creature that is {@condition prone|Ishiir}, {@condition grappled|Ishiir} by you, or {@condition incapacitated|Ishiir}, you can add +5 to the attack's damage."
+						{
+							"type": "item",
+							"name": "Spirit Claw.",
+							"entry": "When you are {@action Hide|Ishiir|hidden}, you ignore immunity to the {@condition Lacerated|Ishiir} condition and healing does not remove the {@condition Lacerated|Ishiir} condition if it was applied by you unless the target was healed back to its hitpoint maximum. Additionally, you have advantage on attack rolls against creatures that are {@condition Lacerated|Ishiir}."
+						},
+						{
+							"type": "item",
+							"name": "Feline Grace.",
+							"entry": "No attack roll has advantage against you and you cannot have disadvantage on Dexterity saving throws and ability checks. You lose these benefits when you are {@condition Incapacitated|Ishiir} or your speed is 0."
+						},
+						{
+							"type": "item",
+							"name": "Killing Bite.",
+							"entry": "If you hit a {@condition Prone|Ishiir} creature with your natural weapons, you can immediately make another attack with them as a bonus action."
+						}
 					]
 				}
 			]
