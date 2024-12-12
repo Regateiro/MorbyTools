@@ -521,8 +521,8 @@
 			"subclassFeatures": [
 				"Fanged Aspect|Shifter|Ishiir|Winter's Fang|Ishiir|3",
 				"Improved Fanged Aspect|Shifter|Ishiir|Winter's Fang|Ishiir|7",
-				"Tenacious Fangs|Shifter|Ishiir|Winter's Fang|Ishiir|13",
-				"Greater Fanged Aspect|Shifter|Ishiir|Winter's Fang|Ishiir|18"
+				"Greater Fanged Aspect|Shifter|Ishiir|Winter's Fang|Ishiir|13",
+				"Superior Fanged Aspect|Shifter|Ishiir|Winter's Fang|Ishiir|18"
 			]
 		}
 	],
@@ -1122,7 +1122,8 @@
 			"entries": [
 				"You adopt a canine aspect, granting you physical traits such as the piercing eyes, sharp nails, and elongated canines.",
 				"You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
-				"Once per turn when you hit a creature with your natural weapons, you can force the target to make a Strength saving throw. On a failure, the target is knocked {@condition Prone|Ishiir}. The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice). If the target creature is already {@condition Prone|Ishiir}, you can attempt to {@condition Grappled|Ishiir|grapple} it instead, using the usual skill check instead of forcing a saving throw."
+				"Once per turn when you hit a creature with your natural weapons, you can force the target to make a Strength saving throw. On a failure, the target is knocked {@condition Prone|Ishiir}. The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice). If the target creature is already {@condition Prone|Ishiir}, you can attempt to {@condition Grappled|Ishiir|grapple} it instead, using the usual skill check instead of forcing a saving throw.",
+				"Once you reach level 10 in this class, you count as 1 size larger for the purposes of this feature."
 			]
 		},
 		{
@@ -1140,15 +1141,27 @@
 				{
 					"type": "list",
 					"items": [
-						"You have advantage on attack rolls with your natural weapons against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition Incapacitated|Ishiir}.",
-						"You can take the {@action Help|Ishiir} action as a bonus action. You can always use the {@action Help|Ishiir} action to give someone advantage on a skill check, even if you are not proficient in the relevant skill yourself.",
-						"If you knock a creature {@condition Prone|Ishiir} with your Fanged Aspect feature, that creature's speed is reduced to 0 until the start of your next turn."
+						{
+							"type": "item",
+							"name": "Pack Tactics.",
+							"entry": "You have advantage on attack rolls with your natural weapons against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition Incapacitated|Ishiir}."
+						},
+						{
+							"type": "item",
+							"name": "A Friend in Deed.",
+							"entry": "You can take the {@action Help|Ishiir} action as a bonus action and with a range of 30 feet. You can always use the {@action Help|Ishiir} action to give someone advantage on a skill check, even if you are not proficient in the relevant skill yourself."
+						},
+						{
+							"type": "item",
+							"name": "Thick Hide.",
+							"entry": "The temporary hit points gained through your Martial Mastery (Unarmored Defense) increase by half (rounded down). Additionally, you have advantage on saving throws against becoming {@condition Poisoned|Ishiir} or {@condition Lacerated|Ishiir}."
+						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Tenacious Fangs",
+			"name": "Greater Fanged Aspect",
 			"page": 1,
 			"source": "Ishiir",
 			"className": "Shifter",
@@ -1158,11 +1171,31 @@
 			"level": 13,
 			"header": 2,
 			"entries": [
-				"Creatures have disadvantage on skill checks to avoid being {@condition Grappled|Ishiir} by you if they are {@condition Prone|Ishiir} and disadvantage on skill checks to escape your {@condition Grappled|Ishiir|grapple}."
+				"You gain one of the following features of your choice.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Coordinated Takedown.",
+							"entry": "When a creature within reach of your natural weapons is hit by a melee attack from one of your allies, you can use your reaction to immediately force that creature to make a Strength saving throw as per your Fanged Aspect feature."
+						},
+						{
+							"type": "item",
+							"name": "Bolstering Barks.",
+							"entry": "Whenever you use the {@action Help|Ishiir} action on one of your allies, they gain temporary hit points equal to half your Shifter level."
+						},
+						{
+							"type": "item",
+							"name": "Fierce Protector.",
+							"entry": "When you hit a creature with your natural weapons, it has disadvantage on attack rolls against creatures other than you until the end of your next turn while it is within your reach. If it makes an attack against a target other than you during that time, you have advantage on your next attack roll against it and add half your Shifter level to the damage roll (rounded down)."
+						}
+					]
+				}
 			]
 		},
 		{
-			"name": "Greater Fanged Aspect",
+			"name": "Superior Fanged Aspect",
 			"page": 1,
 			"source": "Ishiir",
 			"className": "Shifter",
@@ -1176,9 +1209,21 @@
 				{
 					"type": "list",
 					"items": [
-						"When a creature within 5 ft of you is hit by a melee attack from one of your allies, you can use your reaction to immediately force that creature to make a Strength saving throw as per your Fanged Aspect feature.",
-						"You gain a bonus to all saving throws equal to the number of allied creatures within 30 ft of you. You do not gain this bonus for an ally that is {@condition Incapacitated|Ishiir} or {@condition Dominated|Ishiir}.",
-						"When you fail a Strength or Constitution saving throw, you can use your reaction to reroll it, taking either result."
+						{
+							"type": "item",
+							"name": "Killing Bite.",
+							"entry": "If you hit a {@condition Prone|Ishiir} creature with your natural weapons, you can immediately make another attack with them as a bonus action."
+						},
+						{
+							"type": "item",
+							"name": "Stronger Together.",
+							"entry": "Allies within 20 feet of you also benefit from your Feral Resilience while you are not {@condition Unconscious|Ishiir}."
+						},
+						{
+							"type": "item",
+							"name": "Feral Defiance.",
+							"entry": "Your Ferocious Vitality recharges on a Short or Long Rest and heals for 1x Shifter level additional hit points."
+						}
 					]
 				}
 			]
