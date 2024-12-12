@@ -29,9 +29,6 @@
 				"and your choice of Dexterity or Constitution"
 			],
 			"startingProficiencies": {
-				"armor": [
-					"light"
-				],
 				"weapons": [
 					"simple"
 				],
@@ -106,9 +103,6 @@
 					"con": 13
 				},
 				"proficienciesGained": {
-					"armor": [
-						"light"
-					],
 					"weapons": [
 						"simple"
 					]
@@ -292,7 +286,7 @@
 									}
 								]
 							},
-							"5",
+							"4",
 							{
 								"type": "bonus",
 								"value": 3
@@ -372,7 +366,7 @@
 									}
 								]
 							},
-							"6",
+							"5",
 							{
 								"type": "bonus",
 								"value": 4
@@ -436,7 +430,7 @@
 									}
 								]
 							},
-							"Unlimited",
+							"6",
 							{
 								"type": "bonus",
 								"value": 4
@@ -448,30 +442,33 @@
 			"classFeatures": [
 				"Formshift|Shifter|Ishiir|1",
 				"Natural Weapons|Shifter|Ishiir|1",
+				"Primal Defence|Shifter|Ishiir|1",
+				"Animal Senses|Shifter|Ishiir|2",
+				"Fast Movement|Shifter|Ishiir|2",
 				{
-					"classFeature": "Wild Aspect|Shifter|Ishiir|1",
+					"classFeature": "Wild Aspect|Shifter|Ishiir|3",
 					"gainSubclassFeature": true
 				},
-				"Primal Defence|Shifter|Ishiir|2",
-				"Animal Senses|Shifter|Ishiir|3",
 				"Ability Score Improvement|Shifter|Ishiir|4",
                 "Martial Mastery|Shifter|Ishiir|4",
 				"Extra Attack|Shifter|Ishiir|5",
+				"Primal Pounce|Shifter|Ishiir|5",
 				"Primal Strikes|Shifter|Ishiir|6",
+				"Improved Animal Senses|Shifter|Ishiir|6",
 				{
 					"classFeature": "Wild Aspect Feature|Shifter|Ishiir|7",
 					"gainSubclassFeature": true
 				},
 				"Ability Score Improvement|Shifter|Ishiir|8",
-				"Uncanny Dodge|Shifter|Ishiir|9",
-				"Wild Stride|Shifter|Ishiir|10",
+				"Ferocious Strikes|Shifter|Ishiir|9",
+				"Feral Resilience|Shifter|Ishiir|10",
 				"Greater Formshift|Shifter|Ishiir|11",
 				"Ability Score Improvement|Shifter|Ishiir|12",
 				{
 					"classFeature": "Wild Aspect Feature|Shifter|Ishiir|13",
 					"gainSubclassFeature": true
 				},
-				"Ferocious Critical|Shifter|Ishiir|14",
+				"Ferocious Vitality|Shifter|Ishiir|14",
 				"Persistent Formshift|Shifter|Ishiir|15",
 				"Ability Score Improvement|Shifter|Ishiir|16",
 				"Wild Blessing|Shifter|Ishiir|17",
@@ -538,19 +535,18 @@
 			"classSource": "Ishiir",
 			"level": 1,
 			"entries": [
-				"By choice or circumstance, you possess the ability to shift into an animal-like form that outfits you with heightened senses, swiftness, and primal ferocity in battle. You shift forms as a bonus action.",
-				"While shifted, you gain the following benefits as long as you aren't wearing armor heavier than light or a shield:",
+				"By choice or circumstance, you possess the ability to shift into an animal-like form that outfits you with heightened senses, swiftness, and primal ferocity in battle. You shift forms as a bonus action. While shifted, you gain the following benefits as long as you aren't wearing armor heavier than light or a shield:",
 				{
 					"type": "list",
 					"items": [
-						"You have advantage on perception checks.",
+						"You have advantage on {@skill Perception} checks.",
 						"Your speed is doubled.",
 						"When you make a melee weapon attack with your natural weapons, you gain a +2 bonus to the damage roll. This bonus increases as you level."
 					]
 				},
 				"If you are able to cast spells, you can't cast them or concentrate on them while shifted.",
-				"Your formshift lasts for an amount of hours equal to your shifter level. It ends early if you fall {@condition unconscious|Ishiir}. You can also end your formshift as a bonus action.",
-				"Once you have shifted the maximum number of times for your shifter level, you must finish a long rest before you can shift again. You may shift 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th.",
+				"Your Formshift lasts for an amount of hours equal to your shifter level. It ends early if you fall {@condition unconscious|Ishiir} or you are {@condition incapacitated|Ishiir}. You can also end your Formshift as a bonus action.",
+				"You can Formshift a number of times shown for your Shifter level in the Formshifts column of the Shifter Features table. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.",
 				"You choose whether your equipment falls to the ground in your space, merges into your shifted form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for your shifted form to wear a piece of equipment, based on your shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that your shifted form can't wear must either fall to the ground or merge with it. Equipment that merges with your shifted form has no effect until you leave Formshift."
 			]
 		},
@@ -567,26 +563,26 @@
 			]
 		},
 		{
-			"name": "Wild Aspect",
+			"name": "Primal Defence",
 			"page": 1,
 			"source": "Ishiir",
 			"className": "Shifter",
 			"classSource": "Ishiir",
 			"level": 1,
 			"entries": [
-				"You choose the shape of your formshift. Your choice grants you features at 1st, 7th, 13th, and 18th levels."
+				"Your animal-like swiftness or thick skin makes it more difficult to land a hit on you.",
+				"While you are wearing no armor and not wielding a shield, your AC equals 10 + your Strength or Dexterity modifier (your choice when you get this feature) and your Constitution modifier."
 			]
 		},
 		{
-			"name": "Primal Defence",
+			"name": "Fast Movement",
 			"page": 1,
 			"source": "Ishiir",
 			"className": "Shifter",
 			"classSource": "Ishiir",
 			"level": 2,
 			"entries": [
-				"Your animal-like swiftness or thick skin makes it more difficult to land a hit on you.",
-				"While you are wearing no armor and not wielding a shield, your AC equals 10 + your Strength or Dexterity modifier (your choice when you get this feature) and your Constitution modifier."
+				"Your speed increases by 10 feet while you aren't wearing any armor or wielding a shield."
 			]
 		},
 		{
@@ -595,9 +591,21 @@
 			"source": "Ishiir",
 			"className": "Shifter",
 			"classSource": "Ishiir",
+			"level": 2,
+			"entries": [
+				"You gain proficiency in two of the following skills: {@skill Animal Handling}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, {@skill Survival}.",
+				"Additionally, you add your Formshift Damage to the chosen skills and to your initiative rolls."
+			]
+		},
+		{
+			"name": "Wild Aspect",
+			"page": 1,
+			"source": "Ishiir",
+			"className": "Shifter",
+			"classSource": "Ishiir",
 			"level": 3,
 			"entries": [
-				"You gain proficiency in {@skill Perception}. If you are already proficient in the skill, your proficiency bonus is doubled for any skill check made with it."
+				"You choose the shape of your formshift. Your choice grants you features at 3rd, 7th, 13th, and 18th levels."
 			]
 		},
 		{
@@ -636,6 +644,17 @@
 			]
 		},
 		{
+			"name": "Primal Pounce",
+			"page": 1,
+			"source": "Ishiir",
+			"className": "Shifter",
+			"classSource": "Ishiir",
+			"level": 5,
+			"entries": [
+				"Once per turn, as part of an attack with your natural weapons, you can move up to your speed in a straight line towards a target of your choice."
+			]
+		},
+		{
 			"name": "Primal Strikes",
 			"page": 1,
 			"source": "Ishiir",
@@ -644,6 +663,17 @@
 			"level": 6,
 			"entries": [
 				"Your natural weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+			]
+		},
+		{
+			"name": "Improved Animal Senses",
+			"page": 1,
+			"source": "Ishiir",
+			"className": "Shifter",
+			"classSource": "Ishiir",
+			"level": 6,
+			"entries": [
+				"You cannot be {@quickref Surprise|PHB|3|0|surprised} unless you are {@condition incapacitated|Ishiir}."
 			]
 		},
 		{
@@ -670,27 +700,25 @@
 			]
 		},
         {
-            "name": "Uncanny Dodge",
+            "name": "Ferocious Strikes",
             "source": "Ishiir",
             "page": 1,
-            "srd": true,
-            "basicRules": true,
             "className": "Shifter",
             "classSource": "Ishiir",
             "level": 9,
             "entries": [
-                "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+                "You add your Formshift Damage to your weapon damage rolls even when not currently shifted. If you are shifted, this damage bonus is doubled."
             ]
         },
 		{
-			"name": "Wild Stride",
+			"name": "Feral Resilience",
 			"page": 1,
 			"source": "Ishiir",
 			"className": "Shifter",
 			"classSource": "Ishiir",
 			"level": 10,
 			"entries": [
-				"You can use the {@action Dash|Ishiir} action as a bonus action on your turn."
+				"You add your Formshift Damage to all saving throws. You do not gain this bonus if you're unconscious."
 			]
 		},
 		{
@@ -701,7 +729,7 @@
 			"classSource": "Ishiir",
 			"level": 11,
 			"entries": [
-				"Your size changes to large when you use your Formshift class feature and the damage dice for attacks using your natural weapons are doubled."
+				"You can increase your size to Large when you use your Formshift class feature and your Natural Weapons die is doubled for calculating your base weapon damage while you are shifted. If you lack the room to become Large, your size doesn't change."
 			]
 		},
 		{
@@ -728,14 +756,14 @@
 			]
 		},
 		{
-			"name": "Ferocious Critical",
+			"name": "Ferocious Vitality",
 			"page": 1,
 			"source": "Ishiir",
 			"className": "Shifter",
 			"classSource": "Ishiir",
 			"level": 14,
 			"entries": [
-				"You can roll two additional weapon damage dice when determining the extra damage for a critical hit with an attack using your natural weapons."
+				"When you are reduced to 0 hit points but not killed outright, you can expend a use of your Formshift to immediately regain hit points equal to twice your Shifter level. You can't use this feature again until you finish a Long Rest."
 			]
 		},
 		{
@@ -746,7 +774,7 @@
 			"classSource": "Ishiir",
 			"level": 15,
 			"entries": [
-				"You can remain shifted for an indefinite amount of time. You can still end your Formshift as usual."
+				"You can remain shifted for an indefinite amount of time and your Formshift does not end when you are asleep naturally. You can still end your Formshift as usual."
 			]
 		},
 		{
@@ -807,9 +835,9 @@
 				{
 					"type": "list",
 					"items": [
-						"Your size increases to huge and your damage dice for attacks with your natural weapons are tripled.",
+						"Your can increase your size to Huge and your Natural Weapons die is doubled for calculating your base weapon damage. If you lack the room to become Huge, your size doesn't change.",
 						"You can't be {@condition charmed|Ishiir} or {@condition frightened|Ishiir}. If you are {@condition charmed|Ishiir} or {@condition frightened|Ishiir} when you use Formshift, the effect is suspended for the duration of the shift.",
-						"At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left."
+						"The healing gained from your Ferocious Vitality feature is increased to 5x your Shifter level."
 					]
 				}
 			]
