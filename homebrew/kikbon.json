@@ -1,0 +1,308 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Kikbon",
+                "abbreviation": "Kikbon",
+                "full": "Kikbon",
+                "url": "https://regateiro.pt/5etools/homebrew/kikbon.json",
+                "authors": [
+                    "Valasca"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "subclass": [
+        {
+            "name": "Oath of the Vanguard",
+            "shortName": "Vanguard",
+            "source": "Kikbon",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "detect magic",
+                            "sanctuary"
+                        ],
+                        "5": [
+                            "hold person",
+                            "lesser restoration"
+                        ],
+                        "9": [
+                            "aura of vitality",
+                            "dispel magic"
+                        ],
+                        "13": [
+                            "death ward",
+                            "resilient sphere"
+                        ],
+                        "17": [
+                            "commune",
+                            "raise dead"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Oath of the Vanguard|Paladin|PHB|Vanguard|Kikbon|3",
+                "Aura of Conservation|Paladin|PHB|Vanguard|Kikbon|7",
+                "Verdant Rejuvenation|Paladin|PHB|Vanguard|Kikbon|15",
+                "Avatar of the Preservation|Paladin|PHB|Vanguard|Kikbon|20"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Oath of the Vanguard",
+            "source": "Kikbon",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Vanguard",
+            "subclassSource": "Kikbon",
+            "level": 3,
+            "entries": [
+                "{@b This is a rare subclass, speak to your DM to study swear this oath}",
+                "Paladins who take the Oath of the Vanguard are natural protectors standing as stalwart defenders against any who threaten the delicate balance of the wild under the guidance of the Lord of Storms.",
+                "Their sacred charge is to uphold the harmony between civilization and nature, ensuring both thrive in mutual respect.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tenets of the Vanguard|Paladin|PHB|Vanguard|Kikbon|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath Spells|Paladin|PHB|Vanguard|Kikbon|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity|Paladin|PHB|Vanguard|Kikbon|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Stormlord's Chosen|Paladin|PHB|Vanguard|Kikbon|3"
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity",
+            "source": "Kikbon",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Vanguard",
+            "subclassSource": "Kikbon",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Stalwart Defender",
+                            "entries": [
+                                "As a bonus action, you can use your Channel Divinity to become a beacon of fortification. For 1 minute you emit a 30ft Radius Aura.",
+                                "As a reaction, when a creature standing in your Aura takes damage from an attack roll you may magically redirect the attack to yourself taking the damage in place of the original target. When you do so you reduce the incoming damage by 1d10 + your Paladin level."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Intrepidness",
+                            "entries": [
+                                "As a bonus action, you can use your Channel Divinity to fortify the resolve of you and those around you. Choose a number of creatures of your choice within 30ft of you, which can include yourself, up to a maximum equal to your charisma modifier. The chosen creatures gain immunity to being {@condition frightened} for 1 hour. This abillity does not remove the {@condition frightened} effect from a creature already affected but does grant advantage onsaving throws to remove it."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Stormlord's Chosen",
+            "source": "Kikbon",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Vanguard",
+            "subclassSource": "Kikbon",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Additionally at 3rd level, when you use your divine smite class feature you may choose deal additional Thunder damage instead of Radiant."
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "Kikbon",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Vanguard",
+            "subclassSource": "Kikbon",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain oath spells at the paladin levels listed. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.",
+                {
+                    "type": "table",
+                    "caption": "Oath of Vanguard Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Detect Magic}, {@spell Sanctuary}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Hold Person}, {@spell Lesser Restoration}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Aura of Vitality}, {@spell Dispel Magic}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell Death Ward}, {@spell Resilient Sphere}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell Commune}, {@spell Raise Dead}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tenets of the Vanguard",
+            "source": "Kikbon",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Vanguard",
+            "subclassSource": "Kikbon",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Preserve Balance",
+                            "entries": [
+                                "Maintain the equilibrium between civilization and nature, ensuring neither dominates the other."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Guard the Wilds",
+                            "entries": [
+                                "Protect natural habitats from unnecessary destruction and prevent harm to flora and wildlife."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Fight Corruption",
+                            "entries": [
+                                "Combat forces that seek to corrupt or destroy the natural world, whether they be mortal or magical."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Revere the Cycle",
+                            "entries": [
+                                "Respect the natural cycles of life and death, understanding that decay and renewal are both essential."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Aura of Conservation",
+            "source": "Kikbon",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Vanguard",
+            "subclassSource": "Kikbon",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Starting at 7th level, you and friendly creatures within 10 feet of you gain enhanced fortitude from the natural world's energy. While within this aura, affected creatures gain resistance to non-magical bludgeoning, piercing, and slashing damage.",
+                "The range of this aura increases to 30 feet at 18th level."
+            ]
+        },
+        {
+            "name": "Verdant Rejuvenation",
+            "source": "Kikbon",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Vanguard",
+            "subclassSource": "Kikbon",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "At 15th level, your connection to the natural order grants you and your allies the ability to draw strength from the earth itself.",
+                "As an action, you can channel the rejuvenating power of nature to heal yourself and all friendly creatures within 30 feet. Each affected creature regains hit points equal to 2d8 + your Charisma modifier. Additionally, any diseases, poisons, or conditions affecting the creatures that can be cured by the lesser restoration spell are removed.",
+                "Once you use this feature, you can't use it again until you finish a short or long rest."
+            ]
+        },
+        {
+            "name": "Avatar of the Preservation",
+            "source": "Kikbon",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Vanguard",
+            "subclassSource": "Kikbon",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "At 20th level, you can assume the form of a ultimate guardian or the natural Order. As an action, you undergo a transformation that lasts for 1 minute, gaining the following benefits:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						"You gain a flying speed of 60ft.",
+                        "You can cast {@spell Destructive Wave} without expending a spell slot once.",
+                        "Your melee weapon attacks deal an additional {@damage 2d8} Thunder damage.",
+                        "All Thunder damage you deal ignores resistance and deals half damage to any creature with Thunder Immunity"
+					]
+				}
+            ]
+        }
+    ]
+}
