@@ -233,8 +233,8 @@
                 },
                 {
                     "colLabels": [
-                        "{@filter Cantrips Known|spells|level=0|class=Sorcerer (Ishiir)|source=Ishiir}",
-                        "{@filter Spells Known|spells|class=Sorcerer (Ishiir)|source=Ishiir}"
+                        "{@filter Cantrips|spells|level=0|class=Sorcerer (Ishiir)|source=Ishiir}",
+                        "{@filter Prepared Spells|spells|class=Sorcerer (Ishiir)|source=Ishiir}"
                     ],
                     "rows": [
                         [
@@ -243,27 +243,15 @@
                         ],
                         [
                             4,
-                            3
-                        ],
-                        [
-                            4,
                             4
                         ],
                         [
-                            5,
-                            5
-                        ],
-                        [
-                            5,
+                            4,
                             6
                         ],
                         [
                             5,
                             7
-                        ],
-                        [
-                            5,
-                            8
                         ],
                         [
                             5,
@@ -274,31 +262,15 @@
                             10
                         ],
                         [
-                            6,
+                            5,
                             11
                         ],
                         [
-                            6,
+                            5,
                             12
                         ],
                         [
-                            6,
-                            12
-                        ],
-                        [
-                            6,
-                            13
-                        ],
-                        [
-                            6,
-                            13
-                        ],
-                        [
-                            6,
-                            14
-                        ],
-                        [
-                            6,
+                            5,
                             14
                         ],
                         [
@@ -307,15 +279,43 @@
                         ],
                         [
                             6,
-                            15
+                            16
                         ],
                         [
                             6,
-                            15
+                            16
                         ],
                         [
                             6,
-                            15
+                            17
+                        ],
+                        [
+                            6,
+                            17
+                        ],
+                        [
+                            6,
+                            18
+                        ],
+                        [
+                            6,
+                            18
+                        ],
+                        [
+                            6,
+                            19
+                        ],
+                        [
+                            6,
+                            20
+                        ],
+                        [
+                            6,
+                            21
+                        ],
+                        [
+                            6,
+                            22
                         ]
                     ]
                 },
@@ -558,13 +558,14 @@
             ],
             "classFeatures": [
                 "Spellcasting|Sorcerer|Ishiir|1",
-                {
-                    "classFeature": "Sorcerous Origin|Sorcerer|Ishiir|1",
-                    "gainSubclassFeature": true
-                },
                 "Spell Versatility|Sorcerer|Ishiir|1",
+                "Innate Sorcery|Sorcerer|Ishiir|1",
                 "Font of Magic|Sorcerer|Ishiir|2",
                 "Font of Magic Options|Sorcerer|Ishiir|2",
+                {
+                    "classFeature": "Sorcerous Origin|Sorcerer|Ishiir|3",
+                    "gainSubclassFeature": true
+                },
                 "Metamagic|Sorcerer|Ishiir|3",
                 "Ability Score Improvement|Sorcerer|Ishiir|4",
                 "Proficiency Versatility|Sorcerer|Ishiir|4",
@@ -573,12 +574,14 @@
                     "classFeature": "Sorcerous Origin feature|Sorcerer|Ishiir|6",
                     "gainSubclassFeature": true
                 },
+                "Sorcery Incarnate|Sorcerer|Ishiir|7",
                 "Ability Score Improvement|Sorcerer|Ishiir|8",
                 "Proficiency Versatility|Sorcerer|Ishiir|8",
                 "Metamagic|Sorcerer|Ishiir|10",
                 "Sorcerous Restoration|Sorcerer|Ishiir|10",
                 "Ability Score Improvement|Sorcerer|Ishiir|12",
                 "Proficiency Versatility|Sorcerer|Ishiir|12",
+                "Epitome of Sorcery|Sorcerer|Ishiir|13",
                 {
                     "classFeature": "Sorcerous Origin feature|Sorcerer|Ishiir|14",
                     "gainSubclassFeature": true
@@ -967,16 +970,60 @@
     ],
     "classFeature": [
         {
-            "name": "Sorcerous Origin",
+            "name": "Spellcasting",
             "source": "Ishiir",
             "page": 1,
-            "srd": true,
             "className": "Sorcerer",
             "classSource": "Ishiir",
             "level": 1,
             "entries": [
-                "Choose a sorcerous origin, which describes the source of your innate magical power, from the list of available origins.",
-                "Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level."
+                "Drawing from your innate magic, you can cast spells.The information below details how you use those rules with Sorcerer spells, which appear in the {@filter Sorcerer spell list|spells|class=sorcerer (Ishiir)|source=Ishiir} later in the class's description.",
+                {
+                    "type": "entries",
+                    "name": "Cantrips.",
+                    "entries": [
+                        "You know four Sorcerer cantrips of your choice.",
+                        "Whenever you gain a Sorcerer level, you can replace one of your cantrips from this feature with another Sorcerer cantrip of your choice.",
+                        "When you reach Sorcerer levels 4 and 10, you learn another Sorcerer cantrip of your choice, as shown in the Cantrips column of the Sorcerer Features table."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spell Slots.",
+                    "entries": [
+                        "The Sorcerer Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Prepared Spells of Level 1+.",
+                    "entries": [
+                        "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 {@filter Sorcerer spells|spells|class=sorcerer (Ishiir)|source=Ishiir}.",
+                        "The number of spells on your list increases as you gain Sorcerer levels, as shown in the Prepared Spells column of the Sorcerer Features table. Whenever that number increases, choose additional Sorcerer spells until the number of spells on your list matches the number in the Sorcerer Features table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Sorcerer, your list of prepared spells can include six Sorcerer spells of level 1 or 2 in any combination.",
+                        "If another Sorcerer feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Sorcerer spells for you."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Changing Your Prepared Spells.",
+                    "entries": [
+                        "Whenever you gain a Sorcerer level, you can replace one spell on your list with another Sorcerer spell for which you have spell slots."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Ability.",
+                    "entries": [
+                        "Charisma is your spellcasting ability for your Sorcerer spells."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Focus",
+                    "entries": [
+                        "You can use an Arcane Focus as a Spellcasting Focus for your Sorcerer spells."
+                    ]
+                }
             ]
         },
         {
@@ -991,67 +1038,22 @@
             ]
         },
         {
-            "name": "Spellcasting",
+            "name": "Innate Sorcery",
             "source": "Ishiir",
             "page": 1,
-            "srd": true,
             "className": "Sorcerer",
             "classSource": "Ishiir",
             "level": 1,
             "entries": [
-                "An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter sorcerer spell list|spells|class=sorcerer (Ishiir)|source=Ishiir}.",
+                "An event in your past left an indelible mark on you, infusing you with simmering magic. As a Bonus Action, you can unleash that magic for 1 minute, during which you gain the following benefits:",
                 {
-                    "type": "entries",
-                    "name": "Cantrips",
-                    "entries": [
-                        "You know four cantrips of your choice from the sorcerer spell list. You learn an additional sorcerer cantrip of your choice at 4th level and another at 10th level."
+                    "type": "list",
+                    "items": [
+                        "The spell save DC of your Sorcerer spells increases by 1.",
+                        "You have Advantage on the attack rolls of Sorcerer spells you cast."
                     ]
                 },
-                {
-                    "type": "entries",
-                    "name": "Spell Slots",
-                    "entries": [
-                        "The Sorcerer table shows how many spell slots you have to cast your {@filter sorcerer spells|spells|class=sorcerer (Ishiir)|source=Ishiir} of 1st level and higher. To cast one of these sorcerer spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-                        "For example, if you know the 1st-level spell {@spell burning hands|Ishiir} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell burning hands|Ishiir} using either slot."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Spells Known of 1st Level and Higher",
-                    "entries": [
-                        "You know two 1st-level spells of your choice from the sorcerer spell list.",
-                        "You learn an additional sorcerer spell of your choice at each level except 12th, 14th, 16th, 18th, 19th, and 20th. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.",
-                        "Additionally, when you gain a level in this class, you can choose one of the sorcerer spells you know and replace it with another spell from the sorcerer spell list, which also must be of a level for which you have spell slots."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Spellcasting Ability.",
-                    "entries": [
-                        "Charisma is your spellcasting ability for your sorcerer spells, since the power of your magic relies on your ability to project your will into the world. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a sorcerer spell you cast and when making an attack roll with one.",
-                        {
-                            "type": "abilityDc",
-                            "name": "Spell",
-                            "attributes": [
-                                "cha"
-                            ]
-                        },
-                        {
-                            "type": "abilityAttackMod",
-                            "name": "Spell",
-                            "attributes": [
-                                "cha"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Spellcasting Focus",
-                    "entries": [
-                        "You can use an {@item arcane focus|phb} as a spellcasting focus for your sorcerer spells."
-                    ]
-                }
+                "You can use this feature twice, and you regain all expended uses of it when you finish a Long Rest."
             ]
         },
         {
@@ -1132,19 +1134,7 @@
 				{
 					"type": "refClassFeature",
 					"classFeature": "Flexible Casting|Sorcerer|Ishiir|2"
-				}
-			]
-		},
-        {
-            "name": "Font of Magic Options",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Sorcerer",
-            "classSource": "Ishiir",
-            "level": 2,
-            "entries": [
-                "{@i 2nd-level sorcerer feature (enhances Font of Magic)}",
-                "When you gain the Font of Magic feature, you get access to the following ways to spend your sorcery points.",
+				},
                 {
                     "type": "refClassFeature",
                     "classFeature": "Empowering Reserves|Sorcerer|Ishiir|2"
@@ -1157,8 +1147,8 @@
                     "type": "refClassFeature",
                     "classFeature": "Sorcerous Fortitude|Sorcerer|Ishiir|2"
                 }
-            ]
-        },
+			]
+		},
 		{
 			"name": "Sorcery Points",
 			"source": "Ishiir",
@@ -1219,11 +1209,11 @@
             "page": 1,
             "className": "Sorcerer",
             "classSource": "Ishiir",
-            "level": 3,
+            "level": 2,
             "entries": [
-                "You gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.",
-                "You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.",
-                "When you finish a short or long rest, you may replace one metamagic you know with another one.",
+                "Because your magic flows from within, you can alter your spells to suit your needs; you gain two Metamagic options of your choice from the list below. You use the chosen options to temporarily modify spells you cast. To use an option, you must spend the number of Sorcery Points that it costs.",
+                "You can use only one Metamagic option on a spell when you cast it unless otherwise noted in one of those options.",
+                "When you finish a short or long rest you can replace one metamagic you know with another one. You gain two more options at Sorcerer level 10 and two more at Sorcerer level 17.",
                 {
                     "type": "options",
                     "count": 2,
@@ -1270,6 +1260,19 @@
                         }
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Sorcerous Origin",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "Choose a sorcerous origin, which describes the source of your innate magical power, from the list of available origins.",
+                "Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level."
             ]
         },
         {
@@ -1328,6 +1331,20 @@
             ]
         },
         {
+            "name": "Sorcery Incarnate",
+            "source": "Ishiir",
+            "page": 1,
+            "srd": true,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "level": 7,
+            "entries": [
+                "If you have no uses of Innate Sorcery left, you can use it if you spend 2 Sorcery Points when you take the Bonus Action to activate it.",
+                "In addition, while your Innate Sorcery feature is active, you can use up to two of your {@filter Metamagic|optionalfeatures|Feature Type=MM|source=Ishiir} options on each spell you cast.",
+                "Additionally, you add your Charisma modifier to the damage you deal with any Sorcerer cantrip."
+            ]
+        },
+        {
             "name": "Ability Score Improvement",
             "source": "Ishiir",
             "page": 1,
@@ -1361,7 +1378,7 @@
             "classSource": "Ishiir",
             "level": 10,
             "entries": [
-                "You learn an additional metamagic option."
+                "You learn two additional metamagic options."
             ]
         },
         {
@@ -1398,6 +1415,17 @@
             "entries": [
                 "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
+            ]
+        },
+        {
+            "name": "Epitome of Sorcery",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "level": 13,
+            "entries": [
+                "When you cast a Sorcerer spell of 1st level or higher that deals damage, you add your Charisma modifier to one damage roll of the spell. If the level of the spell is higher than your Charisma modifier, you add it to the damage instead."
             ]
         },
         {
@@ -1446,7 +1474,7 @@
             "classSource": "Ishiir",
             "level": 17,
             "entries": [
-                "You learn an additional metamagic option."
+                "You learn two additional metamagic options."
             ]
         },
         {
@@ -1494,16 +1522,7 @@
             "classSource": "Ishiir",
             "level": 20,
             "entries": [
-                "You learn to unleash the latent magic within you to its greatest potential. As a bonus action, you gain the following benefits for 1 minute, until you are incapacitated or you end this effect (no action required):",
-                {
-                    "type": "list",
-                    "items": [
-                        "You make spell attack rolls with advantage.",
-                        "Your Spell Save DC increases by 2.",
-                        "Once per turn, you can use a metamagic option without expending sorcery points on it."
-                    ]
-                },
-                "Once you use this feature, you can't use it again until you finish a long rest, unless you spend 5 sorcery points to use it again."
+                "While your Innate Sorcery feature is active, you can use one Metamagic option on each of your turns without spending Sorcery Points on it and your Spell Save DC is increased by 2 rather than 1."
             ]
         }
     ],
@@ -1517,7 +1536,7 @@
             "page": 1,
             "srd": true,
             "subclassFeatures": [
-                "Draconic Bloodline|Sorcerer|Ishiir|Draconic|Ishiir|1",
+                "Draconic Bloodline|Sorcerer|Ishiir|Draconic|Ishiir|3",
                 "Elemental Affinity|Sorcerer|Ishiir|Draconic|Ishiir|6",
                 "Dragon Wings|Sorcerer|Ishiir|Draconic|Ishiir|14",
                 "Draconic Presence|Sorcerer|Ishiir|Draconic|Ishiir|18"
@@ -1531,7 +1550,7 @@
             "classSource": "Ishiir",
             "page": 1,
             "subclassFeatures": [
-                "Wild Magic|Sorcerer|Ishiir|Wild|Ishiir|1",
+                "Wild Magic|Sorcerer|Ishiir|Wild|Ishiir|3",
                 "Bend Luck|Sorcerer|Ishiir|Wild|Ishiir|6",
                 "Controlled Chaos|Sorcerer|Ishiir|Wild|Ishiir|14",
                 "Master of Chaos|Sorcerer|Ishiir|Wild|Ishiir|18"
@@ -1545,7 +1564,7 @@
             "classSource": "Ishiir",
             "page": 1,
             "subclassFeatures": [
-                "Phoenix Sorcery|Sorcerer|Ishiir|Phoenix|Ishiir|1",
+                "Phoenix Sorcery|Sorcerer|Ishiir|Phoenix|Ishiir|3",
                 "Phoenix Spark|Sorcerer|Ishiir|Phoenix|Ishiir|6",
                 "Nourishing Fire|Sorcerer|Ishiir|Phoenix|Ishiir|14",
                 "Form of the Phoenix|Sorcerer|Ishiir|Phoenix|Ishiir|18"
@@ -1559,7 +1578,7 @@
             "classSource": "Ishiir",
             "page": 1,
             "subclassFeatures": [
-                "Sea Sorcery|Sorcerer|Ishiir|Sea|Ishiir|1",
+                "Sea Sorcery|Sorcerer|Ishiir|Sea|Ishiir|3",
                 "Watery Defense|Sorcerer|Ishiir|Sea|Ishiir|6",
                 "Shifting Form|Sorcerer|Ishiir|Sea|Ishiir|14",
                 "Water Soul|Sorcerer|Ishiir|Sea|Ishiir|18"
@@ -1573,7 +1592,7 @@
             "classSource": "Ishiir",
             "page": 1,
             "subclassFeatures": [
-                "Sword Mage|Sorcerer|Ishiir|Sword Mage|Ishiir|1",
+                "Sword Mage|Sorcerer|Ishiir|Sword Mage|Ishiir|3",
                 "Arcane Aegis|Sorcerer|Ishiir|Sword Mage|Ishiir|6",
                 "Arcane Edge|Sorcerer|Ishiir|Sword Mage|Ishiir|14",
                 "Sword Sage's Aegis|Sorcerer|Ishiir|Sword Mage|Ishiir|18"
@@ -1587,7 +1606,7 @@
             "classSource": "Ishiir",
             "page": 1,
             "subclassFeatures": [
-                "Pyromancer|Sorcerer|Ishiir|Pyromancer|Ishiir|1",
+                "Pyromancer|Sorcerer|Ishiir|Pyromancer|Ishiir|3",
                 "Wildfire|Sorcerer|Ishiir|Pyromancer|Ishiir|6",
                 "Living Bomb|Sorcerer|Ishiir|Pyromancer|Ishiir|14",
                 "Blazing Soul|Sorcerer|Ishiir|Pyromancer|Ishiir|18"
@@ -1643,7 +1662,7 @@
                 }
             ],
             "subclassFeatures": [
-                "Divine Soul|Sorcerer|Ishiir|Divine Soul|Ishiir|1",
+                "Divine Soul|Sorcerer|Ishiir|Divine Soul|Ishiir|3",
                 "Empowered Healing|Sorcerer|Ishiir|Divine Soul|Ishiir|6",
                 "Otherworldly Wings|Sorcerer|Ishiir|Divine Soul|Ishiir|14",
                 "Unearthly Recovery|Sorcerer|Ishiir|Divine Soul|Ishiir|18"
@@ -1657,7 +1676,7 @@
             "classSource": "Ishiir",
             "page": 1,
             "subclassFeatures": [
-                "Storm Sorcery|Sorcerer|Ishiir|Storm|Ishiir|1",
+                "Storm Sorcery|Sorcerer|Ishiir|Storm|Ishiir|3",
                 "Heart of the Storm|Sorcerer|Ishiir|Storm|Ishiir|6",
                 "Storm Guide|Sorcerer|Ishiir|Storm|Ishiir|6",
                 "Storm's Fury|Sorcerer|Ishiir|Storm|Ishiir|14",
@@ -1672,10 +1691,10 @@
             "classSource": "Ishiir",
             "page": 1,
             "subclassFeatures": [
-                "Giant Soul|Sorcerer|Ishiir|Giant Soul|Ishiir|1",
-                "Soul of Lost Ostoria|Sorcerer|Ishiir|Giant Soul|Ishiir|6",
-                "Rage of Fallen Ostoria|Sorcerer|Ishiir|Giant Soul|Ishiir|14",
-                "Blessing of the All Father|Sorcerer|Ishiir|Giant Soul|Ishiir|18"
+                "Giant Soul|Sorcerer|Ishiir|Giant Soul|Ishiir|3",
+                "Jotun Might|Sorcerer|Ishiir|Giant Soul|Ishiir|6",
+                "Jotun Rage|Sorcerer|Ishiir|Giant Soul|Ishiir|14",
+                "Jotun Blessing|Sorcerer|Ishiir|Giant Soul|Ishiir|18"
             ]
         },
         {
@@ -1713,7 +1732,7 @@
                 }
             ],
             "subclassFeatures": [
-                "Aberrant Mind|Sorcerer|Ishiir|Aberrant Mind|Ishiir|1",
+                "Aberrant Mind|Sorcerer|Ishiir|Aberrant Mind|Ishiir|3",
                 "Psionic Sorcery|Sorcerer|Ishiir|Aberrant Mind|Ishiir|6",
                 "Psychic Defenses|Sorcerer|Ishiir|Aberrant Mind|Ishiir|6",
                 "Revelation in Flesh|Sorcerer|Ishiir|Aberrant Mind|Ishiir|14",
@@ -1754,7 +1773,7 @@
                 }
             ],
             "subclassFeatures": [
-                "Clockwork Soul|Sorcerer|Ishiir|Clockwork Soul|Ishiir|1",
+                "Clockwork Soul|Sorcerer|Ishiir|Clockwork Soul|Ishiir|3",
                 "Bastion of Law|Sorcerer|Ishiir|Clockwork Soul|Ishiir|6",
                 "Trance of Order|Sorcerer|Ishiir|Clockwork Soul|Ishiir|14",
                 "Clockwork Cavalcade|Sorcerer|Ishiir|Clockwork Soul|Ishiir|18"
@@ -1768,7 +1787,7 @@
             "classSource": "Ishiir",
             "page": 1,
             "subclassFeatures": [
-                "Mage of Prismari|Generic|Ishiir|Prismari|Ishiir|1",
+                "Mage of Prismari|Generic|Ishiir|Prismari|Ishiir|3",
                 "Favored Medium|Generic|Ishiir|Prismari|Ishiir|6",
                 "Focused Expression|Generic|Ishiir|Prismari|Ishiir|10",
                 "Impeccable Physicality|Generic|Ishiir|Prismari|Ishiir|14"
@@ -1804,7 +1823,7 @@
                 }
             ],
             "subclassFeatures": [
-                "Mage of Quandrix|Generic|Ishiir|Quandrix|Ishiir|1",
+                "Mage of Quandrix|Generic|Ishiir|Quandrix|Ishiir|3",
                 "Velocity Shift|Generic|Ishiir|Quandrix|Ishiir|6",
                 "Null Equation|Generic|Ishiir|Quandrix|Ishiir|10",
                 "Quantum Tunneling|Generic|Ishiir|Quandrix|Ishiir|14"
@@ -1880,7 +1899,7 @@
                 }
             ],
             "subclassFeatures": [
-                "Lunar Magic|Sorcerer|Ishiir|Lunar Magic|Ishiir|1",
+                "Lunar Magic|Sorcerer|Ishiir|Lunar Magic|Ishiir|3",
                 "Lunar Boons|Sorcerer|Ishiir|Lunar Magic|Ishiir|6",
                 "Waxing and Waning|Sorcerer|Ishiir|Lunar Magic|Ishiir|6",
                 "Lunar Empowerment|Sorcerer|Ishiir|Lunar Magic|Ishiir|14",
@@ -1904,7 +1923,7 @@
                 }
             ],
             "subclassFeatures": [
-                "Shadow Magic|Sorcerer|Ishiir|Shadow|Ishiir|1",
+                "Shadow Magic|Sorcerer|Ishiir|Shadow|Ishiir|3",
                 "Hound of Ill Omen|Sorcerer|Ishiir|Shadow|Ishiir|6",
                 "Shadow Walk|Sorcerer|Ishiir|Shadow|Ishiir|14",
                 "Umbral Form|Sorcerer|Ishiir|Shadow|Ishiir|18"
@@ -1944,7 +1963,7 @@
                 }
             ],
             "subclassFeatures": [
-                "Cryomancer|Sorcerer|Ishiir|Cryomancer|Ishiir|1",
+                "Cryomancer|Sorcerer|Ishiir|Cryomancer|Ishiir|3",
                 "Aegis of Rime|Sorcerer|Ishiir|Cryomancer|Ishiir|6",
                 "Deep Freeze|Sorcerer|Ishiir|Cryomancer|Ishiir|14",
                 "Frozen Soul|Sorcerer|Ishiir|Cryomancer|Ishiir|18"
@@ -1960,7 +1979,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Aberrant Mind",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "An alien influence has wrapped its tendrils around your mind, giving you psionic power. You can now touch other minds with that power and alter the world around you by using it to control the magical energy of the multiverse. Will this power shine from you as a hopeful beacon to others? Or will you be a source of terror to those who feel the stab of your mind and witness the strange manifestations of your might?",
                 "As an Aberrant Mind sorcerer, you decide how you acquired your powers. Were you born with them? Or did an event later in life leave you shining with psionic awareness? Consult the Aberrant Origins table for a possible origin of your power.",
@@ -2004,11 +2023,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Psionic Spells|Sorcerer|Ishiir|Aberrant Mind|Ishiir|1"
+                    "subclassFeature": "Psionic Spells|Sorcerer|Ishiir|Aberrant Mind|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Telepathic Speech|Sorcerer|Ishiir|Aberrant Mind|Ishiir|1"
+                    "subclassFeature": "Telepathic Speech|Sorcerer|Ishiir|Aberrant Mind|Ishiir|3"
                 }
             ]
         },
@@ -2020,7 +2039,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Aberrant Mind",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You learn additional spells when you reach certain levels in this class, as shown on the Psionic Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
@@ -2069,7 +2088,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Aberrant Mind",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You can form a telepathic connection between your mind and the mind of another. As a bonus action, choose one creature you can see within 30 feet of you. You and the chosen creature can speak telepathically with each other while the two of you are within a number of miles of each other equal to your Charisma modifier (minimum of 1 mile). To understand each other, you each must speak mentally in a language the other knows.",
@@ -2087,8 +2106,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "When you cast any spell of 1st level or higher from your Psionic Spells feature, you can cast it by expending a spell slot as normal or by spending a number of sorcery points equal to the spell's level.",
-                "If you cast the spell using sorcery points, it requires no verbal or somatic components, and it requires no material components, unless they are consumed by the spell."
+                "When you cast any level 1+ spell from your Psionic Spells feature, you can cast it by expending a spell slot as normal or by spending a number of Sorcery Points equal to the spell's level. If you cast the spell using Sorcery Points, it requires no Verbal or Somatic components, and it requires no Material components unless they are consumed by the spell or have a cost specified in it."
             ]
         },
         {
@@ -2139,7 +2157,7 @@
             "level": 18,
             "header": 2,
             "entries": [
-                "You can unleash your aberrant power as a space-warping anomaly. As an action, you can teleport to an unoccupied space you can see within 120 feet of you. Immediately after you disappear, each creature within 30 feet of the space you left must make a Strength saving throw against your spell save DC. On a failed save, a creature takes {@damage 4d10} force damage and is pulled straight toward the space you left, ending in an unoccupied space as close to your former space as possible. On a successful save, the creature takes half as much damage and isn't pulled.",
+                "You can unleash your aberrant power as a space-warping anomaly. As a bonus action, you can teleport to an unoccupied space you can see within 120 feet of you. Immediately after you disappear, each creature within 30 feet of the space you left must make a Strength saving throw against your spell save DC. On a failed save, a creature takes {@damage 4d10} force damage and is pulled straight toward the space you left, ending in an unoccupied space as close to your former space as possible. On a successful save, the creature takes half as much damage and isn't pulled.",
                 "Once you use this feature, you can't do so again until you finish a long rest, unless you spend 5 sorcery points to use it again."
             ]
         },
@@ -2151,16 +2169,16 @@
             "classSource": "Ishiir",
             "subclassShortName": "Clockwork Soul",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "The cosmic force of order has suffused you with magic. That power arises from Mechanus or a realm like it-a plane of existence shaped entirely by clockwork efficiency. You, or someone from your lineage, might have become entangled in the machinations of the modrons, the orderly beings who inhabit Mechanus. Perhaps your ancestor even took part in the Great Modron March. Whatever its origin within you, the power of order can seem strange to others, but for you, it is part of a vast and glorious system.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Clockwork Magic|Sorcerer|Ishiir|Clockwork Soul|Ishiir|1"
+                    "subclassFeature": "Clockwork Magic|Sorcerer|Ishiir|Clockwork Soul|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Restore Balance|Sorcerer|Ishiir|Clockwork Soul|Ishiir|1"
+                    "subclassFeature": "Restore Balance|Sorcerer|Ishiir|Clockwork Soul|Ishiir|3"
                 }
             ]
         },
@@ -2172,7 +2190,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Clockwork Soul",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You learn additional spells when you reach certain levels in this class, as shown on the Clockwork Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
@@ -2260,11 +2278,11 @@
             "classSource": "Ishiir",
             "subclassShortName": "Clockwork Soul",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "Your connection to the plane of absolute order allows you to equalize chaotic moments. When a creature you can see within 60 feet of you is about to roll a {@dice d20} with advantage or disadvantage, you can use your reaction to prevent the roll from being affected by advantage and disadvantage.",
-                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                "Your connection to the plane of absolute order allows you to equalize chaotic moments. When a creature you can see within 60 feet of yourself is about to roll a d20 with Advantage or Disadvantage, you can take a Reaction to prevent the roll from being affected by Advantage and Disadvantage.",
+                "You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
             ]
         },
         {
@@ -2331,7 +2349,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Divine Soul",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Sometimes the spark of magic that fuels a sorcerer comes from a divine source that glimmers within the soul. Having such a blessed soul is a sign that your innate magic might come from a distant but powerful familial connection to a divine being. Perhaps your ancestor was an angel, transformed into a mortal and sent to fight in a god's name.",
                 "Or your birth might align with an ancient prophecy, marking you as a servant of the gods or a chosen vessel of divine magic.",
@@ -2339,11 +2357,11 @@
                 "In some cultures, only those who can claim the power of a Divine Soul may command religious power. In these lands, ecclesiastical positions are dominated by a few bloodlines and preserved over generations.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Divine Magic|Sorcerer|Ishiir|Divine Soul|Ishiir|1"
+                    "subclassFeature": "Divine Magic|Sorcerer|Ishiir|Divine Soul|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Favored by the Gods|Sorcerer|Ishiir|Divine Soul|Ishiir|1"
+                    "subclassFeature": "Favored by the Gods|Sorcerer|Ishiir|Divine Soul|Ishiir|3"
                 }
             ]
         },
@@ -2355,7 +2373,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Divine Soul",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "Your link to the divine allows you to learn spells from the cleric class. When your Spellcasting feature lets you learn or replace a sorcerer cantrip or a sorcerer spell of 1st level or higher, you can choose the new spell from the cleric spell list or the sorcerer spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes a sorcerer spell for you.",
@@ -2371,10 +2389,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Divine Soul",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "Divine power guards your destiny. If you fail a saving throw or miss with an attack roll, you can roll {@dice 2d4} and add it to the total, possibly changing the outcome. Once you use this feature, you can't use it again until you finish a short or long rest."
+                "Divine power guards your destiny. If you fail a saving throw or miss with an attack roll, you can roll {@dice 2d4} and add it to the total, possibly changing the outcome. Once you use this feature, you can't use it again until you finish a short or long rest, unless you use 2 sorcery points to use it again."
             ]
         },
         {
@@ -2421,7 +2439,7 @@
             "header": 2,
             "entries": [
                 "You gain the ability to overcome grievous injuries. As a bonus action when you have fewer than half of your hit points remaining, you can regain a number of hit points equal to half your hit point maximum.",
-                "Once you use this feature, you can't use it again until you finish a long rest."
+                "Once you use this feature, you can't use it again until you finish a long rest, unless you use 6 sorcery points to use it again."
             ]
         },
         {
@@ -2432,20 +2450,20 @@
             "classSource": "Ishiir",
             "subclassShortName": "Draconic",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors. Most often, sorcerers with this origin trace their descent back to a mighty sorcerer of ancient times who made a bargain with a dragon or who might even have claimed a dragon parent. Some of these bloodlines are well established in the world, but most are obscure. Any given sorcerer could be the first of a new bloodline, as a result of a pact or some other exceptional circumstance.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Dragon Ancestor|Sorcerer|Ishiir|Draconic|Ishiir|1"
+                    "subclassFeature": "Dragon Ancestor|Sorcerer|Ishiir|Draconic|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Draconic Resilience|Sorcerer|Ishiir|Draconic|Ishiir|1"
+                    "subclassFeature": "Draconic Resilience|Sorcerer|Ishiir|Draconic|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Draconic Magic|Sorcerer|Ishiir|Draconic|Ishiir|1"
+                    "subclassFeature": "Draconic Magic|Sorcerer|Ishiir|Draconic|Ishiir|3"
                 }
             ]
         },
@@ -2457,7 +2475,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Draconic",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You learn additional spells when you reach certain levels in this class. These spells depend on the damage type of your chosen ancestry, as shown in the tables below. The spells count as sorcerer spells for you, but they don't count against the number of sorcerer spells you know.",
@@ -2642,10 +2660,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Draconic",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "As magic flows through your body, it causes physical traits of your dragon ancestors to emerge. Your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class.",
+                "As magic flows through your body, it causes physical traits of your dragon ancestors to emerge. Your hit point maximum increases by 3 and increases by 1 again whenever you gain a level in this class.",
                 "Additionally, parts of your skin are covered by a thin sheen of dragon-like scales. When you aren't wearing armor, your AC equals 10 + your Dexterity modifier + your Charisma modifier."
             ]
         },
@@ -2658,7 +2676,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Draconic",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You choose one type of dragon as your ancestor. The damage type associated with each dragon is used by features you gain later.",
@@ -2731,10 +2749,11 @@
             "level": 6,
             "header": 2,
             "consumes": {
-                "name": "Sorcery Points"
+                "name": "Sorcery Points",
+                "amount": 2
             },
             "entries": [
-                "When you cast a spell that deals damage of the type associated with your draconic ancestry, you can add your Charisma modifier to one damage roll of that spell. At the same time, you can spend 1 sorcery point to gain resistance to that damage type for 1 hour."
+                "You gain resistance to the damage type associated with your draconic ancestry. Additionally, as an action, you can spend 2 sorcery points to give yourself immunity to that damage type for 1 hour."
             ]
         },
         {
@@ -2769,7 +2788,9 @@
                 "amount": 5
             },
             "entries": [
-                "You can channel the dread presence of your dragon ancestor, causing those around you to become awestruck or {@condition Frightened|Ishiir}. As a bonus action, you can spend 5 sorcery points to draw on this power and exude an aura of awe or fear (your choice) to a distance of 60 feet. For 1 minute, each hostile creature that starts its turn in this aura must succeed on a Wisdom saving throw or be {@condition Charmed|Ishiir} (if you chose awe) or {@condition Frightened|Ishiir} (if you chose fear) until the aura ends. A creature that succeeds on this saving throw is immune to your aura for 24 hours."
+                "You can channel the dread presence of your dragon ancestor, causing those around you to become awestruck or frightened. As a bonus action, you draw on this power and exude an aura of awe or fear (your choice) to a distance of 60 feet. For 1 minute, each hostile creature that starts its turn in this aura or enters it for the first time on a turn must succeed on a Wisdom saving throw or be {@condition Charmed|Ishiir} (if you chose awe) or {@condition Frightened|Ishiir} (if you chose fear) until the aura ends. A creature that succeeds on this saving throw is immune to your aura for 24 hours.",
+                "Additionally, any spell that deals the damage type associated with your draconic ancestry is treated as 1 spell level higher for the purposes of its damage.",
+                "You cannot use this feature again until you have finished a long rest, unless you spend 5 sorcery points to use it again."
             ]
         },
         {
@@ -2780,16 +2801,16 @@
             "classSource": "Ishiir",
             "subclassShortName": "Giant Soul",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "The giants once dwelled in a fabled realm known as Ostoria, a paradise for their folk that reflected their mastery of the mortal realm. In time, Ostoria fell, and the giants were scattered and broken. During that mythic era, the giants granted a few chosen individuals among the small folk a shard of their great power. These favored people were caught in the same tragedy that sundered Ostoria. Since that time, they have spread across the many worlds of the multiverse. Now and again, one of their descendants manifests the gifts imparted by the giants, granting them sorcerous magic that allows them to command the elements and gain the might of a giant.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Jotun Resilience|Sorcerer|Ishiir|Giant Soul|Ishiir|1"
+                    "subclassFeature": "Jotun Resilience|Sorcerer|Ishiir|Giant Soul|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Mark of the Ordning|Sorcerer|Ishiir|Giant Soul|Ishiir|1"
+                    "subclassFeature": "Mark of the Ordning|Sorcerer|Ishiir|Giant Soul|Ishiir|3"
                 }
             ]
         },
@@ -2801,11 +2822,11 @@
             "classSource": "Ishiir",
             "subclassShortName": "Giant Soul",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
-                "The resilience of giants flows through your body. Your hit point maximum increases by 1, and it increases by 1 again whenever you gain a level in this class.",
-                "Additionally, when you aren't wearing armor, your AC equals 13 + your Strength modifier."
+                "The resilience of giants flows through your body. Your hit point maximum increases by 3, and it increases by 1 again whenever you gain a level in this class.",
+                "Additionally, when you aren't wearing armor, your AC equals 10 + your Strength modifier + your Charisma modifier."
             ]
         },
         {
@@ -2816,7 +2837,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Giant Soul",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You learn additional spells when you reach certain levels in this class. These spells depend on your chosen giant heritage, as shown in the tables below. The spells count as sorcerer spells for you, but they don't count against the number of sorcerer spells you know.",
@@ -3027,7 +3048,7 @@
             ]
         },
         {
-            "name": "Soul of Lost Ostoria",
+            "name": "Jotun Might",
             "source": "Ishiir",
             "page": 1,
             "className": "Sorcerer",
@@ -3037,53 +3058,12 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You gain a benefit whenever you cast one of the spells granted by your Mark of the Ordning Feature.",
-                {
-                    "type": "entries",
-                    "name": "Cloud Giant",
-                    "entries": [
-                        "Immediately after you cast any of your Mark of the Ordning spells, you can magically teleport as a bonus action. You teleport to an unoccupied space you can see that is no farther away than a number of feet equal to 10 x your Constitution modifier."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Fire Giant",
-                    "entries": [
-                        "You gain a bonus to the damage rolls of your Mark of the Ordning spells. The bonus equals your Charisma modifier (minimum of +1)."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Frost Giant",
-                    "entries": [
-                        "Immediately after you cast any of your Mark of the Ordning spells, you gain temporary hit points equal to your proficiency bonus + Charisma modifier (minimum of 1). But if the spell is {@spell armor of Agathys|Ishiir}, you instead increase its temporary hit points by an amount equal to your proficiency bonus + Charisma modifier (minimum of 1)."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Hill Giant",
-                    "entries": [
-                        "Immediately after you cast any of your Mark of the Ordning spells, you can target up to two creatures within 5 feet of you that you can see. Each target must succeed on a Strength saving throw against your spell save DC or be pushed a number of feet away from you equal to 5 x your Constitution modifier (minimum of +1). A target can choose to fail this save."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Stone Giant",
-                    "entries": [
-                        "Immediately after you cast any of your Mark of the Ordning spells, you gain a bonus to AC equal to your Charisma modifier (minimum of +1) until the end of your next turn."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Storm Giant",
-                    "entries": [
-                        "Immediately after you cast any of your Mark of the Ordning spells, up to three creatures of your choice that you can see within 30 feet of you take lightning damage equal to your proficiency bonus + Charisma modifier (minimum of 1)."
-                    ]
-                }
+                "You add your Charisma modifier to your Strength checks.",
+                "Additionally, your melee weapon attacks deal an additional {@damage 1d10} damage of the weapon's type. This extra damage increases to {@damage 2d10} at 11th level and {@damage 3d10} at 17th level."
             ]
         },
         {
-            "name": "Rage of Fallen Ostoria",
+            "name": "Jotun Rage",
             "source": "Ishiir",
             "page": 1,
             "className": "Sorcerer",
@@ -3102,14 +3082,14 @@
                         "Your reach increases by 5 feet.",
                         "Your walking speed increases by 5 feet.",
                         "You have advantage on Strength checks and Strength saving throws.",
-                        "You gain a bonus to the damage rolls of your melee weapon attacks; the bonus equals your Charisma modifier (minimum of +1)."
+                        "If you hit a creature with a melee weapon attack, you can shove or grapple that creature as part of the same attack."
                     ]
                 },
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+                "Once you use this feature, you can't use it again until you finish a short or long rest, unless you spend 4 sorcery points to use this feature again."
             ]
         },
         {
-            "name": "Blessing of the All Father",
+            "name": "Jotun Blessing",
             "source": "Ishiir",
             "page": 1,
             "className": "Sorcerer",
@@ -3119,8 +3099,8 @@
             "level": 18,
             "header": 2,
             "entries": [
-                "Your Constitution score increases by 2, up to a maximum of 22.",
-                "In addition, you can now use Rage of Fallen Ostoria twice between rests, but no more than once on a turn. If you use that feature while under its effects, its increases to your size, hit points, reach, walking speed, and damage bonus to melee weapon attacks are cumulative."
+                "Your Strength and Constitution scores increase by 2, up to a maximum of 22.",
+                "In addition, you can now use Jotun Rage twice between rests, but no more than once on a turn. If you use that feature while under its effects, its increases to your size, hit points, reach, and walking speed are cumulative."
             ]
         },
         {
@@ -3131,7 +3111,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Lunar Magic",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "On many worlds, the moon is a revered celestial body with magical properties. On Krynn, the gods of magic are associated with the world's three moons. On the world of Toril, the god Selûne uses the light of the moon to battle darkness. On Eberron, scholars of the Draconic Prophecy decipher ancient secrets from the waxing and waning of that world's twelve moons.",
                 "You, or someone from your lineage, has been exposed to the concentrated magic of the moon (or moons) of your world, imbuing you with lunar magic. Perhaps your ancestor was involved in a druidic ritual involving an eclipse, or maybe a mystical fragment of a moon crashed near you. However you came to have your magic, your connection to the moon is obvious when you cast sorcerer spells. Consult the Manifestations of Lunar Magic table, then choose or randomly determine how your connection to the moon manifests while you cast your sorcerer spells.",
@@ -3374,7 +3354,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Phoenix",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Your power draws from the immortal flame that fuels the legendary phoenix. You or your ancestors perhaps rendered a phoenix a great service, or you were born in its presence. Whatever the cause, a shard of the phoenix's power dwells within you.",
                 "That power is a mixed blessing. Like the mythical creature, you can invoke fiery energy and gain the ability to cheat death itself. This power comes at a cost. The fire within you seethes, demanding to be unleashed. You sometimes find yourself absentmindedly feeding fires. You can't bear to allow a fire to sputter out. You feel most comfortable while holding a lit torch or sitting in front of a campfire.",
@@ -3420,15 +3400,15 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Ignite|Sorcerer|Ishiir|Phoenix|Ishiir|1"
+                    "subclassFeature": "Ignite|Sorcerer|Ishiir|Phoenix|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Mantle of Flame|Sorcerer|Ishiir|Phoenix|Ishiir|1"
+                    "subclassFeature": "Mantle of Flame|Sorcerer|Ishiir|Phoenix|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Phoenix Magic|Sorcerer|Ishiir|Phoenix|Ishiir|1"
+                    "subclassFeature": "Phoenix Magic|Sorcerer|Ishiir|Phoenix|Ishiir|3"
                 }
             ]
         },
@@ -3440,7 +3420,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Phoenix",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You can unleash the phoenix fire that blazes within you.",
@@ -3449,7 +3429,7 @@
                     "type": "list",
                     "items": [
                         "You shed bright light in a 30-foot radius and dim light for an additional 30 feet.",
-                        "Any creature takes fire damage equal to your Charisma modifier if it hits you with a melee attack from within 5 feet of you or if it touches you.",
+                        "Any creature takes fire damage equal to your Charisma modifier if it hits you with a melee attack from within 10 feet of you or if it touches you.",
                         "Whenever you roll fire damage on your turn, the roll gains a bonus to equal to your Charisma modifier."
                     ]
                 },
@@ -3464,7 +3444,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Phoenix",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You learn additional spells when you reach certain levels in this class, as shown on the table below. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
@@ -3552,7 +3532,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Phoenix",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You gain the ability to start fires with a touch. As an action, you can magically ignite a flammable object you touch with your hand—an object such as a torch, a piece of tinder, or the hem of drapes."
@@ -3580,16 +3560,16 @@
             "classSource": "Ishiir",
             "subclassShortName": "Pyromancer",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Your innate magic manifests in fire. You are your fire, and your fire is you.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Heart of Fire|Sorcerer|Ishiir|Pyromancer|Ishiir|1"
+                    "subclassFeature": "Heart of Fire|Sorcerer|Ishiir|Pyromancer|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Pyromancy|Sorcerer|Ishiir|Pyromancer|Ishiir|1"
+                    "subclassFeature": "Pyromancy|Sorcerer|Ishiir|Pyromancer|Ishiir|3"
                 }
             ]
         },
@@ -3601,7 +3581,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Pyromancer",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You learn additional spells when you reach certain levels in this class, as shown on the table below. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
@@ -3663,7 +3643,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Pyromancer",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "Whenever you hit a creature with a spell of 1st level or higher that deals fire damage or it fails a save against such a spell, you also set it aflame.",
@@ -3697,9 +3677,10 @@
             "level": 18,
             "header": 2,
             "entries": [
-                "You can spend 6 sorcery points as a bonus action to magically transform into a creature of living flame. In this form, you have resistance to piercing, bludgeoning, and slashing damage as well as immunity to fire damage and poison.",
-                "Additionally, if a creature hits you with a melee attack from within 5 ft or touches you, it takes fire damage equal to half your sorcerer level and you add your Charisma modifier to the damage of all the other features gained from this subclass that deal fire damage.",
-                "You remain in this form for 1 minute. It ends early if you are incapacitated, if you die, or if you dismiss it as a bonus action."
+                "As a bonus action, you can magically transform into a creature of living flame. In this form, you have resistance to piercing, bludgeoning, and slashing damage as well as immunity to fire damage and poison.",
+                "Additionally, if a creature hits you with a melee attack from within 10 ft or touches you, it takes fire damage equal to half your sorcerer level. Additionally, you add your Charisma modifier to the damage of all the other features gained from this subclass that deal fire damage.",
+                "You remain in this form for 1 minute. It ends early if you are {@condition Incapacitated|Ishiir}, if you die, or if you dismiss it as a bonus action.",
+                "Once you have used this feature, you cannot use it again until you have finished a Long Rest, unless you spend 6 sorcery points to use it again."
             ]
         },
         {
@@ -3710,21 +3691,21 @@
             "classSource": "Ishiir",
             "subclassShortName": "Sea",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "The power of water is the strength of flexibility, resilience, and a relentless nature. Water parts to allow a ship to sail over it or a diver to plunge into it, but their passing leaves no mark. Water flowing down a mountain reaches the sea. It might bend and turn across valleys and down hillsides, but it slowly and steadily returns to the waves. Those whose souls are touched by the power of elemental water command a similar power.",
                 "Your heritage ties to powerful creatures of the sea, such as nereids, the lords of the merfolk, and elemental powers. Like a river, you feel the call of the ocean. The call is ever present in your heart, and you are never completely at peace until you are near the sea.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Soul of the Sea|Sorcerer|Ishiir|Sea|Ishiir|1"
+                    "subclassFeature": "Soul of the Sea|Sorcerer|Ishiir|Sea|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Curse of the Sea|Sorcerer|Ishiir|Sea|Ishiir|1"
+                    "subclassFeature": "Curse of the Sea|Sorcerer|Ishiir|Sea|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Sea Magic|Sorcerer|Ishiir|Sea|Ishiir|1"
+                    "subclassFeature": "Sea Magic|Sorcerer|Ishiir|Sea|Ishiir|3"
                 }
             ]
         },
@@ -3736,7 +3717,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Sea",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You learn additional spells when you reach certain levels in this class, as shown on the table below. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
@@ -3784,7 +3765,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Sea",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You learn the secret of infusing your spells with a watery curse.",
@@ -3826,7 +3807,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Sea",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "Your tie to the sea grants you the ability to breathe underwater, and you have a swim speed equal to your walking speed. If you already have a swimming speed, that swimming speed instead increases by 30 feet."
@@ -3844,7 +3825,7 @@
             "header": 2,
             "entries": [
                 "You gain resistance to fire damage.",
-                "You also gain the ability to defend yourself by momentarily assuming a watery form. As a reaction when you are hit by an attack and take bludgeoning, piercing, or slashing damage from it, you can reduce that damage by an amount equal to your sorcerer level plus your Charisma score, and then you can move up to 30 feet without provoking opportunity attacks. Once you use this special reaction, you can't use it again until you finish a short or long rest."
+                "You also gain the ability to defend yourself by momentarily assuming a watery form. As a reaction when you are hit by an attack and take bludgeoning, piercing, or slashing damage from it, you can reduce that damage by an amount equal to your sorcerer level plus your Charisma score, and then you can move up to 30 feet without provoking opportunity attacks. Once you use this special reaction, you can't use it again until you finish a short or long rest, or you use 3 sorcery points to use this feature again."
             ]
         },
         {
@@ -3860,7 +3841,8 @@
             "entries": [
                 "You gain the ability to enter a liquid state while moving.",
                 "When you move on your turn, you take only half damage from opportunity attacks, and you can move through any enemy's space but can't willingly end your move there.",
-                "On your turn, you can move through any space that is at least 3 inches in diameter and do so without squeezing. When you stop moving, the regular squeezing rules apply if you're in a space one size smaller than you. You can't willingly stop in a space smaller than that, and if you're forced to do so, you immediately flow to the nearest space that can fit you, back along the path of your movement."
+                "On your turn, you can move through any space that is at least 3 inches in diameter and do so without squeezing. When you stop moving, the regular squeezing rules apply if you're in a space one size smaller than you. You can't willingly stop in a space smaller than that, and if you're forced to do so, you immediately flow to the nearest space that can fit you, back along the path of your movement.",
+                "If you start your turn with the {@condition Grappled|Ishiir} and/or {@condition Restrained|Ishiir} condition, you can spend half your speed to immediately end those effects on you."
             ]
         },
         {
@@ -3893,7 +3875,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Shadow",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "You are a creature of shadow, for your innate magic comes from the Shadowfell itself. You might trace your lineage to an entity from that place, or perhaps you were exposed to its fell energy and transformed by it.",
                 "The power of shadow magic casts a strange pall over your physical presence. The spark of life that sustains you is muffled, as if it struggles to remain viable against the dark energy that imbues your soul. At your option, you can pick from or roll on the Shadow Sorcerer Quirks table to create a quirk for your character.",
@@ -3937,11 +3919,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Eyes of the Dark|Sorcerer|Ishiir|Shadow|Ishiir|1"
+                    "subclassFeature": "Eyes of the Dark|Sorcerer|Ishiir|Shadow|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Strength of the Grave|Sorcerer|Ishiir|Shadow|Ishiir|1"
+                    "subclassFeature": "Strength of the Grave|Sorcerer|Ishiir|Shadow|Ishiir|3"
                 }
             ]
         },
@@ -3953,7 +3935,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Shadow",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. This feature does not work if the triggering damage was radiant or a critical hit. You can't use this feature again until you finish a long rest.",
@@ -4002,7 +3984,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Shadow",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You have {@sense darkvision} with a range of 120 feet.",
@@ -4061,13 +4043,10 @@
             "subclassSource": "Ishiir",
             "level": 18,
             "header": 2,
-            "consumes": {
-                "name": "Sorcery Points",
-                "amount": 6
-            },
             "entries": [
-                "You can spend 6 sorcery points as a bonus action to magically transform yourself into a shadowy form. In this form, you have resistance to all damage except force and radiant damage, and you can move through other creatures and objects as if they were {@quickref difficult terrain||3}. You take 5 force damage if you end your turn inside an object.",
-                "You remain in this form for 1 minute. It ends early if you are {@condition Incapacitated|Ishiir}, if you die, or if you dismiss it as a bonus action."
+                "You can magically transform yourself into a shadowy form as a bonus action. In this form, you have resistance to all damage except force and radiant damage, and you can move through other creatures and objects as if they were {@quickref difficult terrain||3}. You take 5 force damage if you end your turn inside an object.",
+                "You remain in this form for 1 minute. It ends early if you are {@condition Incapacitated|Ishiir}, if you die, or if you dismiss it as a bonus action.",
+                "Once you have used this feature, you cannot use it again until you have finished a Long Rest, unless you spend 6 sorcery points to use it again."
             ]
         },
         {
@@ -4078,20 +4057,20 @@
             "classSource": "Ishiir",
             "subclassShortName": "Sword Mage",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Your link to sword magic grants you extraordinary resilience, and sword mages have a natural affinity for combat. A steel blade feels like a natural extension of your body, and sorcerers with this origin have a knack for wielding both shields and weapons. In combat your place is amid the fray. You rely on your magic and metal weapons to shield you from harm and overwhelm your foes.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiencies|Sorcerer|Ishiir|Sword Mage|Ishiir|1"
+                    "subclassFeature": "Bonus Proficiencies|Sorcerer|Ishiir|Sword Mage|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Sword and Sorcery|Sorcerer|Ishiir|Sword Mage|Ishiir|1"
+                    "subclassFeature": "Sword and Sorcery|Sorcerer|Ishiir|Sword Mage|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Tempered Blade|Sorcerer|Ishiir|Sword Mage|Ishiir|1"
+                    "subclassFeature": "Tempered Blade|Sorcerer|Ishiir|Sword Mage|Ishiir|3"
                 }
             ]
         },
@@ -4103,7 +4082,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Sword Mage",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You gain proficiency with shields, simple weapons, and martial weapons."
@@ -4117,7 +4096,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Sword Mage",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "Your connection to sword magic gives you extra fortitude. Your hit point maximum increases by 1, and it increases by 1 again whenever you gain a level in this class.",
@@ -4132,7 +4111,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Sword Mage",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You learn additional spells when you reach certain levels in this class, as shown on the table below. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
@@ -4225,17 +4204,17 @@
             "classSource": "Ishiir",
             "subclassShortName": "Storm",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Your innate magic comes from the power of elemental air. Many with this power can trace their magic back to a near-death experience caused by the Great Rain, but perhaps you were born during a howling gale so powerful that folk still tell stories of it, or your lineage might include the influence of potent air creatures such as djinn. Whatever the case, the magic of the storm permeates your being.",
                 "Storm sorcerers are invaluable members of a ship's crew. Their magic allows them to exert control over wind and weather in their immediate area. Their abilities also prove useful in repelling attacks by sahuagin, pirates, and other waterborne threats.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Wind Speaker|Sorcerer|Ishiir|Storm|Ishiir|1"
+                    "subclassFeature": "Wind Speaker|Sorcerer|Ishiir|Storm|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Tempestuous Magic|Sorcerer|Ishiir|Storm|Ishiir|1"
+                    "subclassFeature": "Tempestuous Magic|Sorcerer|Ishiir|Storm|Ishiir|3"
                 }
             ]
         },
@@ -4247,7 +4226,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Storm",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You can use a bonus action on your turn to cause whirling gusts of elemental air to briefly surround you, immediately before or after you cast a spell of 1st level or higher. Doing so allows you to fly up to 30 feet without provoking opportunity attacks.",
@@ -4296,7 +4275,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Storm",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "The arcane magic you command is infused with elemental air. You can speak, read, and write {@language Primordial}. Knowing this language allows you to understand and be understood by those who speak its dialects: {@language Primordial||Aquan}, {@language Primordial||Auran}, {@language Primordial||Ignan}, and {@language Primordial||Terran}."
@@ -4369,20 +4348,20 @@
             "classSource": "Ishiir",
             "subclassShortName": "Wild",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Your innate magic comes from the wild forces of chaos that underlie the order of creation. You might have endured exposure to some form of raw magic, perhaps through a planar portal leading to Limbo, the Elemental Planes, or the mysterious Far Realm. Perhaps you were blessed by a powerful fey creature or marked by a demon. Or your magic could be a fluke of your birth, with no apparent cause or reason. However it came to be, this chaotic magic churns within you, waiting for any outlet.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Wild Magic Surge|Sorcerer|Ishiir|Wild|Ishiir|1"
+                    "subclassFeature": "Wild Magic Surge|Sorcerer|Ishiir|Wild|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Tides of Chaos|Sorcerer|Ishiir|Wild|Ishiir|1"
+                    "subclassFeature": "Tides of Chaos|Sorcerer|Ishiir|Wild|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Wild Magic Spells|Sorcerer|Ishiir|Wild|Ishiir|1"
+                    "subclassFeature": "Wild Magic Spells|Sorcerer|Ishiir|Wild|Ishiir|3"
                 }
             ]
         },
@@ -4394,7 +4373,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Wild",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a long rest or roll on the Wild Surge table before you can use this feature again.",
@@ -4409,7 +4388,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Wild",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "Your spellcasting can unleash surges of untamed magic. Immediately after you cast a sorcerer spell of 1st level or higher, the DM can have you roll a {@dice d20}. If you roll a 1, roll on the Wild Magic Surge table to create a random magical effect. A Wild Magic Surge can happen once per turn.",
@@ -4844,7 +4823,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Wild",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You learn additional spells when you reach certain levels in this class, as shown on the table below. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
@@ -4939,15 +4918,15 @@
             "classSource": "Ishiir",
             "subclassShortName": "Cryomancer",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "entries": [
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Cryomancer Spells|Sorcerer|Ishiir|Cryomancer|Ishiir|1"
+                    "subclassFeature": "Cryomancer Spells|Sorcerer|Ishiir|Cryomancer|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Clinging Frost|Sorcerer|Ishiir|Cryomancer|Ishiir|1"
+                    "subclassFeature": "Clinging Frost|Sorcerer|Ishiir|Cryomancer|Ishiir|3"
                 }
             ]
         },
@@ -4959,7 +4938,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Cryomancer",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You learn additional spells when you reach certain levels in this class, as shown on the table below. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
@@ -5007,7 +4986,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Cryomancer",
             "subclassSource": "Ishiir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "Whenever you hit a creature with a spell of 1st level or higher that deals cold damage or it fails a save against such a spell, the magical cold you command starts clinging to it for 1 minute, reducing its speed by 10 feet.",
@@ -5098,10 +5077,11 @@
             "level": 18,
             "header": 1,
             "entries": [
-                "You can spend 6 sorcery points as a bonus action to magically transform into a creature of living ice. In this form, you have resistance to piercing, bludgeoning, and slashing damage as well as immunity to cold damage and poison.",
-                "Additionally, if a creature hits you with a melee attack from within 5 ft or touches you while you are under the effect of your Aegis of Rime feature, it is immediately affected by your Clinging Frost feature. If it was already affected, it instead immediately makes a Constitution saving throw as if at the end of its turn, suffering the usual effect on a failure. Succeeding on this saving throw does not count towards the three successes needed to clear the effect.",
+                "As a bonus action, you magically transform into a creature of living ice. In this form, you have resistance to piercing, bludgeoning, and slashing damage as well as immunity to cold damage and poison.",
+                "Additionally, if a creature hits you with a melee attack from within 10 ft or touches you while you are under the effect of your Aegis of Rime feature, it is immediately affected by your Clinging Frost feature. If it was already affected, it instead immediately makes a Constitution saving throw as if at the end of its turn, suffering the usual effect on a failure. Succeeding on this saving throw does not count towards the three successes needed to clear the effect. ",
                 "Finally, creatures affected by your Clinging Frost suffer a -2 penalty to Constitution saving throws against your spells that deal cold damage.",
-                "You remain in this form for 1 minute. It ends early if you are incapacitated, if you die, or if you dismiss it as a bonus action."
+                "You remain in this form for 1 minute. It ends early if you are incapacitated, if you die, or if you dismiss it as a bonus action.",
+                "You cannot use this feature again until you finish a long rest or you spend 7 sorcery points to use it again."
             ]
         }
     ]
