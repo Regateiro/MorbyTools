@@ -108,6 +108,7 @@
                                 "deception",
                                 "insight",
                                 "intimidation",
+                                "investigation",
                                 "persuasion",
                                 "religion"
                             ],
@@ -165,7 +166,12 @@
             },
             "multiclassing": {
                 "requirements": {
-                    "cha": 13
+                    "or": [
+                        {
+                            "int": 13,
+                            "cha": 13
+                        }
+                    ]
                 }
             },
             "classTableGroups": [
@@ -239,13 +245,9 @@
                 {
                     "colLabels": [
                         "{@filter Cantrips Known|spells|level=0|class=Summoner (Ishiir)|source=Ishiir}",
-                        "{@filter Spells Known|spells|class=Summoner (Ishiir)|source=Ishiir}"
+                        "{@filter Prepared Spells|spells|class=Summoner (Ishiir)|source=Ishiir}"
                     ],
                     "rows": [
-                        [
-                            0,
-                            0
-                        ],
                         [
                             4,
                             2
@@ -256,30 +258,18 @@
                         ],
                         [
                             4,
-                            3
-                        ],
-                        [
-                            4,
                             4
                         ],
                         [
                             4,
-                            4
-                        ],
-                        [
-                            5,
                             5
                         ],
                         [
-                            5,
-                            5
-                        ],
-                        [
-                            5,
+                            4,
                             6
                         ],
                         [
-                            5,
+                            4,
                             6
                         ],
                         [
@@ -292,35 +282,51 @@
                         ],
                         [
                             5,
-                            8
+                            9
                         ],
                         [
                             5,
-                            8
-                        ],
-                        [
-                            6,
                             9
                         ],
                         [
-                            6,
-                            9
-                        ],
-                        [
-                            6,
+                            5,
                             10
                         ],
                         [
-                            6,
+                            5,
                             10
                         ],
                         [
-                            6,
+                            5,
+                            11
+                        ],
+                        [
+                            5,
                             11
                         ],
                         [
                             6,
-                            11
+                            12
+                        ],
+                        [
+                            6,
+                            12
+                        ],
+                        [
+                            6,
+                            14
+                        ],
+                        [
+                            6,
+                            14
+                        ],
+                        [
+                            6,
+                            15
+                        ],
+                        [
+                            6,
+                            15
                         ]
                     ]
                 },
@@ -480,7 +486,8 @@
             "classFeatures": [
                 "Eidolon|Summoner|Ishiir|1",
                 "Evolution Feats|Summoner|Ishiir|1",
-                "Spellcasting|Summoner|Ishiir|2",
+                "Spellcasting|Summoner|Ishiir|1",
+                "Student of the Extraplanar|Summoner|Ishiir|2",
                 {
                     "classFeature": "Summoner Specialization|Summoner|Ishiir|3",
                     "gainSubclassFeature": true
@@ -556,68 +563,64 @@
             "page": 1,
             "className": "Summoner",
             "classSource": "Ishiir",
-            "level": 2,
+            "level": 1,
             "entries": [
-                "You have learned to use the magical essence of the planes to cast spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting. Check the {@filter Summoner spell list|spells|class=Summoner (Ishiir)|source=Ishiir} for the list of spells available to summoner.",
+                "You have learned to use the magical essence of the planes to cast spells. The information below details how you use those rules with Summoner spells, which appear in the {@filter Summoner spell list|spells|class=summoner (Ishiir)|source=Ishiir}.",
                 {
                     "type": "entries",
-                    "name": "Cantrips",
+                    "name": "Cantrips.",
                     "entries": [
-                        "You know four cantrips of your choice from the Summoner spell list. You learn an additional Summoner cantrip of your choice at 7th level and another at 15th level."
+                        "You know two cantrips of your choice from the {@filter Summoner spell list|spells|class=summoner (Ishiir)|source=Ishiir|level=0}.",
+                        "Whenever you gain a Summoner level, you can replace one of these cantrips with another cantrip of your choice from the {@filter Summoner spell list|spells|class=summoner (Ishiir)|source=Ishiir|level=0}."
                     ]
                 },
                 {
                     "type": "entries",
-                    "name": "Spell Slots",
+                    "name": "Spell Slots.",
                     "entries": [
-                        "The Summoner table shows how many spell slots you have to cast your summoner spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-                        "For example, if you know the 1st-level spell {@spell mage armor|Ishiir} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell mage armor|Ishiir} using either slot."
+                        "The Summoner features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest."
                     ]
                 },
                 {
                     "type": "entries",
-                    "name": "Spells Known of 1st Level and Higher",
+                    "name": "Prepared Spells of Level 1+.",
                     "entries": [
-                        "You know two 1st-level spells of your choice from the summoner spell list.",
-                        "The Spells Known column of the Summoner table shows when you learn more summoner spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
-                        "Additionally, when you gain a level in this class, you can choose one of the summoner spells you know and replace it with another spell from the summoner spell list, which also must be of a level for which you have spell slots."
+                        "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the {@filter Summoner spell list|spells|class=summoner (Ishiir)|source=Ishiir}.",
+                        "The number of spells on your list increases as you gain Summoner levels, as shown in the Prepared Spells column of the Summoner features table. Whenever that number increases, choose additional spells from the Summoner spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 7 Summoner, your list of prepared spells can include five Summoner spells of levels 1 and 2 in any combination."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Changing Your Prepared Spells.",
+                    "entries": [
+                        "Whenever you gain a Summoner level, you can replace one spell on your list with another Summoner spell for which you have spell slots."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Spellcasting Ability.",
                     "entries": [
-                        "Charisma is your spellcasting ability for your summoner spells, since your magic draws on your attunement to nature. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a summoner spell you cast and when making an attack roll with one.",
-                        {
-                            "type": "abilityDc",
-                            "name": "Spell",
-                            "attributes": [
-                                "cha"
-                            ]
-                        },
-                        {
-                            "type": "abilityAttackMod",
-                            "name": "Spell",
-                            "attributes": [
-                                "cha"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Ritual Casting",
-                    "entries": [
-                        "You can cast a summoner spell as a ritual if that spell has the ritual tag and you know the spell."
+                        "Intelligence or Charisma (your choice) is your spellcasting ability for your Summoner spells."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Spellcasting Focus",
                     "entries": [
-                        "You can use an {@item arcane focus|phb} as a spellcasting focus for your Summoner spells."
+                        "You can use an Arcane Focus as a Spellcasting Focus for your Summoner spells."
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Student of the Extraplanar",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Summoner",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "You gain expertise in {@skill Arcana} and two additional languages."
             ]
         },
         {
@@ -722,7 +725,7 @@
             "classSource": "Ishiir",
             "level": 11,
             "entries": [
-                "You add your Charisma modifier to your Eidolon's damage rolls."
+                "You add your Intelligence or Charisma modifier (your choice) to your Eidolon's damage rolls."
             ]
         },
         {
@@ -1190,7 +1193,7 @@
             "level": 18,
             "entries": [
                 "You can take an additional action and bonus action on your turn.",
-                "You cannot use this feature again until you finish a short rest or you spend a spell slot of 4th level to use it again."
+                "You cannot use this feature again until you finish a short rest or you spend a spell slot of 4th level or higher to use it again."
             ]
         }
     ]
