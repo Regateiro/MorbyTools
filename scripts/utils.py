@@ -3,7 +3,7 @@ import re
 
 # Load a JSON file into memory
 def load_data(file: str) -> dict:
-    with open(file) as df:
+    with open(file, "r", encoding="utf-8") as df:
         return json.load(df)
 
 
