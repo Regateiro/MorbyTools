@@ -66,7 +66,7 @@
 							"rows": [
 								[
 									"1",
-									"{@variantrule Disadvantage|Ishiir} on {@variantrule Ability Check|Ishiir}s"
+									"{@variantrule Disadvantage|Ishiir} on {@variantrule Ability Check|Ishiir|Ability Checks}"
 								],
 								[
 									"2",
@@ -74,7 +74,7 @@
 								],
 								[
 									"3",
-									"{@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s and {@variantrule Saving Throw|Ishiir|Saving Throws}"
+									"{@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} and {@variantrule Saving Throw|Ishiir|Saving Throws}"
 								],
 								[
 									"4",
@@ -91,7 +91,7 @@
 							]
 						},
 						"If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description.",
-						"A creature suffers the effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its {@variantrule Speed|Ishiir} halved and has {@variantrule Disadvantage|Ishiir} on {@variantrule Ability Check|Ishiir}s.",
+						"A creature suffers the effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its {@variantrule Speed|Ishiir} halved and has {@variantrule Disadvantage|Ishiir} on {@variantrule Ability Check|Ishiir|Ability Checks}.",
 						"An effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1.",
 						"Finishing a {@variantrule Long Rest|Ishiir} reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink. Also, being raised from the dead reduces a creature's exhaustion level by 1."
 					]
@@ -108,7 +108,7 @@
 					"items": [
 						"A frozen creature is covered along with any object it is wearing or carrying, in a thick layer of ice. Its weight increases by a factor of four, and it ceases aging.",
 						"The creature is {@condition Incapacitated|Ishiir}, can't move or speak, and is unaware of its surroundings.",
-						"{@variantrule Attack Roll|Ishiir}s against the creature have {@variantrule Advantage|Ishiir}.",
+						"{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}.",
 						"The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}.",
 						"The creature has vulnerability to bludgeoning and fire damage and {@variantrule Resistance|Ishiir} to all other damage.",
 						"The creature is {@variantrule Immunity|Ishiir|Immune} to poison and disease, although a poison or disease already in its system is suspended, not neutralized."
@@ -155,7 +155,7 @@
 					"type": "list",
 					"items": [
 						"A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.",
-						"The creature has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s.",
+						"The creature has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls}.",
 						"An {@variantrule Attack Roll|Ishiir} against the creature has {@variantrule Advantage|Ishiir} if the attacker is within 5 feet of the creature. Otherwise, the {@variantrule Attack Roll|Ishiir} has {@variantrule Disadvantage|Ishiir}."
 					]
 				}
@@ -170,7 +170,7 @@
 					"type": "list",
 					"items": [
 						"A blinded creature can't see and automatically fails any {@variantrule Ability Check|Ishiir} that requires sight.",
-						"{@variantrule Attack Roll|Ishiir}s against the creature have {@variantrule Advantage|Ishiir}, and the creature's {@variantrule Attack Roll|Ishiir}s have {@variantrule Disadvantage|Ishiir}."
+						"{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}, and the creature's {@variantrule Attack Roll|Ishiir|Attack Rolls} have {@variantrule Disadvantage|Ishiir}."
 					]
 				}
 			]
@@ -270,7 +270,7 @@
 				{
 					"type": "list",
 					"items": [
-						"A frightened creature has {@variantrule Disadvantage|Ishiir} on {@variantrule Ability Check|Ishiir}s and {@variantrule Attack Roll|Ishiir}s while the source of its fear is within line of sight.",
+						"A frightened creature has {@variantrule Disadvantage|Ishiir} on {@variantrule Ability Check|Ishiir|Ability Checks} and {@variantrule Attack Roll|Ishiir|Attack Rolls} while the source of its fear is within line of sight.",
 						"The creature can't willingly move closer to the source of its fear."
 					]
 				}
@@ -284,7 +284,7 @@
 				{
 					"type": "list",
 					"items": [
-						"A poisoned creature has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s and {@variantrule Ability Check|Ishiir}s."
+						"A poisoned creature has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} and {@variantrule Ability Check|Ishiir|Ability Checks}."
 					]
 				}
 			]
@@ -298,7 +298,7 @@
 					"type": "list",
 					"items": [
 						"A restrained creature's {@variantrule Speed|Ishiir} becomes 0, and it can't benefit from any bonus to its {@variantrule Speed|Ishiir}.",
-						"{@variantrule Attack Roll|Ishiir}s against the creature have {@variantrule Advantage|Ishiir}, and the creature's {@variantrule Attack Roll|Ishiir}s have {@variantrule Disadvantage|Ishiir}.",
+						"{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}, and the creature's {@variantrule Attack Roll|Ishiir|Attack Rolls} have {@variantrule Disadvantage|Ishiir}.",
 						"The creature has {@variantrule Disadvantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}."
 					]
 				}
@@ -327,7 +327,7 @@
 					"items": [
 						"An incapacitated creature can't take actions or {@variantrule Reaction|Ishiir|Reactions}.",
 						"The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}.",
-						"{@variantrule Attack Roll|Ishiir}s against the creature have {@variantrule Advantage|Ishiir}."
+						"{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}."
 					]
 				}
 			]
@@ -341,7 +341,7 @@
 					"type": "list",
 					"items": [
 						"A paralyzed creature is {@condition Incapacitated|Ishiir} and can't move or speak.",
-						"The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}. {@variantrule Attack Roll|Ishiir}s against the creature have {@variantrule Advantage|Ishiir}.",
+						"The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}. {@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}.",
 						"Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature."
 					]
 				}
@@ -357,7 +357,7 @@
 					"items": [
 						"A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.",
 						"The creature is {@condition Incapacitated|Ishiir}, can't move or speak, and is unaware of its surroundings.",
-						"{@variantrule Attack Roll|Ishiir}s against the creature have {@variantrule Advantage|Ishiir}.",
+						"{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}.",
 						"The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}.",
 						"The creature has {@variantrule Resistance|Ishiir} to all damage.",
 						"The creature is {@variantrule Immunity|Ishiir|Immune} to poison and disease, although a poison or disease already in its system is suspended, not neutralized."
@@ -375,7 +375,7 @@
 					"items": [
 						"A stunned creature is {@condition Incapacitated|Ishiir}, can't move, and can speak only falteringly.",
 						"The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}.",
-						"{@variantrule Attack Roll|Ishiir}s against the creature have {@variantrule Advantage|Ishiir}."
+						"{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}."
 					]
 				}
 			]
@@ -391,7 +391,7 @@
 						"An unconscious creature is {@condition Incapacitated|Ishiir}, can't move or speak, and is unaware of its surroundings.",
 						"The creature drops whatever it's holding and falls {@condition Prone|Ishiir}.",
 						"The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}.",
-						"{@variantrule Attack Roll|Ishiir}s against the creature have {@variantrule Advantage|Ishiir}.",
+						"{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}.",
 						"Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature."
 					]
 				}
@@ -408,7 +408,7 @@
 					"type": "list",
 					"items": [
 						"An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.",
-						"{@variantrule Attack Roll|Ishiir}s against the creature have {@variantrule Disadvantage|Ishiir}, and the creature's {@variantrule Attack Roll|Ishiir}s have {@variantrule Advantage|Ishiir}."
+						"{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Disadvantage|Ishiir}, and the creature's {@variantrule Attack Roll|Ishiir|Attack Rolls} have {@variantrule Advantage|Ishiir}."
 					]
 				}
 			]
