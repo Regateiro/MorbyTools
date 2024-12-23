@@ -684,7 +684,7 @@
 			"classSource": "Other",
 			"level": 1,
 			"entries": [
-				"As a bonus action you may spend 2 arcana point to project an illusion that blurs your image by a few inches that follows your every movement, causing any creature to have disadvantage on {@variantrule Attack Roll|Ishiir}s against you.",
+				"As a bonus action you may spend 2 arcana point to project an illusion that blurs your image by a few inches that follows your every movement, causing any creature to have {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s against you.",
 				"If you take damage, the property ceases to function until the start of your next turn. This property is suppressed while you are incapacitated, restrained, or otherwise unable to move. This effect lasts for 1 minute.",
 				"This feature improves further at 10th level."
 			]
@@ -771,8 +771,8 @@
 					"name": "Spellcasting Ability.",
 					"entries": [
 						"Intelligence is your spellcasting ability for your spellblade spells, as your mental tenacity is what allows you to wield magic. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the {@variantrule Saving Throw|Ishiir} DC for a spellblade spell you cast and when making an {@variantrule Attack Roll|Ishiir} with one.",
-						"<b>Spell save DC</b> = 8 + your proficiency bonus + your Intelligence modifier",
-						"<b>Spell attack modifier</b> = your proficiency bonus + your Intelligence modifier"
+						"<b>Spell save DC</b> = 8 + your {@variantrule Proficiency|Ishiir} bonus + your Intelligence modifier",
+						"<b>Spell attack modifier</b> = your {@variantrule Proficiency|Ishiir} bonus + your Intelligence modifier"
 					]
 				}
 			]
@@ -853,7 +853,7 @@
 			"classSource": "Other",
 			"level": 5,
 			"entries": [
-				"You may spend an arcana point to gain a +6 bonus on a skill check that you do not have proficiency in."
+				"You may spend an arcana point to gain a +6 bonus on a skill check that you do not have {@variantrule Proficiency|Ishiir} in."
 			]
 		},
 		{
@@ -923,21 +923,21 @@
 					"type": "item",
 					"name": "Find an Opening",
 					"entries": [
-						"As a bonus action, you can choose to gain advantage on all melee weapon {@variantrule Attack Roll|Ishiir}s until the end of your next turn."
+						"As a bonus action, you can choose to gain {@variantrule Advantage|Ishiir} on all melee weapon {@variantrule Attack Roll|Ishiir}s until the end of your next turn."
 					]
 				},
 				{
 					"type": "item",
 					"name": "Reactive Wit",
 					"entries": [
-						"As a reaction to taking acid, cold, fire, lightning, thunder, psychic, or force damage, you gain resistance to that type of damage, including the triggering damage, for 1 minute."
+						"As a reaction to taking acid, cold, fire, lightning, thunder, psychic, or force damage, you gain {@variantrule Resistance|Ishiir} to that type of damage, including the triggering damage, for 1 minute."
 					]
 				},
 				{
 					"type": "item",
 					"name": "Perfect Focus",
 					"entries": [
-						"As a bonus action, you gain advantage on {@variantrule Saving Throw|Ishiir}s and {@variantrule Ability Check|Ishiir}s in one ability score of your choice for 1 minute. You may only have this active on one ability score at a time."
+						"As a bonus action, you gain {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir}s and {@variantrule Ability Check|Ishiir}s in one ability score of your choice for 1 minute. You may only have this active on one ability score at a time."
 					]
 				}
 			]
@@ -1076,21 +1076,21 @@
 					"type": "item",
 					"name": "Find an Opening",
 					"entries": [
-						"As a bonus action, you have advantage on all melee weapon attacks for your Intelligence modifier in rounds."
+						"As a bonus action, you have {@variantrule Advantage|Ishiir} on all melee weapon attacks for your Intelligence modifier in rounds."
 					]
 				},
 				{
 					"type": "item",
 					"name": "Reactive Wit",
 					"entries": [
-						"You gain immunity instead of resistance to the triggering damage type for 1 minute."
+						"You gain {@variantrule Immunity|Ishiir} instead of {@variantrule Resistance|Ishiir} to the triggering damage type for 1 minute."
 					]
 				},
 				{
 					"type": "item",
 					"name": "Perfect Focus",
 					"entries": [
-						"As a reaction, you gain advantage on a {@variantrule Saving Throw|Ishiir} or {@variantrule Ability Check|Ishiir} for two ability scores of your choice for 1 minute."
+						"As a reaction, you gain {@variantrule Advantage|Ishiir} on a {@variantrule Saving Throw|Ishiir} or {@variantrule Ability Check|Ishiir} for two ability scores of your choice for 1 minute."
 					]
 				}
 			]
@@ -1201,7 +1201,7 @@
 			"header": 1,
 			"entries": [
 				"Your reflexes have sharpened to a perfect edge and can interrupt spellcasting as it is uttered. As a reaction, you may finish the verbal component of a wizard, sorcerer, warlock or bard spell as it is being said by a caster that you can hear, understand and see within 90 feet. Make an Arcana check DC 14 + the spell's level.",
-				"If you fail, you can attempt the {@variantrule Saving Throw|Ishiir} of the spell (if it has one and you are the target) with advantage, or gain +5 AC if it is a ranged spell attack.",
+				"If you fail, you can attempt the {@variantrule Saving Throw|Ishiir} of the spell (if it has one and you are the target) with {@variantrule Advantage|Ishiir}, or gain +5 AC if it is a ranged spell attack.",
 				"If you succeed, you may spend 3 + half the spell's level arcana points to cast the spell yourself at half range, radius and damage. If the spell has a range of self, you are the target. If the spell must be saved against, it becomes your spell save DC -2.",
 				"In addition to casting the stolen spell, if you succeed by 5 or more, the spell fizzles as if counterspell was cast.",
 				"This technique is difficult and exhausting and can only be attempted twice per {@variantrule Long Rest|Ishiir}."
@@ -1262,7 +1262,7 @@
 			"level": 9,
 			"header": 1,
 			"entries": [
-				"Your Contingency ward manifests additional forms of protection. A creature warded with Contingency may instead expend the ward as a reaction to gain advantage on a Dexterity {@variantrule Saving Throw|Ishiir}."
+				"Your Contingency ward manifests additional forms of protection. A creature warded with Contingency may instead expend the ward as a reaction to gain {@variantrule Advantage|Ishiir} on a Dexterity {@variantrule Saving Throw|Ishiir}."
 			]
 		},
 		{
@@ -1310,7 +1310,7 @@
 			"level": 14,
 			"header": 1,
 			"entries": [
-				"Your understanding of force barriers becomes second nature and you are gripped in an aura of deflection. You gain resistance to force damage. Additionally, as a reaction you may expend 3 arcana points when you suffer force damage and reflect it back at the attacker, dealing half of the spell damage back to the caster.",
+				"Your understanding of force barriers becomes second nature and you are gripped in an aura of deflection. You gain {@variantrule Resistance|Ishiir} to force damage. Additionally, as a reaction you may expend 3 arcana points when you suffer force damage and reflect it back at the attacker, dealing half of the spell damage back to the caster.",
 				"This feature improves at 17th and 20th level."
 			]
 		},
@@ -1353,7 +1353,7 @@
 			"level": 20,
 			"header": 1,
 			"entries": [
-				"You become immune to force damage."
+				"You become {@variantrule Immunity|Ishiir|Immune} to force damage."
 			]
 		},
 		{
@@ -1467,7 +1467,7 @@
 			"level": 10,
 			"header": 1,
 			"entries": [
-				"Your constant vigilance grants you a +5 bonus to your passive Wisdom ({@skill Perception}) score and advantage on any Wisdom ({@skill Perception}) checks you make. You can see danger coming from a mile away and are not deterred. You gain immunity to {@condition Frightened|Ishiir} condition.",
+				"Your constant vigilance grants you a +5 bonus to your passive Wisdom ({@skill Perception}) score and {@variantrule Advantage|Ishiir} on any Wisdom ({@skill Perception}) checks you make. You can see danger coming from a mile away and are not deterred. You gain {@variantrule Immunity|Ishiir} to {@condition Frightened|Ishiir} condition.",
 				"In addition, your ability to respond to dangerous situations is unparalleled. When you fail a Dexterity {@variantrule Saving Throw|Ishiir} you can spend 3 arcana points to succeed instead. Once you use this feature you can't use it again until you finish a {@variantrule Long Rest|Ishiir}.",
 				"This feature improves at 15th level."
 			]

@@ -96,7 +96,7 @@
             "header": 1,
             "entries": [
                 "You gain the ability to comprehend and verbally communicate with beasts.",
-                "Additionally, you become proficient in your choice of two of the following skills: {@skill Animal Handling}, {@skill Nature}, {@skill Perception}, or {@skill Survival}. Your proficiency bonus is doubled for any {@variantrule Ability Check|Ishiir} you make that uses either of those skills."
+                "Additionally, you become proficient in your choice of two of the following skills: {@skill Animal Handling}, {@skill Nature}, {@skill Perception}, or {@skill Survival}. Your {@variantrule Proficiency|Ishiir} bonus is doubled for any {@variantrule Ability Check|Ishiir} you make that uses either of those skills."
             ]
         },
         {
@@ -125,7 +125,7 @@
             "level": 14,
             "header": 1,
             "entries": [
-                "At 14h level, you gain the ability to align your consciousness with the will of the world around you. As a bonus action, you can enter this state for 1 minute. For the duration, the targets of your spells cannot benefit from advantange on their {@variantrule Saving Throw|Ishiir}s, while you have advantage on yours.",
+                "At 14h level, you gain the ability to align your consciousness with the will of the world around you. As a bonus action, you can enter this state for 1 minute. For the duration, the targets of your spells cannot benefit from advantange on their {@variantrule Saving Throw|Ishiir}s, while you have {@variantrule Advantage|Ishiir} on yours.",
                 "Once you use this bonus action, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you spend 5 sorcery points to use it again."
             ]
         },
@@ -144,9 +144,9 @@
                 {
                     "type": "list",
                     "items": [
-                        "While using your Wild Conduit feature, you have advantage on {@variantrule Attack Roll|Ishiir}s against aberrations, celestials, elementals, fey, fiends, and undead. They also have disadvantage on {@variantrule Saving Throw|Ishiir}s against your spells.",
+                        "While using your Wild Conduit feature, you have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s against aberrations, celestials, elementals, fey, fiends, and undead. They also have {@variantrule Disadvantage|Ishiir} on {@variantrule Saving Throw|Ishiir}s against your spells.",
                         "Moving through difficult terrain costs you no extra movement. You can also pass through natural or magically created plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.",
-                        "You are immune to poison and disease.",
+                        "You are {@variantrule Immunity|Ishiir|Immune} to poison and disease.",
                         "For every 10 years that pass, your body ages only 1 year."
                     ]
                 }
@@ -317,7 +317,7 @@
                     "type": "entries",
                     "name": "Black Affinity",
                     "entries": [
-                        "Black affinity planeswalkers are known to manipulate raw power and fate to their advantage. However, this can lead them to sacrificing others to attain said power.",
+                        "Black affinity planeswalkers are known to manipulate raw power and fate to their {@variantrule Advantage|Ishiir}. However, this can lead them to sacrificing others to attain said power.",
                         {
                             "type": "table",
                             "caption": "Black Affinity Spells",
@@ -413,7 +413,7 @@
                     "type": "entries",
                     "name": "White Affinity",
                     "entries": [
-                        "Your desire to help and protect others has extended to the battlefield. When you or a creature you can see within 30 feet of you is hit by an {@variantrule Attack Roll|Ishiir}, you can use your reaction to shield the target, increasing their AC by your proficiency bonus for the attack.",
+                        "Your desire to help and protect others has extended to the battlefield. When you or a creature you can see within 30 feet of you is hit by an {@variantrule Attack Roll|Ishiir}, you can use your reaction to shield the target, increasing their AC by your {@variantrule Proficiency|Ishiir} bonus for the attack.",
                         "If you only have affinity to white, the target also heals for half the amount of damage (rounded down) the attack would have dealt/did to it.",
                         "Once you use this feature, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
                     ]
@@ -422,9 +422,9 @@
                     "type": "entries",
                     "name": "Blue Affinity",
                     "entries": [
-                        "You must always be in control of any situation you find yourself in. When you cast a spell that forces a target to make a Charisma {@variantrule Saving Throw|Ishiir}, you may use a bonus action to impose disadvantage on the save.",
-                        "If you only have affinity to blue, you may impose disadvantage on the save for any spell you cast that forces a target to make a {@variantrule Saving Throw|Ishiir}.",
-                        "You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                        "You must always be in control of any situation you find yourself in. When you cast a spell that forces a target to make a Charisma {@variantrule Saving Throw|Ishiir}, you may use a bonus action to impose {@variantrule Disadvantage|Ishiir} on the save.",
+                        "If you only have affinity to blue, you may impose {@variantrule Disadvantage|Ishiir} on the save for any spell you cast that forces a target to make a {@variantrule Saving Throw|Ishiir}.",
+                        "You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
                     ]
                 },
                 {
@@ -433,7 +433,7 @@
                     "entries": [
                         "You feel the need to unleash the energy within you. When you use an action to cast a cantrip that deals damage to a creature, you may use your bonus action to cast the same cantrip again, dealing half the amount of damage (rounded down).",
                         "Once you use this feature, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
-                        "If you only have affinity to red, you can use this feature a number of times equal to your proficiency bonus, you regain one expended use when you finish a {@variantrule Short Rest|Ishiir} and all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                        "If you only have affinity to red, you can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, you regain one expended use when you finish a {@variantrule Short Rest|Ishiir} and all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
                     ]
                 },
                 {
@@ -442,15 +442,15 @@
                     "entries": [
                         "Power is only within reach of those who dare to risk everything for it. After you deal damage to a creature, you may use a bonus action and spend any amount of HP to strike with your very own life force. This loss of HP cannot be prevented in any way. The target then takes necrotic damage equal to the amount of HP lost this way.",
                         "You recover the HP spent on this feature when you finish a {@variantrule Short Rest|Ishiir}.",
-                        "If you only have affinity to black, this damage ignores resistance and immunity, and can't be reduced or avoided by any means.",
-                        "You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                        "If you only have affinity to black, this damage ignores {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir}, and can't be reduced or avoided by any means.",
+                        "You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Green Affinity",
                     "entries": [
-                        "The natural order is for the strong to defeat the weak. Choose Strength, Dexterity or Constitution. You gain proficiency with {@variantrule Saving Throw|Ishiir}s using the chosen attribute and with one skill that uses the chosen attribute.",
+                        "The natural order is for the strong to defeat the weak. Choose Strength, Dexterity or Constitution. You gain {@variantrule Proficiency|Ishiir} with {@variantrule Saving Throw|Ishiir}s using the chosen attribute and with one skill that uses the chosen attribute.",
                         "If you only have affinity to green, you may add your Charisma modifier to skill checks and {@variantrule Saving Throw|Ishiir}s using the chosen attribute."
                     ]
                 }
@@ -549,7 +549,7 @@
                     "type": "entries",
                     "name": "White Affinity",
                     "entries": [
-                        "You gain temporary hit points equal to your proficiency bonus. If you only have affinity to white, you gain twice as many temporary hit points instead."
+                        "You gain temporary hit points equal to your {@variantrule Proficiency|Ishiir} bonus. If you only have affinity to white, you gain twice as many temporary hit points instead."
                     ]
                 },
                 {
@@ -563,7 +563,7 @@
                     "type": "entries",
                     "name": "Red Affinity",
                     "entries": [
-                        "You deal damage to all creatures within 5 feet of where you were standing equal to twice your proficiency bonus. If you only have affinity to red, the range increases to 10 feet."
+                        "You deal damage to all creatures within 5 feet of where you were standing equal to twice your {@variantrule Proficiency|Ishiir} bonus. If you only have affinity to red, the range increases to 10 feet."
                     ]
                 },
                 {
@@ -638,7 +638,7 @@
                     "type": "entries",
                     "name": "Black Affinity",
                     "entries": [
-                        "Each creature of your choice within 30 feet of you must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC or be {@condition Frightened} of you until the end of its next turn. If you only have affinity to black, the creatures have disadvantage on the {@variantrule Saving Throw|Ishiir}."
+                        "Each creature of your choice within 30 feet of you must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC or be {@condition Frightened} of you until the end of its next turn. If you only have affinity to black, the creatures have {@variantrule Disadvantage|Ishiir} on the {@variantrule Saving Throw|Ishiir}."
                     ]
                 },
                 {

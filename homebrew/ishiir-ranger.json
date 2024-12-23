@@ -415,7 +415,7 @@
                 },
                 "Ability Score Improvement|Ranger|Ishiir|4",
                 "Martial Mastery|Ranger|Ishiir|4",
-                "Proficiency Versatility|Ranger|Ishiir|4",
+                "{@variantrule Proficiency|Ishiir} Versatility|Ranger|Ishiir|4",
                 "Martial Versatility|Ranger|Ishiir|4",
                 "Extra Attack|Ranger|Ishiir|5",
                 "Improved Favored Enemy|Ranger|Ishiir|6",
@@ -425,7 +425,7 @@
                     "gainSubclassFeature": true
                 },
                 "Ability Score Improvement|Ranger|Ishiir|8",
-                "Proficiency Versatility|Ranger|Ishiir|8",
+                "{@variantrule Proficiency|Ishiir} Versatility|Ranger|Ishiir|8",
                 "Expertise|Ranger|Ishiir|9",
                 "Tireless Wanderer|Ranger|Ishiir|10",
                 {
@@ -433,17 +433,17 @@
                     "gainSubclassFeature": true
                 },
                 "Ability Score Improvement|Ranger|Ishiir|12",
-                "Proficiency Versatility|Ranger|Ishiir|12",
+                "{@variantrule Proficiency|Ishiir} Versatility|Ranger|Ishiir|12",
                 "Vanish|Ranger|Ishiir|14",
                 {
                     "classFeature": "Ranger Conclave feature|Ranger|Ishiir|15",
                     "gainSubclassFeature": true
                 },
                 "Ability Score Improvement|Ranger|Ishiir|16",
-                "Proficiency Versatility|Ranger|Ishiir|16",
+                "{@variantrule Proficiency|Ishiir} Versatility|Ranger|Ishiir|16",
                 "Feral Senses|Ranger|Ishiir|18",
                 "Ability Score Improvement|Ranger|Ishiir|19",
-                "Proficiency Versatility|Ranger|Ishiir|19",
+                "{@variantrule Proficiency|Ishiir} Versatility|Ranger|Ishiir|19",
                 "Apex Predator|Ranger|Ishiir|20"
             ],
             "subclassTitle": "Ranger Conclave",
@@ -798,7 +798,7 @@
             "entries": [
                 "You have significant experience studying, tracking, hunting, and even talking to a certain type of enemy commonly encountered in the wilds.",
                 "Choose a creature type. You gain a +2 bonus to damage rolls with weapon attacks or ranger spells that use a weapon or piece of ammunition as a material component against the chosen type.",
-                "Additionally, you have advantage on Wisdom and Intelligence checks that pertain to your favored enemies."
+                "Additionally, you have {@variantrule Advantage|Ishiir} on Wisdom and Intelligence checks that pertain to your favored enemies."
             ]
         },
         {
@@ -814,8 +814,8 @@
                     "type": "list",
                     "items": [
                         "You ignore {@quickref difficult terrain||3}.",
-                        "You have advantage on initiative rolls.",
-                        "On your first turn during combat, you have advantage on {@variantrule Attack Roll|Ishiir}s against creatures that have not yet acted."
+                        "You have {@variantrule Advantage|Ishiir} on initiative rolls.",
+                        "On your first turn during combat, you have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s against creatures that have not yet acted."
                     ]
                 },
                 "In addition, you are skilled at navigating the wilderness. You gain the following benefits when traveling for an hour or more:",
@@ -995,7 +995,7 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Ranger",
@@ -1003,7 +1003,7 @@
             "level": 4,
             "entries": [
                 "{@note Note that this feature is intended for use with the Ranger class presented in the Player's Handbook. It is presented here for convenience, and may be unsuitable for use as a Revised Ranger feature.}",
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1037,7 +1037,7 @@
             "classSource": "Ishiir",
             "level": 6,
             "entries": [
-                "You become more adept at fighting your favored foes. Choose a second creature type as favored enemy. Your damage bonus against all your favored enemies increases to +4. Additionally, you have advantage on {@variantrule Saving Throw|Ishiir}s against the spells and abilities used by a favored enemy."
+                "You become more adept at fighting your favored foes. Choose a second creature type as favored enemy. Your damage bonus against all your favored enemies increases to +4. Additionally, you have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir}s against the spells and abilities used by a favored enemy."
             ]
         },
         {
@@ -1076,7 +1076,7 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Ranger",
@@ -1084,7 +1084,7 @@
             "level": 8,
             "entries": [
                 "{@note Note that this feature is intended for use with the Ranger class presented in the Player's Handbook. It is presented here for convenience, and may be unsuitable for use as a Revised Ranger feature.}",
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1096,7 +1096,7 @@
             "classSource": "Ishiir",
             "level": 9,
             "entries": [
-                "Choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with {@item thieves' tools|phb}. Your proficiency bonus is doubled for any {@variantrule Ability Check|Ishiir} you make that uses either of the chosen proficiencies."
+                "Choose two of your skill proficiencies, or one of your skill proficiencies and your {@variantrule Proficiency|Ishiir} with {@item thieves' tools|phb}. Your {@variantrule Proficiency|Ishiir} bonus is doubled for any {@variantrule Ability Check|Ishiir} you make that uses either of the chosen proficiencies."
             ]
         },
         {
@@ -1134,7 +1134,7 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Ranger",
@@ -1142,7 +1142,7 @@
             "level": 12,
             "entries": [
                 "{@note Note that this feature is intended for use with the Ranger class presented in the Player's Handbook. It is presented here for convenience, and may be unsuitable for use as a Revised Ranger feature.}",
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1181,7 +1181,7 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Ranger",
@@ -1189,7 +1189,7 @@
             "level": 16,
             "entries": [
                 "{@note Note that this feature is intended for use with the Ranger class presented in the Player's Handbook. It is presented here for convenience, and may be unsuitable for use as a Revised Ranger feature.}",
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1217,7 +1217,7 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Ranger",
@@ -1225,7 +1225,7 @@
             "level": 19,
             "entries": [
                 "{@note Note that this feature is intended for use with the Ranger class presented in the Player's Handbook. It is presented here for convenience, and may be unsuitable for use as a Revised Ranger feature.}",
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1615,8 +1615,8 @@
                 "The animal companion loses its Multiattack action, if it has one.",
                 "The companion obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions, attitudes, and so on. If you are {@condition Incapacitated|Ishiir} or absent, your companion acts on its own.",
                 "When using your Natural Explorer feature, you and your animal companion can both move stealthily at a normal pace.",
-                "Your animal companion has abilities and game statistics determined in part by your level. Your companion uses your proficiency bonus rather than its own. In addition to the areas where it normally uses its proficiency bonus, an animal companion also adds its proficiency bonus to its AC and to its damage rolls.",
-                "Your animal companion gains proficiency in two skills of your choice. It also becomes proficient with all {@variantrule Saving Throw|Ishiir}s.",
+                "Your animal companion has abilities and game statistics determined in part by your level. Your companion uses your {@variantrule Proficiency|Ishiir} bonus rather than its own. In addition to the areas where it normally uses its {@variantrule Proficiency|Ishiir} bonus, an animal companion also adds its {@variantrule Proficiency|Ishiir} bonus to its AC and to its damage rolls.",
+                "Your animal companion gains {@variantrule Proficiency|Ishiir} in two skills of your choice. It also becomes proficient with all {@variantrule Saving Throw|Ishiir}s.",
                 "For each level you gain after 3rd, your animal companion gains an additional hit die and increases its hit points accordingly.",
                 "Whenever you gain the Ability Score Improvement class feature, your companion's abilities also improve. Your companion can increase one ability score of your choice by 2, or it can increase two ability scores of your choice by 1. As normal, your companion can't increase an ability score above 20 using this feature unless its description specifies otherwise.",
                 "Your companion shares your alignment, and has a personality trait and a flaw that you can roll for or select from the tables below. Your companion shares your ideal, and its bond is always, \"The ranger who travels with me is a beloved companion for whom I would gladly give my life.\"",
@@ -1711,7 +1711,7 @@
             "header": 2,
             "entries": [
                 "You can use your Bonus Action to give magically allow your companion to act more swiftly. On its next turn, it can use its Bonus Action to use the Dash, Disengage, Dodge, or Help action (your choice).",
-                "Additionally, your companion's attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+                "Additionally, your companion's attacks count as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage."
             ]
         },
         {
@@ -1769,7 +1769,7 @@
             "header": 2,
             "entries": [
                 "{@i 15th-level ranger Beast Conclave feature (replaces Share Spells)}",
-                "While your companion can see you, it has advantage on all {@variantrule Saving Throw|Ishiir}s."
+                "While your companion can see you, it has {@variantrule Advantage|Ishiir} on all {@variantrule Saving Throw|Ishiir}s."
             ]
         },
         {
@@ -1926,7 +1926,7 @@
             "header": 1,
             "entries": [
                 "As an action, you can magically summon the drake that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.",
-                "The drake is friendly to you and your companions, and it obeys your commands. See its game statistics in the accompanying {@creature Drake Companion|Ishiir} stat block, which uses your proficiency bonus (PB) in several places. Whenever you summon the drake, choose a damage type listed in its Draconic Essence trait. You can determine the cosmetic characteristics of the drake, such as its color, its scale texture, or any visible effect of its Draconic Essence; your choice has no effect on its game statistics.",
+                "The drake is friendly to you and your companions, and it obeys your commands. See its game statistics in the accompanying {@creature Drake Companion|Ishiir} stat block, which uses your {@variantrule Proficiency|Ishiir} bonus (PB) in several places. Whenever you summon the drake, choose a damage type listed in its Draconic Essence trait. You can determine the cosmetic characteristics of the drake, such as its color, its scale texture, or any visible effect of its Draconic Essence; your choice has no effect on its game statistics.",
                 "In combat, the drake shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the {@action Dodge|Ishiir} action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition Incapacitated|Ishiir}, the drake can take any action of its choice, not just {@action Dodge|Ishiir}.",
                 "The drake remains until it is reduced to 0 hit points, until you use this feature to summon the drake again, or until you die. Anything the drake was wearing or carrying is left behind when the drake vanishes.",
                 "Once you summon the drake, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a spell slot of 1st level or higher to summon it."
@@ -1960,14 +1960,14 @@
                             "type": "item",
                             "name": "Elemental Infusion.",
                             "entries": [
-                                "The drake's Bite and Elemental Bolt attacks deal an extra {@damage 1d6} damage of the type chosen for the drake's Draconic Essence and counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+                                "The drake's Bite and Elemental Bolt attacks deal an extra {@damage 1d6} damage of the type chosen for the drake's Draconic Essence and counts as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage."
                             ]
                         },
                         {
                             "type": "item",
-                            "name": "Resistance.",
+                            "name": "{@variantrule Resistance|Ishiir}.",
                             "entries": [
-                                "You gain resistance to the damage type chosen for the drake's Draconic Essence."
+                                "You gain {@variantrule Resistance|Ishiir} to the damage type chosen for the drake's Draconic Essence."
                             ]
                         }
                     ]
@@ -2171,7 +2171,7 @@
             "header": 1,
             "entries": [
                 "Your fey qualities give you a supernatural charm. As a result, whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1).",
-                "In addition, you gain proficiency in one of the following skills of your choice: {@skill Deception}, {@skill Performance}, or {@skill Persuasion}."
+                "In addition, you gain {@variantrule Proficiency|Ishiir} in one of the following skills of your choice: {@skill Deception}, {@skill Performance}, or {@skill Persuasion}."
             ]
         },
         {
@@ -2185,7 +2185,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "The magic of the Feywild guards your mind. You have advantage on {@variantrule Saving Throw|Ishiir}s against being {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir}.",
+                "The magic of the Feywild guards your mind. You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir}s against being {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir}.",
                 "In addition, whenever you or a creature you can see within 120 feet of you succeeds on a {@variantrule Saving Throw|Ishiir} against being {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir}, you can use your reaction to force a different creature you can see within 120 feet of you to make a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC. If the save fails, the target is {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir} by you (your choice) for 1 minute. The target can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on itself on a successful save."
             ]
         },
@@ -2334,7 +2334,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "You have honed your ability to resist the mind-altering powers of your prey. You gain proficiency in Wisdom {@variantrule Saving Throw|Ishiir}s. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma {@variantrule Saving Throw|Ishiir}s (your choice)."
+                "You have honed your ability to resist the mind-altering powers of your prey. You gain {@variantrule Proficiency|Ishiir} in Wisdom {@variantrule Saving Throw|Ishiir}s. If you already have this {@variantrule Proficiency|Ishiir}, you instead gain {@variantrule Proficiency|Ishiir} in Intelligence or Charisma {@variantrule Saving Throw|Ishiir}s (your choice)."
             ]
         },
         {
@@ -2362,7 +2362,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "WWhen a creature makes an {@variantrule Attack Roll|Ishiir} against you, you can take a Reaction to impose Disadvantage on that roll. Whether the attack hits or misses, you can then teleport up to 30 feet to an unoccupied space you can see."
+                "WWhen a creature makes an {@variantrule Attack Roll|Ishiir} against you, you can take a Reaction to impose {@variantrule Disadvantage|Ishiir} on that roll. Whether the attack hits or misses, you can then teleport up to 30 feet to an unoccupied space you can see."
             ]
         },
         {
@@ -2537,7 +2537,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "Your ability to move between planes enables you to slip through the planar boundaries to lessen the harm done to you during battle. When you take damage from an attack or an effect that requires you to make a Dexterity {@variantrule Saving Throw|Ishiir}, you can use your reaction to give yourself resistance to all of that attack's damage on this turn."
+                "Your ability to move between planes enables you to slip through the planar boundaries to lessen the harm done to you during battle. When you take damage from an attack or an effect that requires you to make a Dexterity {@variantrule Saving Throw|Ishiir}, you can use your reaction to give yourself {@variantrule Resistance|Ishiir} to all of that attack's damage on this turn."
             ]
         },
         {
@@ -2753,7 +2753,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "You are immune to the {@condition Frightened|Ishiir} condition."
+                "You are {@variantrule Immunity|Ishiir|Immune} to the {@condition Frightened|Ishiir} condition."
             ]
         },
         {
@@ -2823,7 +2823,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "When you take damage, you can take a Reaction to give yourself Resistance to that damage and any other damage of the same type until the end of the current turn."
+                "When you take damage, you can take a Reaction to give yourself {@variantrule Resistance|Ishiir} to that damage and any other damage of the same type until the end of the current turn."
             ]
         },
         {
@@ -2862,7 +2862,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities."
+                "You gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has any damage immunities, {@variantrule Resistance|Ishiir}s, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, {@variantrule Resistance|Ishiir}s, or vulnerabilities."
             ]
         },
         {
@@ -3081,7 +3081,7 @@
             "header": 1,
             "entries": [
                 "Your command of primal magic allows you to enhance your attacks with thorns. Once during each of your turns, you can deal an additional {@damage 1d6} piercing damage to one creature you hit with a weapon attack. This damage increases to {@damage 2d6} when your reach 11th level in this class.",
-                "If your weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, this damage does as well."
+                "If your weapon counts as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage, this damage does as well."
             ]
         },
         {
@@ -3271,7 +3271,7 @@
             "header": 2,
             "entries": [
                 "You can condense part of your swarm into a focused mass that lifts you up. As a bonus action, you gain a {@variantrule Fly Speed|Ishiir} of 10 feet and can hover. This effect lasts for 1 minute or until you are {@condition Incapacitated|Ishiir}.",
-                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                "You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3285,7 +3285,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "The damage caused by your Gathered Swarm counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+                "The damage caused by your Gathered Swarm counts as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage."
             ]
         },
         {
@@ -3321,8 +3321,8 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "You can discorporate into your swarm, avoiding danger. When you take damage, you can use your reaction to give yourself resistance to that damage. You vanish into your swarm and then teleport to an unoccupied space that you can see within 30 feet of you, where you reappear with the swarm.",
-                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                "You can discorporate into your swarm, avoiding danger. When you take damage, you can use your reaction to give yourself {@variantrule Resistance|Ishiir} to that damage. You vanish into your swarm and then teleport to an unoccupied space that you can see within 30 feet of you, where you reappear with the swarm.",
+                "You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         }
     ]

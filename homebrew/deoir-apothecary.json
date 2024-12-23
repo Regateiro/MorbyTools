@@ -317,8 +317,8 @@
 			"entries": [
 				"You gain the ability to create tonics during a short / {@variantrule Long Rest|Ishiir}. When you gain this feature, pick two Tonics to learn, choosing from the list of the available Tonics found on the {@filter Optional Features|optionalfeatures|Feature Type=A:T} page. You prepare the amount of Tonics equal to the amount specified in the Tonics prepared column. You can prepare multiple of the same Tonic. Tonics go bad after 24 hours.",
 				"When throwing the Tonic at the Target the Tonic description will tell you out which of these 2 will take effect:",
-				"<b>Thrown Tonic attack modifier</b> = your proficiency bonus + your Intelligence modifier. (This is a ranged attack)",
-				"<b>Tonic save DC</b> = 8 + your proficiency bonus + your intelligence modifier.",
+				"<b>Thrown Tonic attack modifier</b> = your {@variantrule Proficiency|Ishiir} bonus + your Intelligence modifier. (This is a ranged attack)",
+				"<b>Tonic save DC</b> = 8 + your {@variantrule Proficiency|Ishiir} bonus + your intelligence modifier.",
 				{
 					"type": "entries",
 					"name": "Learning Tonics",
@@ -566,8 +566,8 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"During a {@variantrule Short Rest|Ishiir} you can help creatures take care of the wounds they sustained. You can care for a number of creatures equal to 3 + your proficiency bonus. At the end of the {@variantrule Short Rest|Ishiir}, any creature you cared for and spends one or more Hit Dice to regain hit points regain an extra {@dice 1d8} hit points. This die upgrades at level 9th level to a {@dice 1d10}, at level 13th level a {@dice 1d12} and at 17th level {@dice 2d8}.",
-				"You gain proficiency with the {@item herbalism kit|phb}."
+				"During a {@variantrule Short Rest|Ishiir} you can help creatures take care of the wounds they sustained. You can care for a number of creatures equal to 3 + your {@variantrule Proficiency|Ishiir} bonus. At the end of the {@variantrule Short Rest|Ishiir}, any creature you cared for and spends one or more Hit Dice to regain hit points regain an extra {@dice 1d8} hit points. This die upgrades at level 9th level to a {@dice 1d10}, at level 13th level a {@dice 1d12} and at 17th level {@dice 2d8}.",
+				"You gain {@variantrule Proficiency|Ishiir} with the {@item herbalism kit|phb}."
 			]
 		},
 		{
@@ -581,7 +581,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"As a action you can touch a creature and deal {@damage 1d8} necrotic damage to them. After they take the damage and are still at or above 1 hit point they gain Hit points equal to double the damage you did. If they go below 1 hit point they lose a death save immediately. You can use this feature a number of times equal to your proficiency bonus per {@variantrule Long Rest|Ishiir}.",
+				"As a action you can touch a creature and deal {@damage 1d8} necrotic damage to them. After they take the damage and are still at or above 1 hit point they gain Hit points equal to double the damage you did. If they go below 1 hit point they lose a death save immediately. You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus per {@variantrule Long Rest|Ishiir}.",
 				"At 7th level this die becomes a {@damage 1d12}, At 11th level {@damage 2d8} and at 17th level {@damage 2d12}."
 			]
 		},
@@ -596,7 +596,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"As a reaction to seeing a creature reach 0 hit points you can throw a healing dart at them bringing them back to 1 hp. You can use this feature a number of times equal to half your proficiency bonus (rounded down)."
+				"As a reaction to seeing a creature reach 0 hit points you can throw a healing dart at them bringing them back to 1 hp. You can use this feature a number of times equal to half your {@variantrule Proficiency|Ishiir} bonus (rounded down)."
 			]
 		},
 		{
@@ -638,7 +638,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Your healing Tonics become more potent. When Using a Tonic to heal a creature add your proficiency modifier per die of healing."
+				"Your healing Tonics become more potent. When Using a Tonic to heal a creature add your {@variantrule Proficiency|Ishiir} modifier per die of healing."
 			]
 		},
 		{
@@ -652,7 +652,7 @@
 			"level": 20,
 			"header": 2,
 			"entries": [
-				"When a creature that has a Salve effect on them restores any hit points add double your proficiency bonus to that amount."
+				"When a creature that has a Salve effect on them restores any hit points add double your {@variantrule Proficiency|Ishiir} bonus to that amount."
 			]
 		},
 		{
@@ -685,7 +685,7 @@
 			"header": 2,
 			"entries": [
 				"When attacking with a bottle of pain you can expend a prepared Tonic to increase the initial damage by {@damage 1d8}. This extra damage increases at 5th level ({@damage 3d8}), 10th level ({@damage 5d8}), 14th level ({@damage 7d8}) and 18th level ({@damage 9d8}).",
-				"You gain proficiency with {@item alchemist supplies|phb|alchemical supplies}."
+				"You gain {@variantrule Proficiency|Ishiir} with {@item alchemist supplies|phb|alchemical supplies}."
 			]
 		},
 		{
@@ -714,7 +714,7 @@
 			"header": 2,
 			"entries": [
 				"You gain the ability to create Special Concoctions that you yourself are not quite sure on what they do. But you know they do something!",
-				"During a {@variantrule Long Rest|Ishiir}, you can create up to your Proficiency bonus in Special Concoctions. When a creature would ingest one of these concoctions using their bonus action roll on this table. The roll is a d20. If the effect makes others make a save it's against the Apothecaries save DC.",
+				"During a {@variantrule Long Rest|Ishiir}, you can create up to your {@variantrule Proficiency|Ishiir} bonus in Special Concoctions. When a creature would ingest one of these concoctions using their bonus action roll on this table. The roll is a d20. If the effect makes others make a save it's against the Apothecaries save DC.",
 				{
 					"type": "table",
 					"caption": "Special Concoctions",
@@ -738,7 +738,7 @@
 						[ "9", "The creature teleports up to 30ft" ],
 						[ "10", "The creature gains {@dice 2d6} Hit points" ],
 						[ "11", "The creature is {@condition Blinded|Ishiir} for till the end of their next turn" ],
-						[ "12", "Other creatures have disadvantage on hitting this creature till the end of their next turn" ],
+						[ "12", "Other creatures have {@variantrule Disadvantage|Ishiir} on hitting this creature till the end of their next turn" ],
 						[ "13", "The creature becomes {@condition Invisible|Ishiir} till the end of their next turn" ],
 						[ "14", "The creature gains +1 AC for 1 hour" ],
 						[ "15", "The creature can only do one of the following during their next turn: Move, Action or Bonus action" ],
@@ -790,7 +790,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Your constant exposure to your Tonics have made you more resistant to their damaging effects. You gain resistance to either Acid, Cold, Fire or Poison. You can change this Resistance when you level up in this class."
+				"Your constant exposure to your Tonics have made you more resistant to their damaging effects. You gain {@variantrule Resistance|Ishiir} to either Acid, Cold, Fire or Poison. You can change this {@variantrule Resistance|Ishiir} when you level up in this class."
 			]
 		},
 		{
@@ -804,7 +804,7 @@
 			"level": 20,
 			"header": 2,
 			"entries": [
-				"While a creature is under the effect of your Bottle of Pain you have advantage on all attacks against them and they have disadvantage on {@variantrule Saving Throw|Ishiir}s against your Tonics."
+				"While a creature is under the effect of your Bottle of Pain you have {@variantrule Advantage|Ishiir} on all attacks against them and they have {@variantrule Disadvantage|Ishiir} on {@variantrule Saving Throw|Ishiir}s against your Tonics."
 			]
 		}
 	]

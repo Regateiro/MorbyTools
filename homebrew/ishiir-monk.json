@@ -463,7 +463,7 @@
                 },
                 "Ability Score Improvement|Monk|Ishiir|4",
                 "Martial Mastery|Monk|Ishiir|4",
-                "Proficiency Versatility|Monk|Ishiir|4",
+                "{@variantrule Proficiency|Ishiir} Versatility|Monk|Ishiir|4",
                 "Slow Fall|Monk|Ishiir|4",
                 "Extra Attack|Monk|Ishiir|5",
                 "Stunning Strike|Monk|Ishiir|5",
@@ -475,7 +475,7 @@
                 },
                 "Evasion|Monk|Ishiir|7",
                 "Ability Score Improvement|Monk|Ishiir|8",
-                "Proficiency Versatility|Monk|Ishiir|8",
+                "{@variantrule Proficiency|Ishiir} Versatility|Monk|Ishiir|8",
                 "Unarmored Movement improvement|Monk|Ishiir|9",
                 "Purity of Body|Monk|Ishiir|10",
                 "Heightened Focus|Monk|Ishiir|10",
@@ -485,21 +485,21 @@
                     "gainSubclassFeature": true
                 },
                 "Ability Score Improvement|Monk|Ishiir|12",
-                "Proficiency Versatility|Monk|Ishiir|12",
+                "{@variantrule Proficiency|Ishiir} Versatility|Monk|Ishiir|12",
                 "Tongue of the Sun and Moon|Monk|Ishiir|13",
                 "Deflect Energy|Monk|Ishiir|13",
                 "Diamond Soul|Monk|Ishiir|14",
                 "Timeless Body|Monk|Ishiir|15",
                 "Perfect Focus|Monk|Ishiir|15",
                 "Ability Score Improvement|Monk|Ishiir|16",
-                "Proficiency Versatility|Monk|Ishiir|16",
+                "{@variantrule Proficiency|Ishiir} Versatility|Monk|Ishiir|16",
                 {
                     "classFeature": "Monastic Tradition feature|Monk|Ishiir|17",
                     "gainSubclassFeature": true
                 },
                 "Superior Defense|Monk|Ishiir|18",
                 "Ability Score Improvement|Monk|Ishiir|19",
-                "Proficiency Versatility|Monk|Ishiir|19",
+                "{@variantrule Proficiency|Ishiir} Versatility|Monk|Ishiir|19",
                 "Perfect Self|Monk|Ishiir|20"
             ],
             "subclassTitle": "Monastic Tradition",
@@ -882,7 +882,7 @@
                 "Your focus and martial training allow you to harness a well of extraordinary energy within yourself. This energy is represented by Ki Points. Your Monk level determines the amount of Ki Points you have, as shown in the Ki Points column of the Monk Features table.",
                 "You can expend these points to enhance or fuel certain Monk features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind, each of which is detailed below.",
                 "When you expend Ki Points, it is unavailable until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, at the end of which you regain all your expended Ki Points.",
-                "Some features that use Ki Points require your target to make a {@variantrule Saving Throw|Ishiir}. The save DC equals 8 plus your Wisdom modifier and Proficiency Bonus.",
+                "Some features that use Ki Points require your target to make a {@variantrule Saving Throw|Ishiir}. The save DC equals 8 plus your Wisdom modifier and {@variantrule Proficiency|Ishiir} Bonus.",
                 {
 					"type": "list",
 					"style": "list-hang-notitle",
@@ -923,7 +923,7 @@
 							"type": "item",
 							"name": "Distant Eye.",
                             "entries": [
-                                "When you make a ranged weapon attack, you can spend 1 ki point to prevent attacking at long range from imposing disadvantage on your {@variantrule Attack Roll|Ishiir}s until the end of the current turn."
+                                "When you make a ranged weapon attack, you can spend 1 ki point to prevent attacking at long range from imposing {@variantrule Disadvantage|Ishiir} on your {@variantrule Attack Roll|Ishiir}s until the end of the current turn."
                             ]
 						},
 						{
@@ -1014,14 +1014,14 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Monk",
             "classSource": "Ishiir",
             "level": 4,
             "entries": [
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1085,7 +1085,7 @@
             "classSource": "Ishiir",
             "level": 6,
             "entries": [
-                "Your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+                "Your unarmed strikes count as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage."
             ]
         },
         {
@@ -1127,14 +1127,14 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Monk",
             "classSource": "Ishiir",
             "level": 8,
             "entries": [
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1159,7 +1159,7 @@
             "classSource": "Ishiir",
             "level": 10,
             "entries": [
-                "Your mastery of the ki flowing through you makes you immune to disease and poison."
+                "Your mastery of the ki flowing through you makes you {@variantrule Immunity|Ishiir|Immune} to disease and poison."
             ]
         },
         {
@@ -1234,14 +1234,14 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Monk",
             "classSource": "Ishiir",
             "level": 12,
             "entries": [
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1282,7 +1282,7 @@
                 "amount": 1
             },
             "entries": [
-                "Your mastery of ki grants you proficiency in all {@variantrule Saving Throw|Ishiir}s.",
+                "Your mastery of ki grants you {@variantrule Proficiency|Ishiir} in all {@variantrule Saving Throw|Ishiir}s.",
                 "Additionally, whenever you make a {@variantrule Saving Throw|Ishiir} and fail, you can spend 1 ki point to reroll it and take the second result."
             ]
         },
@@ -1324,14 +1324,14 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Monk",
             "classSource": "Ishiir",
             "level": 16,
             "entries": [
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1360,7 +1360,7 @@
                 "amount": 4
             },
             "entries": [
-                "At the start of your turn, you can expend 3 Focus Points to bolster yourself against harm for 1 minute or until you have the {@condition Incapacitated|Ishiir} condition. During that time, you have Resistance to all damage except Force damage."
+                "At the start of your turn, you can expend 3 Focus Points to bolster yourself against harm for 1 minute or until you have the {@condition Incapacitated|Ishiir} condition. During that time, you have {@variantrule Resistance|Ishiir} to all damage except Force damage."
             ]
         },
         {
@@ -1377,14 +1377,14 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Monk",
             "classSource": "Ishiir",
             "level": 19,
             "entries": [
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1702,7 +1702,7 @@
             "entries": [
                 "You can channel destructive waves of energy, like those created by the dragons you emulate. When you take the {@action Attack|Ishiir} action on your turn, you can replace one of the attacks with an exhalation of draconic energy in either a 20-foot cone or a 40-foot line that is 5 feet wide (your choice). Choose a damage type: acid, cold, fire, lightning, or poison. Each creature in that area must make a Dexterity {@variantrule Saving Throw|Ishiir} against your ki save DC, taking damage of the chosen type equal to two rolls of your Martial Arts die on a failed save, or half as much damage on a successful one.",
                 "At 11th level, the damage of this feature increases to three rolls of your Martial Arts die.",
-                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}. While you have no uses available, you can spend 2 ki points to use this feature again."
+                "You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}. While you have no uses available, you can spend 2 ki points to use this feature again."
             ]
         },
         {
@@ -1752,7 +1752,7 @@
             "header": 2,
             "entries": [
                 "When you use your Step of the Wind, you can unfurl spectral draconic wings from your back that vanish at the end of your turn. While the wings exist, you have a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}.",
-                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}. While you have no uses available, you can spend 3 ki points to use this feature again."
+                "You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}. While you have no uses available, you can spend 3 ki points to use this feature again."
             ]
         },
         {
@@ -1779,7 +1779,7 @@
                         {
                             "type": "item",
                             "name": "Resistance",
-                            "entry": "Choose a damage type when you activate this aura: acid, cold, fire, lightning, or poison. You and your allies within the aura have resistance to that damage."
+                            "entry": "Choose a damage type when you activate this aura: acid, cold, fire, lightning, or poison. You and your allies within the aura have {@variantrule Resistance|Ishiir} to that damage."
                         }
                     ]
                 },
@@ -1915,7 +1915,7 @@
                     "type": "entries",
                     "name": "Wisdom of the Spirit",
                     "entries": [
-                        "You have advantage on Wisdom ({@skill Insight}) and Charisma ({@skill Intimidation}) checks."
+                        "You have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Insight}) and Charisma ({@skill Intimidation}) checks."
                     ]
                 },
                 {
@@ -2023,7 +2023,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain proficiency in the {@skill Performance} skill if you don't already have it. Your martial arts technique mixes combat training with the precision of a dancer and the antics of a jester. You also gain proficiency with {@item brewer's supplies|Ishiir} if you don't already have it."
+                "You gain {@variantrule Proficiency|Ishiir} in the {@skill Performance} skill if you don't already have it. Your martial arts technique mixes combat training with the precision of a dancer and the antics of a jester. You also gain {@variantrule Proficiency|Ishiir} with {@item brewer's supplies|Ishiir} if you don't already have it."
             ]
         },
         {
@@ -2112,7 +2112,7 @@
                 "amount": 2
             },
             "entries": [
-                "You always seem to get a lucky bounce at the right moment. When you make an {@variantrule Ability Check|Ishiir}, an {@variantrule Attack Roll|Ishiir}, or a {@variantrule Saving Throw|Ishiir} and have disadvantage on the roll, you can spend 2 ki points to cancel the disadvantage for that roll."
+                "You always seem to get a lucky bounce at the right moment. When you make an {@variantrule Ability Check|Ishiir}, an {@variantrule Attack Roll|Ishiir}, or a {@variantrule Saving Throw|Ishiir} and have {@variantrule Disadvantage|Ishiir} on the roll, you can spend 2 ki points to cancel the {@variantrule Disadvantage|Ishiir} for that roll."
             ]
         },
         {
@@ -2126,7 +2126,7 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "No {@variantrule Attack Roll|Ishiir} can have advantage against you when you are under the effect of Patient Defense.",
+                "No {@variantrule Attack Roll|Ishiir} can have {@variantrule Advantage|Ishiir} against you when you are under the effect of Patient Defense.",
                 "Additionally, whenever an {@variantrule Attack Roll|Ishiir} misses you, you can move 10 feet in any direction without provoking Attacks of Opportunity."
             ]
         },
@@ -2166,7 +2166,7 @@
                 "You learn magical disciplines that harness the power of the Four Elements. A discipline requires you to spend ki points each time you use it.",
                 "You know the Elemental Attunement discipline and two other elemental disciplines of your choice. You learn one additional elemental discipline of your choice at 6th, 11th, and 17th level.",
                 "Whenever you learn a new elemental discipline, you can also replace one elemental discipline that you already know with a different discipline.",
-                "When you use an elemental discipline to cast a spell that scales with the level of the spell slot it is used with, you can spend additional ki points to treat the spell as cast at a higher level. You spend 1 ki point for each level above the original and the resulting level of the spell cannot be greater than your proficiency bonus.",
+                "When you use an elemental discipline to cast a spell that scales with the level of the spell slot it is used with, you can spend additional ki points to treat the spell as cast at a higher level. You spend 1 ki point for each level above the original and the resulting level of the spell cannot be greater than your {@variantrule Proficiency|Ishiir} bonus.",
                 "When you use an elemental discipline as an action, you can also make one unarmed strike as a bonus action.",
                 {
                     "type": "entries",
@@ -2449,7 +2449,7 @@
                     "type": "entries",
                     "name": "Way of the Brush",
                     "entries": [
-                        "You gain proficiency with your choice of {@item calligrapher's supplies|Ishiir} or {@item painter's supplies|Ishiir}."
+                        "You gain {@variantrule Proficiency|Ishiir} with your choice of {@item calligrapher's supplies|Ishiir} or {@item painter's supplies|Ishiir}."
                     ]
                 }
             ]
@@ -2484,7 +2484,7 @@
                     "type": "entries",
                     "name": "Magic Kensei Weapons",
                     "entries": [
-                        "Your attacks with your kensei weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+                        "Your attacks with your kensei weapons count as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage."
                     ]
                 },
                 {
@@ -2678,7 +2678,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain proficiency in the {@skill Insight} and {@skill Medicine} skills, and you gain proficiency with the {@item herbalism kit|Ishiir}.",
+                "You gain {@variantrule Proficiency|Ishiir} in the {@skill Insight} and {@skill Medicine} skills, and you gain {@variantrule Proficiency|Ishiir} with the {@item herbalism kit|Ishiir}.",
                 "You also gain a special mask, which you often wear when using the features of this subclass. You determine its appearance, or generate it randomly by rolling on the Merciful Mask table.",
                 {
                     "type": "table",
@@ -2932,7 +2932,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn."
+                "You gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have {@variantrule Advantage|Ishiir} on the first melee attack you make before the end of the turn."
             ]
         },
         {
@@ -3041,7 +3041,7 @@
                     "type": "entries",
                     "name": "Invoke Wrath",
                     "entries": [
-                        "The target suffers disadvantage on all {@variantrule Attack Roll|Ishiir}s against targets other than you until the end of your next turn."
+                        "The target suffers {@variantrule Disadvantage|Ishiir} on all {@variantrule Attack Roll|Ishiir}s against targets other than you until the end of your next turn."
                     ]
                 },
                 {
@@ -3103,7 +3103,7 @@
 			"level": 11,
 			"header": 2,
 			"entries": [
-				"You gain resistance to psychic damage and your features ignore resistance to psychic damage."
+				"You gain {@variantrule Resistance|Ishiir} to psychic damage and your features ignore {@variantrule Resistance|Ishiir} to psychic damage."
 			]
 		},
         {
@@ -3269,7 +3269,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You can become an island of calm in even the most chaotic of situations. With this feature, you can cast the {@spell sanctuary|Ishiir} spell on yourself, no material component required, and it lasts up to 8 hours. Its {@variantrule Saving Throw|Ishiir} DC equals 8 + your proficiency bonus + your Wisdom modifier. A creature that succeeds on the save is immune to this effect for 1 hour.",
+                "You can become an island of calm in even the most chaotic of situations. With this feature, you can cast the {@spell sanctuary|Ishiir} spell on yourself, no material component required, and it lasts up to 8 hours. Its {@variantrule Saving Throw|Ishiir} DC equals 8 + your {@variantrule Proficiency|Ishiir} bonus + your Wisdom modifier. A creature that succeeds on the save is {@variantrule Immunity|Ishiir|Immune} to this effect for 1 hour.",
                 "Once you cast the spell in this way, you can't do so again for 1 minute."
             ]
         },
@@ -3284,8 +3284,8 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You gain the ability to diffuse violent situations. Whenever you make a Charisma check to calm violent emotions or to counsel peace, you have advantage on the roll. You must make this entreaty in good faith; it doesn't apply if proficiency in the {@skill Deception} or {@skill Intimidation} skill applies to your check.",
-                "You also gain proficiency in the {@skill Performance} or {@skill Persuasion} skill (choose one)."
+                "You gain the ability to diffuse violent situations. Whenever you make a Charisma check to calm violent emotions or to counsel peace, you have {@variantrule Advantage|Ishiir} on the roll. You must make this entreaty in good faith; it doesn't apply if {@variantrule Proficiency|Ishiir} in the {@skill Deception} or {@skill Intimidation} skill applies to your check.",
+                "You also gain {@variantrule Proficiency|Ishiir} in the {@skill Performance} or {@skill Persuasion} skill (choose one)."
             ]
         },
         {
@@ -3299,7 +3299,7 @@
             "level": 11,
             "header": 2,
             "entries": [
-                "You make Wisdom {@variantrule Saving Throw|Ishiir}s with advantage and when you use Self-Restoration, you can also remove the {@condition Confused|Ishiir} condition."
+                "You make Wisdom {@variantrule Saving Throw|Ishiir}s with {@variantrule Advantage|Ishiir} and when you use Self-Restoration, you can also remove the {@condition Confused|Ishiir} condition."
             ]
         },
         {

@@ -565,8 +565,8 @@
 			"entries": [
 				"A kineticist chooses one primary element on which to focus. This element determines how she accesses the raw power of the Ethereal Plane, and grants you features at 1st level and again at 6th, 10th, 15th, and 20th level.",
 				"Regardless of your chosen element, you use your Charisma modifier when setting {@variantrule Attack Roll|Ishiir}s and determining the {@variantrule Saving Throw|Ishiir} DC of your abilities.",
-				"<b>Spell save DC</b> = 8 + your proficiency bonus + your Charisma modifier",
-				"<b>Spell attack modifier</b> = your proficiency bonus + your Charisma modifier",
+				"<b>Spell save DC</b> = 8 + your {@variantrule Proficiency|Ishiir} bonus + your Charisma modifier",
+				"<b>Spell attack modifier</b> = your {@variantrule Proficiency|Ishiir} bonus + your Charisma modifier",
 				{
 					"type": "entries",
 					"name": "The Elements, intertwined",
@@ -628,7 +628,7 @@
 			"level": 1,
 			"entries": [
 				"As a bonus action, you form the energy of your element into a weapon-like shape of your choice, which lasts until you are incapacitated or dismiss it as a bonus action. You cannot use this shape if you have already used your kinetic blast this turn.",
-				"As an action, you can make a melee spell attack with this shape against a target of your choice within 5 ft of you, dealing your kinetic shape + your CHA modifier + your proficiency modifier damage of your chosen element's type.",
+				"As an action, you can make a melee spell attack with this shape against a target of your choice within 5 ft of you, dealing your kinetic shape + your CHA modifier + your {@variantrule Proficiency|Ishiir} modifier damage of your chosen element's type.",
 				"Additionally, your ability to defend yourself with this shape grants you a +1 bonus to your AC while maintaining it."
 			]
 		},
@@ -684,7 +684,7 @@
 			"classSource": "Ishiir",
 			"level": 2,
 			"entries": [
-				"When you make an {@variantrule Ability Check|Ishiir}, you can spend 1 kinesis point to gain advantage on the check."
+				"When you make an {@variantrule Ability Check|Ishiir}, you can spend 1 kinesis point to gain {@variantrule Advantage|Ishiir} on the check."
 			]
 		},
 		{
@@ -695,7 +695,7 @@
 			"classSource": "Ishiir",
 			"level": 2,
 			"entries": [
-				"When you take acid, cold, fire, lightning, or thunder damage, you can spend 1 kinesis point and use your reaction to grant yourself resistance against that instance of the damage."
+				"When you take acid, cold, fire, lightning, or thunder damage, you can spend 1 kinesis point and use your reaction to grant yourself {@variantrule Resistance|Ishiir} against that instance of the damage."
 			]
 		},
 		{
@@ -866,7 +866,7 @@
 					"type": "entries",
 					"name": "Heightened Kinesis",
 					"entries": [
-						"When you use your kinetic shape with an infusion that forces a creature to make a {@variantrule Saving Throw|Ishiir} to resist its effects, you can spend 2 kinesis points to give one target of the shape disadvantage on all its {@variantrule Saving Throw|Ishiir}s made against the effect."
+						"When you use your kinetic shape with an infusion that forces a creature to make a {@variantrule Saving Throw|Ishiir} to resist its effects, you can spend 2 kinesis points to give one target of the shape {@variantrule Disadvantage|Ishiir} on all its {@variantrule Saving Throw|Ishiir}s made against the effect."
 					]
 				},
 				{
@@ -899,7 +899,7 @@
 			"level": 13,
 			"entries": [
 				"A kineticist's body surges with energy from her chosen element whenever she spends kinesis points, causing her to glow with a nimbus of fire, weep water from her pores, or experience some other thematic effect.",
-				"When you have less than half your current maximum number of kinesis points, your Charisma bonus to damage on your kinetic shape is doubled. Additionally, you gain resistance to one damage type corresponding to one of your chosen elements."
+				"When you have less than half your current maximum number of kinesis points, your Charisma bonus to damage on your kinetic shape is doubled. Additionally, you gain {@variantrule Resistance|Ishiir} to one damage type corresponding to one of your chosen elements."
 			]
 		},
 		{
@@ -1027,7 +1027,7 @@
 			"header": 2,
 			"entries": [
 				"When you gain access to this element, as a bonus action, you can surround yourself with a whirling torrent of air or a static field of crackling lightning, which lasts until you dismiss the effect (no action required).",
-				"While the effect is active and you aren't wearing any armor or shield, your AC equals 10 + your Dexterity modifier + your Charisma modifier and all ranged weapon attacks against you are made with disadvantage. Additionally, any gas, vapor, or fog that can be dispersed by a strong wind has no effect on you.",
+				"While the effect is active and you aren't wearing any armor or shield, your AC equals 10 + your Dexterity modifier + your Charisma modifier and all ranged weapon attacks against you are made with {@variantrule Disadvantage|Ishiir}. Additionally, any gas, vapor, or fog that can be dispersed by a strong wind has no effect on you.",
 				"This effect is exclusive with Elemental Defense class features from other Elemental Schools."
 			]
 		},
@@ -1042,7 +1042,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"When you gain access to this element, you gain proficiency in one of the following skills of your choice: {@skill Acrobatics}, {@skill Sleight of Hand}, {@skill Stealth}, or {@skill Performance}."
+				"When you gain access to this element, you gain {@variantrule Proficiency|Ishiir} in one of the following skills of your choice: {@skill Acrobatics}, {@skill Sleight of Hand}, {@skill Stealth}, or {@skill Performance}."
 			]
 		},
 		{
@@ -1106,7 +1106,7 @@
 					"type": "list",
 					"items": [
 						"You ignore all wind-based effects such as the {@spell Whirlwind|Ishiir} spell or even a natural tornado.",
-						"You gain immunity to lightning damage.",
+						"You gain {@variantrule Immunity|Ishiir} to lightning damage.",
 						"You are surrounded by a 60 foot radius aura of stormlike winds of such intensity that they render ranged weapon attacks against you completely impossible. You and any number of creatures of your choice in the area are unaffected.",
 						"Any other creature is {@condition Deafened|Ishiir} while in this area, must spend 4 feet for every 1 foot of movement while in it, and has to succeed on a Strength {@variantrule Saving Throw|Ishiir} against your save DC at the start of its turn or when it enters the area for the first time or be knocked {@condition Prone|Ishiir} or hurled 20 feet away in a direction that you choose."
 					]
@@ -1182,7 +1182,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"When you gain access to this element, you gain proficiency in one of the following skills of your choice: {@skill Athletics}, {@skill Intimidation}, {@skill Nature}, or {@skill Perception}."
+				"When you gain access to this element, you gain {@variantrule Proficiency|Ishiir} in one of the following skills of your choice: {@skill Athletics}, {@skill Intimidation}, {@skill Nature}, or {@skill Perception}."
 			]
 		},
 		{
@@ -1245,7 +1245,7 @@
 					"type": "list",
 					"items": [
 						"Your size changes the huge and you gain temporary hit points equal to three times your kineticist level.",
-						"You are immune to the {@condition Charmed|Ishiir}, {@condition Exhaustion|Ishiir|Exhausted}, {@condition Frightened|Ishiir}, {@condition Paralyzed|Ishiir}, {@condition Petrified|Ishiir}, and {@condition Poisoned|Ishiir} conditions.",
+						"You are {@variantrule Immunity|Ishiir|Immune} to the {@condition Charmed|Ishiir}, {@condition Exhaustion|Ishiir|Exhausted}, {@condition Frightened|Ishiir}, {@condition Paralyzed|Ishiir}, {@condition Petrified|Ishiir}, and {@condition Poisoned|Ishiir} conditions.",
 						"You ignore all earth-based effects such as the {@spell Erupting Earth|Ishiir} spell or even a natural earthquake.",
 						"When you move for the first time on your turn, your steps shake the earth. All creatures of your choice within 60 feet of you have to make a Strength {@variantrule Saving Throw|Ishiir} against your save DC or be knocked {@condition Prone|Ishiir}."
 					]
@@ -1321,7 +1321,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"When you gain access to this element, you gain proficiency in one of the following skills of your choice: {@skill Acrobatics}, {@skill Intimidation}, {@skill Performance}, or {@skill Persuasion}."
+				"When you gain access to this element, you gain {@variantrule Proficiency|Ishiir} in one of the following skills of your choice: {@skill Acrobatics}, {@skill Intimidation}, {@skill Performance}, or {@skill Persuasion}."
 			]
 		},
 		{
@@ -1350,7 +1350,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Your flames grow extraordinarily intense. You ignore resistance to fire damage and treat immunity to fire damage as resistance instead."
+				"Your flames grow extraordinarily intense. You ignore {@variantrule Resistance|Ishiir} to fire damage and treat {@variantrule Immunity|Ishiir} to fire damage as {@variantrule Resistance|Ishiir} instead."
 			]
 		},
 		{
@@ -1384,8 +1384,8 @@
 					"type": "list",
 					"items": [
 						"You shed bright light in a 60 feet radius and dim light in a radius of 30 feet beyond that.",
-						"You gain immunity to fire damage.",
-						"Creatures in the bright light have disadvantage on {@variantrule Saving Throw|Ishiir}s against infusions that include the fire element.",
+						"You gain {@variantrule Immunity|Ishiir} to fire damage.",
+						"Creatures in the bright light have {@variantrule Disadvantage|Ishiir} on {@variantrule Saving Throw|Ishiir}s against infusions that include the fire element.",
 						"You radiate intense heat in a 10 feet radius around you. Any creature of your choice that enters that radius for the first time on a turn or starts its turn there, takes half your kinetic shape damage."
 					]
 				},
@@ -1460,7 +1460,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"When you gain access to this element, you gain proficiency in one of the following skills of your choice: {@skill Acrobatics}, {@skill Insight}, {@skill Persuasion}, or {@skill Stealth}."
+				"When you gain access to this element, you gain {@variantrule Proficiency|Ishiir} in one of the following skills of your choice: {@skill Acrobatics}, {@skill Insight}, {@skill Persuasion}, or {@skill Stealth}."
 			]
 		},
 		{
@@ -1526,7 +1526,7 @@
 					"type": "list",
 					"items": [
 						"You ignore all water-based effects such as the {@spell Tsunami|Ishiir} spell or a natural vortex.",
-						"You gain immunity to cold damage.",
+						"You gain {@variantrule Immunity|Ishiir} to cold damage.",
 						"Water flows from everywhere, including up from the ground and dropping as rain to form a vortex of writhing watery tentacles in a 60 feet radius around you that makes the area {@quickref difficult terrain||3}. You and any number of creatures of your choice in the area unaffected.",
 						"Any other creature that enters the area for the first time on a turn or starts its turn there has to make a Dexterity {@variantrule Saving Throw|Ishiir} against your save DC or be {@condition Grappled|Ishiir} and {@condition Restrained|Ishiir}. It can make a Strength check as an action on its turn to no longer be {@condition Grappled|Ishiir} and {@condition Restrained|Ishiir}."
 					]
