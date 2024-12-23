@@ -273,7 +273,7 @@
                 },
                 "Primal Knowledge|Barbarian|Ishiir|3",
                 "Ability Score Improvement|Barbarian|Ishiir|4",
-                "Proficiency Versatility|Barbarian|Ishiir|4",
+                "{@variantrule Proficiency|Ishiir} Versatility|Barbarian|Ishiir|4",
                 "Martial Mastery|Barbarian|Ishiir|4",
                 "Extra Attack|Barbarian|Ishiir|5",
                 "Fast Movement|Barbarian|Ishiir|5",
@@ -284,7 +284,7 @@
                 "Feral Instinct|Barbarian|Ishiir|7",
                 "Instinctive Pounce|Barbarian|Ishiir|7",
                 "Ability Score Improvement|Barbarian|Ishiir|8",
-                "Proficiency Versatility|Barbarian|Ishiir|8",
+                "{@variantrule Proficiency|Ishiir} Versatility|Barbarian|Ishiir|8",
                 "Brutal Strike|Barbarian|Ishiir|9",
                 {
                     "classFeature": "Path Feature|Barbarian|Ishiir|10",
@@ -293,7 +293,7 @@
                 "Overwhelming Might|Barbarian|Ishiir|11",
                 "Relentless Rage|Barbarian|Ishiir|11",
                 "Ability Score Improvement|Barbarian|Ishiir|12",
-                "Proficiency Versatility|Barbarian|Ishiir|12",
+                "{@variantrule Proficiency|Ishiir} Versatility|Barbarian|Ishiir|12",
                 "Improved Brutal Strike|Barbarian|Ishiir|13",
                 {
                     "classFeature": "Path Feature|Barbarian|Ishiir|14",
@@ -301,11 +301,11 @@
                 },
                 "Persistent Rage|Barbarian|Ishiir|15",
                 "Ability Score Improvement|Barbarian|Ishiir|16",
-                "Proficiency Versatility|Barbarian|Ishiir|16",
+                "{@variantrule Proficiency|Ishiir} Versatility|Barbarian|Ishiir|16",
                 "Improved Brutal Strike|Barbarian|Ishiir|17",
                 "Indomitable Might|Barbarian|Ishiir|18",
                 "Ability Score Improvement|Barbarian|Ishiir|19",
-                "Proficiency Versatility|Barbarian|Ishiir|19",
+                "{@variantrule Proficiency|Ishiir} Versatility|Barbarian|Ishiir|19",
                 "Primal Champion|Barbarian|Ishiir|20"
             ],
             "subclassTitle": "Primal Path",
@@ -817,7 +817,7 @@
                     "type": "entries",
                     "name": "Damage Resistance",
                     "entries": [
-                        "You have Resistance to Bludgeoning, Piercing, and Slashing damage."
+                        "You have {@variantrule Resistance|Ishiir} to Bludgeoning, Piercing, and Slashing damage."
                     ]
                 },
                 {
@@ -831,7 +831,7 @@
                     "type": "entries",
                     "name": "Strength Advantage",
                     "entries": [
-                        "You have Advantage on Strength checks and Strength {@variantrule Saving Throw|Ishiir}s."
+                        "You have {@variantrule Advantage|Ishiir} on Strength checks and Strength {@variantrule Saving Throw|Ishiir}s."
                     ]
                 },
                 {
@@ -880,7 +880,7 @@
             "classSource": "Ishiir",
             "level": 2,
             "entries": [
-                "You gain an uncanny sense of when things aren't as they should be, giving you an edge when you dodge perils. You have Advantage on Dexterity {@variantrule Saving Throw|Ishiir}s unless you have the {@condition Incapacitated|Ishiir} condition."
+                "You gain an uncanny sense of when things aren't as they should be, giving you an edge when you dodge perils. You have {@variantrule Advantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir}s unless you have the {@condition Incapacitated|Ishiir} condition."
             ]
         },
         {
@@ -892,7 +892,7 @@
             "classSource": "Ishiir",
             "level": 2,
             "entries": [
-                "You can throw aside all concern for defense to attack with increased ferocity. When you make your first {@variantrule Attack Roll|Ishiir} on your turn, you can decide to attack recklessly. Doing so gives you Advantage on {@variantrule Attack Roll|Ishiir}s using Strength until the start of your next turn, but {@variantrule Attack Roll|Ishiir}s against you have Advantage during that time."
+                "You can throw aside all concern for defense to attack with increased ferocity. When you make your first {@variantrule Attack Roll|Ishiir} on your turn, you can decide to attack recklessly. Doing so gives you {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s using Strength until the start of your next turn, but {@variantrule Attack Roll|Ishiir}s against you have {@variantrule Advantage|Ishiir} during that time."
             ]
         },
         {
@@ -906,7 +906,7 @@
             "entries": [
                 "{@i 2nd-level barbarian feature (replaces Danger Sense)}",
                 "You become proficient in your choice of two of the following skills: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, {@skill Perception}, or {@skill Survival}.",
-                "Your proficiency bonus is doubled for any {@variantrule Ability Check|Ishiir} you make that uses either of those skills."
+                "Your {@variantrule Proficiency|Ishiir} bonus is doubled for any {@variantrule Ability Check|Ishiir} you make that uses either of those skills."
             ]
         },
         {
@@ -918,7 +918,7 @@
             "classSource": "Ishiir",
             "level": 3,
             "entries": [
-                "You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1.",
+                "You gain {@variantrule Proficiency|Ishiir} in another skill of your choice from the skill list available to Barbarians at level 1.",
                 "In addition, while your Rage is active, you can channel primal power when you attempt certain tasks; whenever you make an {@variantrule Ability Check|Ishiir} using one of the following skills, you can make it as a Strength check even if it normally uses a different ability: {@skill Acrobatics}, {@skill Intimidation}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}. When you use this ability, your Strength represents primal power coursing through you, honing your agility, bearing, and senses."
             ]
         },
@@ -960,14 +960,14 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
             "level": 4,
             "entries": [
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1016,7 +1016,7 @@
             "classSource": "Ishiir",
             "level": 7,
             "entries": [
-                "Your instincts are so honed that you have advantage on initiative rolls.",
+                "Your instincts are so honed that you have {@variantrule Advantage|Ishiir} on initiative rolls.",
                 "Additionally, if you are {@quickref Surprise|PHB|3|0|surprised} at the beginning of combat and aren't {@condition Incapacitated|Ishiir}, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn."
             ]
         },
@@ -1045,14 +1045,14 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
             "level": 8,
             "entries": [
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1064,7 +1064,7 @@
             "classSource": "Ishiir",
             "level": 9,
             "entries": [
-                "If you use Reckless Attack, you can forgo any Advantage on one Strength-based {@variantrule Attack Roll|Ishiir} of your choice on your turn. The chosen {@variantrule Attack Roll|Ishiir} mustn't have Disadvantage. If the chosen {@variantrule Attack Roll|Ishiir} hits, the target takes an extra {@damage 1d10} damage of the same type dealt by the weapon or Unarmed Strike, and you can cause one Brutal Strike effect of your choice. You have the following effect options.",
+                "If you use Reckless Attack, you can forgo any {@variantrule Advantage|Ishiir} on one Strength-based {@variantrule Attack Roll|Ishiir} of your choice on your turn. The chosen {@variantrule Attack Roll|Ishiir} mustn't have {@variantrule Disadvantage|Ishiir}. If the chosen {@variantrule Attack Roll|Ishiir} hits, the target takes an extra {@damage 1d10} damage of the same type dealt by the weapon or Unarmed Strike, and you can cause one Brutal Strike effect of your choice. You have the following effect options.",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
@@ -1133,14 +1133,14 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
             "level": 12,
             "entries": [
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1161,7 +1161,7 @@
 						{
 							"type": "item",
 							"name": "Staggering Blow.",
-							"entry": "The target must succeed on a CON {@variantrule Saving Throw|Ishiir} or have Disadvantage on the next {@variantrule Saving Throw|Ishiir} it makes, and it can't take reactions until the start of your next turn."
+							"entry": "The target must succeed on a CON {@variantrule Saving Throw|Ishiir} or have {@variantrule Disadvantage|Ishiir} on the next {@variantrule Saving Throw|Ishiir} it makes, and it can't take reactions until the start of your next turn."
 						},
 						{
 							"type": "item",
@@ -1211,14 +1211,14 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
             "level": 16,
             "entries": [
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1259,14 +1259,14 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Barbarian",
             "classSource": "Ishiir",
             "level": 19,
             "entries": [
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1313,7 +1313,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Spectral warriors appear when you enter your rage. While you're raging, the first creature you hit with an attack on your turn becomes the target of the warriors, which hinder its attacks. Until the start of your next turn, that target has disadvantage on any {@variantrule Attack Roll|Ishiir} that isn't against you, and when the target hits a creature other than you with an attack, that creature has resistance to the damage dealt by the attack. The effect on the target ends early if your rage ends."
+                "Spectral warriors appear when you enter your rage. While you're raging, the first creature you hit with an attack on your turn becomes the target of the warriors, which hinder its attacks. Until the start of your next turn, that target has {@variantrule Disadvantage|Ishiir} on any {@variantrule Attack Roll|Ishiir} that isn't against you, and when the target hits a creature other than you with an attack, that creature has {@variantrule Resistance|Ishiir} to the damage dealt by the attack. The effect on the target ends early if your rage ends."
             ]
         },
         {
@@ -1392,7 +1392,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain proficiency in heavy armor and ignore all restrictions for Barbarian class features while wearing heavy armor. You also gain the ability to modify your armor with spikes, blades, and other hazardous materials and turn it into a weapon: spiked armor.",
+                "You gain {@variantrule Proficiency|Ishiir} in heavy armor and ignore all restrictions for Barbarian class features while wearing heavy armor. You also gain the ability to modify your armor with spikes, blades, and other hazardous materials and turn it into a weapon: spiked armor.",
                 "Every time you finish a {@variantrule Short Rest|Ishiir}, you can use this feature to remove these materials from your current spiked armor and attach them to another armor of your choice.",
                 "Spiked armor has the same properties as the original armor. Additionally, it counts as a heavy martial melee weapon with a reach of 5 ft that you are proficient in. On a hit, it deals {@damage 1d4} piercing damage. You use your Strength modifier for the attack and damage rolls. If spiked your armor has a permanent bonus to its armor class (e.g. the masterwork property), you add this bonus to your attack and damage rolls with it.",
                 "When you are raging and wearing spiked armor, you can make one attack with your spiked armor as a bonus action.",
@@ -1425,7 +1425,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "When you are wearing spiked armor and a creature touches you (e.g. by grappling you or hitting you with a natural weapon attack) or hits you with a melee attack from within 5 ft, it takes piercing damage equal to your proficiency bonus. If your armor has a permanent bonus to its armor class (e.g. the masterwork property), you add this bonus to the damage."
+                "When you are wearing spiked armor and a creature touches you (e.g. by grappling you or hitting you with a natural weapon attack) or hits you with a melee attack from within 5 ft, it takes piercing damage equal to your {@variantrule Proficiency|Ishiir} bonus. If your armor has a permanent bonus to its armor class (e.g. the masterwork property), you add this bonus to the damage."
             ]
         },
         {
@@ -1543,7 +1543,7 @@
 							"type": "entries",
 							"name": "Bite",
 							"entries": [
-								"When you damage a creature, you regain hitpoints equal to half your proficiency (rounded up). This amount is doubled against creatures that have half or less of their maximum hitpoints and tripled if you reduce it to 0 hitpoints."
+								"When you damage a creature, you regain hitpoints equal to half your {@variantrule Proficiency|Ishiir} (rounded up). This amount is doubled against creatures that have half or less of their maximum hitpoints and tripled if you reduce it to 0 hitpoints."
 							]
 						},
 						{
@@ -1564,14 +1564,14 @@
 							"type": "entries",
 							"name": "Hooves",
 							"entries": [
-								"Once per turn, when you hit a creature that is no more than 1 size larger than you, you can attempt to {@action shove|Ishiir} the target as part of this attack. Attacks against {@condition Prone|Ishiir} creatures deal additional damage equal to your proficiency."
+								"Once per turn, when you hit a creature that is no more than 1 size larger than you, you can attempt to {@action shove|Ishiir} the target as part of this attack. Attacks against {@condition Prone|Ishiir} creatures deal additional damage equal to your {@variantrule Proficiency|Ishiir}."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Pincers",
 							"entries": [
-								"Once per turn, when you hit a creature that is no more than 1 size larger than you, you can attempt to {@action grapple|Ishiir} the target as part of this attack. Creatures {@condition Grappled|Ishiir} by you have disadvantage on {@variantrule Attack Roll|Ishiir}s."
+								"Once per turn, when you hit a creature that is no more than 1 size larger than you, you can attempt to {@action grapple|Ishiir} the target as part of this attack. Creatures {@condition Grappled|Ishiir} by you have {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s."
 							]
 						},
 						{
@@ -1597,7 +1597,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "The feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
+                "The feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage.",
                 "You can also alter your form to help you adapt to your surroundings. When you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, choose one of the following benefits, which lasts until you finish your next {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}:",
                 {
                     "type": "list",
@@ -1620,7 +1620,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "When you hit a creature with your natural weapons while you are raging, the beast within you can curse your target with rabid fury. The target must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice):",
+                "When you hit a creature with your natural weapons while you are raging, the beast within you can curse your target with rabid fury. The target must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} (DC equal to 8 + your Constitution modifier + your {@variantrule Proficiency|Ishiir} bonus) or suffer one of the following effects (your choice):",
                 {
                     "type": "list",
                     "items": [
@@ -1628,7 +1628,7 @@
                         "The target takes {@damage 2d12} psychic damage."
                     ]
                 },
-                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                "You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1644,7 +1644,7 @@
             "entries": [
                 "The beast within you grows so powerful that you can spread its ferocity to others and gain resilience from them joining your hunt. When you enter your rage, you can choose a number of other willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature).",
                 "You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can each use the following benefit once on each of their turns: when the creature hits a target with an {@variantrule Attack Roll|Ishiir} and deals damage to it, the creature can roll a {@dice d6} and gain a bonus to the damage equal to the number rolled.",
-                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                "You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1703,8 +1703,8 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "When you enter a frenzy, you also adopt a menacing presence that frightens foes around you. Any hostile creature that starts its turn within 30 feet of you while you are in a frenzy or enters that area for the first time on a turn and can see or hear you, must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} (DC equal to 8 + your proficiency bonus + your Strength modifier) or be {@condition Frightened|Ishiir} of you until the start of its next turn.",
-                "If a creature's {@variantrule Saving Throw|Ishiir} is successful, it is immune to your Intimidating Presence for the next 24 hours."
+                "When you enter a frenzy, you also adopt a menacing presence that frightens foes around you. Any hostile creature that starts its turn within 30 feet of you while you are in a frenzy or enters that area for the first time on a turn and can see or hear you, must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} (DC equal to 8 + your {@variantrule Proficiency|Ishiir} bonus + your Strength modifier) or be {@condition Frightened|Ishiir} of you until the start of its next turn.",
+                "If a creature's {@variantrule Saving Throw|Ishiir} is successful, it is {@variantrule Immunity|Ishiir|Immune} to your Intimidating Presence for the next 24 hours."
             ]
         },
         {
@@ -1754,7 +1754,7 @@
             "level": 3,
             "entries": [
                 "When you choose this path, you learn to speak, read, and write Giant or one other language of your choice if you already know Giant. Additionally, you learn either the {@spell druidcraft|Ishiir} or {@spell thaumaturgy|Ishiir} cantrip (your choice). Wisdom is your spellcasting ability for this spell.",
-                "You are proficient with ranged weapon attacks you make with improvised weapons. When you make a ranged weapon attack with an improvised weapon or a thrown weapon, you do not suffer disadvantage for attacking at long range with either."
+                "You are proficient with ranged weapon attacks you make with improvised weapons. When you make a ranged weapon attack with an improvised weapon or a thrown weapon, you do not suffer {@variantrule Disadvantage|Ishiir} for attacking at long range with either."
             ]
         },
         {
@@ -1817,7 +1817,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "Your connection to giant strength now allows you to hurl both allies and enemies on the battlefield. As a bonus action while raging, you can choose one Medium or smaller creature within your reach and move it to an unoccupied space you can see within 30 feet of yourself. An unwilling creature must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC equals 8 + your proficiency bonus + your Strength modifier) to avoid the effect.",
+                "Your connection to giant strength now allows you to hurl both allies and enemies on the battlefield. As a bonus action while raging, you can choose one Medium or smaller creature within your reach and move it to an unoccupied space you can see within 30 feet of yourself. An unwilling creature must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC equals 8 + your {@variantrule Proficiency|Ishiir} bonus + your Strength modifier) to avoid the effect.",
                 "If, at the end of this movement, the thrown creature isn't on a surface or liquid that can support it, the creature falls, taking damage as normal and landing {@condition Prone|Ishiir}."
             ]
         },
@@ -1886,7 +1886,7 @@
             "entries": [
                 "Spectral coils start appearing around you when you enter your rage. While you are raging, your reach with unarmed strikes increases by 5 ft and you ignore all size restrictions and immunities for attempting grapples.",
                 "Once per turn, if you successfully hit a creature with an unarmed strike while raging, you can attempt to grapple it.",
-                "You can use your bonus action to force a creature you grappled in this manner to make a STR {@variantrule Saving Throw|Ishiir}. The DC is equal to 8 + your proficiency + your STR modifier. On a failure, the creature takes force damage equal to your proficiency + your STR modifier + your rage bonus damage and is {@condition Restrained|Ishiir} until the end of your next turn. On a success, the creature takes half as much damage and isn't {@condition Restrained|Ishiir}."
+                "You can use your bonus action to force a creature you grappled in this manner to make a STR {@variantrule Saving Throw|Ishiir}. The DC is equal to 8 + your {@variantrule Proficiency|Ishiir} + your STR modifier. On a failure, the creature takes force damage equal to your {@variantrule Proficiency|Ishiir} + your STR modifier + your rage bonus damage and is {@condition Restrained|Ishiir} until the end of your next turn. On a success, the creature takes half as much damage and isn't {@condition Restrained|Ishiir}."
             ]
         },
         {
@@ -1900,8 +1900,8 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Your connection to Gargan deepens, causing your unarmed attacks to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
-                "Additionally, you gain resistance to lightning damage."
+                "Your connection to Gargan deepens, causing your unarmed attacks to count as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage.",
+                "Additionally, you gain {@variantrule Resistance|Ishiir} to lightning damage."
             ]
         },
         {
@@ -1915,7 +1915,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You have proficiency in Wisdom {@variantrule Saving Throw|Ishiir}s."
+                "You have {@variantrule Proficiency|Ishiir} in Wisdom {@variantrule Saving Throw|Ishiir}s."
             ]
         },
         {
@@ -1929,7 +1929,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "While you are raging you can call down your god's fury in the form of a powerful lightning bolt when you hit a creature with a melee weapon attack. The target has to make a Dexterity {@variantrule Saving Throw|Ishiir}. The DC is equal to 8 + your proficiency + your STR modifier. On a failure, the creature takes {@damage 12d10} lightning damage, and half as much on a successful one. Any creature that you have grappled has disadvantage on this {@variantrule Saving Throw|Ishiir}.",
+                "While you are raging you can call down your god's fury in the form of a powerful lightning bolt when you hit a creature with a melee weapon attack. The target has to make a Dexterity {@variantrule Saving Throw|Ishiir}. The DC is equal to 8 + your {@variantrule Proficiency|Ishiir} + your STR modifier. On a failure, the creature takes {@damage 12d10} lightning damage, and half as much on a successful one. Any creature that you have grappled has {@variantrule Disadvantage|Ishiir} on this {@variantrule Saving Throw|Ishiir}.",
                 "You cannot use this feature again until you have finished a {@variantrule Long Rest|Ishiir}, unless you spend a use of your rage to use it again."
             ]
         },
@@ -1966,7 +1966,7 @@
                 "Your aura has an effect that is active for the duration of your rage, and an additional empowered effect.",
                 "You can empower your aura only once per rage.",
                 "Choose blaze, thunderstorm, or blizzard. Your aura's effect depends on your choice, as detailed below. You can change this choice whenever you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
-                "If your aura's effects require a {@variantrule Saving Throw|Ishiir}, the DC equals 8 + your proficiency bonus + your Constitution modifier.",
+                "If your aura's effects require a {@variantrule Saving Throw|Ishiir}, the DC equals 8 + your {@variantrule Proficiency|Ishiir} bonus + your Constitution modifier.",
                 {
                     "type": "options",
                     "entries": [
@@ -1996,7 +1996,7 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "When a creature touches you, or hits you with a melee attack from within your aura, it takes fire damage equal to {@damage 1d4} x half your proficiency (rounded down). When you empower this aura as a bonus action, all creatures in your aura have to make a DEX {@variantrule Saving Throw|Ishiir}. A creature takes fire damage equal to {@damage 1d6} x your proficiency on a failure, or half as much on a success."
+                "When a creature touches you, or hits you with a melee attack from within your aura, it takes fire damage equal to {@damage 1d4} x half your {@variantrule Proficiency|Ishiir} (rounded down). When you empower this aura as a bonus action, all creatures in your aura have to make a DEX {@variantrule Saving Throw|Ishiir}. A creature takes fire damage equal to {@damage 1d6} x your {@variantrule Proficiency|Ishiir} on a failure, or half as much on a success."
             ]
         },
         {
@@ -2009,7 +2009,7 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "On your turn, choose a creature that is in your aura. That creature has to make DEX {@variantrule Saving Throw|Ishiir}. On a failure, the target takes lightning damage equal to {@damage 1d4} x your proficiency, or half as much on a success. When you empower this aura as a bonus action, you can teleport up to 60 ft to an unoccupied space that you can see. If you do so, you double the next instance of this aura's damage during this rage."
+                "On your turn, choose a creature that is in your aura. That creature has to make DEX {@variantrule Saving Throw|Ishiir}. On a failure, the target takes lightning damage equal to {@damage 1d4} x your {@variantrule Proficiency|Ishiir}, or half as much on a success. When you empower this aura as a bonus action, you can teleport up to 60 ft to an unoccupied space that you can see. If you do so, you double the next instance of this aura's damage during this rage."
             ]
         },
         {
@@ -2022,7 +2022,7 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "When you enter your rage, you gain temporary hit points equal to 5 x your proficiency. When you empower this aura as a reaction, you gain a bonus to your AC and DEX {@variantrule Saving Throw|Ishiir}s equal to your proficiency until the start of your next turn."
+                "When you enter your rage, you gain temporary hit points equal to 5 x your {@variantrule Proficiency|Ishiir}. When you empower this aura as a reaction, you gain a bonus to your AC and DEX {@variantrule Saving Throw|Ishiir}s equal to your {@variantrule Proficiency|Ishiir} until the start of your next turn."
             ]
         },
         {
@@ -2066,7 +2066,7 @@
             "subclassSource": "Ishiir",
             "level": 6,
             "entries": [
-                "You gain resistance to fire damage, and you don't suffer the effects of extreme heat, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch a flammable object that isn't being worn or carried by anyone else and set it on fire."
+                "You gain {@variantrule Resistance|Ishiir} to fire damage, and you don't suffer the effects of extreme heat, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch a flammable object that isn't being worn or carried by anyone else and set it on fire."
             ]
         },
         {
@@ -2079,7 +2079,7 @@
             "subclassSource": "Ishiir",
             "level": 6,
             "entries": [
-                "You gain resistance to lightning damage, and you can breathe underwater. You also gain a {@variantrule Swim Speed|Ishiir} of 30 feet."
+                "You gain {@variantrule Resistance|Ishiir} to lightning damage, and you can breathe underwater. You also gain a {@variantrule Swim Speed|Ishiir} of 30 feet."
             ]
         },
         {
@@ -2092,7 +2092,7 @@
             "subclassSource": "Ishiir",
             "level": 6,
             "entries": [
-                "You gain resistance to cold damage, and you don't suffer the effects of extreme cold, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch water and turn a 5-foot cube of it into ice, which melts after 1 minute. This action fails if a creature is in the cube."
+                "You gain {@variantrule Resistance|Ishiir} to cold damage, and you don't suffer the effects of extreme cold, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch water and turn a 5-foot cube of it into ice, which melts after 1 minute. This action fails if a creature is in the cube."
             ]
         },
         {
@@ -2106,7 +2106,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You learn to use your mastery of the storm to protect others. Each creature of your choice has the damage resistance you gained from the Storm Soul feature while the creature is in your Storm Aura."
+                "You learn to use your mastery of the storm to protect others. Each creature of your choice has the damage {@variantrule Resistance|Ishiir} you gained from the Storm Soul feature while the creature is in your Storm Aura."
             ]
         },
         {
@@ -2265,7 +2265,7 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "While your Rage is active, you have Resistance to every damage type except Force, Necrotic, Psychic, and Radiant."
+                "While your Rage is active, you have {@variantrule Resistance|Ishiir} to every damage type except Force, Necrotic, Psychic, and Radiant."
             ]
         },
         {
@@ -2291,7 +2291,7 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "When you deal piercing or slashing damage to a creature, you can force it to make a CON {@variantrule Saving Throw|Ishiir}. The DC equals 8 + your proficiency + your STR modifier. On a failure, the target is {@condition Lacerated|Ishiir}. At the end of each of its turns, it can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success. The spirit of the tiger empowers your ferocity."
+                "When you deal piercing or slashing damage to a creature, you can force it to make a CON {@variantrule Saving Throw|Ishiir}. The DC equals 8 + your {@variantrule Proficiency|Ishiir} + your STR modifier. On a failure, the target is {@condition Lacerated|Ishiir}. At the end of each of its turns, it can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success. The spirit of the tiger empowers your ferocity."
             ]
         },
         {
@@ -2304,7 +2304,7 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "While your Rage is active, your allies have Advantage on {@variantrule Attack Roll|Ishiir}s against any enemy of yours within 10 feet of you."
+                "While your Rage is active, your allies have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s against any enemy of yours within 10 feet of you."
             ]
         },
         {
@@ -2391,7 +2391,7 @@
             "subclassSource": "Ishiir",
             "level": 6,
             "entries": [
-                "You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Long range no longer imposes disadvantage on your ranged weapon attacks."
+                "You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Long range no longer imposes {@variantrule Disadvantage|Ishiir} on your ranged weapon attacks."
             ]
         },
         {
@@ -2417,7 +2417,7 @@
             "subclassSource": "Ishiir",
             "level": 6,
             "entries": [
-                "You gain proficiency in two skills from the following list: {@skill Athletics}, {@skill Acrobatics}, {@skill Stealth}, and {@skill Survival}. The cat spirit hones your survival instincts."
+                "You gain {@variantrule Proficiency|Ishiir} in two skills from the following list: {@skill Athletics}, {@skill Acrobatics}, {@skill Stealth}, and {@skill Survival}. The cat spirit hones your survival instincts."
             ]
         },
         {
@@ -2523,7 +2523,7 @@
             "subclassSource": "Ishiir",
             "level": 14,
             "entries": [
-                "While you're raging, any creature within 5 feet of you that's hostile to you has disadvantage on {@variantrule Attack Roll|Ishiir}s against targets other than you or another character with this feature. An enemy is immune to this effect if it can't see or hear you."
+                "While you're raging, any creature within 5 feet of you that's hostile to you has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s against targets other than you or another character with this feature. An enemy is {@variantrule Immunity|Ishiir|Immune} to this effect if it can't see or hear you."
             ]
         },
         {
@@ -2549,7 +2549,7 @@
             "subclassSource": "Ishiir",
             "level": 14,
             "entries": [
-                "If you are raging and hit another creature with a melee weapon attack, you can force it to make a Strength {@variantrule Saving Throw|Ishiir} (DC equal to 8 + your proficiency + your Strength modifier) or be knocked {@condition Prone|Ishiir}."
+                "If you are raging and hit another creature with a melee weapon attack, you can force it to make a Strength {@variantrule Saving Throw|Ishiir} (DC equal to 8 + your {@variantrule Proficiency|Ishiir} + your Strength modifier) or be knocked {@condition Prone|Ishiir}."
             ]
         },
         {
@@ -2562,7 +2562,7 @@
             "subclassSource": "Ishiir",
             "level": 14,
             "entries": [
-                "While raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC 8 + your Strength bonus + your proficiency bonus) or be knocked {@condition Prone|Ishiir} and take bludgeoning damage equal to {@dice 1d12} + your Strength modifier."
+                "While raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC 8 + your Strength bonus + your {@variantrule Proficiency|Ishiir} bonus) or be knocked {@condition Prone|Ishiir} and take bludgeoning damage equal to {@dice 1d12} + your Strength modifier."
             ]
         },
         {
@@ -2601,7 +2601,7 @@
             "subclassSource": "Ishiir",
             "level": 14,
             "entries": [
-                "While your Rage is active, any of your enemies within 5 feet of you have Disadvantage on {@variantrule Attack Roll|Ishiir}s against targets other than you or another Barbarian who has this option active."
+                "While your Rage is active, any of your enemies within 5 feet of you have {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s against targets other than you or another Barbarian who has this option active."
             ]
         },
         {
@@ -2637,7 +2637,7 @@
             "header": 1,
             "entries": [
                 "As an action, you can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 60 feet of you that isn't behind total cover. When you sense a spell, you learn which school of magic it belongs to.",
-                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                "You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2652,7 +2652,7 @@
             "header": 1,
             "entries": [
                 "The magical energy roiling inside you sometimes erupts from you. When you enter your rage, roll on the Wild Magic table to determine the magical effect produced.",
-                "If the effect requires a {@variantrule Saving Throw|Ishiir}, the DC equals 8 + your proficiency bonus + your Constitution modifier.",
+                "If the effect requires a {@variantrule Saving Throw|Ishiir}, the DC equals 8 + your {@variantrule Proficiency|Ishiir} bonus + your Constitution modifier.",
                 {
                     "type": "table",
                     "caption": "Wild Magic",
@@ -2723,7 +2723,7 @@
                         "Roll a {@dice d3}. The creature regains one expended spell slot, the level of which equals the number rolled or lower (the creature's choice). Once a creature receives this benefit, that creature can't receive it again until after a {@variantrule Long Rest|Ishiir}."
                     ]
                 },
-                "You can take this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                "You can take this action a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2782,7 +2782,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "When you activate your Rage, you regain a number of Hit Points equal to your Barbarian level. At the start of each of your turns while your Rage is active, you regain hitpoints equal to half your barbarian level (rounded down) and you can choose another creature within 10 feet of yourself to gain Temporary Hit Points. To determine the number of Temporary Hit Points, roll a number of d6s equal to your proficiency, and add them together. If any of these Temporary Hit Points remain when your Rage ends, they vanish."
+                "When you activate your Rage, you regain a number of Hit Points equal to your Barbarian level. At the start of each of your turns while your Rage is active, you regain hitpoints equal to half your barbarian level (rounded down) and you can choose another creature within 10 feet of yourself to gain Temporary Hit Points. To determine the number of Temporary Hit Points, roll a number of d6s equal to your {@variantrule Proficiency|Ishiir}, and add them together. If any of these Temporary Hit Points remain when your Rage ends, they vanish."
             ]
         },
         {
@@ -2796,7 +2796,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Whenever a creature you can see starts its turn within 30 feet of you while your Rage is active, you can take a Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC 8 plus your Strength modifier and Proficiency Bonus) or be teleported to an unoccupied space you can see within 5 feet of yourself or in the nearest unoccupied space you can see. After the target teleports, you can reduce its {@variantrule Speed|Ishiir} to 0 until the end of the current turn."
+                "Whenever a creature you can see starts its turn within 30 feet of you while your Rage is active, you can take a Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC 8 plus your Strength modifier and {@variantrule Proficiency|Ishiir} Bonus) or be teleported to an unoccupied space you can see within 5 feet of yourself or in the nearest unoccupied space you can see. After the target teleports, you can reduce its {@variantrule Speed|Ishiir} to 0 until the end of the current turn."
             ]
         },
         {
@@ -2906,7 +2906,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You learn to channel divine power to inspire zealotry in others. As a bonus action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you that can hear you gain advantage on {@variantrule Attack Roll|Ishiir}s and {@variantrule Saving Throw|Ishiir}s until the start of your next turn.",
+                "You learn to channel divine power to inspire zealotry in others. As a bonus action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you that can hear you gain {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s and {@variantrule Saving Throw|Ishiir}s until the start of your next turn.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}. If you’ve run out of uses of this feature, you can expend one use of your Rage, choosing to activate this feature instead of Rage."
             ]
         },
@@ -2934,8 +2934,8 @@
 						},
 						{
 							"type": "item",
-							"name": "Resistance.",
-							"entry": "You have Resistance to Necrotic, Psychic, and Radiant damage."
+							"name": "{@variantrule Resistance|Ishiir}.",
+							"entry": "You have {@variantrule Resistance|Ishiir} to Necrotic, Psychic, and Radiant damage."
 						},
 						{
 							"type": "item",

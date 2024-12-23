@@ -402,7 +402,7 @@
                 },
                 "Ability Score Improvement|Paladin|Ishiir|4",
                 "Martial Mastery|Paladin|Ishiir|4",
-                "Proficiency Versatility|Paladin|Ishiir|4",
+                "{@variantrule Proficiency|Ishiir} Versatility|Paladin|Ishiir|4",
                 "Martial Versatility|Paladin|Ishiir|4",
                 "Extra Attack|Paladin|Ishiir|5",
                 "Faithful Steed|Paladin|Ishiir|5",
@@ -412,22 +412,22 @@
                     "gainSubclassFeature": true
                 },
                 "Ability Score Improvement|Paladin|Ishiir|8",
-                "Proficiency Versatility|Paladin|Ishiir|8",
+                "{@variantrule Proficiency|Ishiir} Versatility|Paladin|Ishiir|8",
                 "Smite Evil|Paladin|Ishiir|9",
                 "Aura of Courage|Paladin|Ishiir|10",
                 "Radiant Strike|Paladin|Ishiir|11",
                 "Ability Score Improvement|Paladin|Ishiir|12",
-                "Proficiency Versatility|Paladin|Ishiir|12",
+                "{@variantrule Proficiency|Ishiir} Versatility|Paladin|Ishiir|12",
                 "Cleansing Touch|Paladin|Ishiir|14",
                 {
                     "classFeature": "Sacred Oath feature|Paladin|Ishiir|15",
                     "gainSubclassFeature": true
                 },
                 "Ability Score Improvement|Paladin|Ishiir|16",
-                "Proficiency Versatility|Paladin|Ishiir|16",
+                "{@variantrule Proficiency|Ishiir} Versatility|Paladin|Ishiir|16",
                 "Aura improvements|Paladin|Ishiir|18",
                 "Ability Score Improvement|Paladin|Ishiir|19",
-                "Proficiency Versatility|Paladin|Ishiir|19",
+                "{@variantrule Proficiency|Ishiir} Versatility|Paladin|Ishiir|19",
                 {
                     "classFeature": "Sacred Oath feature|Paladin|Ishiir|20",
                     "gainSubclassFeature": true
@@ -878,7 +878,7 @@
             "level": 2,
             "entries": [
                 "When you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is {@dice 2d8} for a 1st-level spell slot, plus {@dice 1d8} for each spell level higher than 1st, to a maximum of {@dice 6d8}. The damage increases by {@dice 1d8} if the target is an undead or a fiend, to a maximum of {@dice 6d8}.",
-                "You can use this feature without expending a spell slot a number of times equal to half your proficiency (rounded down) and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                "You can use this feature without expending a spell slot a number of times equal to half your {@variantrule Proficiency|Ishiir} (rounded down) and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -978,7 +978,7 @@
 						{
 							"type": "item",
 							"name": "Harness Divine Power.",
-							"entry": "You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 3rd level, once; 7th level, twice; and 15th level, thrice. You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+							"entry": "You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your {@variantrule Proficiency|Ishiir} bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 3rd level, once; 7th level, twice; and 15th level, thrice. You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
 						}
 					]
 				}
@@ -993,7 +993,7 @@
             "classSource": "Ishiir",
             "level": 3,
             "entries": [
-                "The divine magic flowing through you makes you immune to disease."
+                "The divine magic flowing through you makes you {@variantrule Immunity|Ishiir|Immune} to disease."
             ]
         },
         {
@@ -1055,14 +1055,14 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
             "classSource": "Ishiir",
             "level": 4,
             "entries": [
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1142,14 +1142,14 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
             "classSource": "Ishiir",
             "level": 8,
             "entries": [
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1203,14 +1203,14 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
             "classSource": "Ishiir",
             "level": 12,
             "entries": [
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1252,14 +1252,14 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
             "classSource": "Ishiir",
             "level": 16,
             "entries": [
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1289,14 +1289,14 @@
             ]
         },
         {
-            "name": "Proficiency Versatility",
+            "name": "{@variantrule Proficiency|Ishiir} Versatility",
             "source": "Ishiir",
             "page": 1,
             "className": "Paladin",
             "classSource": "Ishiir",
             "level": 19,
             "entries": [
-                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
+                "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
             ]
         },
@@ -1774,7 +1774,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain proficiency in one of {@skill animal handling}, {@skill performance}, and {@skill persuasion}. Additionally, your pool for Lay on Hands increases by an amount equal to your paladin level."
+                "You gain {@variantrule Proficiency|Ishiir} in one of {@skill animal handling}, {@skill performance}, and {@skill persuasion}. Additionally, your pool for Lay on Hands increases by an amount equal to your paladin level."
             ]
         },
         {
@@ -1898,7 +1898,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "Ancient magic lies so heavily upon you that it forms an eldritch ward. You and friendly creatures within 10 feet of you have resistance to damage from spells.",
+                "Ancient magic lies so heavily upon you that it forms an eldritch ward. You and friendly creatures within 10 feet of you have {@variantrule Resistance|Ishiir} to damage from spells.",
                 "At 18th level, the range of this aura increases to 30 feet."
             ]
         },
@@ -1936,7 +1936,7 @@
 						{
 							"type": "item",
 							"name": "Diminish Defiance.",
-							"entry": "Enemies in the aura have Disadvantage on {@variantrule Saving Throw|Ishiir}s against your spells and Channel Divinity options."
+							"entry": "Enemies in the aura have {@variantrule Disadvantage|Ishiir} on {@variantrule Saving Throw|Ishiir}s against your spells and Channel Divinity options."
 						},
 						{
 							"type": "item",
@@ -2010,7 +2010,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain proficiency in Intimidation. Additionally, the bonus damage of your Divine Smite also applies to any creature that is frightened."
+                "You gain {@variantrule Proficiency|Ishiir} in Intimidation. Additionally, the bonus damage of your Divine Smite also applies to any creature that is frightened."
             ]
         },
         {
@@ -2146,7 +2146,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "You have resistance to bludgeoning, piercing, and slashing damage.",
+                        "You have {@variantrule Resistance|Ishiir} to bludgeoning, piercing, and slashing damage.",
                         "When you take the {@action Attack|Ishiir} action on your turn, you can make one additional attack as part of that action.",
                         "The damage of your Aura of Conquest and Scornful Rebuke is doubled."
                     ]
@@ -2197,7 +2197,7 @@
                 "name": "Channel Divinity"
             },
             "entries": [
-                "As a bonus action, you can bolster injured creatures with your Channel Divinity. Each creature of your choice that can hear you within 30 feet of you regains hit points equal to {@dice 1d6} + half your proficiency bonus (rounded down) + your Charisma modifier (minimum of 1).",
+                "As a bonus action, you can bolster injured creatures with your Channel Divinity. Each creature of your choice that can hear you within 30 feet of you regains hit points equal to {@dice 1d6} + half your {@variantrule Proficiency|Ishiir} bonus (rounded down) + your Charisma modifier (minimum of 1).",
                 "If an creature has half its hit points or less, the healing it receives from this feature is doubled."
             ]
         },
@@ -2213,7 +2213,7 @@
             "header": 1,
             "entries": [
                 "As a bonus action, you issue a challenge that compels other creatures to do battle with you. Each creature of your choice that you can see within 30 feet of you must make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failed save, a creature can't willingly move more than 30 feet away from you. This effect ends on the creature if you are {@condition Incapacitated|Ishiir} or die or if the creature is more than 30 feet away from you.",
-                "You can use this feature a number of times equal to half your proficiency (rounded down). And you regain one expended use on a {@variantrule Short Rest|Ishiir} and all expended uses on a {@variantrule Long Rest|Ishiir}."
+                "You can use this feature a number of times equal to half your {@variantrule Proficiency|Ishiir} (rounded down). And you regain one expended use on a {@variantrule Short Rest|Ishiir} and all expended uses on a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2351,7 +2351,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "You have advantage on Wisdom {@variantrule Saving Throw|Ishiir}s."
+                "You have {@variantrule Advantage|Ishiir} on Wisdom {@variantrule Saving Throw|Ishiir}s."
             ]
         },
         {
@@ -2369,9 +2369,9 @@
                 {
                     "type": "list",
                     "items": [
-                        "You have resistance to bludgeoning, piercing, and slashing damage.",
+                        "You have {@variantrule Resistance|Ishiir} to bludgeoning, piercing, and slashing damage.",
                         "You gain a Heroic Inspiration at the start of every one of your turns if you do not currently have one. Alternatively, you can give a Heroic Inspiration to one ally you can see within 30 ft of you and who does not already have one. You can do so even if you already have a Heroic Inspiration yourself.",
-                        "All allies within 30 ft of you have advantage on Wisdom {@variantrule Saving Throw|Ishiir}s."
+                        "All allies within 30 ft of you have {@variantrule Advantage|Ishiir} on Wisdom {@variantrule Saving Throw|Ishiir}s."
                     ]
                 },
                 "This effect ends early if you are {@condition Incapacitated|Ishiir} or die. Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}. You can also restore your use of it by expending a level 5 spell slot (no action required)."
@@ -2439,7 +2439,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain proficiency in {@skill persuasion}. Additionally, when you use your Lay on Hands on a creature, it also gains a {@dice 1d4} bonus to the next {@variantrule Saving Throw|Ishiir} it makes before the start of your next turn."
+                "You gain {@variantrule Proficiency|Ishiir} in {@skill persuasion}. Additionally, when you use your Lay on Hands on a creature, it also gains a {@dice 1d4} bonus to the next {@variantrule Saving Throw|Ishiir} it makes before the start of your next turn."
             ]
         },
         {
@@ -2616,12 +2616,12 @@
 						{
 							"type": "item",
 							"name": "Holy Ward.",
-							"entry": "You and allies in the aura have Advantage on any {@variantrule Saving Throw|Ishiir} they are forced to make by a Fiend or an Undead."
+							"entry": "You and allies in the aura have {@variantrule Advantage|Ishiir} on any {@variantrule Saving Throw|Ishiir} they are forced to make by a Fiend or an Undead."
 						},
 						{
 							"type": "item",
 							"name": "Radiant Damage.",
-							"entry": "Whenever an enemy starts its turn in the aura, that creature takes Radiant damage equal to your Charisma modifier plus your Proficiency Bonus. This damage is doubled against Fiends and Undead."
+							"entry": "Whenever an enemy starts its turn in the aura, that creature takes Radiant damage equal to your Charisma modifier plus your {@variantrule Proficiency|Ishiir} Bonus. This damage is doubled against Fiends and Undead."
 						},
 						{
 							"type": "item",
@@ -2797,7 +2797,7 @@
             "level": 3,
             "header": 2,
             "entries": [
-                "You gain proficiency in {@skill acrobatics} or {@skill athletics}. When you make Strength or Dexterity check, you can add your Charisma modifier to it. You can do so a number of times equal to your proficiency and you regain all expended uses on a {@variantrule Long Rest|Ishiir}."
+                "You gain {@variantrule Proficiency|Ishiir} in {@skill acrobatics} or {@skill athletics}. When you make Strength or Dexterity check, you can add your Charisma modifier to it. You can do so a number of times equal to your {@variantrule Proficiency|Ishiir} and you regain all expended uses on a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2890,7 +2890,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "As a bonus action, you focus your negative emotion into a lance of magical menace. Choose one creature you can see within 60 ft of you that can also you. The creature has to make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failure, the creature has disadvantage on {@variantrule Attack Roll|Ishiir}s and contested {@variantrule Ability Check|Ishiir}s against you for 1 minute. At the end of each of its turns, the creature can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success."
+                "As a bonus action, you focus your negative emotion into a lance of magical menace. Choose one creature you can see within 60 ft of you that can also you. The creature has to make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failure, the creature has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s and contested {@variantrule Ability Check|Ishiir}s against you for 1 minute. At the end of each of its turns, the creature can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success."
             ]
         },
         {
@@ -2904,7 +2904,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain proficiency in {@skill intimidation}. Additionally, the bonus damage of your Divine Smite also applies to good-aligned creatures. Additionally, if a feature or spell allows you to do radiant damage, you can cause it to deal necrotic damage instead."
+                "You gain {@variantrule Proficiency|Ishiir} in {@skill intimidation}. Additionally, the bonus damage of your Divine Smite also applies to good-aligned creatures. Additionally, if a feature or spell allows you to do radiant damage, you can cause it to deal necrotic damage instead."
             ]
         },
         {
@@ -2981,7 +2981,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "You and your allies have resistance to radiant and necrotic damage while within your Aura of Protection."
+                "You and your allies have {@variantrule Resistance|Ishiir} to radiant and necrotic damage while within your Aura of Protection."
             ]
         },
         {
@@ -3000,7 +3000,7 @@
                     "type": "list",
                     "items": [
                         "You emanate an aura of magical gloom within 30 ft. This counts as dim light and sunlight cannot illuminate this area.",
-                        "Enemy creatures have disadvantage on {@variantrule Saving Throw|Ishiir}s against any of your features and spells, as well as those of undead and fiends while within the gloom.",
+                        "Enemy creatures have {@variantrule Disadvantage|Ishiir} on {@variantrule Saving Throw|Ishiir}s against any of your features and spells, as well as those of undead and fiends while within the gloom.",
                         "When an enemy creature starts its turn in the gloom, it takes 10 necrotic damage. This damage is doubled if the creature is good-aligned. "
                     ]
                 },
@@ -3048,7 +3048,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain proficiency in {@skill persuasion}. Additionally, when you use your Lay on Hands, you can spend 5 points from the pool to cast the sanctuary spell on the target without components and a spell slot."
+                "You gain {@variantrule Proficiency|Ishiir} in {@skill persuasion}. Additionally, when you use your Lay on Hands, you can spend 5 points from the pool to cast the sanctuary spell on the target without components and a spell slot."
             ]
         },
         {
@@ -3223,7 +3223,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "You have resistance to all damage and advantage on all {@variantrule Saving Throw|Ishiir}s. If you deal damage to a creature, force it to make a {@variantrule Saving Throw|Ishiir}, or otherwise target it with a harmful effect, this feature stops working until the end of your next turn.",
+                        "You have {@variantrule Resistance|Ishiir} to all damage and {@variantrule Advantage|Ishiir} on all {@variantrule Saving Throw|Ishiir}s. If you deal damage to a creature, force it to make a {@variantrule Saving Throw|Ishiir}, or otherwise target it with a harmful effect, this feature stops working until the end of your next turn.",
                         "Any creature that damages or your allies you while in your Aura of Protection takes 10 radiant damage. It takes this damage only once per turn. This damage does not suspend any of your subclass features.",
                         "If you heal a target with your Lay on Hands, the amount of healing it receives per point is doubled. "
                     ]
@@ -3274,7 +3274,7 @@
                 "name": "Channel Divinity"
             },
             "entries": [
-                "You gain proficiency in deception or stealth. Additionally, you can use your Lay on Hands to target creature that cannot see you, that is not aware you are hostile to it or that is under some other effect that makes it non-hostile to you, e.g. the {@condition Charmed|Ishiir} condition.",
+                "You gain {@variantrule Proficiency|Ishiir} in deception or stealth. Additionally, you can use your Lay on Hands to target creature that cannot see you, that is not aware you are hostile to it or that is under some other effect that makes it non-hostile to you, e.g. the {@condition Charmed|Ishiir} condition.",
                 "The target has to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, the creature takes necrotic damage equal to the number of points spent from the pool. On a success, the creature takes half as much damage. You then regain hit points equal to the damage dealt."
             ]
         },
@@ -3292,7 +3292,7 @@
                 "name": "Channel Divinity"
             },
             "entries": [
-                "You can use your Channel Divinity to make a weapon deadlier. As a bonus action, you touch one weapon or piece of ammunition and conjure a special poison on it. The poison lasts for 1 minute. The next time you hit a target with an attack using that weapon or ammunition, the target takes poison damage immediately after the attack. The poison damage equals {@dice 2d10} + your paladin level, or 20 + your paladin level if you had advantage on the {@variantrule Attack Roll|Ishiir}."
+                "You can use your Channel Divinity to make a weapon deadlier. As a bonus action, you touch one weapon or piece of ammunition and conjure a special poison on it. The poison lasts for 1 minute. The next time you hit a target with an attack using that weapon or ammunition, the target takes poison damage immediately after the attack. The poison damage equals {@dice 2d10} + your paladin level, or 20 + your paladin level if you had {@variantrule Advantage|Ishiir} on the {@variantrule Attack Roll|Ishiir}."
             ]
         },
         {
@@ -3390,7 +3390,7 @@
                             "type": "entries",
                             "name": "Cull the Herd",
                             "entries": [
-                                "You have advantage on melee {@variantrule Attack Roll|Ishiir}s against any creature that has one or more of its allies within 5 feet of it."
+                                "You have {@variantrule Advantage|Ishiir} on melee {@variantrule Attack Roll|Ishiir}s against any creature that has one or more of its allies within 5 feet of it."
                             ]
                         }
                     ]
@@ -3402,7 +3402,7 @@
                             "type": "entries",
                             "name": "Treacherous Strike",
                             "entries": [
-                                "If a creature within 5 feet of you misses you with a melee attack, you can use your reaction to force the attacker to reroll that attack against a creature of your choice that is also within 5 feet of the attacker. The ability fails and is wasted if the attacker is immune to being {@condition Charmed|Ishiir}.",
+                                "If a creature within 5 feet of you misses you with a melee attack, you can use your reaction to force the attacker to reroll that attack against a creature of your choice that is also within 5 feet of the attacker. The ability fails and is wasted if the attacker is {@variantrule Immunity|Ishiir|Immune} to being {@condition Charmed|Ishiir}.",
                                 "You can use this ability three times. You regain one expended use on a {@variantrule Short Rest|Ishiir} and all expended uses on a {@variantrule Long Rest|Ishiir}."
                             ]
                         }
@@ -3425,8 +3425,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "When a creature targets you with an attack, but any of your allies are within the aura and within range of the attack, it makes the roll with disadvantage.",
-                        "As part of the bonus action to activate this feature and as a bonus action on every subsequent turn, you can give yourself advantage on one {@variantrule Attack Roll|Ishiir}.",
+                        "When a creature targets you with an attack, but any of your allies are within the aura and within range of the attack, it makes the roll with {@variantrule Disadvantage|Ishiir}.",
+                        "As part of the bonus action to activate this feature and as a bonus action on every subsequent turn, you can give yourself {@variantrule Advantage|Ishiir} on one {@variantrule Attack Roll|Ishiir}.",
                         "When you use your Treacherous Strikes feature, the new target of the attack can be anywhere in the aura. "
                     ]
                 },
@@ -3473,7 +3473,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain proficiency in {@skill insight} or {@skill intimidation}. Additionally, the bonus damage of your Divine Smite also applies to any creature that is under the effect of your Vow of Enmity."
+                "You gain {@variantrule Proficiency|Ishiir} in {@skill insight} or {@skill intimidation}. Additionally, the bonus damage of your Divine Smite also applies to any creature that is under the effect of your Vow of Enmity."
             ]
         },
         {
@@ -3490,7 +3490,7 @@
                 "name": "Channel Divinity"
             },
             "entries": [
-                "When you take the Attack action, you can expend one use of your Channel Divinity to utter a vow of enmity against a creature you can see within 30 feet of yourself. You have Advantage on {@variantrule Attack Roll|Ishiir}s against the creature for 1 minute or until you use this feature again.",
+                "When you take the Attack action, you can expend one use of your Channel Divinity to utter a vow of enmity against a creature you can see within 30 feet of yourself. You have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s against the creature for 1 minute or until you use this feature again.",
                 "If the creature drops to 0 Hit Points before the vow ends, you can transfer the vow to a different creature within 30 feet of yourself (no action required)."
             ]
         },
@@ -3649,7 +3649,7 @@
                     "items": [
                         "You sprout spectral wings on your back, have a {@variantrule Fly Speed|Ishiir} of 60 feet, and can hover.",
                         "If an enemy creature within your Aura of Protection damages you or your allies, it is automatically affected by your Vow of Enmity (no action required). This does not consume a use of your Channel Divinity.",
-                        "If an enemy creature starts its turn in your Aura of Protection or enters it for the first time on a turn, it has to make a Wisdom {@variantrule Saving Throw|Ishiir} or become {@condition Frightened|Ishiir} for 1 minute. If the creature is under the effect of your Vow of Enmity, it has disadvantage on this {@variantrule Saving Throw|Ishiir}. At the end of each of its turns, the creature can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success. "
+                        "If an enemy creature starts its turn in your Aura of Protection or enters it for the first time on a turn, it has to make a Wisdom {@variantrule Saving Throw|Ishiir} or become {@condition Frightened|Ishiir} for 1 minute. If the creature is under the effect of your Vow of Enmity, it has {@variantrule Disadvantage|Ishiir} on this {@variantrule Saving Throw|Ishiir}. At the end of each of its turns, the creature can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success. "
                     ]
                 },
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a 5th-level spell slot to use it again."
@@ -3707,7 +3707,7 @@
                     "type": "entries",
                     "name": "Watcher's Will",
                     "entries": [
-                        "You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma {@variantrule Saving Throw|Ishiir}s."
+                        "You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). For 1 minute, you and the chosen creatures have {@variantrule Advantage|Ishiir} on Intelligence, Wisdom, and Charisma {@variantrule Saving Throw|Ishiir}s."
                     ]
                 }
             ]
@@ -3723,7 +3723,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain proficiency in {@skill arcana}, {@skill insight}, or {@skill perception}. When you use your Lay on Hands, the target also has half cover until the start of your next turn while it is within 5 feet of you and you aren't {@condition Incapacitated|Ishiir}. Starting at 7th level, it gains this benefit while within your Aura of Protection."
+                "You gain {@variantrule Proficiency|Ishiir} in {@skill arcana}, {@skill insight}, or {@skill perception}. When you use your Lay on Hands, the target also has half cover until the start of your next turn while it is within 5 feet of you and you aren't {@condition Incapacitated|Ishiir}. Starting at 7th level, it gains this benefit while within your Aura of Protection."
             ]
         },
         {
@@ -3820,7 +3820,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "You emit an aura of alertness while you aren't {@condition Incapacitated|Ishiir}. When you and any creatures of your choice within 10 feet of you roll initiative, you all gain a bonus to initiative equal to your proficiency bonus.",
+                "You emit an aura of alertness while you aren't {@condition Incapacitated|Ishiir}. When you and any creatures of your choice within 10 feet of you roll initiative, you all gain a bonus to initiative equal to your {@variantrule Proficiency|Ishiir} bonus.",
                 "At 18th level, the range of this aura increases to 30 feet."
             ]
         },
@@ -3854,7 +3854,7 @@
                     "type": "list",
                     "items": [
                         "You gain {@sense truesight} with a range of 120 feet.",
-                        "You have advantage on {@variantrule Attack Roll|Ishiir}s against aberrations, celestials, elementals, fey, and fiends.",
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s against aberrations, celestials, elementals, fey, and fiends.",
                         "When you hit a creature with an {@variantrule Attack Roll|Ishiir} and deal damage to it, you can also force it to make a Charisma {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failed save, the creature is magically banished to its native plane of existence if it's currently not there. On a successful save, the creature can't be banished by this feature for 24 hours."
                     ]
                 },
