@@ -218,14 +218,14 @@
                             "type": "item",
                             "name": "Accelerate",
                             "entries": [
-                                "The creature's initiative roll increases by 10 for the current combat and it gains an additional bonus action on its next turn."
+                                "The creature's initiative roll increases by 10 for the current combat and it gains an additional {@variantrule Bonus Action|Ishiir} on its next turn."
                             ]
                         },
                         {
                             "type": "item",
                             "name": "Decelerate",
                             "entries": [
-                                "The creature's initiative roll decreases by 10 for the current combat and it cannot use reactions until the start of your next turn. If the creature has already acted this turn and this effect pushes its turn to come up again during the current round, that turn is skipped and no effects based on the passage of turns are triggered."
+                                "The creature's initiative roll decreases by 10 for the current combat and it cannot use {@variantrule Reaction|Ishiir|Reactions} until the start of your next turn. If the creature has already acted this turn and this effect pushes its turn to come up again during the current round, that turn is skipped and no effects based on the passage of turns are triggered."
                             ]
                         }
                     ]
@@ -923,7 +923,7 @@
                 }
             ],
             "entries": [
-                "You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.",
+                "You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an {@variantrule Action|Ishiir} to gain the benefits of a different one.",
                 {
                     "type": "entries",
                     "name": "Aquatic Adaptation",
@@ -1226,7 +1226,7 @@
             "entries": [
                 "Your magic turns others into beasts. Choose any number of willing creatures that you can see within range. You transform each target into the form of a {@filter Huge or smaller beast with a challenge rating of 6 or lower|bestiary|challenge rating=[&0;&6]|type=beast|size=f;d;t;s;m;l;h|miscellaneous=!swarm}. On subsequent turns, you can use your action to transform affected creatures into new forms.",
                 "A target's game statistics are replaced by the chosen Beast's statistics, but the target retains its creature type; Hit Points; Hit Point Dice; alignment; ability to communicate; and Intelligence, Wisdom, and Charisma scores. The target's actions are limited by the Beast form's anatomy, and it can't cast spells. The target's equipment melds into the new form, and the target can't use any of that equipment while in that form.",
-                "The target gains a number of Temporary Hit Points equal to the Beast form's Hit Points. The transformation lasts for the duration for each target, until the target has no Temporary Hit Points, or until the target leaves the form as a Bonus Action."
+                "The target gains a number of Temporary Hit Points equal to the Beast form's Hit Points. The transformation lasts for the duration for each target, until the target has no Temporary Hit Points, or until the target leaves the form as a {@variantrule Bonus Action|Ishiir}."
             ],
             "miscTags": [
                 "SGT",
@@ -1281,7 +1281,7 @@
             ],
             "entries": [
                 "This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a {@creature skeleton} if you chose bones or a {@creature zombie} if you chose a corpse (the DM has the creature's game statistics).",
-                "On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
+                "On each of your turns, you can use a {@variantrule Bonus Action|Ishiir} to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
                 "The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one."
             ],
             "entriesHigherLevel": [
@@ -1413,7 +1413,7 @@
             "entries": [
                 "Objects animate at your command. Choose a number of nonmagical objects within range that aren't being worn or carried, aren't fixed to a surface, and aren't Gargantuan. The maximum number of objects is equal to your spellcasting ability modifier; for this number, a Medium or smaller target counts as one object, a Large target counts as two, and a Huge target counts as three.",
                 "Each target animates, sprouts legs, and becomes a Construct that uses the Animated Object ({@create Animated Object (Tiny)|phb|Tiny}, {@create Animated Object (Small)|phb|Small}, {@create Animated Object (Medium)|phb|Medium}, {@create Animated Object (Large)|phb|Large}, {@create Animated Object (Huge)|phb|Huge}) stat block; this creature is under your control until the spell ends or until it is reduced to 0 Hit Points. Each creature you make with this spell is an ally to you and your allies. In combat, it shares your Initiative count and takes its turn immediately after yours.",
-                "Until the spell ends, you can take a Bonus Action to mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to each one). If you issue no commands, the creature takes the {@action Dodge|Ishiir} action and moves only to avoid harm. When the creature drops to 0 Hit Points, it reverts to its object form, and any remaining damage carries over to that form."
+                "Until the spell ends, you can take a {@variantrule Bonus Action|Ishiir} to mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to each one). If you issue no commands, the creature takes the {@action Dodge|Ishiir} action and moves only to avoid harm. When the creature drops to 0 Hit Points, it reverts to its object form, and any remaining damage carries over to that form."
             ],
             "entriesHigherLevel": [
                 {
@@ -1507,7 +1507,7 @@
                 }
             ],
             "entries": [
-                "You whisper magical words that antagonize one creature of your choice within range. The target must make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failed save, it takes {@damage 4d4} psychic damage and must immediately use its reaction, if available, to make a melee attack against another creature of your choice that you can see. If no other creature is within range, the target has {@variantrule Disadvantage|Ishiir} on the next {@variantrule Attack Roll|Ishiir} it makes before the start of your next turn. "
+                "You whisper magical words that antagonize one creature of your choice within range. The target must make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failed save, it takes {@damage 4d4} psychic damage and must immediately use its {@variantrule Reaction|Ishiir}, if available, to make a melee attack against another creature of your choice that you can see. If no other creature is within range, the target has {@variantrule Disadvantage|Ishiir} on the next {@variantrule Attack Roll|Ishiir} it makes before the start of your next turn. "
             ],
             "entriesHigherLevel": [
                 {
@@ -1955,7 +1955,7 @@
             ],
             "entries": [
                 "You create an Invisible, invulnerable eye within range that hovers for the duration. You mentally receive visual information from the eye, which can see in every direction. It also has {@sense Darkvision} with a range of 30 feet.",
-                "As a Bonus Action, you can move the eye up to 30 feet in any direction. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
+                "As a {@variantrule Bonus Action|Ishiir}, you can move the eye up to 30 feet in any direction. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
             ],
             "miscTags": [
                 "UBA"
@@ -2116,7 +2116,7 @@
             "entries": [
                 "You create linked teleportation portals that remain open for the duration. Choose two points on the ground that you can see, one point within 10 feet of you and one point within 500 feet of you. A circular portal, 10 feet in diameter, opens over each point. If the portal would open in the space occupied by a creature, the spell fails, and the casting is lost.",
                 "The portals are two-dimensional glowing rings filled with mist, hovering inches from the ground and perpendicular to it at the points you choose. A ring is visible only from one side (your choice), which is the side that functions as a portal.",
-                "Any creature or object entering the portal exits from the other portal as if the two were adjacent to each other; passing through a portal from the nonportal side has no effect. The mist that fills each portal is opaque and blocks vision through it. On your turn, you can rotate the rings as a bonus action so that the active side faces in a different direction."
+                "Any creature or object entering the portal exits from the other portal as if the two were adjacent to each other; passing through a portal from the nonportal side has no effect. The mist that fills each portal is opaque and blocks vision through it. On your turn, you can rotate the rings as a {@variantrule Bonus Action|Ishiir} so that the active side faces in a different direction."
             ],
             "miscTags": [
                 "OBJ",
@@ -2242,7 +2242,7 @@
             ],
             "entries": [
                 "For the duration, you can clearly perceive magic within 120 feet of you. You automatically see through magical illusions and magical darkness. You also automatically succeed on identifying any spells that are being cast or are already active in that radius. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
-                "As an action, you concentrate on a creature you can see. If you do so, you learn what spellcasting abilities the creature has, if any, as well as the highest spell level it has access to."
+                "As an {@variantrule Action|Ishiir}, you concentrate on a creature you can see. If you do so, you learn what spellcasting abilities the creature has, if any, as well as the highest spell level it has access to."
             ],
             "classes": {
                 "fromClassList": [
@@ -2420,7 +2420,7 @@
                 }
             ],
             "entries": [
-                "You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt from you and batter all creatures within 10 feet of you. Each creature in that area must make a Strength {@variantrule Saving Throw|Ishiir}. On a failed save, a target takes {@damage 2d6} necrotic damage and can't take reactions until its next turn. On a successful save, the creature takes half damage, but suffers no other effect."
+                "You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt from you and batter all creatures within 10 feet of you. Each creature in that area must make a Strength {@variantrule Saving Throw|Ishiir}. On a failed save, a target takes {@damage 2d6} necrotic damage and can't take {@variantrule Reaction|Ishiir|Reactions} until its next turn. On a successful save, the creature takes half damage, but suffers no other effect."
             ],
             "entriesHigherLevel": [
                 {
@@ -3067,7 +3067,7 @@
                 }
             ],
             "entries": [
-                "Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain {@dice 2d6} hit points."
+                "Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a {@variantrule Bonus Action|Ishiir} to cause one creature in the aura (including you) to regain {@dice 2d6} hit points."
             ],
             "miscTags": [
                 "HL",
@@ -4210,7 +4210,7 @@
             "entries": [
                 "You create a Large hand of shimmering, translucent force in an unoccupied space that you can see within range. The hand lasts for the spell's duration, and it moves at your command, mimicking the movements of your own hand.",
                 "The hand is an object that has AC 20 and hit points equal to your hit point maximum. If it drops to 0 hit points, the spell ends. The hand doesn't fill its space.",
-                "When you cast the spell and as a bonus action on your subsequent turns, you can move the hand up to 60 feet and then cause one of the following effects with it.",
+                "When you cast the spell and as a {@variantrule Bonus Action|Ishiir} on your subsequent turns, you can move the hand up to 60 feet and then cause one of the following effects with it.",
                 {
                     "type": "entries",
                     "name": "Clenched Fist",
@@ -4229,7 +4229,7 @@
                     "type": "entries",
                     "name": "Grasping Hand",
                     "entries": [
-                        "The hand attempts to grapple a Huge or smaller creature within 5 feet of it. The target has to succeed on a Dexterity {@variantrule Saving Throw|Ishiir} against your spell save DC or be grappled. The target can use an Action on its turn to make a Strength or Dexterity check against your spell save DC to escape the grapple. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes bludgeoning damage equal to {@damage 4d6} + your spellcasting ability modifier."
+                        "The hand attempts to grapple a Huge or smaller creature within 5 feet of it. The target has to succeed on a Dexterity {@variantrule Saving Throw|Ishiir} against your spell save DC or be grappled. The target can use an {@variantrule Action|Ishiir} on its turn to make a Strength or Dexterity check against your spell save DC to escape the grapple. While the hand is grappling the target, you can use a {@variantrule Bonus Action|Ishiir} to have the hand crush it. When you do so, the target takes bludgeoning damage equal to {@damage 4d6} + your spellcasting ability modifier."
                     ]
                 },
                 {
@@ -4496,7 +4496,7 @@
             ],
             "entries": [
                 "You create a blade-shaped planar rift about 3 feet long in an unoccupied space you can see within range. The blade lasts for the duration. When you cast this spell, you can make up to two melee spell attacks with the blade, each one against a creature, loose object, or structure within 5 feet of the blade. On a hit, the target takes {@damage 4d12} force damage. This attack scores a critical hit if the number on the {@dice d20} is 18 or higher. On a critical hit, the blade deals an extra {@damage 8d12} force damage (for a total of {@damage 12d12} force damage).",
-                "As a bonus action on your turn, you can move the blade up to 30 feet to an unoccupied space you can see and then make up to two melee spell attacks with it again.",
+                "As a {@variantrule Bonus Action|Ishiir} on your turn, you can move the blade up to 30 feet to an unoccupied space you can see and then make up to two melee spell attacks with it again.",
                 "The blade can harmlessly pass through any barrier, including a {@spell wall of force|Ishiir}."
             ],
             "damageInflict": [
@@ -5345,7 +5345,7 @@
                 }
             ],
             "entries": [
-                "Roll a {@dice d20} at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell fails and the casting is wasted if you were already on that plane). At the start of your next turn, and when the spell ends if you are on the Ethereal Plane, you return to an unoccupied space of your choice that you can see within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near). You can dismiss this spell as an action.",
+                "Roll a {@dice d20} at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell fails and the casting is wasted if you were already on that plane). At the start of your next turn, and when the spell ends if you are on the Ethereal Plane, you return to an unoccupied space of your choice that you can see within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near). You can dismiss this spell as an {@variantrule Action|Ishiir}.",
                 "While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can't see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Ethereal Plane. Creatures that aren't there can't perceive you or interact with you, unless they have the ability to do so."
             ],
             "miscTags": [
@@ -5629,7 +5629,7 @@
             ],
             "entries": [
                 "You attempt to seize control of the body of a creature you can see within range through their blood. It must make a Constitution {@variantrule Saving Throw|Ishiir} or be affected by the spell for its duration.",
-                "While affected by this spell, the target is {@condition Paralyzed|Ishiir}, even if it is normally {@variantrule Immunity|Ishiir|Immune} to the condition, unless you use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.",
+                "While affected by this spell, the target is {@condition Paralyzed|Ishiir}, even if it is normally {@variantrule Immunity|Ishiir|Immune} to the condition, unless you use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a {@variantrule Reaction|Ishiir}, but this requires you to use your own {@variantrule Reaction|Ishiir} as well.",
                 "At the end of each of its turns, the target can repeat the {@variantrule Saving Throw|Ishiir}, ending the spell on a success.",
                 "This spell has no effect on creatures without blood."
             ],
@@ -5952,7 +5952,7 @@
             "entries": [
                 "You cause up to six pillars of stone to burst from places on the ground that you can see within range. Each pillar is a cylinder that has a diameter of 5 feet and a height of up to 30 feet. The ground where a pillar appears must be wide enough for its diameter, and you can target the ground under a creature if that creature is Medium or smaller. Each pillar has AC 5 and 30 hit points. When reduced to 0 hit points, a pillar crumbles into rubble, which creates an area of {@quickref difficult terrain||3} with a 10-foot radius that lasts until the rubble is cleared. Each 5-foot-diameter portion of the area requires at least 1 minute to clear by hand.",
                 "If a pillar is created under a creature, that creature must succeed on a Dexterity {@variantrule Saving Throw|Ishiir} or be lifted by the pillar. A creature can choose to fail the save.",
-                "If a pillar is prevented from reaching its full height because of a ceiling or other obstacle, a creature on the pillar takes {@damage 10d6} bludgeoning damage and is {@condition Restrained|Ishiir}, pinched between the pillar and the obstacle. The {@condition Restrained|Ishiir} creature can use an action to make a Strength or Dexterity check (the creature's choice) against the spell's save DC. On a success, the creature is no longer {@condition Restrained|Ishiir} and must either move off the pillar or fall off it."
+                "If a pillar is prevented from reaching its full height because of a ceiling or other obstacle, a creature on the pillar takes {@damage 10d6} bludgeoning damage and is {@condition Restrained|Ishiir}, pinched between the pillar and the obstacle. The {@condition Restrained|Ishiir} creature can use an {@variantrule Action|Ishiir} to make a Strength or Dexterity check (the creature's choice) against the spell's save DC. On a success, the creature is no longer {@condition Restrained|Ishiir} and must either move off the pillar or fall off it."
             ],
             "entriesHigherLevel": [
                 {
@@ -6896,7 +6896,7 @@
                 }
             ],
             "entries": [
-                "You make a calming gesture, and up to three willing creatures of your choice that you can see within range fall {@condition Unconscious|Ishiir} for the spell's duration. The spell ends on a target early if it takes damage or someone uses an action to shake or slap it awake. If a target remains {@condition Unconscious|Ishiir} for the full duration, that target gains the benefit of a {@variantrule Short Rest|Ishiir}, and it can't be affected by this spell again until it finishes a {@variantrule Long Rest|Ishiir}."
+                "You make a calming gesture, and up to three willing creatures of your choice that you can see within range fall {@condition Unconscious|Ishiir} for the spell's duration. The spell ends on a target early if it takes damage or someone uses an {@variantrule Action|Ishiir} to shake or slap it awake. If a target remains {@condition Unconscious|Ishiir} for the full duration, that target gains the benefit of a {@variantrule Short Rest|Ishiir}, and it can't be affected by this spell again until it finishes a {@variantrule Long Rest|Ishiir}."
             ],
             "entriesHigherLevel": [
                 {
@@ -8530,7 +8530,7 @@
                 }
             ],
             "entries": [
-                "You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes {@damage 4d4} slashing damage when it enters the spell's area for the first time on a turn or starts its turn there. A creature takes this damage only once per turn. On your later turns, you can use an Action to teleport the cloud up to 30 feet to a place that you can see."
+                "You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes {@damage 4d4} slashing damage when it enters the spell's area for the first time on a turn or starts its turn there. A creature takes this damage only once per turn. On your later turns, you can use an {@variantrule Action|Ishiir} to teleport the cloud up to 30 feet to a place that you can see."
             ],
             "entriesHigherLevel": [
                 {
@@ -9527,7 +9527,7 @@
             ],
             "entries": [
                 "Each creature of your choice that you can see within range must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or have the {@condition Charmed|Ishiir} condition until the spell ends.",
-                "For the duration, you can take a Bonus Action to designate a direction that is horizontal to you. Each {@condition Charmed|Ishiir} target must use as much of its movement as possible to move in that direction on its next turn, taking the safest route. After moving in this way, a target repeats the save, ending the spell on itself on a success."
+                "For the duration, you can take a {@variantrule Bonus Action|Ishiir} to designate a direction that is horizontal to you. Each {@condition Charmed|Ishiir} target must use as much of its movement as possible to move in that direction on its next turn, taking the safest route. After moving in this way, a target repeats the save, ending the spell on itself on a success."
             ],
             "conditionInflict": [
                 "charmed"
@@ -9852,7 +9852,7 @@
             ],
             "entries": [
                 "This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} when you cast this spell or be affected by it.",
-                "An affected target can't take reactions and must roll a {@dice d10} at the start of each of its turns to determine its behavior for that turn.",
+                "An affected target can't take {@variantrule Reaction|Ishiir|Reactions} and must roll a {@dice d10} at the start of each of its turns to determine its behavior for that turn.",
                 {
                     "type": "table",
                     "caption": "Confusion Behavior",
@@ -9872,7 +9872,7 @@
                                     "exact": 1
                                 }
                             },
-                            "The creature uses all its movement to move in a random direction. To determine the direction, roll a {@dice d8} and assign a direction to each die face. The creature doesn't take an action this turn."
+                            "The creature uses all its movement to move in a random direction. To determine the direction, roll a {@dice d8} and assign a direction to each die face. The creature doesn't take an {@variantrule Action|Ishiir} this turn."
                         ],
                         [
                             {
@@ -10792,7 +10792,7 @@
             ],
             "entries": [
                 "You conjure nature spirits that flit around you in a 10-foot Emanation for the duration. Whenever the Emanation enters the space of a creature you can see and whenever a creature you can see enters the Emanation or ends its turn there, you can force that creature to make a Wisdom {@variantrule Saving Throw|Ishiir}. The creature takes {@damage 5d8} Force damage on a failed save or half as much damage on a successful one. A creature makes this save only once per turn.",
-                "In addition, you can take the {@action Disengage|Ishiir} action as a Bonus Action for the spell's duration."
+                "In addition, you can take the {@action Disengage|Ishiir} action as a {@variantrule Bonus Action|Ishiir} for the spell's duration."
             ],
             "entriesHigherLevel": [
                 {
@@ -11469,7 +11469,7 @@
                         "You cause simple shapes\u2014such as the vague form of a creature, an inanimate object, or a location\u2014to appear within the flames and animate as you like. The shapes last for 1 hour."
                     ]
                 },
-                "If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an action."
+                "If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an {@variantrule Action|Ishiir}."
             ],
             "miscTags": [
                 "SGT"
@@ -11566,7 +11566,7 @@
                 }
             ],
             "entries": [
-                "Until the spell ends, you control any freestanding water inside an area you choose that is a cube up to 100 feet on a side. You can choose from any of the following effects when you cast this spell. As an action on your turn, you can repeat the same effect or choose a different one.",
+                "Until the spell ends, you control any freestanding water inside an area you choose that is a cube up to 100 feet on a side. You can choose from any of the following effects when you cast this spell. As an {@variantrule Action|Ishiir} on your turn, you can repeat the same effect or choose a different one.",
                 {
                     "type": "entries",
                     "name": "Flood",
@@ -12611,7 +12611,7 @@
             ],
             "entries": [
                 "You can cast this spell only at night. Choose up to three corpses of Medium or Small humanoids within range. Each corpse becomes an undead creature under your control, which a maximum combined CR of 6. Your choices are {@creature Geist}, {@creature Ghast}, {@creature Ghost}, {@creature Ghoul}, {@creature Pestilent Ghoul}, {@creature Skeleton Champion}, {@creature Skeleton Mage}, {@creature Skeleton Warrior}, {@creature Wraith}, and {@creature Wraith Mage} (The DM has game statistics for these creatures.)",
-                "As a bonus action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
+                "As a {@variantrule Bonus Action|Ishiir} on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
                 "The creature is under your control for 24 hours, after which it stops obeying any command you have given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell, rather than animating new ones."
             ],
             "entriesHigherLevel": [
@@ -13104,7 +13104,7 @@
                 }
             ],
             "entries": [
-                "Seven star-like motes of light appear and orbit your head until the spell ends. You can use a bonus action to send one of the motes streaking toward one creature or object within 120 feet of you. When you do so, make a ranged spell attack. On a hit, the target takes {@damage 4d12} radiant damage. Whether you hit or miss, the mote is expended. The spell ends early if you expend the last mote.",
+                "Seven star-like motes of light appear and orbit your head until the spell ends. You can use a {@variantrule Bonus Action|Ishiir} to send one of the motes streaking toward one creature or object within 120 feet of you. When you do so, make a ranged spell attack. On a hit, the target takes {@damage 4d12} radiant damage. Whether you hit or miss, the mote is expended. The spell ends early if you expend the last mote.",
                 "If you have four or more motes remaining, they shed bright light in a 30-foot radius and dim light for an additional 30 feet. If you have one to three motes remaining, they shed dim light in a 30-foot radius."
             ],
             "entriesHigherLevel": [
@@ -13469,7 +13469,7 @@
             ],
             "entries": [
                 "You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.",
-                "As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range."
+                "As a {@variantrule Bonus Action|Ishiir} on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range."
             ],
             "miscTags": [
                 "LGT",
@@ -13559,7 +13559,7 @@
             ],
             "entries": [
                 "Threads of dark power leap from your fingers to pierce up to five Small or Medium corpses you can see within range. Each corpse immediately stands up and becomes undead. You decide whether it is a {@creature zombie} or a {@creature skeleton} (the statistics for {@creature zombie||zombies} and {@creature skeleton||skeletons} are in the Monster Manual), and it gains a bonus to its attack and damage rolls equal to your spellcasting ability modifier.",
-                "You can use a bonus action to mentally command the creatures you make with this spell, issuing the same command to all of them. To receive the command, a creature must be within 60 feet of you. You decide what action the creatures will take and where they will move during their next turn, or you can issue a general command, such as to guard a chamber or passageway against your foes. If you issue no commands, the creatures do nothing except defend themselves against hostile creatures. Once given an order, the creatures continue to follow it until their task is complete.",
+                "You can use a {@variantrule Bonus Action|Ishiir} to mentally command the creatures you make with this spell, issuing the same command to all of them. To receive the command, a creature must be within 60 feet of you. You decide what action the creatures will take and where they will move during their next turn, or you can issue a general command, such as to guard a chamber or passageway against your foes. If you issue no commands, the creatures do nothing except defend themselves against hostile creatures. Once given an order, the creatures continue to follow it until their task is complete.",
                 "The creatures are under your control until the spell ends, after which they become inanimate once more."
             ],
             "entriesHigherLevel": [
@@ -14023,7 +14023,7 @@
             "entries": [
                 "The light of dawn shines down on a location you specify within range. Until the spell ends, a 30-foot-radius, 40-foot-high cylinder of bright light glimmers there. This light is sunlight.",
                 "When the cylinder appears, each creature in it must make a Constitution {@variantrule Saving Throw|Ishiir}, taking {@damage 4d10} radiant damage on a failed save, or half as much damage on a successful one. A creature must also make this {@variantrule Saving Throw|Ishiir} whenever it ends its turn in the cylinder.",
-                "If you're within 60 feet of the cylinder, you can move it up to 60 feet as a bonus action on your turn."
+                "If you're within 60 feet of the cylinder, you can move it up to 60 feet as a {@variantrule Bonus Action|Ishiir} on your turn."
             ],
             "damageInflict": [
                 "radiant"
@@ -15062,7 +15062,7 @@
             ],
             "entries": [
                 "For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of 3 or lower or doesn't speak any language, the creature is unaffected.",
-                "You initially learn the surface thoughts of the creature\u2014what is most on its mind in that moment. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's mind. If you probe deeper, the target must make a Wisdom {@variantrule Saving Throw|Ishiir}. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.",
+                "You initially learn the surface thoughts of the creature\u2014what is most on its mind in that moment. As an {@variantrule Action|Ishiir}, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's mind. If you probe deeper, the target must make a Wisdom {@variantrule Saving Throw|Ishiir}. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.",
                 "Questions verbally directed at the target creature naturally shape the course of its thoughts, so this spell is particularly effective as part of an interrogation.",
                 "You can also use this spell to detect the presence of thinking creatures you can't see. When you cast the spell or as your action during the duration, you can search for thoughts within 30 feet of you. The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. You can't detect a creature with an Intelligence of 3 or lower or one that doesn't speak any language.",
                 "Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range."
@@ -15834,7 +15834,7 @@
                 }
             ],
             "entries": [
-                "You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failed save, it takes {@damage 3d6} psychic damage and must immediately use its reaction, if available, to move as far as its {@variantrule Speed|Ishiir} allows away from you. The creature doesn't move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn't have to move away. A {@condition Deafened|Ishiir} creature automatically succeeds on the save."
+                "You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failed save, it takes {@damage 3d6} psychic damage and must immediately use its {@variantrule Reaction|Ishiir}, if available, to move as far as its {@variantrule Speed|Ishiir} allows away from you. The creature doesn't move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn't have to move away. A {@condition Deafened|Ishiir} creature automatically succeeds on the save."
             ],
             "entriesHigherLevel": [
                 {
@@ -16241,7 +16241,7 @@
             "entries": [
                 "You attempt to beguile a beast that you can see within range. It must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or be {@condition Charmed|Ishiir} by you for the duration. If you or creatures that are friendly to you are fighting it, it has {@variantrule Advantage|Ishiir} on the {@variantrule Saving Throw|Ishiir}.",
                 "While the beast is {@condition Charmed|Ishiir}, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
-                "You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.",
+                "You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a {@variantrule Reaction|Ishiir}, but this requires you to use your own {@variantrule Reaction|Ishiir} as well.",
                 "Each time the target takes damage, it makes a new Wisdom {@variantrule Saving Throw|Ishiir} against the spell. If the {@variantrule Saving Throw|Ishiir} succeeds, the spell ends."
             ],
             "entriesHigherLevel": [
@@ -16420,7 +16420,7 @@
             "entries": [
                 "You attempt to beguile a creature that you can see within range. It must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or be {@condition Charmed|Ishiir} by you for the duration. If you or creatures that are friendly to you are fighting it, it has {@variantrule Advantage|Ishiir} on the {@variantrule Saving Throw|Ishiir}.",
                 "While the creature is {@condition Charmed|Ishiir}, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
-                "You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.",
+                "You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a {@variantrule Reaction|Ishiir}, but this requires you to use your own {@variantrule Reaction|Ishiir} as well.",
                 "Each time the target takes damage, it makes a new Wisdom {@variantrule Saving Throw|Ishiir} against the spell. If the {@variantrule Saving Throw|Ishiir} succeeds, the spell ends."
             ],
             "entriesHigherLevel": [
@@ -16507,7 +16507,7 @@
             "entries": [
                 "You attempt to beguile a humanoid that you can see within range. It must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or be {@condition Charmed|Ishiir} by you for the duration. If you or creatures that are friendly to you are fighting it, it has {@variantrule Advantage|Ishiir} on the {@variantrule Saving Throw|Ishiir}.",
                 "While the target is {@condition Charmed|Ishiir}, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
-                "You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.",
+                "You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time you can also cause the creature to use a {@variantrule Reaction|Ishiir}, but this requires you to use your own {@variantrule Reaction|Ishiir} as well.",
                 "Each time the target takes damage, it makes a new Wisdom {@variantrule Saving Throw|Ishiir} against the spell. If the {@variantrule Saving Throw|Ishiir} succeeds, the spell ends."
             ],
             "entriesHigherLevel": [
@@ -16722,7 +16722,7 @@
                             "type": "item",
                             "name": "Breath Weapon",
                             "entries": [
-                                "When you cast this spell, and as a bonus action on subsequent turns for the duration, you can exhale shimmering energy in a 60-foot cone. Each creature in that area must make a Dexterity {@variantrule Saving Throw|Ishiir}, taking {@damage 6d8} force damage on a failed save, or half as much damage on a successful one."
+                                "When you cast this spell, and as a {@variantrule Bonus Action|Ishiir} on subsequent turns for the duration, you can exhale shimmering energy in a 60-foot cone. Each creature in that area must make a Dexterity {@variantrule Saving Throw|Ishiir}, taking {@damage 6d8} force damage on a failed save, or half as much damage on a successful one."
                             ]
                         },
                         {
@@ -16806,7 +16806,7 @@
                 }
             ],
             "entries": [
-                "You touch one willing creature and imbue it with the power to spew magical energy from its mouth, provided it has one. Choose acid, cold, fire, lightning, or poison. Until the spell ends, the creature can use an action to exhale energy of the chosen type in a 15-foot cone. Each creature in that area must make a Dexterity {@variantrule Saving Throw|Ishiir}, taking {@damage 3d6} damage of the chosen type on a failed save, or half as much damage on a successful one."
+                "You touch one willing creature and imbue it with the power to spew magical energy from its mouth, provided it has one. Choose acid, cold, fire, lightning, or poison. Until the spell ends, the creature can use an {@variantrule Action|Ishiir} to exhale energy of the chosen type in a 15-foot cone. Each creature in that area must make a Dexterity {@variantrule Saving Throw|Ishiir}, taking {@damage 3d6} damage of the chosen type on a failed save, or half as much damage on a successful one."
             ],
             "entriesHigherLevel": [
                 {
@@ -17154,7 +17154,7 @@
             ],
             "entries": [
                 "You fill the lungs of a creature you can see within range with water. The target has to make a Constitution {@variantrule Saving Throw|Ishiir} or suffer the effects of the spell for the duration.",
-                "An affected creature immediately starts drowning at the beginning of its turn. It cannot speak or otherwise create sound with its voice apart from retching or gurgling. Its {@variantrule Speed|Ishiir} antrule Speed|Ishiir} is reduced by half and it makes {@variantrule Attack Roll|Ishiir}s and {@variantrule Ability Check|Ishiir}s with {@variantrule Disadvantage|Ishiir}. As an action, a creature can repeat the Constitution {@variantrule Saving Throw|Ishiir} to expel the water. On a successful save, the spell ends.",
+                "An affected creature immediately starts drowning at the beginning of its turn. It cannot speak or otherwise create sound with its voice apart from retching or gurgling. Its {@variantrule Speed|Ishiir} antrule Speed|Ishiir} is reduced by half and it makes {@variantrule Attack Roll|Ishiir}s and {@variantrule Ability Check|Ishiir}s with {@variantrule Disadvantage|Ishiir}. As an {@variantrule Action|Ishiir}, a creature can repeat the Constitution {@variantrule Saving Throw|Ishiir} to expel the water. On a successful save, the spell ends.",
                 "This spell has no effect on creatures that do not have lungs, or similar anatomy, breathe water, or that do not need to breathe."
             ],
             "savingThrow": [
@@ -17426,7 +17426,7 @@
             "entries": [
                 "Choose an unoccupied 5-foot cube of air that you can see within range. An elemental force that resembles a dust devil appears in the cube and lasts for the spell's duration.",
                 "Any creature that ends its turn within 5 feet of the dust devil must make a Strength {@variantrule Saving Throw|Ishiir}. On a failed save, the creature takes {@damage 2d6} bludgeoning damage and is pushed 10 feet away from the dust devil. On a successful save, the creature takes half as much damage and isn't pushed.",
-                "As a bonus action, you can move the dust devil up to 30 feet in any direction. If the dust devil moves over sand, dust, loose dirt, or light gravel, it sucks up the material and forms a 10-foot-radius cloud of debris around itself that lasts until the start of your next turn. The cloud heavily obscures its area."
+                "As a {@variantrule Bonus Action|Ishiir}, you can move the dust devil up to 30 feet in any direction. If the dust devil moves over sand, dust, loose dirt, or light gravel, it sucks up the material and forms a 10-foot-radius cloud of debris around itself that lasts until the start of your next turn. The cloud heavily obscures its area."
             ],
             "entriesHigherLevel": [
                 {
@@ -17730,7 +17730,7 @@
                     "type": "entries",
                     "name": "Structures",
                     "entries": [
-                        "The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure's height must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed save, the creature takes {@damage 12d6} bludgeoning damage, is knocked {@condition Prone|Ishiir}, and is buried in the rubble, requiring a DC 20 Strength check as an action to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn't fall {@condition Prone|Ishiir} or become buried."
+                        "The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure's height must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed save, the creature takes {@damage 12d6} bludgeoning damage, is knocked {@condition Prone|Ishiir}, and is buried in the rubble, requiring a DC 20 Strength check as an {@variantrule Action|Ishiir} to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn't fall {@condition Prone|Ishiir} or become buried."
                     ]
                 }
             ],
@@ -18041,14 +18041,14 @@
             ],
             "entries": [
                 "You become a conduit for elemental energy that surrounds you like a corona. Choose one of the following elements when you cast the spell: bludgeoning, cold, fire, or lightning. For the duration, any attack you make deals an extra {@damage 1d10} damage of the chose type.",
-                "In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can use your Reaction to dismiss the spell and force the creature to make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed save, the creature takes {@damage 4d10} damage of the chosen type. On a successful save, it takes half as much damage."
+                "In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can use your {@variantrule Reaction|Ishiir} to dismiss the spell and force the creature to make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed save, the creature takes {@damage 4d10} damage of the chosen type. On a successful save, it takes half as much damage."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the extra damage for your attacks increases by {@scaledice 1d10|4-9|1d10} and the damage of the special reaction increases by {@scaledice 4d10|4-9|2d10} for every two slot levels above 4th."
+                        "When you cast this spell using a spell slot of 5th level or higher, the extra damage for your attacks increases by {@scaledice 1d10|4-9|1d10} and the damage of the special {@variantrule Reaction|Ishiir} increases by {@scaledice 4d10|4-9|2d10} for every two slot levels above 4th."
                     ]
                 }
             ],
@@ -19505,7 +19505,7 @@
                 }
             ],
             "entries": [
-                "This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the {@action Dash|Ishiir} action."
+                "This spell allows you to move at an incredible pace. When you cast this spell, and then as a {@variantrule Bonus Action|Ishiir} on each of your turns until the spell ends, you can take the {@action Dash|Ishiir} action."
             ],
             "classes": {
                 "fromClassList": [
@@ -19614,7 +19614,7 @@
                 }
             ],
             "entries": [
-                "For the spell's duration, your eyes become an inky void imbued with dread power. One creature of your choice within 60 feet of you that you can see must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or be affected by one of the following effects of your choice for the duration. On each of your turns until the spell ends, you can use your bonus action to target another creature but can't target a creature again if it has succeeded on a {@variantrule Saving Throw|Ishiir} against this casting of eyebite.",
+                "For the spell's duration, your eyes become an inky void imbued with dread power. One creature of your choice within 60 feet of you that you can see must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or be affected by one of the following effects of your choice for the duration. On each of your turns until the spell ends, you can use your {@variantrule Bonus Action|Ishiir} to target another creature but can't target a creature again if it has succeeded on a {@variantrule Saving Throw|Ishiir} against this casting of eyebite.",
                 {
                     "type": "entries",
                     "name": "Asleep",
@@ -20190,7 +20190,7 @@
                 }
             ],
             "entries": [
-                "You teleport up to 60 feet to an unoccupied space you can see. On each of your turns before the spell ends, you can use a bonus action to teleport in this way again."
+                "You teleport up to 60 feet to an unoccupied space you can see. On each of your turns before the spell ends, you can use a {@variantrule Bonus Action|Ishiir} to teleport in this way again."
             ],
             "miscTags": [
                 "SGT",
@@ -20597,7 +20597,7 @@
             },
             "entries": [
                 "You touch a willing creature and put it into a cataleptic state that is indistinguishable from death.",
-                "For the spell's duration, or until you use an action to touch the target and dismiss the spell, the target appears dead to all outward inspection and to spells used to determine the target's status. The target is {@condition Blinded|Ishiir} and {@condition Incapacitated|Ishiir}, and its {@variantrule Speed|Ishiir} antrule Speed|Ishiir} drops to 0. The target has {@variantrule Resistance|Ishiir} to all damage except psychic damage. If the target is diseased or {@condition Poisoned|Ishiir} when you cast the spell, or becomes diseased or {@condition Poisoned|Ishiir} while under the spell's effect, the disease and poison have no effect until the spell ends."
+                "For the spell's duration, or until you use an {@variantrule Action|Ishiir} to touch the target and dismiss the spell, the target appears dead to all outward inspection and to spells used to determine the target's status. The target is {@condition Blinded|Ishiir} and {@condition Incapacitated|Ishiir}, and its {@variantrule Speed|Ishiir} antrule Speed|Ishiir} drops to 0. The target has {@variantrule Resistance|Ishiir} to all damage except psychic damage. If the target is diseased or {@condition Poisoned|Ishiir} when you cast the spell, or becomes diseased or {@condition Poisoned|Ishiir} while under the spell's effect, the disease and poison have no effect until the spell ends."
             ],
             "damageResist": [
                 "acid",
@@ -20740,10 +20740,10 @@
                 "{@note Additional {@filter animal form choices|bestiary|Miscellaneous=Familiar} may be available at the DM's discretion.}",
                 "Your familiar acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal.",
                 "When the familiar drops to 0 hit points, it disappears, leaving behind no physical form. It reappears after you cast this spell again.",
-                "While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as a bonus action, you can see through your familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has.",
-                "As an action, you can temporarily dismiss your familiar. It disappears into a pocket dimension where it awaits your summons. Alternatively, you can dismiss it forever. As an action while it is temporarily dismissed, you can cause it to reappear in any unoccupied space within 30 feet of you.",
+                "While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as a {@variantrule Bonus Action|Ishiir}, you can see through your familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has.",
+                "As an {@variantrule Action|Ishiir}, you can temporarily dismiss your familiar. It disappears into a pocket dimension where it awaits your summons. Alternatively, you can dismiss it forever. As an {@variantrule Action|Ishiir} while it is temporarily dismissed, you can cause it to reappear in any unoccupied space within 30 feet of you.",
                 "You can't have more than one familiar at a time. If you cast this spell while you already have a familiar, you instead cause it to adopt a new form. Choose one of the forms from the above list. Your familiar transforms into the chosen creature.",
-                "Finally, when you cast a spell with a range of touch, your familiar can deliver the spell as if it had cast the spell. Your familiar must be within 100 feet of you, and it must use its reaction to deliver the spell when you cast it. If the spell requires an {@variantrule Attack Roll|Ishiir}, you use your attack modifier for the roll."
+                "Finally, when you cast a spell with a range of touch, your familiar can deliver the spell as if it had cast the spell. Your familiar must be within 100 feet of you, and it must use its {@variantrule Reaction|Ishiir} to deliver the spell when you cast it. If the spell requires an {@variantrule Attack Roll|Ishiir}, you use your attack modifier for the roll."
             ],
             "miscTags": [
                 "PRM",
@@ -21212,7 +21212,7 @@
                 }
             ],
             "entries": [
-                "Thin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell early by using an action to dismiss it.",
+                "Thin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell early by using an {@variantrule Action|Ishiir} to dismiss it.",
                 "The flames provide you with a warm shield or a chill shield, as you choose. The warm shield grants you {@variantrule Resistance|Ishiir} to cold damage, and the chill shield grants you {@variantrule Resistance|Ishiir} to fire damage.",
                 "In addition, whenever a creature within 10 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes {@damage 2d8} fire damage from a warm shield, or {@damage 2d8} cold damage from a cold shield."
             ],
@@ -21820,7 +21820,7 @@
                         }
                     ]
                 },
-                "As a bonus action on subsequent turns, you can move the field to another creature within 60 feet of the field."
+                "As a {@variantrule Bonus Action|Ishiir} on subsequent turns, you can move the field to another creature within 60 feet of the field."
             ],
             "classes": {
                 "fromClassList": [
@@ -21981,7 +21981,7 @@
                 }
             ],
             "entries": [
-                "You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action.",
+                "You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a {@variantrule Bonus Action|Ishiir}.",
                 "You can use your action to make a melee spell attack with the fiery blade. On a hit, the target takes fire damage equal to {@damage 3d6} + your spellcasting ability modifier.",
                 "The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
             ],
@@ -22347,7 +22347,7 @@
             ],
             "entries": [
                 "A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a Dexterity {@variantrule Saving Throw|Ishiir}. The creature takes {@damage 2d6} fire damage on a failed save, or half as much damage on a successful one.",
-                "As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the {@variantrule Saving Throw|Ishiir} against the sphere's damage, and the sphere stops moving this turn.",
+                "As a {@variantrule Bonus Action|Ishiir}, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the {@variantrule Saving Throw|Ishiir} against the sphere's damage, and the sphere stops moving this turn.",
                 "When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet."
             ],
             "entriesHigherLevel": [
@@ -23294,7 +23294,7 @@
                 }
             ],
             "entries": [
-                "A cool light wreathes your body for the duration, emitting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. Until the spell ends, you have {@variantrule Resistance|Ishiir} to Radiant damage, and your melee attacks deal an extra {@damage 2d6} Radiant damage on a hit. In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can use your Reaction to force the creature to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, the creature has the {@condition Blinded|Ishiir} condition until the end of your next turn."
+                "A cool light wreathes your body for the duration, emitting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. Until the spell ends, you have {@variantrule Resistance|Ishiir} to Radiant damage, and your melee attacks deal an extra {@damage 2d6} Radiant damage on a hit. In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can use your {@variantrule Reaction|Ishiir} to force the creature to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, the creature has the {@condition Blinded|Ishiir} condition until the end of your next turn."
             ],
             "areaTags": [
                 "ST"
@@ -24145,7 +24145,7 @@
             "entries": [
                 "You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or become {@condition Charmed|Ishiir} by you for the duration. While the creature is {@condition Charmed|Ishiir} by you, it takes {@damage 5d10} psychic damage each time it acts in a manner directly counter to your instructions. A creature that can't understand you is unaffected by the spell.",
                 "You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.",
-                "You can end the spell early by using an action to dismiss it. A {@spell remove curse|Ishiir}, {@spell greater restoration|Ishiir}, or {@spell wish|Ishiir} spell also ends it."
+                "You can end the spell early by using an {@variantrule Action|Ishiir} to dismiss it. A {@spell remove curse|Ishiir}, {@spell greater restoration|Ishiir}, or {@spell wish|Ishiir} spell also ends it."
             ],
             "entriesHigherLevel": [
                 {
@@ -24946,7 +24946,7 @@
             "entries": [
                 "You conjure a nature spirit in the form of a Large vine that sprouts from a surface in an unoccupied space that you can see within range. The vine cannot move or be moved, is {@variantrule Immunity|Ishiir|Immune} to all damage and conditions, and lasts for the duration.",
                 "Make a melee spell attack against a creature within 30 feet of the vine. On a hit, the target takes {@damage 4d8} Bludgeoning damage. If the target is Huge or smaller, it is {@condition Grappled|Ishiir} and can be moved up to 30 feet, but must remain within 30 feet of the vine during the whole movement. To escape the grapple, the creature has to succeed on a Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check against your spell save DC.",
-                "The vine can only grapple one creature at a time, and you can cause the vine to release a {@condition Grappled|Ishiir} creature (no action required). As a Bonus action on your later turns, you can repeat the attack against a creature within 30 feet of the vine."
+                "The vine can only grapple one creature at a time, and you can cause the vine to release a {@condition Grappled|Ishiir} creature (no action required). As a {@variantrule Bonus Action|Ishiir} on your later turns, you can repeat the attack against a creature within 30 feet of the vine."
             ],
             "entriesHigherLevel": [
                 {
@@ -26644,7 +26644,7 @@
                 "A line of strong wind 60 feet long and 10 feet wide blasts from you in a direction you choose for the spell's duration. Each creature that starts its turn in the line must succeed on a Strength {@variantrule Saving Throw|Ishiir} or be pushed 15 feet away from you in a direction following the line.",
                 "Any creature in the line must spend 2 feet of movement for every 1 foot it moves when moving closer to you.",
                 "The gust disperses gas or vapor, and it extinguishes candles, torches, and similar unprotected flames in the area. It causes protected flames, such as those of lanterns, to dance wildly and has a {@chance 50|||Extinguished!|No effect} chance to extinguish them.",
-                "As a bonus action on each of your turns before the spell ends, you can change the direction in which the line blasts from you."
+                "As a {@variantrule Bonus Action|Ishiir} on each of your turns before the spell ends, you can change the direction in which the line blasts from you."
             ],
             "savingThrow": [
                 "strength"
@@ -27507,7 +27507,7 @@
             "entries": [
                 "You call forth a nature spirit to soothe the wounded. The intangible spirit appears in a space that is a 5-foot cube you can see within range. The spirit looks like a transparent beast or fey (your choice).",
                 "Until the spell ends, whenever you or a creature you can see moves into the spirit's space for the first time on a turn or starts its turn there, you can cause the spirit to restore {@dice 1d6} hit points to that creature (no action required). The spirit can't heal constructs or undead. The spirit can heal a number of times equal to 1 + your spellcasting ability modifier (minimum of twice). After healing that number of times, the spirit disappears.",
-                "As a bonus action on your turn, you can move the spirit up to 30 feet to a space you can see."
+                "As a {@variantrule Bonus Action|Ishiir} on your turn, you can move the spirit up to 30 feet to a space you can see."
             ],
             "entriesHigherLevel": [
                 {
@@ -27702,7 +27702,7 @@
                 }
             ],
             "entries": [
-                "Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes {@damage 2d8} fire damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again.",
+                "Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes {@damage 2d8} fire damage when you cast the spell. Until the spell ends, you can use a {@variantrule Bonus Action|Ishiir} on each of your subsequent turns to cause this damage again.",
                 "If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution {@variantrule Saving Throw|Ishiir} or drop the object if it can. If it doesn't drop the object, it has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s and {@variantrule Ability Check|Ishiir}s until the start of your next turn."
             ],
             "entriesHigherLevel": [
@@ -28165,7 +28165,7 @@
             ],
             "entries": [
                 "You place a curse on a creature that you can see within range. Until the spell ends, you deal an extra {@damage 1d6} necrotic damage to the target whenever you hit it with an attack. Also, choose one ability when you cast the spell. The target has {@variantrule Disadvantage|Ishiir} on {@variantrule Ability Check|Ishiir}s made with the chosen ability.",
-                "If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to curse a new creature.",
+                "If the target drops to 0 hit points before this spell ends, you can use a {@variantrule Bonus Action|Ishiir} on a subsequent turn of yours to curse a new creature.",
                 "A {@spell remove curse|Ishiir} cast on the target ends this spell early."
             ],
             "entriesHigherLevel": [
@@ -28712,7 +28712,7 @@
             ],
             "entries": [
                 "You imbue a weapon you touch with holy power. Until the spell ends, the weapon emits bright light in a 30-foot radius and dim light for an additional 30 feet. In addition, weapon attacks made with it deal an extra {@damage 2d8} radiant damage on a hit. If the weapon isn't already a magic weapon, it becomes one for the duration.",
-                "As a bonus action on your turn, you can dismiss this spell and cause the weapon to emit a burst of radiance. Each creature of your choice that you can see within 30 feet of the weapon must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a creature takes {@damage 4d8} radiant damage, and it is {@condition Blinded|Ishiir} for 1 minute. On a successful save, a creature takes half as much damage and isn't {@condition Blinded|Ishiir}. At the end of each of its turns, a {@condition Blinded|Ishiir} creature can make a Constitution {@variantrule Saving Throw|Ishiir}, ending the effect on itself on a success."
+                "As a {@variantrule Bonus Action|Ishiir} on your turn, you can dismiss this spell and cause the weapon to emit a burst of radiance. Each creature of your choice that you can see within 30 feet of the weapon must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a creature takes {@damage 4d8} radiant damage, and it is {@condition Blinded|Ishiir} for 1 minute. On a successful save, a creature takes half as much damage and isn't {@condition Blinded|Ishiir}. At the end of each of its turns, a {@condition Blinded|Ishiir} creature can make a Constitution {@variantrule Saving Throw|Ishiir}, ending the effect on itself on a success."
             ],
             "damageInflict": [
                 "radiant"
@@ -28905,7 +28905,7 @@
             ],
             "entries": [
                 "You magically mark one creature you can see within range as your quarry. Until the spell ends, you deal an extra {@damage 1d6} Force damage to the target whenever you hit it with an {@variantrule Attack Roll|Ishiir}. You also have {@variantrule Advantage|Ishiir} on any Wisdom ({@skill Perception} or {@skill Survival}) check you make to find it.",
-                "If the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action to move the mark to a new creature you can see within range."
+                "If the target drops to 0 Hit Points before this spell ends, you can take a {@variantrule Bonus Action|Ishiir} to move the mark to a new creature you can see within range."
             ],
             "entriesHigherLevel": [
                 {
@@ -29006,7 +29006,7 @@
             ],
             "entries": [
                 "You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failed save, the creature becomes {@condition Charmed|Ishiir} for the duration. While {@condition Charmed|Ishiir} by this spell, the creature is {@condition Incapacitated|Ishiir} and has a {@variantrule Speed|Ishiir} of 0.",
-                "The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor."
+                "The spell ends for an affected creature if it takes any damage or if someone else uses an {@variantrule Action|Ishiir} to shake the creature out of its stupor."
             ],
             "conditionInflict": [
                 "charmed",
@@ -29681,8 +29681,8 @@
             "entries": [
                 "By gathering threads of shadow material from the Shadowfell, you create a Huge shadowy dragon in an unoccupied space that you can see within range. The illusion lasts for the spell's duration and occupies its space, as if it were a creature.",
                 "When the illusion appears, any of your enemies that can see it must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or become {@condition Frightened|Ishiir} of it for 1 minute. If a {@condition Frightened|Ishiir} creature ends its turn in a location where it doesn't have line of sight to the illusion, it can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on itself on a success.",
-                "As a bonus action on your turn, you can move the illusion up to 60 feet. At any point during its movement, you can cause it to exhale a blast of energy in a 60-foot cone originating from its space. When you create the dragon, choose a damage type: acid, cold, fire, lightning, necrotic, or poison. Each creature in the cone must make an Intelligence {@variantrule Saving Throw|Ishiir}, taking {@damage 7d6} damage of the chosen damage type on a failed save, or half as much damage on a successful one.",
-                "The illusion is tangible because of the shadow stuff used to create it, but attacks miss it automatically, it succeeds on all {@variantrule Saving Throw|Ishiir|Saving Throws}, and it is {@variantrule Immunity|Ishiir|Immune} to all damage and conditions. A creature that uses an action to examine the dragon can determine that it is an illusion by succeeding on an Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through it and has {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against its breath."
+                "As a {@variantrule Bonus Action|Ishiir} on your turn, you can move the illusion up to 60 feet. At any point during its movement, you can cause it to exhale a blast of energy in a 60-foot cone originating from its space. When you create the dragon, choose a damage type: acid, cold, fire, lightning, necrotic, or poison. Each creature in the cone must make an Intelligence {@variantrule Saving Throw|Ishiir}, taking {@damage 7d6} damage of the chosen damage type on a failed save, or half as much damage on a successful one.",
+                "The illusion is tangible because of the shadow stuff used to create it, but attacks miss it automatically, it succeeds on all {@variantrule Saving Throw|Ishiir|Saving Throws}, and it is {@variantrule Immunity|Ishiir|Immune} to all damage and conditions. A creature that uses an {@variantrule Action|Ishiir} to examine the dragon can determine that it is an illusion by succeeding on an Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through it and has {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against its breath."
             ],
             "damageInflict": [
                 "acid",
@@ -29962,7 +29962,7 @@
             ],
             "entries": [
                 "You touch an object that weighs no more than 10 pounds and cause it to become magically fixed in place. You and the creatures you designate when you cast this spell can move the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute.",
-                "If the object is fixed in the air, it can hold up to 4,000 pounds of weight. More weight causes the object to fall. Otherwise, a creature can use an action to make a Strength check against your spell save DC. On a success, the creature can move the object up to 10 feet."
+                "If the object is fixed in the air, it can hold up to 4,000 pounds of weight. More weight causes the object to fall. Otherwise, a creature can use an {@variantrule Action|Ishiir} to make a Strength check against your spell save DC. On a success, the creature can move the object up to 10 feet."
             ],
             "entriesHigherLevel": [
                 {
@@ -30158,8 +30158,8 @@
                 }
             ],
             "entries": [
-                "Choose 1 spell of 8th level or lower that has a cast time of 1 action. You cast that spell as part of the same bonus action you used to cast improved alacrity. This spell ignores the restrictions for casting leveled spells as bonus actions.",
-                "On every subsequent turn, you can choose another spell of 8th level or lower and cast it as a bonus action, ignoring the same restrictions."
+                "Choose 1 spell of 8th level or lower that has a cast time of 1 action. You cast that spell as part of the same {@variantrule Bonus Action|Ishiir} you used to cast improved alacrity. This spell ignores the restrictions for casting leveled spells as {@variantrule Bonus Action|Ishiir}s.",
+                "On every subsequent turn, you can choose another spell of 8th level or lower and cast it as a {@variantrule Bonus Action|Ishiir}, ignoring the same restrictions."
             ],
             "areaTags": [
                 "ST"
@@ -31067,7 +31067,7 @@
                     "type": "list",
                     "items": [
                         "You are {@variantrule Immunity|Ishiir|Immune} to poison damage and have {@variantrule Resistance|Ishiir} to bludgeoning, piercing, and slashing damage from nonmagical attacks.",
-                        "You can use your bonus action to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity {@variantrule Saving Throw|Ishiir} or be knocked {@condition Prone|Ishiir}.",
+                        "You can use your {@variantrule Bonus Action|Ishiir} to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity {@variantrule Saving Throw|Ishiir} or be knocked {@condition Prone|Ishiir}.",
                         "You can move across {@quickref difficult terrain||3} made of earth or stone without spending extra movement. You can move through solid earth or stone as if it was air and without destabilizing it, but you can't end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are {@condition Stunned|Ishiir} until the end of your next turn."
                     ]
                 }
@@ -31988,8 +31988,8 @@
             ],
             "entries": [
                 "You hide a chest, and all its contents, on the Ethereal Plane. You must touch the chest and the miniature replica that serves as a material component for the spell. The chest can contain up to 12 cubic feet of nonliving material (3 feet by 2 feet by 2 feet).",
-                "While the chest remains on the Ethereal Plane, you can use an action and touch the replica to recall the chest. It appears in an unoccupied space on the ground within 5 feet of you. You can send the chest back to the Ethereal Plane by using an action and touching both the chest and the replica.",
-                "After 60 days, there is a cumulative {@chance 5|||Effect ends!|Effect continues} chance per day that the spell's effect ends. This effect ends if you cast this spell again, if the smaller replica chest is destroyed, or if you choose to end the spell as an action. If the spell ends and the larger chest is on the Ethereal Plane, it is irretrievably lost."
+                "While the chest remains on the Ethereal Plane, you can use an {@variantrule Action|Ishiir} and touch the replica to recall the chest. It appears in an unoccupied space on the ground within 5 feet of you. You can send the chest back to the Ethereal Plane by using an {@variantrule Action|Ishiir} and touching both the chest and the replica.",
+                "After 60 days, there is a cumulative {@chance 5|||Effect ends!|Effect continues} chance per day that the spell's effect ends. This effect ends if you cast this spell again, if the smaller replica chest is destroyed, or if you choose to end the spell as an {@variantrule Action|Ishiir}. If the spell ends and the larger chest is on the Ethereal Plane, it is irretrievably lost."
             ],
             "miscTags": [
                 "PRM"
@@ -32515,7 +32515,7 @@
                 }
             ],
             "entries": [
-                "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.",
+                "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an {@variantrule Action|Ishiir}.",
                 "If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity {@variantrule Saving Throw|Ishiir} to avoid the spell."
             ],
             "savingThrow": [
@@ -32901,7 +32901,7 @@
                 }
             ],
             "entries": [
-                "You create a lash of lightning energy that strikes at one creature of your choice that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} lightning damage and cannot take reactions until the start of your next turn.",
+                "You create a lash of lightning energy that strikes at one creature of your choice that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} lightning damage and cannot take {@variantrule Reaction|Ishiir|Reactions} until the start of your next turn.",
                 "This spell's damage increases by {@dice 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
             ],
             "scalingLevelDice": {
@@ -33513,7 +33513,7 @@
             "entries": [
                 "Magical darkness spreads from a point you choose within range to fill a 60-foot-radius sphere until the spell ends. The darkness spreads around corners. A creature with darkvision can't see through this darkness. Non-magical light, as well as light created by spells of 8th level or lower, can't illuminate the area.",
                 "Shrieks, gibbering, and mad laughter can be heard within the sphere. Whenever a creature starts its turn in the sphere or enters it for the first time on a turn, it must make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failed save, it takes {@damage 10d8} psychic damage and suffers additional effects until the end of its next turn. On a successful one, it takes half as much damage and suffers no additional effects.",
-                "An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.",
+                "An affected target can't take {@variantrule Reaction|Ishiir|Reactions} and must roll a d10 at the start of each of its turns to determine its behavior for that turn.",
                 {
                     "type": "table",
                     "caption": "Behavior",
@@ -33533,7 +33533,7 @@
                                     "exact": 1
                                 }
                             },
-                            "The creature uses all its movement to move in a random direction. To determine the direction, roll a {@dice d8} and assign a direction to each die face. The creature doesn't take an action this turn."
+                            "The creature uses all its movement to move in a random direction. To determine the direction, roll a {@dice d8} and assign a direction to each die face. The creature doesn't take an {@variantrule Action|Ishiir} this turn."
                         ],
                         [
                             {
@@ -33767,7 +33767,7 @@
                 }
             ],
             "entries": [
-                "You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action."
+                "You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an {@variantrule Action|Ishiir}."
             ],
             "miscTags": [
                 "MAC",
@@ -33842,7 +33842,7 @@
                 }
             ],
             "entries": [
-                "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.",
+                "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an {@variantrule Action|Ishiir}. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.",
                 "You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.",
                 "The hand can't attack, activate magic items, or carry more than 10 pounds."
             ],
@@ -34098,7 +34098,7 @@
                 }
             ],
             "entries": [
-                "Your body falls into a catatonic state as your soul leaves it and enters the container you used for the spell's material component. While your soul inhabits the container, you are aware of your surroundings as if you were in the container's space. You can't move or use reactions. The only action you can take is to project your soul up to 100 feet out of the container, either returning to your living body (and ending the spell) or attempting to possess a humanoid's body.",
+                "Your body falls into a catatonic state as your soul leaves it and enters the container you used for the spell's material component. While your soul inhabits the container, you are aware of your surroundings as if you were in the container's space. You can't move or use {@variantrule Reaction|Ishiir|Reactions}. The only action you can take is to project your soul up to 100 feet out of the container, either returning to your living body (and ending the spell) or attempting to possess a humanoid's body.",
                 "You can attempt to possess any humanoid within 100 feet of you that you can see (creatures warded by a {@spell protection from evil and good|Ishiir} or {@spell magic circle|Ishiir} spell can't be possessed). The target must make a Charisma {@variantrule Saving Throw|Ishiir}. On a failure, your soul moves into the target's body, and the target's soul becomes trapped in the container. On a success, the target resists your efforts to possess it, and you can't attempt to possess it again for 24 hours.",
                 "Once you possess a creature's body, you control it. Your game statistics are replaced by the statistics of the creature, though you retain your alignment and your Intelligence, Wisdom, and Charisma scores. You retain the benefit of your own class features. If the target has any class levels, you can't use any of its class features.",
                 "Meanwhile, the possessed creature's soul can perceive from the container using its own senses, but it can't move or take actions at all.",
@@ -34971,7 +34971,7 @@
             ],
             "entries": [
                 "You fill the lungs of creatures of your choice that you can see within range with water. Each target has to make a Constitution {@variantrule Saving Throw|Ishiir} or suffer the effects of the spell for the duration.",
-                "An affected creature immediately starts drowning at the beginning of its turn. It cannot speak or otherwise create sound with its voice apart from retching or gurgling. Its {@variantrule Speed|Ishiir} is reduced by half and it makes {@variantrule Attack Roll|Ishiir}s and {@variantrule Ability Check|Ishiir}s with {@variantrule Disadvantage|Ishiir}. As an action, a creature can repeat the Constitution {@variantrule Saving Throw|Ishiir} to expel the water. On a successful save, the spell ends on it.",
+                "An affected creature immediately starts drowning at the beginning of its turn. It cannot speak or otherwise create sound with its voice apart from retching or gurgling. Its {@variantrule Speed|Ishiir} is reduced by half and it makes {@variantrule Attack Roll|Ishiir}s and {@variantrule Ability Check|Ishiir}s with {@variantrule Disadvantage|Ishiir}. As an {@variantrule Action|Ishiir}, a creature can repeat the Constitution {@variantrule Saving Throw|Ishiir} to expel the water. On a successful save, the spell ends on it.",
                 "This spell has no effect on creatures that do not have lungs, or similar anatomy, breathe water, or that do not need to breathe."
             ],
             "savingThrow": [
@@ -35372,9 +35372,9 @@
             ],
             "entries": [
                 "You choose a 5-foot-square unoccupied space on the ground that you can see within range. A Medium hand made from compacted soil rises there and reaches for one creature you can see within 5 feet of it. The target must make a Strength {@variantrule Saving Throw|Ishiir}. On a failed save, the target takes {@damage 2d6} bludgeoning damage and is {@condition Restrained|Ishiir} for the spell's duration.",
-                "As an action, you can cause the hand to crush the {@condition Restrained|Ishiir} target, which must make a Strength {@variantrule Saving Throw|Ishiir}. The target takes {@damage 2d6} bludgeoning damage on a failed save, or half as much damage on a successful one.",
+                "As an {@variantrule Action|Ishiir}, you can cause the hand to crush the {@condition Restrained|Ishiir} target, which must make a Strength {@variantrule Saving Throw|Ishiir}. The target takes {@damage 2d6} bludgeoning damage on a failed save, or half as much damage on a successful one.",
                 "To break out, the {@condition Restrained|Ishiir} target can use its action to make a Strength check against your spell save DC. On a success, the target escapes and is no longer {@condition Restrained|Ishiir} by the hand.",
-                "As an action, you can cause the hand to reach for a different creature or to move to a different unoccupied space within range. The hand releases a {@condition Restrained|Ishiir} target if you do either."
+                "As an {@variantrule Action|Ishiir}, you can cause the hand to reach for a different creature or to move to a different unoccupied space within range. The hand releases a {@condition Restrained|Ishiir} target if you do either."
             ],
             "damageInflict": [
                 "bludgeoning"
@@ -35760,7 +35760,7 @@
                 }
             ],
             "entries": [
-                "You create six tiny meteors in your space. They float in the air and orbit you for the spell's duration. When you cast the spell\u2014and as a bonus action on each of your turns thereafter\u2014you can expend one or two of the meteors, sending them streaking toward a point or points you choose within 120 feet of you. Once a meteor reaches its destination or impacts against a solid surface, the meteor explodes. Each creature within 5 feet of the point where the meteor explodes must make a Dexterity {@variantrule Saving Throw|Ishiir}. A creature takes {@damage 2d6} fire damage on a failed save, or half as much damage on a successful one."
+                "You create six tiny meteors in your space. They float in the air and orbit you for the spell's duration. When you cast the spell\u2014and as a {@variantrule Bonus Action|Ishiir} on each of your turns thereafter\u2014you can expend one or two of the meteors, sending them streaking toward a point or points you choose within 120 feet of you. Once a meteor reaches its destination or impacts against a solid surface, the meteor explodes. Each creature within 5 feet of the point where the meteor explodes must make a Dexterity {@variantrule Saving Throw|Ishiir}. A creature takes {@damage 2d6} fire damage on a failed save, or half as much damage on a successful one."
             ],
             "entriesHigherLevel": [
                 {
@@ -36585,7 +36585,7 @@
                 }
             ],
             "entries": [
-                "You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.",
+                "You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an {@variantrule Action|Ishiir} or cast this spell again.",
                 "If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.",
                 "If you create an image of an object\u2014such as a chair, muddy footprints, or a small chest\u2014it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.",
                 "If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature."
@@ -36878,7 +36878,7 @@
             ],
             "entries": [
                 "You teleport to an unoccupied square you can see within 30 ft of you and become {@condition Invisible|Ishiir} at the same time that an illusory double of you appears where you were standing. The double lasts for the duration and you are considered hidden while it persists.",
-                "You can use your bonus action to move your illusory double up to twice your {@variantrule Speed|Ishiir} and make it gesture, speak, and behave in whatever way you choose.",
+                "You can use your {@variantrule Bonus Action|Ishiir} to move your illusory double up to twice your {@variantrule Speed|Ishiir} and make it gesture, speak, and behave in whatever way you choose.",
                 "Any effects originating from you appear to originate from your illusory double instead. A creature can attempt an Intelligence ({@skill Investigation}) check to see through the illusion. If they succeed, the illusory double appears translucent to them, any effects originating from you no longer appear to come from the illusory double for them and you are no longer hidden from them, though you are still invisible."
             ],
             "conditionInflict": [
@@ -37303,7 +37303,7 @@
                         "If the dirt or stone you target is on the ground, you cause it to become {@quickref difficult terrain||3}. Alternatively, you can cause the ground to become normal terrain if it is already {@quickref difficult terrain||3}. This change lasts for 1 hour."
                     ]
                 },
-                "If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+                "If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an {@variantrule Action|Ishiir}."
             ],
             "miscTags": [
                 "SGT",
@@ -37498,7 +37498,7 @@
                 "A silvery beam of pale light shines down in a 5-foot-radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder.",
                 "When a creature enters the spell's area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a Constitution {@variantrule Saving Throw|Ishiir}. It takes {@damage 2d10} radiant damage on a failed save, or half as much damage on a successful one.",
                 "A shapechanger makes its {@variantrule Saving Throw|Ishiir} with {@variantrule Disadvantage|Ishiir}. If it fails, it also instantly reverts to its original form and can't assume a different form until it leaves the spell's light.",
-                "On each of your turns after you cast this spell, you can use an action to move the beam up to 60 feet in any direction."
+                "On each of your turns after you cast this spell, you can use an {@variantrule Action|Ishiir} to move the beam up to 60 feet in any direction."
             ],
             "entriesHigherLevel": [
                 {
@@ -37922,7 +37922,7 @@
                 }
             ],
             "entries": [
-                "You make an area within range magically secure. The area is a cube that can be as small as 5 feet to as large as 100 feet on each side. The spell lasts for the duration or until you use an action to dismiss it.",
+                "You make an area within range magically secure. The area is a cube that can be as small as 5 feet to as large as 100 feet on each side. The spell lasts for the duration or until you use an {@variantrule Action|Ishiir} to dismiss it.",
                 "When you cast the spell, you decide what sort of security the spell provides, choosing any or all of the following properties:",
                 {
                     "type": "list",
@@ -38014,7 +38014,7 @@
             ],
             "entries": [
                 "You create a sword-shaped plane of force that hovers within range. It lasts for the duration.",
-                "When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes force damage equal to {@damage 4d12} + your spellcasting ability modifier. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 30 feet to a spot you can see and repeat this attack against the same target or a different one."
+                "When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes force damage equal to {@damage 4d12} + your spellcasting ability modifier. Until the spell ends, you can use a {@variantrule Bonus Action|Ishiir} on each of your turns to move the sword up to 30 feet to a spot you can see and repeat this attack against the same target or a different one."
             ],
             "damageInflict": [
                 "force"
@@ -38561,7 +38561,7 @@
             ],
             "entries": [
                 "A frigid globe of cold energy streaks from your fingertips to a point of your choice within range, where it explodes in a 60-foot-radius sphere. Each creature within the area must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a creature takes {@damage 10d6} cold damage. On a successful save, it takes half as much damage.",
-                "If the globe strikes a body of water or a liquid that is principally water (not including water-based creatures), it freezes the liquid to a depth of 6 inches over an area 30 feet square. This ice lasts for 1 minute. Creatures that were swimming on the surface of frozen water are trapped in the ice. A trapped creature can use an action to make a Strength check against your spell save DC to break free.",
+                "If the globe strikes a body of water or a liquid that is principally water (not including water-based creatures), it freezes the liquid to a depth of 6 inches over an area 30 feet square. This ice lasts for 1 minute. Creatures that were swimming on the surface of frozen water are trapped in the ice. A trapped creature can use an {@variantrule Action|Ishiir} to make a Strength check against your spell save DC to break free.",
                 "You can refrain from firing the globe after completing the spell, if you wish. A small globe about the size of a sling stone, cool to the touch, appears in your hand. At any time, you or a creature you give the globe to can throw the globe or hurl it with a sling. The range for either is equal to the spell's range. It shatters on impact, with the same effect as the normal casting of the spell. You can also set the globe down without shattering it. After 1 minute, if the globe hasn't already shattered, it explodes."
             ],
             "entriesHigherLevel": [
@@ -38756,7 +38756,7 @@
             ],
             "entries": [
                 "Choose one creature that you can see within range. The target begins a comic dance in place: shuffling, tapping its feet, and capering for the duration. Creatures that can't be {@condition Charmed|Ishiir} are {@variantrule Immunity|Ishiir|Immune} to this spell.",
-                "A dancing creature must use all its movement to dance without leaving its space and has {@variantrule Disadvantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws} and {@variantrule Attack Roll|Ishiir}s. While the target is affected by this spell, other creatures have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s against it. As an action, a dancing creature makes a Wisdom {@variantrule Saving Throw|Ishiir} to regain control of itself. On a successful save, the spell ends."
+                "A dancing creature must use all its movement to dance without leaving its space and has {@variantrule Disadvantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws} and {@variantrule Attack Roll|Ishiir}s. While the target is affected by this spell, other creatures have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s against it. As an {@variantrule Action|Ishiir}, a dancing creature makes a Wisdom {@variantrule Saving Throw|Ishiir} to regain control of itself. On a successful save, the spell ends."
             ],
             "savingThrow": [
                 "wisdom"
@@ -39369,7 +39369,7 @@
             },
             "entries": [
                 "A Large quasi-real, horselike creature appears on the ground in an unoccupied space of your choice within range. You decide the creature's appearance, but it is equipped with a saddle, bit, and bridle. Any of the equipment created by the spell vanishes in a puff of smoke if it is carried more than 10 feet away from the steed.",
-                "For the duration, you or a creature you choose can ride the steed. The creature uses the statistics for a {@creature riding horse}, except it has a {@variantrule Speed|Ishiir} of 100 feet and can travel 10 miles in an hour, or 13 miles at a fast pace. When the spell ends, the steed gradually fades, giving the rider 1 minute to dismount. The spell ends if you use an action to dismiss it or if the steed takes any damage."
+                "For the duration, you or a creature you choose can ride the steed. The creature uses the statistics for a {@creature riding horse}, except it has a {@variantrule Speed|Ishiir} of 100 feet and can travel 10 miles in an hour, or 13 miles at a fast pace. When the spell ends, the steed gradually fades, giving the rider 1 minute to dismount. The spell ends if you use an {@variantrule Action|Ishiir} to dismiss it or if the steed takes any damage."
             ],
             "miscTags": [
                 "SMN"
@@ -40328,7 +40328,7 @@
                 }
             ],
             "entries": [
-                "A wave of healing energy washes over the creature you choose within range. The target regains all its hit points. If the creature is {@condition Blinded|Ishiir}, {@condition Charmed|Ishiir}, {@condition Deafened|Ishiir}, {@condition Frightened|Ishiir}, {@condition Paralyzed|Ishiir}, {@condition Poisoned|Ishiir}, {@condition Stunned|Ishiir}, suffers from a disease, or has its maximum hitpoints reduced, the effect ends. If the creature is {@condition Prone|Ishiir}, it can use its reaction to stand up. This spell has no effect on undead or constructs."
+                "A wave of healing energy washes over the creature you choose within range. The target regains all its hit points. If the creature is {@condition Blinded|Ishiir}, {@condition Charmed|Ishiir}, {@condition Deafened|Ishiir}, {@condition Frightened|Ishiir}, {@condition Paralyzed|Ishiir}, {@condition Poisoned|Ishiir}, {@condition Stunned|Ishiir}, suffers from a disease, or has its maximum hitpoints reduced, the effect ends. If the creature is {@condition Prone|Ishiir}, it can use its {@variantrule Reaction|Ishiir} to stand up. This spell has no effect on undead or constructs."
             ],
             "affectsCreatureType": [
                 "aberration",
@@ -40837,7 +40837,7 @@
                         "You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn."
                     ]
                 },
-                "If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+                "If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an {@variantrule Action|Ishiir}."
             ],
             "classes": {
                 "fromClassList": [
@@ -41033,7 +41033,7 @@
             ],
             "entries": [
                 "You have {@variantrule Resistance|Ishiir} to acid, cold, fire, lightning, and thunder damage for the spell's duration.",
-                "When you take damage of one of those types, you can use your reaction to gain {@variantrule Immunity|Ishiir} to that type of damage, including against the triggering damage. If you do so, the {@variantrule Resistance|Ishiir}s end, and you have the {@variantrule Immunity|Ishiir} until the end of your next turn, at which time the spell ends."
+                "When you take damage of one of those types, you can use your {@variantrule Reaction|Ishiir} to gain {@variantrule Immunity|Ishiir} to that type of damage, including against the triggering damage. If you do so, the {@variantrule Resistance|Ishiir}s end, and you have the {@variantrule Immunity|Ishiir} until the end of your next turn, at which time the spell ends."
             ],
             "damageResist": [
                 "acid",
@@ -41532,7 +41532,7 @@
             "entries": [
                 "You create an illusory copy of yourself that lasts for the duration. The copy can appear at any location within range that you have seen before, regardless of intervening obstacles. The illusion looks and sounds like you but is intangible. If the illusion takes any damage, it disappears, and the spell ends.",
                 "You can use your action to move this illusion up to twice your {@variantrule Speed|Ishiir},antrule Speed|Ishiir}, and make it gesture, speak, and behave in whatever way you choose. It mimics your mannerisms perfectly.",
-                "You can see through its eyes and hear through its ears as if you were in its space. On your turn as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are {@condition Blinded|Ishiir} and {@condition Deafened|Ishiir} in regard to your own surroundings.",
+                "You can see through its eyes and hear through its ears as if you were in its space. On your turn as a {@variantrule Bonus Action|Ishiir}, you can switch from using its senses to using your own, or back again. While you are using its senses, you are {@condition Blinded|Ishiir} and {@condition Deafened|Ishiir} in regard to your own surroundings.",
                 "Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature."
             ],
             "conditionInflict": [
@@ -43397,7 +43397,7 @@
                 }
             ],
             "entries": [
-                "You shatter the barriers between realities and timelines, thrusting a creature into turmoil and madness. The target must succeed on a Charisma {@variantrule Saving Throw|Ishiir}, or it can't take reactions until the spell ends. The affected target must also roll a {@dice d10} at the start of each of its turns; the number rolled determines what happens to the target, as shown on the Reality Break Effects table.",
+                "You shatter the barriers between realities and timelines, thrusting a creature into turmoil and madness. The target must succeed on a Charisma {@variantrule Saving Throw|Ishiir}, or it can't take {@variantrule Reaction|Ishiir|Reactions} until the spell ends. The affected target must also roll a {@dice d10} at the start of each of its turns; the number rolled determines what happens to the target, as shown on the Reality Break Effects table.",
                 "At the end of each of its turns, the affected target can repeat the Charisma {@variantrule Saving Throw|Ishiir}, ending the spell on itself on a success.",
                 {
                     "type": "table",
@@ -44236,7 +44236,7 @@
                 }
             ],
             "entries": [
-                "A burst of cold energy emanates from you in a 30-foot cone. Each creature in that area must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a creature takes {@damage 3d8} cold damage and is hindered by ice formations for 1 minute, or until it or another creature within reach of it uses an action to break away the ice. A creature hindered by ice has its {@variantrule Speed|Ishiir} reduced to 0. On a successful save, a creature takes half as much damage and isn't hindered by ice."
+                "A burst of cold energy emanates from you in a 30-foot cone. Each creature in that area must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a creature takes {@damage 3d8} cold damage and is hindered by ice formations for 1 minute, or until it or another creature within reach of it uses an {@variantrule Action|Ishiir} to break away the ice. A creature hindered by ice has its {@variantrule Speed|Ishiir} reduced to 0. On a successful save, a creature takes half as much damage and isn't hindered by ice."
             ],
             "entriesHigherLevel": [
                 {
@@ -45731,7 +45731,7 @@
                 }
             ],
             "entries": [
-                "Your weapon flares with white-hot intensity, and the attack deals an extra {@damage 1d6} fire damage to the target and causes the target to ignite in flames. At the start of each of its turns until the spell ends, the target must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, it takes {@damage 1d6} fire damage. On a successful save, the spell ends. If the target or a creature within 5 feet of it uses an action to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the spell ends."
+                "Your weapon flares with white-hot intensity, and the attack deals an extra {@damage 1d6} fire damage to the target and causes the target to ignite in flames. At the start of each of its turns until the spell ends, the target must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, it takes {@damage 1d6} fire damage. On a successful save, the spell ends. If the target or a creature within 5 feet of it uses an {@variantrule Action|Ishiir} to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the spell ends."
             ],
             "entriesHigherLevel": [
                 {
@@ -46248,7 +46248,7 @@
             ],
             "entries": [
                 "You weave together threads of shadow to create a sword of solidified gloom in your hand. This magic sword lasts until the spell ends. It counts as a simple melee weapon with which you are proficient. It deals {@damage 2d8} psychic damage on a hit and has the finesse, light, and thrown properties (range 20/60). In addition, when you use the sword to attack a target that is in dim light or darkness, you make the {@variantrule Attack Roll|Ishiir} with {@variantrule Advantage|Ishiir}.",
-                "If you drop the weapon or throw it, it dissipates at the end of the turn. Thereafter, while the spell persists, you can use a bonus action to cause the sword to reappear in your hand."
+                "If you drop the weapon or throw it, it dissipates at the end of the turn. Thereafter, while the spell persists, you can use a {@variantrule Bonus Action|Ishiir} to cause the sword to reappear in your hand."
             ],
             "entriesHigherLevel": [
                 {
@@ -46413,7 +46413,7 @@
                         "You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour."
                     ]
                 },
-                "If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+                "If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an {@variantrule Action|Ishiir}."
             ],
             "miscTags": [
                 "SGT"
@@ -47053,7 +47053,7 @@
                 }
             ],
             "entries": [
-                "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have {@variantrule Advantage|Ishiir} on the {@variantrule Attack Roll|Ishiir} if the target is wearing armor made of metal. On a hit, the target takes {@damage 1d8} lightning damage, and it can't take reactions until the start of your next turn.",
+                "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have {@variantrule Advantage|Ishiir} on the {@variantrule Attack Roll|Ishiir} if the target is wearing armor made of metal. On a hit, the target takes {@damage 1d8} lightning damage, and it can't take {@variantrule Reaction|Ishiir|Reactions} until the start of your next turn.",
                 "The spell's damage increases by {@dice 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
             ],
             "scalingLevelDice": {
@@ -47844,7 +47844,7 @@
                 }
             ],
             "entries": [
-                "Choose a creature that you can see within range. The target must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or be {@condition Unconscious|Ishiir} for the duration. If the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake, the spell ends on it.",
+                "Choose a creature that you can see within range. The target must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or be {@condition Unconscious|Ishiir} for the duration. If the sleeper takes damage, or someone uses an {@variantrule Action|Ishiir} to shake or slap the sleeper awake, the spell ends on it.",
                 "Creatures {@variantrule Immunity|Ishiir|Immune} to the {@condition Charmed|Ishiir} condition aren't affected by this spell."
             ],
             "entriesHigherLevel": [
@@ -48206,7 +48206,7 @@
             ],
             "entries": [
                 "You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a Charisma {@variantrule Saving Throw|Ishiir} or be affected by this spell for the duration.",
-                "An affected target's {@variantrule Speed|Ishiir} is halved, it takes a \u22122 penalty to AC and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.",
+                "An affected target's {@variantrule Speed|Ishiir} is halved, it takes a \u22122 penalty to AC and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}, and it can't use {@variantrule Reaction|Ishiir|Reactions}. On its turn, it can use either an {@variantrule Action|Ishiir} or a {@variantrule Bonus Action|Ishiir}, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.",
                 "If the creature attempts to cast a spell with a casting time of 1 action, roll a {@dice d20}. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted.",
                 "A creature affected by this spell makes another Charisma {@variantrule Saving Throw|Ishiir} at the end of each of its turns. On a successful save, the effect ends for it."
             ],
@@ -48324,7 +48324,7 @@
                 "As you cast this spell, you use the rope to create a circle with a 5-foot radius on the ground or the floor. When you finish casting, the rope disappears and the circle becomes a magic trap.",
                 "This trap is nearly invisible, requiring a successful Intelligence ({@skill Investigation}) check against your spell save DC to be discerned.",
                 "The trap triggers when a Small, Medium, or Large creature moves onto the ground or the floor in the spell's radius. That creature must succeed on a Dexterity {@variantrule Saving Throw|Ishiir} or be magically hoisted into the air, leaving it hanging upside down 3 feet above the ground or the floor. The creature is {@condition Restrained|Ishiir} there until the spell ends.",
-                "A {@condition Restrained|Ishiir} creature can make a Dexterity {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on itself on a success. Alternatively, the creature or someone else who can reach it can use an action to make an Intelligence ({@skill Arcana}) check against your spell save DC. On a success, the {@condition Restrained|Ishiir} effect ends.",
+                "A {@condition Restrained|Ishiir} creature can make a Dexterity {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on itself on a success. Alternatively, the creature or someone else who can reach it can use an {@variantrule Action|Ishiir} to make an Intelligence ({@skill Arcana}) check against your spell save DC. On a success, the {@condition Restrained|Ishiir} effect ends.",
                 "After the trap is triggered, the spell ends when no creature is {@condition Restrained|Ishiir} by it."
             ],
             "conditionInflict": [
@@ -48615,7 +48615,7 @@
                     "type": "entries",
                     "name": "Steal Life",
                     "entries": [
-                        "You can use a bonus action to drain vigor from the soul and regain {@dice 2d8} hit points."
+                        "You can use a {@variantrule Bonus Action|Ishiir} to drain vigor from the soul and regain {@dice 2d8} hit points."
                     ]
                 },
                 {
@@ -48629,14 +48629,14 @@
                     "type": "entries",
                     "name": "Borrow Experience",
                     "entries": [
-                        "You can use a bonus action to bolster yourself with the soul's life experience, making your next {@variantrule Attack Roll|Ishiir}, {@variantrule Ability Check|Ishiir}, or {@variantrule Saving Throw|Ishiir} with {@variantrule Advantage|Ishiir}. If you don't use this benefit before the start of your next turn, it is lost."
+                        "You can use a {@variantrule Bonus Action|Ishiir} to bolster yourself with the soul's life experience, making your next {@variantrule Attack Roll|Ishiir}, {@variantrule Ability Check|Ishiir}, or {@variantrule Saving Throw|Ishiir} with {@variantrule Advantage|Ishiir}. If you don't use this benefit before the start of your next turn, it is lost."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Eyes of the Dead",
                     "entries": [
-                        "You can use an action to name a place the humanoid saw in life, which creates an invisible sensor somewhere in that place if it is on the plane of existence you're currently on. The sensor remains for as long as you concentrate, up to 10 minutes (as if you were concentrating on a spell). You receive visual and auditory information from the sensor as if you were in its space using your senses."
+                        "You can use an {@variantrule Action|Ishiir} to name a place the humanoid saw in life, which creates an invisible sensor somewhere in that place if it is on the plane of existence you're currently on. The sensor remains for as long as you concentrate, up to 10 minutes (as if you were concentrating on a spell). You receive visual and auditory information from the sensor as if you were in its space using your senses."
                     ]
                 },
                 "A creature that can see the sensor (such as one using {@spell see invisibility|Ishiir} or {@sense truesight}) sees a translucent image of the tormented humanoid whose soul you caged."
@@ -49857,7 +49857,7 @@
             ],
             "entries": [
                 "You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to {@damage 1d8} + your spellcasting ability modifier.",
-                "As a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.",
+                "As a {@variantrule Bonus Action|Ishiir} on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.",
                 "The weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spell's effect resemble that weapon."
             ],
             "entriesHigherLevel": [
@@ -50393,7 +50393,7 @@
             ],
             "entries": [
                 "You create a 20-foot-radius Sphere of yellow, nauseating gas centered on a point within range. The cloud is Heavily Obscured. The cloud lingers in the air for the duration or until a strong wind (such as the one created by {@spell Gust of Wind|Ishiir}) disperses it.",
-                "Each creature that starts its turn in the Sphere must succeed on a Constitution {@variantrule Saving Throw|Ishiir} or have the {@condition Poisoned|Ishiir} condition until the end of the current turn. While Poisoned in this way, the creature can't take an action or a Bonus Action."
+                "Each creature that starts its turn in the Sphere must succeed on a Constitution {@variantrule Saving Throw|Ishiir} or have the {@condition Poisoned|Ishiir} condition until the end of the current turn. While Poisoned in this way, the creature can't take an {@variantrule Action|Ishiir} or a {@variantrule Bonus Action|Ishiir}."
             ],
             "savingThrow": [
                 "constitution"
@@ -50907,7 +50907,7 @@
             ],
             "entries": [
                 "A 20-foot-radius sphere of whirling air springs into existence, centered on a point you choose within range. The sphere remains for the spell's duration. Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength {@variantrule Saving Throw|Ishiir} or take {@damage 4d6} bludgeoning damage. The sphere's space is {@quickref difficult terrain||3}.",
-                "Until the spell ends, you can use a bonus action on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one creature you choose within 60 feet of the center. Make a ranged spell attack. You have {@variantrule Advantage|Ishiir} on the {@variantrule Attack Roll|Ishiir} if the target is in the sphere. On a hit, the target takes {@damage 6d6} lightning damage.",
+                "Until the spell ends, you can use a {@variantrule Bonus Action|Ishiir} on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one creature you choose within 60 feet of the center. Make a ranged spell attack. You have {@variantrule Advantage|Ishiir} on the {@variantrule Attack Roll|Ishiir} if the target is in the sphere. On a hit, the target takes {@damage 6d6} lightning damage.",
                 "Creatures within 30 feet of the sphere have {@variantrule Disadvantage|Ishiir} on Wisdom ({@skill Perception}) checks made to listen."
             ],
             "entriesHigherLevel": [
@@ -51035,28 +51035,28 @@
                     "type": "entries",
                     "name": "Winds",
                     "entries": [
-                        "The area in the cylinder is considered difficult terrain. As a bonus action, you can force up to 10 creatures you can see in the area to make a Strength {@variantrule Saving Throw|Ishiir}. On a failure, you can move a target up to 60 feet in a direction you choose, including vertically, and knock it {@condition Prone|Ishiir}."
+                        "The area in the cylinder is considered difficult terrain. As a {@variantrule Bonus Action|Ishiir}, you can force up to 10 creatures you can see in the area to make a Strength {@variantrule Saving Throw|Ishiir}. On a failure, you can move a target up to 60 feet in a direction you choose, including vertically, and knock it {@condition Prone|Ishiir}."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Lightning",
                     "entries": [
-                        "As a bonus action, you can force up to 10 creatures you can see in the area to make a Dexterity {@variantrule Saving Throw|Ishiir} or take {@damage 7d10} lightning damage."
+                        "As a {@variantrule Bonus Action|Ishiir}, you can force up to 10 creatures you can see in the area to make a Dexterity {@variantrule Saving Throw|Ishiir} or take {@damage 7d10} lightning damage."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Thunder",
                     "entries": [
-                        "When you cast this spell (unless you have already used the Hail option this turn) and as an action on subsequent turns, you can cause a booming thunderclap in the area. Each creature in the area is {@condition Deafened|Ishiir} until the end of your next turn and has to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a target takes {@damage 4d6} thunder damage and is {@condition Dazed|Ishiir} until the end of your next turn. On a successful save, a target takes half as much damage and isn't {@condition Dazed|Ishiir}."
+                        "When you cast this spell (unless you have already used the Hail option this turn) and as an {@variantrule Action|Ishiir} on subsequent turns, you can cause a booming thunderclap in the area. Each creature in the area is {@condition Deafened|Ishiir} until the end of your next turn and has to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a target takes {@damage 4d6} thunder damage and is {@condition Dazed|Ishiir} until the end of your next turn. On a successful save, a target takes half as much damage and isn't {@condition Dazed|Ishiir}."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Hail",
                     "entries": [
-                        "When you cast this spell (unless you have already used the Thunder option this turn) and as an action on subsequent turns, you can cause large chunks of hail to rain down in the area. Until the start of your next turn, each creature that is in the area when the hail starts falling, enters the area for the first time on a turn, or ends its turn there, has to make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed save, a target takes {@damage 2d8} bludgeoning damage and {@damage 4d6} cold damage. Until the end of your next turn, movement in the area costs an additional foot per square."
+                        "When you cast this spell (unless you have already used the Thunder option this turn) and as an {@variantrule Action|Ishiir} on subsequent turns, you can cause large chunks of hail to rain down in the area. Until the start of your next turn, each creature that is in the area when the hail starts falling, enters the area for the first time on a turn, or ends its turn there, has to make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed save, a target takes {@damage 2d8} bludgeoning damage and {@damage 4d6} cold damage. Until the end of your next turn, movement in the area costs an additional foot per square."
                     ]
                 }
             ],
@@ -52656,7 +52656,7 @@
             ],
             "entries": [
                 "You transmute your quiver so it produces an endless supply of nonmagical ammunition, which seems to leap into your hand when you reach for it.",
-                "When you cast this spell and on each of your turns until the spell ends, you can use a bonus action to make two attacks with a weapon that uses ammunition from the quiver. Each time you make such a ranged attack, your quiver magically replaces the piece of ammunition you used with a similar piece of nonmagical ammunition. Any pieces of ammunition created by this spell disintegrate when the spell ends. If the quiver leaves your possession, the spell ends."
+                "When you cast this spell and on each of your turns until the spell ends, you can use a {@variantrule Bonus Action|Ishiir} to make two attacks with a weapon that uses ammunition from the quiver. Each time you make such a ranged attack, your quiver magically replaces the piece of ammunition you used with a similar piece of nonmagical ammunition. Any pieces of ammunition created by this spell disintegrate when the spell ends. If the quiver leaves your possession, the spell ends."
             ],
             "classes": {
                 "fromClassList": [
@@ -52861,7 +52861,7 @@
                     "type": "entries",
                     "name": "Sleep",
                     "entries": [
-                        "Each target must make a Wisdom {@variantrule Saving Throw|Ishiir} and falls {@condition Unconscious|Ishiir} for 10 minutes on a failed save. A creature awakens if it takes damage or if someone uses an action to shake or slap it awake."
+                        "Each target must make a Wisdom {@variantrule Saving Throw|Ishiir} and falls {@condition Unconscious|Ishiir} for 10 minutes on a failed save. A creature awakens if it takes damage or if someone uses an {@variantrule Action|Ishiir} to shake or slap it awake."
                     ]
                 },
                 {
@@ -53030,7 +53030,7 @@
             ],
             "entries": [
                 "You conjure a claw-footed cauldron filled with bubbling liquid. The cauldron appears in an unoccupied space on the ground within 5 feet of you and lasts for the duration. The cauldron can't be moved and disappears when the spells ends, along with the bubbling liquid inside it.",
-                "The liquid in the cauldron duplicates the properties of a Common or an Uncommon potion of your choice (such as a {@item Potion of Healing|Ishiir}). As a Bonus Action, you or an ally can reach into the cauldron and withdraw one masterwork potion of that kind. The potion is contained in a vial that disappears when the potion is consumed. The cauldron can produce a number of these potions equal to your spellcasting ability modifier (minimum 1). When the last of these potions is withdrawn from the cauldron, the cauldron disappears, and the spell ends.",
+                "The liquid in the cauldron duplicates the properties of a Common or an Uncommon potion of your choice (such as a {@item Potion of Healing|Ishiir}). As a {@variantrule Bonus Action|Ishiir}, you or an ally can reach into the cauldron and withdraw one masterwork potion of that kind. The potion is contained in a vial that disappears when the potion is consumed. The cauldron can produce a number of these potions equal to your spellcasting ability modifier (minimum 1). When the last of these potions is withdrawn from the cauldron, the cauldron disappears, and the spell ends.",
                 "Potions obtained from the cauldron that aren't consumed disappear when you cast this spell again."
             ],
             "miscTags": [
@@ -53301,7 +53301,7 @@
                 }
             ],
             "entries": [
-                "You psychically lash out at one creature you can see within range. The target must make an Intelligence {@variantrule Saving Throw|Ishiir}. On a failed save, the target takes {@damage 3d6} psychic damage, and it can't take a reaction until the end of its next turn. Moreover, on its next turn, it must choose whether it gets a move, an action, or a bonus action; it gets only one of the three. On a successful save, the target takes half as much damage and suffers none of the spell's other effects."
+                "You psychically lash out at one creature you can see within range. The target must make an Intelligence {@variantrule Saving Throw|Ishiir}. On a failed save, the target takes {@damage 3d6} psychic damage, and it can't take a {@variantrule Reaction|Ishiir} until the end of its next turn. Moreover, on its next turn, it must choose whether it gets a move, an {@variantrule Action|Ishiir}, or a {@variantrule Bonus Action|Ishiir}; it gets only one of the three. On a successful save, the target takes half as much damage and suffers none of the spell's other effects."
             ],
             "entriesHigherLevel": [
                 {
@@ -53924,7 +53924,7 @@
             ],
             "entries": [
                 "You touch one melee weapon that you are holding and enchant it with a wind spirit, making it feel as light as a feather and enabling you to strike with blinding speed.",
-                "When you cast this spell and on each of your turns until the spell ends while you are holding this weapon, you can use a bonus action to make two attacks with the weapon."
+                "When you cast this spell and on each of your turns until the spell ends while you are holding this weapon, you can use a {@variantrule Bonus Action|Ishiir} to make two attacks with the weapon."
             ],
             "classes": {
                 "fromClassList": [
@@ -55479,7 +55479,7 @@
             ],
             "entries": [
                 "You touch one Tiny, nonmagical object that isn't attached to another object or a surface and isn't being carried by another creature. The target animates and sprouts little arms and legs, becoming a creature under your control until the spell ends or the creature drops to 0 hit points. See the {@creature tiny servant|xge|stat block} for its statistics.",
-                "As a bonus action, you can mentally command the creature if it is within 120 feet of you. (If you control multiple creatures with this spell, you can command any or all of them at the same time, issuing the same command to each one.) You decide what action the creature will take and where it will move during its next turn, or you can issue a simple, general command, such as to fetch a key, stand watch, or stack some books. If you issue no commands, the servant does nothing other than defend itself against hostile creatures. Once given an order, the servant continues to follow that order until its task is complete.",
+                "As a {@variantrule Bonus Action|Ishiir}, you can mentally command the creature if it is within 120 feet of you. (If you control multiple creatures with this spell, you can command any or all of them at the same time, issuing the same command to each one.) You decide what action the creature will take and where it will move during its next turn, or you can issue a simple, general command, such as to fetch a key, stand watch, or stack some books. If you issue no commands, the servant does nothing other than defend itself against hostile creatures. Once given an order, the servant continues to follow that order until its task is complete.",
                 "When the creature drops to 0 hit points, it reverts to its original form, and any remaining damage carries over to that form."
             ],
             "entriesHigherLevel": [
@@ -55756,13 +55756,13 @@
                         "Nonmagical rock of any sort in the area becomes an equal volume of thick, flowing mud that remains for the spell's duration."
                     ]
                 },
-                "The ground in the spell's area becomes muddy enough that creatures can sink into it. Each foot that a creature moves through the mud costs 4 feet of movement, and any creature on the ground when you cast the spell must make a Strength {@variantrule Saving Throw|Ishiir}. A creature must also make the {@variantrule Saving Throw|Ishiir} when it moves into the area for the first time on a turn or ends its turn there. On a failed save, a creature sinks into the mud and is {@condition Restrained|Ishiir}, though it can use an action to end the {@condition Restrained|Ishiir} condition on itself by pulling itself free of the mud.",
+                "The ground in the spell's area becomes muddy enough that creatures can sink into it. Each foot that a creature moves through the mud costs 4 feet of movement, and any creature on the ground when you cast the spell must make a Strength {@variantrule Saving Throw|Ishiir}. A creature must also make the {@variantrule Saving Throw|Ishiir} when it moves into the area for the first time on a turn or ends its turn there. On a failed save, a creature sinks into the mud and is {@condition Restrained|Ishiir}, though it can use an {@variantrule Action|Ishiir} to end the {@condition Restrained|Ishiir} condition on itself by pulling itself free of the mud.",
                 "If you cast the spell on a ceiling, the mud falls. Any creature under the mud when it falls must make a Dexterity {@variantrule Saving Throw|Ishiir}. A creature takes {@damage 4d8} bludgeoning damage on a failed save, or half as much damage on a successful one.",
                 {
                     "type": "entries",
                     "name": "Transmute Mud to Rock",
                     "entries": [
-                        "Nonmagical mud or quicksand in the area no more than 10 feet deep transforms into soft stone for the spell's duration. Any creature in the mud when it transforms must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a successful save, a creature is shunted safely to the surface in an unoccupied space. On a failed save, a creature becomes {@condition Restrained|Ishiir} by the rock. A {@condition Restrained|Ishiir} creature, or another creature within reach, can use an action to try to break the rock by succeeding on a DC 20 Strength check or by dealing damage to it. The rock has AC 15 and 25 hit points, and it is {@variantrule Immunity|Ishiir|Immune} to poison and psychic damage."
+                        "Nonmagical mud or quicksand in the area no more than 10 feet deep transforms into soft stone for the spell's duration. Any creature in the mud when it transforms must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a successful save, a creature is shunted safely to the surface in an unoccupied space. On a failed save, a creature becomes {@condition Restrained|Ishiir} by the rock. A {@condition Restrained|Ishiir} creature, or another creature within reach, can use an {@variantrule Action|Ishiir} to try to break the rock by succeeding on a DC 20 Strength check or by dealing damage to it. The rock has AC 15 and 25 hit points, and it is {@variantrule Immunity|Ishiir|Immune} to poison and psychic damage."
                     ]
                 }
             ],
@@ -56410,7 +56410,7 @@
             },
             "entries": [
                 "This spell creates an {@condition Invisible|Ishiir}, mindless, shapeless, Medium force that performs simple tasks at your command until the spell ends. The servant springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 hit point, and a Strength of 2, and it can't attack. If it drops to 0 hit points, the spell ends.",
-                "Once on each of your turns as a bonus action, you can mentally command the servant to move up to 15 feet and interact with an object. The servant can perform simple tasks that a human servant could do, such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring wine. Once you give the command, the servant performs the task to the best of its ability until it completes the task, then waits for your next command.",
+                "Once on each of your turns as a {@variantrule Bonus Action|Ishiir}, you can mentally command the servant to move up to 15 feet and interact with an object. The servant can perform simple tasks that a human servant could do, such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring wine. Once you give the command, the servant performs the task to the best of its ability until it completes the task, then waits for your next command.",
                 "If you command the servant to perform a task that would move it more than 60 feet away from you, the spell ends."
             ],
             "classes": {
@@ -56490,7 +56490,7 @@
                 }
             ],
             "entries": [
-                "The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes {@damage 3d10} necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action."
+                "The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes {@damage 3d10} necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an {@variantrule Action|Ishiir}."
             ],
             "entriesHigherLevel": [
                 {
@@ -57411,7 +57411,7 @@
                 "A shimmering wall of bright light appears at a point you choose within range. The wall appears in any orientation you choose: horizontally, vertically, or diagonally. It can be free floating, or it can rest on a solid surface. The wall can be up to 60 feet long, 10 feet high, and 5 feet thick. The wall blocks line of sight, but creatures and objects can pass through it. It emits bright light out to 120 feet and dim light for an additional 120 feet.",
                 "When the wall appears, each creature in its area must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a creature takes {@damage 5d8} radiant damage, and it is {@condition Blinded|Ishiir} for 1 minute. On a successful save, it takes half as much damage and isn't {@condition Blinded|Ishiir}. A {@condition Blinded|Ishiir} creature can make a Constitution {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on itself on a success.",
                 "A creature that ends its turn in the wall's area takes {@damage 5d8} radiant damage.",
-                "Until the spell ends, you can use an action to launch a beam of radiance from the wall at one creature you can see within 60 feet of it. Make a ranged spell attack. On a hit, the target takes {@damage 5d8} radiant damage. Whether you hit or miss, reduce the length of the wall by 10 feet. If the wall's length drops to 0 feet, the spell ends."
+                "Until the spell ends, you can use an {@variantrule Action|Ishiir} to launch a beam of radiance from the wall at one creature you can see within 60 feet of it. Make a ranged spell attack. On a hit, the target takes {@damage 5d8} radiant damage. Whether you hit or miss, reduce the length of the wall by 10 feet. If the wall's length drops to 0 feet, the spell ends."
             ],
             "entriesHigherLevel": [
                 {
@@ -57570,7 +57570,7 @@
             ],
             "entries": [
                 "A nonmagical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is composed of ten 10-foot-by-10-foot panels. Each panel must be contiguous with at least one other panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick.",
-                "If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity {@variantrule Saving Throw|Ishiir}. On a success, it can use its reaction to move up to its {@variantrule Speed|Ishiir} so that it is no longer enclosed by the wall.",
+                "If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity {@variantrule Saving Throw|Ishiir}. On a success, it can use its {@variantrule Reaction|Ishiir} to move up to its {@variantrule Speed|Ishiir} so that it is no longer enclosed by the wall.",
                 "The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp.",
                 "If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create crenellations, battlements, and so on.",
                 "The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness and is {@variantrule Immunity|Ishiir|Immune} to poison and psychic damage. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the DM's discretion.",
@@ -57871,7 +57871,7 @@
             ],
             "entries": [
                 "This spell wards a willing creature you touch and creates a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +1 bonus to AC and {@variantrule Saving Throw|Ishiir|Saving Throws}, and it has {@variantrule Resistance|Ishiir} to all damage. Also, each time it takes damage, you take the same amount of damage.",
-                "The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures. You can also dismiss the spell as an action."
+                "The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures. You can also dismiss the spell as an {@variantrule Action|Ishiir}."
             ],
             "miscTags": [
                 "MAC"
@@ -57982,7 +57982,7 @@
                 }
             ],
             "entries": [
-                "When you cast the spell and as an action on your subsequent turns, you can choose one creature, object, or magical effect within range. Any spell of 7th level or lower on the target ends. For each spell of 8th level or higher on the target, make an {@variantrule Ability Check|Ishiir} using your spellcasting ability. The DC equals 10 + the caster's spellcasting ability modifier + the difference between the spell slot level used for your warding whip and that of the target spell. On a successful check, the spell ends."
+                "When you cast the spell and as an {@variantrule Action|Ishiir} on your subsequent turns, you can choose one creature, object, or magical effect within range. Any spell of 7th level or lower on the target ends. For each spell of 8th level or higher on the target, make an {@variantrule Ability Check|Ishiir} using your spellcasting ability. The DC equals 10 + the caster's spellcasting ability modifier + the difference between the spell slot level used for your warding whip and that of the target spell. On a successful check, the spell ends."
             ],
             "classes": {
                 "fromClassList": [
@@ -58389,7 +58389,7 @@
             },
             "entries": [
                 "This spell grants the ability to move across any liquid surface\u2014such as water, acid, mud, snow, quicksand, or lava\u2014as if it were harmless solid ground (creatures crossing molten lava can still take damage from the heat). Up to ten willing creatures you can see within range gain this ability for the duration.",
-                "If you target an incapacitated creature submerged in a liquid, the spell carries the target to the surface of the liquid at a rate of 60 feet per round. An affected target can otherwise take a Bonus Action to pass from the liquid's surface into the liquid itself and vice versa at the same rate, but if the target falls into the liquid, the target passes through the surface into the liquid below."
+                "If you target an incapacitated creature submerged in a liquid, the spell carries the target to the surface of the liquid at a rate of 60 feet per round. An affected target can otherwise take a {@variantrule Bonus Action|Ishiir} to pass from the liquid's surface into the liquid itself and vice versa at the same rate, but if the target falls into the liquid, the target passes through the surface into the liquid below."
             ],
             "miscTags": [
                 "SGT"
@@ -58508,7 +58508,7 @@
                 "You conjure up a sphere of water with a 5-foot radius at a point you can see within range. The sphere can hover but no more than 10 feet off the ground. The sphere remains for the spell's duration.",
                 "Any creature in the sphere's space must make a Strength {@variantrule Saving Throw|Ishiir}. On a successful save, a creature is ejected from that space to the nearest unoccupied space of the creature's choice outside the sphere. A Huge or larger creature succeeds on the {@variantrule Saving Throw|Ishiir} automatically, and a Large or smaller creature can choose to fail it. On a failed save, a creature is {@condition Restrained|Ishiir} by the sphere and is engulfed by the water. At the end of each of its turns, a {@condition Restrained|Ishiir} target can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on itself on a success.",
                 "The sphere can restrain as many as four Medium or smaller creatures or one Large creature. If the sphere restrains a creature that causes it to exceed this capacity, a random creature that was already {@condition Restrained|Ishiir} by the sphere falls out of it and lands {@condition Prone|Ishiir} in a space within 5 feet of it.",
-                "As an action, you can move the sphere up to 30 feet in a straight line. If it moves over a pit, a cliff, or other drop-off, it safely descends until it is hovering 10 feet above the ground. Any creature {@condition Restrained|Ishiir} by the sphere moves with it. You can ram the sphere into creatures, forcing them to make the {@variantrule Saving Throw|Ishiir}.",
+                "As an {@variantrule Action|Ishiir}, you can move the sphere up to 30 feet in a straight line. If it moves over a pit, a cliff, or other drop-off, it safely descends until it is hovering 10 feet above the ground. Any creature {@condition Restrained|Ishiir} by the sphere moves with it. You can ram the sphere into creatures, forcing them to make the {@variantrule Saving Throw|Ishiir}.",
                 "When the spell ends, the sphere falls to the ground and extinguishes all normal flames within 30 feet of it. Any creature {@condition Restrained|Ishiir} by the sphere is knocked {@condition Prone|Ishiir} in the space where it falls. The water then vanishes."
             ],
             "entriesHigherLevel": [
@@ -58848,7 +58848,7 @@
             "entries": [
                 "A whirlwind howls down to a point that you can see on the ground within range. The whirlwind is a 10-foot-radius, 30-foot-high cylinder centered on that point. Until the spell ends, you can use your action to move the whirlwind up to 30 feet in any direction along the ground. The whirlwind sucks up any Medium or smaller objects that aren't secured to anything and that aren't worn or carried by anyone.",
                 "A creature must make a Dexterity {@variantrule Saving Throw|Ishiir} the first time on a turn that it enters the whirlwind or that the whirlwind enters its space, including when the whirlwind first appears. A creature takes {@damage 10d6} bludgeoning damage on a failed save, or half as much damage on a successful one. In addition, a Large or smaller creature that fails the save must succeed on a Strength {@variantrule Saving Throw|Ishiir} or become {@condition Restrained|Ishiir} in the whirlwind until the spell ends. When a creature starts its turn {@condition Restrained|Ishiir} by the whirlwind, the creature is pulled 5 feet higher inside it, unless the creature is at the top. A {@condition Restrained|Ishiir} creature moves with the whirlwind and falls when the spell ends, unless the creature has some means to stay aloft.",
-                "A {@condition Restrained|Ishiir} creature can use an action to make a Strength or Dexterity check against your spell save DC. If successful, the creature is no longer {@condition Restrained|Ishiir} by the whirlwind and is hurled {@dice 3d6 x 10} feet away from it in a random direction."
+                "A {@condition Restrained|Ishiir} creature can use an {@variantrule Action|Ishiir} to make a Strength or Dexterity check against your spell save DC. If successful, the creature is no longer {@condition Restrained|Ishiir} by the whirlwind and is hurled {@dice 3d6 x 10} feet away from it in a random direction."
             ],
             "damageInflict": [
                 "bludgeoning"
@@ -59536,14 +59536,14 @@
                     "type": "entries",
                     "name": "Roots and Vines",
                     "entries": [
-                        "At the end of each of your turns, one creature of your choice that is on the ground in the cube must succeed on a Strength {@variantrule Saving Throw|Ishiir} or become {@condition Restrained|Ishiir} until the spell ends. A {@condition Restrained|Ishiir} creature can use an action to make a Strength ({@skill Athletics}) check against your spell save DC, ending the effect on itself on a success."
+                        "At the end of each of your turns, one creature of your choice that is on the ground in the cube must succeed on a Strength {@variantrule Saving Throw|Ishiir} or become {@condition Restrained|Ishiir} until the spell ends. A {@condition Restrained|Ishiir} creature can use an {@variantrule Action|Ishiir} to make a Strength ({@skill Athletics}) check against your spell save DC, ending the effect on itself on a success."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Rocks",
                     "entries": [
-                        "As a bonus action on your turn, you can cause a loose rock in the cube to launch at a creature you can see in the cube. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d8} nonmagical bludgeoning damage, and it must succeed on a Strength {@variantrule Saving Throw|Ishiir} or fall {@condition Prone|Ishiir}."
+                        "As a {@variantrule Bonus Action|Ishiir} on your turn, you can cause a loose rock in the cube to launch at a creature you can see in the cube. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d8} nonmagical bludgeoning damage, and it must succeed on a Strength {@variantrule Saving Throw|Ishiir} or fall {@condition Prone|Ishiir}."
                     ]
                 }
             ],
@@ -59626,7 +59626,7 @@
                 }
             ],
             "entries": [
-                "Your attack deals an extra {@damage 1d6} psychic damage. Additionally, if the target is a creature, it must make a Wisdom {@variantrule Saving Throw|Ishiir} or be {@condition Frightened|Ishiir} of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell."
+                "Your attack deals an extra {@damage 1d6} psychic damage. Additionally, if the target is a creature, it must make a Wisdom {@variantrule Saving Throw|Ishiir} or be {@condition Frightened|Ishiir} of you until the spell ends. As an {@variantrule Action|Ishiir}, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell."
             ],
             "entriesHigherLevel": [
                 {

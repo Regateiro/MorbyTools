@@ -141,7 +141,7 @@
 					"items": [
 						"A lacerated creature takes damage equal to twice the original attacker's {@variantrule Proficiency|Ishiir} modifier at the start of every one of its turns.",
 						"If the affected creature receives magical healing or another regenerative effect, it is no longer lacerated.",
-						"Additionally, the creature or another creature can use a healing kit as an action to staunch the bleeding and remove the condition."
+						"Additionally, the creature or another creature can use a healing kit as an {@variantrule Action|Ishiir} to staunch the bleeding and remove the condition."
 					]
 				}
 			]
@@ -212,7 +212,7 @@
 				{
 					"type": "list",
 					"items": [
-						"A confused creature cannot make reactions and rolls a {@dice d10} at the start of every one of its turns to determine its behaviour that turn.",
+						"A confused creature cannot make {@variantrule Reaction|Ishiir|Reactions} and rolls a {@dice d10} at the start of every one of its turns to determine its behaviour that turn.",
 						{
 							"type": "table",
 							"colLabels": [
@@ -226,7 +226,7 @@
 							"rows": [
 								[
 									"1",
-									"The creature uses all its movement to move in a random direction. To determine the direction, roll a {@dice d8} and assign a direction to each die face. The creature doesn't take an action this turn."
+									"The creature uses all its movement to move in a random direction. To determine the direction, roll a {@dice d8} and assign a direction to each die face. The creature doesn't take an {@variantrule Action|Ishiir} this turn."
 								],
 								[
 									"2-6",
@@ -254,9 +254,9 @@
 				{
 					"type": "list",
 					"items": [
-						"A dazed creature has {@variantrule Disadvantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws} and cannot take reactions.",
+						"A dazed creature has {@variantrule Disadvantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws} and cannot take {@variantrule Reaction|Ishiir|Reactions}.",
 						"A dazed creature moves at half its {@variantrule Speed|Ishiir}.",
-						"On its turn, it can only take an action OR bonus action, but not both; it can only make one attack with either.",
+						"On its turn, it can only take an {@variantrule Action|Ishiir} OR {@variantrule Bonus Action|Ishiir}, but not both; it can only make one attack with either.",
 						"If the creature attempts to cast a spell with a casting time of 1 action, the creature rolls a {@dice d20}. On an 11 or higher, the spell doesn't take effect until the creature's next turn and the creature must use its action to complete the spell. If it can't, the spell is wasted."
 					]
 				}
@@ -325,7 +325,7 @@
 				{
 					"type": "list",
 					"items": [
-						"An incapacitated creature can't take actions or reactions.",
+						"An incapacitated creature can't take actions or {@variantrule Reaction|Ishiir|Reactions}.",
 						"The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}.",
 						"{@variantrule Attack Roll|Ishiir}s against the creature have {@variantrule Advantage|Ishiir}."
 					]

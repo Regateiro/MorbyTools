@@ -872,7 +872,7 @@
 			"classSource": "Ishiir",
 			"level": 1,
 			"entries": [
-				"By choice or circumstance, you possess the ability to shift into an animal-like form that outfits you with heightened senses, swiftness, and primal ferocity in battle. You shift forms as a bonus action. While shifted, you gain the following benefits as long as you aren't wearing armor heavier than light or a shield:",
+				"By choice or circumstance, you possess the ability to shift into an animal-like form that outfits you with heightened senses, swiftness, and primal ferocity in battle. You shift forms as a {@variantrule Bonus Action|Ishiir}. While shifted, you gain the following benefits as long as you aren't wearing armor heavier than light or a shield:",
 				{
 					"type": "list",
 					"items": [
@@ -882,7 +882,7 @@
 					]
 				},
 				"If you are able to cast spells, you can't cast them or concentrate on them while shifted.",
-				"Your Formshift lasts for an amount of hours equal to your shifter level. It ends early if you fall {@condition Unconscious|Ishiir} or you are {@condition Incapacitated|Ishiir}. You can also end your Formshift as a bonus action.",
+				"Your Formshift lasts for an amount of hours equal to your shifter level. It ends early if you fall {@condition Unconscious|Ishiir} or you are {@condition Incapacitated|Ishiir}. You can also end your Formshift as a {@variantrule Bonus Action|Ishiir}.",
 				"You can Formshift a number of times shown for your Shifter level in the Formshifts column of the Shifter Features table. You regain one expended use when you finish a {@variantrule Short Rest|Ishiir}, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}.",
 				"You choose whether your equipment falls to the ground in your space, merges into your shifted form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for your shifted form to wear a piece of equipment, based on your shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that your shifted form can't wear must either fall to the ground or merge with it. Equipment that merges with your shifted form has no effect until you leave Formshift."
 			]
@@ -1249,7 +1249,7 @@
 						{
                             "type": "item",
                             "name": "Silent Flight.",
-                            "entry": "While flying, you can {@action hide|Ishiir} as a bonus action and your wings cause no sound when you move while flying. If you attack while hidden, the benefits of being hidden persist against the target of your attack until the end of your turn."
+                            "entry": "While flying, you can {@action hide|Ishiir} as a {@variantrule Bonus Action|Ishiir} and your wings cause no sound when you move while flying. If you attack while hidden, the benefits of being hidden persist against the target of your attack until the end of your turn."
                         },
 						{
                             "type": "item",
@@ -1293,7 +1293,7 @@
                             "name": "Evasive Flight.",
                             "entries": [
 								"When you are subjected to an effect that allows you to make a Dexterity {@variantrule Saving Throw|Ishiir} to take only half damage, you instead take no damage if you succeed on the {@variantrule Saving Throw|Ishiir}, and only half damage if you fail.",
-								"If you succeed on the {@variantrule Saving Throw|Ishiir}, you can use your reaction to move up to half your {@variantrule Speed|Ishiir} to an unoccupied space that you can see. If you are carrying an ally or otherwise moving them with you, they also automatically succeed on the {@variantrule Saving Throw|Ishiir} and take no damage.",
+								"If you succeed on the {@variantrule Saving Throw|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to move up to half your {@variantrule Speed|Ishiir} to an unoccupied space that you can see. If you are carrying an ally or otherwise moving them with you, they also automatically succeed on the {@variantrule Saving Throw|Ishiir} and take no damage.",
 								"You don't benefit from this feature if you have the {@condition Incapacitated|Ishiir} condition."
 							]
                         },
@@ -1368,7 +1368,7 @@
 						{
 							"type": "item",
 							"name": "Swift Climber.",
-							"entry": "You gain a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} and when you take fall damage, you can use your reaction to decrease that damage by an amount equal to five times your Shifter level."
+							"entry": "You gain a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} and when you take fall damage, you can use your {@variantrule Reaction|Ishiir} to decrease that damage by an amount equal to five times your Shifter level."
 						},
 						{
 							"type": "item",
@@ -1397,12 +1397,12 @@
 						{
 							"type": "item",
 							"name": "Stalker's Rake.",
-							"entry": "You can {@action Hide|Ishiir} as a bonus action. If you hit a creature with your natural weapons while hidden, it has {@variantrule Disadvantage|Ishiir} on the next {@variantrule Saving Throw|Ishiir} against your Clawed Aspect. Additionally, creatures {@condition Lacerated|Ishiir} by you cannot make opportunity attacks."
+							"entry": "You can {@action Hide|Ishiir} as a {@variantrule Bonus Action|Ishiir}. If you hit a creature with your natural weapons while hidden, it has {@variantrule Disadvantage|Ishiir} on the next {@variantrule Saving Throw|Ishiir} against your Clawed Aspect. Additionally, creatures {@condition Lacerated|Ishiir} by you cannot make opportunity attacks."
 						},
 						{
 							"type": "item",
 							"name": "Big Game Hunter.",
-							"entry": "When you use Primal Pounce and your attack hits, you can also attempt to {@action Climb onto a Bigger Creature|Ishiir} as per the Additional Combat Actions as a bonus action."
+							"entry": "When you use Primal Pounce and your attack hits, you can also attempt to {@action Climb onto a Bigger Creature|Ishiir} as per the Additional Combat Actions as a {@variantrule Bonus Action|Ishiir}."
 						},
 						{
 							"type": "item",
@@ -1441,7 +1441,7 @@
 						{
 							"type": "item",
 							"name": "Killing Bite.",
-							"entry": "If you hit a {@condition Prone|Ishiir} creature with your natural weapons, you can immediately make another attack with them as a bonus action."
+							"entry": "If you hit a {@condition Prone|Ishiir} creature with your natural weapons, you can immediately make another attack with them as a {@variantrule Bonus Action|Ishiir}."
 						}
 					]
 				}
@@ -1487,7 +1487,7 @@
 						{
 							"type": "item",
 							"name": "A Friend in Deed.",
-							"entry": "You can take the {@action Help|Ishiir} action as a bonus action and with a range of 30 feet. You can always use the {@action Help|Ishiir} action to give someone {@variantrule Advantage|Ishiir} on a skill check, even if you are not proficient in the relevant skill yourself."
+							"entry": "You can take the {@action Help|Ishiir} action as a {@variantrule Bonus Action|Ishiir} and with a range of 30 feet. You can always use the {@action Help|Ishiir} action to give someone {@variantrule Advantage|Ishiir} on a skill check, even if you are not proficient in the relevant skill yourself."
 						},
 						{
 							"type": "item",
@@ -1516,7 +1516,7 @@
 						{
 							"type": "item",
 							"name": "Coordinated Takedown.",
-							"entry": "When a creature within reach of your natural weapons is hit by a melee attack from one of your allies, you can use your reaction to immediately force that creature to make a Strength {@variantrule Saving Throw|Ishiir} as per your Fanged Aspect feature."
+							"entry": "When a creature within reach of your natural weapons is hit by a melee attack from one of your allies, you can use your {@variantrule Reaction|Ishiir} to immediately force that creature to make a Strength {@variantrule Saving Throw|Ishiir} as per your Fanged Aspect feature."
 						},
 						{
 							"type": "item",
@@ -1550,7 +1550,7 @@
 						{
 							"type": "item",
 							"name": "Killing Bite.",
-							"entry": "If you hit a {@condition Prone|Ishiir} creature with your natural weapons, you can immediately make another attack with them as a bonus action."
+							"entry": "If you hit a {@condition Prone|Ishiir} creature with your natural weapons, you can immediately make another attack with them as a {@variantrule Bonus Action|Ishiir}."
 						},
 						{
 							"type": "item",
@@ -1686,13 +1686,13 @@
 							"name": "Dryadic Bond.",
 							"entries": [
 								"You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
-								"Additionally, you can form a ranged weapon from plant material as a bonus action. As part of an attack, you can automatically form ammunition for this weapon if it requires it. The ammunition disappears are hitting or missing. The weapon remains while it is within 100 feet of you and otherwise disappears. This weapon counts as a natural weapon for you and has a range of 90/360 feet."
+								"Additionally, you can form a ranged weapon from plant material as a {@variantrule Bonus Action|Ishiir}. As part of an attack, you can automatically form ammunition for this weapon if it requires it. The ammunition disappears are hitting or missing. The weapon remains while it is within 100 feet of you and otherwise disappears. This weapon counts as a natural weapon for you and has a range of 90/360 feet."
 							]
 						},
 						{
 							"type": "item",
 							"name": "Defensive Spores.",
-							"entry": "When a creature within 10 feet of you hits or misses you with a melee attack, you can use your reaction to force it to make a Constitution {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, the target is {@condition Poisoned|Ishiir} for 1 minute. At the end of each of its turns, the target can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success."
+							"entry": "When a creature within 10 feet of you hits or misses you with a melee attack, you can use your {@variantrule Reaction|Ishiir} to force it to make a Constitution {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, the target is {@condition Poisoned|Ishiir} for 1 minute. At the end of each of its turns, the target can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success."
 						}
 					]
 				}
@@ -1716,18 +1716,18 @@
 						{
 							"type": "item",
 							"name": "Twisting Roots.",
-							"entry": "While shifted, the ground in a 10 feet circle around you is {@quickref difficult terrain||3} for your enemies. When a creature starts its turn in that area or enters it for the first time on a turn, you can use your reaction to force it to make a Strength {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, its {@variantrule Speed|Ishiir} is reduced to 0 until the end of your next turn."
+							"entry": "While shifted, the ground in a 10 feet circle around you is {@quickref difficult terrain||3} for your enemies. When a creature starts its turn in that area or enters it for the first time on a turn, you can use your {@variantrule Reaction|Ishiir} to force it to make a Strength {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, its {@variantrule Speed|Ishiir} is reduced to 0 until the end of your next turn."
 						},
 						{
 							"type": "item",
 							"name": "Fey Step.",
-							"entry": "As a bonus action, you can teleport up to 30 feet to an unoccupied space that you can see. You can use this feature a number of times equal to your Formshift Damage and you regain all expended uses on a {@variantrule Long Rest|Ishiir}. Alternatively, you can spend a 2nd Level Spell Slot to use this feature again."
+							"entry": "As a {@variantrule Bonus Action|Ishiir}, you can teleport up to 30 feet to an unoccupied space that you can see. You can use this feature a number of times equal to your Formshift Damage and you regain all expended uses on a {@variantrule Long Rest|Ishiir}. Alternatively, you can spend a 2nd Level Spell Slot to use this feature again."
 						},
 						{
 							"type": "item",
 							"name": "Addling Spores.",
 							"entries": [
-								"As an action, you launch a cloud of befuddling spores at a location within 30 feet of you. Each creature within a 10 feet radius sphere around that point has to make a Constitution a {@variantrule Saving Throw|Ishiir} or be {@condition Confused|Ishiir} until the end of your next turn.",
+								"As an {@variantrule Action|Ishiir}, you launch a cloud of befuddling spores at a location within 30 feet of you. Each creature within a 10 feet radius sphere around that point has to make a Constitution a {@variantrule Saving Throw|Ishiir} or be {@condition Confused|Ishiir} until the end of your next turn.",
 								"You can use this feature a number of times equal to your Formshift Damage and you regain all expended uses on a {@variantrule Long Rest|Ishiir}. Alternatively, you can spend a 3rd Level Spell Slot to use this feature again."
 							]
 						}
@@ -1759,7 +1759,7 @@
 							"type": "item",
 							"name": "Blinding Beauty.",
 							"entries": [
-								"As an action, you can force every creature of your choice within 30 feet of you that you can see and that can see you to make a Wisdom {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, a target is {@condition Blinded|Ishiir} for 1 minute. At the end of each of its turns, the target can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success. Once a creature has succeeded on the {@variantrule Saving Throw|Ishiir}, it is {@variantrule Immunity|Ishiir|Immune} to this feature for the next 24 hours.",
+								"As an {@variantrule Action|Ishiir}, you can force every creature of your choice within 30 feet of you that you can see and that can see you to make a Wisdom {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, a target is {@condition Blinded|Ishiir} for 1 minute. At the end of each of its turns, the target can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success. Once a creature has succeeded on the {@variantrule Saving Throw|Ishiir}, it is {@variantrule Immunity|Ishiir|Immune} to this feature for the next 24 hours.",
 								"You can use this feature a number of times equal to your Formshift Damage and you regain all expended uses on a {@variantrule Long Rest|Ishiir}. Alternatively, you can spend a 4th Level Spell Slot to use this feature again."
 							]
 						},
@@ -1785,7 +1785,7 @@
 			"entries": [
 				"You adopt a draconic aspect, granting you physical traits such as scaled skin, vertical pupils, and sharp nails.",
 				"You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
-				"As an action, you can exhale destructive energy. All creatues in the area of effect take damage equal to a number of rolls of your Natural Weapons die equal to your {@variantrule Proficiency|Ishiir}. The shape, {@variantrule Saving Throw|Ishiir}, and damage type of your breath weapon is determined by your draconic form, which you choose when you gain this feature. You can find all available options in the table below. The DC for this is 8 + your {@variantrule Proficiency|Ishiir} + your Constitution modifier. Once you have used your breath weapon, you have to roll a d6 at the start of each of your turns. On a roll of 5 or 6, you regain your use of this feature.",
+				"As an {@variantrule Action|Ishiir}, you can exhale destructive energy. All creatues in the area of effect take damage equal to a number of rolls of your Natural Weapons die equal to your {@variantrule Proficiency|Ishiir}. The shape, {@variantrule Saving Throw|Ishiir}, and damage type of your breath weapon is determined by your draconic form, which you choose when you gain this feature. You can find all available options in the table below. The DC for this is 8 + your {@variantrule Proficiency|Ishiir} + your Constitution modifier. Once you have used your breath weapon, you have to roll a d6 at the start of each of your turns. On a roll of 5 or 6, you regain your use of this feature.",
 				"Once you reach level 10 in this class, the size of your breath weapon doubles.",
 				{
                     "type": "table",

@@ -810,7 +810,7 @@
             "classSource": "Ishiir",
             "level": 1,
             "entries": [
-                "You can imbue yourself with a primal power called Rage, a force that grants you extraordinary might and resilience. You can enter it as a Bonus Action if you aren't wearing Heavy armor.",
+                "You can imbue yourself with a primal power called Rage, a force that grants you extraordinary might and resilience. You can enter it as a {@variantrule Bonus Action|Ishiir} if you aren't wearing Heavy armor.",
                 "You can enter your Rage the number of times shown for your Barbarian level in the Rages column of the Barbarian Features table. You regain one expended use when you finish a {@variantrule Short Rest|Ishiir}, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}.",
                 "While active, your Rage follows the rules below.",
                 {
@@ -851,7 +851,7 @@
                             "items": [
                                 "Make an {@variantrule Attack Roll|Ishiir} against an enemy.",
                                 "Force an enemy to make a {@variantrule Saving Throw|Ishiir}.",
-                                "Take a Bonus Action to extend your Rage."
+                                "Take a {@variantrule Bonus Action|Ishiir} to extend your Rage."
                             ]
                         },
                         "Each time the Rage is extended, it lasts until the end of your next turn. You can maintain a Rage for up to 10 minutes."
@@ -1028,7 +1028,7 @@
             "classSource": "Ishiir",
             "level": 7,
             "entries": [
-                "As part of the bonus action you take to enter your rage, you can move up to half your {@variantrule Speed|Ishiir}."
+                "As part of the {@variantrule Bonus Action|Ishiir} you take to enter your rage, you can move up to half your {@variantrule Speed|Ishiir}."
             ]
         },
         {
@@ -1161,7 +1161,7 @@
 						{
 							"type": "item",
 							"name": "Staggering Blow.",
-							"entry": "The target must succeed on a CON {@variantrule Saving Throw|Ishiir} or have {@variantrule Disadvantage|Ishiir} on the next {@variantrule Saving Throw|Ishiir} it makes, and it can't take reactions until the start of your next turn."
+							"entry": "The target must succeed on a CON {@variantrule Saving Throw|Ishiir} or have {@variantrule Disadvantage|Ishiir} on the next {@variantrule Saving Throw|Ishiir} it makes, and it can't take {@variantrule Reaction|Ishiir|Reactions} until the start of your next turn."
 						},
 						{
 							"type": "item",
@@ -1327,7 +1327,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "The guardian spirits that aid you can provide supernatural protection to those you defend. If you are raging and another creature you can see within 30 feet of you takes damage, you can use your reaction to reduce that damage by {@dice 2d6}.",
+                "The guardian spirits that aid you can provide supernatural protection to those you defend. If you are raging and another creature you can see within 30 feet of you takes damage, you can use your {@variantrule Reaction|Ishiir} to reduce that damage by {@dice 2d6}.",
                 "When you reach certain levels in this class, you can reduce the damage by more: by {@dice 3d6} at 10th level and by {@dice 4d6} at 14th level."
             ]
         },
@@ -1395,7 +1395,7 @@
                 "You gain {@variantrule Proficiency|Ishiir} in heavy armor and ignore all restrictions for Barbarian class features while wearing heavy armor. You also gain the ability to modify your armor with spikes, blades, and other hazardous materials and turn it into a weapon: spiked armor.",
                 "Every time you finish a {@variantrule Short Rest|Ishiir}, you can use this feature to remove these materials from your current spiked armor and attach them to another armor of your choice.",
                 "Spiked armor has the same properties as the original armor. Additionally, it counts as a heavy martial melee weapon with a reach of 5 ft that you are proficient in. On a hit, it deals {@damage 1d4} piercing damage. You use your Strength modifier for the attack and damage rolls. If spiked your armor has a permanent bonus to its armor class (e.g. the masterwork property), you add this bonus to your attack and damage rolls with it.",
-                "When you are raging and wearing spiked armor, you can make one attack with your spiked armor as a bonus action.",
+                "When you are raging and wearing spiked armor, you can make one attack with your spiked armor as a {@variantrule Bonus Action|Ishiir}.",
                 "Additionally, when you successfully {@action grapple|Ishiir} a creature or {@action shove|Ishiir} it {@condition Prone|Ishiir}, the creature also takes damage equal to your Strength modifier. If you are raging, you add your rage damage bonus to this damage."
             ]
         },
@@ -1439,7 +1439,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You can take the {@action Dash|Ishiir} action as a bonus action while you are raging."
+                "You can take the {@action Dash|Ishiir} action as a {@variantrule Bonus Action|Ishiir} while you are raging."
             ]
         },
         {
@@ -1578,8 +1578,8 @@
 							"type": "entries",
 							"name": "Tail",
 							"entries": [
-								"Your reach increases by 5 feet and when an enemy provokes an opportunity attack from you, you can make the attack without spending a reaction, but you cannot make another opportunity attack until the start of your next turn.",
-                                "If a creature you can see within your reach hits you with an {@variantrule Attack Roll|Ishiir}, you can use your reaction to add your Strength modifier to your AC against that attack, possibly causing it to miss."
+								"Your reach increases by 5 feet and when an enemy provokes an opportunity attack from you, you can make the attack without spending a {@variantrule Reaction|Ishiir}, but you cannot make another opportunity attack until the start of your next turn.",
+                                "If a creature you can see within your reach hits you with an {@variantrule Attack Roll|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to add your Strength modifier to your AC against that attack, possibly causing it to miss."
 							]
 						}
 					]
@@ -1624,7 +1624,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "The target must use its reaction to make a melee attack against another creature of your choice that you can see.",
+                        "The target must use its {@variantrule Reaction|Ishiir} to make a melee attack against another creature of your choice that you can see.",
                         "The target takes {@damage 2d12} psychic damage."
                     ]
                 },
@@ -1718,7 +1718,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "When you take damage from a creature that is within range of your equipped melee weapon, you can use your reaction to make a melee weapon attack against that creature."
+                "When you take damage from a creature that is within range of your equipped melee weapon, you can use your {@variantrule Reaction|Ishiir} to make a melee weapon attack against that creature."
             ]
         },
         {
@@ -1803,7 +1803,7 @@
             "entries": [
                 "Your bond with the elemental might of giants and their ilk grows, and you learn to infuse weapons with primordial energy.",
                 "When you enter your rage, you can infuse one weapon of your choice that you are holding with one of the following damage types: acid, cold, fire, thunder, or lightning. While you wield the infused weapon during your rage, the weapon's damage type changes to the chosen type, it deals an extra {@damage 1d6} damage of the chosen type when it hits, and it gains the thrown property, with a normal range of 20 feet and a long range of 60 feet. If you throw the weapon, it reappears in your hand the instant after it hits or misses a target. The infused weapon's benefits are suppressed while a creature other than you wields it.",
-                "While raging and holding the infused weapon, you can use a bonus action to change the infused weapon's current damage type to a different one from the above damage types."
+                "While raging and holding the infused weapon, you can use a {@variantrule Bonus Action|Ishiir} to change the infused weapon's current damage type to a different one from the above damage types."
             ]
         },
         {
@@ -1817,7 +1817,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "Your connection to giant strength now allows you to hurl both allies and enemies on the battlefield. As a bonus action while raging, you can choose one Medium or smaller creature within your reach and move it to an unoccupied space you can see within 30 feet of yourself. An unwilling creature must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC equals 8 + your {@variantrule Proficiency|Ishiir} bonus + your Strength modifier) to avoid the effect.",
+                "Your connection to giant strength now allows you to hurl both allies and enemies on the battlefield. As a {@variantrule Bonus Action|Ishiir} while raging, you can choose one Medium or smaller creature within your reach and move it to an unoccupied space you can see within 30 feet of yourself. An unwilling creature must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC equals 8 + your {@variantrule Proficiency|Ishiir} bonus + your Strength modifier) to avoid the effect.",
                 "If, at the end of this movement, the thrown creature isn't on a surface or liquid that can support it, the creature falls, taking damage as normal and landing {@condition Prone|Ishiir}."
             ]
         },
@@ -1886,7 +1886,7 @@
             "entries": [
                 "Spectral coils start appearing around you when you enter your rage. While you are raging, your reach with unarmed strikes increases by 5 ft and you ignore all size restrictions and immunities for attempting grapples.",
                 "Once per turn, if you successfully hit a creature with an unarmed strike while raging, you can attempt to grapple it.",
-                "You can use your bonus action to force a creature you grappled in this manner to make a STR {@variantrule Saving Throw|Ishiir}. The DC is equal to 8 + your {@variantrule Proficiency|Ishiir} + your STR modifier. On a failure, the creature takes force damage equal to your {@variantrule Proficiency|Ishiir} + your STR modifier + your rage bonus damage and is {@condition Restrained|Ishiir} until the end of your next turn. On a success, the creature takes half as much damage and isn't {@condition Restrained|Ishiir}."
+                "You can use your {@variantrule Bonus Action|Ishiir} to force a creature you grappled in this manner to make a STR {@variantrule Saving Throw|Ishiir}. The DC is equal to 8 + your {@variantrule Proficiency|Ishiir} + your STR modifier. On a failure, the creature takes force damage equal to your {@variantrule Proficiency|Ishiir} + your STR modifier + your rage bonus damage and is {@condition Restrained|Ishiir} until the end of your next turn. On a success, the creature takes half as much damage and isn't {@condition Restrained|Ishiir}."
             ]
         },
         {
@@ -1996,7 +1996,7 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "When a creature touches you, or hits you with a melee attack from within your aura, it takes fire damage equal to {@damage 1d4} x half your {@variantrule Proficiency|Ishiir} (rounded down). When you empower this aura as a bonus action, all creatures in your aura have to make a DEX {@variantrule Saving Throw|Ishiir}. A creature takes fire damage equal to {@damage 1d6} x your {@variantrule Proficiency|Ishiir} on a failure, or half as much on a success."
+                "When a creature touches you, or hits you with a melee attack from within your aura, it takes fire damage equal to {@damage 1d4} x half your {@variantrule Proficiency|Ishiir} (rounded down). When you empower this aura as a {@variantrule Bonus Action|Ishiir}, all creatures in your aura have to make a DEX {@variantrule Saving Throw|Ishiir}. A creature takes fire damage equal to {@damage 1d6} x your {@variantrule Proficiency|Ishiir} on a failure, or half as much on a success."
             ]
         },
         {
@@ -2009,7 +2009,7 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "On your turn, choose a creature that is in your aura. That creature has to make DEX {@variantrule Saving Throw|Ishiir}. On a failure, the target takes lightning damage equal to {@damage 1d4} x your {@variantrule Proficiency|Ishiir}, or half as much on a success. When you empower this aura as a bonus action, you can teleport up to 60 ft to an unoccupied space that you can see. If you do so, you double the next instance of this aura's damage during this rage."
+                "On your turn, choose a creature that is in your aura. That creature has to make DEX {@variantrule Saving Throw|Ishiir}. On a failure, the target takes lightning damage equal to {@damage 1d4} x your {@variantrule Proficiency|Ishiir}, or half as much on a success. When you empower this aura as a {@variantrule Bonus Action|Ishiir}, you can teleport up to 60 ft to an unoccupied space that you can see. If you do so, you double the next instance of this aura's damage during this rage."
             ]
         },
         {
@@ -2022,7 +2022,7 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "When you enter your rage, you gain temporary hit points equal to 5 x your {@variantrule Proficiency|Ishiir}. When you empower this aura as a reaction, you gain a bonus to your AC and DEX {@variantrule Saving Throw|Ishiir|Saving Throws} equal to your {@variantrule Proficiency|Ishiir} until the start of your next turn."
+                "When you enter your rage, you gain temporary hit points equal to 5 x your {@variantrule Proficiency|Ishiir}. When you empower this aura as a {@variantrule Reaction|Ishiir}, you gain a bonus to your AC and DEX {@variantrule Saving Throw|Ishiir|Saving Throws} equal to your {@variantrule Proficiency|Ishiir} until the start of your next turn."
             ]
         },
         {
@@ -2066,7 +2066,7 @@
             "subclassSource": "Ishiir",
             "level": 6,
             "entries": [
-                "You gain {@variantrule Resistance|Ishiir} to fire damage, and you don't suffer the effects of extreme heat, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch a flammable object that isn't being worn or carried by anyone else and set it on fire."
+                "You gain {@variantrule Resistance|Ishiir} to fire damage, and you don't suffer the effects of extreme heat, as described in the Dungeon Master's Guide. Moreover, as an {@variantrule Action|Ishiir}, you can touch a flammable object that isn't being worn or carried by anyone else and set it on fire."
             ]
         },
         {
@@ -2092,7 +2092,7 @@
             "subclassSource": "Ishiir",
             "level": 6,
             "entries": [
-                "You gain {@variantrule Resistance|Ishiir} to cold damage, and you don't suffer the effects of extreme cold, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch water and turn a 5-foot cube of it into ice, which melts after 1 minute. This action fails if a creature is in the cube."
+                "You gain {@variantrule Resistance|Ishiir} to cold damage, and you don't suffer the effects of extreme cold, as described in the Dungeon Master's Guide. Moreover, as an {@variantrule Action|Ishiir}, you can touch water and turn a 5-foot cube of it into ice, which melts after 1 minute. This action fails if a creature is in the cube."
             ]
         },
         {
@@ -2278,7 +2278,7 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "When you activate your Rage, you can take the {@action Disengage|Ishiir} and {@action Dash|Ishiir} actions as part of that Bonus Action. While your Rage is active, you can take a Bonus Action to take both of those actions."
+                "When you activate your Rage, you can take the {@action Disengage|Ishiir} and {@action Dash|Ishiir} actions as part of that {@variantrule Bonus Action|Ishiir}. While your Rage is active, you can take a {@variantrule Bonus Action|Ishiir} to take both of those actions."
             ]
         },
         {
@@ -2562,7 +2562,7 @@
             "subclassSource": "Ishiir",
             "level": 14,
             "entries": [
-                "While raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC 8 + your Strength bonus + your {@variantrule Proficiency|Ishiir} bonus) or be knocked {@condition Prone|Ishiir} and take bludgeoning damage equal to {@dice 1d12} + your Strength modifier."
+                "While raging, you can use a {@variantrule Bonus Action|Ishiir} during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC 8 + your Strength bonus + your {@variantrule Proficiency|Ishiir} bonus) or be knocked {@condition Prone|Ishiir} and take bludgeoning damage equal to {@dice 1d12} + your Strength modifier."
             ]
         },
         {
@@ -2575,7 +2575,7 @@
             "subclassSource": "Ishiir",
             "level": 14,
             "entries": [
-                "While you're raging, if you move at least 20 feet in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it."
+                "While you're raging, if you move at least 20 feet in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a {@variantrule Bonus Action|Ishiir} to make an additional melee weapon attack against it."
             ]
         },
         {
@@ -2636,7 +2636,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "As an action, you can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 60 feet of you that isn't behind total cover. When you sense a spell, you learn which school of magic it belongs to.",
+                "As an {@variantrule Action|Ishiir}, you can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 60 feet of you that isn't behind total cover. When you sense a spell, you learn which school of magic it belongs to.",
                 "You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -2671,11 +2671,11 @@
                         ],
                         [
                             "2",
-                            "You teleport up to 30 feet to an unoccupied space you can see. Until your rage ends, you can use this effect again on each of your turns as a bonus action."
+                            "You teleport up to 30 feet to an unoccupied space you can see. Until your rage ends, you can use this effect again on each of your turns as a {@variantrule Bonus Action|Ishiir}."
                         ],
                         [
                             "3",
-                            "An intangible spirit, which looks like a {@creature flumph} or a {@creature pixie} (your choice), appears within 5 feet of one creature of your choice that you can see within 30 feet of you. At the end of the current turn, the spirit explodes, and each creature within 5 feet of it must succeed on a Dexterity {@variantrule Saving Throw|Ishiir} or take {@damage 1d6} force damage. Until your rage ends, you can use this effect again, summoning another spirit, on each of your turns as a bonus action."
+                            "An intangible spirit, which looks like a {@creature flumph} or a {@creature pixie} (your choice), appears within 5 feet of one creature of your choice that you can see within 30 feet of you. At the end of the current turn, the spirit explodes, and each creature within 5 feet of it must succeed on a Dexterity {@variantrule Saving Throw|Ishiir} or take {@damage 1d6} force damage. Until your rage ends, you can use this effect again, summoning another spirit, on each of your turns as a {@variantrule Bonus Action|Ishiir}."
                         ],
                         [
                             "4",
@@ -2695,7 +2695,7 @@
                         ],
                         [
                             "8",
-                            "A bolt of light shoots from your chest. Another creature of your choice that you can see within 30 feet of you must succeed on a Constitution {@variantrule Saving Throw|Ishiir} or take {@damage 1d6} radiant damage and be {@condition Blinded|Ishiir} until the start of your next turn. Until your rage ends, you can use this effect again on each of your turns as a bonus action."
+                            "A bolt of light shoots from your chest. Another creature of your choice that you can see within 30 feet of you must succeed on a Constitution {@variantrule Saving Throw|Ishiir} or take {@damage 1d6} radiant damage and be {@condition Blinded|Ishiir} until the start of your next turn. Until your rage ends, you can use this effect again on each of your turns as a {@variantrule Bonus Action|Ishiir}."
                         ]
                     ],
                     "data": {
@@ -2715,7 +2715,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You can harness your wild magic to bolster yourself or a companion. As an action, you can touch one creature (which can be yourself) and confer one of the following benefits of your choice to that creature:",
+                "You can harness your wild magic to bolster yourself or a companion. As an {@variantrule Action|Ishiir}, you can touch one creature (which can be yourself) and confer one of the following benefits of your choice to that creature:",
                 {
                     "type": "list",
                     "items": [
@@ -2737,7 +2737,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "When you are imperiled during your rage, the magic within you can lash out; immediately after you take damage or fail a {@variantrule Saving Throw|Ishiir} while raging, you can use your reaction to roll on the Wild Magic table and immediately produce the effect rolled. This effect replaces your current Wild Magic effect."
+                "When you are imperiled during your rage, the magic within you can lash out; immediately after you take damage or fail a {@variantrule Saving Throw|Ishiir} while raging, you can use your {@variantrule Reaction|Ishiir} to roll on the Wild Magic table and immediately produce the effect rolled. This effect replaces your current Wild Magic effect."
             ]
         },
         {
@@ -2796,7 +2796,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Whenever a creature you can see starts its turn within 30 feet of you while your Rage is active, you can take a Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC 8 plus your Strength modifier and {@variantrule Proficiency|Ishiir} Bonus) or be teleported to an unoccupied space you can see within 5 feet of yourself or in the nearest unoccupied space you can see. After the target teleports, you can reduce its {@variantrule Speed|Ishiir} to 0 until the end of the current turn."
+                "Whenever a creature you can see starts its turn within 30 feet of you while your Rage is active, you can take a {@variantrule Reaction|Ishiir} to summon spectral branches of the World Tree around it. The target must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC 8 plus your Strength modifier and {@variantrule Proficiency|Ishiir} Bonus) or be teleported to an unoccupied space you can see within 5 feet of yourself or in the nearest unoccupied space you can see. After the target teleports, you can reduce its {@variantrule Speed|Ishiir} to 0 until the end of the current turn."
             ]
         },
         {
@@ -2825,7 +2825,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "When you activate your Rage and as a Bonus Action while your Rage is active, you can teleport up to 60 feet to an unoccupied space you can see.",
+                "When you activate your Rage and as a {@variantrule Bonus Action|Ishiir} while your Rage is active, you can teleport up to 60 feet to an unoccupied space you can see.",
                 "In addition, once per Rage, you can increase the range of that teleport to 150 feet. When you do so, you can also bring up to six willing creatures who are within 10 feet of you. Each creature teleports to an unoccupied space of your choice within 10 feet of your destination space."
             ]
         },
@@ -2876,7 +2876,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "A divine entity helps ensure you can continue the fight. You have a pool of four d12s that you can spend to heal yourself. As a Bonus Action, you can expend dice from the pool, roll them, and regain a number of Hit Points equal to the roll's total.",
+                "A divine entity helps ensure you can continue the fight. You have a pool of four d12s that you can spend to heal yourself. As a {@variantrule Bonus Action|Ishiir}, you can expend dice from the pool, roll them, and regain a number of Hit Points equal to the roll's total.",
                 "Your pool regains one die when you finish a {@variantrule Short Rest|Ishiir}, and all expended dice when you finish a {@variantrule Long Rest|Ishiir}.",
                 "The pool's maximum number of dice increases by one when you reach Barbarian levels 6 (5 dice), 12 (6 dice), and 17 (7 dice)."
             ]
@@ -2906,7 +2906,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You learn to channel divine power to inspire zealotry in others. As a bonus action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you that can hear you gain {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s and {@variantrule Saving Throw|Ishiir|Saving Throws} until the start of your next turn.",
+                "You learn to channel divine power to inspire zealotry in others. As a {@variantrule Bonus Action|Ishiir}, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you that can hear you gain {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s and {@variantrule Saving Throw|Ishiir|Saving Throws} until the start of your next turn.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}. If you’ve run out of uses of this feature, you can expend one use of your Rage, choosing to activate this feature instead of Rage."
             ]
         },
@@ -2940,7 +2940,7 @@
 						{
 							"type": "item",
 							"name": "Revivification.",
-							"entry": "When a creature within 30 feet of you would drop to 0 Hit Points, you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level."
+							"entry": "When a creature within 30 feet of you would drop to 0 Hit Points, you can take a {@variantrule Reaction|Ishiir} to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level."
 						}
 					]
 				}

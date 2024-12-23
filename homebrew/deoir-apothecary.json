@@ -337,7 +337,7 @@
 			"level": 1,
 			"entries": [
 				"You are able to throw a Bottle of Pain at someone you do not like.",
-				"As an action make a Thrown tonic attack against a creature within 40 feet of you. On hit you deal {@damage 1d4} Fire, Cold, Poison or Acid damage (Choose before making the attack). On subsequent turns the target takes {@damage 1d4} Fire, Cold, Poison or Acid damage at the start of each of its turns. A creature can end this effect by using its Reaction during it's turn to end the effect.",
+				"As an {@variantrule Action|Ishiir} make a Thrown tonic attack against a creature within 40 feet of you. On hit you deal {@damage 1d4} Fire, Cold, Poison or Acid damage (Choose before making the attack). On subsequent turns the target takes {@damage 1d4} Fire, Cold, Poison or Acid damage at the start of each of its turns. A creature can end this effect by using its {@variantrule Reaction|Ishiir} during it's turn to end the effect.",
 				"The damage of both the initial damage and subsequent damage increases when you reach 5th level ({@damage 2d4}), 11th level ({@damage 3d4}) and 17th level ({@damage 4d4})."
 			]
 		},
@@ -451,7 +451,7 @@
 			"level": 11,
 			"entries": [
 				"You gain the ability to seem always prepared.",
-				"As an action touch one of your prepared Salves or Tonics and change them to a different Salve or Tonic you know."
+				"As an {@variantrule Action|Ishiir} touch one of your prepared Salves or Tonics and change them to a different Salve or Tonic you know."
 			]
 		},
 		{
@@ -596,7 +596,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"As a reaction to seeing a creature reach 0 hit points you can throw a healing dart at them bringing them back to 1 hp. You can use this feature a number of times equal to half your {@variantrule Proficiency|Ishiir} bonus (rounded down)."
+				"As a {@variantrule Reaction|Ishiir} to seeing a creature reach 0 hit points you can throw a healing dart at them bringing them back to 1 hp. You can use this feature a number of times equal to half your {@variantrule Proficiency|Ishiir} bonus (rounded down)."
 			]
 		},
 		{
@@ -714,7 +714,7 @@
 			"header": 2,
 			"entries": [
 				"You gain the ability to create Special Concoctions that you yourself are not quite sure on what they do. But you know they do something!",
-				"During a {@variantrule Long Rest|Ishiir}, you can create up to your {@variantrule Proficiency|Ishiir} bonus in Special Concoctions. When a creature would ingest one of these concoctions using their bonus action roll on this table. The roll is a d20. If the effect makes others make a save it's against the Apothecaries save DC.",
+				"During a {@variantrule Long Rest|Ishiir}, you can create up to your {@variantrule Proficiency|Ishiir} bonus in Special Concoctions. When a creature would ingest one of these concoctions using their {@variantrule Bonus Action|Ishiir} roll on this table. The roll is a d20. If the effect makes others make a save it's against the Apothecaries save DC.",
 				{
 					"type": "table",
 					"caption": "Special Concoctions",
@@ -742,7 +742,7 @@
 						[ "13", "The creature becomes {@condition Invisible|Ishiir} till the end of their next turn" ],
 						[ "14", "The creature gains +1 AC for 1 hour" ],
 						[ "15", "The creature can only do one of the following during their next turn: Move, Action or Bonus action" ],
-						[ "16", "The creature gains the ability to use a telekenetic shove, STR save, to push a creature within 30 ft as a bonus action by 15 ft, for a number of turns equal to their level" ],
+						[ "16", "The creature gains the ability to use a telekenetic shove, STR save, to push a creature within 30 ft as a {@variantrule Bonus Action|Ishiir} by 15 ft, for a number of turns equal to their level" ],
 						[ "17", "The creature is forced to make a WIS save, becoming {@condition Dazed|Ishiir} on a failure for 1 minute" ],
 						[ "18", "30 ft around the creature becomes {@quickref difficult terrain||3} for everyone but the creature itself" ],
 						[ "19", "The creature pukes fire in a 10ft line 5ft wide dealing {@damage 2d6} fire damage or half on a save DEX save" ],
