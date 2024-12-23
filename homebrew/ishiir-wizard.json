@@ -1745,7 +1745,7 @@
                     "type": "list",
                     "items": [
                         "You gain a bonus to your AC equal to your Intelligence modifier (minimum of +1).",
-                        "Your walking speed increases by 10 feet.",
+                        "Your {@variantrule Speed|Ishiir} increases by 10 feet.",
                         "You have advantage on Dexterity ({@skill Acrobatics}) checks.",
                         "You gain a bonus to any Constitution {@variantrule Saving Throw|Ishiir}s you make to maintain {@condition Concentration|Ishiir} on a spell. The bonus equals your Intelligence modifier (minimum of +1)."
                     ]
@@ -1871,7 +1871,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "As an action, you can magically force a Large or smaller creature you can see within 60 feet of you to make a Charisma {@variantrule Saving Throw|Ishiir} against your spell save DC. Unless the {@variantrule Saving Throw|Ishiir} is a success, the creature is encased in a field of magical energy until the end of your next turn or until the creature takes any damage. While encased in this way, the creature is {@condition Paralyzed|Ishiir} and has a speed of 0. This feature ignores immunity to the {@condition Paralyzed|Ishiir} condition.",
+                "As an action, you can magically force a Large or smaller creature you can see within 60 feet of you to make a Charisma {@variantrule Saving Throw|Ishiir} against your spell save DC. Unless the {@variantrule Saving Throw|Ishiir} is a success, the creature is encased in a field of magical energy until the end of your next turn or until the creature takes any damage. While encased in this way, the creature is {@condition Paralyzed|Ishiir} and has a {@variantrule Speed|Ishiir} of 0. This feature ignores immunity to the {@condition Paralyzed|Ishiir} condition.",
                 "You can use this feature a number of times equal to your Intelligence modifier (a minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -2162,7 +2162,7 @@
             "level": 2,
             "header": 1,
             "entries": [
-                "When you choose this school, your soft words and enchanting gaze can magically enthrall another creature. As an action, choose one creature that you can see within 30 feet of you. If the target can see or hear you, it must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your wizard spell save DC or be {@condition Charmed|Ishiir} by you until the end of your next turn. The {@condition Charmed|Ishiir} creature's speed drops to 0, and the creature is {@condition Incapacitated|Ishiir} and visibly dazed.",
+                "When you choose this school, your soft words and enchanting gaze can magically enthrall another creature. As an action, choose one creature that you can see within 30 feet of you. If the target can see or hear you, it must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your wizard spell save DC or be {@condition Charmed|Ishiir} by you until the end of your next turn. The {@condition Charmed|Ishiir} creature's {@variantrule Speed|Ishiir} drops to 0, and the creature is {@condition Incapacitated|Ishiir} and visibly dazed.",
                 "On subsequent turns, you can use your action to maintain this effect, extending its duration until the end of your next turn. However, the effect ends if you move more than 30 feet away from the creature, if the creature can neither see nor hear you, or if the creature takes damage.",
                 "Once the effect ends, or if the creature succeeds on its initial {@variantrule Saving Throw|Ishiir} against this effect, you can't use this feature on that creature again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
@@ -2344,7 +2344,7 @@
             "header": 1,
             "entries": [
                 "As an action, you can magically alter the weight of one object or creature you can see within 30 feet of you. The object or creature must be Large or smaller. The target's weight is halved or doubled for up to 1 minute or until your {@condition Concentration|Ishiir} ends (as if you were concentrating on a spell).",
-                "While the weight of a creature is halved by this effect, the creature's speed increases by 10 feet, it can jump twice as far as normal, and it has disadvantage on Strength checks and Strength {@variantrule Saving Throw|Ishiir}s. While the weight of a creature is doubled by this effect, the creature's speed is reduced by 10 feet, and it has advantage on Strength checks and Strength {@variantrule Saving Throw|Ishiir}s.",
+                "While the weight of a creature is halved by this effect, the creature's {@variantrule Speed|Ishiir} increases by 10 feet, it can jump twice as far as normal, and it has disadvantage on Strength checks and Strength {@variantrule Saving Throw|Ishiir}s. While the weight of a creature is doubled by this effect, the creature's {@variantrule Speed|Ishiir} is reduced by 10 feet, and it has advantage on Strength checks and Strength {@variantrule Saving Throw|Ishiir}s.",
                 "Upon reaching 10th level in this class, you can target an object or a creature that is Huge or smaller."
             ]
         },
@@ -2389,7 +2389,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "As an action, you can magically emit a powerful field of gravitational energy that tugs at other creatures for up to 1 minute or until your {@condition Concentration|Ishiir} ends (as if you were concentrating on a spell). For the duration, whenever a creature hostile to you starts its turn within 30 feet of you, it must make a Strength {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failed save, it takes {@damage 3d10} force damage, and its speed is reduced to 0 until the start of its next turn. On a successful save, it takes half as much damage, and every foot it moves this turn costs 2 extra feet of movement.",
+                "As an action, you can magically emit a powerful field of gravitational energy that tugs at other creatures for up to 1 minute or until your {@condition Concentration|Ishiir} ends (as if you were concentrating on a spell). For the duration, whenever a creature hostile to you starts its turn within 30 feet of you, it must make a Strength {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failed save, it takes {@damage 3d10} force damage, and its {@variantrule Speed|Ishiir} is reduced to 0 until the start of its next turn. On a successful save, it takes half as much damage, and every foot it moves this turn costs 2 extra feet of movement.",
                 "Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir} or until you expend a spell slot of 3rd level or higher on it."
             ]
         },
@@ -3152,7 +3152,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "While using your Thought Form, you have a flying speed equal to your walking speed and can hover, and you can move through other creatures and objects as if they were {@quickref difficult terrain||3}.",
+                "While using your Thought Form, you have a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} and can hover, and you can move through other creatures and objects as if they were {@quickref difficult terrain||3}.",
                 "You take {@damage 1d10} force damage if you end your turn inside an object. If you return to your normal form while inside an object, you are shunted to the nearest unoccupied space, and you take {@damage 1d10} force damage for every 5 feet traveled."
             ]
         },
@@ -3226,7 +3226,7 @@
                             "type": "item",
                             "name": "Wind Rune",
                             "entries": [
-                                "When you invoke this rune, your speed increases by a number of feet equal to 5 times the level of the spell slot expended, and your movement doesn't provoke opportunity attacks. These benefits last until the start of your next turn."
+                                "When you invoke this rune, your {@variantrule Speed|Ishiir} increases by a number of feet equal to 5 times the level of the spell slot expended, and your movement doesn't provoke opportunity attacks. These benefits last until the start of your next turn."
                             ]
                         }
                     ]
@@ -3603,7 +3603,7 @@
                     "type": "list",
                     "items": [
                         "Darkvision out to a range of 60 feet, as described in chapter 8.",
-                        "An increase to speed of 10 feet while the creature is unencumbered.",
+                        "An increase to {@variantrule Speed|Ishiir} of 10 feet while the creature is unencumbered.",
                         "Proficiency in Constitution {@variantrule Saving Throw|Ishiir}s.",
                         "Resistance to acid, cold, fire, lightning, or thunder damage (your choice whenever you choose this benefit)."
                     ]

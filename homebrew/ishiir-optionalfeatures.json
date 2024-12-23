@@ -41,7 +41,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "The wearer's walking speed increases by 5 feet.",
+                        "The wearer's {@variantrule Speed|Ishiir} increases by 5 feet.",
                         "The armor includes gauntlets, each of which is a magic melee weapon that can be wielded only when the hand is holding nothing. The wearer is proficient with the gauntlets, and each one deals {@damage 1d8} force damage on a hit and has the thrown property, with a normal range of 20 feet and a long range of 60 feet. When thrown, the gauntlet detaches and flies at the attack's target, then immediately returns to the wearer and reattaches.",
                         "The armor can't be removed against the wearer's will.",
                         "If the wearer is missing any limbs, the armor replaces those limbs\u2014hands, arms, feet, legs, or similar appendages. The replacements function identically to the body parts they replace."
@@ -808,7 +808,7 @@
                 "name": "Arcane Shot"
             },
             "entries": [
-                "When this projectile strikes its target, conjuration magic creates grasping, poisonous brambles, which wrap around the target. The creature hit by the projectile takes an extra {@damage 2d6} poison damage, its speed is reduced by 10 feet, and it takes {@damage 2d6} slashing damage the first time on each turn it moves 1 foot or more without teleporting. The target or any creature that can reach it can use its action to remove the brambles with a successful Strength ({@skill Athletics}) check against your Arcane Shot save DC. Otherwise, the brambles last for 1 minute or until you use this option again.",
+                "When this projectile strikes its target, conjuration magic creates grasping, poisonous brambles, which wrap around the target. The creature hit by the projectile takes an extra {@damage 2d6} poison damage, its {@variantrule Speed|Ishiir} is reduced by 10 feet, and it takes {@damage 2d6} slashing damage the first time on each turn it moves 1 foot or more without teleporting. The target or any creature that can reach it can use its action to remove the brambles with a successful Strength ({@skill Athletics}) check against your Arcane Shot save DC. Otherwise, the brambles last for 1 minute or until you use this option again.",
                 "The poison damage and slashing damage both increase to {@damage 4d6} when you reach 18th level in this class."
             ]
         },
@@ -865,7 +865,7 @@
                 "BC"
             ],
             "entries": [
-                "As a bonus action, you attempt to bind a Large or smaller creature you can see within 30 feet of you, which must make a Strength {@variantrule Saving Throw|Ishiir}. On a failure, the cursed creature's speed is reduced to 0 and it can't use reactions until the end of your next turn.",
+                "As a bonus action, you attempt to bind a Large or smaller creature you can see within 30 feet of you, which must make a Strength {@variantrule Saving Throw|Ishiir}. On a failure, the cursed creature's {@variantrule Speed|Ishiir} is reduced to 0 and it can't use reactions until the end of your next turn.",
                 {
                     "name": "Amplify",
                     "type": "item",
@@ -1032,7 +1032,7 @@
                     "name": "Amplify",
                     "type": "item",
                     "entries": [
-                        "You can first cause the cursed creature to move up to half its speed, and you grant a bonus to its {@variantrule Attack Roll|Ishiir} equal to your Hemocraft modifier (minimum of +1)."
+                        "You can first cause the cursed creature to move up to half its {@variantrule Speed|Ishiir}, and you grant a bonus to its {@variantrule Attack Roll|Ishiir} equal to your Hemocraft modifier (minimum of +1)."
                     ]
                 }
             ]
@@ -1704,7 +1704,7 @@
             ],
             "entries": [
                 "Increase one ability score of your Eidolon from among Strength, Dexterity, or Constitution by 1.",
-                "Your Eidolon gains a swimming speed if it doesn't already have one, equal to its highest speed and it can breathe underwater."
+                "Your Eidolon gains a {@variantrule Swim Speed|Ishiir} if it doesn't already have one, equal to its highest {@variantrule Speed|Ishiir} and it can breathe underwater."
             ]
         },
         {
@@ -1975,7 +1975,7 @@
             ],
             "entries": [
                 "Increase your Eidolon's Strength, Dexterity, or Constitution by 1, up to a maximum of 20.",
-                "Your Eidolon's speed increases by 10 feet."
+                "Your Eidolon's {@variantrule Speed|Ishiir} increases by 10 feet."
             ]
         },
         {
@@ -2126,7 +2126,7 @@
             ],
             "entries": [
                 "Increase your Eidolon's Strength or Dexterity by 1, up to a maximum of 20.",
-                "Once per turn, as part of a melee weapon attack, your Eidolon can move up to its speed in a straight line towards a target of your choice."
+                "Once per turn, as part of a melee weapon attack, your Eidolon can move up to its {@variantrule Speed|Ishiir} in a straight line towards a target of your choice."
             ]
         },
         {
@@ -2203,7 +2203,7 @@
                 }
             ],
             "entries": [
-                "Your Eidolon projects a magical illusion that blurs its appearance to the naked eye and makes it difficult to tell its actual position and movements, causing {@variantrule Attack Roll|Ishiir}s against it to have disadvantage. If it takes damage, this trait is disrupted until the start of its next turn. This trait is also disrupted while the Eidolon is {@condition Incapacitated|Ishiir} or has a speed of 0."
+                "Your Eidolon projects a magical illusion that blurs its appearance to the naked eye and makes it difficult to tell its actual position and movements, causing {@variantrule Attack Roll|Ishiir}s against it to have disadvantage. If it takes damage, this trait is disrupted until the start of its next turn. This trait is also disrupted while the Eidolon is {@condition Incapacitated|Ishiir} or has a {@variantrule Speed|Ishiir} of 0."
             ]
         },
         {
@@ -2258,7 +2258,7 @@
             ],
             "entries": [
                 "Increase one ability score of your Eidolon from among Strength, Dexterity, or Constitution by 1.",
-                "Your Eidolon gains a climbing speed equal to its walking speed and a burrowing speed equal to half its walking speed.",
+                "Your Eidolon gains a {@variantrule Climb Speed|Ishiir} equal to its {@variantrule Speed|Ishiir} and a {@variantrule Burrow Speed|Ishiir} equal to half its {@variantrule Speed|Ishiir}.",
                 "Additionally, the {@sense darkvision|PHB} range of your Eidolon increases to 120 feet."
             ]
         },
@@ -2352,7 +2352,7 @@
                 "EF"
             ],
             "entries": [
-                "Your Eidolon gains a flying speed if it doesn't already have one, equal to its highest speed."
+                "Your Eidolon gains a {@variantrule Fly Speed|Ishiir} if it doesn't already have one, equal to its highest {@variantrule Speed|Ishiir}."
             ]
         },
         {
@@ -2706,7 +2706,7 @@
                 }
             ],
             "entries": [
-                "The reach of your pact weapon increases by 5 ft. Once per turn, when you hit a creature with your pact weapon, you can force it to make an Intelligence {@variantrule Saving Throw|Ishiir}. The DC equals 8 + proficiency + your spellcasting ability + the weapon's enhancement bonus. On a failed save, the target's speed is reduced to 0 and it cannot take reactions until the start of your next turn."
+                "The reach of your pact weapon increases by 5 ft. Once per turn, when you hit a creature with your pact weapon, you can force it to make an Intelligence {@variantrule Saving Throw|Ishiir}. The DC equals 8 + proficiency + your spellcasting ability + the weapon's enhancement bonus. On a failed save, the target's {@variantrule Speed|Ishiir} is reduced to 0 and it cannot take reactions until the start of your next turn."
             ]
         },
         {
@@ -2833,7 +2833,7 @@
                 }
             ],
             "entries": [
-                "You grow a pair of dragon wings and gain a flying speed equal to your walking speed. Any armor and clothing you want to don must accomodate them."
+                "You grow a pair of dragon wings and gain a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. Any armor and clothing you want to don must accomodate them."
             ]
         },
         {
@@ -3086,7 +3086,7 @@
                 }
             ],
             "entries": [
-                "You can breathe underwater, and you gain a swimming speed equal to your walking speed.",
+                "You can breathe underwater, and you gain a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}.",
                 "You can also cast {@spell water breathing|Ishiir} once without expending a spell slot. You regain the ability to do so when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -3204,7 +3204,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "The familiar gains either a flying speed or a swimming speed (your choice) of 40 feet.",
+                        "The familiar gains either a {@variantrule Fly Speed|Ishiir} or a {@variantrule Swim Speed|Ishiir} (your choice) of 40 feet.",
                         "The familiar's weapon attacks are considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks.",
                         "If the familiar forces a creature to make a {@variantrule Saving Throw|Ishiir}, it uses your spell save DC.",
                         "When the familiar takes damage, you can use your reaction to grant it resistance against that damage.",
@@ -3253,7 +3253,7 @@
                 }
             ],
             "entries": [
-                "Once on each of your turns when you hit a creature with your {@spell eldritch blast|Ishiir}, you can reduce that creature's speed by 10 feet until the end of your next turn."
+                "Once on each of your turns when you hit a creature with your {@spell eldritch blast|Ishiir}, you can reduce that creature's {@variantrule Speed|Ishiir} by 10 feet until the end of your next turn."
             ]
         },
         {
@@ -3715,7 +3715,7 @@
                 }
             ],
             "entries": [
-                "The Sea Twins rule seas in the Feywild. Their gift allows you to travel through water with ease. You can breathe underwater, and you gain a swimming speed equal to your walking speed.",
+                "The Sea Twins rule seas in the Feywild. Their gift allows you to travel through water with ease. You can breathe underwater, and you gain a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}.",
                 "You can also cast {@spell water breathing|Ishiir} using a warlock spell slot. Once you cast it using this invocation, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -3954,7 +3954,7 @@
                 }
             ],
             "entries": [
-                "As a reaction when you take damage, you can entomb yourself in ice, which melts away at the end of your next turn. You gain 10 temporary hit points per warlock level, which take as much of the triggering damage as possible. Immediately after you take the damage, you gain vulnerability to fire damage, your speed is reduced to 0, and you are {@condition Incapacitated|Ishiir}. These effects, including any remaining temporary hit points, all end when the ice melts.",
+                "As a reaction when you take damage, you can entomb yourself in ice, which melts away at the end of your next turn. You gain 10 temporary hit points per warlock level, which take as much of the triggering damage as possible. Immediately after you take the damage, you gain vulnerability to fire damage, your {@variantrule Speed|Ishiir} is reduced to 0, and you are {@condition Incapacitated|Ishiir}. These effects, including any remaining temporary hit points, all end when the ice melts.",
                 "Once you use this invocation, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -5260,7 +5260,7 @@
                 "FS:R"
             ],
             "entries": [
-                "As long as you are not wearing heavy armor or using a shield, you have a swimming speed and a climbing speed equal to your normal speed, and you gain a +1 bonus to AC."
+                "As long as you are not wearing heavy armor or using a shield, you have a {@variantrule Swim Speed|Ishiir} and a {@variantrule Climb Speed|Ishiir} equal to your normal {@variantrule Speed|Ishiir}, and you gain a +1 bonus to AC."
             ]
         },
         {
@@ -5350,7 +5350,7 @@
                 }
             ],
             "entries": [
-                "You have a flying speed equal to your walking speed for 1 hour. However, you have disadvantage on Strength checks and Dexterity checks during this time."
+                "You have a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} for 1 hour. However, you have disadvantage on Strength checks and Dexterity checks during this time."
             ]
         },
         {
@@ -5383,7 +5383,7 @@
                 "MF"
             ],
             "entries": [
-                "You can breathe underwater and gain a {@variantrule Swim Speed|Ishiir} equal to your walking speed, but you have disadvantage on initiative rolls."
+                "You can breathe underwater and gain a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}, but you have disadvantage on initiative rolls."
             ]
         },
         {
@@ -5547,7 +5547,7 @@
                 "MF"
             ],
             "entries": [
-                "Your speed increases by 10 feet. However, you have disadvantage on Intelligence checks. At 15th level, your speed increases by an additional 5 feet."
+                "Your {@variantrule Speed|Ishiir} increases by 10 feet. However, you have disadvantage on Intelligence checks. At 15th level, your {@variantrule Speed|Ishiir} increases by an additional 5 feet."
             ]
         },
         {
@@ -5563,7 +5563,7 @@
                 }
             ],
             "entries": [
-                "For 1 hour, at the start of each of your turns when you have at least 1 hit point, you regain hit points equal to your proficiency bonus. However, your speed is reduced by 10 feet during this time."
+                "For 1 hour, at the start of each of your turns when you have at least 1 hit point, you regain hit points equal to your proficiency bonus. However, your {@variantrule Speed|Ishiir} is reduced by 10 feet during this time."
             ]
         },
         {
@@ -5958,7 +5958,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack."
+                "When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its {@variantrule Speed|Ishiir} without provoking opportunity attacks from the target of your attack."
             ]
         },
         {
@@ -6414,7 +6414,7 @@
             ],
             "entries": [
                 "This rune's magic channels the judiciousness associated with stone giants. While wearing or carrying an object inscribed with this rune, you have advantage on Wisdom ({@skill Insight}) checks, and you have {@sense darkvision} out to a range of 120 feet.",
-                "In addition, when a creature you can see ends its turn within 30 feet of you, you can use your reaction to invoke the rune and force the creature to make a Wisdom {@variantrule Saving Throw|Ishiir}. Unless the save succeeds, the creature is {@condition Charmed|Ishiir} by you for 1 minute. While {@condition Charmed|Ishiir} in this way, the creature has a speed of 0 and is {@condition Incapacitated|Ishiir}, descending into a dreamy stupor. The creature repeats the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on a success. Once you invoke this rune, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
+                "In addition, when a creature you can see ends its turn within 30 feet of you, you can use your reaction to invoke the rune and force the creature to make a Wisdom {@variantrule Saving Throw|Ishiir}. Unless the save succeeds, the creature is {@condition Charmed|Ishiir} by you for 1 minute. While {@condition Charmed|Ishiir} in this way, the creature has a {@variantrule Speed|Ishiir} of 0 and is {@condition Incapacitated|Ishiir}, descending into a dreamy stupor. The creature repeats the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on a success. Once you invoke this rune, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -6528,7 +6528,7 @@
                 "WM"
             ],
             "entries": [
-                "Once per turn when you hit a creature with this weapon, you can force it to make a CON {@variantrule Saving Throw|Ishiir} or halve its speed until beginning of your next turn."
+                "Once per turn when you hit a creature with this weapon, you can force it to make a CON {@variantrule Saving Throw|Ishiir} or halve its {@variantrule Speed|Ishiir} until beginning of your next turn."
             ]
         }
     ]

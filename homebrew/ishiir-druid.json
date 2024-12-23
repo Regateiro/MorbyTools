@@ -853,7 +853,7 @@
                             "entries": [
                                 "The Wild Shape feature in the player's handbook lets you transform into a beast that you've seen. That rule gives you a tremendous amount of flexibility, making it easy to amass an array of beast form options for yourself, but you must abide by the limitations in the Beast Shapes table in that book.",
                                 "When you gain Wild Shape as a 2nd-level druid, you might wonder which beasts you've already seen. The following tables organize beasts from the monster manual according to the beasts' most likely environments. Consider the environment your druid grew up in, then consult the appropriate table for a list of animals that your druid has probably seen by 2nd level.",
-                                "These tables can also help you and your DM determine which animals you might see on your travels. In addition, the tables include each beast's challenge rating and note whether a beast has a flying or swimming speed. This information will help you determine whether you qualify to assume that beast's form.",
+                                "These tables can also help you and your DM determine which animals you might see on your travels. In addition, the tables include each beast's challenge rating and note whether a beast has a {@variantrule Swim Speed|Ishiir} or {@variantrule Swim Speed|Ishiir}. This information will help you determine whether you qualify to assume that beast's form.",
                                 "The tables include all the individual beasts that are eligible for Wild Shape (up to a challenge rating of 1) or the Circle Forms feature of the Circle of the Moon (up to a challenge rating of 6).",
                                 {
                                     "type": "table",
@@ -3543,7 +3543,7 @@
                             "type": "item",
                             "name": "Titanic Stride",
                             "entries": [
-                                "The companion's walking speed increases by a number of feet equal to 5 times the level of the spell slot expended."
+                                "The companion's {@variantrule Speed|Ishiir} increases by a number of feet equal to 5 times the level of the spell slot expended."
                             ]
                         }
                     ]
@@ -3563,7 +3563,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "The primeval companion can grow to Large size if you so choose, and when you summon it, you can grant it either a climbing, swimming, flying or borrowing speed equal to its walking speed.",
+                "The primeval companion can grow to Large size if you so choose, and when you summon it, you can grant it either a {@variantrule Climb Speed|Ishiir}, {@variantrule Swim Speed|Ishiir}, {@variantrule Fly Speed|Ishiir} or {@variantrule Burrow Speed|Ishiir} equal to its {@variantrule Speed|Ishiir}.",
                 "In turn, the primeval companion lends you some of its terrifying might. Once per turn while your primeval companion is summoned, when you hit a creature with an attack or deal damage to a creature you can see with a spell you cast, you can force that creature to make a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC; on a failure, the creature is {@condition Frightened|Ishiir} of you until the end of your next turn."
             ]
         },
@@ -3676,7 +3676,7 @@
             "header": 2,
             "entries": [
                 "The size of the Emanation created by your Wrath of the Sea increases to 10 feet.",
-                "In addition, you gain a {@variantrule Swim Speed|Ishiir} equal to your Speed."
+                "In addition, you gain a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}."
             ]
         },
         {
@@ -3698,7 +3698,7 @@
                         {
                             "type": "item",
                             "name": "Flight.",
-                            "entry": "You gain a {@variantrule Fly Speed|Ishiir} equal to your Speed."
+                            "entry": "You gain a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}."
                         },
                         {
                             "type": "item",
@@ -4171,7 +4171,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "The constellations of your Starry Form improve. The {@dice 1d8} of the Archer and the Chalice becomes {@dice 2d8}, and while the Dragon is active, you have a flying speed of 20 feet and can hover.",
+                "The constellations of your Starry Form improve. The {@dice 1d8} of the Archer and the Chalice becomes {@dice 2d8}, and while the Dragon is active, you have a {@variantrule Fly Speed|Ishiir} of 20 feet and can hover.",
                 "Moreover, at the start of each of your turns while in your Starry Form, you can change which constellation glimmers on your body."
             ]
         },
