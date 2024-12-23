@@ -941,7 +941,7 @@
             "entries": [
                 "You can channel divine energy directly from the Outer Planes to fuel magical effects. You start with three such effects: Divine Spark, Turn Undead and Harness Divine Power, each of which is described below. Each time you use this class's Channel Divinity, choose which Channel Divinity effect from this class to create. You gain additional effect options at higher Cleric levels.",
                 "You can use this class's Channel Divinity twice. You regain one of its expended uses when you finish a {@variantrule Short Rest|Ishiir}, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}. You gain additional uses when you reach certain Cleric levels, as shown in the Channel Divinity column of the Cleric Features table.",
-                "If a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting feature.",
+                "If a Channel Divinity effect requires a {@variantrule Saving Throw|Ishiir}, the DC equals the spell save DC from this class's Spellcasting feature.",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
@@ -949,12 +949,12 @@
 						{
 							"type": "item",
 							"name": "Divine Spark.",
-							"entry": "As a {@action Magic|Ishiir} action, you point your Holy Symbol at another creature you can see within 30 feet of yourself and focus divine energy at it. Roll {@dice 2d8} and add your Cleric level and your Wisdom modifier. You either restore Hit Points to the creature equal to that total or force the creature to make a Constitution saving throw. On a failed save, the creature takes Necrotic or Radiant damage (your choice) equal to that total. On a successful save, the creature takes half as much damage (round down)."
+							"entry": "As a {@action Magic|Ishiir} action, you point your Holy Symbol at another creature you can see within 30 feet of yourself and focus divine energy at it. Roll {@dice 2d8} and add your Cleric level and your Wisdom modifier. You either restore Hit Points to the creature equal to that total or force the creature to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, the creature takes Necrotic or Radiant damage (your choice) equal to that total. On a successful save, the creature takes half as much damage (round down)."
 						},
 						{
 							"type": "item",
 							"name": "Turn Undead.",
-							"entry": "As a {@action Magic|Ishiir} action, you present your Holy Symbol and censure Undead creatures. Each Undead of your choice within 30 feet of you must make a Wisdom saving throw. If the creature fails its save, it has the Frightened and Incapacitated conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die."
+							"entry": "As a {@action Magic|Ishiir} action, you present your Holy Symbol and censure Undead creatures. Each Undead of your choice within 30 feet of you must make a Wisdom {@variantrule Saving Throw|Ishiir}. If the creature fails its save, it has the Frightened and Incapacitated conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die."
 						},
 						{
 							"type": "item",
@@ -1033,7 +1033,7 @@
             "classSource": "Ishiir",
             "level": 5,
             "entries": [
-                "Whenever you use Turn Undead, you can roll a number of d8s equal to your Wisdom modifier (minimum of {@dice 1d8}) and add the rolls together. Each Undead that fails its saving throw against that use of Turn Undead takes Radiant damage equal to the roll's total. This damage doesn't end the turn effect."
+                "Whenever you use Turn Undead, you can roll a number of d8s equal to your Wisdom modifier (minimum of {@dice 1d8}) and add the rolls together. Each Undead that fails its {@variantrule Saving Throw|Ishiir} against that use of Turn Undead takes Radiant damage equal to the roll's total. This damage doesn't end the turn effect."
             ]
         },
         {
@@ -1067,7 +1067,7 @@
 						{
 							"type": "item",
 							"name": "Divine Strike.",
-							"entry": "Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra {damage 1d8} Necrotic or Radiant damage (your choice). At your DM's discretion, you can replace one of these options with a different damage type appropriate for your cleric subclass."
+							"entry": "Once on each of your turns when you hit a creature with an {@variantrule Attack Roll|Ishiir} using a weapon, you can cause the target to take an extra {damage 1d8} Necrotic or Radiant damage (your choice). At your DM's discretion, you can replace one of these options with a different damage type appropriate for your cleric subclass."
 						},
 						{
 							"type": "item",
@@ -2406,7 +2406,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be {@condition Blinded|Ishiir} is immune to this feature.",
+                "You can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the {@variantrule Attack Roll|Ishiir}, causing light to flare before the attacker before it hits or misses. An attacker that can't be {@condition Blinded|Ishiir} is immune to this feature.",
                 "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -2548,7 +2548,7 @@
                 "name": "Channel Divinity"
             },
             "entries": [
-                "As a {@action Magic|Ishiir} action, you present your Holy Symbol and censure extraplanar creatures. Each celestial, elemental, fey, and fiend of your choice within 30 feet of you must make a Wisdom saving throw. If the creature fails its save, it has the {@condition Frightened|Ishiir} and {@condition Incapacitated|Ishiir} conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die."
+                "As a {@action Magic|Ishiir} action, you present your Holy Symbol and censure extraplanar creatures. Each celestial, elemental, fey, and fiend of your choice within 30 feet of you must make a Wisdom {@variantrule Saving Throw|Ishiir}. If the creature fails its save, it has the {@condition Frightened|Ishiir} and {@condition Incapacitated|Ishiir} conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die."
             ]
         },
         {
@@ -2676,7 +2676,7 @@
             "header": 1,
             "entries": [
                 "You gain the ability to rebuke those who lash out at your in violence.",
-                "As a reaction when a creature you can see within 30 feet of you inflicts damage, you force that creature to make a Wisdom save. On a failed saving throw, it takes psychic damage equal to the damage dealt. On a successful save, it takes half that damage.",
+                "As a reaction when a creature you can see within 30 feet of you inflicts damage, you force that creature to make a Wisdom save. On a failed {@variantrule Saving Throw|Ishiir}, it takes psychic damage equal to the damage dealt. On a successful save, it takes half that damage.",
                 "If the creature made multiple attacks, select one attack to determine the damage dealt. If the creature used one or more effects that damaged multiple targets, choose the damage take by one of those targets from one of the effects."
             ]
         },
@@ -2720,7 +2720,7 @@
             "header": 2,
             "entries": [
                 "You become an avatar of unearthly beauty. Your enemies attack with uncertainty, fearful of damaging the wondrous being they behold, while your magic draws upon your presence to augment its power.",
-                "As a reaction, you can impose a penalty on a creature's attacks against you or on its saving throws against your spells and abilities. This benefit lasts until the end of the current turn The penalty equals your Charisma modifier (minimum 1)."
+                "As a reaction, you can impose a penalty on a creature's attacks against you or on its {@variantrule Saving Throw|Ishiir}s against your spells and abilities. This benefit lasts until the end of the current turn The penalty equals your Charisma modifier (minimum 1)."
             ]
         },
         {
@@ -2803,7 +2803,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You can invoke the power of darkness to punish anyone fool enough to harm you. As a reaction when a creature you can see damages you, that creature has to make a CON saving throw or become {@condition Blinded|Ishiir} until the end of your next turn.",
+                "You can invoke the power of darkness to punish anyone fool enough to harm you. As a reaction when a creature you can see damages you, that creature has to make a CON {@variantrule Saving Throw|Ishiir} or become {@condition Blinded|Ishiir} until the end of your next turn.",
                 "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain one use when you finish a {@variantrule Short Rest|Ishiir} and all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -2833,7 +2833,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Your Shield of Ineffable Darkness becomes more powerful. When you use it, you can select up to three additional, hostile creatures you can see within 30 feet of you. They have to make a CON saving throw or become {@condition Blinded|Ishiir} until the end of your next turn."
+                "Your Shield of Ineffable Darkness becomes more powerful. When you use it, you can select up to three additional, hostile creatures you can see within 30 feet of you. They have to make a CON {@variantrule Saving Throw|Ishiir} or become {@condition Blinded|Ishiir} until the end of your next turn."
             ]
         },
         {
@@ -3041,7 +3041,7 @@
             "header": 2,
             "entries": [
                 "You can use your Channel Divinity to channel destructive energy.",
-                "As an action, you touch a creature or a an unattended object within reach. A creature must make a Constitution saving throw, taking 5 times your cleric level force damage on a failed saving throw and half as much on a successful one. An unattended object takes 5 times your cleric level force damage."
+                "As an action, you touch a creature or a an unattended object within reach. A creature must make a Constitution {@variantrule Saving Throw|Ishiir}, taking 5 times your cleric level force damage on a failed {@variantrule Saving Throw|Ishiir} and half as much on a successful one. An unattended object takes 5 times your cleric level force damage."
             ]
         },
         {
@@ -3171,7 +3171,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You can temporarily tie your fate to others. As an action, you can touch one object or creature and magically tie a strand of fate from yourself to it for 1 hour or until you use this feature again. An unwilling creature must succeed on a Wisdom saving throw against your spell save DC to resist this effect. While the target is bound to you and on the same plane of existence as you, you can sense the direction to the target's location, and you know the direction of its movement if it is in motion.",
+                "You can temporarily tie your fate to others. As an action, you can touch one object or creature and magically tie a strand of fate from yourself to it for 1 hour or until you use this feature again. An unwilling creature must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC to resist this effect. While the target is bound to you and on the same plane of existence as you, you can sense the direction to the target's location, and you know the direction of its movement if it is in motion.",
                 "In addition, once per turn when you cast a spell using a spell slot to deal damage or restore hit points to the target, roll a {@dice d6}, and the target receives extra damage or healing, respectively, equal to the number rolled.",
                 "You can use this feature's action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
@@ -3187,7 +3187,7 @@
             "level": 3,
             "header": 2,
             "entries": [
-                "You can use your Channel Divinity to see and manipulate the strands of fate that weave around other individuals. As a bonus action, you can enter this state for up to 1 minute or until you lose your {@condition Concentration|Ishiir} (as if you were concentrating on a spell). For the duration, whenever another creature you can see makes an attack roll or an ability check, you can use a reaction to give the roll advantage or disadvantage (your choice)."
+                "You can use your Channel Divinity to see and manipulate the strands of fate that weave around other individuals. As a bonus action, you can enter this state for up to 1 minute or until you lose your {@condition Concentration|Ishiir} (as if you were concentrating on a spell). For the duration, whenever another creature you can see makes an {@variantrule Attack Roll|Ishiir} or an {@variantrule Ability Check|Ishiir}, you can use a reaction to give the roll advantage or disadvantage (your choice)."
             ]
         },
         {
@@ -3205,8 +3205,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "The next time you make an attack roll against the target, roll a {@dice d6} and add the number rolled to the total.",
-                        "The next time the target must make a saving throw against a spell you cast, the target must roll a {@dice d6} and subtract the number rolled from the saving throw."
+                        "The next time you make an {@variantrule Attack Roll|Ishiir} against the target, roll a {@dice d6} and add the number rolled to the total.",
+                        "The next time the target must make a {@variantrule Saving Throw|Ishiir} against a spell you cast, the target must roll a {@dice d6} and subtract the number rolled from the {@variantrule Saving Throw|Ishiir}."
                     ]
                 },
                 "You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
@@ -3569,7 +3569,7 @@
             "header": 1,
             "entries": [
                 "You learn two languages of your choice. You also become proficient in your choice of two of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}.",
-                "Your proficiency bonus is doubled for any ability check you make that uses either of those skills."
+                "Your proficiency bonus is doubled for any {@variantrule Ability Check|Ishiir} you make that uses either of those skills."
             ]
         },
         {
@@ -3604,9 +3604,9 @@
             },
             "entries": [
                 "You can use your Channel Divinity to read a creature's thoughts. You can then use your access to the creature's mind to command it.",
-                "As an action, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you can't use this feature on it again until you finish a {@variantrule Long Rest|Ishiir}.",
+                "As an action, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom {@variantrule Saving Throw|Ishiir}. If the creature succeeds on the {@variantrule Saving Throw|Ishiir}, you can't use this feature on it again until you finish a {@variantrule Long Rest|Ishiir}.",
                 "If the creature fails its save, you can read its surface thoughts (those foremost in its mind, reflecting its current emotions and what it is actively thinking about) when it is within 60 feet of you. This effect lasts for 1 minute.",
-                "During that time, you can use your action to end this effect and cast the {@spell suggestion|Ishiir} spell on the creature without expending a spell slot. The target automatically fails its saving throw against the spell."
+                "During that time, you can use your action to end this effect and cast the {@spell suggestion|Ishiir} spell on the creature without expending a spell slot. The target automatically fails its {@variantrule Saving Throw|Ishiir} against the spell."
             ]
         },
         {
@@ -3852,7 +3852,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "When a creature that you can see within 30 feet of yourself makes an attack roll, you can take a Reaction to impose Disadvantage on the attack roll, causing light to flare before it hits or misses.",
+                "When a creature that you can see within 30 feet of yourself makes an {@variantrule Attack Roll|Ishiir}, you can take a Reaction to impose Disadvantage on the {@variantrule Attack Roll|Ishiir}, causing light to flare before it hits or misses.",
                 "You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -3871,7 +3871,7 @@
             },
             "entries": [
                 "You can use your Channel Divinity to harness sunlight, banishing darkness and dealing radiant damage to your foes.",
-                "As an action, you present your holy symbol, and any magical darkness within 30 feet of you is dispelled. Additionally, each hostile creature within 30 feet of you must make a Constitution saving throw. A creature takes radiant damage equal to {@dice 2d10} + your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected."
+                "As an action, you present your holy symbol, and any magical darkness within 30 feet of you is dispelled. Additionally, each hostile creature within 30 feet of you must make a Constitution {@variantrule Saving Throw|Ishiir}. A creature takes radiant damage equal to {@dice 2d10} + your cleric level on a failed {@variantrule Saving Throw|Ishiir}, and half as much damage on a successful one. A creature that has total cover from you is not affected."
             ]
         },
         {
@@ -3900,7 +3900,7 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "As a {@action Magic|Ishiir} action, you cause yourself to emit an aura of sunlight that lasts for 1 minute or until you dismiss it (no action required). You emit Bright Light in a 60-foot radius and Dim Light for an additional 30 feet. Your enemies in the Bright Light have Disadvantage on saving throws against your Radiance of the Dawn and any spell that deals Fire or Radiant damage.",
+                "As a {@action Magic|Ishiir} action, you cause yourself to emit an aura of sunlight that lasts for 1 minute or until you dismiss it (no action required). You emit Bright Light in a 60-foot radius and Dim Light for an additional 30 feet. Your enemies in the Bright Light have Disadvantage on {@variantrule Saving Throw|Ishiir}s against your Radiance of the Dawn and any spell that deals Fire or Radiant damage.",
                 "You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -3993,7 +3993,7 @@
                         "You gain a bonus to your AC equal to your Wisdom modifier (minimum of +1).",
                         "Your walking speed increases by 10 feet.",
                         "You have advantage on Dexterity ({@skill Acrobatics}) checks.",
-                        "You gain a bonus to any Constitution saving throws you make to maintain {@condition Concentration|Ishiir} on a spell. The bonus equals your Wisdom modifier (minimum of +1).",
+                        "You gain a bonus to any Constitution {@variantrule Saving Throw|Ishiir}s you make to maintain {@condition Concentration|Ishiir} on a spell. The bonus equals your Wisdom modifier (minimum of +1).",
                         "If you currently have a {@spell Spiritual Weapon|Ishiir} summoned via the spell of the same name and you move on your turn, you can move your {@spell Spiritual Weapon|Ishiir} the same distance."
                     ]
                 },
@@ -4026,7 +4026,7 @@
                     "type": "entries",
                     "name": "Grace",
                     "entries": [
-                        "You add your Wisdom modifier to Dexterity saving throws and when you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+                        "You add your Wisdom modifier to Dexterity {@variantrule Saving Throw|Ishiir}s and when you are subjected to an effect that allows you to make a Dexterity {@variantrule Saving Throw|Ishiir} to take only half damage, you instead take no damage if you succeed on the {@variantrule Saving Throw|Ishiir}, and only half damage if you fail."
                     ]
                 },
                 {
@@ -4064,7 +4064,7 @@
             "header": 2,
             "entries": [
                 "You have learned to fight with your {@spell Spiritual Weapon|Ishiir} like a seamless unit, using it to attack as well as defend.",
-                "When a creature you can see hits you with an attack roll while your {@spell Spiritual Weapon|Ishiir} is within 5 ft of you, you can use your reaction to gain a +5 bonus to AC against that attack, potentially causing it to miss you.",
+                "When a creature you can see hits you with an {@variantrule Attack Roll|Ishiir} while your {@spell Spiritual Weapon|Ishiir} is within 5 ft of you, you can use your reaction to gain a +5 bonus to AC against that attack, potentially causing it to miss you.",
                 "If the attack misses, you can make one weapon attack or melee spell attack with your {@spell Spiritual Weapon|Ishiir} against the attacker as part of this reaction."
             ]
         },
@@ -4150,7 +4150,7 @@
             },
             "entries": [
                 "You can use your Channel Divinity to charm animals and plants.",
-                "As an action, you present your holy symbol and invoke the name of your deity. Each beast or plant creature that can see you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is {@condition Charmed|Ishiir} by you for 1 minute or until it takes damage. While it is {@condition Charmed|Ishiir} by you, it is friendly to you and other creatures you designate."
+                "As an action, you present your holy symbol and invoke the name of your deity. Each beast or plant creature that can see you within 30 feet of you must make a Wisdom {@variantrule Saving Throw|Ishiir}. If the creature fails its {@variantrule Saving Throw|Ishiir}, it is {@condition Charmed|Ishiir} by you for 1 minute or until it takes damage. While it is {@condition Charmed|Ishiir} by you, it is friendly to you and other creatures you designate."
             ]
         },
         {
@@ -4283,7 +4283,7 @@
             },
             "entries": [
                 "You can use your Channel Divinity to exert an intimidating presence over others.",
-                "As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 30 feet of you must succeed on a Wisdom saving throw or be {@condition Charmed|Ishiir} by you until the end of your next turn or until the {@condition Charmed|Ishiir} creature takes any damage. You can also cause any of the {@condition Charmed|Ishiir} creatures to drop what they are holding when they fail the saving throw."
+                "As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 30 feet of you must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or be {@condition Charmed|Ishiir} by you until the end of your next turn or until the {@condition Charmed|Ishiir} creature takes any damage. You can also cause any of the {@condition Charmed|Ishiir} creatures to drop what they are holding when they fail the {@variantrule Saving Throw|Ishiir}."
             ]
         },
         {
@@ -4635,7 +4635,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 30 feet of you (this can include yourself) equal to your proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 30 feet of another, the creature can roll a d4 and add the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the d4 no more than once per turn.",
+                "You can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 30 feet of you (this can include yourself) equal to your proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 30 feet of another, the creature can roll a d4 and add the number rolled to an {@variantrule Attack Roll|Ishiir}, an {@variantrule Ability Check|Ishiir}, or a {@variantrule Saving Throw|Ishiir} it makes. Each creature can add the d4 no more than once per turn.",
                 "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}. You can also spend a level 2+ spell slot to regain a use."
             ]
         },
@@ -4653,7 +4653,7 @@
                 "name": "Channel Divinity"
             },
             "entries": [
-                "When a creature you can see within 30 feet of you fails a saving throw, you can use your Reaction to choose a different creature you can see within 30 feet of it or you and that isn't already targeted by the same effect to make the same saving throw as well. The second creature is not subject to any effects from the saving throw and the first creature can use its roll instead of its own if it is higher."
+                "When a creature you can see within 30 feet of you fails a {@variantrule Saving Throw|Ishiir}, you can use your Reaction to choose a different creature you can see within 30 feet of it or you and that isn't already targeted by the same effect to make the same {@variantrule Saving Throw|Ishiir} as well. The second creature is not subject to any effects from the {@variantrule Saving Throw|Ishiir} and the first creature can use its roll instead of its own if it is higher."
             ]
         },
         {
@@ -4765,7 +4765,7 @@
                 "name": "Channel Divinity"
             },
             "entries": [
-                "You can use your Channel Divinity to enhance your physical might. When you fail an attack roll, ability check, or saving throw using Strength, you can use your Channel Divinity to gain a +10 bonus to the roll. Alternatively, when a creature within 30 feet of you fails an attack roll, ability check, or saving throw using Strength, you can use your reaction to grant that creature a +10 bonus to the roll, using your Channel Divinity. You make this choice after you see the roll, but before the DM says whether the roll succeeds or fail."
+                "You can use your Channel Divinity to enhance your physical might. When you fail an {@variantrule Attack Roll|Ishiir}, {@variantrule Ability Check|Ishiir}, or {@variantrule Saving Throw|Ishiir} using Strength, you can use your Channel Divinity to gain a +10 bonus to the roll. Alternatively, when a creature within 30 feet of you fails an {@variantrule Attack Roll|Ishiir}, {@variantrule Ability Check|Ishiir}, or {@variantrule Saving Throw|Ishiir} using Strength, you can use your reaction to grant that creature a +10 bonus to the roll, using your Channel Divinity. You make this choice after you see the roll, but before the DM says whether the roll succeeds or fail."
             ]
         },
         {
@@ -4793,7 +4793,7 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "You count as one size larger for the purpose of grappling, shoving, and carrying. Additionally, when you make a Strength check, Strength saving throw, or Constitution saving throw, you add your Wisdom modifier to it."
+                "You count as one size larger for the purpose of grappling, shoving, and carrying. Additionally, when you make a Strength check, Strength {@variantrule Saving Throw|Ishiir}, or Constitution {@variantrule Saving Throw|Ishiir}, you add your Wisdom modifier to it."
             ]
         },
         {
@@ -4859,7 +4859,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You can thunderously rebuke attackers. When a creature within 10 feet of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a Dexterity saving throw. The creature takes {@damage 1d8} x your proficiency bonus lightning or thunder damage (your choice) on a failed saving throw, and half as much damage on a successful one.",
+                "You can thunderously rebuke attackers. When a creature within 10 feet of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a Dexterity {@variantrule Saving Throw|Ishiir}. The creature takes {@damage 1d8} x your proficiency bonus lightning or thunder damage (your choice) on a failed {@variantrule Saving Throw|Ishiir}, and half as much damage on a successful one.",
                 "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -5003,7 +5003,7 @@
 						{
 							"type": "item",
 							"name": "Distract.",
-							"entry": "When both you and your illusion are within 5 feet of a creature that can see the illusion, you have Advantage on attack rolls against that creature, given how distracting the illusion is to the target."
+							"entry": "When both you and your illusion are within 5 feet of a creature that can see the illusion, you have Advantage on {@variantrule Attack Roll|Ishiir}s against that creature, given how distracting the illusion is to the target."
 						},
 						{
 							"type": "item",
@@ -5050,7 +5050,7 @@
 						{
 							"type": "item",
 							"name": "Shared Distraction.",
-							"entry": "When you and your allies make attack rolls against a creature within 5 feet of the illusion, the attack rolls have Advantage."
+							"entry": "When you and your allies make {@variantrule Attack Roll|Ishiir}s against a creature within 5 feet of the illusion, the {@variantrule Attack Roll|Ishiir}s have Advantage."
 						},
 						{
 							"type": "item",
@@ -5286,7 +5286,7 @@
                 "name": "Channel Divinity"
             },
             "entries": [
-                "When you or a creature within 30 feet of you misses with an attack roll, you can expend one use of your Channel Divinity and give that roll a +10 bonus, potentially causing it to hit. When you use this feature to benefit another creature's attack roll, you must take a Reaction to do so."
+                "When you or a creature within 30 feet of you misses with an {@variantrule Attack Roll|Ishiir}, you can expend one use of your Channel Divinity and give that roll a +10 bonus, potentially causing it to hit. When you use this feature to benefit another creature's {@variantrule Attack Roll|Ishiir}, you must take a Reaction to do so."
             ]
         },
         {
@@ -5416,7 +5416,7 @@
             "entries": [
                 "You can use your Channel Divinity to summon a current of magical water to cleanse allies and wash away your foes.",
                 "The current rushes from your position in a line 15 ft wide and 30 ft long. You can end one disease or poison currently affecting any of your allies in the area of effect. If an ally is afflicted by multiple such effects, you choose which one to remove.",
-                "All hostile creatures in the area of effect have to make a STR saving throw against your spell save DC. On a failure, they are pushed 10 ft away from you in a straight line and knocked {@condition Prone|Ishiir}."
+                "All hostile creatures in the area of effect have to make a STR {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failure, they are pushed 10 ft away from you in a straight line and knocked {@condition Prone|Ishiir}."
             ]
         },
         {
@@ -5430,7 +5430,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "When one or more creatures have to make a Strength saving throw against one of your features or spells, you can use your reaction to impose disadvantage on that saving throw.",
+                "When one or more creatures have to make a Strength {@variantrule Saving Throw|Ishiir} against one of your features or spells, you can use your reaction to impose disadvantage on that {@variantrule Saving Throw|Ishiir}.",
                 "You can use this feature a number of times equal to your proficiency modifier and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -5529,8 +5529,8 @@
             },
             "entries": [
                 "You can use your Channel Divinity to inflict your enemies with a deep, biting cold that cripples their ability to fight or cast spells.",
-                "As an action, you present your holy symbol and choose a number of creatures up to equal to your proficiency you can see within 30 feet of you. Each affected creature has to make a CON saving throw. Any creature affected by your Winter's Touch class feature has disadvantage on this saving throw.",
-                "On a failure, their movement speed is halved and they have disadvantage on ability checks and attack rolls for 1 minute. If the creature attempts to cast a spell with a casting time of 1 action, roll a {@dice d20}. On an 11 or higher, the creature completes the spell as normal. On a 10 or lower, the spell is lost. At the end of their turn, they can repeat the saving throw, ending the effect on a success.",
+                "As an action, you present your holy symbol and choose a number of creatures up to equal to your proficiency you can see within 30 feet of you. Each affected creature has to make a CON {@variantrule Saving Throw|Ishiir}. Any creature affected by your Winter's Touch class feature has disadvantage on this {@variantrule Saving Throw|Ishiir}.",
+                "On a failure, their movement speed is halved and they have disadvantage on {@variantrule Ability Check|Ishiir}s and {@variantrule Attack Roll|Ishiir}s for 1 minute. If the creature attempts to cast a spell with a casting time of 1 action, roll a {@dice d20}. On an 11 or higher, the creature completes the spell as normal. On a 10 or lower, the spell is lost. At the end of their turn, they can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success.",
                 "This feature has no effect on creatures that are immune to cold damage."
             ]
         },
@@ -5707,7 +5707,7 @@
             "header": 2,
             "entries": [
                 "You can delay death for an instant to perform a final heroic act.",
-                "When you are reduced to 0 hit points by an attacker you can see, even if you would be killed outright, you can use your reaction to move up to your speed toward the attacker and make one melee weapon attack against it, as long as the movement brings it within your reach. You make this attack with advantage. If the attack hits, the creature takes an extra {@damage 5d10} fire damage and an extra {@damage 5d10} damage of the weapon's type. You then fall {@condition Unconscious|Ishiir} and begin making death saving throws as normal, or you die if the damage you took would have killed you outright.",
+                "When you are reduced to 0 hit points by an attacker you can see, even if you would be killed outright, you can use your reaction to move up to your speed toward the attacker and make one melee weapon attack against it, as long as the movement brings it within your reach. You make this attack with advantage. If the attack hits, the creature takes an extra {@damage 5d10} fire damage and an extra {@damage 5d10} damage of the weapon's type. You then fall {@condition Unconscious|Ishiir} and begin making death {@variantrule Saving Throw|Ishiir}s as normal, or you die if the damage you took would have killed you outright.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         }

@@ -1055,7 +1055,7 @@
 			"classSource": "Ishiir",
 			"level": 10,
 			"entries": [
-				"You add your Formshift Damage to all saving throws. You do not gain this bonus if you're unconscious."
+				"You add your Formshift Damage to all {@variantrule Saving Throw|Ishiir}s. You do not gain this bonus if you're unconscious."
 			]
 		},
 		{
@@ -1284,7 +1284,7 @@
                             "type": "item",
                             "name": "Death from the Dark.",
                             "entries": [
-								"Once per turn, when you hit a creature you are hidden from with your natural weapons, you deal additional damage equal to two rolls of your Natural Weapons die and the target has to make a Wisdom saving throw.",
+								"Once per turn, when you hit a creature you are hidden from with your natural weapons, you deal additional damage equal to two rolls of your Natural Weapons die and the target has to make a Wisdom {@variantrule Saving Throw|Ishiir}.",
 								"The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice). On a failure, the target is {@condition Frightened|Ishiir} until the end of your next turn."
 							]
                         },
@@ -1292,8 +1292,8 @@
                             "type": "item",
                             "name": "Evasive Flight.",
                             "entries": [
-								"When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.",
-								"If you succeed on the saving throw, you can use your reaction to move up to half your speed to an unoccupied space that you can see. If you are carrying an ally or otherwise moving them with you, they also automatically succeed on the saving throw and take no damage.",
+								"When you are subjected to an effect that allows you to make a Dexterity {@variantrule Saving Throw|Ishiir} to take only half damage, you instead take no damage if you succeed on the {@variantrule Saving Throw|Ishiir}, and only half damage if you fail.",
+								"If you succeed on the {@variantrule Saving Throw|Ishiir}, you can use your reaction to move up to half your speed to an unoccupied space that you can see. If you are carrying an ally or otherwise moving them with you, they also automatically succeed on the {@variantrule Saving Throw|Ishiir} and take no damage.",
 								"You don't benefit from this feature if you have the {@condition Incapacitated|Ishiir} condition."
 							]
                         },
@@ -1301,7 +1301,7 @@
                             "type": "item",
                             "name": "Concussive Impact.",
                             "entries": [
-								"When you use Primal Pounce and hit the target, it has to make a Constitution saving throw. The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice). On a failure, the target suffers an effect based on the distance you travelled as part of Primal Pounce.",
+								"When you use Primal Pounce and hit the target, it has to make a Constitution {@variantrule Saving Throw|Ishiir}. The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice). On a failure, the target suffers an effect based on the distance you travelled as part of Primal Pounce.",
 								{
 									"type": "list",
 									"items": [
@@ -1341,7 +1341,7 @@
 			"entries": [
 				"You adopt a feline aspect, granting you physical traits such as the vertical pupils, sharp nails, and elongated canines.",
 				"You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
-				"Additionally, once per turn when you hit a creature with your natural weapons, you can force the target to make a Constitution saving throw. On a failure, the target is {@condition Lacerated|Ishiir}. The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice). The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Creatures who cannot bleed are immune to this feature.",
+				"Additionally, once per turn when you hit a creature with your natural weapons, you can force the target to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, the target is {@condition Lacerated|Ishiir}. The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice). The target can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on itself on a success. Creatures who cannot bleed are immune to this feature.",
 				"Once you reach level 10 in this class, any {@condition Lacerated|Ishiir|laceration} inflicted with your natural weapons deals damage equal to thrice your proficiency, rather than twice."
 			]
 		},
@@ -1368,12 +1368,12 @@
 						{
 							"type": "item",
 							"name": "Swift Climber.",
-							"entry": "You gain a climb speed equal to your walking speed and when you take fall damage, you can use your reaction to decrease that damage by an amount equal to five times your Shifter level."
+							"entry": "You gain a {@variantrule Climb Speed|Ishiir} equal to your walking speed and when you take fall damage, you can use your reaction to decrease that damage by an amount equal to five times your Shifter level."
 						},
 						{
 							"type": "item",
 							"name": "Feral Pounce.",
-							"entry": "When you use Primal Pounce and your attack hits, you can force the target to make a Strength saving throw if it is no more than one size larger than you. The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice). On a failure, the target is knocked {@condition Prone|Ishiir}."
+							"entry": "When you use Primal Pounce and your attack hits, you can force the target to make a Strength {@variantrule Saving Throw|Ishiir} if it is no more than one size larger than you. The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice). On a failure, the target is knocked {@condition Prone|Ishiir}."
 						}
 					]
 				}
@@ -1397,7 +1397,7 @@
 						{
 							"type": "item",
 							"name": "Stalker's Rake.",
-							"entry": "You can {@action Hide|Ishiir} as a bonus action. If you hit a creature with your natural weapons while hidden, it has disadvantage on the next saving throw against your Clawed Aspect. Additionally, creatures {@condition Lacerated|Ishiir} by you cannot make opportunity attacks."
+							"entry": "You can {@action Hide|Ishiir} as a bonus action. If you hit a creature with your natural weapons while hidden, it has disadvantage on the next {@variantrule Saving Throw|Ishiir} against your Clawed Aspect. Additionally, creatures {@condition Lacerated|Ishiir} by you cannot make opportunity attacks."
 						},
 						{
 							"type": "item",
@@ -1407,7 +1407,7 @@
 						{
 							"type": "item",
 							"name": "Disembowel.",
-							"entry": "If you hit a {@condition Prone|Ishiir} creature with your natural weapons, you can force it to make the saving throw against your Clawed Aspect again, ignoring the usual per-turn limit. Once per turn, if the {@condition Prone|Ishiir} creature is already {@condition Lacerated|Ishiir}, it takes the damage from the condition immediately after the attack if it fails the saving throw."
+							"entry": "If you hit a {@condition Prone|Ishiir} creature with your natural weapons, you can force it to make the {@variantrule Saving Throw|Ishiir} against your Clawed Aspect again, ignoring the usual per-turn limit. Once per turn, if the {@condition Prone|Ishiir} creature is already {@condition Lacerated|Ishiir}, it takes the damage from the condition immediately after the attack if it fails the {@variantrule Saving Throw|Ishiir}."
 						}
 					]
 				}
@@ -1431,12 +1431,12 @@
 						{
 							"type": "item",
 							"name": "Spirit Claw.",
-							"entry": "When you are {@action Hide|Ishiir|hidden}, you ignore immunity to the {@condition Lacerated|Ishiir} condition and healing does not remove the {@condition Lacerated|Ishiir} condition if it was applied by you unless the target was healed back to its hitpoint maximum. Additionally, you have advantage on attack rolls against creatures that are {@condition Lacerated|Ishiir}."
+							"entry": "When you are {@action Hide|Ishiir|hidden}, you ignore immunity to the {@condition Lacerated|Ishiir} condition and healing does not remove the {@condition Lacerated|Ishiir} condition if it was applied by you unless the target was healed back to its hitpoint maximum. Additionally, you have advantage on {@variantrule Attack Roll|Ishiir}s against creatures that are {@condition Lacerated|Ishiir}."
 						},
 						{
 							"type": "item",
 							"name": "Feline Grace.",
-							"entry": "No attack roll has advantage against you and you cannot have disadvantage on Dexterity saving throws and ability checks. You lose these benefits when you are {@condition Incapacitated|Ishiir} or your speed is 0."
+							"entry": "No {@variantrule Attack Roll|Ishiir} has advantage against you and you cannot have disadvantage on Dexterity {@variantrule Saving Throw|Ishiir}s and {@variantrule Ability Check|Ishiir}s. You lose these benefits when you are {@condition Incapacitated|Ishiir} or your speed is 0."
 						},
 						{
 							"type": "item",
@@ -1460,7 +1460,7 @@
 			"entries": [
 				"You adopt a canine aspect, granting you physical traits such as the piercing eyes, sharp nails, and elongated canines.",
 				"You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
-				"Once per turn when you hit a creature with your natural weapons, you can force the target to make a Strength saving throw. On a failure, the target is knocked {@condition Prone|Ishiir}. The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice). If the target creature is already {@condition Prone|Ishiir}, you can attempt to {@condition Grappled|Ishiir|grapple} it instead, using the usual skill check instead of forcing a saving throw.",
+				"Once per turn when you hit a creature with your natural weapons, you can force the target to make a Strength {@variantrule Saving Throw|Ishiir}. On a failure, the target is knocked {@condition Prone|Ishiir}. The DC for this is 8 + your proficiency + your Strength or Dexterity modifier (your choice). If the target creature is already {@condition Prone|Ishiir}, you can attempt to {@condition Grappled|Ishiir|grapple} it instead, using the usual skill check instead of forcing a {@variantrule Saving Throw|Ishiir}.",
 				"Once you reach level 10 in this class, you count as 1 size larger for the purposes of this feature."
 			]
 		},
@@ -1482,7 +1482,7 @@
 						{
 							"type": "item",
 							"name": "Pack Tactics.",
-							"entry": "You have advantage on attack rolls with your natural weapons against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition Incapacitated|Ishiir}."
+							"entry": "You have advantage on {@variantrule Attack Roll|Ishiir}s with your natural weapons against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition Incapacitated|Ishiir}."
 						},
 						{
 							"type": "item",
@@ -1492,7 +1492,7 @@
 						{
 							"type": "item",
 							"name": "Thick Hide.",
-							"entry": "The temporary hit points gained through your Martial Mastery (Unarmored Defense) increase by half (rounded down). Additionally, you have advantage on saving throws against becoming {@condition Poisoned|Ishiir} or {@condition Lacerated|Ishiir}."
+							"entry": "The temporary hit points gained through your Martial Mastery (Unarmored Defense) increase by half (rounded down). Additionally, you have advantage on {@variantrule Saving Throw|Ishiir}s against becoming {@condition Poisoned|Ishiir} or {@condition Lacerated|Ishiir}."
 						}
 					]
 				}
@@ -1516,7 +1516,7 @@
 						{
 							"type": "item",
 							"name": "Coordinated Takedown.",
-							"entry": "When a creature within reach of your natural weapons is hit by a melee attack from one of your allies, you can use your reaction to immediately force that creature to make a Strength saving throw as per your Fanged Aspect feature."
+							"entry": "When a creature within reach of your natural weapons is hit by a melee attack from one of your allies, you can use your reaction to immediately force that creature to make a Strength {@variantrule Saving Throw|Ishiir} as per your Fanged Aspect feature."
 						},
 						{
 							"type": "item",
@@ -1526,7 +1526,7 @@
 						{
 							"type": "item",
 							"name": "Fierce Protector.",
-							"entry": "When you hit a creature with your natural weapons, it has disadvantage on attack rolls against creatures other than you until the end of your next turn while it is within your reach. If it makes an attack against a target other than you during that time, you have advantage on your next attack roll against it and add half your Shifter level to the damage roll (rounded down)."
+							"entry": "When you hit a creature with your natural weapons, it has disadvantage on {@variantrule Attack Roll|Ishiir}s against creatures other than you until the end of your next turn while it is within your reach. If it makes an attack against a target other than you during that time, you have advantage on your next {@variantrule Attack Roll|Ishiir} against it and add half your Shifter level to the damage roll (rounded down)."
 						}
 					]
 				}
@@ -1692,7 +1692,7 @@
 						{
 							"type": "item",
 							"name": "Defensive Spores.",
-							"entry": "When a creature within 10 feet of you hits or misses you with a melee attack, you can use your reaction to force it to make a Constitution saving throw against your Spell Save DC. On a failure, the target is {@condition Poisoned|Ishiir} for 1 minute. At the end of each of its turns, the target can repeat the saving throw, ending the effect on a success."
+							"entry": "When a creature within 10 feet of you hits or misses you with a melee attack, you can use your reaction to force it to make a Constitution {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, the target is {@condition Poisoned|Ishiir} for 1 minute. At the end of each of its turns, the target can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success."
 						}
 					]
 				}
@@ -1716,7 +1716,7 @@
 						{
 							"type": "item",
 							"name": "Twisting Roots.",
-							"entry": "While shifted, the ground in a 10 feet circle around you is {@quickref difficult terrain||3} for your enemies. When a creature starts its turn in that area or enters it for the first time on a turn, you can use your reaction to force it to make a Strength saving throw against your Spell Save DC. On a failure, its speed is reduced to 0 until the end of your next turn."
+							"entry": "While shifted, the ground in a 10 feet circle around you is {@quickref difficult terrain||3} for your enemies. When a creature starts its turn in that area or enters it for the first time on a turn, you can use your reaction to force it to make a Strength {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, its speed is reduced to 0 until the end of your next turn."
 						},
 						{
 							"type": "item",
@@ -1727,7 +1727,7 @@
 							"type": "item",
 							"name": "Addling Spores.",
 							"entries": [
-								"As an action, you launch a cloud of befuddling spores at a location within 30 feet of you. Each creature within a 10 feet radius sphere around that point has to make a Constitution a saving throw or be {@condition Confused|Ishiir} until the end of your next turn.",
+								"As an action, you launch a cloud of befuddling spores at a location within 30 feet of you. Each creature within a 10 feet radius sphere around that point has to make a Constitution a {@variantrule Saving Throw|Ishiir} or be {@condition Confused|Ishiir} until the end of your next turn.",
 								"You can use this feature a number of times equal to your Formshift Damage and you regain all expended uses on a {@variantrule Long Rest|Ishiir}. Alternatively, you can spend a 3rd Level Spell Slot to use this feature again."
 							]
 						}
@@ -1759,7 +1759,7 @@
 							"type": "item",
 							"name": "Blinding Beauty.",
 							"entries": [
-								"As an action, you can force every creature of your choice within 30 feet of you that you can see and that can see you to make a Wisdom saving throw against your Spell Save DC. On a failure, a target is {@condition Blinded|Ishiir} for 1 minute. At the end of each of its turns, the target can repeat the saving throw, ending the effect on a success. Once a creature has succeeded on the saving throw, it is immune to this feature for the next 24 hours.",
+								"As an action, you can force every creature of your choice within 30 feet of you that you can see and that can see you to make a Wisdom {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, a target is {@condition Blinded|Ishiir} for 1 minute. At the end of each of its turns, the target can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success. Once a creature has succeeded on the {@variantrule Saving Throw|Ishiir}, it is immune to this feature for the next 24 hours.",
 								"You can use this feature a number of times equal to your Formshift Damage and you regain all expended uses on a {@variantrule Long Rest|Ishiir}. Alternatively, you can spend a 4th Level Spell Slot to use this feature again."
 							]
 						},
@@ -1785,7 +1785,7 @@
 			"entries": [
 				"You adopt a draconic aspect, granting you physical traits such as scaled skin, vertical pupils, and sharp nails.",
 				"You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
-				"As an action, you can exhale destructive energy. All creatues in the area of effect take damage equal to a number of rolls of your Natural Weapons die equal to your proficiency. The shape, saving throw, and damage type of your breath weapon is determined by your draconic form, which you choose when you gain this feature. You can find all available options in the table below. The DC for this is 8 + your proficiency + your Constitution modifier. Once you have used your breath weapon, you have to roll a d6 at the start of each of your turns. On a roll of 5 or 6, you regain your use of this feature.",
+				"As an action, you can exhale destructive energy. All creatues in the area of effect take damage equal to a number of rolls of your Natural Weapons die equal to your proficiency. The shape, {@variantrule Saving Throw|Ishiir}, and damage type of your breath weapon is determined by your draconic form, which you choose when you gain this feature. You can find all available options in the table below. The DC for this is 8 + your proficiency + your Constitution modifier. Once you have used your breath weapon, you have to roll a d6 at the start of each of your turns. On a roll of 5 or 6, you regain your use of this feature.",
 				"Once you reach level 10 in this class, the size of your breath weapon doubles.",
 				{
                     "type": "table",
@@ -1793,7 +1793,7 @@
                     "colLabels": [
                         "Dragon",
                         "Damage Type",
-						"Breath Weapon Shape (Saving Throw)"
+						"Breath Weapon Shape ({@variantrule Saving Throw|Ishiir})"
                     ],
                     "colStyles": [
 						"col-3 text-center",
@@ -1916,7 +1916,7 @@
 			"level": 18,
 			"header": 1,
 			"entries": [
-				"While you are shifted, any hostile creature that starts its turn within 60 feet of you or enters that area for the first time on a turn, must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Constitution modifier) or be {@condition Frightened|Ishiir} or {@condition Charmed|Ishiir} by you (your choice) until the end of your next turn. Any affected creature also has disadvantage on saving throws against your breath weapon.",
+				"While you are shifted, any hostile creature that starts its turn within 60 feet of you or enters that area for the first time on a turn, must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} (DC equal to 8 + your proficiency bonus + your Constitution modifier) or be {@condition Frightened|Ishiir} or {@condition Charmed|Ishiir} by you (your choice) until the end of your next turn. Any affected creature also has disadvantage on {@variantrule Saving Throw|Ishiir}s against your breath weapon.",
 				"Once a creature succeeds on this save, it is immune against this feature for the next 24 hours."
 			]
 		}

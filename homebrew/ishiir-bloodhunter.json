@@ -1011,7 +1011,7 @@
             "level": 1,
             "entries": [
                 "You have survived the Hunter's Bane—a dangerous, long-guarded ritual that alters your life's blood, forever binding you to the darkness and honing your senses against it. You have advantage on Wisdom ({@skill Survival}) checks to track fey, fiends, or undead, as well as on Intelligence checks to recall information about such creatures.",
-                "The Hunter's Bane also empowers your body to control and shape hemocraft magic, using your own blood and life essence to fuel your abilities. Some of your features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:",
+                "The Hunter's Bane also empowers your body to control and shape hemocraft magic, using your own blood and life essence to fuel your abilities. Some of your features require your target to make a {@variantrule Saving Throw|Ishiir} to resist the feature's effects. The {@variantrule Saving Throw|Ishiir} DC is calculated as follows:",
                 "<b>Hemocraft save DC</b> = 8 + your proficiency bonus + your Hemocraft modifier (your choice between Intelligence or Wisdom)"
             ]
         },
@@ -1239,7 +1239,7 @@
             "classSource": "Ishiir",
             "level": 10,
             "entries": [
-                "The magic of hemocraft suffuses your body to permanently reinforce your resilience. Your speed increases by 5 feet, and you have a bonus to Strength, Dexterity, and Constitution saving throws equal to your Hemocraft modifier (minimum of +1)."
+                "The magic of hemocraft suffuses your body to permanently reinforce your resilience. Your speed increases by 5 feet, and you have a bonus to Strength, Dexterity, and Constitution {@variantrule Saving Throw|Ishiir}s equal to your Hemocraft modifier (minimum of +1)."
             ]
         },
         {
@@ -1273,7 +1273,7 @@
             "classSource": "Ishiir",
             "level": 13,
             "entries": [
-                "The psychic damage from your Brand of Castigation increases to twice your Hemocraft modifier (minimum of 2). Additionally, a branded creature can't take the {@action Dash|Ishiir} action, and if it attempts to teleport or to leave its current plane by any means, it takes {@damage 4d6} psychic damage and must make a Wisdom saving throw. On a failure, the attempt to teleport or leave the plane fails."
+                "The psychic damage from your Brand of Castigation increases to twice your Hemocraft modifier (minimum of 2). Additionally, a branded creature can't take the {@action Dash|Ishiir} action, and if it attempts to teleport or to leave its current plane by any means, it takes {@damage 4d6} psychic damage and must make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failure, the attempt to teleport or leave the plane fails."
             ]
         },
         {
@@ -1295,7 +1295,7 @@
             "classSource": "Ishiir",
             "level": 14,
             "entries": [
-                "You have advantage on saving throws against being {@condition Charmed|Ishiir} and {@condition Frightened|Ishiir}."
+                "You have advantage on {@variantrule Saving Throw|Ishiir}s against being {@condition Charmed|Ishiir} and {@condition Frightened|Ishiir}."
             ]
         },
         {
@@ -1577,7 +1577,7 @@
                     "type": "entries",
                     "name": "Feral Might",
                     "entries": [
-                        "You have advantage on Strength checks and Strength saving throws, and you have a +2 bonus to melee damage rolls. This bonus increases to +3 at 9th level and to +4 at 16th level."
+                        "You have advantage on Strength checks and Strength {@variantrule Saving Throw|Ishiir}s, and you have a +2 bonus to melee damage rolls. This bonus increases to +3 at 9th level and to +4 at 16th level."
                     ]
                 },
                 {
@@ -1627,7 +1627,7 @@
                     "type": "entries",
                     "name": "Lycan Regeneration",
                     "entries": [
-                        "At the start of each of your turns when you have at least 1 hit point but fewer hit points than half your hit point maximum, you gain hit points equal to 1 + your Constitution modifier (minimum of 1). If you are in hybrid form, you gain these hit points before you must make the saving throw for your bloodlust."
+                        "At the start of each of your turns when you have at least 1 hit point but fewer hit points than half your hit point maximum, you gain hit points equal to 1 + your Constitution modifier (minimum of 1). If you are in hybrid form, you gain these hit points before you must make the {@variantrule Saving Throw|Ishiir} for your bloodlust."
                     ]
                 }
             ]
@@ -1643,7 +1643,7 @@
             "level": 15,
             "header": 1,
             "entries": [
-                "You have advantage on the saving throw for your bloodlust while in hybrid form. Additionally, your Brand of Castigation can now bind a foe to your hunter's ferocity. While in your hybrid form, you have advantage on attack rolls against a creature branded by you."
+                "You have advantage on the {@variantrule Saving Throw|Ishiir} for your bloodlust while in hybrid form. Additionally, your Brand of Castigation can now bind a foe to your hunter's ferocity. While in your hybrid form, you have advantage on {@variantrule Attack Roll|Ishiir}s against a creature branded by you."
             ]
         },
         {
@@ -1780,7 +1780,7 @@
             "level": 11,
             "header": 1,
             "entries": [
-                "Your mutagenic hemocraft lets your Brand of Castigation reveal a foe's true nature. Any illusion or invisibility in effect on a creature when you brand it ends, and the creature can't benefit from {@condition Invisible|Ishiir|invisibility} or illusion effects while branded by you. If a creature branded by you is in an alternative form (by way of the {@spell polymorph|Ishiir} spell, the Change Shape action or Shapechanger trait, the Wild Shape feature, and similar effects), it must succeed on a Wisdom saving throw or revert to its true form and be {@condition Stunned|Ishiir} until the end of your next turn. Whenever a branded creature attempts to alter its form, it must succeed on a Wisdom saving throw or have the attempt fail, and it is {@condition Stunned|Ishiir} until the end of your next turn."
+                "Your mutagenic hemocraft lets your Brand of Castigation reveal a foe's true nature. Any illusion or invisibility in effect on a creature when you brand it ends, and the creature can't benefit from {@condition Invisible|Ishiir|invisibility} or illusion effects while branded by you. If a creature branded by you is in an alternative form (by way of the {@spell polymorph|Ishiir} spell, the Change Shape action or Shapechanger trait, the Wild Shape feature, and similar effects), it must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or revert to its true form and be {@condition Stunned|Ishiir} until the end of your next turn. Whenever a branded creature attempts to alter its form, it must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or have the attempt fail, and it is {@condition Stunned|Ishiir} until the end of your next turn."
             ]
         },
         {
@@ -1942,7 +1942,7 @@
                     "type": "item",
                     "name": "The Archfey",
                     "entries": [
-                        "Once on your turn, when you damage a creature with a weapon for which you have an active crimson rite, you can expend one use of your Blood Maledict to force the creature to make a Dexterity saving throw against your hemocraft save DC. On a failure, the creature casts dim light in a 10 feet radius and cannot benefit from being {@condition Invisible|Ishiir} until the end of your next turn. Additionally, attack rolls against the creature have advantage for the duration."
+                        "Once on your turn, when you damage a creature with a weapon for which you have an active crimson rite, you can expend one use of your Blood Maledict to force the creature to make a Dexterity {@variantrule Saving Throw|Ishiir} against your hemocraft save DC. On a failure, the creature casts dim light in a 10 feet radius and cannot benefit from being {@condition Invisible|Ishiir} until the end of your next turn. Additionally, {@variantrule Attack Roll|Ishiir}s against the creature have advantage for the duration."
                     ]
                 },
                 {
@@ -2005,7 +2005,7 @@
                     "type": "item",
                     "name": "Lolth",
                     "entries": [
-                        "Once on your turn, when you damage a creature with a weapon for which you have an active crimson rite, you can expend one use of your Blood Maledict to force the creature to make a Constitution saving throw against your hemocraft save DC. On a failure, the creature is {@condition Poisoned|Ishiir} until the end of your next turn. This feature ignores immunity to the poisoned condition."
+                        "Once on your turn, when you damage a creature with a weapon for which you have an active crimson rite, you can expend one use of your Blood Maledict to force the creature to make a Constitution {@variantrule Saving Throw|Ishiir} against your hemocraft save DC. On a failure, the creature is {@condition Poisoned|Ishiir} until the end of your next turn. This feature ignores immunity to the poisoned condition."
                     ]
                 },
                 {
@@ -2514,7 +2514,7 @@
             "level": 11,
             "header": 1,
             "entries": [
-                "Your Brand of Castigation feature digs dark arcane scars into your target, leaving them vulnerable to your magic. A creature branded by you has disadvantage on saving throws against your warlock spells."
+                "Your Brand of Castigation feature digs dark arcane scars into your target, leaving them vulnerable to your magic. A creature branded by you has disadvantage on {@variantrule Saving Throw|Ishiir}s against your warlock spells."
             ]
         },
         {

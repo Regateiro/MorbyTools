@@ -603,7 +603,7 @@
 			"entries": [
 				"You gain the ability to use your tactical acumen and physical prowess to achieve astounding feats of martial skill.",
 				"You gain the ability to use martial exploits. You gain uses of martial exploits based on your fighter level, as shown in the Martial Exploits table. You retain all expenses uses when you complete a {@variantrule Long Rest|Ishiir}.",
-				"You can apply the benefits of only one exploit to any given attack. If more than one exploit applies to an attack, you select which one to use. Some exploits require a creature to make a saving throw. The DC for such a save is 8 + your proficiency bonus + your Strength modifier.",
+				"You can apply the benefits of only one exploit to any given attack. If more than one exploit applies to an attack, you select which one to use. Some exploits require a creature to make a {@variantrule Saving Throw|Ishiir}. The DC for such a save is 8 + your proficiency bonus + your Strength modifier.",
 				{
 					"type": "table",
 					"caption": "Martial Exploits",
@@ -664,7 +664,7 @@
 					"name": "Bellringer",
 					"entries": [
 						"You take careful aim at your foe's head or other sensitive point, unleashing a brutal attack that knocks the target senseless.",
-						"You can expend a martial exploit when you hit with a melee weapon attack. The target of the attack must make a Constitution saving throw. If it fails, it is {@condition Paralyzed|Ishiir}. At the end of each of its turns, it can make a Constitution saving throw to end this effect."
+						"You can expend a martial exploit when you hit with a melee weapon attack. The target of the attack must make a Constitution {@variantrule Saving Throw|Ishiir}. If it fails, it is {@condition Paralyzed|Ishiir}. At the end of each of its turns, it can make a Constitution {@variantrule Saving Throw|Ishiir} to end this effect."
 					]
 				},
 				{
@@ -673,7 +673,7 @@
 					"entries": [
 						"You strike with overwhelming strength and accuracy, battering aside your foe's defense to deliver a deadly strike.",
 						"When you make an attack, you can expend a martial exploit and roll a number of {@dice d6}s equal to your proficiency bonus.",
-						"If the attack misses, you learn the target's AC and can use the result of one or more {@dice d6}s of your choice as a bonus to your attack roll, possibly turning the miss into a hit. Any remaining dice are used as a bonus to your weapon's damage roll."
+						"If the attack misses, you learn the target's AC and can use the result of one or more {@dice d6}s of your choice as a bonus to your {@variantrule Attack Roll|Ishiir}, possibly turning the miss into a hit. Any remaining dice are used as a bonus to your weapon's damage roll."
 					]
 				}
 			]
@@ -706,7 +706,7 @@
 					"type": "entries",
 					"name": "Improved Adamantine Bones",
 					"entries": [
-						"When you use Adamantine Bones, you gain advantage on all saving throws until the end of your next turn."
+						"When you use Adamantine Bones, you gain advantage on all {@variantrule Saving Throw|Ishiir}s until the end of your next turn."
 					]
 				},
 				{
@@ -925,9 +925,9 @@
 				"Each time you complete a {@variantrule Long Rest|Ishiir}, you regain all expended uses of your gambits and can swap one of your gambits for a different one.",
 				{
 					"type": "entries",
-					"name": "Saving Throws",
+					"name": "{@variantrule Saving Throw|Ishiir}s",
 					"entries": [
-						"A gambit sometimes requires a saving throw. The saving throw DC is calculated as follows:",
+						"A gambit sometimes requires a {@variantrule Saving Throw|Ishiir}. The {@variantrule Saving Throw|Ishiir} DC is calculated as follows:",
 						{
 							"type": "abilityDc",
 							"name": "Gambit",
@@ -947,7 +947,7 @@
 							"name": "Aggressive Advance",
 							"entries": [
 								"You and your allies howl in rage and glower at your foes, making a display that sends fear into their hearts.",
-								"Hostile creatures within 60 feet of you that can see you must make a Wisdom saving throw. On a failed save, a creature is {@condition Frightened|Ishiir} of your tactical focus. A creature {@condition Frightened|Ishiir} by this effect can repeat the saving throw at the end of each of its turns, ending the effect on a successful save. As part of this gambit, you may take the attack action. {@i [In future, may be changed to require you or an ally to be present within the focus.]}"
+								"Hostile creatures within 60 feet of you that can see you must make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failed save, a creature is {@condition Frightened|Ishiir} of your tactical focus. A creature {@condition Frightened|Ishiir} by this effect can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on a successful save. As part of this gambit, you may take the attack action. {@i [In future, may be changed to require you or an ally to be present within the focus.]}"
 							]
 						},
 						{
@@ -963,14 +963,14 @@
 							"name": "Luring Gambit",
 							"entries": [
 								"You entangle your weapon with a chosen foe, luring it to duel you as your allies close in for the kill.",
-								"As part of this gambit, you may take the attack action. If you hit a creature with a weapon attack during your turn, it must make a Wisdom saving throw. On a failed save, your allies are {@condition Invisible|Ishiir} to it until the end of your next turn."
+								"As part of this gambit, you may take the attack action. If you hit a creature with a weapon attack during your turn, it must make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failed save, your allies are {@condition Invisible|Ishiir} to it until the end of your next turn."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Pile On",
 							"entries": [
-								"You direct your allies' attacks against a target, each blow building on the next to build a devastating result. Select a creature in your tactical focus that you can see. At the start of your next turn, that creature must make a Constitution saving throw if you or an ally has hit it with an attack since you used this ability. It suffers disadvantage on the saving throw if it has been hit by three or more attacks {@i [in future, this may be changed to \"hit by three or more creatures\"]}. On a failed saving throw, the creature is {@condition Stunned|Ishiir} until the end of your next turn.",
+								"You direct your allies' attacks against a target, each blow building on the next to build a devastating result. Select a creature in your tactical focus that you can see. At the start of your next turn, that creature must make a Constitution {@variantrule Saving Throw|Ishiir} if you or an ally has hit it with an attack since you used this ability. It suffers disadvantage on the {@variantrule Saving Throw|Ishiir} if it has been hit by three or more attacks {@i [in future, this may be changed to \"hit by three or more creatures\"]}. On a failed {@variantrule Saving Throw|Ishiir}, the creature is {@condition Stunned|Ishiir} until the end of your next turn.",
 								"As part of this gambit, you may take the attack action."
 							]
 						},
@@ -979,7 +979,7 @@
 							"name": "Pincer Movement",
 							"entries": [
 								"With precise timing, you order your allies to charge into the enemy, dealing body checks that leave your foes entangled and helpless.",
-								"Up to two allies that can see or hear you can use their reactions to move up to their speed. Any creature adjacent to both of your allies or to you and one of the chosen allies at the end of their movement must make a Strength saving throw or become {@condition Restrained|Ishiir} until the end of your next turn. As part of this gambit, you may take the attack action."
+								"Up to two allies that can see or hear you can use their reactions to move up to their speed. Any creature adjacent to both of your allies or to you and one of the chosen allies at the end of their movement must make a Strength {@variantrule Saving Throw|Ishiir} or become {@condition Restrained|Ishiir} until the end of your next turn. As part of this gambit, you may take the attack action."
 							]
 						},
 						{
@@ -987,7 +987,7 @@
 							"name": "Vexing Maneuvers",
 							"entries": [
 								"With precise movements, you and your allies dash around the foes to leave them confused and unable to pick out their most dangerous targets.",
-								"Each enemy in your tactical focus that you can see must make an Intelligence saving throw. On a failed save, it cannot leave your tactical focus using its move until the end of your next turn. As part of this gambit you may take the attack action."
+								"Each enemy in your tactical focus that you can see must make an Intelligence {@variantrule Saving Throw|Ishiir}. On a failed save, it cannot leave your tactical focus using its move until the end of your next turn. As part of this gambit you may take the attack action."
 							]
 						}
 					]
@@ -1018,7 +1018,7 @@
 			"header": 2,
 			"entries": [
 				"At 10th level you strike with a cunning insight that allows your allies to make effective follow up attacks.",
-				"If you hit a creature with a weapon attack, it has disadvantage on all saving throws against your gambits until the end of your next turn."
+				"If you hit a creature with a weapon attack, it has disadvantage on all {@variantrule Saving Throw|Ishiir}s against your gambits until the end of your next turn."
 			]
 		},
 		{
@@ -1087,7 +1087,7 @@
 				"Each path of the sublime way features a unique take on combat mastery. Many, but not all, require you to wield certain weapons to use their exploits.",
 				"When you use a martial exploit, you can choose to use one of the special exploits listed under one of the paths you know. You choose the special exploit when you decide to use a martial exploit.",
 				"Some of these abilities require you to roll fewer dice when using a martial exploit. You cannot use an ability that reduces the total dice you roll for the exploit to less than 1. Such an ability is beyond your skill.",
-				"Some of these abilities require a creature to make a saving throw. The DC for such a save is 8 + your proficiency bonus + your Strength modifier.",
+				"Some of these abilities require a creature to make a {@variantrule Saving Throw|Ishiir}. The DC for such a save is 8 + your proficiency bonus + your Strength modifier.",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Path of the Shadow Harlequin|Fighter||Weapon Master (Stream)|Stream|3"
@@ -1291,7 +1291,7 @@
 					"name": "Come Forth to Dance",
 					"entries": [
 						"Your weapon moves in a lazy, hypnotic pattern, luring your foe to blunder ahead and walk into your trap.",
-						"As an action, expend a martial exploit and select a creature that can see you within 15 feet of you. The target must make a Wisdom saving throw. If it fails, it moves up to 15 feet closer to you. You then make a single melee attack against it using your martial exploit with one die fewer."
+						"As an action, expend a martial exploit and select a creature that can see you within 15 feet of you. The target must make a Wisdom {@variantrule Saving Throw|Ishiir}. If it fails, it moves up to 15 feet closer to you. You then make a single melee attack against it using your martial exploit with one die fewer."
 					]
 				},
 				{
@@ -1354,7 +1354,7 @@
 					"name": "Mountain's Grasp",
 					"entries": [
 						"Your blows land with such force that your enemy is left off balance, unable to escape your brutal assault.",
-						"When you expend a martial exploit when attacking with a two-handed melee weapon or a versatile one wielded in two hands, after rolling the dice you can select at least two of them and disregard their results. The target must make a Constitution saving throw. If it fails, its speed is reduced to 0 until the end of your next turn."
+						"When you expend a martial exploit when attacking with a two-handed melee weapon or a versatile one wielded in two hands, after rolling the dice you can select at least two of them and disregard their results. The target must make a Constitution {@variantrule Saving Throw|Ishiir}. If it fails, its speed is reduced to 0 until the end of your next turn."
 					]
 				},
 				{
@@ -1362,7 +1362,7 @@
 					"name": "Sweeping Bludgeon",
 					"entries": [
 						"As you ready to strike your enemy, you sweep your weapon around you in a great arc that builds momentum and forces your enemies to dive to the ground to avoid a crushing blow.",
-						"When you expend a martial exploit when attacking with a two-handed melee weapon or a versatile one wielded in two hands, after rolling the dice you can select one or more of them and disregard their result. For each die selected, pick a creature within reach of your attack. Each chosen creature must make a Strength saving throw or be knocked {@condition Prone|Ishiir}."
+						"When you expend a martial exploit when attacking with a two-handed melee weapon or a versatile one wielded in two hands, after rolling the dice you can select one or more of them and disregard their result. For each die selected, pick a creature within reach of your attack. Each chosen creature must make a Strength {@variantrule Saving Throw|Ishiir} or be knocked {@condition Prone|Ishiir}."
 					]
 				}
 			]
@@ -1395,14 +1395,14 @@
 					"type": "entries",
 					"name": "Superior Archery",
 					"entries": [
-						"You gain a +3 bonus to attack rolls you make with ranged weapons."
+						"You gain a +3 bonus to {@variantrule Attack Roll|Ishiir}s you make with ranged weapons."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Superior Defense",
 					"entries": [
-						"While you are wearing armor, you gain a +1 bonus to AC. You also gain a +1 bonus to all saving throws."
+						"While you are wearing armor, you gain a +1 bonus to AC. You also gain a +1 bonus to all {@variantrule Saving Throw|Ishiir}s."
 					]
 				},
 				{
@@ -1423,7 +1423,7 @@
 					"type": "entries",
 					"name": "Superior Protection",
 					"entries": [
-						"When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll and make an opportunity attack against the attacker. You must be wielding a shield."
+						"When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the {@variantrule Attack Roll|Ishiir} and make an opportunity attack against the attacker. You must be wielding a shield."
 					]
 				},
 				{
@@ -1518,7 +1518,7 @@
 			"subclassSource": "Stream",
 			"level": 3,
 			"entries": [
-				"If an allied creature in your tactical focus must make a Dexterity saving throw it can use its reaction to move up to its speed. If this movement takes it out of the range or area of the effect that caused the saving throw, it is no longer subjected to the effect. {@i [In future, this may be changed to instead give advantage on the saving throw, or require the creature to drop prone, or cancel the creature's next move.]}"
+				"If an allied creature in your tactical focus must make a Dexterity {@variantrule Saving Throw|Ishiir} it can use its reaction to move up to its speed. If this movement takes it out of the range or area of the effect that caused the {@variantrule Saving Throw|Ishiir}, it is no longer subjected to the effect. {@i [In future, this may be changed to instead give advantage on the {@variantrule Saving Throw|Ishiir}, or require the creature to drop prone, or cancel the creature's next move.]}"
 			]
 		},
 		{
@@ -1579,14 +1579,14 @@
 					"type": "entries",
 					"name": "Invoke Terror",
 					"entries": [
-						"The target must succeed on a Wisdom saving throw or become {@condition Frightened|Ishiir} of you until the end of your next turn."
+						"The target must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or become {@condition Frightened|Ishiir} of you until the end of your next turn."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Invoke Wrath",
 					"entries": [
-						"The target suffers disadvantage on all attack rolls against targets other than you until the end of your next turn."
+						"The target suffers disadvantage on all {@variantrule Attack Roll|Ishiir}s against targets other than you until the end of your next turn."
 					]
 				},
 				{
@@ -1633,8 +1633,8 @@
 			"header": 2,
 			"entries": [
 				"You gain the ability to perceive the auras of other creatures.",
-				"As an action, select a creature that you can see. That creature makes a Wisdom saving throw, though it has no knowledge that you forced it to attempt this saving throw. On a failed save, you learn if the creature shares any aspects of its alignment with you, its current hit points, and its current attitude and intentions toward you or one other creature, object, or location of your choice. In addition, for the next 24 hours or until you use this ability again, you can use an action to determine the creature's distance and direction from you.",
-				"If a creature succeeds on its saving throw against this ability, you cannot use this ability against that creature again until you complete a {@variantrule Long Rest|Ishiir}."
+				"As an action, select a creature that you can see. That creature makes a Wisdom {@variantrule Saving Throw|Ishiir}, though it has no knowledge that you forced it to attempt this {@variantrule Saving Throw|Ishiir}. On a failed save, you learn if the creature shares any aspects of its alignment with you, its current hit points, and its current attitude and intentions toward you or one other creature, object, or location of your choice. In addition, for the next 24 hours or until you use this ability again, you can use an action to determine the creature's distance and direction from you.",
+				"If a creature succeeds on its {@variantrule Saving Throw|Ishiir} against this ability, you cannot use this ability against that creature again until you complete a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -1649,7 +1649,7 @@
 			"header": 2,
 			"entries": [
 				"You can cause your blades to phase through physical objects and defenses.",
-				"Once during your turn, you can choose to forego one unarmed strike in place of forcing a creature within the reach of that attack to make a Dexterity saving throw. On a failed saving throw, it takes your unarmed strike's damage, or half that damage if it succeeds."
+				"Once during your turn, you can choose to forego one unarmed strike in place of forcing a creature within the reach of that attack to make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed {@variantrule Saving Throw|Ishiir}, it takes your unarmed strike's damage, or half that damage if it succeeds."
 			]
 		},
 		{
@@ -1663,7 +1663,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"You can transform your physical body into the same psychic energy that comprises your soul knives. As a bonus action, you gain resistance to all types of damage, a fly speed of 30 feet, and the ability to pass through solid objects but not end your movement within them. This benefit lasts for 1 minute. You cannot use it again until you complete a {@variantrule Long Rest|Ishiir}."
+				"You can transform your physical body into the same psychic energy that comprises your soul knives. As a bonus action, you gain resistance to all types of damage, a {@variantrule Fly Speed|Ishiir} of 30 feet, and the ability to pass through solid objects but not end your movement within them. This benefit lasts for 1 minute. You cannot use it again until you complete a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -1810,7 +1810,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"You gain the ability to call forth spectral tentacles that grab at your foes. As an action, pick a point that you can see within 60 ft. of you. A horde of grasping tendrils appears at that point. Creatures of your choice within 10 ft. of that point must make a Strength saving throw against your Warlock spell save DC. Creatures that fail their saving throws are {@condition Grappled|Ishiir} for 1 minute or until you use this ability again. The spectral tentacle's Strength ({@skill Athletics}) bonus is 2 + your proficiency bonus and its reach is 10 feet."
+				"You gain the ability to call forth spectral tentacles that grab at your foes. As an action, pick a point that you can see within 60 ft. of you. A horde of grasping tendrils appears at that point. Creatures of your choice within 10 ft. of that point must make a Strength {@variantrule Saving Throw|Ishiir} against your Warlock spell save DC. Creatures that fail their {@variantrule Saving Throw|Ishiir}s are {@condition Grappled|Ishiir} for 1 minute or until you use this ability again. The spectral tentacle's Strength ({@skill Athletics}) bonus is 2 + your proficiency bonus and its reach is 10 feet."
 			]
 		},
 		{
@@ -1839,7 +1839,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Your patron accepts you into his inner court of servitors. You gain the ability to breathe water, and a swim speed equal to your normal speed.",
+				"Your patron accepts you into his inner court of servitors. You gain the ability to breathe water, and a {@variantrule Swim Speed|Ishiir} equal to your normal speed.",
 				"You gain immunity to lightning damage. When your immunity reduces damage from an effect to 0, as a reaction you can cause creatures of your choice that you can see within 30 ft. of you to take lightning damage equal to your Charisma modifier + your proficiency bonus."
 			]
 		},
@@ -1868,7 +1868,7 @@
 			"level": 14,
 			"header": 3,
 			"entries": [
-				"The tentacles slam into your foes. Pick up to 5 creatures that you can see within 30 ft. of the portal. Those creatures must make Dexterity saving throws against your Warlock spell save DC. Creatures that fail their saving throws take {@damage 10d6} bludgeoning damage and are {@condition Restrained|Ishiir} for 1 minute. Creatures that succeed take half the bludgeoning damage and are not {@condition Restrained|Ishiir}. On its turn, a {@condition Restrained|Ishiir} creature can use its action to attempt a DC 15 Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check to end its {@condition Restrained|Ishiir} condition."
+				"The tentacles slam into your foes. Pick up to 5 creatures that you can see within 30 ft. of the portal. Those creatures must make Dexterity {@variantrule Saving Throw|Ishiir}s against your Warlock spell save DC. Creatures that fail their {@variantrule Saving Throw|Ishiir}s take {@damage 10d6} bludgeoning damage and are {@condition Restrained|Ishiir} for 1 minute. Creatures that succeed take half the bludgeoning damage and are not {@condition Restrained|Ishiir}. On its turn, a {@condition Restrained|Ishiir} creature can use its action to attempt a DC 15 Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check to end its {@condition Restrained|Ishiir} condition."
 			]
 		},
 		{
@@ -1954,7 +1954,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"You gain the ability to transform into Lolth's most beloved servitor, a giant spider. As a bonus action you turn into a spider. You gain a +2 bonus to AC. You gain 3 temporary hit points per level. You gain a climb speed equal to your normal speed. You can climb difficult surfaces, such as along a ceiling, without needing to make a check. You gain a bite attack. You are proficient with this attack and it inflicts poison damage based on your level. You can use your choice of Strength or Dexterity to modify your bite attack's attack and damage rolls. While in this form, you lack hands and cannot do anything that normally requires them. However, you can cast spells but can only cast the ones listed on your expanded spell list for Lolth.",
+				"You gain the ability to transform into Lolth's most beloved servitor, a giant spider. As a bonus action you turn into a spider. You gain a +2 bonus to AC. You gain 3 temporary hit points per level. You gain a {@variantrule Climb Speed|Ishiir} equal to your normal speed. You can climb difficult surfaces, such as along a ceiling, without needing to make a check. You gain a bite attack. You are proficient with this attack and it inflicts poison damage based on your level. You can use your choice of Strength or Dexterity to modify your bite attack's attack and damage rolls. While in this form, you lack hands and cannot do anything that normally requires them. However, you can cast spells but can only cast the ones listed on your expanded spell list for Lolth.",
 				"Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
 				{
 					"type": "table",
@@ -1999,7 +1999,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"You gain the ability to use a shard of Lolth's alien beauty, causing other creatures to become enraptured by your appearance. As a bonus action, pick a creature you can see. That creature must succeed on a Charisma saving throw or become {@condition Charmed|Ishiir} by you. While {@condition Charmed|Ishiir}, it also gains vulnerability to poison damage. This benefit lasts for one minute or until you or your allies damages the creature. Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
+				"You gain the ability to use a shard of Lolth's alien beauty, causing other creatures to become enraptured by your appearance. As a bonus action, pick a creature you can see. That creature must succeed on a Charisma {@variantrule Saving Throw|Ishiir} or become {@condition Charmed|Ishiir} by you. While {@condition Charmed|Ishiir}, it also gains vulnerability to poison damage. This benefit lasts for one minute or until you or your allies damages the creature. Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -2027,7 +2027,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"You can channel Lolth's malevolence into a deadly kiss. As an action, you touch a creature within your reach. The target takes {@damage 12d10} poison or psychic damage (your choice), or half as much on a successful Constitution save. A creature {@condition Charmed|Ishiir} by you has disadvantage on its saving throw. After you use this ability, you cannot cast it again until you complete a {@variantrule Long Rest|Ishiir}."
+				"You can channel Lolth's malevolence into a deadly kiss. As an action, you touch a creature within your reach. The target takes {@damage 12d10} poison or psychic damage (your choice), or half as much on a successful Constitution save. A creature {@condition Charmed|Ishiir} by you has disadvantage on its {@variantrule Saving Throw|Ishiir}. After you use this ability, you cannot cast it again until you complete a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -2114,7 +2114,7 @@
 			"header": 1,
 			"entries": [
 				"You gain the ability to rebuke those who lash out at your in violence.",
-				"As a reaction when a creature you can see within 30 feet of you inflicts damage, you force that creature to make a Wisdom save. On a failed saving throw, it takes psychic damage equal to the damage dealt. On a successful save, it takes half that damage.",
+				"As a reaction when a creature you can see within 30 feet of you inflicts damage, you force that creature to make a Wisdom save. On a failed {@variantrule Saving Throw|Ishiir}, it takes psychic damage equal to the damage dealt. On a successful save, it takes half that damage.",
 				"If the creature made multiple attacks, select one attack to determine the damage dealt. If the creature used one or more effects that damaged multiple targets, choose the damage take by one of those targets from one of the effects.",
 				"Once you use this feature, you can't use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
 			]
@@ -2131,7 +2131,7 @@
 			"header": 2,
 			"entries": [
 				"You can use your Channel Divinity to quell the flame of violence.",
-				"As an action, you force all creatures within 100 feet of you to make Charisma saving throws. Each creature that fails this saved is {@condition Charmed|Ishiir} by every other creature that also failed the saving throw. This benefit lasts for one hour. While {@condition Charmed|Ishiir} by this ability, creatures consider all other creatures {@condition Charmed|Ishiir} by it to be their allies. They fight to defend them from attackers.",
+				"As an action, you force all creatures within 100 feet of you to make Charisma {@variantrule Saving Throw|Ishiir}s. Each creature that fails this saved is {@condition Charmed|Ishiir} by every other creature that also failed the {@variantrule Saving Throw|Ishiir}. This benefit lasts for one hour. While {@condition Charmed|Ishiir} by this ability, creatures consider all other creatures {@condition Charmed|Ishiir} by it to be their allies. They fight to defend them from attackers.",
 				"While this ability persists, absent any threat creatures {@condition Charmed|Ishiir} by it will rest, talk among themselves, share stories of their lives, create a communal feast using food and drink they carry, and generally act as if they are old friends, long separated and brought together again for a joyous reunion."
 			]
 		},
@@ -2175,7 +2175,7 @@
 			"header": 2,
 			"entries": [
 				"You become an avatar of unearthly beauty. Your enemies attack with uncertainty, fearful of damaging the wondrous being they behold, while your magic draws upon your presence to augment its power.",
-				"As a reaction, you can impose a penalty on a creature's attacks against you or on its saving throws against your spells and abilities. This benefit lasts until the end of the current turn The penalty equals your Charisma modifier (minimum 1)."
+				"As a reaction, you can impose a penalty on a creature's attacks against you or on its {@variantrule Saving Throw|Ishiir}s against your spells and abilities. This benefit lasts until the end of the current turn The penalty equals your Charisma modifier (minimum 1)."
 			]
 		},
 		{
@@ -2419,7 +2419,7 @@
 			"header": 2,
 			"entries": [
 				"You can use your Channel Divinity to channel destructive energy.",
-				"As an action, you touch a creature or a an unattended object within reach. A creature must make a Constitution saving throw, taking 5 times your cleric level thunder damage on a failed saving throw and half as much on a successful one. An unattended object takes 5 times your cleric level thunder damage."
+				"As an action, you touch a creature or a an unattended object within reach. A creature must make a Constitution {@variantrule Saving Throw|Ishiir}, taking 5 times your cleric level thunder damage on a failed {@variantrule Saving Throw|Ishiir} and half as much on a successful one. An unattended object takes 5 times your cleric level thunder damage."
 			]
 		},
 		{
@@ -2550,7 +2550,7 @@
 				}
 			],
 			"entries": [
-				"You point at one creature you can see within range and project a focused beam of telekinetic power at it. The target must succeed on a Strength saving throw or take {@damage 1d6} bludgeoning damage and be pushed up to 15 feet away from you.",
+				"You point at one creature you can see within range and project a focused beam of telekinetic power at it. The target must succeed on a Strength {@variantrule Saving Throw|Ishiir} or take {@damage 1d6} bludgeoning damage and be pushed up to 15 feet away from you.",
 				"This spell's damage increases by one die when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
 			],
 			"scalingLevelDice": {
@@ -2609,7 +2609,7 @@
 				}
 			],
 			"entries": [
-				"You point at one creature you can see within range, and a psychic bolt pierces its mind. The target must succeed on an Intelligence saving throw or take {@damage 1d10} psychic damage.",
+				"You point at one creature you can see within range, and a psychic bolt pierces its mind. The target must succeed on an Intelligence {@variantrule Saving Throw|Ishiir} or take {@damage 1d10} psychic damage.",
 				"This spell's damage increases by one die when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10})."
 			],
 			"scalingLevelDice": {

@@ -1225,7 +1225,7 @@
                     "type": "entries",
                     "name": "Spellcasting Ability.",
                     "entries": [
-                        "Intelligence is your spellcasting ability for your wizard spells, since you learn your wizard spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.",
+                        "Intelligence is your spellcasting ability for your wizard spells, since you learn your wizard spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the {@variantrule Saving Throw|Ishiir} DC for a wizard spell you cast and when making an {@variantrule Attack Roll|Ishiir} with one.",
                         {
                             "type": "abilityDc",
                             "name": "Spell",
@@ -1646,7 +1646,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "When you cast an abjuration spell that requires you to make an ability check as a part of casting that spell (as in {@spell counterspell|Ishiir} and {@spell dispel magic|Ishiir}), you add your proficiency bonus to that ability check."
+                "When you cast an abjuration spell that requires you to make an {@variantrule Ability Check|Ishiir} as a part of casting that spell (as in {@spell counterspell|Ishiir} and {@spell dispel magic|Ishiir}), you add your proficiency bonus to that {@variantrule Ability Check|Ishiir}."
             ]
         },
         {
@@ -1660,7 +1660,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "You have advantage on saving throws against spells.",
+                "You have advantage on {@variantrule Saving Throw|Ishiir}s against spells.",
                 "Furthermore, you have resistance against the damage of spells."
             ]
         },
@@ -1747,7 +1747,7 @@
                         "You gain a bonus to your AC equal to your Intelligence modifier (minimum of +1).",
                         "Your walking speed increases by 10 feet.",
                         "You have advantage on Dexterity ({@skill Acrobatics}) checks.",
-                        "You gain a bonus to any Constitution saving throws you make to maintain {@condition Concentration|Ishiir} on a spell. The bonus equals your Intelligence modifier (minimum of +1)."
+                        "You gain a bonus to any Constitution {@variantrule Saving Throw|Ishiir}s you make to maintain {@condition Concentration|Ishiir} on a spell. The bonus equals your Intelligence modifier (minimum of +1)."
                     ]
                 },
                 "You can use this feature twice, and you regain all expended uses of it when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
@@ -1842,7 +1842,7 @@
             "level": 2,
             "header": 1,
             "entries": [
-                "You can magically exert limited control over the flow of time around a creature. As a reaction, after you or a creature you can see within 30 feet of you makes an attack roll, an ability check, or a saving throw, you can force the creature to reroll. You make this decision after you see whether the roll succeeds or fails. The target must use the result of the second roll.",
+                "You can magically exert limited control over the flow of time around a creature. As a reaction, after you or a creature you can see within 30 feet of you makes an {@variantrule Attack Roll|Ishiir}, an {@variantrule Ability Check|Ishiir}, or a {@variantrule Saving Throw|Ishiir}, you can force the creature to reroll. You make this decision after you see whether the roll succeeds or fails. The target must use the result of the second roll.",
                 "You can use this ability a number of times equal to your Intelligence modifier, and you regain any expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -1871,7 +1871,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "As an action, you can magically force a Large or smaller creature you can see within 60 feet of you to make a Charisma saving throw against your spell save DC. Unless the saving throw is a success, the creature is encased in a field of magical energy until the end of your next turn or until the creature takes any damage. While encased in this way, the creature is {@condition Paralyzed|Ishiir} and has a speed of 0. This feature ignores immunity to the {@condition Paralyzed|Ishiir} condition.",
+                "As an action, you can magically force a Large or smaller creature you can see within 60 feet of you to make a Charisma {@variantrule Saving Throw|Ishiir} against your spell save DC. Unless the {@variantrule Saving Throw|Ishiir} is a success, the creature is encased in a field of magical energy until the end of your next turn or until the creature takes any damage. While encased in this way, the creature is {@condition Paralyzed|Ishiir} and has a speed of 0. This feature ignores immunity to the {@condition Paralyzed|Ishiir} condition.",
                 "You can use this feature a number of times equal to your Intelligence modifier (a minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -1902,7 +1902,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "You can peer through possible futures and magically pull one of them into events around you, ensuring a particular outcome. When you or a creature you can see within 60 feet of you makes an attack roll, an ability check, or a saving throw, you can use your reaction to ignore the die roll and decide whether the number rolled is the minimum needed to succeed or one less than that number (your choice).",
+                "You can peer through possible futures and magically pull one of them into events around you, ensuring a particular outcome. When you or a creature you can see within 60 feet of you makes an {@variantrule Attack Roll|Ishiir}, an {@variantrule Ability Check|Ishiir}, or a {@variantrule Saving Throw|Ishiir}, you can use your reaction to ignore the die roll and decide whether the number rolled is the minimum needed to succeed or one less than that number (your choice).",
                 "The first time you do so, you suffer no adverse effect. If you use this feature again before you finish a {@variantrule Long Rest|Ishiir}, you take {@damage 1d12} necrotic damage for each level (or CR if the creature has no levels) the target creature has. Each time you use this feature again before finishing a {@variantrule Long Rest|Ishiir}, the damage increases by {@damage 1d12} per level/CR. This damage ignores resistance and immunity."
             ]
         },
@@ -2044,7 +2044,7 @@
             "level": 2,
             "header": 1,
             "entries": [
-                "When you choose this school, glimpses of the future begin to press in on your awareness. When you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, roll two {@dice d20}s and record the numbers rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn.",
+                "When you choose this school, glimpses of the future begin to press in on your awareness. When you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, roll two {@dice d20}s and record the numbers rolled. You can replace any {@variantrule Attack Roll|Ishiir}, {@variantrule Saving Throw|Ishiir}, or {@variantrule Ability Check|Ishiir} made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn.",
                 "Each foretelling roll can be used only once. When you finish a {@variantrule Long Rest|Ishiir}, you lose any unused foretelling rolls."
             ]
         },
@@ -2162,9 +2162,9 @@
             "level": 2,
             "header": 1,
             "entries": [
-                "When you choose this school, your soft words and enchanting gaze can magically enthrall another creature. As an action, choose one creature that you can see within 30 feet of you. If the target can see or hear you, it must succeed on a Wisdom saving throw against your wizard spell save DC or be {@condition Charmed|Ishiir} by you until the end of your next turn. The {@condition Charmed|Ishiir} creature's speed drops to 0, and the creature is {@condition Incapacitated|Ishiir} and visibly dazed.",
+                "When you choose this school, your soft words and enchanting gaze can magically enthrall another creature. As an action, choose one creature that you can see within 30 feet of you. If the target can see or hear you, it must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your wizard spell save DC or be {@condition Charmed|Ishiir} by you until the end of your next turn. The {@condition Charmed|Ishiir} creature's speed drops to 0, and the creature is {@condition Incapacitated|Ishiir} and visibly dazed.",
                 "On subsequent turns, you can use your action to maintain this effect, extending its duration until the end of your next turn. However, the effect ends if you move more than 30 feet away from the creature, if the creature can neither see nor hear you, or if the creature takes damage.",
-                "Once the effect ends, or if the creature succeeds on its initial saving throw against this effect, you can't use this feature on that creature again until you finish a {@variantrule Long Rest|Ishiir}."
+                "Once the effect ends, or if the creature succeeds on its initial {@variantrule Saving Throw|Ishiir} against this effect, you can't use this feature on that creature again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2178,7 +2178,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "When a creature you can see within 30 feet of you makes an attack roll against you, you can use your reaction to divert the attack, provided that another creature is within the attack's range. The attacker must make a Wisdom saving throw against your wizard spell save DC. On a failed save, the attacker must target the creature that is closest to it, not including you or itself. If multiple creatures are closest, the attacker chooses which one to target. On a successful save, you can't use this feature on the attacker again until you finish a {@variantrule Long Rest|Ishiir}.",
+                "When a creature you can see within 30 feet of you makes an {@variantrule Attack Roll|Ishiir} against you, you can use your reaction to divert the attack, provided that another creature is within the attack's range. The attacker must make a Wisdom {@variantrule Saving Throw|Ishiir} against your wizard spell save DC. On a failed save, the attacker must target the creature that is closest to it, not including you or itself. If multiple creatures are closest, the attacker chooses which one to target. On a successful save, you can't use this feature on the attacker again until you finish a {@variantrule Long Rest|Ishiir}.",
                 "You must choose to use this feature before knowing whether the attack hits or misses. Creatures that can't be {@condition Charmed|Ishiir} are immune to this effect."
             ]
         },
@@ -2208,7 +2208,7 @@
             "header": 2,
             "entries": [
                 "You gain the ability to make a creature unaware of your magical influence on it. When you cast an enchantment spell to charm one or more creatures, you can alter one creature's understanding so that it remains unaware of being {@condition Charmed|Ishiir}.",
-                "Additionally, once before the spell expires, you can use your action to try to make the chosen creature forget some of the time it spent {@condition Charmed|Ishiir}. The creature must succeed on an Intelligence saving throw against your wizard spell save DC or lose a number of hours of its memories equal to 1 + your Charisma modifier (minimum of 1). You can make the creature forget less time, and the amount of time can't exceed the duration of your enchantment spell."
+                "Additionally, once before the spell expires, you can use your action to try to make the chosen creature forget some of the time it spent {@condition Charmed|Ishiir}. The creature must succeed on an Intelligence {@variantrule Saving Throw|Ishiir} against your wizard spell save DC or lose a number of hours of its memories equal to 1 + your Charisma modifier (minimum of 1). You can make the creature forget less time, and the amount of time can't exceed the duration of your enchantment spell."
             ]
         },
         {
@@ -2263,7 +2263,7 @@
             "level": 2,
             "header": 1,
             "entries": [
-                "You can create pockets of relative safety within the effects of your evocation spells. When you cast an evocation spell that affects other creatures that you can see, you can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save."
+                "You can create pockets of relative safety within the effects of your evocation spells. When you cast an evocation spell that affects other creatures that you can see, you can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their {@variantrule Saving Throw|Ishiir}s against the spell, and they take no damage if they would normally take half damage on a successful save."
             ]
         },
         {
@@ -2279,7 +2279,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip's damage (if any) but suffers no additional effect from the cantrip."
+                "Your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a {@variantrule Saving Throw|Ishiir} against your cantrip, the creature takes half the cantrip's damage (if any) but suffers no additional effect from the cantrip."
             ]
         },
         {
@@ -2344,7 +2344,7 @@
             "header": 1,
             "entries": [
                 "As an action, you can magically alter the weight of one object or creature you can see within 30 feet of you. The object or creature must be Large or smaller. The target's weight is halved or doubled for up to 1 minute or until your {@condition Concentration|Ishiir} ends (as if you were concentrating on a spell).",
-                "While the weight of a creature is halved by this effect, the creature's speed increases by 10 feet, it can jump twice as far as normal, and it has disadvantage on Strength checks and Strength saving throws. While the weight of a creature is doubled by this effect, the creature's speed is reduced by 10 feet, and it has advantage on Strength checks and Strength saving throws.",
+                "While the weight of a creature is halved by this effect, the creature's speed increases by 10 feet, it can jump twice as far as normal, and it has disadvantage on Strength checks and Strength {@variantrule Saving Throw|Ishiir}s. While the weight of a creature is doubled by this effect, the creature's speed is reduced by 10 feet, and it has advantage on Strength checks and Strength {@variantrule Saving Throw|Ishiir}s.",
                 "Upon reaching 10th level in this class, you can target an object or a creature that is Huge or smaller."
             ]
         },
@@ -2359,7 +2359,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You've learned how to manipulate gravity around a living being: whenever you cast a spell on a creature, you can move the target 10 feet to an unoccupied space of your choice if the target is willing to move, the spell hits it with an attack, or it fails a saving throw against the spell."
+                "You've learned how to manipulate gravity around a living being: whenever you cast a spell on a creature, you can move the target 10 feet to an unoccupied space of your choice if the target is willing to move, the spell hits it with an attack, or it fails a {@variantrule Saving Throw|Ishiir} against the spell."
             ]
         },
         {
@@ -2389,7 +2389,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "As an action, you can magically emit a powerful field of gravitational energy that tugs at other creatures for up to 1 minute or until your {@condition Concentration|Ishiir} ends (as if you were concentrating on a spell). For the duration, whenever a creature hostile to you starts its turn within 30 feet of you, it must make a Strength saving throw against your spell save DC. On a failed save, it takes {@damage 3d10} force damage, and its speed is reduced to 0 until the start of its next turn. On a successful save, it takes half as much damage, and every foot it moves this turn costs 2 extra feet of movement.",
+                "As an action, you can magically emit a powerful field of gravitational energy that tugs at other creatures for up to 1 minute or until your {@condition Concentration|Ishiir} ends (as if you were concentrating on a spell). For the duration, whenever a creature hostile to you starts its turn within 30 feet of you, it must make a Strength {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failed save, it takes {@damage 3d10} force damage, and its speed is reduced to 0 until the start of its next turn. On a successful save, it takes half as much damage, and every foot it moves this turn costs 2 extra feet of movement.",
                 "Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir} or until you expend a spell slot of 3rd level or higher on it."
             ]
         },
@@ -2420,9 +2420,9 @@
             "level": 2,
             "header": 1,
             "entries": [
-                "When a creature makes a Wisdom or Intelligence saving throw against spells cast by you, you can force it to make a Constitution saving throw instead. If the spell you used this feature on allows for a repeat saving throw on subsequent turns, these also become Constitution saving throws. You cannot use this feature if the creature has no blood.",
-                "Additionally, creatures that fail their Constitution saving throws against spells cast by you also become {@condition Lacerated|Ishiir}. If the spell natively causes them to become {@condition Lacerated|Ishiir}, the damage they take from the condition increases by an amount equal to your proficiency.",
-                "At the end of their turns, they can make another Constitution saving throw against your spell save DC to end the condition. They do not make this saving throw if the spell triggering this effect is still affecting them and allows for repeat saving throws on subsequent turns. In such a case, the {@condition Lacerated|Ishiir} condition instead ends when they succeed on the repeat saving throw for that spell."
+                "When a creature makes a Wisdom or Intelligence {@variantrule Saving Throw|Ishiir} against spells cast by you, you can force it to make a Constitution {@variantrule Saving Throw|Ishiir} instead. If the spell you used this feature on allows for a repeat {@variantrule Saving Throw|Ishiir} on subsequent turns, these also become Constitution {@variantrule Saving Throw|Ishiir}s. You cannot use this feature if the creature has no blood.",
+                "Additionally, creatures that fail their Constitution {@variantrule Saving Throw|Ishiir}s against spells cast by you also become {@condition Lacerated|Ishiir}. If the spell natively causes them to become {@condition Lacerated|Ishiir}, the damage they take from the condition increases by an amount equal to your proficiency.",
+                "At the end of their turns, they can make another Constitution {@variantrule Saving Throw|Ishiir} against your spell save DC to end the condition. They do not make this {@variantrule Saving Throw|Ishiir} if the spell triggering this effect is still affecting them and allows for repeat {@variantrule Saving Throw|Ishiir}s on subsequent turns. In such a case, the {@condition Lacerated|Ishiir} condition instead ends when they succeed on the repeat {@variantrule Saving Throw|Ishiir} for that spell."
             ]
         },
         {
@@ -2467,7 +2467,7 @@
             "header": 2,
             "entries": [
                 "Your mastery over blood magic transcends the mere physical. You ignore immunity to the {@condition Lacerated|Ishiir} condition and the blood requirement (both for the target creature and for material components) for class features and spells.",
-                "Additionally, whenever a creature you can see with this feature makes a Constitution saving throw, you can use your reaction to force that creature to make that saving throw with disadvantage.",
+                "Additionally, whenever a creature you can see with this feature makes a Constitution {@variantrule Saving Throw|Ishiir}, you can use your reaction to force that creature to make that {@variantrule Saving Throw|Ishiir} with disadvantage.",
                 "You can use this feature a number of times equal to your proficiency bonus. You gain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -2546,7 +2546,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You can create an illusory duplicate of yourself as an instant, almost instinctual reaction to danger. When a creature makes an attack roll against you, you can use your reaction to interpose the illusory duplicate between the attacker and yourself. The attack automatically misses you, then the illusion dissipates.",
+                "You can create an illusory duplicate of yourself as an instant, almost instinctual reaction to danger. When a creature makes an {@variantrule Attack Roll|Ishiir} against you, you can use your reaction to interpose the illusory duplicate between the attacker and yourself. The attack automatically misses you, then the illusion dissipates.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -2758,8 +2758,8 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "You can use magic to bring undead under your control, even those created by other wizards. As an action, you can choose one undead that you can see within 60 feet of you. That creature must make a Charisma saving throw against your wizard spell save DC. If it succeeds, you can't use this feature on it again. If it fails, it becomes friendly to you and obeys your commands until you use this feature again.",
-                "Intelligent undead are harder to control in this way. If the target has an Intelligence of 8 or higher, it has advantage on the saving throw. If it fails the saving throw and has an Intelligence of 12 or higher, it can repeat the saving throw at the end of every hour until it succeeds and breaks free."
+                "You can use magic to bring undead under your control, even those created by other wizards. As an action, you can choose one undead that you can see within 60 feet of you. That creature must make a Charisma {@variantrule Saving Throw|Ishiir} against your wizard spell save DC. If it succeeds, you can't use this feature on it again. If it fails, it becomes friendly to you and obeys your commands until you use this feature again.",
+                "Intelligent undead are harder to control in this way. If the target has an Intelligence of 8 or higher, it has advantage on the {@variantrule Saving Throw|Ishiir}. If it fails the {@variantrule Saving Throw|Ishiir} and has an Intelligence of 12 or higher, it can repeat the {@variantrule Saving Throw|Ishiir} at the end of every hour until it succeeds and breaks free."
             ]
         },
         {
@@ -2817,7 +2817,7 @@
             "level": 2,
             "header": 1,
             "entries": [
-                "You can magically compel a creature to divulge its true name. As a bonus action, you target one creature you can see within 60 feet of you. The target must make a Wisdom saving throw against your spell save DC. On a successful save, you discern that this magic failed, and you can't use this feature on the target again. On a failed save, the target is {@condition Charmed|Ishiir} by you until the end of your next turn, and you mentally learn the {@condition Charmed|Ishiir} target's name or the fact that the target lacks a name.",
+                "You can magically compel a creature to divulge its true name. As a bonus action, you target one creature you can see within 60 feet of you. The target must make a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC. On a successful save, you discern that this magic failed, and you can't use this feature on the target again. On a failed save, the target is {@condition Charmed|Ishiir} by you until the end of your next turn, and you mentally learn the {@condition Charmed|Ishiir} target's name or the fact that the target lacks a name.",
                 "You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses of it when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -3219,7 +3219,7 @@
                             "type": "item",
                             "name": "War Rune",
                             "entries": [
-                                "When you invoke this rune, choose one creature you can see within 30 feet of you. Until the end of your next turn, attack rolls that target the chosen creature gain a bonus equal to half the level of the spell slot expended (rounded up, minimum of +1)."
+                                "When you invoke this rune, choose one creature you can see within 30 feet of you. Until the end of your next turn, {@variantrule Attack Roll|Ishiir}s that target the chosen creature gain a bonus equal to half the level of the spell slot expended (rounded up, minimum of +1)."
                             ]
                         },
                         {
@@ -3245,7 +3245,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You can call on a rune of protection to guard yourself against threats. When you fail a Strength, Dexterity, or Constitution saving throw, you can use your reaction to expend one use of your Runic Empowerment and succeed on the saving throw instead."
+                "You can call on a rune of protection to guard yourself against threats. When you fail a Strength, Dexterity, or Constitution {@variantrule Saving Throw|Ishiir}, you can use your reaction to expend one use of your Runic Empowerment and succeed on the {@variantrule Saving Throw|Ishiir} instead."
             ]
         },
         {
@@ -3273,7 +3273,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "You have mastered the art of wielding your runes directly against your foes. As a bonus action, you can target one creature you can see within 60 feet of yourself. The creature must succeed on a Wisdom saving throw against your spell save DC or be magically marked by an enmity rune.",
+                "You have mastered the art of wielding your runes directly against your foes. As a bonus action, you can target one creature you can see within 60 feet of yourself. The creature must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC or be magically marked by an enmity rune.",
                 "The enmity rune appears as a faintly glowing mote of energy that hovers over the marked creature, which suffers the following effects:",
                 {
                     "type": "list",
@@ -3283,7 +3283,7 @@
                             "type": "item",
                             "name": "Runecraft's Bane",
                             "entries": [
-                                "The creature has disadvantage on saving throws made against spells you cast."
+                                "The creature has disadvantage on {@variantrule Saving Throw|Ishiir}s made against spells you cast."
                             ]
                         },
                         {
@@ -3297,7 +3297,7 @@
                             "type": "item",
                             "name": "Woeful Curse",
                             "entries": [
-                                "When you mark the creature, and as a bonus action on subsequent turns for the duration, you can invoke the enmity rune to curse the creature until the start of your next turn. The next time one of your allies hits the cursed creature with an attack roll, the target also takes {@damage 1d8} force damage."
+                                "When you mark the creature, and as a bonus action on subsequent turns for the duration, you can invoke the enmity rune to curse the creature until the start of your next turn. The next time one of your allies hits the cursed creature with an {@variantrule Attack Roll|Ishiir}, the target also takes {@damage 1d8} force damage."
                             ]
                         }
                     ]
@@ -3502,7 +3502,7 @@
 							"type": "entries",
 							"name": "Harm",
 							"entries": [
-								"As an action, expend a number of d6s from your pool and roll them. Choose creatures within 30 feet of you that you can see. Each target has to make a Charisma saving throw against your spell save DC. On a failure, it takes an amount of damage of a type you choose when you gain this feature (cold, fire, lightning, necrotic, or radiant) equal to the total of the roll. On a success, it takes half as much damage. If the target is an undead or a fiend, it has disadvantage on the saving throw, and the feature deals maximum damage to it."
+								"As an action, expend a number of d6s from your pool and roll them. Choose creatures within 30 feet of you that you can see. Each target has to make a Charisma {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failure, it takes an amount of damage of a type you choose when you gain this feature (cold, fire, lightning, necrotic, or radiant) equal to the total of the roll. On a success, it takes half as much damage. If the target is an undead or a fiend, it has disadvantage on the {@variantrule Saving Throw|Ishiir}, and the feature deals maximum damage to it."
 							]
 						}
 					]
@@ -3604,7 +3604,7 @@
                     "items": [
                         "Darkvision out to a range of 60 feet, as described in chapter 8.",
                         "An increase to speed of 10 feet while the creature is unencumbered.",
-                        "Proficiency in Constitution saving throws.",
+                        "Proficiency in Constitution {@variantrule Saving Throw|Ishiir}s.",
                         "Resistance to acid, cold, fire, lightning, or thunder damage (your choice whenever you choose this benefit)."
                     ]
                 },
@@ -3707,7 +3707,7 @@
             "level": 2,
             "header": 1,
             "entries": [
-                "You have learned to weave your magic to fortify yourself against harm. When you are hit by an attack or you fail a saving throw, you can use your reaction to gain a +2 bonus to your AC against that attack or a +4 bonus to that saving throw.",
+                "You have learned to weave your magic to fortify yourself against harm. When you are hit by an attack or you fail a {@variantrule Saving Throw|Ishiir}, you can use your reaction to gain a +2 bonus to your AC against that attack or a +4 bonus to that {@variantrule Saving Throw|Ishiir}.",
                 "When you use this feature, you can't cast spells other than cantrips until the end of your next turn."
             ]
         },
@@ -3750,7 +3750,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "The magic you channel helps ward off harm. While you maintain {@condition Concentration|Ishiir} on a spell, you have a +2 bonus to AC and all saving throws."
+                "The magic you channel helps ward off harm. While you maintain {@condition Concentration|Ishiir} on a spell, you have a +2 bonus to AC and all {@variantrule Saving Throw|Ishiir}s."
             ]
         },
         {

@@ -684,7 +684,7 @@
 			"classSource": "Other",
 			"level": 1,
 			"entries": [
-				"As a bonus action you may spend 2 arcana point to project an illusion that blurs your image by a few inches that follows your every movement, causing any creature to have disadvantage on attack rolls against you.",
+				"As a bonus action you may spend 2 arcana point to project an illusion that blurs your image by a few inches that follows your every movement, causing any creature to have disadvantage on {@variantrule Attack Roll|Ishiir}s against you.",
 				"If you take damage, the property ceases to function until the start of your next turn. This property is suppressed while you are incapacitated, restrained, or otherwise unable to move. This effect lasts for 1 minute.",
 				"This feature improves further at 10th level."
 			]
@@ -770,7 +770,7 @@
 					"type": "item",
 					"name": "Spellcasting Ability.",
 					"entries": [
-						"Intelligence is your spellcasting ability for your spellblade spells, as your mental tenacity is what allows you to wield magic. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a spellblade spell you cast and when making an attack roll with one.",
+						"Intelligence is your spellcasting ability for your spellblade spells, as your mental tenacity is what allows you to wield magic. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the {@variantrule Saving Throw|Ishiir} DC for a spellblade spell you cast and when making an {@variantrule Attack Roll|Ishiir} with one.",
 						"<b>Spell save DC</b> = 8 + your proficiency bonus + your Intelligence modifier",
 						"<b>Spell attack modifier</b> = your proficiency bonus + your Intelligence modifier"
 					]
@@ -796,7 +796,7 @@
 			"classSource": "Other",
 			"level": 3,
 			"entries": [
-				"You can maintain your focus in the most tumultuous of situations. You have a +2 to Constitution saving throws that you make to maintain {@condition Concentration|Ishiir} on a spell when you take damage."
+				"You can maintain your focus in the most tumultuous of situations. You have a +2 to Constitution {@variantrule Saving Throw|Ishiir}s that you make to maintain {@condition Concentration|Ishiir} on a spell when you take damage."
 			]
 		},
 		{
@@ -923,7 +923,7 @@
 					"type": "item",
 					"name": "Find an Opening",
 					"entries": [
-						"As a bonus action, you can choose to gain advantage on all melee weapon attack rolls until the end of your next turn."
+						"As a bonus action, you can choose to gain advantage on all melee weapon {@variantrule Attack Roll|Ishiir}s until the end of your next turn."
 					]
 				},
 				{
@@ -937,7 +937,7 @@
 					"type": "item",
 					"name": "Perfect Focus",
 					"entries": [
-						"As a bonus action, you gain advantage on saving throws and ability checks in one ability score of your choice for 1 minute. You may only have this active on one ability score at a time."
+						"As a bonus action, you gain advantage on {@variantrule Saving Throw|Ishiir}s and {@variantrule Ability Check|Ishiir}s in one ability score of your choice for 1 minute. You may only have this active on one ability score at a time."
 					]
 				}
 			]
@@ -1029,8 +1029,8 @@
 			"classSource": "Other",
 			"level": 15,
 			"entries": [
-				"Your prowess with defensive magic has become so refined that it is now an offense. Whenever you are targeted by a {@spell magic missile} spell, a line spell, or a spell that requires a ranged attack roll, you can attempt to reflect the spell back at the caster as a reaction by expending a spell slot. When you do so, you must use a spell slot of an equal or higher level to the spell being cast, otherwise you do not affect the spell and your spell slot is wasted. You must also be holding a spellcasting focus, and be able to perform the somatic components of a spell.",
-				"If you are able to use a spell slot of equal or higher level, make an ability check using your spellcasting ability. The DC for this ability check is equal to 20 - the spell slot level you expended. On a successful check, the spell is reflected back at the caster as though it originated from you, turning the caster into the target. On a failed check, the spell is unaffected."
+				"Your prowess with defensive magic has become so refined that it is now an offense. Whenever you are targeted by a {@spell magic missile} spell, a line spell, or a spell that requires a ranged {@variantrule Attack Roll|Ishiir}, you can attempt to reflect the spell back at the caster as a reaction by expending a spell slot. When you do so, you must use a spell slot of an equal or higher level to the spell being cast, otherwise you do not affect the spell and your spell slot is wasted. You must also be holding a spellcasting focus, and be able to perform the somatic components of a spell.",
+				"If you are able to use a spell slot of equal or higher level, make an {@variantrule Ability Check|Ishiir} using your spellcasting ability. The DC for this {@variantrule Ability Check|Ishiir} is equal to 20 - the spell slot level you expended. On a successful check, the spell is reflected back at the caster as though it originated from you, turning the caster into the target. On a failed check, the spell is unaffected."
 			]
 		},
 		{
@@ -1090,7 +1090,7 @@
 					"type": "item",
 					"name": "Perfect Focus",
 					"entries": [
-						"As a reaction, you gain advantage on a saving throw or ability check for two ability scores of your choice for 1 minute."
+						"As a reaction, you gain advantage on a {@variantrule Saving Throw|Ishiir} or {@variantrule Ability Check|Ishiir} for two ability scores of your choice for 1 minute."
 					]
 				}
 			]
@@ -1201,7 +1201,7 @@
 			"header": 1,
 			"entries": [
 				"Your reflexes have sharpened to a perfect edge and can interrupt spellcasting as it is uttered. As a reaction, you may finish the verbal component of a wizard, sorcerer, warlock or bard spell as it is being said by a caster that you can hear, understand and see within 90 feet. Make an Arcana check DC 14 + the spell's level.",
-				"If you fail, you can attempt the saving throw of the spell (if it has one and you are the target) with advantage, or gain +5 AC if it is a ranged spell attack.",
+				"If you fail, you can attempt the {@variantrule Saving Throw|Ishiir} of the spell (if it has one and you are the target) with advantage, or gain +5 AC if it is a ranged spell attack.",
 				"If you succeed, you may spend 3 + half the spell's level arcana points to cast the spell yourself at half range, radius and damage. If the spell has a range of self, you are the target. If the spell must be saved against, it becomes your spell save DC -2.",
 				"In addition to casting the stolen spell, if you succeed by 5 or more, the spell fizzles as if counterspell was cast.",
 				"This technique is difficult and exhausting and can only be attempted twice per {@variantrule Long Rest|Ishiir}."
@@ -1262,7 +1262,7 @@
 			"level": 9,
 			"header": 1,
 			"entries": [
-				"Your Contingency ward manifests additional forms of protection. A creature warded with Contingency may instead expend the ward as a reaction to gain advantage on a Dexterity saving throw."
+				"Your Contingency ward manifests additional forms of protection. A creature warded with Contingency may instead expend the ward as a reaction to gain advantage on a Dexterity {@variantrule Saving Throw|Ishiir}."
 			]
 		},
 		{
@@ -1281,8 +1281,8 @@
 				"If the projectile is a spell, the DC is 11 + the spell level.",
 				"If the projectile is large (boulder, falling rubble, etc.) the DC is 15.",
 				"Anything larger than Huge size category (or otherwise significantly massive) cannot be halted.",
-				"Failure causes the intended target of the projectile to gain a +2 bonus against the projectile (+2 Dexterity saving throw or AC). Failure by 5 or more means the Halt fails and the projectile travels unimpeded and at the intended target.",
-				"On a success, the attack misses, the target automatically succeeds its Dexterity saving throw (if not {@condition Restrained|Ishiir} or {@condition Incapacitated|Ishiir}) or the object falls directly downward harmlessly and comes to rest connecting with a surface or object that can hold it."
+				"Failure causes the intended target of the projectile to gain a +2 bonus against the projectile (+2 Dexterity {@variantrule Saving Throw|Ishiir} or AC). Failure by 5 or more means the Halt fails and the projectile travels unimpeded and at the intended target.",
+				"On a success, the attack misses, the target automatically succeeds its Dexterity {@variantrule Saving Throw|Ishiir} (if not {@condition Restrained|Ishiir} or {@condition Incapacitated|Ishiir}) or the object falls directly downward harmlessly and comes to rest connecting with a surface or object that can hold it."
 			]
 		},
 		{
@@ -1401,7 +1401,7 @@
 					"type": "item",
 					"name": "Attack Order",
 					"entries": [
-						"Your Order emboldens an ally to take the offensive and accelerate their attacks with ferocious force. The next time the creature targeted by this Order takes the {@action Attack} action before the start of your next turn, they can add your Intelligence modifier to the attack roll and {@damage 2d4} force damage to the damage roll for one attack."
+						"Your Order emboldens an ally to take the offensive and accelerate their attacks with ferocious force. The next time the creature targeted by this Order takes the {@action Attack} action before the start of your next turn, they can add your Intelligence modifier to the {@variantrule Attack Roll|Ishiir} and {@damage 2d4} force damage to the damage roll for one attack."
 					]
 				},
 				{
@@ -1422,7 +1422,7 @@
 					"type": "item",
 					"name": "Steadfast Order",
 					"entries": [
-						"Your Order inspires creatures to stand their ground and give no quarter. A creature targeted by this Order can add your Intelligence modifier (minimum of 1) to any Strength or Constitution checks or saving throws they make before the start of your next turn."
+						"Your Order inspires creatures to stand their ground and give no quarter. A creature targeted by this Order can add your Intelligence modifier (minimum of 1) to any Strength or Constitution checks or {@variantrule Saving Throw|Ishiir}s they make before the start of your next turn."
 					]
 				},
 				"This feature improves at 9th level."
@@ -1468,7 +1468,7 @@
 			"header": 1,
 			"entries": [
 				"Your constant vigilance grants you a +5 bonus to your passive Wisdom ({@skill Perception}) score and advantage on any Wisdom ({@skill Perception}) checks you make. You can see danger coming from a mile away and are not deterred. You gain immunity to {@condition Frightened|Ishiir} condition.",
-				"In addition, your ability to respond to dangerous situations is unparalleled. When you fail a Dexterity saving throw you can spend 3 arcana points to succeed instead. Once you use this feature you can't use it again until you finish a {@variantrule Long Rest|Ishiir}.",
+				"In addition, your ability to respond to dangerous situations is unparalleled. When you fail a Dexterity {@variantrule Saving Throw|Ishiir} you can spend 3 arcana points to succeed instead. Once you use this feature you can't use it again until you finish a {@variantrule Long Rest|Ishiir}.",
 				"This feature improves at 15th level."
 			]
 		},
@@ -1484,7 +1484,7 @@
 			"header": 1,
 			"entries": [
 				"Your presence on the battlefield inspires heroic action in those who fight alongside you. You can rally your allies. As an action on your turn, you can yell out a rallying cry, all allies within 60 feet of you can use their reaction to join in your rally. When you do so, you an all allies that joined in the rallying cry gain the following benefits until the start of your next turn:",
-				"All effected creatures gain temporary hit points equal to your Intelligence modifier + your Spellblade level, +2 to their AC and saving throws and +2 to their attack rolls and +1 spell save DC for rounds equal to your Intelligence modifier (minimum 1). You may spend 6 arcana points to extend this Warcry to 1 minute. Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}.",
+				"All effected creatures gain temporary hit points equal to your Intelligence modifier + your Spellblade level, +2 to their AC and {@variantrule Saving Throw|Ishiir}s and +2 to their {@variantrule Attack Roll|Ishiir}s and +1 spell save DC for rounds equal to your Intelligence modifier (minimum 1). You may spend 6 arcana points to extend this Warcry to 1 minute. Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}.",
 				"In addition, when you issue an Order you can issue the same Order to one additional creature (3 creatures total)."
 			]
 		},
@@ -1499,7 +1499,7 @@
 			"level": 15,
 			"header": 1,
 			"entries": [
-				"You may call out to an ally that can hear you within 60 feet. If they fail a Dexterity saving throw you may spend 3 arcana points as a reaction and the ally can choose to succeed instead. Once you use this feature you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
+				"You may call out to an ally that can hear you within 60 feet. If they fail a Dexterity {@variantrule Saving Throw|Ishiir} you may spend 3 arcana points as a reaction and the ally can choose to succeed instead. Once you use this feature you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
 			]
 		}
 	]

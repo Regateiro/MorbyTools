@@ -43,37 +43,37 @@
             "freeRules2024": true,
             "ruleType": "C",
             "entries": [
-                "D20 Tests encompass the three main d20 rolls of the game: {@variantrule Ability Check|Ishiir|ability checks}, {@variantrule Attack Roll|Ishiir|attack rolls}, and {@variantrule Saving Throw|Ishiir|saving throws}. If something in the game affects D20 Tests, it affects all three of these rolls. The DM determines whether a D20 Test is warranted in a given circumstance."
+                "D20 Tests encompass the three main d20 rolls of the game: {@variantrule {@variantrule Ability Check|Ishiir}|Ishiir|{@variantrule Ability Check|Ishiir}s}, {@variantrule {@variantrule Attack Roll|Ishiir}|Ishiir|{@variantrule Attack Roll|Ishiir}s}, and {@variantrule {@variantrule Saving Throw|Ishiir}|Ishiir|{@variantrule Saving Throw|Ishiir}s}. If something in the game affects D20 Tests, it affects all three of these rolls. The DM determines whether a D20 Test is warranted in a given circumstance."
             ]
         },
         {
-            "name": "Ability Check",
+            "name": "{@variantrule Ability Check|Ishiir}",
             "source": "Ishiir",
             "page": 1,
             "freeRules2024": true,
             "ruleType": "C",
             "entries": [
-                "An ability check is a {@variantrule D20 Test|Ishiir} that represents using one of the six abilities\u2014or a specific skill associated with an ability\u2014to overcome a challenge."
+                "An {@variantrule Ability Check|Ishiir} is a {@variantrule D20 Test|Ishiir} that represents using one of the six abilities\u2014or a specific skill associated with an ability\u2014to overcome a challenge."
             ]
         },
         {
-            "name": "Attack Roll",
+            "name": "{@variantrule Attack Roll|Ishiir}",
             "source": "Ishiir",
             "page": 1,
             "freeRules2024": true,
             "ruleType": "C",
             "entries": [
-                "An attack roll is a {@variantrule D20 Test|Ishiir} that represents making an attack with a weapon, an {@variantrule Unarmed Strike|Ishiir}, or a spell."
+                "An {@variantrule Attack Roll|Ishiir} is a {@variantrule D20 Test|Ishiir} that represents making an attack with a weapon, an {@variantrule Unarmed Strike|Ishiir}, or a spell."
             ]
         },
         {
-            "name": "Saving Throw",
+            "name": "{@variantrule Saving Throw|Ishiir}",
             "source": "Ishiir",
             "page": 1,
             "freeRules2024": true,
             "ruleType": "C",
             "entries": [
-                "A saving throw\u2014also called a save\u2014represents an attempt to avoid or resist a threat. You normally make a saving throw only when a rule requires you to do so, but you can decide to fail the save without rolling. The result of a save is detailed in the effect that allowed it. If a target is forced to make a save and lacks the ability score used by it, the target automatically fails."
+                "A {@variantrule Saving Throw|Ishiir}\u2014also called a save\u2014represents an attempt to avoid or resist a threat. You normally make a {@variantrule Saving Throw|Ishiir} only when a rule requires you to do so, but you can decide to fail the save without rolling. The result of a save is detailed in the effect that allowed it. If a target is forced to make a save and lacks the ability score used by it, the target automatically fails."
             ]
         },
         {
@@ -92,21 +92,21 @@
                             "type": "entries",
                             "name": "Damage",
                             "entries": [
-                                "You make an attack roll against the target. Your bonus to the roll equals your Strength modifier plus your {@variantrule Proficiency|Ishiir|Proficiency Bonus}. On a hit, the target takes Bludgeoning damage equal to 1 plus your Strength modifier."
+                                "You make an {@variantrule Attack Roll|Ishiir} against the target. Your bonus to the roll equals your Strength modifier plus your {@variantrule Proficiency|Ishiir|Proficiency Bonus}. On a hit, the target takes Bludgeoning damage equal to 1 plus your Strength modifier."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Grapple",
                             "entries": [
-                                "The target must succeed on a Strength or Dexterity {@variantrule Saving Throw|Ishiir|saving throw} (it chooses which), or it has the {@condition Grappled|Ishiir} condition. The DC for the {@variantrule Saving Throw|Ishiir|saving throw} and any escape attempts equals 8 plus your Strength modifier and {@variantrule Proficiency|Ishiir|Proficiency Bonus}. This grapple is possible only if the target is no more than one size larger than you and if you have a hand free to grab it."
+                                "The target must succeed on a Strength or Dexterity {@variantrule {@variantrule Saving Throw|Ishiir}|Ishiir|{@variantrule Saving Throw|Ishiir}} (it chooses which), or it has the {@condition Grappled|Ishiir} condition. The DC for the {@variantrule {@variantrule Saving Throw|Ishiir}|Ishiir|{@variantrule Saving Throw|Ishiir}} and any escape attempts equals 8 plus your Strength modifier and {@variantrule Proficiency|Ishiir|Proficiency Bonus}. This grapple is possible only if the target is no more than one size larger than you and if you have a hand free to grab it."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Shove",
                             "entries": [
-                                "The target must succeed on a Strength or Dexterity {@variantrule Saving Throw|Ishiir|saving throw} (it chooses which), or you either push it 5 feet away or cause it to have the {@condition Prone|Ishiir} condition. The DC for the {@variantrule Saving Throw|Ishiir|saving throw} equals 8 plus your Strength modifier and {@variantrule Proficiency|Ishiir|Proficiency Bonus}. This shove is possible only if the target is no more than one size larger than you."
+                                "The target must succeed on a Strength or Dexterity {@variantrule {@variantrule Saving Throw|Ishiir}|Ishiir|{@variantrule Saving Throw|Ishiir}} (it chooses which), or you either push it 5 feet away or cause it to have the {@condition Prone|Ishiir} condition. The DC for the {@variantrule {@variantrule Saving Throw|Ishiir}|Ishiir|{@variantrule Saving Throw|Ishiir}} equals 8 plus your Strength modifier and {@variantrule Proficiency|Ishiir|Proficiency Bonus}. This shove is possible only if the target is no more than one size larger than you."
                             ]
                         }
                     ]
@@ -202,7 +202,7 @@
                                     "type": "item",
                                     "name": "Special Feature",
                                     "entries": [
-                                        "Some features are recharged by a {@variantrule Long Rest|Ishiir}. If you have such a feature, it recharges in the way specified in its description."
+                                        "Some features are recharged by a Long Rest. If you have such a feature, it recharges in the way specified in its description."
                                     ]
                                 }
                             ]
@@ -218,7 +218,7 @@
             "freeRules2024": true,
             "ruleType": "C",
             "entries": [
-                "If you have proficiency with something, you can add your Proficiency Bonus to any {@variantrule D20 Test|Ishiir} you make using that thing. A creature might have proficiency in a skill or {@variantrule Saving Throw|Ishiir|saving throw} or with a weapon or tool."
+                "If you have proficiency with something, you can add your Proficiency Bonus to any {@variantrule D20 Test|Ishiir} you make using that thing. A creature might have proficiency in a skill or {@variantrule {@variantrule Saving Throw|Ishiir}|Ishiir|{@variantrule Saving Throw|Ishiir}} or with a weapon or tool."
             ]
         },
         {
@@ -454,7 +454,7 @@
                                     "source": "Ishiir",
                                     "page": 1,
                                     "entries": [
-                                        "A character performs this task by touring the taverns of the area, getting absolutely smashed, and quite possibly into a lot of trouble. To carouse the designated character makes a Constitution saving throw against the area DC.",
+                                        "A character performs this task by touring the taverns of the area, getting absolutely smashed, and quite possibly into a lot of trouble. To carouse the designated character makes a Constitution {@variantrule Saving Throw|Ishiir} against the area DC.",
                                         "The result is determined by the difference between the roll and the DC. Regardless of the result, the character then rolls on the Carousing event table." 
                                     ]
                                 },
@@ -973,7 +973,7 @@
             "page": 1,
             "entries": [
                 "Fortitude Points, hereafter shortened to FP, form a pool of quasi-temporary hitpoints that stack with all other forms of hitpoints. FP replace the reworked Legendary Resistance system for monsters.",
-                "When a creature with FP fails a saving throw and is at 50% HP or less, it takes an amount of damage to its FP that corresponds to the power of the effect. As an example, a spell would consume an amount of FP equal to 10 x its spell level.",
+                "When a creature with FP fails a {@variantrule Saving Throw|Ishiir} and is at 50% HP or less, it takes an amount of damage to its FP that corresponds to the power of the effect. As an example, a spell would consume an amount of FP equal to 10 x its spell level.",
                 "If the amount of FP the effect would consume is greater than the amount of FP the creature has remaining, the remaining FP is consumed AND the creature is subject to the effect as normal. There is NOT, however, any carryover of the excess \"damage\" the ability would've caused to the FP pool.",
                 "If a creature would drop to 0 hp, but has FP remaining, the damage is subtracted from the FP first instead. This happens at a 1:1 ratio, so an attack doing 8 points of damage would consume 8 points of FP.",
                 {
@@ -994,7 +994,7 @@
                             ""
                         ],
                         [
-                            "{@condition Concentration|Ishiir} Saving Throw",
+                            "{@condition Concentration|Ishiir} {@variantrule Saving Throw|Ishiir}",
                             "10/20/30 (failed/by 5 or more/by 10 or more)"
                         ],
                         [
@@ -1627,8 +1627,8 @@
                                     "page": 1,
                                     "entries": [
                                         "The Travel Pace table assumes that Characters Travel for 8 hours in a day. They can push on beyond that limit, at the risk of Exhaustion.",
-                                        "For each additional hour of Travel beyond 8 hours, the Characters cover the distance shown in the Hour column for their pace, but once the characters stop traveling, they have to make a Constitution saving throw.",
-                                        "The DC is 10 + 1 for each hour past 8 hours. On a failed saving throw, a character suffers one level of Exhaustion (see {@filter Conditions|conditionsdiseases|source=Ishiir})."
+                                        "For each additional hour of Travel beyond 8 hours, the Characters cover the distance shown in the Hour column for their pace, but once the characters stop traveling, they have to make a Constitution {@variantrule Saving Throw|Ishiir}.",
+                                        "The DC is 10 + 1 for each hour past 8 hours. On a failed {@variantrule Saving Throw|Ishiir}, a character suffers one level of Exhaustion (see {@filter Conditions|conditionsdiseases|source=Ishiir})."
                                     ],
                                     "source": "Ishiir"
                                 },
@@ -2119,7 +2119,7 @@
                 "ALL classes and subclasses that gain a fighting style from a feature can choose from all styles available to the Fighter class, rather than only a limited selection.",
                 "Barbarians may add their rage damage bonus to ranged weapon attacks with thrown weapons.",
                 "Prepared spellcasters can now change their prepared spells at the end of a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
-                "Class features that require a saving throw and do not normally use the spell save DC of the class and do not have a dedicated item to increase their DC, instead receive the enhancement bonus of an item used through the feature (where appropriate). Features that do not involve any items, such as certain racial abilities or other class features, instead receive a bonus to their DC equal to half proficiency, rounded down."
+                "Class features that require a {@variantrule Saving Throw|Ishiir} and do not normally use the spell save DC of the class and do not have a dedicated item to increase their DC, instead receive the enhancement bonus of an item used through the feature (where appropriate). Features that do not involve any items, such as certain racial abilities or other class features, instead receive a bonus to their DC equal to half proficiency, rounded down."
             ]
         },
         {
@@ -2129,7 +2129,7 @@
             "page": 1,
             "entries": [
                 "Features that refer to a weapon damage die, reference the entire base damage of the weapon. E.g. for the Barbarian's Brutal Critical feature, you can roll an additional {@dice 2d6} on a critical hit with a greatsword, rather than only {@dice 1d6}.",
-                "Death Saving Throws do not reset once a creature heals, they instead recharge on a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
+                "Death {@variantrule Saving Throw|Ishiir}s do not reset once a creature heals, they instead recharge on a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
                 "Dodging also gives disadvantage on attempts to grapple against the dodging creature."
             ]
         },

@@ -486,7 +486,7 @@
 			"level": 15,
 			"entries": [
 				"Your Salves are more potent than ever.",
-				"While a creature has a salve active on them they gain a +1 to all saving throws."
+				"While a creature has a salve active on them they gain a +1 to all {@variantrule Saving Throw|Ishiir}s."
 			]
 		},
 		{
@@ -730,7 +730,7 @@
 						[ "1", "The creature takes {@damage 4d6} Necrotic damage" ],
 						[ "2", "The speed of the creature increases by 10 feet for the next 4 turns" ],
 						[ "3", "Nothing happens" ],
-						[ "4", "The creature can add {@dice 1d8} to their next attack roll, saving throw or ability check" ],
+						[ "4", "The creature can add {@dice 1d8} to their next {@variantrule Attack Roll|Ishiir}, {@variantrule Saving Throw|Ishiir} or {@variantrule Ability Check|Ishiir}" ],
 						[ "5", "The next meal they eat they feel satiated for the next week and will not have to eat again till the next week" ],
 						[ "6", "The creature losses 10 ft of movement" ],
 						[ "7", "The creature exudes pheromones and charms every creature within 20 ft of it. WIS save" ],
@@ -746,7 +746,7 @@
 						[ "17", "The creature is forced to make a WIS save, becoming {@condition Dazed|Ishiir} on a failure for 1 minute" ],
 						[ "18", "30 ft around the creature becomes {@quickref difficult terrain||3} for everyone but the creature itself" ],
 						[ "19", "The creature pukes fire in a 10ft line 5ft wide dealing {@damage 2d6} fire damage or half on a save DEX save" ],
-						[ "20", "The creature's next attack roll is considered a 20 on the d20" ]
+						[ "20", "The creature's next {@variantrule Attack Roll|Ishiir} is considered a 20 on the d20" ]
 					]
 				}
 			]
@@ -762,7 +762,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
-				"You can create a vial that holds debilitating mist during a {@variantrule Short Rest|Ishiir}. When thrown it creates a 15ft radius mist that gives a {@dice 1d10} penalty to ability checks and saving throws to any creature within its radius."
+				"You can create a vial that holds debilitating mist during a {@variantrule Short Rest|Ishiir}. When thrown it creates a 15ft radius mist that gives a {@dice 1d10} penalty to {@variantrule Ability Check|Ishiir}s and {@variantrule Saving Throw|Ishiir}s to any creature within its radius."
 			]
 		},
 		{
@@ -804,7 +804,7 @@
 			"level": 20,
 			"header": 2,
 			"entries": [
-				"While a creature is under the effect of your Bottle of Pain you have advantage on all attacks against them and they have disadvantage on saving throws against your Tonics."
+				"While a creature is under the effect of your Bottle of Pain you have advantage on all attacks against them and they have disadvantage on {@variantrule Saving Throw|Ishiir}s against your Tonics."
 			]
 		}
 	]
