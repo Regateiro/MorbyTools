@@ -44,7 +44,7 @@
                         "The wearer's walking speed increases by 5 feet.",
                         "The armor includes gauntlets, each of which is a magic melee weapon that can be wielded only when the hand is holding nothing. The wearer is proficient with the gauntlets, and each one deals {@damage 1d8} force damage on a hit and has the thrown property, with a normal range of 20 feet and a long range of 60 feet. When thrown, the gauntlet detaches and flies at the attack's target, then immediately returns to the wearer and reattaches.",
                         "The armor can't be removed against the wearer's will.",
-                        "If the wearer is missing any limbs, the armor replaces those limbs—hands, arms, feet, legs, or similar appendages. The replacements function identically to the body parts they replace."
+                        "If the wearer is missing any limbs, the armor replaces those limbs\u2014hands, arms, feet, legs, or similar appendages. The replacements function identically to the body parts they replace."
                     ]
                 }
             ]
@@ -694,6 +694,50 @@
             ]
         },
         {
+            "name": "Heavy",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "AM"
+            ],
+            "entries": [
+                "While wearing this armor, you have a number of temporary hitpoints equal to 1.5 times its AC (rounded down), which stack with any other form of temporary hitpoints. You regain any lost temporary hitpoints from this feature when you finish a short or long rest by expending 1 gp per temporary hitpoint."
+            ]
+        },
+        {
+            "name": "Light",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "AM"
+            ],
+            "entries": [
+                "While wearing this armor, you have a number of temporary hitpoints equal to its AC, which stack with any other form of temporary hitpoints. You regain any lost temporary hitpoints from this feature when you finish a short or long rest by expending 1 sp per temporary hitpoint."
+            ]
+        },
+        {
+            "name": "Medium",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "AM"
+            ],
+            "entries": [
+                "While wearing this armor, you have a number of temporary hitpoints equal to its AC, which stack with any other form of temporary hitpoints. You regain any lost temporary hitpoints from this feature when you finish a short or long rest by expending 5 sp per temporary hitpoint."
+            ]
+        },
+        {
+            "name": "Unarmored Defense",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "AM"
+            ],
+            "entries": [
+                "While using your Unarmored Defense or similar permanent feature that alters the calculation for your AC, you have a number of temporary hitpoints equal to its AC, which stack with any other form of temporary hitpoints. You can regain any lost temporary hitpoints from this feature when you finish a short or long rest by expending 5 sp per temporary hitpoint."
+            ]
+        },
+        {
             "name": "Banishing Shot",
             "source": "Ishiir",
             "page": 1,
@@ -904,42 +948,6 @@
             ]
         },
         {
-            "name": "Blood Curse of the Blackened Gaze",
-            "page": 1,
-            "source": "Ishiir",
-            "featureType": [
-                "BC"
-            ],
-            "entries": [
-                "As a reaction, when a creature you can see within 30 feet of you makes a weapon attack, you can cause that attack to have disadvantage. If the attack still hits, the target creature takes half damage from it. This curse has no effect on creatures that do not rely on sight or are otherwise immune to the {@condition Blinded|Ishiir} condition.",
-                {
-                    "name": "Amplify",
-                    "type": "item",
-                    "entries": [
-                        "The target creature has to make a Constitution save or be {@condition Blinded|Ishiir} until the end of your next turn."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Blood Curse of the Infirm",
-            "page": 1,
-            "source": "Ishiir",
-            "featureType": [
-                "BC"
-            ],
-            "entries": [
-                "As a bonus action, you weaken the health of a creature within 30 feet of you. Until the start of your next turn, whenever the target takes poison or necrotic damage, it takes additional damage of the same type equal to a roll of your hemocraft die.",
-                {
-                    "name": "Amplify",
-                    "type": "item",
-                    "entries": [
-                        "The next Constitution saving throw the cursed creature makes before this curse ends has disadvantage."
-                    ]
-                }
-            ]
-        },
-        {
             "name": "Blood Curse of the Anxious",
             "page": 1,
             "source": "Ishiir",
@@ -953,6 +961,24 @@
                     "type": "item",
                     "entries": [
                         "The next Wisdom saving throw the cursed creature makes before this curse ends has disadvantage."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blood Curse of the Blackened Gaze",
+            "page": 1,
+            "source": "Ishiir",
+            "featureType": [
+                "BC"
+            ],
+            "entries": [
+                "As a reaction, when a creature you can see within 30 feet of you makes a weapon attack, you can cause that attack to have disadvantage. If the attack still hits, the target creature takes half damage from it. This curse has no effect on creatures that do not rely on sight or are otherwise immune to the {@condition Blinded|Ishiir} condition.",
+                {
+                    "name": "Amplify",
+                    "type": "item",
+                    "entries": [
+                        "The target creature has to make a Constitution save or be {@condition Blinded|Ishiir} until the end of your next turn."
                     ]
                 }
             ]
@@ -1043,6 +1069,24 @@
                     "type": "item",
                     "entries": [
                         "The range of this curse increases to 60 feet."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blood Curse of the Infirm",
+            "page": 1,
+            "source": "Ishiir",
+            "featureType": [
+                "BC"
+            ],
+            "entries": [
+                "As a bonus action, you weaken the health of a creature within 30 feet of you. Until the start of your next turn, whenever the target takes poison or necrotic damage, it takes additional damage of the same type equal to a roll of your hemocraft die.",
+                {
+                    "name": "Amplify",
+                    "type": "item",
+                    "entries": [
+                        "The next Constitution saving throw the cursed creature makes before this curse ends has disadvantage."
                     ]
                 }
             ]
@@ -1151,7 +1195,7 @@
                         }
                     },
                     "resourceName": "Ki",
-					"ability": "wis"
+                    "ability": "wis"
                 }
             ],
             "entries": [
@@ -1190,50 +1234,11 @@
                         }
                     },
                     "resourceName": "Ki",
-					"ability": "wis"
+                    "ability": "wis"
                 }
             ],
             "entries": [
                 "You can spend 3 ki points to cast {@spell Rime's Binding Ice|Ishiir}."
-            ]
-        },
-        {
-            "name": "Hand of Ore",
-            "page": 1,
-            "source": "Ishiir",
-            "featureType": [
-                "ED"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 6,
-                        "class": {
-                            "name": "Monk"
-                        },
-                        "subclass": {
-                            "name": "Four Elements"
-                        }
-                    }
-                }
-            ],
-            "additionalSpells": [
-                {
-                    "innate": {
-                        "_": {
-                            "resource": {
-                                "2": [
-                                    "maximilian's earthen grasp|Ishiir"
-                                ]
-                            }
-                        }
-                    },
-                    "resourceName": "Ki",
-					"ability": "wis"
-                }
-            ],
-            "entries": [
-                "You can spend 2 ki points to cast {@spell Maximilian's Earthen Grasp|Ishiir}."
             ]
         },
         {
@@ -1288,7 +1293,7 @@
                         }
                     },
                     "resourceName": "Ki",
-					"ability": "wis"
+                    "ability": "wis"
                 }
             ],
             "entries": [
@@ -1325,7 +1330,7 @@
                         }
                     },
                     "resourceName": "Ki",
-					"ability": "wis"
+                    "ability": "wis"
                 }
             ],
             "entries": [
@@ -1364,7 +1369,7 @@
                         }
                     },
                     "resourceName": "Ki",
-					"ability": "wis"
+                    "ability": "wis"
                 }
             ],
             "entries": [
@@ -1403,11 +1408,50 @@
                         }
                     },
                     "resourceName": "Ki",
-					"ability": "wis"
+                    "ability": "wis"
                 }
             ],
             "entries": [
                 "You can spend 3 ki points to cast {@spell shatter|Ishiir}."
+            ]
+        },
+        {
+            "name": "Hand of Ore",
+            "page": 1,
+            "source": "Ishiir",
+            "featureType": [
+                "ED"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 6,
+                        "class": {
+                            "name": "Monk"
+                        },
+                        "subclass": {
+                            "name": "Four Elements"
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "resource": {
+                                "2": [
+                                    "maximilian's earthen grasp|Ishiir"
+                                ]
+                            }
+                        }
+                    },
+                    "resourceName": "Ki",
+                    "ability": "wis"
+                }
+            ],
+            "entries": [
+                "You can spend 2 ki points to cast {@spell Maximilian's Earthen Grasp|Ishiir}."
             ]
         },
         {
@@ -1442,7 +1486,7 @@
                         }
                     },
                     "resourceName": "Ki",
-					"ability": "wis"
+                    "ability": "wis"
                 }
             ],
             "entries": [
@@ -1481,7 +1525,7 @@
                         }
                     },
                     "resourceName": "Ki",
-					"ability": "wis"
+                    "ability": "wis"
                 }
             ],
             "entries": [
@@ -1520,7 +1564,7 @@
                         }
                     },
                     "resourceName": "Ki",
-					"ability": "wis"
+                    "ability": "wis"
                 }
             ],
             "entries": [
@@ -1546,7 +1590,7 @@
                         }
                     },
                     "resourceName": "Ki",
-					"ability": "wis"
+                    "ability": "wis"
                 }
             ],
             "entries": [
@@ -1583,7 +1627,7 @@
                         }
                     },
                     "resourceName": "Ki",
-					"ability": "wis"
+                    "ability": "wis"
                 }
             ],
             "entries": [
@@ -1644,11 +1688,671 @@
                         }
                     },
                     "resourceName": "Ki",
-					"ability": "wis"
+                    "ability": "wis"
                 }
             ],
             "entries": [
                 "You can spend 6 ki points to cast {@spell wall of stone|Ishiir}."
+            ]
+        },
+        {
+            "name": "Aquatic Traits",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Increase one ability score of your Eidolon from among Strength, Dexterity, or Constitution by 1.",
+                "Your Eidolon gains a swimming speed if it doesn't already have one, equal to its highest speed and it can breathe underwater."
+            ]
+        },
+        {
+            "name": "Breath Weapon",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Summoner"
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "Your Eidolon learns to exhale destructive energy. Choose one of the following damage types: acid, cold, fire, lightning, necrotic, poison, radiant, or thunder.",
+                "Additionally, choose the area shape that the Breath Weapon affects: 15 + 5 x proficiency feet cone or 30 + 10 x proficiency feet long, 5 feet wide line.",
+                "Your Eidolon can activate its Breath Weapon as an action. Each creature in the area of effect has to make a DEX saving throw against your spell save DC, taking {@damage 4d6} + {@damage 1d6} x proficiency of the chosen damage type on a failure and half as much on a success.",
+                "Once it has used its breath weapon it cannot do so again until you finish a short rest or you spend a spell slot of 3rd level or higher."
+            ]
+        },
+        {
+            "name": "Chamaeleon Hide",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 10,
+                        "class": {
+                            "name": "Summoner"
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "Increase your Eidolon's Dexterity or Constitution by 1, up to a maximum of 20.",
+                "Your Eidolon can use its bonus action to become {@condition Invisible|Ishiir}. The invisibility ends if your Eidolon performs a hostile action."
+            ]
+        },
+        {
+            "name": "Damage Immunity",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 16,
+                        "class": {
+                            "name": "Summoner"
+                        },
+                        "subclass": {
+                            "name": "Symbiosist"
+                        }
+                    },
+                    "otherSummary": {
+                        "entry": "{@optfeature Damage Resistance|Ishiir}, {@class Summoner|Ishiir|Symbiosist|Symbiosist|Ishiir}"
+                    }
+                }
+            ],
+            "entries": [
+                "When you are in Symbiosis with your Eidolon, you are immune to every damage type you selected for Damage Resistance evolution feat."
+            ]
+        },
+        {
+            "name": "Damage Resistance",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Increase your Eidolon's Constitution by 1, up to a maximum of 20.",
+                "Your Eidolon gains resistance to one of the following damage types: acid, cold, fire, lightning, necrotic, poison, or radiant.",
+                "This evolution feat can be selected multiple times."
+            ]
+        },
+        {
+            "name": "Eidolon Resilience",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Choose one ability score. Your Eidolon gains the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Increase the chosen ability score by 1, to a maximum of 20.",
+                        "Your Eidolon gains proficiency in saving throws using the chosen ability."
+                    ]
+                },
+                "This evolution feat can be selected multiple times."
+            ]
+        },
+        {
+            "name": "Eidolon Toughness",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Your Eidolon's hitpoints increase by an amount equal to twice your summoner level.",
+                "This evolution feat can be selected multiple times."
+            ]
+        },
+        {
+            "name": "Energy Infusion",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Choose one of the following damage types: acid, cold, fire, lightning, necrotic, poison, radiant, or thunder.",
+                "Your Eidolon's weapon attacks deal an additional {@damage 1d6} of the chosen damage type."
+            ]
+        },
+        {
+            "name": "Enhanced Physiology",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Increase one ability score of your Eidolon from among Strength, Dexterity, or Constitution by 2 or increase 2 ability scores from among those by 1, up to a maximum of 20.",
+                "This evolution feat can be selected multiple times."
+            ]
+        },
+        {
+            "name": "Evasion",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Summoner"
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "Increase your Eidolon's Dexterity by 1, to a maximum of 20.",
+                "If the Eidolon is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+            ]
+        },
+        {
+            "name": "Fear Aura",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 10,
+                        "class": {
+                            "name": "Summoner"
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "Any creature hostile to Eidolon that starts its turn within 20 feet of it or enters that area for the first time on a turn, must make a Wisdom saving throw against your spell save DC, unless the Eidolon is {@condition Incapacitated|Ishiir}. On a failed save, the creature is {@condition Frightened|Ishiir} until the start of its next turn. If a creature's saving throw is successful, the creature is immune to the Eidolon's Fear Aura for the next 24 hours."
+            ]
+        },
+        {
+            "name": "Fierce Charge",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Increase your Eidolon's Strength, Dexterity, or Constitution by 1, up to a maximum of 20.",
+                "Once your turn, when your Eidolon moves towards a creature in a straight line for the first time, it can add 1 dmg for every 5 ft spent as part of that movement to the first melee weapon damage roll it makes against that creature."
+            ]
+        },
+        {
+            "name": "Grappling Attacks",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Increase your Eidolon's Strength or Constitution by 1, up to a maximum of 20.",
+                "Creatures no more than one size larger than your Eidolon that are hit by your Eidolon's natural weapon attacks have to make a STR or DEX saving throw (target creature's choice) against your spell save DC. On failure, the target creature is {@condition Grappled|Ishiir} by your Eidolon. Creatures that are the same size of the Eidolon or smaller, are also {@condition Restrained|Ishiir} while grappled in this manner."
+            ]
+        },
+        {
+            "name": "Greater Size Increase",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Summoner"
+                        },
+                        "subclass": {
+                            "name": "Eidolon Master"
+                        }
+                    },
+                    "otherSummary": {
+                        "entry": "{@optfeature Size Increase|Ishiir}, {@class Summoner|Ishiir|Eidolon Master|Eidolon Master|Ishiir}"
+                    }
+                }
+            ],
+            "entries": [
+                "Your Eidolon's size increases to huge and its hitpoints increase by an amount equal to your summoner level.",
+                "Additionally, the reach of its melee weapon attacks increases by 5 feet and the die size for its natural weapons and damaging abilities increases by 1 step."
+            ]
+        },
+        {
+            "name": "Hardened Hide",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Your Eidolon's AC increases by 2."
+            ]
+        },
+        {
+            "name": "Improved Skill",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Increase your Eidolon's Strength, Dexterity, or Constitution by 1, up to a maximum of 20.",
+                "Your Eidolon learns one additional skill. If it is already proficient in the skill, it adds double your proficiency bonus to checks it makes with it."
+            ]
+        },
+        {
+            "name": "Improved Speed",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Increase your Eidolon's Strength, Dexterity, or Constitution by 1, up to a maximum of 20.",
+                "Your Eidolon's speed increases by 10 feet."
+            ]
+        },
+        {
+            "name": "Intertwined Metabolism",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 10,
+                        "class": {
+                            "name": "Summoner"
+                        },
+                        "subclass": {
+                            "name": "Symbiosist"
+                        }
+                    },
+                    "otherSummary": {
+                        "entry": "{@class Summoner|Ishiir|Symbiosist|Symbiosist|Ishiir}"
+                    }
+                }
+            ],
+            "entries": [
+                "When you are in Symbiosis with your Eidolon, you are immune to the {@condition Poisoned|Ishiir} and {@condition Lacerated|Ishiir} conditions and to non-magical diseases. If you enter Symbiosis while any of the aforementioned are already affecting either you or your Eidolon or both, they are removed at the end of the same turn."
+            ]
+        },
+        {
+            "name": "Lacerating Attacks",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Increase your Eidolon's Strength or Dexterity by 1, up to a maximum of 20.",
+                "Creatures hit by your Eidolon's natural weapon attacks have to make a CON saving throw against your spell save DC. On failure, the target creature is {@condition Lacerated|Ishiir}. At the end of each of its turns, the creature can repeat the saving throw, ending the condition on a success."
+            ]
+        },
+        {
+            "name": "Legendary Resistance",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Summoner"
+                        },
+                        "subclass": {
+                            "name": "Eidolon Master"
+                        }
+                    },
+                    "otherSummary": {
+                        "entry": "{@class Summoner|Ishiir|Eidolon Master|Eidolon Master|Ishiir}"
+                    }
+                }
+            ],
+            "entries": [
+                "When your Eidolon fails a saving throw, it can choose to succeed instead.",
+                "Your Eidolon can use this feature three times and it regains all expended uses when you finish a long rest."
+            ]
+        },
+        {
+            "name": "Magic Resistance (EF)",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 16,
+                        "class": {
+                            "name": "Summoner"
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "The Eidolon has advantage on saving throws against spells and other magical effects."
+            ]
+        },
+        {
+            "name": "Pack Leader",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Summoner"
+                        },
+                        "subclass": {
+                            "name": "Host Caller"
+                        }
+                    },
+                    "otherSummary": {
+                        "entry": "{@class Summoner|Ishiir|Host Caller|Host Caller|Ishiir}"
+                    }
+                }
+            ],
+            "entries": [
+                "Creatures summoned by you have advantage on attack rolls against any creatures that they can see within 5 feet of your Eidolon, unless your Eidolon is {@condition Incapacitated|Ishiir}."
+            ]
+        },
+        {
+            "name": "Petrifying Gaze",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Summoner"
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "As an action, your Eidolon can gaze at a creature within 60 feet of it, causing it to gradually turn to stone. The target creature has to make a CON saving throw against your spell save DC. On a failed save, it is {@condition Restrained|Ishiir} as its flesh begins to harden. On a successful save, the creature isn't affected.",
+                "A creature restrained by this ability must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this ability three times, the effect ends. If it fails its saves three times, it is turned to stone and subjected to the {@condition Petrified|Ishiir} condition for the duration. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.",
+                "If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state.",
+                "Once it has used its petrifying gaze it cannot do so again until you finish a short rest or you spend a spell slot of 5th level or higher."
+            ]
+        },
+        {
+            "name": "Pounce",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Increase your Eidolon's Strength or Dexterity by 1, up to a maximum of 20.",
+                "Once per turn, as part of a melee weapon attack, your Eidolon can move up to its speed in a straight line towards a target of your choice."
+            ]
+        },
+        {
+            "name": "Ranged Attacks",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Increase your Eidolon's Strength or Dexterity by 1, up to a maximum of 20.",
+                "Your Eidolon gains a ranged natural weapon attack with a range of 80/320. The damage die of this attack is identical to its other natural attacks and uses the same ability score for attack and damage rolls.",
+                "You can choose the damage type of the ranged attack from one of the following: acid, bludgeoning, cold, fire, lightning, necrotic, piercing, poison, radiant, slashing, or thunder."
+            ]
+        },
+        {
+            "name": "Regeneration",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 10,
+                        "class": {
+                            "name": "Summoner"
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "Your Eidolon regenerates an amount of hitpoints equal to twice your proficiency at the start of each of its turns."
+            ]
+        },
+        {
+            "name": "Shadow Stealth",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Summoner"
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "Your Eidolon gains proficiency in the {@skill Stealth} skill. If it is already proficient in the skill, it adds double your proficiency bonus to checks it makes with it.",
+                "While in dim light or darkness, your Eidolon can take the {@action Hide|Ishiir} action as a bonus action."
+            ]
+        },
+        {
+            "name": "Shimmering Hide",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Summoner"
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "Your Eidolon projects a magical illusion that blurs its appearance to the naked eye and makes it difficult to tell its actual position and movements, causing attack rolls against it to have disadvantage. If it takes damage, this trait is disrupted until the start of its next turn. This trait is also disrupted while the Eidolon is {@condition Incapacitated|Ishiir} or has a speed of 0."
+            ]
+        },
+        {
+            "name": "Size Increase",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Summoner"
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "Increase your Eidolon's Strength or Constitution by 1, up to a maximum of 20.",
+                "Your Eidolon's size increases to large and its hitpoints increase by an amount equal to your summoner level."
+            ]
+        },
+        {
+            "name": "Special Senses",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Increase your Eidolon's Constitution by 1, up to a maximum of 20.",
+                "Your Eidolon gains one of the following senses of your choice:",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@sense Blindsight|PHB} within 30 feet.",
+                        "{@sense Tremorsense|MM} within 60 feet.",
+                        "{@optfeature Devil's Sight|Ishiir} within 120 feet."
+                    ]
+                },
+                "This evolution feat can be selected multiple times."
+            ]
+        },
+        {
+            "name": "Subterranean Traits",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Increase one ability score of your Eidolon from among Strength, Dexterity, or Constitution by 1.",
+                "Your Eidolon gains a climbing speed equal to its walking speed and a burrowing speed equal to half its walking speed.",
+                "Additionally, the {@sense darkvision|PHB} range of your Eidolon increases to 120 feet."
+            ]
+        },
+        {
+            "name": "Toppling Attacks",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Increase your Eidolon's Strength or Constitution by 1, up to a maximum of 20.",
+                "Creatures no more than one size larger than your Eidolon that are hit by your Eidolon's natural weapon attacks have to make a STR saving throw against your spell save DC. On failure, the target creature is knocked {@condition Prone|Ishiir}."
+            ]
+        },
+        {
+            "name": "Unshakeable Devotion",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 10,
+                        "class": {
+                            "name": "Summoner"
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "Your Eidolon is immune to the {@condition Charmed|Ishiir} and {@condition Frightened|Ishiir} conditions."
+            ]
+        },
+        {
+            "name": "Vanguard",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Summoner"
+                        },
+                        "subclass": {
+                            "name": "Host Caller"
+                        }
+                    },
+                    "otherSummary": {
+                        "entry": "{@class Summoner|Ishiir|Host Caller|Host Caller|Ishiir}"
+                    }
+                }
+            ],
+            "entries": [
+                "Whenever you a creature summoned by you that is within 20 feet of your Eidolon must make a saving throw, the creature gains a bonus to the saving throw equal to your choice of your Intelligence or Charisma modifier (with a minimum bonus of +1)."
+            ]
+        },
+        {
+            "name": "Venomous Attacks",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Summoner"
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "Creatures hit by your Eidolon's natural weapon attacks have to make a CON saving throw against your spell save DC. On failure, the target creature is {@condition Poisoned|Ishiir}. A poisoned creature takes poison damage equal to twice your proficiency at the start of each of its turns.",
+                "At the end of each of its turns, the creature can repeat the saving throw, ending the condition on a success."
+            ]
+        },
+        {
+            "name": "Wings",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EF"
+            ],
+            "entries": [
+                "Your Eidolon gains a flying speed if it doesn't already have one, equal to its highest speed."
             ]
         },
         {
@@ -1952,7 +2656,7 @@
                 }
             ],
             "entries": [
-                "You can cast {@spell hold monster|Ishiir} at will—targeting a celestial, fiend, or elemental—without expending a spell slot or material components. You must finish a long rest before you can use this invocation on the same creature again."
+                "You can cast {@spell hold monster|Ishiir} at will\u2014targeting a celestial, fiend, or elemental\u2014without expending a spell slot or material components. You must finish a long rest before you can use this invocation on the same creature again."
             ]
         },
         {
@@ -4135,7 +4839,7 @@
                 {
                     "otherSummary": {
                         "entry": "None; Kinetic Blade Shape",
-                        "entrySummary": "—"
+                        "entrySummary": "\u2014"
                     }
                 }
             ],
@@ -4206,7 +4910,7 @@
                 {
                     "otherSummary": {
                         "entry": "None; Kinetic Blast modification",
-                        "entrySummary": "—"
+                        "entrySummary": "\u2014"
                     }
                 }
             ],
@@ -4281,7 +4985,7 @@
                     },
                     "otherSummary": {
                         "entry": "None; Kinetic Shape modification, Kinetic Blast shape",
-                        "entrySummary": "—"
+                        "entrySummary": "\u2014"
                     }
                 }
             ],
@@ -4732,17 +5436,6 @@
             ]
         },
         {
-            "name": "Embers",
-            "page": 1,
-            "source": "Ishiir",
-            "featureType": [
-                "MF"
-            ],
-            "entries": [
-                "You have resistance to fire damage and vulnerability to cold damage."
-            ]
-        },
-        {
             "name": "Earthed",
             "page": 1,
             "source": "Ishiir",
@@ -4751,6 +5444,17 @@
             ],
             "entries": [
                 "You have resistance to lightning damage, and you have vulnerability to acid damage."
+            ]
+        },
+        {
+            "name": "Embers",
+            "page": 1,
+            "source": "Ishiir",
+            "featureType": [
+                "MF"
+            ],
+            "entries": [
+                "You have resistance to fire damage and vulnerability to cold damage."
             ]
         },
         {
@@ -5739,666 +6443,6 @@
             ]
         },
         {
-            "name": "Aquatic Traits",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Increase one ability score of your Eidolon from among Strength, Dexterity, or Constitution by 1.",
-                "Your Eidolon gains a swimming speed if it doesn't already have one, equal to its highest speed and it can breathe underwater."
-            ]
-        },
-        {
-            "name": "Breath Weapon",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 5,
-                        "class": {
-                            "name": "Summoner"
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                "Your Eidolon learns to exhale destructive energy. Choose one of the following damage types: acid, cold, fire, lightning, necrotic, poison, radiant, or thunder.",
-                "Additionally, choose the area shape that the Breath Weapon affects: 15 + 5 x proficiency feet cone or 30 + 10 x proficiency feet long, 5 feet wide line.",
-                "Your Eidolon can activate its Breath Weapon as an action. Each creature in the area of effect has to make a DEX saving throw against your spell save DC, taking {@damage 4d6} + {@damage 1d6} x proficiency of the chosen damage type on a failure and half as much on a success.",
-                "Once it has used its breath weapon it cannot do so again until you finish a short rest or you spend a spell slot of 3rd level or higher."
-            ]
-        },
-        {
-            "name": "Chamaeleon Hide",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 10,
-                        "class": {
-                            "name": "Summoner"
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                "Increase your Eidolon's Dexterity or Constitution by 1, up to a maximum of 20.",
-                "Your Eidolon can use its bonus action to become {@condition Invisible|Ishiir}. The invisibility ends if your Eidolon performs a hostile action."
-            ]
-        },
-        {
-            "name": "Damage Immunity",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 16,
-                        "class": {
-                            "name": "Summoner"
-                        },
-                        "subclass": {
-                            "name": "Symbiosist"
-                        }
-                    },
-                    "otherSummary": {
-                        "entry": "{@optfeature Damage Resistance|Ishiir}, {@class Summoner|Ishiir|Symbiosist|Symbiosist|Ishiir}"
-                    }
-                }
-            ],
-            "entries": [
-                "When you are in Symbiosis with your Eidolon, you are immune to every damage type you selected for Damage Resistance evolution feat."
-            ]
-        },
-        {
-            "name": "Damage Resistance",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Increase your Eidolon's Constitution by 1, up to a maximum of 20.",
-                "Your Eidolon gains resistance to one of the following damage types: acid, cold, fire, lightning, necrotic, poison, or radiant.",
-                "This evolution feat can be selected multiple times."
-            ]
-        },
-        {
-            "name": "Eidolon Resilience",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Choose one ability score. Your Eidolon gains the following benefits:",
-                {
-					"type": "list",
-					"items": [
-						"Increase the chosen ability score by 1, to a maximum of 20.",
-                        "Your Eidolon gains proficiency in saving throws using the chosen ability."
-					]
-				},
-                "This evolution feat can be selected multiple times."
-            ]
-        },
-        {
-            "name": "Eidolon Toughness",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Your Eidolon's hitpoints increase by an amount equal to twice your summoner level.",
-                "This evolution feat can be selected multiple times."
-            ]
-        },
-        {
-            "name": "Energy Infusion",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Choose one of the following damage types: acid, cold, fire, lightning, necrotic, poison, radiant, or thunder.",
-                "Your Eidolon's weapon attacks deal an additional {@damage 1d6} of the chosen damage type."
-            ]
-        },
-        {
-            "name": "Enhanced Physiology",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Increase one ability score of your Eidolon from among Strength, Dexterity, or Constitution by 2 or increase 2 ability scores from among those by 1, up to a maximum of 20.",
-                "This evolution feat can be selected multiple times."
-            ]
-        },
-        {
-            "name": "Evasion",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 7,
-                        "class": {
-                            "name": "Summoner"
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                "Increase your Eidolon's Dexterity by 1, to a maximum of 20.",
-                "If the Eidolon is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
-            ]
-        },
-        {
-            "name": "Fear Aura",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 10,
-                        "class": {
-                            "name": "Summoner"
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                "Any creature hostile to Eidolon that starts its turn within 20 feet of it or enters that area for the first time on a turn, must make a Wisdom saving throw against your spell save DC, unless the Eidolon is {@condition Incapacitated|Ishiir}. On a failed save, the creature is {@condition Frightened|Ishiir} until the start of its next turn. If a creature's saving throw is successful, the creature is immune to the Eidolon's Fear Aura for the next 24 hours."
-            ]
-        },
-        {
-            "name": "Fierce Charge",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Increase your Eidolon's Strength, Dexterity, or Constitution by 1, up to a maximum of 20.",
-                "Once your turn, when your Eidolon moves towards a creature in a straight line for the first time, it can add 1 dmg for every 5 ft spent as part of that movement to the first melee weapon damage roll it makes against that creature."
-            ]
-        },
-        {
-            "name": "Grappling Attacks",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Increase your Eidolon's Strength or Constitution by 1, up to a maximum of 20.",
-                "Creatures no more than one size larger than your Eidolon that are hit by your Eidolon's natural weapon attacks have to make a STR or DEX saving throw (target creature's choice) against your spell save DC. On failure, the target creature is {@condition Grappled|Ishiir} by your Eidolon. Creatures that are the same size of the Eidolon or smaller, are also {@condition Restrained|Ishiir} while grappled in this manner."
-            ]
-        },
-        {
-            "name": "Greater Size Increase",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 13,
-                        "class": {
-                            "name": "Summoner"
-                        },
-                        "subclass": {
-                            "name": "Eidolon Master"
-                        }
-                    },
-                    "otherSummary": {
-                        "entry": "{@optfeature Size Increase|Ishiir}, {@class Summoner|Ishiir|Eidolon Master|Eidolon Master|Ishiir}"
-                    }
-                }
-            ],
-            "entries": [
-                "Your Eidolon's size increases to huge and its hitpoints increase by an amount equal to your summoner level.",
-                "Additionally, the reach of its melee weapon attacks increases by 5 feet and the die size for its natural weapons and damaging abilities increases by 1 step."
-            ]
-        },
-        {
-            "name": "Hardened Hide",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Your Eidolon's AC increases by 2."
-            ]
-        },
-        {
-            "name": "Improved Skill",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Increase your Eidolon's Strength, Dexterity, or Constitution by 1, up to a maximum of 20.",
-                "Your Eidolon learns one additional skill. If it is already proficient in the skill, it adds double your proficiency bonus to checks it makes with it."
-            ]
-        },
-        {
-            "name": "Improved Speed",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Increase your Eidolon's Strength, Dexterity, or Constitution by 1, up to a maximum of 20.",
-                "Your Eidolon's speed increases by 10 feet."
-            ]
-        },
-        {
-            "name": "Intertwined Metabolism",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 10,
-                        "class": {
-                            "name": "Summoner"
-                        },
-                        "subclass": {
-                            "name": "Symbiosist"
-                        }
-                    },
-                    "otherSummary": {
-                        "entry": "{@class Summoner|Ishiir|Symbiosist|Symbiosist|Ishiir}"
-                    }
-                }
-            ],
-            "entries": [
-                "When you are in Symbiosis with your Eidolon, you are immune to the {@condition Poisoned|Ishiir} and {@condition Lacerated|Ishiir} conditions and to non-magical diseases. If you enter Symbiosis while any of the aforementioned are already affecting either you or your Eidolon or both, they are removed at the end of the same turn."
-            ]
-        },
-        {
-            "name": "Lacerating Attacks",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Increase your Eidolon's Strength or Dexterity by 1, up to a maximum of 20.",
-                "Creatures hit by your Eidolon's natural weapon attacks have to make a CON saving throw against your spell save DC. On failure, the target creature is {@condition Lacerated|Ishiir}. At the end of each of its turns, the creature can repeat the saving throw, ending the condition on a success."
-            ]
-        },
-        {
-            "name": "Legendary Resistance",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 13,
-                        "class": {
-                            "name": "Summoner"
-                        },
-                        "subclass": {
-                            "name": "Eidolon Master"
-                        }
-                    },
-                    "otherSummary": {
-                        "entry": "{@class Summoner|Ishiir|Eidolon Master|Eidolon Master|Ishiir}"
-                    }
-                }
-            ],
-            "entries": [
-                "When your Eidolon fails a saving throw, it can choose to succeed instead.",
-                "Your Eidolon can use this feature three times and it regains all expended uses when you finish a long rest."
-            ]
-        },
-        {
-            "name": "Magic Resistance (EF)",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 16,
-                        "class": {
-                            "name": "Summoner"
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                "The Eidolon has advantage on saving throws against spells and other magical effects."
-            ]
-        },
-        {
-            "name": "Pack Leader",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 7,
-                        "class": {
-                            "name": "Summoner"
-                        },
-                        "subclass": {
-                            "name": "Host Caller"
-                        }
-                    },
-                    "otherSummary": {
-                        "entry": "{@class Summoner|Ishiir|Host Caller|Host Caller|Ishiir}"
-                    }
-                }
-            ],
-            "entries": [
-                "Creatures summoned by you have advantage on attack rolls against any creatures that they can see within 5 feet of your Eidolon, unless your Eidolon is {@condition Incapacitated|Ishiir}."
-            ]
-        },
-        {
-            "name": "Petrifying Gaze",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 13,
-                        "class": {
-                            "name": "Summoner"
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                "As an action, your Eidolon can gaze at a creature within 60 feet of it, causing it to gradually turn to stone. The target creature has to make a CON saving throw against your spell save DC. On a failed save, it is {@condition Restrained|Ishiir} as its flesh begins to harden. On a successful save, the creature isn't affected.",
-                "A creature restrained by this ability must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this ability three times, the effect ends. If it fails its saves three times, it is turned to stone and subjected to the {@condition Petrified|Ishiir} condition for the duration. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.",
-                "If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state.",
-                "Once it has used its petrifying gaze it cannot do so again until you finish a short rest or you spend a spell slot of 5th level or higher."
-            ]
-        },
-        {
-            "name": "Pounce",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Increase your Eidolon's Strength or Dexterity by 1, up to a maximum of 20.",
-                "Once per turn, as part of a melee weapon attack, your Eidolon can move up to its speed in a straight line towards a target of your choice."
-            ]
-        },
-        {
-            "name": "Ranged Attacks",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Increase your Eidolon's Strength or Dexterity by 1, up to a maximum of 20.",
-                "Your Eidolon gains a ranged natural weapon attack with a range of 80/320. The damage die of this attack is identical to its other natural attacks and uses the same ability score for attack and damage rolls.",
-                "You can choose the damage type of the ranged attack from one of the following: acid, bludgeoning, cold, fire, lightning, necrotic, piercing, poison, radiant, slashing, or thunder."
-            ]
-        },
-        {
-            "name": "Regeneration",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 10,
-                        "class": {
-                            "name": "Summoner"
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                "Your Eidolon regenerates an amount of hitpoints equal to twice your proficiency at the start of each of its turns."
-            ]
-        },
-        {
-            "name": "Shadow Stealth",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 13,
-                        "class": {
-                            "name": "Summoner"
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                "Your Eidolon gains proficiency in the {@skill Stealth} skill. If it is already proficient in the skill, it adds double your proficiency bonus to checks it makes with it.",
-                "While in dim light or darkness, your Eidolon can take the {@action Hide|Ishiir} action as a bonus action."
-            ]
-        },
-        {
-            "name": "Size Increase",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 7,
-                        "class": {
-                            "name": "Summoner"
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                "Increase your Eidolon's Strength or Constitution by 1, up to a maximum of 20.",
-                "Your Eidolon's size increases to large and its hitpoints increase by an amount equal to your summoner level."
-            ]
-        },
-        {
-            "name": "Shimmering Hide",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 5,
-                        "class": {
-                            "name": "Summoner"
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                "Your Eidolon projects a magical illusion that blurs its appearance to the naked eye and makes it difficult to tell its actual position and movements, causing attack rolls against it to have disadvantage. If it takes damage, this trait is disrupted until the start of its next turn. This trait is also disrupted while the Eidolon is {@condition Incapacitated|Ishiir} or has a speed of 0."
-            ]
-        },
-        {
-            "name": "Special Senses",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Increase your Eidolon's Constitution by 1, up to a maximum of 20.",
-                "Your Eidolon gains one of the following senses of your choice:",
-                {
-					"type": "list",
-					"items": [
-						"{@sense Blindsight|PHB} within 30 feet.",
-                        "{@sense Tremorsense|MM} within 60 feet.",
-                        "{@optfeature Devil's Sight|Ishiir} within 120 feet."
-					]
-				},
-                "This evolution feat can be selected multiple times."
-            ]
-        },
-        {
-            "name": "Subterranean Traits",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Increase one ability score of your Eidolon from among Strength, Dexterity, or Constitution by 1.",
-                "Your Eidolon gains a climbing speed equal to its walking speed and a burrowing speed equal to half its walking speed.",
-                "Additionally, the {@sense darkvision|PHB} range of your Eidolon increases to 120 feet."
-            ]
-        },
-        {
-            "name": "Unshakeable Devotion",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 10,
-                        "class": {
-                            "name": "Summoner"
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                "Your Eidolon is immune to the {@condition Charmed|Ishiir} and {@condition Frightened|Ishiir} conditions."
-            ]
-        },
-        {
-            "name": "Toppling Attacks",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Increase your Eidolon's Strength or Constitution by 1, up to a maximum of 20.",
-                "Creatures no more than one size larger than your Eidolon that are hit by your Eidolon's natural weapon attacks have to make a STR saving throw against your spell save DC. On failure, the target creature is knocked {@condition Prone|Ishiir}."
-            ]
-        },
-        {
-            "name": "Vanguard",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 13,
-                        "class": {
-                            "name": "Summoner"
-                        },
-                        "subclass": {
-                            "name": "Host Caller"
-                        }
-                    },
-                    "otherSummary": {
-                        "entry": "{@class Summoner|Ishiir|Host Caller|Host Caller|Ishiir}"
-                    }
-                }
-            ],
-            "entries": [
-                "Whenever you a creature summoned by you that is within 20 feet of your Eidolon must make a saving throw, the creature gains a bonus to the saving throw equal to your choice of your Intelligence or Charisma modifier (with a minimum bonus of +1)."
-            ]
-        },
-        {
-            "name": "Venomous Attacks",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 5,
-                        "class": {
-                            "name": "Summoner"
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                "Creatures hit by your Eidolon's natural weapon attacks have to make a CON saving throw against your spell save DC. On failure, the target creature is {@condition Poisoned|Ishiir}. A poisoned creature takes poison damage equal to twice your proficiency at the start of each of its turns.",
-                "At the end of each of its turns, the creature can repeat the saving throw, ending the condition on a success."
-            ]
-        },
-        {
-            "name": "Wings",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EF"
-            ],
-            "entries": [
-                "Your Eidolon gains a flying speed if it doesn't already have one, equal to its highest speed."
-            ]
-        },
-        {
             "name": "Cleave",
             "source": "Ishiir",
             "page": 1,
@@ -6485,50 +6529,6 @@
             ],
             "entries": [
                 "Once per turn when you hit a creature with this weapon, you can force it to make a CON saving throw or halve its speed until beginning of your next turn."
-            ]
-        },
-        {
-            "name": "Light",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "AM"
-            ],
-            "entries": [
-                "While wearing this armor, you have a number of temporary hitpoints equal to its AC, which stack with any other form of temporary hitpoints. You regain any lost temporary hitpoints from this feature when you finish a short or long rest by expending 1 sp per temporary hitpoint."
-            ]
-        },
-        {
-            "name": "Medium",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "AM"
-            ],
-            "entries": [
-                "While wearing this armor, you have a number of temporary hitpoints equal to its AC, which stack with any other form of temporary hitpoints. You regain any lost temporary hitpoints from this feature when you finish a short or long rest by expending 5 sp per temporary hitpoint."
-            ]
-        },
-        {
-            "name": "Heavy",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "AM"
-            ],
-            "entries": [
-                "While wearing this armor, you have a number of temporary hitpoints equal to 1.5 times its AC (rounded down), which stack with any other form of temporary hitpoints. You regain any lost temporary hitpoints from this feature when you finish a short or long rest by expending 1 gp per temporary hitpoint."
-            ]
-        },
-        {
-            "name": "Unarmored Defense",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "AM"
-            ],
-            "entries": [
-                "While using your Unarmored Defense or similar permanent feature that alters the calculation for your AC, you have a number of temporary hitpoints equal to its AC, which stack with any other form of temporary hitpoints. You can regain any lost temporary hitpoints from this feature when you finish a short or long rest by expending 5 sp per temporary hitpoint."
             ]
         }
     ]
