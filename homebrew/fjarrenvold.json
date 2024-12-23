@@ -6,7 +6,7 @@
                 "abbreviation": "Fjarrenvold",
                 "full": "Fjarrenvold",
                 "url": "https://regateiro.pt/5etools/homebrew/fjarrenvold.json",
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "authors": [
                     "Valasca"
                 ],
@@ -22,7 +22,7 @@
             "shortName": "Vanguard",
             "source": "Fjarrenvold",
             "className": "Paladin",
-            "classSource": "PHB",
+            "classSource": "XPHB",
             "page": 1,
             "additionalSpells": [
                 {
@@ -51,10 +51,10 @@
                 }
             ],
             "subclassFeatures": [
-                "Oath of the Vanguard|Paladin|PHB|Vanguard|Fjarrenvold|3",
-                "Aura of Conservation|Paladin|PHB|Vanguard|Fjarrenvold|7",
-                "Verdant Rejuvenation|Paladin|PHB|Vanguard|Fjarrenvold|15",
-                "Avatar of the Preservation|Paladin|PHB|Vanguard|Fjarrenvold|20"
+                "Oath of the Vanguard|Paladin|XPHB|Vanguard|Fjarrenvold|3",
+                "Aura of Conservation|Paladin|XPHB|Vanguard|Fjarrenvold|7",
+                "Verdant Rejuvenation|Paladin|XPHB|Vanguard|Fjarrenvold|15",
+                "Avatar of the Preservation|Paladin|XPHB|Vanguard|Fjarrenvold|20"
             ]
         }
     ],
@@ -64,7 +64,7 @@
             "source": "Fjarrenvold",
             "page": 1,
             "className": "Paladin",
-            "classSource": "PHB",
+            "classSource": "XPHB",
             "subclassShortName": "Vanguard",
             "subclassSource": "Fjarrenvold",
             "level": 3,
@@ -74,19 +74,19 @@
                 "Their sacred charge is to uphold the harmony between civilization and nature, ensuring both thrive in mutual respect.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Tenets of the Vanguard|Paladin|PHB|Vanguard|Fjarrenvold|3"
+                    "subclassFeature": "Tenets of the Vanguard|Paladin|XPHB|Vanguard|Fjarrenvold|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Oath Spells|Paladin|PHB|Vanguard|Fjarrenvold|3"
+                    "subclassFeature": "Oath Spells|Paladin|XPHB|Vanguard|Fjarrenvold|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity|Paladin|PHB|Vanguard|Fjarrenvold|3"
+                    "subclassFeature": "Channel Divinity|Paladin|XPHB|Vanguard|Fjarrenvold|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Stormlord's Chosen|Paladin|PHB|Vanguard|Fjarrenvold|3"
+                    "subclassFeature": "Stormlord's Chosen|Paladin|XPHB|Vanguard|Fjarrenvold|3"
                 }
             ]
         },
@@ -95,7 +95,7 @@
             "source": "Fjarrenvold",
             "page": 1,
             "className": "Paladin",
-            "classSource": "PHB",
+            "classSource": "XPHB",
             "subclassShortName": "Vanguard",
             "subclassSource": "Fjarrenvold",
             "level": 3,
@@ -112,15 +112,15 @@
                             "type": "entries",
                             "name": "Stalwart Defender",
                             "entries": [
-                                "As a bonus action, you can use your Channel Divinity to become a beacon of fortification. For 1 minute you emit a 30ft Radius Aura.",
-                                "As a reaction, when a creature standing in your Aura takes damage from an attack roll you may magically redirect the attack to yourself taking the damage in place of the original target. When you do so you reduce the incoming damage by 1d10 + your Paladin level."
+                                "As a {@variantrule Bonus Action|XPHB}, you can use your Channel Divinity to become a beacon of fortification. For 1 minute you emit a 30ft Radius Aura.",
+                                "As a {@variantrule Reaction|XPHB}, when a creature standing in your Aura takes damage from an attack roll you may magically redirect the attack to yourself taking the damage in place of the original target. When you do so you reduce the incoming damage by 1d10 + your Paladin level."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Intrepidness",
                             "entries": [
-                                "As a bonus action, you can use your Channel Divinity to fortify the resolve of you and those around you. Choose a number of creatures of your choice within 30ft of you, which can include yourself, up to a maximum equal to your charisma modifier. The chosen creatures gain immunity to being {@condition frightened} for 1 hour. This abillity does not remove the {@condition frightened} effect from a creature already affected but does grant advantage onsaving throws to remove it."
+                                "As a {@variantrule Bonus Action|XPHB}, you can use your Channel Divinity to fortify the resolve of you and those around you. Choose a number of creatures of your choice within 30ft of you, which can include yourself, up to a maximum equal to your charisma modifier. The chosen creatures gain {@variantrule Immunity|XPHB} to being {@condition Frightened|XPHB} for 1 hour. This abillity does not remove the {@condition Frightened|XPHB} effect from a creature already affected but does grant advantage onsaving throws to remove it."
                             ]
                         }
                     ]
@@ -132,7 +132,7 @@
             "source": "Fjarrenvold",
             "page": 1,
             "className": "Paladin",
-            "classSource": "PHB",
+            "classSource": "XPHB",
             "subclassShortName": "Vanguard",
             "subclassSource": "Fjarrenvold",
             "level": 3,
@@ -146,7 +146,7 @@
             "source": "Fjarrenvold",
             "page": 1,
             "className": "Paladin",
-            "classSource": "PHB",
+            "classSource": "XPHB",
             "subclassShortName": "Vanguard",
             "subclassSource": "Fjarrenvold",
             "level": 3,
@@ -167,23 +167,23 @@
                     "rows": [
                         [
                             "3rd",
-                            "{@spell Detect Magic}, {@spell Sanctuary}"
+                            "{@spell Detect Magic|XPHB}, {@spell Sanctuary|XPHB}"
                         ],
                         [
                             "5th",
-                            "{@spell Hold Person}, {@spell Lesser Restoration}"
+                            "{@spell Hold Person|XPHB}, {@spell Lesser Restoration|XPHB}"
                         ],
                         [
                             "9th",
-                            "{@spell Aura of Vitality}, {@spell Dispel Magic}"
+                            "{@spell Aura of Vitality|XPHB}, {@spell Dispel Magic|XPHB}"
                         ],
                         [
                             "13th",
-                            "{@spell Death Ward}, {@spell Otiluke's Resilient Sphere||Resilient Sphere}"
+                            "{@spell Death Ward|XPHB}, {@spell Otiluke's Resilient Sphere|XPHB|Resilient Sphere}"
                         ],
                         [
                             "17th",
-                            "{@spell Commune}, {@spell Raise Dead}"
+                            "{@spell Commune|XPHB}, {@spell Raise Dead|XPHB}"
                         ]
                     ]
                 }
@@ -194,7 +194,7 @@
             "source": "Fjarrenvold",
             "page": 1,
             "className": "Paladin",
-            "classSource": "PHB",
+            "classSource": "XPHB",
             "subclassShortName": "Vanguard",
             "subclassSource": "Fjarrenvold",
             "level": 3,
@@ -255,13 +255,13 @@
             "source": "Fjarrenvold",
             "page": 1,
             "className": "Paladin",
-            "classSource": "PHB",
+            "classSource": "XPHB",
             "subclassShortName": "Vanguard",
             "subclassSource": "Fjarrenvold",
             "level": 7,
             "header": 2,
             "entries": [
-                "You and friendly creatures within 10 feet of you gain enhanced fortitude from the natural world's energy. While within this aura, affected creatures gain resistance to non-magical bludgeoning, piercing, and slashing damage.",
+                "You and friendly creatures within 10 feet of you gain enhanced fortitude from the natural world's energy. While within this aura, affected creatures gain {@variantrule Resistance|XPHB} to non-magical bludgeoning, piercing, and slashing damage.",
                 "The range of this aura increases to 30 feet at 18th level."
             ]
         },
@@ -270,15 +270,15 @@
             "source": "Fjarrenvold",
             "page": 1,
             "className": "Paladin",
-            "classSource": "PHB",
+            "classSource": "XPHB",
             "subclassShortName": "Vanguard",
             "subclassSource": "Fjarrenvold",
             "level": 15,
             "header": 2,
             "entries": [
                 "Your connection to the natural order grants you and your allies the ability to draw strength from the earth itself.",
-                "As an action, you can channel the rejuvenating power of nature to heal yourself and all friendly creatures within 30 feet. Each affected creature regains hit points equal to 2d8 + your Charisma modifier. Additionally, any diseases, poisons, or conditions affecting the creatures that can be cured by the lesser restoration spell are removed.",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+                "As an action, you can channel the rejuvenating power of nature to heal yourself and all friendly creatures within 30 feet. Each affected creature regains hit points equal to 2d8 + your Charisma modifier. Additionally, any diseases, poisons, or conditions affecting the creatures that can be cured by the {@spell Lesser Restoration|XPHB} spell are removed.",
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}."
             ]
         },
         {
@@ -286,7 +286,7 @@
             "source": "Fjarrenvold",
             "page": 1,
             "className": "Paladin",
-            "classSource": "PHB",
+            "classSource": "XPHB",
             "subclassShortName": "Vanguard",
             "subclassSource": "Fjarrenvold",
             "level": 20,
@@ -296,10 +296,10 @@
 				{
 					"type": "list",
 					"items": [
-						"You gain a flying speed of 60ft.",
-                        "You can cast {@spell Destructive Wave} without expending a spell slot once.",
-                        "Your melee weapon attacks deal an additional {@damage 2d8} Thunder damage.",
-                        "All Thunder damage you deal ignores resistance and deals half damage to any creature with Thunder immunity."
+						"You gain a {@variantrule Fly Speed|XPHB} of 60ft.",
+                        "You can cast {@spell Destructive Wave|XPHB} without expending a spell slot once.",
+                        "Your melee weapon {@action Attack|XPHB|attacks} deal an additional {@damage 2d8} Thunder damage.",
+                        "All Thunder damage you deal ignores {@variantrule Resistance|XPHB} and deals half damage to any creature with Thunder {@variantrule Immunity|XPHB}."
 					]
 				}
             ]
