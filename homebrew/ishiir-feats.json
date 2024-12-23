@@ -191,7 +191,7 @@
                                             "type": "item",
                                             "name": "Gold",
                                             "entries": [
-                                                "You can choose to exhale weakening energy with your breath weapon instead. Every creature in the area of effect must succeed on a CON {@variantrule Saving Throw|Ishiir}. If it fails, it suffers 1 level of exhaustion at the start of each of its turns for 1 minute. An affected creature can make a CON save at the end of each of its turns. On a success, it does not suffer a level of exhaustion at the beginning of its next turn, but the effect persists. If it succeeds on the {@variantrule Saving Throw|Ishiir} three times, the effect ends."
+                                                "You can choose to exhale weakening energy with your breath weapon instead. Every creature in the area of effect must succeed on a CON {@variantrule Saving Throw|Ishiir}. If it fails, it suffers 1 level of {@condition Exhaustion|Ishiir} at the start of each of its turns for 1 minute. An affected creature can make a CON save at the end of each of its turns. On a success, it does not suffer a level of {@condition Exhaustion|Ishiir} at the beginning of its next turn, but the effect persists. If it succeeds on the {@variantrule Saving Throw|Ishiir} three times, the effect ends."
                                             ]
                                         },
                                         {
@@ -2208,7 +2208,7 @@
                         "Your base {@variantrule Speed|Ishiir} increases by 5.",
                         "You may use Dexterity in place of Strength for calculating jumping distance or height, and may use a Dexterity ({@skill Acrobatics}) check in place of a Strength ({@skill Athletics}) check for purposes of jumping.",
                         "When you take the {@action Dash|Ishiir} action, moving through difficult terrain, crawling, squeezing, and climbing do not cost additional movement, and when you are prone, you can stand up without spending any movement.",
-                        "When participating in a chase using the rules in the Dungeon Master's Guide, you can ignore the first Constitution check you fail to avoid exhaustion."
+                        "When participating in a chase using the rules in the Dungeon Master's Guide, you can ignore the first Constitution check you fail to avoid {@condition Exhaustion|Ishiir}."
                     ]
                 }
             ]
