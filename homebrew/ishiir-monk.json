@@ -864,7 +864,7 @@
                     "type": "list",
                     "items": [
                         "The weapon must be a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon|property=!heavy;!special}.",
-                        "You must be proficient with it.",
+                        "You must be {@variantrule Proficiency|Ishiir|proficient} with it.",
                         "It must lack the heavy and special properties."
                     ]
                 }
@@ -1009,7 +1009,7 @@
             "classSource": "Ishiir",
             "level": 4,
             "entries": [
-                "You gain the mastery benefits for two {@filter weapons|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} of your choice as well as an {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} type (see {@variantrule Armor Mastery|Ishiir} and {@variantrule Weapon Mastery|Ishiir} variant rules). You must be proficient in the chosen weapons and armor. If you possess the Unarmored Defense feature, you may {@optfeature Unarmored Defense|Ishiir|choose it} in place of an armor type.",
+                "You gain the mastery benefits for two {@filter weapons|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} of your choice as well as an {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} type (see {@variantrule Armor Mastery|Ishiir} and {@variantrule Weapon Mastery|Ishiir} variant rules). You must be {@variantrule Proficiency|Ishiir|proficient} in the chosen weapons and armor. If you possess the Unarmored Defense feature, you may {@optfeature Unarmored Defense|Ishiir|choose it} in place of an armor type.",
                 "You can change your choices when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -1862,7 +1862,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "You can use your Wisdom modifier in place of your Strength modifier when making Strength checks and Strength {@variantrule Saving Throw|Ishiir|Saving Throws}.",
+                        "You can use your Wisdom modifier in place of your Strength modifier when making strength {@variantrule Ability Check|Ishiir|checks} and Strength {@variantrule Saving Throw|Ishiir|Saving Throws}.",
                         "You can use the spectral arms to make unarmed strikes.",
                         "When you make an unarmed strike with the arms on your turn, your reach for it is 5 feet greater than normal.",
                         "The unarmed strikes you make with the arms can use your Wisdom modifier in place of your Strength or Dexterity modifier for the attack and damage rolls, and their damage type is force.",
@@ -1915,7 +1915,7 @@
                     "type": "entries",
                     "name": "Wisdom of the Spirit",
                     "entries": [
-                        "You have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Insight}) and Charisma ({@skill Intimidation}) checks."
+                        "You have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Insight}) and Charisma ({@skill Intimidation}) {@variantrule Ability Check|Ishiir|checks}."
                     ]
                 },
                 {
@@ -2440,7 +2440,7 @@
                     "type": "entries",
                     "name": "Kensei Weapons",
                     "entries": [
-                        "Choose two weapons that do not have the special or heavy properties. You are proficient in these weapons and they count as monk weapons for you.",
+                        "Choose two weapons that do not have the special or heavy properties. You are {@variantrule Proficiency|Ishiir|proficient} in these weapons and they count as monk weapons for you.",
                         "Whenever you make an unarmed attack, you can attack with one of these weapons instead if you are currently wielding them.",
                         "You can choose two additional weapons when you reach the levels 6, 11, and 17 in this class, following the same criteria."
                     ]

@@ -703,7 +703,7 @@
             "classSource": "Ishiir",
             "level": 2,
             "entries": [
-                "You gain the mastery benefits for two {@filter weapons|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} of your choice as well as an {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} type (see {@variantrule Armor Mastery|Ishiir} and {@variantrule Weapon Mastery|Ishiir} variant rules). You must be proficient in the chosen weapons and armor. If you possess the Unarmored Defense feature, you may {@optfeature Unarmored Defense|Ishiir|choose it} in place of an armor type.",
+                "You gain the mastery benefits for two {@filter weapons|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} of your choice as well as an {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} type (see {@variantrule Armor Mastery|Ishiir} and {@variantrule Weapon Mastery|Ishiir} variant rules). You must be {@variantrule Proficiency|Ishiir|proficient} in the chosen weapons and armor. If you possess the Unarmored Defense feature, you may {@optfeature Unarmored Defense|Ishiir|choose it} in place of an armor type.",
                 "You can change your choices when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -2447,7 +2447,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You're able to strike with your weapons with especially brutal force. Whenever you hit with a weapon that you're proficient with and deal damage, the weapon's damage increases by an amount based on your level in this class, as shown on the Brute Bonus Damage table. You can also add the same die to the roll if you make a Strength (Athletics) check.",
+                "You're able to strike with your weapons with especially brutal force. Whenever you hit with a weapon that you're {@variantrule Proficiency|Ishiir|proficient} with and deal damage, the weapon's damage increases by an amount based on your level in this class, as shown on the Brute Bonus Damage table. You can also add the same die to the roll if you make a Strength (Athletics) check.",
                 {
                     "type": "table",
                     "caption": "Brute Bonus Damage",
@@ -2715,7 +2715,7 @@
             "header": 2,
             "entries": [
                 "Your {@variantrule Speed|Ishiir} increases by 10 feet.",
-                "You gain {@variantrule Proficiency|Ishiir} in either the {@skill Athletics} or {@skill Acrobatics} skill. If you are already proficient in the chosen skill, you add double your {@variantrule Proficiency|Ishiir} bonus to checks you make with it."
+                "You gain {@variantrule Proficiency|Ishiir} in either the {@skill Athletics} or {@skill Acrobatics} skill. If you are already {@variantrule Proficiency|Ishiir|proficient} in the chosen skill, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with it."
             ]
         },
         {
@@ -2747,7 +2747,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You gain a second {@variantrule Reaction|Ishiir}. Additionally, you make Initiative checks with {@variantrule Advantage|Ishiir}."
+                "You gain a second {@variantrule Reaction|Ishiir}. Additionally, you make Initiative {@variantrule Ability Check|Ishiir|checks} with {@variantrule Advantage|Ishiir}."
             ]
         },
         {
@@ -3531,7 +3531,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "You gain {@variantrule Proficiency|Ishiir} in the {@skill Persuasion} skill. If you are already proficient in it, you gain {@variantrule Proficiency|Ishiir} in one of the following skills of your choice: {@skill Animal Handling}, {@skill Insight}, {@skill Intimidation}, or {@skill Performance}.",
+                "You gain {@variantrule Proficiency|Ishiir} in the {@skill Persuasion} skill. If you are already {@variantrule Proficiency|Ishiir|proficient} in it, you gain {@variantrule Proficiency|Ishiir} in one of the following skills of your choice: {@skill Animal Handling}, {@skill Insight}, {@skill Intimidation}, or {@skill Performance}.",
                 "Your {@variantrule Proficiency|Ishiir} bonus is doubled for any {@variantrule Ability Check|Ishiir} you make that uses {@skill Persuasion}. You receive this benefit regardless of the skill {@variantrule Proficiency|Ishiir} you gain from this feature."
             ]
         },
@@ -3632,7 +3632,7 @@
                     "type": "list",
                     "items": [
                         "If you are smaller than Large, you become Large, along with anything you are wearing. If you lack the room to become Large, your size doesn't change.",
-                        "You have {@variantrule Advantage|Ishiir} on Strength checks and Strength {@variantrule Saving Throw|Ishiir|Saving Throws}.",
+                        "You have {@variantrule Advantage|Ishiir} on strength {@variantrule Ability Check|Ishiir|checks} and Strength {@variantrule Saving Throw|Ishiir|Saving Throws}.",
                         "Once on each of your turns, one of your attacks with a weapon or an unarmed strike can deal an extra {@damage 1d6} damage to a target on a hit."
                     ]
                 },
