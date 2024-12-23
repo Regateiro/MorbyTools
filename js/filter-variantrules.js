@@ -7,7 +7,7 @@ class PageFilterVariantRules extends PageFilter {
 	constructor () {
 		super();
 
-		this._ruleTypeFilter = new Filter({header: "Rule Type", items: ["O", "V", "VO", "VV", "U"], displayFn: Parser.ruleTypeToFull});
+		this._ruleTypeFilter = new Filter({header: "Rule Type", items: ["C", "O", "V", "VO", "VV", "U"], displayFn: Parser.ruleTypeToFull});
 		this._miscFilter = new Filter({header: "Miscellaneous", items: ["SRD", "Legacy"], isMiscFilter: true});
 	}
 
