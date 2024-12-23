@@ -315,7 +315,7 @@
 			"classSource": "Deoir",
 			"level": 1,
 			"entries": [
-				"You gain the ability to create tonics during a short / long rest. When you gain this feature, pick two Tonics to learn, choosing from the list of the available Tonics found on the {@filter Optional Features|optionalfeatures|Feature Type=A:T} page. You prepare the amount of Tonics equal to the amount specified in the Tonics prepared column. You can prepare multiple of the same Tonic. Tonics go bad after 24 hours.",
+				"You gain the ability to create tonics during a short / {@variantrule Long Rest|Ishiir}. When you gain this feature, pick two Tonics to learn, choosing from the list of the available Tonics found on the {@filter Optional Features|optionalfeatures|Feature Type=A:T} page. You prepare the amount of Tonics equal to the amount specified in the Tonics prepared column. You can prepare multiple of the same Tonic. Tonics go bad after 24 hours.",
 				"When throwing the Tonic at the Target the Tonic description will tell you out which of these 2 will take effect:",
 				"<b>Thrown Tonic attack modifier</b> = your proficiency bonus + your Intelligence modifier. (This is a ranged attack)",
 				"<b>Tonic save DC</b> = 8 + your proficiency bonus + your intelligence modifier.",
@@ -362,14 +362,14 @@
 					"type": "entries",
 					"name": "Salves Prepared",
 					"entries": [
-						"When you finish a long rest you choose the salves you prepare. These are the salves you can use till the next long rest. You can only prepare 1 of each salve per long rest."
+						"When you finish a {@variantrule Long Rest|Ishiir} you choose the salves you prepare. These are the salves you can use till the next {@variantrule Long Rest|Ishiir}. You can only prepare 1 of each salve per {@variantrule Long Rest|Ishiir}."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Applying a salve",
 					"entries": [
-						"During a short / long rest you can apply a salve to a creature, this effect of the salve lasts till the next short / long rest. A creature can only benefit from one salve at time and a salve cannot increase an ability modifier over the maximum."
+						"During a short / {@variantrule Long Rest|Ishiir} you can apply a salve to a creature, this effect of the salve lasts till the next short / {@variantrule Long Rest|Ishiir}. A creature can only benefit from one salve at time and a salve cannot increase an ability modifier over the maximum."
 					]
 				}
 			]
@@ -566,7 +566,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"During a short rest you can help creatures take care of the wounds they sustained. You can care for a number of creatures equal to 3 + your proficiency bonus. At the end of the short rest, any creature you cared for and spends one or more Hit Dice to regain hit points regain an extra {@dice 1d8} hit points. This die upgrades at level 9th level to a {@dice 1d10}, at level 13th level a {@dice 1d12} and at 17th level {@dice 2d8}.",
+				"During a {@variantrule Short Rest|Ishiir} you can help creatures take care of the wounds they sustained. You can care for a number of creatures equal to 3 + your proficiency bonus. At the end of the {@variantrule Short Rest|Ishiir}, any creature you cared for and spends one or more Hit Dice to regain hit points regain an extra {@dice 1d8} hit points. This die upgrades at level 9th level to a {@dice 1d10}, at level 13th level a {@dice 1d12} and at 17th level {@dice 2d8}.",
 				"You gain proficiency with the {@item herbalism kit|phb}."
 			]
 		},
@@ -581,7 +581,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"As a action you can touch a creature and deal {@damage 1d8} necrotic damage to them. After they take the damage and are still at or above 1 hit point they gain Hit points equal to double the damage you did. If they go below 1 hit point they lose a death save immediately. You can use this feature a number of times equal to your proficiency bonus per long rest.",
+				"As a action you can touch a creature and deal {@damage 1d8} necrotic damage to them. After they take the damage and are still at or above 1 hit point they gain Hit points equal to double the damage you did. If they go below 1 hit point they lose a death save immediately. You can use this feature a number of times equal to your proficiency bonus per {@variantrule Long Rest|Ishiir}.",
 				"At 7th level this die becomes a {@damage 1d12}, At 11th level {@damage 2d8} and at 17th level {@damage 2d12}."
 			]
 		},
@@ -714,7 +714,7 @@
 			"header": 2,
 			"entries": [
 				"You gain the ability to create Special Concoctions that you yourself are not quite sure on what they do. But you know they do something!",
-				"During a long rest, you can create up to your Proficiency bonus in Special Concoctions. When a creature would ingest one of these concoctions using their bonus action roll on this table. The roll is a d20. If the effect makes others make a save it's against the Apothecaries save DC.",
+				"During a {@variantrule Long Rest|Ishiir}, you can create up to your Proficiency bonus in Special Concoctions. When a creature would ingest one of these concoctions using their bonus action roll on this table. The roll is a d20. If the effect makes others make a save it's against the Apothecaries save DC.",
 				{
 					"type": "table",
 					"caption": "Special Concoctions",
@@ -762,7 +762,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
-				"You can create a vial that holds debilitating mist during a short rest. When thrown it creates a 15ft radius mist that gives a {@dice 1d10} penalty to ability checks and saving throws to any creature within its radius."
+				"You can create a vial that holds debilitating mist during a {@variantrule Short Rest|Ishiir}. When thrown it creates a 15ft radius mist that gives a {@dice 1d10} penalty to ability checks and saving throws to any creature within its radius."
 			]
 		},
 		{
@@ -776,7 +776,7 @@
 			"level": 13,
 			"header": 2,
 			"entries": [
-				"Your Tonics are more potent. When you use a Tonic that deals damage, add your intelligence modifier to the damage. In addition to that you can now add a +1 on the special Concoctions roll once per long rest."
+				"Your Tonics are more potent. When you use a Tonic that deals damage, add your intelligence modifier to the damage. In addition to that you can now add a +1 on the special Concoctions roll once per {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{

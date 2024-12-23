@@ -955,7 +955,7 @@
 						{
 							"type": "item",
 							"name": "Number of Uses.",
-							"entry": "You can confer a Bardic Inspiration die a number of times equal to your Charisma modifier (minimum of once). You regain one die when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest."
+							"entry": "You can confer a Bardic Inspiration die a number of times equal to your Charisma modifier (minimum of once). You regain one die when you finish a {@variantrule Short Rest|Ishiir}, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
 						},
 						{
 							"type": "item",
@@ -974,7 +974,7 @@
             "classSource": "Ishiir",
             "level": 1,
             "entries": [
-                "Whenever you finish a long rest, you can replace one spell you learned from this Spellcasting feature with another spell from the bard spell list. The new spell must be the same level as the spell you replace."
+                "Whenever you finish a {@variantrule Long Rest|Ishiir}, you can replace one spell you learned from this Spellcasting feature with another spell from the bard spell list. The new spell must be the same level as the spell you replace."
             ]
         },
         {
@@ -1000,7 +1000,7 @@
                     "type": "entries",
                     "name": "Spell Slots.",
                     "entries": [
-                        "The Bard Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest."
+                        "The Bard Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|Ishiir}."
                     ]
                 },
                 {
@@ -1066,7 +1066,7 @@
             "classSource": "Ishiir",
             "level": 2,
             "entries": [
-                "You can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points by spending Hit Dice at the end of the short rest, each of those creatures can roll extra {@dice d6}s equal to half your proficiency (rounded down) and add them to the total of hit points recovered."
+                "You can use soothing music or oration to help revitalize your wounded allies during a {@variantrule Short Rest|Ishiir}. If you or any friendly creatures who can hear your performance regain hit points by spending Hit Dice at the end of the {@variantrule Short Rest|Ishiir}, each of those creatures can roll extra {@dice d6}s equal to half your proficiency (rounded down) and add them to the total of hit points recovered."
             ]
         },
         {
@@ -1158,7 +1158,7 @@
             "classSource": "Ishiir",
             "level": 5,
             "entries": [
-                "You now regain all your expended uses of Bardic Inspiration when you finish a Short or Long Rest.",
+                "You now regain all your expended uses of Bardic Inspiration when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
                 "In addition, you can expend a spell slot (no action required) to regain one expended use of Bardic Inspiration."
             ]
         },
@@ -1366,7 +1366,7 @@
             "classSource": "Ishiir",
             "level": 20,
             "entries": [
-                "You have mastered two of the Words of Creation: the words of life and death. You therefore always have the {@spell Power Word Heal|Ishiir} and {@spell Power Word Kill|Ishiir} spells prepared. When you cast either spell, you can target a second creature with it if that creature is within 10 feet of the first target. You can cast either spell once without expending a spell slot. You regain the ability to cast these spells this way when you finish a long rest."
+                "You have mastered two of the Words of Creation: the words of life and death. You therefore always have the {@spell Power Word Heal|Ishiir} and {@spell Power Word Kill|Ishiir} spells prepared. When you cast either spell, you can target a second creature with it if that creature is within 10 feet of the first target. You can cast either spell once without expending a spell slot. You regain the ability to cast these spells this way when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         }
     ],
@@ -1693,7 +1693,7 @@
             "header": 1,
             "entries": [
                 "As an action, you can channel the magic of the Song of Creation to create one nonmagical item of your choice in an unoccupied space within 10 feet of you. The item must appear on a surface or in a liquid that can support it. The gp value of the item can't be more than 20 times your bard level, and the item must be Medium or smaller. The item glimmers softly, and a creature can faintly hear music when touching it. The created item disappears after a number of hours equal to your proficiency bonus. For examples of items you can create, see the equipment chapter of the {@book Player's Handbook|PHB|5}.",
-                "Once you create an item with this feature, you can't do so again until you finish a long rest, unless you expend a spell slot of 2nd level or higher to use this feature again. You can have only one item created by this feature at a time; if you use this action and already have an item from this feature, the first one immediately vanishes.",
+                "Once you create an item with this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a spell slot of 2nd level or higher to use this feature again. You can have only one item created by this feature at a time; if you use this action and already have an item from this feature, the first one immediately vanishes.",
                 "The size of the item you can create with this feature increases by one size category when you reach 6th level (Large) and 14th level (Huge)."
             ]
         },
@@ -1711,7 +1711,7 @@
                 "As an action, you can animate one Large or smaller nonmagical item within 30 feet of you that isn't being worn or carried.. The animate item uses the {@creature Dancing Item|TCE} stat block, which uses your proficiency bonus (PB). The item is friendly to you and your companions and obeys your commands. It lives for 1 hour, until it is reduced to 0 hit points, or until you die.",
                 "In combat, the item shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the {@action Dodge|Ishiir} action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition Incapacitated|Ishiir}, the item can take any action of its choice, not just {@action Dodge|Ishiir}.",
                 "When you use your Bardic Inspiration feature, you can command the item as part of the same bonus action you use for Bardic Inspiration.",
-                "Once you animate an item with this feature, you can't do so again until you finish a long rest, unless you expend a spell slot of 3rd level or higher to use this feature again. You can have only one item animated by this feature at a time; if you use this action and already have a {@creature dancing item|TCE} from this feature, the first one immediately becomes inanimate."
+                "Once you animate an item with this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a spell slot of 3rd level or higher to use this feature again. You can have only one item animated by this feature at a time; if you use this action and already have a {@creature dancing item|TCE} from this feature, the first one immediately becomes inanimate."
             ]
         },
         {
@@ -1838,7 +1838,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "You always have the {@spell otto's irresistible dance|Ishiir} spell prepared. You can cast it without expending a spell slot. Once you cast the spell in this way, you can’t do so again until you finish a Long Rest. You can also restore your use of the feature by expending four uses of your Bardic Inspiration (no action required)."
+                "You always have the {@spell otto's irresistible dance|Ishiir} spell prepared. You can cast it without expending a spell slot. Once you cast the spell in this way, you can’t do so again until you finish a {@variantrule Long Rest|Ishiir}. You can also restore your use of the feature by expending four uses of your Bardic Inspiration (no action required)."
             ]
         },
         {
@@ -1916,7 +1916,7 @@
             "header": 2,
             "entries": [
                 "You have gained the ability to make your speech intelligible to any creature. As an action, choose one or more creatures within 60 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). The chosen creatures can magically understand you, regardless of the language you speak, for 1 hour.",
-                "Once you use this feature, you can't use it again until you finish a long rest, unless you expend a spell slot to use it again."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a spell slot to use it again."
             ]
         },
         {
@@ -1931,7 +1931,7 @@
             "header": 2,
             "entries": [
                 "When you successfully inspire someone, the power of your eloquence can now spread to someone else. When a creature within 60 feet of you adds one of your Bardic Inspiration dice to its ability check, attack roll, or saving throw and the roll succeeds, you can use your reaction to encourage a different creature (other than yourself) that can hear you within 60 feet of you, giving it a Bardic Inspiration die without expending any of your Bardic Inspiration uses.",
-                "You can use this reaction a number of times equal to your Charisma modifier (minimum of once). You regain one use when you finish a Short Rest, and you regain all expended uses when you finish a long rest."
+                "You can use this reaction a number of times equal to your Charisma modifier (minimum of once). You regain one use when you finish a {@variantrule Short Rest|Ishiir}, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1969,7 +1969,7 @@
             "entries": [
                 "You always have the {@spell Charm Person|Ishiir} and {@spell Mirror Image|Ishiir} spells prepared.",
                 "In addition, immediately after you cast an Enchantment or Illusion spell using a spell slot, you can cause a creature you can see within 60 feet of yourself to make a Wisdom saving throw against your spell save DC. On a failed save, the target has the {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir} condition (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success.",
-                "Once you use this benefit, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending one use of your Bardic Inspiration (no action required)."
+                "Once you use this benefit, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}. You can also restore your use of it by expending one use of your Bardic Inspiration (no action required)."
             ]
         },
         {
@@ -2000,7 +2000,7 @@
                 "You always have the {@spell Command|Ishiir} spell prepared.",
                 "As a Bonus Action, you cast {@spell Command|Ishiir} without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your {@condition Concentration|Ishiir} ends. During this time, you can cast {@spell Command|Ishiir} as a Bonus Action without expending a spell slot.",
                 "Any creature {@condition Charmed|Ishiir} by you automatically fails its saving throw against the {@spell Command|Ishiir} you cast with this feature.",
-                "Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 3+ spell slot (no action required)."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}. You can also restore your use of it by expending a level 3+ spell slot (no action required)."
             ]
         },
         {
@@ -2015,7 +2015,7 @@
             "header": 2,
             "entries": [
                 "As a Bonus Action, you can assume a magically majestic presence for 1 minute or until you have the {@condition Incapacitated|Ishiir} condition. For the duration, whenever any creature hits you with an attack roll for the first time on a turn, the attacker must succeed on a Charisma saving throw against your spell save DC, or the attack misses instead, as the creature recoils from your majesty.",
-                "Once you assume this majestic presence, you can't do so again until you finish a Short or Long Rest."
+                "Once you assume this majestic presence, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2175,7 +2175,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Your ability to gather stories and lore gains a supernatural edge. You can cast detect thoughts up to a number of times equal to your Charisma modifier. You regain any expended uses of this ability after completing a long rest.",
+                "Your ability to gather stories and lore gains a supernatural edge. You can cast detect thoughts up to a number of times equal to your Charisma modifier. You regain any expended uses of this ability after completing a {@variantrule Long Rest|Ishiir}.",
                 "If a creature resists your attempt to probe deeper and succeeds at its saving throw against your detect thoughts, it immediately suffers an embarrassing social gaffe. It might loudly pass gas, unleash a thunderous burp, trip and fall, or be compelled to tell a tasteless joke."
             ]
         },
@@ -2260,7 +2260,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You reach out to spirits who tell their tales through you. While you are holding your Spiritual Focus, you can use a bonus action to expend one use of your Bardic Inspiration and roll on the Spirit Tales table using your Bardic Inspiration die to determine the tale the spirits direct you to tell. You retain the tale in mind until you bestow the tale's effect or you finish a short or long rest.",
+                "You reach out to spirits who tell their tales through you. While you are holding your Spiritual Focus, you can use a bonus action to expend one use of your Bardic Inspiration and roll on the Spirit Tales table using your Bardic Inspiration die to determine the tale the spirits direct you to tell. You retain the tale in mind until you bestow the tale's effect or you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
                 "You can use an action to choose one creature you can see within 30 feet of you (this can be you) to be the target of the tale's effect. Once you do so, you can't bestow the tale's effect again until you roll it again.",
                 "You can retain only one of these tales in mind at a time, and rolling on the Spirit Tales table immediately ends the effect of the previous tale.",
                 "If the tale requires a saving throw, the DC equals your spell save DC.",
@@ -2339,9 +2339,9 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Spirits provide you with supernatural insights. You can conduct an hour-long ritual channeling spirits (which can be done during a short or long rest) using your Spiritual Focus. You can conduct the ritual with a number of willing creatures equal to your proficiency bonus (including yourself). At the end of the ritual, you temporarily learn {@filter one spell of your choice from any class|spells|school=d;n|level=0;1;2;3;4;5;6|source=Ishiir}.",
+                "Spirits provide you with supernatural insights. You can conduct an hour-long ritual channeling spirits (which can be done during a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}) using your Spiritual Focus. You can conduct the ritual with a number of willing creatures equal to your proficiency bonus (including yourself). At the end of the ritual, you temporarily learn {@filter one spell of your choice from any class|spells|school=d;n|level=0;1;2;3;4;5;6|source=Ishiir}.",
                 "The spell you choose must be of a level equal to the number of creatures that conducted the ritual or less, the spell must be of a level you can cast, and it must be in the school of divination or necromancy. The chosen spell counts as a bard spell for you but doesn't count against the number of bard spells you know. You can cast this spell once without expending a spell slot.",
-                "Once you perform the ritual, you can't do so again until you start a long rest, and you know the chosen spell until you start a long rest."
+                "Once you perform the ritual, you can't do so again until you start a {@variantrule Long Rest|Ishiir}, and you know the chosen spell until you start a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2741,7 +2741,7 @@
                 "You learn to infuse innocent-seeming words with an insidious magic that can inspire terror.",
                 "If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia in its mind. At the end of the conversation, the target must succeed on a Wisdom saving throw against your spell save DC or be {@condition Frightened|Ishiir} of you or another creature of your choice. The target is {@condition Frightened|Ishiir} in this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged.",
                 "If the target succeeds on its saving throw, the target has no hint that you tried to frighten it.",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2755,11 +2755,11 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You gain the ability to adopt a humanoid's persona. When a humanoid dies within 30 feet of you, you can magically capture its shadow using your reaction. You retain this shadow until you use it or you finish a long rest.",
+                "You gain the ability to adopt a humanoid's persona. When a humanoid dies within 30 feet of you, you can magically capture its shadow using your reaction. You retain this shadow until you use it or you finish a {@variantrule Long Rest|Ishiir}.",
                 "You can use the shadow as an action. When you do so, it vanishes, magically transforming into a disguise that appears on you. You now look like the dead person, but healthy and alive. This disguise lasts for 1 hour or until you end it as a bonus action.",
                 "While you're in the disguise, you gain access to all information that the humanoid would freely share with a casual acquaintance. Such information includes general details on its background and personal life, but doesn't include secrets. The information is enough that you can pass yourself off as the person by drawing on its memories.",
                 "Another creature can see through this disguise by succeeding on a Wisdom ({@skill Insight}) check contested by your Charisma ({@skill Deception}) check. You gain a +5 bonus to your check.",
-                "Once you capture a shadow with this feature, you can't capture another one with it until you finish a short or long rest."
+                "Once you capture a shadow with this feature, you can't capture another one with it until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2778,7 +2778,7 @@
                 "On a failed saving throw, the target is {@condition Charmed|Ishiir} by you for the next 8 hours or until you or your allies attack it, damage it, or force it to make a saving throw. It interprets the whispers as a description of its most mortifying secret. You gain no knowledge of this secret, but the target is convinced you know it.",
                 "The {@condition Charmed|Ishiir} creature obeys your commands for fear that you will reveal its secret. It won't risk its life for you or fight for you, unless it was already inclined to do so. It grants you favors and gifts it would offer to a close friend.",
                 "When the effect ends, the creature has no understanding of why it held you in such fear.",
-                "You can use this feature a number of times equal to half your proficiency (rounded down). You regain any expended uses when you finish a long rest."
+                "You can use this feature a number of times equal to half your proficiency (rounded down). You regain any expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         }
     ]

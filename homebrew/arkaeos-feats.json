@@ -36,7 +36,7 @@
 					"items": [
 						"When you deal damage to a creature, you can inflict them with a brand that lasts until the start of your next turn (no action required). The next time the creature takes damage, it takes additional radiant damage equal to your proficiency modifier and you can choose to convert all of the damage that triggered the effect to radiant damage as well.",
 						"Additionally, when a creature you can see within 60 feet that is branded in this manner deals damage to one of your allies, you can use your reaction to force that creature to make a CON saving throw. The DC equals 8 + your proficiency + WIS or CHA (your choice). On a failure, it is {@condition Blinded|Ishiir} until the start of your next turn.",
-						"You can use this reaction an amount of times equal to half your proficiency bonus (rounded down) and you regain all expended uses when you finish a long rest. You also regain a use if an ally you can see within 60 feet of you suffers a critical hit or is reduced to 0 hitpoints."
+						"You can use this reaction an amount of times equal to half your proficiency bonus (rounded down) and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}. You also regain a use if an ally you can see within 60 feet of you suffers a critical hit or is reduced to 0 hitpoints."
 					]
 				}
 			]
@@ -151,7 +151,7 @@
 				{
 					"type": "list",
 					"items": [
-						"When you finish a long rest, you regain all hit dice rather than half of them.",
+						"When you finish a {@variantrule Long Rest|Ishiir}, you regain all hit dice rather than half of them.",
 						"When you take a rest, you can give any number of your hit dice to any other allied creature within 30 ft of you. If a creatures uses hit dice it gained from you, it uses its own hit die size to determine the amount healed.",
 						"When a creature within 30 ft of you takes necrotic or poison damage, you can use your reaction to grant resistance to the creature against that instance of the damage."
 					]
@@ -175,8 +175,8 @@
 				{
 					"type": "list",
 					"items": [
-						"Once per long rest when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than your proficiency bonus.",
-						"When you finish a short rest and spend at least one hit die, you can reroll one hit die and take the higher result, regaining hitpoints as normal."
+						"Once per {@variantrule Long Rest|Ishiir} when you finish a {@variantrule Short Rest|Ishiir}, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than your proficiency bonus.",
+						"When you finish a {@variantrule Short Rest|Ishiir} and spend at least one hit die, you can reroll one hit die and take the higher result, regaining hitpoints as normal."
 					]
 				}
 			]
@@ -269,7 +269,7 @@
 					"items": [
 						"You have resistance to fire damage.",
 						"Once per turn, when you deal damage to a creature, you can cause it to take additional fire damage equal to your proficiency bonus.",
-						"When you are reduced to 0 hitpoints by an enemy creature that you can see within 60 ft of you, you can immediately cause that creature to take fire damage equal to twice your character level. You can use this feature once and regain this use when you finish a short or long rest."
+						"When you are reduced to 0 hitpoints by an enemy creature that you can see within 60 ft of you, you can immediately cause that creature to take fire damage equal to twice your character level. You can use this feature once and regain this use when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
 					]
 				}
 			]
@@ -435,8 +435,8 @@
 				{
 					"type": "list",
 					"items": [
-						"When you finish a short rest or long rest, you also regain a hit die.",
-						"When you receive healing you can choose to not let it take effect and instead store the effect until you finish your next long rest. You can store only one instance of healing at the same time.",
+						"When you finish a {@variantrule Short Rest|Ishiir} or {@variantrule Long Rest|Ishiir}, you also regain a hit die.",
+						"When you receive healing you can choose to not let it take effect and instead store the effect until you finish your next {@variantrule Long Rest|Ishiir}. You can store only one instance of healing at the same time.",
 						"While you have the healing stored in this manner, you can use your reaction to let the healing take effect immediately."
 					]
 				}
@@ -510,7 +510,7 @@
 					"items": [
 						"You gain proficiency in one tool of your choice.",
 						"When you make a crafting check, you can substitute your CHA for the ability score you would normally use for the crafting attempt.",
-						"When you or another creature you can see within 30 ft fails an ability check or saving throw that you are proficient in, you can use your reaction to add your CHA bonus to it. You can use this feature a number of times equal to half your proficiency bonus (rounded down) and you regain all expended uses on a long rest."
+						"When you or another creature you can see within 30 ft fails an ability check or saving throw that you are proficient in, you can use your reaction to add your CHA bonus to it. You can use this feature a number of times equal to half your proficiency bonus (rounded down) and you regain all expended uses on a {@variantrule Long Rest|Ishiir}."
 					]
 				}
 			]
@@ -636,7 +636,7 @@
 					"items": [
 						"You are immune to acid damage.",
 						"If you are {@condition Grappled|Ishiir}, you can use your reaction to not be {@condition Grappled|Ishiir}.",
-						"If you suffer a critical hit, you can use your reaction to turn that critical hit into a normal hit. All effects triggered by a critical hit are cancelled. You can use this feature a number of times equal to half your proficiency modifier (rounded down) and you regain all expended uses when you finish a long rest."
+						"If you suffer a critical hit, you can use your reaction to turn that critical hit into a normal hit. All effects triggered by a critical hit are cancelled. You can use this feature a number of times equal to half your proficiency modifier (rounded down) and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
 					]
 				}
 			]
@@ -672,7 +672,7 @@
 					"items": [
 						"Your maximum for the chosen ability score increases by 2.",
 						"You age at half speed and the expected maximum age for your race doubles.",
-						"When you make an attack roll, an ability check, or a saving throw, you can roll a {@dice d4} and add it to the result. You can choose to use this feature after you see the roll, but before the DM determineds the result. Once you use this ability, you can't use it again until you finish a short or long rest."
+						"When you make an attack roll, an ability check, or a saving throw, you can roll a {@dice d4} and add it to the result. You can choose to use this feature after you see the roll, but before the DM determineds the result. Once you use this ability, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
 					]
 				}
 			]

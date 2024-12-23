@@ -601,7 +601,7 @@
 			"classSource": "Other",
 			"level": 1,
 			"entries": [
-				"You have 2 arcana points, and you gain more as you reach higher levels as shown in the Arcana Points column of the Spellblade table. You regain all spent arcana points when you finish a short or long rest."
+				"You have 2 arcana points, and you gain more as you reach higher levels as shown in the Arcana Points column of the Spellblade table. You regain all spent arcana points when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -652,7 +652,7 @@
 			"classSource": "Other",
 			"level": 1,
 			"entries": [
-				"Along with the skills of martial magic, you have studied the techniques at the core of the spellblade art: Eject, Sprint, and Parry. You must spend 2 arcana points to use these techniques. Once you have done so, you require a short or long rest to recharge this ability even if you have remaining arcana points. When you cast these spells with this technique, you do not require verbal or material components for the casting, do not expend a spell slot, and the spell has a range of self. You cannot use this technique while incapacitated or restrained.",
+				"Along with the skills of martial magic, you have studied the techniques at the core of the spellblade art: Eject, Sprint, and Parry. You must spend 2 arcana points to use these techniques. Once you have done so, you require a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir} to recharge this ability even if you have remaining arcana points. When you cast these spells with this technique, you do not require verbal or material components for the casting, do not expend a spell slot, and the spell has a range of self. You cannot use this technique while incapacitated or restrained.",
 				{
 					"type": "item",
 					"name": "Eject",
@@ -762,7 +762,7 @@
 					"type": "item",
 					"name": "Spell Slots",
 					"entries": [
-						"he Spellblade table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. If you instead cast a spell using arcana points, you no longer expend a spell slot but may cast a spell only if you spend the necessary arcana points. You may cast a spell at a higher level without expending a spell slot if you spend the necessary arcana points. You regain all expended spell slots when you finish a long rest.",
+						"he Spellblade table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. If you instead cast a spell using arcana points, you no longer expend a spell slot but may cast a spell only if you spend the necessary arcana points. You may cast a spell at a higher level without expending a spell slot if you spend the necessary arcana points. You regain all expended spell slots when you finish a {@variantrule Long Rest|Ishiir}.",
 						"For example, if you know the 1st-level spell {@spell absorb elements} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell absorb elements} using either slot."
 					]
 				},
@@ -864,7 +864,7 @@
 			"classSource": "Other",
 			"level": 6,
 			"entries": [
-				"You can spend 1 arcana point and choose to cast a cantrip you know with a casting time of 1 action as a bonus action. You can do this a number of times equal to your Intelligence modifier, regaining all expended uses of this ability after completing a long rest."
+				"You can spend 1 arcana point and choose to cast a cantrip you know with a casting time of 1 action as a bonus action. You can do this a number of times equal to your Intelligence modifier, regaining all expended uses of this ability after completing a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -910,7 +910,7 @@
 			"classSource": "Other",
 			"level": 8,
 			"entries": [
-				"Hours of practice and meditation have honed your technique to a fine edge. Your basic spellweaving techniques (Eject, Sprint, Parry) now cost 1 arcana point. Additionally, whenever you use the Eject or Sprint spellweaving techniques with arcana points, you may gain the benefits of both techniques simultaneously at the cost of 1 additional arcana point (2 total). You may also use the ability twice (both or one cast) between every short rest.",
+				"Hours of practice and meditation have honed your technique to a fine edge. Your basic spellweaving techniques (Eject, Sprint, Parry) now cost 1 arcana point. Additionally, whenever you use the Eject or Sprint spellweaving techniques with arcana points, you may gain the benefits of both techniques simultaneously at the cost of 1 additional arcana point (2 total). You may also use the ability twice (both or one cast) between every {@variantrule Short Rest|Ishiir}.",
 				"Additionally, you gain a new spellweaving technique from the list below, which you add to your list of known techniques.",
 				{
 					"type": "item",
@@ -1204,7 +1204,7 @@
 				"If you fail, you can attempt the saving throw of the spell (if it has one and you are the target) with advantage, or gain +5 AC if it is a ranged spell attack.",
 				"If you succeed, you may spend 3 + half the spell's level arcana points to cast the spell yourself at half range, radius and damage. If the spell has a range of self, you are the target. If the spell must be saved against, it becomes your spell save DC -2.",
 				"In addition to casting the stolen spell, if you succeed by 5 or more, the spell fizzles as if counterspell was cast.",
-				"This technique is difficult and exhausting and can only be attempted twice per long rest."
+				"This technique is difficult and exhausting and can only be attempted twice per {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -1233,7 +1233,7 @@
 			"header": 2,
 			"entries": [
 				"You may extend your {@spell shield} spell to a creature that you can see within 15 ft as a reaction. The spell is otherwise cast normally requiring spell slots or arcana points -- you may cast this by using your Parry technique.",
-				"In addition, you may use your Parry technique of Spellweaving Duelist twice per long rest and no longer lose your bonus action on the following turn."
+				"In addition, you may use your Parry technique of Spellweaving Duelist twice per {@variantrule Long Rest|Ishiir} and no longer lose your bonus action on the following turn."
 			]
 		},
 		{
@@ -1247,7 +1247,7 @@
 			"level": 6,
 			"header": 1,
 			"entries": [
-				"You may target up to 6 creatures that you can see within 10 feet and draw a Contingency ward on them, each as an action. The creature must be living and accept the ward. For each creature targeted you must spend 1 arcana point. A creature warded with Contingency may expend the arcane energy and conjure a {@spell shield} spell normally (as a reaction). This otherwise does not expend a spell slot or require components. The ward lasts until expended or the end of a long rest.",
+				"You may target up to 6 creatures that you can see within 10 feet and draw a Contingency ward on them, each as an action. The creature must be living and accept the ward. For each creature targeted you must spend 1 arcana point. A creature warded with Contingency may expend the arcane energy and conjure a {@spell shield} spell normally (as a reaction). This otherwise does not expend a spell slot or require components. The ward lasts until expended or the end of a {@variantrule Long Rest|Ishiir}.",
 				"This feature improves at 9th, 12th and 15th level."
 			]
 		},
@@ -1381,7 +1381,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"You have sharpened your senses and are unmatched on the battlefield. After initiative has been determined, you may augment the speed of an ally you can see within 30 feet and they act first. You may only augment one target per round. You may only do this a number of times equal to your Intelligence modifier each day and recharges on a long rest.",
+				"You have sharpened your senses and are unmatched on the battlefield. After initiative has been determined, you may augment the speed of an ally you can see within 30 feet and they act first. You may only augment one target per round. You may only do this a number of times equal to your Intelligence modifier each day and recharges on a {@variantrule Long Rest|Ishiir}.",
 				"This feature improves at 7th level."
 			]
 		},
@@ -1468,7 +1468,7 @@
 			"header": 1,
 			"entries": [
 				"Your constant vigilance grants you a +5 bonus to your passive Wisdom ({@skill Perception}) score and advantage on any Wisdom ({@skill Perception}) checks you make. You can see danger coming from a mile away and are not deterred. You gain immunity to {@condition Frightened|Ishiir} condition.",
-				"In addition, your ability to respond to dangerous situations is unparalleled. When you fail a Dexterity saving throw you can spend 3 arcana points to succeed instead. Once you use this feature you can't use it again until you finish a long rest.",
+				"In addition, your ability to respond to dangerous situations is unparalleled. When you fail a Dexterity saving throw you can spend 3 arcana points to succeed instead. Once you use this feature you can't use it again until you finish a {@variantrule Long Rest|Ishiir}.",
 				"This feature improves at 15th level."
 			]
 		},
@@ -1484,7 +1484,7 @@
 			"header": 1,
 			"entries": [
 				"Your presence on the battlefield inspires heroic action in those who fight alongside you. You can rally your allies. As an action on your turn, you can yell out a rallying cry, all allies within 60 feet of you can use their reaction to join in your rally. When you do so, you an all allies that joined in the rallying cry gain the following benefits until the start of your next turn:",
-				"All effected creatures gain temporary hit points equal to your Intelligence modifier + your Spellblade level, +2 to their AC and saving throws and +2 to their attack rolls and +1 spell save DC for rounds equal to your Intelligence modifier (minimum 1). You may spend 6 arcana points to extend this Warcry to 1 minute. Once you use this feature, you can't do so again until you finish a long rest.",
+				"All effected creatures gain temporary hit points equal to your Intelligence modifier + your Spellblade level, +2 to their AC and saving throws and +2 to their attack rolls and +1 spell save DC for rounds equal to your Intelligence modifier (minimum 1). You may spend 6 arcana points to extend this Warcry to 1 minute. Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}.",
 				"In addition, when you issue an Order you can issue the same Order to one additional creature (3 creatures total)."
 			]
 		},
@@ -1499,7 +1499,7 @@
 			"level": 15,
 			"header": 1,
 			"entries": [
-				"You may call out to an ally that can hear you within 60 feet. If they fail a Dexterity saving throw you may spend 3 arcana points as a reaction and the ally can choose to succeed instead. Once you use this feature you can't use it again until you finish a long rest."
+				"You may call out to an ally that can hear you within 60 feet. If they fail a Dexterity saving throw you may spend 3 arcana points as a reaction and the ally can choose to succeed instead. Once you use this feature you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
 			]
 		}
 	]

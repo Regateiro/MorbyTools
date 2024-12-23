@@ -1278,7 +1278,7 @@
             "level": 4,
             "entries": [
                 "Starting at 4th level, you gain the mastery benefits for two {@filter weapons|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} of your choice as well as an {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} type (see {@variantrule Armor Mastery|Ishiir} and {@variantrule Weapon Mastery|Ishiir} variant rules). You must be proficient in the chosen weapons and armor. If you possess the Unarmored Defense feature, you may {@optfeature Unarmored Defense|Ishiir|choose it} in place of an armor type.",
-                "You can change your choices when you finish a short or long rest."
+                "You can change your choices when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1564,7 +1564,7 @@
             "level": 20,
             "entries": [
                 "At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the {@dice d20} roll as a 20.",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         }
     ],
@@ -1621,7 +1621,7 @@
                             "type": "entries",
                             "name": "Spell Slots",
                             "entries": [
-                                "The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your {@filter wizard spells|spells|class=wizard (Ishiir)|source=Ishiir} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+                                "The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your {@filter wizard spells|spells|class=wizard (Ishiir)|source=Ishiir} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a {@variantrule Long Rest|Ishiir}.",
                                 "For example, if you know the 1st-level spell {@spell charm person|Ishiir} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell charm person|Ishiir} using either slot."
                             ]
                         }
@@ -1734,7 +1734,7 @@
             "entries": [
                 "At 17th level, you gain the ability to magically steal the knowledge of how to cast a spell from another spellcaster.",
                 "Immediately after a creature casts a spell that targets you or includes you in its area of effect, you can use your reaction to force the creature to make a saving throw with its spellcasting ability modifier. The DC equals your spell save DC. On a failed save, you negate the spell's effect against you, and you steal the knowledge of the spell if it is at least 1st level and of a level you can cast (it doesn't need to be a wizard spell). For the next 8 hours, you know the spell and can cast it using your spell slots. The creature can't cast that spell until the 8 hours have passed.",
-                "You can use this feature a number of times equal to your Intelligence modifier (minimum 1), and you regain all expended uses when you finish a long rest."
+                "You can use this feature a number of times equal to your Intelligence modifier (minimum 1), and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1863,7 +1863,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Starting at 3rd level, when you use your Cunning Action class feature, you can also choose to teleport 30 ft to an unoccupied space that you can see. You can choose to do so immediately after or before applying the effect of Cunning Action. You can use this feature a number of times equal to half your proficiency modifier (rounded down) and you regain all expended uses when you finish a long rest."
+                "Starting at 3rd level, when you use your Cunning Action class feature, you can also choose to teleport 30 ft to an unoccupied space that you can see. You can choose to do so immediately after or before applying the effect of Cunning Action. You can use this feature a number of times equal to half your proficiency modifier (rounded down) and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1907,7 +1907,7 @@
             "header": 2,
             "entries": [
                 "Starting at 13th level, when you make a {@skill Persuasion}, {@skill Deception}, or {@skill Intimidation} check and you fail the check, you can immediately roll again, but you must take the new result.",
-                "You can use this feature only once on the same check and you have a limited number of uses equal to your proficiency modifier. You gain all expended uses on a long rest."
+                "You can use this feature only once on the same check and you have a limited number of uses equal to your proficiency modifier. You gain all expended uses on a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2174,7 +2174,7 @@
             "entries": [
                 "{@i 3rd-level Phantom feature}",
                 "As you nudge someone closer to the grave, you can channel the power of death to harm someone else as well. Immediately after you deal your Sneak Attack damage to a creature on your turn, you can target a second creature that you can see within 30 feet of the first creature. Roll half the number of Sneak Attack dice for your level (round up), and the second creature takes necrotic damage equal to the roll's total, as wails of the dead sound around them for a moment.",
-                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2189,7 +2189,7 @@
             "header": 1,
             "entries": [
                 "{@i 3rd-level Phantom feature}",
-                "Echoes of those who have died cling to you. Whenever you finish a short or long rest, you can choose one skill or tool proficiency that you lack and gain it, as a ghostly presence shares its knowledge with you. You lose this proficiency when you use this feature to choose a different proficiency that you lack."
+                "Echoes of those who have died cling to you. Whenever you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, you can choose one skill or tool proficiency that you lack and gain it, as a ghostly presence shares its knowledge with you. You lose this proficiency when you use this feature to choose a different proficiency that you lack."
             ]
         },
         {
@@ -2229,7 +2229,7 @@
             "entries": [
                 "{@i 13th-level Phantom feature}",
                 "You can phase partially into the realm of the dead, becoming like a ghost. As a bonus action, you assume a spectral form. While in this form, you have a flying speed of 10 feet, you can hover, and attack rolls have disadvantage against you. You can also move through creatures and objects as if they were {@quickref difficult terrain||3}, but you take {@damage 1d10} force damage if you end your turn inside a creature or an object.",
-                "You stay in this form for 10 minutes or until you end it as a bonus action. To use this feature again, you must finish a long rest or destroy one of your soul trinkets as part of the bonus action you use to activate Ghost Walk."
+                "You stay in this form for 10 minutes or until you end it as a bonus action. To use this feature again, you must finish a {@variantrule Long Rest|Ishiir} or destroy one of your soul trinkets as part of the bonus action you use to activate Ghost Walk."
             ]
         },
         {
@@ -2249,7 +2249,7 @@
                     "type": "list",
                     "items": [
                         "When you use your Wails from the Grave, you can deal the necrotic damage to both the first and the second creature.",
-                        "At the end of a long rest, a soul trinket appears in your hand if you don't have any soul trinkets, as the spirits of the dead are drawn to you."
+                        "At the end of a {@variantrule Long Rest|Ishiir}, a soul trinket appears in your hand if you don't have any soul trinkets, as the spirits of the dead are drawn to you."
                     ]
                 }
             ]
@@ -2406,7 +2406,7 @@
             "header": 2,
             "entries": [
                 "At 9th level, you gain the ability to use your action to shape the shadows around you into a 60-feet radius sphere around your position. The area inside the sphere counts as dim light and persists for 1 minute. It disappears early if you become {@condition Incapacitated|Ishiir} or if its area overlaps with light created by a spell of 4th level or higher.",
-                "You can use this feature a number of times equal to your proficiency modifier and you regain all expended uses when you finish a long rest."
+                "You can use this feature a number of times equal to your proficiency modifier and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2435,7 +2435,7 @@
             "header": 2,
             "entries": [
                 "At 17th level, you gain the ability to adopt a shadowy form as a bonus action for 10 minutes. While in this form, attack rolls have disadvantage against you, you gain the Spiderclimb trait, and the range of your Shadow Step feature increases to 120 feet.",
-                "You can use this feature once and you regain this use when you finish a long rest. Alternatively, you can expend three uses of your Umbral Shroud feature to regain the use of this feature."
+                "You can use this feature once and you regain this use when you finish a {@variantrule Long Rest|Ishiir}. Alternatively, you can expend three uses of your Umbral Shroud feature to regain the use of this feature."
             ]
         },
         {
@@ -2490,7 +2490,7 @@
             "entries": [
                 "{@i 3rd-level Soulknife feature}",
                 "You harbor a wellspring of psionic energy within yourself. This energy is represented by your Psionic Energy dice, which are each a {@dice d6}. You have a number of these dice equal to twice your proficiency bonus, and they fuel various psionic powers you have, which are detailed below.",
-                "Some of your powers expend the Psionic Energy die they use, as specified in a power's description, and you can't use a power if it requires you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can't do so again until you finish a short or long rest.",
+                "Some of your powers expend the Psionic Energy die they use, as specified in a power's description, and you can't use a power if it requires you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a {@variantrule Long Rest|Ishiir}. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
                 "When you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level ({@dice d8}), 11th level ({@dice d10}), and 17th level ({@dice d12}).",
                 "The powers below use your Psionic Energy dice.",
                 {
@@ -2535,7 +2535,7 @@
             "level": 3,
             "entries": [
                 "You can establish telepathic communication between yourself and others-perfect for quiet infiltration. As an action, choose one or more creatures you can see, up to a number of creatures equal to your proficiency bonus, and then roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can't use this telepathy if it can't speak any languages, and a creature can end the telepathic connection at any time (no action required). You and the creature don't need to speak a common language to understand each other.",
-                "The first time you use this power after each long rest, you don't expend the Psionic Energy die. All other times you use the power, you expend the die."
+                "The first time you use this power after each {@variantrule Long Rest|Ishiir}, you don't expend the Psionic Energy die. All other times you use the power, you expend the die."
             ]
         },
         {
@@ -2605,7 +2605,7 @@
             "entries": [
                 "{@i 13th-level Soulknife feature}",
                 "You can weave a veil of psychic static to mask yourself. As an action, you can magically become {@condition Invisible|Ishiir}, along with anything you are wearing or carrying, for 1 hour or until you dismiss this effect (no action required). This invisibility ends early immediately after you deal damage to a creature or you force a creature to make a saving throw.",
-                "Once you use this feature, you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to use this feature again."
+                "Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a Psionic Energy die to use this feature again."
             ]
         },
         {
@@ -2621,7 +2621,7 @@
             "entries": [
                 "{@i 17th-level Soulknife feature}",
                 "You can sweep your Psychic Blades directly through a creature's mind. When you use your Psychic Blades to deal Sneak Attack damage to a creature, you can force that target to make an Intelligence saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier). If the save fails, the target is {@condition Stunned|Ishiir} for 1 minute. The {@condition Stunned|Ishiir} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-                "Once you use this feature, you can't do so again until you finish a long rest, unless you expend three Psionic Energy dice to use it again."
+                "Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend three Psionic Energy dice to use it again."
             ]
         },
         {
@@ -2716,7 +2716,7 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "Beginning at 17th level, your mastery of the blade lets you turn failure into success in combat. If you miss with an attack roll, you can roll it again with advantage. Once you do so, you can't use this feature again until you finish a short or long rest."
+                "Beginning at 17th level, your mastery of the blade lets you turn failure into success in combat. If you miss with an attack roll, you can roll it again with advantage. Once you do so, you can't use this feature again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {

@@ -602,7 +602,7 @@
 			"header": 1,
 			"entries": [
 				"You gain the ability to use your tactical acumen and physical prowess to achieve astounding feats of martial skill.",
-				"You gain the ability to use martial exploits. You gain uses of martial exploits based on your fighter level, as shown in the Martial Exploits table. You retain all expenses uses when you complete a long rest.",
+				"You gain the ability to use martial exploits. You gain uses of martial exploits based on your fighter level, as shown in the Martial Exploits table. You retain all expenses uses when you complete a {@variantrule Long Rest|Ishiir}.",
 				"You can apply the benefits of only one exploit to any given attack. If more than one exploit applies to an attack, you select which one to use. Some exploits require a creature to make a saving throw. The DC for such a save is 8 + your proficiency bonus + your Strength modifier.",
 				{
 					"type": "table",
@@ -783,7 +783,7 @@
 			"entries": [
 				"Your tactical acumen allows you to study an area of a battlefield and provide direction to your allies that can tilt a battle in your favor.",
 				"As a bonus action or as part of the attack action, you can select an area on the ground that measures 10 feet on each side. This area is your tactical focus. It remains your tactical focus until you use this ability again or you are unable to take actions.",
-				"When you select an area as your tactical focus, you choose one of your tactics to apply to that area. You gain three tactics at 3rd level. You gain an additional tactic at 7th and 15 level. Each time you complete a long rest, you can swap one of your tactics for a different one.",
+				"When you select an area as your tactical focus, you choose one of your tactics to apply to that area. You gain three tactics at 3rd level. You gain an additional tactic at 7th and 15 level. Each time you complete a {@variantrule Long Rest|Ishiir}, you can swap one of your tactics for a different one.",
 				{
 					"type": "options",
 					"name": "Tactics",
@@ -832,7 +832,7 @@
 				"As a bonus action or as a part of an attack action you grant insight to yourself or allies in your tactical focus. You grant this benefit to yourself and as many allies as you wish in your focus, but you cannot expend more uses than you currently have {@i [or more than the maximum in the table below. A creature can receive more than one Tactician's Insight when you take this action.]}",
 				"A creature that gains your insight can use it in two ways. It can regain hit points immediately upon receiving it. Roll {@dice 2d10} and the creature regains that many hit points. If the creature would gain hit points that place it above its maximum, it gains the difference as temporary hit points.",
 				"Alternatively, a creature can save the insight to use when it hits with an attack. It increases the attack's damage by {@dice 2d10}.",
-				"You regain expended uses of Tactician's Insight when you complete a long rest.",
+				"You regain expended uses of Tactician's Insight when you complete a {@variantrule Long Rest|Ishiir}.",
 				{
 					"type": "table",
 					"caption": "Tactician's Insight",
@@ -922,7 +922,7 @@
 				"Your tactical cunning allows you to seize the moment in battle.",
 				"You learn two gambits. You learn an additional gambit at 10th and 18th level.",
 				"You use a gambit as an action. You can use your gambits a number of times based on your fighter level.",
-				"Each time you complete a long rest, you regain all expended uses of your gambits and can swap one of your gambits for a different one.",
+				"Each time you complete a {@variantrule Long Rest|Ishiir}, you regain all expended uses of your gambits and can swap one of your gambits for a different one.",
 				{
 					"type": "entries",
 					"name": "Saving Throws",
@@ -1072,7 +1072,7 @@
 			"header": 2,
 			"entries": [
 				"You gain the ability to unleash a devastating combination of your allies' abilities. As a bonus action, select up to five allies who can see or hear you. They can use their reactions to immediately take actions.",
-				"Once you use this ability, you cannot use it again until you complete a long rest."
+				"Once you use this ability, you cannot use it again until you complete a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -1634,7 +1634,7 @@
 			"entries": [
 				"You gain the ability to perceive the auras of other creatures.",
 				"As an action, select a creature that you can see. That creature makes a Wisdom saving throw, though it has no knowledge that you forced it to attempt this saving throw. On a failed save, you learn if the creature shares any aspects of its alignment with you, its current hit points, and its current attitude and intentions toward you or one other creature, object, or location of your choice. In addition, for the next 24 hours or until you use this ability again, you can use an action to determine the creature's distance and direction from you.",
-				"If a creature succeeds on its saving throw against this ability, you cannot use this ability against that creature again until you complete a long rest."
+				"If a creature succeeds on its saving throw against this ability, you cannot use this ability against that creature again until you complete a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -1663,7 +1663,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"You can transform your physical body into the same psychic energy that comprises your soul knives. As a bonus action, you gain resistance to all types of damage, a fly speed of 30 feet, and the ability to pass through solid objects but not end your movement within them. This benefit lasts for 1 minute. You cannot use it again until you complete a long rest."
+				"You can transform your physical body into the same psychic energy that comprises your soul knives. As a bonus action, you gain resistance to all types of damage, a fly speed of 30 feet, and the ability to pass through solid objects but not end your movement within them. This benefit lasts for 1 minute. You cannot use it again until you complete a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -1825,7 +1825,7 @@
 			"header": 2,
 			"entries": [
 				"You gain the ability to call upon your patron to escape from your foes. As a reaction when you take damage, you can cast {@spell darkness|Ishiir} centered on a point within 5 ft. of you. The spell lasts until the end of your next turn, and it has no effect on your vision.",
-				"Once you use this ability, you cannot use it until you complete a short or long rest."
+				"Once you use this ability, you cannot use it until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -1955,7 +1955,7 @@
 			"header": 1,
 			"entries": [
 				"You gain the ability to transform into Lolth's most beloved servitor, a giant spider. As a bonus action you turn into a spider. You gain a +2 bonus to AC. You gain 3 temporary hit points per level. You gain a climb speed equal to your normal speed. You can climb difficult surfaces, such as along a ceiling, without needing to make a check. You gain a bite attack. You are proficient with this attack and it inflicts poison damage based on your level. You can use your choice of Strength or Dexterity to modify your bite attack's attack and damage rolls. While in this form, you lack hands and cannot do anything that normally requires them. However, you can cast spells but can only cast the ones listed on your expanded spell list for Lolth.",
-				"Once you use this ability, you cannot use it again until you complete a short or long rest.",
+				"Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
 				{
 					"type": "table",
 					"caption": "Spider Form Bite Damage",
@@ -1999,7 +1999,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"You gain the ability to use a shard of Lolth's alien beauty, causing other creatures to become enraptured by your appearance. As a bonus action, pick a creature you can see. That creature must succeed on a Charisma saving throw or become {@condition Charmed|Ishiir} by you. While {@condition Charmed|Ishiir}, it also gains vulnerability to poison damage. This benefit lasts for one minute or until you or your allies damages the creature. Once you use this ability, you cannot use it again until you complete a short or long rest."
+				"You gain the ability to use a shard of Lolth's alien beauty, causing other creatures to become enraptured by your appearance. As a bonus action, pick a creature you can see. That creature must succeed on a Charisma saving throw or become {@condition Charmed|Ishiir} by you. While {@condition Charmed|Ishiir}, it also gains vulnerability to poison damage. This benefit lasts for one minute or until you or your allies damages the creature. Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -2027,7 +2027,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"You can channel Lolth's malevolence into a deadly kiss. As an action, you touch a creature within your reach. The target takes {@damage 12d10} poison or psychic damage (your choice), or half as much on a successful Constitution save. A creature {@condition Charmed|Ishiir} by you has disadvantage on its saving throw. After you use this ability, you cannot cast it again until you complete a long rest."
+				"You can channel Lolth's malevolence into a deadly kiss. As an action, you touch a creature within your reach. The target takes {@damage 12d10} poison or psychic damage (your choice), or half as much on a successful Constitution save. A creature {@condition Charmed|Ishiir} by you has disadvantage on its saving throw. After you use this ability, you cannot cast it again until you complete a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -2099,7 +2099,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"Your mere presence is enough to inspire hope and determination in others. When you complete a short or long rest, up to 12 allies of your choice gain temporary hit points equal to your Charisma modifier (minimum 1)."
+				"Your mere presence is enough to inspire hope and determination in others. When you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, up to 12 allies of your choice gain temporary hit points equal to your Charisma modifier (minimum 1)."
 			]
 		},
 		{
@@ -2116,7 +2116,7 @@
 				"You gain the ability to rebuke those who lash out at your in violence.",
 				"As a reaction when a creature you can see within 30 feet of you inflicts damage, you force that creature to make a Wisdom save. On a failed saving throw, it takes psychic damage equal to the damage dealt. On a successful save, it takes half that damage.",
 				"If the creature made multiple attacks, select one attack to determine the damage dealt. If the creature used one or more effects that damaged multiple targets, choose the damage take by one of those targets from one of the effects.",
-				"Once you use this feature, you can't use it again until you complete a short or long rest."
+				"Once you use this feature, you can't use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -2261,7 +2261,7 @@
 			"header": 1,
 			"entries": [
 				"You can invoke the power of darkness to punish anyone fool enough to harm you. As a reaction when a creature you can see damages you, you cause that creature to become {@condition Blinded|Ishiir} until the end of your next turn.",
-				"Once you use this feature, you can't use it again until you complete a short or long rest."
+				"Once you use this feature, you can't use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -2403,7 +2403,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"You can channel divine energy to enter a destructive frenzy. As a bonus action, you gain 5 temporary hit points and a +1 bonus to weapon damage rolls. This benefit lasts for one minute. Once you use this ability, you cannot use it again until you complete a short or long rest.",
+				"You can channel divine energy to enter a destructive frenzy. As a bonus action, you gain 5 temporary hit points and a +1 bonus to weapon damage rolls. This benefit lasts for one minute. Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
 				"When you use this ability, you can expend a spell slot to augment its effects. You gain additional temporary hit points equal to three times the slot's level and a bonus to weapon damage rolls equal to half the slot's level (minimum 1). This benefit lasts for one minute."
 			]
 		},
@@ -2434,7 +2434,7 @@
 			"header": 2,
 			"entries": [
 				"Your destructive acts fuel further expressions of devastation. If you kill a creature or destroy an object with a weapon attack, you can use your reaction to immediately make one additional weapon attack.",
-				"You can use this ability a number of times equal to your Wisdom modifier (minimum 1). You regain all expended uses when you complete a long rest."
+				"You can use this ability a number of times equal to your Wisdom modifier (minimum 1). You regain all expended uses when you complete a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{

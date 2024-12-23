@@ -869,7 +869,7 @@
                     "type": "entries",
                     "name": "Spell Slots.",
                     "entries": [
-                        "The Cleric Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest."
+                        "The Cleric Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|Ishiir}."
                     ]
                 },
                 {
@@ -885,7 +885,7 @@
                     "type": "entries",
                     "name": "Changing Your Prepared Spells.",
                     "entries": [
-                        "Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells there with other Cleric spells for which you have spell slots."
+                        "Whenever you finish a {@variantrule Long Rest|Ishiir}, you can change your list of prepared spells, replacing any of the spells there with other Cleric spells for which you have spell slots."
                     ]
                 },
                 {
@@ -940,7 +940,7 @@
             "level": 2,
             "entries": [
                 "You can channel divine energy directly from the Outer Planes to fuel magical effects. You start with three such effects: Divine Spark, Turn Undead and Harness Divine Power, each of which is described below. Each time you use this class's Channel Divinity, choose which Channel Divinity effect from this class to create. You gain additional effect options at higher Cleric levels.",
-                "You can use this class's Channel Divinity twice. You regain one of its expended uses when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain additional uses when you reach certain Cleric levels, as shown in the Channel Divinity column of the Cleric Features table.",
+                "You can use this class's Channel Divinity twice. You regain one of its expended uses when you finish a {@variantrule Short Rest|Ishiir}, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}. You gain additional uses when you reach certain Cleric levels, as shown in the Channel Divinity column of the Cleric Features table.",
                 "If a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting feature.",
 				{
 					"type": "list",
@@ -959,7 +959,7 @@
 						{
 							"type": "item",
 							"name": "Harness Divine Power.",
-							"entry": "As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 2nd level, once; 6th level, twice; and 18th level, thrice. You regain all expended uses when you finish a long rest."
+							"entry": "As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 2nd level, once; 6th level, twice; and 18th level, thrice. You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
 						}
 					]
 				}
@@ -1125,7 +1125,7 @@
             "classSource": "Ishiir",
             "level": 10,
             "entries": [
-                "You can call on your deity or pantheon to intervene on your behalf. As a {@action Magic|Ishiir} action, choose any Cleric spell of level 5 or lower that requires an Action or a Bonus action to cast. As part of the same action, you cast that spell without expending a spell slot or needing Material components. You can't use this feature again until you finish a Long Rest."
+                "You can call on your deity or pantheon to intervene on your behalf. As a {@action Magic|Ishiir} action, choose any Cleric spell of level 5 or lower that requires an Action or a Bonus action to cast. As part of the same action, you cast that spell without expending a spell slot or needing Material components. You can't use this feature again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1258,7 +1258,7 @@
             "classSource": "Ishiir",
             "level": 20,
             "entries": [
-                "You are able to call on even more powerful divine intervention. When you use your Divine Intervention feature, you can select cleric spells up to 8th level. Additionally, you can select {@spell Wish|Ishiir} when you select a spell. If you do so, you can't use Divine Intervention again until you finish {@dice 2d4} Long Rests. When you cast {@spell Wish|Ishiir} with this feature, you are immune to the stress caused by using Wish to do something other than casting a spell, other than the chance to lose the ability to cast the spell again."
+                "You are able to call on even more powerful divine intervention. When you use your Divine Intervention feature, you can select cleric spells up to 8th level. Additionally, you can select {@spell Wish|Ishiir} when you select a spell. If you do so, you can't use Divine Intervention again until you finish {@dice 2d4} {@variantrule Long Rest|Ishiir}s. When you cast {@spell Wish|Ishiir} with this feature, you are immune to the stress caused by using Wish to do something other than casting a spell, other than the chance to lose the ability to cast the spell again."
             ]
         }
     ],
@@ -2407,7 +2407,7 @@
             "header": 1,
             "entries": [
                 "You can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be {@condition Blinded|Ishiir} is immune to this feature.",
-                "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+                "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2661,7 +2661,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Your mere presence is enough to inspire hope and determination in others. When you complete a short or long rest, up to 6 allies of your choice gain temporary hit points equal to your Charisma modifier (minimum 1) plus twice your proficiency bonus."
+                "Your mere presence is enough to inspire hope and determination in others. When you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, up to 6 allies of your choice gain temporary hit points equal to your Charisma modifier (minimum 1) plus twice your proficiency bonus."
             ]
         },
         {
@@ -2804,7 +2804,7 @@
             "header": 1,
             "entries": [
                 "You can invoke the power of darkness to punish anyone fool enough to harm you. As a reaction when a creature you can see damages you, that creature has to make a CON saving throw or become {@condition Blinded|Ishiir} until the end of your next turn.",
-                "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain one use when you finish a short rest and all expended uses when you finish a long rest."
+                "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain one use when you finish a {@variantrule Short Rest|Ishiir} and all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2848,7 +2848,7 @@
             "header": 2,
             "entries": [
                 "You gain strength from darkness. As a bonus action, you fade into the shadows. You regain hit points equal to your cleric level and gain resistance to all damage for one minute. In addition, while this duration lasts you can use a bonus action to teleport up to 30 feet to an unoccupied space you can see that is in dim light or darkness. It ends early if you become {@condition Incapacitated|Ishiir} or if you dismiss it as a bonus action.",
-                "Once you use this feature you cannot use it again until you finish a long rest."
+                "Once you use this feature you cannot use it again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3026,7 +3026,7 @@
             "header": 2,
             "entries": [
                 "Your destructive acts fuel further expressions of devastation. If you reduce a creature to 0 hit points, you can use your reaction to immediately make one weapon attack or cast a cantrip.",
-                "You cannot use this feature again until you finish a short rest."
+                "You cannot use this feature again until you finish a {@variantrule Short Rest|Ishiir}."
             ]
         },
         {
@@ -3156,8 +3156,8 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You can perceive signs of the future in everyday objects and events, such as flights of birds or ripples made in water by a thrown stone. You can cast the {@spell augury|Ishiir} spell without expending a spell slot and, when you cast the spell in this way, the spell has no verbal, somatic, or material components. Once you cast the spell in this way, you cannot do so again until you finish a long rest.",
-                "In addition, until you finish a long rest, when you cast a divination spell that includes a chance the DM gives you no answer or a random reading—such as augury, commune, or divination—reduce that chance by 25 percent."
+                "You can perceive signs of the future in everyday objects and events, such as flights of birds or ripples made in water by a thrown stone. You can cast the {@spell augury|Ishiir} spell without expending a spell slot and, when you cast the spell in this way, the spell has no verbal, somatic, or material components. Once you cast the spell in this way, you cannot do so again until you finish a {@variantrule Long Rest|Ishiir}.",
+                "In addition, until you finish a {@variantrule Long Rest|Ishiir}, when you cast a divination spell that includes a chance the DM gives you no answer or a random reading—such as augury, commune, or divination—reduce that chance by 25 percent."
             ]
         },
         {
@@ -3173,7 +3173,7 @@
             "entries": [
                 "You can temporarily tie your fate to others. As an action, you can touch one object or creature and magically tie a strand of fate from yourself to it for 1 hour or until you use this feature again. An unwilling creature must succeed on a Wisdom saving throw against your spell save DC to resist this effect. While the target is bound to you and on the same plane of existence as you, you can sense the direction to the target's location, and you know the direction of its movement if it is in motion.",
                 "In addition, once per turn when you cast a spell using a spell slot to deal damage or restore hit points to the target, roll a {@dice d6}, and the target receives extra damage or healing, respectively, equal to the number rolled.",
-                "You can use this feature's action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                "You can use this feature's action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3209,7 +3209,7 @@
                         "The next time the target must make a saving throw against a spell you cast, the target must roll a {@dice d6} and subtract the number rolled from the saving throw."
                     ]
                 },
-                "You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                "You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3223,7 +3223,7 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "Your knowledge of the future allows you to guide an individual to achieve their greatest possible success. You can cast the {@spell foresight|Ishiir} spell once without expending a spell slot. Once you cast the spell in this way, you can't do so again until you finish a long rest."
+                "Your knowledge of the future allows you to guide an individual to achieve their greatest possible success. You can cast the {@spell foresight|Ishiir} spell once without expending a spell slot. Once you cast the spell in this way, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3293,8 +3293,8 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain the ability to imbue magic into a weapon or armor. At the end of a long rest, you can touch one object that is a suit of armor or a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Until the end of your next long rest or until you die, the object becomes a magic item, granting a +1 bonus to AC if it's armor or a +1 bonus to attack and damage rolls if it's a weapon. These bonuses increases +2 once you reach level 11 in this class.",
-                "Once you use this feature, you can't use it again until you finish a long rest."
+                "You gain the ability to imbue magic into a weapon or armor. At the end of a {@variantrule Long Rest|Ishiir}, you can touch one object that is a suit of armor or a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Until the end of your next {@variantrule Long Rest|Ishiir} or until you die, the object becomes a magic item, granting a +1 bonus to AC if it's armor or a +1 bonus to attack and damage rolls if it's a weapon. These bonuses increases +2 once you reach level 11 in this class.",
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3368,7 +3368,7 @@
                     "type": "list",
                     "items": [
                         "You gain immunity to fire damage.",
-                        "You can now use your Blessing of the Forge feature a number of times equal to your Wisdom modifier and you regain all expended uses on a long rest."
+                        "You can now use your Blessing of the Forge feature a number of times equal to your Wisdom modifier and you regain all expended uses on a {@variantrule Long Rest|Ishiir}."
                     ]
                 }
             ]
@@ -3455,7 +3455,7 @@
             "header": 1,
             "entries": [
                 "You gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. Until the end of your next turn, you know the location of any undead within 60 feet of you that isn't behind total cover and that isn't protected from divination magic. This sense doesn't tell you anything about a creature's capabilities or identity.",
-                "You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest."
+                "You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3488,7 +3488,7 @@
             "header": 2,
             "entries": [
                 "You gain the ability to impede death's progress. As a reaction when you or a creature you can see within 30 feet of you suffers a critical hit, you can turn that hit into a normal hit. Any effects triggered by a critical hit are canceled.",
-                "You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest."
+                "You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3586,7 +3586,7 @@
                 "name": "Channel Divinity"
             },
             "entries": [
-                "You can use your Channel Divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. You have proficiency with the chosen skill or tool until you finish a short or long rest."
+                "You can use your Channel Divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. You have proficiency with the chosen skill or tool until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3604,7 +3604,7 @@
             },
             "entries": [
                 "You can use your Channel Divinity to read a creature's thoughts. You can then use your access to the creature's mind to command it.",
-                "As an action, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you can't use this feature on it again until you finish a long rest.",
+                "As an action, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you can't use this feature on it again until you finish a {@variantrule Long Rest|Ishiir}.",
                 "If the creature fails its save, you can read its surface thoughts (those foremost in its mind, reflecting its current emotions and what it is actively thinking about) when it is within 60 feet of you. This effect lasts for 1 minute.",
                 "During that time, you can use your action to end this effect and cast the {@spell suggestion|Ishiir} spell on the creature without expending a spell slot. The target automatically fails its saving throw against the spell."
             ]
@@ -3621,7 +3621,7 @@
             "header": 2,
             "entries": [
                 "You can call up visions of the past that relate to an object you hold or your immediate surroundings. You spend at least 1 minute in meditation and prayer, then receive dreamlike, shadowy glimpses of recent events. You can meditate in this way for a number of minutes equal to your Wisdom score and must maintain {@condition Concentration|Ishiir} during that time, as if you were casting a spell.",
-                "Once you use this feature, you can't use it again until you finish a short or long rest.",
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
                 {
                     "type": "entries",
                     "entries": [
@@ -3853,7 +3853,7 @@
             "header": 1,
             "entries": [
                 "When a creature that you can see within 30 feet of yourself makes an attack roll, you can take a Reaction to impose Disadvantage on the attack roll, causing light to flare before it hits or misses.",
-                "You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest."
+                "You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3885,7 +3885,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You regain all expended uses of your Warding Flare when you finish a Short or Long Rest.",
+                "You regain all expended uses of your Warding Flare when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
                 "In addition, whenever you use Warding Flare, you can give the target of the triggering attack a number of Temporary Hit Points equal to {@dice 2d6} plus your Wisdom modifier."
             ]
         },
@@ -3901,7 +3901,7 @@
             "header": 2,
             "entries": [
                 "As a {@action Magic|Ishiir} action, you cause yourself to emit an aura of sunlight that lasts for 1 minute or until you dismiss it (no action required). You emit Bright Light in a 60-foot radius and Dim Light for an additional 30 feet. Your enemies in the Bright Light have Disadvantage on saving throws against your Radiance of the Dawn and any spell that deals Fire or Radiant damage.",
-                "You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
+                "You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3997,7 +3997,7 @@
                         "If you currently have a {@spell Spiritual Weapon|Ishiir} summoned via the spell of the same name and you move on your turn, you can move your {@spell Spiritual Weapon|Ishiir} the same distance."
                     ]
                 },
-                "You can use this feature twice. You regain all expended uses of it when you finish a short or long rest."
+                "You can use this feature twice. You regain all expended uses of it when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -4299,7 +4299,7 @@
             "entries": [
                 "You become remarkably adept at channeling magical energy to compel others.",
                 "If you cast a spell of the enchantment school using a spell slot of 1st level or higher, you can change the spell's casting time to 1 bonus action for this casting, provided the spell's casting time is normally 1 action.",
-                "You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
+                "You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -4391,7 +4391,7 @@
             "header": 1,
             "entries": [
                 "You can conduct a magical ritual that wards off those that would do you and your companions harm. You have to spend 8 hours during downtime before a rest to prepare the ritual. You and your companions do not suffer a random combat encounter during the night. If a combat encounter happens through different circumstances, none of you can be surprised and are automatically woken at the start of combat.",
-                "You can use this feature a number of times equal to your Wisdom modifier and regain all expended uses when you finish a Long Rest."
+                "You can use this feature a number of times equal to your Wisdom modifier and regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -4438,7 +4438,7 @@
             "entries": [
                 "You always have the {@spell Sanctuary|Ishiir} spell prepared.",
                 "As a Reaction when you or another creature you can see within 30 feet of you is targeted by an attack or other harmful effect, you can cast {@spell Sanctuary|Ishiir} without expending a spell slot, and you adopt a presence of tranquility for 1 minute or until your {@condition Concentration|Ishiir} ends. During this time, you can cast {@spell Sanctuary|Ishiir} again as a Reaction without expending a spell slot.",
-                "Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 3+ spell slot (no action required)."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}. You can also restore your use of it by expending a level 3+ spell slot (no action required)."
             ]
         },
         {
@@ -4521,7 +4521,7 @@
             "header": 1,
             "entries": [
                 "You always have the {@spell Shield of Faith|Ishiir} spell prepared.",
-                "You can cast it without {@condition Concentration|Ishiir} and without expending a spell slot. You can do so a number of times equal to your Wisdom modifier and regain all expended uses on Long Rest. You can also restore a use by expending a level 2+ spell slot (no action required)."
+                "You can cast it without {@condition Concentration|Ishiir} and without expending a spell slot. You can do so a number of times equal to your Wisdom modifier and regain all expended uses on {@variantrule Long Rest|Ishiir}. You can also restore a use by expending a level 2+ spell slot (no action required)."
             ]
         },
         {
@@ -4539,7 +4539,7 @@
             },
             "entries": [
                 "You can use your Channel Divinity to cloak your allies in radiant armor.",
-                "As an action, you channel blessed energy into an ally that you can see within 30 feet of you. The first time that ally is hit by an attack before you complete a short or long rest, the attacker takes radiant damage equal to {@dice 2d10} + your cleric level."
+                "As an action, you channel blessed energy into an ally that you can see within 30 feet of you. The first time that ally is hit by an attack before you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, the attacker takes radiant damage equal to {@dice 2d10} + your cleric level."
             ]
         },
         {
@@ -4567,8 +4567,8 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "You gain resistance to two damage types of your choice. Whenever you finish a short or long rest, you can change the damage types you chose.",
-                "As an action, you can temporarily give up this resistance and transfer it to one creature you touch. The creature keeps the resistance until the end of your next short or long rest or until you transfer it back to yourself as a bonus action."
+                "You gain resistance to two damage types of your choice. Whenever you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, you can change the damage types you chose.",
+                "As an action, you can temporarily give up this resistance and transfer it to one creature you touch. The creature keeps the resistance until the end of your next {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir} or until you transfer it back to yourself as a bonus action."
             ]
         },
         {
@@ -4636,7 +4636,7 @@
             "header": 1,
             "entries": [
                 "You can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 30 feet of you (this can include yourself) equal to your proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 30 feet of another, the creature can roll a d4 and add the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the d4 no more than once per turn.",
-                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. You can also spend a level 2+ spell slot to regain a use."
+                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}. You can also spend a level 2+ spell slot to regain a use."
             ]
         },
         {
@@ -4860,7 +4860,7 @@
             "header": 1,
             "entries": [
                 "You can thunderously rebuke attackers. When a creature within 10 feet of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a Dexterity saving throw. The creature takes {@damage 1d8} x your proficiency bonus lightning or thunder damage (your choice) on a failed saving throw, and half as much damage on a successful one.",
-                "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+                "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -4907,7 +4907,7 @@
             "header": 2,
             "entries": [
                 "You have a flying speed equal to your current walking speed whenever you are not underground or indoors, and gain resistance to lighting and thunder damage.",
-                "Additionally, you regain all expended uses of your Wrath of the Storm subclass feature when you finish a short or long rest."
+                "Additionally, you regain all expended uses of your Wrath of the Storm subclass feature when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -4973,7 +4973,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "As a {@action Magic|Ishiir} action, you can choose yourself or a willing creature within 30 feet of yourself to have Advantage on Dexterity (Stealth) checks. This blessing lasts until you finish a Long Rest or you use this feature again."
+                "As a {@action Magic|Ishiir} action, you can choose yourself or a willing creature within 30 feet of yourself to have Advantage on Dexterity (Stealth) checks. This blessing lasts until you finish a {@variantrule Long Rest|Ishiir} or you use this feature again."
             ]
         },
         {
@@ -5136,7 +5136,7 @@
             "header": 1,
             "entries": [
                 "You can see through the deepest gloom. You have {@sense darkvision} out to a range of 300 feet. In that radius, you can see in dim light as if it were bright light and in darkness as if it were dim light.",
-                "As an action, you can magically share the {@sense darkvision} of this feature with willing creatures you can see within 10 feet of you, up to a number of creatures equal to your Wisdom modifier (minimum of one creature). The shared {@sense darkvision} lasts for 1 hour. Once you share it, you can't do so again until you finish a long rest, unless you expend a spell slot of any level to share it again."
+                "As an action, you can magically share the {@sense darkvision} of this feature with willing creatures you can see within 10 feet of you, up to a number of creatures equal to your Wisdom modifier (minimum of one creature). The shared {@sense darkvision} lasts for 1 hour. Once you share it, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a spell slot of any level to share it again."
             ]
         },
         {
@@ -5189,7 +5189,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You can draw on the mystical power of night to rise into the air. As a bonus action when you are in dim light or darkness, you can magically give yourself a flying speed equal to your walking speed for 1 minute. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                "You can draw on the mystical power of night to rise into the air. As a bonus action when you are in dim light or darkness, you can magically give yourself a flying speed equal to your walking speed for 1 minute. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -5269,7 +5269,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "As a Bonus Action, you can make one attack with a weapon or an Unarmed Strike. You can use this Bonus Action a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Short or Long Rest."
+                "As a Bonus Action, you can make one attack with a weapon or an Unarmed Strike. You can use this Bonus Action a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -5431,7 +5431,7 @@
             "header": 2,
             "entries": [
                 "When one or more creatures have to make a Strength saving throw against one of your features or spells, you can use your reaction to impose disadvantage on that saving throw.",
-                "You can use this feature a number of times equal to your proficiency modifier and you regain all expended uses when you finish a long rest."
+                "You can use this feature a number of times equal to your proficiency modifier and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -5644,7 +5644,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You have a pool of power fueled by your zealous fervor that replenishes when you finish a Long Rest. The pool has a number of points equal to five times your Cleric level. You cannot benefit from this feature while you are wearing armor.",
+                "You have a pool of power fueled by your zealous fervor that replenishes when you finish a {@variantrule Long Rest|Ishiir}. The pool has a number of points equal to five times your Cleric level. You cannot benefit from this feature while you are wearing armor.",
                 "As a Bonus Action, you draw power from the pool to give yourself Temporary Hit Points, up to the maximum amount remaining in the pool.",
                 "You can also expend 5 points from the pool to remove the {@condition Charmed|Ishiir}, {@condition Frightened|Ishiir} or {@condition Poisoned|Ishiir} conditions from yourself, those points do not also give Temporary Hit Points."
             ]
@@ -5708,7 +5708,7 @@
             "entries": [
                 "You can delay death for an instant to perform a final heroic act.",
                 "When you are reduced to 0 hit points by an attacker you can see, even if you would be killed outright, you can use your reaction to move up to your speed toward the attacker and make one melee weapon attack against it, as long as the movement brings it within your reach. You make this attack with advantage. If the attack hits, the creature takes an extra {@damage 5d10} fire damage and an extra {@damage 5d10} damage of the weapon's type. You then fall {@condition Unconscious|Ishiir} and begin making death saving throws as normal, or you die if the damage you took would have killed you outright.",
-                "Once you use this feature, you can't use it again until you finish a long rest."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         }
     ]
