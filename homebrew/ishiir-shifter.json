@@ -876,7 +876,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You have {@variantrule Advantage|Ishiir} on {@skill Perception} checks.",
+						"You have {@variantrule Advantage|Ishiir} on {@skill Perception} {@variantrule Ability Check|Ishiir|checks}.",
 						"Your {@variantrule Speed|Ishiir} is doubled.",
 						"When you make a melee weapon attack with your natural weapons, you gain a +2 bonus to the damage roll. This bonus increases as you level."
 					]
@@ -965,7 +965,7 @@
             "classSource": "Ishiir",
             "level": 4,
             "entries": [
-                "You gain the mastery benefits for two {@filter weapons|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} of your choice as well as an {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} type (see {@variantrule Armor Mastery|Ishiir} and {@variantrule Weapon Mastery|Ishiir} variant rules). You must be proficient in the chosen weapons and armor. If you possess the Unarmored Defense feature, you may {@optfeature Unarmored Defense|Ishiir|choose it} in place of an armor type.",
+                "You gain the mastery benefits for two {@filter weapons|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} of your choice as well as an {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} type (see {@variantrule Armor Mastery|Ishiir} and {@variantrule Weapon Mastery|Ishiir} variant rules). You must be {@variantrule Proficiency|Ishiir|proficient} in the chosen weapons and armor. If you possess the Unarmored Defense feature, you may {@optfeature Unarmored Defense|Ishiir|choose it} in place of an armor type.",
                 "You can change your choices when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -1487,7 +1487,7 @@
 						{
 							"type": "item",
 							"name": "A Friend in Deed.",
-							"entry": "You can take the {@action Help|Ishiir} action as a {@variantrule Bonus Action|Ishiir} and with a range of 30 feet. You can always use the {@action Help|Ishiir} action to give someone {@variantrule Advantage|Ishiir} on a skill check, even if you are not proficient in the relevant skill yourself."
+							"entry": "You can take the {@action Help|Ishiir} action as a {@variantrule Bonus Action|Ishiir} and with a range of 30 feet. You can always use the {@action Help|Ishiir} action to give someone {@variantrule Advantage|Ishiir} on a skill check, even if you are not {@variantrule Proficiency|Ishiir|proficient} in the relevant skill yourself."
 						},
 						{
 							"type": "item",

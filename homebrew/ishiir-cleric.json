@@ -80,8 +80,8 @@
             "startingEquipment": {
                 "additionalFromBackground": true,
                 "default": [
-                    "(a) a {@item mace|phb} or (b) a {@item warhammer|phb} (if proficient)",
-                    "(a) {@item scale mail|phb}, (b) {@item leather armor|phb}, or (c) {@item chain mail|phb} (if proficient)",
+                    "(a) a {@item mace|phb} or (b) a {@item warhammer|phb} (if {@variantrule Proficiency|Ishiir|proficient})",
+                    "(a) {@item scale mail|phb}, (b) {@item leather armor|phb}, or (c) {@item chain mail|phb} (if {@variantrule Proficiency|Ishiir|proficient})",
                     "(a) a {@item light crossbow|phb} and {@item Crossbow Bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
                     "(a) a {@item priest's pack|phb} or (b) an {@item explorer's pack|phb}",
                     "A {@item shield|phb} and a {@item holy symbol|phb}"
@@ -925,7 +925,7 @@
 						{
 							"type": "item",
 							"name": "Thaumaturge.",
-							"entry": "You know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you a bonus to your Intelligence ({@skill Arcana} or {@skill Religion}) checks. The bonus equals your Wisdom modifier (minimum of +1)."
+							"entry": "You know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you a bonus to your Intelligence ({@skill Arcana} or {@skill Religion}) {@variantrule Ability Check|Ishiir|checks}. The bonus equals your Wisdom modifier (minimum of +1)."
 						}
 					]
 				}
@@ -2449,7 +2449,7 @@
             "level": 6,
             "header": 1,
             "entries": [
-                "You add your Wisdom modifier to {@skill Deception}, {@skill Intimidation}, and {@skill Persuasion} checks. Additionally, you do not expend a use of your Channel Divinity on Reject Failure if the D20 test does not succeed after the reroll."
+                "You add your Wisdom modifier to {@skill Deception}, {@skill Intimidation}, and {@skill Persuasion} {@variantrule Ability Check|Ishiir|checks}. Additionally, you do not expend a use of your Channel Divinity on Reject Failure if the D20 test does not succeed after the reroll."
             ]
         },
         {
@@ -2576,7 +2576,7 @@
             "level": 6,
             "header": 1,
             "entries": [
-                "You add your Wisdom modifier to {@skill Arcana} checks."
+                "You add your Wisdom modifier to {@skill Arcana} {@variantrule Ability Check|Ishiir|checks}."
             ]
         },
         {
@@ -2818,7 +2818,7 @@
             "level": 3,
             "header": 2,
             "entries": [
-                "As a {@variantrule Bonus Action|Ishiir}, you envelope yourself in a coat of shadows for 1 minute. For the duration, you gain {@variantrule Advantage|Ishiir} on all Dexterity ({@skill Stealth}) checks while you are in dim light or darkness. This benefit lasts for one minute or until you are {@condition Incapacitated|Ishiir}. It is also suppressed until the end of your next turn if you are in bright light or you take radiant damage.",
+                "As a {@variantrule Bonus Action|Ishiir}, you envelope yourself in a coat of shadows for 1 minute. For the duration, you gain {@variantrule Advantage|Ishiir} on all Dexterity ({@skill Stealth}) {@variantrule Ability Check|Ishiir|checks} while you are in dim light or darkness. This benefit lasts for one minute or until you are {@condition Incapacitated|Ishiir}. It is also suppressed until the end of your next turn if you are in bright light or you take radiant damage.",
                 "If you damage a creature that cannot see you with a spell or an attack while this effect is active on you, you can choose to deal maximum damage. You can do so only once per use of this Channel Divinity."
             ]
         },
@@ -3568,7 +3568,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You learn two languages of your choice. You also become proficient in your choice of two of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}.",
+                "You learn two languages of your choice. You also become {@variantrule Proficiency|Ishiir|proficient} in your choice of two of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}.",
                 "Your {@variantrule Proficiency|Ishiir} bonus is doubled for any {@variantrule Ability Check|Ishiir} you make that uses either of those skills."
             ]
         },
@@ -3992,7 +3992,7 @@
                     "items": [
                         "You gain a bonus to your AC equal to your Wisdom modifier (minimum of +1).",
                         "Your {@variantrule Speed|Ishiir} increases by 10 feet.",
-                        "You have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Acrobatics}) checks.",
+                        "You have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Acrobatics}) {@variantrule Ability Check|Ishiir|checks}.",
                         "You gain a bonus to any Constitution {@variantrule Saving Throw|Ishiir|Saving Throws} you make to maintain {@condition Concentration|Ishiir} on a spell. The bonus equals your Wisdom modifier (minimum of +1).",
                         "If you currently have a {@spell Spiritual Weapon|Ishiir} summoned via the spell of the same name and you move on your turn, you can move your {@spell Spiritual Weapon|Ishiir} the same distance."
                     ]
@@ -4973,7 +4973,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "As a {@action Magic|Ishiir} action, you can choose yourself or a willing creature within 30 feet of yourself to have {@variantrule Advantage|Ishiir} on Dexterity (Stealth) checks. This blessing lasts until you finish a {@variantrule Long Rest|Ishiir} or you use this feature again."
+                "As a {@action Magic|Ishiir} action, you can choose yourself or a willing creature within 30 feet of yourself to have {@variantrule Advantage|Ishiir} on Dexterity (Stealth) {@variantrule Ability Check|Ishiir|checks}. This blessing lasts until you finish a {@variantrule Long Rest|Ishiir} or you use this feature again."
             ]
         },
         {

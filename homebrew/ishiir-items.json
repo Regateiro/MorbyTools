@@ -289,7 +289,7 @@
                 }
             },
             "entries": [
-                "When you drink this potion, you gain a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} for 1 hour. During this time, you have {@variantrule Advantage|Ishiir} on Strength ({@skill Athletics}) checks you make to climb. The potion is separated into brown, silver, and gray layers resembling bands of stone. Shaking the bottle fails to mix the colors."
+                "When you drink this potion, you gain a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} for 1 hour. During this time, you have {@variantrule Advantage|Ishiir} on Strength ({@skill Athletics}) {@variantrule Ability Check|Ishiir|checks} you make to climb. The potion is separated into brown, silver, and gray layers resembling bands of stone. Shaking the bottle fails to mix the colors."
             ]
         },
         {
@@ -408,7 +408,7 @@
                 ]
             },
             "entries": [
-                "Soothsalts are derived from a naturally occurring crystalline substance discovered throughout the wilds of the Miskath Strand. The crimson crystals have been mined from cavernous veins like those in the mouth of the Miskath Pit and found within smaller geode formations near sites ravaged by the Calamity. Soothsalts are consumed orally in lozenge-sized doses, and frequent users can be identified by the telltale crimson stain around their mouths. A creature subjected to a dose of soothsalts gains {@variantrule Advantage|Ishiir} on all Intelligence checks for {@dice 1d4} hours.",
+                "Soothsalts are derived from a naturally occurring crystalline substance discovered throughout the wilds of the Miskath Strand. The crimson crystals have been mined from cavernous veins like those in the mouth of the Miskath Pit and found within smaller geode formations near sites ravaged by the Calamity. Soothsalts are consumed orally in lozenge-sized doses, and frequent users can be identified by the telltale crimson stain around their mouths. A creature subjected to a dose of soothsalts gains {@variantrule Advantage|Ishiir} on all Intelligence {@variantrule Ability Check|Ishiir|checks} for {@dice 1d4} hours.",
                 "For each dose of soothsalts consumed, the creature must succeed on a DC 15 Constitution {@variantrule Saving Throw|Ishiir} or gain one level of {@condition Exhaustion|Ishiir}\u2014an effect which is cumulative with multiple doses."
             ]
         },
@@ -1753,7 +1753,7 @@
             },
             "entries": [
                 "{@i Requirement: Shields.}",
-                "You can make a ranged weapon attack with this magic shield. It has a normal range of 20 feet and a long range of 60 feet, and it uses your Strength or Dexterity for the {@variantrule Attack Roll|Ishiir} (your choice). If you're proficient with shields, you are proficient with attacks made using this shield. On a hit, it deals {@damage 1d6} + your Strength or Dexterity modifier (your choice) bludgeoning damage. If you throw the shield, it reappears in your hand the instant after it hits or misses a target."
+                "You can make a ranged weapon attack with this magic shield. It has a normal range of 20 feet and a long range of 60 feet, and it uses your Strength or Dexterity for the {@variantrule Attack Roll|Ishiir} (your choice). If you're {@variantrule Proficiency|Ishiir|proficient} with shields, you are {@variantrule Proficiency|Ishiir|proficient} with attacks made using this shield. On a hit, it deals {@damage 1d6} + your Strength or Dexterity modifier (your choice) bludgeoning damage. If you throw the shield, it reappears in your hand the instant after it hits or misses a target."
             ]
         },
         {
@@ -1925,7 +1925,7 @@
             },
             "entries": [
                 "{@i Requirement:  Shields.}",
-                "While holding the shield, you have {@variantrule Advantage|Ishiir} on initiative rolls and Wisdom ({@skill Perception}) checks."
+                "While holding the shield, you have {@variantrule Advantage|Ishiir} on initiative rolls and Wisdom ({@skill Perception}) {@variantrule Ability Check|Ishiir|checks}."
             ]
         },
         {
@@ -3947,7 +3947,7 @@
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
-                "While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Stealth}) checks that rely on moving silently."
+                "While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Stealth}) {@variantrule Ability Check|Ishiir|checks} that rely on moving silently."
             ],
             "type": "CRF",
             "value": 50000,
@@ -4056,7 +4056,7 @@
             "reqAttune": true,
             "wondrous": true,
             "entries": [
-                "These crystal lenses fit over the eyes. While wearing them, you have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Perception}) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across."
+                "These crystal lenses fit over the eyes. While wearing them, you have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Perception}) {@variantrule Ability Check|Ishiir|checks} that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across."
             ],
             "type": "CRF",
             "value": 50000,
@@ -4178,7 +4178,7 @@
             "rarity": "uncommon",
             "reqAttune": true,
             "entries": [
-                "While wearing this ring, you have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Insight}) checks to determine whether someone is lying to you."
+                "While wearing this ring, you have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Insight}) {@variantrule Ability Check|Ishiir|checks} to determine whether someone is lying to you."
             ],
             "value": 50000,
             "crafted": {
@@ -4200,7 +4200,7 @@
             "wondrous": true,
             "entries": [
                 "This 60-foot length of silk rope weighs 3 pounds and can hold up to 3,000 pounds. If you hold one end of the rope and use an {@variantrule Action|Ishiir} to speak the command word, the rope animates. As a {@variantrule Bonus Action|Ishiir}, you can command the other end to move toward a destination you choose. That end moves 10 feet on your turn when you first command it and 10 feet on each of your turns until reaching its destination, up to its maximum length away, or until you tell it to stop. You can also tell the rope to fasten itself securely to an object or to unfasten itself, to knot or unknot itself, or to coil itself for carrying.",
-                "If you tell the rope to knot, large knots appear at 1-foot intervals along the rope. While knotted, the rope shortens to a 50-foot length and grants {@variantrule Advantage|Ishiir} on checks made to climb it.",
+                "If you tell the rope to knot, large knots appear at 1-foot intervals along the rope. While knotted, the rope shortens to a 50-foot length and grants {@variantrule Advantage|Ishiir} on {@variantrule Ability Check|Ishiir|checks} made to climb it.",
                 "The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed."
             ],
             "type": "CRF",
@@ -4403,7 +4403,7 @@
             "rechargeAmount": "{@dice 1d3}",
             "charges": 3,
             "entries": [
-                "You must be proficient with wind instruments to use these pipes. While you are attuned to the pipes, ordinary rats and giant rats are indifferent toward you and will not attack you unless you threaten or harm them.",
+                "You must be {@variantrule Proficiency|Ishiir|proficient} with wind instruments to use these pipes. While you are attuned to the pipes, ordinary rats and giant rats are indifferent toward you and will not attack you unless you threaten or harm them.",
                 "The pipes have 3 charges. If you play the pipes as an {@variantrule Action|Ishiir}, you can use a {@variantrule Bonus Action|Ishiir} to expend 1 to 3 charges, calling forth one {@creature swarm of rats} with each expended charge, provided that enough rats are within half a mile of you to be called in this fashion (as determined by the DM). If there aren't enough rats to form a swarm, the charge is wasted. Called swarms move toward the music by the shortest available route but aren't under your control otherwise. The pipes regain {@dice 1d3} expended charges daily at dawn.",
                 "Whenever a {@creature swarm of rats} that isn't under another creature's control comes within 30 feet of you while you are playing the pipes, you can make a Charisma check contested by the swarm's Wisdom check. If you lose the contest, the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours. If you win the contest, the swarm is swayed by the pipes' music and becomes friendly to you and your companions for as long as you continue to play the pipes each round as an {@variantrule Action|Ishiir}. A friendly swarm obeys your commands. If you issue no commands to a friendly swarm, it defends itself but otherwise takes no actions. If a friendly swarm starts its turn and can't hear the pipes' music, your control over that swarm ends, and the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours."
             ],
@@ -5229,7 +5229,7 @@
             "reqAttune": true,
             "wondrous": true,
             "entries": [
-                "While you wear this cloak with its hood up, Wisdom ({@skill Perception}) checks made to see you have {@variantrule Disadvantage|Ishiir}, and you have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Stealth}) checks made to hide, as the cloak's color shifts to camouflage you. Pulling the hood up or down requires an {@variantrule Action|Ishiir}."
+                "While you wear this cloak with its hood up, Wisdom ({@skill Perception}) {@variantrule Ability Check|Ishiir|checks} made to see you have {@variantrule Disadvantage|Ishiir}, and you have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Stealth}) {@variantrule Ability Check|Ishiir|checks} made to hide, as the cloak's color shifts to camouflage you. Pulling the hood up or down requires an {@variantrule Action|Ishiir}."
             ],
             "type": "CRF",
             "value": 100000,
@@ -5304,7 +5304,7 @@
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
-                "These crystal lenses fit over the eyes. While wearing them, you can see much better than normal out to a range of 1 foot. You have {@variantrule Advantage|Ishiir} on Intelligence ({@skill Investigation}) checks that rely on sight while searching an area or studying an object within that range."
+                "These crystal lenses fit over the eyes. While wearing them, you can see much better than normal out to a range of 1 foot. You have {@variantrule Advantage|Ishiir} on Intelligence ({@skill Investigation}) {@variantrule Ability Check|Ishiir|checks} that rely on sight while searching an area or studying an object within that range."
             ],
             "type": "CRF",
             "value": 100000,
@@ -5326,7 +5326,7 @@
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
-                "These gloves are {@condition Invisible} while worn. While wearing them, you gain a +5 bonus to Dexterity ({@skill Sleight of Hand}) checks and Dexterity checks made to pick locks."
+                "These gloves are {@condition Invisible} while worn. While wearing them, you gain a +5 bonus to Dexterity ({@skill Sleight of Hand}) {@variantrule Ability Check|Ishiir|checks} and Dexterity {@variantrule Ability Check|Ishiir|checks} made to pick locks."
             ],
             "type": "CRF",
             "value": 100000,
@@ -5552,7 +5552,7 @@
                                 {
                                     "type": "item",
                                     "name": "Armor",
-                                    "entry": "The armor is now an uncommon magic item that requires attunement. You gain a bonus to {@variantrule Speed|Ishiir} of 5 feet while you wear the armor, and if it normally imposes {@variantrule Disadvantage|Ishiir} on {@skill Stealth} checks, it no longer does so."
+                                    "entry": "The armor is now an uncommon magic item that requires attunement. You gain a bonus to {@variantrule Speed|Ishiir} of 5 feet while you wear the armor, and if it normally imposes {@variantrule Disadvantage|Ishiir} on {@skill Stealth} {@variantrule Ability Check|Ishiir|checks}, it no longer does so."
                                 },
                                 {
                                     "type": "item",
@@ -5665,7 +5665,7 @@
             "reqAttune": true,
             "wondrous": true,
             "entries": [
-                "These leather-framed goggles feature purple crystal lenses. While wearing the goggles, you have {@variantrule Advantage|Ishiir} on Intelligence ({@skill Arcana}) checks made to reveal information about a creature or object you can see.",
+                "These leather-framed goggles feature purple crystal lenses. While wearing the goggles, you have {@variantrule Advantage|Ishiir} on Intelligence ({@skill Arcana}) {@variantrule Ability Check|Ishiir|checks} made to reveal information about a creature or object you can see.",
                 "In addition, you can cast the {@spell identify|Ishiir} spell using the googles. Once you do so, you can't do so again until the next dawn."
             ],
             "attachedSpells": [
@@ -5832,7 +5832,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "You have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Perception}) checks that rely on sight.",
+                        "You have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Perception}) {@variantrule Ability Check|Ishiir|checks} that rely on sight.",
                         "If you have the Sunlight Sensitivity trait, you are unaffected by the trait.",
                         "You are {@variantrule Immunity|Ishiir|Immune} to magic that allows other creatures to read your thoughts or determine whether you are lying. Creatures can communicate telepathically with you only if you allow it."
                     ]
@@ -6961,7 +6961,7 @@
             "reqAttune": true,
             "wondrous": true,
             "entries": [
-                "While wearing these gloves, {@variantrule Climb Speed|Ishiir|climbing} and {@variantrule Swim Speed|Ishiir|swimming} don't cost you extra movement, and you gain a +5 bonus to Strength ({@skill Athletics}) checks made to climb or swim."
+                "While wearing these gloves, {@variantrule Climb Speed|Ishiir|climbing} and {@variantrule Swim Speed|Ishiir|swimming} don't cost you extra movement, and you gain a +5 bonus to Strength ({@skill Athletics}) {@variantrule Ability Check|Ishiir|checks} made to climb or swim."
             ],
             "type": "CRF",
             "value": 200000,
@@ -8173,7 +8173,7 @@
             },
             "entries": [
                 "This magical {@item breastplate armor|Ishiir} appears as a jug of molten bronze. When you attune to it, the bronze adheres and contours to your skin. The armor can be worn under normal clothes, but it doesn't impede bodily functions. Once you put it on, it can't be removed unless you choose to do so.",
-                "While wearing the armor, you have {@variantrule Resistance|Ishiir} to fire damage. The armor also doesn't impose {@variantrule Disadvantage|Ishiir} on Dexterity ({@skill Stealth}) checks."
+                "While wearing the armor, you have {@variantrule Resistance|Ishiir} to fire damage. The armor also doesn't impose {@variantrule Disadvantage|Ishiir} on Dexterity ({@skill Stealth}) {@variantrule Ability Check|Ishiir|checks}."
             ],
             "dmgType": [
                 "F"
@@ -8247,7 +8247,7 @@
             "charges": 3,
             "entries": [
                 "This fist-sized charm is made from a bundle of dried plant stems wrapped in silver thread. Hung on a leather thong, it is typically worn around the neck or attached to a belt.",
-                "This charm has 3 charges. While you bear the charm, you can expend 1 charge as an {@variantrule Action|Ishiir} to cast the {@spell speak with plants|Ishiir} spell. For the duration of the spell, you also have {@variantrule Advantage|Ishiir} on Charisma checks made to influence the behavior, demeanor, and attitude of plants. The charm regains all expended charges at dawn each day."
+                "This charm has 3 charges. While you bear the charm, you can expend 1 charge as an {@variantrule Action|Ishiir} to cast the {@spell speak with plants|Ishiir} spell. For the duration of the spell, you also have {@variantrule Advantage|Ishiir} on Charisma {@variantrule Ability Check|Ishiir|checks} made to influence the behavior, demeanor, and attitude of plants. The charm regains all expended charges at dawn each day."
             ],
             "attachedSpells": [
                 "speak with plants|ishiir"
@@ -8273,7 +8273,7 @@
             "reqAttune": true,
             "wondrous": true,
             "entries": [
-                "While wearing this cloak, you have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Stealth}) checks. In an area of dim light or darkness, you can grip the edges of the cloak with both hands and use it to fly at a {@variantrule Speed|Ishiir} of 40 feet. If you ever fail to grip the cloak's edges while flying in this way, or if you are no longer in dim light or darkness, you lose this {@variantrule Fly Speed|Ishiir}.",
+                "While wearing this cloak, you have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Stealth}) {@variantrule Ability Check|Ishiir|checks}. In an area of dim light or darkness, you can grip the edges of the cloak with both hands and use it to fly at a {@variantrule Speed|Ishiir} of 40 feet. If you ever fail to grip the cloak's edges while flying in this way, or if you are no longer in dim light or darkness, you lose this {@variantrule Fly Speed|Ishiir}.",
                 "While wearing the cloak in an area of dim light or darkness, you can use your action to cast {@spell polymorph|Ishiir} on yourself, transforming into a {@creature bat}. While you are in the form of the {@creature bat}, you retain your Intelligence, Wisdom, and Charisma scores. The cloak can't be used this way again until the next dawn."
             ],
             "attachedSpells": [
@@ -8560,7 +8560,7 @@
             "rechargeAmount": "{@dice 1d3}",
             "charges": 3,
             "entries": [
-                "You must be proficient with wind instruments to use these pipes. They have 3 charges. You can use an {@variantrule Action|Ishiir} to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature within 30 feet of you that hears you play must succeed on a DC 15 Wisdom {@variantrule Saving Throw|Ishiir} or become {@condition Frightened|Ishiir} of you for 1 minute. If you wish, all creatures in the area that aren't hostile toward you automatically succeed on the {@variantrule Saving Throw|Ishiir}. A creature that fails the {@variantrule Saving Throw|Ishiir} can repeat it at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on its {@variantrule Saving Throw|Ishiir} is {@variantrule Immunity|Ishiir|Immune} to the effect of these pipes for 24 hours. The pipes regain {@dice 1d3} expended charges daily at dawn."
+                "You must be {@variantrule Proficiency|Ishiir|proficient} with wind instruments to use these pipes. They have 3 charges. You can use an {@variantrule Action|Ishiir} to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature within 30 feet of you that hears you play must succeed on a DC 15 Wisdom {@variantrule Saving Throw|Ishiir} or become {@condition Frightened|Ishiir} of you for 1 minute. If you wish, all creatures in the area that aren't hostile toward you automatically succeed on the {@variantrule Saving Throw|Ishiir}. A creature that fails the {@variantrule Saving Throw|Ishiir} can repeat it at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on its {@variantrule Saving Throw|Ishiir} is {@variantrule Immunity|Ishiir|Immune} to the effect of these pipes for 24 hours. The pipes regain {@dice 1d3} expended charges daily at dawn."
             ],
             "value": 325000,
             "crafted": {
@@ -8782,7 +8782,7 @@
                     "items": [
                         "Your Wisdom score increases by 2, as does your maximum for that score.",
                         "You gain {@sense darkvision} out to a range of 60 feet. If you already have {@sense darkvision}, the orb increases its range by 60 feet.",
-                        "You have {@variantrule Advantage|Ishiir} on Wisdom checks to find hidden doors and paths."
+                        "You have {@variantrule Advantage|Ishiir} on Wisdom {@variantrule Ability Check|Ishiir|checks} to find hidden doors and paths."
                     ]
                 }
             ],
@@ -9294,7 +9294,7 @@
             },
             "entries": [
                 "This magical {@item halfplate armor|Ishiir} appears as a jug of molten bronze. When you attune to it, the bronze adheres and contours to your skin. The armor can be worn under normal clothes, but it doesn't impede bodily functions. Once you put it on, it can't be removed unless you choose to do so.",
-                "While wearing the armor, you have {@variantrule Resistance|Ishiir} to fire damage. The armor also doesn't impose {@variantrule Disadvantage|Ishiir} on Dexterity ({@skill Stealth}) checks."
+                "While wearing the armor, you have {@variantrule Resistance|Ishiir} to fire damage. The armor also doesn't impose {@variantrule Disadvantage|Ishiir} on Dexterity ({@skill Stealth}) {@variantrule Ability Check|Ishiir|checks}."
             ],
             "dmgType": [
                 "F"
@@ -9340,7 +9340,7 @@
                     "type": "entries",
                     "name": "Indomitable Stand",
                     "entries": [
-                        "As an {@variantrule Action|Ishiir}, you can channel the orb's magic to hold your ground. For the next minute or until you move any distance, you have {@variantrule Advantage|Ishiir} on all checks and {@variantrule Saving Throw|Ishiir|Saving Throws} to resist effects that force you to move. In addition, any enemy that moves to a space within 10 feet of you must succeed on a DC 12 Strength {@variantrule Saving Throw|Ishiir} or be unable to move any farther this turn."
+                        "As an {@variantrule Action|Ishiir}, you can channel the orb's magic to hold your ground. For the next minute or until you move any distance, you have {@variantrule Advantage|Ishiir} on all {@variantrule Ability Check|Ishiir|checks} and {@variantrule Saving Throw|Ishiir|Saving Throws} to resist effects that force you to move. In addition, any enemy that moves to a space within 10 feet of you must succeed on a DC 12 Strength {@variantrule Saving Throw|Ishiir} or be unable to move any farther this turn."
                     ]
                 },
                 {
@@ -10314,7 +10314,7 @@
             "rechargeAmount": "{@dice 1d6 + 4}",
             "charges": 10,
             "entries": [
-                "Created by the stone giant librarians of Gravenhollow, this nineteen-inch-long shard of quartz grants you {@variantrule Advantage|Ishiir} on Intelligence ({@skill Investigation}) checks while it is on your person.",
+                "Created by the stone giant librarians of Gravenhollow, this nineteen-inch-long shard of quartz grants you {@variantrule Advantage|Ishiir} on Intelligence ({@skill Investigation}) {@variantrule Ability Check|Ishiir|checks} while it is on your person.",
                 "The crystal has 10 charges. While holding it, you can use an {@variantrule Action|Ishiir} to expend some of its charges to cast one of the following spells from it: {@spell speak with animals|Ishiir} (2 charges), {@spell speak with dead|Ishiir} (4 charges), or {@spell speak with plants|Ishiir} (3 charges).",
                 "When you cast a {@filter divination|spells|school=D} spell, you can use the crystal in place of one material component that would normally be consumed by the spell, at a cost of 1 charge per level of the spell. The crystal is not consumed when used in this way.",
                 "The crystal regains {@dice 1d6 + 4} expended charges daily at dawn. If you expend the crystal's last charge, roll a {@dice d20}. On a 1, the crystal vanishes, lost forever."
@@ -10539,7 +10539,7 @@
             },
             "entries": [
                 "This magical {@item full plate Armor|Ishiir} appears as a jug of molten bronze. When you attune to it, the bronze adheres and contours to your skin. The armor can be worn under normal clothes, but it doesn't impede bodily functions. Once you put it on, it can't be removed unless you choose to do so.",
-                "While wearing the armor, you have {@variantrule Resistance|Ishiir} to fire damage. The armor also doesn't impose {@variantrule Disadvantage|Ishiir} on Dexterity ({@skill Stealth}) checks."
+                "While wearing the armor, you have {@variantrule Resistance|Ishiir} to fire damage. The armor also doesn't impose {@variantrule Disadvantage|Ishiir} on Dexterity ({@skill Stealth}) {@variantrule Ability Check|Ishiir|checks}."
             ],
             "dmgType": [
                 "F"
@@ -11034,7 +11034,7 @@
                     "type": "list",
                     "items": [
                         "Your Constitution score increases by 2, to a maximum of 20.",
-                        "You have {@variantrule Advantage|Ishiir} on Charisma ({@skill Persuasion}) checks made to interact with dwarves."
+                        "You have {@variantrule Advantage|Ishiir} on Charisma ({@skill Persuasion}) {@variantrule Ability Check|Ishiir|checks} made to interact with dwarves."
                     ]
                 },
                 "In addition, while attuned to the belt, you have a {@chance 50} chance each day at dawn of growing a full beard if you're capable of growing one, or a visibly thicker beard if you already have one.",
@@ -11085,7 +11085,7 @@
                     "type": "entries",
                     "name": "Shadow Essence",
                     "entries": [
-                        "You gain {@sense darkvision} with a range of 60 feet, and you have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Stealth}) checks."
+                        "You gain {@sense darkvision} with a range of 60 feet, and you have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Stealth}) {@variantrule Ability Check|Ishiir|checks}."
                     ]
                 },
                 {
@@ -11607,7 +11607,7 @@
                 "Artificer"
             ],
             "entries": [
-                "This simple screwdriver can transform into a variety of tools; as an {@variantrule Action|Ishiir}, you can touch the item and transform it into any type of artisan's tool of your choice (see the \"Equipment\" chapter in the {@book Player's Handbook|PHB} for a list of {@item artisan's tools|Ishiir}). Whatever form the tool takes, you are proficient with it.",
+                "This simple screwdriver can transform into a variety of tools; as an {@variantrule Action|Ishiir}, you can touch the item and transform it into any type of artisan's tool of your choice (see the \"Equipment\" chapter in the {@book Player's Handbook|PHB} for a list of {@item artisan's tools|Ishiir}). Whatever form the tool takes, you are {@variantrule Proficiency|Ishiir|proficient} with it.",
                 "While holding this tool, you gain a +1 bonus to the spell {@variantrule Attack Roll|Ishiir}s and the {@variantrule Saving Throw|Ishiir} DCs of your artificer spells.",
                 "As an {@variantrule Action|Ishiir}, you can focus on the tool to channel your creative forces. Choose a cantrip that you don't know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can't be used again until the next dawn."
             ],
@@ -11786,7 +11786,7 @@
                                 {
                                     "type": "item",
                                     "name": "Cloak",
-                                    "entry": "The cloak is now a rare magic item that requires attunement. While wearing it, you have {@variantrule Resistance|Ishiir} to fire damage, and you have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Stealth}) checks made while in snowy terrain."
+                                    "entry": "The cloak is now a rare magic item that requires attunement. While wearing it, you have {@variantrule Resistance|Ishiir} to fire damage, and you have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Stealth}) {@variantrule Ability Check|Ishiir|checks} made while in snowy terrain."
                                 },
                                 {
                                     "type": "item",
@@ -12246,7 +12246,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "The robe lets you see in all directions, and you have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Perception}) checks that rely on sight.",
+                        "The robe lets you see in all directions, and you have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Perception}) {@variantrule Ability Check|Ishiir|checks} that rely on sight.",
                         "You have {@sense darkvision} out to a range of 120 feet.",
                         "You can see {@condition Invisible} creatures and objects, as well as see into the Ethereal Plane, out to a range of 120 feet."
                     ]
@@ -13008,7 +13008,7 @@
                 "Artificer"
             ],
             "entries": [
-                "This simple screwdriver can transform into a variety of tools; as an {@variantrule Action|Ishiir}, you can touch the item and transform it into any type of artisan's tool of your choice (see the \"Equipment\" chapter in the {@book Player's Handbook|PHB} for a list of {@item artisan's tools|Ishiir}). Whatever form the tool takes, you are proficient with it.",
+                "This simple screwdriver can transform into a variety of tools; as an {@variantrule Action|Ishiir}, you can touch the item and transform it into any type of artisan's tool of your choice (see the \"Equipment\" chapter in the {@book Player's Handbook|PHB} for a list of {@item artisan's tools|Ishiir}). Whatever form the tool takes, you are {@variantrule Proficiency|Ishiir|proficient} with it.",
                 "While holding this tool, you gain a +2 bonus to the spell {@variantrule Attack Roll|Ishiir}s and the {@variantrule Saving Throw|Ishiir} DCs of your artificer spells.",
                 "As an {@variantrule Action|Ishiir}, you can focus on the tool to channel your creative forces. Choose a cantrip that you don't know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can't be used again until the next dawn."
             ],
@@ -13165,7 +13165,7 @@
                     "name": "Alertness",
                     "type": "entries",
                     "entries": [
-                        "While holding the rod, you have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Perception}) checks and on rolls for initiative."
+                        "While holding the rod, you have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Perception}) {@variantrule Ability Check|Ishiir|checks} and on rolls for initiative."
                     ]
                 },
                 {
@@ -14304,7 +14304,7 @@
                 "Artificer"
             ],
             "entries": [
-                "This simple screwdriver can transform into a variety of tools; as an {@variantrule Action|Ishiir}, you can touch the item and transform it into any type of artisan's tool of your choice (see the \"Equipment\" chapter in the {@book Player's Handbook|PHB} for a list of {@item artisan's tools|Ishiir}). Whatever form the tool takes, you are proficient with it.",
+                "This simple screwdriver can transform into a variety of tools; as an {@variantrule Action|Ishiir}, you can touch the item and transform it into any type of artisan's tool of your choice (see the \"Equipment\" chapter in the {@book Player's Handbook|PHB} for a list of {@item artisan's tools|Ishiir}). Whatever form the tool takes, you are {@variantrule Proficiency|Ishiir|proficient} with it.",
                 "While holding this tool, you gain a +3 bonus to the spell {@variantrule Attack Roll|Ishiir}s and the {@variantrule Saving Throw|Ishiir} DCs of your artificer spells.",
                 "As an {@variantrule Action|Ishiir}, you can focus on the tool to channel your creative forces. Choose a cantrip that you don't know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can't be used again until the next dawn."
             ],
@@ -14467,7 +14467,7 @@
                 ]
             },
             "entries": [
-                "While wearing these goggles, you can see normally in darkness, both magical and nonmagical, to a distance of 60 feet. Additionally, you have {@variantrule Advantage|Ishiir} on Intelligence ({@skill Investigation}) and Wisdom ({@skill Perception}) checks that rely on sight.",
+                "While wearing these goggles, you can see normally in darkness, both magical and nonmagical, to a distance of 60 feet. Additionally, you have {@variantrule Advantage|Ishiir} on Intelligence ({@skill Investigation}) and Wisdom ({@skill Perception}) {@variantrule Ability Check|Ishiir|checks} that rely on sight.",
                 "You see {@condition Invisible} creatures and objects within 60 feet of you as if they were visible, and you can see into the Ethereal Plane. Ethereal creatures and objects appear ghostly and translucent.",
                 "You automatically detect illusions you can see and automatically succeed on {@variantrule Saving Throw|Ishiir|Saving Throws} against them. In addition, you see a bright aura around any creature that isn't in its true form.",
                 "As a {@variantrule Bonus Action|Ishiir}, you can speak a command word and use the goggles to see into and through solid matter. This vision has a radius of 60 feet and lasts for 1 minute. To you, solid objects within that radius appear transparent. The vision can penetrate 1 foot of stone, 1 inch of common metal, or up to 3 feet of wood or dirt. Thicker substances block the vision, as does a thin sheet of lead. This property can't be used again until the next dawn.",
@@ -14756,7 +14756,7 @@
             "entries": [
                 "You have {@variantrule Resistance|Ishiir} to poison damage.",
                 "You gain a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}.",
-                "You have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Perception}) checks that rely on smell, you are {@variantrule Immunity|Ishiir|Immune} to disease, and you have {@sense darkvision} out to a range of 60 feet. If you already have {@sense darkvision}, wearing the cloak increases the range of your {@sense darkvision} by 60 feet.",
+                "You have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Perception}) {@variantrule Ability Check|Ishiir|checks} that rely on smell, you are {@variantrule Immunity|Ishiir|Immune} to disease, and you have {@sense darkvision} out to a range of 60 feet. If you already have {@sense darkvision}, wearing the cloak increases the range of your {@sense darkvision} by 60 feet.",
                 "As an {@variantrule Action|Ishiir}, you can use the Verminshroud to cast {@spell polymorph|Ishiir} on yourself, transforming into a {@creature giant rat}, a {@creature rat}, a {@creature giant wasp}, or a {@creature giant scorpion} while retaining your Intelligence, Wisdom, and Charisma scores, as well as the properties of the cloak. This property can't be used again until the next dawn.",
                 "You can use an {@variantrule Action|Ishiir} to cast the {@spell insect plague|Ishiir} spell (save DC 15) from the Verminshroud, requiring no material components. This property can't be used again until the next dawn.",
                 "Your teeth become razor-sharp natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to {@dice 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. You can make this attack as a {@variantrule Bonus Action|Ishiir}. When you bite a creature and deal damage to it, the creature must succeed on a DC 17 Constitution {@variantrule Saving Throw|Ishiir} or be {@condition Poisoned|Ishiir} for 1 minute. The target can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the condition on itself on a success."
@@ -15378,7 +15378,7 @@
                         "If you press button 2, the rod's flanged head folds down and two crescent-shaped blades spring out, transforming the rod into a magic battleaxe that grants a +3 bonus to attack and damage rolls made with it.",
                         "If you press button 3, the rod's flanged head folds down, a spear point springs from the rod's tip, and the rod's handle lengthens into a 6-foot haft, transforming the rod into a magic spear that grants a +3 bonus to attack and damage rolls made with it.",
                         "If you press button 4, the rod transforms into a climbing pole up to 50 feet long, as you specify. In surfaces as hard as granite, a spike at the bottom and three hooks at the top anchor the pole. Horizontal bars 3 inches long fold out from the sides, 1 foot apart, forming a ladder. The pole can bear up to 4,000 pounds. More weight or lack of solid anchoring causes the rod to revert to its normal form.",
-                        "If you press button 5, the rod transforms into a handheld battering ram and grants its user a +10 bonus to Strength checks made to break through doors, barricades, and other barriers.",
+                        "If you press button 5, the rod transforms into a handheld battering ram and grants its user a +10 bonus to strength {@variantrule Ability Check|Ishiir|checks} made to break through doors, barricades, and other barriers.",
                         "If you press button 6, the rod assumes or remains in its normal form and indicates magnetic north. (Nothing happens if this function of the rod is used in a location that has no magnetic north.) The rod also gives you knowledge of your approximate depth beneath the ground or your height above it."
                     ]
                 },
@@ -15854,7 +15854,7 @@
             "wondrous": true,
             "entries": [
                 "You can use an {@variantrule Action|Ishiir} to blow this horn. In response, warrior spirits from the plane of Ysgard appear within 60 feet of you. These spirits use the {@creature berserker} statistics. They return to Ysgard after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed.",
-                "A brass horn summons {@dice 3d4 + 3} {@creature berserker||berserkers}. To use the brass horn, you must be proficient with all simple weapons.",
+                "A brass horn summons {@dice 3d4 + 3} {@creature berserker||berserkers}. To use the brass horn, you must be {@variantrule Proficiency|Ishiir|proficient} with all simple weapons.",
                 "If you blow the horn without meeting its requirement, the summoned {@creature berserker||berserkers} attack you. If you meet the requirement, they are friendly to you and your companions and follow your commands."
             ],
             "type": "CRF",
@@ -16181,7 +16181,7 @@
             "wondrous": true,
             "entries": [
                 "You can use an {@variantrule Action|Ishiir} to blow this horn. In response, warrior spirits from the plane of Ysgard appear within 60 feet of you. These spirits use the {@creature berserker} statistics. They return to Ysgard after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed.",
-                "A bronze horn summons {@dice 4d4 + 4} {@creature berserker||berserkers}. To use the bronze horn, you must be proficient with medium armor.",
+                "A bronze horn summons {@dice 4d4 + 4} {@creature berserker||berserkers}. To use the bronze horn, you must be {@variantrule Proficiency|Ishiir|proficient} with medium armor.",
                 "If you blow the horn without meeting its requirement, the summoned {@creature berserker||berserkers} attack you. If you meet the requirement, they are friendly to you and your companions and follow your commands."
             ],
             "type": "CRF",
@@ -16462,7 +16462,7 @@
             "wondrous": true,
             "entries": [
                 "You can use an {@variantrule Action|Ishiir} to blow this horn. In response, warrior spirits from the plane of Ysgard appear within 60 feet of you. These spirits use the {@creature berserker} statistics. They return to Ysgard after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed.",
-                "The iron horn summons {@dice 5d4 + 5} {@creature berserker||berserkers}. To use the iron horn, you must be proficient with all martial weapons.",
+                "The iron horn summons {@dice 5d4 + 5} {@creature berserker||berserkers}. To use the iron horn, you must be {@variantrule Proficiency|Ishiir|proficient} with all martial weapons.",
                 "If you blow the horn without meeting its requirement, the summoned {@creature berserker||berserkers} attack you. If you meet the requirement, they are friendly to you and your companions and follow your commands."
             ],
             "type": "CRF",
@@ -17437,7 +17437,7 @@
                     "type": "entries",
                     "name": "Melody of Precision",
                     "entries": [
-                        "If you're proficient in {@skill Performance}, you gain a +1 bonus to the {@variantrule Attack Roll|Ishiir}. If you have expertise in {@skill Performance}, you gain a +2 bonus instead."
+                        "If you're {@variantrule Proficiency|Ishiir|proficient} in {@skill Performance}, you gain a +1 bonus to the {@variantrule Attack Roll|Ishiir}. If you have expertise in {@skill Performance}, you gain a +2 bonus instead."
                     ]
                 },
                 {
@@ -17661,7 +17661,7 @@
             },
             "entries": [
                 "{@i Requirement: Thrown, Thrown Weapons.}",
-                "When thrown, the weapon has a range of 60/120 feet, and any creature that is proficient with the {@item javelin|Ishiir} is also proficient with the weapon. On a hit, the weapon deals {@damage 1d4} bludgeoning damage and {@damage 3d4} thunder damage, and the target must succeed on a DC 10 Constitution {@variantrule Saving Throw|Ishiir} or be {@condition Stunned|Ishiir} until the end of its next turn. After the attack, the weapon returns to the thrower's hand.",
+                "When thrown, the weapon has a range of 60/120 feet, and any creature that is {@variantrule Proficiency|Ishiir|proficient} with the {@item javelin|Ishiir} is also {@variantrule Proficiency|Ishiir|proficient} with the weapon. On a hit, the weapon deals {@damage 1d4} bludgeoning damage and {@damage 3d4} thunder damage, and the target must succeed on a DC 10 Constitution {@variantrule Saving Throw|Ishiir} or be {@condition Stunned|Ishiir} until the end of its next turn. After the attack, the weapon returns to the thrower's hand.",
                 "The elemental damage and the ability to stun a target can only be applied once per turn."
             ],
             "dmgType": [
@@ -18352,7 +18352,7 @@
                 ]
             },
             "entries": [
-                "This bitter chartreuse concoction is distilled from the {@item Death Cap|Ishiir} fungus. The sickly green liqueur harbors potent psychedelic properties. Provided it is neither a construct nor undead, a creature subjected to a dose of this ointment gains {@variantrule Advantage|Ishiir} on Intelligence and Wisdom checks, as well as vulnerability to psychic damage, for 1 hour. For each dose consumed, the creature must succeed on a DC 15 Constitution {@variantrule Saving Throw|Ishiir} or become {@condition Poisoned|Ishiir} for {@dice 1d6} hours and suffer the effects of a {@spell confusion|Ishiir} spell for 1 minute. An undead creature subjected to a dose gains {@variantrule Advantage|Ishiir} on all Dexterity checks and is {@variantrule Immunity|Ishiir|Immune} to the {@condition Frightened|Ishiir} condition for 1 hour."
+                "This bitter chartreuse concoction is distilled from the {@item Death Cap|Ishiir} fungus. The sickly green liqueur harbors potent psychedelic properties. Provided it is neither a construct nor undead, a creature subjected to a dose of this ointment gains {@variantrule Advantage|Ishiir} on Intelligence and Wisdom {@variantrule Ability Check|Ishiir|checks}, as well as vulnerability to psychic damage, for 1 hour. For each dose consumed, the creature must succeed on a DC 15 Constitution {@variantrule Saving Throw|Ishiir} or become {@condition Poisoned|Ishiir} for {@dice 1d6} hours and suffer the effects of a {@spell confusion|Ishiir} spell for 1 minute. An undead creature subjected to a dose gains {@variantrule Advantage|Ishiir} on all Dexterity {@variantrule Ability Check|Ishiir|checks} and is {@variantrule Immunity|Ishiir|Immune} to the {@condition Frightened|Ishiir} condition for 1 hour."
             ],
             "dmgType": [
                 "Y"
@@ -19943,7 +19943,7 @@
                     "type": "entries",
                     "name": "Transforming the Key",
                     "entries": [
-                        "While holding the key, you can use a {@variantrule Bonus Action|Ishiir} to transform it into a magic longsword. You are considered proficient with the sword, and you have a +1 bonus to attack and damage rolls made with it. On a hit, the sword deals {@damage 1d10} force damage. The item remains in its sword form until it leaves your grasp or you use another {@variantrule Bonus Action|Ishiir} to revert it to its key form.",
+                        "While holding the key, you can use a {@variantrule Bonus Action|Ishiir} to transform it into a magic longsword. You are considered {@variantrule Proficiency|Ishiir|proficient} with the sword, and you have a +1 bonus to attack and damage rolls made with it. On a hit, the sword deals {@damage 1d10} force damage. The item remains in its sword form until it leaves your grasp or you use another {@variantrule Bonus Action|Ishiir} to revert it to its key form.",
                         "If you end your attunement to the item while it's in its sword form, it automatically reverts to its key form."
                     ]
                 }
@@ -20828,7 +20828,7 @@
                 "You can speak, read, and write Infernal.",
                 "You gain a +3 bonus to attack and damage rolls made with the weapon.",
                 "While holding the weapon, you can use an {@variantrule Action|Ishiir} to cast one of the following spells from it (save DC 17): {@spell charm person|Ishiir}, {@spell dominate person|Ishiir}, {@spell fear|Ishiir}, or {@spell dominate monster|Ishiir}. Once a spell has been cast using the weapon, that spell can't be cast from it again until the next dawn.",
-                "While holding the weapon, you have {@variantrule Advantage|Ishiir} on Charisma ({@skill Intimidation}) checks.",
+                "While holding the weapon, you have {@variantrule Advantage|Ishiir} on Charisma ({@skill Intimidation}) {@variantrule Ability Check|Ishiir|checks}.",
                 "When you reduce a creature to 0 hit points with an attack using the weapon, you can cause the following effect: each creature of your choice within 15 feet of you must succeed on a DC 17 Wisdom {@variantrule Saving Throw|Ishiir} or be {@condition Frightened|Ishiir} of you until the end of your next turn. This property can't be used again until the next dawn.",
                 "When a creature hits you with a melee attack, you can use your {@variantrule Reaction|Ishiir} to deal {@damage 2d6} psychic damage to the attacker."
             ],
@@ -21097,7 +21097,7 @@
                 "{@i Requirement: Bludgeoning Weapons.}",
                 "You can speak, read, and write Abyssal and Infernal.",
                 "You gain a +3 bonus to attack and damage rolls made with the weapon. When you hit with an attack using this weapon, you can deal an extra {@damage 2d6} bludgeoning damage to the target. If you do, you take {@damage 1d6} psychic damage. The weapon deals double damage to objects and structures.",
-                "While holding this weapon, you have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Insight}) checks made to discern a lie spoken in a language you understand.",
+                "While holding this weapon, you have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Insight}) {@variantrule Ability Check|Ishiir|checks} made to discern a lie spoken in a language you understand.",
                 "You gain a {@variantrule Burrow Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. You can use your {@variantrule Burrow Speed|Ishiir} to move through sand, loose earth, mud, or ice, not solid rock.",
                 "When a creature you can see within 30 feet of you hits you with an attack while you are wielding the weapon, you can use your {@variantrule Reaction|Ishiir} to deal an amount of psychic damage to that creature equal to the damage you took from the attack. This property can't be used again until the next dawn.",
                 "When you have fewer hit points than half your hit point maximum, the weapon deals an extra {@damage 2d6} bludgeoning damage on a hit. You can burrow through solid rock at half your {@variantrule Burrow Speed|Ishiir} and leave a 5-foot-diameter tunnel in your wake.",
@@ -21493,7 +21493,7 @@
                     "type": "entries",
                     "name": "Truth Seer",
                     "entries": [
-                        "While holding the sword, you gain {@variantrule Advantage|Ishiir} on all Wisdom ({@skill Insight}) checks."
+                        "While holding the sword, you gain {@variantrule Advantage|Ishiir} on all Wisdom ({@skill Insight}) {@variantrule Ability Check|Ishiir|checks}."
                     ]
                 }
             ],
