@@ -692,7 +692,7 @@
             "classSource": "Ishiir",
             "level": 2,
             "entries": [
-                "You have a mind for tactics on and off the battlefield. When you fail an ability check, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining Hit Points, you roll {@dice 1d10} and add the number rolled to the ability check, potentially turning it into a success. If the check still fails, this use of Second Wind isn't expended."
+                "You have a mind for tactics on and off the battlefield. When you fail an {@variantrule Ability Check|Ishiir}, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining Hit Points, you roll {@dice 1d10} and add the number rolled to the {@variantrule Ability Check|Ishiir}, potentially turning it into a success. If the check still fails, this use of Second Wind isn't expended."
             ]
         },
         {
@@ -862,7 +862,7 @@
             "classSource": "Ishiir",
             "level": 9,
             "entries": [
-                "When you fail a saving throw, you can add half your Fighter level (rounded down) to it, possibly turning it into a success.",
+                "When you fail a {@variantrule Saving Throw|Ishiir}, you can add half your Fighter level (rounded down) to it, possibly turning it into a success.",
                 "You can use this feature twice between {@variantrule Long Rest|Ishiir}s starting at 13th level and three times between {@variantrule Long Rest|Ishiir}s starting at 17th level."
             ]
         },
@@ -950,7 +950,7 @@
             "classSource": "Ishiir",
             "level": 13,
             "entries": [
-                "You masterfully study your opponents and learn from each attack you make. If you make an attack roll against a creature and miss, you have Advantage on your next attack roll against that creature before the end of your next turn."
+                "You masterfully study your opponents and learn from each attack you make. If you make an {@variantrule Attack Roll|Ishiir} against a creature and miss, you have Advantage on your next {@variantrule Attack Roll|Ishiir} against that creature before the end of your next turn."
             ]
         },
         {
@@ -1847,7 +1847,7 @@
             "header": 1,
             "entries": [
                 "The Arcane Shot feature lets you choose options for it at certain levels. The options are presented here in alphabetical order. They are all magical effects, and each one is associated with one of the schools of magic.",
-                "If an option requires a saving throw, your Arcane Shot save DC is calculated as follows:",
+                "If an option requires a {@variantrule Saving Throw|Ishiir}, your Arcane Shot save DC is calculated as follows:",
                 {
                     "type": "abilityDc",
                     "name": "Arcane Shot",
@@ -1934,7 +1934,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "You learn how to direct an errant projectile toward a new target. When you make an attack roll with a magic projectile and miss, you can use a bonus action to reroll the attack roll against a different target within 60 feet of the original target."
+                "You learn how to direct an errant projectile toward a new target. When you make an {@variantrule Attack Roll|Ishiir} with a magic projectile and miss, you can use a bonus action to reroll the {@variantrule Attack Roll|Ishiir} against a different target within 60 feet of the original target."
             ]
         },
         {
@@ -2108,9 +2108,9 @@
                     "entries": [
                         {
                             "type": "entries",
-                            "name": "Saving Throws",
+                            "name": "{@variantrule Saving Throw|Ishiir}s",
                             "entries": [
-                                "Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows:",
+                                "Some of your maneuvers require your target to make a {@variantrule Saving Throw|Ishiir} to resist the maneuver's effects. The {@variantrule Saving Throw|Ishiir} DC is calculated as follows:",
                                 {
                                     "type": "abilityDc",
                                     "name": "Maneuver",
@@ -2290,7 +2290,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "Your keen sense of observation allows you to spot weaknesses in your foe's defense. As a bonus action, you can make a Wisdom ({@skill Insight}) check against a creature you can see within 60 feet. The DC is equal to 10 + half the creature's challenge rating (rounded down) or the creature's passive deception, whichever is higher. On a success, the creature has disadvantage on the next saving throw against one of your maneuvers before the end of your next turn."
+                "Your keen sense of observation allows you to spot weaknesses in your foe's defense. As a bonus action, you can make a Wisdom ({@skill Insight}) check against a creature you can see within 60 feet. The DC is equal to 10 + half the creature's challenge rating (rounded down) or the creature's passive deception, whichever is higher. On a success, the creature has disadvantage on the next {@variantrule Saving Throw|Ishiir} against one of your maneuvers before the end of your next turn."
             ]
         },
         {
@@ -2492,7 +2492,7 @@
             "header": 2,
             "entries": [
                 "Your toughness allows you to shrug off assaults that would devastate others.",
-                "Whenever you make a saving throw, roll {@dice 1d6} and add the die to your saving throw total. If applying this bonus to a death saving throw increases the total to 20 or higher, you gain the benefits of rolling a 20 on the {@dice d20}."
+                "Whenever you make a {@variantrule Saving Throw|Ishiir}, roll {@dice 1d6} and add the die to your {@variantrule Saving Throw|Ishiir} total. If applying this bonus to a death {@variantrule Saving Throw|Ishiir} increases the total to 20 or higher, you gain the benefits of rolling a 20 on the {@dice d20}."
             ]
         },
         {
@@ -2588,7 +2588,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Your mastery as a rider becomes apparent. You have advantage on saving throws made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you're not {@condition Incapacitated|Ishiir}.",
+                "Your mastery as a rider becomes apparent. You have advantage on {@variantrule Saving Throw|Ishiir}s made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you're not {@condition Incapacitated|Ishiir}.",
                 "Finally, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed."
             ]
         },
@@ -2604,8 +2604,8 @@
             "header": 1,
             "entries": [
                 "You can menace your foes, foiling their attacks and punishing them for harming others. When you hit a creature with a melee weapon attack, you can mark the creature until the end of your next turn. This effect ends early if you are {@condition Incapacitated|Ishiir} or you die, or if someone else marks the creature.",
-                "While it is within 5 feet of you, a creature marked by you has disadvantage on any attack roll that doesn't target you.",
-                "In addition, if a creature marked by you deals damage to anyone other than you, you can make a special melee weapon attack against the marked creature as a bonus action on your next turn. You have advantage on the attack roll, and if it hits, the attack's weapon deals extra damage to the target equal to half your fighter level.",
+                "While it is within 5 feet of you, a creature marked by you has disadvantage on any {@variantrule Attack Roll|Ishiir} that doesn't target you.",
+                "In addition, if a creature marked by you deals damage to anyone other than you, you can make a special melee weapon attack against the marked creature as a bonus action on your next turn. You have advantage on the {@variantrule Attack Roll|Ishiir}, and if it hits, the attack's weapon deals extra damage to the target equal to half your fighter level.",
                 "Regardless of the number of creatures you mark, you can make this special attack a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}. You can also spend a use of your Second Wind to regain a use of this feature (no action required)."
             ]
         },
@@ -2649,7 +2649,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "You can run down your foes, whether you're mounted or not. If you move at least 10 feet in a straight line right before attacking a creature and you hit it with the attack, that target takes additional damage equal to half your fighter level and must succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be knocked {@condition Prone|Ishiir}. You can use this feature only once on each of your turns."
+                "You can run down your foes, whether you're mounted or not. If you move at least 10 feet in a straight line right before attacking a creature and you hit it with the attack, that target takes additional damage equal to half your fighter level and must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC 8 + your proficiency bonus + your Strength modifier) or be knocked {@condition Prone|Ishiir}. You can use this feature only once on each of your turns."
             ]
         },
         {
@@ -2832,7 +2832,7 @@
             "header": 1,
             "entries": [
                 "You can use a bonus action to magically manifest an echo of yourself in an unoccupied space you can see within 15 feet of you. This echo is a magical, translucent, gray image of you that lasts until it is destroyed, until you dismiss it as a bonus action, until you manifest another echo, or until you're {@condition Incapacitated|Ishiir}.",
-                "Your echo's AC is equal to yours, has 1 hit point, and immunity to all conditions. If it has to make a saving throw, it uses your saving throw bonus for the roll. It is the same size as you, and it occupies its space. On your turn, you can mentally command the echo to move up to 30 feet in any direction (no action required). If your echo is ever more than 30 feet from you at the end of your turn, it is destroyed.",
+                "Your echo's AC is equal to yours, has 1 hit point, and immunity to all conditions. If it has to make a {@variantrule Saving Throw|Ishiir}, it uses your {@variantrule Saving Throw|Ishiir} bonus for the roll. It is the same size as you, and it occupies its space. On your turn, you can mentally command the echo to move up to 30 feet in any direction (no action required). If your echo is ever more than 30 feet from you at the end of your turn, it is destroyed.",
                 "You can use the echo in the following ways:",
                 {
                     "type": "list",
@@ -2884,7 +2884,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You can make your echo throw itself in front of an attack directed at another creature that you can see. Before the attack roll is made, you can use your reaction to teleport the echo to an unoccupied space within 5 feet of the targeted creature. The attack roll that triggered the reaction is instead made against your echo.",
+                "You can make your echo throw itself in front of an attack directed at another creature that you can see. Before the {@variantrule Attack Roll|Ishiir} is made, you can use your reaction to teleport the echo to an unoccupied space within 5 feet of the targeted creature. The {@variantrule Attack Roll|Ishiir} that triggered the reaction is instead made against your echo.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir} or you spend a use of your Second Wind (no action required)."
             ]
         },
@@ -3039,7 +3039,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You learn how to make your weapon strikes undercut a creature's resistance to your spells. When you hit a creature with a weapon attack, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn."
+                "You learn how to make your weapon strikes undercut a creature's resistance to your spells. When you hit a creature with a weapon attack, that creature has disadvantage on the next {@variantrule Saving Throw|Ishiir} it makes against a spell you cast before the end of your next turn."
             ]
         },
         {
@@ -3144,9 +3144,9 @@
                                 {
                                     "type": "list",
                                     "items": [
-                                        "When you miss with an attack roll, you can expend one Superiority Die, roll that die, and add it to the attack roll, potentially causing the attack to hit.",
-                                        "When you damage a creature with a weapon attack, you can expend one superiority die to add it to the damage roll. You can use this ability after rolling damage. If the attack causes the target to make a Constitution saving throw to maintain {@condition Concentration|Ishiir}, it has disadvantage on that save.",
-                                        "When you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can expend one superiority die to add it to the roll, possibly turning the failure into a success.",
+                                        "When you miss with an {@variantrule Attack Roll|Ishiir}, you can expend one Superiority Die, roll that die, and add it to the {@variantrule Attack Roll|Ishiir}, potentially causing the attack to hit.",
+                                        "When you damage a creature with a weapon attack, you can expend one superiority die to add it to the damage roll. You can use this ability after rolling damage. If the attack causes the target to make a Constitution {@variantrule Saving Throw|Ishiir} to maintain {@condition Concentration|Ishiir}, it has disadvantage on that save.",
+                                        "When you fail an Intelligence, a Wisdom, or a Charisma {@variantrule Saving Throw|Ishiir}, you can expend one superiority die to add it to the roll, possibly turning the failure into a success.",
                                         "When you make a Wisdom ({@skill Perception}) check to detect a hidden creature or object, or a Wisdom ({@skill Insight}) check to determine if someone is lying to you, you can expend one superiority die to add it to the roll. You can use this feature after seeing the total but before learning if you succeeded or failed."
                                     ]
                                 }
@@ -3424,7 +3424,7 @@
             "subclassSource": "Ishiir",
             "level": 7,
             "entries": [
-                "When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, you can knock the target {@condition Prone|Ishiir} or move it up to 10 feet in any direction horizontally."
+                "When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength {@variantrule Saving Throw|Ishiir} against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, you can knock the target {@condition Prone|Ishiir} or move it up to 10 feet in any direction horizontally."
             ]
         },
         {
@@ -3532,7 +3532,7 @@
             "header": 2,
             "entries": [
                 "You gain proficiency in the {@skill Persuasion} skill. If you are already proficient in it, you gain proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill Insight}, {@skill Intimidation}, or {@skill Performance}.",
-                "Your proficiency bonus is doubled for any ability check you make that uses {@skill Persuasion}. You receive this benefit regardless of the skill proficiency you gain from this feature."
+                "Your proficiency bonus is doubled for any {@variantrule Ability Check|Ishiir} you make that uses {@skill Persuasion}. You receive this benefit regardless of the skill proficiency you gain from this feature."
             ]
         },
         {
@@ -3546,7 +3546,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "When an ally within 60 feet of you fails a saving throw, you can expend a use of your Indomitable class feature as a reaction to grant its benefit to that ally."
+                "When an ally within 60 feet of you fails a {@variantrule Saving Throw|Ishiir}, you can expend a use of your Indomitable class feature as a reaction to grant its benefit to that ally."
             ]
         },
         {
@@ -3632,7 +3632,7 @@
                     "type": "list",
                     "items": [
                         "If you are smaller than Large, you become Large, along with anything you are wearing. If you lack the room to become Large, your size doesn't change.",
-                        "You have advantage on Strength checks and Strength saving throws.",
+                        "You have advantage on Strength checks and Strength {@variantrule Saving Throw|Ishiir}s.",
                         "Once on each of your turns, one of your attacks with a weapon or an unarmed strike can deal an extra {@damage 1d6} damage to a target on a hit."
                     ]
                 },
@@ -3682,7 +3682,7 @@
                         ]
                     ]
                 },
-                "The following runes are available to you when you learn a rune. If a rune has a level requirement, you must be at least that level in this class to learn the rune. If a rune requires a saving throw, your Rune Magic save DC equals 8 + your proficiency bonus + your Constitution modifier.",
+                "The following runes are available to you when you learn a rune. If a rune has a level requirement, you must be at least that level in this class to learn the rune. If a rune requires a {@variantrule Saving Throw|Ishiir}, your Rune Magic save DC equals 8 + your proficiency bonus + your Constitution modifier.",
                 {
                     "type": "options",
                     "count": 2,
@@ -3742,7 +3742,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "You learn to invoke your rune magic to protect your allies. When another creature you can see within 60 feet of you is hit by an attack roll, you can use your reaction to force the attacker to reroll the {@dice d20} and use the new roll.",
+                "You learn to invoke your rune magic to protect your allies. When another creature you can see within 60 feet of you is hit by an {@variantrule Attack Roll|Ishiir}, you can use your reaction to force the attacker to reroll the {@dice d20} and use the new roll.",
                 "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}. Additionally, you can spend one use of your Second Wind to regain one use."
             ]
         },
@@ -3850,7 +3850,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Your intensity in battle can shield you and help you strike true. As a bonus action on your turn, you can give yourself advantage on weapon attack rolls until the end of the current turn. When you do so, you also gain temporary hit points equal to your fighter level + Wisdom modifier.",
+                "Your intensity in battle can shield you and help you strike true. As a bonus action on your turn, you can give yourself advantage on weapon {@variantrule Attack Roll|Ishiir}s until the end of the current turn. When you do so, you also gain temporary hit points equal to your fighter level + Wisdom modifier.",
                 "You can use this feature three times. You regain one use when you finish a {@variantrule Short Rest|Ishiir} and all expended uses of it when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -3880,7 +3880,7 @@
             "header": 2,
             "entries": [
                 "Your discipline and attention to detail allow you to excel in social situations. Whenever you make a Charisma ({@skill Persuasion}) check, you gain a bonus to the check equal to your Wisdom modifier.",
-                "Your self-control also causes you to gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice)."
+                "Your self-control also causes you to gain proficiency in Wisdom {@variantrule Saving Throw|Ishiir}s. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma {@variantrule Saving Throw|Ishiir}s (your choice)."
             ]
         },
         {
@@ -3908,7 +3908,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "You learn to trade accuracy for swift strikes. If you take the {@action Attack|Ishiir} action on your turn and have advantage on an attack roll against one of the targets, you can forgo the advantage for that roll to make an additional weapon attack against that target, as part of the same action. You can do so no more than once per turn."
+                "You learn to trade accuracy for swift strikes. If you take the {@action Attack|Ishiir} action on your turn and have advantage on an {@variantrule Attack Roll|Ishiir} against one of the targets, you can forgo the advantage for that roll to make an additional weapon attack against that target, as part of the same action. You can do so no more than once per turn."
             ]
         },
         {
@@ -3922,7 +3922,7 @@
             "level": 18,
             "header": 2,
             "entries": [
-                "Your fighting spirit can delay the grasp of death. If you take damage that reduces you to 0 hit points and doesn't kill you outright, you can use your reaction to delay falling {@condition Unconscious|Ishiir}, and you can immediately take an extra turn, interrupting the current turn. While you have 0 hit points during that extra turn, taking damage causes death saving throw failures as normal, and three death saving throw failures can still kill you. When the extra turn ends, you fall {@condition Unconscious|Ishiir} if you still have 0 hit points.",
+                "Your fighting spirit can delay the grasp of death. If you take damage that reduces you to 0 hit points and doesn't kill you outright, you can use your reaction to delay falling {@condition Unconscious|Ishiir}, and you can immediately take an extra turn, interrupting the current turn. While you have 0 hit points during that extra turn, taking damage causes death {@variantrule Saving Throw|Ishiir} failures as normal, and three death {@variantrule Saving Throw|Ishiir} failures can still kill you. When the extra turn ends, you fall {@condition Unconscious|Ishiir} if you still have 0 hit points.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -4001,7 +4001,7 @@
                                     "type": "list",
                                     "items": [
                                         "When you make a check that allows you to apply your proficiency in {@skill Athletics}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}, you can expend one superiority die to bolster the check. Add the number rolled on the superiority die to your check. You apply this bonus after making the check but before learning if it was successful.",
-                                        "When you miss with an attack roll, you can expend one Superiority Die, roll that die, and add it to the attack roll, potentially causing the attack to hit.",
+                                        "When you miss with an {@variantrule Attack Roll|Ishiir}, you can expend one Superiority Die, roll that die, and add it to the {@variantrule Attack Roll|Ishiir}, potentially causing the attack to hit.",
                                         "If you are hit by an attack while wearing light or medium armor, you can expend one superiority die as a reaction, adding the number rolled to your AC. If the attack still hits, you take half damage from it."
                                     ]
                                 }
@@ -4028,7 +4028,7 @@
                     "items": [
                         "You ignore {@quickref difficult terrain||3}.",
                         "You have advantage on initiative rolls.",
-                        "On your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted."
+                        "On your first turn during combat, you have advantage on {@variantrule Attack Roll|Ishiir}s against creatures that have not yet acted."
                     ]
                 },
                 "In addition, you are skilled at navigating the wilderness. You gain the following benefits when traveling for an hour or more:",
@@ -4056,7 +4056,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "Choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with {@item thieves' tools|phb}. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
+                "Choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with {@item thieves' tools|phb}. Your proficiency bonus is doubled for any {@variantrule Ability Check|Ishiir} you make that uses either of the chosen proficiencies."
             ]
         },
         {
@@ -4209,7 +4209,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You learn to handle yourself in close combat. Making a ranged attack roll while within 5 feet of an enemy doesn't impose disadvantage on your roll.",
+                "You learn to handle yourself in close combat. Making a ranged {@variantrule Attack Roll|Ishiir} while within 5 feet of an enemy doesn't impose disadvantage on your roll.",
                 "In addition, if you hit a creature within 5 feet of you with a ranged attack on your turn, that creature can't take reactions until the end of this turn."
             ]
         },

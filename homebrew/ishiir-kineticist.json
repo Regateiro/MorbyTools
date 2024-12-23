@@ -564,7 +564,7 @@
 			"level": 1,
 			"entries": [
 				"A kineticist chooses one primary element on which to focus. This element determines how she accesses the raw power of the Ethereal Plane, and grants you features at 1st level and again at 6th, 10th, 15th, and 20th level.",
-				"Regardless of your chosen element, you use your Charisma modifier when setting attack rolls and determining the saving throw DC of your abilities.",
+				"Regardless of your chosen element, you use your Charisma modifier when setting {@variantrule Attack Roll|Ishiir}s and determining the {@variantrule Saving Throw|Ishiir} DC of your abilities.",
 				"<b>Spell save DC</b> = 8 + your proficiency bonus + your Charisma modifier",
 				"<b>Spell attack modifier</b> = your proficiency bonus + your Charisma modifier",
 				{
@@ -684,7 +684,7 @@
 			"classSource": "Ishiir",
 			"level": 2,
 			"entries": [
-				"When you make an ability check, you can spend 1 kinesis point to gain advantage on the check."
+				"When you make an {@variantrule Ability Check|Ishiir}, you can spend 1 kinesis point to gain advantage on the check."
 			]
 		},
 		{
@@ -836,8 +836,8 @@
 					"type": "entries",
 					"name": "Careful Kinesis",
 					"entries": [
-						"When you use your kinetic shape with an infusion that forces other creatures to make a saving throw, you can protect some of those creatures from the shape's full force.",
-						"To do so, you spend 1 kinesis point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the blast and takes no damage if it would normally take half damage on a successful save."
+						"When you use your kinetic shape with an infusion that forces other creatures to make a {@variantrule Saving Throw|Ishiir}, you can protect some of those creatures from the shape's full force.",
+						"To do so, you spend 1 kinesis point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its {@variantrule Saving Throw|Ishiir} against the blast and takes no damage if it would normally take half damage on a successful save."
 					]
 				},
 				{
@@ -866,7 +866,7 @@
 					"type": "entries",
 					"name": "Heightened Kinesis",
 					"entries": [
-						"When you use your kinetic shape with an infusion that forces a creature to make a saving throw to resist its effects, you can spend 2 kinesis points to give one target of the shape disadvantage on all its saving throws made against the effect."
+						"When you use your kinetic shape with an infusion that forces a creature to make a {@variantrule Saving Throw|Ishiir} to resist its effects, you can spend 2 kinesis points to give one target of the shape disadvantage on all its {@variantrule Saving Throw|Ishiir}s made against the effect."
 					]
 				},
 				{
@@ -1072,7 +1072,7 @@
 			"header": 2,
 			"entries": [
 				"You learn how to use your control of the air streams around you to help you dodge or otherwise ward off certain area effects, like the explosion of a fireball or a dragon's breath.",
-				"When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+				"When you are subjected to an effect that allows you to make a Dexterity {@variantrule Saving Throw|Ishiir} to take only half damage, you instead take no damage if you succeed on the {@variantrule Saving Throw|Ishiir}, and only half damage if you fail."
 			]
 		},
 		{
@@ -1108,7 +1108,7 @@
 						"You ignore all wind-based effects such as the {@spell Whirlwind|Ishiir} spell or even a natural tornado.",
 						"You gain immunity to lightning damage.",
 						"You are surrounded by a 60 foot radius aura of stormlike winds of such intensity that they render ranged weapon attacks against you completely impossible. You and any number of creatures of your choice in the area are unaffected.",
-						"Any other creature is {@condition Deafened|Ishiir} while in this area, must spend 4 feet for every 1 foot of movement while in it, and has to succeed on a Strength saving throw against your save DC at the start of its turn or when it enters the area for the first time or be knocked {@condition Prone|Ishiir} or hurled 20 feet away in a direction that you choose."
+						"Any other creature is {@condition Deafened|Ishiir} while in this area, must spend 4 feet for every 1 foot of movement while in it, and has to succeed on a Strength {@variantrule Saving Throw|Ishiir} against your save DC at the start of its turn or when it enters the area for the first time or be knocked {@condition Prone|Ishiir} or hurled 20 feet away in a direction that you choose."
 					]
 				},
 				"Once you have used this ability, you can't use it again until you have finished a {@variantrule Long Rest|Ishiir}."
@@ -1196,8 +1196,8 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"You learn how to use your connection to earth to meld slightly into stone and earthen surfaces, granting you a climb speed equal to your walking speed when climbing such surfaces.",
-				"Additionally, when you have to make a Strength saving throw or check, you can make a Charisma saving throw or check instead."
+				"You learn how to use your connection to earth to meld slightly into stone and earthen surfaces, granting you a {@variantrule Climb Speed|Ishiir} equal to your walking speed when climbing such surfaces.",
+				"Additionally, when you have to make a Strength {@variantrule Saving Throw|Ishiir} or check, you can make a Charisma {@variantrule Saving Throw|Ishiir} or check instead."
 			]
 		},
 		{
@@ -1225,7 +1225,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"Your mastery of the earth allows you to move freely through the ground. You gain a burrow speed equal to your walking speed and {@sense tremorsense|MM} in a radius of 60 feet around you."
+				"Your mastery of the earth allows you to move freely through the ground. You gain a {@variantrule Burrow Speed|Ishiir} equal to your walking speed and {@sense tremorsense|MM} in a radius of 60 feet around you."
 			]
 		},
 		{
@@ -1247,7 +1247,7 @@
 						"Your size changes the huge and you gain temporary hit points equal to three times your kineticist level.",
 						"You are immune to the {@condition Charmed|Ishiir}, {@condition Exhaustion|Ishiir|Exhausted}, {@condition Frightened|Ishiir}, {@condition Paralyzed|Ishiir}, {@condition Petrified|Ishiir}, and {@condition Poisoned|Ishiir} conditions.",
 						"You ignore all earth-based effects such as the {@spell Erupting Earth|Ishiir} spell or even a natural earthquake.",
-						"When you move for the first time on your turn, your steps shake the earth. All creatures of your choice within 60 feet of you have to make a Strength saving throw against your save DC or be knocked {@condition Prone|Ishiir}."
+						"When you move for the first time on your turn, your steps shake the earth. All creatures of your choice within 60 feet of you have to make a Strength {@variantrule Saving Throw|Ishiir} against your save DC or be knocked {@condition Prone|Ishiir}."
 					]
 				},
 				"Once you have used this ability, you can't use it again until you have finished a {@variantrule Long Rest|Ishiir}."
@@ -1385,7 +1385,7 @@
 					"items": [
 						"You shed bright light in a 60 feet radius and dim light in a radius of 30 feet beyond that.",
 						"You gain immunity to fire damage.",
-						"Creatures in the bright light have disadvantage on saving throws against infusions that include the fire element.",
+						"Creatures in the bright light have disadvantage on {@variantrule Saving Throw|Ishiir}s against infusions that include the fire element.",
 						"You radiate intense heat in a 10 feet radius around you. Any creature of your choice that enters that radius for the first time on a turn or starts its turn there, takes half your kinetic shape damage."
 					]
 				},
@@ -1474,8 +1474,8 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"Your attunement to the element of water allows you to move within it just as easily as on land. You gain a swim speed equal to your walking speed and you can breathe underwater. If you already have a swim speed, that swim speed instead increases by 30 feet.",
-				"Additionally, you make any {@skill Athletics} checks and saving throws related to swimming or resisting water-based effects using your Charisma modifier instead of your Strength modifer."
+				"Your attunement to the element of water allows you to move within it just as easily as on land. You gain a {@variantrule Swim Speed|Ishiir} equal to your walking speed and you can breathe underwater. If you already have a {@variantrule Swim Speed|Ishiir}, that {@variantrule Swim Speed|Ishiir} instead increases by 30 feet.",
+				"Additionally, you make any {@skill Athletics} checks and {@variantrule Saving Throw|Ishiir}s related to swimming or resisting water-based effects using your Charisma modifier instead of your Strength modifer."
 			]
 		},
 		{
@@ -1490,7 +1490,7 @@
 			"header": 2,
 			"entries": [
 				"You have learned to summon up your water-based defenses at a split-second's notice.",
-				"When you are hit by an attack or subject to an effect that forces you to make a Dexterity saving throw, you can use your reaction to create a shield of water around you, granting yourself half-cover until the start of your next turn.",
+				"When you are hit by an attack or subject to an effect that forces you to make a Dexterity {@variantrule Saving Throw|Ishiir}, you can use your reaction to create a shield of water around you, granting yourself half-cover until the start of your next turn.",
 				"This cover applies even when against effects that normally ignore cover."
 			]
 		},
@@ -1528,7 +1528,7 @@
 						"You ignore all water-based effects such as the {@spell Tsunami|Ishiir} spell or a natural vortex.",
 						"You gain immunity to cold damage.",
 						"Water flows from everywhere, including up from the ground and dropping as rain to form a vortex of writhing watery tentacles in a 60 feet radius around you that makes the area {@quickref difficult terrain||3}. You and any number of creatures of your choice in the area unaffected.",
-						"Any other creature that enters the area for the first time on a turn or starts its turn there has to make a Dexterity saving throw against your save DC or be {@condition Grappled|Ishiir} and {@condition Restrained|Ishiir}. It can make a Strength check as an action on its turn to no longer be {@condition Grappled|Ishiir} and {@condition Restrained|Ishiir}."
+						"Any other creature that enters the area for the first time on a turn or starts its turn there has to make a Dexterity {@variantrule Saving Throw|Ishiir} against your save DC or be {@condition Grappled|Ishiir} and {@condition Restrained|Ishiir}. It can make a Strength check as an action on its turn to no longer be {@condition Grappled|Ishiir} and {@condition Restrained|Ishiir}."
 					]
 				},
 				"Once you have used this ability, you can't use it again until you have finished a {@variantrule Long Rest|Ishiir}."

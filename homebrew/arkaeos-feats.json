@@ -35,7 +35,7 @@
 					"type": "list",
 					"items": [
 						"When you deal damage to a creature, you can inflict them with a brand that lasts until the start of your next turn (no action required). The next time the creature takes damage, it takes additional radiant damage equal to your proficiency modifier and you can choose to convert all of the damage that triggered the effect to radiant damage as well.",
-						"Additionally, when a creature you can see within 60 feet that is branded in this manner deals damage to one of your allies, you can use your reaction to force that creature to make a CON saving throw. The DC equals 8 + your proficiency + WIS or CHA (your choice). On a failure, it is {@condition Blinded|Ishiir} until the start of your next turn.",
+						"Additionally, when a creature you can see within 60 feet that is branded in this manner deals damage to one of your allies, you can use your reaction to force that creature to make a CON {@variantrule Saving Throw|Ishiir}. The DC equals 8 + your proficiency + WIS or CHA (your choice). On a failure, it is {@condition Blinded|Ishiir} until the start of your next turn.",
 						"You can use this reaction an amount of times equal to half your proficiency bonus (rounded down) and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}. You also regain a use if an ally you can see within 60 feet of you suffers a critical hit or is reduced to 0 hitpoints."
 					]
 				}
@@ -58,7 +58,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You gain proficiency in Intelligence or Charisma saving throws (your choice).",
+						"You gain proficiency in Intelligence or Charisma {@variantrule Saving Throw|Ishiir}s (your choice).",
 						"The number of spells you can prepare increases by a number equal to twice your proficiency bonus. Your spells known increase by a number equal to your proficiency bonus."
 					]
 				}
@@ -128,7 +128,7 @@
 					"type": "list",
 					"items": [
 						"When you cast a spell that targets allied creatures with a beneficial effect, is at least 1st level or higher and has a verbal component, each affected allied creature gains temporary hitpoints equal to twice the spell's level + your proficiency bonus. If the spell in question already gives a creature temporary hitpoints, they stack with those granted by this feat.",
-						"When you cast a spell that targets hostile creatures with a harmful effect, is at least 1st level or higher, has a verbal component, and forces the target to make an INT, WIS, or CHA saving throw, each creature that failed their saving throw also subtracts {@dice 1d4} from their next saving throw before the end of your next turn."
+						"When you cast a spell that targets hostile creatures with a harmful effect, is at least 1st level or higher, has a verbal component, and forces the target to make an INT, WIS, or CHA {@variantrule Saving Throw|Ishiir}, each creature that failed their {@variantrule Saving Throw|Ishiir} also subtracts {@dice 1d4} from their next {@variantrule Saving Throw|Ishiir} before the end of your next turn."
 					]
 				}
 			]
@@ -199,7 +199,7 @@
 					"type": "list",
 					"items": [
 						"You double your proficiency bonus for Charisma ({@skill Persuasion}) checks.",
-						"When you start your turn and you are not incapacitated, all allies within 30 feet of you gain a {@dice d4} that they can add to the first attack roll or saving throw they make before the start of your next turn."
+						"When you start your turn and you are not incapacitated, all allies within 30 feet of you gain a {@dice d4} that they can add to the first {@variantrule Attack Roll|Ishiir} or {@variantrule Saving Throw|Ishiir} they make before the start of your next turn."
 					]
 				}
 			]
@@ -221,7 +221,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Once per turn, when you deal piercing or slashing damage to a creature, you can force it to make a CON saving throw. The DC equals 8 + your proficiency modifier + your STR or DEX bonus (your choice). On a failure, the creature is {@condition Lacerated|Ishiir}. If your attack already inflicts this condition, e.g. through a class feature or weapon property, the creature instead has disadvantage on the saving throw against that effect. At the end of each of its turns, the creature can repeat the saving throw, ending the effect on a success.",
+						"Once per turn, when you deal piercing or slashing damage to a creature, you can force it to make a CON {@variantrule Saving Throw|Ishiir}. The DC equals 8 + your proficiency modifier + your STR or DEX bonus (your choice). On a failure, the creature is {@condition Lacerated|Ishiir}. If your attack already inflicts this condition, e.g. through a class feature or weapon property, the creature instead has disadvantage on the {@variantrule Saving Throw|Ishiir} against that effect. At the end of each of its turns, the creature can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success.",
 						"If you start your turn hidden or lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena, you can start your movement that turn with a long or high jump as if you had a running start. If you end this jump while a creature is within your reach, your first attack against that creature deals an additional {@damage 1d8} points of damage."
 					]
 				}
@@ -316,8 +316,8 @@
 				{
 					"type": "list",
 					"items": [
-						"When you hit a creature with a melee weapon attack, you gain advantage on the next saving throw before the end of your next turn.",
-						"If you succeed on a saving throw caused by a hostile creature, you have advantage on melee weapon attack rolls until the end of your next turn."
+						"When you hit a creature with a melee weapon attack, you gain advantage on the next {@variantrule Saving Throw|Ishiir} before the end of your next turn.",
+						"If you succeed on a {@variantrule Saving Throw|Ishiir} caused by a hostile creature, you have advantage on melee weapon {@variantrule Attack Roll|Ishiir}s until the end of your next turn."
 					]
 				}
 			]
@@ -340,8 +340,8 @@
 				{
 					"type": "list",
 					"items": [
-						"When you are not {@condition Incapacitated|Ishiir} and within 5 ft of an allied creature that is not {@condition Incapacitated|Ishiir}, no attack roll has advantage against you.",
-						"When an allied creature within 5 ft of you has to make an ability check or saving throw against the {@condition Charmed|Ishiir}, {@condition Frightened|Ishiir}, {@condition Paralyzed|Ishiir}, {@condition Prone|Ishiir}, or {@condition Stunned|Ishiir} condition or against being pushed, you can use your reaction to give that creature advantage on the roll."
+						"When you are not {@condition Incapacitated|Ishiir} and within 5 ft of an allied creature that is not {@condition Incapacitated|Ishiir}, no {@variantrule Attack Roll|Ishiir} has advantage against you.",
+						"When an allied creature within 5 ft of you has to make an {@variantrule Ability Check|Ishiir} or {@variantrule Saving Throw|Ishiir} against the {@condition Charmed|Ishiir}, {@condition Frightened|Ishiir}, {@condition Paralyzed|Ishiir}, {@condition Prone|Ishiir}, or {@condition Stunned|Ishiir} condition or against being pushed, you can use your reaction to give that creature advantage on the roll."
 					]
 				}
 			]
@@ -388,9 +388,9 @@
 				{
 					"type": "list",
 					"items": [
-						"When you cast a spell that forces one or more creatures to make a STR, DEX, or CON saving throw, you can instead force them to make a different saving throw from among these three.",
-						"When you cast a spell that forces one or more creatures to make a INT, WIS, or CHA saving throw, you can instead force them to make a different saving throw from among these three.",
-						"Ability checks to counterspell, dispel, or otherwise disrupt or remove your spells have disadvantage."
+						"When you cast a spell that forces one or more creatures to make a STR, DEX, or CON {@variantrule Saving Throw|Ishiir}, you can instead force them to make a different {@variantrule Saving Throw|Ishiir} from among these three.",
+						"When you cast a spell that forces one or more creatures to make a INT, WIS, or CHA {@variantrule Saving Throw|Ishiir}, you can instead force them to make a different {@variantrule Saving Throw|Ishiir} from among these three.",
+						"{@variantrule Ability Check|Ishiir}s to counterspell, dispel, or otherwise disrupt or remove your spells have disadvantage."
 					]
 				}
 			]
@@ -412,7 +412,7 @@
 				{
 					"type": "list",
 					"items": [
-						"When you successfully grapple a creature using your Strong Jaws racial feature, you can make another attack using your Tooth & Tail racial feature against that creature as a bonus action. You make this attack roll with advantage.",
+						"When you successfully grapple a creature using your Strong Jaws racial feature, you can make another attack using your Tooth & Tail racial feature against that creature as a bonus action. You make this {@variantrule Attack Roll|Ishiir} with advantage.",
 						"You can repeat this bonus action attack on subsequent turns as long as you are still {@action grapple|Ishiir|grappling} the creature."
 					]
 				}
@@ -459,7 +459,7 @@
 				{
 					"type": "list",
 					"items": [
-						"When you move at least 20 feet in a straight line before hitting a creature with an attack using the natural weapons gained from your Horns & Hooves racial feature, you double the weapon dice for this attack. If you use your Hammering Blows racial feature for this attack, you have advantage on the ability check to {@action shove|Ishiir}.",
+						"When you move at least 20 feet in a straight line before hitting a creature with an attack using the natural weapons gained from your Horns & Hooves racial feature, you double the weapon dice for this attack. If you use your Hammering Blows racial feature for this attack, you have advantage on the {@variantrule Ability Check|Ishiir} to {@action shove|Ishiir}.",
 						"When you successfully knock a creature {@condition Prone|Ishiir} with your Hammering Blows feature, the creature has to spend all of its movement rather than half of it to stand up."
 					]
 				}
@@ -510,7 +510,7 @@
 					"items": [
 						"You gain proficiency in one tool of your choice.",
 						"When you make a crafting check, you can substitute your CHA for the ability score you would normally use for the crafting attempt.",
-						"When you or another creature you can see within 30 ft fails an ability check or saving throw that you are proficient in, you can use your reaction to add your CHA bonus to it. You can use this feature a number of times equal to half your proficiency bonus (rounded down) and you regain all expended uses on a {@variantrule Long Rest|Ishiir}."
+						"When you or another creature you can see within 30 ft fails an {@variantrule Ability Check|Ishiir} or {@variantrule Saving Throw|Ishiir} that you are proficient in, you can use your reaction to add your CHA bonus to it. You can use this feature a number of times equal to half your proficiency bonus (rounded down) and you regain all expended uses on a {@variantrule Long Rest|Ishiir}."
 					]
 				}
 			]
@@ -534,7 +534,7 @@
 					"type": "list",
 					"items": [
 						"If you make a ranged weapon attack against a creature that is within 30 ft or less of you, the critical range for that attack increases by 1.",
-						"Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.",
+						"Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged {@variantrule Attack Roll|Ishiir}s.",
 						"When you are wielding a ranged weapon, other creatures provoke an opportunity attack from you when they enter a space you can see within 10 ft of you."
 					]
 				}
@@ -560,7 +560,7 @@
 					"items": [
 						"You are immune to lightning damage.",
 						"You can move through the spaces of other creatures regardless of their size and their space does not count as {@quickref difficult terrain||3} for you.",
-						"When you are targeted by an opportunity attack, you can use your reaction to impose disadvantage on that attack roll."
+						"When you are targeted by an opportunity attack, you can use your reaction to impose disadvantage on that {@variantrule Attack Roll|Ishiir}."
 					]
 				}
 			]
@@ -672,7 +672,7 @@
 					"items": [
 						"Your maximum for the chosen ability score increases by 2.",
 						"You age at half speed and the expected maximum age for your race doubles.",
-						"When you make an attack roll, an ability check, or a saving throw, you can roll a {@dice d4} and add it to the result. You can choose to use this feature after you see the roll, but before the DM determineds the result. Once you use this ability, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
+						"When you make an {@variantrule Attack Roll|Ishiir}, an {@variantrule Ability Check|Ishiir}, or a {@variantrule Saving Throw|Ishiir}, you can roll a {@dice d4} and add it to the result. You can choose to use this feature after you see the roll, but before the DM determineds the result. Once you use this ability, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
 					]
 				}
 			]

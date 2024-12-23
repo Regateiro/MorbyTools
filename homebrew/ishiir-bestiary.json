@@ -83,7 +83,7 @@
 				{
 					"name": "Terror Frenzy (Fury Only)",
 					"entries": [
-						"The spirit has advantage on attack rolls against {@condition Frightened|Ishiir} creatures."
+						"The spirit has advantage on {@variantrule Attack Roll|Ishiir}s against {@condition Frightened|Ishiir} creatures."
 					]
 				},
 				{
@@ -109,7 +109,7 @@
 				{
 					"name": "Dreadful Scream (1/Day)",
 					"entries": [
-						"The spirit screams. Each creature within 30 feet of it must succeed on a Wisdom saving throw against your spell save DC or be {@condition Frightened|Ishiir} for 1 minute. The {@condition Frightened|Ishiir} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+						"The spirit screams. Each creature within 30 feet of it must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC or be {@condition Frightened|Ishiir} for 1 minute. The {@condition Frightened|Ishiir} creature can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on itself on a success."
 					]
 				}
 			],
@@ -608,7 +608,7 @@
 				{
 					"name": "Otherworldly Slam",
 					"entries": [
-						"{@i Melee Attack Roll:} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@dice 1d8 + summonSpellLevel} of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage."
+						"{@i Melee {@variantrule Attack Roll|Ishiir}:} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@dice 1d8 + summonSpellLevel} of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage."
 					]
 				}
 			],
@@ -616,7 +616,7 @@
 				{
 					"name": "Fell Glare (Fiend Only; Recharges after a {@variantrule Long Rest|Ishiir})",
 					"entries": [
-						"{@i Wisdom Saving Throw:} DC equals your spell save DC, one creature within 60 feet the steed can see. {@i Failure:} The target has the {@condition Frightened|Ishiir} condition until the end of your next turn."
+						"{@i Wisdom {@variantrule Saving Throw|Ishiir}:} DC equals your spell save DC, one creature within 60 feet the steed can see. {@i Failure:} The target has the {@condition Frightened|Ishiir} condition until the end of your next turn."
 					]
 				},
 				{
@@ -689,7 +689,7 @@
 				{
 					"name": "Spider Climb",
 					"entries": [
-						"The insect can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+						"The insect can climb difficult surfaces, including along ceilings, without needing to make an {@variantrule Ability Check|Ishiir}."
 					]
 				}
 			],
@@ -703,13 +703,13 @@
 				{
 					"name": "Poison Jab",
 					"entries": [
-						"{@i Melee Attack Roll:} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 10 ft. {@h}{@dice 1d6 + 3 + summonSpellLevel} Piercing damage plus {@damage 1d4} Poison damage."
+						"{@i Melee {@variantrule Attack Roll|Ishiir}:} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 10 ft. {@h}{@dice 1d6 + 3 + summonSpellLevel} Piercing damage plus {@damage 1d4} Poison damage."
 					]
 				},
 				{
 					"name": "Web Bolt (Spider Only)",
 					"entries": [
-						"{@i Ranged Attack Roll:} {@hitYourSpellAttack Bonus equals your spell attack modifier}, range 60 ft. {@h}{@dice 1d10 + 3 + summonSpellLevel} Bludgeoning damage, and the target's Speed is reduced to 0 until the start of the insect's next turn if it is Huge size or smaller."
+						"{@i Ranged {@variantrule Attack Roll|Ishiir}:} {@hitYourSpellAttack Bonus equals your spell attack modifier}, range 60 ft. {@h}{@dice 1d10 + 3 + summonSpellLevel} Bludgeoning damage, and the target's Speed is reduced to 0 until the start of the insect's next turn if it is Huge size or smaller."
 					]
 				}
 			],
@@ -717,7 +717,7 @@
 				{
 					"name": "Venomous Spew (Centipede Only)",
 					"entries": [
-						"{@i Constitution Saving Throw:} Your spell save DC, one creature the insect can see within 10 feet. {@i Failure:} The target has the {@condition Poisoned|Ishiir} condition until the start of the insect's next turn."
+						"{@i Constitution {@variantrule Saving Throw|Ishiir}:} Your spell save DC, one creature the insect can see within 10 feet. {@i Failure:} The target has the {@condition Poisoned|Ishiir} condition until the start of the insect's next turn."
 					]
 				}
 			],
@@ -889,7 +889,7 @@
 				{
 					"name": "Stony Lethargy (Stone Only)",
 					"entries": [
-						"When a creature the construct can see starts its turn within 10 feet of the construct, the construct can force it to make a Wisdom saving throw against your spell save DC. On a failed save, the target can't use reactions and its speed is halved until the start of its next turn."
+						"When a creature the construct can see starts its turn within 10 feet of the construct, the construct can force it to make a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failed save, the target can't use reactions and its speed is halved until the start of its next turn."
 					]
 				}
 			],
@@ -1131,12 +1131,12 @@
 								{
 									"type": "item",
 									"name": "Fuming",
-									"entry": "The fey has advantage on the next attack roll it makes before the end of this turn."
+									"entry": "The fey has advantage on the next {@variantrule Attack Roll|Ishiir} it makes before the end of this turn."
 								},
 								{
 									"type": "item",
 									"name": "Mirthful",
-									"entry": "The fey can force one creature it can see within 10 feet of it to make a Wisdom saving throw against your spell save DC. Unless the save succeeds, the target is {@condition Charmed|Ishiir} by you and the fey for 1 minute or until the target takes any damage."
+									"entry": "The fey can force one creature it can see within 10 feet of it to make a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC. Unless the save succeeds, the target is {@condition Charmed|Ishiir} by you and the fey for 1 minute or until the target takes any damage."
 								},
 								{
 									"type": "item",
@@ -1234,13 +1234,13 @@
 				{
 					"name": "Magic Resistance",
 					"entries": [
-						"The fiend has advantage on saving throws against spells and other magical effects."
+						"The fiend has advantage on {@variantrule Saving Throw|Ishiir}s against spells and other magical effects."
 					]
 				},
 				{
 					"name": "Death Throes (Demon Only)",
 					"entries": [
-						"When the fiend drops to 0 hit points or the spell ends, the fiend explodes, and each creature within 10 feet of it must make a Dexterity saving throw against your spell save DC. A creature takes {@damage 2d10 + summonSpellLevel} fire damage on a failed save, or half as much damage on a successful one."
+						"When the fiend drops to 0 hit points or the spell ends, the fiend explodes, and each creature within 10 feet of it must make a Dexterity {@variantrule Saving Throw|Ishiir} against your spell save DC. A creature takes {@damage 2d10 + summonSpellLevel} fire damage on a failed save, or half as much damage on a successful one."
 					]
 				},
 				{
@@ -1375,7 +1375,7 @@
 				{
 					"name": "Unarmed Strike (Monk Only)",
 					"entries": [
-						"{@atk mw} your spell attack modifier to hit, reach 5 ft., one target. {@h}{@damage 1d4 + 3} + the spell's level force damage, and the target must succeed on a Strength saving throw against your spell save DC or be knocked {@condition Prone|Ishiir}."
+						"{@atk mw} your spell attack modifier to hit, reach 5 ft., one target. {@h}{@damage 1d4 + 3} + the spell's level force damage, and the target must succeed on a Strength {@variantrule Saving Throw|Ishiir} against your spell save DC or be knocked {@condition Prone|Ishiir}."
 					]
 				}
 			],

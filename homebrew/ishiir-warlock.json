@@ -724,7 +724,7 @@
                     "type": "entries",
                     "name": "Spellcasting Ability.",
                     "entries": [
-                        "When you gain this feature, choose Intelligence, Wisdom or Charisma. The chosen ability is your spellcasting ability for your warlock spells, and you use it whenever a spell refers to your spellcasting ability. In addition, you use your chosen ability modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.",
+                        "When you gain this feature, choose Intelligence, Wisdom or Charisma. The chosen ability is your spellcasting ability for your warlock spells, and you use it whenever a spell refers to your spellcasting ability. In addition, you use your chosen ability modifier when setting the {@variantrule Saving Throw|Ishiir} DC for a warlock spell you cast and when making an {@variantrule Attack Roll|Ishiir} with one.",
                         {
                             "type": "abilityDc",
                             "name": "Spell",
@@ -1931,7 +1931,7 @@
             "level": 1,
             "header": 1,
             "entries": [
-                "Your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As a bonus action, you can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw against your warlock spell save DC. The creatures that fail their saving throws are all {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir} by you (your choice) until the end of your next turn.",
+                "Your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As a bonus action, you can cause each creature in a 10-foot cube originating from you to make a Wisdom {@variantrule Saving Throw|Ishiir} against your warlock spell save DC. The creatures that fail their {@variantrule Saving Throw|Ishiir}s are all {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir} by you (your choice) until the end of your next turn.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -1976,7 +1976,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "Your patron teaches you how to turn the mind-affecting magic of your enemies against them. You are immune to being {@condition Charmed|Ishiir}, and when another creature attempts to charm you, you can use your reaction to attempt to turn the charm back on that creature. The creature must succeed on a Wisdom saving throw against your warlock spell save DC or be {@condition Charmed|Ishiir} by you for 1 minute or until the creature takes any damage."
+                "Your patron teaches you how to turn the mind-affecting magic of your enemies against them. You are immune to being {@condition Charmed|Ishiir}, and when another creature attempts to charm you, you can use your reaction to attempt to turn the charm back on that creature. The creature must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your warlock spell save DC or be {@condition Charmed|Ishiir} by you for 1 minute or until the creature takes any damage."
             ]
         },
         {
@@ -1990,7 +1990,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "Your patron teaches you how to turn the mind-affecting magic of your enemies against them. You are immune to being {@condition Charmed|Ishiir}, and when another creature attempts to charm you, you can use your reaction to attempt to turn the charm back on that creature. The creature must succeed on a Wisdom saving throw against your warlock spell save DC or be {@condition Charmed|Ishiir} by you for 1 minute or until the creature takes any damage."
+                "Your patron teaches you how to turn the mind-affecting magic of your enemies against them. You are immune to being {@condition Charmed|Ishiir}, and when another creature attempts to charm you, you can use your reaction to attempt to turn the charm back on that creature. The creature must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your warlock spell save DC or be {@condition Charmed|Ishiir} by you for 1 minute or until the creature takes any damage."
             ]
         },
         {
@@ -2004,7 +2004,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "You can plunge a creature into an illusory realm. As an action, choose a creature that you can see within 60 feet of you. It must make a Wisdom saving throw against your warlock spell save DC. On a failed save, it is {@condition Incapacitated|Ishiir} for 1 minute or until your {@condition Concentration|Ishiir} is broken (as if you are concentrating on a spell). This effect ends early if the creature takes any damage.",
+                "You can plunge a creature into an illusory realm. As an action, choose a creature that you can see within 60 feet of you. It must make a Wisdom {@variantrule Saving Throw|Ishiir} against your warlock spell save DC. On a failed save, it is {@condition Incapacitated|Ishiir} for 1 minute or until your {@condition Concentration|Ishiir} is broken (as if you are concentrating on a spell). This effect ends early if the creature takes any damage.",
                 "Until this illusion ends, the creature thinks it is lost in a misty realm, the appearance of which you choose. The creature can see and hear only itself, you, and the illusion.",
                 "You must finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir} before you can use this feature again."
             ]
@@ -2141,7 +2141,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "The radiant energy you channel allows you to resist death. When you have to make a death saving throw at the start of your turn, you can instead spring back to your feet with a burst of radiant energy. You regain hit points equal to half your hit point maximum, and then you stand up if you so choose. Each creature of your choice that is within 30 feet of you takes radiant damage equal to {@dice 2d8} + your Charisma modifier, and it is {@condition Blinded|Ishiir} until the end of the current turn.",
+                "The radiant energy you channel allows you to resist death. When you have to make a death {@variantrule Saving Throw|Ishiir} at the start of your turn, you can instead spring back to your feet with a burst of radiant energy. You regain hit points equal to half your hit point maximum, and then you stand up if you so choose. Each creature of your choice that is within 30 feet of you takes radiant damage equal to {@dice 2d8} + your Charisma modifier, and it is {@condition Blinded|Ishiir} until the end of the current turn.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -2332,7 +2332,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "When you fail a saving throw, you can succeed instead. You cannot use this feature again until you finish a {@variantrule Long Rest|Ishiir}."
+                "When you fail a {@variantrule Saving Throw|Ishiir}, you can succeed instead. You cannot use this feature again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2347,7 +2347,7 @@
             "header": 2,
             "entries": [
                 "As an action, you open a small portal and call upon the raw energy of your patron's powerful breath weapon.",
-                "Every creature in the area of effect, which originates from your position, has to make a saving throw against your spell save DC. A target takes {@damage 15d10} damage on a failed save, and half as much on a successful one. The shape, saving throw, and damage type of the breath weapon depends on your draconic patron.",
+                "Every creature in the area of effect, which originates from your position, has to make a {@variantrule Saving Throw|Ishiir} against your spell save DC. A target takes {@damage 15d10} damage on a failed save, and half as much on a successful one. The shape, {@variantrule Saving Throw|Ishiir}, and damage type of the breath weapon depends on your draconic patron.",
                 "You cannot use this feature again until you have finished a {@variantrule Long Rest|Ishiir}.",
 				{
                     "type": "table",
@@ -2660,7 +2660,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a {@dice d10} to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur.",
+                "You can call on your patron to alter fate in your favor. When you make an {@variantrule Ability Check|Ishiir} or a {@variantrule Saving Throw|Ishiir}, you can use this feature to add a {@dice d10} to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -2919,7 +2919,7 @@
             "subclassSource": "Ishiir",
             "level": 1,
             "entries": [
-                "Once during each of your turns when you hit with an attack roll, you can deal extra damage to the target equal to your proficiency bonus. The type of this damage is determined by your patron: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid)."
+                "Once during each of your turns when you hit with an {@variantrule Attack Roll|Ishiir}, you can deal extra damage to the target equal to your proficiency bonus. The type of this damage is determined by your patron: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid)."
             ]
         },
         {
@@ -3051,7 +3051,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You learn to magically ward yourself against attack and to turn an enemy's failed strike into good luck for yourself. When a creature makes an attack roll against you, you can use your reaction to impose disadvantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn.",
+                "You learn to magically ward yourself against attack and to turn an enemy's failed strike into good luck for yourself. When a creature makes an {@variantrule Attack Roll|Ishiir} against you, you can use your reaction to impose disadvantage on that roll. If the attack misses you, your next {@variantrule Attack Roll|Ishiir} against the creature has advantage if you make it before the end of your next turn.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -3159,7 +3159,7 @@
                     "type": "list",
                     "items": [
                         "You gain a bonus to damage rolls against the cursed target. The bonus equals your proficiency bonus.",
-                        "Any attack roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the {@dice d20}.",
+                        "Any {@variantrule Attack Roll|Ishiir} you make against the cursed target is a critical hit on a roll of 19 or 20 on the {@dice d20}.",
                         "If the cursed target dies, you regain hit points equal to your warlock level + your Charisma modifier (minimum of 1 hit point)."
                     ]
                 },
@@ -3177,7 +3177,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Your hex grows more powerful. If the target cursed by your Hexblade's Curse hits you with an attack roll, you can use your reaction to roll a {@dice d6}. On a 4 or higher, the attack instead misses you, regardless of its roll."
+                "Your hex grows more powerful. If the target cursed by your Hexblade's Curse hits you with an {@variantrule Attack Roll|Ishiir}, you can use your reaction to roll a {@dice d6}. On a 4 or higher, the attack instead misses you, regardless of its roll."
             ]
         },
         {
@@ -3191,7 +3191,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "When you apply your Hexblade's Curse to a creature, it has disadvantage on the next saving throw you impose with a spell or feature."
+                "When you apply your Hexblade's Curse to a creature, it has disadvantage on the next {@variantrule Saving Throw|Ishiir} you impose with a spell or feature."
             ]
         },
         {
@@ -3277,7 +3277,7 @@
             "level": 1,
             "header": 1,
             "entries": [
-                "You gain the ability to call forth spectral tentacles that grab at your foes. As an action, pick a point that you can see within 60 ft. of you. A horde of grasping tendrils appears at that point. Creatures of your choice within 10 ft. of that point must make a Strength saving throw against your Warlock spell save DC. Creatures that fail their saving throws are {@condition Grappled|Ishiir} for 1 minute or until you use this ability again. The spectral tentacle's Strength ({@skill Athletics}) bonus is 2 + your proficiency bonus and its reach is 10 feet."
+                "You gain the ability to call forth spectral tentacles that grab at your foes. As an action, pick a point that you can see within 60 ft. of you. A horde of grasping tendrils appears at that point. Creatures of your choice within 10 ft. of that point must make a Strength {@variantrule Saving Throw|Ishiir} against your Warlock spell save DC. Creatures that fail their {@variantrule Saving Throw|Ishiir}s are {@condition Grappled|Ishiir} for 1 minute or until you use this ability again. The spectral tentacle's Strength ({@skill Athletics}) bonus is 2 + your proficiency bonus and its reach is 10 feet."
             ]
         },
         {
@@ -3306,7 +3306,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "Your patron accepts you into his inner court of servitors. You gain the ability to breathe water, and a swim speed equal to your normal speed. If you already have a swimming speed, that swimming speed instead increases by 30 feet.",
+                "Your patron accepts you into his inner court of servitors. You gain the ability to breathe water, and a {@variantrule Swim Speed|Ishiir} equal to your normal speed. If you already have a swimming speed, that swimming speed instead increases by 30 feet.",
                 "You gain immunity to lightning damage. When your immunity reduces damage from an effect to 0, as a reaction you can cause creatures of your choice that you can see within 30 ft. of you to take lightning damage equal to your Charisma modifier + your proficiency bonus."
             ]
         },
@@ -3335,7 +3335,7 @@
             "level": 14,
             "header": 3,
             "entries": [
-                "The tentacles slam into your foes. Pick up to 5 creatures that you can see within 30 ft. of the portal. Those creatures must make Dexterity saving throws against your Warlock spell save DC. Creatures that fail their saving throws take {@damage 10d6} bludgeoning damage and are {@condition Restrained|Ishiir} for 1 minute. Creatures that succeed take half the bludgeoning damage and are not {@condition Restrained|Ishiir}. On its turn, a {@condition Restrained|Ishiir} creature can use its action to attempt Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check against your Warlock spell save DC to end its {@condition Restrained|Ishiir} condition."
+                "The tentacles slam into your foes. Pick up to 5 creatures that you can see within 30 ft. of the portal. Those creatures must make Dexterity {@variantrule Saving Throw|Ishiir}s against your Warlock spell save DC. Creatures that fail their {@variantrule Saving Throw|Ishiir}s take {@damage 10d6} bludgeoning damage and are {@condition Restrained|Ishiir} for 1 minute. Creatures that succeed take half the bludgeoning damage and are not {@condition Restrained|Ishiir}. On its turn, a {@condition Restrained|Ishiir} creature can use its action to attempt Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check against your Warlock spell save DC to end its {@condition Restrained|Ishiir} condition."
             ]
         },
         {
@@ -3421,7 +3421,7 @@
             "level": 1,
             "header": 1,
             "entries": [
-                "You gain the ability to transform into Lolth's most beloved servitor, a giant spider. As a bonus action you turn into a spider. You gain a +2 bonus to AC. You gain 3 temporary hit points per level. You gain a climb speed equal to your normal speed. You can climb difficult surfaces, such as along a ceiling, without needing to make a check. You gain a bite attack. You are proficient with this attack and it inflicts poison damage based on your level. You can use your choice of Strength or Dexterity to modify your bite attack's attack and damage rolls. While in this form, you lack hands and cannot do anything that normally requires them. However, you can cast spells but can only cast the ones listed on your expanded spell list for Lolth.",
+                "You gain the ability to transform into Lolth's most beloved servitor, a giant spider. As a bonus action you turn into a spider. You gain a +2 bonus to AC. You gain 3 temporary hit points per level. You gain a {@variantrule Climb Speed|Ishiir} equal to your normal speed. You can climb difficult surfaces, such as along a ceiling, without needing to make a check. You gain a bite attack. You are proficient with this attack and it inflicts poison damage based on your level. You can use your choice of Strength or Dexterity to modify your bite attack's attack and damage rolls. While in this form, you lack hands and cannot do anything that normally requires them. However, you can cast spells but can only cast the ones listed on your expanded spell list for Lolth.",
                 "Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
                 {
                     "type": "table",
@@ -3466,7 +3466,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You gain the ability to use a shard of Lolth's alien beauty, causing other creatures to become enraptured by your appearance. As a bonus action, pick a creature you can see. That creature must succeed on a Charisma saving throw or become {@condition Charmed|Ishiir} by you. While {@condition Charmed|Ishiir}, it also gains vulnerability to poison damage. This benefit lasts for one minute or until you or your allies damages the creature. Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
+                "You gain the ability to use a shard of Lolth's alien beauty, causing other creatures to become enraptured by your appearance. As a bonus action, pick a creature you can see. That creature must succeed on a Charisma {@variantrule Saving Throw|Ishiir} or become {@condition Charmed|Ishiir} by you. While {@condition Charmed|Ishiir}, it also gains vulnerability to poison damage. This benefit lasts for one minute or until you or your allies damages the creature. Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3494,7 +3494,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "You can channel Lolth's malevolence into a deadly kiss. As an action, you touch a creature within your reach. The target takes {@damage 12d10} poison or psychic damage (your choice), or half as much on a successful Constitution save. A creature {@condition Charmed|Ishiir} by you has disadvantage on its saving throw. After you use this ability, you cannot cast it again until you complete a {@variantrule Long Rest|Ishiir}."
+                "You can channel Lolth's malevolence into a deadly kiss. As an action, you touch a creature within your reach. The target takes {@damage 12d10} poison or psychic damage (your choice), or half as much on a successful Constitution save. A creature {@condition Charmed|Ishiir} by you has disadvantage on its {@variantrule Saving Throw|Ishiir}. After you use this ability, you cannot cast it again until you complete a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3569,7 +3569,7 @@
             "entries": [
                 "You gain the service of a spirit sent by the Raven Queen to watch over you. The spirit assumes the form and game statistics of a {@creature raven}, and it always obeys your commands, which you can give telepathically while it is within 100 feet of you.",
                 "While the raven is perched on your shoulder, you gain {@sense darkvision} with a range of 30 feet and a bonus to your passive Wisdom ({@skill Perception}) score and to Wisdom ({@skill Perception}) checks. The bonus equals your Charisma modifier. While perched on your shoulder, the raven can't be targeted by any attack or other harmful effect; only you can cast spells on it; it can't take damage; and it is {@condition Incapacitated|Ishiir}.",
-                "You can see through the raven's eyes and hear what it hears while it is within 100 feet of you. In combat, you roll initiative for the raven and control how it acts. If it is slain by a creature, you gain advantage on all attack rolls against the killer for the next 24 hours.",
+                "You can see through the raven's eyes and hear what it hears while it is within 100 feet of you. In combat, you roll initiative for the raven and control how it acts. If it is slain by a creature, you gain advantage on all {@variantrule Attack Roll|Ishiir}s against the killer for the next 24 hours.",
                 "The raven doesn't require sleep. While it is within 100 feet of you, it can awaken you from sleep as a bonus action. The raven vanishes when it dies, if you die, or if the two of you are separated by more than 5 miles.",
                 "At the end of a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, you can call the raven back to you—no matter where it is or whether it died—and it reappears within 5 feet of you."
             ]
@@ -3599,7 +3599,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "The Raven Queen grants you a protective blessing. You gain advantage on death saving throws, immunity to the {@condition Frightened|Ishiir} condition, and resistance to necrotic damage."
+                "The Raven Queen grants you a protective blessing. You gain advantage on death {@variantrule Saving Throw|Ishiir}s, immunity to the {@condition Frightened|Ishiir} condition, and resistance to necrotic damage."
             ]
         },
         {
@@ -3810,7 +3810,7 @@
                     "type": "list",
                     "items": [
                         "You gain temporary hit points equal to {@dice 1d10} + your warlock level.",
-                        "Once during each of your turns, when you hit a creature with an attack roll, you can force it to make a Wisdom saving throw, and if the saving throw fails, the target is {@condition Frightened|Ishiir} of you until the end of your next turn.",
+                        "Once during each of your turns, when you hit a creature with an {@variantrule Attack Roll|Ishiir}, you can force it to make a Wisdom {@variantrule Saving Throw|Ishiir}, and if the {@variantrule Saving Throw|Ishiir} fails, the target is {@condition Frightened|Ishiir} of you until the end of your next turn.",
                         "You are immune to the {@condition Frightened|Ishiir} condition."
                     ]
                 },
@@ -3830,7 +3830,7 @@
             "header": 2,
             "entries": [
                 "Your patron's powers have a profound effect on your body and magic. You don't need to eat, drink, or breathe.",
-                "In addition, once during each of your turns, when you hit a creature with an attack roll and roll damage against the creature, you can replace the damage type with necrotic damage. While you are using your Form of Dread, you can roll one additional damage die when determining the necrotic damage the target takes."
+                "In addition, once during each of your turns, when you hit a creature with an {@variantrule Attack Roll|Ishiir} and roll damage against the creature, you can replace the damage type with necrotic damage. While you are using your Form of Dread, you can roll one additional damage die when determining the necrotic damage the target takes."
             ]
         },
         {
@@ -3944,8 +3944,8 @@
             "level": 1,
             "header": 1,
             "entries": [
-                "You learn the {@spell spare the dying|Ishiir} cantrip, which counts as a warlock cantrip for you. You also have advantage on saving throws against any disease.",
-                "Additionally, undead have difficulty harming you. If an undead targets you directly with an attack or a harmful spell, that creature must make a Wisdom saving throw against your spell save DC (an undead needn't make the save when it includes you in an area effect, such as the explosion of {@spell fireball|Ishiir}). On a failed save, the creature must choose a new target or forfeit targeting someone instead of you, potentially wasting the attack or spell. On a successful save, the creature is immune to this effect for 24 hours. An undead is also immune to this effect for 24 hours if you target it with an attack or a harmful spell."
+                "You learn the {@spell spare the dying|Ishiir} cantrip, which counts as a warlock cantrip for you. You also have advantage on {@variantrule Saving Throw|Ishiir}s against any disease.",
+                "Additionally, undead have difficulty harming you. If an undead targets you directly with an attack or a harmful spell, that creature must make a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC (an undead needn't make the save when it includes you in an area effect, such as the explosion of {@spell fireball|Ishiir}). On a failed save, the creature must choose a new target or forfeit targeting someone instead of you, potentially wasting the attack or spell. On a successful save, the creature is immune to this effect for 24 hours. An undead is also immune to this effect for 24 hours if you target it with an attack or a harmful spell."
             ]
         },
         {
@@ -3959,7 +3959,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You can give yourself vitality when you cheat death or when you help someone else cheat it. You can regain hit points equal to {@dice 1d8} + your Constitution modifier (minimum of 1 hit point) when you succeed on a death saving throw or when you stabilize a creature with {@spell spare the dying|Ishiir}.",
+                "You can give yourself vitality when you cheat death or when you help someone else cheat it. You can regain hit points equal to {@dice 1d8} + your Constitution modifier (minimum of 1 hit point) when you succeed on a death {@variantrule Saving Throw|Ishiir} or when you stabilize a creature with {@spell spare the dying|Ishiir}.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },

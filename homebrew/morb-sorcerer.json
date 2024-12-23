@@ -96,7 +96,7 @@
             "header": 1,
             "entries": [
                 "You gain the ability to comprehend and verbally communicate with beasts.",
-                "Additionally, you become proficient in your choice of two of the following skills: {@skill Animal Handling}, {@skill Nature}, {@skill Perception}, or {@skill Survival}. Your proficiency bonus is doubled for any ability check you make that uses either of those skills."
+                "Additionally, you become proficient in your choice of two of the following skills: {@skill Animal Handling}, {@skill Nature}, {@skill Perception}, or {@skill Survival}. Your proficiency bonus is doubled for any {@variantrule Ability Check|Ishiir} you make that uses either of those skills."
             ]
         },
         {
@@ -125,7 +125,7 @@
             "level": 14,
             "header": 1,
             "entries": [
-                "At 14h level, you gain the ability to align your consciousness with the will of the world around you. As a bonus action, you can enter this state for 1 minute. For the duration, the targets of your spells cannot benefit from advantange on their saving throws, while you have advantage on yours.",
+                "At 14h level, you gain the ability to align your consciousness with the will of the world around you. As a bonus action, you can enter this state for 1 minute. For the duration, the targets of your spells cannot benefit from advantange on their {@variantrule Saving Throw|Ishiir}s, while you have advantage on yours.",
                 "Once you use this bonus action, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you spend 5 sorcery points to use it again."
             ]
         },
@@ -144,7 +144,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "While using your Wild Conduit feature, you have advantage on attack rolls against aberrations, celestials, elementals, fey, fiends, and undead. They also have disadvantage on saving throws against your spells.",
+                        "While using your Wild Conduit feature, you have advantage on {@variantrule Attack Roll|Ishiir}s against aberrations, celestials, elementals, fey, fiends, and undead. They also have disadvantage on {@variantrule Saving Throw|Ishiir}s against your spells.",
                         "Moving through difficult terrain costs you no extra movement. You can also pass through natural or magically created plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.",
                         "You are immune to poison and disease.",
                         "For every 10 years that pass, your body ages only 1 year."
@@ -413,7 +413,7 @@
                     "type": "entries",
                     "name": "White Affinity",
                     "entries": [
-                        "Your desire to help and protect others has extended to the battlefield. When you or a creature you can see within 30 feet of you is hit by an attack roll, you can use your reaction to shield the target, increasing their AC by your proficiency bonus for the attack.",
+                        "Your desire to help and protect others has extended to the battlefield. When you or a creature you can see within 30 feet of you is hit by an {@variantrule Attack Roll|Ishiir}, you can use your reaction to shield the target, increasing their AC by your proficiency bonus for the attack.",
                         "If you only have affinity to white, the target also heals for half the amount of damage (rounded down) the attack would have dealt/did to it.",
                         "Once you use this feature, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
                     ]
@@ -422,8 +422,8 @@
                     "type": "entries",
                     "name": "Blue Affinity",
                     "entries": [
-                        "You must always be in control of any situation you find yourself in. When you cast a spell that forces a target to make a Charisma saving throw, you may use a bonus action to impose disadvantage on the save.",
-                        "If you only have affinity to blue, you may impose disadvantage on the save for any spell you cast that forces a target to make a saving throw.",
+                        "You must always be in control of any situation you find yourself in. When you cast a spell that forces a target to make a Charisma {@variantrule Saving Throw|Ishiir}, you may use a bonus action to impose disadvantage on the save.",
+                        "If you only have affinity to blue, you may impose disadvantage on the save for any spell you cast that forces a target to make a {@variantrule Saving Throw|Ishiir}.",
                         "You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
                     ]
                 },
@@ -450,8 +450,8 @@
                     "type": "entries",
                     "name": "Green Affinity",
                     "entries": [
-                        "The natural order is for the strong to defeat the weak. Choose Strength, Dexterity or Constitution. You gain proficiency with saving throws using the chosen attribute and with one skill that uses the chosen attribute.",
-                        "If you only have affinity to green, you may add your Charisma modifier to skill checks and saving throws using the chosen attribute."
+                        "The natural order is for the strong to defeat the weak. Choose Strength, Dexterity or Constitution. You gain proficiency with {@variantrule Saving Throw|Ishiir}s using the chosen attribute and with one skill that uses the chosen attribute.",
+                        "If you only have affinity to green, you may add your Charisma modifier to skill checks and {@variantrule Saving Throw|Ishiir}s using the chosen attribute."
                     ]
                 }
             ]
@@ -617,35 +617,35 @@
                     "type": "entries",
                     "name": "White Affinity",
                     "entries": [
-                        "Each creature of your choice within 30 feet of you must succeed on a Constitution saving throw against your spell save DC or be {@condition Blinded} until the end of its next turn. If you only have affinity to white, each creature of your choice within 30 feet of you gains {@dice 3d4} temporary hit points."
+                        "Each creature of your choice within 30 feet of you must succeed on a Constitution {@variantrule Saving Throw|Ishiir} against your spell save DC or be {@condition Blinded} until the end of its next turn. If you only have affinity to white, each creature of your choice within 30 feet of you gains {@dice 3d4} temporary hit points."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Blue Affinity",
                     "entries": [
-                        "Each creature of your choice within 30 feet of you must succeed on a Charisma saving throw against your spell save DC or be {@condition Charmed} by you until the end of its next turn. If you only have affinity to blue, after the {@condition Charmed} effect ends the affected creatures suffer the effect of the {@spell confusion} spell until the end of their next turn."
+                        "Each creature of your choice within 30 feet of you must succeed on a Charisma {@variantrule Saving Throw|Ishiir} against your spell save DC or be {@condition Charmed} by you until the end of its next turn. If you only have affinity to blue, after the {@condition Charmed} effect ends the affected creatures suffer the effect of the {@spell confusion} spell until the end of their next turn."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Red Affinity",
                     "entries": [
-                        "Each creature of your choice within 30 feet of you must succeed on a Dexterity saving throw against your spell save DC or be {@condition Lacerated|Ishiir}. If you only have affinity to red, the affected creatures are also {@condition Dazed|Ishiir} until the start of their next turn."
+                        "Each creature of your choice within 30 feet of you must succeed on a Dexterity {@variantrule Saving Throw|Ishiir} against your spell save DC or be {@condition Lacerated|Ishiir}. If you only have affinity to red, the affected creatures are also {@condition Dazed|Ishiir} until the start of their next turn."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Black Affinity",
                     "entries": [
-                        "Each creature of your choice within 30 feet of you must succeed on a Wisdom saving throw against your spell save DC or be {@condition Frightened} of you until the end of its next turn. If you only have affinity to black, the creatures have disadvantage on the saving throw."
+                        "Each creature of your choice within 30 feet of you must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC or be {@condition Frightened} of you until the end of its next turn. If you only have affinity to black, the creatures have disadvantage on the {@variantrule Saving Throw|Ishiir}."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Green Affinity",
                     "entries": [
-                        "Each creature of your choice within 30 feet of you must succeed on a Constitution saving throw against your spell save DC or be {@condition Poisoned} until the end of its next turn. If you only have affinity to green, the creatures are {@condition Stunned} instead."
+                        "Each creature of your choice within 30 feet of you must succeed on a Constitution {@variantrule Saving Throw|Ishiir} against your spell save DC or be {@condition Poisoned} until the end of its next turn. If you only have affinity to green, the creatures are {@condition Stunned} instead."
                     ]
                 },
                 "Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you spend 5 sorcery points to use it again."
