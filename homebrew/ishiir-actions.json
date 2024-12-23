@@ -30,7 +30,7 @@
             ],
             "entries": [
                 "Activating some magic items requires a user to do something in particular, such as holding the item and uttering a command word, reading the item if it is a scroll, or drinking it if it is a potion. The description of each item category or individual item details how an item is activated. Certain items use one or more of the following rules related to their activation.",
-                "If an item requires an action to activate, that action isn't a function of the {@action Use an Object|Ishiir} action, so a feature such as the rogue's {@subclassFeature Fast Hands|Rogue|Ishiir|Thief|Ishiir|3} can't be used to activate the item.",
+                "If an item requires an {@variantrule Action|Ishiir} to activate, that action isn't a function of the {@action Use an Object|Ishiir} action, so a feature such as the rogue's {@subclassFeature Fast Hands|Rogue|Ishiir|Thief|Ishiir|3} can't be used to activate the item.",
                 {
                     "type": "entries",
                     "name": "Command Word",
@@ -99,7 +99,7 @@
                 "Varies"
             ],
             "entries": [
-                "Spellcasters such as wizards and clerics, as well as many monsters, have access to spells and can use them to great effect in combat. Each spell has a casting time, which specifies whether the caster must use an action, a reaction, minutes, or even hours to cast the spell. Casting a spell is, therefore, not necessarily an action. Most spells do have a casting time of 1 action, so a spellcaster often uses his or her action in combat to cast such a spell. See {@book chapter 10|phb|10|casting a spell} for the rules on spellcasting."
+                "Spellcasters such as wizards and clerics, as well as many monsters, have access to spells and can use them to great effect in combat. Each spell has a casting time, which specifies whether the caster must use an {@variantrule Action|Ishiir}, a {@variantrule Reaction|Ishiir}, minutes, or even hours to cast the spell. Casting a spell is, therefore, not necessarily an {@variantrule Action|Ishiir}. Most spells do have a casting time of 1 action, so a spellcaster often uses his or her action in combat to cast such a spell. See {@book chapter 10|phb|10|casting a spell} for the rules on spellcasting."
             ]
         },
         {
@@ -113,10 +113,10 @@
                 }
             ],
             "entries": [
-                "Make special grappling attempt as an action against a creature at least two sizes larger than you. To do so, make a Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check (your choice), contested by the creature's Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check (creature's choice). Unlike with a normal grappling attempt, there is no limitation on the maximum size of your target, but the target still has {@variantrule Advantage|Ishiir} on their skill check for the size difference.",
+                "Make special grappling attempt as an {@variantrule Action|Ishiir} against a creature at least two sizes larger than you. To do so, make a Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check (your choice), contested by the creature's Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check (creature's choice). Unlike with a normal grappling attempt, there is no limitation on the maximum size of your target, but the target still has {@variantrule Advantage|Ishiir} on their skill check for the size difference.",
                 "If you succeed, you successfully move into the target creature's space and cling to its body. While in the target's space, you move with the target and have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s against it.",
                 "You can move around within the larger creature's space, treating the space as {@quickref difficult terrain||3}. This movement counts as climbing.",
-                "The larger creature's ability to attack you depends on your location, and is left to the DM's discretion. The larger creature can dislodge you as an action - knocking you off, scraping you against a wall, or grabbing and throwing you - by making a Strength ({@skill Athletics}) check or Dexterity ({@skill Acrobatics}) contested by your Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check. You choose which check to use."
+                "The larger creature's ability to attack you depends on your location, and is left to the DM's discretion. The larger creature can dislodge you as an {@variantrule Action|Ishiir} - knocking you off, scraping you against a wall, or grabbing and throwing you - by making a Strength ({@skill Athletics}) check or Dexterity ({@skill Acrobatics}) contested by your Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check. You choose which check to use."
             ]
         },
         {
@@ -194,7 +194,7 @@
                 }
             ],
             "entries": [
-                "The time it takes to don or doff armor {@table Getting Into and Out of Armor; Donning and Doffing Armor|phb|depends on the armor's category}. A {@item shield|phb} can be donned or doffed as an action."
+                "The time it takes to don or doff armor {@table Getting Into and Out of Armor; Donning and Doffing Armor|phb|depends on the armor's category}. A {@item shield|phb} can be donned or doffed as an {@variantrule Action|Ishiir}."
             ]
         },
         {
@@ -316,8 +316,8 @@
                 }
             ],
             "entries": [
-                "Sometimes a character wants to identify a spell that someone else is casting or that was already cast. To do so, a character can use their reaction to identify a spell as it's being cast, or they can use an action on their turn to identify a spell by its effect after it is cast.",
-                "If the character perceived the casting, the spell's effect, or both, the character can make an Intelligence ({@skill Arcana}) check with the reaction or action. The DC equals 15 + the spell's level. If the spell is cast as a class spell and the character is a member of that class, the check is made with {@variantrule Advantage|Ishiir}. For example, if the spellcaster casts a spell as a cleric, another cleric has {@variantrule Advantage|Ishiir} on the check to identify the spell. Some spells aren't associated with any class when they're cast, such as when a monster uses its Innate Spellcasting trait.",
+                "Sometimes a character wants to identify a spell that someone else is casting or that was already cast. To do so, a character can use their {@variantrule Reaction|Ishiir} to identify a spell as it's being cast, or they can use an {@variantrule Action|Ishiir} on their turn to identify a spell by its effect after it is cast.",
+                "If the character perceived the casting, the spell's effect, or both, the character can make an Intelligence ({@skill Arcana}) check with the {@variantrule Reaction|Ishiir} or action. The DC equals 15 + the spell's level. If the spell is cast as a class spell and the character is a member of that class, the check is made with {@variantrule Advantage|Ishiir}. For example, if the spellcaster casts a spell as a cleric, another cleric has {@variantrule Advantage|Ishiir} on the check to identify the spell. Some spells aren't associated with any class when they're cast, such as when a monster uses its Innate Spellcasting trait.",
                 "This Intelligence ({@skill Arcana}) check represents the fact that identifying a spell requires a quick mind and familiarity with the theory and practice of casting. This is true even for a character whose spellcasting ability is Wisdom or Charisma. Being able to cast spells doesn't by itself make you adept at deducing exactly what others are doing when they cast their spells."
             ]
         },
@@ -331,7 +331,7 @@
             ],
             "entries": [
                 "Your character can do things not covered by the actions in this chapter, such as breaking down doors, intimidating enemies, sensing weaknesses in magical defenses, or calling for a parley with a foe. The only limits to the actions you can attempt are your imagination and your character's ability scores. See the descriptions of the ability scores in {@book chapter 7|phb|7|Ability Scores and Modifiers} for inspiration as you improvise.",
-                "When you describe an action not detailed elsewhere in the rules, the DM tells you whether that action is possible and what kind of roll you need to make, if any, to determine success or failure."
+                "When you describe an {@variantrule Action|Ishiir} not detailed elsewhere in the rules, the DM tells you whether that action is possible and what kind of roll you need to make, if any, to determine success or failure."
             ]
         },
         {
@@ -347,7 +347,7 @@
                 }
             ],
             "entries": [
-                "When you take the Magic action, you cast a spell that has a casting time of an action or use a feature or magic item that requires a Magic action to be activated.",
+                "When you take the Magic action, you cast a spell that has a casting time of an {@variantrule Action|Ishiir} or use a feature or magic item that requires a Magic action to be activated.",
                 "If you cast a spell that has a casting time of 1 minute or longer, you must take the Magic action on each turn of that casting, and you must maintain {@condition Concentration|Ishiir} while you do so. If your {@condition Concentration|Ishiir} is broken, the spell fails, but you don't expend a spell slot."
             ]
         },
@@ -357,7 +357,7 @@
             "page": 1,
             "entries": [
                 "This option makes it easier for melee combatants to harry each other with opportunity attacks.",
-                "When a creature makes a melee attack, it can also mark its target. Until the end of the attacker's next turn, any opportunity attack it makes against the marked target has {@variantrule Advantage|Ishiir}. The opportunity attack doesn't expend the attacker's reaction, but the attacker can't make the attack if anything, such as the {@condition Incapacitated|Ishiir} condition or the {@spell shocking grasp|Ishiir} spell, is preventing it from taking reactions. The attacker is limited to one opportunity attack per turn."
+                "When a creature makes a melee attack, it can also mark its target. Until the end of the attacker's next turn, any opportunity attack it makes against the marked target has {@variantrule Advantage|Ishiir}. The opportunity attack doesn't expend the attacker's {@variantrule Reaction|Ishiir}, but the attacker can't make the attack if anything, such as the {@condition Incapacitated|Ishiir} condition or the {@spell shocking grasp|Ishiir} spell, is preventing it from taking {@variantrule Reaction|Ishiir|Reactions}. The attacker is limited to one opportunity attack per turn."
             ],
             "seeAlsoAction": [
                 "Attack"
@@ -377,8 +377,8 @@
             ],
             "entries": [
                 "In a fight, everyone is constantly watching for enemies to drop their guard. You can rarely move heedlessly past your foes without putting yourself in danger; doing so provokes an opportunity attack.",
-                "You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your reaction to make one melee attack against the provoking creature. The attack interrupts the provoking creature's movement, occurring right before the creature leaves your reach.",
-                "You can avoid provoking an opportunity attack by taking the {@action Disengage|Ishiir} action. You also don't provoke an opportunity attack when you teleport or when someone or something moves you without using your movement, action, or reaction. For example, you don't provoke an opportunity attack if an explosion hurls you out of a foe's reach or if gravity causes you to fall past an enemy."
+                "You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your {@variantrule Reaction|Ishiir} to make one melee attack against the provoking creature. The attack interrupts the provoking creature's movement, occurring right before the creature leaves your reach.",
+                "You can avoid provoking an opportunity attack by taking the {@action Disengage|Ishiir} action. You also don't provoke an opportunity attack when you teleport or when someone or something moves you without using your movement, action, or {@variantrule Reaction|Ishiir}. For example, you don't provoke an opportunity attack if an explosion hurls you out of a foe's reach or if gravity causes you to fall past an enemy."
             ]
         },
         {
@@ -394,8 +394,8 @@
                 "Your turn can include a variety of flourishes that require neither your action nor your move.",
                 "You can communicate however you are able, through brief utterances and gestures, as you take your turn.",
                 "You can also interact with one object or feature of the environment for free, during either your move or your action. For example, you could open a door during your move as you stride toward a foe, or you could draw your weapon as part of the same action you use to attack.",
-                "If you want to interact with a second object, you need to use your action. Some magic items and other special objects always require an action to use, as stated in their descriptions.",
-                "The DM might require you to use an action for any of these activities when it needs special care or when it presents an unusual obstacle. For instance, the DM could reasonably expect you to use an action to open a stuck door or turn a crank to lower a drawbridge.",
+                "If you want to interact with a second object, you need to use your action. Some magic items and other special objects always require an {@variantrule Action|Ishiir} to use, as stated in their descriptions.",
+                "The DM might require you to use an {@variantrule Action|Ishiir} for any of these activities when it needs special care or when it presents an unusual obstacle. For instance, the DM could reasonably expect you to use an {@variantrule Action|Ishiir} to open a stuck door or turn a crank to lower a drawbridge.",
                 {
                     "type": "inset",
                     "name": "Interacting with Objects Around You",
@@ -463,10 +463,10 @@
                 }
             ],
             "entries": [
-                "Sometimes you want to get the jump on a foe or wait for a particular circumstance before you act. To do so, you can take the Ready action on your turn, which lets you act using your reaction before the start of your next turn.",
-                "First, you decide what perceivable circumstance will trigger your reaction. Then, you choose the action you will take in response to that trigger, or you choose to move up to your {@variantrule Speed|Ishiir} antrule Speed|Ishiir} in response to it. Examples include \"If the cultist steps on the trapdoor, I'll pull the lever that opens it,\" and \"If the goblin steps next to me, I move away.\"",
-                "When the trigger occurs, you can either take your reaction right after the trigger finishes or ignore the trigger. Remember that you can take only one reaction per round.",
-                "When you ready a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 action, and holding onto the spell's magic requires {@condition Concentration|Ishiir}. If your {@condition Concentration|Ishiir} is broken, the spell dissipates without taking effect. For example, if you are concentrating on the web spell and ready magic missile, your web spell ends, and if you take damage before you release magic missile with your reaction, your {@condition Concentration|Ishiir} might be broken.",
+                "Sometimes you want to get the jump on a foe or wait for a particular circumstance before you act. To do so, you can take the Ready action on your turn, which lets you act using your {@variantrule Reaction|Ishiir} before the start of your next turn.",
+                "First, you decide what perceivable circumstance will trigger your {@variantrule Reaction|Ishiir}. Then, you choose the action you will take in response to that trigger, or you choose to move up to your {@variantrule Speed|Ishiir} antrule Speed|Ishiir} in response to it. Examples include \"If the cultist steps on the trapdoor, I'll pull the lever that opens it,\" and \"If the goblin steps next to me, I move away.\"",
+                "When the trigger occurs, you can either take your {@variantrule Reaction|Ishiir} right after the trigger finishes or ignore the trigger. Remember that you can take only one {@variantrule Reaction|Ishiir} per round.",
+                "When you ready a spell, you cast it as normal but hold its energy, which you release with your {@variantrule Reaction|Ishiir} when the trigger occurs. To be readied, a spell must have a casting time of 1 action, and holding onto the spell's magic requires {@condition Concentration|Ishiir}. If your {@condition Concentration|Ishiir} is broken, the spell dissipates without taking effect. For example, if you are concentrating on the web spell and ready magic missile, your web spell ends, and if you take damage before you release magic missile with your {@variantrule Reaction|Ishiir}, your {@condition Concentration|Ishiir} might be broken.",
                 "You have until the start of your next turn to use a readied action."
             ]
         },
@@ -531,7 +531,7 @@
                 }
             ],
             "entries": [
-                "When you take the attack action, you can replace any of your attacks with an attempt to knock a target no more than one size larger than you off-balance and dull its reaction speed. Make an {@variantrule Attack Roll|Ishiir} contested by the target's Strength ({@skill Athletics}) check or Dexterity ({@skill Acrobatics}) check. If you win the contest, the attack causes no damage or other ill effect, but the defender cannot take reactions until the start of your next turn.",
+                "When you take the attack action, you can replace any of your attacks with an attempt to knock a target no more than one size larger than you off-balance and dull its reaction speed. Make an {@variantrule Attack Roll|Ishiir} contested by the target's Strength ({@skill Athletics}) check or Dexterity ({@skill Acrobatics}) check. If you win the contest, the attack causes no damage or other ill effect, but the defender cannot take {@variantrule Reaction|Ishiir|Reactions} until the start of your next turn.",
                 "The target has {@variantrule Advantage|Ishiir} on its {@variantrule Ability Check|Ishiir} if it is larger than you, or {@variantrule Disadvantage|Ishiir} if it is smaller."
             ]
         },
@@ -566,7 +566,7 @@
                 }
             ],
             "entries": [
-                "When you take the {@action Attack|Ishiir} action and attack with a light melee weapon that you're holding in one hand, you can use a bonus action to attack with a different light melee weapon that you're holding in the other hand. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative.",
+                "When you take the {@action Attack|Ishiir} action and attack with a light melee weapon that you're holding in one hand, you can use a {@variantrule Bonus Action|Ishiir} to attack with a different light melee weapon that you're holding in the other hand. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative.",
                 "If either weapon has the thrown property, you can throw the weapon, instead of making a melee attack with it."
             ],
             "seeAlsoAction": [
@@ -600,7 +600,7 @@
                 }
             ],
             "entries": [
-                "A creature that is naturally sleeping, as opposed to being in a magically or chemically induced sleep, wakes up if it takes any damage or if someone else uses an action to shake or slap the creature awake. A sudden loud noise—such as yelling, thunder, or a ringing bell—also awakens someone that is sleeping naturally.",
+                "A creature that is naturally sleeping, as opposed to being in a magically or chemically induced sleep, wakes up if it takes any damage or if someone else uses an {@variantrule Action|Ishiir} to shake or slap the creature awake. A sudden loud noise—such as yelling, thunder, or a ringing bell—also awakens someone that is sleeping naturally.",
                 "Whispers don't disturb sleep, unless a sleeper's passive Wisdom ({@skill Perception}) score is 20 or higher and the whispers are within 10 feet of the sleeper. Speech at a normal volume awakens a sleeper if the environment is otherwise silent (no wind, birdsong, crickets, street sounds, or the like) and the sleeper has a passive Wisdom ({@skill Perception}) score of 15 or higher."
             ]
         }

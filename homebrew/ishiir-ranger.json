@@ -941,7 +941,7 @@
             "level": 3,
             "entries": [
                 "Your mastery of ranger lore allows you to establish a powerful link to beasts and to the land around you.",
-                "You have an innate ability to communicate with beasts, and they recognize you as a kindred spirit. Through sounds and gestures, you can communicate simple ideas to a beast as an action, and can read its basic mood and intent. You learn its emotional state, whether it is affected by magic of any sort, its short-term needs (such as food or safety), and actions you can take (if any) to persuade it to not attack.",
+                "You have an innate ability to communicate with beasts, and they recognize you as a kindred spirit. Through sounds and gestures, you can communicate simple ideas to a beast as an {@variantrule Action|Ishiir}, and can read its basic mood and intent. You learn its emotional state, whether it is affected by magic of any sort, its short-term needs (such as food or safety), and actions you can take (if any) to persuade it to not attack.",
                 "You cannot use this ability against a creature that you have attacked within the past 10 minutes.",
                 "Additionally, you can attune your senses to determine if any of your favored enemies lurk nearby. By spending 1 uninterrupted minute in {@condition Concentration|Ishiir} (as if you were concentrating on a spell), you can sense whether any of your favored enemies are present within 5 miles of you. This feature reveals which of your favored enemies are present, their numbers, and the creatures' general direction and distance (in miles) from you.",
                 "If there are multiple groups of your favored enemies within range, you learn this information for each group."
@@ -1154,7 +1154,7 @@
             "classSource": "Ishiir",
             "level": 14,
             "entries": [
-                "You can use the {@action Hide|Ishiir} action as a bonus action on your turn. Also, you can't be tracked by nonmagical means, unless you choose to leave a trail."
+                "You can use the {@action Hide|Ishiir} action as a {@variantrule Bonus Action|Ishiir} on your turn. Also, you can't be tracked by nonmagical means, unless you choose to leave a trail."
             ]
         },
         {
@@ -1710,7 +1710,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "You can use your Bonus Action to give magically allow your companion to act more swiftly. On its next turn, it can use its Bonus Action to use the Dash, Disengage, Dodge, or Help action (your choice).",
+                "You can use your {@variantrule Bonus Action|Ishiir} to give magically allow your companion to act more swiftly. On its next turn, it can use its {@variantrule Bonus Action|Ishiir} to use the Dash, Disengage, Dodge, or Help action (your choice).",
                 "Additionally, your companion's attacks count as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage."
             ]
         },
@@ -1740,7 +1740,7 @@
             "header": 2,
             "entries": [
                 "{@i 11th-level ranger Beast Conclave feature (replaces Fury feature)}",
-                "Whenever an attacker that your companion can see hits it with an attack, it can use its reaction to halve the attack's damage against it."
+                "Whenever an attacker that your companion can see hits it with an attack, it can use its {@variantrule Reaction|Ishiir} to halve the attack's damage against it."
             ]
         },
         {
@@ -1925,9 +1925,9 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "As an action, you can magically summon the drake that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.",
+                "As an {@variantrule Action|Ishiir}, you can magically summon the drake that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.",
                 "The drake is friendly to you and your companions, and it obeys your commands. See its game statistics in the accompanying {@creature Drake Companion|Ishiir} stat block, which uses your {@variantrule Proficiency|Ishiir} bonus (PB) in several places. Whenever you summon the drake, choose a damage type listed in its Draconic Essence trait. You can determine the cosmetic characteristics of the drake, such as its color, its scale texture, or any visible effect of its Draconic Essence; your choice has no effect on its game statistics.",
-                "In combat, the drake shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the {@action Dodge|Ishiir} action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition Incapacitated|Ishiir}, the drake can take any action of its choice, not just {@action Dodge|Ishiir}.",
+                "In combat, the drake shares your initiative count, but it takes its turn immediately after yours. It can move and use its {@variantrule Reaction|Ishiir} on its own, but the only action it takes on its turn is the {@action Dodge|Ishiir} action, unless you take a {@variantrule Bonus Action|Ishiir} on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition Incapacitated|Ishiir}, the drake can take any action of its choice, not just {@action Dodge|Ishiir}.",
                 "The drake remains until it is reduced to 0 hit points, until you use this feature to summon the drake again, or until you die. Anything the drake was wearing or carrying is left behind when the drake vanishes.",
                 "Once you summon the drake, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a spell slot of 1st level or higher to summon it."
             ]
@@ -1985,7 +1985,7 @@
             "level": 11,
             "header": 2,
             "entries": [
-                "As a bonus action, you can exhale a 30-foot cone of damaging breath or cause your drake to exhale it. Choose acid, cold, fire, lightning, or poison damage (your choice doesn't have to match your drake's Draconic Essence). Each creature in the cone must make a Dexterity {@variantrule Saving Throw|Ishiir} against your spell save DC, taking {@damage 8d6} damage on a failed save, or half as much damage on a successful one.",
+                "As a {@variantrule Bonus Action|Ishiir}, you can exhale a 30-foot cone of damaging breath or cause your drake to exhale it. Choose acid, cold, fire, lightning, or poison damage (your choice doesn't have to match your drake's Draconic Essence). Each creature in the cone must make a Dexterity {@variantrule Saving Throw|Ishiir} against your spell save DC, taking {@damage 8d6} damage on a failed save, or half as much damage on a successful one.",
                 "This damage increases to {@dice 10d6} when you reach 15th level in this class.",
                 "Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a spell slot of 3rd level or higher to use it again."
             ]
@@ -2186,7 +2186,7 @@
             "header": 2,
             "entries": [
                 "The magic of the Feywild guards your mind. You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir}.",
-                "In addition, whenever you or a creature you can see within 120 feet of you succeeds on a {@variantrule Saving Throw|Ishiir} against being {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir}, you can use your reaction to force a different creature you can see within 120 feet of you to make a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC. If the save fails, the target is {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir} by you (your choice) for 1 minute. The target can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on itself on a successful save."
+                "In addition, whenever you or a creature you can see within 120 feet of you succeeds on a {@variantrule Saving Throw|Ishiir} against being {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to force a different creature you can see within 120 feet of you to make a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC. If the save fails, the target is {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir} by you (your choice) for 1 minute. The target can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on itself on a successful save."
             ]
         },
         {
@@ -2362,7 +2362,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "WWhen a creature makes an {@variantrule Attack Roll|Ishiir} against you, you can take a Reaction to impose {@variantrule Disadvantage|Ishiir} on that roll. Whether the attack hits or misses, you can then teleport up to 30 feet to an unoccupied space you can see."
+                "WWhen a creature makes an {@variantrule Attack Roll|Ishiir} against you, you can take a {@variantrule Reaction|Ishiir} to impose {@variantrule Disadvantage|Ishiir} on that roll. Whether the attack hits or misses, you can then teleport up to 30 feet to an unoccupied space you can see."
             ]
         },
         {
@@ -2402,7 +2402,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain the ability to magically sense the presence of a planar portal. As an action, you detect the distance and direction to the closest planar portal within 1 mile of you.",
+                "You gain the ability to magically sense the presence of a planar portal. As an {@variantrule Action|Ishiir}, you detect the distance and direction to the closest planar portal within 1 mile of you.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
                 "See the \"Planar Travel\" section in chapter 2 of the Dungeon Master's Guide for examples of planar portals."
             ]
@@ -2481,7 +2481,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "You learn to step through the Ethereal Plane. As a bonus action, you can cast the etherealness spell with this feature, without expending a spell slot, but the spell lasts only 1 minute. During that time, you can use a bonus action to switch from the Etheral Plane to back to the Plane you are currently on or vice versa.",
+                "You learn to step through the Ethereal Plane. As a {@variantrule Bonus Action|Ishiir}, you can cast the etherealness spell with this feature, without expending a spell slot, but the spell lasts only 1 minute. During that time, you can use a {@variantrule Bonus Action|Ishiir} to switch from the Etheral Plane to back to the Plane you are currently on or vice versa.",
                 "You use this feature a number of times equal to your Wisdom modifier and you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -2537,7 +2537,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "Your ability to move between planes enables you to slip through the planar boundaries to lessen the harm done to you during battle. When you take damage from an attack or an effect that requires you to make a Dexterity {@variantrule Saving Throw|Ishiir}, you can use your reaction to give yourself {@variantrule Resistance|Ishiir} to all of that attack's damage on this turn."
+                "Your ability to move between planes enables you to slip through the planar boundaries to lessen the harm done to you during battle. When you take damage from an attack or an effect that requires you to make a Dexterity {@variantrule Saving Throw|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to give yourself {@variantrule Resistance|Ishiir} to all of that attack's damage on this turn."
             ]
         },
         {
@@ -2679,7 +2679,7 @@
             "level": 3,
             "header": 2,
             "entries": [
-                "When a Large or larger creature within range of a melee weapon you have equipped, hits or misses you with an attack, you can use your reaction to attack that creature immediately with that melee weapon, provided that you can see the creature."
+                "When a Large or larger creature within range of a melee weapon you have equipped, hits or misses you with an attack, you can use your {@variantrule Reaction|Ishiir} to attack that creature immediately with that melee weapon, provided that you can see the creature."
             ]
         },
         {
@@ -2725,7 +2725,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "You can take the {@action Disengage|Ishiir} action as a bonus action."
+                "You can take the {@action Disengage|Ishiir} action as a {@variantrule Bonus Action|Ishiir}."
             ]
         },
         {
@@ -2823,7 +2823,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "When you take damage, you can take a Reaction to give yourself {@variantrule Resistance|Ishiir} to that damage and any other damage of the same type until the end of the current turn."
+                "When you take damage, you can take a {@variantrule Reaction|Ishiir} to give yourself {@variantrule Resistance|Ishiir} to that damage and any other damage of the same type until the end of the current turn."
             ]
         },
         {
@@ -2862,7 +2862,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has any damage immunities, {@variantrule Resistance|Ishiir}s, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, {@variantrule Resistance|Ishiir}s, or vulnerabilities."
+                "You gain the ability to peer at a creature and magically discern how best to hurt it. As an {@variantrule Action|Ishiir}, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has any damage immunities, {@variantrule Resistance|Ishiir}s, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, {@variantrule Resistance|Ishiir}s, or vulnerabilities."
             ]
         },
         {
@@ -2952,7 +2952,7 @@
             "level": 11,
             "header": 2,
             "entries": [
-                "You gain the ability to thwart someone else's magic. When you see a creature casting a spell or teleporting within 60 feet of you, you can use your reaction to try to magically foil it. The creature must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC, or its spell or teleport fails and is wasted. If the target is also the quarry of your Slayer's Prey, then you subtract a d6 from its {@variantrule Saving Throw|Ishiir}.",
+                "You gain the ability to thwart someone else's magic. When you see a creature casting a spell or teleporting within 60 feet of you, you can use your {@variantrule Reaction|Ishiir} to try to magically foil it. The creature must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC, or its spell or teleport fails and is wasted. If the target is also the quarry of your Slayer's Prey, then you subtract a d6 from its {@variantrule Saving Throw|Ishiir}.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, unless you spend a 3rd-level slot or higher to use it again."
             ]
         },
@@ -2967,7 +2967,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "You gain the ability to counterattack when your prey tries to sabotage you. If the target of your Slayer's Prey forces you to make a {@variantrule Saving Throw|Ishiir}, you can use your reaction to make one weapon attack against the quarry. You make this attack immediately before making the {@variantrule Saving Throw|Ishiir}. If your attack hits, your save automatically succeeds, in addition to the attack's normal effects."
+                "You gain the ability to counterattack when your prey tries to sabotage you. If the target of your Slayer's Prey forces you to make a {@variantrule Saving Throw|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to make one weapon attack against the quarry. You make this attack immediately before making the {@variantrule Saving Throw|Ishiir}. If your attack hits, your save automatically succeeds, in addition to the attack's normal effects."
             ]
         },
         {
@@ -3056,7 +3056,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain the ability to temporarily grow and take on the appearance of a treelike person, covered with leaves and bark. As a bonus action, you assume this guardian form, which lasts until you end it as a bonus action or until you are {@condition Incapacitated|Ishiir}.",
+                "You gain the ability to temporarily grow and take on the appearance of a treelike person, covered with leaves and bark. As a {@variantrule Bonus Action|Ishiir}, you assume this guardian form, which lasts until you end it as a {@variantrule Bonus Action|Ishiir} or until you are {@condition Incapacitated|Ishiir}.",
                 "You undergo the following changes while in your guardian form:",
                 {
                     "type": "list",
@@ -3270,7 +3270,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "You can condense part of your swarm into a focused mass that lifts you up. As a bonus action, you gain a {@variantrule Fly Speed|Ishiir} of 10 feet and can hover. This effect lasts for 1 minute or until you are {@condition Incapacitated|Ishiir}.",
+                "You can condense part of your swarm into a focused mass that lifts you up. As a {@variantrule Bonus Action|Ishiir}, you gain a {@variantrule Fly Speed|Ishiir} of 10 feet and can hover. This effect lasts for 1 minute or until you are {@condition Incapacitated|Ishiir}.",
                 "You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -3321,7 +3321,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "You can discorporate into your swarm, avoiding danger. When you take damage, you can use your reaction to give yourself {@variantrule Resistance|Ishiir} to that damage. You vanish into your swarm and then teleport to an unoccupied space that you can see within 30 feet of you, where you reappear with the swarm.",
+                "You can discorporate into your swarm, avoiding danger. When you take damage, you can use your {@variantrule Reaction|Ishiir} to give yourself {@variantrule Resistance|Ishiir} to that damage. You vanish into your swarm and then teleport to an unoccupied space that you can see within 30 feet of you, where you reappear with the swarm.",
                 "You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         }

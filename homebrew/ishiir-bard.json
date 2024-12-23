@@ -950,7 +950,7 @@
 						{
 							"type": "item",
 							"name": "Using Bardic Inspiration.",
-							"entry": "As a Bonus Action, you can inspire another creature within 60 feet of yourself who can see or hear you. That creature gains one of your Bardic Inspiration dice. A creature can have only one Bardic Inspiration die at a time. Once within the next hour when the creature fails a D20 Test, the creature can roll the Bardic Inspiration die and add the number rolled to the d20, potentially turning the failure into a success. A Bardic Inspiration die is expended when it's rolled."
+							"entry": "As a {@variantrule Bonus Action|Ishiir}, you can inspire another creature within 60 feet of yourself who can see or hear you. That creature gains one of your Bardic Inspiration dice. A creature can have only one Bardic Inspiration die at a time. Once within the next hour when the creature fails a D20 Test, the creature can roll the Bardic Inspiration die and add the number rolled to the d20, potentially turning the failure into a success. A Bardic Inspiration die is expended when it's rolled."
 						},
 						{
 							"type": "item",
@@ -1183,7 +1183,7 @@
             "classSource": "Ishiir",
             "level": 7,
             "entries": [
-                "You can use musical notes or words of power to disrupt mind-influencing effects. If you or a creature within 30 feet of you fails a {@variantrule Saving Throw|Ishiir} against an effect that applies the {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir} condition, you can take a Reaction to cause the save to be rerolled, and the new roll has {@variantrule Advantage|Ishiir}."
+                "You can use musical notes or words of power to disrupt mind-influencing effects. If you or a creature within 30 feet of you fails a {@variantrule Saving Throw|Ishiir} against an effect that applies the {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir} condition, you can take a {@variantrule Reaction|Ishiir} to cause the save to be rerolled, and the new roll has {@variantrule Advantage|Ishiir}."
             ]
         },
         {
@@ -1692,7 +1692,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "As an action, you can channel the magic of the Song of Creation to create one nonmagical item of your choice in an unoccupied space within 10 feet of you. The item must appear on a surface or in a liquid that can support it. The gp value of the item can't be more than 20 times your bard level, and the item must be Medium or smaller. The item glimmers softly, and a creature can faintly hear music when touching it. The created item disappears after a number of hours equal to your {@variantrule Proficiency|Ishiir} bonus. For examples of items you can create, see the equipment chapter of the {@book Player's Handbook|PHB|5}.",
+                "As an {@variantrule Action|Ishiir}, you can channel the magic of the Song of Creation to create one nonmagical item of your choice in an unoccupied space within 10 feet of you. The item must appear on a surface or in a liquid that can support it. The gp value of the item can't be more than 20 times your bard level, and the item must be Medium or smaller. The item glimmers softly, and a creature can faintly hear music when touching it. The created item disappears after a number of hours equal to your {@variantrule Proficiency|Ishiir} bonus. For examples of items you can create, see the equipment chapter of the {@book Player's Handbook|PHB|5}.",
                 "Once you create an item with this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a spell slot of 2nd level or higher to use this feature again. You can have only one item created by this feature at a time; if you use this action and already have an item from this feature, the first one immediately vanishes.",
                 "The size of the item you can create with this feature increases by one size category when you reach 6th level (Large) and 14th level (Huge)."
             ]
@@ -1708,9 +1708,9 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "As an action, you can animate one Large or smaller nonmagical item within 30 feet of you that isn't being worn or carried.. The animate item uses the {@creature Dancing Item|TCE} stat block, which uses your {@variantrule Proficiency|Ishiir} bonus (PB). The item is friendly to you and your companions and obeys your commands. It lives for 1 hour, until it is reduced to 0 hit points, or until you die.",
-                "In combat, the item shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the {@action Dodge|Ishiir} action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition Incapacitated|Ishiir}, the item can take any action of its choice, not just {@action Dodge|Ishiir}.",
-                "When you use your Bardic Inspiration feature, you can command the item as part of the same bonus action you use for Bardic Inspiration.",
+                "As an {@variantrule Action|Ishiir}, you can animate one Large or smaller nonmagical item within 30 feet of you that isn't being worn or carried.. The animate item uses the {@creature Dancing Item|TCE} stat block, which uses your {@variantrule Proficiency|Ishiir} bonus (PB). The item is friendly to you and your companions and obeys your commands. It lives for 1 hour, until it is reduced to 0 hit points, or until you die.",
+                "In combat, the item shares your initiative count, but it takes its turn immediately after yours. It can move and use its {@variantrule Reaction|Ishiir} on its own, but the only action it takes on its turn is the {@action Dodge|Ishiir} action, unless you take a {@variantrule Bonus Action|Ishiir} on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition Incapacitated|Ishiir}, the item can take any action of its choice, not just {@action Dodge|Ishiir}.",
+                "When you use your Bardic Inspiration feature, you can command the item as part of the same {@variantrule Bonus Action|Ishiir} you use for Bardic Inspiration.",
                 "Once you animate an item with this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a spell slot of 3rd level or higher to use this feature again. You can have only one item animated by this feature at a time; if you use this action and already have a {@creature dancing item|TCE} from this feature, the first one immediately becomes inanimate."
             ]
         },
@@ -1758,7 +1758,7 @@
                         {
                             "type": "item",
                             "name": "Agile Strikes.",
-                            "entry": "When you expend a use of your Bardic Inspiration as part of an action, a Bonus Action, or a Reaction, you can make one Unarmed Strike as part of that action, Bonus Action, or Reaction."
+                            "entry": "When you expend a use of your Bardic Inspiration as part of an {@variantrule Action|Ishiir}, a {@variantrule Bonus Action|Ishiir}, or a {@variantrule Reaction|Ishiir}, you can make one Unarmed Strike as part of that action, {@variantrule Bonus Action|Ishiir}, or {@variantrule Reaction|Ishiir}."
                         },
                         {
                             "type": "item",
@@ -1780,7 +1780,7 @@
             "level": 3,
             "header": 2,
             "entries": [
-                "When an enemy you can see ends its turn within 5 feet of you, you can take a Reaction and expend one use of your Bardic Inspiration to move up to half your {@variantrule Speed|Ishiir}.antrule Speed|Ishiir}. Then one ally of your choice within 30 feet of you can also {@variantrule Speed|Ishiir} p to half their {@variantrule Speed|Ishiir} using their Reaction.",
+                "When an enemy you can see ends its turn within 5 feet of you, you can take a {@variantrule Reaction|Ishiir} and expend one use of your Bardic Inspiration to move up to half your {@variantrule Speed|Ishiir}.antrule Speed|Ishiir}. Then one ally of your choice within 30 feet of you can also {@variantrule Speed|Ishiir} p to half their {@variantrule Speed|Ishiir} using their {@variantrule Reaction|Ishiir}.",
                 "None of this feature's movement provokes Opportunity Attacks."
             ]
         },
@@ -1887,7 +1887,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You can spin words laced with magic that unsettle a creature and cause it to doubt itself. As a bonus action, you can expend one use of your Bardic Inspiration and choose one creature you can see within 60 feet of you. Roll the Bardic Inspiration die. The creature must subtract the number rolled from the next {@variantrule Saving Throw|Ishiir} it makes before the start of your next turn."
+                "You can spin words laced with magic that unsettle a creature and cause it to doubt itself. As a {@variantrule Bonus Action|Ishiir}, you can expend one use of your Bardic Inspiration and choose one creature you can see within 60 feet of you. Roll the Bardic Inspiration die. The creature must subtract the number rolled from the next {@variantrule Saving Throw|Ishiir} it makes before the start of your next turn."
             ]
         },
         {
@@ -1915,7 +1915,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You have gained the ability to make your speech intelligible to any creature. As an action, choose one or more creatures within 60 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). The chosen creatures can magically understand you, regardless of the language you speak, for 1 hour.",
+                "You have gained the ability to make your speech intelligible to any creature. As an {@variantrule Action|Ishiir}, choose one or more creatures within 60 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). The chosen creatures can magically understand you, regardless of the language you speak, for 1 hour.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a spell slot to use it again."
             ]
         },
@@ -1930,8 +1930,8 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "When you successfully inspire someone, the power of your eloquence can now spread to someone else. When a creature within 60 feet of you adds one of your Bardic Inspiration dice to its {@variantrule Ability Check|Ishiir}, {@variantrule Attack Roll|Ishiir}, or {@variantrule Saving Throw|Ishiir} and the roll succeeds, you can use your reaction to encourage a different creature (other than yourself) that can hear you within 60 feet of you, giving it a Bardic Inspiration die without expending any of your Bardic Inspiration uses.",
-                "You can use this reaction a number of times equal to your Charisma modifier (minimum of once). You regain one use when you finish a {@variantrule Short Rest|Ishiir}, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                "When you successfully inspire someone, the power of your eloquence can now spread to someone else. When a creature within 60 feet of you adds one of your Bardic Inspiration dice to its {@variantrule Ability Check|Ishiir}, {@variantrule Attack Roll|Ishiir}, or {@variantrule Saving Throw|Ishiir} and the roll succeeds, you can use your {@variantrule Reaction|Ishiir} to encourage a different creature (other than yourself) that can hear you within 60 feet of you, giving it a Bardic Inspiration die without expending any of your Bardic Inspiration uses.",
+                "You can use this {@variantrule Reaction|Ishiir} a number of times equal to your Charisma modifier (minimum of once). You regain one use when you finish a {@variantrule Short Rest|Ishiir}, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1983,7 +1983,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You can weave fey magic into a song or dance to fill others with vigor. As a Bonus Action, you can expend a use of Bardic Inspiration, rolling a Bardic Inspiration die. When you do so, choose a number of other creatures within 60 feet of yourself, up to a number equal to your Charisma modifier (minimum of one creature). Each of those creatures gains a number of Temporary Hit Points equal to two times the number rolled on the Bardic Inspiration die, and then each can use its Reaction to move up to its {@variantrule Speed|Ishiir} antrule Speed|Ishiir} without provoking Opportunity Attacks."
+                "You can weave fey magic into a song or dance to fill others with vigor. As a {@variantrule Bonus Action|Ishiir}, you can expend a use of Bardic Inspiration, rolling a Bardic Inspiration die. When you do so, choose a number of other creatures within 60 feet of yourself, up to a number equal to your Charisma modifier (minimum of one creature). Each of those creatures gains a number of Temporary Hit Points equal to two times the number rolled on the Bardic Inspiration die, and then each can use its {@variantrule Reaction|Ishiir} to move up to its {@variantrule Speed|Ishiir} antrule Speed|Ishiir} without provoking Opportunity Attacks."
             ]
         },
         {
@@ -1998,7 +1998,7 @@
             "header": 2,
             "entries": [
                 "You always have the {@spell Command|Ishiir} spell prepared.",
-                "As a Bonus Action, you cast {@spell Command|Ishiir} without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your {@condition Concentration|Ishiir} ends. During this time, you can cast {@spell Command|Ishiir} as a Bonus Action without expending a spell slot.",
+                "As a {@variantrule Bonus Action|Ishiir}, you cast {@spell Command|Ishiir} without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your {@condition Concentration|Ishiir} ends. During this time, you can cast {@spell Command|Ishiir} as a {@variantrule Bonus Action|Ishiir} without expending a spell slot.",
                 "Any creature {@condition Charmed|Ishiir} by you automatically fails its {@variantrule Saving Throw|Ishiir} against the {@spell Command|Ishiir} you cast with this feature.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}. You can also restore your use of it by expending a level 3+ spell slot (no action required)."
             ]
@@ -2014,7 +2014,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "As a Bonus Action, you can assume a magically majestic presence for 1 minute or until you have the {@condition Incapacitated|Ishiir} condition. For the duration, whenever any creature hits you with an {@variantrule Attack Roll|Ishiir} for the first time on a turn, the attacker must succeed on a Charisma {@variantrule Saving Throw|Ishiir} against your spell save DC, or the attack misses instead, as the creature recoils from your majesty.",
+                "As a {@variantrule Bonus Action|Ishiir}, you can assume a magically majestic presence for 1 minute or until you have the {@condition Incapacitated|Ishiir} condition. For the duration, whenever any creature hits you with an {@variantrule Attack Roll|Ishiir} for the first time on a turn, the attacker must succeed on a Charisma {@variantrule Saving Throw|Ishiir} against your spell save DC, or the attack misses instead, as the creature recoils from your majesty.",
                 "Once you assume this majestic presence, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -2069,7 +2069,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You learn to use your wit to supernaturally distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of yourself makes a damage roll or succeeds on an {@variantrule Ability Check|Ishiir} or {@variantrule Attack Roll|Ishiir}, you can take a Reaction to expend one use of your Bardic Inspiration; roll your Bardic Inspiration die, and subtract the number rolled from the creature's roll, reducing the damage or potentially turning the success into a failure."
+                "You learn to use your wit to supernaturally distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of yourself makes a damage roll or succeeds on an {@variantrule Ability Check|Ishiir} or {@variantrule Attack Roll|Ishiir}, you can take a {@variantrule Reaction|Ishiir} to expend one use of your Bardic Inspiration; roll your Bardic Inspiration die, and subtract the number rolled from the creature's roll, reducing the damage or potentially turning the success into a failure."
             ]
         },
         {
@@ -2153,7 +2153,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You master a variety of acrobatic techniques that allow you to evade danger. As a bonus action, you can tumble. When you tumble, you gain the following benefits for the rest of your turn:",
+                "You master a variety of acrobatic techniques that allow you to evade danger. As a {@variantrule Bonus Action|Ishiir}, you can tumble. When you tumble, you gain the following benefits for the rest of your turn:",
                 {
                     "type": "list",
                     "items": [
@@ -2260,8 +2260,8 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You reach out to spirits who tell their tales through you. While you are holding your Spiritual Focus, you can use a bonus action to expend one use of your Bardic Inspiration and roll on the Spirit Tales table using your Bardic Inspiration die to determine the tale the spirits direct you to tell. You retain the tale in mind until you bestow the tale's effect or you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
-                "You can use an action to choose one creature you can see within 30 feet of you (this can be you) to be the target of the tale's effect. Once you do so, you can't bestow the tale's effect again until you roll it again.",
+                "You reach out to spirits who tell their tales through you. While you are holding your Spiritual Focus, you can use a {@variantrule Bonus Action|Ishiir} to expend one use of your Bardic Inspiration and roll on the Spirit Tales table using your Bardic Inspiration die to determine the tale the spirits direct you to tell. You retain the tale in mind until you bestow the tale's effect or you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
+                "You can use an {@variantrule Action|Ishiir} to choose one creature you can see within 30 feet of you (this can be you) to be the target of the tale's effect. Once you do so, you can't bestow the tale's effect again until you roll it again.",
                 "You can retain only one of these tales in mind at a time, and rolling on the Spirit Tales table immediately ends the effect of the previous tale.",
                 "If the tale requires a {@variantrule Saving Throw|Ishiir}, the DC equals your spell save DC.",
                 {
@@ -2290,7 +2290,7 @@
                         ],
                         [
                             "4",
-                            "Tale of the Runaway. The target can immediately use its reaction to teleport up to 30 feet to an unoccupied space it can see. When the target teleports, it can choose a number of creatures it can see within 30 feet of it up to your Charisma modifier (minimum of 0) to immediately use the same reaction."
+                            "Tale of the Runaway. The target can immediately use its {@variantrule Reaction|Ishiir} to teleport up to 30 feet to an unoccupied space it can see. When the target teleports, it can choose a number of creatures it can see within 30 feet of it up to your Charisma modifier (minimum of 0) to immediately use the same {@variantrule Reaction|Ishiir}."
                         ],
                         [
                             "5",
@@ -2533,7 +2533,7 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You can use your reaction to move up to your {@variantrule Speed|Ishiir} antrule Speed|Ishiir} to an unoccupied square without provoking opportunity attacks."
+                "You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You can use your {@variantrule Reaction|Ishiir} to move up to your {@variantrule Speed|Ishiir} antrule Speed|Ishiir} to an unoccupied square without provoking opportunity attacks."
             ]
         },
         {
@@ -2636,7 +2636,7 @@
 						{
 							"type": "item",
 							"name": "Defence.",
-							"entry": "When the creature is hit by an {@variantrule Attack Roll|Ishiir}, that creature can use its Reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, potentially causing the attack to miss."
+							"entry": "When the creature is hit by an {@variantrule Attack Roll|Ishiir}, that creature can use its {@variantrule Reaction|Ishiir} to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, potentially causing the attack to miss."
 						},
 						{
 							"type": "item",
@@ -2686,7 +2686,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "You have mastered the art of weaving spellcasting and weapon use into a single harmonious act. When you use your action to cast a bard spell, you can make one weapon attack as a bonus action."
+                "You have mastered the art of weaving spellcasting and weapon use into a single harmonious act. When you use your action to cast a bard spell, you can make one weapon attack as a {@variantrule Bonus Action|Ishiir}."
             ]
         },
         {
@@ -2755,8 +2755,8 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You gain the ability to adopt a humanoid's persona. When a humanoid dies within 30 feet of you, you can magically capture its shadow using your reaction. You retain this shadow until you use it or you finish a {@variantrule Long Rest|Ishiir}.",
-                "You can use the shadow as an action. When you do so, it vanishes, magically transforming into a disguise that appears on you. You now look like the dead person, but healthy and alive. This disguise lasts for 1 hour or until you end it as a bonus action.",
+                "You gain the ability to adopt a humanoid's persona. When a humanoid dies within 30 feet of you, you can magically capture its shadow using your {@variantrule Reaction|Ishiir}. You retain this shadow until you use it or you finish a {@variantrule Long Rest|Ishiir}.",
+                "You can use the shadow as an {@variantrule Action|Ishiir}. When you do so, it vanishes, magically transforming into a disguise that appears on you. You now look like the dead person, but healthy and alive. This disguise lasts for 1 hour or until you end it as a {@variantrule Bonus Action|Ishiir}.",
                 "While you're in the disguise, you gain access to all information that the humanoid would freely share with a casual acquaintance. Such information includes general details on its background and personal life, but doesn't include secrets. The information is enough that you can pass yourself off as the person by drawing on its memories.",
                 "Another creature can see through this disguise by succeeding on a Wisdom ({@skill Insight}) check contested by your Charisma ({@skill Deception}) check. You gain a +5 bonus to your check.",
                 "Once you capture a shadow with this feature, you can't capture another one with it until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
@@ -2774,7 +2774,7 @@
             "header": 2,
             "entries": [
                 "You gain the ability to weave dark magic into your words and tap into a creature's deepest fears.",
-                "As an action, you magically whisper a phrase that only one creature of your choice within 30 feet of you can hear. The target must make a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC. It automatically succeeds if it doesn't share a language with you or if it can't hear you. On a successful {@variantrule Saving Throw|Ishiir}, your whisper sounds like unintelligible mumbling and has no effect.",
+                "As an {@variantrule Action|Ishiir}, you magically whisper a phrase that only one creature of your choice within 30 feet of you can hear. The target must make a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC. It automatically succeeds if it doesn't share a language with you or if it can't hear you. On a successful {@variantrule Saving Throw|Ishiir}, your whisper sounds like unintelligible mumbling and has no effect.",
                 "On a failed {@variantrule Saving Throw|Ishiir}, the target is {@condition Charmed|Ishiir} by you for the next 8 hours or until you or your allies attack it, damage it, or force it to make a {@variantrule Saving Throw|Ishiir}. It interprets the whispers as a description of its most mortifying secret. You gain no knowledge of this secret, but the target is convinced you know it.",
                 "The {@condition Charmed|Ishiir} creature obeys your commands for fear that you will reveal its secret. It won't risk its life for you or fight for you, unless it was already inclined to do so. It grants you favors and gifts it would offer to a close friend.",
                 "When the effect ends, the creature has no understanding of why it held you in such fear.",

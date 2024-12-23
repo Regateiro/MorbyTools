@@ -69,7 +69,7 @@
                     "type": "list",
                     "items": [
                         "When the wearer makes a Strength check or a Strength {@variantrule Saving Throw|Ishiir}, it can expend 1 charge to add a bonus to the roll equal to its Intelligence modifier.",
-                        "If the creature would be knocked {@condition Prone|Ishiir}, it can use its reaction to expend 1 charge to avoid being knocked prone."
+                        "If the creature would be knocked {@condition Prone|Ishiir}, it can use its {@variantrule Reaction|Ishiir} to expend 1 charge to avoid being knocked prone."
                     ]
                 },
                 "The armor regains {@dice 1d6} expended charges daily at dawn."
@@ -102,7 +102,7 @@
                 }
             ],
             "entries": [
-                "While wearing these boots, a creature can teleport up to 15 feet as a bonus action to an unoccupied space the creature can see. The creature must have occupied that space at some point during the current turn."
+                "While wearing these boots, a creature can teleport up to 15 feet as a {@variantrule Bonus Action|Ishiir} to an unoccupied space the creature can see. The creature must have occupied that space at some point during the current turn."
             ]
         },
         {
@@ -228,7 +228,7 @@
                 "You learn intricate methods for magically creating a special {@creature Homunculus Servant|TCE|homunculus} that serves you. The item you infuse serves as the creature's heart, around which the creature's body instantly forms.",
                 "You determine the homunculus's appearance. Some artificers prefer mechanical-looking birds, whereas some like winged vials or miniature, animate cauldrons.",
                 "The homunculus is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the Homunculus Servant stat block, which uses your {@variantrule Proficiency|Ishiir} bonus (PB) in several places.",
-                "In combat, the homunculus shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the {@action Dodge|Ishiir} action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition Incapacitated|Ishiir}, the homunculus can take any action of its choice, not just {@action Dodge|Ishiir}.",
+                "In combat, the homunculus shares your initiative count, but it takes its turn immediately after yours. It can move and use its {@variantrule Reaction|Ishiir} on its own, but the only action it takes on its turn is the {@action Dodge|Ishiir} action, unless you take a {@variantrule Bonus Action|Ishiir} on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition Incapacitated|Ishiir}, the homunculus can take any action of its choice, not just {@action Dodge|Ishiir}.",
                 "The homunculus regains {@dice 2d6} hit points if the {@spell mending|Ishiir} spell is cast on it. If you or the homunculus dies, it vanishes, leaving its heart in its space."
             ]
         },
@@ -247,7 +247,7 @@
                 }
             ],
             "entries": [
-                "The infused item can send a jolt to the wearer to refocus their mind. The item has 4 charges. When the wearer fails a Constitution {@variantrule Saving Throw|Ishiir} to maintain {@condition Concentration|Ishiir} on a spell, the wearer can use its reaction to expend 1 of the item's charges to succeed instead. The item regains {@dice 1d4} expended charges daily at dawn."
+                "The infused item can send a jolt to the wearer to refocus their mind. The item has 4 charges. When the wearer fails a Constitution {@variantrule Saving Throw|Ishiir} to maintain {@condition Concentration|Ishiir} on a spell, the wearer can use its {@variantrule Reaction|Ishiir} to expend 1 of the item's charges to succeed instead. The item regains {@dice 1d4} expended charges daily at dawn."
             ]
         },
         {
@@ -277,8 +277,8 @@
                 }
             ],
             "entries": [
-                "This magic weapon grants a +1 bonus to attack and damage rolls made with it. While holding it, the wielder can take a bonus action to cause it to shed bright light in a 30-foot radius and dim light for an additional 30 feet. The wielder can extinguish the light as a bonus action.",
-                "The weapon has 4 charges. As a reaction immediately after being hit by an attack, the wielder can expend 1 charge and cause the attacker to be {@condition Blinded|Ishiir} until the end of the attacker's next turn, unless the attacker succeeds on a Constitution {@variantrule Saving Throw|Ishiir} against your spell save DC. The weapon regains {@dice 1d4} expended charges daily at dawn."
+                "This magic weapon grants a +1 bonus to attack and damage rolls made with it. While holding it, the wielder can take a {@variantrule Bonus Action|Ishiir} to cause it to shed bright light in a 30-foot radius and dim light for an additional 30 feet. The wielder can extinguish the light as a {@variantrule Bonus Action|Ishiir}.",
+                "The weapon has 4 charges. As a {@variantrule Reaction|Ishiir} immediately after being hit by an attack, the wielder can expend 1 charge and cause the attacker to be {@condition Blinded|Ishiir} until the end of the attacker's next turn, unless the attacker succeeds on a Constitution {@variantrule Saving Throw|Ishiir} against your spell save DC. The weapon regains {@dice 1d4} expended charges daily at dawn."
             ]
         },
         {
@@ -612,7 +612,7 @@
             ],
             "entries": [
                 "A creature gains a +1 bonus to Armor Class while wielding this shield.",
-                "The shield has 4 charges. While holding it, the wielder can use a reaction immediately after being hit by a melee attack to expend 1 of the shield's charges and push the attacker up to 15 feet away. The shield regains {@dice 1d4} expended charges daily at dawn."
+                "The shield has 4 charges. While holding it, the wielder can use a {@variantrule Reaction|Ishiir} immediately after being hit by a melee attack to expend 1 of the shield's charges and push the attacker up to 15 feet away. The shield regains {@dice 1d4} expended charges daily at dawn."
             ]
         },
         {
@@ -690,7 +690,7 @@
                 }
             ],
             "entries": [
-                "While wearing this ring, the creature can recover one expended spell slot as an action. The recovered slot can be of 3rd level or lower. Once used, the ring can't be used again until the next dawn."
+                "While wearing this ring, the creature can recover one expended spell slot as an {@variantrule Action|Ishiir}. The recovered slot can be of 3rd level or lower. Once used, the ring can't be used again until the next dawn."
             ]
         },
         {
@@ -865,7 +865,7 @@
                 "BC"
             ],
             "entries": [
-                "As a bonus action, you attempt to bind a Large or smaller creature you can see within 30 feet of you, which must make a Strength {@variantrule Saving Throw|Ishiir}. On a failure, the cursed creature's {@variantrule Speed|Ishiir} is reduced to 0 and it can't use reactions until the end of your next turn.",
+                "As a {@variantrule Bonus Action|Ishiir}, you attempt to bind a Large or smaller creature you can see within 30 feet of you, which must make a Strength {@variantrule Saving Throw|Ishiir}. On a failure, the cursed creature's {@variantrule Speed|Ishiir} is reduced to 0 and it can't use {@variantrule Reaction|Ishiir|Reactions} until the end of your next turn.",
                 {
                     "name": "Amplify",
                     "type": "item",
@@ -883,7 +883,7 @@
                 "BC"
             ],
             "entries": [
-                "As a bonus action, you curse a creature that you can see within 30 feet of you, causing its body to swell until the end of your next turn. For the duration, the creature has {@variantrule Disadvantage|Ishiir} on Strength checks and Dexterity checks, and takes {@damage 1d8} necrotic damage each time it makes an attack.",
+                "As a {@variantrule Bonus Action|Ishiir}, you curse a creature that you can see within 30 feet of you, causing its body to swell until the end of your next turn. For the duration, the creature has {@variantrule Disadvantage|Ishiir} on Strength checks and Dexterity checks, and takes {@damage 1d8} necrotic damage each time it makes an attack.",
                 {
                     "name": "Amplify",
                     "type": "item",
@@ -919,7 +919,7 @@
                 }
             ],
             "entries": [
-                "As a bonus action, you deal acid damage equal to 2 x {@variantrule Proficiency|Ishiir} to a creature you can see within 30 feet of you and reduce its AC by 2 until the start of your next turn. The target then has to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, the target takes this damage again and has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s and {@variantrule Ability Check|Ishiir}s and the AC reduction lasts until the end of its next turn. The cursed creature can make a Constitution {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the curse on itself on a success.",
+                "As a {@variantrule Bonus Action|Ishiir}, you deal acid damage equal to 2 x {@variantrule Proficiency|Ishiir} to a creature you can see within 30 feet of you and reduce its AC by 2 until the start of your next turn. The target then has to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, the target takes this damage again and has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s and {@variantrule Ability Check|Ishiir}s and the AC reduction lasts until the end of its next turn. The cursed creature can make a Constitution {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the curse on itself on a success.",
                 {
                     "name": "Amplify",
                     "type": "item",
@@ -937,7 +937,7 @@
                 "BC"
             ],
             "entries": [
-                "When a creature you can see within 30 feet of you takes damage, you can use your reaction to temporarily weaken its resilience. Until the end of the target's next turn, it loses {@variantrule Resistance|Ishiir} to all the damage types dealt by the triggering effect (including for that triggering effect).",
+                "When a creature you can see within 30 feet of you takes damage, you can use your {@variantrule Reaction|Ishiir} to temporarily weaken its resilience. Until the end of the target's next turn, it loses {@variantrule Resistance|Ishiir} to all the damage types dealt by the triggering effect (including for that triggering effect).",
                 {
                     "name": "Amplify",
                     "type": "item",
@@ -955,7 +955,7 @@
                 "BC"
             ],
             "entries": [
-                "As a bonus action, you harry the body or mind of a creature you can see within 30 feet of you, making them susceptible to mental influence. Until the end of your next turn, Charisma ({@skill Intimidation}) checks made against the cursed creature have {@variantrule Advantage|Ishiir} and whenever the target takes psychic damage, it takes additional damage of the same type equal to a roll of your hemocraft die.",
+                "As a {@variantrule Bonus Action|Ishiir}, you harry the body or mind of a creature you can see within 30 feet of you, making them susceptible to mental influence. Until the end of your next turn, Charisma ({@skill Intimidation}) checks made against the cursed creature have {@variantrule Advantage|Ishiir} and whenever the target takes psychic damage, it takes additional damage of the same type equal to a roll of your hemocraft die.",
                 {
                     "name": "Amplify",
                     "type": "item",
@@ -973,7 +973,7 @@
                 "BC"
             ],
             "entries": [
-                "As a reaction, when a creature you can see within 30 feet of you makes a weapon attack, you can cause that attack to have {@variantrule Disadvantage|Ishiir}. If the attack still hits, the target creature takes half damage from it. This curse has no effect on creatures that do not rely on sight or are otherwise {@variantrule Immunity|Ishiir|Immune} to the {@condition Blinded|Ishiir} condition.",
+                "As a {@variantrule Reaction|Ishiir}, when a creature you can see within 30 feet of you makes a weapon attack, you can cause that attack to have {@variantrule Disadvantage|Ishiir}. If the attack still hits, the target creature takes half damage from it. This curse has no effect on creatures that do not rely on sight or are otherwise {@variantrule Immunity|Ishiir|Immune} to the {@condition Blinded|Ishiir} condition.",
                 {
                     "name": "Amplify",
                     "type": "item",
@@ -1009,7 +1009,7 @@
                 }
             ],
             "entries": [
-                "As a bonus action, you choose one creature you can see within 30 feet of you that is {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir}, or which is under a possession effect. The target creature is no longer {@condition Charmed|Ishiir}, {@condition Frightened|Ishiir}, or possessed.",
+                "As a {@variantrule Bonus Action|Ishiir}, you choose one creature you can see within 30 feet of you that is {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir}, or which is under a possession effect. The target creature is no longer {@condition Charmed|Ishiir}, {@condition Frightened|Ishiir}, or possessed.",
                 {
                     "name": "Amplify",
                     "type": "item",
@@ -1027,7 +1027,7 @@
                 "BC"
             ],
             "entries": [
-                "When a creature you can see within 30 feet of you drops to 0 hit points, you can use your reaction to instill that creature with a final act of aggression. The creature immediately makes one weapon attack against a target of your choice within its range.",
+                "When a creature you can see within 30 feet of you drops to 0 hit points, you can use your {@variantrule Reaction|Ishiir} to instill that creature with a final act of aggression. The creature immediately makes one weapon attack against a target of your choice within its range.",
                 {
                     "name": "Amplify",
                     "type": "item",
@@ -1063,7 +1063,7 @@
                 }
             ],
             "entries": [
-                "As a bonus action, you unleash a bloodcurdling howl. Each creature within 30 feet of you that can hear you must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or have {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s and {@variantrule Ability Check|Ishiir}s until the end of your next turn. You can choose any number of creatures you can see to be unaffected by the howl.",
+                "As a {@variantrule Bonus Action|Ishiir}, you unleash a bloodcurdling howl. Each creature within 30 feet of you that can hear you must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or have {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir}s and {@variantrule Ability Check|Ishiir}s until the end of your next turn. You can choose any number of creatures you can see to be unaffected by the howl.",
                 {
                     "name": "Amplify",
                     "type": "item",
@@ -1081,7 +1081,7 @@
                 "BC"
             ],
             "entries": [
-                "As a bonus action, you weaken the health of a creature within 30 feet of you. Until the start of your next turn, whenever the target takes poison or necrotic damage, it takes additional damage of the same type equal to a roll of your hemocraft die.",
+                "As a {@variantrule Bonus Action|Ishiir}, you weaken the health of a creature within 30 feet of you. Until the start of your next turn, whenever the target takes poison or necrotic damage, it takes additional damage of the same type equal to a roll of your hemocraft die.",
                 {
                     "name": "Amplify",
                     "type": "item",
@@ -1099,7 +1099,7 @@
                 "BC"
             ],
             "entries": [
-                "As a bonus action, you mark a creature that you can see within 30 feet of you. Until the end of your turn, whenever you hit the cursed creature with a weapon for which you have an active crimson rite, you roll an additional hemocraft die when determining the extra damage from the rite.",
+                "As a {@variantrule Bonus Action|Ishiir}, you mark a creature that you can see within 30 feet of you. Until the end of your turn, whenever you hit the cursed creature with a weapon for which you have an active crimson rite, you roll an additional hemocraft die when determining the extra damage from the rite.",
                 {
                     "name": "Amplify",
                     "type": "item",
@@ -1153,7 +1153,7 @@
                 }
             ],
             "entries": [
-                "When a creature that isn't a construct or undead is reduced to 0 hit points within 30 feet of you, you can use your reaction to offer their life energy to your patron in exchange for power. Until the end of your next turn, you make attacks with {@variantrule Advantage|Ishiir} and you have {@variantrule Resistance|Ishiir} to all damage.",
+                "When a creature that isn't a construct or undead is reduced to 0 hit points within 30 feet of you, you can use your {@variantrule Reaction|Ishiir} to offer their life energy to your patron in exchange for power. Until the end of your next turn, you make attacks with {@variantrule Advantage|Ishiir} and you have {@variantrule Resistance|Ishiir} to all damage.",
                 {
                     "name": "Amplify",
                     "type": "item",
@@ -1605,7 +1605,7 @@
                 "ED"
             ],
             "entries": [
-                "As an action, you can spend 1 ki point to choose an area of ice or water no larger than 30 feet on a side within 120 feet of you. You can change water to ice within the area and vice versa, and you can reshape ice in the area in any manner you choose. You can raise or lower the ice's elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can't exceed half the area's largest dimension. For example, if you affect a 30-foot square, you can create a pillar up to 15 feet high. raise or lower the square's elevation by up to 15 feet, dig a trench up to 15 feet deep, and so on. You can't shape the ice to trap or injure a creature in the area."
+                "As an {@variantrule Action|Ishiir}, you can spend 1 ki point to choose an area of ice or water no larger than 30 feet on a side within 120 feet of you. You can change water to ice within the area and vice versa, and you can reshape ice in the area in any manner you choose. You can raise or lower the ice's elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can't exceed half the area's largest dimension. For example, if you affect a 30-foot square, you can create a pillar up to 15 feet high. raise or lower the square's elevation by up to 15 feet, dig a trench up to 15 feet deep, and so on. You can't shape the ice to trap or injure a creature in the area."
             ]
         },
         {
@@ -1642,7 +1642,7 @@
                 "ED"
             ],
             "entries": [
-                "You can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 2 ki points and choose a creature within 30 feet of you. That creature must make a Strength {@variantrule Saving Throw|Ishiir}. On a failed save, the creature takes {@damage 3d10} bludgeoning damage, plus an extra {@damage 1d10} bludgeoning damage for each additional ki point you spend, and you can push the creature up to 20 feet away from you and knock it {@condition Prone|Ishiir}. On a successful save, the creature takes half as much damage, and you don't push it or knock it {@condition Prone|Ishiir}."
+                "You can create a blast of compressed air that strikes like a mighty fist. As an {@variantrule Action|Ishiir}, you can spend 2 ki points and choose a creature within 30 feet of you. That creature must make a Strength {@variantrule Saving Throw|Ishiir}. On a failed save, the creature takes {@damage 3d10} bludgeoning damage, plus an extra {@damage 1d10} bludgeoning damage for each additional ki point you spend, and you can push the creature up to 20 feet away from you and knock it {@condition Prone|Ishiir}. On a successful save, the creature takes half as much damage, and you don't push it or knock it {@condition Prone|Ishiir}."
             ]
         },
         {
@@ -1653,7 +1653,7 @@
                 "ED"
             ],
             "entries": [
-                "You can spend 2 ki points as an action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed save, the creature takes {@damage 3d10} bludgeoning damage, plus an extra {@damage 1d10} bludgeoning damage for each additional ki point you spend, and you can either knock it {@condition Prone|Ishiir} or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don't pull it or knock it {@condition Prone|Ishiir}."
+                "You can spend 2 ki points as an {@variantrule Action|Ishiir} to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed save, the creature takes {@damage 3d10} bludgeoning damage, plus an extra {@damage 1d10} bludgeoning damage for each additional ki point you spend, and you can either knock it {@condition Prone|Ishiir} or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don't pull it or knock it {@condition Prone|Ishiir}."
             ]
         },
         {
@@ -1727,7 +1727,7 @@
             "entries": [
                 "Your Eidolon learns to exhale destructive energy. Choose one of the following damage types: acid, cold, fire, lightning, necrotic, poison, radiant, or thunder.",
                 "Additionally, choose the area shape that the Breath Weapon affects: 15 + 5 x {@variantrule Proficiency|Ishiir} feet cone or 30 + 10 x {@variantrule Proficiency|Ishiir} feet long, 5 feet wide line.",
-                "Your Eidolon can activate its Breath Weapon as an action. Each creature in the area of effect has to make a DEX {@variantrule Saving Throw|Ishiir} against your spell save DC, taking {@damage 4d6} + {@damage 1d6} x {@variantrule Proficiency|Ishiir} of the chosen damage type on a failure and half as much on a success.",
+                "Your Eidolon can activate its Breath Weapon as an {@variantrule Action|Ishiir}. Each creature in the area of effect has to make a DEX {@variantrule Saving Throw|Ishiir} against your spell save DC, taking {@damage 4d6} + {@damage 1d6} x {@variantrule Proficiency|Ishiir} of the chosen damage type on a failure and half as much on a success.",
                 "Once it has used its breath weapon it cannot do so again until you finish a {@variantrule Short Rest|Ishiir} or you spend a spell slot of 3rd level or higher."
             ]
         },
@@ -1750,7 +1750,7 @@
             ],
             "entries": [
                 "Increase your Eidolon's Dexterity or Constitution by 1, up to a maximum of 20.",
-                "Your Eidolon can use its bonus action to become {@condition Invisible|Ishiir}. The invisibility ends if your Eidolon performs a hostile action."
+                "Your Eidolon can use its {@variantrule Bonus Action|Ishiir} to become {@condition Invisible|Ishiir}. The invisibility ends if your Eidolon performs a hostile action."
             ]
         },
         {
@@ -2111,7 +2111,7 @@
                 }
             ],
             "entries": [
-                "As an action, your Eidolon can gaze at a creature within 60 feet of it, causing it to gradually turn to stone. The target creature has to make a CON {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failed save, it is {@condition Restrained|Ishiir} as its flesh begins to harden. On a successful save, the creature isn't affected.",
+                "As an {@variantrule Action|Ishiir}, your Eidolon can gaze at a creature within 60 feet of it, causing it to gradually turn to stone. The target creature has to make a CON {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failed save, it is {@condition Restrained|Ishiir} as its flesh begins to harden. On a successful save, the creature isn't affected.",
                 "A creature restrained by this ability must make another Constitution {@variantrule Saving Throw|Ishiir} at the end of each of its turns. If it successfully saves against this ability three times, the effect ends. If it fails its saves three times, it is turned to stone and subjected to the {@condition Petrified|Ishiir} condition for the duration. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.",
                 "If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state.",
                 "Once it has used its petrifying gaze it cannot do so again until you finish a {@variantrule Short Rest|Ishiir} or you spend a spell slot of 5th level or higher."
@@ -2182,7 +2182,7 @@
             ],
             "entries": [
                 "Your Eidolon gains {@variantrule Proficiency|Ishiir} in the {@skill Stealth} skill. If it is already proficient in the skill, it adds double your {@variantrule Proficiency|Ishiir} bonus to checks it makes with it.",
-                "While in dim light or darkness, your Eidolon can take the {@action Hide|Ishiir} action as a bonus action."
+                "While in dim light or darkness, your Eidolon can take the {@action Hide|Ishiir} action as a {@variantrule Bonus Action|Ishiir}."
             ]
         },
         {
@@ -2621,7 +2621,7 @@
                 }
             ],
             "entries": [
-                "When you command your familiar to attack as a bonus action, it makes one additional attack. Additionally, you add your Charisma modifier to your familiar's damage rolls."
+                "When you command your familiar to attack as a {@variantrule Bonus Action|Ishiir}, it makes one additional attack. Additionally, you add your Charisma modifier to your familiar's damage rolls."
             ]
         },
         {
@@ -2706,7 +2706,7 @@
                 }
             ],
             "entries": [
-                "The reach of your pact weapon increases by 5 ft. Once per turn, when you hit a creature with your pact weapon, you can force it to make an Intelligence {@variantrule Saving Throw|Ishiir}. The DC equals 8 + {@variantrule Proficiency|Ishiir} + your spellcasting ability + the weapon's enhancement bonus. On a failed save, the target's {@variantrule Speed|Ishiir} is reduced to 0 and it cannot take reactions until the start of your next turn."
+                "The reach of your pact weapon increases by 5 ft. Once per turn, when you hit a creature with your pact weapon, you can force it to make an Intelligence {@variantrule Saving Throw|Ishiir}. The DC equals 8 + {@variantrule Proficiency|Ishiir} + your spellcasting ability + the weapon's enhancement bonus. On a failed save, the target's {@variantrule Speed|Ishiir} is reduced to 0 and it cannot take {@variantrule Reaction|Ishiir|Reactions} until the start of your next turn."
             ]
         },
         {
@@ -2727,7 +2727,7 @@
                 }
             ],
             "entries": [
-                "As a bonus action, you can surround yourself with a magical aura that looks like buzzing flies. The aura extends 5 feet from you in every direction, but not through total cover. It lasts until you're {@condition Incapacitated|Ishiir} or you dismiss it as a bonus action.",
+                "As a {@variantrule Bonus Action|Ishiir}, you can surround yourself with a magical aura that looks like buzzing flies. The aura extends 5 feet from you in every direction, but not through total cover. It lasts until you're {@condition Incapacitated|Ishiir} or you dismiss it as a {@variantrule Bonus Action|Ishiir}.",
                 "The aura grants you {@variantrule Advantage|Ishiir} on Charisma ({@skill Intimidation}) checks but {@variantrule Disadvantage|Ishiir} on all other Charisma checks. Any other creature that starts or enters for the first time on its turn in the aura takes poison damage equal to your Charisma modifier (minimum of 0 damage).",
                 "Once you use this invocation, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
@@ -2775,7 +2775,7 @@
             ],
             "entries": [
                 "Your familiar takes on draconic features and changes its creature type to dragon if it wasn't already one. It has {@variantrule Resistance|Ishiir} against the damage type associated with your draconic patron. Additionally, its size increases to Medium.",
-                "As an action, your familiar can exhale destructive energy in a 30 ft cone. Each creature in the area has to make a DEX {@variantrule Saving Throw|Ishiir} against your Spell Save DC. A target takes damage of the type associated with your patron equal to {@dice 2d6} + an additional {@dice 1d6} x your {@variantrule Proficiency|Ishiir} on a failed saved and half as much on a successful one.",
+                "As an {@variantrule Action|Ishiir}, your familiar can exhale destructive energy in a 30 ft cone. Each creature in the area has to make a DEX {@variantrule Saving Throw|Ishiir} against your Spell Save DC. A target takes damage of the type associated with your patron equal to {@dice 2d6} + an additional {@dice 1d6} x your {@variantrule Proficiency|Ishiir} on a failed saved and half as much on a successful one.",
                 "Your familiar cannot use this action again until you have finished a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -2883,7 +2883,7 @@
                 }
             ],
             "entries": [
-                "As an action, you can touch a suit of armor that isn't being worn or carried by anyone and instantly don it, provided you aren't wearing armor already. You are proficient with this suit of armor until it's removed.",
+                "As an {@variantrule Action|Ishiir}, you can touch a suit of armor that isn't being worn or carried by anyone and instantly don it, provided you aren't wearing armor already. You are proficient with this suit of armor until it's removed.",
                 "You also gain the benefits of the {@variantrule Armor Mastery|Ishiir} for this armor, as per the {@classFeature Martial Mastery|Barbarian|Ishiir|4|Ishiir} class feature."
             ]
         },
@@ -2999,7 +2999,7 @@
             "entries": [
                 "A new page appears in your Book of Shadows. With your permission, a creature can use its action to write its name on that page, which can contain a number of names equal to your {@variantrule Proficiency|Ishiir} bonus.",
                 "You can cast the {@spell sending|Ishiir} spell, targeting a creature whose name is on the page, without using a spell slot and without using material components. To do so, you must write the message on the page. The target hears the message in their mind, and if the target replies, their message appears on the page, rather than in your mind. The writing disappears after 1 minute.",
-                "As an action, you can magically erase a name on the page by touching it."
+                "As an {@variantrule Action|Ishiir}, you can magically erase a name on the page by touching it."
             ]
         },
         {
@@ -3051,7 +3051,7 @@
                 }
             ],
             "entries": [
-                "As an action, you gain the ability to see through solid objects to a range of 30 feet. Within that range, you have {@sense darkvision} if you don't already have it. This special sight lasts for 1 minute or until your {@condition Concentration|Ishiir} ends (as if you were concentrating on a spell). During that time, you perceive objects as ghostly, transparent images.",
+                "As an {@variantrule Action|Ishiir}, you gain the ability to see through solid objects to a range of 30 feet. Within that range, you have {@sense darkvision} if you don't already have it. This special sight lasts for 1 minute or until your {@condition Concentration|Ishiir} ends (as if you were concentrating on a spell). During that time, you perceive objects as ghostly, transparent images.",
                 "Once you use this invocation, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -3127,7 +3127,7 @@
             "entries": [
                 "A new page appears in your Book of Shadows. With your permission, a creature can use its action to write its name on that page, which can contain a number of names equal to your {@variantrule Proficiency|Ishiir} bonus.",
                 "When any creature whose name is on the page is reduced to 0 hit points but not killed outright, the creature magically drops to 1 hit point instead. Once this magic is triggered, no creature can benefit from it until you finish a {@variantrule Long Rest|Ishiir}.",
-                "As an action, you can magically erase a name on the page by touching it."
+                "As an {@variantrule Action|Ishiir}, you can magically erase a name on the page by touching it."
             ]
         },
         {
@@ -3207,7 +3207,7 @@
                         "The familiar gains either a {@variantrule Fly Speed|Ishiir} or a {@variantrule Swim Speed|Ishiir} (your choice) of 40 feet.",
                         "The familiar's weapon attacks are considered magical for the purpose of overcoming {@variantrule Immunity|Ishiir} and {@variantrule Resistance|Ishiir} to nonmagical attacks.",
                         "If the familiar forces a creature to make a {@variantrule Saving Throw|Ishiir}, it uses your spell save DC.",
-                        "When the familiar takes damage, you can use your reaction to grant it {@variantrule Resistance|Ishiir} against that damage.",
+                        "When the familiar takes damage, you can use your {@variantrule Reaction|Ishiir} to grant it {@variantrule Resistance|Ishiir} against that damage.",
                         "You can replace your familiar's {@variantrule Attack Roll|Ishiir} bonus with your spell attack bonus if it is higher.",
                         "You can replace your familiar's hit point maximum with 5 x your Warlock level if it is higher."
                     ]
@@ -3235,7 +3235,7 @@
                 }
             ],
             "entries": [
-                "When you hit a creature with your {@spell eldritch blast|Ishiir}, you can cast {@spell fireball|Ishiir} as a bonus action using a warlock spell slot. The spell must be centered on the creature you hit with {@spell eldritch blast|Ishiir}."
+                "When you hit a creature with your {@spell eldritch blast|Ishiir}, you can cast {@spell fireball|Ishiir} as a {@variantrule Bonus Action|Ishiir} using a warlock spell slot. The spell must be centered on the creature you hit with {@spell eldritch blast|Ishiir}."
             ]
         },
         {
@@ -3316,7 +3316,7 @@
                 }
             ],
             "entries": [
-                "As a bonus action, you cause a psychic disturbance around the target cursed by your {@spell hex|Ishiir} spell or by a warlock feature of yours, such as Hexblade's Curse or Sign of Ill Omen. When you do so, you deal psychic damage to the cursed target and each creature of your choice that you can see within 5 feet of it. The psychic damage equals your Charisma modifier (minimum of 1 damage). To use this invocation, you must be able to see the cursed target, and it must be within 30 feet of you."
+                "As a {@variantrule Bonus Action|Ishiir}, you cause a psychic disturbance around the target cursed by your {@spell hex|Ishiir} spell or by a warlock feature of yours, such as Hexblade's Curse or Sign of Ill Omen. When you do so, you deal psychic damage to the cursed target and each creature of your choice that you can see within 5 feet of it. The psychic damage equals your Charisma modifier (minimum of 1 damage). To use this invocation, you must be able to see the cursed target, and it must be within 30 feet of you."
             ]
         },
         {
@@ -3610,7 +3610,7 @@
                 }
             ],
             "entries": [
-                "When the wearer of your talisman is hit by an attacker you can see within 30 feet of you, you can use your reaction to deal psychic damage to the attacker equal to half your Warlock level and push it up to 10 feet away from the talisman's wearer."
+                "When the wearer of your talisman is hit by an attacker you can see within 30 feet of you, you can use your {@variantrule Reaction|Ishiir} to deal psychic damage to the attacker equal to half your Warlock level and push it up to 10 feet away from the talisman's wearer."
             ]
         },
         {
@@ -3634,7 +3634,7 @@
                 }
             ],
             "entries": [
-                "Your curse creates a temporary bond between you and your target. As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see within 5 feet of the target cursed by your {@spell hex|Ishiir} spell or by a warlock feature of yours, such as Hexblade's Curse or Sign of Ill Omen. To teleport in this way, you must be able to see the cursed target."
+                "Your curse creates a temporary bond between you and your target. As a {@variantrule Bonus Action|Ishiir}, you can magically teleport up to 30 feet to an unoccupied space you can see within 5 feet of the target cursed by your {@spell hex|Ishiir} spell or by a warlock feature of yours, such as Hexblade's Curse or Sign of Ill Omen. To teleport in this way, you must be able to see the cursed target."
             ]
         },
         {
@@ -3784,7 +3784,7 @@
                 }
             ],
             "entries": [
-                "The blue-white star Ulban maintains a fickle presence among the stars, fluttering into view only to herald a dire omen. As an action, you can turn {@condition Invisible|Ishiir} for 1 minute. If you attack, deal damage, or force a creature to make a {@variantrule Saving Throw|Ishiir}, you become visible at the end of the current turn."
+                "The blue-white star Ulban maintains a fickle presence among the stars, fluttering into view only to herald a dire omen. As an {@variantrule Action|Ishiir}, you can turn {@condition Invisible|Ishiir} for 1 minute. If you attack, deal damage, or force a creature to make a {@variantrule Saving Throw|Ishiir}, you become visible at the end of the current turn."
             ]
         },
         {
@@ -3886,7 +3886,7 @@
                 }
             ],
             "entries": [
-                "As an action, you can exude your patron's frightening presence in a radius of 60 feet. Every creature of your choice in the area that is aware of you, must make a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failure, it is {@condition Frightened|Ishiir} of you for 1 minute. A creature can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on itself on a success. If a creature's {@variantrule Saving Throw|Ishiir} is successful or the effect ends for it, the creature is {@variantrule Immunity|Ishiir|Immune} to your Frightful Presence for the next 24 hours.",
+                "As an {@variantrule Action|Ishiir}, you can exude your patron's frightening presence in a radius of 60 feet. Every creature of your choice in the area that is aware of you, must make a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failure, it is {@condition Frightened|Ishiir} of you for 1 minute. A creature can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on itself on a success. If a creature's {@variantrule Saving Throw|Ishiir} is successful or the effect ends for it, the creature is {@variantrule Immunity|Ishiir|Immune} to your Frightful Presence for the next 24 hours.",
                 "You cannot use this feature again until you have finished a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -3954,7 +3954,7 @@
                 }
             ],
             "entries": [
-                "As a reaction when you take damage, you can entomb yourself in ice, which melts away at the end of your next turn. You gain 10 temporary hit points per warlock level, which take as much of the triggering damage as possible. Immediately after you take the damage, you gain vulnerability to fire damage, your {@variantrule Speed|Ishiir} is reduced to 0, and you are {@condition Incapacitated|Ishiir}. These effects, including any remaining temporary hit points, all end when the ice melts.",
+                "As a {@variantrule Reaction|Ishiir} when you take damage, you can entomb yourself in ice, which melts away at the end of your next turn. You gain 10 temporary hit points per warlock level, which take as much of the triggering damage as possible. Immediately after you take the damage, you gain vulnerability to fire damage, your {@variantrule Speed|Ishiir} is reduced to 0, and you are {@condition Incapacitated|Ishiir}. These effects, including any remaining temporary hit points, all end when the ice melts.",
                 "Once you use this invocation, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -4195,7 +4195,7 @@
                 "amount": 2
             },
             "entries": [
-                "As an action, you can spend 2 kinesis points and make a melee attack against any number of creatures in range of your kinetic blade."
+                "As an {@variantrule Action|Ishiir}, you can spend 2 kinesis points and make a melee attack against any number of creatures in range of your kinetic blade."
             ]
         },
         {
@@ -4309,7 +4309,7 @@
             ],
             "entries": [
                 "When you damage a creature with your kinetic shape, you can force it to make a Dexterity {@variantrule Saving Throw|Ishiir} against your save DC. On a failure, the target is set ablaze, burning for fire damage equal to double your {@variantrule Proficiency|Ishiir} modifier at the start of each of its turns.",
-                "It can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on a success. Alternatively, it or another creature can use an action to douse the flames."
+                "It can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on a success. Alternatively, it or another creature can use an {@variantrule Action|Ishiir} to douse the flames."
             ]
         },
         {
@@ -4561,7 +4561,7 @@
                 "amount": 2
             },
             "entries": [
-                "By spending an action and 2 kinesis points, you can cause the energy of your kinetic shape to explode outward in a 10-foot radius cylinder that is 40 feet high.",
+                "By spending an {@variantrule Action|Ishiir} and 2 kinesis points, you can cause the energy of your kinetic shape to explode outward in a 10-foot radius cylinder that is 40 feet high.",
                 "Every creature in the area of effect has to make a Dexterity {@variantrule Saving Throw|Ishiir} against your save DC, taking your kinetic shape damage on a failure, and half as much on a success."
             ]
         },
@@ -4585,7 +4585,7 @@
                 "amount": 1
             },
             "entries": [
-                "By spending an action and 1 kinesis point, you can cause the energy of your kinetic shape to fan outward in a 30-foot cone. Every creature in the area of effect has to make a Dexterity {@variantrule Saving Throw|Ishiir} against your save DC, taking your kinetic shape damage on a failure, and half as much on a success."
+                "By spending an {@variantrule Action|Ishiir} and 1 kinesis point, you can cause the energy of your kinetic shape to fan outward in a 30-foot cone. Every creature in the area of effect has to make a Dexterity {@variantrule Saving Throw|Ishiir} against your save DC, taking your kinetic shape damage on a failure, and half as much on a success."
             ]
         },
         {
@@ -4825,7 +4825,7 @@
             },
             "entries": [
                 "You gain the ability to harness the cleansing properties of water.",
-                "As an action, you can touch a creature and spend a number of kinesis points up to the current total you possess and heal the creature. For each kinesis point you spend the creature is healed for {@dice 2d8} hitpoints. You can also spend 2 kinesis points to remove any one poison or disease from the creature as part of the same action."
+                "As an {@variantrule Action|Ishiir}, you can touch a creature and spend a number of kinesis points up to the current total you possess and heal the creature. For each kinesis point you spend the creature is healed for {@dice 2d8} hitpoints. You can also spend 2 kinesis points to remove any one poison or disease from the creature as part of the same action."
             ]
         },
         {
@@ -4919,7 +4919,7 @@
                 "amount": 1
             },
             "entries": [
-                "By spending an action and 1 kinesis point, you can cause the energy of your kinetic shape to shootward in a 10-feet long, 5-feet wide spindle that travels 60 feet away from you until it disperses.",
+                "By spending an {@variantrule Action|Ishiir} and 1 kinesis point, you can cause the energy of your kinetic shape to shootward in a 10-feet long, 5-feet wide spindle that travels 60 feet away from you until it disperses.",
                 "All creatures through whose spaces the spindle passes have to make a Dexterity {@variantrule Saving Throw|Ishiir}, taking your kinetic shape damage on failure, and half as much on a success."
             ]
         },
@@ -4994,7 +4994,7 @@
                 "amount": 3
             },
             "entries": [
-                "By spending an action and 3 kinesis points, you can use your kinetic shape to create a wall of churning elements, flensing debris, or roiling energy that lasts for 1 minute or until your {@condition Concentration|Ishiir} ends (as if concentrating on a spell). You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick.",
+                "By spending an {@variantrule Action|Ishiir} and 3 kinesis points, you can use your kinetic shape to create a wall of churning elements, flensing debris, or roiling energy that lasts for 1 minute or until your {@condition Concentration|Ishiir} ends (as if concentrating on a spell). You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick.",
                 "When the wall appears, each creature within its area must make a Dexterity {@variantrule Saving Throw|Ishiir} against your save DC. On a failed save, a creature takes half your kinetic shape's damage, or half as much damage on a successful save.",
                 "A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there."
             ]
@@ -5189,7 +5189,7 @@
                 "FS:P"
             ],
             "entries": [
-                "When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by {@dice 1d10} + your {@variantrule Proficiency|Ishiir} bonus (to a minimum of 0 damage). You must be wielding a {@item shield|phb} or a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} to use this reaction."
+                "When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your {@variantrule Reaction|Ishiir} to reduce the damage the target takes by {@dice 1d10} + your {@variantrule Proficiency|Ishiir} bonus (to a minimum of 0 damage). You must be wielding a {@item shield|phb} or a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} to use this {@variantrule Reaction|Ishiir}."
             ]
         },
         {
@@ -5202,7 +5202,7 @@
                 "FS:P"
             ],
             "entries": [
-                "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose {@variantrule Disadvantage|Ishiir} on the {@variantrule Attack Roll|Ishiir}. You must be wielding a shield."
+                "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your {@variantrule Reaction|Ishiir} to impose {@variantrule Disadvantage|Ishiir} on the {@variantrule Attack Roll|Ishiir}. You must be wielding a shield."
             ]
         },
         {
@@ -5421,7 +5421,7 @@
                 }
             ],
             "entries": [
-                "When you use the {@action Attack|Ishiir} action, you can make one additional weapon attack as a bonus action. However, you have {@variantrule Disadvantage|Ishiir} on Intelligence, Wisdom, and Charisma {@variantrule Saving Throw|Ishiir|Saving Throws}."
+                "When you use the {@action Attack|Ishiir} action, you can make one additional weapon attack as a {@variantrule Bonus Action|Ishiir}. However, you have {@variantrule Disadvantage|Ishiir} on Intelligence, Wisdom, and Charisma {@variantrule Saving Throw|Ishiir|Saving Throws}."
             ]
         },
         {
@@ -5727,7 +5727,7 @@
                 "amount": 2
             },
             "entries": [
-                "When you cast a spell that has a casting time of an action, you can spend 2 Sorcery Points to change the casting time to a Bonus Action for this casting. You can't modify a spell in this way if you've already cast a level 1+ spell on the current turn, nor can you cast a level 1+ spell on this turn after modifying a spell in this way."
+                "When you cast a spell that has a casting time of an {@variantrule Action|Ishiir}, you can spend 2 Sorcery Points to change the casting time to a {@variantrule Bonus Action|Ishiir} for this casting. You can't modify a spell in this way if you've already cast a level 1+ spell on the current turn, nor can you cast a level 1+ spell on this turn after modifying a spell in this way."
             ]
         },
         {
@@ -5818,7 +5818,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "When a creature you can see moves into the reach you have with the melee weapon you're wielding, you can use your reaction to expend one superiority die and make one attack against the creature, using that weapon. If the attack hits, add the superiority die to the weapon's damage roll."
+                "When a creature you can see moves into the reach you have with the melee weapon you're wielding, you can use your {@variantrule Reaction|Ishiir} to expend one superiority die and make one attack against the creature, using that weapon. If the attack hits, add the superiority die to the weapon's damage roll."
             ]
         },
         {
@@ -5832,7 +5832,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "When you take the {@action Attack|Ishiir} action on your turn, you can forgo one of your attacks to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack's damage roll."
+                "When you take the {@action Attack|Ishiir} action on your turn, you can forgo one of your attacks to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its {@variantrule Reaction|Ishiir} to make one weapon attack, adding the superiority die to the attack's damage roll."
             ]
         },
         {
@@ -5888,7 +5888,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "As a Bonus Action, you can expend one Superiority Die and take the {@action Disengage|Ishiir} action. You also roll the die and add the number rolled to your AC until the start of your next turn."
+                "As a {@variantrule Bonus Action|Ishiir}, you can expend one Superiority Die and take the {@action Disengage|Ishiir} action. You also roll the die and add the number rolled to your AC until the start of your next turn."
             ]
         },
         {
@@ -5902,7 +5902,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 5 feet of you as your target. You have {@variantrule Advantage|Ishiir} on your next {@variantrule Attack Roll|Ishiir} against that creature this turn. If that attack hits, add the superiority die to the attack's damage roll."
+                "You can expend one superiority die and use a {@variantrule Bonus Action|Ishiir} on your turn to feint, choosing one creature within 5 feet of you as your target. You have {@variantrule Advantage|Ishiir} on your next {@variantrule Attack Roll|Ishiir} against that creature this turn. If that attack hits, add the superiority die to the attack's damage roll."
             ]
         },
         {
@@ -5930,7 +5930,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "Immediately after you hit a creature with a melee attack on your turn, you can expend one superiority die and then try to grapple the target as a bonus action (see the Player's Handbook for rules on grappling). Add the superiority die to your Strength ({@skill Athletics}) check."
+                "Immediately after you hit a creature with a melee attack on your turn, you can expend one superiority die and then try to grapple the target as a {@variantrule Bonus Action|Ishiir} (see the Player's Handbook for rules on grappling). Add the superiority die to your Strength ({@skill Athletics}) check."
             ]
         },
         {
@@ -5944,7 +5944,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "As a Bonus Action, you can expend one Superiority Die and take the {@action Dash|Ishiir} action. If you move at least 5 feet in a straight line immediately before hitting with a melee attack as part of the Attack action on this turn, you can add the Superiority Die to the attack's damage roll."
+                "As a {@variantrule Bonus Action|Ishiir}, you can expend one Superiority Die and take the {@action Dash|Ishiir} action. If you move at least 5 feet in a straight line immediately before hitting with a melee attack as part of the Attack action on this turn, you can add the Superiority Die to the attack's damage roll."
             ]
         },
         {
@@ -5958,7 +5958,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its {@variantrule Speed|Ishiir} without provoking opportunity attacks from the target of your attack."
+                "When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its {@variantrule Reaction|Ishiir} to move up to half its {@variantrule Speed|Ishiir} without provoking opportunity attacks from the target of your attack."
             ]
         },
         {
@@ -5986,7 +5986,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "When another creature damages you with a melee attack, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + STR or DEX modifier (your choice) + fighter level."
+                "When another creature damages you with a melee attack, you can use your {@variantrule Reaction|Ishiir} and expend one superiority die to reduce the damage by the number you roll on your superiority die + STR or DEX modifier (your choice) + fighter level."
             ]
         },
         {
@@ -6028,7 +6028,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "As a bonus action, you can expend one superiority die and make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack. If you hit, add the superiority die to the weapon's damage roll."
+                "As a {@variantrule Bonus Action|Ishiir}, you can expend one superiority die and make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack. If you hit, add the superiority die to the weapon's damage roll."
             ]
         },
         {
@@ -6042,7 +6042,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "As a Bonus Action, you can expend one Superiority Die to bolster the resolve of a companion. Choose an ally of yours within 30 feet of yourself who can see or hear you. That creature gains Temporary Hit Points equal to the Superiority Die roll plus half your Fighter level (round down)."
+                "As a {@variantrule Bonus Action|Ishiir}, you can expend one Superiority Die to bolster the resolve of a companion. Choose an ally of yours within 30 feet of yourself who can see or hear you. That creature gains Temporary Hit Points equal to the Superiority Die roll plus half your Fighter level (round down)."
             ]
         },
         {
@@ -6056,7 +6056,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "Immediately after you hit a creature with a melee weapon attack on your turn, you can expend one superiority die and use a bonus action to grapple the target (see chapter 9 in the Player's Handbook for rules on grappling). Add the superiority die to your Strength ({@skill Athletics}) check. The target is also {@condition Restrained|Ishiir} while {@condition Grappled|Ishiir} in this way."
+                "Immediately after you hit a creature with a melee weapon attack on your turn, you can expend one superiority die and use a {@variantrule Bonus Action|Ishiir} to grapple the target (see chapter 9 in the Player's Handbook for rules on grappling). Add the superiority die to your Strength ({@skill Athletics}) check. The target is also {@condition Restrained|Ishiir} while {@condition Grappled|Ishiir} in this way."
             ]
         },
         {
@@ -6070,7 +6070,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll."
+                "When a creature misses you with a melee attack, you can use your {@variantrule Reaction|Ishiir} and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll."
             ]
         },
         {
@@ -6098,7 +6098,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "As a bonus action, you can expend one superiority die and make a ranged weapon attack. You can draw a thrown weapon as part of making this attack. If you hit, add the superiority die to the attack's damage roll."
+                "As a {@variantrule Bonus Action|Ishiir}, you can expend one superiority die and make a ranged weapon attack. You can draw a thrown weapon as part of making this attack. If you hit, add the superiority die to the attack's damage roll."
             ]
         },
         {
@@ -6112,7 +6112,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock a target off-balance. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, the target cannot take reactions until the end of your next turn."
+                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock a target off-balance. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, the target cannot take {@variantrule Reaction|Ishiir|Reactions} until the end of your next turn."
             ]
         },
         {
@@ -6245,7 +6245,7 @@
                 "PB"
             ],
             "entries": [
-                "You can use your bonus action to create a pact weapon in your empty hand. You can choose the form that this weapon takes each time you create it (see chapter 5 for weapon options). You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage.",
+                "You can use your {@variantrule Bonus Action|Ishiir} to create a pact weapon in your empty hand. You can choose the form that this weapon takes each time you create it (see chapter 5 for weapon options). You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage.",
                 "Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.",
                 "You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a {@variantrule Short Rest|Ishiir}. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.",
                 "You also gain {@variantrule Proficiency|Ishiir} in medium armor and shields."
@@ -6273,7 +6273,7 @@
             "entries": [
                 "You learn the {@spell find familiar|Ishiir} spell and can cast it as a ritual. The spell doesn't count against your number of spells known.",
                 "When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: {@creature imp}, {@creature pseudodragon}, {@creature quasit}, or {@creature sprite}.",
-                "Additionally, your familiar can move and use its reaction on its own, but the only action it takes on its turn is the {@action Dodge|Ishiir} action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition Incapacitated|Ishiir}, the familiar can take any action of its choice, not just {@action Dodge|Ishiir}."
+                "Additionally, your familiar can move and use its {@variantrule Reaction|Ishiir} on its own, but the only action it takes on its turn is the {@action Dodge|Ishiir} action, unless you take a {@variantrule Bonus Action|Ishiir} on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition Incapacitated|Ishiir}, the familiar can take any action of its choice, not just {@action Dodge|Ishiir}."
             ]
         },
         {
@@ -6348,7 +6348,7 @@
             ],
             "entries": [
                 "This rune emulates the deceptive magic used by some cloud giants. While wearing or carrying an object inscribed with this rune, you have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Sleight of Hand}) checks and Charisma ({@skill Deception}) checks.",
-                "In addition, when you or a creature you can see within 30 feet of you is hit by an {@variantrule Attack Roll|Ishiir}, you can use your reaction to invoke the rune and choose a different creature within 30 feet of you, other than the attacker. The chosen creature becomes the target of the attack, using the same roll. This magic can transfer the attack's effects regardless of the attack's range. Once you invoke this rune, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
+                "In addition, when you or a creature you can see within 30 feet of you is hit by an {@variantrule Attack Roll|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to invoke the rune and choose a different creature within 30 feet of you, other than the attacker. The chosen creature becomes the target of the attack, using the same roll. This magic can transfer the attack's effects regardless of the attack's range. Once you invoke this rune, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -6372,7 +6372,7 @@
             ],
             "entries": [
                 "This rune's magic evokes the might of those who survive in the wintry wilderness, such as frost giants. While wearing or carrying an object inscribed with this rune, you have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Animal Handling}) checks and Charisma ({@skill Intimidation}) checks.",
-                "In addition, you can invoke the rune as a bonus action to increase your sturdiness. For 10 minutes, you gain a +2 bonus to all {@variantrule Ability Check|Ishiir}s and {@variantrule Saving Throw|Ishiir|Saving Throws} that use Strength or Constitution. Once you invoke this rune, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
+                "In addition, you can invoke the rune as a {@variantrule Bonus Action|Ishiir} to increase your sturdiness. For 10 minutes, you gain a +2 bonus to all {@variantrule Ability Check|Ishiir}s and {@variantrule Saving Throw|Ishiir|Saving Throws} that use Strength or Constitution. Once you invoke this rune, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -6397,7 +6397,7 @@
             ],
             "entries": [
                 "This rune's magic bestows a resilience reminiscent of a hill giant. While wearing or carrying an object that bears this rune, you have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Poisoned|Ishiir}, and you have {@variantrule Resistance|Ishiir} against poison damage.",
-                "In addition, you can invoke the rune as a bonus action, gaining {@variantrule Resistance|Ishiir} to bludgeoning, piercing, and slashing damage for 1 minute. Once you invoke this rune, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
+                "In addition, you can invoke the rune as a {@variantrule Bonus Action|Ishiir}, gaining {@variantrule Resistance|Ishiir} to bludgeoning, piercing, and slashing damage for 1 minute. Once you invoke this rune, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -6414,7 +6414,7 @@
             ],
             "entries": [
                 "This rune's magic channels the judiciousness associated with stone giants. While wearing or carrying an object inscribed with this rune, you have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Insight}) checks, and you have {@sense darkvision} out to a range of 120 feet.",
-                "In addition, when a creature you can see ends its turn within 30 feet of you, you can use your reaction to invoke the rune and force the creature to make a Wisdom {@variantrule Saving Throw|Ishiir}. Unless the save succeeds, the creature is {@condition Charmed|Ishiir} by you for 1 minute. While {@condition Charmed|Ishiir} in this way, the creature has a {@variantrule Speed|Ishiir} of 0 and is {@condition Incapacitated|Ishiir}, descending into a dreamy stupor. The creature repeats the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on a success. Once you invoke this rune, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
+                "In addition, when a creature you can see ends its turn within 30 feet of you, you can use your {@variantrule Reaction|Ishiir} to invoke the rune and force the creature to make a Wisdom {@variantrule Saving Throw|Ishiir}. Unless the save succeeds, the creature is {@condition Charmed|Ishiir} by you for 1 minute. While {@condition Charmed|Ishiir} in this way, the creature has a {@variantrule Speed|Ishiir} of 0 and is {@condition Incapacitated|Ishiir}, descending into a dreamy stupor. The creature repeats the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on a success. Once you invoke this rune, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -6439,7 +6439,7 @@
             ],
             "entries": [
                 "Using this rune, you can glimpse the future like a storm giant seer. While wearing or carrying an object inscribed with this rune, you have {@variantrule Advantage|Ishiir} on Intelligence ({@skill Arcana}) checks, and you can't be {@quickref Surprise|PHB|3|0|surprised} as long as you aren't {@condition Incapacitated|Ishiir}.",
-                "In addition, you can invoke the rune as a bonus action to enter a prophetic state for 1 minute or until you're {@condition Incapacitated|Ishiir}. Until the state ends, when you or another creature you can see within 60 feet of you makes an {@variantrule Attack Roll|Ishiir}, a {@variantrule Saving Throw|Ishiir}, or an {@variantrule Ability Check|Ishiir}, you can use your reaction to cause the roll to have {@variantrule Advantage|Ishiir} or {@variantrule Disadvantage|Ishiir}. Once you invoke this rune, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
+                "In addition, you can invoke the rune as a {@variantrule Bonus Action|Ishiir} to enter a prophetic state for 1 minute or until you're {@condition Incapacitated|Ishiir}. Until the state ends, when you or another creature you can see within 60 feet of you makes an {@variantrule Attack Roll|Ishiir}, a {@variantrule Saving Throw|Ishiir}, or an {@variantrule Ability Check|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to cause the roll to have {@variantrule Advantage|Ishiir} or {@variantrule Disadvantage|Ishiir}. Once you invoke this rune, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -6462,7 +6462,7 @@
                 "WM"
             ],
             "entries": [
-                "When you use two-weapon fighting and both of your weapons have this mastery, you can make the extra attack of your off-hand weapon as part of the {@action Attack|Ishiir} action rather than as a bonus action. If you do so, you can't use any other mastery with the attacks that are part of this {@action Attack|Ishiir} action."
+                "When you use two-weapon fighting and both of your weapons have this mastery, you can make the extra attack of your off-hand weapon as part of the {@action Attack|Ishiir} action rather than as a {@variantrule Bonus Action|Ishiir}. If you do so, you can't use any other mastery with the attacks that are part of this {@action Attack|Ishiir} action."
             ]
         },
         {
@@ -6484,7 +6484,7 @@
                 "WM"
             ],
             "entries": [
-                "When you attack with this weapon, you can increase its range by 5 feet. You can also use this mastery to increase the reach of your weapon for the purposes of satisfying trigger conditions of melee attacks you can make as a reaction, e.g. opportunity attacks or the Battle Master's brace maneuver."
+                "When you attack with this weapon, you can increase its range by 5 feet. You can also use this mastery to increase the reach of your weapon for the purposes of satisfying trigger conditions of melee attacks you can make as a {@variantrule Reaction|Ishiir}, e.g. opportunity attacks or the Battle Master's brace maneuver."
             ]
         },
         {

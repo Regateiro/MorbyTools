@@ -782,7 +782,7 @@
 			"header": 1,
 			"entries": [
 				"Your tactical acumen allows you to study an area of a battlefield and provide direction to your allies that can tilt a battle in your favor.",
-				"As a bonus action or as part of the attack action, you can select an area on the ground that measures 10 feet on each side. This area is your tactical focus. It remains your tactical focus until you use this ability again or you are unable to take actions.",
+				"As a {@variantrule Bonus Action|Ishiir} or as part of the attack action, you can select an area on the ground that measures 10 feet on each side. This area is your tactical focus. It remains your tactical focus until you use this ability again or you are unable to take actions.",
 				"When you select an area as your tactical focus, you choose one of your tactics to apply to that area. You gain three tactics at 3rd level. You gain an additional tactic at 7th and 15 level. Each time you complete a {@variantrule Long Rest|Ishiir}, you can swap one of your tactics for a different one.",
 				{
 					"type": "options",
@@ -829,7 +829,7 @@
 			"entries": [
 				"You can grant your allies useful tactical insights while they are in the area of your tactical focus.",
 				"You gain a number of uses of insight based on your fighter level.",
-				"As a bonus action or as a part of an attack action you grant insight to yourself or allies in your tactical focus. You grant this benefit to yourself and as many allies as you wish in your focus, but you cannot expend more uses than you currently have {@i [or more than the maximum in the table below. A creature can receive more than one Tactician's Insight when you take this action.]}",
+				"As a {@variantrule Bonus Action|Ishiir} or as a part of an attack action you grant insight to yourself or allies in your tactical focus. You grant this benefit to yourself and as many allies as you wish in your focus, but you cannot expend more uses than you currently have {@i [or more than the maximum in the table below. A creature can receive more than one Tactician's Insight when you take this action.]}",
 				"A creature that gains your insight can use it in two ways. It can regain hit points immediately upon receiving it. Roll {@dice 2d10} and the creature regains that many hit points. If the creature would gain hit points that place it above its maximum, it gains the difference as temporary hit points.",
 				"Alternatively, a creature can save the insight to use when it hits with an attack. It increases the attack's damage by {@dice 2d10}.",
 				"You regain expended uses of Tactician's Insight when you complete a {@variantrule Long Rest|Ishiir}.",
@@ -921,7 +921,7 @@
 			"entries": [
 				"Your tactical cunning allows you to seize the moment in battle.",
 				"You learn two gambits. You learn an additional gambit at 10th and 18th level.",
-				"You use a gambit as an action. You can use your gambits a number of times based on your fighter level.",
+				"You use a gambit as an {@variantrule Action|Ishiir}. You can use your gambits a number of times based on your fighter level.",
 				"Each time you complete a {@variantrule Long Rest|Ishiir}, you regain all expended uses of your gambits and can swap one of your gambits for a different one.",
 				{
 					"type": "entries",
@@ -979,7 +979,7 @@
 							"name": "Pincer Movement",
 							"entries": [
 								"With precise timing, you order your allies to charge into the enemy, dealing body checks that leave your foes entangled and helpless.",
-								"Up to two allies that can see or hear you can use their reactions to move up to their {@variantrule Speed|Ishiir}. Any creature adjacent to both of your allies or to you and one of the chosen allies at the end of their movement must make a Strength {@variantrule Saving Throw|Ishiir} or become {@condition Restrained|Ishiir} until the end of your next turn. As part of this gambit, you may take the attack action."
+								"Up to two allies that can see or hear you can use their {@variantrule Reaction|Ishiir|Reactions} to move up to their {@variantrule Speed|Ishiir}. Any creature adjacent to both of your allies or to you and one of the chosen allies at the end of their movement must make a Strength {@variantrule Saving Throw|Ishiir} or become {@condition Restrained|Ishiir} until the end of your next turn. As part of this gambit, you may take the attack action."
 							]
 						},
 						{
@@ -1071,7 +1071,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"You gain the ability to unleash a devastating combination of your allies' abilities. As a bonus action, select up to five allies who can see or hear you. They can use their reactions to immediately take actions.",
+				"You gain the ability to unleash a devastating combination of your allies' abilities. As a {@variantrule Bonus Action|Ishiir}, select up to five allies who can see or hear you. They can use their {@variantrule Reaction|Ishiir|Reactions} to immediately take actions.",
 				"Once you use this ability, you cannot use it again until you complete a {@variantrule Long Rest|Ishiir}."
 			]
 		},
@@ -1291,7 +1291,7 @@
 					"name": "Come Forth to Dance",
 					"entries": [
 						"Your weapon moves in a lazy, hypnotic pattern, luring your foe to blunder ahead and walk into your trap.",
-						"As an action, expend a martial exploit and select a creature that can see you within 15 feet of you. The target must make a Wisdom {@variantrule Saving Throw|Ishiir}. If it fails, it moves up to 15 feet closer to you. You then make a single melee attack against it using your martial exploit with one die fewer."
+						"As an {@variantrule Action|Ishiir}, expend a martial exploit and select a creature that can see you within 15 feet of you. The target must make a Wisdom {@variantrule Saving Throw|Ishiir}. If it fails, it moves up to 15 feet closer to you. You then make a single melee attack against it using your martial exploit with one die fewer."
 					]
 				},
 				{
@@ -1299,7 +1299,7 @@
 					"name": "Cutting Dialogue",
 					"entries": [
 						"If this exchange of blows is a dramatic play, let your rejoinder be its final act.",
-						"As a reaction when a creature makes a melee attack against you, you can expend a martial exploit and make a melee weapon attack against that creature. You can select one of the dice rolled and add it to your AC against the target's attack."
+						"As a {@variantrule Reaction|Ishiir} when a creature makes a melee attack against you, you can expend a martial exploit and make a melee weapon attack against that creature. You can select one of the dice rolled and add it to your AC against the target's attack."
 					]
 				},
 				{
@@ -1330,7 +1330,7 @@
 					"entries": [
 						"You focus your mind and grit your teeth, pushing aside pain and drawing on wellsprings of energy that blot out the pain of your wounds.",
 						"When you expend a martial exploit when attacking with a two-handed melee weapon or a versatile one wielded in two hands, after rolling the dice you can select one or more of them. You gain temporary hit points equal to the total of the dice + your Constitution modifier (minimum of 1).",
-						"You can also activate this ability as a bonus action. In that case, you roll your martial exploit dice and gain temporary hit points equal to their total + your Constitution modifier."
+						"You can also activate this ability as a {@variantrule Bonus Action|Ishiir}. In that case, you roll your martial exploit dice and gain temporary hit points equal to their total + your Constitution modifier."
 					]
 				},
 				{
@@ -1423,7 +1423,7 @@
 					"type": "entries",
 					"name": "Superior Protection",
 					"entries": [
-						"When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose {@variantrule Disadvantage|Ishiir} on the {@variantrule Attack Roll|Ishiir} and make an opportunity attack against the attacker. You must be wielding a shield."
+						"When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your {@variantrule Reaction|Ishiir} to impose {@variantrule Disadvantage|Ishiir} on the {@variantrule Attack Roll|Ishiir} and make an opportunity attack against the attacker. You must be wielding a shield."
 					]
 				},
 				{
@@ -1470,7 +1470,7 @@
 			"subclassSource": "Stream",
 			"level": 3,
 			"entries": [
-				"You and your allies can move 10 ft. in your tactical focus for every 5 feet of movement expended there. {@i [Changed during stream to \"You and your allies can basically teleport into your focus. Movement on allies turn.\" Specifically, the movement is not made as a reaction\u2014your allies can use their movement on their turn(s) to move towards the focus, and gain bonuses to {@variantrule Speed|Ishiir} or other effects (for example, ignoring difficult terrain, or movement does not provoke opportunity attacks) to aid and incentivize this. Additionally, this may replace \"Cover That Flank\" in future.]}"
+				"You and your allies can move 10 ft. in your tactical focus for every 5 feet of movement expended there. {@i [Changed during stream to \"You and your allies can basically teleport into your focus. Movement on allies turn.\" Specifically, the movement is not made as a {@variantrule Reaction|Ishiir}\u2014your allies can use their movement on their turn(s) to move towards the focus, and gain bonuses to {@variantrule Speed|Ishiir} or other effects (for example, ignoring difficult terrain, or movement does not provoke opportunity attacks) to aid and incentivize this. Additionally, this may replace \"Cover That Flank\" in future.]}"
 			]
 		},
 		{
@@ -1494,7 +1494,7 @@
 			"subclassSource": "Stream",
 			"level": 3,
 			"entries": [
-				"When a hostile creature that you can see enters your tactical focus, up to three target creatures of your choice that can see the creature can use a reaction to move up to their {@variantrule Speed|Ishiir}. The targets must end their movement in the tactical focus. A target creature that ends this movement adjacent to the triggering creature regains its reaction."
+				"When a hostile creature that you can see enters your tactical focus, up to three target creatures of your choice that can see the creature can use a {@variantrule Reaction|Ishiir} to move up to their {@variantrule Speed|Ishiir}. The targets must end their movement in the tactical focus. A target creature that ends this movement adjacent to the triggering creature regains its {@variantrule Reaction|Ishiir}."
 			]
 		},
 		{
@@ -1518,7 +1518,7 @@
 			"subclassSource": "Stream",
 			"level": 3,
 			"entries": [
-				"If an allied creature in your tactical focus must make a Dexterity {@variantrule Saving Throw|Ishiir} it can use its reaction to move up to its {@variantrule Speed|Ishiir}. If this movement takes it out of the range or area of the effect that caused the {@variantrule Saving Throw|Ishiir}, it is no longer subjected to the effect. {@i [In future, this may be changed to instead give {@variantrule Advantage|Ishiir} on the {@variantrule Saving Throw|Ishiir}, or require the creature to drop prone, or cancel the creature's next move.]}"
+				"If an allied creature in your tactical focus must make a Dexterity {@variantrule Saving Throw|Ishiir} it can use its {@variantrule Reaction|Ishiir} to move up to its {@variantrule Speed|Ishiir}. If this movement takes it out of the range or area of the effect that caused the {@variantrule Saving Throw|Ishiir}, it is no longer subjected to the effect. {@i [In future, this may be changed to instead give {@variantrule Advantage|Ishiir} on the {@variantrule Saving Throw|Ishiir}, or require the creature to drop prone, or cancel the creature's next move.]}"
 			]
 		},
 		{
@@ -1618,7 +1618,7 @@
 			"entries": [
 				"You can use your psionic energy to manifest blades that disrupt your foes' minds.",
 				"Your unarmed strikes deal your choice of psychic, piercing, slashing, or bludgeoning damage each time you hit.",
-				"In addition, you can use a bonus action to increase the reach of your unarmed strikes by 30 feet until the end of your turn."
+				"In addition, you can use a {@variantrule Bonus Action|Ishiir} to increase the reach of your unarmed strikes by 30 feet until the end of your turn."
 			]
 		},
 		{
@@ -1633,7 +1633,7 @@
 			"header": 2,
 			"entries": [
 				"You gain the ability to perceive the auras of other creatures.",
-				"As an action, select a creature that you can see. That creature makes a Wisdom {@variantrule Saving Throw|Ishiir}, though it has no knowledge that you forced it to attempt this {@variantrule Saving Throw|Ishiir}. On a failed save, you learn if the creature shares any aspects of its alignment with you, its current hit points, and its current attitude and intentions toward you or one other creature, object, or location of your choice. In addition, for the next 24 hours or until you use this ability again, you can use an action to determine the creature's distance and direction from you.",
+				"As an {@variantrule Action|Ishiir}, select a creature that you can see. That creature makes a Wisdom {@variantrule Saving Throw|Ishiir}, though it has no knowledge that you forced it to attempt this {@variantrule Saving Throw|Ishiir}. On a failed save, you learn if the creature shares any aspects of its alignment with you, its current hit points, and its current attitude and intentions toward you or one other creature, object, or location of your choice. In addition, for the next 24 hours or until you use this ability again, you can use an {@variantrule Action|Ishiir} to determine the creature's distance and direction from you.",
 				"If a creature succeeds on its {@variantrule Saving Throw|Ishiir} against this ability, you cannot use this ability against that creature again until you complete a {@variantrule Long Rest|Ishiir}."
 			]
 		},
@@ -1663,7 +1663,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"You can transform your physical body into the same psychic energy that comprises your soul knives. As a bonus action, you gain {@variantrule Resistance|Ishiir} to all types of damage, a {@variantrule Fly Speed|Ishiir} of 30 feet, and the ability to pass through solid objects but not end your movement within them. This benefit lasts for 1 minute. You cannot use it again until you complete a {@variantrule Long Rest|Ishiir}."
+				"You can transform your physical body into the same psychic energy that comprises your soul knives. As a {@variantrule Bonus Action|Ishiir}, you gain {@variantrule Resistance|Ishiir} to all types of damage, a {@variantrule Fly Speed|Ishiir} of 30 feet, and the ability to pass through solid objects but not end your movement within them. This benefit lasts for 1 minute. You cannot use it again until you complete a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -1810,7 +1810,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"You gain the ability to call forth spectral tentacles that grab at your foes. As an action, pick a point that you can see within 60 ft. of you. A horde of grasping tendrils appears at that point. Creatures of your choice within 10 ft. of that point must make a Strength {@variantrule Saving Throw|Ishiir} against your Warlock spell save DC. Creatures that fail their {@variantrule Saving Throw|Ishiir|Saving Throws} are {@condition Grappled|Ishiir} for 1 minute or until you use this ability again. The spectral tentacle's Strength ({@skill Athletics}) bonus is 2 + your {@variantrule Proficiency|Ishiir} bonus and its reach is 10 feet."
+				"You gain the ability to call forth spectral tentacles that grab at your foes. As an {@variantrule Action|Ishiir}, pick a point that you can see within 60 ft. of you. A horde of grasping tendrils appears at that point. Creatures of your choice within 10 ft. of that point must make a Strength {@variantrule Saving Throw|Ishiir} against your Warlock spell save DC. Creatures that fail their {@variantrule Saving Throw|Ishiir|Saving Throws} are {@condition Grappled|Ishiir} for 1 minute or until you use this ability again. The spectral tentacle's Strength ({@skill Athletics}) bonus is 2 + your {@variantrule Proficiency|Ishiir} bonus and its reach is 10 feet."
 			]
 		},
 		{
@@ -1824,7 +1824,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"You gain the ability to call upon your patron to escape from your foes. As a reaction when you take damage, you can cast {@spell darkness|Ishiir} centered on a point within 5 ft. of you. The spell lasts until the end of your next turn, and it has no effect on your vision.",
+				"You gain the ability to call upon your patron to escape from your foes. As a {@variantrule Reaction|Ishiir} when you take damage, you can cast {@spell darkness|Ishiir} centered on a point within 5 ft. of you. The spell lasts until the end of your next turn, and it has no effect on your vision.",
 				"Once you use this ability, you cannot use it until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
 			]
 		},
@@ -1840,7 +1840,7 @@
 			"header": 2,
 			"entries": [
 				"Your patron accepts you into his inner court of servitors. You gain the ability to breathe water, and a {@variantrule Swim Speed|Ishiir} equal to your normal {@variantrule Speed|Ishiir}.",
-				"You gain {@variantrule Immunity|Ishiir} to lightning damage. When your {@variantrule Immunity|Ishiir} reduces damage from an effect to 0, as a reaction you can cause creatures of your choice that you can see within 30 ft. of you to take lightning damage equal to your Charisma modifier + your {@variantrule Proficiency|Ishiir} bonus."
+				"You gain {@variantrule Immunity|Ishiir} to lightning damage. When your {@variantrule Immunity|Ishiir} reduces damage from an effect to 0, as a {@variantrule Reaction|Ishiir} you can cause creatures of your choice that you can see within 30 ft. of you to take lightning damage equal to your Charisma modifier + your {@variantrule Proficiency|Ishiir} bonus."
 			]
 		},
 		{
@@ -1854,7 +1854,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"You gain the ability to call upon your patron for aid. As an action, you open a portal at a point you can see within 30 ft. of you and choose one of the following effects."
+				"You gain the ability to call upon your patron for aid. As an {@variantrule Action|Ishiir}, you open a portal at a point you can see within 30 ft. of you and choose one of the following effects."
 			]
 		},
 		{
@@ -1954,7 +1954,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"You gain the ability to transform into Lolth's most beloved servitor, a giant spider. As a bonus action you turn into a spider. You gain a +2 bonus to AC. You gain 3 temporary hit points per level. You gain a {@variantrule Climb Speed|Ishiir} equal to your normal {@variantrule Speed|Ishiir}. You can climb difficult surfaces, such as along a ceiling, without needing to make a check. You gain a bite attack. You are proficient with this attack and it inflicts poison damage based on your level. You can use your choice of Strength or Dexterity to modify your bite attack's attack and damage rolls. While in this form, you lack hands and cannot do anything that normally requires them. However, you can cast spells but can only cast the ones listed on your expanded spell list for Lolth.",
+				"You gain the ability to transform into Lolth's most beloved servitor, a giant spider. As a {@variantrule Bonus Action|Ishiir} you turn into a spider. You gain a +2 bonus to AC. You gain 3 temporary hit points per level. You gain a {@variantrule Climb Speed|Ishiir} equal to your normal {@variantrule Speed|Ishiir}. You can climb difficult surfaces, such as along a ceiling, without needing to make a check. You gain a bite attack. You are proficient with this attack and it inflicts poison damage based on your level. You can use your choice of Strength or Dexterity to modify your bite attack's attack and damage rolls. While in this form, you lack hands and cannot do anything that normally requires them. However, you can cast spells but can only cast the ones listed on your expanded spell list for Lolth.",
 				"Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
 				{
 					"type": "table",
@@ -1999,7 +1999,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"You gain the ability to use a shard of Lolth's alien beauty, causing other creatures to become enraptured by your appearance. As a bonus action, pick a creature you can see. That creature must succeed on a Charisma {@variantrule Saving Throw|Ishiir} or become {@condition Charmed|Ishiir} by you. While {@condition Charmed|Ishiir}, it also gains vulnerability to poison damage. This benefit lasts for one minute or until you or your allies damages the creature. Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
+				"You gain the ability to use a shard of Lolth's alien beauty, causing other creatures to become enraptured by your appearance. As a {@variantrule Bonus Action|Ishiir}, pick a creature you can see. That creature must succeed on a Charisma {@variantrule Saving Throw|Ishiir} or become {@condition Charmed|Ishiir} by you. While {@condition Charmed|Ishiir}, it also gains vulnerability to poison damage. This benefit lasts for one minute or until you or your allies damages the creature. Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -2027,7 +2027,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"You can channel Lolth's malevolence into a deadly kiss. As an action, you touch a creature within your reach. The target takes {@damage 12d10} poison or psychic damage (your choice), or half as much on a successful Constitution save. A creature {@condition Charmed|Ishiir} by you has {@variantrule Disadvantage|Ishiir} on its {@variantrule Saving Throw|Ishiir}. After you use this ability, you cannot cast it again until you complete a {@variantrule Long Rest|Ishiir}."
+				"You can channel Lolth's malevolence into a deadly kiss. As an {@variantrule Action|Ishiir}, you touch a creature within your reach. The target takes {@damage 12d10} poison or psychic damage (your choice), or half as much on a successful Constitution save. A creature {@condition Charmed|Ishiir} by you has {@variantrule Disadvantage|Ishiir} on its {@variantrule Saving Throw|Ishiir}. After you use this ability, you cannot cast it again until you complete a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -2114,7 +2114,7 @@
 			"header": 1,
 			"entries": [
 				"You gain the ability to rebuke those who lash out at your in violence.",
-				"As a reaction when a creature you can see within 30 feet of you inflicts damage, you force that creature to make a Wisdom save. On a failed {@variantrule Saving Throw|Ishiir}, it takes psychic damage equal to the damage dealt. On a successful save, it takes half that damage.",
+				"As a {@variantrule Reaction|Ishiir} when a creature you can see within 30 feet of you inflicts damage, you force that creature to make a Wisdom save. On a failed {@variantrule Saving Throw|Ishiir}, it takes psychic damage equal to the damage dealt. On a successful save, it takes half that damage.",
 				"If the creature made multiple attacks, select one attack to determine the damage dealt. If the creature used one or more effects that damaged multiple targets, choose the damage take by one of those targets from one of the effects.",
 				"Once you use this feature, you can't use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
 			]
@@ -2131,7 +2131,7 @@
 			"header": 2,
 			"entries": [
 				"You can use your Channel Divinity to quell the flame of violence.",
-				"As an action, you force all creatures within 100 feet of you to make Charisma {@variantrule Saving Throw|Ishiir|Saving Throws}. Each creature that fails this saved is {@condition Charmed|Ishiir} by every other creature that also failed the {@variantrule Saving Throw|Ishiir}. This benefit lasts for one hour. While {@condition Charmed|Ishiir} by this ability, creatures consider all other creatures {@condition Charmed|Ishiir} by it to be their allies. They fight to defend them from attackers.",
+				"As an {@variantrule Action|Ishiir}, you force all creatures within 100 feet of you to make Charisma {@variantrule Saving Throw|Ishiir|Saving Throws}. Each creature that fails this saved is {@condition Charmed|Ishiir} by every other creature that also failed the {@variantrule Saving Throw|Ishiir}. This benefit lasts for one hour. While {@condition Charmed|Ishiir} by this ability, creatures consider all other creatures {@condition Charmed|Ishiir} by it to be their allies. They fight to defend them from attackers.",
 				"While this ability persists, absent any threat creatures {@condition Charmed|Ishiir} by it will rest, talk among themselves, share stories of their lives, create a communal feast using food and drink they carry, and generally act as if they are old friends, long separated and brought together again for a joyous reunion."
 			]
 		},
@@ -2175,7 +2175,7 @@
 			"header": 2,
 			"entries": [
 				"You become an avatar of unearthly beauty. Your enemies attack with uncertainty, fearful of damaging the wondrous being they behold, while your magic draws upon your presence to augment its power.",
-				"As a reaction, you can impose a penalty on a creature's attacks against you or on its {@variantrule Saving Throw|Ishiir|Saving Throws} against your spells and abilities. This benefit lasts until the end of the current turn The penalty equals your Charisma modifier (minimum 1)."
+				"As a {@variantrule Reaction|Ishiir}, you can impose a penalty on a creature's attacks against you or on its {@variantrule Saving Throw|Ishiir|Saving Throws} against your spells and abilities. This benefit lasts until the end of the current turn The penalty equals your Charisma modifier (minimum 1)."
 			]
 		},
 		{
@@ -2260,7 +2260,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"You can invoke the power of darkness to punish anyone fool enough to harm you. As a reaction when a creature you can see damages you, you cause that creature to become {@condition Blinded|Ishiir} until the end of your next turn.",
+				"You can invoke the power of darkness to punish anyone fool enough to harm you. As a {@variantrule Reaction|Ishiir} when a creature you can see damages you, you cause that creature to become {@condition Blinded|Ishiir} until the end of your next turn.",
 				"Once you use this feature, you can't use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
 			]
 		},
@@ -2276,7 +2276,7 @@
 			"header": 2,
 			"entries": [
 				"You can use your Channel Divinity to fade into the darkness.",
-				"As a bonus action, you become a creature of darkness that can blend into the shadows. You gain {@variantrule Advantage|Ishiir} on all Dexterity ({@skill Stealth}) checks. If a creature cannot see you, your spells and attacks deal maximum damage to them. The shadows seem to draw around, as if they seek to protect you. This benefit lasts for one minute."
+				"As a {@variantrule Bonus Action|Ishiir}, you become a creature of darkness that can blend into the shadows. You gain {@variantrule Advantage|Ishiir} on all Dexterity ({@skill Stealth}) checks. If a creature cannot see you, your spells and attacks deal maximum damage to them. The shadows seem to draw around, as if they seek to protect you. This benefit lasts for one minute."
 			]
 		},
 		{
@@ -2318,7 +2318,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"You gain strength from darkness. As a bonus action, you fade into the shadows. You regain hit points equal to your cleric level and gain {@variantrule Resistance|Ishiir} to all damage for one minute. In addition, while this duration lasts you can use a bonus action to teleport up to 30 feet to an unoccupied space you can see that is in dim light or darkness."
+				"You gain strength from darkness. As a {@variantrule Bonus Action|Ishiir}, you fade into the shadows. You regain hit points equal to your cleric level and gain {@variantrule Resistance|Ishiir} to all damage for one minute. In addition, while this duration lasts you can use a {@variantrule Bonus Action|Ishiir} to teleport up to 30 feet to an unoccupied space you can see that is in dim light or darkness."
 			]
 		},
 		{
@@ -2403,7 +2403,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"You can channel divine energy to enter a destructive frenzy. As a bonus action, you gain 5 temporary hit points and a +1 bonus to weapon damage rolls. This benefit lasts for one minute. Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
+				"You can channel divine energy to enter a destructive frenzy. As a {@variantrule Bonus Action|Ishiir}, you gain 5 temporary hit points and a +1 bonus to weapon damage rolls. This benefit lasts for one minute. Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
 				"When you use this ability, you can expend a spell slot to augment its effects. You gain additional temporary hit points equal to three times the slot's level and a bonus to weapon damage rolls equal to half the slot's level (minimum 1). This benefit lasts for one minute."
 			]
 		},
@@ -2419,7 +2419,7 @@
 			"header": 2,
 			"entries": [
 				"You can use your Channel Divinity to channel destructive energy.",
-				"As an action, you touch a creature or a an unattended object within reach. A creature must make a Constitution {@variantrule Saving Throw|Ishiir}, taking 5 times your cleric level thunder damage on a failed {@variantrule Saving Throw|Ishiir} and half as much on a successful one. An unattended object takes 5 times your cleric level thunder damage."
+				"As an {@variantrule Action|Ishiir}, you touch a creature or a an unattended object within reach. A creature must make a Constitution {@variantrule Saving Throw|Ishiir}, taking 5 times your cleric level thunder damage on a failed {@variantrule Saving Throw|Ishiir} and half as much on a successful one. An unattended object takes 5 times your cleric level thunder damage."
 			]
 		},
 		{
@@ -2433,7 +2433,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Your destructive acts fuel further expressions of devastation. If you kill a creature or destroy an object with a weapon attack, you can use your reaction to immediately make one additional weapon attack.",
+				"Your destructive acts fuel further expressions of devastation. If you kill a creature or destroy an object with a weapon attack, you can use your {@variantrule Reaction|Ishiir} to immediately make one additional weapon attack.",
 				"You can use this ability a number of times equal to your Wisdom modifier (minimum 1). You regain all expended uses when you complete a {@variantrule Long Rest|Ishiir}."
 			]
 		},
@@ -2510,7 +2510,7 @@
 				}
 			],
 			"entries": [
-				"By shutting down your normal senses, you extend your mind into the psionics landscape around you. For the duration you can use a bonus action to sense the presence of creatures within a 60-foot cone. You learn the number of creatures within the cone and their creature type. You cannot detect undead or constructs with this spell.",
+				"By shutting down your normal senses, you extend your mind into the psionics landscape around you. For the duration you can use a {@variantrule Bonus Action|Ishiir} to sense the presence of creatures within a 60-foot cone. You learn the number of creatures within the cone and their creature type. You cannot detect undead or constructs with this spell.",
 				"This spell is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead,or 3 feet of wood or dirt.",
 				"This spell's duration cannot be ended due to damage."
 			],
