@@ -877,7 +877,7 @@
 					"type": "list",
 					"items": [
 						"You have advantage on {@skill Perception} checks.",
-						"Your speed is doubled.",
+						"Your {@variantrule Speed|Ishiir} is doubled.",
 						"When you make a melee weapon attack with your natural weapons, you gain a +2 bonus to the damage roll. This bonus increases as you level."
 					]
 				},
@@ -919,7 +919,7 @@
 			"classSource": "Ishiir",
 			"level": 2,
 			"entries": [
-				"Your speed increases by 10 feet while you aren't wearing any armor or wielding a shield."
+				"Your {@variantrule Speed|Ishiir} increases by 10 feet while you aren't wearing any armor or wielding a shield."
 			]
 		},
 		{
@@ -988,7 +988,7 @@
 			"classSource": "Ishiir",
 			"level": 5,
 			"entries": [
-				"Once per turn, as part of an attack with your natural weapons, you can move up to your speed in a straight line towards a target of your choice."
+				"Once per turn, as part of an attack with your natural weapons, you can move up to your {@variantrule Speed|Ishiir} in a straight line towards a target of your choice."
 			]
 		},
 		{
@@ -1193,7 +1193,7 @@
 			"header": 1,
 			"entries": [
 				"You adopt an avian aspect, granting you physical traits such as the piercing eyes of a bird of prey, sharp nails, and wings sprouting from your back.",
-				"You gain a flying speed equal to your walking speed. If you are not shifted, you have to end your flying movement on the ground.",
+				"You gain a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. If you are not shifted, you have to end your flying movement on the ground.",
 				"Once you reach level 10 in this class, you no longer need to end your flying movement on the ground while not shifted."
 			]
 		},
@@ -1220,12 +1220,12 @@
 						{
                             "type": "item",
                             "name": "Agile Flyer.",
-                            "entry": "Your speed increases by 10 feet and you do not provoke opportunity attacks when you fly out of an enemy's reach."
+                            "entry": "Your {@variantrule Speed|Ishiir} increases by 10 feet and you do not provoke opportunity attacks when you fly out of an enemy's reach."
                         },
 						{
                             "type": "item",
                             "name": "Diving Raptor.",
-                            "entry": "When you use Primal Pounce, you can move up to double your speed if your target is below you. If you moved at least 20 feet in this manner, the attack adds your Natural Weapons die to the damage again once."
+                            "entry": "When you use Primal Pounce, you can move up to double your {@variantrule Speed|Ishiir} if your target is below you. If you moved at least 20 feet in this manner, the attack adds your Natural Weapons die to the damage again once."
                         }
 					]
 				}
@@ -1293,7 +1293,7 @@
                             "name": "Evasive Flight.",
                             "entries": [
 								"When you are subjected to an effect that allows you to make a Dexterity {@variantrule Saving Throw|Ishiir} to take only half damage, you instead take no damage if you succeed on the {@variantrule Saving Throw|Ishiir}, and only half damage if you fail.",
-								"If you succeed on the {@variantrule Saving Throw|Ishiir}, you can use your reaction to move up to half your speed to an unoccupied space that you can see. If you are carrying an ally or otherwise moving them with you, they also automatically succeed on the {@variantrule Saving Throw|Ishiir} and take no damage.",
+								"If you succeed on the {@variantrule Saving Throw|Ishiir}, you can use your reaction to move up to half your {@variantrule Speed|Ishiir} to an unoccupied space that you can see. If you are carrying an ally or otherwise moving them with you, they also automatically succeed on the {@variantrule Saving Throw|Ishiir} and take no damage.",
 								"You don't benefit from this feature if you have the {@condition Incapacitated|Ishiir} condition."
 							]
                         },
@@ -1368,7 +1368,7 @@
 						{
 							"type": "item",
 							"name": "Swift Climber.",
-							"entry": "You gain a {@variantrule Climb Speed|Ishiir} equal to your walking speed and when you take fall damage, you can use your reaction to decrease that damage by an amount equal to five times your Shifter level."
+							"entry": "You gain a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} and when you take fall damage, you can use your reaction to decrease that damage by an amount equal to five times your Shifter level."
 						},
 						{
 							"type": "item",
@@ -1436,7 +1436,7 @@
 						{
 							"type": "item",
 							"name": "Feline Grace.",
-							"entry": "No {@variantrule Attack Roll|Ishiir} has advantage against you and you cannot have disadvantage on Dexterity {@variantrule Saving Throw|Ishiir}s and {@variantrule Ability Check|Ishiir}s. You lose these benefits when you are {@condition Incapacitated|Ishiir} or your speed is 0."
+							"entry": "No {@variantrule Attack Roll|Ishiir} has advantage against you and you cannot have disadvantage on Dexterity {@variantrule Saving Throw|Ishiir}s and {@variantrule Ability Check|Ishiir}s. You lose these benefits when you are {@condition Incapacitated|Ishiir} or your {@variantrule Speed|Ishiir} is 0."
 						},
 						{
 							"type": "item",
@@ -1716,7 +1716,7 @@
 						{
 							"type": "item",
 							"name": "Twisting Roots.",
-							"entry": "While shifted, the ground in a 10 feet circle around you is {@quickref difficult terrain||3} for your enemies. When a creature starts its turn in that area or enters it for the first time on a turn, you can use your reaction to force it to make a Strength {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, its speed is reduced to 0 until the end of your next turn."
+							"entry": "While shifted, the ground in a 10 feet circle around you is {@quickref difficult terrain||3} for your enemies. When a creature starts its turn in that area or enters it for the first time on a turn, you can use your reaction to force it to make a Strength {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, its {@variantrule Speed|Ishiir} is reduced to 0 until the end of your next turn."
 						},
 						{
 							"type": "item",
@@ -1886,7 +1886,7 @@
 			"level": 7,
 			"header": 1,
 			"entries": [
-				"You gain a flying speed equal to your walking speed when you are shifted, but you have to end your flying movement on the ground.",
+				"You gain a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} when you are shifted, but you have to end your flying movement on the ground.",
 				"Additionally, you gain resistance to the damage type associated with your Draconic Form."
 			]
 		},

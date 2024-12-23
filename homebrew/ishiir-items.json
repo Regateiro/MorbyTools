@@ -289,7 +289,7 @@
                 }
             },
             "entries": [
-                "When you drink this potion, you gain a climbing speed equal to your walking speed for 1 hour. During this time, you have advantage on Strength ({@skill Athletics}) checks you make to climb. The potion is separated into brown, silver, and gray layers resembling bands of stone. Shaking the bottle fails to mix the colors."
+                "When you drink this potion, you gain a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} for 1 hour. During this time, you have advantage on Strength ({@skill Athletics}) checks you make to climb. The potion is separated into brown, silver, and gray layers resembling bands of stone. Shaking the bottle fails to mix the colors."
             ]
         },
         {
@@ -872,7 +872,7 @@
                 ]
             },
             "entries": [
-                "When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it."
+                "When you drink this potion, you gain a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it."
             ]
         },
         {
@@ -1083,7 +1083,7 @@
                         {
                             "type": "item",
                             "name": "Liquid Movement",
-                            "entry": "You have a swimming speed of 30 feet. You can move over or through other liquids. You can enter and occupy the space of another creature. You can rise up to your normal height, and you can pass through even Tiny openings. You extinguish nonmagical flames in any space you enter."
+                            "entry": "You have a {@variantrule Swim Speed|Ishiir} of 30 feet. You can move over or through other liquids. You can enter and occupy the space of another creature. You can rise up to your normal height, and you can pass through even Tiny openings. You extinguish nonmagical flames in any space you enter."
                         },
                         {
                             "type": "item",
@@ -1646,7 +1646,7 @@
             },
             "entries": [
                 "{@i Requirement: Armors.}",
-                "While wearing the armor, you have a swimming speed equal to your walking speed. In addition, whenever you start your turn underwater with 0 hit points, the armor causes you to rise 60 feet toward the surface."
+                "While wearing the armor, you have a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. In addition, whenever you start your turn underwater with 0 hit points, the armor causes you to rise 60 feet toward the surface."
             ]
         },
         {
@@ -2483,7 +2483,7 @@
             },
             "rarity": "none",
             "entries": [
-                "Your speed increases by 5."
+                "Your {@variantrule Speed|Ishiir} increases by 5."
             ]
         },
         {
@@ -2525,7 +2525,7 @@
             },
             "rarity": "none",
             "entries": [
-                "Your speed increases by 10."
+                "Your {@variantrule Speed|Ishiir} increases by 10."
             ]
         },
         {
@@ -3058,7 +3058,7 @@
                         [
                             "15-18",
                             "Blue with white bands",
-                            "When released from the hook, this fish squirms free, sprouts wings, follows you around, and sings a beautiful tune in Aquan. It disappears after {@dice 2d4} hours or when reduced to 0 hit points. The fish uses the {@creature quipper} stat block, except that it can breathe air and has a flying speed of 30 feet."
+                            "When released from the hook, this fish squirms free, sprouts wings, follows you around, and sings a beautiful tune in Aquan. It disappears after {@dice 2d4} hours or when reduced to 0 hit points. The fish uses the {@creature quipper} stat block, except that it can breathe air and has a {@variantrule Fly Speed|Ishiir} of 30 feet."
                         ],
                         [
                             "19-20",
@@ -4541,7 +4541,7 @@
                 }
             },
             "entries": [
-                "While you wear these boots, you can use a bonus action and click the boots' heels together. If you do, the boots double your walking speed, and any creature that makes an opportunity attack against you has disadvantage on the {@variantrule Attack Roll|Ishiir}. If you click your heels together again, you end the effect.",
+                "While you wear these boots, you can use a bonus action and click the boots' heels together. If you do, the boots double your {@variantrule Speed|Ishiir}, and any creature that makes an opportunity attack against you has disadvantage on the {@variantrule Attack Roll|Ishiir}. If you click your heels together again, you end the effect.",
                 "When the boots' property has been used for a total of 10 minutes, the magic ceases to function until you finish a {@variantrule Long Rest|Ishiir}."
             ],
             "type": "CRF",
@@ -4750,7 +4750,7 @@
             "rarity": "rare",
             "wondrous": true,
             "entries": [
-                "These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they increase the creature's walking speed by 30 feet."
+                "These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they increase the creature's {@variantrule Speed|Ishiir} by 30 feet."
             ],
             "type": "CRF",
             "value": 75000,
@@ -4937,7 +4937,7 @@
                 }
             },
             "entries": [
-                "These heavy gauntlets of brown iron are forged in the shape of an {@creature umber hulk||umber hulk's} claws, and they fit the wearer's hands and forearms all the way up to the elbow. While wearing both claws, you gain a burrowing speed of 20 feet, and you can tunnel through solid rock at a rate of 1 foot per round.",
+                "These heavy gauntlets of brown iron are forged in the shape of an {@creature umber hulk||umber hulk's} claws, and they fit the wearer's hands and forearms all the way up to the elbow. While wearing both claws, you gain a {@variantrule Burrow Speed|Ishiir} of 20 feet, and you can tunnel through solid rock at a rate of 1 foot per round.",
                 "You can use a claw as a melee weapon while wearing it. You have proficiency with it, and it deals {@damage 1d8} slashing damage on a hit (your Strength modifier applies to the attack and damage rolls, as normal).",
                 "While wearing the claws, you can't manipulate objects or cast spells with somatic components."
             ],
@@ -5182,7 +5182,7 @@
                 }
             },
             "entries": [
-                "While you wear these boots, your walking speed becomes 30 feet, unless your walking speed is higher, and your speed isn't reduced if you are encumbered or wearing heavy armor. In addition, you can jump three times the normal distance, though you can't jump farther than your remaining movement would allow."
+                "While you wear these boots, your {@variantrule Speed|Ishiir} becomes 30 feet, unless your {@variantrule Speed|Ishiir} is higher, and your {@variantrule Speed|Ishiir} isn't reduced if you are encumbered or wearing heavy armor. In addition, you can jump three times the normal distance, though you can't jump farther than your remaining movement would allow."
             ],
             "type": "CRF",
             "value": 90000,
@@ -5552,7 +5552,7 @@
                                 {
                                     "type": "item",
                                     "name": "Armor",
-                                    "entry": "The armor is now an uncommon magic item that requires attunement. You gain a bonus to speed of 5 feet while you wear the armor, and if it normally imposes disadvantage on {@skill Stealth} checks, it no longer does so."
+                                    "entry": "The armor is now an uncommon magic item that requires attunement. You gain a bonus to {@variantrule Speed|Ishiir} of 5 feet while you wear the armor, and if it normally imposes disadvantage on {@skill Stealth} checks, it no longer does so."
                                 },
                                 {
                                     "type": "item",
@@ -5593,7 +5593,7 @@
                 }
             },
             "entries": [
-                "You have a swimming speed of 40 feet while wearing this ring."
+                "You have a {@variantrule Swim Speed|Ishiir} of 40 feet while wearing this ring."
             ],
             "value": 100000,
             "crafted": {
@@ -5620,7 +5620,7 @@
                 }
             },
             "entries": [
-                "While you wear these light shoes, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed. However, the slippers don't allow you to move this way on a slippery surface, such as one covered by ice or oil."
+                "While you wear these light shoes, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. However, the slippers don't allow you to move this way on a slippery surface, such as one covered by ice or oil."
             ],
             "type": "CRF",
             "value": 100000,
@@ -5806,7 +5806,7 @@
                 }
             },
             "entries": [
-                "While wearing this brass helmet, you can breathe underwater, you gain {@sense darkvision} with a range of 60 feet, and you gain a swimming speed of 30 feet."
+                "While wearing this brass helmet, you can breathe underwater, you gain {@sense darkvision} with a range of 60 feet, and you gain a {@variantrule Swim Speed|Ishiir} of 30 feet."
             ],
             "type": "CRF",
             "value": 125000,
@@ -6216,8 +6216,8 @@
             "wondrous": true,
             "entries": [
                 "After you write a message of fifty words or fewer on this magic sheet of parchment and speak a creature's name, the parchment magically folds into a Tiny paper bird and flies to the recipient whose name you uttered. The recipient must be on the same plane of existence as you, otherwise the bird turns into ash as it takes flight.",
-                "The bird is an object that has 1 hit point, an Armor Class of 13, a flying speed of 60 feet, a Dexterity of 16 (+3), and a score of 1 (\u22125) in all other abilities, and it is immune to poison and psychic damage.",
-                "It travels to within 5 feet of its intended recipient by the most direct route, whereupon it turns into a nonmagical and inanimate sheet of parchment that can be unfolded only by the intended recipient. If the bird's hit points or speed is reduced to 0 or if it is otherwise immobilized, it turns into ash.",
+                "The bird is an object that has 1 hit point, an Armor Class of 13, a {@variantrule Fly Speed|Ishiir} of 60 feet, a Dexterity of 16 (+3), and a score of 1 (\u22125) in all other abilities, and it is immune to poison and psychic damage.",
+                "It travels to within 5 feet of its intended recipient by the most direct route, whereupon it turns into a nonmagical and inanimate sheet of parchment that can be unfolded only by the intended recipient. If the bird's hit points or {@variantrule Speed|Ishiir} is reduced to 0 or if it is otherwise immobilized, it turns into ash.",
                 "Paper birds usually come in small, flat boxes containing {@dice 1d6 + 3} sheets of the parchment."
             ],
             "type": "CRF",
@@ -6272,7 +6272,7 @@
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
-                "This wooden broom, which weighs 3 pounds, functions like a mundane broom until you stand astride it and speak its command word. It then hovers beneath you and can be ridden in the air. It has a flying speed of 50 feet. It can carry up to 400 pounds, but its flying speed becomes 30 feet while carrying over 200 pounds. The broom stops hovering when you land.",
+                "This wooden broom, which weighs 3 pounds, functions like a mundane broom until you stand astride it and speak its command word. It then hovers beneath you and can be ridden in the air. It has a {@variantrule Fly Speed|Ishiir} of 50 feet. It can carry up to 400 pounds, but its {@variantrule Fly Speed|Ishiir} becomes 30 feet while carrying over 200 pounds. The broom stops hovering when you land.",
                 "You can send the broom to travel alone to a destination within 1 mile of you if you speak the command word, name the location, and are familiar with that place. The broom comes back to you when you speak another command word, provided that the broom is still within 1 mile of you."
             ],
             "type": "CRF",
@@ -6828,7 +6828,7 @@
             "rarity": "rare",
             "reqAttune": true,
             "entries": [
-                "While you wear this ring, {@quickref difficult terrain||3} doesn't cost you extra movement. In addition, magic can neither reduce your speed nor cause you to be {@condition Paralyzed|Ishiir} or {@condition Restrained|Ishiir}."
+                "While you wear this ring, {@quickref difficult terrain||3} doesn't cost you extra movement. In addition, magic can neither reduce your {@variantrule Speed|Ishiir} nor cause you to be {@condition Paralyzed|Ishiir} or {@condition Restrained|Ishiir}."
             ],
             "value": 190000,
             "crafted": {
@@ -6961,7 +6961,7 @@
             "reqAttune": true,
             "wondrous": true,
             "entries": [
-                "While wearing these gloves, climbing and swimming don't cost you extra movement, and you gain a +5 bonus to Strength ({@skill Athletics}) checks made to climb or swim."
+                "While wearing these gloves, {@variantrule Climb Speed|Ishiir|climbing} and {@variantrule Swim Speed|Ishiir|swimming} don't cost you extra movement, and you gain a +5 bonus to Strength ({@skill Athletics}) checks made to climb or swim."
             ],
             "type": "CRF",
             "value": 200000,
@@ -7234,7 +7234,7 @@
                 }
             },
             "entries": [
-                "While you wear these boots, you have a flying speed equal to your walking speed. You can use the boots to fly for up to 4 hours, all at once or in several shorter flights, each one using a minimum of 1 minute from the duration. If you are flying when the duration expires, you descend at a rate of 30 feet per round until you land.",
+                "While you wear these boots, you have a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. You can use the boots to fly for up to 4 hours, all at once or in several shorter flights, each one using a minimum of 1 minute from the duration. If you are flying when the duration expires, you descend at a rate of 30 feet per round until you land.",
                 "The boots regain 2 hours of flying capability for every 12 hours they aren't in use."
             ],
             "type": "CRF",
@@ -7372,7 +7372,7 @@
                 }
             },
             "entries": [
-                "While wearing this cloak with its hood up, you can breathe underwater, and you have a swimming speed of 60 feet. Pulling the hood up or down requires an action."
+                "While wearing this cloak with its hood up, you can breathe underwater, and you have a {@variantrule Swim Speed|Ishiir} of 60 feet. Pulling the hood up or down requires an action."
             ],
             "type": "CRF",
             "value": 250000,
@@ -7998,9 +7998,9 @@
                         {
                             "type": "list",
                             "items": [
-                                "Mounting or dismounting a chariot costs you 5 feet of movement, rather than a number of feet equal to half your speed.",
+                                "Mounting or dismounting a chariot costs you 5 feet of movement, rather than a number of feet equal to half your {@variantrule Speed|Ishiir}.",
                                 "Being mounted on a chariot grants you half cover.",
-                                "A chariot's speed is equal to the speed of the slowest creature pulling it.",
+                                "A chariot's {@variantrule Speed|Ishiir} is equal to the {@variantrule Speed|Ishiir} of the slowest creature pulling it.",
                                 "If multiple creatures are pulling the chariot, they all act on the same initiative, and they must take the same action on their turn."
                             ]
                         }
@@ -8063,7 +8063,7 @@
                 }
             },
             "entries": [
-                "While wearing this cloak, you can use an action to speak its command word. This turns the cloak into a pair of bat wings or bird wings on your back for 1 hour or until you repeat the command word as an action. The wings give you a flying speed of 60 feet. When they disappear, you can't use them again for {@dice 1d12} hours."
+                "While wearing this cloak, you can use an action to speak its command word. This turns the cloak into a pair of bat wings or bird wings on your back for 1 hour or until you repeat the command word as an action. The wings give you a {@variantrule Fly Speed|Ishiir} of 60 feet. When they disappear, you can't use them again for {@dice 1d12} hours."
             ],
             "type": "CRF",
             "value": 275000,
@@ -8189,7 +8189,7 @@
             "entries": [
                 "This small black sphere measures \u00be of an inch in diameter and weighs an ounce. Typically, {@dice 1d4 + 4} {@italic beads of force} are found together.",
                 "You can use an action to throw the bead up to 60 feet. The bead explodes on impact and is destroyed. Each creature within a 10-foot radius of where the bead landed must succeed on a DC 15 Dexterity {@variantrule Saving Throw|Ishiir} or take {@damage 5d4} force damage. A sphere of transparent force then encloses the area for 1 minute. Any creature that failed the save and is completely within the area is trapped inside this sphere. Creatures that succeeded on the save, or are partially within the area, are pushed away from the center of the sphere until they are no longer inside it. Only breathable air can pass through the sphere's wall. No attack or other effect can.",
-                "An enclosed creature can use its action to push against the sphere's wall, moving the sphere up to half the creature's walking speed. The sphere can be picked up, and its magic causes it to weigh only 1 pound, regardless of the weight of creatures inside."
+                "An enclosed creature can use its action to push against the sphere's wall, moving the sphere up to half the creature's {@variantrule Speed|Ishiir}. The sphere can be picked up, and its magic causes it to weigh only 1 pound, regardless of the weight of creatures inside."
             ],
             "type": "CRF",
             "value": 300000,
@@ -8273,7 +8273,7 @@
             "reqAttune": true,
             "wondrous": true,
             "entries": [
-                "While wearing this cloak, you have advantage on Dexterity ({@skill Stealth}) checks. In an area of dim light or darkness, you can grip the edges of the cloak with both hands and use it to fly at a speed of 40 feet. If you ever fail to grip the cloak's edges while flying in this way, or if you are no longer in dim light or darkness, you lose this flying speed.",
+                "While wearing this cloak, you have advantage on Dexterity ({@skill Stealth}) checks. In an area of dim light or darkness, you can grip the edges of the cloak with both hands and use it to fly at a {@variantrule Speed|Ishiir} of 40 feet. If you ever fail to grip the cloak's edges while flying in this way, or if you are no longer in dim light or darkness, you lose this {@variantrule Fly Speed|Ishiir}.",
                 "While wearing the cloak in an area of dim light or darkness, you can use your action to cast {@spell polymorph|Ishiir} on yourself, transforming into a {@creature bat}. While you are in the form of the {@creature bat}, you retain your Intelligence, Wisdom, and Charisma scores. The cloak can't be used this way again until the next dawn."
             ],
             "attachedSpells": [
@@ -8430,7 +8430,7 @@
                 ]
             },
             "entries": [
-                "The greaves have 3 charges. While wearing these greaves, you can use a bonus action to expend 1 charge to increase your walking speed by 30 feet, and you have advantage on Dexterity {@variantrule Saving Throw|Ishiir}s. These effects last for 1 minute. The greaves regain {@dice 1d3} expended charges daily at dawn."
+                "The greaves have 3 charges. While wearing these greaves, you can use a bonus action to expend 1 charge to increase your {@variantrule Speed|Ishiir} by 30 feet, and you have advantage on Dexterity {@variantrule Saving Throw|Ishiir}s. These effects last for 1 minute. The greaves regain {@dice 1d3} expended charges daily at dawn."
             ]
         },
         {
@@ -9804,7 +9804,7 @@
                     "type": "list",
                     "items": [
                         "You have resistance to poison damage.",
-                        "You have a climbing speed equal to your walking speed.",
+                        "You have a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}.",
                         "You can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.",
                         "You can't be caught in webs of any sort and can move through webs as if they were {@quickref difficult terrain||3}.",
                         "You can use an action to cast the {@spell web|Ishiir} spell (save DC 13). The web created by the spell fills twice its normal area. Once used, this property of the cloak can't be used again until the next dawn."
@@ -10554,7 +10554,7 @@
             "rarity": "rare",
             "reqAttune": true,
             "entries": [
-                "Made by the {@creature drow}, this rod is a magic weapon that ends in three rubbery tentacles. While holding the rod, you can use an action to direct each tentacle to attack a creature you can see within 15 feet of you. Each tentacle makes a melee {@variantrule Attack Roll|Ishiir} with a +9 bonus. On a hit, the tentacle deals {@damage 1d6} bludgeoning damage. If you hit a target with all three tentacles, it must make a DC 15 Constitution {@variantrule Saving Throw|Ishiir}. On a failure, the creature's speed is halved, it has disadvantage on Dexterity {@variantrule Saving Throw|Ishiir}s, and it can't use reactions for 1 minute. Moreover, on each of its turns, it can take either an action or a bonus action, but not both. At the end of each of its turns, it can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on itself on a success."
+                "Made by the {@creature drow}, this rod is a magic weapon that ends in three rubbery tentacles. While holding the rod, you can use an action to direct each tentacle to attack a creature you can see within 15 feet of you. Each tentacle makes a melee {@variantrule Attack Roll|Ishiir} with a +9 bonus. On a hit, the tentacle deals {@damage 1d6} bludgeoning damage. If you hit a target with all three tentacles, it must make a DC 15 Constitution {@variantrule Saving Throw|Ishiir}. On a failure, the creature's {@variantrule Speed|Ishiir} is halved, it has disadvantage on Dexterity {@variantrule Saving Throw|Ishiir}s, and it can't use reactions for 1 minute. Moreover, on each of its turns, it can take either an action or a bonus action, but not both. At the end of each of its turns, it can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on itself on a success."
             ],
             "value": 450000,
             "crafted": {
@@ -12341,7 +12341,7 @@
             "wondrous": true,
             "entries": [
                 "You can speak the carpet's command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.",
-                "A 4 ft. \u00d7 6 ft. carpet can carry up to 400 lb. at a {@variantrule Fly Speed|Ishiir} of 60 feet. A carpet can carry up to twice this weight, but it flies at half speed if it carries more than its normal capacity."
+                "A 4 ft. \u00d7 6 ft. carpet can carry up to 400 lb. at a {@variantrule Fly Speed|Ishiir} of 60 feet. A carpet can carry up to twice this weight, but it flies at half {@variantrule Speed|Ishiir} if it carries more than its normal capacity."
             ],
             "type": "CRF",
             "value": 825000,
@@ -13124,7 +13124,7 @@
                             "type": "item",
                             "name": "Star Flight",
                             "entries": [
-                                "As a bonus action, you can spend 1 charge to gain the power of flight for 10 minutes. For the duration, you gain a flying speed equal to your walking speed, and you can hover. While flying, you glow faintly with starlight."
+                                "As a bonus action, you can spend 1 charge to gain the power of flight for 10 minutes. For the duration, you gain a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}, and you can hover. While flying, you glow faintly with starlight."
                             ]
                         },
                         {
@@ -13493,7 +13493,7 @@
                     "type": "entries",
                     "entries": [
                         "You can transfer the claw's magic to a place by tracing the wyrm rune on the ground with your finger. The point where you trace it becomes the center of a spherical area of magic that has a 100-foot radius and that is fixed to the place. The transfer takes 8 hours of work that requires the claw to be within 5 feet of you. At the end, the claw is destroyed, and the area gains the following property:",
-                        "While in the 100-foot-radius sphere, any dragon has disadvantage on {@variantrule Saving Throw|Ishiir}s and can have a flying speed no higher than 10 feet."
+                        "While in the 100-foot-radius sphere, any dragon has disadvantage on {@variantrule Saving Throw|Ishiir}s and can have a {@variantrule Fly Speed|Ishiir} no higher than 10 feet."
                     ]
                 }
             ],
@@ -14618,7 +14618,7 @@
                     "type": "list",
                     "items": [
                         "You have resistance to lightning damage.",
-                        "You have a flying speed equal to your walking speed and can hover.",
+                        "You have a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} and can hover.",
                         "You can cast the following spells from the ring, expending the necessary number of charges: {@spell chain lightning|Ishiir} (3 charges), {@spell gust of wind|Ishiir} (2 charges), or {@spell wind wall|Ishiir} (1 charge)."
                     ]
                 }
@@ -14697,7 +14697,7 @@
                     "type": "entries",
                     "name": "Flight",
                     "entries": [
-                        "As a bonus action, you can expend 1 charge to gain the power of flight for 10 minutes. For the duration, you gain a flying speed equal to your walking speed, and you can hover."
+                        "As a bonus action, you can expend 1 charge to gain the power of flight for 10 minutes. For the duration, you gain a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}, and you can hover."
                     ]
                 },
                 {
@@ -14755,7 +14755,7 @@
             },
             "entries": [
                 "You have resistance to poison damage.",
-                "You gain a climbing speed equal to your walking speed.",
+                "You gain a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}.",
                 "You have advantage on Wisdom ({@skill Perception}) checks that rely on smell, you are immune to disease, and you have {@sense darkvision} out to a range of 60 feet. If you already have {@sense darkvision}, wearing the cloak increases the range of your {@sense darkvision} by 60 feet.",
                 "As an action, you can use the Verminshroud to cast {@spell polymorph|Ishiir} on yourself, transforming into a {@creature giant rat}, a {@creature rat}, a {@creature giant wasp}, or a {@creature giant scorpion} while retaining your Intelligence, Wisdom, and Charisma scores, as well as the properties of the cloak. This property can't be used again until the next dawn.",
                 "You can use an action to cast the {@spell insect plague|Ishiir} spell (save DC 15) from the Verminshroud, requiring no material components. This property can't be used again until the next dawn.",
@@ -14924,7 +14924,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "You can breathe underwater and have a swimming speed equal to your walking speed.",
+                        "You can breathe underwater and have a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}.",
                         "You can cast the following spells from the ring, expending the necessary number of charges: {@spell create or destroy water|Ishiir} (1 charge), {@spell control water|Ishiir} (3 charges), {@spell ice storm|Ishiir} (2 charges), or {@spell wall of ice|Ishiir} (3 charges)."
                     ]
                 }
@@ -15524,7 +15524,7 @@
                 "This ornament can be jewelry, a cloak, or another wearable accessory. It appears to be fashioned from a dragon's scale, tooth, or claw, or it incorporates images in those shapes.",
                 "You gain a +1 bonus to AC, and you can't be {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir}. Moreover, each creature of your choice within 30 feet of you has advantage on {@variantrule Saving Throw|Ishiir}s it makes to avoid being {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir} or to end those conditions on itself.",
                 "When you would take damage of the type dealt by the breath of the dragon in whose hoard the ornament became Wakened, you can use your reaction to take no damage instead, and you regain hit points equal to the damage you would have taken. Once this property is used, it can't be used again until the next dawn.",
-                "While you are wearing the ornament, you gain a flying speed equal to your walking speed and can hover. While you are flying using this speed, spectral dragon wings appear on your back."
+                "While you are wearing the ornament, you gain a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} and can hover. While you are flying using this {@variantrule Speed|Ishiir}, spectral dragon wings appear on your back."
             ],
             "page": 1,
             "type": "CRF",
@@ -15827,7 +15827,7 @@
                     "type": "list",
                     "items": [
                         "You have immunity to lightning damage and thunder damage.",
-                        "You gain a flying speed of 30 feet and can hover.",
+                        "You gain a {@variantrule Fly Speed|Ishiir} of 30 feet and can hover.",
                         "When you hit with a weapon attack that normally deals bludgeoning damage, it deals thunder damage instead. When you hit with a weapon attack that normally deals piercing or slashing damage, it deals lightning damage instead.",
                         "As a bonus action, you can choose one creature you can see within 30 feet of you to be struck by lightning. The target must make a DC 15 Dexterity {@variantrule Saving Throw|Ishiir}, taking {@damage 5d6} lightning damage on a failed save, or half as much damage on a successful one."
                     ]
@@ -18041,14 +18041,14 @@
                     "name": "Command the Deep",
                     "entries": [
                         "The weapon holds the power to command the waves and its creatures. As an action, you can change the condition of the sea within 1 mile of you, creating strong winds and heavy rain that cause violent waves (see \"Weather at Sea\" in chapter 5 of the Dungeon Master's Guide) or calming a storm. In either case, the unnatural weather lasts for 1 hour before returning to normal. Once used, this property of the weapon can't be used again until the next dusk.",
-                        "Additionally, you can cast the {@spell dominate monster|Ishiir} spell (save DC 18) from the weapon, but only on beasts and monstrosities that have an innate swimming speed. Once used, this property of the weapon can't be used again until the next dusk."
+                        "Additionally, you can cast the {@spell dominate monster|Ishiir} spell (save DC 18) from the weapon, but only on beasts and monstrosities that have an innate {@variantrule Swim Speed|Ishiir}. Once used, this property of the weapon can't be used again until the next dusk."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Aquatic Metamorphosis",
                     "entries": [
-                        "You can cast the {@spell true polymorph|Ishiir} spell (save DC 18) from the weapon, but you must cast it on a creature to turn it into a kind of creature that has an innate swimming speed. Once used, this property of the weapon can't be used again until the next dusk."
+                        "You can cast the {@spell true polymorph|Ishiir} spell (save DC 18) from the weapon, but you must cast it on a creature to turn it into a kind of creature that has an innate {@variantrule Swim Speed|Ishiir}. Once used, this property of the weapon can't be used again until the next dusk."
                     ]
                 }
             ],
@@ -20568,7 +20568,7 @@
             "entries": [
                 "{@i Requirement: Piercing Weapons.}",
                 "You gain a +3 bonus to attack and damage rolls made with the weapon. If you score a critical hit with it, the target takes an extra {@damage 6d8} thunder damage.",
-                "The weapon has 3 charges. While you carry it, you can use an action and expend 1 charge to cast {@spell dominate beast|Ishiir} (save DC 20) from it on a beast that has an innate swimming speed. The weapon regains {@dice 1d3} expended charges daily at dawn.",
+                "The weapon has 3 charges. While you carry it, you can use an action and expend 1 charge to cast {@spell dominate beast|Ishiir} (save DC 20) from it on a beast that has an innate {@variantrule Swim Speed|Ishiir}. The weapon regains {@dice 1d3} expended charges daily at dawn.",
                 "The weapon also warns you of danger. While the weapon is on your person, you have advantage on initiative rolls. In addition, you and any of your companions within 30 feet of you can't be surprised, except when {@condition Incapacitated|Ishiir} by something other than nonmagical sleep. The weapon magically awakens you and your companions within range if any of you are sleeping naturally when combat begins.",
                 "While holding this weapon, you can speak its command word as an action to create a bubble of air around your head. It allows you to breathe normally underwater. This bubble stays with you until you speak the command word again, you're no longer holding the weapon, or you are no longer underwater."
             ],
@@ -20610,7 +20610,7 @@
                 "You have {@sense darkvision} out to a range of 60 feet. If you already have {@sense darkvision}, being attuned to the weapon increases the range of your {@sense darkvision} by 60 feet. Magical darkness doesn't impede your {@sense darkvision}.",
                 "You gain a +3 bonus to attack and damage rolls made with the weapon.",
                 "You can use an action to cause poison to coat the weapon. The poison remains for 1 minute or until an attack using this weapon hits a creature. That creature must succeed on a DC 17 Constitution {@variantrule Saving Throw|Ishiir} or become {@condition Poisoned|Ishiir} for 1 hour. If the {@variantrule Saving Throw|Ishiir} fails by 5 or more, the creature is also {@condition Unconscious|Ishiir} while {@condition Poisoned|Ishiir} in this way. The creature wakes up if it takes damage or if another creature uses its action to shake the creature awake.",
-                "While carrying the weapon, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed. Additionally, you can't be caught in webs of any sort and can move through webs as if they were {@quickref difficult terrain||3}.",
+                "While carrying the weapon, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. Additionally, you can't be caught in webs of any sort and can move through webs as if they were {@quickref difficult terrain||3}.",
                 "While holding the weapon, you can use an action to cast one of the following spells from it (save DC 17): {@spell cloudkill|Ishiir}, {@spell darkness|Ishiir}, {@spell levitate|Ishiir}, or {@spell web|Ishiir}. Once a spell has been cast using the weapon, that spell can't be cast from the weapon again until the next dawn.",
                 "While holding the weapon in dim light or darkness, you can use a bonus action to teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. This property can't be used again until the next dawn."
             ],
@@ -21098,9 +21098,9 @@
                 "You can speak, read, and write Abyssal and Infernal.",
                 "You gain a +3 bonus to attack and damage rolls made with the weapon. When you hit with an attack using this weapon, you can deal an extra {@damage 2d6} bludgeoning damage to the target. If you do, you take {@damage 1d6} psychic damage. The weapon deals double damage to objects and structures.",
                 "While holding this weapon, you have advantage on Wisdom ({@skill Insight}) checks made to discern a lie spoken in a language you understand.",
-                "You gain a burrowing speed equal to your walking speed. You can use your burrowing speed to move through sand, loose earth, mud, or ice, not solid rock.",
+                "You gain a {@variantrule Burrow Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. You can use your {@variantrule Burrow Speed|Ishiir} to move through sand, loose earth, mud, or ice, not solid rock.",
                 "When a creature you can see within 30 feet of you hits you with an attack while you are wielding the weapon, you can use your reaction to deal an amount of psychic damage to that creature equal to the damage you took from the attack. This property can't be used again until the next dawn.",
-                "When you have fewer hit points than half your hit point maximum, the weapon deals an extra {@damage 2d6} bludgeoning damage on a hit. You can burrow through solid rock at half your burrowing speed and leave a 5-foot-diameter tunnel in your wake.",
+                "When you have fewer hit points than half your hit point maximum, the weapon deals an extra {@damage 2d6} bludgeoning damage on a hit. You can burrow through solid rock at half your {@variantrule Burrow Speed|Ishiir} and leave a 5-foot-diameter tunnel in your wake.",
                 "As an action, you can use the weapon to cast one of the following spells from it (save DC 17): {@spell earthquake|Ishiir}, {@spell meld into stone|Ishiir}, or {@spell stone shape|Ishiir}. Once a spell has been cast using the weapon, that spell can't be cast from the weapon again until the next dawn."
             ],
             "modifySpeed": {
@@ -21289,7 +21289,7 @@
                                 {
                                     "type": "item",
                                     "name": "Feathered Wings",
-                                    "entry": "You sprout a beautiful pair of feathered wings that grant you a flying speed of 90 feet and the ability to hover. If you already have a different kind of wings, these new wings replace the old ones, which fall off."
+                                    "entry": "You sprout a beautiful pair of feathered wings that grant you a {@variantrule Fly Speed|Ishiir} of 90 feet and the ability to hover. If you already have a different kind of wings, these new wings replace the old ones, which fall off."
                                 },
                                 {
                                     "type": "item",

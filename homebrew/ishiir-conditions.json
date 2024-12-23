@@ -70,7 +70,7 @@
 								],
 								[
 									"2",
-									"Speed halved"
+									"{@variantrule Speed|Ishiir} halved"
 								],
 								[
 									"3",
@@ -82,7 +82,7 @@
 								],
 								[
 									"5",
-									"Speed reduced to 0"
+									"{@variantrule Speed|Ishiir} reduced to 0"
 								],
 								[
 									"6",
@@ -91,7 +91,7 @@
 							]
 						},
 						"If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description.",
-						"A creature suffers the effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its speed halved and has disadvantage on {@variantrule Ability Check|Ishiir}s.",
+						"A creature suffers the effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its {@variantrule Speed|Ishiir} halved and has disadvantage on {@variantrule Ability Check|Ishiir}s.",
 						"An effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1.",
 						"Finishing a {@variantrule Long Rest|Ishiir} reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink. Also, being raised from the dead reduces a creature's exhaustion level by 1."
 					]
@@ -124,7 +124,7 @@
 				{
 					"type": "list",
 					"items": [
-						"A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.",
+						"A grappled creature's {@variantrule Speed|Ishiir} becomes 0, and it can't benefit from any bonus to its {@variantrule Speed|Ishiir}.",
 						"The condition ends if the grappler is {@condition Incapacitated|Ishiir}.",
 						"The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the {@spell thunderwave|Ishiir} spell."
 					]
@@ -255,7 +255,7 @@
 					"type": "list",
 					"items": [
 						"A dazed creature has disadvantage on Dexterity {@variantrule Saving Throw|Ishiir}s and cannot take reactions.",
-						"A dazed creature moves at half its speed.",
+						"A dazed creature moves at half its {@variantrule Speed|Ishiir}.",
 						"On its turn, it can only take an action OR bonus action, but not both; it can only make one attack with either.",
 						"If the creature attempts to cast a spell with a casting time of 1 action, the creature rolls a {@dice d20}. On an 11 or higher, the spell doesn't take effect until the creature's next turn and the creature must use its action to complete the spell. If it can't, the spell is wasted."
 					]
@@ -297,7 +297,7 @@
 				{
 					"type": "list",
 					"items": [
-						"A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.",
+						"A restrained creature's {@variantrule Speed|Ishiir} becomes 0, and it can't benefit from any bonus to its {@variantrule Speed|Ishiir}.",
 						"{@variantrule Attack Roll|Ishiir}s against the creature have advantage, and the creature's {@variantrule Attack Roll|Ishiir}s have disadvantage.",
 						"The creature has disadvantage on Dexterity {@variantrule Saving Throw|Ishiir}s."
 					]

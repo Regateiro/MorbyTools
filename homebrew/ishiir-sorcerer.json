@@ -2139,8 +2139,8 @@
                     "type": "list",
                     "items": [
                         "You can see any {@condition Invisible|Ishiir} creature within 60 feet of you, provided it isn't behind total cover. Your eyes also turn black or become writhing sensory tendrils.",
-                        "You gain a flying speed equal to your walking speed, and you can hover. As you fly, your skin glistens with mucus or shines with an otherworldly light.",
-                        "You gain a swimming speed equal to twice your walking speed, and you can breathe underwater. Moreover, gills grow from your neck or fan out from behind your ears, your fingers become webbed, or you grow writhing cilia that extend through your clothing.",
+                        "You gain a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}, and you can hover. As you fly, your skin glistens with mucus or shines with an otherworldly light.",
+                        "You gain a {@variantrule Swim Speed|Ishiir} equal to twice your {@variantrule Speed|Ishiir}, and you can breathe underwater. Moreover, gills grow from your neck or fan out from behind your ears, your fingers become webbed, or you grow writhing cilia that extend through your clothing.",
                         "Your body, along with any equipment you are wearing or carrying, becomes slimy and pliable. You can move through any space as narrow as 1 inch without squeezing, and you can spend 5 feet of movement to escape from nonmagical restraints or being {@condition Grappled|Ishiir}."
                     ]
                 }
@@ -2423,7 +2423,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "You can use a bonus action to manifest a pair of spectral wings from your back. While the wings are present, you have a flying speed of 30 feet. The wings last until you're {@condition Incapacitated|Ishiir}, you die, or you dismiss them as a bonus action.",
+                "You can use a bonus action to manifest a pair of spectral wings from your back. While the wings are present, you have a {@variantrule Fly Speed|Ishiir} of 30 feet. The wings last until you're {@condition Incapacitated|Ishiir}, you die, or you dismiss them as a bonus action.",
                 "The affinity you chose for your Divine Magic feature determines the appearance of the spectral wings: eagle wings for good or law, bat wings for evil or chaos, and dragonfly wings for neutrality."
             ]
         },
@@ -2768,7 +2768,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "You gain the ability to sprout a pair of dragon wings from your back, gaining a flying speed equal to your current speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn.",
+                "You gain the ability to sprout a pair of dragon wings from your back, gaining a {@variantrule Fly Speed|Ishiir} equal to your current {@variantrule Speed|Ishiir}. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn.",
                 "You can't manifest your wings while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your wings might be destroyed when you manifest them."
             ]
         },
@@ -3080,7 +3080,7 @@
                     "items": [
                         "Your current hit points and your hit point maximum both increase by 1 per sorcerer level.",
                         "Your reach increases by 5 feet.",
-                        "Your walking speed increases by 5 feet.",
+                        "Your {@variantrule Speed|Ishiir} increases by 5 feet.",
                         "You have advantage on Strength checks and Strength {@variantrule Saving Throw|Ishiir}s.",
                         "If you hit a creature with a melee weapon attack, you can shove or grapple that creature as part of the same attack."
                     ]
@@ -3100,7 +3100,7 @@
             "header": 2,
             "entries": [
                 "Your Strength and Constitution scores increase by 2, up to a maximum of 22.",
-                "In addition, you can now use Jotun Rage twice between rests, but no more than once on a turn. If you use that feature while under its effects, its increases to your size, hit points, reach, and walking speed are cumulative."
+                "In addition, you can now use Jotun Rage twice between rests, but no more than once on a turn. If you use that feature while under its effects, its increases to your size, hit points, reach, and {@variantrule Speed|Ishiir} are cumulative."
             ]
         },
         {
@@ -3237,7 +3237,7 @@
                             "type": "item",
                             "name": "New Moon:",
                             "entries": [
-                                "You momentarily emanate an oppressive gloom. Each creature of your choice within 30 feet of you must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC or take {@damage 3d10} psychic damage and have its speed reduced to 0 until the end of its next turn. In addition, you become {@condition Invisible|Ishiir} until the end of your next turn, or until you make an attack or cast a spell."
+                                "You momentarily emanate an oppressive gloom. Each creature of your choice within 30 feet of you must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC or take {@damage 3d10} psychic damage and have its {@variantrule Speed|Ishiir} reduced to 0 until the end of its next turn. In addition, you become {@condition Invisible|Ishiir} until the end of your next turn, or until you make an attack or cast a spell."
                             ]
                         },
                         {
@@ -3516,7 +3516,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "You have a flying speed of 40 feet and can hover.",
+                        "You have a {@variantrule Fly Speed|Ishiir} of 40 feet and can hover.",
                         "You have resistance to all damage.",
                         "If you use your Phoenix Spark, that feature deals an extra 20 fire damage to each creature."
                     ]
@@ -3778,7 +3778,7 @@
                             "type": "entries",
                             "name": "Cold damage",
                             "entries": [
-                                "If the affected target takes cold damage from your spell, the target's speed is also reduced by 15 feet until the end of your next turn. If the spell already reduces the target's speed, use whichever reduction is greater."
+                                "If the affected target takes cold damage from your spell, the target's {@variantrule Speed|Ishiir} is also reduced by 15 feet until the end of your next turn. If the spell already reduces the target's {@variantrule Speed|Ishiir}, use whichever reduction is greater."
                             ]
                         },
                         {
@@ -3810,7 +3810,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Your tie to the sea grants you the ability to breathe underwater, and you have a {@variantrule Swim Speed|Ishiir} equal to your walking speed. If you already have a swimming speed, that swimming speed instead increases by 30 feet."
+                "Your tie to the sea grants you the ability to breathe underwater, and you have a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. If you already have a {@variantrule Swim Speed|Ishiir}, that {@variantrule Swim Speed|Ishiir} instead increases by 30 feet."
             ]
         },
         {
@@ -3842,7 +3842,7 @@
                 "You gain the ability to enter a liquid state while moving.",
                 "When you move on your turn, you take only half damage from opportunity attacks, and you can move through any enemy's space but can't willingly end your move there.",
                 "On your turn, you can move through any space that is at least 3 inches in diameter and do so without squeezing. When you stop moving, the regular squeezing rules apply if you're in a space one size smaller than you. You can't willingly stop in a space smaller than that, and if you're forced to do so, you immediately flow to the nearest space that can fit you, back along the path of your movement.",
-                "If you start your turn with the {@condition Grappled|Ishiir} and/or {@condition Restrained|Ishiir} condition, you can spend half your speed to immediately end those effects on you."
+                "If you start your turn with the {@condition Grappled|Ishiir} and/or {@condition Restrained|Ishiir} condition, you can spend half your {@variantrule Speed|Ishiir} to immediately end those effects on you."
             ]
         },
         {
@@ -4337,7 +4337,7 @@
             "header": 2,
             "entries": [
                 "You gain immunity to lightning and thunder damage.",
-                "You also gain a magical flying speed of 60 feet. As an action, you can reduce your flying speed to 30 feet for 1 hour and choose a number of creatures within 30 feet of you equal to 3 + your Charisma modifier. The chosen creatures gain a magical flying speed of 30 feet for 1 hour. Once you reduce your flying speed in this way, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
+                "You also gain a magical {@variantrule Fly Speed|Ishiir} of 60 feet. As an action, you can reduce your {@variantrule Fly Speed|Ishiir} to 30 feet for 1 hour and choose a number of creatures within 30 feet of you equal to 3 + your Charisma modifier. The chosen creatures gain a magical {@variantrule Fly Speed|Ishiir} of 30 feet for 1 hour. Once you reduce your {@variantrule Fly Speed|Ishiir} in this way, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -4650,7 +4650,7 @@
                         ],
                         [
                             "61",
-                            "You are {@condition Frightened|Ishiir} by the nearest creature you can see until the end of your next turn. While frightened in this manner, your speed is doubled and you have to immediately spend all your movement to move away from the creature in a straight line until you are at least 60 feet away from it or no longer have line of sight of it."
+                            "You are {@condition Frightened|Ishiir} by the nearest creature you can see until the end of your next turn. While frightened in this manner, your {@variantrule Speed|Ishiir} is doubled and you have to immediately spend all your movement to move away from the creature in a straight line until you are at least 60 feet away from it or no longer have line of sight of it."
                         ],
                         [
                             "62",
@@ -4710,7 +4710,7 @@
                         ],
                         [
                             "76",
-                            "You cast {@spell Stoneskin|Ishiir} on yourself at the highest spell level available to you (min. 4th level). For the duration, your speed becomes 10 ft."
+                            "You cast {@spell Stoneskin|Ishiir} on yourself at the highest spell level available to you (min. 4th level). For the duration, your {@variantrule Speed|Ishiir} becomes 10 ft."
                         ],
                         [
                             "77",
@@ -4989,7 +4989,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Whenever you hit a creature with a spell of 1st level or higher that deals cold damage or it fails a save against such a spell, the magical cold you command starts clinging to it for 1 minute, reducing its speed by 10 feet.",
+                "Whenever you hit a creature with a spell of 1st level or higher that deals cold damage or it fails a save against such a spell, the magical cold you command starts clinging to it for 1 minute, reducing its {@variantrule Speed|Ishiir} by 10 feet.",
                 "At the end of each of its turns, an affected creature can make a Constitution {@variantrule Saving Throw|Ishiir} against your spell save DC. Each time it fails this {@variantrule Saving Throw|Ishiir}, it suffers additional effects as per below. If it succeeds three times, the effect of your Clinging Frost ends on it.",
                 {
                     "type": "list",
@@ -5042,7 +5042,7 @@
             "level": 14,
             "header": 1,
             "entries": [
-                "The speed reduction from your Clinging Frost feature increases to 20 feet and subsequent failed {@variantrule Saving Throw|Ishiir}s against it have additional effects as per below:",
+                "The {@variantrule Speed|Ishiir} reduction from your Clinging Frost feature increases to 20 feet and subsequent failed {@variantrule Saving Throw|Ishiir}s against it have additional effects as per below:",
                 {
                     "type": "list",
                     "style": "list-hang-notitle",
@@ -5055,7 +5055,7 @@
                         {
                             "type": "item",
                             "name": "Two failed save:",
-                            "entry": "The affected creature's speed is reduced to 0."
+                            "entry": "The affected creature's {@variantrule Speed|Ishiir} is reduced to 0."
                         },
                         {
                             "type": "item",

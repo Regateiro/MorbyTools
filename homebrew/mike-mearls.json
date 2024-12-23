@@ -979,7 +979,7 @@
 							"name": "Pincer Movement",
 							"entries": [
 								"With precise timing, you order your allies to charge into the enemy, dealing body checks that leave your foes entangled and helpless.",
-								"Up to two allies that can see or hear you can use their reactions to move up to their speed. Any creature adjacent to both of your allies or to you and one of the chosen allies at the end of their movement must make a Strength {@variantrule Saving Throw|Ishiir} or become {@condition Restrained|Ishiir} until the end of your next turn. As part of this gambit, you may take the attack action."
+								"Up to two allies that can see or hear you can use their reactions to move up to their {@variantrule Speed|Ishiir}. Any creature adjacent to both of your allies or to you and one of the chosen allies at the end of their movement must make a Strength {@variantrule Saving Throw|Ishiir} or become {@condition Restrained|Ishiir} until the end of your next turn. As part of this gambit, you may take the attack action."
 							]
 						},
 						{
@@ -1045,7 +1045,7 @@
 			"header": 2,
 			"entries": [
 				"You can provide leadership that allows your allies to move in perfect harmony.",
-				"In place of moving, you can instead allow up to three allies who can see or hear you to move up to half their speed. The chosen allies must be capable of taking actions in order to move in this manner."
+				"In place of moving, you can instead allow up to three allies who can see or hear you to move up to half their {@variantrule Speed|Ishiir}. The chosen allies must be capable of taking actions in order to move in this manner."
 			]
 		},
 		{
@@ -1346,7 +1346,7 @@
 					"name": "Jaws of the Stone Dragon",
 					"entries": [
 						"Like a mighty dragon pouncing upon a helpless victim, you take stock of an immobilized foe before landing a crushing strike.",
-						"When you expend a martial exploit when attacking a target that cannot move or with a speed of 0 with a two-handed melee weapon or a versatile one wielded in two hands, you gain an additional +2 bonus per die used as a bonus to your weapon damage roll."
+						"When you expend a martial exploit when attacking a target that cannot move or with a {@variantrule Speed|Ishiir} of 0 with a two-handed melee weapon or a versatile one wielded in two hands, you gain an additional +2 bonus per die used as a bonus to your weapon damage roll."
 					]
 				},
 				{
@@ -1354,7 +1354,7 @@
 					"name": "Mountain's Grasp",
 					"entries": [
 						"Your blows land with such force that your enemy is left off balance, unable to escape your brutal assault.",
-						"When you expend a martial exploit when attacking with a two-handed melee weapon or a versatile one wielded in two hands, after rolling the dice you can select at least two of them and disregard their results. The target must make a Constitution {@variantrule Saving Throw|Ishiir}. If it fails, its speed is reduced to 0 until the end of your next turn."
+						"When you expend a martial exploit when attacking with a two-handed melee weapon or a versatile one wielded in two hands, after rolling the dice you can select at least two of them and disregard their results. The target must make a Constitution {@variantrule Saving Throw|Ishiir}. If it fails, its {@variantrule Speed|Ishiir} is reduced to 0 until the end of your next turn."
 					]
 				},
 				{
@@ -1470,7 +1470,7 @@
 			"subclassSource": "Stream",
 			"level": 3,
 			"entries": [
-				"You and your allies can move 10 ft. in your tactical focus for every 5 feet of movement expended there. {@i [Changed during stream to \"You and your allies can basically teleport into your focus. Movement on allies turn.\" Specifically, the movement is not made as a reaction\u2014your allies can use their movement on their turn(s) to move towards the focus, and gain bonuses to speed or other effects (for example, ignoring difficult terrain, or movement does not provoke opportunity attacks) to aid and incentivize this. Additionally, this may replace \"Cover That Flank\" in future.]}"
+				"You and your allies can move 10 ft. in your tactical focus for every 5 feet of movement expended there. {@i [Changed during stream to \"You and your allies can basically teleport into your focus. Movement on allies turn.\" Specifically, the movement is not made as a reaction\u2014your allies can use their movement on their turn(s) to move towards the focus, and gain bonuses to {@variantrule Speed|Ishiir} or other effects (for example, ignoring difficult terrain, or movement does not provoke opportunity attacks) to aid and incentivize this. Additionally, this may replace \"Cover That Flank\" in future.]}"
 			]
 		},
 		{
@@ -1494,7 +1494,7 @@
 			"subclassSource": "Stream",
 			"level": 3,
 			"entries": [
-				"When a hostile creature that you can see enters your tactical focus, up to three target creatures of your choice that can see the creature can use a reaction to move up to their speed. The targets must end their movement in the tactical focus. A target creature that ends this movement adjacent to the triggering creature regains its reaction."
+				"When a hostile creature that you can see enters your tactical focus, up to three target creatures of your choice that can see the creature can use a reaction to move up to their {@variantrule Speed|Ishiir}. The targets must end their movement in the tactical focus. A target creature that ends this movement adjacent to the triggering creature regains its reaction."
 			]
 		},
 		{
@@ -1518,7 +1518,7 @@
 			"subclassSource": "Stream",
 			"level": 3,
 			"entries": [
-				"If an allied creature in your tactical focus must make a Dexterity {@variantrule Saving Throw|Ishiir} it can use its reaction to move up to its speed. If this movement takes it out of the range or area of the effect that caused the {@variantrule Saving Throw|Ishiir}, it is no longer subjected to the effect. {@i [In future, this may be changed to instead give advantage on the {@variantrule Saving Throw|Ishiir}, or require the creature to drop prone, or cancel the creature's next move.]}"
+				"If an allied creature in your tactical focus must make a Dexterity {@variantrule Saving Throw|Ishiir} it can use its reaction to move up to its {@variantrule Speed|Ishiir}. If this movement takes it out of the range or area of the effect that caused the {@variantrule Saving Throw|Ishiir}, it is no longer subjected to the effect. {@i [In future, this may be changed to instead give advantage on the {@variantrule Saving Throw|Ishiir}, or require the creature to drop prone, or cancel the creature's next move.]}"
 			]
 		},
 		{
@@ -1695,8 +1695,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"You gain the ability {@i [to]} move with incredible speed, precision, and power, Few obstacles can prevent you from reaching your destination.",
-				"When you move, you can instead take two short movements by flying. Each movement is half your speed, and you must end each one on a solid object or {@i [the]} ground. If you do not, you fall and your movement ends."
+				"You gain the ability {@i [to]} move with incredible {@variantrule Speed|Ishiir}, precision, and power, Few obstacles can prevent you from reaching your destination.",
+				"When you move, you can instead take two short movements by flying. Each movement is half your {@variantrule Speed|Ishiir}, and you must end each one on a solid object or {@i [the]} ground. If you do not, you fall and your movement ends."
 			]
 		},
 		{
@@ -1738,7 +1738,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level your Aerial Artistry ability improves. When you move you can instead take four short movements by flying. {@i [Each short movement is still limited to half your speed, and between each movement you must still touch a solid object or the ground. If you do not, you fall and your movement ends.]}"
+				"At 17th level your Aerial Artistry ability improves. When you move you can instead take four short movements by flying. {@i [Each short movement is still limited to half your {@variantrule Speed|Ishiir}, and between each movement you must still touch a solid object or the ground. If you do not, you fall and your movement ends.]}"
 			]
 		},
 		{
@@ -1839,7 +1839,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Your patron accepts you into his inner court of servitors. You gain the ability to breathe water, and a {@variantrule Swim Speed|Ishiir} equal to your normal speed.",
+				"Your patron accepts you into his inner court of servitors. You gain the ability to breathe water, and a {@variantrule Swim Speed|Ishiir} equal to your normal {@variantrule Speed|Ishiir}.",
 				"You gain immunity to lightning damage. When your immunity reduces damage from an effect to 0, as a reaction you can cause creatures of your choice that you can see within 30 ft. of you to take lightning damage equal to your Charisma modifier + your proficiency bonus."
 			]
 		},
@@ -1954,7 +1954,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"You gain the ability to transform into Lolth's most beloved servitor, a giant spider. As a bonus action you turn into a spider. You gain a +2 bonus to AC. You gain 3 temporary hit points per level. You gain a {@variantrule Climb Speed|Ishiir} equal to your normal speed. You can climb difficult surfaces, such as along a ceiling, without needing to make a check. You gain a bite attack. You are proficient with this attack and it inflicts poison damage based on your level. You can use your choice of Strength or Dexterity to modify your bite attack's attack and damage rolls. While in this form, you lack hands and cannot do anything that normally requires them. However, you can cast spells but can only cast the ones listed on your expanded spell list for Lolth.",
+				"You gain the ability to transform into Lolth's most beloved servitor, a giant spider. As a bonus action you turn into a spider. You gain a +2 bonus to AC. You gain 3 temporary hit points per level. You gain a {@variantrule Climb Speed|Ishiir} equal to your normal {@variantrule Speed|Ishiir}. You can climb difficult surfaces, such as along a ceiling, without needing to make a check. You gain a bite attack. You are proficient with this attack and it inflicts poison damage based on your level. You can use your choice of Strength or Dexterity to modify your bite attack's attack and damage rolls. While in this form, you lack hands and cannot do anything that normally requires them. However, you can cast spells but can only cast the ones listed on your expanded spell list for Lolth.",
 				"Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
 				{
 					"type": "table",
@@ -2672,7 +2672,7 @@
 			],
 			"entries": [
 				"You alter the composition of your body in a subtle manner, allowing you to take seemingly impossible steps.",
-				"Until the end of your turn, you speed increases by 10 feet and you can walk across vertical surfaces without falling. If you end your turn on such a surface, you immediately fall."
+				"Until the end of your turn, you {@variantrule Speed|Ishiir} increases by 10 feet and you can walk across vertical surfaces without falling. If you end your turn on such a surface, you immediately fall."
 			],
 			"classes": {
 				"fromClassList": [
