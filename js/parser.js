@@ -2543,6 +2543,7 @@ Parser.CONDITION_TO_COLOR = {
 };
 
 Parser.RULE_TYPE_TO_FULL = {
+	"C": "Core",
 	"O": "Optional",
 	"P": "Prerelease",
 	"V": "Variant",
