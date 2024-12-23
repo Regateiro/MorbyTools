@@ -868,7 +868,7 @@
                     "type": "entries",
                     "name": "Spell Slots.",
                     "entries": [
-                        "The Artificer Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest."
+                        "The Artificer Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|Ishiir}."
                     ]
                 },
                 {
@@ -884,7 +884,7 @@
                     "type": "entries",
                     "name": "Changing Your Prepared Spells.",
                     "entries": [
-                        "Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells there with other Artificer spells for which you have spell slots."
+                        "Whenever you finish a {@variantrule Long Rest|Ishiir}, you can change your list of prepared spells, replacing any of the spells there with other Artificer spells for which you have spell slots."
                     ]
                 },
                 {
@@ -930,9 +930,9 @@
                     "type": "entries",
                     "name": "Infusing an Item",
                     "entries": [
-                        "Whenever you finish a long rest, you can touch a nonmagical object and imbue it with one of your artificer infusions, turning it into a magic item. An infusion works on only certain kinds of objects, as specified in the infusion's description. If the item requires attunement, you can attune yourself to it the instant you infuse the item. If you decide to attune to the item later, you must do so using the normal process for attunement (see \"Attunement\" in chapter 7 of the {@book Dungeon Master's Guide|DMG}).",
+                        "Whenever you finish a {@variantrule Long Rest|Ishiir}, you can touch a nonmagical object and imbue it with one of your artificer infusions, turning it into a magic item. An infusion works on only certain kinds of objects, as specified in the infusion's description. If the item requires attunement, you can attune yourself to it the instant you infuse the item. If you decide to attune to the item later, you must do so using the normal process for attunement (see \"Attunement\" in chapter 7 of the {@book Dungeon Master's Guide|DMG}).",
                         "Your infusion remains in an item indefinitely, but when you die, the infusion vanishes after a number of days have passed equal to your Intelligence modifier (minimum of 1 day). The infusion also vanishes if you give up your knowledge of the infusion for another one.",
-                        "You can infuse more than one nonmagical object at the end of a long rest; the maximum number of objects appears in the Infused Items column of the Artificer table. You must touch each of the objects, and each of your infusions can be in only one object at a time. Moreover, no object can bear more than one of your infusions at a time. If you try to exceed your maximum number of infusions, the oldest infusion immediately ends, and then the new infusion applies.",
+                        "You can infuse more than one nonmagical object at the end of a {@variantrule Long Rest|Ishiir}; the maximum number of objects appears in the Infused Items column of the Artificer table. You must touch each of the objects, and each of your infusions can be in only one object at a time. Moreover, no object can bear more than one of your infusions at a time. If you try to exceed your maximum number of infusions, the oldest infusion immediately ends, and then the new infusion applies.",
                         "If an infusion ends on an item that contains other things, like a bag of holding, its contents harmlessly appear in and around its space."
                     ]
                 }
@@ -970,7 +970,7 @@
             "classSource": "Ishiir",
             "level": 3,
             "entries": [
-                "You learn how to produce exactly the tool you need: with {@item thieves' tools|PHB} or {@item artisan's tools|Ishiir} in hand, you can magically create one set of {@item artisan's tools|Ishiir} in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work, which can coincide with a short or long rest. Though the product of magic, the tools are nonmagical, and they vanish when you use this feature again."
+                "You learn how to produce exactly the tool you need: with {@item thieves' tools|PHB} or {@item artisan's tools|Ishiir} in hand, you can magically create one set of {@item artisan's tools|Ishiir} in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work, which can coincide with a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}. Though the product of magic, the tools are nonmagical, and they vanish when you use this feature again."
             ]
         },
         {
@@ -1028,7 +1028,7 @@
             "level": 7,
             "entries": [
                 "You gain the ability to come up with solutions under pressure. When you or another creature you can see within 30 feet of you makes an ability check or a saving throw, you can use your reaction to add your Intelligence modifier to the roll.",
-                "You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest."
+                "You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1092,7 +1092,7 @@
             "classSource": "Ishiir",
             "level": 11,
             "entries": [
-                "You learn how to store a spell in an object. Whenever you finish a long rest, you can touch one {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} or one item that you can use as a spellcasting focus, and you store a spell in it, choosing a 1st- or 2nd-level spell from the {@filter artificer spell list|spells|class=Artificer (Ishiir)|cast time=action|level=1;2|source=Ishiir} that requires 1 action to cast (you needn't have it prepared).",
+                "You learn how to store a spell in an object. Whenever you finish a {@variantrule Long Rest|Ishiir}, you can touch one {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} or one item that you can use as a spellcasting focus, and you store a spell in it, choosing a 1st- or 2nd-level spell from the {@filter artificer spell list|spells|class=Artificer (Ishiir)|cast time=action|level=1;2|source=Ishiir} that requires 1 action to cast (you needn't have it prepared).",
                 "While holding the object, a creature can take an action to produce the spell's effect from it, using your spellcasting ability modifier. If the spell requires {@condition Concentration|Ishiir}, the creature must concentrate. The spell stays in the object until it's been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object."
             ]
         },
@@ -1326,9 +1326,9 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Whenever you finish a short or long rest, you can magically produce an {@i experimental elixir} in an empty flask you touch. Roll on the Experimental Elixir table for the elixir's effect, which is triggered when someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an {@condition Incapacitated|Ishiir} creature.",
-                "Creating an {@i experimental elixir} requires you to have {@item alchemist's supplies|Ishiir} on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next short or long rest.",
-                "When you reach certain levels in this class, you can make more elixirs at the end of a long rest: two at 6th level and three at 15th level. Roll for each elixir's effect separately. Each elixir requires its own flask.",
+                "Whenever you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, you can magically produce an {@i experimental elixir} in an empty flask you touch. Roll on the Experimental Elixir table for the elixir's effect, which is triggered when someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an {@condition Incapacitated|Ishiir} creature.",
+                "Creating an {@i experimental elixir} requires you to have {@item alchemist's supplies|Ishiir} on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
+                "When you reach certain levels in this class, you can make more elixirs at the end of a {@variantrule Long Rest|Ishiir}: two at 6th level and three at 15th level. Roll for each elixir's effect separately. Each elixir requires its own flask.",
                 "You can create additional {@i experimental elixirs} by expending a spell slot of 1st level or higher for each one. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the elixir's effect from the Experimental Elixir table.",
                 {
                     "type": "table",
@@ -1400,7 +1400,7 @@
                     "type": "list",
                     "items": [
                         "Whenever a creature drinks an {@i experimental elixir} you created, the creature gains temporary hit points equal to {@dice 2d6} + your Intelligence modifier (minimum of 1 temporary hit point).",
-                        "You can cast {@spell lesser restoration|Ishiir} without expending a spell slot and without preparing the spell, provided you use {@item alchemist's supplies|Ishiir} as the spellcasting focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+                        "You can cast {@spell lesser restoration|Ishiir} without expending a spell slot and without preparing the spell, provided you use {@item alchemist's supplies|Ishiir} as the spellcasting focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
                     ]
                 }
             ]
@@ -1421,7 +1421,7 @@
                     "type": "list",
                     "items": [
                         "You gain resistance to acid damage and poison damage, and you are immune to the {@condition Poisoned|Ishiir} condition.",
-                        "You can cast {@spell greater restoration|Ishiir} and {@spell heal|Ishiir} without expending a spell slot, without preparing the spell, and without material components, provided you use {@item alchemist's supplies|Ishiir} as the spellcasting focus. Once you cast either spell with this feature, you can't cast that spell with it again until you finish a long rest."
+                        "You can cast {@spell greater restoration|Ishiir} and {@spell heal|Ishiir} without expending a spell slot, without preparing the spell, and without material components, provided you use {@item alchemist's supplies|Ishiir} as the spellcasting focus. Once you cast either spell with this feature, you can't cast that spell with it again until you finish a {@variantrule Long Rest|Ishiir}."
                     ]
                 }
             ]
@@ -1480,7 +1480,7 @@
             "level": 3,
             "type": "item",
             "entries": [
-                "As a bonus action, you can gain temporary hit points equal to 5 times your proficiency bonus, replacing any temporary hit points you already have. You lose these temporary hit points if you doff the armor. You can use this bonus action a number of times equal to your proficiency bonus. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest."
+                "As a bonus action, you can gain temporary hit points equal to 5 times your proficiency bonus, replacing any temporary hit points you already have. You lose these temporary hit points if you doff the armor. You can use this bonus action a number of times equal to your proficiency bonus. You regain one expended use when you finish a {@variantrule Short Rest|Ishiir}, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1564,7 +1564,7 @@
             "entries": [
                 "You can customize your Arcane Armor. When you do so, choose one of the following armor models: Guardian or Infiltrator. The model you choose gives you special benefits while you wear it.",
                 "Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls.",
-                "You can change the armor's model whenever you finish a short or long rest, provided you have {@item armorsmith's tools|Ishiir} in hand.",
+                "You can change the armor's model whenever you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, provided you have {@item armorsmith's tools|Ishiir} in hand.",
                 {
                     "type": "entries",
                     "entries": [
@@ -1725,7 +1725,7 @@
                     "name": "Guardian",
                     "entries": [
                         "When a Huge or smaller creature you can see ends its turn within 30 feet of you, you can use your reaction to magically force it to make a Strength saving throw against your spell save DC. On a failed save, you pull the creature up to 25 feet directly to an unoccupied space. If you pull the target to a space within 5 feet of you, you can make a melee weapon attack against it as part of this reaction.",
-                        "You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest."
+                        "You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a {@variantrule Long Rest|Ishiir}."
                     ]
                 },
                 {
@@ -1837,7 +1837,7 @@
             "header": 1,
             "entries": [
                 "You learn how to create a magical cannon. Using {@item woodcarver's tools|Ishiir} or {@item weaponsmith's tools|Ishiir}, you can take an action to magically create a Small or Tiny eldritch cannon in an unoccupied space on a horizontal surface within 5 feet of you. A Small eldritch cannon occupies its space, and a Tiny one can be held in one hand.",
-                "Once you create a cannon, you can't do so again until you finish a short or a long rest or until you expend a spell slot of 1st level or higher. You can have only one cannon at a time and can't create one while your cannon is present.",
+                "Once you create a cannon, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir} or until you expend a spell slot of 1st level or higher. You can have only one cannon at a time and can't create one while your cannon is present.",
                 "The cannon is a magical object. Regardless of size, the cannon has an AC of 18 and a number of hit points equal to five times your artificer level. It is immune to poison damage and psychic damage, and all conditions. If it is forced to make an ability check or a saving throw, treat all its ability scores as 10 (+0). If the {@spell mending|Ishiir} spell is cast on it, it regains {@dice 2d6} hit points. It disappears if it is reduced to 0 hit points or after 1 hour. You can dismiss it early as an action.",
                 "When you create the cannon, you determine its appearance and whether it has legs. You also decide which type it is, choosing from the options on the Eldritch Cannons table. On each of your turns, you can take a bonus action to cause the cannon to activate if you are within 60 feet of it. As part of the same bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space, provided it has legs.",
                 {
@@ -1879,7 +1879,7 @@
             "level": 5,
             "header": 2,
             "entries": [
-                "You know how to turn a wand, staff, or rod into an arcane firearm, a conduit for your destructive spells. When you finish a short or a long rest, you can use {@item woodcarver's tools|Ishiir} to carve special sigils into a wand, staff, or rod and thereby turn it into your arcane firearm. The sigils disappear from the object if you later carve them on a different item. The sigils otherwise last indefinitely.",
+                "You know how to turn a wand, staff, or rod into an arcane firearm, a conduit for your destructive spells. When you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, you can use {@item woodcarver's tools|Ishiir} to carve special sigils into a wand, staff, or rod and thereby turn it into your arcane firearm. The sigils disappear from the object if you later carve them on a different item. The sigils otherwise last indefinitely.",
                 "You can use your arcane firearm as a spellcasting focus for your artificer spells. When you cast an artificer spell through the firearm, roll a {@damage d8}, and you gain a bonus to one of the spell's damage rolls equal to the number rolled."
             ]
         },
@@ -2038,7 +2038,7 @@
                 "Your tinkering has borne you a faithful companion, a {@creature steel defender|tce}. It is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the steel defender stat block, which uses your proficiency bonus (PB) in several places. You determine the creature's appearance and whether it has two legs or four; your choice has no effect on its game statistics.",
                 "In combat, the defender shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the {@action Dodge|Ishiir} action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition Incapacitated|Ishiir}, the defender can take any action of its choice, not just {@action Dodge|Ishiir}.",
                 "If the {@spell mending|Ishiir} spell is cast on it, it regains {@dice 2d6} hit points. If it has died within the last hour, you can use your {@item armorsmith's tools|Ishiir} as an action to revive it, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored.",
-                "At the end of a long rest, you can create a new steel defender if you have your {@item armorsmith's tools|Ishiir} with you. If you already have a steel defender from this feature, the first one immediately perishes. The defender also perishes if you die."
+                "At the end of a {@variantrule Long Rest|Ishiir}, you can create a new steel defender if you have your {@item armorsmith's tools|Ishiir} with you. If you already have a steel defender from this feature, the first one immediately perishes. The defender also perishes if you die."
             ]
         },
         {
@@ -2088,7 +2088,7 @@
                         "Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring {@dice 2d6} hit points to it."
                     ]
                 },
-                "You can use this energy a number of times equal to your Intelligence modifier (minimum of once), but you can do so no more than once on a turn. You regain all expended uses when you finish a long rest."
+                "You can use this energy a number of times equal to your Intelligence modifier (minimum of once), but you can do so no more than once on a turn. You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {

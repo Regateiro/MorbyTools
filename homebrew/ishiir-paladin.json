@@ -813,7 +813,7 @@
             "classSource": "Ishiir",
             "level": 1,
             "entries": [
-                "Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level × 5.",
+                "Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a {@variantrule Long Rest|Ishiir}. With that pool, you can restore a total number of hit points equal to your paladin level × 5.",
                 "As a bonus action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.",
                 "Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.",
                 "This feature has no effect on undead and constructs."
@@ -833,7 +833,7 @@
                     "type": "entries",
                     "name": "Spell Slots.",
                     "entries": [
-                        "The Paladin Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest."
+                        "The Paladin Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|Ishiir}."
                     ]
                 },
                 {
@@ -849,7 +849,7 @@
                     "type": "entries",
                     "name": "Changing Your Prepared Spells.",
                     "entries": [
-                        "Whenever you finish a Long Rest, you can replace one spell on your list with another Paladin spell for which you have spell slots."
+                        "Whenever you finish a {@variantrule Long Rest|Ishiir}, you can replace one spell on your list with another Paladin spell for which you have spell slots."
                     ]
                 },
                 {
@@ -878,7 +878,7 @@
             "level": 2,
             "entries": [
                 "When you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is {@dice 2d8} for a 1st-level spell slot, plus {@dice 1d8} for each spell level higher than 1st, to a maximum of {@dice 6d8}. The damage increases by {@dice 1d8} if the target is an undead or a fiend, to a maximum of {@dice 6d8}.",
-                "You can use this feature without expending a spell slot a number of times equal to half your proficiency (rounded down) and you regain all expended uses when you finish a long rest."
+                "You can use this feature without expending a spell slot a number of times equal to half your proficiency (rounded down) and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -964,7 +964,7 @@
             "level": 3,
             "entries": [
                 "You can channel divine energy directly from the Outer Planes, using it to fuel magical effects. You start with one such effect: Divine Sense, which is described below. Other Paladin features give additional Channel Divinity effect options. Each time you use this class's Channel Divinity, you choose which effect from this class to create.",
-                "You can use this class's Channel Divinity twice. You regain one of its expended uses when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain an additional use when you reach Paladin level 11.",
+                "You can use this class's Channel Divinity twice. You regain one of its expended uses when you finish a {@variantrule Short Rest|Ishiir}, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}. You gain an additional use when you reach Paladin level 11.",
                 "If a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting feature.",
 				{
 					"type": "list",
@@ -978,7 +978,7 @@
 						{
 							"type": "item",
 							"name": "Harness Divine Power.",
-							"entry": "You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 3rd level, once; 7th level, twice; and 15th level, thrice. You regain all expended uses when you finish a long rest."
+							"entry": "You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 3rd level, once; 7th level, twice; and 15th level, thrice. You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
 						}
 					]
 				}
@@ -1075,7 +1075,7 @@
             "level": 4,
             "entries": [
                 "You gain the mastery benefits for two {@filter weapons|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} of your choice as well as an {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} type (see {@variantrule Armor Mastery|Ishiir} and {@variantrule Weapon Mastery|Ishiir} variant rules). You must be proficient in the chosen weapons and armor. If you possess the Unarmored Defense feature, you may {@optfeature Unarmored Defense|Ishiir|choose it} in place of an armor type.",
-                "You can change your choices when you finish a short or long rest."
+                "You can change your choices when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1100,7 +1100,7 @@
             "level": 5,
             "entries": [
                 "You can call on the aid of an otherworldly steed. You always have the {@spell Find Steed|Ishiir} spell prepared.",
-                "You can also cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a Long Rest."
+                "You can also cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1913,7 +1913,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "When you are reduced to 0 Hit Points and not killed outright, you can drop to 1 Hit Point instead, and you regain a number of Hit Points equal to three times your Paladin level. Once you use this feature, you can't do so again until you finish a Long Rest.",
+                "When you are reduced to 0 Hit Points and not killed outright, you can drop to 1 Hit Point instead, and you regain a number of Hit Points equal to three times your Paladin level. Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}.",
                 "Additionally, you can't be aged magically, and you cease visibly aging."
             ]
         },
@@ -1928,7 +1928,7 @@
             "level": 20,
             "header": 2,
             "entries": [
-                "As a Bonus Action, you can imbue your Aura of Protection with primal power, granting the benefits below for 1 minute or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).",
+                "As a Bonus Action, you can imbue your Aura of Protection with primal power, granting the benefits below for 1 minute or until you end them (no action required). Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}. You can also restore your use of it by expending a level 5 spell slot (no action required).",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
@@ -2151,7 +2151,7 @@
                         "The damage of your Aura of Conquest and Scornful Rebuke is doubled."
                     ]
                 },
-                "Once you use this feature, you can't use it again until you finish a long rest. You can also restore your use of it by expending a level 5 spell slot (no action required)."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}. You can also restore your use of it by expending a level 5 spell slot (no action required)."
             ]
         },
         {
@@ -2213,7 +2213,7 @@
             "header": 1,
             "entries": [
                 "As a bonus action, you issue a challenge that compels other creatures to do battle with you. Each creature of your choice that you can see within 30 feet of you must make a Wisdom saving throw. On a failed save, a creature can't willingly move more than 30 feet away from you. This effect ends on the creature if you are {@condition Incapacitated|Ishiir} or die or if the creature is more than 30 feet away from you.",
-                "You can use this feature a number of times equal to half your proficiency (rounded down). And you regain one expended use on a Short Rest and all expended uses on a Long Rest."
+                "You can use this feature a number of times equal to half your proficiency (rounded down). And you regain one expended use on a {@variantrule Short Rest|Ishiir} and all expended uses on a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2374,7 +2374,7 @@
                         "All allies within 30 ft of you have advantage on Wisdom saving throws."
                     ]
                 },
-                "This effect ends early if you are {@condition Incapacitated|Ishiir} or die. Once you use this feature, you can't use it again until you finish a long rest. You can also restore your use of it by expending a level 5 spell slot (no action required)."
+                "This effect ends early if you are {@condition Incapacitated|Ishiir} or die. Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}. You can also restore your use of it by expending a level 5 spell slot (no action required)."
             ]
         },
         {
@@ -2608,7 +2608,7 @@
             "level": 20,
             "header": 2,
             "entries": [
-                "As a Bonus Action, you can imbue your Aura of Protection with holy power, granting the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).",
+                "As a Bonus Action, you can imbue your Aura of Protection with holy power, granting the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}. You can also restore your use of it by expending a level 5 spell slot (no action required).",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
@@ -2797,7 +2797,7 @@
             "level": 3,
             "header": 2,
             "entries": [
-                "You gain proficiency in {@skill acrobatics} or {@skill athletics}. When you make Strength or Dexterity check, you can add your Charisma modifier to it. You can do so a number of times equal to your proficiency and you regain all expended uses on a long rest."
+                "You gain proficiency in {@skill acrobatics} or {@skill athletics}. When you make Strength or Dexterity check, you can add your Charisma modifier to it. You can do so a number of times equal to your proficiency and you regain all expended uses on a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2827,7 +2827,7 @@
             "header": 2,
             "entries": [
                 "You can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can use your reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one weapon attack against the attacker as part of this reaction, provided the attacker is within your weapon's range.",
-                "You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain one expended use on a Short Rest and all expended uses on a Long Rest."
+                "You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain one expended use on a {@variantrule Short Rest|Ishiir} and all expended uses on a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2850,7 +2850,7 @@
                         "When you're not {@condition Incapacitated|Ishiir} and subjected to an effect that allows you to make a Strength, Dexterity, or Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature again until the start of your next turn."
                     ]
                 },
-                "Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a 5th-level spell slot to use it again."
             ]
         },
         {
@@ -3004,7 +3004,7 @@
                         "When an enemy creature starts its turn in the gloom, it takes 10 necrotic damage. This damage is doubled if the creature is good-aligned. "
                     ]
                 },
-                "Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a 5th-level spell slot to use it again."
             ]
         },
         {
@@ -3228,7 +3228,7 @@
                         "If you heal a target with your Lay on Hands, the amount of healing it receives per point is doubled. "
                     ]
                 },
-                "Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a 5th-level spell slot to use it again."
             ]
         },
         {
@@ -3368,7 +3368,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "You have the ability to slip away from your foes. Immediately after you are hit by an attack, you can use your reaction to turn {@condition Invisible|Ishiir} and teleport up to 60 feet to a spot you can see. You remain {@condition Invisible|Ishiir} until the end of your next turn or until you attack, deal damage, or force a creature to make a saving throw. Once you use this feature, you must finish a short or long rest before you can use it again."
+                "You have the ability to slip away from your foes. Immediately after you are hit by an attack, you can use your reaction to turn {@condition Invisible|Ishiir} and teleport up to 60 feet to a spot you can see. You remain {@condition Invisible|Ishiir} until the end of your next turn or until you attack, deal damage, or force a creature to make a saving throw. Once you use this feature, you must finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir} before you can use it again."
             ]
         },
         {
@@ -3403,7 +3403,7 @@
                             "name": "Treacherous Strike",
                             "entries": [
                                 "If a creature within 5 feet of you misses you with a melee attack, you can use your reaction to force the attacker to reroll that attack against a creature of your choice that is also within 5 feet of the attacker. The ability fails and is wasted if the attacker is immune to being {@condition Charmed|Ishiir}.",
-                                "You can use this ability three times. You regain one expended use on a Short Rest and all expended uses on a Long Rest."
+                                "You can use this ability three times. You regain one expended use on a {@variantrule Short Rest|Ishiir} and all expended uses on a {@variantrule Long Rest|Ishiir}."
                             ]
                         }
                     ]
@@ -3430,7 +3430,7 @@
                         "When you use your Treacherous Strikes feature, the new target of the attack can be anywhere in the aura. "
                     ]
                 },
-                "Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a 5th-level spell slot to use it again."
             ]
         },
         {
@@ -3652,7 +3652,7 @@
                         "If an enemy creature starts its turn in your Aura of Protection or enters it for the first time on a turn, it has to make a Wisdom saving throw or become {@condition Frightened|Ishiir} for 1 minute. If the creature is under the effect of your Vow of Enmity, it has disadvantage on this saving throw. At the end of each of its turns, the creature can repeat the saving throw, ending the effect on a success. "
                     ]
                 },
-                "Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a 5th-level spell slot to use it again."
             ]
         },
         {
@@ -3858,7 +3858,7 @@
                         "When you hit a creature with an attack roll and deal damage to it, you can also force it to make a Charisma saving throw against your spell save DC. On a failed save, the creature is magically banished to its native plane of existence if it's currently not there. On a successful save, the creature can't be banished by this feature for 24 hours."
                     ]
                 },
-                "Once you use this bonus action, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
+                "Once you use this bonus action, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a 5th-level spell slot to use it again."
             ]
         }
     ]

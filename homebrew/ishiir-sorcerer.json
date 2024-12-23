@@ -990,7 +990,7 @@
                     "type": "entries",
                     "name": "Spell Slots.",
                     "entries": [
-                        "The Sorcerer Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest."
+                        "The Sorcerer Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|Ishiir}."
                     ]
                 },
                 {
@@ -1033,7 +1033,7 @@
             "classSource": "Ishiir",
             "level": 1,
             "entries": [
-                "Whenever you finish a long rest, you can replace one spell you learned from this Spellcasting feature with another spell from the sorcerer spell list. The new spell must be the same level as the spell you replace."
+                "Whenever you finish a {@variantrule Long Rest|Ishiir}, you can replace one spell you learned from this Spellcasting feature with another spell from the sorcerer spell list. The new spell must be the same level as the spell you replace."
             ]
         },
         {
@@ -1052,7 +1052,7 @@
                         "You have Advantage on the attack rolls of Sorcerer spells you cast."
                     ]
                 },
-                "You can use this feature twice, and you regain all expended uses of it when you finish a Long Rest."
+                "You can use this feature twice, and you regain all expended uses of it when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1070,7 +1070,7 @@
                     "type": "entries",
                     "name": "Creating Spell Slots",
                     "entries": [
-                        "You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The created spell slots vanish at the end of a long rest. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.",
+                        "You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The created spell slots vanish at the end of a {@variantrule Long Rest|Ishiir}. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.",
                         {
                             "type": "table",
                             "caption": "Creating Spell Slots",
@@ -1158,7 +1158,7 @@
 			"level": 2,
 			"header": 1,
 			"entries": [
-				"You have 2 sorcery points, and you gain one additional point every time you level up, to a maximum of 20 at level 20. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest."
+				"You have 2 sorcery points, and you gain one additional point every time you level up, to a maximum of 20 at level 20. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a {@variantrule Long Rest|Ishiir}."
 			]
 		},
         {
@@ -1212,7 +1212,7 @@
             "entries": [
                 "Because your magic flows from within, you can alter your spells to suit your needs; you gain two Metamagic options of your choice from the list below. You use the chosen options to temporarily modify spells you cast. To use an option, you must spend the number of Sorcery Points that it costs.",
                 "You can use only one Metamagic option on a spell when you cast it unless otherwise noted in one of those options.",
-                "When you finish a short or long rest you can replace one metamagic you know with another one. You gain two more options at Sorcerer level 10 and two more at Sorcerer level 17.",
+                "When you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir} you can replace one metamagic you know with another one. You gain two more options at Sorcerer level 10 and two more at Sorcerer level 17.",
                 {
                     "type": "options",
 					"name": "Metamagic Options",
@@ -1389,7 +1389,7 @@
             "classSource": "Ishiir",
             "level": 10,
             "entries": [
-                "Once per long rest when you finish a short rest, you can choose to recover sorcery points equal to half your sorcerer level (rounded up)."
+                "Once per {@variantrule Long Rest|Ishiir} when you finish a {@variantrule Short Rest|Ishiir}, you can choose to recover sorcery points equal to half your sorcerer level (rounded up)."
             ]
         },
         {
@@ -2158,7 +2158,7 @@
             "header": 2,
             "entries": [
                 "You can unleash your aberrant power as a space-warping anomaly. As a bonus action, you can teleport to an unoccupied space you can see within 120 feet of you. Immediately after you disappear, each creature within 30 feet of the space you left must make a Strength saving throw against your spell save DC. On a failed save, a creature takes {@damage 4d10} force damage and is pulled straight toward the space you left, ending in an unoccupied space as close to your former space as possible. On a successful save, the creature takes half as much damage and isn't pulled.",
-                "Once you use this feature, you can't do so again until you finish a long rest, unless you spend 5 sorcery points to use it again."
+                "Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you spend 5 sorcery points to use it again."
             ]
         },
         {
@@ -2282,7 +2282,7 @@
             "header": 1,
             "entries": [
                 "Your connection to the plane of absolute order allows you to equalize chaotic moments. When a creature you can see within 60 feet of yourself is about to roll a d20 with Advantage or Disadvantage, you can take a Reaction to prevent the roll from being affected by Advantage and Disadvantage.",
-                "You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
+                "You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2299,7 +2299,7 @@
                 "name": "Sorcery Points"
             },
             "entries": [
-                "You can tap into the grand equation of existence to imbue a creature with a shimmering shield of order. As an action, you can expend 1 to 5 sorcery points to create a magical ward around yourself or another creature you can see within 30 feet of you. The ward lasts until you finish a long rest or until you use this feature again.",
+                "You can tap into the grand equation of existence to imbue a creature with a shimmering shield of order. As an action, you can expend 1 to 5 sorcery points to create a magical ward around yourself or another creature you can see within 30 feet of you. The ward lasts until you finish a {@variantrule Long Rest|Ishiir} or until you use this feature again.",
                 "The ward is represented by a number of {@dice d8}s equal to the number of sorcery points spent to create it. When the warded creature takes damage, it can expend a number of those dice, roll them, and reduce the damage taken by the total rolled on those dice."
             ]
         },
@@ -2315,7 +2315,7 @@
             "header": 2,
             "entries": [
                 "You gain the ability to align your consciousness to the endless calculations of Mechanus. As a bonus action, you can enter this state for 1 minute. For the duration, attack rolls against you can't benefit from advantage, and whenever you make an attack roll, an ability check, or a saving throw, you can treat a roll of 9 or lower on the {@dice d20} as a 10.",
-                "Once you use this bonus action, you can't use it again until you finish a long rest, unless you spend 5 sorcery points to use it again."
+                "Once you use this bonus action, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you spend 5 sorcery points to use it again."
             ]
         },
         {
@@ -2338,7 +2338,7 @@
                         "Every spell of 6th level or lower ends on creatures and objects of your choice in the cube."
                     ]
                 },
-                "Once you use this action, you can't use it again until you finish a long rest, unless you spend 7 sorcery points to use it again."
+                "Once you use this action, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you spend 7 sorcery points to use it again."
             ]
         },
         {
@@ -2392,7 +2392,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Divine power guards your destiny. If you fail a saving throw or miss with an attack roll, you can roll {@dice 2d4} and add it to the total, possibly changing the outcome. Once you use this feature, you can't use it again until you finish a short or long rest, unless you use 2 sorcery points to use it again."
+                "Divine power guards your destiny. If you fail a saving throw or miss with an attack roll, you can roll {@dice 2d4} and add it to the total, possibly changing the outcome. Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, unless you use 2 sorcery points to use it again."
             ]
         },
         {
@@ -2439,7 +2439,7 @@
             "header": 2,
             "entries": [
                 "You gain the ability to overcome grievous injuries. As a bonus action when you have fewer than half of your hit points remaining, you can regain a number of hit points equal to half your hit point maximum.",
-                "Once you use this feature, you can't use it again until you finish a long rest, unless you use 6 sorcery points to use it again."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you use 6 sorcery points to use it again."
             ]
         },
         {
@@ -2790,7 +2790,7 @@
             "entries": [
                 "You can channel the dread presence of your dragon ancestor, causing those around you to become awestruck or frightened. As a bonus action, you draw on this power and exude an aura of awe or fear (your choice) to a distance of 60 feet. For 1 minute, each hostile creature that starts its turn in this aura or enters it for the first time on a turn must succeed on a Wisdom saving throw or be {@condition Charmed|Ishiir} (if you chose awe) or {@condition Frightened|Ishiir} (if you chose fear) until the aura ends. A creature that succeeds on this saving throw is immune to your aura for 24 hours.",
                 "Additionally, any spell that deals the damage type associated with your draconic ancestry is treated as 1 spell level higher for the purposes of its damage.",
-                "You cannot use this feature again until you have finished a long rest, unless you spend 5 sorcery points to use it again."
+                "You cannot use this feature again until you have finished a {@variantrule Long Rest|Ishiir}, unless you spend 5 sorcery points to use it again."
             ]
         },
         {
@@ -3085,7 +3085,7 @@
                         "If you hit a creature with a melee weapon attack, you can shove or grapple that creature as part of the same attack."
                     ]
                 },
-                "Once you use this feature, you can't use it again until you finish a short or long rest, unless you spend 4 sorcery points to use this feature again."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, unless you spend 4 sorcery points to use this feature again."
             ]
         },
         {
@@ -3205,7 +3205,7 @@
                                 ]
                             ]
                         },
-                        "Whenever you finish a long rest, you can choose what lunar phase manifests its power through your magic: Full Moon, New Moon, or Crescent Moon. While in the chosen phase, spells of the associated phase in the Lunar Spells table can be cast once without expending a spell slot. Once you cast a spell in this way, you can't do so again until you finish a long rest."
+                        "Whenever you finish a {@variantrule Long Rest|Ishiir}, you can choose what lunar phase manifests its power through your magic: Full Moon, New Moon, or Crescent Moon. While in the chosen phase, spells of the associated phase in the Lunar Spells table can be cast once without expending a spell slot. Once you cast a spell in this way, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}."
                     ]
                 }
             ]
@@ -3249,7 +3249,7 @@
                         }
                     ]
                 },
-                "Once you use a phase's bonus action, you can't do so again until you finish a long rest, unless you spend 5 sorcery points to use it again."
+                "Once you use a phase's bonus action, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you spend 5 sorcery points to use it again."
             ]
         },
         {
@@ -3291,7 +3291,7 @@
                         }
                     ]
                 },
-                "Whenever you use Metamagic on a spell from the Lunar Spells table or a spell of a school of magic associated with the lunar phase you are in, you can reduce the sorcery points spent by 1 (minimum 0). You can reduce the sorcery points spent for your Metamagic a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest"
+                "Whenever you use Metamagic on a spell from the Lunar Spells table or a spell of a school of magic associated with the lunar phase you are in, you can reduce the sorcery points spent by 1 (minimum 0). You can reduce the sorcery points spent for your Metamagic a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}"
             ]
         },
         {
@@ -3433,7 +3433,7 @@
                         "Whenever you roll fire damage on your turn, the roll gains a bonus to equal to your Charisma modifier."
                     ]
                 },
-                "Once you use this feature, you can't use it again until you finish a long rest, unless you spend 2 sorcery points to use it again."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you spend 2 sorcery points to use it again."
             ]
         },
         {
@@ -3498,7 +3498,7 @@
                 "The fiery energy within you grows restless and vengeful. In the face of defeat, it surges outward to preserve you in a fiery roar.",
                 "If you are reduced to 0 hit points, you can instead be reduced to 1 hit point, and each creature within 10 feet of you takes fire damage equal to half your sorcerer level + your Charisma modifier.",
                 "If you use this feature while under the effects of your Mantle of Flame, this feature instead deals fire damage equal to your sorcerer level + double your Charisma modifier, and your Mantle of Flame immediately ends.",
-                "Once you use this feature, you can't use it again until you finish a long rest."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3521,7 +3521,7 @@
                         "If you use your Phoenix Spark, that feature deals an extra 20 fire damage to each creature."
                     ]
                 },
-                "Once you use this feature, you can't use it again until you finish a long rest, unless you spend 7 sorcery points to use it again."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you spend 7 sorcery points to use it again."
             ]
         },
         {
@@ -3680,7 +3680,7 @@
                 "As a bonus action, you can magically transform into a creature of living flame. In this form, you have resistance to piercing, bludgeoning, and slashing damage as well as immunity to fire damage and poison.",
                 "Additionally, if a creature hits you with a melee attack from within 10 ft or touches you, it takes fire damage equal to half your sorcerer level. Additionally, you add your Charisma modifier to the damage of all the other features gained from this subclass that deal fire damage.",
                 "You remain in this form for 1 minute. It ends early if you are {@condition Incapacitated|Ishiir}, if you die, or if you dismiss it as a bonus action.",
-                "Once you have used this feature, you cannot use it again until you have finished a Long Rest, unless you spend 6 sorcery points to use it again."
+                "Once you have used this feature, you cannot use it again until you have finished a {@variantrule Long Rest|Ishiir}, unless you spend 6 sorcery points to use it again."
             ]
         },
         {
@@ -3825,7 +3825,7 @@
             "header": 2,
             "entries": [
                 "You gain resistance to fire damage.",
-                "You also gain the ability to defend yourself by momentarily assuming a watery form. As a reaction when you are hit by an attack and take bludgeoning, piercing, or slashing damage from it, you can reduce that damage by an amount equal to your sorcerer level plus your Charisma score, and then you can move up to 30 feet without provoking opportunity attacks. Once you use this special reaction, you can't use it again until you finish a short or long rest, or you use 3 sorcery points to use this feature again."
+                "You also gain the ability to defend yourself by momentarily assuming a watery form. As a reaction when you are hit by an attack and take bludgeoning, piercing, or slashing damage from it, you can reduce that damage by an amount equal to your sorcerer level plus your Charisma score, and then you can move up to 30 feet without provoking opportunity attacks. Once you use this special reaction, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, or you use 3 sorcery points to use this feature again."
             ]
         },
         {
@@ -3938,7 +3938,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. This feature does not work if the triggering damage was radiant or a critical hit. You can't use this feature again until you finish a long rest.",
+                "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. This feature does not work if the triggering damage was radiant or a critical hit. You can't use this feature again until you finish a {@variantrule Long Rest|Ishiir}.",
                 "Additionally, you learn additional spells when you reach certain levels in this class, as shown on the table below. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
                 {
                     "type": "table",
@@ -4046,7 +4046,7 @@
             "entries": [
                 "You can magically transform yourself into a shadowy form as a bonus action. In this form, you have resistance to all damage except force and radiant damage, and you can move through other creatures and objects as if they were {@quickref difficult terrain||3}. You take 5 force damage if you end your turn inside an object.",
                 "You remain in this form for 1 minute. It ends early if you are {@condition Incapacitated|Ishiir}, if you die, or if you dismiss it as a bonus action.",
-                "Once you have used this feature, you cannot use it again until you have finished a Long Rest, unless you spend 6 sorcery points to use it again."
+                "Once you have used this feature, you cannot use it again until you have finished a {@variantrule Long Rest|Ishiir}, unless you spend 6 sorcery points to use it again."
             ]
         },
         {
@@ -4337,7 +4337,7 @@
             "header": 2,
             "entries": [
                 "You gain immunity to lightning and thunder damage.",
-                "You also gain a magical flying speed of 60 feet. As an action, you can reduce your flying speed to 30 feet for 1 hour and choose a number of creatures within 30 feet of you equal to 3 + your Charisma modifier. The chosen creatures gain a magical flying speed of 30 feet for 1 hour. Once you reduce your flying speed in this way, you can't do so again until you finish a short or long rest."
+                "You also gain a magical flying speed of 60 feet. As an action, you can reduce your flying speed to 30 feet for 1 hour and choose a number of creatures within 30 feet of you equal to 3 + your Charisma modifier. The chosen creatures gain a magical flying speed of 30 feet for 1 hour. Once you reduce your flying speed in this way, you can't do so again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -4376,7 +4376,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a long rest or roll on the Wild Surge table before you can use this feature again.",
+                "You can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a {@variantrule Long Rest|Ishiir} or roll on the Wild Surge table before you can use this feature again.",
                 "Any time before you regain the use of this feature, you roll on the {@table Wild Magic Surge|PHB} table immediately after you cast a sorcerer spell of 1st level or higher. You then regain the use of this feature."
             ]
         },
@@ -4907,7 +4907,7 @@
             "header": 2,
             "entries": [
                 "Immediately after you cast a sorcerer spell with a spell slot, you can create an effect of your choice from the {@table Wild Magic Surge|PHB} table, provided the effect casts a spell or restores all your expended Sorcery Points.",
-                "Once you use this feature, you can't do so again until you finish {@dice 1d4} Long Rests."
+                "Once you use this feature, you can't do so again until you finish {@dice 1d4} {@variantrule Long Rest|Ishiir}s."
             ]
         },
         {
@@ -5081,7 +5081,7 @@
                 "Additionally, if a creature hits you with a melee attack from within 10 ft or touches you while you are under the effect of your Aegis of Rime feature, it is immediately affected by your Clinging Frost feature. If it was already affected, it instead immediately makes a Constitution saving throw as if at the end of its turn, suffering the usual effect on a failure. Succeeding on this saving throw does not count towards the three successes needed to clear the effect. ",
                 "Finally, creatures affected by your Clinging Frost suffer a -2 penalty to Constitution saving throws against your spells that deal cold damage.",
                 "You remain in this form for 1 minute. It ends early if you are incapacitated, if you die, or if you dismiss it as a bonus action.",
-                "You cannot use this feature again until you finish a long rest or you spend 7 sorcery points to use it again."
+                "You cannot use this feature again until you finish a {@variantrule Long Rest|Ishiir} or you spend 7 sorcery points to use it again."
             ]
         }
     ]

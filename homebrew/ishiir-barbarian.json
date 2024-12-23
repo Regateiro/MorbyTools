@@ -811,7 +811,7 @@
             "level": 1,
             "entries": [
                 "You can imbue yourself with a primal power called Rage, a force that grants you extraordinary might and resilience. You can enter it as a Bonus Action if you aren't wearing Heavy armor.",
-                "You can enter your Rage the number of times shown for your Barbarian level in the Rages column of the Barbarian Features table. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.",
+                "You can enter your Rage the number of times shown for your Barbarian level in the Rages column of the Barbarian Features table. You regain one expended use when you finish a {@variantrule Short Rest|Ishiir}, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}.",
                 "While active, your Rage follows the rules below.",
                 {
                     "type": "entries",
@@ -956,7 +956,7 @@
             "level": 4,
             "entries": [
                 "You gain the mastery benefits for two {@filter weapons|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} of your choice as well as an {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} type (see {@variantrule Armor Mastery|Ishiir} and {@variantrule Weapon Mastery|Ishiir} variant rules). You must be proficient in the chosen weapons and armor. If you possess the Unarmored Defense feature, you may {@optfeature Unarmored Defense|Ishiir|choose it} in place of an armor type.",
-                "You can change your choices when you finish a short or long rest."
+                "You can change your choices when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1116,7 +1116,7 @@
             "level": 11,
             "entries": [
                 "Your Rage can keep you fighting despite grievous wounds. If you drop to 0 Hit Points while your Rage is active and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, your Hit Points instead change to a number equal to twice your Barbarian level.",
-                "Each time you use this feature after the first, the DC increases by 5. When you finish a Short or Long Rest, the DC resets to 10."
+                "Each time you use this feature after the first, the DC increases by 5. When you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, the DC resets to 10."
             ]
         },
         {
@@ -1193,7 +1193,7 @@
             "classSource": "Ishiir",
             "level": 15,
             "entries": [
-                "When you roll Initiative, you can regain all expended uses of Rage. After you regain uses of Rage in this way, you can't do so again until you finish a Long Rest.",
+                "When you roll Initiative, you can regain all expended uses of Rage. After you regain uses of Rage in this way, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}.",
                 "In addition, your Rage is so fierce that it now lasts for 10 minutes without you needing to do anything to extend it from round to round. Your Rage ends early if you have the {@condition Unconscious|Ishiir} condition (not just the Incapacitated condition) or don Heavy armor."
             ]
         },
@@ -1343,7 +1343,7 @@
             "header": 2,
             "entries": [
                 "You gain the ability to consult with your ancestral spirits. When you do so, you cast the {@spell augury|Ishiir} or {@spell clairvoyance|Ishiir} spell, without using a spell slot or material components. Rather than creating a spherical sensor, this use of {@spell clairvoyance|Ishiir} invisibly summons one of your ancestral spirits to the chosen location. Wisdom is your spellcasting ability for these spells.",
-                "After you cast either spell in this way, you can't use this feature again until you finish a short or long rest."
+                "After you cast either spell in this way, you can't use this feature again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1393,7 +1393,7 @@
             "header": 1,
             "entries": [
                 "You gain proficiency in heavy armor and ignore all restrictions for Barbarian class features while wearing heavy armor. You also gain the ability to modify your armor with spikes, blades, and other hazardous materials and turn it into a weapon: spiked armor.",
-                "Every time you finish a short rest, you can use this feature to remove these materials from your current spiked armor and attach them to another armor of your choice.",
+                "Every time you finish a {@variantrule Short Rest|Ishiir}, you can use this feature to remove these materials from your current spiked armor and attach them to another armor of your choice.",
                 "Spiked armor has the same properties as the original armor. Additionally, it counts as a heavy martial melee weapon with a reach of 5 ft that you are proficient in. On a hit, it deals {@damage 1d4} piercing damage. You use your Strength modifier for the attack and damage rolls. If spiked your armor has a permanent bonus to its armor class (e.g. the masterwork property), you add this bonus to your attack and damage rolls with it.",
                 "When you are raging and wearing spiked armor, you can make one attack with your spiked armor as a bonus action.",
                 "Additionally, when you successfully {@action grapple|Ishiir} a creature or {@action shove|Ishiir} it {@condition Prone|Ishiir}, the creature also takes damage equal to your Strength modifier. If you are raging, you add your rage damage bonus to this damage."
@@ -1598,7 +1598,7 @@
             "header": 2,
             "entries": [
                 "The feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
-                "You can also alter your form to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish your next short or long rest:",
+                "You can also alter your form to help you adapt to your surroundings. When you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, choose one of the following benefits, which lasts until you finish your next {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}:",
                 {
                     "type": "list",
                     "items": [
@@ -1628,7 +1628,7 @@
                         "The target takes {@damage 2d12} psychic damage."
                     ]
                 },
-                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1644,7 +1644,7 @@
             "entries": [
                 "The beast within you grows so powerful that you can spread its ferocity to others and gain resilience from them joining your hunt. When you enter your rage, you can choose a number of other willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature).",
                 "You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can each use the following benefit once on each of their turns: when the creature hits a target with an attack roll and deals damage to it, the creature can roll a {@dice d6} and gain a bonus to the damage equal to the number rolled.",
-                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1930,7 +1930,7 @@
             "header": 2,
             "entries": [
                 "While you are raging you can call down your god's fury in the form of a powerful lightning bolt when you hit a creature with a melee weapon attack. The target has to make a Dexterity saving throw. The DC is equal to 8 + your proficiency + your STR modifier. On a failure, the creature takes {@damage 12d10} lightning damage, and half as much on a successful one. Any creature that you have grappled has disadvantage on this saving throw.",
-                "You cannot use this feature again until you have finished a long rest, unless you spend a use of your rage to use it again."
+                "You cannot use this feature again until you have finished a {@variantrule Long Rest|Ishiir}, unless you spend a use of your rage to use it again."
             ]
         },
         {
@@ -1965,7 +1965,7 @@
                 "You emanate a stormy, magical aura while you rage. The aura extends 10 feet from you in every direction, but not through total cover.",
                 "Your aura has an effect that is active for the duration of your rage, and an additional empowered effect.",
                 "You can empower your aura only once per rage.",
-                "Choose blaze, thunderstorm, or blizzard. Your aura's effect depends on your choice, as detailed below. You can change this choice whenever you finish a short or long rest.",
+                "Choose blaze, thunderstorm, or blizzard. Your aura's effect depends on your choice, as detailed below. You can change this choice whenever you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
                 "If your aura's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.",
                 {
                     "type": "options",
@@ -2637,7 +2637,7 @@
             "header": 1,
             "entries": [
                 "As an action, you can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 60 feet of you that isn't behind total cover. When you sense a spell, you learn which school of magic it belongs to.",
-                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2720,10 +2720,10 @@
                     "type": "list",
                     "items": [
                         "For 10 minutes, the creature can roll a {@dice d3} whenever making an attack roll or an ability check and add the number rolled to the {@dice d20} roll.",
-                        "Roll a {@dice d3}. The creature regains one expended spell slot, the level of which equals the number rolled or lower (the creature's choice). Once a creature receives this benefit, that creature can't receive it again until after a long rest."
+                        "Roll a {@dice d3}. The creature regains one expended spell slot, the level of which equals the number rolled or lower (the creature's choice). Once a creature receives this benefit, that creature can't receive it again until after a {@variantrule Long Rest|Ishiir}."
                     ]
                 },
-                "You can take this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                "You can take this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2877,7 +2877,7 @@
             "header": 1,
             "entries": [
                 "A divine entity helps ensure you can continue the fight. You have a pool of four d12s that you can spend to heal yourself. As a Bonus Action, you can expend dice from the pool, roll them, and regain a number of Hit Points equal to the roll's total.",
-                "Your pool regains one die when you finish a Short Rest, and all expended dice when you finish a Long Rest.",
+                "Your pool regains one die when you finish a {@variantrule Short Rest|Ishiir}, and all expended dice when you finish a {@variantrule Long Rest|Ishiir}.",
                 "The pool's maximum number of dice increases by one when you reach Barbarian levels 6 (5 dice), 12 (6 dice), and 17 (7 dice)."
             ]
         },
@@ -2907,7 +2907,7 @@
             "header": 2,
             "entries": [
                 "You learn to channel divine power to inspire zealotry in others. As a bonus action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you that can hear you gain advantage on attack rolls and saving throws until the start of your next turn.",
-                "Once you use this feature, you can't use it again until you finish a long rest. If you’ve run out of uses of this feature, you can expend one use of your Rage, choosing to activate this feature instead of Rage."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}. If you’ve run out of uses of this feature, you can expend one use of your Rage, choosing to activate this feature instead of Rage."
             ]
         },
         {
@@ -2921,7 +2921,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "When you activate your Rage, you can assume the form of a divine warrior. This form lasts for 1 minute or until you drop to 0 Hit Points. Once you use this feature, you can't do so again until you finish a Long Rest.",
+                "When you activate your Rage, you can assume the form of a divine warrior. This form lasts for 1 minute or until you drop to 0 Hit Points. Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}.",
                 "While in this form, you gain the benefits below.",
                 {
 					"type": "list",

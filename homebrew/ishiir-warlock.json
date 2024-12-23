@@ -707,7 +707,7 @@
                     "type": "entries",
                     "name": "Spell Slots",
                     "entries": [
-                        "The Warlock table shows how many spell slots you have to cast your {@filter warlock spells|spells|class=warlock (Ishiir)|source=Ishiir} of 1st through 5th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.",
+                        "The Warlock table shows how many spell slots you have to cast your {@filter warlock spells|spells|class=warlock (Ishiir)|source=Ishiir} of 1st through 5th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
                         "For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell {@spell witch bolt|Ishiir}, you must spend one of those slots, and you cast it as a 3rd-level spell."
                     ]
                 },
@@ -762,7 +762,7 @@
             "classSource": "Ishiir",
             "level": 1,
             "entries": [
-                "Whenever you finish a long rest, you can replace one spell you learned from this Pact Magic feature with another spell from the warlock spell list. The new spell must be the same level as the spell you replace."
+                "Whenever you finish a {@variantrule Long Rest|Ishiir}, you can replace one spell you learned from this Pact Magic feature with another spell from the warlock spell list. The new spell must be the same level as the spell you replace."
             ]
         },
         {
@@ -870,7 +870,7 @@
             "classSource": "Ishiir",
             "level": 5,
             "entries": [
-                "When you finish a short or long rest, you can expend one pact magic spell slot to gain a number of free castings for lesser spells until you finish your next short or long rest.",
+                "When you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, you can expend one pact magic spell slot to gain a number of free castings for lesser spells until you finish your next {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
                 "You can choose only warlock spells that you know and each chosen spell must not have a clause that grants it additional or enhanced effects when it is cast at a higher level. The total spell level of the chosen spells must be equal to or lower than the level of the expended pact magic slot. You can choose the same spell multiple times."
             ]
         },
@@ -933,8 +933,8 @@
             "level": 11,
             "entries": [
                 "Your patron bestows upon you a magical secret called an arcanum. Choose one {@filter 6th-level spell from the warlock spell list|spells|level=6|class=Warlock (Ishiir)|source=Ishiir} as this arcanum.",
-                "You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.",
-                "At higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
+                "You can cast your arcanum spell once without expending a spell slot. You must finish a {@variantrule Long Rest|Ishiir} before you can do so again.",
+                "At higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -972,7 +972,7 @@
             "level": 13,
             "entries": [
                 "Your patron bestows upon you a magical secret called an arcanum. Choose one {@filter 7th-level spell from the warlock spell list|spells|level=7|class=Warlock (Ishiir)|source=Ishiir} as this arcanum.",
-                "You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+                "You can cast your arcanum spell once without expending a spell slot. You must finish a {@variantrule Long Rest|Ishiir} before you can do so again."
             ]
         },
         {
@@ -997,7 +997,7 @@
             "level": 15,
             "entries": [
                 "Your patron bestows upon you a magical secret called an arcanum. Choose one {@filter 8th-level spell from the warlock spell list|spells|level=8|class=Warlock (Ishiir)|source=Ishiir} as this arcanum.",
-                "You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+                "You can cast your arcanum spell once without expending a spell slot. You must finish a {@variantrule Long Rest|Ishiir} before you can do so again."
             ]
         },
         {
@@ -1035,7 +1035,7 @@
             "level": 17,
             "entries": [
                 "Your patron bestows upon you a magical secret called an arcanum. Choose one {@filter 9th-level spell from the warlock spell list|spells|level=9|class=Warlock (Ishiir)|source=Ishiir} as this arcanum.",
-                "You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+                "You can cast your arcanum spell once without expending a spell slot. You must finish a {@variantrule Long Rest|Ishiir} before you can do so again."
             ]
         },
         {
@@ -1072,7 +1072,7 @@
             "classSource": "Ishiir",
             "level": 20,
             "entries": [
-                "You can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature. Once you regain spell slots with this feature, you must finish a long rest before you can do so again."
+                "You can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature. Once you regain spell slots with this feature, you must finish a {@variantrule Long Rest|Ishiir} before you can do so again."
             ]
         }
     ],
@@ -1932,7 +1932,7 @@
             "header": 1,
             "entries": [
                 "Your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As a bonus action, you can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw against your warlock spell save DC. The creatures that fail their saving throws are all {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir} by you (your choice) until the end of your next turn.",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1947,7 +1947,7 @@
             "header": 2,
             "entries": [
                 "You can vanish in a puff of mist in response to harm. When you take damage, you can use your reaction to turn {@condition Invisible|Ishiir} and teleport up to 60 feet to an unoccupied space you can see. You remain {@condition Invisible|Ishiir} until the start of your next turn or until you attack or cast a spell.",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1962,7 +1962,7 @@
             "header": 2,
             "entries": [
                 "You can vanish in a puff of mist in response to harm. When you take damage, you can use your reaction to turn {@condition Invisible|Ishiir} and teleport up to 60 feet to an unoccupied space you can see. You remain {@condition Invisible|Ishiir} until the start of your next turn or until you attack or cast a spell.",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2006,7 +2006,7 @@
             "entries": [
                 "You can plunge a creature into an illusory realm. As an action, choose a creature that you can see within 60 feet of you. It must make a Wisdom saving throw against your warlock spell save DC. On a failed save, it is {@condition Incapacitated|Ishiir} for 1 minute or until your {@condition Concentration|Ishiir} is broken (as if you are concentrating on a spell). This effect ends early if the creature takes any damage.",
                 "Until this illusion ends, the creature thinks it is lost in a misty realm, the appearance of which you choose. The creature can see and hear only itself, you, and the illusion.",
-                "You must finish a short or long rest before you can use this feature again."
+                "You must finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir} before you can use this feature again."
             ]
         },
         {
@@ -2099,7 +2099,7 @@
             "entries": [
                 "You gain the ability to channel celestial energy to heal wounds. You have a pool of {@dice d6}s that you spend to fuel this healing. The number of dice in the pool equals 1 + your warlock level.",
                 "As a bonus action, you can heal one creature you can see within 60 feet of you, spending dice from the pool. The maximum number of dice you can spend at once equals your Charisma modifier (minimum of one die). Roll the dice you spend, add them together, and restore a number of hit points equal to the total.",
-                "Your pool regains all expended dice when you finish a long rest."
+                "Your pool regains all expended dice when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2127,7 +2127,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You gain temporary hit points whenever you finish a short or long rest. These temporary hit points equal your warlock level + your Charisma modifier. Additionally, choose up to five creatures you can see at the end of the rest. Those creatures each gain temporary hit points equal to half your warlock level + your Charisma modifier."
+                "You gain temporary hit points whenever you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}. These temporary hit points equal your warlock level + your Charisma modifier. Additionally, choose up to five creatures you can see at the end of the rest. Those creatures each gain temporary hit points equal to half your warlock level + your Charisma modifier."
             ]
         },
         {
@@ -2142,7 +2142,7 @@
             "header": 2,
             "entries": [
                 "The radiant energy you channel allows you to resist death. When you have to make a death saving throw at the start of your turn, you can instead spring back to your feet with a burst of radiant energy. You regain hit points equal to half your hit point maximum, and then you stand up if you so choose. Each creature of your choice that is within 30 feet of you takes radiant damage equal to {@dice 2d8} + your Charisma modifier, and it is {@condition Blinded|Ishiir} until the end of the current turn.",
-                "Once you use this feature, you can't use it again until you finish a long rest."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2332,7 +2332,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "When you fail a saving throw, you can succeed instead. You cannot use this feature again until you finish a long rest."
+                "When you fail a saving throw, you can succeed instead. You cannot use this feature again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2348,7 +2348,7 @@
             "entries": [
                 "As an action, you open a small portal and call upon the raw energy of your patron's powerful breath weapon.",
                 "Every creature in the area of effect, which originates from your position, has to make a saving throw against your spell save DC. A target takes {@damage 15d10} damage on a failed save, and half as much on a successful one. The shape, saving throw, and damage type of the breath weapon depends on your draconic patron.",
-                "You cannot use this feature again until you have finished a long rest.",
+                "You cannot use this feature again until you have finished a {@variantrule Long Rest|Ishiir}.",
 				{
                     "type": "table",
                     "caption": "Master's Odem",
@@ -2513,7 +2513,7 @@
                 "You can magically summon a spectral tentacle that strikes at your foes. As a bonus action, you create a 10-foot-long tentacle at a point you can see within 60 feet of you. The tentacle lasts for 1 minute or until you use this feature to create another tentacle.",
                 "When you create the tentacle, you can make a melee spell attack against one creature within 10 feet of it. On a hit, the target takes {@damage 1d8} + your Charisma modifier cold damage, and its speed is reduced by 10 feet until the start of your next turn. When you reach 10th level in this class, the damage increases to {@dice 2d8} + your Charisma modifier.",
                 "As a bonus action on your turn, you can move the tentacle up to 30 feet and repeat the attack.",
-                "You can summon the tentacle a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                "You can summon the tentacle a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2555,7 +2555,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You learn the spell {@spell Evard's black tentacles|Ishiir}. It counts as a warlock spell for you, but it doesn't count against the number of spells you know. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.",
+                "You learn the spell {@spell Evard's black tentacles|Ishiir}. It counts as a warlock spell for you, but it doesn't count against the number of spells you know. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a {@variantrule Long Rest|Ishiir}.",
                 "Whenever you cast this spell, your patron's magic bolsters you, granting you a number of temporary hit points equal to your warlock level. Moreover, damage can't break your {@condition Concentration|Ishiir} on this spell."
             ]
         },
@@ -2571,7 +2571,7 @@
             "header": 2,
             "entries": [
                 "You can magically open temporary conduits to watery destinations. As an action, you can teleport yourself and up to five other willing creatures that you can see within 30 feet of you. Amid a whirl of tentacles, you all vanish and then reappear in a body of water (pond size or larger) you've seen in the same plane of existence as you or within 30 feet of it, each of you appearing in an unoccupied space within 30 feet of the others.",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2661,7 +2661,7 @@
             "header": 2,
             "entries": [
                 "You can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a {@dice d10} to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur.",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2676,7 +2676,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature. Damage from magical weapons or silver weapons ignores this resistance."
+                "You can choose one damage type when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}. You gain resistance to that damage type until you choose a different one with this feature. Damage from magical weapons or silver weapons ignores this resistance."
             ]
         },
         {
@@ -2693,7 +2693,7 @@
             "entries": [
                 "When you hit a creature with an attack, you can use this feature to instantly transport the target through the lower planes. The creature disappears and hurtles through a nightmare landscape.",
                 "At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes {@damage 10d10} psychic damage as it reels from its horrific experience.",
-                "Once you use this feature, you can't use it again until you finish a long rest."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2893,7 +2893,7 @@
                     ]
                 },
                 "The vessel's AC equals your spell save DC. Its hit points equal your warlock level plus your proficiency bonus, and it is immune to poison and psychic damage.",
-                "If the vessel is destroyed or you lose it, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and the previous vessel is destroyed if it still exists. The vessel vanishes in a flare of elemental power when you die."
+                "If the vessel is destroyed or you lose it, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, and the previous vessel is destroyed if it still exists. The vessel vanishes in a flare of elemental power when you die."
             ]
         },
         {
@@ -2906,7 +2906,7 @@
             "subclassSource": "Ishiir",
             "level": 1,
             "entries": [
-                "As an action, you can magically vanish and enter your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 20-foot-radius cylinder, 20 feet high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in the unoccupied spaces closest to the vessel's former space. Once you enter the vessel, you can't enter again until you finish a long rest."
+                "As an action, you can magically vanish and enter your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 20-foot-radius cylinder, 20 feet high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in the unoccupied spaces closest to the vessel's former space. Once you enter the vessel, you can't enter again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2934,7 +2934,7 @@
             "header": 2,
             "entries": [
                 "You begin to take on characteristics of your patron's kind. You now have resistance to a damage type determined by your patron's kind: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid).",
-                "In addition, as a bonus action, you can give yourself a flying speed of 30 feet that lasts for 10 minutes, during which you can hover. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                "In addition, as a bonus action, you can give yourself a flying speed of 30 feet that lasts for 10 minutes, during which you can hover. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2950,7 +2950,7 @@
             "entries": [
                 "When you enter your Genie's Vessel via the Bottled Respite feature, you can now choose up to five willing creatures that you can see within 30 feet of you, and the chosen creatures are drawn into the vessel with you.",
                 "As a bonus action, you can eject any number of creatures from the vessel, and everyone is ejected if you leave or die or if the vessel is destroyed.",
-                "In addition, anyone (including you) who remains within the vessel for at least 10 minutes gains the benefit of finishing a short rest, and anyone can add your proficiency bonus to the number of hit points they regain if they spend any Hit Dice as part of a short rest there."
+                "In addition, anyone (including you) who remains within the vessel for at least 10 minutes gains the benefit of finishing a {@variantrule Short Rest|Ishiir}, and anyone can add your proficiency bonus to the number of hit points they regain if they spend any Hit Dice as part of a {@variantrule Short Rest|Ishiir} there."
             ]
         },
         {
@@ -2965,7 +2965,7 @@
             "header": 2,
             "entries": [
                 "You entreat your patron to grant you a small wish. As an action, you can speak your desire to your Genie's Vessel, requesting the effect of one spell that is 6th level or lower and has a casting time of 1 action. The spell can be from any class's spell list, and you don't need to meet the requirements in that spell, including costly components; the spell simply takes effect as part of this action.",
-                "Once you use this feature, you can't use it again until you finish a long rest."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3052,7 +3052,7 @@
             "header": 2,
             "entries": [
                 "You learn to magically ward yourself against attack and to turn an enemy's failed strike into good luck for yourself. When a creature makes an attack roll against you, you can use your reaction to impose disadvantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn.",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3163,7 +3163,7 @@
                         "If the cursed target dies, you regain hit points equal to your warlock level + your Charisma modifier (minimum of 1 hit point)."
                     ]
                 },
-                "You can use this feature a number of times equal to half your proficiency (rounded up). You can regain all expended uses when you finish a short or long rest. You can also expend a Pact Magic slot to regain a number of expended uses up to half the slots spell level (rounded up)."
+                "You can use this feature a number of times equal to half your proficiency (rounded up). You can regain all expended uses when you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}. You can also expend a Pact Magic slot to regain a number of expended uses up to half the slots spell level (rounded up)."
             ]
         },
         {
@@ -3292,7 +3292,7 @@
             "header": 2,
             "entries": [
                 "You gain the ability to call upon your patron to escape from your foes. As a reaction when you take damage, you can cast {@spell darkness|Ishiir} centered on a point within 5 ft. of you. The spell lasts until the end of your next turn, and it has no effect on your vision.",
-                "Once you use this ability, you cannot use it until you complete a short or long rest."
+                "Once you use this ability, you cannot use it until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3422,7 +3422,7 @@
             "header": 1,
             "entries": [
                 "You gain the ability to transform into Lolth's most beloved servitor, a giant spider. As a bonus action you turn into a spider. You gain a +2 bonus to AC. You gain 3 temporary hit points per level. You gain a climb speed equal to your normal speed. You can climb difficult surfaces, such as along a ceiling, without needing to make a check. You gain a bite attack. You are proficient with this attack and it inflicts poison damage based on your level. You can use your choice of Strength or Dexterity to modify your bite attack's attack and damage rolls. While in this form, you lack hands and cannot do anything that normally requires them. However, you can cast spells but can only cast the ones listed on your expanded spell list for Lolth.",
-                "Once you use this ability, you cannot use it again until you complete a short or long rest.",
+                "Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}.",
                 {
                     "type": "table",
                     "caption": "Spider Form Bite Damage",
@@ -3466,7 +3466,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You gain the ability to use a shard of Lolth's alien beauty, causing other creatures to become enraptured by your appearance. As a bonus action, pick a creature you can see. That creature must succeed on a Charisma saving throw or become {@condition Charmed|Ishiir} by you. While {@condition Charmed|Ishiir}, it also gains vulnerability to poison damage. This benefit lasts for one minute or until you or your allies damages the creature. Once you use this ability, you cannot use it again until you complete a short or long rest."
+                "You gain the ability to use a shard of Lolth's alien beauty, causing other creatures to become enraptured by your appearance. As a bonus action, pick a creature you can see. That creature must succeed on a Charisma saving throw or become {@condition Charmed|Ishiir} by you. While {@condition Charmed|Ishiir}, it also gains vulnerability to poison damage. This benefit lasts for one minute or until you or your allies damages the creature. Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3494,7 +3494,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "You can channel Lolth's malevolence into a deadly kiss. As an action, you touch a creature within your reach. The target takes {@damage 12d10} poison or psychic damage (your choice), or half as much on a successful Constitution save. A creature {@condition Charmed|Ishiir} by you has disadvantage on its saving throw. After you use this ability, you cannot cast it again until you complete a long rest."
+                "You can channel Lolth's malevolence into a deadly kiss. As an action, you touch a creature within your reach. The target takes {@damage 12d10} poison or psychic damage (your choice), or half as much on a successful Constitution save. A creature {@condition Charmed|Ishiir} by you has disadvantage on its saving throw. After you use this ability, you cannot cast it again until you complete a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3571,7 +3571,7 @@
                 "While the raven is perched on your shoulder, you gain {@sense darkvision} with a range of 30 feet and a bonus to your passive Wisdom ({@skill Perception}) score and to Wisdom ({@skill Perception}) checks. The bonus equals your Charisma modifier. While perched on your shoulder, the raven can't be targeted by any attack or other harmful effect; only you can cast spells on it; it can't take damage; and it is {@condition Incapacitated|Ishiir}.",
                 "You can see through the raven's eyes and hear what it hears while it is within 100 feet of you. In combat, you roll initiative for the raven and control how it acts. If it is slain by a creature, you gain advantage on all attack rolls against the killer for the next 24 hours.",
                 "The raven doesn't require sleep. While it is within 100 feet of you, it can awaken you from sleep as a bonus action. The raven vanishes when it dies, if you die, or if the two of you are separated by more than 5 miles.",
-                "At the end of a short or long rest, you can call the raven back to you—no matter where it is or whether it died—and it reappears within 5 feet of you."
+                "At the end of a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}, you can call the raven back to you—no matter where it is or whether it died—and it reappears within 5 feet of you."
             ]
         },
         {
@@ -3613,7 +3613,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "You can channel the Raven Queen's power to slay a creature. You can cast {@spell finger of death|Ishiir}. After you cast the spell with this feature, you can't do so again until you finish a long rest."
+                "You can channel the Raven Queen's power to slay a creature. You can cast {@spell finger of death|Ishiir}. After you cast the spell with this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
 		{
@@ -3687,7 +3687,7 @@
 			"header": 1,
 			"entries": [
 				"You can invoke the Seeker's power to protect you from harm. As a bonus action, you create a whirling aurora of brilliant energy that swirls around you. Until the end of your next turn, you gain resistance to all damage, and if a hostile creature ends its turn within 10 feet of you, it takes radiant damage equal to your warlock level + your Charisma modifier.",
-				"Once you use this feature, you can't use it again until you finish a short or long rest."
+				"Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
 			]
 		},
 		{
@@ -3730,9 +3730,9 @@
 			"header": 2,
 			"entries": [
 				"You gain the ability to sequester yourself and your allies on the Astral Plane.",
-				"By performing a special ritual over the course of 5 minutes, you shift yourself and up to ten willing creatures you can see to the Astral Plane. You and those creatures gain the benefits of a short rest while sequestered on the Astral Plane. You then return to the spaces you all occupied when you used this ability, with no time having passed in the world.",
-				"During this short rest, you and the creatures you sequester can make use of any options available during a rest that affect only you and the creatures you sequester.",
-				"Once you use this ability, you cannot use it again until you complete a long rest."
+				"By performing a special ritual over the course of 5 minutes, you shift yourself and up to ten willing creatures you can see to the Astral Plane. You and those creatures gain the benefits of a {@variantrule Short Rest|Ishiir} while sequestered on the Astral Plane. You then return to the spaces you all occupied when you used this ability, with no time having passed in the world.",
+				"During this {@variantrule Short Rest|Ishiir}, you and the creatures you sequester can make use of any options available during a rest that affect only you and the creatures you sequester.",
+				"Once you use this ability, you cannot use it again until you complete a {@variantrule Long Rest|Ishiir}."
 			]
 		},
         {
@@ -3814,7 +3814,7 @@
                         "You are immune to the {@condition Frightened|Ishiir} condition."
                     ]
                 },
-                "You can transform a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+                "You can transform a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}.",
                 "The appearance of your Form of Dread reflects some aspect of your patron. For example, your form could be a shroud of shadows forming the crown and robes of your lich patron, or your body might glow with glyphs from ancient funerary rites and be surrounded by desert winds, suggesting your mummy patron."
             ]
         },
@@ -3845,7 +3845,7 @@
             "header": 2,
             "entries": [
                 "Your connection to undeath and necrotic energy now saturates your body. You have resistance to necrotic damage. If you are transformed using your Form of Dread, you instead become immune to necrotic damage.",
-                "In addition, when you would be reduced to 0 hit points, you can use your reaction to drop to 1 hit point instead and cause your body to erupt with deathly energy. Each creature of your choice that is within 30 feet of you takes necrotic damage equal to {@damage 2d10} + your warlock level. You then gain 1 level of {@condition Exhaustion|Ishiir}. Once you use this reaction, you can't do so again until you finish a long rest."
+                "In addition, when you would be reduced to 0 hit points, you can use your reaction to drop to 1 hit point instead and cause your body to erupt with deathly energy. Each creature of your choice that is within 30 feet of you takes necrotic damage equal to {@damage 2d10} + your warlock level. You then gain 1 level of {@condition Exhaustion|Ishiir}. Once you use this reaction, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3871,7 +3871,7 @@
                         "While you are using your Form of Dread, once during each of your turns when you deal necrotic damage to a creature, you regain hit points equal to half the amount of necrotic damage dealt."
                     ]
                 },
-                "Once you use this feature, you can't do so again until you finish a long rest."
+                "Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3960,7 +3960,7 @@
             "header": 2,
             "entries": [
                 "You can give yourself vitality when you cheat death or when you help someone else cheat it. You can regain hit points equal to {@dice 1d8} + your Constitution modifier (minimum of 1 hit point) when you succeed on a death saving throw or when you stabilize a creature with {@spell spare the dying|Ishiir}.",
-                "Once you use this feature, you can't use it again until you finish a short or a long rest."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3974,7 +3974,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You can hold your breath indefinitely, and you don't require food, water, or sleep, although you still require rest to reduce {@condition Exhaustion|Ishiir} and still benefit from finishing short and long rests. You are also immune to diseases and poison.",
+                "You can hold your breath indefinitely, and you don't require food, water, or sleep, although you still require rest to reduce {@condition Exhaustion|Ishiir} and still benefit from finishing short and {@variantrule Long Rest|Ishiir}s. You are also immune to diseases and poison.",
                 "In addition, you age at a slower rate. For every 10 years that pass, your body ages only 1 year, and you are immune to being magically aged."
             ]
         },
@@ -3990,7 +3990,7 @@
             "header": 2,
             "entries": [
                 "You partake some of the true secrets of the Undying. On your turn, you can use a bonus action to regain hit points equal to half your maximum hit points. Additionally, if you put a severed body part of yours back in place when you use this feature, the part reattaches.",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or a {@variantrule Long Rest|Ishiir}."
             ]
         }
     ]
