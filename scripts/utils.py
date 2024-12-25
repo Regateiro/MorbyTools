@@ -9,7 +9,7 @@ def load_data(file: str) -> dict:
 
 # Save a JSON file into storage
 def save_data(data: dict, file: str, pretty: bool = False) -> None:
-    with open(file, 'w') as df:
+    with open(file, 'w', encoding="utf-8") as df:
         json.dump(data, df, indent=4 if pretty else None)
 
 
