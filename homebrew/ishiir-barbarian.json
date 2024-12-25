@@ -824,7 +824,7 @@
                     "type": "entries",
                     "name": "Rage Damage",
                     "entries": [
-                        "When you make an attack using Strength—with either a weapon or an Unarmed Strike—and deal damage to the target, you gain a bonus to the damage that increases as you gain levels as a Barbarian, as shown in the Rage Damage column of the Barbarian Features table."
+                        "When you make an attack using Strength—with either a weapon or an {@variantrule Unarmed Strike|Ishiir}—and deal damage to the target, you gain a bonus to the damage that increases as you gain levels as a Barbarian, as shown in the Rage Damage column of the Barbarian Features table."
                     ]
                 },
                 {
@@ -1064,7 +1064,7 @@
             "classSource": "Ishiir",
             "level": 9,
             "entries": [
-                "If you use Reckless Attack, you can forgo any {@variantrule Advantage|Ishiir} on one Strength-based {@variantrule Attack Roll|Ishiir} of your choice on your turn. The chosen {@variantrule Attack Roll|Ishiir} mustn't have {@variantrule Disadvantage|Ishiir}. If the chosen {@variantrule Attack Roll|Ishiir} hits, the target takes an extra {@damage 1d10} damage of the same type dealt by the weapon or Unarmed Strike, and you can cause one Brutal Strike effect of your choice. You have the following effect options.",
+                "If you use Reckless Attack, you can forgo any {@variantrule Advantage|Ishiir} on one Strength-based {@variantrule Attack Roll|Ishiir} of your choice on your turn. The chosen {@variantrule Attack Roll|Ishiir} mustn't have {@variantrule Disadvantage|Ishiir}. If the chosen {@variantrule Attack Roll|Ishiir} hits, the target takes an extra {@damage 1d10} damage of the same type dealt by the weapon or {@variantrule Unarmed Strike|Ishiir}, and you can cause one Brutal Strike effect of your choice. You have the following effect options.",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
@@ -1869,7 +1869,7 @@
             "level": 3,
             "header": 2,
             "entries": [
-                "You no longer have need for weapons. You learn to throw your weight around with the might of the waves and your hands become instruments of Gargan's will - and with that, his crushing, inescapable grasp. You can roll a {@dice d8} in place of the normal damage of your unarmed strike. If you have both hands free or are attacking a target that you have grappled, this die changes to a {@dice d12}.",
+                "You no longer have need for weapons. You learn to throw your weight around with the might of the waves and your hands become instruments of Gargan's will - and with that, his crushing, inescapable grasp. You can roll a {@dice d8} in place of the normal damage of your {@variantrule Unarmed Strike|Ishiir}. If you have both hands free or are attacking a target that you have grappled, this die changes to a {@dice d12}.",
                 "Additionally, you gain a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. If you already have a {@variantrule Swim Speed|Ishiir}, that {@variantrule Swim Speed|Ishiir} instead increases by 30 feet."
             ]
         },
@@ -1884,8 +1884,8 @@
             "level": 3,
             "header": 2,
             "entries": [
-                "Spectral coils start appearing around you when you enter your rage. While you are raging, your reach with unarmed strikes increases by 5 ft and you ignore all size restrictions and immunities for attempting grapples.",
-                "Once per turn, if you successfully hit a creature with an unarmed strike while raging, you can attempt to grapple it.",
+                "Spectral coils start appearing around you when you enter your rage. While you are raging, your reach with {@variantrule Unarmed Strike|Ishiir|Unarmed Strikes} increases by 5 ft and you ignore all size restrictions and immunities for attempting grapples.",
+                "Once per turn, if you successfully hit a creature with an {@variantrule Unarmed Strike|Ishiir} while raging, you can attempt to grapple it.",
                 "You can use your {@variantrule Bonus Action|Ishiir} to force a creature you grappled in this manner to make a STR {@variantrule Saving Throw|Ishiir}. The DC is equal to 8 + your {@variantrule Proficiency|Ishiir} + your STR modifier. On a failure, the creature takes force damage equal to your {@variantrule Proficiency|Ishiir} + your STR modifier + your rage bonus damage and is {@condition Restrained|Ishiir} until the end of your next turn. On a success, the creature takes half as much damage and isn't {@condition Restrained|Ishiir}."
             ]
         },
