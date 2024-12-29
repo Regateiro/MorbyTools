@@ -95,18 +95,12 @@
                         "EI"
                     ],
                     "progression": [
-                        0,
-                        2,
-                        2,
-                        2,
+                        1,
                         3,
                         3,
-                        4,
-                        4,
+                        3,
                         5,
                         5,
-                        5,
-                        6,
                         6,
                         6,
                         7,
@@ -114,17 +108,14 @@
                         7,
                         8,
                         8,
-                        8
+                        8,
+                        9,
+                        9,
+                        9,
+                        10,
+                        10,
+                        10
                     ]
-                },
-                {
-                    "name": "Pact Boon",
-                    "featureType": [
-                        "PB"
-                    ],
-                    "progression": {
-                        "3": 1
-                    }
                 }
             ],
             "startingProficiencies": {
@@ -219,7 +210,7 @@
                 {
                     "colLabels": [
                         "{@filter Cantrips Known|spells|level=0|class=Warlock (Ishiir)|source=Ishiir}",
-                        "{@filter Spells Known|spells|class=Warlock (Ishiir)|source=Ishiir}",
+                        "{@filter Prepared Spells|spells|class=Warlock (Ishiir)|source=Ishiir}",
                         "Spell Slots",
                         "Slot Level",
                         "{@filter Invocations Known|optionalfeatures|feature type=ei|source=Ishiir}"
@@ -230,148 +221,150 @@
                             2,
                             1,
                             "{@filter 1st|spells|level=1|class=Warlock (Ishiir)|source=Ishiir}",
-                            0
+                            1
                         ],
                         [
                             2,
                             3,
                             2,
                             "{@filter 1st|spells|level=1|class=Warlock (Ishiir)|source=Ishiir}",
-                            2
+                            3
                         ],
                         [
                             2,
                             4,
                             2,
                             "{@filter 2nd|spells|level=2|class=Warlock (Ishiir)|source=Ishiir}",
-                            2
+                            3
                         ],
                         [
                             3,
                             5,
                             2,
                             "{@filter 2nd|spells|level=2|class=Warlock (Ishiir)|source=Ishiir}",
-                            2
+                            3
                         ],
                         [
                             3,
                             6,
                             2,
                             "{@filter 3rd|spells|level=3|class=Warlock (Ishiir)|source=Ishiir}",
-                            3
+                            5
                         ],
                         [
                             3,
                             7,
                             2,
                             "{@filter 3rd|spells|level=3|class=Warlock (Ishiir)|source=Ishiir}",
-                            3
+                            5
                         ],
                         [
                             3,
                             8,
                             2,
                             "{@filter 4th|spells|level=4|class=Warlock (Ishiir)|source=Ishiir}",
-                            4
+                            6
                         ],
                         [
                             3,
                             9,
                             2,
                             "{@filter 4th|spells|level=4|class=Warlock (Ishiir)|source=Ishiir}",
-                            4
+                            6
                         ],
                         [
                             3,
                             10,
                             2,
                             "{@filter 5th|spells|level=5|class=Warlock (Ishiir)|source=Ishiir}",
-                            5
+                            7
                         ],
                         [
                             4,
                             10,
                             2,
                             "{@filter 5th|spells|level=5|class=Warlock (Ishiir)|source=Ishiir}",
-                            5
+                            7
                         ],
                         [
                             4,
                             11,
                             3,
                             "{@filter 5th|spells|level=5|class=Warlock (Ishiir)|source=Ishiir}",
-                            5
+                            7
                         ],
                         [
                             4,
                             11,
                             3,
                             "{@filter 5th|spells|level=5|class=Warlock (Ishiir)|source=Ishiir}",
-                            6
+                            8
                         ],
                         [
                             4,
                             12,
                             3,
                             "{@filter 5th|spells|level=5|class=Warlock (Ishiir)|source=Ishiir}",
-                            6
+                            8
                         ],
                         [
                             4,
                             12,
                             3,
                             "{@filter 5th|spells|level=5|class=Warlock (Ishiir)|source=Ishiir}",
-                            6
+                            8
                         ],
                         [
                             4,
                             13,
                             3,
                             "{@filter 5th|spells|level=5|class=Warlock (Ishiir)|source=Ishiir}",
-                            7
+                            9
                         ],
                         [
                             4,
                             13,
                             3,
                             "{@filter 5th|spells|level=5|class=Warlock (Ishiir)|source=Ishiir}",
-                            7
+                            9
                         ],
                         [
                             4,
                             14,
                             4,
                             "{@filter 5th|spells|level=5|class=Warlock (Ishiir)|source=Ishiir}",
-                            7
+                            9
                         ],
                         [
                             4,
                             14,
                             4,
                             "{@filter 5th|spells|level=5|class=Warlock (Ishiir)|source=Ishiir}",
-                            8
+                            10
                         ],
                         [
                             4,
                             15,
                             4,
                             "{@filter 5th|spells|level=5|class=Warlock (Ishiir)|source=Ishiir}",
-                            8
+                            10
                         ],
                         [
                             4,
                             15,
                             4,
                             "{@filter 5th|spells|level=5|class=Warlock (Ishiir)|source=Ishiir}",
-                            8
+                            10
                         ]
                     ]
                 }
             ],
             "classFeatures": [
                 "Pact Magic|Warlock|Ishiir|1",
+                "Eldritch Evocations|Warlock|Ishiir|1",
                 "Spell Versatility|Warlock|Ishiir|1",
                 "Eldritch Invocations|Warlock|Ishiir|2",
+                "Magical Cunning|Warlock|Ishiir|2",
                 {
                     "classFeature": "Otherworldly Patron|Warlock|Ishiir|3",
                     "gainSubclassFeature": true
@@ -387,6 +380,7 @@
                 },
                 "Ability Score Improvement|Warlock|Ishiir|8",
                 "Proficiency Versatility|Warlock|Ishiir|8",
+                "Contact Patron|Warlock|Ishiir|9",
                 {
                     "classFeature": "Otherworldly Patron feature|Warlock|Ishiir|10",
                     "gainSubclassFeature": true
@@ -745,6 +739,376 @@
             ]
         },
         {
+            "name": "Eldritch Invocations",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlock",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "You have unearthed Eldritch Invocations, pieces of forbidden knowledge that imbue you with an abiding magical ability or other lessons. You gain one invocation of your choice, such as {@optfeature Pact of the Tome|Ishiir}. Invocations are described in the table below.",
+                {
+                    "type": "entries",
+                    "name": "Prerequisites",
+                    "entries": "If an invocation has a prerequisite, you must meet it to learn that invocation. For example, if an invocation requires you to be a level 5+ Warlock, you can select the invocation once you reach Warlock level 5."
+                },
+                {
+                    "type": "entries",
+                    "name": "Replacing and Gaining Invocations",
+                    "entries": "Whenever you gain a Warlock level, you can replace one of your invocations with another one for which you qualify. You can't replace an invocation if it's a prerequisite for another invocation that you have."
+                },
+                "When you gain certain Warlock levels, you gain more invocations of your choice, as shown in the Invocations column of the Warlock Features table.",
+                "You can't pick the same invocation more than once unless its description says otherwise.",
+                {
+                    "type": "options",
+					"name": "Eldritch Invocation Options",
+                    "count": 2,
+                    "entries": [
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Agonizing Blast|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Armor of Shadows|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Ascendant Step|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Aspect of the Moon|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Beast Speech|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Beguiling Influence|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Bewitching Whispers|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Bond of the Talisman|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Book of Ancient Secrets|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Burning Hex|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Caiphon's Beacon|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Chain Master's Fury|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Chains of Carceri|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Chilling Hex|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Chronicle of the Raven Queen|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Claw of Acamar|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Cloak of Flies|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Curse Bringer|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Devil's Sight|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Draconic Companion|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Draconic Scales|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Draconic Spells|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Draconic Wings|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Dreadful Word|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Eldritch Armor|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Eldritch Mind|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Eldritch Sight|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Eldritch Smite|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Eldritch Spear|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Eyes of the Rune Keeper|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Far Scribe|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Fiendish Vigor|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Gaze of Two Minds|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Ghostly Gaze|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Gift of the Depths|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Gift of the Ever-Living Ones|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Gift of the Protectors|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Grasp of Hadar|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Green Lord's Gift|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Improved Pact Weapon|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Investment of the Chain Master|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Kiss of Mephistopheles|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Lance of Lethargy|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Lifedrinker|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Mace of Dispater|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Maddening Hex|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Magic Resistance (EI)|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Mask of Many Faces|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Master of Myriad Forms|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Minions of Chaos|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Mire the Mind|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Misty Visions|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Moon Bow|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "One with Shadows|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Otherworldly Leap|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Pact of the Blade|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Pact of the Chain|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Pact of the Star Chain|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Pact of the Talisman|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Pact of the Tome|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Path of the Seeker|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Protection of the Talisman|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Raven Queen's Blessing|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Rebuke of the Talisman|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Relentless Hex|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Repelling Blast|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Sculptor of Flesh|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Sea Twins' Gift|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Seeker's Speech|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Shroud of Shadow|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Shroud of Ulban|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Sign of Ill Omen|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Superior Pact Weapon|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "The Master's Boon|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "The Master's Presence|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Thief of Five Fates|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Thirsting Blade|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Tomb of Levistus|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Trickster's Escape|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Ultimate Pact Weapon|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Undying Servitude|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Visions of Distant Realms|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Voice of the Chain Master|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Whispers of the Grave|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Witch Sight|Ishiir"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Spell Versatility",
             "source": "Ishiir",
             "page": 1,
@@ -771,40 +1135,14 @@
             ]
         },
         {
-            "name": "Pact Boon",
+            "name": "Magical Cunning",
             "source": "Ishiir",
             "page": 1,
             "className": "Warlock",
             "classSource": "Ishiir",
-            "level": 3,
+            "level": 2,
             "entries": [
-                "Your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice.",
-                {
-                    "type": "options",
-                    "count": 1,
-                    "entries": [
-                        {
-                            "type": "refOptionalfeature",
-                            "optionalfeature": "Pact of the Chain|Ishiir"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-                            "optionalfeature": "Pact of the Blade|Ishiir"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-                            "optionalfeature": "Pact of the Tome|Ishiir"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-                            "optionalfeature": "Pact of the Star Chain|Ishiir"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-                            "optionalfeature": "Pact of the Talisman|Ishiir"
-                        }
-                    ]
-                }
+                "You can perform an esoteric rite for 1 minute. At the end of it, you regain expended Pact Magic spell slots but no more than a number equal to half your maximum (round up). Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -899,6 +1237,18 @@
             "entries": [
                 "When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill {@variantrule Proficiency|Ishiir} offered by your class at 1st level (the {@variantrule Proficiency|Ishiir} you replace needn't be from the class).",
                 "This change represents one of your skills atrophying as you focus on a different skill."
+            ]
+        },
+        {
+            "name": "Contact Patron",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlock",
+            "classSource": "Ishiir",
+            "level": 9,
+            "entries": [
+                "In the past, you usually contacted your patron through intermediaries. Now you can communicate directly; you always have the {@spell Contact Other Plane|Ishiir} spell prepared. With this feature, you can cast the spell without expending a spell slot to contact your patron, and you automatically succeed on the spell's saving throw.",
+                "Once you cast the spell with this feature, you can't do so in this way again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1062,7 +1412,7 @@
             "classSource": "Ishiir",
             "level": 20,
             "entries": [
-                "You can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature. Once you regain spell slots with this feature, you must finish a {@variantrule Long Rest|Ishiir} before you can do so again."
+                "When you use your Magical Cunning feature, you regain all your expended Pact Magic spell slots and the use of your 6th and 7th level Mystic Arcanum spells."
             ]
         }
     ],

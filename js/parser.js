@@ -1815,7 +1815,6 @@ Parser.OPT_FEATURE_TYPE_TO_FULL = {
 	"FS:B": "Fighting Style; Bard",
 	"FS:P": "Fighting Style; Paladin",
 	"FS:R": "Fighting Style; Ranger",
-	"PB": "Pact Boon",
 	"OR": "Onomancy Resonant",
 	"RN": "Rune Knight Rune",
 	"AF": "Alchemical Formula",
