@@ -1094,7 +1094,7 @@
                 "The Archfey|Warlock|Ishiir|Archfey|Ishiir|3",
                 "Misty Escape|Warlock|Ishiir|Archfey|Ishiir|6",
                 "Beguiling Defenses|Warlock|Ishiir|Archfey|Ishiir|10",
-                "Dark Delirium|Warlock|Ishiir|Archfey|Ishiir|14"
+                "Bewitching Magic|Warlock|Ishiir|Archfey|Ishiir|14"
             ]
         },
         {
@@ -1896,12 +1896,12 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Fey Presence|Warlock|Ishiir|Archfey|Ishiir|3"
+                    "subclassFeature": "Steps of the Fey|Warlock|Ishiir|Archfey|Ishiir|3"
                 }
             ]
         },
         {
-            "name": "Fey Presence",
+            "name": "Steps of the Fey",
             "source": "Ishiir",
             "page": 1,
             "className": "Warlock",
@@ -1911,8 +1911,22 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As a {@variantrule Bonus Action|Ishiir}, you can cause each creature in a 10-foot cube originating from you to make a Wisdom {@variantrule Saving Throw|Ishiir} against your warlock spell save DC. The creatures that fail their {@variantrule Saving Throw|Ishiir|Saving Throws} are all {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir} by you (your choice) until the end of your next turn.",
-                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
+                "Your patron grants you the ability to move between the boundaries of the planes. You learn the {@spell Misty Step|Ishiir} spell and you can cast it without expending a spell slot a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}.",
+                "In addition, whenever you cast that spell, you can choose one of the following additional effects.",
+                {
+                    "type": "entries",
+                    "name": "Refreshing Step",
+                    "entries": [
+                        "Immediately after you teleport, you or one creature you can see within 10 feet of yourself gains Temporary Hit Points equal to half your Warlock level (rounded down) + your Charisma modifier."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Taunting Step",
+                    "entries": [
+                        "Creatures within 5 feet of the space you left must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC or have {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against creatures other than you until the start of your next turn."
+                    ]
+                }
             ]
         },
         {
@@ -1926,8 +1940,22 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You can vanish in a puff of mist in response to harm. When you take damage, you can use your {@variantrule Reaction|Ishiir} to turn {@condition Invisible|Ishiir} and teleport up to 60 feet to an unoccupied space you can see. You remain {@condition Invisible|Ishiir} until the start of your next turn or until you attack or cast a spell.",
-                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
+                "You can cast {@spell Misty Step|Ishiir} as a {@variantrule Reaction|Ishiir} in response to taking damage.",
+                "In addition, the following effects are now among your Steps of the Fey options.",
+                {
+                    "type": "entries",
+                    "name": "Disappearing Step",
+                    "entries": [
+                        "You have the {@condition Invisible|Ishiir} condition until the start of your next turn or until immediately after you make an {@variantrule Attack Roll|Ishiir}, deal damage, or cast a spell."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Dreadful Step",
+                    "entries": [
+                        "Creatures within 5 feet of the space you left or the space you appear in (your choice) must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC or take {@damage 2d10} Psychic damage."
+                    ]
+                }
             ]
         },
         {
@@ -1956,25 +1984,12 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "Your patron teaches you how to turn the mind-affecting magic of your enemies against them. You are {@variantrule Immunity|Ishiir|Immune} to being {@condition Charmed|Ishiir}, and when another creature attempts to charm you, you can use your {@variantrule Reaction|Ishiir} to attempt to turn the charm back on that creature. The creature must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your warlock spell save DC or be {@condition Charmed|Ishiir} by you for 1 minute or until the creature takes any damage."
+                "Your patron teaches you how to guard your mind and body. You are immune to the {@condition Charmed|Ishiir} condition.",
+                "In addition, immediately after a creature you can see hits you with an {@variantrule Attack Roll|Ishiir}, you can take a {@variantrule Reaction|Ishiir} to reduce the damage you take by half (round down), and you can force the attacker to make a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failed save, the attacker takes Psychic damage equal to the damage you take. Once you use this {@variantrule Reaction|Ishiir}, you can't use it again until you finish a {@variantrule Long Rest|Ishiir} unless you expend a Pact Magic spell slot (no action required) to restore your use of it."
             ]
         },
         {
-            "name": "Beguiling Defenses",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Warlock",
-            "classSource": "Ishiir",
-            "subclassShortName": "Archfey",
-            "subclassSource": "Ishiir",
-            "level": 10,
-            "header": 2,
-            "entries": [
-                "Your patron teaches you how to turn the mind-affecting magic of your enemies against them. You are {@variantrule Immunity|Ishiir|Immune} to being {@condition Charmed|Ishiir}, and when another creature attempts to charm you, you can use your {@variantrule Reaction|Ishiir} to attempt to turn the charm back on that creature. The creature must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your warlock spell save DC or be {@condition Charmed|Ishiir} by you for 1 minute or until the creature takes any damage."
-            ]
-        },
-        {
-            "name": "Dark Delirium",
+            "name": "Bewitching Magic",
             "source": "Ishiir",
             "page": 1,
             "className": "Warlock",
@@ -1984,9 +1999,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "You can plunge a creature into an illusory realm. As an {@variantrule Action|Ishiir}, choose a creature that you can see within 60 feet of you. It must make a Wisdom {@variantrule Saving Throw|Ishiir} against your warlock spell save DC. On a failed save, it is {@condition Incapacitated|Ishiir} for 1 minute or until your {@condition Concentration|Ishiir} is broken (as if you are concentrating on a spell). This effect ends early if the creature takes any damage.",
-                "Until this illusion ends, the creature thinks it is lost in a misty realm, the appearance of which you choose. The creature can see and hear only itself, you, and the illusion.",
-                "You must finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir} before you can use this feature again."
+                "Your patron grants you the ability to weave your magic with teleportation. Immediately after you cast an Enchantment or Illusion spell using an action and a spell slot or as part of a Mystic Arcanum use, you can cast {@spell Misty Step|Ishiir} as part of the same action and without expending a spell slot."
             ]
         },
         {
