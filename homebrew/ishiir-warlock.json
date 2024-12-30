@@ -1161,7 +1161,7 @@
                             "sending|Ishiir"
                         ],
                         "s4": [
-                            "dominate beast|Ishiir",
+                            "confusion|Ishiir",
                             "Evard's black tentacles|Ishiir"
                         ],
                         "s5": [
@@ -1173,7 +1173,8 @@
             ],
             "subclassFeatures": [
                 "The Great Old One|Warlock|Ishiir|Great Old One|Ishiir|3",
-                "Entropic Ward|Warlock|Ishiir|Great Old One|Ishiir|6",
+                "Clairvoyant Combatant|Warlock|Ishiir|Great Old One|Ishiir|6",
+                "Eldritch Hex|Warlock|Ishiir|Great Old One|Ishiir|10",
                 "Thought Shield|Warlock|Ishiir|Great Old One|Ishiir|10",
                 "Create Thrall|Warlock|Ishiir|Great Old One|Ishiir|14"
             ]
@@ -1324,7 +1325,7 @@
                             "guiding bolt|Ishiir"
                         ],
                         "s2": [
-                            "flaming sphere|Ishiir",
+                            "aid|Ishiir",
                             "lesser restoration|Ishiir"
                         ],
                         "s3": [
@@ -2638,7 +2639,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "When you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1)."
+                "When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to your Charisma modifier plus your Warlock level (minimum of 1 Temporary Hit Point). You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points."
             ]
         },
         {
@@ -2669,7 +2670,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You can choose one damage type when you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}. You gain {@variantrule Resistance|Ishiir} to that damage type until you choose a different one with this feature. Damage from magical weapons or silver weapons ignores this {@variantrule Resistance|Ishiir}."
+                "Choose one damage type, other than Force, whenever you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}. You have {@variantrule Resistance|Ishiir} to that damage type until you choose a different one with this feature."
             ]
         },
         {
@@ -2684,9 +2685,8 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "When you hit a creature with an attack, you can use this feature to instantly transport the target through the lower planes. The creature disappears and hurtles through a nightmare landscape.",
-                "At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes {@damage 10d10} psychic damage as it reels from its horrific experience.",
-                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
+                "Once per turn when you hit a creature with an {@variantrule Attack Roll|Ishiir}, you can try to instantly transport the target through the Lower Planes. The target must succeed on a Charisma {@variantrule Saving Throw|Ishiir} against your spell save DC, or the target disappears and hurtles through a nightmare landscape. The target takes {@damage 10d10} Psychic damage if it isn't a Fiend, and it has the {@condition Incapacitated|Ishiir} condition until the end of your next turn, when it returns to the space it previously occupied or the nearest unoccupied space.",
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir} unless you expend a Pact Magic spell slot (no action required) to restore your use of it."
             ]
         },
         {
@@ -2957,7 +2957,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "You entreat your patron to grant you a small wish. As an {@variantrule Action|Ishiir}, you can speak your desire to your Genie's Vessel, requesting the effect of one spell that is 6th level or lower and has a casting time of 1 action. The spell can be from any class's spell list, and you don't need to meet the requirements in that spell, including costly components; the spell simply takes effect as part of this action.",
+                "You entreat your patron to grant you a small wish. As an {@variantrule Action|Ishiir}, you can speak your desire to your Genie's Vessel, requesting the effect of one spell that is 7th level or lower and has a casting time of 1 action. The spell can be from any class's spell list, and you don't need to meet the requirements in that spell, including costly components; the spell simply takes effect as part of this action.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -3003,7 +3003,7 @@
                                 ],
                                 [
                                     "4th",
-                                    "{@spell dominate beast|Ishiir}, {@spell Evard's black tentacles|Ishiir}"
+                                    "{@spell confusion|Ishiir}, {@spell Evard's black tentacles|Ishiir}"
                                 ],
                                 [
                                     "5th",
@@ -3016,6 +3016,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Awakened Mind|Warlock|Ishiir|Great Old One|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Psychic Spells|Warlock|Ishiir|Great Old One|Ishiir|3"
                 }
             ]
         },
@@ -3035,7 +3039,21 @@
             ]
         },
         {
-            "name": "Entropic Ward",
+            "name": "Psychic Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlock",
+            "classSource": "Ishiir",
+            "subclassShortName": "Great Old One",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you cast a Warlock spell that deals damage, you can change its damage type to Psychic. In addition, when you cast a Warlock spell that is an Enchantment or Illusion, you can do so without Verbal or Somatic components."
+            ]
+        },
+        {
+            "name": "Clairvoyant Combatant",
             "source": "Ishiir",
             "page": 1,
             "className": "Warlock",
@@ -3045,8 +3063,22 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You learn to magically ward yourself against attack and to turn an enemy's failed strike into good luck for yourself. When a creature makes an {@variantrule Attack Roll|Ishiir} against you, you can use your {@variantrule Reaction|Ishiir} to impose {@variantrule Disadvantage|Ishiir} on that roll. If the attack misses you, your next {@variantrule Attack Roll|Ishiir} against the creature has {@variantrule Advantage|Ishiir} if you make it before the end of your next turn.",
-                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
+                "When you form a telepathic bond with a creature using your Awakened Mind, you can force that creature to make a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failed save, the creature has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against you, and you have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against that creature for the duration of the bond.",
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir} unless you expend a Pact Magic spell slot (no action required) to restore your use of it."
+            ]
+        },
+        {
+            "name": "Eldritch Hex",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Warlock",
+            "classSource": "Ishiir",
+            "subclassShortName": "Great Old One",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "Your alien patron grants you a powerful curse. You always have the {@spell Hex|Ishiir} spell prepared. When you cast {@spell Hex|Ishiir} and choose an ability, the target also has {@variantrule Disadvantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} of the chosen ability for the duration of the spell."
             ]
         },
         {
