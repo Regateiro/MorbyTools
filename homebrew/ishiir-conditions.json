@@ -1,20 +1,20 @@
 {
-    "_meta": {
-        "sources": [
-            {
-                "json": "Ishiir",
-                "abbreviation": "Ishiir",
-                "full": "Ishiir",
-                "url": "https://regateiro.pt/5etools/homebrew/ishiir-conditions.json",
-                "authors": [
-                    "Sieg"
-                ],
-                "convertedBy": [
-                    "Morb"
-                ]
-            }
-        ]
-    },
+	"_meta": {
+		"sources": [
+			{
+				"json": "Ishiir",
+				"abbreviation": "Ishiir",
+				"full": "Ishiir",
+				"url": "https://regateiro.pt/5etools/homebrew/ishiir-conditions.json",
+				"authors": [
+					"Sieg"
+				],
+				"convertedBy": [
+					"Morb"
+				]
+			}
+		]
+	},
 	"condition": [
 		{
 			"name": "Deafened",
@@ -181,27 +181,27 @@
 			"source": "Ishiir",
 			"entries": [
 				"Some spells and other effects require Concentration to remain active, as specified in their descriptions. If the effect's creator loses Concentration, the effect ends. If the effect has a maximum duration, the effect's description specifies how long the creator can concentrate on it: up to 1 minute, 1 hour, or some other duration. The creator can end Concentration at any time (no action required). The following factors break Concentration.",
-                {
-                    "type": "list",
-                    "style": "list-hang-notitle",
-                    "items": [
-                        {
-                            "type": "item",
-                            "name": " Another Concentration Effect.",
-                            "entry": "You lose Concentration on an effect the moment you start casting a spell that requires Concentration or activate another effect that requires Concentration."
-                        },
-                        {
-                            "type": "item",
-                            "name": "Damage.",
-                            "entry": "If you take damage, you must succeed on a Constitution {@variantrule Saving Throw|Ishiir} to maintain Concentration. The DC equals 10 or half the damage taken (round down), whichever number is higher."
-                        },
-                        {
-                            "type": "item",
-                            "name": "Incapacitated or Dead.",
-                            "entry": "Your Concentration ends if you have the {@condition Incapacitated|Ishiir} condition or you die."
-                        }
-                    ]
-                }
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": " Another Concentration Effect.",
+							"entry": "You lose Concentration on an effect the moment you start casting a spell that requires Concentration or activate another effect that requires Concentration."
+						},
+						{
+							"type": "item",
+							"name": "Damage.",
+							"entry": "If you take damage, you must succeed on a Constitution {@variantrule Saving Throw|Ishiir} to maintain Concentration. The DC equals 10 or half the damage taken (round down), whichever number is higher."
+						},
+						{
+							"type": "item",
+							"name": "Incapacitated or Dead.",
+							"entry": "Your Concentration ends if you have the {@condition Incapacitated|Ishiir} condition or you die."
+						}
+					]
+				}
 			]
 		},
 		{
@@ -401,7 +401,6 @@
 			"name": "Invisible",
 			"source": "Ishiir",
 			"page": 1,
-			"srd": true,
 			"basicRules": true,
 			"entries": [
 				{
