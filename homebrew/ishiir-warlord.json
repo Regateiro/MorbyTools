@@ -557,7 +557,7 @@
                     ],
                     "colLabels": [
                         "{@filter Cantrips Known|spells|level=0|class=Cleric (Ishiir)|source=Ishiir}",
-                        "{@filter Spells Known|spells|class=Cleric (Ishiir)|source=Ishiir}"
+                        "{@filter Prepared Spells|spells|class=Cleric (Ishiir)|source=Ishiir}"
                     ],
                     "rows": [
                         [
@@ -991,65 +991,50 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "You augment your martial prowess with the ability to cast spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter cleric spell list|spells|class=cleric (Ishiir)|source=Ishiir}.",
+                "You augment your martial prowess with the ability to cast spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter Cleric spell list|spells|class=cleric (Ishiir)|source=Ishiir}.",
                 {
                     "type": "entries",
-                    "name": "Cantrips",
+                    "name": "Cantrips.",
                     "entries": [
-                        "You learn two cantrips of your choice from the {@filter cleric spell list|spells|class=cleric (Ishiir)|source=Ishiir}. You learn an additional cleric cantrip of your choice at 10th level."
+                        "You know two cantrips of your choice from the {@filter wizard spell list|spells|class=wizard (Ishiir)|source=Ishiir}. Whenever you gain a Warlord level, you can replace one of these cantrips with another cantrip of your choice from the Cleric spell list.",
+                        "When you reach Warlord level 10, you learn another Cleric cantrip of your choice, as shown in this subclass’ progression table."
                     ]
                 },
                 {
                     "type": "entries",
+                    "name": "Spell Slots.",
                     "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Spell Slots",
-                            "entries": [
-                                "The Crusader Spellcasting table shows how many spell slots you have to cast your {@filter cleric spells|spells|class=cleric (Ishiir)|source=Ishiir} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a {@variantrule Long Rest|Ishiir}.",
-                                "For example, if you know the 1st-level spell {@spell Bless|Ishiir} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell Bless|Ishiir} using either slot."
-                            ]
-                        }
+                        "The Crusader Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|Ishiir}."
+                    ]
+                        
+                },
+                {
+                    "type": "entries",
+                    "name": "Prepared Spells of Level 1+.",
+                    "entries": [
+                        "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the {@filter Cleric spell list|spells|class=cleric (Ishiir)|source=Ishiir}.",
+                        "The number of spells on your list increases as you gain Warlord levels, as shown in the Prepared Spells column of the Crusader Spellcasting table. Whenever that number increases, choose additional spells from the Cleric spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you’re a level 7 Warlord, your list of prepared spells can include five Cleric spells of levels 1 and 2 in any combination."
                     ]
                 },
                 {
                     "type": "entries",
+                    "name": "Changing Your Prepared Spells.",
                     "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Spells Known of 1st-Level and Higher",
-                            "entries": [
-                                "You know three 1st-level cleric spells of your choice.",
-                                "The Spells Known column of the Crusader Spellcasting table shows when you learn more cleric spells of 1st level or higher. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.",
-                                "Whenever you gain a level in this class, you can replace one of the cleric spells you know with another spell of your choice from the cleric spell list. The new spell must be of a level for which you have spell slots."
-                            ]
-                        }
+                        "Whenever you gain a Warlord level, you can replace one spell on your list with another Cleric spell for which you have spell slots."
                     ]
                 },
                 {
                     "type": "entries",
+                    "name": "Spellcasting Ability.",
                     "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Spellcasting Ability.",
-                            "entries": [
-                                "Your leadership ability modifier is your spellcasting ability for your cleric spells. You use your leadership ability modifier whenever a spell refers to your spellcasting ability. In addition, you use your leadership ability modifier when setting the {@variantrule Saving Throw|Ishiir} DC for a cleric spell you cast and when making an {@variantrule Attack Roll|Ishiir} with one.",
-                                {
-                                    "type": "abilityDc",
-                                    "name": "Spell",
-                                    "attributes": [
-                                        "leadership"
-                                    ]
-                                },
-                                {
-                                    "type": "abilityAttackMod",
-                                    "name": "Spell",
-                                    "attributes": [
-                                        "leadership"
-                                    ]
-                                }
-                            ]
-                        }
+                        "Your Leadership ability is your spellcasting ability for your Cleric spells."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Focus.",
+                    "entries": [
+                        "You can use an {@item Holy Symbol|PHB} as a Spellcasting Focus for your Cleric spells."
                     ]
                 }
             ]
