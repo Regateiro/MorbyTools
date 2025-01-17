@@ -2389,12 +2389,12 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Grim Harvest|Wizard|Ishiir|Necromancy|Ishiir|3"
+                    "subclassFeature": "Negative Energy Manipulation|Wizard|Ishiir|Necromancy|Ishiir|3"
                 }
             ]
         },
         {
-            "name": "Grim Harvest",
+            "name": "Negative Energy Manipulation",
             "source": "Ishiir",
             "page": 1,
             "className": "Wizard",
@@ -2404,7 +2404,10 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain the ability to reap life energy from creatures you kill with your spells. When you kill one or more creatures with a spell of 1st level or higher, you regain hit points equal to the creature's level (or CR if it does not have levels), doubled if the spell belongs to the {@filter School of Necromancy|spells|school=N|source=Ishiir}. You don't gain this benefit for killing constructs or undead."
+                "You have a pool of deathly energy represented by a number of points equal to twice your Wizard level + your Intelligence modifier.",
+                "When you roll damage for a necromancy spell or an undead you control, you can deal additional necrotic damage by spending points from the pool, up to its current maximum.",
+                "When a creature of at least CR 1/8 dies within 60 feet of you, you can use your {@variantrule Reaction|Ishiir} to harvest part of its remaining life force, regaining a number of points equal to the creature's CR (minimum of 1). You cannot do so if the creature is an undead or construct.",
+                "You regain expended points equal to your {@variantrule Proficiency|Ishiir} when you finish a {@variantrule Short Rest|Ishiir} and all expended points when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2433,8 +2436,8 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You add the {@spell Animate Dead|Ishiir} spell to your spellbook if it is not there already. When you cast {@spell Animate Dead|Ishiir}, you can target one additional corpse or pile of bones, creating another zombie or skeleton, as appropriate.",
-                "Whenever you create an undead using a necromancy spell, it has additional benefits:",
+                "You always have the {@spell Animate Dead|Ishiir} and {@spell Summon Undead|Ishiir} spells prepared and they do not count against the number of your prepared spells. When you cast {@spell Animate Dead|Ishiir}, you can target one additional corpse or pile of bones, creating another zombie or skeleton, as appropriate.",
+                "Any undead creature you control has the following additional benefits:",
                 {
                     "type": "list",
                     "items": [
