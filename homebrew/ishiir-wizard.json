@@ -2052,7 +2052,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "As an {@variantrule Action|Ishiir}, you can magically alter the weight of one object or creature you can see within 30 feet of you. The object or creature must be Large or smaller. The target's weight is halved or doubled for up to 1 minute or until your {@condition Concentration|Ishiir} ends (as if you were concentrating on a spell).",
+                "As a {@variantrule Bonus Action|Ishiir}, you can magically alter the weight of one object or creature you can see within 30 feet of you. The object or creature must be Large or smaller. The target's weight is halved or doubled until the end of your next turn.",
                 "While the weight of a creature is halved by this effect, the creature's {@variantrule Speed|Ishiir} increases by 10 feet, it can jump twice as far as normal, and it has {@variantrule Disadvantage|Ishiir} on strength {@variantrule Ability Check|Ishiir|checks} and Strength {@variantrule Saving Throw|Ishiir|Saving Throws}. While the weight of a creature is doubled by this effect, the creature's {@variantrule Speed|Ishiir} is reduced by 10 feet, and it has {@variantrule Advantage|Ishiir} on strength {@variantrule Ability Check|Ishiir|checks} and Strength {@variantrule Saving Throw|Ishiir|Saving Throws}.",
                 "Upon reaching 10th level in this class, you can target an object or a creature that is Huge or smaller."
             ]
@@ -2068,7 +2068,8 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You've learned how to manipulate gravity around a living being: whenever you cast a spell on a creature, you can move the target 10 feet to an unoccupied space of your choice if the target is willing to move, the spell hits it with an attack, or it fails a {@variantrule Saving Throw|Ishiir} against the spell."
+                "You've learned how to manipulate gravity around a living being: whenever you cast a spell on a creature, you can move the target up to 10 feet to an unoccupied space of your choice if the target is willing to move, the spell hits it with an attack, or it fails a {@variantrule Saving Throw|Ishiir} against the spell.",
+                "Upon reaching 10th level in this class, the maximum distance you can move a creature in this manner increases to 20 ft."
             ]
         },
         {
@@ -2082,9 +2083,8 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "When another creature that you can see within 60 feet of you hits with a weapon attack, you can use your {@variantrule Reaction|Ishiir} to increase the attack's velocity, causing the attack's target to take an extra {@damage 2d10} damage of the weapon's type.",
-                "Alternatively, if a creature within 60 feet of you takes damage from a fall, you can use your {@variantrule Reaction|Ishiir} to increase the fall's damage by {@dice 4d10}.",
-                "You can use this feature a number of times equal to your Intelligence modifier (a minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                "When you cast a gravity-based spell (e.g. {@spell Magnify Gravity|Ishiir}) that deals force damage, you add your Intelligence modifier to one damage roll of the spell.",
+                "Additionally, if a creature you can see within 60 feet of you takes damage from a fall, you can use your {@variantrule Reaction|Ishiir} to deal additional force damage equal to a number of D10s x your {@variantrule Proficiency|Ishiir} to the creature."
             ]
         },
         {
@@ -2098,8 +2098,8 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "As an {@variantrule Action|Ishiir}, you can magically emit a powerful field of gravitational energy that tugs at other creatures for up to 1 minute or until your {@condition Concentration|Ishiir} ends (as if you were concentrating on a spell). For the duration, whenever a creature hostile to you starts its turn within 30 feet of you, it must make a Strength {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failed save, it takes {@damage 3d10} force damage, and its {@variantrule Speed|Ishiir} is reduced to 0 until the start of its next turn. On a successful save, it takes half as much damage, and every foot it moves this turn costs 2 extra feet of movement.",
-                "Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir} or until you expend a spell slot of 3rd level or higher on it."
+                "As an {@variantrule Action|Ishiir}, you can magically emit a powerful field of gravitational energy that tugs at other creatures for up to 1 minute or until your {@condition Concentration|Ishiir} ends (as if you were concentrating on a spell). For the duration, whenever a creature hostile to you starts its turn within 60 feet of you, it must make a Strength {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failed save, it takes {@damage 4d10} + Intelligence modifier force damage, and its {@variantrule Speed|Ishiir} is reduced to 0 until the start of its next turn. On a successful save, it takes half as much damage, and every foot it moves this turn costs 2 extra feet of movement.",
+                "Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir} or until you expend a spell slot of 5th level or higher to use this feature again."
             ]
         },
         {
