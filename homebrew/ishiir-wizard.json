@@ -1641,7 +1641,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Benign Transposition|Wizard|Ishiir|Conjuration|Ishiir|3"
+                    "subclassFeature": "Benign Transporation|Wizard|Ishiir|Conjuration|Ishiir|3"
                 }
             ]
         },
@@ -1656,11 +1656,12 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "The gold and time you must spend to copy a conjuration spell into your spellbook is halved."
+                "Choose two {@filter Wizard spells from the Conjuration school|spells|level=1;2|class=Wizard (Ishiir)|school=C|source=Ishiir}, each of which must be no higher than level 2, and add them to your spellbook for free.",
+                "In addition, whenever you gain access to a new level of spell slots in this class, you can add one Wizard spell from the Conjuration school to your spellbook for free. The chosen spell must be of a level for which you have spell slots."
             ]
         },
         {
-            "name": "Benign Transposition",
+            "name": "Benign Transporation",
             "source": "Ishiir",
             "page": 1,
             "className": "Wizard",
@@ -1671,7 +1672,7 @@
             "header": 2,
             "entries": [
                 "You can use your {@variantrule Bonus Action|Ishiir} to teleport up to 30 feet to an unoccupied space that you can see. Alternatively, you can choose a space within range that is occupied by a Small or Medium creature. If that creature is willing, you both teleport, swapping places.",
-                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir} or you cast a conjuration spell of 1st level or higher."
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir} or you expend a 2+ spell slot to use it again."
             ]
         },
         {
@@ -1713,7 +1714,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "Any creature that you summon or create with a conjuration spell has 30 temporary hit points."
+                "Any creature that you summon or create with a conjuration spell has temporary hit points equal to twice your Wizard level."
             ]
         },
         {
