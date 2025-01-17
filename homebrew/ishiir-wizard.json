@@ -848,17 +848,17 @@
             ]
         },
         {
-            "name": "Runecrafter",
-            "shortName": "Runecrafter",
+            "name": "Rune Mage",
+            "shortName": "Rune Mage",
             "source": "Ishiir",
             "className": "Wizard",
             "classSource": "Ishiir",
             "page": 1,
             "subclassFeatures": [
-                "Runecrafter|Wizard|Ishiir|Runecrafter|Ishiir|3",
-                "Sigils of Warding|Wizard|Ishiir|Runecrafter|Ishiir|6",
-                "Rune Maven|Wizard|Ishiir|Runecrafter|Ishiir|10",
-                "Engraved Enmity|Wizard|Ishiir|Runecrafter|Ishiir|14"
+                "Rune Mage|Wizard|Ishiir|Rune Mage|Ishiir|3",
+                "Sigils of Warding|Wizard|Ishiir|Rune Mage|Ishiir|6",
+                "Rune Maven|Wizard|Ishiir|Rune Mage|Ishiir|10",
+                "Runic Mastery|Wizard|Ishiir|Rune Mage|Ishiir|14"
             ]
         },
         {
@@ -2628,39 +2628,39 @@
             ]
         },
         {
-            "name": "Runecrafter",
+            "name": "Rune Mage",
             "source": "Ishiir",
             "page": 1,
             "className": "Wizard",
             "classSource": "Ishiir",
-            "subclassShortName": "Runecrafter",
+            "subclassShortName": "Rune Mage",
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "Runecrafter wizards enhance their spellcasting through the ancient power of runes. Though the tradition originated with the giant rune casters of old, runecraft magic has expanded to encompass countless languages and practitioners across different worlds.",
-                "For many runecrafters, the runes they wield are as every bit unique and personal as their spellbook. Some strive to honor the practice's origins among the giants, engraving their runes on decorative stones that adorn their spellcasting implements, while others messily scribble their runes on scraps of paper.",
+                "Rune Mage wizards enhance their spellcasting through the ancient power of runes. Though the tradition originated with the giant rune casters of old, runecraft magic has expanded to encompass countless languages and practitioners across different worlds.",
+                "For many Rune Mages, the runes they wield are as every bit unique and personal as their spellbook. Some strive to honor the practice's origins among the giants, engraving their runes on decorative stones that adorn their spellcasting implements, while others messily scribble their runes on scraps of paper.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Runes of Understanding|Wizard|Ishiir|Runecrafter|Ishiir|3"
+                    "subclassFeature": "Runic Empowerment|Wizard|Ishiir|Rune Mage|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Runic Empowerment|Wizard|Ishiir|Runecrafter|Ishiir|3"
+                    "subclassFeature": "Bonus Proficiencies|Wizard|Ishiir|Rune Mage|Ishiir|3"
                 }
             ]
         },
         {
-            "name": "Runes of Understanding",
+            "name": "Bonus Proficiencies",
             "source": "Ishiir",
             "page": 1,
             "className": "Wizard",
             "classSource": "Ishiir",
-            "subclassShortName": "Runecrafter",
+            "subclassShortName": "Rune Mage",
             "subclassSource": "Ishiir",
             "level": 3,
             "header": 1,
             "entries": [
-                "Your study of runecraft has unlocked the ability to decode runes and languages, regardless of their origin; you always have comprehend languages prepared, you can cast it without expending a spell slot, and the spell doesn't count against the number of spells you have prepared."
+                "You gain Proficiency with calligrapher's tools and enchanter's supplies, and you learn to speak, read, and write Giant."
             ]
         },
         {
@@ -2669,40 +2669,47 @@
             "page": 1,
             "className": "Wizard",
             "classSource": "Ishiir",
-            "subclassShortName": "Runecrafter",
+            "subclassShortName": "Rune Mage",
             "subclassSource": "Ishiir",
             "level": 3,
             "header": 1,
             "entries": [
-                "When you choose this subclass, you learn how to amplify your magic through the application of various runes. Your knowledge of these runes is stored in your spellbook, though you determine the runes' cosmetic appearance. For example, your runes could be engraved into the cover of your spellbook, glowing whenever you cast a spell, or you could work the shape and meaning of the runes directly into a spell's somatic and verbal components. When you cast a spell using a spell slot, you can invoke one of the following runes:",
+                "The study of runes has enabled you to wield primordial magic. Your knowledge of these runes is stored in your spellbook, though you determine the runes' cosmetic appearance. You can invoke these runes in the following ways:",
                 {
                     "type": "list",
                     "style": "list-hang-notitle",
                     "items": [
                         {
                             "type": "item",
-                            "name": "Life Rune",
+                            "name": "Rune of Renewal",
                             "entries": [
-                                "When you invoke this rune, choose one creature you can see within 30 feet of you (you can choose yourself). The chosen creature gains temporary hit points equal to 5 times the level of the spell slot expended."
+                                "As a {@variantrule Bonus Action|Ishiir}, you can choose one creature you can see within 60 feet. That creature regains hit points equal to your Wizard level + your Intelligence modifier and you removal all poisons and diseases affecting it."
                             ]
                         },
                         {
                             "type": "item",
-                            "name": "War Rune",
+                            "name": "Rune of Destruction",
                             "entries": [
-                                "When you invoke this rune, choose one creature you can see within 30 feet of you. Until the end of your next turn, {@variantrule Attack Roll|Ishiir|Attack Rolls} that target the chosen creature gain a bonus equal to half the level of the spell slot expended (rounded up, minimum of +1)."
+                                "When you cast a spell that deals damage, you can add your Wizard level + your Intelligence modifier to one damage roll of that spell and change its damage type to force."
                             ]
                         },
                         {
                             "type": "item",
-                            "name": "Wind Rune",
+                            "name": "Rune of Protection",
                             "entries": [
-                                "When you invoke this rune, your {@variantrule Speed|Ishiir} increases by a number of feet equal to 5 times the level of the spell slot expended, and your movement doesn't provoke opportunity attacks. These benefits last until the start of your next turn."
+                                "When a creature you can see within 60 feet has to make a {@variantrule Saving Throw|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to give it a bonus to that roll equal to your Intelligence modifier."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Rune of Clarity",
+                            "entries": [
+                                "As a {@variantrule Bonus Action|Ishiir}, you can choose one creature you can see within 60 feet. That creature is under the effect of the {@spell Detect Magic|Ishiir} and {@spell Comprehend Languages|Ishiir} spells for the next 24 hours."
                             ]
                         }
                     ]
                 },
-                "You can invoke no more than one rune per spell. You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                "You can invoke each rune once. When you finish a {@variantrule Short Rest|Ishiir}, you can choose one rune and regain its use. When you finish a {@variantrule Long Rest|Ishiir}, you regain the use of all runes."
             ]
         },
         {
@@ -2711,12 +2718,15 @@
             "page": 1,
             "className": "Wizard",
             "classSource": "Ishiir",
-            "subclassShortName": "Runecrafter",
+            "subclassShortName": "Rune Mage",
             "subclassSource": "Ishiir",
             "level": 6,
             "header": 2,
             "entries": [
-                "You can call on a rune of protection to guard yourself against threats. When you fail a Strength, Dexterity, or Constitution {@variantrule Saving Throw|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to expend one use of your Runic Empowerment and succeed on the {@variantrule Saving Throw|Ishiir} instead."
+                "You add {@spell Glyph of Warding|Ishiir} to your spellbook and it doesn't count against the number of prepared spells for you. You can replace the material component of the spell with a use of one of your runes.",
+                "Additionally, you can also choose objects you or someone else is wearing as valid targets for the spell. If you do so, you cannot choose the Spell Glyph option of the spell.",
+                "You can place only one glyph in this manner and if you place a new one in this manner, the first one disappears.",
+                "Additionally, when you cast {@spell Glyph of Warding|Ishiir}, you can choose a number of creatures equal to your Intelligence modifier. The chosen creatures are exempt from the Glyph's effect when it is triggered."
             ]
         },
         {
@@ -2725,55 +2735,27 @@
             "page": 1,
             "className": "Wizard",
             "classSource": "Ishiir",
-            "subclassShortName": "Runecrafter",
+            "subclassShortName": "Rune Mage",
             "subclassSource": "Ishiir",
             "level": 10,
             "header": 2,
             "entries": [
-                "Your understanding of runecraft has grown immensely. Whenever you use your Arcane Recovery feature, you also regain a number of your expended uses of Runic Empowerment. The number of uses you regain can be no more than half your Intelligence modifier, rounded up (minimum of 1)."
+                "You can invoke each rune twice. When you finish a {@variantrule Short Rest|Ishiir}, you now can regain two uses of one rune or one use of two different runes of your choice."
             ]
         },
         {
-            "name": "Engraved Enmity",
+            "name": "Runic Mastery",
             "source": "Ishiir",
             "page": 1,
             "className": "Wizard",
             "classSource": "Ishiir",
-            "subclassShortName": "Runecrafter",
+            "subclassShortName": "Rune Mage",
             "subclassSource": "Ishiir",
             "level": 14,
             "header": 2,
             "entries": [
-                "You have mastered the art of wielding your runes directly against your foes. As a {@variantrule Bonus Action|Ishiir}, you can target one creature you can see within 60 feet of yourself. The creature must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC or be magically marked by an enmity rune.",
-                "The enmity rune appears as a faintly glowing mote of energy that hovers over the marked creature, which suffers the following effects:",
-                {
-                    "type": "list",
-                    "style": "list-hang-notitle",
-                    "items": [
-                        {
-                            "type": "item",
-                            "name": "Runecraft's Bane",
-                            "entries": [
-                                "The creature has {@variantrule Disadvantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} made against spells you cast."
-                            ]
-                        },
-                        {
-                            "type": "item",
-                            "name": "Unveiled Enemy",
-                            "entries": [
-                                "The radiance of the glowing rune makes the creature visible if it's {@condition Invisible|Ishiir}, and the creature can't become {@condition Invisible|Ishiir} while the rune persists."
-                            ]
-                        },
-                        {
-                            "type": "item",
-                            "name": "Woeful Curse",
-                            "entries": [
-                                "When you mark the creature, and as a {@variantrule Bonus Action|Ishiir} on subsequent turns for the duration, you can invoke the enmity rune to curse the creature until the start of your next turn. The next time one of your allies hits the cursed creature with an {@variantrule Attack Roll|Ishiir}, the target also takes {@damage 1d8} force damage."
-                            ]
-                        }
-                    ]
-                },
-                "The enmity rune lasts for 1 minute or until you lose your {@condition Concentration|Ishiir} (as if you were concentrating on a spell). Once you have marked a creature in this way, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a spell slot of 3rd level or higher to use this feature again."
+                "You add {@spell Symbol|Ishiir} to your spellbook and it doesn't count against the number of prepared spells for you. When you cast the spell, you can choose a number of creatures equal to your Intelligence modifier. The chosen creatures are exempt from the spell's effect when it is triggered.",
+                "Additionally, you can cast the spell without a spell slot and without material components. You cannot do so again until you have finished a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
