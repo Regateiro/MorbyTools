@@ -672,7 +672,7 @@
             "page": 1,
             "subclassFeatures": [
                 "War Magic|Wizard|Ishiir|War|Ishiir|3",
-                "Anti-Magic Training|Wizard|Ishiir|War|Ishiir|6",
+                "Arcane Riposte|Wizard|Ishiir|War|Ishiir|6",
                 "Durable Magic|Wizard|Ishiir|War|Ishiir|10",
                 "Deflecting Shroud|Wizard|Ishiir|War|Ishiir|14"
             ]
@@ -3069,7 +3069,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "Darkvision out to a range of 60 feet, as described in chapter 8.",
+                        "Darkvision out to a range of 60 feet. If the holder already has darkvision, its range increases by 60 feet.",
                         "An increase to {@variantrule Speed|Ishiir} of 10 feet while the creature is unencumbered.",
                         "{@variantrule Proficiency|Ishiir} in Constitution {@variantrule Saving Throw|Ishiir|Saving Throws}.",
                         "{@variantrule Resistance|Ishiir} to acid, cold, fire, lightning, or thunder damage (your choice whenever you choose this benefit)."
@@ -3126,7 +3126,7 @@
                             "type": "entries",
                             "name": "Restore Life",
                             "entries": [
-                                "You cast the {@spell Raise Dead|Ishiir} spell on a creature you touch with the transmuter's stone, without expending a spell slot or needing to have the spell in your spellbook."
+                                "You cast the {@spell Raise Dead|Ishiir} spell on a creature you touch with the transmuter's stone, without expending a spell slot and without providing any components."
                             ]
                         },
                         {
@@ -3174,8 +3174,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You have learned to weave your magic to fortify yourself against harm. When you are hit by an attack or you fail a {@variantrule Saving Throw|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to gain a +2 bonus to your AC against that attack or a +4 bonus to that {@variantrule Saving Throw|Ishiir}.",
-                "When you use this feature, you can't cast spells other than cantrips until the end of your next turn."
+                "When you take damage, you can take a {@variantrule Reaction|Ishiir} to reduce the attack's total damage against you. The reduction equals {@dice 1d10} plus your Intelligence modifier and Wizard level."
             ]
         },
         {
@@ -3193,7 +3192,7 @@
             ]
         },
         {
-            "name": "Anti-Magic Training",
+            "name": "Arcane Riposte",
             "source": "Ishiir",
             "page": 1,
             "className": "Wizard",
@@ -3203,7 +3202,9 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You learn the {@spell Counterspell|Ishiir} and {@spell Dispel Magic|Ishiir} spells if you do not know them already and always have them prepared. When you cast {@spell Counterspell|Ishiir} or {@spell Dispel Magic|Ishiir}, they count as one spell level higher for the purpose of automatically succeeding."
+                "When you make an attack miss with the {@spell Shield|Ishiir} spell, reduce damage to 0 with your Arcane Deflection, or successfully prevent a spell with {@spell Counterspell|Ishiir}, you can magically retaliate as part of the same {@variantrule Reaction|Ishiir} against the originator of the attack or damage if you can see it and it is within 120 feet of you.",
+                "The target has to make a Dexterity {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure it takes force damage equal to a number of D8s times your {@variantrule Proficiency|Ishiir}.",
+                "You can use this feature a number of times equal to your Intelligence modifier and regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}. You can also expend a level 2+ spell slot to regain a use of this feature."
             ]
         },
         {
@@ -3231,7 +3232,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "Your Arcane Deflection becomes infused with deadly magic. When you use your Arcane Deflection feature, you can cause magical energy to arc from you. Up to three creatures of your choice that you can see within 60 feet of you each take force damage equal to half your wizard level."
+                "When you use your Arcane Deflection, you can spend a spell slot to increase the amount of damage it reduces by 5 x the level of the expended spell slot."
             ]
         }
     ]
