@@ -686,10 +686,9 @@
             "page": 1,
             "subclassFeatures": [
                 "Psionics|Wizard|Ishiir|Psionics|Ishiir|3",
-                "Thought Form|Wizard|Ishiir|Psionics|Ishiir|6",
-                "Mental Discipline|Wizard|Ishiir|Psionics|Ishiir|10",
+                "Psionic Defenses|Wizard|Ishiir|Psionics|Ishiir|6",
                 "Empowered Psionics|Wizard|Ishiir|Psionics|Ishiir|10",
-                "Thought Travel|Wizard|Ishiir|Psionics|Ishiir|14"
+                "Psionic Mastery|Wizard|Ishiir|Psionics|Ishiir|14"
             ]
         },
         {
@@ -2539,16 +2538,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You have learned to channel psionic energy through a special object: a psionic focus. You gain the object with this feature (see the \"Your Psionic Focus\" sidebar for how you might have acquired the item).",
-                "While your psionic focus is on your person, you gain the following benefits:",
-                {
-                    "type": "list",
-                    "items": [
-                        "The object is a spellcasting focus for you.",
-                        "When you roll psychic or force damage for any of your wizard spells, you can reroll any of those damage dice that rolls a 1, but you must use the new roll."
-                    ]
-                },
-                "If your psionic focus is lost, you can magically recreate it by meditating for 1 hour during a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}, at the end of which the focus appears in your hand."
+                "You use yourself as a Spellcasting Focus and you can ignore verbal components for your wizard spells."
             ]
         },
         {
@@ -2596,7 +2586,7 @@
             ]
         },
         {
-            "name": "Thought Form",
+            "name": "Psionic Defenses",
             "source": "Ishiir",
             "page": 1,
             "className": "Wizard",
@@ -2606,25 +2596,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "While you are carrying your psionic focus, you can use a {@variantrule Bonus Action|Ishiir} to magically transform your body into pure psionic energy. The transformation lasts for 10 minutes, until you use a {@variantrule Bonus Action|Ishiir} to assume your normal form, or until you are {@condition Incapacitated|Ishiir} or die.",
-                "While in thought form, you are a figure of luminous psychic energy, with your psionic focus hovering within. Your form can appear as anything you wish, but it is obviously magical, is the same size as you, and sheds dim light in a 5-foot-radius. Any other equipment you are wearing or carrying transforms with you and melds into your thought form. You also gain the following benefits:",
-                {
-                    "type": "list",
-                    "style": "list-hang-notitle",
-                    "items": [
-                        {
-                            "type": "item",
-                            "name": "Psionic Spellcasting",
-                            "entry": "When you cast a spell while in thought form, you can cast the spell psionically. If you do so, the spell doesn't require verbal, somatic, or material components that lack a gold cost."
-                        },
-                        {
-                            "type": "item",
-                            "name": "Psychic Resilience",
-                            "entry": "You gain {@variantrule Resistance|Ishiir} to psychic damage and to bludgeoning, piercing, and slashing damage from nonmagical attacks."
-                        }
-                    ]
-                },
-                "You can transform using this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                "You have {@variantrule Resistance|Ishiir} to psychic damage. When you have to make a Wisdom {@variantrule Saving Throw|Ishiir}, you can make an Intelligence {@variantrule Saving Throw|Ishiir} instead."
             ]
         },
         {
@@ -2642,22 +2614,7 @@
             ]
         },
         {
-            "name": "Mental Discipline",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Wizard",
-            "classSource": "Ishiir",
-            "subclassShortName": "Psionics",
-            "subclassSource": "Ishiir",
-            "level": 10,
-            "header": 2,
-            "entries": [
-                "Your mind's power expands to greater heights. When you gain this feature, choose one of the following spells: {@spell Dominate Person|Ishiir}, {@spell Scrying|Ishiir}, or {@spell Telekinesis|Ishiir}. You can add the spell to your spellbook, and you can cast it without components.",
-                "You can also cast the chosen spell once without expending a spell slot. After you do so, you regain the ability to cast the spell without a slot when you finish a {@variantrule Long Rest|Ishiir}."
-            ]
-        },
-        {
-            "name": "Thought Travel",
+            "name": "Psionic Mastery",
             "source": "Ishiir",
             "page": 1,
             "className": "Wizard",
@@ -2667,8 +2624,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "While using your Thought Form, you have a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} and can hover, and you can move through other creatures and objects as if they were {@quickref difficult terrain||3}.",
-                "You take {@damage 1d10} force damage if you end your turn inside an object. If you return to your normal form while inside an object, you are shunted to the nearest unoccupied space, and you take {@damage 1d10} force damage for every 5 feet traveled."
+                "You ignore {@variantrule Resistance|Ishiir} to psychic and force damage, and you treat {@variantrule Immunity|Ishiir} to them as {@variantrule Resistance|Ishiir} instead. Additionally, you double your {@variantrule Proficiency|Ishiir} for Intelligence {@variantrule Saving Throw|Ishiir|Saving Throws}."
             ]
         },
         {
