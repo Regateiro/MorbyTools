@@ -579,7 +579,7 @@
             "page": 1,
             "subclassFeatures": [
                 "School of Evocation|Wizard|Ishiir|Evocation|Ishiir|3",
-                "Potent Cantrip|Wizard|Ishiir|Evocation|Ishiir|6",
+                "Sculpt Spells|Wizard|Ishiir|Evocation|Ishiir|6",
                 "Empowered Evocation|Wizard|Ishiir|Evocation|Ishiir|10",
                 "Overchannel|Wizard|Ishiir|Evocation|Ishiir|14"
             ]
@@ -1319,7 +1319,7 @@
             "header": 1,
             "entries": [
                 "Choose two {@filter Wizard spells from the Abjuration school|spells|level=1;2|class=Wizard (Ishiir)|school=A|source=Ishiir}, each of which must be no higher than level 2, and add them to your spellbook for free.",
-                "In addition, whenever you gain access to a new level of spell slots in this class, you can add one Wizard spell from the Abjuration school to your spellbook for free. The chosen spell must be of a level for which you have spell slots."
+                "In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter Wizard spell from the Abjuration school|spells|class=Wizard (Ishiir)|school=A|source=Ishiir} to your spellbook for free. The chosen spell must be of a level for which you have spell slots."
             ]
         },
         {
@@ -1657,7 +1657,7 @@
             "header": 1,
             "entries": [
                 "Choose two {@filter Wizard spells from the Conjuration school|spells|level=1;2|class=Wizard (Ishiir)|school=C|source=Ishiir}, each of which must be no higher than level 2, and add them to your spellbook for free.",
-                "In addition, whenever you gain access to a new level of spell slots in this class, you can add one Wizard spell from the Conjuration school to your spellbook for free. The chosen spell must be of a level for which you have spell slots."
+                "In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter Wizard spell from the Conjuration school|spells|class=Wizard (Ishiir)|school=C|source=Ishiir} to your spellbook for free. The chosen spell must be of a level for which you have spell slots."
             ]
         },
         {
@@ -1749,7 +1749,8 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "The gold and time you must spend to copy a divination spell into your spellbook is halved."
+                "Choose two {@filter Wizard spells from the Divination school|spells|level=1;2|class=Wizard (Ishiir)|school=D|source=Ishiir}, each of which must be no higher than level 2, and add them to your spellbook for free.",
+                "In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter Wizard spell from the Divination school|spells|class=Wizard (Ishiir)|school=D|source=Ishiir} to your spellbook for free. The chosen spell must be of a level for which you have spell slots."
             ]
         },
         {
@@ -1852,7 +1853,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Hypnotic Gaze|Wizard|Ishiir|Enchantment|Ishiir|3"
+                    "subclassFeature": "Enchanted Self|Wizard|Ishiir|Enchantment|Ishiir|3"
                 }
             ]
         },
@@ -1867,11 +1868,12 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "The gold and time you must spend to copy an enchantment spell into your spellbook is halved."
+                "Choose two {@filter Wizard spells from the Enchantment school|spells|level=1;2|class=Wizard (Ishiir)|school=E|source=Ishiir}, each of which must be no higher than level 2, and add them to your spellbook for free.",
+                "In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter Wizard spell from the Enchantment school|spells|class=Wizard (Ishiir)|school=E|source=Ishiir} to your spellbook for free. The chosen spell must be of a level for which you have spell slots."
             ]
         },
         {
-            "name": "Hypnotic Gaze",
+            "name": "Enchanted Self",
             "source": "Ishiir",
             "page": 1,
             "className": "Wizard",
@@ -1881,9 +1883,8 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "When you choose this school, your soft words and enchanting gaze can magically enthrall another creature. As an {@variantrule Action|Ishiir}, choose one creature that you can see within 30 feet of you. If the target can see or hear you, it must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your wizard spell save DC or be {@condition Charmed|Ishiir} by you until the end of your next turn. The {@condition Charmed|Ishiir} creature's {@variantrule Speed|Ishiir} drops to 0, and the creature is {@condition Incapacitated|Ishiir} and visibly dazed.",
-                "On subsequent turns, you can use your action to maintain this effect, extending its duration until the end of your next turn. However, the effect ends if you move more than 30 feet away from the creature, if the creature can neither see nor hear you, or if the creature takes damage.",
-                "Once the effect ends, or if the creature succeeds on its initial {@variantrule Saving Throw|Ishiir} against this effect, you can't use this feature on that creature again until you finish a {@variantrule Long Rest|Ishiir}."
+                "You gain {@variantrule Proficiency|Ishiir} in {@skill Deception}, {@skill Intimidation}, and {@skill Persuasion}. You can use your Intelligence in place of your Charisma for these skills.",
+                "When you fail a {@variantrule Ability Check|Ishiir|check} using these skills, you can choose to reroll it, taking either result. Once you have done so and the reroll resulted in a success, you cannot use this feature again until you have finished a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -1947,7 +1948,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Sculpt Spells|Wizard|Ishiir|Evocation|Ishiir|3"
+                    "subclassFeature": "Potent Cantrip|Wizard|Ishiir|Evocation|Ishiir|3"
                 }
             ]
         },
@@ -1962,21 +1963,8 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "The gold and time you must spend to copy an evocation spell into your spellbook is halved."
-            ]
-        },
-        {
-            "name": "Sculpt Spells",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Wizard",
-            "classSource": "Ishiir",
-            "subclassShortName": "Evocation",
-            "subclassSource": "Ishiir",
-            "level": 3,
-            "header": 1,
-            "entries": [
-                "You can create pockets of relative safety within the effects of your evocation spells. When you cast an evocation spell that affects other creatures that you can see, you can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their {@variantrule Saving Throw|Ishiir|Saving Throws} against the spell, and they take no damage if they would normally take half damage on a successful save."
+                "Choose two {@filter Wizard spells from the Evocation school|spells|level=1;2|class=Wizard (Ishiir)|school=V|source=Ishiir}, each of which must be no higher than level 2, and add them to your spellbook for free.",
+                "In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter Wizard spell from the Evocation school|spells|class=Wizard (Ishiir)|school=V|source=Ishiir} to your spellbook for free. The chosen spell must be of a level for which you have spell slots."
             ]
         },
         {
@@ -1987,10 +1975,24 @@
             "classSource": "Ishiir",
             "subclassShortName": "Evocation",
             "subclassSource": "Ishiir",
-            "level": 6,
+            "level": 3,
             "header": 2,
             "entries": [
-                "Your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a {@variantrule Saving Throw|Ishiir} against your cantrip, the creature takes half the cantrip's damage (if any) but suffers no additional effect from the cantrip."
+                "Your damaging cantrips affect even creatures that avoid the brunt of the effect. When you cast a cantrip at a creature and you miss with the {@variantrule Attack Roll|Ishiir} or the target succeeds on a {@variantrule Saving Throw|Ishiir} against the cantrip, the target takes half the cantrip's damage (if any) but suffers no additional effect from the cantrip."
+            ]
+        },
+        {
+            "name": "Sculpt Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Wizard",
+            "classSource": "Ishiir",
+            "subclassShortName": "Evocation",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 1,
+            "entries": [
+                "You can create pockets of relative safety within the effects of your evocations. When you cast an Evocation spell that affects other creatures that you can see, you can choose a number of them equal to 1 plus the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save."
             ]
         },
         {
@@ -2210,7 +2212,8 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "The gold and time you must spend to copy an illusion spell into your spellbook is halved."
+                "Choose two {@filter Wizard spells from the Illusion school|spells|level=1;2|class=Wizard (Ishiir)|school=I|source=Ishiir}, each of which must be no higher than level 2, and add them to your spellbook for free.",
+                "In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter Wizard spell from the Illusion school|spells|class=Wizard (Ishiir)|school=I|source=Ishiir} to your spellbook for free. The chosen spell must be of a level for which you have spell slots."
             ]
         },
         {
@@ -2415,7 +2418,8 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "The gold and time you must spend to copy a necromancy spell into your spellbook is halved."
+                "Choose two {@filter Wizard spells from the Necromancy school|spells|level=1;2|class=Wizard (Ishiir)|school=N|source=Ishiir}, each of which must be no higher than level 2, and add them to your spellbook for free.",
+                "In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter Wizard spell from the Necromancy school|spells|class=Wizard (Ishiir)|school=N|source=Ishiir} to your spellbook for free. The chosen spell must be of a level for which you have spell slots."
             ]
         },
         {
@@ -3291,7 +3295,8 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "The gold and time you must spend to copy a transmutation spell into your spellbook is halved."
+                "Choose two {@filter Wizard spells from the Transmutation school|spells|level=1;2|class=Wizard (Ishiir)|school=T|source=Ishiir}, each of which must be no higher than level 2, and add them to your spellbook for free.",
+                "In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter Wizard spell from the Transmutation school|spells|class=Wizard (Ishiir)|school=T|source=Ishiir} to your spellbook for free. The chosen spell must be of a level for which you have spell slots."
             ]
         },
         {
