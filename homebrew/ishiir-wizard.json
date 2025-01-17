@@ -1319,7 +1319,7 @@
             "header": 1,
             "entries": [
                 "You can weave magic around yourself for protection. When you cast an {@filter abjuration spell with a spell slot|spells|school=A|level=!0|source=Ishiir}, you can simultaneously use a strand of the spell's magic to create a magical ward on yourself that lasts until you finish a {@variantrule Long Rest|Ishiir}. The ward has a hit point maximum equal to twice your Wizard level plus your Intelligence modifier. Whenever you take damage, the ward takes the damage instead, and if you have any Resistances or Vulnerabilities, apply them before reducing the ward's hit points. If the damage reduces the ward to 0 Hit Points, you take any remaining damage. While the ward has 0 Hit Points, it can't absorb damage, but its magic remains.",
-                "Whenever you cast an Abjuration spell with a spell slot, the ward regains a number of Hit Points equal to twice the level of the spell slot. Alternatively, as a {@variantrule Bonus Action|Ishiir}, you can expend a spell slot, and the ward regains a number of Hit Points equal to twice the level of the spell slot expended. Additionally, the ward regains hit points equal to your proficiency every time you finish a {@variantrule Short Rest|Ishiir}.",
+                "Whenever you cast an Abjuration spell with a spell slot, the ward regains a number of Hit Points equal to twice the level of the spell slot. Alternatively, as a {@variantrule Bonus Action|Ishiir}, you can expend a spell slot, and the ward regains a number of Hit Points equal to twice the level of the spell slot expended. Additionally, the ward regains hit points equal to your {@variantrule Proficiency|Ishiir} every time you finish a {@variantrule Short Rest|Ishiir}.",
                 "Once you create the ward, you can't create it again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
@@ -1334,7 +1334,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "When a creature that you can see within 30 feet of you takes damage, you can use your {@variantrule Reaction|Ishiir} to cause your Arcane Ward to absorb that damage. If this damage reduces the ward to 0 hit points, the warded creature takes any remaining damage."
+                "When a creature that you can see within 30 feet of yourself takes damage, you can take a {@variantrule Reaction|Ishiir} to cause your Arcane Ward to absorb that damage. If this damage reduces the ward to 0 Hit Points, the warded creature takes any remaining damage. If that creature has any Resistances or Vulnerabilities, apply them before reducing the ward's Hit Points."
             ]
         },
         {
@@ -1348,7 +1348,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You always have the {@spell Counterspell|Ishiir} and {@spell Dispel Magic|Ishiir} spells prepared. In addition, you can cast {@spell Dispel Magic|Ishiir} as a {@variantrule Bonus Action|Ishiir}, and you can add your {@variantrule Proficiency|Ishiir} Bonus to its {@variantrule Ability Check|Ishiir}.",
+                "You always have the {@spell Counterspell|Ishiir} and {@spell Dispel Magic|Ishiir} spells prepared and they don't count against your number of prepared spells. In addition, you can cast {@spell Dispel Magic|Ishiir} as a {@variantrule Bonus Action|Ishiir}, and you can add your {@variantrule Proficiency|Ishiir} Bonus to the {@variantrule Ability Check|Ishiir|Ability Checks} of both spells.",
                 "When you cast either spell with a spell slot, that slot isn't expended if the spell fails to stop a spell."
             ]
         },
@@ -2660,7 +2660,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain Proficiency with calligrapher's tools and enchanter's supplies, and you learn to speak, read, and write Giant."
+                "You gain {@variantrule Proficiency|Ishiir} with calligrapher's tools and enchanter's supplies, and you learn to speak, read, and write Giant."
             ]
         },
         {
