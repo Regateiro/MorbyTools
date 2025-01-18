@@ -25,13 +25,18 @@
                     "dex": 1
                 }
             ],
+            "skillProficiencies": [
+                {
+                    "acrobatics": true
+                }
+            ],
             "entries": [
                 "You become more nimble, gaining the following benefits:",
                 {
                     "type": "list",
                     "items": [
                         "You gain {@variantrule Proficiency|Ishiir} in the {@skill Acrobatics} skill. If you are already {@variantrule Proficiency|Ishiir|proficient} in the skill, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with it.",
-                        "As a {@variantrule Bonus Action|Ishiir}, you can make a DC 15 Dexterity ({@skill Acrobatics}) check. If you succeed, {@quickref difficult terrain||3} doesn't cost you extra movement until the end of the current turn."
+                        "When you fail an {@skill Acrobatics} {@variantrule Ability Check|Ishiir|check} or a Dexterity {@variantrule Saving Throw|Ishiir}, you can immediately reroll it, taking the higher result. You cannot do so again until you have finished a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
                     ]
                 }
             ]
@@ -45,12 +50,23 @@
                     "cha": 1
                 }
             ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "from": [
+                            "deception",
+                            "performance"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
             "entries": [
                 "Skilled at mimicry and dramatics, you gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
-                        "You have {@variantrule Advantage|Ishiir} on Charisma ({@skill Deception}) and Charisma ({@skill Performance}) {@variantrule Ability Check|Ishiir|checks} when trying to pass yourself off as a different person.",
+                        "You have gain {@variantrule Proficiency|Ishiir} in {@skill Deception} or {@skill Performance} and you have {@variantrule Advantage|Ishiir} on Charisma ({@skill Deception}) and Charisma ({@skill Performance}) {@variantrule Ability Check|Ishiir|checks} when trying to pass yourself off as a different person.",
                         "You can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Wisdom ({@skill Insight}) check contested by your Charisma ({@skill Deception}) check allows a listener to determine that the effect is faked."
                     ]
                 }
@@ -235,11 +251,6 @@
             "name": "Animal Handler",
             "page": 1,
             "source": "Ishiir",
-            "ability": [
-                {
-                    "wis": 1
-                }
-            ],
             "skillProficiencies": [
                 {
                     "animal handling": true
@@ -251,7 +262,7 @@
                     "type": "list",
                     "items": [
                         "You gain {@variantrule Proficiency|Ishiir} in the {@skill Animal Handling} skill. If you are already {@variantrule Proficiency|Ishiir|proficient} in the skill, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with it.",
-                        "You can use a {@variantrule Bonus Action|Ishiir} on your turn to command one friendly beast within 60 feet of you that can hear you and that isn't currently following the command of someone else. You decide now what action the beast will take and where it will move during its next turn, or you issue a general command that lasts for 1 minute, such as to guard a particular area."
+                        "You can touch a friendly beast and form a special bond with it, provided it is not already bonded with your or a different person through a feature or other means. The beast becomes your animal companion. This bond persists until you choose a different companion. Your animal companion gains additional hit points equal to 3 x your highest class level and it uses your {@variantrule Proficiency|Ishiir} in place of its own if it is higher. In combat, it rolls its own initiative and takes its turn acting according to its nature. Alternatively, you can use a {@variantrule Bonus Action|Ishiir} to determine the exact actions it takes on its next turn."
                     ]
                 }
             ]
@@ -260,11 +271,6 @@
             "name": "Animal Senses",
             "page": 1,
             "source": "Ishiir",
-            "ability": [
-                {
-                    "wis": 1
-                }
-            ],
             "skillProficiencies": [
                 {
                     "perception": true
@@ -276,7 +282,15 @@
                     "type": "list",
                     "items": [
                         "You gain {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill. If you are already {@variantrule Proficiency|Ishiir|proficient} in the skill, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with it.",
-                        "You have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Survival}) {@variantrule Ability Check|Ishiir|checks} made to follow tracks 24h or less old. This {@variantrule Advantage|Ishiir} is lost if it rains more than lightly, or the target travels across or through water."
+                        "You gain your choice of the following senses. If you already possess that sense, you add the listed amount to its range:",
+                        {
+                            "type": "list",
+                            "items": [
+                                "Darkvision with a range of 60 feet.",
+                                "Tremorsense with a range of 30 feet.",
+                                "Blindsight with a range of 10 feet."
+                            ]
+                        }
                     ]
                 }
             ]
@@ -417,8 +431,7 @@
                     "type": "list",
                     "items": [
                         "You have {@variantrule Advantage|Ishiir} on Constitution {@variantrule Saving Throw|Ishiir|Saving Throws} that you make to maintain your {@condition Concentration|Ishiir} on a spell when you take damage.",
-                        "Additionally, when you hold {@condition Concentration|Ishiir} on a spell, you can maintain {@condition Concentration|Ishiir} of one additional spell for a number of rounds equal to half your {@variantrule Proficiency|Ishiir} (rounded down).",
-                        "At the end of your turn when this effect ends, you can choose which spell to maintain {@condition Concentration|Ishiir} on."
+                        "You can {@condition Concentration|Ishiir|concentrate} on up to two spells at once, but the combined level of these spells cannot be higher than the highest spell level you can cast. If you fail a concentration saving throw, you lose concentration of both spells."
                     ]
                 }
             ]
@@ -461,7 +474,7 @@
                     "type": "list",
                     "items": [
                         "You gain {@variantrule Proficiency|Ishiir} in the {@skill Arcana} skill. If you are already {@variantrule Proficiency|Ishiir|proficient} in the skill, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with it.",
-                        "You learn the {@spell Prestidigitation|Ishiir} and {@spell Detect Magic|Ishiir} spells. You can cast {@spell Detect Magic|Ishiir} once without expending a spell slot, and you regain the ability to do so when you finish a {@variantrule Long Rest|Ishiir}."
+                        "You learn the {@spell Prestidigitation|Ishiir} and {@spell Detect Magic|Ishiir} spells. You can cast {@spell Detect Magic|Ishiir} once without expending a spell slot and without using {@condition Concentration|Ishiir}, and you regain the ability to do so when you finish a {@variantrule Short Rest|Ishiir}."
                     ]
                 }
             ]
@@ -530,7 +543,7 @@
                     "items": [
                         "You learn one cantrip of your choice from the {@filter artificer spell list|spells|level=0;1|class=artificer (Ishiir)|source=Ishiir}, and you learn one 1st-level spell of your choice from {@filter that list|spells|level=0;1|class=artificer (Ishiir)|source=Ishiir}. Intelligence, Wisdom, or Charisma (your choice) is your spellcasting ability for these spells.",
                         "You can cast this feat's 1st-level spell without a spell slot, and you must finish a {@variantrule Long Rest|Ishiir} before you can cast it in this way again. You can also cast the spell using any spell slots you have.",
-                        "You gain {@variantrule Proficiency|Ishiir} with one type of {@filter artisan's tools|items|type=artisan's tools} of your choice, and you can use that type of tool as a spellcasting focus for any spell you cast that uses Intelligence as its spellcasting ability."
+                        "You gain {@variantrule Proficiency|Ishiir} with one type of {@filter artisan's tools|items|type=artisan's tools} of your choice, and you can use that type of tool as a spellcasting focus for any spell you cast."
                     ]
                 }
             ]
@@ -861,7 +874,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "You gain {@variantrule Proficiency|Ishiir} with {@item thieves' tools|phb}. If you are already {@variantrule Proficiency|Ishiir|proficient} with them, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with them.",
+                        "You gain {@variantrule Proficiency|Ishiir} in {@skill Investigation} and with {@item thieves' tools|phb}. If you are already {@variantrule Proficiency|Ishiir|proficient} with them, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with one of them.",
                         "You never break your thieves's tools as a result of failing to open a lock and if you fail to disarm a trap, you do not trigger it."
                     ]
                 }
@@ -1109,7 +1122,7 @@
                     "type": "list",
                     "items": [
                         "You gain {@variantrule Proficiency|Ishiir} in the {@skill Animal Handling} skill. If you are already {@variantrule Proficiency|Ishiir|proficient} in the skill, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with it.",
-                        "You learn the {@spell Speak with Animals|Ishiir} spell and can cast it at will, without expending a spell slot. You also learn the {@spell Animal Friendship|Ishiir} spell, and you can cast it once with this feat, without expending a spell slot. You regain the ability to cast it in this way when you finish a {@variantrule Long Rest|Ishiir}. Intelligence is your spellcasting ability for these spells."
+                        "You learn the {@spell Speak with Animals|Ishiir} spell and can cast it at will, without expending a spell slot. You also learn the {@spell Animal Friendship|Ishiir} spell, and you can cast it once with this feat, without expending a spell slot. You regain the ability to cast it in this way when you finish a {@variantrule Long Rest|Ishiir}. The ability score chosen for this feat is your spellcasting ability for these spells."
                     ]
                 }
             ]
@@ -1198,7 +1211,7 @@
             ]
         },
         {
-            "name": "Deep Forged",
+            "name": "Deep-Forged",
             "page": 1,
             "source": "Ishiir",
             "prerequisite": [
@@ -1211,18 +1224,12 @@
                     ]
                 }
             ],
-            "skillProficiencies": [
-                {
-                    "perception": true
-                }
-            ],
             "entries": [
                 {
                     "type": "list",
                     "items": [
                         "Your {@sense darkvision} range increases to 120 feet.",
-                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill perception} skill. If you are already {@variantrule Proficiency|Ishiir|proficient} in the skill, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with it.",
-                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir}."
+                        "When you have to make a Wisdom {@variantrule Saving Throw|Ishiir} against effects that cause you to be {@condition Charmed|Ishiir}, {@condition Confused|Ishiir}, {@condition Dominated|Ishiir}, {@condition Frightened|Ishiir}, {@condition Paralyzed|Ishiir}, or {@condition Stunned|Ishiir}, you can make a Constitution {@variantrule Saving Throw|Ishiir} instead."
                     ]
                 }
             ]
@@ -1316,9 +1323,8 @@
                     "type": "list",
                     "items": [
                         "When you land a critical hit with a melee weapon, roll an additional weapon die and add it to the damage total.",
-                        "When you push or knock a creature prone successfully with the {@action shove|Ishiir} action, you can make a melee weapon attack as a {@variantrule Bonus Action|Ishiir}.",
-                        "If you have features that allow you to {@action shove|Ishiir} on a {@variantrule Bonus Action|Ishiir} and you succeed on that shove, you can make a melee weapon attack as part of the same {@variantrule Bonus Action|Ishiir}.",
-                        "You can attempt a {@action grapple|Ishiir} while wielding a two-handed or versatile weapon in one hand. While grappling a creature, you can still make attacks with your weapon as if you were wielding it in two hands."
+                        "Once on your turn, when you take the {@action Attack|Ishiir} action, you can attempt to {@action Shove|Ishiir} a creature without replacing one of your attacks.",
+                        "You can attempt a {@action Grapple|Ishiir} while wielding a two-handed or versatile weapon in one hand. While grappling a creature, you can still make attacks with your weapon as if you were wielding it in two hands."
                     ]
                 }
             ]
@@ -1342,9 +1348,9 @@
                 {
                     "type": "list",
                     "items": [
-                        "On your turn, when you move towards a creature in a straight line for the first time, you can add 1 dmg for every 5 ft spent as part of that movement to the first melee weapon damage roll you make against that creature.",
+                        "When you hit a creature with a melee weapon that does not have the heavy or two-handed property, you can cause the weapon to deal extra damage to the target. The extra damage equals your {@variantrule Proficiency|Ishiir} Bonus.",
                         "Your critical range with melee weapons increases by 1. This effect does not apply to weapons with the heavy or two-handed property.",
-                        "When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn."
+                        "Once per turn, when you use the {@optfeature Lunge|Ishiir} mastery or attack a target with a melee weapon after moving at least 10 feet towards it in a straight line, you can choose to ignore {@variantrule Disadvantage|Ishiir} for your {@variantrule Attack Roll|Ishiir} and the target cannot use a {@variantrule Reaction|Ishiir} that uses this attack as a trigger."
                     ]
                 }
             ]
@@ -1369,7 +1375,9 @@
                 {
                     "type": "list",
                     "items": [
-                        "Choose any two Channel Divinity features that are available to clerics or paladins of 3rd level or lower. You gain one use of Channel Divinity that can be used for these or any other Channel Divinity features you have. You regain this use when you have completed a {@variantrule Long Rest|Ishiir}. If the Channel Divinity feature references your cleric level, you use your highest class level instead. If you already possess the Channel Divinity feature, the use granted by this feat recharges on a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir} instead."
+                        "Choose any two Channel Divinity features that are available to clerics or paladins of 3rd level or lower. You gain one use of Channel Divinity that can be used for these or any other Channel Divinity features you have. You regain this use when you have completed a {@variantrule Long Rest|Ishiir}.",
+                        "If the Channel Divinity feature references your cleric or paladin level, you use your highest class level instead. It if references your Wisdom, you can use your Charisma instead and vice versa.",
+                        "If you already possess the Channel Divinity feature, the use granted by this feat recharges on a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir} instead."
                     ]
                 }
             ]
@@ -1466,7 +1474,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "Your scales harden. While you aren't wearing armor, you can calculate your AC as 13 + your Dexterity modifier. You can use a shield and still gain this benefit.",
+                        "Your scales harden. While you aren't wearing armor, you can calculate your AC as 13 + {@variantrule Proficiency|Ishiir}. You can use a shield and still gain this benefit.",
                         "You grow retractable claws from the tips of your fingers. Extending or retracting the claws requires no action. The claws are natural weapons, which you can use to make {@variantrule Unarmed Strike|Ishiir|Unarmed Strikes}, and deal {@dice 1d6} slashing damage on a hit. You can choose your whether to use your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.",
                         "If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your claws to attack."
                     ]
@@ -1592,47 +1600,6 @@
             ]
         },
         {
-            "name": "Eldritch Gift",
-            "page": 1,
-            "source": "Ishiir",
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 1,
-                        "class": {
-                            "name": "Warlock",
-                            "visible": true
-                        }
-                    }
-                },
-                {
-                    "feat": [
-                        "Pact Initiate|Ishiir"
-                    ]
-                }
-            ],
-            "ability": [
-                {
-                    "choose": {
-                        "from": [
-                            "int",
-                            "wis",
-                            "cha"
-                        ],
-                        "amount": 1
-                    }
-                }
-            ],
-            "entries": [
-                {
-                    "type": "list",
-                    "items": [
-                        "Choose a warlock Pact Boon that you do not already have. You gain this boon."
-                    ]
-                }
-            ]
-        },
-        {
             "name": "Conduit Mastery",
             "page": 1,
             "source": "Ishiir",
@@ -1727,12 +1694,17 @@
                     "hidden": true
                 }
             ],
+            "skillProficiencies": [
+                {
+                    "any": 1
+                }
+            ],
             "entries": [
                 "You have some elven blood, or, if you are an elf, some other elven blood.",
                 {
                     "type": "list",
                     "items": [
-                        "You gain {@variantrule Proficiency|Ishiir} in Perception. Choose an elven sub-race to which you do not belong, and gain the following benefits:",
+                        "You gain {@variantrule Proficiency|Ishiir} in one skill of your choice. Choose an elven sub-race to which you do not belong, and gain the following benefits:",
                         {
                             "type": "list",
                             "items": [
@@ -1746,7 +1718,7 @@
             ]
         },
         {
-            "name": "Empathic",
+            "name": "Keen Intuition",
             "page": 1,
             "source": "Ishiir",
             "ability": [
@@ -1954,7 +1926,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "You have the ability to heal with a touch, represented by a pool of hp equal to 5 x your {@variantrule Proficiency|Ishiir} bonus. As an {@variantrule Action|Ishiir}, touch a creature and spend any amount of points from this pool to heal them of an equal amount of hit points. You may spend 5 points to cure the creature of a disease or poison that afflicts them instead. You regain all expended points after you complete a {@variantrule Long Rest|Ishiir}.",
+                        "You have the ability to heal with a touch, represented by a pool of hp equal to 5 x your {@variantrule Proficiency|Ishiir} bonus. As a {@variantrule Bonus Action|Ishiir}, touch a creature and spend any amount of points from this pool to heal them of an equal amount of hit points. You may spend 5 points to cure the creature of a disease or poison that afflicts them instead. You regain all expended points after you complete a {@variantrule Long Rest|Ishiir}.",
                         "If you have the paladin Lay On Hands feature, the points of healing you gain from this feat are combined with the points granted by that feature.",
                         "Additionally, by spending an {@variantrule Action|Ishiir} touching a creature who died within 1 minute, you may roll percentile dice. If the amount rolled is lower than or equal to your level, you cast revivify on the creature, without using a spell slot or any material components. You may only attempt this roll once per creature (unless it returns to life and then dies), and once you have succeeded on the roll you may not attempt to raise another creature in this fashion until you have completed a {@variantrule Long Rest|Ishiir}."
                     ]
@@ -2078,7 +2050,7 @@
                     "type": "list",
                     "items": [
                         "You learn to speak, read, and write {@language Sylvan}.",
-                        "You learn the {@spell Misty Step|Ishiir} spell and can cast it once without expending a spell slot. You regain the ability to cast it in this way when you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}. Intelligence is your spellcasting ability for this spell."
+                        "You learn the {@spell Misty Step|Ishiir} spell and can cast it once without expending a spell slot. You regain the ability to cast it in this way when you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}. The ability score chosen for this feat is your spellcasting ability for this spell."
                     ]
                 }
             ]
@@ -2108,7 +2080,7 @@
                                 "1e": [
                                     "misty step|Ishiir",
                                     {
-                                        "choose": "level=1|school=E;D|source=Ishiir"
+                                        "choose": "level=1|school=E;I|source=Ishiir"
                                     }
                                 ]
                             }
@@ -2121,7 +2093,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "You learn the {@spell Misty Step|Ishiir} spell and one {@filter 1st-level spell|spells|level=1|school=E;D|source=Ishiir} of your choice. The {@filter 1st-level spell|spells|level=1|school=E;D|source=Ishiir} must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a {@variantrule Long Rest|Ishiir}. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against becoming {@condition Charmed|Ishiir}.",
+                        "You learn the {@spell Misty Step|Ishiir} spell and one {@filter 1st-level spell|spells|level=1|school=E;I|source=Ishiir} of your choice. The 1st-level spell must be from the illusion or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a {@variantrule Long Rest|Ishiir}. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
                     ]
                 }
             ]
@@ -2155,7 +2128,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "When you roll fire damage for a spell you cast, you can reroll any roll of 1 on the fire damage dice, but you must use the new roll, even if it is another 1.",
+                        "When you roll fire damage for a spell you cast, you can reroll any roll of 1 on the fire damage dice, but you must use the new roll, even if it is another 1. If you already have a feature that allows you to reroll spell damage, you instead increase the reroll threshold to 2 if the spell deals fire damage.",
                         "Whenever you cast a spell that deals fire damage, you can cause flames to wreathe you until the end of your next turn. The flames don't harm you or your possessions, and they shed bright light out to 30 feet and dim light for an additional 30 feet. While the flames are present, any creature within 5 feet of you that hits you with a melee attack takes {@dice 1d4} fire damage."
                     ]
                 }
@@ -2232,7 +2205,7 @@
                     "type": "list",
                     "items": [
                         "You have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against a creature you are grappling.",
-                        "You can use your action to try to pin a creature {@condition Grappled|Ishiir} by you. To do so, make another grapple check. If you succeed, you and the creature are both {@condition Restrained|Ishiir} until the grapple ends."
+                        "You can use your action to try to pin a creature {@condition Grappled|Ishiir} by you. To do so, make another {@action Grapple|Ishiir} check. If you succeed, you and the creature are both {@condition Restrained|Ishiir} until the grapple ends. You do not suffer {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir} from this {@condition Restrained|Ishiir} condition."
                     ]
                 }
             ]
@@ -2248,7 +2221,7 @@
                     "type": "list",
                     "items": [
                         "On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a {@variantrule Bonus Action|Ishiir}.",
-                        "Before you make a melee attack with a heavy weapon that you are {@variantrule Proficiency|Ishiir|proficient} with, you can choose to take a -5 penalty to the {@variantrule Attack Roll|Ishiir}. If the attack hits, you add +10 to the attack's damage."
+                        "When you hit a creature with a weapon that has the Heavy property, you can cause the weapon to deal extra damage to the target. The extra damage equals your {@variantrule Proficiency|Ishiir} Bonus."
                     ]
                 }
             ]
@@ -2323,7 +2296,7 @@
                 }
             ],
             "entries": [
-                "You have a deep hatred for a particular kind of creature. Choose your foes, a type of creature to bear the burden of your wrath: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, oozes, plants, or undead. Alternatively, you can choose two races of humanoid (such as elfs or humans). You gain the following benefits:",
+                "You have a deep hatred for a particular kind of creature. Choose your foes, a type of creature to bear the burden of your wrath: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, humanoids, oozes, plants, or undead. You gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
@@ -2518,7 +2491,7 @@
                     "items": [
                         "You can reroll your initiative and take either result.",
                         "When initiative is rolled, you can choose to give up to 6 creatures (including you) temporary HP equal to your {@variantrule Proficiency|Ishiir} + your INT, WIS, or CHA (your choice). A creature can't benefit from this feature again until it has finished a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}.",
-                        "When a creature within 30 ft of you is making a {@variantrule Saving Throw|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to add your INT, WIS, or CHA (your choice) to their roll. You can use this feature after seeing the roll but before the result is announced.",
+                        "When a creature within 30 ft of you fails a {@variantrule Saving Throw|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to add your INT, WIS, or CHA (your choice) to their roll.",
                         "After you've used this feature, you can't use it again until you've finished a {@variantrule Long Rest|Ishiir}."
                     ]
                 }
@@ -2582,7 +2555,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "When you make an {@variantrule Attack Roll|Ishiir}, an {@variantrule Ability Check|Ishiir}, or a {@variantrule Saving Throw|Ishiir}, you can do so with {@variantrule Advantage|Ishiir}. Once you use this ability, you can't use it again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
+                        "Every time you finish a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}, you gain a use of Heroic Inspiration that lasts for 24 hours or until finish your next {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}."
                     ]
                 }
             ]
@@ -2634,7 +2607,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "You gain the ability to use yourself as a spellcasting focus when you cast spells that require material components."
+                        "You gain the ability to use yourself as a spellcasting focus when you cast spells that require material components.",
+                        "Additionally, you do not need to provide material components up to a cost of 50 gp x your proficiency."
                     ]
                 }
             ]
@@ -3400,7 +3374,13 @@
             "source": "Ishiir",
             "ability": [
                 {
-                    "int": 1
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis"
+                        ],
+                        "amount": 1
+                    }
                 }
             ],
             "skillProficiencies": [
@@ -3414,7 +3394,8 @@
                         "_": {
                             "daily": {
                                 "1": [
-                                    "detect poison and disease|Ishiir"
+                                    "detect poison and disease|Ishiir",
+                                    "goodberry|Ishiir"
                                 ]
                             }
                         }
@@ -3432,7 +3413,7 @@
                     "type": "list",
                     "items": [
                         "You gain {@variantrule Proficiency|Ishiir} in the {@skill Nature} skill. If you are already {@variantrule Proficiency|Ishiir|proficient} in the skill, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with it.",
-                        "You learn the {@spell Druidcraft|Ishiir} and {@spell Detect Poison and Disease|Ishiir} spells. You can cast {@spell Detect Poison and Disease|Ishiir} once without expending a spell slot, and you regain the ability to do so when you finish a {@variantrule Long Rest|Ishiir}."
+                        "You learn the {@spell Druidcraft|Ishiir}, {@spell Detect Poison and Disease|Ishiir} and {@spell Goodberry|Ishiir} spells. You can cast {@spell Detect Poison and Disease|Ishiir} and {@spell Goodberry|Ishiir} once without expending a spell slot, and you regain the ability to do so when you finish a {@variantrule Long Rest|Ishiir}."
                     ]
                 }
             ]
@@ -3660,7 +3641,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "Choose an otherworldly patron, if you don't already have one. You gain the 1st level features granted by this patron. If any of the features gained in this manner reference your warlock level, you can use your highest class level instead.",
+                        "Choose an otherworldly patron, if you don't already have one. You gain the 3rd level features granted by this patron. If any of the features gained in this manner reference your warlock level, you can use your highest class level instead.",
                         "You learn one of the 1st level spells from the list of spells granted by your otherworldly patron. Charisma is your spellcasting ability for this spell, which is considered a warlock spell. You can cast this spell once as a 1st level spell without using a slot, after which you must complete a {@variantrule Short Rest|Ishiir} before you can do so again."
                     ]
                 }
@@ -4208,7 +4189,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "When a creature you can see hits you with an {@variantrule Attack Roll|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to force that creature to reroll. Once you use this ability, you can't use it again until you roll initiative at the start of combat or until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
+                        "When a creature you can see hits you with an {@variantrule Attack Roll|Ishiir}, you can force that creature to reroll (no action required), taking the lower result. Once you use this ability, you can't use it again until you roll initiative at the start of combat or until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
                     ]
                 }
             ]
@@ -4688,7 +4669,7 @@
                     "type": "list",
                     "items": [
                         "You gain {@variantrule Proficiency|Ishiir} in the {@skill Survival} skill. If you are already {@variantrule Proficiency|Ishiir|proficient} in the skill, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with it.",
-                        "You learn the {@spell Alarm|Ishiir} spell. You can cast it once without expending a spell slot, and you regain the ability to do so when you finish a {@variantrule Long Rest|Ishiir}."
+                        "You learn the {@spell Alarm|Ishiir} spell. You can cast it once without expending a spell slot, and you regain the ability to do so when you finish a {@variantrule Short Rest|Ishiir}."
                     ]
                 }
             ]
@@ -4773,8 +4754,8 @@
                     "type": "list",
                     "items": [
                         "You are {@variantrule Proficiency|Ishiir|proficient} with improvised weapons.",
-                        "Your {@variantrule Unarmed Strike|Ishiir} uses a {@damage d4} for damage.",
-                        "When you hit a creature with an {@variantrule Unarmed Strike|Ishiir} or an improvised weapon on your turn, you can use a {@variantrule Bonus Action|Ishiir} to attempt to grapple the target."
+                        "Your {@variantrule Unarmed Strike|Ishiir} uses a {@damage d4} for damage. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step.",
+                        "When you hit a creature with an {@variantrule Unarmed Strike|Ishiir} or an improvised weapon on your turn, you can use a {@variantrule Bonus Action|Ishiir} to attempt to {@action Grapple|Ishiir} the target."
                     ]
                 }
             ]
@@ -4978,9 +4959,9 @@
                 {
                     "type": "list",
                     "items": [
-                        "When you make an {@variantrule Unarmed Strike|Ishiir} as part of the Attack action on your turn, it inflicts an additional {@dice 1d4} damage on a hit.",
-                        "Whenever you have the ability to make multiple {@variantrule Unarmed Strike|Ishiir|Unarmed Strikes} as part of the same action or {@variantrule Bonus Action|Ishiir}, you may choose to make a single {@variantrule Unarmed Strike|Ishiir} with {@variantrule Advantage|Ishiir} instead.",
-                        "Before you make an {@variantrule Unarmed Strike|Ishiir}, you may choose to take a -5 penalty to the {@variantrule Attack Roll|Ishiir}. If the attacks hits, you add +10 to the attack's damage."
+                        "The damage die of your {@variantrule Unarmed Strike|Ishiir} increases by 1 step.",
+                        "Once per turn, when you have {@variantrule Advantage|Ishiir} on an {@variantrule Attack Roll|Ishiir} with {@variantrule Unarmed Strike|Ishiir}, you can instead make two attacks with your {@variantrule Unarmed Strike|Ishiir} without {@variantrule Advantage|Ishiir}.",
+                        "You count as one size larger for the purpose of using the {@action Disarm|Ishiir}, {@action Shove|Ishiir}, and {@action Stagger|Ishiir} combat actions."
                     ]
                 }
             ]
@@ -5002,7 +4983,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "When you use your Harfolk Hardiness racial feature, roll additional {@dice d12} equal to your {@variantrule Proficiency|Ishiir} and add them to the total. You gain the amount rolled as temporary HP, rather than reducing the incoming damage by it. These temporary HP last until the beginning of your next turn.",
+                        "When you use your Harfolk Hardiness racial feature, roll additional hit dice equal to your {@variantrule Proficiency|Ishiir} and add them to the total. You gain the amount rolled as temporary HP, rather than reducing the incoming damage by it.",
                         "If you are hit by an attack or a spell that causes effects additionally to dealing damage, you are not subject to these effects as long as the damage does not exceed the number of temporary HP from this feature.",
                         "In addition, you may now use this feature outside of combat without a damage trigger. If you do so, you can decide to gain back HP equal to half the amount rolled rather than temporary HP, but not above your max HP."
                     ]
@@ -5179,7 +5160,7 @@
             ]
         },
         {
-            "name": "Wildheart",
+            "name": "Wild Frenzy",
             "page": 1,
             "source": "Ishiir",
             "critEffect": true,
@@ -5199,7 +5180,7 @@
                     "type": "list",
                     "items": [
                         "Your critical range for attacks with your natural weapons increases by 1.",
-                        "When you have to make a {@variantrule Saving Throw|Ishiir} against being {@condition Frightened|Ishiir} or {@condition Charmed|Ishiir}, you add a bonus equal to your formshift damage bonus to it.",
+                        "Once per turn, when you make an attack with your natural weapons, you can spend one use of your Formshift to immediately make another attack.",
                         "While formshifted, you can choose to spend a hit die at the beginning of your turn (no action required), regaining hitpoints as normal."
                     ]
                 }
