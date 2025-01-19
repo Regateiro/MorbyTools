@@ -2308,6 +2308,32 @@
             ]
         },
         {
+            "name": "Guarded Mind",
+            "page": 1,
+            "source": "Ishiir",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "When you fail an Intelligence, Wisdom, or Charisma {@variantrule Saving Throw|Ishiir}, you can give yourself a +5 bonus to the roll, possibly turning it into a success (no action required).",
+                        "You can use this feature a number of times equal to half your {@variantrule Proficiency|Ishiir} (rounded down) and you regain all expended uses on a {@variantrule Long Rest|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Hag-Promised",
             "page": 1,
             "source": "Ishiir",
@@ -2755,6 +2781,21 @@
                     "items": [
                         "Your maximum kinesis points increase by an amount equal to your {@variantrule Proficiency|Ishiir} bonus and when you use your Gather Power class feature, you regain an additional amount of kinesis points equal to your {@variantrule Proficiency|Ishiir} bonus.",
                         "When you take a rest and spend one or more hit dice, you can choose to regain 1 kinesis point per die instead of regaining hitpoints. You can choose any number of hit dice you spent and regain hitpoints as normal for any remaining ones."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lethal Spells",
+            "page": 1,
+            "source": "Ishiir",
+            "critEffect": true,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Your critical range for spell {@variantrule Attack Roll|Ishiir|Attack Rolls} increases by 1.",
+                        "If you cast a spell that deals damage and requires a {@variantrule Saving Throw|Ishiir}, all targets of the spell that rolled a 1 on the D20 for their {@variantrule Saving Throw|Ishiir} and failed it, take additional damage of the same type as the spell. If the spell deals multiple instances of damage, you choose the damage type from among those. The additional damage is equal to a number of D6s times the spell's level."
                     ]
                 }
             ]
@@ -4962,6 +5003,32 @@
                         "The damage die of your {@variantrule Unarmed Strike|Ishiir} increases by 1 step.",
                         "Once per turn, when you have {@variantrule Advantage|Ishiir} on an {@variantrule Attack Roll|Ishiir} with {@variantrule Unarmed Strike|Ishiir}, you can instead make two attacks with your {@variantrule Unarmed Strike|Ishiir} without {@variantrule Advantage|Ishiir}.",
                         "You count as one size larger for the purpose of using the {@action Disarm|Ishiir}, {@action Shove|Ishiir}, and {@action Stagger|Ishiir} combat actions."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Unflinching",
+            "page": 1,
+            "source": "Ishiir",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "con"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "When you fail an Strength, Dexteriy, or Constitution {@variantrule Saving Throw|Ishiir}, you can give yourself a +5 bonus to the roll, possibly turning it into a success (no action required).",
+                        "You can use this feature a number of times equal to half your {@variantrule Proficiency|Ishiir} (rounded down) and you regain all expended uses on a {@variantrule Long Rest|Ishiir}."
                     ]
                 }
             ]
