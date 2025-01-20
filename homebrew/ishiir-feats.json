@@ -108,7 +108,7 @@
                     "type": "list",
                     "items": [
                         "You gain a +5 bonus to initiative.",
-                        "You can't be surprised while you are conscious.",
+                        "You can't be {@condition Surprised|Ishiir} while you are conscious.",
                         "Other creatures don't gain {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against you as a result of being unseen by you."
                     ]
                 }
@@ -1877,7 +1877,7 @@
                         "You receive a bonus to your initiative rolls equal to your DEX, WIS, INT, or CHA modifier (your choice).",
                         "When you or a creature you can see within 30 feet of you makes an {@variantrule Ability Check|Ishiir} or an {@variantrule Attack Roll|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to add your DEX, WIS, INT, or CHA modifier to the roll (your choice).",
                         "You can use this feature a number of times equal to the your {@variantrule Proficiency|Ishiir} modifier. You regain all expended uses on a {@variantrule Long Rest|Ishiir}.",
-                        "When initiative is rolled and you are not surprised, you can choose a number of hostile creatures equal to half your {@variantrule Proficiency|Ishiir} modifier (rounded down) to reroll their initiative and keep the lower result."
+                        "When initiative is rolled and you are not {@condition Surprised|Ishiir}, you can choose a number of hostile creatures equal to half your {@variantrule Proficiency|Ishiir} modifier (rounded down) to reroll their initiative and keep the lower result."
                     ]
                 }
             ]
@@ -4170,7 +4170,7 @@
                     "items": [
                         "One-handed bludgeoning weapons have the finesse property when you wield them.",
                         "When you attack an enemy with such a weapon and you meet the criteria for using the rogue's Sneak Attack ability, you inflict an additional {@dice 1d6} damage. This stacks with the damage from Sneak Attack if you have that feature.",
-                        "When you strike a surprised opponent with a weapon that qualifies for this feat, if the creature's current hit points after the attack is less than or equal to the damage the attack inflicted, they are reduced to 0 hp and rendered {@condition Unconscious|Ishiir}. This has no effect on constructs or undead."
+                        "When you strike a {@condition Surprised|Ishiir} opponent with a weapon that qualifies for this feat, if the creature's current hit points after the attack is less than or equal to the damage the attack inflicted, they are reduced to 0 hp and rendered {@condition Unconscious|Ishiir}. This has no effect on constructs or undead."
                     ]
                 }
             ]
@@ -5081,7 +5081,7 @@
                     "type": "list",
                     "items": [
                         "You gain {@variantrule Proficiency|Ishiir} with the {@item poisoner's kit|Ishiir} and you have {@variantrule Advantage|Ishiir} on nature {@variantrule Ability Check|Ishiir|checks} to extract poison from natural creatures. If you already have {@variantrule Proficiency|Ishiir} in it, your {@variantrule Proficiency|Ishiir} bonus is doubled for all {@variantrule Ability Check|Ishiir|checks} you make with it.",
-                        "Surprised creatures make {@variantrule Saving Throw|Ishiir|Saving Throws} against poison-based effects and poison damage caused by you with {@variantrule Disadvantage|Ishiir}.",
+                        "{@condition Surprised|Ishiir} creatures make {@variantrule Saving Throw|Ishiir|Saving Throws} against poison-based effects and poison damage caused by you with {@variantrule Disadvantage|Ishiir}.",
                         "Poisons you use and spells cast by you that deal poison damage ignore {@variantrule Resistance|Ishiir} to poison damage."
                     ]
                 }
