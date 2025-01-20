@@ -1307,7 +1307,8 @@
                 "With 8 hours of work and the expenditure of 50 gp worth of rare herbs and fine food, you call forth an animal from the wilderness to serve as your faithful companion. You can select any beast of CR 1/2 or lower as your companion. However, your choices may be restricted depending on the area you currently find yourself in. Your DM determines if any such restrictions apply.",
                 "At the end of the 8 hours, your animal companion appears and gains all the benefits of your Companion's Bond ability. You can have only one animal companion at a time.",
                 "If your animal companion is ever slain, the magical bond you share allows you to return it to life. With 8 hours of work and the expenditure of 25 gp worth of rare herbs and fine food, you call forth your companion's spirit and use your magic to create a new body for it. You can return an animal companion to life in this manner even if you do not possess any part of its body.",
-                "If you use this ability to return a former animal companion to life while you have a current animal companion, your current companion leaves you and is replaced by the restored companion."
+                "If you use this ability to return a former animal companion to life while you have a current animal companion, your current companion leaves you and is replaced by the restored companion.",
+                "If you are small enough to ride it, your companion's initiative changes to match yours and it can any of its actions during your turn or immediately after."
             ]
         },
         {
@@ -1639,7 +1640,7 @@
             "entries": [
                 "As an {@variantrule Action|Ishiir}, you can magically summon the drake that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.",
                 "The drake is friendly to you and your companions, and it obeys your commands. See its game statistics in the accompanying {@creature Drake Companion|Ishiir} stat block, which uses your {@variantrule Proficiency|Ishiir} bonus (PB) in several places. Whenever you summon the drake, choose a damage type listed in its Draconic Essence trait. You can determine the cosmetic characteristics of the drake, such as its color, its scale texture, or any visible effect of its Draconic Essence; your choice has no effect on its game statistics.",
-                "In combat, the drake shares your initiative count, but it takes its turn immediately after yours. It can move and use its {@variantrule Reaction|Ishiir} on its own, but the only action it takes on its turn is the {@action Dodge|Ishiir} action, unless you take a {@variantrule Bonus Action|Ishiir} on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition Incapacitated|Ishiir}, the drake can take any action of its choice, not just {@action Dodge|Ishiir}.",
+                "In combat, the drake obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions, attitudes, and so on. If you are {@condition Incapacitated|Ishiir} or absent, your companion acts on its own. If you are small enough to ride it, your companion's initiative changes to match yours and it can any of its actions during your turn or immediately after.",
                 "The drake remains until it is reduced to 0 hit points, until you use this feature to summon the drake again, or until you die. Anything the drake was wearing or carrying is left behind when the drake vanishes.",
                 "Once you summon the drake, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a spell slot of 1st level or higher to summon it."
             ]
@@ -1665,7 +1666,7 @@
                             "type": "item",
                             "name": "Drake Mount.",
                             "entries": [
-                                "The drake grows to Large size. Its Hit Points increase by 1 for each of your levels in this class. Reflecting your special bond, you can use the drake as a mount if your size is Medium or smaller."
+                                "The drake grows to Large size. Its Hit Points increase by 1 for each of your levels in this class."
                             ]
                         },
                         {
