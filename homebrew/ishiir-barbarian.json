@@ -1554,7 +1554,7 @@
             "level": 3,
             "header": 2,
             "entries": [
-                "You no longer have need for weapons. You learn to throw your weight around with the might of the waves and your hands become instruments of Gargan's will - and with that, his crushing, inescapable grasp. You can roll a {@dice d8} in place of the normal damage of your {@variantrule Unarmed Strike|Ishiir}. If you have both hands free or are attacking a target that you have grappled, this die changes to a {@dice d12}.",
+                "You no longer have need for weapons. You learn to throw your weight around with the might of the waves and your hands become instruments of Gargan's will - and with that, his crushing, inescapable grasp. You can roll a {@dice d8} in place of the normal damage of your {@variantrule Unarmed Strike|Ishiir}. If you have both hands free or are attacking a target that you have {@condition Grappled|Ishiir}, this die changes to a {@dice d12}.",
                 "Additionally, you gain a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. If you already have a {@variantrule Swim Speed|Ishiir}, that {@variantrule Swim Speed|Ishiir} instead increases by 30 feet."
             ]
         },
@@ -1571,7 +1571,7 @@
             "entries": [
                 "Spectral coils start appearing around you when you enter your rage. While you are raging, your reach with {@variantrule Unarmed Strike|Ishiir|Unarmed Strikes} increases by 5 ft and you ignore all size restrictions and immunities for attempting grapples.",
                 "Once per turn, if you successfully hit a creature with an {@variantrule Unarmed Strike|Ishiir} while raging, you can attempt to grapple it.",
-                "You can use your {@variantrule Bonus Action|Ishiir} to force a creature you grappled in this manner to make a STR {@variantrule Saving Throw|Ishiir}. The DC is equal to 8 + your {@variantrule Proficiency|Ishiir} + your STR modifier. On a failure, the creature takes force damage equal to your {@variantrule Proficiency|Ishiir} + your STR modifier + your rage bonus damage and is {@condition Restrained|Ishiir} until the end of your next turn. On a success, the creature takes half as much damage and isn't {@condition Restrained|Ishiir}."
+                "You can use your {@variantrule Bonus Action|Ishiir} to force a creature you {@condition Grappled|Ishiir} in this manner to make a STR {@variantrule Saving Throw|Ishiir}. The DC is equal to 8 + your {@variantrule Proficiency|Ishiir} + your STR modifier. On a failure, the creature takes force damage equal to your {@variantrule Proficiency|Ishiir} + your STR modifier + your rage bonus damage and is {@condition Restrained|Ishiir} until the end of your next turn. On a success, the creature takes half as much damage and isn't {@condition Restrained|Ishiir}."
             ]
         },
         {
@@ -1614,7 +1614,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "While you are raging you can call down your god's fury in the form of a powerful lightning bolt when you hit a creature with a melee weapon attack. The target has to make a Dexterity {@variantrule Saving Throw|Ishiir}. The DC is equal to 8 + your {@variantrule Proficiency|Ishiir} + your STR modifier. On a failure, the creature takes {@damage 12d10} lightning damage, and half as much on a successful one. Any creature that you have grappled has {@variantrule Disadvantage|Ishiir} on this {@variantrule Saving Throw|Ishiir}.",
+                "While you are raging you can call down your god's fury in the form of a powerful lightning bolt when you hit a creature with a melee weapon attack. The target has to make a Dexterity {@variantrule Saving Throw|Ishiir}. The DC is equal to 8 + your {@variantrule Proficiency|Ishiir} + your STR modifier. On a failure, the creature takes {@damage 12d10} lightning damage, and half as much on a successful one. Any creature that you have {@condition Grappled|Ishiir} has {@variantrule Disadvantage|Ishiir} on this {@variantrule Saving Throw|Ishiir}.",
                 "You cannot use this feature again until you have finished a {@variantrule Long Rest|Ishiir}, unless you spend a use of your rage to use it again."
             ]
         },

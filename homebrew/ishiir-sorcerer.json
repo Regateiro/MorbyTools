@@ -4529,11 +4529,11 @@
                         {
                             "type": "item",
                             "name": "Three failed save:",
-                            "entry": "The affected creature is frozen for 1 minute but does not have {@variantrule Resistance|Ishiir} against cold damage caused by your spells and the effect of your Clinging Frost ends on it."
+                            "entry": "The affected creature is {@condition Frozen|Ishiir} for 1 minute but does not have {@variantrule Resistance|Ishiir} against cold damage caused by your spells and the effect of your Clinging Frost ends on it."
                         }
                     ]
                 },
-                "This feature has no effect on creatures that cannot be frozen."
+                "This feature has no effect on creatures that cannot be {@condition Frozen|Ishiir}."
             ]
         },
         {

@@ -4316,7 +4316,7 @@
                     "type": "entries",
                     "name": "Grasping Hand",
                     "entries": [
-                        "The hand attempts to grapple a Huge or smaller creature within 5 feet of it. The target has to succeed on a Dexterity {@variantrule Saving Throw|Ishiir} against your spell save DC or be grappled. The target can use an {@variantrule Action|Ishiir} on its turn to make a Strength or Dexterity check against your spell save DC to {@action Escape a Grapple|Ishiir|escape the grapple}. While the hand is grappling the target, you can use a {@variantrule Bonus Action|Ishiir} to have the hand crush it. When you do so, the target takes bludgeoning damage equal to {@damage 4d6} + your spellcasting ability modifier."
+                        "The hand attempts to grapple a Huge or smaller creature within 5 feet of it. The target has to succeed on a Dexterity {@variantrule Saving Throw|Ishiir} against your spell save DC or be {@condition Grappled|Ishiir}. The target can use an {@variantrule Action|Ishiir} on its turn to make a Strength or Dexterity check against your spell save DC to {@action Escape a Grapple|Ishiir|escape the grapple}. While the hand is grappling the target, you can use a {@variantrule Bonus Action|Ishiir} to have the hand crush it. When you do so, the target takes bludgeoning damage equal to {@damage 4d6} + your spellcasting ability modifier."
                     ]
                 },
                 {
@@ -23465,7 +23465,7 @@
             ],
             "entries": [
                 "You touch a willing creature. For the duration, the target's movement is unaffected by {@quickref difficult terrain||3}, and spells and other magical effects can neither reduce the target's {@variantrule Speed|Ishiir} nor cause the target to have the {@condition Paralyzed|Ishiir} or {@condition Restrained|Ishiir} conditions. The target also has a {@variantrule Swim Speed|Ishiir} equal to its {@variantrule Speed|Ishiir}.",
-                "In addition, the target can spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature imposing the Grappled condition on it."
+                "In addition, the target can spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature imposing the {@condition Grappled|Ishiir} condition on it."
             ],
             "entriesHigherLevel": [
                 {
@@ -40095,8 +40095,8 @@
             ],
             "entries": [
                 "A blue beam of concentrated freezing energy springs from your finger to a creature you can see within range.",
-                "The target has to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save the target takes {@damage 12d10} cold damage and is {@condition Dazed|Ishiir} for 1 minute. On a success, the target takes half as much damage and isn't {@condition Dazed|Ishiir}. A creature dazed by this spell must make another Constitution {@variantrule Saving Throw|Ishiir} at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails its saves three times, it is frozen solid and subjected to the frozen condition for the duration. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.",
-                "If the creature is physically broken while frozen, it suffers from similar deformities if it reverts to its original state."
+                "The target has to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save the target takes {@damage 12d10} cold damage and is {@condition Dazed|Ishiir} for 1 minute. On a success, the target takes half as much damage and isn't {@condition Dazed|Ishiir}. A creature dazed by this spell must make another Constitution {@variantrule Saving Throw|Ishiir} at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails its saves three times, it is frozen solid and subjected to the {@condition Frozen|Ishiir} condition for the duration. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.",
+                "If the creature is physically broken while {@condition Frozen|Ishiir}, it suffers from similar deformities if it reverts to its original state."
             ],
             "damageInflict": [
                 "cold"
