@@ -387,7 +387,7 @@
                 ]
             },
             "entries": [
-                "This potion's container looks empty but feels as though it holds liquid. When you drink it, you become {@condition Invisible|Ishiir} for 1 hour. Anything you wear or carry is {@condition Invisible|Ishiir} with you. The effect ends early if you attack or cast a spell."
+                "This potion's container looks empty but feels as though it holds liquid. When you drink it, you become {@condition Invisible|Ishiir} for 1 hour. Anything you wear or carry is {@condition Invisible|Ishiir} with you. The effect ends early if you attack or {@action Magic|Ishiir|cast a spell}."
             ]
         },
         {
@@ -895,7 +895,7 @@
                 ]
             },
             "entries": [
-                "This potion's container looks empty but feels as though it holds liquid. When you drink it, you become {@condition Invisible|Ishiir} for 1 hour. Anything you wear or carry is {@condition Invisible|Ishiir} with you. The effect ends early if you attack or cast a spell."
+                "This potion's container looks empty but feels as though it holds liquid. When you drink it, you become {@condition Invisible|Ishiir} for 1 hour. Anything you wear or carry is {@condition Invisible|Ishiir} with you. The effect ends early if you attack or {@action Magic|Ishiir|cast a spell}."
             ]
         },
         {
@@ -1719,7 +1719,7 @@
             },
             "entries": [
                 "{@i Requirement: Armors.}",
-                "While wearing this armor, you can use it to cast either {@spell Speak with Dead|Ishiir} or {@spell Animate Dead|Ishiir}. Once the armor has cast a spell in this way, it can't cast either spell until the next dawn.",
+                "While wearing this armor, you can use it to cast either {@spell Speak with Dead|Ishiir} or {@spell Animate Dead|Ishiir}. Once the armor has {@action Magic|Ishiir|cast a spell} in this way, it can't cast either spell until the next dawn.",
                 "Your soul keeps this armor together. If you die while you are attuned to the armor, the armor is destroyed."
             ]
         },
@@ -2480,7 +2480,7 @@
                             "type": "item",
                             "name": "Spellcasting",
                             "entries": [
-                                "While wielding the shield, you can use an {@variantrule Action|Ishiir} to cast one of the following spells from it: {@spell Lesser Restoration|Ishiir}, {@spell Locate Creature|Ishiir}, {@spell Transport via Plants|Ishiir}. Once you use the shield to cast a spell, the shield can't cast that spell again until the next dawn."
+                                "While wielding the shield, you can use an {@variantrule Action|Ishiir} to cast one of the following spells from it: {@spell Lesser Restoration|Ishiir}, {@spell Locate Creature|Ishiir}, {@spell Transport via Plants|Ishiir}. Once you use the shield to {@action Magic|Ishiir|cast a spell}, the shield can't cast that spell again until the next dawn."
                             ]
                         }
                     ]
@@ -5070,7 +5070,7 @@
             "entries": [
                 "While wearing this helm, you know whether there is a celestial or fiend within 30 feet of you, as well as where the creature is located, provided the creature isn't behind total cover.",
                 "Whenever you finish a {@variantrule Long Rest|Ishiir} while wearing the helm, you can pray to one of the gods listed on the Helm of the Gods table and store the listed spell in the helm, replacing any spell that is already stored there. The save DC for the spell is 13.",
-                "The helm has 3 charges. To cast a spell from the helm, you must expend 1 charge, and the helm regains {@dice 1d3} charges daily at dawn.",
+                "The helm has 3 charges. To {@action Magic|Ishiir|cast a spell} from the helm, you must expend 1 charge, and the helm regains {@dice 1d3} charges daily at dawn.",
                 {
                     "type": "table",
                     "colStyles": [
@@ -5452,7 +5452,7 @@
                 "When you use an {@variantrule Action|Ishiir} to toss one of these stones into the air, the stone orbits your head at a distance of {@dice 1d3} feet and confers a benefit to you. Thereafter, another creature must use an {@variantrule Action|Ishiir} to grasp or net the stone to separate it from you, either by making a successful {@variantrule Attack Roll|Ishiir} against AC 24 or a successful DC 24 Dexterity ({@skill Acrobatics}) check. You can use an {@variantrule Action|Ishiir} to seize and stow the stone, ending its effect.",
                 "A stone has AC 24, 10 hit points, and {@variantrule Resistance|Ishiir} to all damage. It is considered to be an object that is being worn while it orbits your head.",
                 "This vibrant purple prism stores spells cast into it, holding them until you use them. The stone can store up to 3 levels worth of spells at a time. When found, it contains {@dice 1d4 - 1} levels of stored spells chosen by the DM.",
-                "Any creature can cast a spell of 1st through 3rd level into the stone by touching it as the spell is cast. The spell has no effect, other than to be stored in the stone. If the stone can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.",
+                "Any creature can {@action Magic|Ishiir|cast a spell} of 1st through 3rd level into the stone by touching it as the spell is cast. The spell has no effect, other than to be stored in the stone. If the stone can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.",
                 "While this stone orbits your head, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the stone is no longer stored in it, freeing up space."
             ],
             "type": "CRF",
@@ -5794,7 +5794,7 @@
             "wondrous": true,
             "entries": [
                 "You can use an {@variantrule Action|Ishiir} to play this lyre and cast one of the following spells from it: {@spell Animal Friendship|Ishiir}, {@spell Charm Person|Ishiir}, {@spell Enthrall|Ishiir}, {@spell Suggestion|Ishiir}. If the spell requires a {@variantrule Saving Throw|Ishiir}, the spell save DC is 13.",
-                "Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn."
+                "Once the instrument has been used to {@action Magic|Ishiir|cast a spell}, it can't be used to cast that spell again until the next dawn."
             ],
             "attachedSpells": [
                 "animal friendship|ishiir",
@@ -8375,7 +8375,7 @@
             "reqAttune": true,
             "entries": [
                 "This ring stores spells cast into it, holding them until the attuned wearer uses them. The ring can store up to 5 levels worth of spells at a time. When found, it contains {@dice 1d6 - 1} levels of stored spells chosen by the DM.",
-                "Any creature can cast a spell of 1st through 5th level into the ring by touching the ring as the spell is cast. The spell has no effect, other than to be stored in the ring. If the ring can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.",
+                "Any creature can {@action Magic|Ishiir|cast a spell} of 1st through 5th level into the ring by touching the ring as the spell is cast. The spell has no effect, other than to be stored in the ring. If the ring can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.",
                 "While wearing this ring, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the ring is no longer stored in it, freeing up space."
             ],
             "value": 300000,
@@ -8763,7 +8763,7 @@
             ],
             "entries": [
                 "While you are holding this gem, you can use it as a spellcasting focus for your spells.",
-                "The gem has 3 charges and regains all expended charges daily at dawn. When you cast a spell while holding this gem, you can expend up to 3 charges to ignore the spell's material components with a gold piece cost, up to 500 gp per charge expended.",
+                "The gem has 3 charges and regains all expended charges daily at dawn. When you {@action Magic|Ishiir|cast a spell} while holding this gem, you can expend up to 3 charges to ignore the spell's material components with a gold piece cost, up to 500 gp per charge expended.",
                 "When you finish a {@variantrule Long Rest|Ishiir}, choose a spell from any class list. The spell you choose must be of a level you can cast. You know the chosen spell and can cast it with your spell slots of the appropriate level until the end of your next {@variantrule Long Rest|Ishiir}."
             ],
             "type": "CRF",
@@ -8854,7 +8854,7 @@
             "charges": 7,
             "entries": [
                 "This wand has 7 charges. While holding it, you can use an {@variantrule Action|Ishiir} to expend 1 of its charges and choose a target within 120 feet of you. The target can be a creature, an object, or a point in space. Roll {@dice d100} and consult the following table to discover what happens.",
-                "If the effect causes you to cast a spell from the wand, the spell's save DC is 15. If the spell normally has a range expressed in feet, its range becomes 120 feet if it isn't already.",
+                "If the effect causes you to {@action Magic|Ishiir|cast a spell} from the wand, the spell's save DC is 15. If the spell normally has a range expressed in feet, its range becomes 120 feet if it isn't already.",
                 "If an effect covers an area, you must center the spell on and include the target. If an effect has multiple possible subjects, the DM randomly determines which ones are affected.",
                 "The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand crumbles into dust and is destroyed.",
                 {
@@ -9730,7 +9730,7 @@
             "wondrous": true,
             "entries": [
                 "An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom {@variantrule Saving Throw|Ishiir} or take {@damage 2d4} psychic damage.",
-                "You can use an {@variantrule Action|Ishiir} to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
+                "You can use an {@variantrule Action|Ishiir} to play the instrument and cast one of its spells. Once the instrument has been used to {@action Magic|Ishiir|cast a spell}, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
                 "You can play the instrument while casting a spell that causes any of its targets to be {@condition Charmed|Ishiir} on a failed {@variantrule Saving Throw|Ishiir}, thereby imposing {@variantrule Disadvantage|Ishiir} on the save. This effect applies only if the spell has a somatic or a material component.",
                 "All instruments of the bards can be used to cast the following spells: {@spell Fly|Ishiir}, {@spell Invisibility|Ishiir}, {@spell Levitate|Ishiir}, and {@spell Protection from Evil and Good|Ishiir}.",
                 "In addition, the Mac-Fuirmidh cittern can be used to cast {@spell Barkskin|Ishiir}, {@spell Cure Wounds|Ishiir}, and {@spell Fog Cloud|Ishiir}."
@@ -9858,7 +9858,7 @@
             "wondrous": true,
             "entries": [
                 "An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom {@variantrule Saving Throw|Ishiir} or take {@damage 2d4} psychic damage.",
-                "You can use an {@variantrule Action|Ishiir} to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
+                "You can use an {@variantrule Action|Ishiir} to play the instrument and cast one of its spells. Once the instrument has been used to {@action Magic|Ishiir|cast a spell}, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
                 "You can play the instrument while casting a spell that causes any of its targets to be {@condition Charmed|Ishiir} on a failed {@variantrule Saving Throw|Ishiir}, thereby imposing {@variantrule Disadvantage|Ishiir} on the save. This effect applies only if the spell has a somatic or a material component.",
                 "All instruments of the bards can be used to cast the following spells: {@spell Fly|Ishiir}, {@spell Invisibility|Ishiir}, {@spell Levitate|Ishiir}, and {@spell Protection from Evil and Good|Ishiir}.",
                 "In addition, the Fochlucan bandore can be used to cast {@spell Entangle|Ishiir}, {@spell Faerie Fire|Ishiir}, {@spell Shillelagh|Ishiir}, and {@spell Speak with Animals|Ishiir}."
@@ -10063,7 +10063,7 @@
             "wondrous": true,
             "entries": [
                 "An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom {@variantrule Saving Throw|Ishiir} or take {@damage 2d4} psychic damage.",
-                "You can use an {@variantrule Action|Ishiir} to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
+                "You can use an {@variantrule Action|Ishiir} to play the instrument and cast one of its spells. Once the instrument has been used to {@action Magic|Ishiir|cast a spell}, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
                 "You can play the instrument while casting a spell that causes any of its targets to be {@condition Charmed|Ishiir} on a failed {@variantrule Saving Throw|Ishiir}, thereby imposing {@variantrule Disadvantage|Ishiir} on the save. This effect applies only if the spell has a somatic or a material component.",
                 "All instruments of the bards can be used to cast the following spells: {@spell Fly|Ishiir}, {@spell Invisibility|Ishiir}, {@spell Levitate|Ishiir}, and {@spell Protection from Evil and Good|Ishiir}.",
                 "In addition, the Doss lute can be used to cast {@spell Animal Friendship|Ishiir}, {@spell Protection from Energy|Ishiir} (fire only), and {@spell Protection from Poison|Ishiir}."
@@ -10194,7 +10194,7 @@
             ],
             "entries": [
                 "This silver-bladed sickle glimmers softly with moonlight. While holding the weapon, you gain a +1 bonus to attack and damage rolls made with it, and you gain a +1 bonus to spell {@variantrule Attack Roll|Ishiir|Attack Rolls} and the {@variantrule Saving Throw|Ishiir} DCs of your druid and ranger spells. In addition, you can use the sickle as a spellcasting focus for your druid and ranger spells.",
-                "When you cast a spell that restores hit points, you can roll a {@dice d4} and add the number rolled to the amount of hit points restored, provided you are holding the sickle."
+                "When you {@action Magic|Ishiir|cast a spell} that restores hit points, you can roll a {@dice d4} and add the number rolled to the amount of hit points restored, provided you are holding the sickle."
             ],
             "value": 440000,
             "crafted": {
@@ -11174,7 +11174,7 @@
             "wondrous": true,
             "entries": [
                 "An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom {@variantrule Saving Throw|Ishiir} or take {@damage 2d4} psychic damage.",
-                "You can use an {@variantrule Action|Ishiir} to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
+                "You can use an {@variantrule Action|Ishiir} to play the instrument and cast one of its spells. Once the instrument has been used to {@action Magic|Ishiir|cast a spell}, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
                 "You can play the instrument while casting a spell that causes any of its targets to be {@condition Charmed|Ishiir} on a failed {@variantrule Saving Throw|Ishiir}, thereby imposing {@variantrule Disadvantage|Ishiir} on the save. This effect applies only if the spell has a somatic or a material component.",
                 "All instruments of the bards can be used to cast the following spells: {@spell Fly|Ishiir}, {@spell Invisibility|Ishiir}, {@spell Levitate|Ishiir}, and {@spell Protection from Evil and Good|Ishiir}.",
                 "In addition, the Canaith mandolin can be used to cast {@spell Cure Wounds|Ishiir} (3rd level), {@spell Dispel Magic|Ishiir}, and {@spell Protection from Energy|Ishiir} (lightning only)."
@@ -11538,7 +11538,7 @@
             "wondrous": true,
             "entries": [
                 "Any creature that attunes to the tablet must make a DC 20 Wisdom {@variantrule Saving Throw|Ishiir} at the end of its next {@variantrule Long Rest|Ishiir}. On a failed save, the creature becomes afflicted with a random form of long-term madness (see \"{@book Madness|dmg|8|Madness}\" in chapter 8 of the {@book Dungeon Master's Guide|dmg}).",
-                "As an {@variantrule Action|Ishiir}, a creature attuned to the Black Crystal Tablet can use it to cast {@spell Eyebite|Ishiir} or {@spell Gate|Ishiir} (the portal created by this spell links to the Far Realm only). After the tablet is used to cast a spell, it cannot be used again until the next dawn."
+                "As an {@variantrule Action|Ishiir}, a creature attuned to the Black Crystal Tablet can use it to cast {@spell Eyebite|Ishiir} or {@spell Gate|Ishiir} (the portal created by this spell links to the Far Realm only). After the tablet is used to {@action Magic|Ishiir|cast a spell}, it cannot be used again until the next dawn."
             ],
             "attachedSpells": [
                 "eyebite|ishiir",
@@ -11983,7 +11983,7 @@
             "wondrous": true,
             "entries": [
                 "An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom {@variantrule Saving Throw|Ishiir} or take {@damage 2d4} psychic damage.",
-                "You can use an {@variantrule Action|Ishiir} to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
+                "You can use an {@variantrule Action|Ishiir} to play the instrument and cast one of its spells. Once the instrument has been used to {@action Magic|Ishiir|cast a spell}, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
                 "You can play the instrument while casting a spell that causes any of its targets to be {@condition Charmed|Ishiir} on a failed {@variantrule Saving Throw|Ishiir}, thereby imposing {@variantrule Disadvantage|Ishiir} on the save. This effect applies only if the spell has a somatic or a material component.",
                 "All instruments of the bards can be used to cast the following spells: {@spell Fly|Ishiir}, {@spell Invisibility|Ishiir}, {@spell Levitate|Ishiir}, and {@spell Protection from Evil and Good|Ishiir}.",
                 "In addition, the Cli lyre can be used to cast {@spell Stone Shape|Ishiir}, {@spell Wall of Fire|Ishiir}, and {@spell Wind Wall|Ishiir}."
@@ -12337,7 +12337,7 @@
             ],
             "entries": [
                 "This silver-bladed sickle glimmers softly with moonlight. While holding the weapon, you gain a +2 bonus to attack and damage rolls made with it, and you gain a +2 bonus to spell {@variantrule Attack Roll|Ishiir|Attack Rolls} and the {@variantrule Saving Throw|Ishiir} DCs of your druid and ranger spells. In addition, you can use the sickle as a spellcasting focus for your druid and ranger spells.",
-                "When you cast a spell that restores hit points, you can roll a {@dice d4} and add the number rolled to the amount of hit points restored, provided you are holding the sickle."
+                "When you {@action Magic|Ishiir|cast a spell} that restores hit points, you can roll a {@dice d4} and add the number rolled to the amount of hit points restored, provided you are holding the sickle."
             ],
             "value": 815000,
             "crafted": {
@@ -12819,7 +12819,7 @@
             "wondrous": true,
             "entries": [
                 "This glass bottle can store one spell of up to 5th level at a time. When found, roll a {@dice d6} and subtract 1; the total determines the level of spell in the bottle (the DM chooses the spell, and 0 means the bottle is empty). A swirling blue vapor fills the bottle while it contains a spell.",
-                "When the bottle is empty, any creature can cast a spell of 1st through 5th level into it by touching it while casting. The spell has no effect other than to be stored in the bottle.",
+                "When the bottle is empty, any creature can {@action Magic|Ishiir|cast a spell} of 1st through 5th level into it by touching it while casting. The spell has no effect other than to be stored in the bottle.",
                 "While holding the bottle, you can cast the spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The bottle becomes empty once the spell is cast.",
                 "If you're holding the empty bottle when you see a creature casting a spell within 60 feet of you, you can open the bottle as a {@variantrule Reaction|Ishiir} in an attempt to interrupt the spell. If the creature is casting a spell of 3rd level or lower, the spell has no effect, and it is stored in the bottle. If it is casting a spell of 4th level or higher, make an Intelligence check. The DC equals 10 + the spell's level. On a success, the spell has no effect, and it is stored in the bottle."
             ],
@@ -12883,7 +12883,7 @@
                     "type": "entries",
                     "name": "Solar Focus",
                     "entries": [
-                        "You can use the staff as a spellcasting focus. While holding the staff, you can reroll a number of damage dice up to your {@variantrule Proficiency|Ishiir} bonus when you use a spell slot to cast a spell that deals fire or radiant damage. You must use the new rolls. Once this property is used, it can't be used again until the next dawn."
+                        "You can use the staff as a spellcasting focus. While holding the staff, you can reroll a number of damage dice up to your {@variantrule Proficiency|Ishiir} bonus when you use a spell slot to {@action Magic|Ishiir|cast a spell} that deals fire or radiant damage. You must use the new rolls. Once this property is used, it can't be used again until the next dawn."
                     ]
                 },
                 {
@@ -13954,7 +13954,7 @@
             ],
             "entries": [
                 "This silver-bladed sickle glimmers softly with moonlight. While holding the weapon, you gain a +3 bonus to attack and damage rolls made with it, and you gain a +3 bonus to spell {@variantrule Attack Roll|Ishiir|Attack Rolls} and the {@variantrule Saving Throw|Ishiir} DCs of your druid and ranger spells. In addition, you can use the sickle as a spellcasting focus for your druid and ranger spells.",
-                "When you cast a spell that restores hit points, you can roll a {@dice d4} and add the number rolled to the amount of hit points restored, provided you are holding the sickle."
+                "When you {@action Magic|Ishiir|cast a spell} that restores hit points, you can roll a {@dice d4} and add the number rolled to the amount of hit points restored, provided you are holding the sickle."
             ],
             "value": 1565000,
             "crafted": {
@@ -15147,7 +15147,7 @@
                             "type": "item",
                             "name": "Surge of Brimstone",
                             "entries": [
-                                "Whenever you cast a spell that deals fire or necrotic damage, you can use the rod to deal the maximum damage instead of rolling. Once this property is used, it can't be used again until the next dawn."
+                                "Whenever you {@action Magic|Ishiir|cast a spell} that deals fire or necrotic damage, you can use the rod to deal the maximum damage instead of rolling. Once this property is used, it can't be used again until the next dawn."
                             ]
                         }
                     ]
@@ -15266,7 +15266,7 @@
             "wondrous": true,
             "entries": [
                 "An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom {@variantrule Saving Throw|Ishiir} or take {@damage 2d4} psychic damage.",
-                "You can use an {@variantrule Action|Ishiir} to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
+                "You can use an {@variantrule Action|Ishiir} to play the instrument and cast one of its spells. Once the instrument has been used to {@action Magic|Ishiir|cast a spell}, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
                 "You can play the instrument while casting a spell that causes any of its targets to be {@condition Charmed|Ishiir} on a failed {@variantrule Saving Throw|Ishiir}, thereby imposing {@variantrule Disadvantage|Ishiir} on the save. This effect applies only if the spell has a somatic or a material component.",
                 "All instruments of the bards can be used to cast the following spells: {@spell Fly|Ishiir}, {@spell Invisibility|Ishiir}, {@spell Levitate|Ishiir}, and {@spell Protection from Evil and Good|Ishiir}.",
                 "In addition, the Anstruth harp can be used to cast {@spell Control Weather|Ishiir}, {@spell Cure Wounds|Ishiir} (5th level), and {@spell Wall of Thorns|Ishiir}."
@@ -15453,7 +15453,7 @@
             "wondrous": true,
             "entries": [
                 "An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom {@variantrule Saving Throw|Ishiir} or take {@damage 2d4} psychic damage.",
-                "You can use an {@variantrule Action|Ishiir} to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
+                "You can use an {@variantrule Action|Ishiir} to play the instrument and cast one of its spells. Once the instrument has been used to {@action Magic|Ishiir|cast a spell}, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
                 "You can play the instrument while casting a spell that causes any of its targets to be {@condition Charmed|Ishiir} on a failed {@variantrule Saving Throw|Ishiir}, thereby imposing {@variantrule Disadvantage|Ishiir} on the save. This effect applies only if the spell has a somatic or a material component.",
                 "All instruments of the bards can be used to cast the following spells: {@spell Fly|Ishiir}, {@spell Invisibility|Ishiir}, {@spell Levitate|Ishiir}, and {@spell Protection from Evil and Good|Ishiir}.",
                 "In addition, the Ollamh harp can be used to cast {@spell Confusion|Ishiir}, {@spell Control Weather|Ishiir}, and {@spell Fire Storm|Ishiir}."
@@ -16013,7 +16013,7 @@
                     "type": "entries",
                     "name": "Spells",
                     "entries": [
-                        "While holding the deck, you can use an {@variantrule Action|Ishiir} to cast one of the following spells (save DC 18) from it: {@spell Comprehend Languages|Ishiir}, {@spell Detect Evil and Good|Ishiir}, {@spell Detect Magic|Ishiir}, {@spell Detect Poison and Disease|Ishiir}, {@spell Locate Object|Ishiir}, or {@spell Scrying|Ishiir}. Once you use the deck to cast a spell, you can't cast that spell again from it until the next dawn."
+                        "While holding the deck, you can use an {@variantrule Action|Ishiir} to cast one of the following spells (save DC 18) from it: {@spell Comprehend Languages|Ishiir}, {@spell Detect Evil and Good|Ishiir}, {@spell Detect Magic|Ishiir}, {@spell Detect Poison and Disease|Ishiir}, {@spell Locate Object|Ishiir}, or {@spell Scrying|Ishiir}. Once you use the deck to {@action Magic|Ishiir|cast a spell}, you can't cast that spell again from it until the next dawn."
                     ]
                 },
                 {
@@ -17908,7 +17908,7 @@
                 "You gain a +3 bonus to attack and damage rolls made with the weapon. Immediately after you make a ranged attack with this weapon, it returns to your hand.",
                 "Whenever you kill a humanoid with an attack using the weapon, the weapon remembers the creature's appearance. While holding the weapon, you can use an {@variantrule Action|Ishiir} to change your form to match any humanoid the weapon remembers. Your statistics, other than your size, don't change. Any equipment you are wearing or carrying isn't transformed. You can revert to your true appearance as an {@variantrule Action|Ishiir}. You revert to your true appearance automatically when you die. When the weapon is attuned to a new wielder, the appearances of humanoids it has killed are lost.",
                 "While holding the weapon, you can use an {@variantrule Action|Ishiir} to cast one of the following spells from it (save DC 17): {@spell Fabricate|Ishiir}, {@spell Hallucinatory Terrain|Ishiir}, {@spell Major Image|Ishiir}, or {@spell Phantasmal Killer|Ishiir}. Once a spell has been cast using the weapon, that spell can't be cast from the weapon again until the next dawn.",
-                "While holding the weapon, you can turn {@condition Invisible|Ishiir} as an {@variantrule Action|Ishiir}. Anything you are wearing or carrying is invisible with you. You remain {@condition Invisible|Ishiir} until you stop holding the weapon, until you attack or cast a spell that forces a creature to make a {@variantrule Saving Throw|Ishiir}, or until you use a {@variantrule Bonus Action|Ishiir} to become visible again."
+                "While holding the weapon, you can turn {@condition Invisible|Ishiir} as an {@variantrule Action|Ishiir}. Anything you are wearing or carrying is invisible with you. You remain {@condition Invisible|Ishiir} until you stop holding the weapon, until you attack or {@action Magic|Ishiir|cast a spell} that forces a creature to make a {@variantrule Saving Throw|Ishiir}, or until you use a {@variantrule Bonus Action|Ishiir} to become visible again."
             ],
             "attachedSpells": [
                 "fabricate|ishiir",
@@ -21062,7 +21062,7 @@
                     "type": "entries",
                     "name": "Erebos's Claim",
                     "entries": [
-                        "While carrying the weapon, you can use an {@variantrule Action|Ishiir} to cast either {@spell Circle of Death|Ishiir} or {@spell Dominate Monster|Ishiir} (targeting only undead) from the weapon. The save DC for these spells is 18. Once you use the weapon to cast a spell, that spell can't be cast from it again until the next dusk."
+                        "While carrying the weapon, you can use an {@variantrule Action|Ishiir} to cast either {@spell Circle of Death|Ishiir} or {@spell Dominate Monster|Ishiir} (targeting only undead) from the weapon. The save DC for these spells is 18. Once you use the weapon to {@action Magic|Ishiir|cast a spell}, that spell can't be cast from it again until the next dusk."
                     ]
                 }
             ],
@@ -21212,7 +21212,7 @@
                     "type": "entries",
                     "name": "Spells",
                     "entries": [
-                        "While the weapon is on your person, you can use an {@variantrule Action|Ishiir} to cast one of the following spells (save DC 18): {@spell Animate Objects|Ishiir}, {@spell Heat Metal|Ishiir}, {@spell Fabricate|Ishiir}, {@spell Magic Weapon|Ishiir}, {@spell Mending|Ishiir}, {@spell Shatter|Ishiir}. Once you use the weapon to cast a spell, the spell can't be cast again from it until the next dusk."
+                        "While the weapon is on your person, you can use an {@variantrule Action|Ishiir} to cast one of the following spells (save DC 18): {@spell Animate Objects|Ishiir}, {@spell Heat Metal|Ishiir}, {@spell Fabricate|Ishiir}, {@spell Magic Weapon|Ishiir}, {@spell Mending|Ishiir}, {@spell Shatter|Ishiir}. Once you use the weapon to {@action Magic|Ishiir|cast a spell}, the spell can't be cast again from it until the next dusk."
                     ]
                 }
             ],

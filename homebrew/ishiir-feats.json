@@ -980,7 +980,7 @@
                     "items": [
                         "Choose one arcane school: Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, Transmutation.",
                         "You learn a number of additional spells from your chosen school equal to half your {@variantrule Proficiency|Ishiir} bonus (rounded down). These spells can come from any spell list and count as class spells for you. You can only choose spells for which you have spell slots. When you level up, you can exchange one of these spells with a different one of your choice that meets the same criteria.",
-                        "When you cast a spell of your chosen school by expending one of your spell slots, you can treat it as one spell level higher than the spell slot you expended for the purpose of determining its effects. It's still considered the same spell level as the spell slot expended for all other interactions (such as with an opposing {@spell Dispel Magic|Ishiir})."
+                        "When you {@action Magic|Ishiir|cast a spell} of your chosen school by expending one of your spell slots, you can treat it as one spell level higher than the spell slot you expended for the purpose of determining its effects. It's still considered the same spell level as the spell slot expended for all other interactions (such as with an opposing {@spell Dispel Magic|Ishiir})."
                     ]
                 }
             ]
@@ -1995,7 +1995,7 @@
                     "type": "list",
                     "items": [
                         "When you roll a 1 on an {@variantrule Attack Roll|Ishiir}, {@variantrule Ability Check|Ishiir}, or {@variantrule Saving Throw|Ishiir}, you can reroll the die and must use the new roll.",
-                        "As a {@variantrule Bonus Action|Ishiir}, you can become magically {@condition Invisible|Ishiir} for 1 hour. Anything you are wearing or carrying is invisible with you. The effect ends if you attack or cast a spell. You can use this feature a number of times equal to half your {@variantrule Proficiency|Ishiir} modifier (rounded down). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                        "As a {@variantrule Bonus Action|Ishiir}, you can become magically {@condition Invisible|Ishiir} for 1 hour. Anything you are wearing or carrying is invisible with you. The effect ends if you attack or {@action Magic|Ishiir|cast a spell}. You can use this feature a number of times equal to half your {@variantrule Proficiency|Ishiir} modifier (rounded down). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
                     ]
                 }
             ]
@@ -2130,7 +2130,7 @@
                     "type": "list",
                     "items": [
                         "When you roll fire damage for a spell you cast, you can reroll any roll of 1 on the fire damage dice, but you must use the new roll, even if it is another 1. If you already have a feature that allows you to reroll spell damage, you instead increase the reroll threshold to 2 if the spell deals fire damage.",
-                        "Whenever you cast a spell that deals fire damage, you can cause flames to wreathe you until the end of your next turn. The flames don't harm you or your possessions, and they shed bright light out to 30 feet and dim light for an additional 30 feet. While the flames are present, any creature within 5 feet of you that hits you with a melee attack takes {@dice 1d4} fire damage."
+                        "Whenever you {@action Magic|Ishiir|cast a spell} that deals fire damage, you can cause flames to wreathe you until the end of your next turn. The flames don't harm you or your possessions, and they shed bright light out to 30 feet and dim light for an additional 30 feet. While the flames are present, any creature within 5 feet of you that hits you with a melee attack takes {@dice 1d4} fire damage."
                     ]
                 }
             ]
@@ -2796,7 +2796,7 @@
                     "type": "list",
                     "items": [
                         "Your critical range for spell {@variantrule Attack Roll|Ishiir|Attack Rolls} increases by 1.",
-                        "If you cast a spell that deals damage and requires a {@variantrule Saving Throw|Ishiir}, all targets of the spell that rolled a 1 on the D20 for their {@variantrule Saving Throw|Ishiir} and failed it, take additional damage of the same type as the spell. If the spell deals multiple instances of damage, you choose the damage type from among those. The additional damage is equal to a number of D6s times the spell's level."
+                        "If you {@action Magic|Ishiir|cast a spell} that deals damage and requires a {@variantrule Saving Throw|Ishiir}, all targets of the spell that rolled a 1 on the D20 for their {@variantrule Saving Throw|Ishiir} and failed it, take additional damage of the same type as the spell. If the spell deals multiple instances of damage, you choose the damage type from among those. The additional damage is equal to a number of D6s times the spell's level."
                     ]
                 }
             ]
@@ -4567,7 +4567,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "When you cast a spell that requires you to make an {@variantrule Attack Roll|Ishiir}, the spell's range is doubled.",
+                        "When you {@action Magic|Ishiir|cast a spell} that requires you to make an {@variantrule Attack Roll|Ishiir}, the spell's range is doubled.",
                         "Your ranged spell attacks ignore half cover and three-quarters cover.",
                         "You learn one cantrip that requires an {@variantrule Attack Roll|Ishiir}. Choose the cantrip from the {@filter bard|spells|level=0|class=bard (Ishiir)|spell attack=m;r;o|source=Ishiir}, {@filter cleric|spells|level=0|class=cleric (Ishiir)|spell attack=m;r;o|source=Ishiir}, {@filter druid|spells|level=0|class=druid (Ishiir)|spell attack=m;r;o|source=Ishiir}, {@filter sorcerer|spells|level=0|class=sorcerer (Ishiir)|spell attack=m;r;o|source=Ishiir}, {@filter warlock|spells|level=0|class=warlock (Ishiir)|spell attack=m;r;o|source=Ishiir}, or {@filter wizard|spells|level=0|class=wizard (Ishiir)|spell attack=m;r;o|source=Ishiir} spell list. Your spellcasting ability for this cantrip is Intelligence, Wisdom, or Charisma (your choice)."
                     ]
@@ -5104,7 +5104,7 @@
                     "items": [
                         "You have {@variantrule Advantage|Ishiir} on Constitution {@variantrule Saving Throw|Ishiir|Saving Throws} that you make to maintain your {@condition Concentration|Ishiir} on a spell when you take damage.",
                         "You can perform the somatic components of spells even when you have weapons or a {@item shield|Ishiir} in one or both hands.",
-                        "When a hostile creature's movement provokes an opportunity attack from you, you can use your {@variantrule Reaction|Ishiir} to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature."
+                        "When a hostile creature's movement provokes an opportunity attack from you, you can use your {@variantrule Reaction|Ishiir} to {@action Magic|Ishiir|cast a spell} at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature."
                     ]
                 }
             ]
@@ -5184,7 +5184,7 @@
                         {
                             "type": "list",
                             "items": [
-                                "Shape Spell: When you cast a spell with an area of effect that is either a cone, line, circle, or square, you can change the area of effect to a different one from the aforementioned. The size of the area of effect changes depending on the shape as below, rounded down to increments of 5:",
+                                "Shape Spell: When you {@action Magic|Ishiir|cast a spell} with an area of effect that is either a cone, line, circle, or square, you can change the area of effect to a different one from the aforementioned. The size of the area of effect changes depending on the shape as below, rounded down to increments of 5:",
                                 {
                                     "type": "table",
                                     "colLabels": [
@@ -5220,7 +5220,7 @@
                                         ]
                                     ]
                                 },
-                                "Shape Energy: When you cast a spell that deals damage, you can change the spell's damage type to a different one of your choice."
+                                "Shape Energy: When you {@action Magic|Ishiir|cast a spell} that deals damage, you can change the spell's damage type to a different one of your choice."
                             ]
                         }
                     ]
