@@ -3491,7 +3491,13 @@
             "wondrous": true,
             "entries": [
                 "You may change your unarmed or natural weapon damage type to radiant.",
-                "{@b Masterwork}: When the effect of this item is activated, you deal an additional 1 Radiant damage."
+                {
+                    "name": "Masterworked",
+                    "type": "entries",
+                    "entries": [
+                        "When the effect of this item is activated, you deal an additional 1 Radiant damage."
+                    ]
+                }
             ],
             "type": "CRF",
             "value": 25000,
@@ -3584,7 +3590,13 @@
             "wondrous": true,
             "entries": [
                 "You can cast {@spell Guidance|Ishiir} with this amber-encased seed up to three times a day.",
-                "{@b Masterwork}: You can use this item up to four times a day instead."
+                {
+                    "name": "Masterworked",
+                    "type": "entries",
+                    "entries": [
+                        "You can use this item up to four times a day instead."
+                    ]
+                }
             ],
             "attachedSpells": [
                 "guidance|ishiir"
@@ -4317,7 +4329,13 @@
             "wondrous": true,
             "entries": [
                 "While you wear this cloak, it projects an illusion that makes you appear to be standing in a place near your actual location, causing any creature to have {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against you. If you take damage, the property ceases to function until the start of your next turn. This property is suppressed while you are {@condition Incapacitated|Ishiir}, {@condition Restrained|Ishiir}, or otherwise unable to move.",
-                "{@b Masterwork}: Additionally, you have {@variantrule Advantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws} against effects that target you."
+                {
+                    "name": "Masterworked",
+                    "type": "entries",
+                    "entries": [
+                        "Additionally, you have {@variantrule Advantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws} against effects that target you."
+                    ]
+                }
             ],
             "type": "CRF",
             "value": 60000,
@@ -5505,7 +5523,13 @@
             "wondrous": true,
             "entries": [
                 "While this pearl is on your person, you can use an {@variantrule Action|Ishiir} to speak its command word and regain one expended spell slot. If the expended slot was of 4th level or higher, the new slot is 3rd level. Once you have used the pearl, it can't be used again until the next dawn.",
-                "{@b Masterwork}: If the expended slot was of 5th level or higher, the new slot is 4th level."
+                {
+                    "name": "Masterworked",
+                    "type": "entries",
+                    "entries": [
+                        "If the expended slot was of 5th level or higher, the new slot is 4th level"
+                    ]
+                }
             ],
             "type": "CRF",
             "value": 100000,
@@ -5663,7 +5687,14 @@
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
-                "While wearing these dark lenses, you have {@sense darkvision} out to a range of 60 feet. If you already have {@sense darkvision}, wearing the goggles increases its range by 60 feet."
+                "While wearing these dark lenses, you have {@sense darkvision} out to a range of 60 feet. If you already have {@sense darkvision}, wearing the goggles increases its range by 60 feet.",
+                {
+                    "name": "Masterworked",
+                    "type": "entries",
+                    "entries": [
+                        "You have {@sense darkvision} out to a range of 90 feet instead."
+                    ]
+                }
             ],
             "type": "CRF",
             "value": 115000,
@@ -9163,7 +9194,13 @@
             },
             "entries": [
                 "Your Constitution score is 19 while you wear this amulet. It has no effect on you if your Constitution score is already 19 or higher without it.",
-                "{@b Masterwork}: Your Constitution score becomes 20 instead."
+                {
+                    "name": "Masterworked",
+                    "type": "entries",
+                    "entries": [
+                        "Your Constitution score becomes 20 instead."
+                    ]
+                }
             ],
             "type": "CRF",
             "value": 375000,
@@ -10267,7 +10304,7 @@
                     "name": "Masterworked",
                     "type": "entries",
                     "entries": [
-                        "When masterworked and applied to a weapon, the weapon deals {@damage 1d10} fire damage instead. The effect is unknown when applied to armor."
+                        "When applied to a weapon, the weapon deals {@damage 1d10} fire damage instead. The effect is unknown when applied to armor."
                     ]
                 }
             ],
@@ -18151,7 +18188,13 @@
             },
             "entries": [
                 "You regain {@dice 2d4 + 2} hit points when you drink this potion. The potion's red liquid glimmers when agitated.",
-                "{@b Masterwork}: You regain 10 hit points instead."
+                {
+                    "name": "Masterworked",
+                    "type": "entries",
+                    "entries": [
+                        "You regain 10 hit points instead."
+                    ]
+                }
             ]
         },
         {
@@ -18171,7 +18214,13 @@
             },
             "entries": [
                 "You regain {@dice 4d4 + 4} hit points when you drink this potion. The potion's red liquid glimmers when agitated.",
-                "{@b Masterwork}: You regain 20 hit points instead."
+                {
+                    "name": "Masterworked",
+                    "type": "entries",
+                    "entries": [
+                        "You regain 20 hit points instead."
+                    ]
+                }
             ]
         },
         {
@@ -18191,7 +18240,13 @@
             },
             "entries": [
                 "You regain {@dice 8d4 + 8} hit points when you drink this potion. The potion's red liquid glimmers when agitated.",
-                "{@b Masterwork}: You regain 40 hit points instead."
+                {
+                    "name": "Masterworked",
+                    "type": "entries",
+                    "entries": [
+                        "You regain 40 hit points instead."
+                    ]
+                }
             ]
         },
         {
@@ -18393,7 +18448,13 @@
             },
             "entries": [
                 "You regain {@dice 10d4 + 20} hit points when you drink this potion. The potion's red liquid glimmers when agitated.",
-                "{@b Masterwork}: You regain 60 hit points instead."
+                {
+                    "name": "Masterworked",
+                    "type": "entries",
+                    "entries": [
+                        "You regain 60 hit points instead."
+                    ]
+                }
             ]
         },
         {
@@ -18479,7 +18540,13 @@
             },
             "entries": [
                 "When you drink this potion, your physical age is reduced by {@dice 1d6 + 6} years, to a minimum of 13 years. Each time you subsequently drink a potion of longevity, there is 10 percent cumulative chance that you instead age by {@dice 1d6 + 6} years. Suspended in this amber liquid are a scorpion's tail, an adder's fang, a dead spider, and a tiny heart that, against all reason, is still beating. These ingredients vanish when the potion is opened.",
-                "{@b Masterwork}: This potion still only has a single use, but the cumulative effects do not apply."
+                {
+                    "name": "Masterworked",
+                    "type": "entries",
+                    "entries": [
+                        "This potion still only has a single use, but the cumulative effects do not apply."
+                    ]
+                }
             ]
         },
         {
