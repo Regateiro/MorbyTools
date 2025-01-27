@@ -1870,6 +1870,41 @@
             "entries": [
                 "{@i Requirement: Armors.}",
                 "The outside surface and internal joints of this armor whir with interlocking gears, drawing on the orderly magic of the plane of Mechanus.",
+                "The armor has 4 charges. If you make an {@variantrule Ability Check|Ishiir} while wearing this armor, you can expend 1 charge to change the number rolled to a 10. The armor regains {@dice 1d4} expended charges daily at dawn."
+            ]
+        },
+        {
+            "name": "Constancy",
+            "source": "Ishiir",
+            "page": 1,
+            "rarity": "very rare",
+            "reqAttune": true,
+            "recharge": "dawn",
+            "rechargeAmount": "{@dice 1d4}",
+            "charges": 4,
+            "value": 1600000,
+            "crafted": {
+                "skill": [
+                    "Armorsmithing",
+                    "Leatherworking"
+                ],
+                "dc": 11,
+                "ingredient": [
+                    "Elder Giant Heart"
+                ],
+                "material": [
+                    "High Steel or higher",
+                    "Ancient Hide or higher",
+                    "Ancient Scale or higher",
+                    "Elder Draconic Scale or higher"
+                ],
+                "requiresItemType": [
+                    "Armor"
+                ]
+            },
+            "entries": [
+                "{@i Requirement: Armors.}",
+                "The outside surface and internal joints of this armor whir with interlocking gears, drawing on the orderly magic of the plane of Mechanus.",
                 "The armor has 4 charges. If you make a {@dice d20} roll while wearing this armor, you can expend 1 charge to change the number rolled to a 10. The armor regains {@dice 1d4} expended charges daily at dawn."
             ]
         },
