@@ -1464,13 +1464,13 @@ Parser.SP_MISC_TAG_TO_FULL = {
 	LGT: "Creates Light",
 	UBA: "Uses Bonus Action",
 	PS: "Plane Shifting",
-	SAD: "Setting Adjusted",
 	OBS: "Obscures Vision",
 	DFT: "Difficult Terrain",
 	AAD: "Additional Attack Damage",
 	OBJ: "Affects Objects",
 	BLD: "Uses Blood",
 	ADV: "Grants Advantage",
+	CMD: "Conditional Maximum Damage",
 };
 Parser.spMiscTagToFull = function (type) {
 	return Parser._parse_aToB(Parser.SP_MISC_TAG_TO_FULL, type);
