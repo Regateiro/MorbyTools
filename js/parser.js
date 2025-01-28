@@ -1471,6 +1471,7 @@ Parser.SP_MISC_TAG_TO_FULL = {
 	BLD: "Uses Blood",
 	ADV: "Grants Advantage",
 	CMD: "Conditional Maximum Damage",
+	CTE: "Creature Type Effects",
 };
 Parser.spMiscTagToFull = function (type) {
 	return Parser._parse_aToB(Parser.SP_MISC_TAG_TO_FULL, type);
