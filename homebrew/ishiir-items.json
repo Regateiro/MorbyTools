@@ -20302,15 +20302,6 @@
             "type": "PR",
             "typeAlt": "CRF",
             "rarity": "legendary",
-            "reqAttune": "by an elf or half-elf",
-            "reqAttuneTags": [
-                {
-                    "race": "elf"
-                },
-                {
-                    "race": "half-elf"
-                }
-            ],
             "bonusWeapon": "+3",
             "value": 2072500,
             "critThreshold": 19,
@@ -20332,21 +20323,16 @@
             },
             "entries": [
                 "{@i Requirement: Slashing Weapons.}",
-                "Of all the magic items created by the elves, one of the most prized and jealously guarded is a moonsong blade. In ancient times, nearly all elven noble houses claimed one such blade. Over the centuries, some blades have faded from the world, their magic lost as family lines have become extinct. Other blades have vanished with their bearers during great quests. Thus, only a few of these weapons remain.",
-                "A moonsong blade passes down from parent to child. The sword chooses its bearer and remains bonded to that person for life. If the bearer dies, another heir can claim the blade. If no worthy heir exists, the sword lies dormant. It functions like a normal weapon until a worthy soul finds it and lays claim to its power.",
-                "A moonsong blade serves only one master at a time. The attunement process requires a special ritual in the throne room of an elven regent or in a temple dedicated to the elven gods.",
-                "A moonsong blade won't serve anyone it regards as craven, erratic, corrupt, or at odds with preserving and protecting elvenkind. If the blade rejects you, you make {@variantrule Ability Check|Ishiir|Ability Checks}, {@variantrule Attack Roll|Ishiir|Attack Rolls}, and {@variantrule Saving Throw|Ishiir|Saving Throws} with {@variantrule Disadvantage|Ishiir} for 24 hours. If the blade accepts you, you become attuned to it and a new rune appears on the blade. You remain attuned to the weapon until you die or the weapon is destroyed.",
-                "A moonsong blade has one rune on its blade for each master it has served (typically {@dice 1d6 + 1}). The first rune always grants a +3 bonus to attack and damage rolls made with the weapon. Each rune beyond the first grants the moon blade an additional property.",
+                "A weapon with this property makes melodic sounds when drawn from its sheath or swung.",
+                "You gain a +3 bonus to attack and damage rolls made with this weapon. Additionally, you gain the following benefits while attuned to it:",
                 {
                     "type": "list",
-                    "style": "list-decimal",
+                    "style": "list-hang-notitle",
                     "items": [
-                        "+3 bonus to attack and damage rolls",
-                        "critical range is increased by 1",
-                        "attacks deal an extra {@damage 1d6} slashing damage",
-                        "bearer can use {@variantrule Bonus Action|Ishiir} to have the weapon emit light in a 15/15 radius or extinguish it, this counts as moonlight",
-                        "the weapon makes melodic sounds when drawn from its sheath or swung",
-                        "the weapon grants a +2 bonus to initiative rolls"
+                        "Your critical range is increased by 1.",
+                        "Your attacks deal an extra {@damage 1d6} slashing damage.",
+                        "You can use a {@variantrule Bonus Action|Ishiir} to have the weapon emit light in a 15/15 radius or extinguish it, which counts as moonlight.",
+                        "You gain a +2 bonus to initiative rolls."
                     ]
                 }
             ],
