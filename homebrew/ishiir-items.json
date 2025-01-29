@@ -3244,7 +3244,6 @@
             "rarity": "common",
             "wondrous": true,
             "entries": [
-                "This polished Eberron dragonshard fits in the hand and stores information similar to a book. The shard can hold the equivalent of one book that's no more than 320 pages long. A shard can be created blank or already filled with information. When the shard is created, the creator can set a passphrase that must be spoken to access the information stored within.",
                 "While holding the shard, you can use an {@variantrule Action|Ishiir} to open your mind to the shard, seeing its content in your mind. On subsequent rounds, reading the text or scribing new text on blank \"pages\" in the shard requires {@condition Concentration|Ishiir} (as if concentrating on a spell) and takes the same amount of time it takes you to read and write normally. Thinking of a particular phrase or topic draws you to the first section in the shard that addresses it.",
                 "A wizard can use a spellshard as a spellbook, with the usual cost in gold and time to \"scribe\" a spell into the shard."
             ],
@@ -7902,28 +7901,26 @@
             ],
             "wondrous": true,
             "entries": [
-                "The Icon of Ravenloft is a 12-inch tall statuette made of the purest silver, weighing 10 pounds. It depicts a cleric kneeling in supplication.",
-                "The icon was given to Strahd by the archpriest Ciril Romulich, an old family friend, to consecrate the castle and its chapel.",
-                "While within 30 feet of the icon, a creature is under the effect of a {@spell Protection from Evil and Good|Ishiir} spell against fiends and undead. Only a creature attuned to the icon can use its other properties.",
+                "While within 30 feet of the Nightwalker Ward, a creature is under the effect of a {@spell Protection from Evil and Good|Ishiir} spell against fiends and undead. Only a creature attuned to the Nightwalker Ward can use its other properties.",
                 {
                     "name": "Augury",
                     "type": "entries",
                     "entries": [
-                        "You can use an {@variantrule Action|Ishiir} to cast an {@spell Augury|Ishiir} spell from the icon, with no material components required. Once used, this property can't be used again until the next dawn."
+                        "You can use an {@variantrule Action|Ishiir} to cast the {@spell Augury|Ishiir} spell from the Nightwalker Ward, with no material components required. Once used, this property can't be used again until the next dawn."
                     ]
                 },
                 {
                     "name": "Bane of the Undead",
                     "type": "entries",
                     "entries": [
-                        "You can use the icon as a holy symbol while using the Turn Undead or Turn the Unholy feature. If you do so, increase the save DC by 2."
+                        "You can use the Nightwalker Ward as a holy symbol while using the Turn Undead or Turn the Unholy feature. If you do so, increase the save DC by 2."
                     ]
                 },
                 {
                     "name": "Cure Wounds",
                     "type": "entries",
                     "entries": [
-                        "While holding the icon, you can take an {@variantrule Action|Ishiir} to heal one creature that you can see within 30 feet of you. The target regains {@dice 3d8 + 3} hit points, unless it is an undead, a construct, or a fiend. Once used, this property can't be used again until the next dawn."
+                        "While holding the Nightwalker Ward, you can take an {@variantrule Action|Ishiir} to heal one creature that you can see within 30 feet of you. The target regains {@dice 3d8 + 3} hit points, unless it is an undead, a construct, or a fiend. Once used, this property can't be used again until the next dawn."
                     ]
                 }
             ],
@@ -14435,28 +14432,26 @@
             "rechargeAmount": "{@dice 1d6 + 4}",
             "charges": 10,
             "entries": [
-                "The Holy Symbol of Ravenkind is a unique holy symbol sacred to the good-hearted faithful of Barovia. It predates the establishment of any church in Barovia. According to legend, it was delivered to a paladin named Lugdana by a giant raven\u2014or an angel in the form of a giant raven. Lugdana used the holy symbol to root out and destroy nests of vampires until her death. The high priests of Ravenloft kept and wore the holy symbol after Lugdana's passing.",
-                "The holy symbol is a platinum amulet shaped like the sun, with a large crystal embedded in its center.",
-                "The holy symbol has 10 charges for the following properties. It regains {@dice 1d6 + 4} charges daily at dawn.",
+                "The Holy Symbol of the Long Road has 10 charges for the following properties. It regains {@dice 1d6 + 4} charges daily at dawn.",
                 {
                     "name": "Hold Vampires",
                     "type": "entries",
                     "entries": [
-                        "As an {@variantrule Action|Ishiir}, you can expend 1 charge and present the holy symbol to make it flare with holy power. Vampires and {@creature vampire spawn} within 30 feet of the holy symbol when it flares must make a DC 15 Wisdom {@variantrule Saving Throw|Ishiir}. On a failed save, a target is {@condition Paralyzed|Ishiir} for 1 minute. It can repeat the {@variantrule Saving Throw|Ishiir} at the end of its turns to end the effect on itself."
+                        "As an {@variantrule Action|Ishiir}, you can expend 1 charge and present the Holy Symbol of the Long Road to make it flare with holy power. Vampires and {@creature vampire spawn} within 30 feet of the Holy Symbol of the Long Road when it flares must make a DC 15 Wisdom {@variantrule Saving Throw|Ishiir}. On a failed save, a target is {@condition Paralyzed|Ishiir} for 1 minute. It can repeat the {@variantrule Saving Throw|Ishiir} at the end of its turns to end the effect on itself."
                     ]
                 },
                 {
                     "name": "Turn Undead",
                     "type": "entries",
                     "entries": [
-                        "If you have the Turn Undead or the Turn the Unholy feature, you can expend 3 charges when you present the holy symbol while using that feature. When you do so, undead have {@variantrule Disadvantage|Ishiir} on their {@variantrule Saving Throw|Ishiir|Saving Throws} against the effect."
+                        "If you have the Turn Undead or the Turn the Unholy feature, you can expend 3 charges when you present the Holy Symbol of the Long Road while using that feature. When you do so, undead have {@variantrule Disadvantage|Ishiir} on their {@variantrule Saving Throw|Ishiir|Saving Throws} against the effect."
                     ]
                 },
                 {
                     "name": "Sunlight",
                     "type": "entries",
                     "entries": [
-                        "As an {@variantrule Action|Ishiir}, you can expend 5 charges while presenting the holy symbol to make it shed bright light in a 30-foot radius and dim light for an additional 30 feet. The light is sunlight and lasts for 10 minutes or until you end the effect (no action required)."
+                        "As an {@variantrule Action|Ishiir}, you can expend 5 charges while presenting the Holy Symbol of the Long Road to make it shed bright light in a 30-foot radius and dim light for an additional 30 feet. The light is sunlight and lasts for 10 minutes or until you end the effect (no action required)."
                     ]
                 }
             ],
@@ -21058,8 +21053,6 @@
             "bonusWeapon": "+3",
             "entries": [
                 "{@i Requirement: Melee Weapons.}",
-                "In the world of Greyhawk, only nine of these blades are known to exist. Each is patterned after the legendary sword Fragarach, which is variously translated as \"Final Word.\" Each of the nine swords has its own name and alignment, and each bears a different gem in its pommel.",
-                "Answerer, the Chaotic Good sword, has an emerald set in its pommel.",
                 "You gain a +3 bonus to attack and damage rolls made with this sword. In addition, while you hold the sword, you can use your {@variantrule Reaction|Ishiir} to make one melee attack with it against any creature in your reach that deals damage to you. You have {@variantrule Advantage|Ishiir} on the {@variantrule Attack Roll|Ishiir}, and any damage dealt with this special attack ignores any damage {@variantrule Immunity|Ishiir} or {@variantrule Resistance|Ishiir} the target has."
             ],
             "value": 3820000,
