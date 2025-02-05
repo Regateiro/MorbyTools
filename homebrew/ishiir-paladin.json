@@ -1126,6 +1126,47 @@
             ]
         },
         {
+            "name": "Oath of the Noble Genie",
+            "shortName": "Noble Genie",
+            "source": "Ishiir",
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "chromatic orc|Ishiir",
+                            "elementalism|Ishiir",
+                            "thunderous smite|Ishiir"
+                        ],
+                        "5": [
+                            "mirror image|Ishiir",
+                            "phantasmal force|Ishiir"
+                        ],
+                        "9": [
+                            "fly|Ishiir",
+                            "gaseous form|Ishiir"
+                        ],
+                        "13": [
+                            "conjure minor elementals|Ishiir",
+                            "summon elemental|Ishiir"
+                        ],
+                        "17": [
+                            "banishing smite|Ishiir",
+                            "contact other plane|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Oath of the Noble Genie|Paladin|Ishiir|Noble Genie|Ishiir|3",
+                "Aura of Elemental Shielding|Paladin|Ishiir|Noble Genie|Ishiir|7",
+                "Elemental Rebuke|Paladin|Ishiir|Noble Genie|Ishiir|15",
+                "Noble Scion|Paladin|Ishiir|Noble Genie|Ishiir|20"
+            ]
+        },
+        {
             "name": "Oath of Treachery",
             "shortName": "Treachery",
             "source": "Ishiir",
@@ -2832,6 +2873,215 @@
                     ]
                 },
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a 5th-level spell slot to use it again."
+            ]
+        },
+        {
+            "name": "Oath of the Noble Genie",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Noble Genie",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "Paladins sworn to the Oath of the Noble Genies revere the forces of the Elemental Planes. Through taking this oath, Paladins draw power from the four different types of genies—dao, masters of earth; djinn, masters of air; efreet, masters of fire; and marids, masters of water—to create splendid and destructive displays of elemental might.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Elemental Smite|Paladin|Ishiir|Noble Genie|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath Spells|Paladin|Ishiir|Noble Genie|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Genie's Splendor|Paladin|Ishiir|Noble Genie|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity: Elemental Smite",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Noble Genie",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "Choose the patron of your oath from Dao, Djinni, Efreeti, or Marid. Whenever you use Divine Smite, you can invoke the effect corresponding to your patron.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Dao's Crush.",
+                            "entries": [
+                                "The target has to make a Strength {@variantrule Saving Throw|Ishiir} or be {@condition Restrained|Ishiir} for 1 minute. On its turn, the target can make a Strength {@variantrule Ability Check|Ishiir|check} against your Spell Save DC to end the effect."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Djinni's Escape.",
+                            "entries": [
+                                "You teleport to an unoccupied space you can see within 30 feet of yourself and take on a mist-like form, which lasts until the end of your next turn. While in this form, you have {@variantrule Immunity|Ishiir} to the {@condition Grappled|Ishiir}, {@condition Prone|Ishiir}, and {@condition Restrained|Ishiir} conditions."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Efreeti's Fury.",
+                            "entries": [
+                                "The target takes additional fire damage equal to a number of D8s x 1/2 your {@variantrule Proficiency|Ishiir} (rounded down). Any die size increment to your Divine Smite also affects this feature. The target is then set ablaze for 1 minute. While under this effect, the target takes fire damage equal to 2 x your {@variantrule Proficiency|Ishiir} at the start of each of its turns. At the end of any of its turns, it can make a Dexterity {@variantrule Saving Throw|Ishiir} against your Spell Save DC to end the effect."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Marid's Surge.",
+                            "entries": [
+                                "The target and each creature of your choice in a 10-foot Emanation originating from you makes a Strength {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failed save, the creature is pushed 15 feet straight away from you and has the {@condition Prone|Ishiir} condition."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Noble Genie",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you reach a Paladin level specified in the Genie Spells table, you thereafter always have the listed spells prepared.",
+                {
+                    "type": "table",
+                    "caption": "Oath of the Noble Genie Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Chromatic Orb|Ishiir}, {@spell Elementalism|Ishiir}, {@spell Thunderous Smite|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Mirror Image|Ishiir}, {@spell Phantasmal Force|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Fly|Ishiir}, {@spell Gaseous Form|Ishiir}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell Conjure Minor Elementals|Ishiir}, {@spell Summon Elemental|Ishiir}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell Banishing Smite|Ishiir}, {@spell Contact Other Plane|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Genie's Splendor",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Noble Genie",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "While you aren't wearing armor, your AC equals 10 + your Constitution modifier + your Charisma modifier (minimum of +1).",
+                "You also gain {@variantrule Proficiency|Ishiir} in one of the following skills of your choice: {@skill Acrobatics}, {@skill Intimidation}, {@skill Performance}, or {@skill Persuasion}."
+            ]
+        },
+        {
+            "name": "Aura of Elemental Shielding",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Noble Genie",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "You and any allies within your Aura of Protection have {@variantrule Resistance|Ishiir} to the damage type associated with the oath patron you have chosen for your Elemental Smite and make any {@variantrule Saving Throw|Ishiir} related to them with {@variantrule Advantage|Ishiir}: Cold (Marid), Fire (Efreeti), Lightning (Djinni), Poison (Dao)."
+            ]
+        },
+        {
+            "name": "Elemental Rebuke",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Noble Genie",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "When you are hit by an {@variantrule Attack Roll|Ishiir}, you can take a {@variantrule Reaction|Ishiir} to halve the attack's damage against yourself (round down) and force the attacker to make a Dexterity {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failed save, the attacker takes damage equal to {@damage 4d10} plus your Charisma modifier; the damage type is that associated with your genie patron as per your Aura of Elemental Shielding. On a successful save, the attacker takes half as much damage.",
+                "You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Noble Scion",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Noble Genie",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "As a {@variantrule Bonus Action|Ishiir}, you gain the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}. You can also restore your use of it by expending a level 5 spell slot (no action required).",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Flight.",
+                            "entries": [
+                                "You have a Fly Speed of 60 feet and can hover."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Greater Aura of Elemental Shielding.",
+                            "entries": [
+                                "Your Aura of Elemental Shielding now confers {@variantrule Immunity|Ishiir} to the chosen element instead of {@variantrule Resistance|Ishiir}."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Minor Wish.",
+                            "entries": [
+                                "As an {@variantrule Action|Ishiir}, you can entreat your genie patron for the effect of one spell that is 5th level or lower and has a casting time of 1 {@variantrule Action|Ishiir}. The spell can be from any class's spell list, and you don't need to meet the requirements in that spell, including costly components; the spell simply takes effect as part of this {@variantrule Action|Ishiir}. Once you have done so, you cannot use this feature again for this use of Noble Scion."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
