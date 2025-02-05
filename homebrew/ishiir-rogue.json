@@ -1405,6 +1405,20 @@
                 "Umbral Strikes|Rogue|Ishiir|Shadowdancer|Ishiir|13",
                 "Nightwalker|Rogue|Ishiir|Shadowdancer|Ishiir|17"
             ]
+        },
+        {
+            "name": "Slayer",
+            "page": 1,
+            "shortName": "Slayer",
+            "source": "Ishiir",
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "subclassFeatures": [
+                "Slayer|Rogue|Ishiir|Slayer|Ishiir|3",
+                "Slayer's Strikes|Rogue|Ishiir|Slayer|Ishiir|9",
+                "Aura of Malevolence|Rogue|Ishiir|Slayer|Ishiir|13",
+                "Dread Incarnate|Rogue|Ishiir|Slayer|Ishiir|17"
+            ]
         }
     ],
     "classFeature": [
@@ -3220,6 +3234,136 @@
             "header": 2,
             "entries": [
                 "Immediately after you use your Sneak Attack, you can make another attack against the same target with a melee weapon you are holding, provided the target is within your reach and no other creatures are within 5 feet of you."
+            ]
+        },
+        {
+            "name": "Slayer",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "subclassShortName": "Slayer",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Bloodthirst|Rogue|Ishiir|Slayer|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Red Exultation|Rogue|Ishiir|Slayer|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Bloodthirst",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "subclassShortName": "Slayer",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "If your Sneak Attack hits a {@variantrule Bloodied|Ishiir} or {@condition Lacerated|Ishiir} creature, the target takes extra damage of the weapon's type equal to half your Rogue level (round up). In addition, when an enemy you can see is reduced to 0 Hit Points, you can take a {@variantrule Reaction|Ishiir} and move up to your {@variantrule Speed|Ishiir}. You can then make one melee attack. You can use this {@variantrule Reaction|Ishiir} a number of times equal to your Intelligence, Wisdom, or Charisma modifier (your choice, minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Red Exultation",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "subclassShortName": "Slayer",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to your Intelligence, Wisdom, or Charisma modifier (your choice) plus your Rogue level (minimum of 1 Temporary Hit Point). You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points."
+            ]
+        },
+        {
+            "name": "Slayer's Strikes",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "subclassShortName": "Slayer",
+            "subclassSource": "Ishiir",
+            "level": 9,
+            "header": 2,
+            "entries": [
+                "You gain the following Cunning Strike options.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Terrify (Cost: 2d6)",
+                            "entries": [
+                                "The target must succeed on a Wisdom {@variantrule Saving Throw|Ishiir}, or it has the {@condition Frightened|Ishiir} condition for 1 minute. The {@condition Frightened|Ishiir} target repeats the {@variantrule Saving Throw|Ishiir|save} at the end of each of its turns, ending the effect on itself on a success."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Torment (Cost: 3d6)",
+                            "entries": [
+                                "The target must succeed on a Constitution {@variantrule Saving Throw|Ishiir} or it becomes crippled with pain until the start of your next turn. For the duration, its {@variantrule Speed|Ishiir} is halved and it has {@variantrule Disadvantage|Ishiir} on {@variantrule Ability Check|Ishiir|Ability Checks}, {@variantrule Attack Roll|Ishiir|Attack Rolls}, and Constitution {@variantrule Saving Throw|Ishiir|Saving Throws} to maintain concentration."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Aura of Malevolence",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "subclassShortName": "Slayer",
+            "subclassSource": "Ishiir",
+            "level": 13,
+            "header": 2,
+            "entries": [
+                "Creatures that start their turn within 10 feet of you or enter it for the first time on a turn, take psychic damage equal to your Intelligence, Wisdom, or Charisma modifier (your choice) and have {@variantrule Disadvantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against the {@condition Frightened|Ishiir} and {@condition Lacerated|Ishiir} conditions while within the aura The aura is inactive while you have the {@condition Incapacitated|Ishiir} condition."
+            ]
+        },
+        {
+            "name": "Dread Incarnate",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "subclassShortName": "Slayer",
+            "subclassSource": "Ishiir",
+            "level": 17,
+            "header": 2,
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Battle Tyrant.",
+                            "entries": [
+                                "You have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against any creature with the {@condition Frightened|Ishiir} condition."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Murderous Intent.",
+                            "entries": [
+                                "When you roll a 1 or 2 on a damage die for your Sneak Attack, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
