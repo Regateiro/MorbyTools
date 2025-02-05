@@ -1360,14 +1360,14 @@
                 {
                     "prepared": {
                         "3": [
-                            "command|Ishiir",
+                            "comprehend languages|Ishiir",
                             "identify|Ishiir",
                             "augury|Ishiir",
-                            "suggestion|Ishiir"
+                            "detect thoughts|Ishiir"
                         ],
                         "5": [
                             "nondetection|Ishiir",
-                            "speak with dead|Ishiir"
+                            "tongues|Ishiir"
                         ],
                         "7": [
                             "arcane eye|Ishiir",
@@ -1382,8 +1382,8 @@
             ],
             "subclassFeatures": [
                 "Knowledge Domain|Cleric|Ishiir|Knowledge|Ishiir|3",
-                "Channel Divinity: Read Thoughts|Cleric|Ishiir|Knowledge|Ishiir|6",
-                "Visions of the Past|Cleric|Ishiir|Knowledge|Ishiir|17"
+                "Visions of the Past|Cleric|Ishiir|Knowledge|Ishiir|6",
+                "Divine Foreknowledge|Cleric|Ishiir|Knowledge|Ishiir|17"
             ]
         },
         {
@@ -3200,11 +3200,11 @@
                     "rows": [
                         [
                             "3rd",
-                            "{@spell Command|Ishiir}, {@spell Identify|Ishiir}, {@spell Augury|Ishiir}, {@spell Suggestion|Ishiir}"
+                            "{@spell Comprehend Languages|Ishiir}, {@spell Identify|Ishiir}, {@spell Augury|Ishiir}, {@spell Detect Thoughts|Ishiir}"
                         ],
                         [
                             "5th",
-                            "{@spell Nondetection|Ishiir}, {@spell Speak with Dead|Ishiir}"
+                            "{@spell Nondetection|Ishiir}, {@spell Tongues|Ishiir}"
                         ],
                         [
                             "7th",
@@ -3259,26 +3259,6 @@
             ]
         },
         {
-            "name": "Channel Divinity: Read Thoughts",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Cleric",
-            "classSource": "Ishiir",
-            "subclassShortName": "Knowledge",
-            "subclassSource": "Ishiir",
-            "level": 6,
-            "header": 2,
-            "consumes": {
-                "name": "Channel Divinity"
-            },
-            "entries": [
-                "You can use your Channel Divinity to read a creature's thoughts. You can then use your access to the creature's mind to command it.",
-                "As an {@variantrule Action|Ishiir}, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom {@variantrule Saving Throw|Ishiir}. If the creature succeeds on the {@variantrule Saving Throw|Ishiir}, you can't use this feature on it again until you finish a {@variantrule Long Rest|Ishiir}.",
-                "If the creature fails its save, you can read its surface thoughts (those foremost in its mind, reflecting its current emotions and what it is actively thinking about) when it is within 60 feet of you. This effect lasts for 1 minute.",
-                "During that time, you can use your action to end this effect and cast the {@spell Suggestion|Ishiir} spell on the creature without expending a spell slot. The target automatically fails its {@variantrule Saving Throw|Ishiir} against the spell."
-            ]
-        },
-        {
             "name": "Visions of the Past",
             "source": "Ishiir",
             "page": 1,
@@ -3286,7 +3266,7 @@
             "classSource": "Ishiir",
             "subclassShortName": "Knowledge",
             "subclassSource": "Ishiir",
-            "level": 17,
+            "level": 6,
             "header": 2,
             "entries": [
                 "You can call up visions of the past that relate to an object you hold or your immediate surroundings. You spend at least 1 minute in meditation and prayer, then receive dreamlike, shadowy glimpses of recent events. You can meditate in this way for a number of minutes equal to your Wisdom score and must maintain {@condition Concentration|Ishiir} during that time, as if you were casting a spell.",
@@ -3315,6 +3295,20 @@
                         }
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Divine Foreknowledge",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Knowledge",
+            "subclassSource": "Ishiir",
+            "level": 17,
+            "header": 2,
+            "entries": [
+                "As an {@variantrule Action|Ishiir}, you magically expand your mind to the possibilities of the future. For 1 hour, you have {@variantrule Advantage|Ishiir} on {@variantrule D20 Test|Ishiir|D20 Tests}. Once you use this feature, you can’t use it again until you finish a Long Rest. You can also restore your use of this feature by expending a level 7+ spell slot (no action required)."
             ]
         },
         {
