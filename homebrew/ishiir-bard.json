@@ -1154,6 +1154,19 @@
             ]
         },
         {
+            "name": "College of the Old Ways",
+            "shortName": "Old Ways",
+            "source": "Ishiir",
+            "className": "Bard",
+            "classSource": "Ishiir",
+            "page": 1,
+            "subclassFeatures": [
+                "College of the Old Ways|Bard|Ishiir|Old Ways|Ishiir|3",
+                "Old Magic|Bard|Ishiir|Old Ways|Ishiir|6",
+                "Sylvan Adept|Bard|Ishiir|Old Ways|Ishiir|14"
+            ]
+        },
+        {
             "name": "College of Satire",
             "shortName": "Satire",
             "source": "Ishiir",
@@ -1749,6 +1762,139 @@
             "header": 2,
             "entries": [
                 "When you make an {@variantrule Ability Check|Ishiir} or {@variantrule Attack Roll|Ishiir} and fail, you can expend one use of Bardic Inspiration; roll the Bardic Inspiration die, and add the number rolled to the d20, potentially turning a failure into a success. On a failure, the Bardic Inspiration isn't expended."
+            ]
+        },
+        {
+            "name": "College of the Old Ways",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Bard",
+            "classSource": "Ishiir",
+            "subclassShortName": "Old Ways",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Words of the First World|Bard|Ishiir|Old Ways|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Primal Lorist|Bard|Ishiir|Old Ways|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Words of the First World",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Bard",
+            "classSource": "Ishiir",
+            "subclassShortName": "Old Ways",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You learn to invoke primordial fey magic and direct it with your voice, be that song, poetry, or a recital of an ancient tale. You learn Sylvan. In addition, you gain the following options:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Curse of Ill Fortune.",
+                            "entries": [
+                                "You can expend one of your Bardic Inspirations as a {@variantrule Bonus Action|Ishiir} to curse a creature you can see within 60 feet with bad luck. The curse lasts until the start of your next turn or until you activate its effect as a {@variantrule Reaction|Ishiir}.",
+                                "Whenever the creature succeeds on a {@variantrule D20 Test|Ishiir}, you can choose to force it to reroll the D20 and take the lower result.",
+                                "Alternatively, if the creature is missed by an {@variantrule Attack Roll|Ishiir}, you can immediately have the attacker reroll the D20 and take the higher result."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Mantle of Midnight.",
+                            "entries": [
+                                "As a {@variantrule Bonus Action|Ishiir}, you can expend a use of your Bardic Inspiration to turn an ally you can see within 60 feet of yourself {@condition Invisible|Ishiir} until the start of your next turn. The invisibility ends early if it attacks, casts a spell, or otherwise performs a hostile action."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Tread the Unseen Path.",
+                            "entries": [
+                                "As a {@variantrule Bonus Action|Ishiir}, you can expend a use of your Bardic Inspiration and teleport yourself or an ally you can see within 60 feet to an unoccupied space you can see within 30 feet of the original position."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Primal Lorist",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Bard",
+            "classSource": "Ishiir",
+            "subclassShortName": "Old Ways",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain proficiency in {@skill Animal Handling}, {@skill Insight}, {@skill Medicine}, {@skill Nature}, {@skill Perception}, or {@skill Survival}. Additionally, you can use your Charisma in place of your Wisdom for any of these skills."
+            ]
+        },
+        {
+            "name": "Old Magic",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Bard",
+            "classSource": "Ishiir",
+            "subclassShortName": "Old Ways",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "You learn two cantrips and three spells of your choice from the {@filter Druid spell list|spells|class=druid (Ishiir)|source=Ishiir}. A spell you choose must be a cantrip or a spell for which you have spell slots, as shown in the Bard Features table.",
+                "You always have the chosen spells prepared, and whenever you gain a Bard level, you can replace one of the spells with another spell that meets these requirements."
+            ]
+        },
+        {
+            "name": "Sylvan Adept",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Bard",
+            "classSource": "Ishiir",
+            "subclassShortName": "Old Ways",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "Your Words of the First World improve in the following ways:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Sticky Misfortune.",
+                            "entries": [
+                                "If the reroll does not turn success into failure or vice versa, the curse instead lasts 1 minute or until it changes the outcome of a roll when you activate it the next time."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Gloaming Cloak.",
+                            "entries": [
+                                "The creature affected by your Mantle of Midnight becomes {@book chapter 7|phb|7|hiding|hidden} instead of {@condition Invisible|Ishiir}, ignoring all the usual restrictions for hiding in plain view."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Sylvan Farstride.",
+                            "entries": [
+                                "Tread the Unseen Path's teleport distance increases to 60 feet."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
