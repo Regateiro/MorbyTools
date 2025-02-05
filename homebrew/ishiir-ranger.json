@@ -1210,6 +1210,41 @@
                 "Mighty Swarm|Ranger|Ishiir|Swarmkeeper|Ishiir|11",
                 "Swarming Dispersal|Ranger|Ishiir|Swarmkeeper|Ishiir|15"
             ]
+        },
+        {
+            "name": "Winter Wanderer",
+            "shortName": "Winter Wanderer",
+            "source": "Ishiir",
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "known": {
+                        "3": [
+                            "armor of agathys|Ishiir"
+                        ],
+                        "5": [
+                            "rime's binding ice|Ishiir"
+                        ],
+                        "9": [
+                            "fortify|Ishiir"
+                        ],
+                        "13": [
+                            "ice storm|Ishiir"
+                        ],
+                        "17": [
+                            "cone of cold|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Winter Wanderer|Ranger|Ishiir|Winter Wanderer|Ishiir|3",
+                "Resilient Survivor|Ranger|Ishiir|Winter Wanderer|Ishiir|7",
+                "Fortifying Soul|Ranger|Ishiir|Winter Wanderer|Ishiir|11",
+                "Icy Glare|Ranger|Ishiir|Winter Wanderer|Ishiir|15"
+            ]
         }
     ],
     "subclassFeature": [
@@ -3024,6 +3059,170 @@
             "entries": [
                 "You can discorporate into your swarm, avoiding danger. When you take damage, you can use your {@variantrule Reaction|Ishiir} to give yourself {@variantrule Resistance|Ishiir} to that damage. You vanish into your swarm and then teleport to an unoccupied space that you can see within 30 feet of you, where you reappear with the swarm.",
                 "You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Winter Wanderer",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "subclassShortName": "Winter Wanderer",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "Feeling a deep connection to the environment around them, some rangers reach out through their magical connection to the world and bond with a swarm of nature spirits. The swarm becomes a potent force in battle, as well as helpful company for the ranger. Some Swarmkeepers are outcasts or hermits, keeping to themselves and their attendant swarms rather than dealing with the discomfort of others. Other Swarmkeepers enjoy building vibrant communities that work for the mutual benefit of all those they consider part of their swarm.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Frigid Explorer|Ranger|Ishiir|Winter Wanderer|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Frozen Aegis|Ranger|Ishiir|Winter Wanderer|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Swarmkeeper Magic|Ranger|Ishiir|Winter Wanderer|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Frigid Explorer",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "subclassShortName": "Winter Wanderer",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Frost Resistance.",
+                            "entries": [
+                                "You have {@variantrule Resistance|Ishiir} to Cold damage."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Hunter's Rime.",
+                            "entries": [
+                                "When you hit a creature with a weapon, you can deal an extra {@damage 1d6} Cold damage to the target, which can take this extra damage only once per turn. This extra damage ignores {@variantrule Resistance|Ishiir} to Cold damage. When you reach Ranger level 11, this extra damage increases to {@damage 2d6}."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Frozen Aegis",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "subclassShortName": "Winter Wanderer",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Whenever you cast a Ranger spell using a Spell Slot, you gain temporary hit points equal to your Wisdom modifier + half your Ranger level (rounded down). If the spell already gives you temporary hit points, they stack with the ones granted by this feature."
+            ]
+        },
+        {
+            "name": "Winter Wanderer Magic",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "subclassShortName": "Winter Wanderer",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you reach a Ranger level specified in the Winter Wanderer Spells table, you thereafter always have the listed spells prepared.",
+                {
+                    "type": "table",
+                    "caption": "Winter Wanderer Spells",
+                    "colLabels": [
+                        "Ranger Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Armor of Agathys|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Rime's Binding Ice|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Fortify|Ishiir}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell Ice Storm|Ishiir}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell Cone of Cold|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Resilient Survivor",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "subclassShortName": "Winter Wanderer",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "You gain {@variantrule Proficiency|Ishiir} in Constitution {@variantrule Saving Throw|Ishiir|Saving Throws}. If you already have this {@variantrule Proficiency|Ishiir}, you instead gain {@variantrule Proficiency|Ishiir} in Wisdom {@variantrule Saving Throw|Ishiir|Saving Throws}."
+            ]
+        },
+        {
+            "name": "Fortifying Soul",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "subclassShortName": "Winter Wanderer",
+            "subclassSource": "Ishiir",
+            "level": 11,
+            "header": 2,
+            "entries": [
+                "Your experience surviving harrowing environments allows you to bolster your allies in addition to yourself. When you finish a {@variantrule Short Rest|Ishiir}, you can choose a number of creatures you can see equal to your Wisdom modifier (minimum of one). A chosen creature regains Hit Points equal to {@dice 1d10} plus your Ranger level and has {@variantrule Advantage|Ishiir} on Constitution {@variantrule Saving Throw|Ishiir|Saving Throws} and Wisdom {@variantrule Saving Throw|Ishiir|Saving Throws} to avoid or end the {@condition Frightened|Ishiir} condition for 24 hours.",
+                "Once you use this feature, you can’t use it again until you finish a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Icy Glare",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "subclassShortName": "Winter Wanderer",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "When a creature you can see within 30 feet of yourself deals damage to you or forces you to make a {@variantrule Saving Throw|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to force the creature to make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failure, the target takes {@damage 4d8} cold damage and its {@variantrule Speed|Ishiir} is reduced 0 until the start of your next turn. On a success, it takes half as much damage and its {@variantrule Speed|Ishiir} isn't reduced. This damage ignores {@variantrule Resistance|Ishiir}.",
+                "Once you use this feature, you can’t use it again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         }
     ]
