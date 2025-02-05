@@ -1584,6 +1584,44 @@
                 "Deep Freeze|Sorcerer|Ishiir|Cryomancer|Ishiir|14",
                 "Frozen Soul|Sorcerer|Ishiir|Cryomancer|Ishiir|18"
             ]
+        },
+        {
+            "name": "Arcane",
+            "shortName": "Cryomancer",
+            "source": "Ishiir",
+            "className": "Arcane",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "known": {
+                        "3": [
+                            "detect magic|Ishiir",
+                            "magic missile|Ishiir",
+                            "misty step|Ishiir",
+                            "nystul's magic aura|Ishiir"
+                        ],
+                        "5": [
+                            "counterspell|Ishiir",
+                            "dispel magic|Ishiir"
+                        ],
+                        "7": [
+                            "arcane eye|Ishiir",
+                            "spell turning|Ishiir"
+                        ],
+                        "9": [
+                            "circle of power|Ishiir",
+                            "spell mantle|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Arcane|Sorcerer|Ishiir|Arcane|Ishiir|3",
+                "Absorb Spells|Sorcerer|Ishiir|Arcane|Ishiir|6",
+                "Limitless Metamagic|Sorcerer|Ishiir|Arcane|Ishiir|14",
+                "Arcane Ascendance|Sorcerer|Ishiir|Arcane|Ishiir|18"
+            ]
         }
     ],
     "subclassFeature": [
@@ -1771,6 +1809,156 @@
             "entries": [
                 "You can unleash your aberrant power as a space-warping anomaly. As a {@variantrule Bonus Action|Ishiir}, you can teleport to an unoccupied space you can see within 120 feet of you. Immediately after you disappear, each creature within 30 feet of the space you left must make a Strength {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failed save, a creature takes {@damage 4d10} force damage and is pulled straight toward the space you left, ending in an unoccupied space as close to your former space as possible. On a successful save, the creature takes half as much damage and isn't pulled.",
                 "Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you spend 5 sorcery points to use it again."
+            ]
+        },
+        {
+            "name": "Arcane",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "subclassShortName": "Arcane",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Arcane Spells|Sorcerer|Ishiir|Arcane|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Magic in the Blood|Sorcerer|Ishiir|Arcane|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Arcane Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "subclassShortName": "Arcane",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you reach a Sorcerer level specified in the Arcane Spells table, you thereafter always have the listed spells prepared.",
+                {
+                    "type": "table",
+                    "caption": "Arcane Spells",
+                    "colLabels": [
+                        "Sorcerer Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Detect Magic|Ishiir}, {@spell Magic Missile|Ishiir}, {@spell Misty Step|Ishiir}, {@spell Nystul's Magic Aura|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Counterspell|Ishiir}, {@spell Dispel Magic|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Arcane Eye|Ishiir}, {@spell Spell Turning|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Circle of Power|Ishiir}, {@spell Spell Mantle|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Magic in the Blood",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "subclassShortName": "Arcane",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you make an Arcana {@variantrule Ability Check|Ishiir|check}, you can use your Charisma in place of your Intelligence for it.",
+                "Additionally, you learn two spells of your choice. These spells can come from the {@filter Sorcerer|spells|class=sorcerer (Ishiir)|source=Ishiir} or {@filter Wizard spell list|spells|class=wizard (Ishiir)|source=Ishiir}. A spell you choose must be a cantrip or a spell for which you have spell slots, as shown in the Sorcerer Features table.",
+                "You always have the chosen spells prepared, and whenever you gain a Sorcerer level, you can replace one of the spells with another spell that meets these requirements."
+            ]
+        },
+        {
+            "name": "Absorb Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "subclassShortName": "Arcane",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Whenever you successfully end or disrupt a spell with {@spell Dispel Magic|Ishiir} or {@spell Counterspell|Ishiir}, you regain Sorcery Points equal to half the level of the spell slot you used to cast them (rounded up)."
+            ]
+        },
+        {
+            "name": "Limitless Metamagic",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "subclassShortName": "Arcane",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "When you use your Metamagic, you can combine any of the options you know for the same spell, paying the sorcery point cost for each.",
+                "Additionally, when an ally you can see within 120 feet casts a spell, you can use your {@variantrule Reaction|Ishiir} to use your Metamagic on their spell."
+            ]
+        },
+        {
+            "name": "Arcane Ascendance",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "subclassShortName": "Arcane",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 2,
+            "entries": [
+                "As a {@variantrule Bonus Action|Ishiir} you transform into an apparition of pure magic for 1 minute, gaining the following benefits. The transformation ends early if you die, you are {@condition Incapacitated|Ishiir}, or if you end it as a {@variantrule Bonus Action|Ishiir}. Once you use this {@variantrule Bonus Action|Ishiir}, you can’t use it again until you finish a {@variantrule Long Rest|Ishiir} unless you spend 7 Sorcery Points (no action required) to restore your use of it.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Arcane Wellspring.",
+                            "entries": [
+                                "During your turn, you can trade any number of your Hit Dice for the same number of Sorcery Points (no Action required)."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Flight.",
+                            "entries": [
+                                "You gain a {@variantrule Fly Speed|Ishiir} of 60 feet and can hover."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Spell Avoidance.",
+                            "entries": [
+                                "When you’re subjected to a spell or magical effect that allows you to make a {@variantrule Saving Throw|Ishiir} to take only half damage, you instead take no damage if you succeed on the {@variantrule Saving Throw|Ishiir} and only half damage if you fail."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
