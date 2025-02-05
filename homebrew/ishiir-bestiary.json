@@ -1596,6 +1596,63 @@
 					"MW"
 				],
 				"hasToken": true
+			},
+			{
+				"name": "Wyvern Companion",
+				"source": "Ishiir",
+				"page": 1,
+				"summonedByClass": "Fighter|Ishiir",
+				"size": [
+					"M"
+				],
+				"type": "dragon",
+				"alignment": [
+					"N"
+				],
+				"ac": [
+					{
+						"ac": 14,
+						"from": [
+							"natural armor"
+						]
+					}
+				],
+				"hp": 33,
+				"speed": {
+					"walk": 20,
+					"fly": 60
+				},
+				"str": 16,
+				"dex": 15,
+				"con": 14,
+				"int": 7,
+				"wis": 14,
+				"cha": 7,
+				"skill": {
+					"perception": "+6"
+				},
+				"senses": [
+					"darkvision 60 ft."
+				],
+				"passive": 16,
+				"cr": "1/2",
+				"trait": [
+					{
+						"name": "Draconic Blood",
+						"entries": [
+							"Choose Acid, Cold, Fire, Lightning, or Poison. The Wyvern Companion has {@variantrule Resistance|Ishiir} in the chosen element."
+						]
+					}
+				],
+				"action": [
+					{
+						"name": "Bite",
+						"entries": [
+							"{@atk mw} +5 to hit, reach 5 ft., one target. {@h}{@damage 1d6} + 3 piercing damage."
+						]
+					}
+				],
+				"tokenURL": "ishiir/dragons/Wyvern_Flame.png"
 			}
 		]
 	}

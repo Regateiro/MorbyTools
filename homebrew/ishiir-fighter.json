@@ -1444,6 +1444,21 @@
                 "Rapid Strike|Fighter|Ishiir|Sharpshooter|Ishiir|15",
                 "Snap Shot|Fighter|Ishiir|Sharpshooter|Ishiir|18"
             ]
+        },
+        {
+            "name": "Wyvern Knight",
+            "shortName": "Wyvern Knight",
+            "source": "Ishiir",
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "page": 1,
+            "subclassFeatures": [
+                "Wyvern Knight|Fighter|Ishiir|Wyvern Knight|Ishiir|3",
+                "Powerful Bloodline|Fighter|Ishiir|Wyvern Knight|Ishiir|7",
+                "Breath Weapon|Fighter|Ishiir|Wyvern Knight|Ishiir|10",
+                "Fight as One|Fighter|Ishiir|Wyvern Knight|Ishiir|15",
+                "Terror of the Skies|Fighter|Ishiir|Wyvern Knight|Ishiir|18"
+            ]
         }
     ],
     "subclassFeature": [
@@ -3891,6 +3906,125 @@
             "header": 2,
             "entries": [
                 "You are ever ready to spring into action. If you take the {@action Attack|Ishiir} action on your first turn of a combat, you can make one additional ranged weapon attack as part of that action."
+            ]
+        },
+        {
+            "name": "Wyvern Knight",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wyvern Knight",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Wyvern Bond|Fighter|Ishiir|Wyvern Knight|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Rider's Bond|Fighter|Ishiir|Wyvern Knight|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Wyvern Bond",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wyvern Knight",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You have undergone specialized training that allows you to bond with and ride a wyvern.",
+                "With 8 hours of work and the expenditure of 50 gp worth of rare herbs and fine food, you call forth a wyvern from the wilderness to serve as your faithful companion. See its game statistics in the accompanying {@creature Wyvern Companion|Ishiir} stat block. You choose the damage type for its Draconic Blood feature.",
+                "At the end of the 8 hours, your {@creature Wyvern Companion|Ishiir} appears and gains all the benefits of your Rider's Bond ability. You can have only one {@creature Wyvern Companion|Ishiir} at a time.",
+                "If your {@creature Wyvern Companion|Ishiir} is ever slain, the life bond you share allows you to return it to life. To do so you have to spend 1 hour, 25 gp worth of ingredients, and a use of your Second Wind or 2 of your Hit Dice to return it to life with a special ritual.",
+                "You can return your {@creature Wyvern Companion|Ishiir} to life in this manner even if you do not possess any part of its body, but to do so you have spend double the required resources and the ritual instead requires 8 hours.",
+                "If you use this ability to return a former {@creature Wyvern Companion|Ishiir} to life while you have a current {@creature Wyvern Companion|Ishiir}, your current companion leaves you and is replaced by the restored companion.",
+                "You can mount your companion even if you are the same size. If you ride it, your companion's initiative changes to match yours and it can use any of its actions during your turn or immediately after. While you ride it, your companion's flying speed is halved and it has to end its flying movement on the ground."
+            ]
+        },
+        {
+            "name": "Rider's Bond",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wyvern Knight",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Your {@creature Wyvern Companion|Ishiir} gains a variety of benefits while it is bonded to you.",
+                "The companion obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions, attitudes, and so on. If you are {@condition Incapacitated|Ishiir} or absent, your companion acts on its own.",
+                "Your {@creature Wyvern Companion|Ishiir} has abilities and game statistics determined in part by your level. Your companion uses your Proficiency bonus rather than its own. In addition to the areas where it normally uses its Proficiency bonus, a {@creature Wyvern Companion|Ishiir} also adds its {@variantrule Proficiency|Ishiir} bonus to its AC and to its damage rolls.",
+                "For each level you gain after 3rd, your {@creature Wyvern Companion|Ishiir} gains an additional hit die and increases its hit points accordingly.",
+                "Whenever you gain the Ability Score Improvement class feature, your companion's abilities also improve. Your companion can increase one ability score of your choice by 2, or it can increase two ability scores of your choice by 1. As normal, your companion can't increase an ability score above 20 using this feature unless its description specifies otherwise.",
+                "Whenever you use your Second Wind, your {@creature Wyvern Companion|Ishiir} also regains hit points equal to 5 + your Fighter level.",
+                "Whenver you use Action Surge, your {@creature Wyvern Companion|Ishiir} can also immediately make one bite attack."
+            ]
+        },
+        {
+            "name": "Powerful Bloodline",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wyvern Knight",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Your companion grows to Large size and the reach of its bite attack increase to 10 feet, it also no longer suffers from restrictions to its flying capabilities while you are riding it as long it is at least one size larger than you.",
+                "Additionally, your companion's attacks count as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage."
+            ]
+        },
+        {
+            "name": "Breath Weapon",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wyvern Knight",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "As an {@variantrule Action|Ishiir}, your companion can exhale destructive energy in a 30 feet cone. The damage type is that of its Draconic Blood feature. Each creature in the cone must make a Dexterity {@variantrule Saving Throw|Ishiir} against your companion's Save DC, which is equal to 8 + your proficiency + its Constitution modifier, taking {@damage 8d6} damage on a failed save, or half as much damage on a successful one.",
+                "Your companion cannot use this feature again until it has finished a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}, or until you expend a use of your Second Wind to allow it use it again (no action required)."
+            ]
+        },
+        {
+            "name": "Fight as One",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wyvern Knight",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "Your companion gains the Multiattack feature, which allows it to make two bite attacks as part of the same {@variantrule Action|Ishiir}. When you use your Action Surge, your companion can make two bite attacks instead of one or use its Breath Weapon."
+            ]
+        },
+        {
+            "name": "Terror of the Skies",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wyvern Knight",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 2,
+            "entries": [
+                "Your companion grows to Huge size and the reach of its bite attack increases to 15 feet, its Strength and Constitution also increase by 2, to a maximum of 22.",
+                "Additionally, the damage of its Breath Weapon increases to {@damage 10d6} and the cone size increases to 60 feet."
             ]
         }
     ]
