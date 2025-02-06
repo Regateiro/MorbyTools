@@ -1,0 +1,160 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Deoir",
+                "abbreviation": "Deoir",
+                "full": "Deoir",
+                "color": "#669900",
+                "url": "https://regateiro.pt/5etools/homebrew/deoir-sorcerer.json",
+                "authors": [
+                    "Roy"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "subclass": [
+        {
+            "name": "Nature's Embraced",
+            "shortName": "Nature",
+            "source": "Deoir",
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "page": 1,
+            "subclassFeatures": [
+                "Nature's Embraced|Sorcerer|Ishiir|Nature|Deoir|3",
+                "Whispers of the Living Land|Sorcerer|Ishiir|Nature|Deoir|6",
+                "Whispers of the Unheard|Sorcerer|Ishiir|Nature|Deoir|14",
+                "Wrath of Nature|Sorcerer|Ishiir|Nature|Deoir|14",
+                "Acceptance of the World|Sorcerer|Ishiir|Nature|Deoir|18"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Nature's Embraced",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "subclassShortName": "Nature",
+            "subclassSource": "Deoir",
+            "level": 3,
+            "entries": [
+                "The spark of magic can be found in all things that stand upon this world. Having gained the embrace of nature you are able to draw from this spark that is unbeknownst to most.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Natural Magic|Sorcerer|Ishiir|Nature|Deoir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Voices of the World|Sorcerer|Ishiir|Nature|Deoir|3"
+                }
+            ]
+        },
+        {
+            "name": "Natural Magic",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "subclassShortName": "Nature",
+            "subclassSource": "Deoir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Your link to the natural world allows you to learn spells from the Druid class. When your Spellcasting feature lets you learn or replace a sorcerer cantrip or a sorcerer spell of 1st level or higher, you can choose the new spell from the {@filter Druid spell list|spells|class=druid (Ishiir)|source=Ishiir} or the {@filter Sorcerer spell list|spells|class=sorcerer (Ishiir)|source=Ishiir}. You must otherwise obey all the restrictions for selecting the spell, and it becomes a sorcerer spell for you.",
+                "In addition, you learn two additional 1st-level spells of your choice from the {@filter Druid spell list|spells|class=druid (Ishiir)|level=1|source=Ishiir}. These spells count as sorcerer spells for you, but they don't count against the number of sorcerer spells you know.",
+                "When you reach 3rd level, 5th, 7th, and 9th level in this class, you also learn two additional spells of 2nd, 3rd, 4th, and 5th level of your choice from the {@filter Druid spell list|spells|class=druid (Ishiir)|source=Ishiir}, respectively."
+            ]
+        },
+        {
+            "name": "Voices of the World",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "subclassShortName": "Nature",
+            "subclassSource": "Deoir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Through your magical connection to nature, you can communicate with animals and plants. You have no control over this however and will always hear the voices of the wilds.",
+                "Any Charisma {@variantrule Ability Check|Ishiir|check} made while talking to these natural creatures have {@variantrule Advantage|Ishiir}."
+            ]
+        },
+        {
+            "name": "Whispers of the Living Land",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "subclassShortName": "Nature",
+            "subclassSource": "Deoir",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Moving through {@quickref difficult terrain||3} costs you no extra movement. You can also pass through nonmagical natural terain without being slowed and without taking damage from it if they have thorns, spines, or a similar hazard.",
+                "You can extend this benefit to an amount of creatures equal to double your {@variantrule Proficiency|Ishiir} modifier for 8 hours.",
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you spend 2 sorcery points to use it again.",
+                "In addition, you have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against plants that are magically created or manipulated to impede movement, such as those created by the {@spell Entangle|Ishiir} spell."
+            ]
+        },
+        {
+            "name": "Whispers of the Unheard",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "subclassShortName": "Nature",
+            "subclassSource": "Deoir",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "Through your magical connection to nature, you can communicate simple ideas with natural elements like rocks or a block of ice as you magicially animate them for an hour giving them thoughts to respond. They have knowledge of what happened to them and around them for the amount of time that they have existed."
+            ]
+        },
+        {
+            "name": "Wrath of Nature",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "subclassShortName": "Nature",
+            "subclassSource": "Deoir",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "When you cast a spell from your natural magic feature you can use 1 type of metamagic you know on it without spending sorcery points.",
+                "You can use this feature an amount of times equal to your {@variantrule Proficienty|Ishiir}.",
+                "You regain one use on a {@variantrule Short Rest|Ishiir} and all uses on a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Acceptance of the World",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "subclassShortName": "Nature",
+            "subclassSource": "Deoir",
+            "level": 18,
+            "header": 2,
+            "entries": [
+                "Starting at 18th level, your being is altered by the power of the natural world. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain a {@variantrule Fly Speed|Ishiir|Flying}, {@variantrule Burrow Speed|Ishiir|Burrowing}, {@variantrule Swim Speed|Ishiir|Swiming} and {@variantrule Climb Speed|Ishiir|Climbing Speed} equal to your {@variantrule Speed|Ishiir|Walking Speed}. As the natural laws are loosened for you.",
+                        "You can no longer be affected by plant based spells.",
+                        "Climates around you in a 10ft radius are always comforteble for you.",
+                        "Plant based spells have their area increased by x2."
+                    ]
+                }
+            ]
+        }
+    ]
+}
