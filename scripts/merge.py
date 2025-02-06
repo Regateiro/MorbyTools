@@ -12,6 +12,7 @@ data = {
                 "json": "Ishiir",
                 "abbreviation": "Ishiir",
                 "full": "Ishiir",
+                "color": "#337ab7",
                 "authors": [
                     "Sieg"
                 ],
