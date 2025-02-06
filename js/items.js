@@ -265,7 +265,7 @@ class ItemsPage extends ListPage {
 							e_({tag: "span", clazz: `col-1-5 ve-text-center`, text: `${item.value || item.valueMult ? Parser.itemValueToFullMultiCurrency(item, {isShortForm: true}).replace(/\(.*\)/, "").replace(/ +/g, "\u00A0") : "\u2014"}`}),
 							e_({
 								tag: "span",
-								clazz: `col-1 ve-text-center ${Parser.sourceJsonToColor(item.source)} pr-0`,
+								clazz: `col-1 ve-text-center ${Parser.sourceJsonToColor(item.source)} pr-0 ve-grow`,
 								style: Parser.sourceJsonToStylePart(item.source),
 								title: `${Parser.sourceJsonToFull(item.source)}${Renderer.utils.getSourceSubText(item)}`,
 								text: source,
@@ -314,7 +314,7 @@ class ItemsPage extends ListPage {
 							e_({tag: "span", clazz: `col-0-6 ve-text-center`, text: item._attunementCategory !== VeCt.STR_NO_ATTUNEMENT ? "×" : ""}),
 							e_({
 								tag: "span",
-								clazz: `col-1 ve-text-center ${Parser.sourceJsonToColor(item.source)} pr-0`,
+								clazz: `col-1 ve-text-center ${Parser.sourceJsonToColor(item.source)} pr-0 ve-grow`,
 								style: Parser.sourceJsonToStylePart(item.source),
 								title: `${Parser.sourceJsonToFull(item.source)}${Renderer.utils.getSourceSubText(item)}`,
 								text: source,
