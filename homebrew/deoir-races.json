@@ -27,12 +27,31 @@
 			"speed": 25,
 			"ability": [
 				{
+					"str": 1,
 					"choose": {
 						"from": [
+							"dex",
 							"con",
-							"str"
+							"int",
+							"wis",
+							"cha"
 						],
-						"count": 1
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"con": 1,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
 					}
 				}
 			],
@@ -55,8 +74,7 @@
 					"name": "Ability Score Enhancement",
 					"type": "entries",
 					"entries": [
-						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
-						"Chose your Constitution or Strength ability score. Increase that ability score's maximum by 2."
+						"Chose your Strength or Constitution ability score. Increase that ability score's maximum by 2."
 					]
 				},
 				{
@@ -113,12 +131,31 @@
 			"speed": 30,
 			"ability": [
 				{
+					"dex": 1,
 					"choose": {
 						"from": [
-							"dex",
-							"int"
+							"str",
+							"con",
+							"int",
+							"wis",
+							"cha"
 						],
-						"count": 1
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"int": 1,
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"dex",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
 					}
 				}
 			],
@@ -144,7 +181,6 @@
 					"name": "Ability Score Enhancement",
 					"type": "entries",
 					"entries": [
-						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
 						"Chose your Dexterity or Intelligence ability score. Increase that ability score's maximum by 2."
 					]
 				},
@@ -209,16 +245,87 @@
 			"speed": 30,
 			"ability": [
 				{
+					"str": 1,
 					"choose": {
 						"from": [
-							"str",
 							"dex",
 							"con",
 							"int",
 							"wis",
 							"cha"
 						],
-						"count": 2
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"dex": 1,
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"con": 1,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"int": 1,
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"dex",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"wis": 1,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"cha": 1,
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"dex",
+							"int",
+							"wis"
+						],
+						"count": 1,
+						"amount": 2
 					}
 				}
 			],
@@ -245,7 +352,6 @@
 					"name": "Ability Score Enhancement",
 					"type": "entries",
 					"entries": [
-						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
 						"Chose any ability score. Increase that ability score's maximum by 2."
 					]
 				},
@@ -328,12 +434,31 @@
 			"speed": 25,
 			"ability": [
 				{
+					"dex": 1,
 					"choose": {
 						"from": [
-							"dex",
-							"wis"
+							"str",
+							"con",
+							"int",
+							"wis",
+							"cha"
 						],
-						"count": 1
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"wis": 1,
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"dex",
+							"int",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
 					}
 				}
 			],
@@ -353,7 +478,6 @@
 					"name": "Ability Score Enhancement",
 					"type": "entries",
 					"entries": [
-						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
 						"Chose your Dexterity or Wisdom ability score. Increase that ability score's maximum by 2."
 					]
 				},
@@ -404,12 +528,31 @@
 			"speed": 30,
 			"ability": [
 				{
+					"str": 1,
+					"choose": {
+						"from": [
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"cha": 1,
 					"choose": {
 						"from": [
 							"str",
-							"cha"
+							"con",
+							"dex",
+							"int",
+							"wis"
 						],
-						"count": 1
+						"count": 1,
+						"amount": 2
 					}
 				}
 			],
@@ -456,7 +599,6 @@
 					"name": "Ability Score Enhancement",
 					"type": "entries",
 					"entries": [
-						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
 						"Chose your Strength or Charisma ability score. Increase that ability score's maximum by 2."
 					]
 				},
@@ -602,12 +744,31 @@
 			"speed": 25,
 			"ability": [
 				{
+					"dex": 1,
 					"choose": {
 						"from": [
-							"dex",
-							"int"
+							"str",
+							"con",
+							"int",
+							"wis",
+							"cha"
 						],
-						"count": 1
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"int": 1,
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"dex",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
 					}
 				}
 			],
@@ -628,7 +789,6 @@
 					"name": "Ability Score Enhancement",
 					"type": "entries",
 					"entries": [
-						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
 						"Chose your Dexterity or Intelligence ability score. Increase that ability score's maximum by 2."
 					]
 				},
@@ -679,12 +839,31 @@
 			"speed": 30,
 			"ability": [
 				{
+					"str": 1,
+					"choose": {
+						"from": [
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"wis": 1,
 					"choose": {
 						"from": [
 							"str",
-							"wis"
+							"con",
+							"dex",
+							"int",
+							"cha"
 						],
-						"count": 1
+						"count": 1,
+						"amount": 2
 					}
 				}
 			],
@@ -726,7 +905,6 @@
 					"name": "Ability Score Enhancement",
 					"type": "entries",
 					"entries": [
-						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
 						"Chose your Strength or Wisdom ability score. Increase that ability score's maximum by 2."
 					]
 				},
@@ -861,7 +1039,6 @@
 					"name": "Ability Score Enhancement",
 					"type": "entries",
 					"entries": [
-						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
 						"Chose your Constitution or Dexterity ability score. Increase that ability score's maximum by 2."
 					]
 				},
@@ -953,16 +1130,87 @@
 			],
 			"ability": [
 				{
+					"str": 1,
 					"choose": {
 						"from": [
-							"str",
 							"dex",
 							"con",
 							"int",
 							"wis",
 							"cha"
 						],
-						"count": 1
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"dex": 1,
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"con": 1,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"int": 1,
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"dex",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"wis": 1,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"cha": 1,
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"dex",
+							"int",
+							"wis"
+						],
+						"count": 1,
+						"amount": 2
 					}
 				}
 			],
@@ -994,7 +1242,6 @@
 					"name": "Ability Score Enhancement",
 					"type": "entries",
 					"entries": [
-						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
 						"Chose any ability score. Decrease that ability score by 1.",
 						"Chose any ability score. Increase that ability score's maximum by 2."
 					]
@@ -1060,12 +1307,31 @@
 			"speed": 35,
 			"ability": [
 				{
+					"str": 1,
+					"choose": {
+						"from": [
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
+					}
+				},
+				{
+					"con": 1,
 					"choose": {
 						"from": [
 							"str",
-							"con"
+							"dex",
+							"int",
+							"wis",
+							"cha"
 						],
-						"count": 1
+						"count": 1,
+						"amount": 2
 					}
 				}
 			],
@@ -1097,7 +1363,6 @@
 					"name": "Ability Score Enhancement",
 					"type": "entries",
 					"entries": [
-						"Chose any ability score that did not get increased by 1. Increase that ability score by 2.",
 						"Chose your Strength or Constitution ability score. Increase that ability score's maximum by 2."
 					]
 				},
