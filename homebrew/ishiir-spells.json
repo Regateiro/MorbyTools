@@ -11404,6 +11404,9 @@
                 "The target must repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns until it gets three successes or failures. If the target succeeds on three of these saves, the spell ends on the target. If the target fails three of the saves, the spell ends on the target. If the target fails three of the saves, the spell lasts for 7 days on it.",
                 "Whenever the {@condition Poisoned|Ishiir} target receives an effect that would end the {@condition Poisoned|Ishiir} condition, the target must succeed on a Constitution {@variantrule Saving Throw|Ishiir}, or the {@condition Poisoned|Ishiir} condition doesn't end on it."
             ],
+            "damageInflict": [
+                "necrotic"
+            ],
             "conditionInflict": [
                 "poisoned"
             ],
@@ -23492,6 +23495,9 @@
             "entries": [
                 "A cool light wreathes your body for the duration, emitting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. Until the spell ends, you have {@variantrule Resistance|Ishiir} to Radiant damage, and your melee attacks deal an extra {@damage 2d6} Radiant damage on a hit. In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can use your {@variantrule Reaction|Ishiir} to force the creature to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, the creature has the {@condition Blinded|Ishiir} condition until the end of your next turn."
             ],
+            "damageInflict": [
+                "radiant"
+            ],
             "areaTags": [
                 "ST"
             ],
@@ -26515,6 +26521,9 @@
                     "17": "3d6"
                 }
             },
+            "damageInflict": [
+                "radiant"
+            ],
             "areaTags": [
                 "ST"
             ],
@@ -29121,6 +29130,9 @@
                         "Your {@condition Concentration|Ishiir} can last longer with a spell slot of level 3-4 (up to 8 hours) or 5+ (up to 24 hours)."
                     ]
                 }
+            ],
+            "damageInflict": [
+                "force"
             ],
             "abilityCheck": [
                 "wisdom"
@@ -45403,6 +45415,10 @@
             "entries": [
                 "A vertical column of boiling water bursts forth from a location on the ground you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed save, a creature takes {@damage 2d8} bludgeoning and {@damage 10d6} fire damage and is knocked {@condition Prone|Ishiir}. On a successul save, a creature takes half as much damage and isn't knocked prone."
             ],
+            "damageInflict": [
+                "bludgeoning",
+                "fire"
+            ],
             "conditionInflict": [
                 "prone"
             ],
@@ -47246,6 +47262,9 @@
                     "17": "2d6"
                 }
             },
+            "damageInflict": [
+                "force"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -58464,6 +58483,9 @@
                         "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 1d6|2-9|1d6} for each slot level above 2nd."
                     ]
                 }
+            ],
+            "damageInflict": [
+                "bludgeoning"
             ],
             "miscTags": [
                 "FMV"
