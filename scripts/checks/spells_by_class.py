@@ -1,13 +1,17 @@
-import utils
+import json
 import sys
+
+def load_data(file: str) -> dict:
+    with open(file, "r", encoding="utf-8") as df:
+        return json.load(df)
 
 def sort_by_name(e):
     return e['name']
 
 def sort_by_level(e):
-    return e.get('level', 0)
+    return e['level']
 
-spells = utils.load_data("homebrew/ishiir-spells.json")
+spells = load_data("homebrew/ishiir-spells.json")
 
 spells["spell"].sort(key = sort_by_name)
 spells["spell"].sort(key = sort_by_level)
