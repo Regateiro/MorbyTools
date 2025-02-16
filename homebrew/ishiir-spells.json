@@ -22195,6 +22195,71 @@
             ]
         },
         {
+            "name": "Resonant Shield",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 4,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a triangle"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                "You are surrounded by a translucent barrier of sonic energy. You can end the spell early by using an {@variantrule Action|Ishiir} to dismiss it.",
+                "For the duration, you have {@variantrule Resistance|Ishiir} to thunder damage and {@variantrule Advantage|Ishiir} on all {@variantrule Saving Throw|Ishiir|Saving Throws} against effects that require you to hear them or their originator.",
+                "In addition, whenever a creature within 10 feet of you hits you with a melee Attack, the barrier responds with a violent vibration. The attacker takes {@damage 2d6} thunder damage."
+            ],
+            "damageResist": [
+                "thunder"
+            ],
+            "damageInflict": [
+                "thunder"
+            ],
+            "miscTags": [
+                "ADV"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Fire Storm",
             "page": 1,
             "source": "Ishiir",
