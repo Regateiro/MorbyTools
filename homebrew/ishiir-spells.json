@@ -16400,6 +16400,78 @@
             ]
         },
         {
+            "name": "Dancing Lightning",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 5,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a piece of copper wire"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "An arc of lightning jumps from your hand to a creature within range. The target has to make a Dexterity {@variantrule Saving Throw|Ishiir}. The target takes {@damage 7d10} lightning damage on a failed save, or half as much damage on a successful one. This spell ignores all forms of cover except total cover."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 7d10|5-9|2d10} for each slot level above 5th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Dispel Evil and Good",
             "page": 1,
             "source": "Ishiir",
