@@ -16230,6 +16230,73 @@
             ]
         },
         {
+            "name": "Acid Rain",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 6,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 300
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a glass vial filled with vinegar"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A deluge of potent acid rains down in a 30-foot-radius, 60-foot-high Cylinder centered on a point within range. Each creature in the cylind⁠er must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failure, a target takes {@damage 7d10} acid damage and {@variantrule Attack Roll|Ishiir|Attack Rolls} have {@variantrule Advantage|Ishiir} against it until the end of your next turn. On a success, it doesn't grant {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls}."
+            ],
+            "damageInflict": [
+                "acid"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "miscTags": [
+                "ADV"
+            ],
+            "areaTags": [
+                "Y"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Noxious Step",
             "page": 1,
             "source": "Ishiir",
