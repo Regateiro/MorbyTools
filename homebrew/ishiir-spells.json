@@ -16297,6 +16297,72 @@
             ]
         },
         {
+            "name": "Icy Prison",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 7,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "an iron thimble filled with water"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You attempt to freeze one creature that you can see within range solid. The target must make a Strength {@variantrule Saving Throw|Ishiir}. On a failed save, it is {@condition Restrained|Ishiir} as ice begins rapidly covering its body. On a successful save, the creature isn't affected.",
+                "A creature {@condition Restrained|Ishiir} by this spell must make another Strength {@variantrule Saving Throw|Ishiir} at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails its saves three times, it is trapped in the ice and subjected to the {@condition Frozen|Ishiir} condition for the duration. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.",
+                "If the creature is physically broken while frozen, it suffers from similar deformities if it reverts to its original state."
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "conditionInflict": [
+                "frozen",
+                "restrained"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Noxious Step",
             "page": 1,
             "source": "Ishiir",
