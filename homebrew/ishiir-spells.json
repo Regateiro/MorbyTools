@@ -8297,7 +8297,8 @@
             ],
             "miscTags": [
                 "SGT",
-                "ADV"
+                "ADV",
+                "SCL"
             ],
             "areaTags": [
                 "ST"
@@ -15894,6 +15895,92 @@
             "optionalfeatures": [
                 {
                     "name": "Incinerate",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Infirmity",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 2,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a death cap mushroom"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You cause the body of a creature in range to weaken and deteriorate. The target must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, the target takes {@damage 3d6} necrotic damage and cannot benefit from healing for the duration. On a successful save, the target takes half as much damage, and the spell ends.",
+                "For the duration, the target makes a Constitution {@variantrule Saving Throw|Ishiir} at the end of each of its turns. On a failed save, it takes necrotic damage again. On a successful save, the spell ends."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 3d6|2-9|1d6} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
                     "source": "Ishiir"
                 }
             ]
