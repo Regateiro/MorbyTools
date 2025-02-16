@@ -15986,6 +15986,93 @@
             ]
         },
         {
+            "name": "Corrosion",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 3,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a drop of vinegar"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You cause a creatue within range to begin magically dissolving. The target must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, the target takes {@damage 4d8} Acid damage and {@variantrule Attack Roll|Ishiir|Attack Rolls} have {@variantrule Advantage|Ishiir} against it for the duration. On a successful save, the target takes half as much damage, and the spell ends.",
+                "For the duration, the target makes a Constitution {@variantrule Saving Throw|Ishiir} at the end of each of its turns. On a failed save, it takes Acid damage again. On a successful save, the spell ends."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage 4d8|3-9|1d8} for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "acid"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SCL",
+                "ADV"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Envenom",
             "page": 1,
             "source": "Ishiir",
@@ -16015,8 +16102,7 @@
                     "duration": {
                         "type": "minute",
                         "amount": 1
-                    },
-                    "concentration": true
+                    }
                 }
             ],
             "entries": [
