@@ -2259,6 +2259,15 @@
             "entries": [
                 "You magically cause a target a bleeding wound. Make a ranged spell attack against the target. On a hit, the target takes {@damage 4d8} force damage and must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, it is {@condition Lacerated|Ishiir} for 1 minute. At the end of each of its turns, the target can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success."
             ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 4d8|2-9|1d8} for each slot level above 2nd."
+                    ]
+                }
+            ],
             "spellAttack": [
                 "R"
             ],
@@ -4623,9 +4632,10 @@
                 }
             ],
             "entries": [
-                "You create a blade-shaped planar rift about 3 feet long in an unoccupied space you can see within range. The blade lasts for the duration. When you cast this spell, you can make up to two melee spell attacks with the blade, each one against a creature, loose object, or structure within 5 feet of the blade. On a hit, the target takes {@damage 4d12} force damage. This attack scores a critical hit if the number on the {@dice d20} is 18 or higher. On a critical hit, the blade deals an extra {@damage 8d12} force damage (for a total of {@damage 12d12} force damage).",
-                "As a {@variantrule Bonus Action|Ishiir} on your turn, you can move the blade up to 30 feet to an unoccupied space you can see and then make up to two melee spell attacks with it again.",
-                "The blade can harmlessly pass through any barrier, including a {@spell Wall of Force|Ishiir}."
+                "You create a blade-shaped planar rift about 3 feet long in an unoccupied space you can see within range. The blade lasts for the duration. When you cast this spell, you can make up to two melee spell attacks with the blade, each one against a creature, loose object, or structure within 5 feet of the blade. On a hit, the target takes {@damage 4d12} + twice your spellcasting ability modifier force damage. This attack scores a critical hit if the number on the {@dice d20} is 18 or higher. On a critical hit, the blade deals an extra {@damage 8d12} force damage (for a total of {@damage 12d12} + twice your spellcasting ability modifier force damage). The target is disintegrated if this damage leaves it with 0 hit points.",
+                "A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a {@spell True Resurrection|Ishiir} or a {@spell Wish|Ishiir} spell.",
+                "As a {@variantrule Bonus Action|Ishiir} on your turn, you can move the blade up to 60 feet to an unoccupied space you can see and then make up to two melee spell attacks with it again.",
+                "The blade can harmlessly pass through any barrier, including a {@spell Wall of Force|Ishiir}, and its attacks instantly destroy any magical barrier that are destroyed by the {@spell Disintegrate|Ishiir} spell, such as {@spell Wall of Force|Ishiir} and {@spell Forcecage|Ishiir}."
             ],
             "damageInflict": [
                 "force"
@@ -23149,7 +23159,7 @@
                 "A prison in the shape of a box can be up to 10 feet on a side, creating a solid barrier that prevents any matter from passing through it and blocking any spells cast into or out from the area.",
                 "When you cast the spell, any creature that is completely inside the cage's area is trapped. Creatures only partially within the area, or those too large to fit inside the area, are pushed away from the center of the area until they are completely outside the area.",
                 "A creature inside the cage can't leave it by nonmagical means. If the creature tries to use teleportation or interplanar travel to leave the cage, it must first make a Charisma {@variantrule Saving Throw|Ishiir}. On a success, the creature can use that magic to exit the cage. On a failure, the creature can't exit the cage and wastes the use of the spell or effect. The cage also extends into the Ethereal Plane, blocking ethereal travel.",
-                "This spell can't be dispelled by {@spell Dispel Magic|Ishiir}."
+                "This spell can't be dispelled by {@spell Dispel Magic|Ishiir}. A {@spell Disintegrate|Ishiir} spell destroys the wall instantly, however."
             ],
             "savingThrow": [
                 "charisma"
@@ -31889,7 +31899,7 @@
             ],
             "entries": [
                 "You choose a point within range you can see and create a blast of vicious entropic energy that envelops everything in a 60-foot-radius sphere.",
-                "Each creature in that area must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a creature takes {@damage 8d12} acid damage and half as much on a successful one. On a failed save, the creature also begins to corrode rapidly, taking {@damage 4d12} acid damage at the end of each of its turns for the duration. While affected in this manner, healing the target receives is halved and its AC is reduced by 4.",
+                "Each creature in that area must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a creature takes {@damage 8d12} acid damage and half as much on a successful one. On a failed save, the creature also begins to corrode rapidly, taking {@damage 4d12} acid damage at the end of each of its turns for the duration and granting {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against it.",
                 "At the end of each of its turns, the target can repeat the {@variantrule Saving Throw|Ishiir}, ending the spell on a success.",
                 "If a creature is reduced to 0 hitpoints by the damage from this spell, its body is dissolved into nothingness."
             ],
@@ -31926,7 +31936,7 @@
                 }
             ],
             "miscTags": [
-                "MAC"
+                "ADV"
             ]
         },
         {
@@ -38261,7 +38271,7 @@
             ],
             "entries": [
                 "You create a sword-shaped plane of force that hovers within range. It lasts for the duration.",
-                "When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes force damage equal to {@damage 4d12} + your spellcasting ability modifier. Until the spell ends, you can use a {@variantrule Bonus Action|Ishiir} on each of your turns to move the sword up to 30 feet to a spot you can see and repeat this attack against the same target or a different one."
+                "When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes force damage equal to {@damage 4d12} + your spellcasting ability modifier. Until the spell ends, you can use a {@variantrule Bonus Action|Ishiir} on each of your turns to move the sword up to 60 feet to a spot you can see and repeat this attack against the same target or a different one."
             ],
             "damageInflict": [
                 "force"
@@ -43517,7 +43527,7 @@
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 4d8|1-9|1d8} for each slot level above 1st."
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 4d8|1-9|2d8} for each slot level above 1st."
                     ]
                 }
             ],
