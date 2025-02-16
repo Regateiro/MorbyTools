@@ -16150,6 +16150,75 @@
             ]
         },
         {
+            "name": "Entropic Ray",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a vial with sulfuric acid"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "A green beam of concentrated corrosive energy springs from your finger to a creature you can see within range.",
+                "The target has to make a Dexterity {@variantrule Saving Throw|Ishiir}. It takes {@damage 10d12} acid damage on a failed save, or half as much damage on a successful one. On a failed save, the target also begins rapidly dissolving for the spell's duration. At the end of each of its turns, the target repeats the saving throw. It takes {@damage 5d12} acid damage on a failed save, and the spell ends on a successful one.",
+                "If the damage from this spell kills a target, its body is dissolved into nothingness."
+            ],
+            "damageInflict": [
+                "acid"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Dark Orb",
             "page": 1,
             "source": "Ishiir",
