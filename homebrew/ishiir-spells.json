@@ -58546,6 +58546,77 @@
             ]
         },
         {
+            "name": "Wall of Lightning",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a citrus fruit and a circle of copper wire"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                "A crackling wall of electrical energy appears at a point you choose within range. The wall appears in any orientation you choose: horizontally, vertically, or diagonally. It can be free floating, or it can rest on a solid surface. The wall can be up to 60 feet long, 10 feet high, and 5 feet thick. The wall blocks line of sight, but creatures and objects can pass through it.",
+                "When the wall appears, each creature in its area must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed save, a creature takes {@damage 9d8} lightning damage. A creature that ends its turn in the wall's area takes {@damage 9d8} lightning damage.",
+                "Until the spell ends, you can use an {@variantrule Action|Ishiir} to launch a bolt of lightning from the wall at one creature you can see within 100 feet of it. The bolt is 100 feet long and 5 feet wide. Each creature in the line must make a Dexterity {@variantrule Saving Throw|Ishiir}. A creature takes {@damage 9d8} lightning damage on a failed save, or half as much damage on a successful one."
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "ST",
+                "W"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Wall of Force",
             "page": 1,
             "source": "Ishiir",
