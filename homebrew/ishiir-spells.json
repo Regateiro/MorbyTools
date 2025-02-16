@@ -434,6 +434,73 @@
             ]
         },
         {
+            "name": "Acid Rain",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 6,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 300
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a glass vial filled with vinegar"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A deluge of potent acid rains down in a 30-foot-radius, 60-foot-high Cylinder centered on a point within range. Each creature in the cylind\u2060er must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failure, a target takes {@damage 7d10} acid damage and {@variantrule Attack Roll|Ishiir|Attack Rolls} have {@variantrule Advantage|Ishiir} against it until the end of your next turn. On a success, it doesn't grant {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls}."
+            ],
+            "damageInflict": [
+                "acid"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "miscTags": [
+                "ADV"
+            ],
+            "areaTags": [
+                "Y"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Acid Splash",
             "page": 1,
             "source": "Ishiir",
@@ -8250,87 +8317,6 @@
             ]
         },
         {
-            "name": "Shadow Ray",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 1,
-            "school": "N",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 60
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "A beam of shadowy energy streaks from your hand to a creature you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d8} necrotic damage. If you are in dim light or darkness, you have {@variantrule Advantage|Ishiir} on the attack roll."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 3d8|1-9|1d8} for each slot level above 1st."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "necrotic"
-            ],
-            "spellAttack": [
-                "R"
-            ],
-            "miscTags": [
-                "SGT",
-                "ADV",
-                "SCL"
-            ],
-            "areaTags": [
-                "ST"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Warlock",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                },
-                {
-                    "name": "Magic Initiate",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
             "name": "Circle of Death",
             "page": 1,
             "source": "Ishiir",
@@ -10099,145 +10085,6 @@
             "optionalfeatures": [
                 {
                     "name": "Breath of Winter",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
-            "name": "Crippling Plague",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 8,
-            "school": "N",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 150
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 10
-                    }
-                }
-            ],
-            "entries": [
-                "You fill a 30 ft radius-radius-sphere with an enfeebling magical plague. Every creature in the area has to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, a target is affected by the plague for the duration.",
-                "An affected target is {@condition Poisoned|Ishiir}, can't take reactions, its speed his halved, and it deals half damage with all melee weapon attacks.",
-                "Additionally, an affected target must roll a {@dice d10} at the start of each of its turns to determine additional effects for that turn.",
-                {
-                    "type": "table",
-                    "caption": "Crippling Plague Effects",
-                    "colLabels": [
-                        "{@dice d10}",
-                        "Crippling Plague Effects"
-                    ],
-                    "colStyles": [
-                        "col-1 text-center",
-                        "col-11"
-                    ],
-                    "rows": [
-                        [
-                            {
-                                "type": "cell",
-                                "roll": {
-                                    "exact": 1
-                                }
-                            },
-                            "The creature falls {@condition Prone|Ishiir} and its speed is reduced to 0 until the end of its turn."
-                        ],
-                        [
-                            {
-                                "type": "cell",
-                                "roll": {
-                                    "min": 2,
-                                    "max": 6
-                                }
-                            },
-                            "The creature is {@condition Incapacitated|Ishiir} until the start of its next turn."
-                        ],
-                        [
-                            {
-                                "type": "cell",
-                                "roll": {
-                                    "min": 7,
-                                    "max": 8
-                                }
-                            },
-                            "The creature takes {@damage 10d10} poison damage."
-                        ],
-                        [
-                            {
-                                "type": "cell",
-                                "roll": {
-                                    "min": 9,
-                                    "max": 10
-                                }
-                            },
-                            "The creature can act and move normally."
-                        ]
-                    ]
-                },
-                "At the end of each of its turns, an affected target can make a Constitution {@variantrule Saving Throw|Ishiir}. If it succeeds, this effect ends for that target."
-            ],
-            "damageInflict": [
-                "poison"
-            ],
-            "conditionInflict": [
-                "incapacitated",
-                "poisoned",
-                "prone"
-            ],
-            "savingThrow": [
-                "constitution"
-            ],
-            "miscTags": [
-                "RO"
-            ],
-            "areaTags": [
-                "S"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Cleric",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Druid",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Warlock",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
                     "source": "Ishiir"
                 }
             ]
@@ -12658,6 +12505,93 @@
             ]
         },
         {
+            "name": "Corrosion",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 3,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a drop of vinegar"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You cause a creatue within range to begin magically dissolving. The target must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, the target takes {@damage 4d8} Acid damage and {@variantrule Attack Roll|Ishiir|Attack Rolls} have {@variantrule Advantage|Ishiir} against it for the duration. On a successful save, the target takes half as much damage, and the spell ends.",
+                "For the duration, the target makes a Constitution {@variantrule Saving Throw|Ishiir} at the end of each of its turns. On a failed save, it takes Acid damage again. On a successful save, the spell ends."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage 4d8|3-9|1d8} for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "acid"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SCL",
+                "ADV"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Counterspell",
             "page": 1,
             "source": "Ishiir",
@@ -13449,6 +13383,145 @@
             ]
         },
         {
+            "name": "Crippling Plague",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                "You fill a 30 ft radius-radius-sphere with an enfeebling magical plague. Every creature in the area has to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, a target is affected by the plague for the duration.",
+                "An affected target is {@condition Poisoned|Ishiir}, can't take reactions, its speed his halved, and it deals half damage with all melee weapon attacks.",
+                "Additionally, an affected target must roll a {@dice d10} at the start of each of its turns to determine additional effects for that turn.",
+                {
+                    "type": "table",
+                    "caption": "Crippling Plague Effects",
+                    "colLabels": [
+                        "{@dice d10}",
+                        "Crippling Plague Effects"
+                    ],
+                    "colStyles": [
+                        "col-1 text-center",
+                        "col-11"
+                    ],
+                    "rows": [
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 1
+                                }
+                            },
+                            "The creature falls {@condition Prone|Ishiir} and its speed is reduced to 0 until the end of its turn."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "min": 2,
+                                    "max": 6
+                                }
+                            },
+                            "The creature is {@condition Incapacitated|Ishiir} until the start of its next turn."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "min": 7,
+                                    "max": 8
+                                }
+                            },
+                            "The creature takes {@damage 10d10} poison damage."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "min": 9,
+                                    "max": 10
+                                }
+                            },
+                            "The creature can act and move normally."
+                        ]
+                    ]
+                },
+                "At the end of each of its turns, an affected target can make a Constitution {@variantrule Saving Throw|Ishiir}. If it succeeds, this effect ends for that target."
+            ],
+            "damageInflict": [
+                "poison"
+            ],
+            "conditionInflict": [
+                "incapacitated",
+                "poisoned",
+                "prone"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "RO"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Crown of Madness",
             "page": 1,
             "source": "Ishiir",
@@ -13904,6 +13977,78 @@
             ]
         },
         {
+            "name": "Dancing Lightning",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 5,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a piece of copper wire"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "An arc of lightning jumps from your hand to a creature within range. The target has to make a Dexterity {@variantrule Saving Throw|Ishiir}. The target takes {@damage 7d10} lightning damage on a failed save, or half as much damage on a successful one. This spell ignores all forms of cover except total cover."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 7d10|5-9|2d10} for each slot level above 5th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Dancing Lights",
             "page": 1,
             "source": "Ishiir",
@@ -14048,6 +14193,86 @@
             ],
             "classes": {
                 "fromClassList": [
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Dark Orb",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 3,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a pinch of soot and a piece of black velvet"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You launch a sphere of negative energy at a point within range, which then explodes in a 20-foot-radius centered on that point. Each creature in the area must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, a target takes {@damage 6d6} necrotic damage and is knocked {@condition Prone|Ishiir}. On a success, it takes half as much damage and isn't knocked {@condition Prone|Ishiir}.",
+                "The sphere spreads around corners and ends any spell of 2nd level or lower in the area that creates light."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage 6d6|3-9|1d6} for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
                     {
                         "name": "Warlock",
                         "source": "Ishiir"
@@ -16039,870 +16264,6 @@
             ]
         },
         {
-            "name": "Infirmity",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 2,
-            "school": "N",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 60
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": "a death cap mushroom"
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    },
-                    "concentration": true
-                }
-            ],
-            "entries": [
-                "You cause the body of a creature in range to weaken and deteriorate. The target must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, the target takes {@damage 3d6} necrotic damage and cannot benefit from healing for the duration. On a successful save, the target takes half as much damage, and the spell ends.",
-                "For the duration, the target makes a Constitution {@variantrule Saving Throw|Ishiir} at the end of each of its turns. On a failed save, it takes necrotic damage again. On a successful save, the spell ends."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 3d6|2-9|1d6} for each slot level above 2nd."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "necrotic"
-            ],
-            "savingThrow": [
-                "constitution"
-            ],
-            "miscTags": [
-                "SCL"
-            ],
-            "areaTags": [
-                "ST"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Cleric",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Warlock",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
-            "name": "Corrosion",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 3,
-            "school": "T",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 60
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": "a drop of vinegar"
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    },
-                    "concentration": true
-                }
-            ],
-            "entries": [
-                "You cause a creatue within range to begin magically dissolving. The target must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, the target takes {@damage 4d8} Acid damage and {@variantrule Attack Roll|Ishiir|Attack Rolls} have {@variantrule Advantage|Ishiir} against it for the duration. On a successful save, the target takes half as much damage, and the spell ends.",
-                "For the duration, the target makes a Constitution {@variantrule Saving Throw|Ishiir} at the end of each of its turns. On a failed save, it takes Acid damage again. On a successful save, the spell ends."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage 4d8|3-9|1d8} for each slot level above 3rd."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "acid"
-            ],
-            "savingThrow": [
-                "constitution"
-            ],
-            "miscTags": [
-                "SCL",
-                "ADV"
-            ],
-            "areaTags": [
-                "ST"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Druid",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Ranger",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
-            "name": "Glacial Spike",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 3,
-            "school": "V",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 120
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "You magically form a large icicle and hurl it at a creature within range.",
-                "The target must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed save, the target takes {@damage 4d8} piercing and {@damage 4d6} cold damage and its speed is halved until the start of your next turn."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the piercing damage increases by {@scaledamage 4d8|3-9|1d8} and the cold damage by {@scaledamage 4d6|3-9|1d6} for each slot level above 3rd."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "piercing",
-                "cold"
-            ],
-            "savingThrow": [
-                "dexterity"
-            ],
-            "miscTags": [
-                "SCL"
-            ],
-            "areaTags": [
-                "ST"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Druid",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
-            "name": "Entropic Ray",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 8,
-            "school": "V",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 60
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": "a vial with sulfuric acid"
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    }
-                }
-            ],
-            "entries": [
-                "A green beam of concentrated corrosive energy springs from your finger to a creature you can see within range.",
-                "The target has to make a Dexterity {@variantrule Saving Throw|Ishiir}. It takes {@damage 10d12} acid damage on a failed save, or half as much damage on a successful one. On a failed save, the target also begins rapidly dissolving for the spell's duration. At the end of each of its turns, the target repeats the saving throw. It takes {@damage 5d12} acid damage on a failed save, and the spell ends on a successful one.",
-                "If the damage from this spell kills a target, its body is dissolved into nothingness."
-            ],
-            "damageInflict": [
-                "acid"
-            ],
-            "savingThrow": [
-                "dexterity"
-            ],
-            "miscTags": [
-                "SGT"
-            ],
-            "areaTags": [
-                "ST"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
-            "name": "Dark Orb",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 3,
-            "school": "N",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 120
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": "a pinch of soot and a piece of black velvet"
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "You launch a sphere of negative energy at a point within range, which then explodes in a 20-foot-radius centered on that point. Each creature in the area must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, a target takes {@damage 6d6} necrotic damage and is knocked {@condition Prone|Ishiir}. On a success, it takes half as much damage and isn't knocked {@condition Prone|Ishiir}.",
-                "The sphere spreads around corners and ends any spell of 2nd level or lower in the area that creates light."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage 6d6|3-9|1d6} for each slot level above 3rd."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "necrotic"
-            ],
-            "savingThrow": [
-                "constitution"
-            ],
-            "conditionInflict": [
-                "prone"
-            ],
-            "miscTags": [
-                "SCL"
-            ],
-            "areaTags": [
-                "S"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Warlock",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
-            "name": "Flickering Venom",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 6,
-            "school": "N",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 150
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": "three sets of wasp wings and stingers"
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    }
-                }
-            ],
-            "entries": [
-                "You create a bolt of venomous energy that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A creature can be targeted by only one of the bolts.",
-                "A target must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a target takes {@damage 8d8} poison damage and is {@condition Poisoned|Ishiir} for 1 minute. At the end of each of its turns, an affected creature can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success. On a success, it takes half as much damage and isn't {@condition Poisoned|Ishiir}."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 7th level or higher, one additional bolt leaps from the first target to another target for each slot level above 6th."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "poison"
-            ],
-            "savingThrow": [
-                "constitution"
-            ],
-            "conditionInflict": [
-                "poisoned"
-            ],
-            "miscTags": [
-                "SCL",
-                "SGT"
-            ],
-            "areaTags": [
-                "ST",
-                "MT"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Druid",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Warlock",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
-            "name": "Acid Rain",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 6,
-            "school": "V",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 300
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": "a glass vial filled with vinegar"
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "A deluge of potent acid rains down in a 30-foot-radius, 60-foot-high Cylinder centered on a point within range. Each creature in the cylind⁠er must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failure, a target takes {@damage 7d10} acid damage and {@variantrule Attack Roll|Ishiir|Attack Rolls} have {@variantrule Advantage|Ishiir} against it until the end of your next turn. On a success, it doesn't grant {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls}."
-            ],
-            "damageInflict": [
-                "acid"
-            ],
-            "savingThrow": [
-                "dexterity"
-            ],
-            "miscTags": [
-                "ADV"
-            ],
-            "areaTags": [
-                "Y"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Druid",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
-            "name": "Icy Prison",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 7,
-            "school": "V",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 150
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": "an iron thimble filled with water"
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "You attempt to freeze one creature that you can see within range solid. The target must make a Strength {@variantrule Saving Throw|Ishiir}. On a failed save, it is {@condition Restrained|Ishiir} as ice begins rapidly covering its body. On a successful save, the creature isn't affected.",
-                "A creature {@condition Restrained|Ishiir} by this spell must make another Strength {@variantrule Saving Throw|Ishiir} at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails its saves three times, it is trapped in the ice and subjected to the {@condition Frozen|Ishiir} condition for the duration. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.",
-                "If the creature is physically broken while frozen, it suffers from similar deformities if it reverts to its original state."
-            ],
-            "savingThrow": [
-                "strength"
-            ],
-            "conditionInflict": [
-                "frozen",
-                "restrained"
-            ],
-            "miscTags": [
-                "SGT"
-            ],
-            "areaTags": [
-                "ST"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
-            "name": "Noxious Step",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 4,
-            "school": "C",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 90
-                }
-            },
-            "components": {
-                "v": true
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "You teleport yourself to an unoccupied space you can see within range and leave behind a cloud of noxious gas that evaporates at the end of the current turn. Any creature within a 20-feet-sphere of the space you left must make a Constitution {@variantrule Saving Throw|Ishiir}, taking {@damage 7d6} poison damage on a failed save, or half as much damage on a successful one.",
-                "You can bring along objects as long as their weight doesn't exceed what you can carry. You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell, and there must be an unoccupied space within 5 feet of your destination space for the creature to appear in; otherwise, the creature is left behind."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage 7d6|4-9|2d6} for each slot level above 4th."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "poison"
-            ],
-            "savingThrow": [
-                "constitution"
-            ],
-            "miscTags": [
-                "SGT",
-                "SCL",
-                "TP"
-            ],
-            "areaTags": [
-                "S"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Ranger",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Warlock",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
-            "name": "Envenom",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 2,
-            "school": "N",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 90
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": "a scorpion stinger"
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    }
-                }
-            ],
-            "entries": [
-                "You can magically poison a foe. Choose one creature that you can see within range to make a Constitution {@variantrule Saving Throw|Ishiir}. If it fails, the target is {@condition Poisoned|Ishiir} for the duration. While poisoned in this manner, the creature cannot have {@variantrule Resistance|Ishiir} to poison damage and {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against poison. At the end of each of its turns, the target can make a Constitution {@variantrule Saving Throw|Ishiir}. On a success, the spell ends."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
-                    ]
-                }
-            ],
-            "conditionInflict": [
-                "poisoned"
-            ],
-            "savingThrow": [
-                "constitution"
-            ],
-            "miscTags": [
-                "SGT",
-                "SCL"
-            ],
-            "areaTags": [
-                "ST"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Druid",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Ranger",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Warlock",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
-            "name": "Dancing Lightning",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 5,
-            "school": "V",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 90
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": "a piece of copper wire"
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "An arc of lightning jumps from your hand to a creature within range. The target has to make a Dexterity {@variantrule Saving Throw|Ishiir}. The target takes {@damage 7d10} lightning damage on a failed save, or half as much damage on a successful one. This spell ignores all forms of cover except total cover."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 7d10|5-9|2d10} for each slot level above 5th."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "lightning"
-            ],
-            "savingThrow": [
-                "dexterity"
-            ],
-            "miscTags": [
-                "SCL"
-            ],
-            "areaTags": [
-                "ST"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
             "name": "Dispel Evil and Good",
             "page": 1,
             "source": "Ishiir",
@@ -18130,72 +17491,6 @@
             ]
         },
         {
-            "name": "Dragon's Roar",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 8,
-            "school": "V",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "self"
-                }
-            },
-            "components": {
-                "v": true
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "You magically project a mighty draconic roar either in a 60-foot-cone or in a 30-foot-emanation (your choice). Each creature in the area must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, a target takes {@damage 10d8} thunder damage and is {@condition Deafened|Ishiir} and {@condition Dazed|Ishiir} until the end of your next turn. On a success, a target takes half as much damage and is not {@condition Deafened|Ishiir} and {@condition Dazed|Ishiir}."
-            ],
-            "conditionInflict": [
-                "dazed",
-                "deafened"
-            ],
-            "damageInflict": [
-                "thunder"
-            ],
-            "savingThrow": [
-                "constitution"
-            ],
-            "areaTags": [
-                "N",
-                "S"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Bard",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
             "name": "Dragon's Breath",
             "page": 1,
             "source": "Ishiir",
@@ -18310,6 +17605,72 @@
                             "subSubclass": "Dragon",
                             "shortName": "Profane Soul"
                         }
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Dragon's Roar",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You magically project a mighty draconic roar either in a 60-foot-cone or in a 30-foot-emanation (your choice). Each creature in the area must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, a target takes {@damage 10d8} thunder damage and is {@condition Deafened|Ishiir} and {@condition Dazed|Ishiir} until the end of your next turn. On a success, a target takes half as much damage and is not {@condition Deafened|Ishiir} and {@condition Dazed|Ishiir}."
+            ],
+            "conditionInflict": [
+                "dazed",
+                "deafened"
+            ],
+            "damageInflict": [
+                "thunder"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "N",
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -20467,6 +19828,164 @@
                             "source": "Ishiir",
                             "shortName": "Beauty"
                         }
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Entropic Ray",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a vial with sulfuric acid"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "A green beam of concentrated corrosive energy springs from your finger to a creature you can see within range.",
+                "The target has to make a Dexterity {@variantrule Saving Throw|Ishiir}. It takes {@damage 10d12} acid damage on a failed save, or half as much damage on a successful one. On a failed save, the target also begins rapidly dissolving for the spell's duration. At the end of each of its turns, the target repeats the saving throw. It takes {@damage 5d12} acid damage on a failed save, and the spell ends on a successful one.",
+                "If the damage from this spell kills a target, its body is dissolved into nothingness."
+            ],
+            "damageInflict": [
+                "acid"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Envenom",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 2,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a scorpion stinger"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You can magically poison a foe. Choose one creature that you can see within range to make a Constitution {@variantrule Saving Throw|Ishiir}. If it fails, the target is {@condition Poisoned|Ishiir} for the duration. While poisoned in this manner, the creature cannot have {@variantrule Resistance|Ishiir} to poison damage and {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against poison. At the end of each of its turns, the target can make a Constitution {@variantrule Saving Throw|Ishiir}. On a success, the spell ends."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "poisoned"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SGT",
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -22764,71 +22283,6 @@
             ]
         },
         {
-            "name": "Resonant Shield",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 4,
-            "school": "A",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "self"
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": "a triangle"
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 10
-                    }
-                }
-            ],
-            "entries": [
-                "You are surrounded by a translucent barrier of sonic energy. You can end the spell early by using an {@variantrule Action|Ishiir} to dismiss it.",
-                "For the duration, you have {@variantrule Resistance|Ishiir} to thunder damage and {@variantrule Advantage|Ishiir} on all {@variantrule Saving Throw|Ishiir|Saving Throws} against effects that require you to hear them or their originator.",
-                "In addition, whenever a creature within 10 feet of you hits you with a melee Attack, the barrier responds with a violent vibration. The attacker takes {@damage 2d6} thunder damage."
-            ],
-            "damageResist": [
-                "thunder"
-            ],
-            "damageInflict": [
-                "thunder"
-            ],
-            "miscTags": [
-                "ADV"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Bard",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
             "name": "Fire Storm",
             "page": 1,
             "source": "Ishiir",
@@ -23964,6 +23418,96 @@
             "optionalfeatures": [
                 {
                     "name": "Imprisoning Rock",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Flickering Venom",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 6,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "three sets of wasp wings and stingers"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You create a bolt of venomous energy that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A creature can be targeted by only one of the bolts.",
+                "A target must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a target takes {@damage 8d8} poison damage and is {@condition Poisoned|Ishiir} for 1 minute. At the end of each of its turns, an affected creature can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success. On a success, it takes half as much damage and isn't {@condition Poisoned|Ishiir}."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 7th level or higher, one additional bolt leaps from the first target to another target for each slot level above 6th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "poison"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "conditionInflict": [
+                "poisoned"
+            ],
+            "miscTags": [
+                "SCL",
+                "SGT"
+            ],
+            "areaTags": [
+                "ST",
+                "MT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
                     "source": "Ishiir"
                 }
             ]
@@ -25967,6 +25511,83 @@
                 },
                 {
                     "name": "Magic Initiate",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Glacial Spike",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 3,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You magically form a large icicle and hurl it at a creature within range.",
+                "The target must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed save, the target takes {@damage 4d8} piercing and {@damage 4d6} cold damage and its speed is halved until the start of your next turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the piercing damage increases by {@scaledamage 4d8|3-9|1d8} and the cold damage by {@scaledamage 4d6|3-9|1d6} for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "piercing",
+                "cold"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
                     "source": "Ishiir"
                 }
             ]
@@ -30874,6 +30495,72 @@
             ]
         },
         {
+            "name": "Icy Prison",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 7,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "an iron thimble filled with water"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You attempt to freeze one creature that you can see within range solid. The target must make a Strength {@variantrule Saving Throw|Ishiir}. On a failed save, it is {@condition Restrained|Ishiir} as ice begins rapidly covering its body. On a successful save, the creature isn't affected.",
+                "A creature {@condition Restrained|Ishiir} by this spell must make another Strength {@variantrule Saving Throw|Ishiir} at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails its saves three times, it is trapped in the ice and subjected to the {@condition Frozen|Ishiir} condition for the duration. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.",
+                "If the creature is physically broken while frozen, it suffers from similar deformities if it reverts to its original state."
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "conditionInflict": [
+                "frozen",
+                "restrained"
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Id Insinuation",
             "page": 1,
             "source": "Ishiir",
@@ -31954,6 +31641,92 @@
                 },
                 {
                     "name": "Wood Elf Magic",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Infirmity",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 2,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a death cap mushroom"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You cause the body of a creature in range to weaken and deteriorate. The target must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, the target takes {@damage 3d6} necrotic damage and cannot benefit from healing for the duration. On a successful save, the target takes half as much damage, and the spell ends.",
+                "For the duration, the target makes a Constitution {@variantrule Saving Throw|Ishiir} at the end of each of its turns. On a failed save, it takes necrotic damage again. On a successful save, the spell ends."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 3d6|2-9|1d6} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
                     "source": "Ishiir"
                 }
             ]
@@ -39915,6 +39688,87 @@
             ]
         },
         {
+            "name": "Noxious Step",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 4,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You teleport yourself to an unoccupied space you can see within range and leave behind a cloud of noxious gas that evaporates at the end of the current turn. Any creature within a 20-feet-sphere of the space you left must make a Constitution {@variantrule Saving Throw|Ishiir}, taking {@damage 7d6} poison damage on a failed save, or half as much damage on a successful one.",
+                "You can bring along objects as long as their weight doesn't exceed what you can carry. You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell, and there must be an unoccupied space within 5 feet of your destination space for the creature to appear in; otherwise, the creature is left behind."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage 7d6|4-9|2d6} for each slot level above 4th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "poison"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SGT",
+                "SCL",
+                "TP"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Nystul's Magic Aura",
             "page": 1,
             "source": "Ishiir",
@@ -45409,6 +45263,71 @@
             ]
         },
         {
+            "name": "Resonant Shield",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 4,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a triangle"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                "You are surrounded by a translucent barrier of sonic energy. You can end the spell early by using an {@variantrule Action|Ishiir} to dismiss it.",
+                "For the duration, you have {@variantrule Resistance|Ishiir} to thunder damage and {@variantrule Advantage|Ishiir} on all {@variantrule Saving Throw|Ishiir|Saving Throws} against effects that require you to hear them or their originator.",
+                "In addition, whenever a creature within 10 feet of you hits you with a melee Attack, the barrier responds with a violent vibration. The attacker takes {@damage 2d6} thunder damage."
+            ],
+            "damageResist": [
+                "thunder"
+            ],
+            "damageInflict": [
+                "thunder"
+            ],
+            "miscTags": [
+                "ADV"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Resurrection",
             "page": 1,
             "source": "Ishiir",
@@ -47797,6 +47716,87 @@
             ]
         },
         {
+            "name": "Shadow Ray",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 1,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A beam of shadowy energy streaks from your hand to a creature you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d8} necrotic damage. If you are in dim light or darkness, you have {@variantrule Advantage|Ishiir} on the attack roll."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 3d8|1-9|1d8} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "miscTags": [
+                "SGT",
+                "ADV",
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                },
+                {
+                    "name": "Magic Initiate",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Shadow of Moil",
             "page": 1,
             "source": "Ishiir",
@@ -49231,7 +49231,7 @@
             "areaTags": [
                 "ST"
             ],
-            "miscTags" : [
+            "miscTags": [
                 "EAB"
             ],
             "classes": {
@@ -58751,77 +58751,6 @@
             ]
         },
         {
-            "name": "Wall of Lightning",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 8,
-            "school": "V",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 120
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": "a citrus fruit and a circle of copper wire"
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 10
-                    }
-                }
-            ],
-            "entries": [
-                "A crackling wall of electrical energy appears at a point you choose within range. The wall appears in any orientation you choose: horizontally, vertically, or diagonally. It can be free floating, or it can rest on a solid surface. The wall can be up to 60 feet long, 10 feet high, and 5 feet thick. The wall blocks line of sight, but creatures and objects can pass through it.",
-                "When the wall appears, each creature in its area must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed save, a creature takes {@damage 9d8} lightning damage. A creature that ends its turn in the wall's area takes {@damage 9d8} lightning damage.",
-                "Until the spell ends, you can use an {@variantrule Action|Ishiir} to launch a bolt of lightning from the wall at one creature you can see within 100 feet of it. The bolt is 100 feet long and 5 feet wide. Each creature in the line must make a Dexterity {@variantrule Saving Throw|Ishiir}. A creature takes {@damage 9d8} lightning damage on a failed save, or half as much damage on a successful one."
-            ],
-            "damageInflict": [
-                "lightning"
-            ],
-            "savingThrow": [
-                "dexterity"
-            ],
-            "areaTags": [
-                "ST",
-                "W"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Druid",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
             "name": "Wall of Force",
             "page": 1,
             "source": "Ishiir",
@@ -59094,6 +59023,77 @@
                     },
                     {
                         "name": "Cleric",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Wall of Lightning",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a citrus fruit and a circle of copper wire"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                "A crackling wall of electrical energy appears at a point you choose within range. The wall appears in any orientation you choose: horizontally, vertically, or diagonally. It can be free floating, or it can rest on a solid surface. The wall can be up to 60 feet long, 10 feet high, and 5 feet thick. The wall blocks line of sight, but creatures and objects can pass through it.",
+                "When the wall appears, each creature in its area must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed save, a creature takes {@damage 9d8} lightning damage. A creature that ends its turn in the wall's area takes {@damage 9d8} lightning damage.",
+                "Until the spell ends, you can use an {@variantrule Action|Ishiir} to launch a bolt of lightning from the wall at one creature you can see within 100 feet of it. The bolt is 100 feet long and 5 feet wide. Each creature in the line must make a Dexterity {@variantrule Saving Throw|Ishiir}. A creature takes {@damage 9d8} lightning damage on a failed save, or half as much damage on a successful one."
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "ST",
+                "W"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
                         "source": "Ishiir"
                     }
                 ]
