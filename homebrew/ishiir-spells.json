@@ -10104,6 +10104,145 @@
             ]
         },
         {
+            "name": "Crippling Plague",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                "You fill a 30 ft radius-radius-sphere with an enfeebling magical plague. Every creature in the area has to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, a target is affected by the plague for the duration.",
+                "An affected target is {@condition Poisoned|Ishiir}, can't take reactions, its speed his halved, and it deals half damage with all melee weapon attacks.",
+                "Additionally, an affected target must roll a {@dice d10} at the start of each of its turns to determine additional effects for that turn.",
+                {
+                    "type": "table",
+                    "caption": "Crippling Plague Effects",
+                    "colLabels": [
+                        "{@dice d10}",
+                        "Crippling Plague Effects"
+                    ],
+                    "colStyles": [
+                        "col-1 text-center",
+                        "col-11"
+                    ],
+                    "rows": [
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 1
+                                }
+                            },
+                            "The creature falls {@condition Prone|Ishiir} and its speed is reduced to 0 until the end of its turn."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "min": 2,
+                                    "max": 6
+                                }
+                            },
+                            "The creature is {@condition Incapacitated|Ishiir} until the start of its next turn."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "min": 7,
+                                    "max": 8
+                                }
+                            },
+                            "The creature takes {@damage 10d10} poison damage."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "min": 9,
+                                    "max": 10
+                                }
+                            },
+                            "The creature can act and move normally."
+                        ]
+                    ]
+                },
+                "At the end of each of its turns, an affected target can make a Constitution {@variantrule Saving Throw|Ishiir}. If it succeeds, this effect ends for that target."
+            ],
+            "damageInflict": [
+                "poison"
+            ],
+            "conditionInflict": [
+                "incapacitated",
+                "poisoned",
+                "prone"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "RO"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Confusion",
             "page": 1,
             "source": "Ishiir",
