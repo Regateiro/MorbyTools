@@ -16073,6 +16073,83 @@
             ]
         },
         {
+            "name": "Glacial Spike",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 3,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You magically form a large icicle and hurl it at a creature within range.",
+                "The target must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed save, the target takes {@damage 4d8} piercing and {@damage 4d6} cold damage and its speed is halved until the start of your next turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the piercing damage increases by {@scaledamage 4d8|3-9|1d8} and the cold damage by {@scaledamage 4d6|3-9|1d6} for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "piercing",
+                "cold"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Envenom",
             "page": 1,
             "source": "Ishiir",
