@@ -16150,6 +16150,86 @@
             ]
         },
         {
+            "name": "Dark Orb",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 3,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a pinch of soot and a piece of black velvet"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You launch a sphere of negative energy at a point within range, which then explodes in a 20-foot-radius centered on that point. Each creature in the area must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, a target takes {@damage 6d6} necrotic damage and is knocked {@condition Prone|Ishiir}. On a success, it takes half as much damage and isn't knocked {@condition Prone|Ishiir}.",
+                "The sphere spreads around corners and ends any spell of 2nd level or lower in the area that creates light."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage 6d6|3-9|1d6} for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Envenom",
             "page": 1,
             "source": "Ishiir",
