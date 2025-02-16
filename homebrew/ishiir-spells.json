@@ -8250,6 +8250,86 @@
             ]
         },
         {
+            "name": "Shadow Ray",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 1,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A beam of shadowy energy streaks from your hand to a creature you can see within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d8} necrotic damage. If you are in dim light or darkness, you have {@variantrule Advantage|Ishiir} on the attack roll."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 3d8|1-9|1d8} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "miscTags": [
+                "SGT",
+                "ADV"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                },
+                {
+                    "name": "Magic Initiate",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Circle of Death",
             "page": 1,
             "source": "Ishiir",
