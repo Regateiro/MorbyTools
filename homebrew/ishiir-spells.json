@@ -18130,6 +18130,72 @@
             ]
         },
         {
+            "name": "Dragon's Roar",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You magically project a mighty draconic roar either in a 60-foot-cone or in a 30-foot-emanation (your choice). Each creature in the area must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, a target takes {@damage 10d8} thunder damage and is {@condition Deafened|Ishiir} and {@condition Dazed|Ishiir} until the end of your next turn. On a success, a target takes half as much damage and is not {@condition Deafened|Ishiir} and {@condition Dazed|Ishiir}."
+            ],
+            "conditionInflict": [
+                "dazed",
+                "deafened"
+            ],
+            "damageInflict": [
+                "thunder"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "N",
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Dragon's Breath",
             "page": 1,
             "source": "Ishiir",
