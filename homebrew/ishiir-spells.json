@@ -16230,6 +16230,96 @@
             ]
         },
         {
+            "name": "Flickering Venom",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 6,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "three sets of wasp wings and stingers"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You create a bolt of venomous energy that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A creature can be targeted by only one of the bolts.",
+                "A target must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a target takes {@damage 8d8} poison damage and is {@condition Poisoned|Ishiir} for 1 minute. At the end of each of its turns, an affected creature can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success. On a success, it takes half as much damage and isn't {@condition Poisoned|Ishiir}."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 7th level or higher, one additional bolt leaps from the first target to another target for each slot level above 6th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "poison"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "conditionInflict": [
+                "poisoned"
+            ],
+            "miscTags": [
+                "SCL",
+                "SGT"
+            ],
+            "areaTags": [
+                "ST",
+                "MT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Acid Rain",
             "page": 1,
             "source": "Ishiir",
