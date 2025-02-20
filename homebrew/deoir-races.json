@@ -1,2212 +1,2212 @@
 {
-	"_meta": {
-		"sources": [
-			{
-				"json": "Deoir",
-				"abbreviation": "Deoir",
-				"full": "Deoir",
-				"color": "#669900",
-				"url": "https://regateiro.pt/5etools/homebrew/deoir-races.json",
-				"authors": [
-					"Roy"
-				],
-				"convertedBy": [
-					"Morb"
-				]
-			}
-		]
-	},
-	"race": [
-		{
-			"name": "Dwarf",
-			"page": 1,
-			"source": "Deoir",
-			"size": [
-				"M"
-			],
-			"speed": 25,
-			"ability": [
-				{
-					"str": 1,
-					"choose": {
-						"from": [
-							"dex",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"con": 1,
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				}
-			],
-			"age": {
-				"mature": 50,
-				"max": 350
-			},
-			"darkvision": 60,
-			"resist": [
-				"poison"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"dwarvish": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Ability Score Enhancement",
-					"type": "entries",
-					"entries": [
-						"Chose your Strength or Constitution ability score. Increase that ability score's maximum by 2."
-					]
-				},
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Darkvision",
-					"entries": [
-						"Accustomed to twilit forests and night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
-					]
-				},
-				{
-					"name": "Impeccable Memory",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on all INT-{@variantrule Ability Check|Ishiir|checks} to recall information about something."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Dwarven Resilience",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against poison, and {@variantrule Resistance|Ishiir} against poison damage."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Dwarvish."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Elf",
-			"page": 1,
-			"source": "Deoir",
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"dex": 1,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"int": 1,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"dex",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				}
-			],
-			"age": {
-				"mature": 50,
-				"max": 350
-			},
-			"darkvision": 60,
-			"skillProficiencies": [
-				{
-					"perception": true
-				}
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"elvish": true
-				}
-			],
-			"entries": [
-				"The Elves were tasked with a duty after the Ascension. Each of the Elf tribes was tasked to protect the three trees that hold other realms from entering this one. Elves are known to be intelligent but also quite taken in their duty. Most people that would even step foot in their forests won't make it out again. Elves are allowed to travel away from their forests, but when the call to return is put out everyone of them must return.",
-				{
-					"name": "Ability Score Enhancement",
-					"type": "entries",
-					"entries": [
-						"Chose your Dexterity or Intelligence ability score. Increase that ability score's maximum by 2."
-					]
-				},
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Elves mature slower than humans, and never fall victim to the frailties of old age. As a result, some elves can get up to 350 years old. There are rumors of elves that have seen the dawn of creation. However, these have never been confirmed."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Elves are slightly taller than humans, some grow up to well over 6 feet. They are built more slender, however, and thus tend to be lighter in comparison. Your size is Medium."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Darkvision",
-					"entries": [
-						"Accustomed to twilit forests and night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
-					]
-				},
-				{
-					"name": "Keen Senses",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Fey Ancestry",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Charmed|Ishiir}, and magic can't put you to sleep."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Trance",
-					"entries": [
-						"Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. While meditating, you can dream after a fashion; such dreams are actually mental excercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Elvish."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Half-Elf",
-			"page": 1,
-			"source": "Deoir",
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"str": 1,
-					"choose": {
-						"from": [
-							"dex",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"dex": 1,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"con": 1,
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"int": 1,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"dex",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"wis": 1,
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"con",
-							"int",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"cha": 1,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"dex",
-							"int",
-							"wis"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				}
-			],
-			"age": {
-				"mature": 18,
-				"max": 100
-			},
-			"darkvision": 30,
-			"skillProficiencies": [
-				{
-					"any": 2
-				}
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"elvish": true,
-					"any": 1
-				}
-			],
-			"entries": [
-				"Being born form a bond that crossed species is not something common on the world of Deoir. A cross bred child is not able to bare children of its own. For this reason they are commonly written off as life partners but are found to engage in flings quite often.",
-				{
-					"name": "Ability Score Enhancement",
-					"type": "entries",
-					"entries": [
-						"Chose any ability score. Increase that ability score's maximum by 2."
-					]
-				},
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Half-Elves mature at the same rate as humans, but live longer thanks to their Elven heritage. A Half-Elf can get close to 100 years old."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"While they inherit some striking features from the Elven half of their parents, Half-Elves tend to be closer in build and height to Humans. Your size is Medium."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Skill Versatility",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in two skills of your choice."
-					]
-				},
-				{
-					"name": "Lesser Darkvision",
-					"entries": [
-						"Thanks to your Elven heritage, you have superior vision in dark and dim conditions. You can see in dim light within 30 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Fey Ancestry",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Charmed|Ishiir}, and magic can't put you to sleep."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Mixed Heritage",
-					"entries": [
-						"Choose the single strongest influence of your parentage from the following:",
-						"Human: You gain {@variantrule Proficiency|Ishiir} in one skill",
-						"High Elf: You gain the Cantrip racial trait.",
-						"Wood Elf: You gain the Mask of the Wild racial and Fleet of foot racial traits.",
-						"Sea Elf: Your gain the Sea Elf Spellcasting trait, excluding the ritual spells. And gain the Child of the Sea trait."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common, Elvish, and one other language of your choice."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Typical Alignment",
-					"entries": [
-						"None."
-					]
-				},
-				{
-					"name": "Half-Elf Names",
-					"entries": [
-						"Often derrived from the same naming conventions as their parents."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Halfling",
-			"page": 1,
-			"source": "Deoir",
-			"size": [
-				"S"
-			],
-			"speed": 25,
-			"ability": [
-				{
-					"dex": 1,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"wis": 1,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"dex",
-							"int",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				}
-			],
-			"age": {
-				"mature": 18,
-				"max": 70
-			},
-			"languageProficiencies": [
-				{
-					"common": true,
-					"halfling": true
-				}
-			],
-			"entries": [
-				"Halflings are one of the two races of smaller stature. They are commonly seen as amicable and are often found in places with little discord.",
-				{
-					"name": "Ability Score Enhancement",
-					"type": "entries",
-					"entries": [
-						"Chose your Dexterity or Wisdom ability score. Increase that ability score's maximum by 2."
-					]
-				},
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Halflings age at the same rate as humans."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small."
-					]
-				},
-				{
-					"name": "Lucky",
-					"entries": [
-						"When you roll a 1 on the d20 for an {@variantrule Attack Roll|Ishiir}, {@variantrule Ability Check|Ishiir}, or {@variantrule Saving Throw|Ishiir}, you can reroll the die and must use the new roll."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Halfling Nimbleness",
-					"entries": [
-						"You can move through the space of any creature that is of a size larger than yours."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Halfling."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Draconian",
-			"page": 1,
-			"source": "Deoir",
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"str": 1,
-					"choose": {
-						"from": [
-							"dex",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"cha": 1,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"dex",
-							"int",
-							"wis"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				}
-			],
-			"increaseAbilityMax": true,
-			"heightAndWeight": {
-				"baseHeight": 63,
-				"heightMod": "2d12",
-				"baseWeight": 150,
-				"weightMod": "2d8"
-			},
-			"age": {
-				"mature": 30,
-				"max": 400
-			},
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"draconic": true
-				}
-			],
-			"resist": [
-				{
-					"choose": {
-						"from": [
-							"acid",
-							"cold",
-							"fire",
-							"lightning",
-							"poison"
-						]
-					}
-				}
-			],
-			"skillProficiencies": [
-				{
-					"history": true,
-					"intimidation": true
-				}
-			],
-			"entries": [
-				"Being thought of as a different race branched from the dragon line, they are a proud race fully believing this fact even though it has never been confirmed. While Draconians societies are not common as they are known to be nomads traveling alone or in small groups, they congregate before floods in the sanctuary. Draconians hatch after the floods are over.",
-				{
-					"name": "Ability Score Enhancement",
-					"type": "entries",
-					"entries": [
-						"Chose your Strength or Charisma ability score. Increase that ability score's maximum by 2."
-					]
-				},
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Draconians have inherited some of the longevity of their Dragon forefathers. Although able to walk early after hatching, they age slowly, reaching adulthood at around 30-40 years, with variation mostly dependant on scale color. Draconians can almost reach 400 years of age."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Draconians are taller and heavier than humans, standing well over 6 feet tall and averaging 250 pounds. Your size is Medium."
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Thanks to your draconic heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Draconic Ancestry",
-					"entries": [
-						"Your draconic ancestry gives you special abilities. Choose a type of dragon from the table below. The type you choose influences your breath weapon and your damage {@variantrule Resistance|Ishiir}.",
-						{
-							"type": "table",
-							"caption": "Draconic Ancestry",
-							"colLabels": [
-								"Dragon",
-								"Damage Type",
-								"Breath Weapon"
-							],
-							"colStyles": [
-								"col-3 text-center",
-								"col-3 text-center",
-								"col-6"
-							],
-							"rows": [
-								[
-									"Black",
-									"Acid",
-									"5 by 30 ft. line (DEX save)"
-								],
-								[
-									"Blue",
-									"Lightning",
-									"5 by 30 ft. line (DEX save)"
-								],
-								[
-									"Brass",
-									"Fire",
-									"5 by 30 ft. line (DEX save)"
-								],
-								[
-									"Bronze",
-									"Lightning",
-									"5 by 30 ft. line (DEX save)"
-								],
-								[
-									"Copper",
-									"Acid",
-									"5 by 30 ft. line (DEX save)"
-								],
-								[
-									"Gold",
-									"Fire",
-									"15 ft. cone (DEX save)"
-								],
-								[
-									"Green",
-									"Poison",
-									"15 ft. cone (CON save)"
-								],
-								[
-									"Red",
-									"Fire",
-									"15 ft. cone (DEX save)"
-								],
-								[
-									"Silver",
-									"Cold",
-									"15 ft. cone (CON save)"
-								],
-								[
-									"White",
-									"Cold",
-									"15 ft. cone (CON save)"
-								]
-							]
-						}
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Knowledge of the Ages",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in the {@skill history} and {@skill intimidation} skills."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Breath Weapon",
-					"entries": [
-						"You can use your action to exhale destructive energy. Your draconic ancestry determines size, shape, and damage of the exhalation. Every creature in the area of a effect needs to make a {@variantrule Saving Throw|Ishiir} against a DC of 8 + any ability score bonus of your choice + your {@variantrule Proficiency|Ishiir}. The damage equals {@damage 4d6} on a failed save, and have as much on a successful one. The damage increases by {@damage 1d6} at levels 6, 11, and 16.",
-						"After you use Breath Weapon, you can't use it again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Draconic."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Typical Alignment",
-					"entries": [
-						"True neutral, they live nomadic lifes often avoiding contact with other races as their pights are not their own and the challenges of their nomadic way of life are their own just the same."
-					]
-				},
-				{
-					"name": "Draconian Names",
-					"entries": [
-						"<a href=\"https://www.fantasynamegenerators.com/dragon-names.php\">Name Generator</a>"
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Gnome",
-			"page": 1,
-			"source": "Deoir",
-			"size": [
-				"S"
-			],
-			"speed": 25,
-			"ability": [
-				{
-					"dex": 1,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"int": 1,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"dex",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				}
-			],
-			"age": {
-				"mature": 18,
-				"max": 150
-			},
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"gnomish": true
-				}
-			],
-			"entries": [
-				"Gnomes, unlike their amicable brethren the Halflings, are known to be a bit more distant and crude. They care more for themselves and others of their race and will almost never help others without a reward in return.",
-				{
-					"name": "Ability Score Enhancement",
-					"type": "entries",
-					"entries": [
-						"Chose your Dexterity or Intelligence ability score. Increase that ability score's maximum by 2."
-					]
-				},
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Gnomes mature at the same rate as humans, their lifespans, however, tend to be longer. A gnome can reach almost 150 years of age."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Gnomes average about 3 feet tall and weigh about 40 pounds. Your size is Small."
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Gnome Cunning",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on all INT, WIS, and CHA {@variantrule Saving Throw|Ishiir|Saving Throws} against magic."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Gnomish."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Gigas",
-			"page": 1,
-			"source": "Deoir",
-			"size": [
-				"L"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"str": 1,
-					"choose": {
-						"from": [
-							"dex",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"wis": 1,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"dex",
-							"int",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				}
-			],
-			"heightAndWeight": {
-				"baseHeight": 96,
-				"heightMod": "2d12",
-				"baseWeight": 400,
-				"weightMod": "2d8"
-			},
-			"age": {
-				"mature": 75,
-				"max": 500
-			},
-			"languageProficiencies": [
-				{
-					"common": true,
-					"giant": true
-				}
-			],
-			"resist": [
-				{
-					"choose": {
-						"from": [
-							"cold",
-							"fire",
-							"poison"
-						]
-					}
-				}
-			],
-			"skillProficiencies": [
-				{
-					"athletics": true
-				}
-			],
-			"entries": [
-				"The Gigas are a race that is told to be descendant from giants, however similarly to Draconians this has never been confirmed. Unlike the Draconians thought, they are known to stay and protect places they like.",
-				{
-					"name": "Ability Score Enhancement",
-					"type": "entries",
-					"entries": [
-						"Chose your Strength or Wisdom ability score. Increase that ability score's maximum by 2."
-					]
-				},
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Gigas age slower than humans, and reach adulthood once they have seen 75 summers. averaging a lifespan of about 500 years."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Gigas are by far the largest race on the face of Deoir. An average Gigas reaches heights of over 8 feet and weighs over 300 pounds. Your size is Large."
-					]
-				},
-				{
-					"name": "Natural Athlete",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in the {@skill Athletics} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Gigas Hardiness",
-					"entries": [
-						"When you take damage, you can choose to use your {@variantrule Reaction|Ishiir} to shrug off the blow. Roll a d12 + your CON modifier. And substract the result from the damage taken. You can't use this feature again until you have finished a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Mountain Born",
-					"entries": [
-						"Your are acclimatized to a region of your choice as per the DMG. You also have {@variantrule Resistance|Ishiir} to cold, fire or poison damage."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Brutal Attacks",
-					"entries": [
-						"When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Giant."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Typical Alignment",
-					"entries": [
-						"Lawful good, they uphold the laws of the cities they have decided becomes their home and oft found in the guard of said city upholding the values of the populace."
-					]
-				},
-				{
-					"name": "Gigas Names",
-					"entries": [
-						"<a href=\"https://www.fantasynamegenerators.com/guardian-names.php\">Name Generator</a>"
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Gnoll",
-			"page": 1,
-			"source": "Deoir",
-			"size": [
-				"M"
-			],
-			"speed": 35,
-			"ability": [
-				{
-					"str": 1,
-					"choose": {
-						"from": [
-							"dex",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"dex": 1,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				}
-			],
-			"heightAndWeight": {
-				"baseHeight": 61,
-				"heightMod": "2d12",
-				"baseWeight": 130,
-				"weightMod": "2d4"
-			},
-			"age": {
-				"mature": 10,
-				"max": 50
-			},
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"gnoll": true
-				}
-			],
-			"skillProficiencies": [
-				{
-					"perception": true
-				}
-			],
-			"entries": [
-				"Gnolls are not often seen in settlements unless floods are happening. Not much is known about them except for them keeping to themselves and that they always travel in packs. However, it is rumored that they did not exist before the Ascension.",
-				{
-					"name": "Ability Score Enhancement",
-					"type": "entries",
-					"entries": [
-						"Chose your Constitution or Dexterity ability score. Increase that ability score's maximum by 2."
-					]
-				},
-				{
-					"name": "Appearance",
-					"type": "entries",
-					"entries": [
-						"Gnolls have features from all types of Canines and Hyaenidae, but where they have gained these features from is unknown."
-					]
-				},
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Gnolls have shorter lifespans than humans. They reach maturity at about 10 years old and can live to 50."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Your size is Medium."
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Your eyes are used to a cathemeral lifestyle and grant you superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Pack Tactics",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on an {@variantrule Attack Roll|Ishiir} against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition Incapacitated|Deoir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Vicious Fangs",
-					"entries": [
-						"Your unarmed attacks deal piercing damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your fangs to attack."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Keen Senses",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Tireless Wanderer",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on Constitution {@variantrule Saving Throw|Ishiir|Saving Throws} against {@condition Exhaustion|Ishiir} made as a result of a forced march."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Gnoll."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Typical Alignment",
-					"entries": [
-						"None."
-					]
-				},
-				{
-					"name": "Gnoll Names",
-					"entries": [
-						"<a href=\"https://www.fantasynamegenerators.com/gnoll-names.php\">Name Generator</a>"
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Human",
-			"page": 1,
-			"source": "Deoir",
-			"size": [
-				"M"
-			],
-			"ability": [
-				{
-					"str": 1,
-					"choose": {
-						"from": [
-							"dex",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"dex": 1,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"con": 1,
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"int": 1,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"dex",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"wis": 1,
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"con",
-							"int",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"cha": 1,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"dex",
-							"int",
-							"wis"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				}
-			],
-			"heightAndWeight": {
-				"baseHeight": 55,
-				"heightMod": "2d10",
-				"baseWeight": 105,
-				"weightMod": "2d4"
-			},
-			"speed": 30,
-			"age": {
-				"mature": 18,
-				"max": 70
-			},
-			"languageProficiencies": [
-				{
-					"common": true,
-					"anyStandard": 1
-				}
-			],
-			"skillProficiencies": [
-				{
-					"any": 3
-				}
-			],
-			"entries": [
-				"Humans inhabit all kinds of places on Deoir. Not really known for anything specific except for being quite versatile and having a broad spectrum of views.",
-				{
-					"name": "Ability Score Enhancement",
-					"type": "entries",
-					"entries": [
-						"Chose any ability score. Decrease that ability score by 1.",
-						"Chose any ability score. Increase that ability score's maximum by 2."
-					]
-				},
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Humans reach adulthood in their late teens and rarely live past 70."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Humans vary wildly in height and build, from barely 5 feet to well over 6 feet tall. Your size is Medium."
-					]
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and one extra language of your choice."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Skill Versatility",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in 3 extra skills of your choice."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Natural Talent",
-					"entries": [
-						"You gain one feat of your choice."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Typical Alignment",
-					"entries": [
-						"Humans tend to no particular alignment by nature, although the aftermath of the Great War has made many of them bitter and resentful. One is as likely to find idealistic heroes as depraved villains among them, most of them fall somewhere in the middle."
-					]
-				},
-				{
-					"name": "Human Names",
-					"entries": [
-						"Often similar to the names of the cultures they are apart of. Dominantly human settlements often use names like: <a href=\"https://www.fantasynamegenerators.com/anglo-saxon-names.php\">Name Generator</a>"
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Orc",
-			"page": 1,
-			"source": "Deoir",
-			"size": [
-				"M"
-			],
-			"speed": 35,
-			"ability": [
-				{
-					"str": 1,
-					"choose": {
-						"from": [
-							"dex",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				},
-				{
-					"con": 1,
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				}
-			],
-			"heightAndWeight": {
-				"baseHeight": 62,
-				"heightMod": "2d12",
-				"baseWeight": 140,
-				"weightMod": "2d6"
-			},
-			"age": {
-				"mature": 15,
-				"max": 60
-			},
-			"languageProficiencies": [
-				{
-					"common": true,
-					"orcish": true
-				}
-			],
-			"skillProficiencies": [
-				{
-					"intimidation": true,
-					"survival": true
-				}
-			],
-			"entries": [
-				"Orcs are known to be strong fighters, often seen in gladiatorial arenas. They are not known to make their own cities, instead claiming their own territory as they are satisfied with what is already there for them.",
-				{
-					"name": "Ability Score Enhancement",
-					"type": "entries",
-					"entries": [
-						"Chose your Strength or Constitution ability score. Increase that ability score's maximum by 2."
-					]
-				},
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Orcs mature slightly faster than Humans, reaching adulthood in their early teens. They also age noticeably faster. An orc rarely lives past his 60th year."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Orcs are taller and much bulkier than humans. They easily surpass 6 feet in height and average over 200 pounds. Your size is Medium."
-					]
-				},
-				{
-					"name": "Menacing",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in the {@skill Intimidation} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Fearless",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Frightened|Deoir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Tireless",
-					"entries": [
-						"If you gain a level of {@condition Exhaustion|Ishiir}, you can use a {@variantrule Bonus Action|Ishiir} to remove it. You can't use this ability again until you finish a {@variantrule Long Rest|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Furious Charge",
-					"entries": [
-						"Once per turn, as part of a melee weapon attack, you can move up to your {@variantrule Speed|Ishiir} in a straight line towards a target of your choice."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Relentless Endurance",
-					"entries": [
-						"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a {@variantrule Long Rest|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Savage Attacks",
-					"entries": [
-						"When you score a critical hit with a melee weapon attack, you can reroll the weapon's damage dice (and only the weapon's own damage dice) again and add the result to the total."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Powerful Build",
-					"entries": [
-						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Primal Intuition",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in {@skill Survival}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Orcish."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Typical Alignment",
-					"entries": [
-						"None."
-					]
-				},
-				{
-					"name": "Orc Names",
-					"entries": [
-						"<a href=\"You have {@variantrule Advantage|Ishiir} on Dexterity (Stealth) {@variantrule Ability Check|Ishiir|checks} to hide in Natural terrain.\">Name Generator</a>"
-					],
-					"type": "entries"
-				}
-			]
-		}
-	],
-	"subrace": [
-		{
-			"name": "Mountain",
-			"page": 1,
-			"source": "Deoir",
-			"raceName": "Dwarf",
-			"raceSource": "Deoir",
-			"heightAndWeight": {
-				"baseHeight": 48,
-				"heightMod": "2d4",
-				"baseWeight": 130,
-				"weightMod": "2d6"
-			},
-			"traitTags": [
-				"Tool Proficiency",
-				"Weapon Proficiency"
-			],
-			"resist": [
-				"cold"
-			],
-			"entries": [
-				"<hr/>The mountain dwarves dwell most often in the Frozen Embrace. Since they are known for their mastery in metalwork, others started seeking them out, braving the terrible nature that stood between them and the dwarves. Each dwarven craftsman has their own way of determining the worth of a customer. Some will ask for a duel, others maybe a task. For this reason, and them being very stuck in their ways and adverse to change, most other races see them as aloof and don't enjoy interacting with them much.",
-				{
-					"name": "Dwarven Toughness",
-					"entries": [
-						"Your hit point maximum increases by 1 for each level."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Dwarven Combat Training",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in light and medium armor as well as the battleaxe, warhammer, light crossbow, and heavy crossbow."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Heavy Armor Expertise",
-					"entries": [
-						"Your {@variantrule Speed|Ishiir} is not reduced by wearing heavy armor."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Dedicated Crafter",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in one tool of your choice. Your {@variantrule Proficiency|Ishiir} bonus is doubled for any {@variantrule Ability Check|Ishiir} you make that uses this chosen tool."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Mountain Born",
-					"entries": [
-						"You are acclimatized to cold regions as per the DMG. You also have {@variantrule Resistance|Ishiir} to cold damage."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Lawful Neutral. Most Mountain Dwarves are conservative and traditional, with strong emphasis on personal honor and loyalty. They tend to stay out of another's affairs and expect outsiders to do the same."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Mountain Dwarf Names",
-					"entries": [
-						"<a href=\"https://www.fantasynamegenerators.com/german-names.php\">Name Generator</a>"
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Hill",
-			"page": 1,
-			"source": "Deoir",
-			"raceName": "Dwarf",
-			"raceSource": "Deoir",
-			"heightAndWeight": {
-				"baseHeight": 44,
-				"heightMod": "2d4",
-				"baseWeight": 115,
-				"weightMod": "2d8"
-			},
-			"skillProficiencies": [
-				{
-					"insight": true,
-					"persuasion": true
-				}
-			],
-			"traitTags": [
-				"Tool Proficiency"
-			],
-			"additionalSpells": [
-				{
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									"alarm|Ishiir"
-								],
-								"3": [
-									"arcane lock|Ishiir"
-								]
-							}
-						}
-					},
-					"ability": {
-						"choose": [
-							"int"
-						]
-					}
-				}
-			],
-			"entries": [
-				"<hr/>The Hill Dwarves seem almost like the complete opposite of their mountain dwelling siblings. They settle in big settlements to make and sell their wares. They have a great love for gold and riches almost to the point where some races consider them the descendants of dragons instead of the Draconians. This however does not push them to less savory means of gaining said coin because in their culture, coin gained from anything but your wares might as well be rocks. For this reason the hill dwarves favor quantity over quality.",
-				{
-					"name": "Crafty Negotiator",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in the {@skill persuasion} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Insightful",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in the {@skill insight} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Discerning Eye",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against Illusions and skill {@variantrule Ability Check|Ishiir|checks} to identify illusions."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Dedicated Crafter",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in two tools of your choice."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Wards and Seals",
-					"entries": [
-						"You can cast the {@spell alarm|Ishiir} as a ritual with this trait. Starting at 3rd level, you can also cast the {@spell arcane lock|Ishiir} spell with it. Intelligence is your spellcasting ability for these spells, and you don't need material components for them when you cast them with this trait."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Neutral Good. Most Hill Dwarves love engaging in conversation and have a helpful streak. They see value in order and tradition like all dwarves, although personal ambition and pragmatism has greater importance to them."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Hill Dwarf Names",
-					"entries": [
-						"<a href=\"https://www.fantasynamegenerators.com/czech-names.php\">Name Generator</a>"
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Forest",
-			"page": 1,
-			"source": "Deoir",
-			"raceName": "Gnome",
-			"raceSource": "Deoir",
-			"heightAndWeight": {
-				"baseHeight": 35,
-				"heightMod": "2d4",
-				"baseWeight": 35,
-				"weightMod": "1"
-			},
-			"additionalSpells": [
-				{
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"1": [
-							"minor illusion|Ishiir#c"
-						]
-					}
-				}
-			],
-			"skillProficiencies": [
-				{
-					"stealth": true
-				}
-			],
-			"entries": [
-				"<hr/>Forest Gnomes are known tricksters and bandits, often seen with animals in tow to help rob their unfortunate victims. For this reason, forest gnomes are scorned in the cities and not trusted. This forces more Gnomes to turn to robbery to sustain themselves.",
-				{
-					"name": "Natural Illusionist",
-					"entries": [
-						"You know the {@spell Minor Illusion|Ishiir} cantrip. Your spellcasting ability for it is INT, WIS, or CHA (your choice)."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Speak with Small Beasts",
-					"entries": [
-						"Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts. Forest gnomes love animals and often keep squirrels, badgers, rabbits, moles, woodpeckers, and other creatures as beloved pets."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Naturally Stealthy",
-					"entries": [
-						"You can attempt to hide even if you are obscured only by a creature that is at least one size larger than you."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Forest Camouflage",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Stealth}) {@variantrule Ability Check|Ishiir|checks} to hide in natural terrain."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Typical Alignment",
-					"entries": [
-						"True Neutral, while often forced into a life of crime most forest gnomes do not take pleasure in this way of life and likely would choose otherwise should they have the chance."
-					]
-				},
-				{
-					"name": "Forest Gnome Names",
-					"entries": [
-						"<a href=\"https://www.fantasynamegenerators.com/nature-names.php\">First Name</a>, <a href=\"https://www.fantasynamegenerators.com/plant-names.php\">Last Name</a>"
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Rock",
-			"page": 1,
-			"source": "Deoir",
-			"raceName": "Gnome",
-			"raceSource": "Deoir",
-			"traitTags": [
-				"Tool Proficiency"
-			],
-			"heightAndWeight": {
-				"baseHeight": 35,
-				"heightMod": "2d4",
-				"baseWeight": 35,
-				"weightMod": "2"
-			},
-			"skillProficiencies": [
-				{
-					"stealth": true
-				}
-			],
-			"entries": [
-				"<hr/>Rock Gnomes are known crafters like the Dwarves, although unlike them they are also known to try to extort their customers.",
-				{
-					"name": "Expert Crafter",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in two tools of your choice."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Artificer's Lore",
-					"entries": [
-						"Whenever you make an INT-check related to magic items, alchemical objects, or technological devices, you have {@variantrule Advantage|Ishiir} on the check."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Gnome Tinkerer",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} with artisan's tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp).",
-						{
-							"type": "list",
-							"items": [
-								{
-									"type": "item",
-									"name": "Clockwork Toy",
-									"entry": "This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents."
-								},
-								{
-									"type": "item",
-									"name": "Fire Starter",
-									"entry": "The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action."
-								},
-								{
-									"type": "item",
-									"name": "Music Box",
-									"entry": "When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed."
-								}
-							]
-						}
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Stone Camouflage",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Stealth}) {@variantrule Ability Check|Ishiir|checks} to hide in rocky terrain."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Typical Alignment",
-					"entries": [
-						"Lawful evil, cunning in their trade while upholding laws and values they have, they will always be twisted in favor of themselves."
-					]
-				},
-				{
-					"name": "Rock Gnome Names",
-					"entries": [
-						"<a href=\"https://www.fantasynamegenerators.com/bulgarian-names.php\">Name Generator</a>"
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Lightfoot",
-			"page": 1,
-			"source": "Deoir",
-			"raceName": "Halfling",
-			"raceSource": "Deoir",
-			"heightAndWeight": {
-				"baseHeight": 36,
-				"heightMod": "2d4",
-				"baseWeight": 40,
-				"weightMod": "1d4"
-			},
-			"skillProficiencies": [
-				{
-					"persuasion": true,
-					"stealth": true
-				}
-			],
-			"entries": [
-				"<hr/>Lightfoot Halflings are known to be quick on their feet and are seen in and around settlements helping people of all walks of life. They are even found in places of strife and war, as often they serve as relief units in those places and times.",
-				{
-					"name": "Friendly Face",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in the {@skill persuasion} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Sneaky",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in the {@skill stealth} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Light Steps",
-					"entries": [
-						"You make any stealth check that is contingent on not being heard rather than not being seen with {@variantrule Advantage|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Naturally Stealthy",
-					"entries": [
-						"You can attempt to hide even if you are obscured only by a creature that is at least one size larger than you."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Medically Trained",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in {@skill Medicine}. When you make a Wisdom ({@skill Medicine}) check or an {@variantrule Ability Check|Ishiir} using an herbalism kit, you can roll a {@dice d4} and add the number rolled to the {@variantrule Ability Check|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Typical Alignment",
-					"entries": [
-						"Neutral Good. Most Lightfoot Halflings are good-natured. They love making people laugh, meeting new friends and are quickly moved to action by another's plight. They do respect law, but are not above breaking it when it stands in the way of doing good in their eyes."
-					]
-				},
-				{
-					"name": "Lightfoot Halfling Names",
-					"entries": [
-						"<a href=\"https://www.fantasynamegenerators.com/swiss-names.php\">Name Generator</a>"
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Stout",
-			"page": 1,
-			"source": "Deoir",
-			"raceName": "Halfling",
-			"raceSource": "Deoir",
-			"heightAndWeight": {
-				"baseHeight": 38,
-				"heightMod": "2d4",
-				"baseWeight": 50,
-				"weightMod": "1d4"
-			},
-			"resist": [
-				"poison"
-			],
-			"skillProficiencies": [
-				{
-					"perception": true,
-					"persuasion": true
-				}
-			],
-			"traitTags": [
-				"Weapon Proficiency"
-			],
-			"entries": [
-				"<hr/>Stout Halflings became more adapted at harsher conditions on the lands they inhabit. Often seen drinking with Dwarves and known to be a Dwarf's best friend in the pub.",
-				{
-					"name": "Brave",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Frightened|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Alert Senses",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in the {@skill perception} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Disciplined",
-					"entries": [
-						"You can use heavy weapons despite being small."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Stout Toughness",
-					"entries": [
-						"Your hit point maximum increases by 1 for each level."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Stout Weapon Training",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} with light and medium armor as well as the longsword, battleaxe, longbow, and heavy crossbow."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Stout Resilience",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against poison, and you have {@variantrule Resistance|Ishiir} against poison damage."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Ever Hospitable",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in {@skill Persuasion}. When you make a Charisma ({@skill Persuasion}) check or an {@variantrule Ability Check|Ishiir} involving brewer's supplies or cook's utensils, you can roll a {@dice d4} and add the number rolled to the {@variantrule Ability Check|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Typical Alignment",
-					"entries": [
-						"Lawful neutral, very adapted to the ways of life of the mountain dwarves. So much so they have taken their values as their own. "
-					]
-				},
-				{
-					"name": "Stout Halfling Names",
-					"entries": [
-						"<a href=\"https://www.fantasynamegenerators.com/finnish-names.php\">Name Generator</a>"
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "High",
-			"page": 1,
-			"source": "Deoir",
-			"raceName": "Elf",
-			"raceSource": "Deoir",
-			"heightAndWeight": {
-				"baseHeight": 57,
-				"heightMod": "2d10",
-				"baseWeight": 100,
-				"weightMod": "1d4"
-			},
-			"additionalSpells": [
-				{
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							{
-								"choose": "level=0|class=Sorcerer (Ishiir);Cleric (Ishiir);Wizard (Ishiir)|source=Ishiir",
-								"count": 1
-							},
-							"produce flame|Ishiir#c"
-						],
-						"3": [
-							"hellish rebuke|Ishiir"
-						],
-						"5": [
-							"flaming sphere|Ishiir"
-						]
-					}
-				}
-			],
-			"languageProficiencies": [
-				{
-					"any": 1
-				}
-			],
-			"entries": [
-				"<hr/>High elves were tasked to protect the Burning forest and do so with a fiery passion. Sadly, after the birth of the corrupted gods, their essence has been tainted and their passion has been often twisted into a blind agression. Because of this they are prone to exert violence and bloodshed to reach their goals.",
-				{
-					"name": "High Elf Education",
-					"entries": [
-						"Choose one skill or tool {@variantrule Proficiency|Ishiir}. Your {@variantrule Proficiency|Ishiir} bonus is doubled for any {@variantrule Ability Check|Ishiir} you make that uses this chosen {@variantrule Proficiency|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Cantrip",
-					"entries": [
-						"You know one cantrip of your choice from the cleric, wizard, or sorcerer spell list. Your spellcasting ability for it is INT, WIS, or CHA (your choice)."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Extra Language",
-					"entries": [
-						"You can speak, read, and write one additional language."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "High Elven Magics",
-					"entries": [
-						"You know the {@spell Produce Flame|Ishiir} cantrip. When you reach 3rd level, you can cast the {@spell Hellish Rebuke|Ishiir} spell once with this trait and regain the ability to do so when you finish a {@variantrule Long Rest|Ishiir}. When you reach 5th level, you can cast the {@spell Flaming Sphere} spell once with this trait and regain the ability to do so when you finish a {@variantrule Long Rest|Ishiir}. Casting these spells with this trait doesn't require material components. Your spellcasting ability for these spells is the same as you chose for the cantrip."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Evil of any kind, as the corruption runs deep and their passion even deeper."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "High Elf Names",
-					"entries": [
-						"<a href=\"https://www.fantasynamegenerators.com/elf-names.php\">Name Generator</a>"
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Wood",
-			"page": 1,
-			"source": "Deoir",
-			"raceName": "Elf",
-			"raceSource": "Deoir",
-			"speed": 35,
-			"traitTags": [
-				"Weapon Proficiency"
-			],
-			"heightAndWeight": {
-				"baseHeight": 62,
-				"heightMod": "2d12",
-				"baseWeight": 115,
-				"weightMod": "1d8"
-			},
-			"skillProficiencies": [
-				{
-					"nature": true
-				}
-			],
-			"entries": [
-				"<hr/>The wood elves were tasked to protect the Frozen Forest. They are not often seen in the places they protect but are known to be there despite that. They have become more open with their existance over time, and are integraded in the trade with Reothadh.",
-				{
-					"name": "Elf Weapon Training",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} with the {@item elvish spear|Ishiir}, {@item greatspear|Ishiir}, {@item shortbow|Ishiir}, and {@item longbow|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Fleet of Foot",
-					"entries": [
-						"Your base walking increases to 35 feet."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Born Predator",
-					"entries": [
-						"You gain a +2 bonus to initiative."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "One with the Wild",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in the {@skill nature} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Mask of the Wild",
-					"entries": [
-						"You can attempt to hide even when you're only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Fey Step",
-					"entries": [
-						"As a {@variantrule Bonus Action|Ishiir}, you can magically teleport up to 30 feet to an unoccupied space you can see. Once you use this trait, you can't do so again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Neutral. Most Wood Elf are stoic individuals that do not engage in conversation or take sides unless absolutely necessary. A Wood Elf will rarely deem an act evil or good, and instead judge it by its merit for survival."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Wood Elf Names",
-					"entries": [
-						"<b>Clan Name:</b> Often clan names are words the clan is known for, like: Formers of the wood, Stalker, Gatherer, ect.",
-						"<a href=\"https://www.fantasynamegenerators.com/ent-names.php\">Name Generator</a>"
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Sea",
-			"page": 1,
-			"source": "Deoir",
-			"raceName": "Elf",
-			"raceSource": "Deoir",
-			"traitTags": [
-				"Weapon Proficiency"
-			],
-			"speed": {
-				"walk": 30,
-				"swim": 30
-			},
-			"heightAndWeight": {
-				"baseHeight": 60,
-				"heightMod": "2d12",
-				"baseWeight": 105,
-				"weightMod": "1d6"
-			},
-			"additionalSpells": [
-				{
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									"control water|Ishiir",
-									"create or destroy water|Ishiir",
-									"fog cloud|Ishiir",
-									"water walk|Ishiir",
-									"water breathing|Ishiir"
-								]
-							}
-						}
-					},
-					"ability": {
-						"choose": [
-							"wis",
-							"cha"
-						]
-					}
-				}
-			],
-			"entries": [
-				"<hr/>Sea elves were tasked to protect The Forest of Life. Sea elves are known to have a kind and welcoming behavior and to help boats close to their forest during the flood if they are in peril. Strangely enough their want for sharing lately has been going to the extreme and some of their kind have started to leave, believing that the weird is the cause for this behavior and abandoning their duty of protecting the forest.",
-				{
-					"name": "Sea Elf Spellcasting",
-					"entries": [
-						"All Sea Elves were gifted an innate ability to control water. Excepting the cantrip, you can cast the following spells once per {@variantrule Long Rest|Ishiir} without expending material components. Your spellcasting ability for these spells is WIS or CHA (your choice).",
-						"{@spell Control Water|Ishiir}, {@spell Create or Destroy Water|Ishiir}, {@spell Fog cloud|Ishiir}. And both {@spell Water Walk|Ishiir} and {@spell Water Breathing|Ishiir} as rituals."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Child of the Sea",
-					"entries": [
-						"You have a {@variantrule Swim Speed|Ishiir} of 30 feet, and you can breathe air and water. When swiming you ignore strong currents in the water with no effort (Swiming against the flow of a river)."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Elf Weapon Training",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} with the {@item elvish sword|Ishiir}, {@item greatsword|Ishiir}, {@item longbow|Ishiir}, and {@item shortbow|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Chaotic Good, the sea elves always try to bring the best out in people even if the people in question do not feel like they need to be helped."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "High Elf Names",
-					"entries": [
-						"<a href=\"https://www.fantasynamegenerators.com/selkie-names.php\">Name Generator</a>"
-					],
-					"type": "entries"
-				}
-			]
-		}
-	]
+    "_meta": {
+        "sources": [
+            {
+                "json": "Deoir",
+                "abbreviation": "Deoir",
+                "full": "Deoir",
+                "color": "#669900",
+                "url": "https://regateiro.pt/5etools/homebrew/deoir-races.json",
+                "authors": [
+                    "Roy"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "race": [
+        {
+            "name": "Dwarf",
+            "page": 1,
+            "source": "Deoir",
+            "size": [
+                "M"
+            ],
+            "speed": 25,
+            "ability": [
+                {
+                    "str": 1,
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "con": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                }
+            ],
+            "age": {
+                "mature": 50,
+                "max": 350
+            },
+            "darkvision": 60,
+            "resist": [
+                "poison"
+            ],
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "dwarvish": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Ability Score Enhancement",
+                    "type": "entries",
+                    "entries": [
+                        "Chose your Strength or Constitution ability score. Increase that ability score's maximum by 2."
+                    ]
+                },
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "Accustomed to twilit forests and night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ]
+                },
+                {
+                    "name": "Impeccable Memory",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on all INT-{@variantrule Ability Check|Ishiir|checks} to recall information about something."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Dwarven Resilience",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against poison, and {@variantrule Resistance|Ishiir} against poison damage."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Dwarvish."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Elf",
+            "page": 1,
+            "source": "Deoir",
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "ability": [
+                {
+                    "dex": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "int": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "dex",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                }
+            ],
+            "age": {
+                "mature": 50,
+                "max": 350
+            },
+            "darkvision": 60,
+            "skillProficiencies": [
+                {
+                    "perception": true
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "elvish": true
+                }
+            ],
+            "entries": [
+                "The Elves were tasked with a duty after the Ascension. Each of the Elf tribes was tasked to protect the three trees that hold other realms from entering this one. Elves are known to be intelligent but also quite taken in their duty. Most people that would even step foot in their forests won't make it out again. Elves are allowed to travel away from their forests, but when the call to return is put out everyone of them must return.",
+                {
+                    "name": "Ability Score Enhancement",
+                    "type": "entries",
+                    "entries": [
+                        "Chose your Dexterity or Intelligence ability score. Increase that ability score's maximum by 2."
+                    ]
+                },
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Elves mature slower than humans, and never fall victim to the frailties of old age. As a result, some elves can get up to 350 years old. There are rumors of elves that have seen the dawn of creation. However, these have never been confirmed."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Elves are slightly taller than humans, some grow up to well over 6 feet. They are built more slender, however, and thus tend to be lighter in comparison. Your size is Medium."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "Accustomed to twilit forests and night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ]
+                },
+                {
+                    "name": "Keen Senses",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Fey Ancestry",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Charmed|Ishiir}, and magic can't put you to sleep."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Trance",
+                    "entries": [
+                        "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. While meditating, you can dream after a fashion; such dreams are actually mental excercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Elvish."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Half-Elf",
+            "page": 1,
+            "source": "Deoir",
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "ability": [
+                {
+                    "str": 1,
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "dex": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "con": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "int": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "dex",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "wis": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "con",
+                            "int",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "cha": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "dex",
+                            "int",
+                            "wis"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                }
+            ],
+            "age": {
+                "mature": 18,
+                "max": 100
+            },
+            "darkvision": 30,
+            "skillProficiencies": [
+                {
+                    "any": 2
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "elvish": true,
+                    "any": 1
+                }
+            ],
+            "entries": [
+                "Being born form a bond that crossed species is not something common on the world of Deoir. A cross bred child is not able to bare children of its own. For this reason they are commonly written off as life partners but are found to engage in flings quite often.",
+                {
+                    "name": "Ability Score Enhancement",
+                    "type": "entries",
+                    "entries": [
+                        "Chose any ability score. Increase that ability score's maximum by 2."
+                    ]
+                },
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Half-Elves mature at the same rate as humans, but live longer thanks to their Elven heritage. A Half-Elf can get close to 100 years old."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "While they inherit some striking features from the Elven half of their parents, Half-Elves tend to be closer in build and height to Humans. Your size is Medium."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Skill Versatility",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in two skills of your choice."
+                    ]
+                },
+                {
+                    "name": "Lesser Darkvision",
+                    "entries": [
+                        "Thanks to your Elven heritage, you have superior vision in dark and dim conditions. You can see in dim light within 30 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Fey Ancestry",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Charmed|Ishiir}, and magic can't put you to sleep."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Mixed Heritage",
+                    "entries": [
+                        "Choose the single strongest influence of your parentage from the following:",
+                        "Human: You gain {@variantrule Proficiency|Ishiir} in one skill",
+                        "High Elf: You gain the Cantrip racial trait.",
+                        "Wood Elf: You gain the Mask of the Wild racial and Fleet of foot racial traits.",
+                        "Sea Elf: Your gain the Sea Elf Spellcasting trait, excluding the ritual spells. And gain the Child of the Sea trait."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common, Elvish, and one other language of your choice."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "type": "entries",
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "None."
+                    ]
+                },
+                {
+                    "name": "Half-Elf Names",
+                    "entries": [
+                        "Often derrived from the same naming conventions as their parents."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Halfling",
+            "page": 1,
+            "source": "Deoir",
+            "size": [
+                "S"
+            ],
+            "speed": 25,
+            "ability": [
+                {
+                    "dex": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "wis": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "dex",
+                            "int",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                }
+            ],
+            "age": {
+                "mature": 18,
+                "max": 70
+            },
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "halfling": true
+                }
+            ],
+            "entries": [
+                "Halflings are one of the two races of smaller stature. They are commonly seen as amicable and are often found in places with little discord.",
+                {
+                    "name": "Ability Score Enhancement",
+                    "type": "entries",
+                    "entries": [
+                        "Chose your Dexterity or Wisdom ability score. Increase that ability score's maximum by 2."
+                    ]
+                },
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Halflings age at the same rate as humans."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small."
+                    ]
+                },
+                {
+                    "name": "Lucky",
+                    "entries": [
+                        "When you roll a 1 on the d20 for an {@variantrule Attack Roll|Ishiir}, {@variantrule Ability Check|Ishiir}, or {@variantrule Saving Throw|Ishiir}, you can reroll the die and must use the new roll."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Halfling Nimbleness",
+                    "entries": [
+                        "You can move through the space of any creature that is of a size larger than yours."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Halfling."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Draconian",
+            "page": 1,
+            "source": "Deoir",
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "ability": [
+                {
+                    "str": 1,
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "cha": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "dex",
+                            "int",
+                            "wis"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                }
+            ],
+            "increaseAbilityMax": true,
+            "heightAndWeight": {
+                "baseHeight": 63,
+                "heightMod": "2d12",
+                "baseWeight": 150,
+                "weightMod": "2d8"
+            },
+            "age": {
+                "mature": 30,
+                "max": 400
+            },
+            "darkvision": 60,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "draconic": true
+                }
+            ],
+            "resist": [
+                {
+                    "choose": {
+                        "from": [
+                            "acid",
+                            "cold",
+                            "fire",
+                            "lightning",
+                            "poison"
+                        ]
+                    }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "history": true,
+                    "intimidation": true
+                }
+            ],
+            "entries": [
+                "Being thought of as a different race branched from the dragon line, they are a proud race fully believing this fact even though it has never been confirmed. While Draconians societies are not common as they are known to be nomads traveling alone or in small groups, they congregate before floods in the sanctuary. Draconians hatch after the floods are over.",
+                {
+                    "name": "Ability Score Enhancement",
+                    "type": "entries",
+                    "entries": [
+                        "Chose your Strength or Charisma ability score. Increase that ability score's maximum by 2."
+                    ]
+                },
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Draconians have inherited some of the longevity of their Dragon forefathers. Although able to walk early after hatching, they age slowly, reaching adulthood at around 30-40 years, with variation mostly dependant on scale color. Draconians can almost reach 400 years of age."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Draconians are taller and heavier than humans, standing well over 6 feet tall and averaging 250 pounds. Your size is Medium."
+                    ]
+                },
+                {
+                    "name": "Darkvision",
+                    "entries": [
+                        "Thanks to your draconic heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Draconic Ancestry",
+                    "entries": [
+                        "Your draconic ancestry gives you special abilities. Choose a type of dragon from the table below. The type you choose influences your breath weapon and your damage {@variantrule Resistance|Ishiir}.",
+                        {
+                            "type": "table",
+                            "caption": "Draconic Ancestry",
+                            "colLabels": [
+                                "Dragon",
+                                "Damage Type",
+                                "Breath Weapon"
+                            ],
+                            "colStyles": [
+                                "col-3 text-center",
+                                "col-3 text-center",
+                                "col-6"
+                            ],
+                            "rows": [
+                                [
+                                    "Black",
+                                    "Acid",
+                                    "5 by 30 ft. line (DEX save)"
+                                ],
+                                [
+                                    "Blue",
+                                    "Lightning",
+                                    "5 by 30 ft. line (DEX save)"
+                                ],
+                                [
+                                    "Brass",
+                                    "Fire",
+                                    "5 by 30 ft. line (DEX save)"
+                                ],
+                                [
+                                    "Bronze",
+                                    "Lightning",
+                                    "5 by 30 ft. line (DEX save)"
+                                ],
+                                [
+                                    "Copper",
+                                    "Acid",
+                                    "5 by 30 ft. line (DEX save)"
+                                ],
+                                [
+                                    "Gold",
+                                    "Fire",
+                                    "15 ft. cone (DEX save)"
+                                ],
+                                [
+                                    "Green",
+                                    "Poison",
+                                    "15 ft. cone (CON save)"
+                                ],
+                                [
+                                    "Red",
+                                    "Fire",
+                                    "15 ft. cone (DEX save)"
+                                ],
+                                [
+                                    "Silver",
+                                    "Cold",
+                                    "15 ft. cone (CON save)"
+                                ],
+                                [
+                                    "White",
+                                    "Cold",
+                                    "15 ft. cone (CON save)"
+                                ]
+                            ]
+                        }
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Knowledge of the Ages",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill history} and {@skill intimidation} skills."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Breath Weapon",
+                    "entries": [
+                        "You can use your action to exhale destructive energy. Your draconic ancestry determines size, shape, and damage of the exhalation. Every creature in the area of a effect needs to make a {@variantrule Saving Throw|Ishiir} against a DC of 8 + any ability score bonus of your choice + your {@variantrule Proficiency|Ishiir}. The damage equals {@damage 4d6} on a failed save, and have as much on a successful one. The damage increases by {@damage 1d6} at levels 6, 11, and 16.",
+                        "After you use Breath Weapon, you can't use it again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Draconic."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "type": "entries",
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "True neutral, they live nomadic lifes often avoiding contact with other races as their pights are not their own and the challenges of their nomadic way of life are their own just the same."
+                    ]
+                },
+                {
+                    "name": "Draconian Names",
+                    "entries": [
+                        "<a href=\"https://www.fantasynamegenerators.com/dragon-names.php\">Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Gnome",
+            "page": 1,
+            "source": "Deoir",
+            "size": [
+                "S"
+            ],
+            "speed": 25,
+            "ability": [
+                {
+                    "dex": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "int": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "dex",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                }
+            ],
+            "age": {
+                "mature": 18,
+                "max": 150
+            },
+            "darkvision": 60,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "gnomish": true
+                }
+            ],
+            "entries": [
+                "Gnomes, unlike their amicable brethren the Halflings, are known to be a bit more distant and crude. They care more for themselves and others of their race and will almost never help others without a reward in return.",
+                {
+                    "name": "Ability Score Enhancement",
+                    "type": "entries",
+                    "entries": [
+                        "Chose your Dexterity or Intelligence ability score. Increase that ability score's maximum by 2."
+                    ]
+                },
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Gnomes mature at the same rate as humans, their lifespans, however, tend to be longer. A gnome can reach almost 150 years of age."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Gnomes average about 3 feet tall and weigh about 40 pounds. Your size is Small."
+                    ]
+                },
+                {
+                    "name": "Darkvision",
+                    "entries": [
+                        "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Gnome Cunning",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on all INT, WIS, and CHA {@variantrule Saving Throw|Ishiir|Saving Throws} against magic."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Gnomish."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Gigas",
+            "page": 1,
+            "source": "Deoir",
+            "size": [
+                "L"
+            ],
+            "speed": 30,
+            "ability": [
+                {
+                    "str": 1,
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "wis": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "dex",
+                            "int",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                }
+            ],
+            "heightAndWeight": {
+                "baseHeight": 96,
+                "heightMod": "2d12",
+                "baseWeight": 400,
+                "weightMod": "2d8"
+            },
+            "age": {
+                "mature": 75,
+                "max": 500
+            },
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "giant": true
+                }
+            ],
+            "resist": [
+                {
+                    "choose": {
+                        "from": [
+                            "cold",
+                            "fire",
+                            "poison"
+                        ]
+                    }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "athletics": true
+                }
+            ],
+            "entries": [
+                "The Gigas are a race that is told to be descendant from giants, however similarly to Draconians this has never been confirmed. Unlike the Draconians thought, they are known to stay and protect places they like.",
+                {
+                    "name": "Ability Score Enhancement",
+                    "type": "entries",
+                    "entries": [
+                        "Chose your Strength or Wisdom ability score. Increase that ability score's maximum by 2."
+                    ]
+                },
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Gigas age slower than humans, and reach adulthood once they have seen 75 summers. averaging a lifespan of about 500 years."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Gigas are by far the largest race on the face of Deoir. An average Gigas reaches heights of over 8 feet and weighs over 300 pounds. Your size is Large."
+                    ]
+                },
+                {
+                    "name": "Natural Athlete",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill Athletics} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Gigas Hardiness",
+                    "entries": [
+                        "When you take damage, you can choose to use your {@variantrule Reaction|Ishiir} to shrug off the blow. Roll a d12 + your CON modifier. And substract the result from the damage taken. You can't use this feature again until you have finished a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Mountain Born",
+                    "entries": [
+                        "Your are acclimatized to a region of your choice as per the DMG. You also have {@variantrule Resistance|Ishiir} to cold, fire or poison damage."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Brutal Attacks",
+                    "entries": [
+                        "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Giant."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "type": "entries",
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Lawful good, they uphold the laws of the cities they have decided becomes their home and oft found in the guard of said city upholding the values of the populace."
+                    ]
+                },
+                {
+                    "name": "Gigas Names",
+                    "entries": [
+                        "<a href=\"https://www.fantasynamegenerators.com/guardian-names.php\">Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Gnoll",
+            "page": 1,
+            "source": "Deoir",
+            "size": [
+                "M"
+            ],
+            "speed": 35,
+            "ability": [
+                {
+                    "str": 1,
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "dex": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                }
+            ],
+            "heightAndWeight": {
+                "baseHeight": 61,
+                "heightMod": "2d12",
+                "baseWeight": 130,
+                "weightMod": "2d4"
+            },
+            "age": {
+                "mature": 10,
+                "max": 50
+            },
+            "darkvision": 60,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "gnoll": true
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "perception": true
+                }
+            ],
+            "entries": [
+                "Gnolls are not often seen in settlements unless floods are happening. Not much is known about them except for them keeping to themselves and that they always travel in packs. However, it is rumored that they did not exist before the Ascension.",
+                {
+                    "name": "Ability Score Enhancement",
+                    "type": "entries",
+                    "entries": [
+                        "Chose your Constitution or Dexterity ability score. Increase that ability score's maximum by 2."
+                    ]
+                },
+                {
+                    "name": "Appearance",
+                    "type": "entries",
+                    "entries": [
+                        "Gnolls have features from all types of Canines and Hyaenidae, but where they have gained these features from is unknown."
+                    ]
+                },
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Gnolls have shorter lifespans than humans. They reach maturity at about 10 years old and can live to 50."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Your size is Medium."
+                    ]
+                },
+                {
+                    "name": "Darkvision",
+                    "entries": [
+                        "Your eyes are used to a cathemeral lifestyle and grant you superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Pack Tactics",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on an {@variantrule Attack Roll|Ishiir} against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition Incapacitated|Deoir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Vicious Fangs",
+                    "entries": [
+                        "Your unarmed attacks deal piercing damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your fangs to attack."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Keen Senses",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Tireless Wanderer",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on Constitution {@variantrule Saving Throw|Ishiir|Saving Throws} against {@condition Exhaustion|Ishiir} made as a result of a forced march."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Gnoll."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "type": "entries",
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "None."
+                    ]
+                },
+                {
+                    "name": "Gnoll Names",
+                    "entries": [
+                        "<a href=\"https://www.fantasynamegenerators.com/gnoll-names.php\">Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Human",
+            "page": 1,
+            "source": "Deoir",
+            "size": [
+                "M"
+            ],
+            "ability": [
+                {
+                    "str": 1,
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "dex": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "con": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "int": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "dex",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "wis": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "con",
+                            "int",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "cha": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "dex",
+                            "int",
+                            "wis"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                }
+            ],
+            "heightAndWeight": {
+                "baseHeight": 55,
+                "heightMod": "2d10",
+                "baseWeight": 105,
+                "weightMod": "2d4"
+            },
+            "speed": 30,
+            "age": {
+                "mature": 18,
+                "max": 70
+            },
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "anyStandard": 1
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "any": 3
+                }
+            ],
+            "entries": [
+                "Humans inhabit all kinds of places on Deoir. Not really known for anything specific except for being quite versatile and having a broad spectrum of views.",
+                {
+                    "name": "Ability Score Enhancement",
+                    "type": "entries",
+                    "entries": [
+                        "Chose any ability score. Decrease that ability score by 1.",
+                        "Chose any ability score. Increase that ability score's maximum by 2."
+                    ]
+                },
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Humans reach adulthood in their late teens and rarely live past 70."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Humans vary wildly in height and build, from barely 5 feet to well over 6 feet tall. Your size is Medium."
+                    ]
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and one extra language of your choice."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "type": "entries",
+                    "name": "Skill Versatility",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in 3 extra skills of your choice."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Natural Talent",
+                    "entries": [
+                        "You gain one feat of your choice."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Humans tend to no particular alignment by nature, although the aftermath of the Great War has made many of them bitter and resentful. One is as likely to find idealistic heroes as depraved villains among them, most of them fall somewhere in the middle."
+                    ]
+                },
+                {
+                    "name": "Human Names",
+                    "entries": [
+                        "Often similar to the names of the cultures they are apart of. Dominantly human settlements often use names like: <a href=\"https://www.fantasynamegenerators.com/anglo-saxon-names.php\">Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Orc",
+            "page": 1,
+            "source": "Deoir",
+            "size": [
+                "M"
+            ],
+            "speed": 35,
+            "ability": [
+                {
+                    "str": 1,
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "con": 1,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                }
+            ],
+            "heightAndWeight": {
+                "baseHeight": 62,
+                "heightMod": "2d12",
+                "baseWeight": 140,
+                "weightMod": "2d6"
+            },
+            "age": {
+                "mature": 15,
+                "max": 60
+            },
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "orcish": true
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "intimidation": true,
+                    "survival": true
+                }
+            ],
+            "entries": [
+                "Orcs are known to be strong fighters, often seen in gladiatorial arenas. They are not known to make their own cities, instead claiming their own territory as they are satisfied with what is already there for them.",
+                {
+                    "name": "Ability Score Enhancement",
+                    "type": "entries",
+                    "entries": [
+                        "Chose your Strength or Constitution ability score. Increase that ability score's maximum by 2."
+                    ]
+                },
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Orcs mature slightly faster than Humans, reaching adulthood in their early teens. They also age noticeably faster. An orc rarely lives past his 60th year."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Orcs are taller and much bulkier than humans. They easily surpass 6 feet in height and average over 200 pounds. Your size is Medium."
+                    ]
+                },
+                {
+                    "name": "Menacing",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill Intimidation} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Fearless",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Frightened|Deoir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Tireless",
+                    "entries": [
+                        "If you gain a level of {@condition Exhaustion|Ishiir}, you can use a {@variantrule Bonus Action|Ishiir} to remove it. You can't use this ability again until you finish a {@variantrule Long Rest|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Furious Charge",
+                    "entries": [
+                        "Once per turn, as part of a melee weapon attack, you can move up to your {@variantrule Speed|Ishiir} in a straight line towards a target of your choice."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Relentless Endurance",
+                    "entries": [
+                        "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a {@variantrule Long Rest|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Savage Attacks",
+                    "entries": [
+                        "When you score a critical hit with a melee weapon attack, you can reroll the weapon's damage dice (and only the weapon's own damage dice) again and add the result to the total."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Powerful Build",
+                    "entries": [
+                        "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Primal Intuition",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in {@skill Survival}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Orcish."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "type": "entries",
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "None."
+                    ]
+                },
+                {
+                    "name": "Orc Names",
+                    "entries": [
+                        "<a href=\"You have {@variantrule Advantage|Ishiir} on Dexterity (Stealth) {@variantrule Ability Check|Ishiir|checks} to hide in Natural terrain.\">Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        }
+    ],
+    "subrace": [
+        {
+            "name": "Mountain",
+            "page": 1,
+            "source": "Deoir",
+            "raceName": "Dwarf",
+            "raceSource": "Deoir",
+            "heightAndWeight": {
+                "baseHeight": 48,
+                "heightMod": "2d4",
+                "baseWeight": 130,
+                "weightMod": "2d6"
+            },
+            "traitTags": [
+                "Tool Proficiency",
+                "Weapon Proficiency"
+            ],
+            "resist": [
+                "cold"
+            ],
+            "entries": [
+                "<hr/>The mountain dwarves dwell most often in the Frozen Embrace. Since they are known for their mastery in metalwork, others started seeking them out, braving the terrible nature that stood between them and the dwarves. Each dwarven craftsman has their own way of determining the worth of a customer. Some will ask for a duel, others maybe a task. For this reason, and them being very stuck in their ways and adverse to change, most other races see them as aloof and don't enjoy interacting with them much.",
+                {
+                    "name": "Dwarven Toughness",
+                    "entries": [
+                        "Your hit point maximum increases by 1 for each level."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Dwarven Combat Training",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in light and medium armor as well as the battleaxe, warhammer, light crossbow, and heavy crossbow."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Heavy Armor Expertise",
+                    "entries": [
+                        "Your {@variantrule Speed|Ishiir} is not reduced by wearing heavy armor."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Dedicated Crafter",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in one tool of your choice. Your {@variantrule Proficiency|Ishiir} bonus is doubled for any {@variantrule Ability Check|Ishiir} you make that uses this chosen tool."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Mountain Born",
+                    "entries": [
+                        "You are acclimatized to cold regions as per the DMG. You also have {@variantrule Resistance|Ishiir} to cold damage."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Lawful Neutral. Most Mountain Dwarves are conservative and traditional, with strong emphasis on personal honor and loyalty. They tend to stay out of another's affairs and expect outsiders to do the same."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Mountain Dwarf Names",
+                    "entries": [
+                        "<a href=\"https://www.fantasynamegenerators.com/german-names.php\">Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Hill",
+            "page": 1,
+            "source": "Deoir",
+            "raceName": "Dwarf",
+            "raceSource": "Deoir",
+            "heightAndWeight": {
+                "baseHeight": 44,
+                "heightMod": "2d4",
+                "baseWeight": 115,
+                "weightMod": "2d8"
+            },
+            "skillProficiencies": [
+                {
+                    "insight": true,
+                    "persuasion": true
+                }
+            ],
+            "traitTags": [
+                "Tool Proficiency"
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [
+                                    "alarm|Ishiir"
+                                ],
+                                "3": [
+                                    "arcane lock|Ishiir"
+                                ]
+                            }
+                        }
+                    },
+                    "ability": {
+                        "choose": [
+                            "int"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "<hr/>The Hill Dwarves seem almost like the complete opposite of their mountain dwelling siblings. They settle in big settlements to make and sell their wares. They have a great love for gold and riches almost to the point where some races consider them the descendants of dragons instead of the Draconians. This however does not push them to less savory means of gaining said coin because in their culture, coin gained from anything but your wares might as well be rocks. For this reason the hill dwarves favor quantity over quality.",
+                {
+                    "name": "Crafty Negotiator",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill persuasion} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Insightful",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill insight} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Discerning Eye",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against Illusions and skill {@variantrule Ability Check|Ishiir|checks} to identify illusions."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Dedicated Crafter",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in two tools of your choice."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Wards and Seals",
+                    "entries": [
+                        "You can cast the {@spell alarm|Ishiir} as a ritual with this trait. Starting at 3rd level, you can also cast the {@spell arcane lock|Ishiir} spell with it. Intelligence is your spellcasting ability for these spells, and you don't need material components for them when you cast them with this trait."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Neutral Good. Most Hill Dwarves love engaging in conversation and have a helpful streak. They see value in order and tradition like all dwarves, although personal ambition and pragmatism has greater importance to them."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Hill Dwarf Names",
+                    "entries": [
+                        "<a href=\"https://www.fantasynamegenerators.com/czech-names.php\">Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Forest",
+            "page": 1,
+            "source": "Deoir",
+            "raceName": "Gnome",
+            "raceSource": "Deoir",
+            "heightAndWeight": {
+                "baseHeight": 35,
+                "heightMod": "2d4",
+                "baseWeight": 35,
+                "weightMod": "1"
+            },
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "minor illusion|Ishiir#c"
+                        ]
+                    }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "stealth": true
+                }
+            ],
+            "entries": [
+                "<hr/>Forest Gnomes are known tricksters and bandits, often seen with animals in tow to help rob their unfortunate victims. For this reason, forest gnomes are scorned in the cities and not trusted. This forces more Gnomes to turn to robbery to sustain themselves.",
+                {
+                    "name": "Natural Illusionist",
+                    "entries": [
+                        "You know the {@spell Minor Illusion|Ishiir} cantrip. Your spellcasting ability for it is INT, WIS, or CHA (your choice)."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Speak with Small Beasts",
+                    "entries": [
+                        "Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts. Forest gnomes love animals and often keep squirrels, badgers, rabbits, moles, woodpeckers, and other creatures as beloved pets."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Naturally Stealthy",
+                    "entries": [
+                        "You can attempt to hide even if you are obscured only by a creature that is at least one size larger than you."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Forest Camouflage",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Stealth}) {@variantrule Ability Check|Ishiir|checks} to hide in natural terrain."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "type": "entries",
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "True Neutral, while often forced into a life of crime most forest gnomes do not take pleasure in this way of life and likely would choose otherwise should they have the chance."
+                    ]
+                },
+                {
+                    "name": "Forest Gnome Names",
+                    "entries": [
+                        "<a href=\"https://www.fantasynamegenerators.com/nature-names.php\">First Name</a>, <a href=\"https://www.fantasynamegenerators.com/plant-names.php\">Last Name</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Rock",
+            "page": 1,
+            "source": "Deoir",
+            "raceName": "Gnome",
+            "raceSource": "Deoir",
+            "traitTags": [
+                "Tool Proficiency"
+            ],
+            "heightAndWeight": {
+                "baseHeight": 35,
+                "heightMod": "2d4",
+                "baseWeight": 35,
+                "weightMod": "2"
+            },
+            "skillProficiencies": [
+                {
+                    "stealth": true
+                }
+            ],
+            "entries": [
+                "<hr/>Rock Gnomes are known crafters like the Dwarves, although unlike them they are also known to try to extort their customers.",
+                {
+                    "name": "Expert Crafter",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in two tools of your choice."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Artificer's Lore",
+                    "entries": [
+                        "Whenever you make an INT-check related to magic items, alchemical objects, or technological devices, you have {@variantrule Advantage|Ishiir} on the check."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Gnome Tinkerer",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} with artisan's tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp).",
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "type": "item",
+                                    "name": "Clockwork Toy",
+                                    "entry": "This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents."
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Fire Starter",
+                                    "entry": "The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action."
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Music Box",
+                                    "entry": "When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed."
+                                }
+                            ]
+                        }
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Stone Camouflage",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Stealth}) {@variantrule Ability Check|Ishiir|checks} to hide in rocky terrain."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "type": "entries",
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Lawful evil, cunning in their trade while upholding laws and values they have, they will always be twisted in favor of themselves."
+                    ]
+                },
+                {
+                    "name": "Rock Gnome Names",
+                    "entries": [
+                        "<a href=\"https://www.fantasynamegenerators.com/bulgarian-names.php\">Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Lightfoot",
+            "page": 1,
+            "source": "Deoir",
+            "raceName": "Halfling",
+            "raceSource": "Deoir",
+            "heightAndWeight": {
+                "baseHeight": 36,
+                "heightMod": "2d4",
+                "baseWeight": 40,
+                "weightMod": "1d4"
+            },
+            "skillProficiencies": [
+                {
+                    "persuasion": true,
+                    "stealth": true
+                }
+            ],
+            "entries": [
+                "<hr/>Lightfoot Halflings are known to be quick on their feet and are seen in and around settlements helping people of all walks of life. They are even found in places of strife and war, as often they serve as relief units in those places and times.",
+                {
+                    "name": "Friendly Face",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill persuasion} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Sneaky",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill stealth} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Light Steps",
+                    "entries": [
+                        "You make any stealth check that is contingent on not being heard rather than not being seen with {@variantrule Advantage|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Naturally Stealthy",
+                    "entries": [
+                        "You can attempt to hide even if you are obscured only by a creature that is at least one size larger than you."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Medically Trained",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in {@skill Medicine}. When you make a Wisdom ({@skill Medicine}) check or an {@variantrule Ability Check|Ishiir} using an herbalism kit, you can roll a {@dice d4} and add the number rolled to the {@variantrule Ability Check|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "type": "entries",
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Neutral Good. Most Lightfoot Halflings are good-natured. They love making people laugh, meeting new friends and are quickly moved to action by another's plight. They do respect law, but are not above breaking it when it stands in the way of doing good in their eyes."
+                    ]
+                },
+                {
+                    "name": "Lightfoot Halfling Names",
+                    "entries": [
+                        "<a href=\"https://www.fantasynamegenerators.com/swiss-names.php\">Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Stout",
+            "page": 1,
+            "source": "Deoir",
+            "raceName": "Halfling",
+            "raceSource": "Deoir",
+            "heightAndWeight": {
+                "baseHeight": 38,
+                "heightMod": "2d4",
+                "baseWeight": 50,
+                "weightMod": "1d4"
+            },
+            "resist": [
+                "poison"
+            ],
+            "skillProficiencies": [
+                {
+                    "perception": true,
+                    "persuasion": true
+                }
+            ],
+            "traitTags": [
+                "Weapon Proficiency"
+            ],
+            "entries": [
+                "<hr/>Stout Halflings became more adapted at harsher conditions on the lands they inhabit. Often seen drinking with Dwarves and known to be a Dwarf's best friend in the pub.",
+                {
+                    "name": "Brave",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Frightened|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Alert Senses",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill perception} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Disciplined",
+                    "entries": [
+                        "You can use heavy weapons despite being small."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Stout Toughness",
+                    "entries": [
+                        "Your hit point maximum increases by 1 for each level."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Stout Weapon Training",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} with light and medium armor as well as the longsword, battleaxe, longbow, and heavy crossbow."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Stout Resilience",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against poison, and you have {@variantrule Resistance|Ishiir} against poison damage."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Ever Hospitable",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in {@skill Persuasion}. When you make a Charisma ({@skill Persuasion}) check or an {@variantrule Ability Check|Ishiir} involving brewer's supplies or cook's utensils, you can roll a {@dice d4} and add the number rolled to the {@variantrule Ability Check|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "type": "entries",
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Lawful neutral, very adapted to the ways of life of the mountain dwarves. So much so they have taken their values as their own. "
+                    ]
+                },
+                {
+                    "name": "Stout Halfling Names",
+                    "entries": [
+                        "<a href=\"https://www.fantasynamegenerators.com/finnish-names.php\">Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "High",
+            "page": 1,
+            "source": "Deoir",
+            "raceName": "Elf",
+            "raceSource": "Deoir",
+            "heightAndWeight": {
+                "baseHeight": 57,
+                "heightMod": "2d10",
+                "baseWeight": 100,
+                "weightMod": "1d4"
+            },
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            {
+                                "choose": "level=0|class=Sorcerer (Ishiir);Cleric (Ishiir);Wizard (Ishiir)|source=Ishiir",
+                                "count": 1
+                            },
+                            "produce flame|Ishiir#c"
+                        ],
+                        "3": [
+                            "hellish rebuke|Ishiir"
+                        ],
+                        "5": [
+                            "flaming sphere|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "any": 1
+                }
+            ],
+            "entries": [
+                "<hr/>High elves were tasked to protect the Burning forest and do so with a fiery passion. Sadly, after the birth of the corrupted gods, their essence has been tainted and their passion has been often twisted into a blind agression. Because of this they are prone to exert violence and bloodshed to reach their goals.",
+                {
+                    "name": "High Elf Education",
+                    "entries": [
+                        "Choose one skill or tool {@variantrule Proficiency|Ishiir}. Your {@variantrule Proficiency|Ishiir} bonus is doubled for any {@variantrule Ability Check|Ishiir} you make that uses this chosen {@variantrule Proficiency|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Cantrip",
+                    "entries": [
+                        "You know one cantrip of your choice from the cleric, wizard, or sorcerer spell list. Your spellcasting ability for it is INT, WIS, or CHA (your choice)."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Extra Language",
+                    "entries": [
+                        "You can speak, read, and write one additional language."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "High Elven Magics",
+                    "entries": [
+                        "You know the {@spell Produce Flame|Ishiir} cantrip. When you reach 3rd level, you can cast the {@spell Hellish Rebuke|Ishiir} spell once with this trait and regain the ability to do so when you finish a {@variantrule Long Rest|Ishiir}. When you reach 5th level, you can cast the {@spell Flaming Sphere} spell once with this trait and regain the ability to do so when you finish a {@variantrule Long Rest|Ishiir}. Casting these spells with this trait doesn't require material components. Your spellcasting ability for these spells is the same as you chose for the cantrip."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Evil of any kind, as the corruption runs deep and their passion even deeper."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "High Elf Names",
+                    "entries": [
+                        "<a href=\"https://www.fantasynamegenerators.com/elf-names.php\">Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Wood",
+            "page": 1,
+            "source": "Deoir",
+            "raceName": "Elf",
+            "raceSource": "Deoir",
+            "speed": 35,
+            "traitTags": [
+                "Weapon Proficiency"
+            ],
+            "heightAndWeight": {
+                "baseHeight": 62,
+                "heightMod": "2d12",
+                "baseWeight": 115,
+                "weightMod": "1d8"
+            },
+            "skillProficiencies": [
+                {
+                    "nature": true
+                }
+            ],
+            "entries": [
+                "<hr/>The wood elves were tasked to protect the Frozen Forest. They are not often seen in the places they protect but are known to be there despite that. They have become more open with their existance over time, and are integraded in the trade with Reothadh.",
+                {
+                    "name": "Elf Weapon Training",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} with the {@item elvish spear|Ishiir}, {@item greatspear|Ishiir}, {@item shortbow|Ishiir}, and {@item longbow|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Fleet of Foot",
+                    "entries": [
+                        "Your base walking increases to 35 feet."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Born Predator",
+                    "entries": [
+                        "You gain a +2 bonus to initiative."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "One with the Wild",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill nature} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Mask of the Wild",
+                    "entries": [
+                        "You can attempt to hide even when you're only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Fey Step",
+                    "entries": [
+                        "As a {@variantrule Bonus Action|Ishiir}, you can magically teleport up to 30 feet to an unoccupied space you can see. Once you use this trait, you can't do so again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Neutral. Most Wood Elf are stoic individuals that do not engage in conversation or take sides unless absolutely necessary. A Wood Elf will rarely deem an act evil or good, and instead judge it by its merit for survival."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Wood Elf Names",
+                    "entries": [
+                        "<b>Clan Name:</b> Often clan names are words the clan is known for, like: Formers of the wood, Stalker, Gatherer, ect.",
+                        "<a href=\"https://www.fantasynamegenerators.com/ent-names.php\">Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Sea",
+            "page": 1,
+            "source": "Deoir",
+            "raceName": "Elf",
+            "raceSource": "Deoir",
+            "traitTags": [
+                "Weapon Proficiency"
+            ],
+            "speed": {
+                "walk": 30,
+                "swim": 30
+            },
+            "heightAndWeight": {
+                "baseHeight": 60,
+                "heightMod": "2d12",
+                "baseWeight": 105,
+                "weightMod": "1d6"
+            },
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [
+                                    "control water|Ishiir",
+                                    "create or destroy water|Ishiir",
+                                    "fog cloud|Ishiir",
+                                    "water walk|Ishiir",
+                                    "water breathing|Ishiir"
+                                ]
+                            }
+                        }
+                    },
+                    "ability": {
+                        "choose": [
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "<hr/>Sea elves were tasked to protect The Forest of Life. Sea elves are known to have a kind and welcoming behavior and to help boats close to their forest during the flood if they are in peril. Strangely enough their want for sharing lately has been going to the extreme and some of their kind have started to leave, believing that the weird is the cause for this behavior and abandoning their duty of protecting the forest.",
+                {
+                    "name": "Sea Elf Spellcasting",
+                    "entries": [
+                        "All Sea Elves were gifted an innate ability to control water. Excepting the cantrip, you can cast the following spells once per {@variantrule Long Rest|Ishiir} without expending material components. Your spellcasting ability for these spells is WIS or CHA (your choice).",
+                        "{@spell Control Water|Ishiir}, {@spell Create or Destroy Water|Ishiir}, {@spell Fog cloud|Ishiir}. And both {@spell Water Walk|Ishiir} and {@spell Water Breathing|Ishiir} as rituals."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Child of the Sea",
+                    "entries": [
+                        "You have a {@variantrule Swim Speed|Ishiir} of 30 feet, and you can breathe air and water. When swiming you ignore strong currents in the water with no effort (Swiming against the flow of a river)."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Elf Weapon Training",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} with the {@item elvish sword|Ishiir}, {@item greatsword|Ishiir}, {@item longbow|Ishiir}, and {@item shortbow|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Chaotic Good, the sea elves always try to bring the best out in people even if the people in question do not feel like they need to be helped."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "High Elf Names",
+                    "entries": [
+                        "<a href=\"https://www.fantasynamegenerators.com/selkie-names.php\">Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        }
+    ]
 }

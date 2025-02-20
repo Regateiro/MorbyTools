@@ -5,7 +5,7 @@
                 "json": "Arkaeos",
                 "abbreviation": "Arkaeos",
                 "full": "Arkaeos",
-				"color": "#cccc00",
+                "color": "#cccc00",
                 "url": "https://regateiro.pt/5etools/homebrew/arkaeos-races.json",
                 "authors": [
                     "Sieg"
@@ -16,2643 +16,2643 @@
             }
         ]
     },
-	"race": [
-		{
-			"name": "Aven",
-			"page": 1,
-			"source": "Arkaeos",
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"dex": 2
-				}
-			],
-			"increaseAbilityMax": true,
-			"age": {
-				"mature": 10,
-				"max": 50
-			},
-			"resist": [
-				"radiant"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"aven": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Aven have shorter lifespans than humans. They reach maturity at about 10 years old and can live to 50."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Aven typically grow to be a little shorter than humans, usually somewhere around 5 feet, and are a lot lighter. Your size is Medium."
-					]
-				},
-				{
-					"name": "Blessing of Hor",
-					"entries": [
-						"You are acclimatized to hot regions as per the DMG and you have {@variantrule Resistance|Ishiir} to radiant damage."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read and, write Common and Aven."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Centaur",
-			"page": 1,
-			"source": "Arkaeos",
-			"size": [
-				"L"
-			],
-			"speed": 50,
-			"ability": [
-				{
-					"con": 2,
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"wis"
-						],
-						"count": 1
-					}
-				}
-			],
-			"increaseAbilityMax": true,
-			"age": {
-				"mature": 12,
-				"max": 60
-			},
-			"traitTags": [
-				"Tool Proficiency"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"sylvan": true
-				}
-			],
-			"skillProficiencies": [
-				{
-					"nature": true,
-					"perception": true,
-					"survival": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Centaurs mature slightly faster than Humans, reaching adulthood in their early teens. They also age noticeably faster. A centaur rarely lives past his 60th year."
-					]
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Neutral."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Your size is Large."
-					]
-				},
-				{
-					"name": "Equine Build",
-					"entries": [
-						"Provided you are willing, you can serve as a mount for other creatures that are at least one size smaller than you. When you climb, each foot of movement costs you 5 feet of movement instead and you have {@variantrule Disadvantage|Ishiir} on Strength ({@skill Athletics}) {@variantrule Ability Check|Ishiir|checks} to climb."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Hooves",
-					"entries": [
-						"Your unarmed attacks deal bludgeoning damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your hooves to attack."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Raised by the Steppe",
-					"entries": [
-						"You are {@variantrule Proficiency|Ishiir|proficient} in your choice of two of the following skills or tools: {@item Herbalism Kit|Ishiir}, {@item Leatherworker's Tools|Ishiir}, {@skill Nature}, {@skill Perception}, or {@skill Survival}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Steppe Skirmisher",
-					"entries": [
-						"If you move at least 30 feet in a straight line right before attacking a creature and you hit it with melee weapon attack, that target must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC 8 + your {@variantrule Proficiency|Ishiir} bonus + your Strength modifier) or be knocked {@condition Prone|Ishiir}. You can use this feature only once on each of your turns.",
-						"You can move up to half your {@variantrule Speed|Ishiir} as a {@variantrule Reaction|Ishiir} when an enemy ends its turn within 10 feet of you after moving towards you and you are not already within 5 feet of a different enemy. This movement doesn't provoke {@action Opportunity Attack|Ishiir|Opportunity Attacks}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read and, write Common and Sylvan."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Barbarian, Ranger, Druid."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Deminymph",
-			"page": 1,
-			"source": "Arkaeos",
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"cha": 2
-				}
-			],
-			"increaseAbilityMax": true,
-			"age": {
-				"mature": 21,
-				"max": 200
-			},
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"sylvan": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Deminymphs mature a little slower than humans, reaching adulthood in their early-to-mid twenties. After that, their aging process slows down dramatically and only those struck by severe sickness and/or at the brink of death by old age show signs of advanced age. Barring an early demise, a deminymph can live up to around 200 years."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Your size is Medium."
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Accustomed to twilit forests or the depths of the ocean, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Fey Resistance",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on all INT, WIS, and CHA {@variantrule Saving Throw|Ishiir|Saving Throws} against magic and magic can't put you to sleep."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Sylvan Nature",
-					"entries": [
-						"Your creature type is both humanoid and fey."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read and, write Common and Sylvan."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Gatari",
-			"page": 1,
-			"source": "Arkaeos",
-			"size": [
-				"M"
-			],
-			"speed": 35,
-			"ability": [
-				{
-					"dex": 2
-				}
-			],
-			"increaseAbilityMax": true,
-			"age": {
-				"mature": 10,
-				"max": 50
-			},
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"gatari": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Gatar have shorter lifespans than humans. They reach maturity at about 10 years old and can live to 50."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Your size is Medium."
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Your feline eyes grant you superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Bounding Leap",
-					"entries": [
-						"When you make a jump, you can use your Dexterity score in place of your Strength score to determine the distance you can cover. Additionally, the distance for your Long Jump is increased by 10 feet and by 5 feet for your High Jump. This bonus distance is halved when you make either jump as standing jump."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Natural Predator",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} and {@skill Stealth} skills."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Gatari."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Giantkin",
-			"page": 1,
-			"source": "Arkaeos",
-			"size": [
-				"L"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"str": 2
-				}
-			],
-			"increaseAbilityMax": true,
-			"age": {
-				"mature": 20,
-				"max": 80
-			},
-			"languageProficiencies": [
-				{
-					"common": true,
-					"giant": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Giantkin age a little slower than humans, reaching adulthood at around 20 years, and can live up to 80 years."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Your size is Large."
-					]
-				},
-				{
-					"name": "Giantblooded",
-					"entries": [
-						"Your hit point maximum increases by 1 for each level."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Giant."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Gnoll",
-			"page": 1,
-			"source": "Arkaeos",
-			"size": [
-				"M"
-			],
-			"speed": 35,
-			"ability": [
-				{
-					"con": 2,
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"wis"
-						],
-						"count": 1
-					}
-				}
-			],
-			"increaseAbilityMax": true,
-			"age": {
-				"mature": 10,
-				"max": 50
-			},
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"gnoll": true
-				}
-			],
-			"skillProficiencies": [
-				{
-					"perception": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Gnolls have shorter lifespans than humans. They reach maturity at about 10 years old and can live to 50."
-					]
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Neutral."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Your size is Medium."
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Your eyes are used to a cathemeral lifestyle and grant you superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Pack Tactics",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on an {@variantrule Attack Roll|Ishiir} against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition Incapacitated|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Vicious Fangs",
-					"entries": [
-						"Your unarmed attacks deal piercing damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your fangs to attack."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Keen Senses",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Tireless Wanderer",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on Constitution {@variantrule Saving Throw|Ishiir|Saving Throws} against {@condition Exhaustion|Ishiir} made as a result of a forced march."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Gnoll."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Fighter, Ranger, Rogue."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Lizardfolk",
-			"page": 1,
-			"source": "Arkaeos",
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"con": 2
-				}
-			],
-			"increaseAbilityMax": true,
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"saurian": true
-				}
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Your size is Medium."
-					]
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Your reptilian eyes grant you superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Natural Regeneration",
-					"entries": [
-						"Once per rest, when you spend a hit die, you regain additional hitpoints equal to your {@variantrule Proficiency|Ishiir} modifier."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Saurian."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Minotaur",
-			"page": 1,
-			"source": "Arkaeos",
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"str": 2,
-					"choose": {
-						"from": [
-							"con",
-							"wis",
-							"cha"
-						],
-						"count": 1
-					}
-				}
-			],
-			"increaseAbilityMax": true,
-			"age": {
-				"mature": 12,
-				"max": 60
-			},
-			"traitTags": [
-				"Powerful Build"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"sylvan": true
-				}
-			],
-			"skillProficiencies": [
-				{
-					"athletics": true,
-					"survival": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Minotaurs mature slightly faster than Humans, reaching adulthood in their early teens. They also age noticeably faster. A minotaur rarely lives past his 60th year."
-					]
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Neutral."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Your size is Medium."
-					]
-				},
-				{
-					"name": "Bovine Brawn",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Athletics} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Natural Wayfarer",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Survival} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Powerful Build",
-					"entries": [
-						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, and lift."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Relentless Endurance",
-					"entries": [
-						"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a {@variantrule Long Rest|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Horns & Hooves",
-					"entries": [
-						"Your unarmed attacks deal your choice of piercing or bludgeoning damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your hooves or horns to attack."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Hammering Blows",
-					"entries": [
-						"Once per turn, if you hit a creature no more than one size larger than you with a melee weapon attack, you can use your {@variantrule Reaction|Ishiir} or {@variantrule Bonus Action|Ishiir} to use the shove action against that same creature."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Sylvan."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Fighter, Paladin, Ranger."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Naga",
-			"page": 1,
-			"source": "Arkaeos",
-			"speed": {
-				"walk": 30,
-				"swim": 30
-			},
-			"ability": [
-				{
-					"cha": 2
-				}
-			],
-			"increaseAbilityMax": true,
-			"age": {
-				"mature": 18,
-				"max": 120
-			},
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"sylvan": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Naga mature at about the same rate as humans, their lifespans, however, tend to be longer. A naga can reach almost 120 years of age."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Darkvision",
-					"entries": [
-						"Your reptilian eyes grant you superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
-					]
-				},
-				{
-					"name": "Swim Speed",
-					"entries": [
-						"You have a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Keen Senses",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Sylvan Nature",
-					"entries": [
-						"Your creature type is both humanoid and fey."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Sylvan."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Faun",
-			"page": 1,
-			"source": "Arkaeos",
-			"size": [
-				"M"
-			],
-			"speed": 35,
-			"ability": [
-				{
-					"dex": 2,
-					"choose": {
-						"from": [
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-					}
-				}
-			],
-			"increaseAbilityMax": true,
-			"age": {
-				"mature": 18,
-				"max": 120
-			},
-			"darkvision": 60,
-			"traitTags": [
-				"Weapon Proficiency"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"sylvan": true
-				}
-			],
-			"skillProficiencies": [
-				{
-					"performance": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Fauns mature at about the same rate as humans, their lifespans, however, tend to be longer. A faun can reach almost 120 years of age."
-					]
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Chaotic Good."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Your size is Medium."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Darkvision",
-					"entries": [
-						"Accustomed to twilit forests and night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
-					]
-				},
-				{
-					"name": "Fey Ancestry",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Charmed|Ishiir}, and magic can't put you to sleep."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Reveler",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Performance} skill and one musical instrument of your choice."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Sylvan Nature",
-					"entries": [
-						"Your creature type is both humanoid and fey."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Bounding Leap",
-					"entries": [
-						"When you make a jump, you can use your Dexterity score in place of your Strength score to determine the distance you can cover. Additionally, the distance for your Long Jump is increased by 10 feet and by 5 feet for your High Jump. This bonus distance is halved when you make either jump as standing jump."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Faun Weapon Training",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} with the {@item shortbow|Ishiir}, {@item longbow|Ishiir}, {@item faunish spear|Ishiir}, and {@item scimitar|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Well-placed Shots",
-					"entries": [
-						"When you score a critical hit with a ranged weapon attack, you can reroll the weapon's damage dice (and only the weapon's own damage dice) again and add the result to the total."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Duck and Cover",
-					"entries": [
-						"When you have half or three-quarters cover and you aren't incapacitated, your cover is instead considered one step better."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Sylvan."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Bard, Rogue, Ranger."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Genasi",
-			"page": 1,
-			"source": "Arkaeos",
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"cha": 2
-				}
-			],
-			"increaseAbilityMax": true,
-			"age": {
-				"mature": 18,
-				"max": 120
-			},
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"primordial": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Genasi mature at about the same rate as humans and reach adulthood in their late teens. They live somewhat longer than humans do, up to 120 years."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Your size is Medium."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Darkvision",
-					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
-					]
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Primordial."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Human",
-			"page": 1,
-			"source": "Arkaeos",
-			"size": [
-				"M"
-			],
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 2
-					}
-				}
-			],
-			"speed": 30,
-			"age": {
-				"mature": 18,
-				"max": 70
-			},
-			"languageProficiencies": [
-				{
-					"common": true,
-					"anyStandard": 1
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Humans reach adulthood in their late teens and rarely live past 70."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Alignment",
-					"entries": [
-						"Humans tend to no particular alignment by nature."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Humans vary wildly in height and build, from barely 5 feet to well over 6 feet tall. Your size is Medium."
-					]
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and one extra language of your choice."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Skill Versatility",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in 3 extra skills of your choice."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Natural Talent",
-					"entries": [
-						"You gain one feat of your choice."
-					]
-				}
-			]
-		}
-	],
-	"subrace": [
-		{
-			"name": "Falconian",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Aven",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"wis",
-							"cha"
-						],
-						"count": 1
-					}
-				}
-			],
-			"traitTags": [
-				"Weapon Proficiency"
-			],
-			"skillProficiencies": [
-				{
-					"perception": true,
-					"persuasion": true
-				}
-			],
-			"additionalSpells": [
-				{
-					"ability": {
-						"choose": [
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"1": [
-							"light|Ishiir#c"
-						]
-					},
-					"innate": {
-						"3": {
-							"daily": {
-								"1": [
-									"shield of faith|Ishiir"
-								]
-							}
-						},
-						"5": {
-							"daily": {
-								"1": [
-									"magic weapon|Ishiir"
-								]
-							}
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"name": "Raptor's Eye",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill. Additionally, you perceive details of things you observe even at great distances and your range with ranged weapons and spell attacks increases by 5 feet times your {@variantrule Proficiency|Ishiir} modifier. In the case of ranged weapons, this bonus applies only to your normal range."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Falconian Combat Training",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} with the {@item battleaxe|Ishiir}, {@item longsword|Ishiir}, {@item aven javelin|Ishiir}, and {@item longbow|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Noble Bearing",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Persuasion} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Falconian Spellcasting",
-					"entries": [
-						"You know the {@spell Light|Ishiir} cantrip. When you reach 3rd level, you can cast the {@spell Shield of Faith|Ishiir} spell once per day; you must finish a {@variantrule Long Rest|Ishiir} in order to cast the spell again using this trait. When you reach 5th level, you can also cast the {@spell Magic Weapon|Ishiir} spell once per day; you must finish a {@variantrule Long Rest|Ishiir} in order to cast the spell again using this trait. WIS or CHA is your spellcasting ability for these spells (your choice). You can also cast them using spell slots you have of the appropriate level."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Lawful Neutral."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Fighter, Paladin, Sorcerer."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Ibisian",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Aven",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-					}
-				}
-			],
-			"languageProficiencies": [
-				{
-					"any": 1
-				}
-			],
-			"skillProficiencies": [
-				{
-					"choose": {
-						"from": [
-							"arcana",
-							"history",
-							"insight",
-							"investigation",
-							"medicine",
-							"religion"
-						],
-						"count": 3
-					}
-				}
-			],
-			"additionalSpells": [
-				{
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"1": [
-							"message|Ishiir#c"
-						]
-					},
-					"innate": {
-						"3": {
-							"daily": {
-								"1": [
-									"bless|Ishiir"
-								]
-							}
-						},
-						"5": {
-							"daily": {
-								"1": [
-									"augury|Ishiir"
-								]
-							}
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"name": "Truth-seeker",
-					"entries": [
-						"You are {@variantrule Proficiency|Ishiir|proficient} in your choice of three of the following skills: {@skill Arcana}, {@skill History}, {@skill Insight}, {@skill Investigation}, {@skill Medicine}, and {@skill Religion}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Extra Language",
-					"entries": [
-						"You can speak, read, and write one additional language."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Ibisian Spellcasting",
-					"entries": [
-						"You know the {@spell Message|Ishiir} cantrip. When you reach 3rd level, you can cast the {@spell Bless|Ishiir} spell once per day; you must finish a {@variantrule Long Rest|Ishiir} in order to cast the spell again using this trait. When you reach 5th level, you can also cast the {@spell Augury|Ishiir} spell once per day; you must finish a {@variantrule Long Rest|Ishiir} in order to cast the spell again using this trait. INT, WIS, or CHA is your spellcasting ability for these spells (your choice). You can also cast them using spell slots you have of the appropriate level."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Lawful Neutral."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Cleric, Sorcerer, Wizard."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Kenku",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Aven",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-					}
-				}
-			],
-			"traitTags": [
-				"Tool Proficiency"
-			],
-			"skillProficiencies": [
-				{
-					"choose": {
-						"from": [
-							"acrobatics",
-							"deception",
-							"stealth",
-							"sleight of hand"
-						],
-						"count": 2
-					}
-				}
-			],
-			"additionalSpells": [
-				{
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"1": [
-							"minor illusion|Ishiir#c"
-						]
-					},
-					"innate": {
-						"3": {
-							"daily": {
-								"1": [
-									"expeditious retreat|Ishiir"
-								]
-							}
-						},
-						"5": {
-							"daily": {
-								"1": [
-									"invisibility|Ishiir"
-								]
-							}
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"name": "Expert Forgery",
-					"entries": [
-						"You can duplicate other creatures' handwriting and craftwork. You have {@variantrule Advantage|Ishiir} on all {@variantrule Ability Check|Ishiir|checks} made to produce forgeries or duplicates of existing objects. You must have access to these objects throughout the process to benefit from this feature."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Mimicry",
-					"entries": [
-						"You can mimic sounds you have heard, including voices. A creature that hears the sounds can tell they are imitations with a successful Wisdom ({@skill Insight}) check opposed by your Charisma ({@skill Deception}) check."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Backalley Education",
-					"entries": [
-						"You are {@variantrule Proficiency|Ishiir|proficient} in your choice of two of the following skills: {@skill Acrobatics}, {@skill Deception}, {@skill Stealth}, and {@skill Sleight of Hand}. Alternatively, you can replace one of these choices with {@variantrule Proficiency|Ishiir} with {@item thieves' tools|PHB}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Kenku Spellcasting",
-					"entries": [
-						"You know the {@spell Minor Illusion|Ishiir} cantrip. When you reach 3rd level, you can cast the {@spell Expeditious Retreat|Ishiir} spell once per day; you must finish a {@variantrule Long Rest|Ishiir} in order to cast the spell again using this trait. When you reach 5th level, you can also cast the {@spell Invisibility|Ishiir} spell once per day; you must finish a {@variantrule Long Rest|Ishiir} in order to cast the spell again using this trait. INT, WIS, or CHA is your spellcasting ability for these spells (your choice)."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Chaotic Neutral."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Bard, Rogue, Warlock."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Water Nymph",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Deminymph",
-			"raceSource": "Arkaeos",
-			"speed": {
-				"walk": 30,
-				"swim": 30
-			},
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"dex",
-							"int",
-							"wis"
-						],
-						"count": 1
-					}
-				}
-			],
-			"skillProficiencies": [
-				{
-					"performance": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Swim Speed",
-					"entries": [
-						"You have a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Amphibious",
-					"entries": [
-						"You can breathe air and water."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Speak with Aquatic Beasts",
-					"entries": [
-						"Through sounds and gestures, you can communicate simple ideas with aquatic beasts."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Nymphsong",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Performance} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Chaotic Neutral."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Bard, Sorcerer, Warlock."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Wood Nymph",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Deminymph",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"dex",
-							"con",
-							"wis"
-						],
-						"count": 1
-					}
-				}
-			],
-			"skillProficiencies": [
-				{
-					"nature": true,
-					"perception": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Forestborn",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Nature} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Nymph Stride",
-					"entries": [
-						"You ignore {@quickref difficult terrain||3} caused by plants, including those of magical nature like the {@spell Entangle|Ishiir} spell. You are still subject to any of their other effects."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Keen Senses",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Nature's Bond",
-					"entries": [
-						"Through your magical connection to nature, you can communicate simple ideas with plants. To use this feature, you have to touch the plant you wish to communicate with."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Neutral."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Bard, Druid, Ranger."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Bastani",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Gatari",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-					}
-				}
-			],
-			"skillProficiencies": [
-				{
-					"arcana": true
-				}
-			],
-			"additionalSpells": [
-				{
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							{
-								"choose": "level=0|class=Bard (Ishiir);Sorcerer (Ishiir);Wizard (Ishiir)|source=Ishiir",
-								"count": 1
-							}
-						]
-					}
-				}
-			],
-			"entries": [
-				{
-					"name": "Graceful Climber",
-					"entries": [
-						"You have a {@variantrule Climb Speed|Ishiir} of 20 feet and you may use your Dexterity modifier in place of your Strength modifier for skill {@variantrule Ability Check|Ishiir|checks} to climb."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Thirst for Power",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Arcana} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Cantrip",
-					"entries": [
-						"You know one cantrip of your choice from the bard, wizard, or sorcerer spell list. Your spellcasting ability for it is INT, WIS, or CHA (your choice)."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Lawful Evil."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Cleric, Wizard, Sorcerer."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Leontari",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Gatari",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"cha"
-						],
-						"count": 1
-					}
-				}
-			],
-			"skillProficiencies": [
-				{
-					"persuasion": true
-				}
-			],
-			"traitTags": [
-				"Weapon Proficiency"
-			],
-			"entries": [
-				{
-					"name": "Fang and Claw",
-					"entries": [
-						"Your unarmed attacks deal your choice of piercing or slashing damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your fangs or claws to attack."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Lionhearted",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Frightened|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Honorable Reputation",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Persuasion} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Liontari Combat Training",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} with the {@item battleaxe|Ishiir}, {@item longsword|Ishiir}, {@item greataxe|Ishiir}, and {@item greatsword|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Lawful Good."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Barbarian, Fighter, Paladin."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Tigori",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Gatari",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"wis"
-						],
-						"count": 1
-					}
-				}
-			],
-			"skillProficiencies": [
-				{
-					"survival": true
-				}
-			],
-			"traitTags": [
-				"Weapon Proficiency"
-			],
-			"entries": [
-				{
-					"name": "Fang and Claw",
-					"entries": [
-						"Your unarmed attacks deal your choice of piercing or slashing damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your fangs or claws to attack."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Jungle Stalker",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Survival} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Stalker's Instinct",
-					"entries": [
-						"You gain a +2 bonus to initiative."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Tigori Combat Training",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} with the {@item warspear|Ishiir}, {@item longbow|Ishiir}, {@item scimitar|Ishiir}, and {@item greatspear|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Neutreal Evil."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Barbarian, Fighter, Ranger."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Cyclopean",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Giantkin",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"con",
-							"int",
-							"wis"
-						],
-						"count": 1
-					}
-				}
-			],
-			"darkvision": 60,
-			"skillProficiencies": [
-				{
-					"athletics": true
-				}
-			],
-			"traitTags": [
-				"Tool Proficiency"
-			],
-			"entries": [
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Adapted to life in caves or underground, you possess superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Maker's Hands",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in three tools of your choice."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Delve and Climb",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Athletics} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Hands-to-Mouth",
-					"entries": [
-						"When you spend overtime crafting and have to make a Constitution {@variantrule Saving Throw|Ishiir} to not suffer a level of {@condition Exhaustion|Ishiir}, you make that {@variantrule Saving Throw|Ishiir} with {@variantrule Advantage|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Chaotic Neutral."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Artificer, Barbarian, Wizard."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Laestrygonian",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Giantkin",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"con",
-							"wis",
-							"cha"
-						],
-						"count": 1
-					}
-				}
-			],
-			"skillProficiencies": [
-				{
-					"athletics": true
-				}
-			],
-			"traitTags": [
-				"Weapon Proficiency"
-			],
-			"resist": [
-				"poison"
-			],
-			"entries": [
-				{
-					"name": "Laestrygonian Combat Training",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} with the {@item warhammer|Ishiir}, {@item longsword|Ishiir}, {@item maul|Ishiir}, and {@item greatsword|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Ashborn",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against poison, and you have {@variantrule Resistance|Ishiir} against poison damage."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Heir of Ruin",
-					"entries": [
-						"You are acclimatized to very hot regions as per the DMG."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Lawful Evil."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Cleric, Fighter, Paladin."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Gatorian",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Lizardfolk",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"wis",
-							"cha"
-						],
-						"count": 1
-					}
-				}
-			],
-			"age": {
-				"mature": 20,
-				"max": 120
-			},
-			"speed": {
-				"walk": 30,
-				"swim": 30
-			},
-			"skillProficiencies": [
-				{
-					"athletics": true,
-					"intimidation": true
-				}
-			],
-			"traitTags": [
-				"Weapon Proficiency"
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"entries": [
-						"Gatorians reach maturity a little later than humans at around 20 years, but live longer - up to 120 years."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Swim Speed",
-					"entries": [
-						"You have a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Hold Breath",
-					"entries": [
-						"You can hold your breath for up to 10 minutes."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Menacing",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in the {@skill Intimidation} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Gatorian Combat Training",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} with the {@item battleaxe|Ishiir}, {@item greataxe|Ishiir}, {@item warhammer|Ishiir}, and {@item maul|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Strong Jaws",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Athletics} skill. You can grapple creatures using your jaws."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Tooth and Tail",
-					"entries": [
-						"Your unarmed attacks deal your choice of piercing or slashing damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your fangs or tail to attack."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Lawful Evil."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Barbarian, Fighter, Paladin."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Varanu",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Lizardfolk",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"wis"
-						],
-						"count": 1
-					}
-				}
-			],
-			"age": {
-				"mature": 10,
-				"max": 50
-			},
-			"speed": {
-				"walk": 30,
-				"climb": 30
-			},
-			"skillProficiencies": [
-				{
-					"choose": {
-						"from": [
-							"animal handling",
-							"medicine",
-							"nature",
-							"religion",
-							"stealth",
-							"survival"
-						],
-						"count": 3
-					}
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"entries": [
-						"Varanu have shorter lifespans than humans. They reach maturity at about 10 years old and can live to 50."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Climb Speed",
-					"entries": [
-						"You have a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Varanu Lore",
-					"entries": [
-						"You gain {@variantrule Proficiency|Ishiir} in three of your choice of the following skills: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, {@skill Religion}, {@skill Stealth}, {@skill Survival}"
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Fang and Claw",
-					"entries": [
-						"Your unarmed attacks deal your choice of piercing or slashing damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your fangs or claws to attack."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Slow Metabolism",
-					"entries": [
-						"A day's worth of food or rations lasts you twice as long and you retain the benefits of full meals for an additional day."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Neutral."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Cleric, Druid, Ranger."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Copperscale",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Naga",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"wis"
-						],
-						"count": 1
-					}
-				}
-			],
-			"heightAndWeight": {
-				"baseHeight": 92,
-				"heightMod": "2d12",
-				"baseLength": 184,
-				"lengthMod": "4d12",
-				"baseWeight": 900,
-				"weightMod": "4d8"
-			},
-			"size": [
-				"L"
-			],
-			"skillProficiencies": [
-				{
-					"athletics": true,
-					"intimidation": true,
-					"survival": true
-				}
-			],
-			"traitTags": [
-				"Weapon Proficiency"
-			],
-			"entries": [
-				{
-					"name": "Size",
-					"entries": [
-						"Your size is Large."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Imposing",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Intimidation} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Life on the Move",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Survival} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Copperscale Weapon Training",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@item longbow|Ishiir}, {@item glaive|Ishiir}, {@item warspear|Ishiir}, and {@item greatspear|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Constricting Grasp",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Athletics} skill. You can choose to grapple a creature with your coils instead of your hands. If you do so, you can attempt and maintain a grapple even when your hands are occupied, but your {@variantrule Speed|Ishiir} is also reduced to 0 while you maintain the grapple. Any creature that is the same size or smaller than you has {@variantrule Disadvantage|Ishiir} on skill {@variantrule Ability Check|Ishiir|checks} to try and {@action Escape a Grapple|Ishiir|escape this grapple} on subsequent turns. Any creature that is a smaller size than you is also restrained while {@condition Grappled|Ishiir} in this manner."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Lawful Neutral."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Bard, Fighter, Ranger."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Pearlscale",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Naga",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"dex",
-							"int",
-							"wis"
-						],
-						"count": 1
-					}
-				}
-			],
-			"heightAndWeight": {
-				"baseHeight": 55,
-				"heightMod": "2d10",
-				"baseLength": 110,
-				"lengthMod": "4d10",
-				"baseWeight": 230,
-				"weightMod": "2d6"
-			},
-			"size": [
-				"M"
-			],
-			"languageProficiencies": [
-				{
-					"any": 2
-				}
-			],
-			"skillProficiencies": [
-				{
-					"insight": true,
-					"persuasion": true
-				}
-			],
-			"traitTags": [
-				"Tool Proficiency"
-			],
-			"entries": [
-				{
-					"name": "Size",
-					"entries": [
-						"Your size is Medium."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Insightful Negotiator",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Insight} and {@skill Persuasion} skills."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Dedicated Crafter",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in one tool of your choice."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Fey Ancestry",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Charmed|Ishiir}, and magic can't put you to sleep."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Extra Languages",
-					"entries": [
-						"You can speak, read, and write two additional languages."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Speak with Aquatic Beasts",
-					"entries": [
-						"Through sounds and gestures, you can communicate simple ideas with aquatic beasts."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Neutral Good."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Artificer, Bard, Sorcerer."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Air",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Genasi",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"dex",
-							"con",
-							"int"
-						],
-						"count": 1
-					}
-				}
-			],
-			"speed": 35,
-			"skillProficiencies": [
-				{
-					"acrobatics": true
-				}
-			],
-			"resist": [
-				"lightning"
-			],
-			"additionalSpells": [
-				{
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									"levitate|Ishiir"
-								]
-							}
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"name": "Unending Breath",
-					"entries": [
-						"You can hold your breath indefinitely while you're not incapacitated and exposed to air."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Lightning Resistance",
-					"entries": [
-						"You have {@variantrule Resistance|Ishiir} to lightning damage."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Swift as the Wind",
-					"entries": [
-						"Your base walking increases to 35 feet."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Easy Balance",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Acrobatics} skill."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Ride the Wind",
-					"entries": [
-						"When you jump, you can use your {@variantrule Reaction|Ishiir} to increase your jumping distance by half your {@variantrule Speed|Ishiir}. When you take fall damage, you can use your {@variantrule Reaction|Ishiir} to reduce the damage by an amount equal to five times your character level. If you already have a feature that allows you to reduce fall damage as a {@variantrule Reaction|Ishiir}, you gain the benefits of both features when you use your {@variantrule Reaction|Ishiir} to reduce fall damage."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Mingle with the Wind",
-					"entries": [
-						"You can cast the {@spell Levitate|Ishiir} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a {@variantrule Long Rest|Ishiir}. You can also cast it using spell slots you have of the appropriate level."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Chaotic Neutral."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Bard, Kineticist, Wizard."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Earth",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Genasi",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"wis"
-						],
-						"count": 1
-					}
-				}
-			],
-			"skillProficiencies": [
-				{
-					"athletics": true
-				}
-			],
-			"resist": [
-				"poison"
-			],
-			"additionalSpells": [
-				{
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									"pass without trace|Ishiir"
-								]
-							}
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"name": "Earth Walk",
-					"entries": [
-						"You can move across {@quickref difficult terrain||3} made of earth or stone without expending extra movement."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Earthen Resilience",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against poison, and {@variantrule Resistance|Ishiir} against poison damage."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Rock Solid",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Athletics} skill. You count as one size larger when determining your carrying capacity and the weight you can push, drag, and lift."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Soundless Steps",
-					"entries": [
-						"You can cast the {@spell Pass without Trace|Ishiir} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a {@variantrule Long Rest|Ishiir}. You can also cast it using spell slots you have of the appropriate level."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Lawful Neutral."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Druid, Fighter, Kineticist."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Fire",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Genasi",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"int"
-						],
-						"count": 1
-					}
-				}
-			],
-			"skillProficiencies": [
-				{
-					"choose": {
-						"from": [
-							"persuasion",
-							"intimidation"
-						],
-						"count": 1
-					},
-					"perception": true
-				}
-			],
-			"resist": [
-				"fire"
-			],
-			"additionalSpells": [
-				{
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									"continual flame|Ishiir"
-								]
-							}
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"name": "Fireheart",
-					"entries": [
-						"You have {@variantrule Resistance|Ishiir} to fire damage and you are acclimatized to extreme heat as per the DMG."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Passionate Temper",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Persuasion} or {@skill Intimidation} skill (your choice)."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Burning Gaze",
-					"entries": [
-						"You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill and you can see in darkness as if it were bright light."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Unquenchable Fire",
-					"entries": [
-						"You can cast the {@spell Continual Flame|Ishiir} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a {@variantrule Long Rest|Ishiir}. You can also cast it using spell slots you have of the appropriate level."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Neutral Evil."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Fighter, Kineticist, Wizard."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Water",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Genasi",
-			"raceSource": "Arkaeos",
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"dex",
-							"con",
-							"wis"
-						],
-						"count": 1
-					}
-				}
-			],
-			"speed": {
-				"walk": 30,
-				"swim": 30
-			},
-			"resist": [
-				"acid"
-			],
-			"additionalSpells": [
-				{
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									"water walk|Ishiir"
-								]
-							}
-						}
-					}
-				}
-			],
-			"entries": [
-				{
-					"name": "Amphibious",
-					"entries": [
-						"You can breathe air and water."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Swim Speed",
-					"entries": [
-						"You have a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Acid Resistance",
-					"entries": [
-						"You have {@variantrule Resistance|Ishiir} to acid damage."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Wavewalker",
-					"entries": [
-						"You can cast the {@spell Water Walk|Ishiir} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a {@variantrule Long Rest|Ishiir}. You can also cast it using spell slots you have of the appropriate level."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Calm Mind",
-					"entries": [
-						"You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Typical Alignment",
-					"entries": [
-						"Neutral Good."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Favored Classes",
-					"entries": [
-						"Cleric, Kineticist, Sorcerer."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Camorran",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Human",
-			"raceSource": "Arkaeos",
-			"entries": [
-				{
-					"name": "Camorran Names",
-					"entries": [
-						"Male Names: Bjeorad, Erd, Fjisjarn, Hjalfad, Lurd, Murstilf, Oergill, Rornod, Senvgin, Thivan",
-						"Female Names: Alme, Dallgenand, Frilgi, Iskrilend, Kola, Melere, Rernli, Sefanje, Swollda, Wennlilde",
-						"Last Name: Name of parent who leads the family + son (male)/dotter (female)",
-						"<a href=\"https://www.fantasynamegenerators.com/the-dark-eye-thorwalian-names.php\">Name Generator</a>"
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Ellosian",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Human",
-			"raceSource": "Arkaeos",
-			"entries": [
-				{
-					"name": "Ellosian Names",
-					"entries": [
-						"Male Names: Aulus, Diocles, Hipponicus, Isocrates, Leicritus, Marcus, Oliatos, Septimus, Titus, Vel",
-						"Female Names: Ausonia, Caetronia, Eriopis, Issa, Luccecia, Molpadia, Naevia, Phaia, Quirinia, Thebe",
-						"Last Name: Acaunus, Catilina, Burcanius, Durio, Faustinius, Hesychius, Marsicus, Sollemnis, Tullas, Zeno",
-						"<a href=\"https://www.fantasynamegenerators.com/roman-names.php\">Name Generator (Northern Ellosian)</a>",
-						"<a href=\"https://www.fantasynamegenerators.com/ancient-greek-names.php\">Name Generator (Southern Ellosian)</a>"
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Kemetan",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Human",
-			"raceSource": "Arkaeos",
-			"entries": [
-				{
-					"name": "Kemetan Names",
-					"entries": [
-						"Male Names: Atef, Behdeti, Hek, Jumoke, Neb-e-chot, Pe-sahi, Rebu, Suten-hem-he, Thoth-mes, Tumaini",
-						"Female Names: Aua, Eopei, Iseret, Kahi, Khufut, Meht-urt, Nephthys, Ode, Scemiophris, Thiti",
-						"<a href=\"https://www.fantasynamegenerators.com/egyptian-names.php\">Name Generator</a>"
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Symerian",
-			"page": 1,
-			"source": "Arkaeos",
-			"raceName": "Human",
-			"raceSource": "Arkaeos",
-			"entries": [
-				{
-					"name": "Symerian Names",
-					"entries": [
-						"Male Names: Alalngar, Balih, Bardisan, Hanish, Ibbi-Adad, Mardokh, Melem-Kish, Shamshi-Adad, Taribum, Warad-Murrim",
-						"Female Names: Atourina, Eilina, Hano, Kushi, Lea, Ninsina, Panna, Shamreta, Shimta, Yaeeta",
-						"<a href=\"https://www.fantasynamegenerators.com/assyrian-names.php\">Name Generator</a>"
-					],
-					"type": "entries"
-				}
-			]
-		}
-	]
+    "race": [
+        {
+            "name": "Aven",
+            "page": 1,
+            "source": "Arkaeos",
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "ability": [
+                {
+                    "dex": 2
+                }
+            ],
+            "increaseAbilityMax": true,
+            "age": {
+                "mature": 10,
+                "max": 50
+            },
+            "resist": [
+                "radiant"
+            ],
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "aven": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Aven have shorter lifespans than humans. They reach maturity at about 10 years old and can live to 50."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Aven typically grow to be a little shorter than humans, usually somewhere around 5 feet, and are a lot lighter. Your size is Medium."
+                    ]
+                },
+                {
+                    "name": "Blessing of Hor",
+                    "entries": [
+                        "You are acclimatized to hot regions as per the DMG and you have {@variantrule Resistance|Ishiir} to radiant damage."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read and, write Common and Aven."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Centaur",
+            "page": 1,
+            "source": "Arkaeos",
+            "size": [
+                "L"
+            ],
+            "speed": 50,
+            "ability": [
+                {
+                    "con": 2,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "wis"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "increaseAbilityMax": true,
+            "age": {
+                "mature": 12,
+                "max": 60
+            },
+            "traitTags": [
+                "Tool Proficiency"
+            ],
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "sylvan": true
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "nature": true,
+                    "perception": true,
+                    "survival": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Centaurs mature slightly faster than Humans, reaching adulthood in their early teens. They also age noticeably faster. A centaur rarely lives past his 60th year."
+                    ]
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Neutral."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Your size is Large."
+                    ]
+                },
+                {
+                    "name": "Equine Build",
+                    "entries": [
+                        "Provided you are willing, you can serve as a mount for other creatures that are at least one size smaller than you. When you climb, each foot of movement costs you 5 feet of movement instead and you have {@variantrule Disadvantage|Ishiir} on Strength ({@skill Athletics}) {@variantrule Ability Check|Ishiir|checks} to climb."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Hooves",
+                    "entries": [
+                        "Your unarmed attacks deal bludgeoning damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your hooves to attack."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Raised by the Steppe",
+                    "entries": [
+                        "You are {@variantrule Proficiency|Ishiir|proficient} in your choice of two of the following skills or tools: {@item Herbalism Kit|Ishiir}, {@item Leatherworker's Tools|Ishiir}, {@skill Nature}, {@skill Perception}, or {@skill Survival}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Steppe Skirmisher",
+                    "entries": [
+                        "If you move at least 30 feet in a straight line right before attacking a creature and you hit it with melee weapon attack, that target must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC 8 + your {@variantrule Proficiency|Ishiir} bonus + your Strength modifier) or be knocked {@condition Prone|Ishiir}. You can use this feature only once on each of your turns.",
+                        "You can move up to half your {@variantrule Speed|Ishiir} as a {@variantrule Reaction|Ishiir} when an enemy ends its turn within 10 feet of you after moving towards you and you are not already within 5 feet of a different enemy. This movement doesn't provoke {@action Opportunity Attack|Ishiir|Opportunity Attacks}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read and, write Common and Sylvan."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Barbarian, Ranger, Druid."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Deminymph",
+            "page": 1,
+            "source": "Arkaeos",
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "ability": [
+                {
+                    "cha": 2
+                }
+            ],
+            "increaseAbilityMax": true,
+            "age": {
+                "mature": 21,
+                "max": 200
+            },
+            "darkvision": 60,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "sylvan": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Deminymphs mature a little slower than humans, reaching adulthood in their early-to-mid twenties. After that, their aging process slows down dramatically and only those struck by severe sickness and/or at the brink of death by old age show signs of advanced age. Barring an early demise, a deminymph can live up to around 200 years."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Your size is Medium."
+                    ]
+                },
+                {
+                    "name": "Darkvision",
+                    "entries": [
+                        "Accustomed to twilit forests or the depths of the ocean, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Fey Resistance",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on all INT, WIS, and CHA {@variantrule Saving Throw|Ishiir|Saving Throws} against magic and magic can't put you to sleep."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Sylvan Nature",
+                    "entries": [
+                        "Your creature type is both humanoid and fey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read and, write Common and Sylvan."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Gatari",
+            "page": 1,
+            "source": "Arkaeos",
+            "size": [
+                "M"
+            ],
+            "speed": 35,
+            "ability": [
+                {
+                    "dex": 2
+                }
+            ],
+            "increaseAbilityMax": true,
+            "age": {
+                "mature": 10,
+                "max": 50
+            },
+            "darkvision": 60,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "gatari": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Gatar have shorter lifespans than humans. They reach maturity at about 10 years old and can live to 50."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Your size is Medium."
+                    ]
+                },
+                {
+                    "name": "Darkvision",
+                    "entries": [
+                        "Your feline eyes grant you superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Bounding Leap",
+                    "entries": [
+                        "When you make a jump, you can use your Dexterity score in place of your Strength score to determine the distance you can cover. Additionally, the distance for your Long Jump is increased by 10 feet and by 5 feet for your High Jump. This bonus distance is halved when you make either jump as standing jump."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Natural Predator",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} and {@skill Stealth} skills."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Gatari."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Giantkin",
+            "page": 1,
+            "source": "Arkaeos",
+            "size": [
+                "L"
+            ],
+            "speed": 30,
+            "ability": [
+                {
+                    "str": 2
+                }
+            ],
+            "increaseAbilityMax": true,
+            "age": {
+                "mature": 20,
+                "max": 80
+            },
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "giant": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Giantkin age a little slower than humans, reaching adulthood at around 20 years, and can live up to 80 years."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Your size is Large."
+                    ]
+                },
+                {
+                    "name": "Giantblooded",
+                    "entries": [
+                        "Your hit point maximum increases by 1 for each level."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Giant."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Gnoll",
+            "page": 1,
+            "source": "Arkaeos",
+            "size": [
+                "M"
+            ],
+            "speed": 35,
+            "ability": [
+                {
+                    "con": 2,
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "wis"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "increaseAbilityMax": true,
+            "age": {
+                "mature": 10,
+                "max": 50
+            },
+            "darkvision": 60,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "gnoll": true
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "perception": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Gnolls have shorter lifespans than humans. They reach maturity at about 10 years old and can live to 50."
+                    ]
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Neutral."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Your size is Medium."
+                    ]
+                },
+                {
+                    "name": "Darkvision",
+                    "entries": [
+                        "Your eyes are used to a cathemeral lifestyle and grant you superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Pack Tactics",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on an {@variantrule Attack Roll|Ishiir} against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition Incapacitated|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Vicious Fangs",
+                    "entries": [
+                        "Your unarmed attacks deal piercing damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your fangs to attack."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Keen Senses",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Tireless Wanderer",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on Constitution {@variantrule Saving Throw|Ishiir|Saving Throws} against {@condition Exhaustion|Ishiir} made as a result of a forced march."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Gnoll."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Fighter, Ranger, Rogue."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Lizardfolk",
+            "page": 1,
+            "source": "Arkaeos",
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "ability": [
+                {
+                    "con": 2
+                }
+            ],
+            "increaseAbilityMax": true,
+            "darkvision": 60,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "saurian": true
+                }
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Your size is Medium."
+                    ]
+                },
+                {
+                    "name": "Darkvision",
+                    "entries": [
+                        "Your reptilian eyes grant you superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Natural Regeneration",
+                    "entries": [
+                        "Once per rest, when you spend a hit die, you regain additional hitpoints equal to your {@variantrule Proficiency|Ishiir} modifier."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Saurian."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Minotaur",
+            "page": 1,
+            "source": "Arkaeos",
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "ability": [
+                {
+                    "str": 2,
+                    "choose": {
+                        "from": [
+                            "con",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "increaseAbilityMax": true,
+            "age": {
+                "mature": 12,
+                "max": 60
+            },
+            "traitTags": [
+                "Powerful Build"
+            ],
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "sylvan": true
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "athletics": true,
+                    "survival": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Minotaurs mature slightly faster than Humans, reaching adulthood in their early teens. They also age noticeably faster. A minotaur rarely lives past his 60th year."
+                    ]
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Neutral."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Your size is Medium."
+                    ]
+                },
+                {
+                    "name": "Bovine Brawn",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Athletics} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Natural Wayfarer",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Survival} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Powerful Build",
+                    "entries": [
+                        "You count as one size larger when determining your carrying capacity and the weight you can push, drag, and lift."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Relentless Endurance",
+                    "entries": [
+                        "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a {@variantrule Long Rest|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Horns & Hooves",
+                    "entries": [
+                        "Your unarmed attacks deal your choice of piercing or bludgeoning damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your hooves or horns to attack."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Hammering Blows",
+                    "entries": [
+                        "Once per turn, if you hit a creature no more than one size larger than you with a melee weapon attack, you can use your {@variantrule Reaction|Ishiir} or {@variantrule Bonus Action|Ishiir} to use the shove action against that same creature."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Sylvan."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Fighter, Paladin, Ranger."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Naga",
+            "page": 1,
+            "source": "Arkaeos",
+            "speed": {
+                "walk": 30,
+                "swim": 30
+            },
+            "ability": [
+                {
+                    "cha": 2
+                }
+            ],
+            "increaseAbilityMax": true,
+            "age": {
+                "mature": 18,
+                "max": 120
+            },
+            "darkvision": 60,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "sylvan": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Naga mature at about the same rate as humans, their lifespans, however, tend to be longer. A naga can reach almost 120 years of age."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "Your reptilian eyes grant you superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ]
+                },
+                {
+                    "name": "Swim Speed",
+                    "entries": [
+                        "You have a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Keen Senses",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Sylvan Nature",
+                    "entries": [
+                        "Your creature type is both humanoid and fey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Sylvan."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Faun",
+            "page": 1,
+            "source": "Arkaeos",
+            "size": [
+                "M"
+            ],
+            "speed": 35,
+            "ability": [
+                {
+                    "dex": 2,
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "increaseAbilityMax": true,
+            "age": {
+                "mature": 18,
+                "max": 120
+            },
+            "darkvision": 60,
+            "traitTags": [
+                "Weapon Proficiency"
+            ],
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "sylvan": true
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "performance": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Fauns mature at about the same rate as humans, their lifespans, however, tend to be longer. A faun can reach almost 120 years of age."
+                    ]
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Chaotic Good."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Your size is Medium."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "Accustomed to twilit forests and night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ]
+                },
+                {
+                    "name": "Fey Ancestry",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Charmed|Ishiir}, and magic can't put you to sleep."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Reveler",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Performance} skill and one musical instrument of your choice."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Sylvan Nature",
+                    "entries": [
+                        "Your creature type is both humanoid and fey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Bounding Leap",
+                    "entries": [
+                        "When you make a jump, you can use your Dexterity score in place of your Strength score to determine the distance you can cover. Additionally, the distance for your Long Jump is increased by 10 feet and by 5 feet for your High Jump. This bonus distance is halved when you make either jump as standing jump."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Faun Weapon Training",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} with the {@item shortbow|Ishiir}, {@item longbow|Ishiir}, {@item faunish spear|Ishiir}, and {@item scimitar|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Well-placed Shots",
+                    "entries": [
+                        "When you score a critical hit with a ranged weapon attack, you can reroll the weapon's damage dice (and only the weapon's own damage dice) again and add the result to the total."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Duck and Cover",
+                    "entries": [
+                        "When you have half or three-quarters cover and you aren't incapacitated, your cover is instead considered one step better."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Sylvan."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Bard, Rogue, Ranger."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Genasi",
+            "page": 1,
+            "source": "Arkaeos",
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "ability": [
+                {
+                    "cha": 2
+                }
+            ],
+            "increaseAbilityMax": true,
+            "age": {
+                "mature": 18,
+                "max": 120
+            },
+            "darkvision": 60,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "primordial": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Genasi mature at about the same rate as humans and reach adulthood in their late teens. They live somewhat longer than humans do, up to 120 years."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Your size is Medium."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ]
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Primordial."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Human",
+            "page": 1,
+            "source": "Arkaeos",
+            "size": [
+                "M"
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 2
+                    }
+                }
+            ],
+            "speed": 30,
+            "age": {
+                "mature": 18,
+                "max": 70
+            },
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "anyStandard": 1
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Humans reach adulthood in their late teens and rarely live past 70."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Alignment",
+                    "entries": [
+                        "Humans tend to no particular alignment by nature."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Humans vary wildly in height and build, from barely 5 feet to well over 6 feet tall. Your size is Medium."
+                    ]
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and one extra language of your choice."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "type": "entries",
+                    "name": "Skill Versatility",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in 3 extra skills of your choice."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Natural Talent",
+                    "entries": [
+                        "You gain one feat of your choice."
+                    ]
+                }
+            ]
+        }
+    ],
+    "subrace": [
+        {
+            "name": "Falconian",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Aven",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "traitTags": [
+                "Weapon Proficiency"
+            ],
+            "skillProficiencies": [
+                {
+                    "perception": true,
+                    "persuasion": true
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": [
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "light|Ishiir#c"
+                        ]
+                    },
+                    "innate": {
+                        "3": {
+                            "daily": {
+                                "1": [
+                                    "shield of faith|Ishiir"
+                                ]
+                            }
+                        },
+                        "5": {
+                            "daily": {
+                                "1": [
+                                    "magic weapon|Ishiir"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Raptor's Eye",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill. Additionally, you perceive details of things you observe even at great distances and your range with ranged weapons and spell attacks increases by 5 feet times your {@variantrule Proficiency|Ishiir} modifier. In the case of ranged weapons, this bonus applies only to your normal range."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Falconian Combat Training",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} with the {@item battleaxe|Ishiir}, {@item longsword|Ishiir}, {@item aven javelin|Ishiir}, and {@item longbow|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Noble Bearing",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Persuasion} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Falconian Spellcasting",
+                    "entries": [
+                        "You know the {@spell Light|Ishiir} cantrip. When you reach 3rd level, you can cast the {@spell Shield of Faith|Ishiir} spell once per day; you must finish a {@variantrule Long Rest|Ishiir} in order to cast the spell again using this trait. When you reach 5th level, you can also cast the {@spell Magic Weapon|Ishiir} spell once per day; you must finish a {@variantrule Long Rest|Ishiir} in order to cast the spell again using this trait. WIS or CHA is your spellcasting ability for these spells (your choice). You can also cast them using spell slots you have of the appropriate level."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Lawful Neutral."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Fighter, Paladin, Sorcerer."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Ibisian",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Aven",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "any": 1
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "from": [
+                            "arcana",
+                            "history",
+                            "insight",
+                            "investigation",
+                            "medicine",
+                            "religion"
+                        ],
+                        "count": 3
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "message|Ishiir#c"
+                        ]
+                    },
+                    "innate": {
+                        "3": {
+                            "daily": {
+                                "1": [
+                                    "bless|Ishiir"
+                                ]
+                            }
+                        },
+                        "5": {
+                            "daily": {
+                                "1": [
+                                    "augury|Ishiir"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Truth-seeker",
+                    "entries": [
+                        "You are {@variantrule Proficiency|Ishiir|proficient} in your choice of three of the following skills: {@skill Arcana}, {@skill History}, {@skill Insight}, {@skill Investigation}, {@skill Medicine}, and {@skill Religion}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Extra Language",
+                    "entries": [
+                        "You can speak, read, and write one additional language."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Ibisian Spellcasting",
+                    "entries": [
+                        "You know the {@spell Message|Ishiir} cantrip. When you reach 3rd level, you can cast the {@spell Bless|Ishiir} spell once per day; you must finish a {@variantrule Long Rest|Ishiir} in order to cast the spell again using this trait. When you reach 5th level, you can also cast the {@spell Augury|Ishiir} spell once per day; you must finish a {@variantrule Long Rest|Ishiir} in order to cast the spell again using this trait. INT, WIS, or CHA is your spellcasting ability for these spells (your choice). You can also cast them using spell slots you have of the appropriate level."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Lawful Neutral."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Cleric, Sorcerer, Wizard."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Kenku",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Aven",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "traitTags": [
+                "Tool Proficiency"
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "from": [
+                            "acrobatics",
+                            "deception",
+                            "stealth",
+                            "sleight of hand"
+                        ],
+                        "count": 2
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "minor illusion|Ishiir#c"
+                        ]
+                    },
+                    "innate": {
+                        "3": {
+                            "daily": {
+                                "1": [
+                                    "expeditious retreat|Ishiir"
+                                ]
+                            }
+                        },
+                        "5": {
+                            "daily": {
+                                "1": [
+                                    "invisibility|Ishiir"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Expert Forgery",
+                    "entries": [
+                        "You can duplicate other creatures' handwriting and craftwork. You have {@variantrule Advantage|Ishiir} on all {@variantrule Ability Check|Ishiir|checks} made to produce forgeries or duplicates of existing objects. You must have access to these objects throughout the process to benefit from this feature."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Mimicry",
+                    "entries": [
+                        "You can mimic sounds you have heard, including voices. A creature that hears the sounds can tell they are imitations with a successful Wisdom ({@skill Insight}) check opposed by your Charisma ({@skill Deception}) check."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Backalley Education",
+                    "entries": [
+                        "You are {@variantrule Proficiency|Ishiir|proficient} in your choice of two of the following skills: {@skill Acrobatics}, {@skill Deception}, {@skill Stealth}, and {@skill Sleight of Hand}. Alternatively, you can replace one of these choices with {@variantrule Proficiency|Ishiir} with {@item thieves' tools|PHB}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Kenku Spellcasting",
+                    "entries": [
+                        "You know the {@spell Minor Illusion|Ishiir} cantrip. When you reach 3rd level, you can cast the {@spell Expeditious Retreat|Ishiir} spell once per day; you must finish a {@variantrule Long Rest|Ishiir} in order to cast the spell again using this trait. When you reach 5th level, you can also cast the {@spell Invisibility|Ishiir} spell once per day; you must finish a {@variantrule Long Rest|Ishiir} in order to cast the spell again using this trait. INT, WIS, or CHA is your spellcasting ability for these spells (your choice)."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Chaotic Neutral."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Bard, Rogue, Warlock."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Water Nymph",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Deminymph",
+            "raceSource": "Arkaeos",
+            "speed": {
+                "walk": 30,
+                "swim": 30
+            },
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "int",
+                            "wis"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "performance": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Swim Speed",
+                    "entries": [
+                        "You have a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Amphibious",
+                    "entries": [
+                        "You can breathe air and water."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Speak with Aquatic Beasts",
+                    "entries": [
+                        "Through sounds and gestures, you can communicate simple ideas with aquatic beasts."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Nymphsong",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Performance} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Chaotic Neutral."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Bard, Sorcerer, Warlock."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Wood Nymph",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Deminymph",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "con",
+                            "wis"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "nature": true,
+                    "perception": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Forestborn",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Nature} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Nymph Stride",
+                    "entries": [
+                        "You ignore {@quickref difficult terrain||3} caused by plants, including those of magical nature like the {@spell Entangle|Ishiir} spell. You are still subject to any of their other effects."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Keen Senses",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Nature's Bond",
+                    "entries": [
+                        "Through your magical connection to nature, you can communicate simple ideas with plants. To use this feature, you have to touch the plant you wish to communicate with."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Neutral."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Bard, Druid, Ranger."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Bastani",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Gatari",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "arcana": true
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "_": [
+                            {
+                                "choose": "level=0|class=Bard (Ishiir);Sorcerer (Ishiir);Wizard (Ishiir)|source=Ishiir",
+                                "count": 1
+                            }
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Graceful Climber",
+                    "entries": [
+                        "You have a {@variantrule Climb Speed|Ishiir} of 20 feet and you may use your Dexterity modifier in place of your Strength modifier for skill {@variantrule Ability Check|Ishiir|checks} to climb."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Thirst for Power",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Arcana} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Cantrip",
+                    "entries": [
+                        "You know one cantrip of your choice from the bard, wizard, or sorcerer spell list. Your spellcasting ability for it is INT, WIS, or CHA (your choice)."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Lawful Evil."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Cleric, Wizard, Sorcerer."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Leontari",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Gatari",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "cha"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "persuasion": true
+                }
+            ],
+            "traitTags": [
+                "Weapon Proficiency"
+            ],
+            "entries": [
+                {
+                    "name": "Fang and Claw",
+                    "entries": [
+                        "Your unarmed attacks deal your choice of piercing or slashing damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your fangs or claws to attack."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Lionhearted",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Frightened|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Honorable Reputation",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Persuasion} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Liontari Combat Training",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} with the {@item battleaxe|Ishiir}, {@item longsword|Ishiir}, {@item greataxe|Ishiir}, and {@item greatsword|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Lawful Good."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Barbarian, Fighter, Paladin."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Tigori",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Gatari",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "wis"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "survival": true
+                }
+            ],
+            "traitTags": [
+                "Weapon Proficiency"
+            ],
+            "entries": [
+                {
+                    "name": "Fang and Claw",
+                    "entries": [
+                        "Your unarmed attacks deal your choice of piercing or slashing damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your fangs or claws to attack."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Jungle Stalker",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Survival} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Stalker's Instinct",
+                    "entries": [
+                        "You gain a +2 bonus to initiative."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Tigori Combat Training",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} with the {@item warspear|Ishiir}, {@item longbow|Ishiir}, {@item scimitar|Ishiir}, and {@item greatspear|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Neutreal Evil."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Barbarian, Fighter, Ranger."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Cyclopean",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Giantkin",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "con",
+                            "int",
+                            "wis"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "darkvision": 60,
+            "skillProficiencies": [
+                {
+                    "athletics": true
+                }
+            ],
+            "traitTags": [
+                "Tool Proficiency"
+            ],
+            "entries": [
+                {
+                    "name": "Darkvision",
+                    "entries": [
+                        "Adapted to life in caves or underground, you possess superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Maker's Hands",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in three tools of your choice."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Delve and Climb",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Athletics} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Hands-to-Mouth",
+                    "entries": [
+                        "When you spend overtime crafting and have to make a Constitution {@variantrule Saving Throw|Ishiir} to not suffer a level of {@condition Exhaustion|Ishiir}, you make that {@variantrule Saving Throw|Ishiir} with {@variantrule Advantage|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Chaotic Neutral."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Artificer, Barbarian, Wizard."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Laestrygonian",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Giantkin",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "con",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "athletics": true
+                }
+            ],
+            "traitTags": [
+                "Weapon Proficiency"
+            ],
+            "resist": [
+                "poison"
+            ],
+            "entries": [
+                {
+                    "name": "Laestrygonian Combat Training",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} with the {@item warhammer|Ishiir}, {@item longsword|Ishiir}, {@item maul|Ishiir}, and {@item greatsword|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Ashborn",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against poison, and you have {@variantrule Resistance|Ishiir} against poison damage."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Heir of Ruin",
+                    "entries": [
+                        "You are acclimatized to very hot regions as per the DMG."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Lawful Evil."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Cleric, Fighter, Paladin."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Gatorian",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Lizardfolk",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "age": {
+                "mature": 20,
+                "max": 120
+            },
+            "speed": {
+                "walk": 30,
+                "swim": 30
+            },
+            "skillProficiencies": [
+                {
+                    "athletics": true,
+                    "intimidation": true
+                }
+            ],
+            "traitTags": [
+                "Weapon Proficiency"
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "entries": [
+                        "Gatorians reach maturity a little later than humans at around 20 years, but live longer - up to 120 years."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Swim Speed",
+                    "entries": [
+                        "You have a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Hold Breath",
+                    "entries": [
+                        "You can hold your breath for up to 10 minutes."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Menacing",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill Intimidation} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Gatorian Combat Training",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} with the {@item battleaxe|Ishiir}, {@item greataxe|Ishiir}, {@item warhammer|Ishiir}, and {@item maul|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Strong Jaws",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Athletics} skill. You can grapple creatures using your jaws."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Tooth and Tail",
+                    "entries": [
+                        "Your unarmed attacks deal your choice of piercing or slashing damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your fangs or tail to attack."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Lawful Evil."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Barbarian, Fighter, Paladin."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Varanu",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Lizardfolk",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "wis"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "age": {
+                "mature": 10,
+                "max": 50
+            },
+            "speed": {
+                "walk": 30,
+                "climb": 30
+            },
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "from": [
+                            "animal handling",
+                            "medicine",
+                            "nature",
+                            "religion",
+                            "stealth",
+                            "survival"
+                        ],
+                        "count": 3
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "entries": [
+                        "Varanu have shorter lifespans than humans. They reach maturity at about 10 years old and can live to 50."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Climb Speed",
+                    "entries": [
+                        "You have a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Varanu Lore",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in three of your choice of the following skills: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, {@skill Religion}, {@skill Stealth}, {@skill Survival}"
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Fang and Claw",
+                    "entries": [
+                        "Your unarmed attacks deal your choice of piercing or slashing damage equal to {@damage 1d4} + your Strength modifier. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your fangs or claws to attack."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Slow Metabolism",
+                    "entries": [
+                        "A day's worth of food or rations lasts you twice as long and you retain the benefits of full meals for an additional day."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Neutral."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Cleric, Druid, Ranger."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Copperscale",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Naga",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "wis"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "heightAndWeight": {
+                "baseHeight": 92,
+                "heightMod": "2d12",
+                "baseLength": 184,
+                "lengthMod": "4d12",
+                "baseWeight": 900,
+                "weightMod": "4d8"
+            },
+            "size": [
+                "L"
+            ],
+            "skillProficiencies": [
+                {
+                    "athletics": true,
+                    "intimidation": true,
+                    "survival": true
+                }
+            ],
+            "traitTags": [
+                "Weapon Proficiency"
+            ],
+            "entries": [
+                {
+                    "name": "Size",
+                    "entries": [
+                        "Your size is Large."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Imposing",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Intimidation} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Life on the Move",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Survival} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Copperscale Weapon Training",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@item longbow|Ishiir}, {@item glaive|Ishiir}, {@item warspear|Ishiir}, and {@item greatspear|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Constricting Grasp",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Athletics} skill. You can choose to grapple a creature with your coils instead of your hands. If you do so, you can attempt and maintain a grapple even when your hands are occupied, but your {@variantrule Speed|Ishiir} is also reduced to 0 while you maintain the grapple. Any creature that is the same size or smaller than you has {@variantrule Disadvantage|Ishiir} on skill {@variantrule Ability Check|Ishiir|checks} to try and {@action Escape a Grapple|Ishiir|escape this grapple} on subsequent turns. Any creature that is a smaller size than you is also restrained while {@condition Grappled|Ishiir} in this manner."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Lawful Neutral."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Bard, Fighter, Ranger."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Pearlscale",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Naga",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "int",
+                            "wis"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "heightAndWeight": {
+                "baseHeight": 55,
+                "heightMod": "2d10",
+                "baseLength": 110,
+                "lengthMod": "4d10",
+                "baseWeight": 230,
+                "weightMod": "2d6"
+            },
+            "size": [
+                "M"
+            ],
+            "languageProficiencies": [
+                {
+                    "any": 2
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "insight": true,
+                    "persuasion": true
+                }
+            ],
+            "traitTags": [
+                "Tool Proficiency"
+            ],
+            "entries": [
+                {
+                    "name": "Size",
+                    "entries": [
+                        "Your size is Medium."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Insightful Negotiator",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Insight} and {@skill Persuasion} skills."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Dedicated Crafter",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in one tool of your choice."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Fey Ancestry",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Charmed|Ishiir}, and magic can't put you to sleep."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Extra Languages",
+                    "entries": [
+                        "You can speak, read, and write two additional languages."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Speak with Aquatic Beasts",
+                    "entries": [
+                        "Through sounds and gestures, you can communicate simple ideas with aquatic beasts."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Neutral Good."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Artificer, Bard, Sorcerer."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Air",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Genasi",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "con",
+                            "int"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "speed": 35,
+            "skillProficiencies": [
+                {
+                    "acrobatics": true
+                }
+            ],
+            "resist": [
+                "lightning"
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [
+                                    "levitate|Ishiir"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Unending Breath",
+                    "entries": [
+                        "You can hold your breath indefinitely while you're not incapacitated and exposed to air."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Lightning Resistance",
+                    "entries": [
+                        "You have {@variantrule Resistance|Ishiir} to lightning damage."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Swift as the Wind",
+                    "entries": [
+                        "Your base walking increases to 35 feet."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Easy Balance",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Acrobatics} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Ride the Wind",
+                    "entries": [
+                        "When you jump, you can use your {@variantrule Reaction|Ishiir} to increase your jumping distance by half your {@variantrule Speed|Ishiir}. When you take fall damage, you can use your {@variantrule Reaction|Ishiir} to reduce the damage by an amount equal to five times your character level. If you already have a feature that allows you to reduce fall damage as a {@variantrule Reaction|Ishiir}, you gain the benefits of both features when you use your {@variantrule Reaction|Ishiir} to reduce fall damage."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Mingle with the Wind",
+                    "entries": [
+                        "You can cast the {@spell Levitate|Ishiir} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a {@variantrule Long Rest|Ishiir}. You can also cast it using spell slots you have of the appropriate level."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Chaotic Neutral."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Bard, Kineticist, Wizard."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Earth",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Genasi",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "wis"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "athletics": true
+                }
+            ],
+            "resist": [
+                "poison"
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [
+                                    "pass without trace|Ishiir"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Earth Walk",
+                    "entries": [
+                        "You can move across {@quickref difficult terrain||3} made of earth or stone without expending extra movement."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Earthen Resilience",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against poison, and {@variantrule Resistance|Ishiir} against poison damage."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Rock Solid",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Athletics} skill. You count as one size larger when determining your carrying capacity and the weight you can push, drag, and lift."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Soundless Steps",
+                    "entries": [
+                        "You can cast the {@spell Pass without Trace|Ishiir} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a {@variantrule Long Rest|Ishiir}. You can also cast it using spell slots you have of the appropriate level."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Lawful Neutral."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Druid, Fighter, Kineticist."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Fire",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Genasi",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "int"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "from": [
+                            "persuasion",
+                            "intimidation"
+                        ],
+                        "count": 1
+                    },
+                    "perception": true
+                }
+            ],
+            "resist": [
+                "fire"
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [
+                                    "continual flame|Ishiir"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Fireheart",
+                    "entries": [
+                        "You have {@variantrule Resistance|Ishiir} to fire damage and you are acclimatized to extreme heat as per the DMG."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Passionate Temper",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Persuasion} or {@skill Intimidation} skill (your choice)."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Burning Gaze",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill and you can see in darkness as if it were bright light."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Unquenchable Fire",
+                    "entries": [
+                        "You can cast the {@spell Continual Flame|Ishiir} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a {@variantrule Long Rest|Ishiir}. You can also cast it using spell slots you have of the appropriate level."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Neutral Evil."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Fighter, Kineticist, Wizard."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Water",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Genasi",
+            "raceSource": "Arkaeos",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "con",
+                            "wis"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "speed": {
+                "walk": 30,
+                "swim": 30
+            },
+            "resist": [
+                "acid"
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [
+                                    "water walk|Ishiir"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Amphibious",
+                    "entries": [
+                        "You can breathe air and water."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Swim Speed",
+                    "entries": [
+                        "You have a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Acid Resistance",
+                    "entries": [
+                        "You have {@variantrule Resistance|Ishiir} to acid damage."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Wavewalker",
+                    "entries": [
+                        "You can cast the {@spell Water Walk|Ishiir} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a {@variantrule Long Rest|Ishiir}. You can also cast it using spell slots you have of the appropriate level."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Calm Mind",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Neutral Good."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Cleric, Kineticist, Sorcerer."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Camorran",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Human",
+            "raceSource": "Arkaeos",
+            "entries": [
+                {
+                    "name": "Camorran Names",
+                    "entries": [
+                        "Male Names: Bjeorad, Erd, Fjisjarn, Hjalfad, Lurd, Murstilf, Oergill, Rornod, Senvgin, Thivan",
+                        "Female Names: Alme, Dallgenand, Frilgi, Iskrilend, Kola, Melere, Rernli, Sefanje, Swollda, Wennlilde",
+                        "Last Name: Name of parent who leads the family + son (male)/dotter (female)",
+                        "<a href=\"https://www.fantasynamegenerators.com/the-dark-eye-thorwalian-names.php\">Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Ellosian",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Human",
+            "raceSource": "Arkaeos",
+            "entries": [
+                {
+                    "name": "Ellosian Names",
+                    "entries": [
+                        "Male Names: Aulus, Diocles, Hipponicus, Isocrates, Leicritus, Marcus, Oliatos, Septimus, Titus, Vel",
+                        "Female Names: Ausonia, Caetronia, Eriopis, Issa, Luccecia, Molpadia, Naevia, Phaia, Quirinia, Thebe",
+                        "Last Name: Acaunus, Catilina, Burcanius, Durio, Faustinius, Hesychius, Marsicus, Sollemnis, Tullas, Zeno",
+                        "<a href=\"https://www.fantasynamegenerators.com/roman-names.php\">Name Generator (Northern Ellosian)</a>",
+                        "<a href=\"https://www.fantasynamegenerators.com/ancient-greek-names.php\">Name Generator (Southern Ellosian)</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Kemetan",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Human",
+            "raceSource": "Arkaeos",
+            "entries": [
+                {
+                    "name": "Kemetan Names",
+                    "entries": [
+                        "Male Names: Atef, Behdeti, Hek, Jumoke, Neb-e-chot, Pe-sahi, Rebu, Suten-hem-he, Thoth-mes, Tumaini",
+                        "Female Names: Aua, Eopei, Iseret, Kahi, Khufut, Meht-urt, Nephthys, Ode, Scemiophris, Thiti",
+                        "<a href=\"https://www.fantasynamegenerators.com/egyptian-names.php\">Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Symerian",
+            "page": 1,
+            "source": "Arkaeos",
+            "raceName": "Human",
+            "raceSource": "Arkaeos",
+            "entries": [
+                {
+                    "name": "Symerian Names",
+                    "entries": [
+                        "Male Names: Alalngar, Balih, Bardisan, Hanish, Ibbi-Adad, Mardokh, Melem-Kish, Shamshi-Adad, Taribum, Warad-Murrim",
+                        "Female Names: Atourina, Eilina, Hano, Kushi, Lea, Ninsina, Panna, Shamreta, Shimta, Yaeeta",
+                        "<a href=\"https://www.fantasynamegenerators.com/assyrian-names.php\">Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        }
+    ]
 }

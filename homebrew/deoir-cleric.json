@@ -5,7 +5,7 @@
                 "json": "Deoir",
                 "abbreviation": "Deoir",
                 "full": "Deoir",
-				"color": "#669900",
+                "color": "#669900",
                 "url": "https://regateiro.pt/5etools/homebrew/ishiir-cleric.json",
                 "authors": [
                     "Roy"
@@ -17,207 +17,207 @@
         ]
     },
     "subclass": [
-		{
-			"name": "Song Domain",
-			"shortName": "Song",
-			"source": "Deoir",
-			"className": "Cleric",
-			"classSource": "Ishiir",
-			"page": 1,
-			"additionalSpells": [
-				{
-					"prepared": {
-						"1": [
-							"healing word|Ishiir",
-							"command|Ishiir"
-						],
-						"3": [
-							"shatter|Ishiir",
-							"suggestion|Ishiir"
-						],
-						"5": [
-							"prayer|Ishiir",
-							"mass healing word|Ishiir"
-						],
-						"7": [
-							"compulsion|Ishiir",
-							"charm monster|Ishiir"
-						],
-						"9": [
-							"power word silence|Ishiir",
-							"shout|Ishiir"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"Song Domain|Cleric|Ishiir|Song|Deoir|1",
-				"Channel Divinity: Song of Protection|Cleric|Ishiir|Song|Deoir|2",
-				"Trained Ears|Cleric|Ishiir|Song|Deoir|6",
-				"Potent Spellcasting|Cleric|Ishiir|Song|Deoir|8",
-				"Soul of Song|Cleric|Ishiir|Song|Deoir|17"
-			]
-		}
-	],
+        {
+            "name": "Song Domain",
+            "shortName": "Song",
+            "source": "Deoir",
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "1": [
+                            "healing word|Ishiir",
+                            "command|Ishiir"
+                        ],
+                        "3": [
+                            "shatter|Ishiir",
+                            "suggestion|Ishiir"
+                        ],
+                        "5": [
+                            "prayer|Ishiir",
+                            "mass healing word|Ishiir"
+                        ],
+                        "7": [
+                            "compulsion|Ishiir",
+                            "charm monster|Ishiir"
+                        ],
+                        "9": [
+                            "power word silence|Ishiir",
+                            "shout|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Song Domain|Cleric|Ishiir|Song|Deoir|1",
+                "Channel Divinity: Song of Protection|Cleric|Ishiir|Song|Deoir|2",
+                "Trained Ears|Cleric|Ishiir|Song|Deoir|6",
+                "Potent Spellcasting|Cleric|Ishiir|Song|Deoir|8",
+                "Soul of Song|Cleric|Ishiir|Song|Deoir|17"
+            ]
+        }
+    ],
     "subclassFeature": [
-		{
-			"name": "Song Domain",
-			"source": "Deoir",
-			"page": 1,
-			"className": "Cleric",
-			"classSource": "Ishiir",
-			"subclassShortName": "Song",
-			"subclassSource": "Deoir",
-			"level": 1,
-			"entries": [
-				"At each indicated cleric level, add the listed spells to your spells prepared.",
-				{
-					"type": "table",
-					"caption": "War Domain Spells",
-					"colLabels": [
-						"Cleric Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell Healing Word|Ishiir}, {@spell Command|Ishiir}"
-						],
-						[
-							"3rd",
-							"{@spell Shatter|Ishiir}, {@spell Suggestion|Ishiir}"
-						],
-						[
-							"5th",
-							"{@spell Prayer|Ishiir}, {@spell Mass Healing Word|Ishiir}"
-						],
-						[
-							"7th",
-							"{@spell Compulsion|Ishiir}, {@spell Charm Monster|Ishiir}"
-						],
-						[
-							"9th",
-							"{@spell Power Word Silence|Ishiir}, {@spell Shout|Ishiir}"
-						]
-					]
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Song|Deoir|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Song of Strength|Cleric|Ishiir|Song|Deoir|1"
-				}
-			]
-		},
-		{
-			"name": "Bonus Proficiencies",
-			"source": "Deoir",
-			"page": 1,
-			"className": "Cleric",
-			"classSource": "Ishiir",
-			"subclassShortName": "Song",
-			"subclassSource": "Deoir",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"You gain {@variantrule Proficiency|Ishiir} in {@skill Performance}, if already {@variantrule Proficiency|Ishiir|proficient} your {@variantrule Proficiency|Ishiir} bonus is doubled. Additionally, you can use your Wisdom instead of your Charisma bonus for {@skill Performance} {@variantrule Ability Check|Ishiir|checks}."
-			]
-		},
-		{
-			"name": "Song of Strength",
-			"source": "Deoir",
-			"page": 1,
-			"className": "Cleric",
-			"classSource": "Ishiir",
-			"subclassShortName": "Song",
-			"subclassSource": "Deoir",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"You use your control over sound and song to create safety for your allies. As an {@variantrule Action|Ishiir} you can start singing, this does not inhibit you from casting spells with vocal components. For 1 minute when a creature within 30 feet of you makes an {@variantrule Attack Roll|Ishiir} you can use your {@variantrule Reaction|Ishiir} to impose {@variantrule Disadvantage|Ishiir} or {@variantrule Advantage|Ishiir} on that roll.",
-				"At 10th level the {@variantrule Advantage|Ishiir} or {@variantrule Disadvantage|Ishiir} is for their entire attack action.",
-				"You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus per {@variantrule Long Rest|Ishiir}."
-			]
-		},
-		{
-			"name": "Channel Divinity: Song of Protection",
-			"source": "Deoir",
-			"page": 1,
-			"className": "Cleric",
-			"classSource": "Ishiir",
-			"subclassShortName": "Song",
-			"subclassSource": "Deoir",
-			"level": 2,
-			"header": 2,
-			"consumes": {
-				"name": "Channel Divinity"
-			},
-			"entries": [
-				"You can use your Channel Divinity to sing a song of protection. As an {@variantrule Action|Ishiir} choose a number of creatures equal to your {@variantrule Proficiency|Ishiir} bonus. These creatures gain an increase of 1 AC and add their {@variantrule Proficiency|Ishiir} when making {@condition Concentration|Ishiir} {@variantrule Ability Check|Ishiir|checks}. While singing this song you must use your {@variantrule Bonus Action|Ishiir} on subsequent turns to maintain the song, otherwise the song ends at the end of your turn."
-			]
-		},
-		{
-			"name": "Trained Ears",
-			"source": "Deoir",
-			"page": 1,
-			"className": "Cleric",
-			"classSource": "Ishiir",
-			"subclassShortName": "Song",
-			"subclassSource": "Deoir",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"Your mastery over sound grants you special abilities:",
-				{
-					"type": "list",
-					"items": [
-						"You have {@variantrule Resistance|Ishiir} to thunder damage.",
+        {
+            "name": "Song Domain",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Song",
+            "subclassSource": "Deoir",
+            "level": 1,
+            "entries": [
+                "At each indicated cleric level, add the listed spells to your spells prepared.",
+                {
+                    "type": "table",
+                    "caption": "War Domain Spells",
+                    "colLabels": [
+                        "Cleric Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell Healing Word|Ishiir}, {@spell Command|Ishiir}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell Shatter|Ishiir}, {@spell Suggestion|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Prayer|Ishiir}, {@spell Mass Healing Word|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Compulsion|Ishiir}, {@spell Charm Monster|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Power Word Silence|Ishiir}, {@spell Shout|Ishiir}"
+                        ]
+                    ]
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Bonus Proficiencies|Cleric|Ishiir|Song|Deoir|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Song of Strength|Cleric|Ishiir|Song|Deoir|1"
+                }
+            ]
+        },
+        {
+            "name": "Bonus Proficiencies",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Song",
+            "subclassSource": "Deoir",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "You gain {@variantrule Proficiency|Ishiir} in {@skill Performance}, if already {@variantrule Proficiency|Ishiir|proficient} your {@variantrule Proficiency|Ishiir} bonus is doubled. Additionally, you can use your Wisdom instead of your Charisma bonus for {@skill Performance} {@variantrule Ability Check|Ishiir|checks}."
+            ]
+        },
+        {
+            "name": "Song of Strength",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Song",
+            "subclassSource": "Deoir",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "You use your control over sound and song to create safety for your allies. As an {@variantrule Action|Ishiir} you can start singing, this does not inhibit you from casting spells with vocal components. For 1 minute when a creature within 30 feet of you makes an {@variantrule Attack Roll|Ishiir} you can use your {@variantrule Reaction|Ishiir} to impose {@variantrule Disadvantage|Ishiir} or {@variantrule Advantage|Ishiir} on that roll.",
+                "At 10th level the {@variantrule Advantage|Ishiir} or {@variantrule Disadvantage|Ishiir} is for their entire attack action.",
+                "You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir} bonus per {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Song of Protection",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Song",
+            "subclassSource": "Deoir",
+            "level": 2,
+            "header": 2,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "You can use your Channel Divinity to sing a song of protection. As an {@variantrule Action|Ishiir} choose a number of creatures equal to your {@variantrule Proficiency|Ishiir} bonus. These creatures gain an increase of 1 AC and add their {@variantrule Proficiency|Ishiir} when making {@condition Concentration|Ishiir} {@variantrule Ability Check|Ishiir|checks}. While singing this song you must use your {@variantrule Bonus Action|Ishiir} on subsequent turns to maintain the song, otherwise the song ends at the end of your turn."
+            ]
+        },
+        {
+            "name": "Trained Ears",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Song",
+            "subclassSource": "Deoir",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Your mastery over sound grants you special abilities:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You have {@variantrule Resistance|Ishiir} to thunder damage.",
                         "When saving against an effect or a spell that is based on sound (DM discretion) or deals thunder damage, you gain {@variantrule Advantage|Ishiir} on the save."
-					]
-				}
-			]
-		},
-		{
-			"name": "Potent Spellcasting",
-			"source": "Deoir",
-			"page": 1,
-			"className": "Cleric",
-			"classSource": "Ishiir",
-			"subclassShortName": "Song",
-			"subclassSource": "Deoir",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"You add your Wisdom modifier to the damage you deal with any cleric cantrip and you can replace their damage type with thunder damage."
-			]
-		},
-		{
-			"name": "Soul of Song",
-			"source": "Deoir",
-			"page": 1,
-			"className": "Cleric",
-			"classSource": "Ishiir",
-			"subclassShortName": "Song",
-			"subclassSource": "Deoir",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"You master sound and song:",
-				{
-					"type": "list",
-					"items": [
-						"You gain {@variantrule Immunity|Ishiir} to thunder damage.",
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Potent Spellcasting",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Song",
+            "subclassSource": "Deoir",
+            "level": 8,
+            "header": 2,
+            "entries": [
+                "You add your Wisdom modifier to the damage you deal with any cleric cantrip and you can replace their damage type with thunder damage."
+            ]
+        },
+        {
+            "name": "Soul of Song",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Song",
+            "subclassSource": "Deoir",
+            "level": 17,
+            "header": 2,
+            "entries": [
+                "You master sound and song:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain {@variantrule Immunity|Ishiir} to thunder damage.",
                         "Your Channel Divinity: Song of Protection does not need {@variantrule Bonus Action|Ishiir|Bonus Actions} on subsequent turns.",
-						"While singing the Song of Protection you gain 1 AC and benefit from half cover."
-					]
-				}
-			]
-		}
+                        "While singing the Song of Protection you gain 1 AC and benefit from half cover."
+                    ]
+                }
+            ]
+        }
     ]
 }

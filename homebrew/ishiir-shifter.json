@@ -1,1926 +1,1925 @@
 {
-	"_meta": {
-		"sources": [
-			{
-				"json": "Ishiir",
-				"abbreviation": "Ishiir",
-				"full": "Ishiir",
+    "_meta": {
+        "sources": [
+            {
+                "json": "Ishiir",
+                "abbreviation": "Ishiir",
+                "full": "Ishiir",
                 "color": "#d98d2a",
-				"url": "https://regateiro.pt/5etools/homebrew/ishiir-shifter.json",
-				"authors": [
-					"Sieg"
-				],
-				"convertedBy": [
-					"Morb"
-				]
-			}
-		]
-	},
-	"class": [
-		{
-			"name": "Shifter",
-			"page": 1,
-			"source": "Ishiir",
-			"hd": {
-				"number": 1,
-				"faces": 12
-			},
-			"proficiency": [
-				"Strength",
-				"and your choice of Dexterity or Constitution"
-			],
-			"startingProficiencies": {
-				"weapons": [
-					"simple"
-				],
-				"skills": [
-					{
-						"choose": {
-							"from": [
-								"acrobatics",
-								"animal handling",
-								"athletics",
-								"intimidation",
-								"nature",
-								"perception",
-								"survival",
-								"stealth"
-							],
-							"count": 2
-						}
-					}
-				]
-			},
-			"startingEquipment": {
-				"additionalFromBackground": true,
-				"default": [
-					"(a) a {@item shortbow|Ishiir} and a {@item quiver|phb} of 20 arrows or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-					"(a) a {@item club|Ishiir} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-					"An {@item explorer's pack|phb}, and four {@item dagger|Ishiir|daggers}"
-				],
-				"goldAlternative": "{@dice 2d4*10|2d4 x 10|Starting Gold}",
-				"defaultData": [
-					{
-						"a": [
-							"shortbow|Ishiir"
-						],
-						"b": [
-							{
-								"equipmentType": "weaponSimple"
-							}
-						]
-					},
-					{
-						"a": [
-							{
-								"item": "club|Ishiir"
-							}
-						],
-						"b": [
-							{
-								"equipmentType": "weaponSimple"
-							}
-						]
-					},
-					{
-						"_": [
-							"explorer's pack|phb",
-							{
-								"item": "dagger|Ishiir",
-								"quantity": 4
-							}
-						]
-					}
-				]
-			},
-			"multiclassing": {
-				"requirements": {
-					"or": [
-						{
-							"str": 13,
-							"dex": 13
-						}
-					],
-					"con": 13
-				},
-				"proficienciesGained": {
-					"weapons": [
-						"simple"
-					]
-				}
-			},
-			"classTableGroups": [
-				{
-					"colLabels": [
-						"Natural Weapons",
-						"Formshifts",
-						"Formshift Damage"
-					],
-					"rows": [
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
-							"2",
-							{
-								"type": "bonus",
-								"value": 2
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
-							"2",
-							{
-								"type": "bonus",
-								"value": 2
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
-							"3",
-							{
-								"type": "bonus",
-								"value": 2
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
-							"3",
-							{
-								"type": "bonus",
-								"value": 2
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
-							"3",
-							{
-								"type": "bonus",
-								"value": 2
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
-							"4",
-							{
-								"type": "bonus",
-								"value": 2
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
-							"4",
-							{
-								"type": "bonus",
-								"value": 2
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
-							"4",
-							{
-								"type": "bonus",
-								"value": 2
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
-							"4",
-							{
-								"type": "bonus",
-								"value": 3
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
-							"4",
-							{
-								"type": "bonus",
-								"value": 3
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
-							"4",
-							{
-								"type": "bonus",
-								"value": 3
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
-							"5",
-							{
-								"type": "bonus",
-								"value": 3
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
-							"5",
-							{
-								"type": "bonus",
-								"value": 3
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
-							"5",
-							{
-								"type": "bonus",
-								"value": 3
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
-							"5",
-							{
-								"type": "bonus",
-								"value": 3
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
-							"5",
-							{
-								"type": "bonus",
-								"value": 4
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 12
-									}
-								]
-							},
-							"6",
-							{
-								"type": "bonus",
-								"value": 4
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 12
-									}
-								]
-							},
-							"6",
-							{
-								"type": "bonus",
-								"value": 4
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 12
-									}
-								]
-							},
-							"6",
-							{
-								"type": "bonus",
-								"value": 4
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 12
-									}
-								]
-							},
-							"6",
-							{
-								"type": "bonus",
-								"value": 4
-							}
-						]
-					]
-				}
-			],
-			"classFeatures": [
-				"Formshift|Shifter|Ishiir|1",
-				"Natural Weapons|Shifter|Ishiir|1",
-				"Primal Defence|Shifter|Ishiir|1",
-				"Animal Senses|Shifter|Ishiir|2",
-				"Fast Movement|Shifter|Ishiir|2",
-				{
-					"classFeature": "Wild Aspect|Shifter|Ishiir|3",
-					"gainSubclassFeature": true
-				},
-				"Ability Score Improvement|Shifter|Ishiir|4",
-				"Martial Mastery|Shifter|Ishiir|4",
-				"Extra Attack|Shifter|Ishiir|5",
-				"Primal Pounce|Shifter|Ishiir|5",
-				"Primal Strikes|Shifter|Ishiir|6",
-				"Improved Animal Senses|Shifter|Ishiir|6",
-				{
-					"classFeature": "Wild Aspect Feature|Shifter|Ishiir|7",
-					"gainSubclassFeature": true
-				},
-				"Ability Score Improvement|Shifter|Ishiir|8",
-				"Ferocious Strikes|Shifter|Ishiir|9",
-				"Feral Resilience|Shifter|Ishiir|10",
-				"Greater Formshift|Shifter|Ishiir|11",
-				"Ability Score Improvement|Shifter|Ishiir|12",
-				{
-					"classFeature": "Wild Aspect Feature|Shifter|Ishiir|13",
-					"gainSubclassFeature": true
-				},
-				"Ferocious Vitality|Shifter|Ishiir|14",
-				"Persistent Formshift|Shifter|Ishiir|15",
-				"Ability Score Improvement|Shifter|Ishiir|16",
-				"Wild Blessing|Shifter|Ishiir|17",
-				{
-					"classFeature": "Wild Aspect Feature|Shifter|Ishiir|18",
-					"gainSubclassFeature": true
-				},
-				"Ability Score Improvement|Shifter|Ishiir|19",
-				"Primal Avatar|Shifter|Ishiir|20"
-			],
-			"subclassTitle": "Wild Aspect"
-		}
-	],
-	"subclass": [
-		{
-			"name": "Autumn's Wing",
-			"page": 1,
-			"shortName": "Autumn's Wing",
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassFeatures": [
-				"Winged Aspect|Shifter|Ishiir|Autumn's Wing|Ishiir|3",
-				"Improved Winged Aspect|Shifter|Ishiir|Autumn's Wing|Ishiir|7",
-				"Greater Winged Aspect|Shifter|Ishiir|Autumn's Wing|Ishiir|13",
-				"Superior Winged Aspect|Shifter|Ishiir|Autumn's Wing|Ishiir|18"
-			]
-		},
-		{
-			"name": "Summer's Claw",
-			"page": 1,
-			"shortName": "Summer's Claw",
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassFeatures": [
-				"Clawed Aspect|Shifter|Ishiir|Summer's Claw|Ishiir|3",
-				"Improved Clawed Aspect|Shifter|Ishiir|Summer's Claw|Ishiir|7",
-				"Greater Clawed Aspect|Shifter|Ishiir|Summer's Claw|Ishiir|13",
-				"Superior Clawed Aspect|Shifter|Ishiir|Summer's Claw|Ishiir|18"
-			]
-		},
-		{
-			"name": "Winter's Fang",
-			"page": 1,
-			"shortName": "Winter's Fang",
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassFeatures": [
-				"Fanged Aspect|Shifter|Ishiir|Winter's Fang|Ishiir|3",
-				"Improved Fanged Aspect|Shifter|Ishiir|Winter's Fang|Ishiir|7",
-				"Greater Fanged Aspect|Shifter|Ishiir|Winter's Fang|Ishiir|13",
-				"Superior Fanged Aspect|Shifter|Ishiir|Winter's Fang|Ishiir|18"
-			]
-		},
-		{
-			"name": "Spring's Branch",
-			"shortName": "Spring's Branch",
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"page": 1,
-			"spellcastingAbility": "wis",
-			"casterProgression": "1/3",
-			"cantripProgression": [
-				0,
-				0,
-				2,
-				2,
-				2,
-				2,
-				2,
-				2,
-				2,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3
-			],
-			"spellsKnownProgression": [
-				0,
-				0,
-				3,
-				4,
-				4,
-				4,
-				5,
-				6,
-				6,
-				7,
-				8,
-				8,
-				9,
-				10,
-				10,
-				11,
-				11,
-				11,
-				12,
-				13
-			],
-			"additionalSpells": [
-				{
-					"ability": "wis",
-					"expanded": {
-						"3": [
-							{
-								"all": "level=0|class=Druid (Ishiir)|source=Ishiir"
-							},
-							{
-								"all": "level=1|class=Druid (Ishiir)|source=Ishiir"
-							}
-						],
-						"7": [
-							{
-								"all": "level=2|class=Druid (Ishiir)|source=Ishiir"
-							}
-						],
-						"13": [
-							{
-								"all": "level=3|class=Druid (Ishiir)|source=Ishiir"
-							}
-						],
-						"19": [
-							{
-								"all": "level=4|class=Druid (Ishiir)|source=Ishiir"
-							}
-						]
-					}
-				}
-			],
-			"subclassTableGroups": [
-				{
-					"subclasses": [
-						{
-							"name": "Spring's Branch",
-							"source": "Ishiir"
-						}
-					],
-					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|class=Druid (Ishiir)|source=Ishiir}",
-						"{@filter Prepared Spells|spells|class=Druid (Ishiir)|source=Ishiir}"
-					],
-					"rows": [
-						[
-							0,
-							0
-						],
-						[
-							0,
-							0
-						],
-						[
-							2,
-							3
-						],
-						[
-							2,
-							4
-						],
-						[
-							2,
-							4
-						],
-						[
-							2,
-							4
-						],
-						[
-							2,
-							5
-						],
-						[
-							2,
-							6
-						],
-						[
-							2,
-							6
-						],
-						[
-							3,
-							7
-						],
-						[
-							3,
-							8
-						],
-						[
-							3,
-							8
-						],
-						[
-							3,
-							9
-						],
-						[
-							3,
-							10
-						],
-						[
-							3,
-							10
-						],
-						[
-							3,
-							11
-						],
-						[
-							3,
-							11
-						],
-						[
-							3,
-							11
-						],
-						[
-							3,
-							12
-						],
-						[
-							3,
-							13
-						]
-					]
-				},
-				{
-					"title": "Spell Slots per Spell Level",
-					"subclasses": [
-						{
-							"name": "Spring's Branch",
-							"source": "Ishiir"
-						}
-					],
-					"colLabels": [
-						"{@filter 1st|spells|level=1|class=Druid (Ishiir)|source=Ishiir}",
-						"{@filter 2nd|spells|level=2|class=Druid (Ishiir)|source=Ishiir}",
-						"{@filter 3rd|spells|level=3|class=Druid (Ishiir)|source=Ishiir}",
-						"{@filter 4th|spells|level=4|class=Druid (Ishiir)|source=Ishiir}"
-					],
-					"rowsSpellProgression": [
-						[
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							2,
-							0,
-							0,
-							0
-						],
-						[
-							3,
-							0,
-							0,
-							0
-						],
-						[
-							3,
-							0,
-							0,
-							0
-						],
-						[
-							3,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							2,
-							0,
-							0
-						],
-						[
-							4,
-							2,
-							0,
-							0
-						],
-						[
-							4,
-							2,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							2,
-							0
-						],
-						[
-							4,
-							3,
-							2,
-							0
-						],
-						[
-							4,
-							3,
-							2,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							1
-						],
-						[
-							4,
-							3,
-							3,
-							1
-						]
-					]
-				}
-			],
-			"subclassFeatures": [
-				"Green Aspect|Shifter|Ishiir|Spring's Branch|Ishiir|3",
-				"Improved Green Aspect|Shifter|Ishiir|Spring's Branch|Ishiir|7",
-				"Greater Green Aspect|Shifter|Ishiir|Spring's Branch|Ishiir|13",
-				"Superior Green Aspect|Shifter|Ishiir|Spring's Branch|Ishiir|18"
-			]
-		},
-		{
-			"name": "Dragon's Scale",
-			"page": 1,
-			"shortName": "Dragon's Scale",
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassFeatures": [
-				"Draconic Aspect|Shifter|Ishiir|Dragon's Scale|Ishiir|3",
-				"Improved Draconic Aspect|Shifter|Ishiir|Dragon's Scale|Ishiir|7",
-				"Greater Draconic Aspect|Shifter|Ishiir|Dragon's Scale|Ishiir|13",
-				"Superior Draconic Aspect|Shifter|Ishiir|Dragon's Scale|Ishiir|18"
-			]
-		}
-	],
-	"classFeature": [
-		{
-			"name": "Formshift",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 1,
-			"entries": [
-				"By choice or circumstance, you possess the ability to shift into an animal-like form that outfits you with heightened senses, swiftness, and primal ferocity in battle. You shift forms as a {@variantrule Bonus Action|Ishiir}. While shifted, you gain the following benefits as long as you aren't wearing armor heavier than light or a shield:",
-				{
-					"type": "list",
-					"items": [
-						"You have {@variantrule Advantage|Ishiir} on {@skill Perception} {@variantrule Ability Check|Ishiir|checks}.",
-						"Your {@variantrule Speed|Ishiir} is doubled.",
-						"When you make a melee weapon attack with your natural weapons, you gain a +2 bonus to the damage roll. This bonus increases as you level."
-					]
-				},
-				"If you are able to cast spells, you can't cast them or concentrate on them while shifted.",
-				"Your Formshift lasts for an amount of hours equal to your shifter level. It ends early if you fall {@condition Unconscious|Ishiir} or you are {@condition Incapacitated|Ishiir}. You can also end your Formshift as a {@variantrule Bonus Action|Ishiir}.",
-				"You can Formshift a number of times shown for your Shifter level in the Formshifts column of the Shifter Features table. You regain one expended use when you finish a {@variantrule Short Rest|Ishiir}, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}.",
-				"You choose whether your equipment falls to the ground in your space, merges into your shifted form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for your shifted form to wear a piece of equipment, based on your shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that your shifted form can't wear must either fall to the ground or merge with it. Equipment that merges with your shifted form has no effect until you leave Formshift."
-			]
-		},
-		{
-			"name": "Natural Weapons",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 1,
-			"entries": [
-				"Even when not shifted, your form is permanently altered to include fangs, claws, or talons. When you make a melee weapon attack with these natural weapons, you roll a {@dice d6} and add your Strength or Dexterity modifier to the attack and damage roll (your choice).",
-				"This die changes as you gain shifter levels, as shown in the Natural Weapons column of the Shifter table."
-			]
-		},
-		{
-			"name": "Primal Defence",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 1,
-			"entries": [
-				"Your animal-like swiftness or thick skin makes it more difficult to land a hit on you.",
-				"While you are wearing no armor and not wielding a shield, your AC equals 10 + your Strength or Dexterity modifier (your choice when you get this feature) and your Constitution modifier."
-			]
-		},
-		{
-			"name": "Fast Movement",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 2,
-			"entries": [
-				"Your {@variantrule Speed|Ishiir} increases by 10 feet while you aren't wearing any armor or wielding a shield."
-			]
-		},
-		{
-			"name": "Animal Senses",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 2,
-			"entries": [
-				"You gain {@variantrule Proficiency|Ishiir} in two of the following skills: {@skill Animal Handling}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, {@skill Survival}.",
-				"Additionally, you add your Formshift Damage to the chosen skills and to your initiative rolls."
-			]
-		},
-		{
-			"name": "Wild Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 3,
-			"entries": [
-				"You choose the shape of your formshift. Your choice grants you features at 3rd, 7th, 13th, and 18th levels."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 4,
-			"entries": [
-				"You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a feat."
-			]
-		},
-		{
-			"name": "Martial Mastery",
-			"source": "Ishiir",
-			"page": 1,
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 4,
-			"entries": [
-				"You gain the mastery benefits for two {@filter weapons|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} of your choice as well as an {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} type (see {@variantrule Armor Mastery|Ishiir} and {@variantrule Weapon Mastery|Ishiir} variant rules). You must be {@variantrule Proficiency|Ishiir|proficient} in the chosen weapons and armor. If you possess the {@optfeature Unarmored Defense|Ishiir} feature, you may choose it in place of an armor type.",
-				"You can change your choices when you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
-			]
-		},
-		{
-			"name": "Extra Attack",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 5,
-			"entries": [
-				"You can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
-			]
-		},
-		{
-			"name": "Primal Pounce",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 5,
-			"entries": [
-				"Once per turn, as part of an attack with your natural weapons, you can move up to your {@variantrule Speed|Ishiir} in a straight line towards a target of your choice."
-			]
-		},
-		{
-			"name": "Primal Strikes",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 6,
-			"entries": [
-				"Your natural weapons count as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage."
-			]
-		},
-		{
-			"name": "Improved Animal Senses",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 6,
-			"entries": [
-				"You cannot be {@condition Surprised|Ishiir} unless you are {@condition Incapacitated|Ishiir}."
-			]
-		},
-		{
-			"name": "Wild Aspect Feature",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 7,
-			"entries": [
-				"You gain one feature granted by your Wild Aspect."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 8,
-			"entries": [
-				"You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a feat."
-			]
-		},
-		{
-			"name": "Ferocious Strikes",
-			"source": "Ishiir",
-			"page": 1,
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 9,
-			"entries": [
-				"You add your Formshift Damage to your weapon damage rolls even when not currently shifted. If you are shifted, this damage bonus is doubled."
-			]
-		},
-		{
-			"name": "Feral Resilience",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 10,
-			"entries": [
-				"You add your Formshift Damage to all {@variantrule Saving Throw|Ishiir|Saving Throws}. You do not gain this bonus if you're unconscious."
-			]
-		},
-		{
-			"name": "Greater Formshift",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 11,
-			"entries": [
-				"You can increase your size to Large when you use your Formshift class feature and your Natural Weapons die is doubled for calculating your base weapon damage while you are shifted. If you lack the room to become Large, your size doesn't change."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 12,
-			"entries": [
-				"You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a feat."
-			]
-		},
-		{
-			"name": "Wild Aspect Feature",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 13,
-			"entries": [
-				"You gain one feature granted by your Wild Aspect."
-			]
-		},
-		{
-			"name": "Ferocious Vitality",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 14,
-			"entries": [
-				"When you are reduced to 0 hit points but not killed outright, you can expend a use of your Formshift to immediately regain hit points equal to twice your Shifter level. You can't use this feature again until you finish a {@variantrule Long Rest|Ishiir}."
-			]
-		},
-		{
-			"name": "Persistent Formshift",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 15,
-			"entries": [
-				"You can remain shifted for an indefinite amount of time and your Formshift does not end when you are asleep naturally. You can still end your Formshift as usual."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 16,
-			"entries": [
-				"You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a feat."
-			]
-		},
-		{
-			"name": "Wild Blessing",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 17,
-			"entries": [
-				"Choose two ability scores from Strength, Dexterity, and Constitution. The chosen ability scores and their maximums increase by 2."
-			]
-		},
-		{
-			"name": "Wild Aspect Feature",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 18,
-			"entries": [
-				"You gain one feature granted by your Wild Aspect."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 19,
-			"entries": [
-				"You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a feat."
-			]
-		},
-		{
-			"name": "Primal Avatar",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"level": 20,
-			"entries": [
-				"You gain the following benefits while shifted:",
-				{
-					"type": "list",
-					"items": [
-						"Your can increase your size to Huge and your Natural Weapons die is doubled for calculating your base weapon damage. If you lack the room to become Huge, your size doesn't change.",
-						"You can't be {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir}. If you are {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir} when you use Formshift, the effect is suspended for the duration of the shift.",
-						"The healing gained from your Ferocious Vitality feature is increased to 5x your Shifter level."
-					]
-				}
-			]
-		}
-	],
-	"subclassFeature": [
-		{
-			"name": "Winged Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Autumn's Wing",
-			"subclassSource": "Ishiir",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"You adopt an avian aspect, granting you physical traits such as the piercing eyes of a bird of prey, sharp nails, and wings sprouting from your back.",
-				"You gain a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. If you are not shifted, you have to end your flying movement on the ground.",
-				"Once you reach level 10 in this class, you no longer need to end your flying movement on the ground while not shifted."
-			]
-		},
-		{
-			"name": "Improved Winged Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Autumn's Wing",
-			"subclassSource": "Ishiir",
-			"level": 7,
-			"header": 1,
-			"entries": [
-				"You gain one of the following features of your choice.",
-				{
-					"type": "list",
-					"items": [
-						{
-							"type": "item",
-							"name": "Night Flyer.",
-							"entry": "You gain a {@sense darkvision} range of 120 feet. If you already possess {@sense darkvision}, add 120 ft to its range."
-						},
-						{
-							"type": "item",
-							"name": "Agile Flyer.",
-							"entry": "Your {@variantrule Speed|Ishiir} increases by 10 feet and you do not provoke {@action Opportunity Attack|Ishiir|Opportunity Attacks} when you fly out of an enemy's reach."
-						},
-						{
-							"type": "item",
-							"name": "Diving Raptor.",
-							"entry": "When you use Primal Pounce, you can move up to double your {@variantrule Speed|Ishiir} if your target is below you. If you moved at least 20 feet in this manner, the attack adds your Natural Weapons die to the damage again once."
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Greater Winged Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Autumn's Wing",
-			"subclassSource": "Ishiir",
-			"level": 13,
-			"header": 1,
-			"entries": [
-				"You gain one of the following features of your choice.",
-				{
-					"type": "list",
-					"items": [
-						{
-							"type": "item",
-							"name": "Silent Flight.",
-							"entry": "While flying, you can {@action hide|Ishiir} as a {@variantrule Bonus Action|Ishiir} and your wings cause no sound when you move while flying. If you attack while hidden, the benefits of being hidden persist against the target of your attack until the end of your turn."
-						},
-						{
-							"type": "item",
-							"name": "On Swift Wings.",
-							"entry": "When you move, you can choose a creature that is within 5 ft and at least one size smaller than you and move the creature with you until the end of the current turn. The creature's movement doesn't provoke {@action Opportunity Attack|Ishiir|Opportunity Attacks}."
-						},
-						{
-							"type": "item",
-							"name": "Deadly Talons.",
-							"entry": "The critical range with your natural weapons increases by 1. When you critically hit with your natural weapons, you roll your weapon damage dice two additional times and add them to the damage."
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Superior Winged Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Autumn's Wing",
-			"subclassSource": "Ishiir",
-			"level": 18,
-			"header": 1,
-			"entries": [
-				"You gain one of the following features of your choice.",
-				{
-					"type": "list",
-					"items": [
-						{
-							"type": "item",
-							"name": "Death from the Dark.",
-							"entries": [
-								"Once per turn, when you hit a creature you are hidden from with your natural weapons, you deal additional damage equal to two rolls of your Natural Weapons die and the target has to make a Wisdom {@variantrule Saving Throw|Ishiir}.",
-								"The DC for this is 8 + your {@variantrule Proficiency|Ishiir} + your Strength or Dexterity modifier (your choice). On a failure, the target is {@condition Frightened|Ishiir} until the end of your next turn."
-							]
-						},
-						{
-							"type": "item",
-							"name": "Evasive Flight.",
-							"entries": [
-								"When you are subjected to an effect that allows you to make a Dexterity {@variantrule Saving Throw|Ishiir} to take only half damage, you instead take no damage if you succeed on the {@variantrule Saving Throw|Ishiir}, and only half damage if you fail.",
-								"If you succeed on the {@variantrule Saving Throw|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to move up to half your {@variantrule Speed|Ishiir} to an unoccupied space that you can see. If you are carrying an ally or otherwise moving them with you, they also automatically succeed on the {@variantrule Saving Throw|Ishiir} and take no damage.",
-								"You don't benefit from this feature if you have the {@condition Incapacitated|Ishiir} condition."
-							]
-						},
-						{
-							"type": "item",
-							"name": "Concussive Impact.",
-							"entries": [
-								"When you use Primal Pounce and hit the target, it has to make a Constitution {@variantrule Saving Throw|Ishiir}. The DC for this is 8 + your {@variantrule Proficiency|Ishiir} + your Strength or Dexterity modifier (your choice). On a failure, the target suffers an effect based on the distance you travelled as part of Primal Pounce.",
-								{
-									"type": "list",
-									"items": [
-										{
-											"type": "item",
-											"name": "20 feet or more:",
-											"entry": "The target is knocked {@condition Prone|Ishiir}."
-										},
-										{
-											"type": "item",
-											"name": "40 feet or more:",
-											"entry": "The target is {@condition Dazed|Ishiir} until the end of your next turn."
-										},
-										{
-											"type": "item",
-											"name": "60 feet or more:",
-											"entry": "The target is {@condition Stunned|Ishiir} until the end of your next turn."
-										}
-									]
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Clawed Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Summer's Claw",
-			"subclassSource": "Ishiir",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"You adopt a feline aspect, granting you physical traits such as the vertical pupils, sharp nails, and elongated canines.",
-				"You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
-				"Additionally, once per turn when you hit a creature with your natural weapons, you can force the target to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, the target is {@condition Lacerated|Ishiir}. The DC for this is 8 + your {@variantrule Proficiency|Ishiir} + your Strength or Dexterity modifier (your choice). The target can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on itself on a success. Creatures who cannot bleed are {@variantrule Immunity|Ishiir|Immune} to this feature.",
-				"Once you reach level 10 in this class, any {@condition Lacerated|Ishiir|laceration} inflicted with your natural weapons deals damage equal to thrice your {@variantrule Proficiency|Ishiir}, rather than twice."
-			]
-		},
-		{
-			"name": "Improved Clawed Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Summer's Claw",
-			"subclassSource": "Ishiir",
-			"level": 7,
-			"header": 1,
-			"entries": [
-				"You gain one of the following features of your choice.",
-				{
-					"type": "list",
-					"items": [
-						{
-							"type": "item",
-							"name": "Stalker's Ambush.",
-							"entry": "Any attack with your natural weapons against a creature that is {@condition Surprised|Ishiir} has {@variantrule Advantage|Ishiir} and adds an additional roll of your Natural Weapons die to the damage."
-						},
-						{
-							"type": "item",
-							"name": "Swift Climber.",
-							"entry": "You gain a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} and when you take fall damage, you can use your {@variantrule Reaction|Ishiir} to decrease that damage by an amount equal to five times your Shifter level."
-						},
-						{
-							"type": "item",
-							"name": "Feral Pounce.",
-							"entry": "When you use Primal Pounce and your attack hits, you can force the target to make a Strength {@variantrule Saving Throw|Ishiir} if it is no more than one size larger than you. The DC for this is 8 + your {@variantrule Proficiency|Ishiir} + your Strength or Dexterity modifier (your choice). On a failure, the target is knocked {@condition Prone|Ishiir}."
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Greater Clawed Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Summer's Claw",
-			"subclassSource": "Ishiir",
-			"level": 13,
-			"header": 1,
-			"entries": [
-				"You gain one of the following features of your choice.",
-				{
-					"type": "list",
-					"items": [
-						{
-							"type": "item",
-							"name": "Stalker's Rake.",
-							"entry": "You can {@action Hide|Ishiir} as a {@variantrule Bonus Action|Ishiir}. If you hit a creature with your natural weapons while hidden, it has {@variantrule Disadvantage|Ishiir} on the next {@variantrule Saving Throw|Ishiir} against your Clawed Aspect. Additionally, creatures {@condition Lacerated|Ishiir} by you cannot make {@action Opportunity Attack|Ishiir|Opportunity Attacks}."
-						},
-						{
-							"type": "item",
-							"name": "Big Game Hunter.",
-							"entry": "When you use Primal Pounce and your attack hits, you can also attempt to {@action Climb onto a Bigger Creature|Ishiir} as per the Additional Combat Actions as a {@variantrule Bonus Action|Ishiir}."
-						},
-						{
-							"type": "item",
-							"name": "Disembowel.",
-							"entry": "If you hit a {@condition Prone|Ishiir} creature with your natural weapons, you can force it to make the {@variantrule Saving Throw|Ishiir} against your Clawed Aspect again, ignoring the usual per-turn limit. Once per turn, if the {@condition Prone|Ishiir} creature is already {@condition Lacerated|Ishiir}, it takes the damage from the condition immediately after the attack if it fails the {@variantrule Saving Throw|Ishiir}."
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Superior Clawed Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Summer's Claw",
-			"subclassSource": "Ishiir",
-			"level": 18,
-			"header": 1,
-			"entries": [
-				"You gain one of the following features of your choice.",
-				{
-					"type": "list",
-					"items": [
-						{
-							"type": "item",
-							"name": "Spirit Claw.",
-							"entry": "When you are {@action Hide|Ishiir|hidden}, you ignore {@variantrule Immunity|Ishiir} to the {@condition Lacerated|Ishiir} condition and healing does not remove the {@condition Lacerated|Ishiir} condition if it was applied by you unless the target was healed back to its hitpoint maximum. Additionally, you have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against creatures that are {@condition Lacerated|Ishiir}."
-						},
-						{
-							"type": "item",
-							"name": "Feline Grace.",
-							"entry": "No {@variantrule Attack Roll|Ishiir} has {@variantrule Advantage|Ishiir} against you and you cannot have {@variantrule Disadvantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws} and {@variantrule Ability Check|Ishiir|Ability Checks}. You lose these benefits when you are {@condition Incapacitated|Ishiir} or your {@variantrule Speed|Ishiir} is 0."
-						},
-						{
-							"type": "item",
-							"name": "Killing Bite.",
-							"entry": "If you hit a {@condition Prone|Ishiir} creature with your natural weapons, you can immediately make another attack with them as a {@variantrule Bonus Action|Ishiir}."
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Fanged Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Winter's Fang",
-			"subclassSource": "Ishiir",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"You adopt a canine aspect, granting you physical traits such as the piercing eyes, sharp nails, and elongated canines.",
-				"You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
-				"Once per turn when you hit a creature with your natural weapons, you can force the target to make a Strength {@variantrule Saving Throw|Ishiir}. On a failure, the target is knocked {@condition Prone|Ishiir}. The DC for this is 8 + your {@variantrule Proficiency|Ishiir} + your Strength or Dexterity modifier (your choice). If the target creature is already {@condition Prone|Ishiir}, you can attempt to {@condition Grappled|Ishiir|grapple} it instead, using the usual skill check instead of forcing a {@variantrule Saving Throw|Ishiir}.",
-				"Once you reach level 10 in this class, you count as 1 size larger for the purposes of this feature."
-			]
-		},
-		{
-			"name": "Improved Fanged Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Winter's Fang",
-			"subclassSource": "Ishiir",
-			"level": 7,
-			"header": 1,
-			"entries": [
-				"You gain one of the following features of your choice.",
-				{
-					"type": "list",
-					"items": [
-						{
-							"type": "item",
-							"name": "Pack Tactics.",
-							"entry": "You have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} with your natural weapons against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition Incapacitated|Ishiir}."
-						},
-						{
-							"type": "item",
-							"name": "A Friend in Deed.",
-							"entry": "You can take the {@action Help|Ishiir} action as a {@variantrule Bonus Action|Ishiir} and with a range of 30 feet. You can always use the {@action Help|Ishiir} action to give someone {@variantrule Advantage|Ishiir} on a skill check, even if you are not {@variantrule Proficiency|Ishiir|proficient} in the relevant skill yourself."
-						},
-						{
-							"type": "item",
-							"name": "Thick Hide.",
-							"entry": "The temporary hit points gained through your Martial Mastery (Unarmored Defense) increase by half (rounded down). Additionally, you have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against becoming {@condition Poisoned|Ishiir} or {@condition Lacerated|Ishiir}."
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Greater Fanged Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Winter's Fang",
-			"subclassSource": "Ishiir",
-			"level": 13,
-			"header": 1,
-			"entries": [
-				"You gain one of the following features of your choice.",
-				{
-					"type": "list",
-					"items": [
-						{
-							"type": "item",
-							"name": "Coordinated Takedown.",
-							"entry": "When a creature within reach of your natural weapons is hit by a melee attack from one of your allies, you can use your {@variantrule Reaction|Ishiir} to immediately force that creature to make a Strength {@variantrule Saving Throw|Ishiir} as per your Fanged Aspect feature."
-						},
-						{
-							"type": "item",
-							"name": "Bolstering Barks.",
-							"entry": "Whenever you use the {@action Help|Ishiir} action on one of your allies, they gain temporary hit points equal to half your Shifter level."
-						},
-						{
-							"type": "item",
-							"name": "Fierce Protector.",
-							"entry": "When you hit a creature with your natural weapons, it has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against creatures other than you until the end of your next turn while it is within your reach. If it makes an attack against a target other than you during that time, you have {@variantrule Advantage|Ishiir} on your next {@variantrule Attack Roll|Ishiir} against it and add half your Shifter level to the damage roll (rounded down)."
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Superior Fanged Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Winter's Fang",
-			"subclassSource": "Ishiir",
-			"level": 18,
-			"header": 1,
-			"entries": [
-				"You gain one of the following features of your choice.",
-				{
-					"type": "list",
-					"items": [
-						{
-							"type": "item",
-							"name": "Killing Bite.",
-							"entry": "If you hit a {@condition Prone|Ishiir} creature with your natural weapons, you can immediately make another attack with them as a {@variantrule Bonus Action|Ishiir}."
-						},
-						{
-							"type": "item",
-							"name": "Stronger Together.",
-							"entry": "Allies within 20 feet of you also benefit from your Feral Resilience while you are not {@condition Unconscious|Ishiir}."
-						},
-						{
-							"type": "item",
-							"name": "Feral Defiance.",
-							"entry": "Your Ferocious Vitality recharges on a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir} and heals for 1x Shifter level additional hit points."
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Green Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Spring's Branch",
-			"subclassSource": "Ishiir",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"You adopt a plantlike aspect, granting you physical traits such as floral skin color, twiglike fingers, and leafs or flowers sprouting from your hair.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Natural Casting|Shifter|Ishiir|Spring's Branch|Ishiir|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Spellcasting|Shifter|Ishiir|Spring's Branch|Ishiir|3"
-				}
-			]
-		},
-		{
-			"name": "Natural Casting",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Spring's Branch",
-			"subclassSource": "Ishiir",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"You ignore all restrictions on casting or concentrating on spells caused by being shifted. Additionally, when you {@action Magic|Ishiir|cast a spell} that heals or gives the target temporary hit points, you increase the healing or temporary hit points by an amount equal to your Formshift Damage.",
-				"Once you reach level 10 in this class, this bonus doubles."
-			]
-		},
-		{
-			"name": "Spellcasting",
-			"source": "Ishiir",
-			"page": 1,
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Spring's Branch",
-			"subclassSource": "Ishiir",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"The information below details how you use those rules with Druid spells, which appear on the {@filter Druid spell list|spells|class=druid (Ishiir)|source=Ishiir}.",
-				{
-					"type": "entries",
-					"name": "Cantrips.",
-					"entries": [
-						"You know two cantrips of your choice from the {@filter Druid spell list|spells|class=druid (Ishiir)|source=Ishiir}. Whenever you gain a Shifter level, you can replace one of these cantrips with another cantrip of your choice from the Druid spell list.",
-						"When you reach Shifter level 10, you learn another Druid cantrip of your choice, as shown in this subclass' progression table."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Spell Slots.",
-					"entries": [
-						"The Spring's Branch Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|Ishiir}."
-					]
-					
-				},
-				{
-					"type": "entries",
-					"name": "Prepared Spells of Level 1+.",
-					"entries": [
-						"You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the Druid spell list.",
-						"The number of spells on your list increases as you gain Shifter levels, as shown in the Prepared Spells column of the Spring's Branch Spellcasting table. Whenever that number increases, choose additional spells from the Druid spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 7 Shifter, your list of prepared spells can include five Druid spells of levels 1 and 2 in any combination."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Changing Your Prepared Spells.",
-					"entries": [
-						"Whenever you gain a Shifter level, you can replace one spell on your list with another Druid spell for which you have spell slots."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Spellcasting Ability.",
-					"entries": [
-						"Wisdom is your spellcasting ability for your Druid spells."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Spellcasting Focus.",
-					"entries": [
-						"You can use a Druidic Focus as a Spellcasting Focus for your Druid spells."
-					]
-				}
-			]
-		},
-		{
-			"name": "Improved Green Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Spring's Branch",
-			"subclassSource": "Ishiir",
-			"level": 7,
-			"header": 1,
-			"entries": [
-				"You gain one of the following features of your choice.",
-				{
-					"type": "list",
-					"items": [
-						{
-							"type": "item",
-							"name": "Hardened Bark.",
-							"entry": "When you take bludgeoning, piercing, or slashing damage, that damage is reduced by an amount equal to half your Shifter level. This reduction applies before all other calculations."
-						},
-						{
-							"type": "item",
-							"name": "Dryadic Bond.",
-							"entries": [
-								"You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
-								"Additionally, you can form a ranged weapon from plant material as a {@variantrule Bonus Action|Ishiir}. As part of an attack, you can automatically form ammunition for this weapon if it requires it. The ammunition disappears are hitting or missing. The weapon remains while it is within 100 feet of you and otherwise disappears. This weapon counts as a natural weapon for you and has a range of 90/360 feet."
-							]
-						},
-						{
-							"type": "item",
-							"name": "Defensive Spores.",
-							"entry": "When a creature within 10 feet of you hits or misses you with a melee attack, you can use your {@variantrule Reaction|Ishiir} to force it to make a Constitution {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, the target is {@condition Poisoned|Ishiir} for 1 minute. At the end of each of its turns, the target can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success."
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Greater Green Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Spring's Branch",
-			"subclassSource": "Ishiir",
-			"level": 13,
-			"header": 1,
-			"entries": [
-				"You gain one of the following features of your choice.",
-				{
-					"type": "list",
-					"items": [
-						{
-							"type": "item",
-							"name": "Twisting Roots.",
-							"entry": "While shifted, the ground in a 10 feet circle around you is {@quickref difficult terrain||3} for your enemies. When a creature starts its turn in that area or enters it for the first time on a turn, you can use your {@variantrule Reaction|Ishiir} to force it to make a Strength {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, its {@variantrule Speed|Ishiir} is reduced to 0 until the end of your next turn."
-						},
-						{
-							"type": "item",
-							"name": "Fey Step.",
-							"entry": "As a {@variantrule Bonus Action|Ishiir}, you can teleport up to 30 feet to an unoccupied space that you can see. You can use this feature a number of times equal to your Formshift Damage and you regain all expended uses on a {@variantrule Long Rest|Ishiir}. Alternatively, you can spend a 2nd Level Spell Slot to use this feature again."
-						},
-						{
-							"type": "item",
-							"name": "Addling Spores.",
-							"entries": [
-								"As an {@variantrule Action|Ishiir}, you launch a cloud of befuddling spores at a location within 30 feet of you. Each creature within a 10 feet radius sphere around that point has to make a Constitution a {@variantrule Saving Throw|Ishiir} or be {@condition Confused|Ishiir} until the end of your next turn.",
-								"You can use this feature a number of times equal to your Formshift Damage and you regain all expended uses on a {@variantrule Long Rest|Ishiir}. Alternatively, you can spend a 3rd Level Spell Slot to use this feature again."
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Superior Green Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Spring's Branch",
-			"subclassSource": "Ishiir",
-			"level": 18,
-			"header": 1,
-			"entries": [
-				"You gain one of the following features of your choice.",
-				{
-					"type": "list",
-					"items": [
-						{
-							"type": "item",
-							"name": "Protective Canopy.",
-							"entry": "While you are shifted, your reach increases by 10 feet and allies within 10 feet of you have half-cover."
-						},
-						{
-							"type": "item",
-							"name": "Blinding Beauty.",
-							"entries": [
-								"As an {@variantrule Action|Ishiir}, you can force every creature of your choice within 30 feet of you that you can see and that can see you to make a Wisdom {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, a target is {@condition Blinded|Ishiir} for 1 minute. At the end of each of its turns, the target can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success. Once a creature has succeeded on the {@variantrule Saving Throw|Ishiir}, it is {@variantrule Immunity|Ishiir|Immune} to this feature for the next 24 hours.",
-								"You can use this feature a number of times equal to your Formshift Damage and you regain all expended uses on a {@variantrule Long Rest|Ishiir}. Alternatively, you can spend a 4th Level Spell Slot to use this feature again."
-							]
-						},
-						{
-							"type": "item",
-							"name": "Aggressive Effluvia.",
-							"entry": "Hostile creatures that start their turn within 30 feet of you or enter that space for the first time on a turn, take necrotic damage equal to double your Formshift Damage. Creatures that are {@condition Poisoned|Ishiir} or have hit points equal to half or less of their maximum, take double damage from this feature. If you are {@condition Unconscious|Ishiir} or dead, this effect disappears after {@dice 1d4} days."
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Draconic Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Dragon's Scale",
-			"subclassSource": "Ishiir",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"You adopt a draconic aspect, granting you physical traits such as scaled skin, vertical pupils, and sharp nails.",
-				"You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
-				"As an {@variantrule Action|Ishiir}, you can exhale destructive energy. All creatues in the area of effect take damage equal to a number of rolls of your Natural Weapons die equal to your {@variantrule Proficiency|Ishiir}. The shape, {@variantrule Saving Throw|Ishiir}, and damage type of your breath weapon is determined by your draconic form, which you choose when you gain this feature. You can find all available options in the table below. The DC for this is 8 + your {@variantrule Proficiency|Ishiir} + your Constitution modifier. Once you have used your breath weapon, you have to roll a d6 at the start of each of your turns. On a roll of 5 or 6, you regain your use of this feature.",
-				"Once you reach level 10 in this class, the size of your breath weapon doubles.",
-				{
-					"type": "table",
-					"caption": "Character Advancement",
-					"colLabels": [
-						"Dragon",
-						"Damage Type",
-						"Breath Weapon Shape ({@variantrule Saving Throw|Ishiir})"
-					],
-					"colStyles": [
-						"col-3 text-center",
-						"col-3 text-center",
-						"col-6"
-					],
-					"rows": [
-						[
-							"Black",
-							"Acid",
-							"60x5 ft line (DEX save)"
-						],
-						[
-							"Blue",
-							"Lightning",
-							"60x5 ft line (DEX save)"
-						],
-						[
-							"Brass",
-							"Fire",
-							"30 ft cone (DEX save)"
-						],
-						[
-							"Bronze",
-							"Lightning",
-							"60x5 ft line (DEX save)"
-						],
-						[
-							"Copper",
-							"Acid",
-							"60x5 ft line (DEX save)"
-						],
-						[
-							"Gold",
-							"Radiant",
-							"30 ft cone (DEX save)"
-						],
-						[
-							"Green",
-							"Poison",
-							"30 ft cone (CON save)"
-						],
-						[
-							"Jabberwock",
-							"Fire",
-							"60x5 ft line (DEX save)"
-						],
-						[
-							"Night",
-							"Force",
-							"60x5 ft line (DEX save)"
-						],
-						[
-							"Red",
-							"Fire",
-							"30 ft cone (DEX save)"
-						],
-						[
-							"Shadow",
-							"Necrotic",
-							"30 ft cone (CON save)"
-						],
-						[
-							"Silver",
-							"Radiant",
-							"60x5 ft line (CON save)"
-						],
-						[
-							"Sylvan",
-							"Poison",
-							"30 ft cone (CON save)"
-						],
-						[
-							"White",
-							"Cold",
-							"30 ft cone (CON save)"
-						]
-					]
-				}
-			]
-		},
-		{
-			"name": "Improved Draconic Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Dragon's Scale",
-			"subclassSource": "Ishiir",
-			"level": 7,
-			"header": 1,
-			"entries": [
-				"You gain a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} when you are shifted, but you have to end your flying movement on the ground.",
-				"Additionally, you gain {@variantrule Resistance|Ishiir} to the damage type associated with your Draconic Form."
-			]
-		},
-		{
-			"name": "Greater Draconic Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Dragon's Scale",
-			"subclassSource": "Ishiir",
-			"level": 13,
-			"header": 1,
-			"entries": [
-				"You no longer have to end your flying movement on the ground when you are shifted.",
-				"Additionally, you gain {@sense blindsight} with a range of 20 feet."
-			]
-		},
-		{
-			"name": "Superior Draconic Aspect",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Shifter",
-			"classSource": "Ishiir",
-			"subclassShortName": "Dragon's Scale",
-			"subclassSource": "Ishiir",
-			"level": 18,
-			"header": 1,
-			"entries": [
-				"While you are shifted, any hostile creature that starts its turn within 60 feet of you or enters that area for the first time on a turn, must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} (DC equal to 8 + your {@variantrule Proficiency|Ishiir} bonus + your Constitution modifier) or be {@condition Frightened|Ishiir} or {@condition Charmed|Ishiir} by you (your choice) until the end of your next turn. Any affected creature also has {@variantrule Disadvantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against your breath weapon.",
-				"Once a creature succeeds on this save, it is {@variantrule Immunity|Ishiir|Immune} against this feature for the next 24 hours."
-			]
-		}
-	]
+                "url": "https://regateiro.pt/5etools/homebrew/ishiir-shifter.json",
+                "authors": [
+                    "Sieg"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "class": [
+        {
+            "name": "Shifter",
+            "page": 1,
+            "source": "Ishiir",
+            "hd": {
+                "number": 1,
+                "faces": 12
+            },
+            "proficiency": [
+                "Strength",
+                "and your choice of Dexterity or Constitution"
+            ],
+            "startingProficiencies": {
+                "weapons": [
+                    "simple"
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "acrobatics",
+                                "animal handling",
+                                "athletics",
+                                "intimidation",
+                                "nature",
+                                "perception",
+                                "survival",
+                                "stealth"
+                            ],
+                            "count": 2
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "default": [
+                    "(a) a {@item shortbow|Ishiir} and a {@item quiver|phb} of 20 arrows or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+                    "(a) a {@item club|Ishiir} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+                    "An {@item explorer's pack|phb}, and four {@item dagger|Ishiir|daggers}"
+                ],
+                "goldAlternative": "{@dice 2d4*10|2d4 x 10|Starting Gold}",
+                "defaultData": [
+                    {
+                        "a": [
+                            "shortbow|Ishiir"
+                        ],
+                        "b": [
+                            {
+                                "equipmentType": "weaponSimple"
+                            }
+                        ]
+                    },
+                    {
+                        "a": [
+                            {
+                                "item": "club|Ishiir"
+                            }
+                        ],
+                        "b": [
+                            {
+                                "equipmentType": "weaponSimple"
+                            }
+                        ]
+                    },
+                    {
+                        "_": [
+                            "explorer's pack|phb",
+                            {
+                                "item": "dagger|Ishiir",
+                                "quantity": 4
+                            }
+                        ]
+                    }
+                ]
+            },
+            "multiclassing": {
+                "requirements": {
+                    "or": [
+                        {
+                            "str": 13,
+                            "dex": 13
+                        }
+                    ],
+                    "con": 13
+                },
+                "proficienciesGained": {
+                    "weapons": [
+                        "simple"
+                    ]
+                }
+            },
+            "classTableGroups": [
+                {
+                    "colLabels": [
+                        "Natural Weapons",
+                        "Formshifts",
+                        "Formshift Damage"
+                    ],
+                    "rows": [
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "2",
+                            {
+                                "type": "bonus",
+                                "value": 2
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "2",
+                            {
+                                "type": "bonus",
+                                "value": 2
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "3",
+                            {
+                                "type": "bonus",
+                                "value": 2
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "3",
+                            {
+                                "type": "bonus",
+                                "value": 2
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            "3",
+                            {
+                                "type": "bonus",
+                                "value": 2
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            "4",
+                            {
+                                "type": "bonus",
+                                "value": 2
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            "4",
+                            {
+                                "type": "bonus",
+                                "value": 2
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            "4",
+                            {
+                                "type": "bonus",
+                                "value": 2
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            "4",
+                            {
+                                "type": "bonus",
+                                "value": 3
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            "4",
+                            {
+                                "type": "bonus",
+                                "value": 3
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            "4",
+                            {
+                                "type": "bonus",
+                                "value": 3
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            "5",
+                            {
+                                "type": "bonus",
+                                "value": 3
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            "5",
+                            {
+                                "type": "bonus",
+                                "value": 3
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            "5",
+                            {
+                                "type": "bonus",
+                                "value": 3
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            "5",
+                            {
+                                "type": "bonus",
+                                "value": 3
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            "5",
+                            {
+                                "type": "bonus",
+                                "value": 4
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 12
+                                    }
+                                ]
+                            },
+                            "6",
+                            {
+                                "type": "bonus",
+                                "value": 4
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 12
+                                    }
+                                ]
+                            },
+                            "6",
+                            {
+                                "type": "bonus",
+                                "value": 4
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 12
+                                    }
+                                ]
+                            },
+                            "6",
+                            {
+                                "type": "bonus",
+                                "value": 4
+                            }
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 12
+                                    }
+                                ]
+                            },
+                            "6",
+                            {
+                                "type": "bonus",
+                                "value": 4
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "classFeatures": [
+                "Formshift|Shifter|Ishiir|1",
+                "Natural Weapons|Shifter|Ishiir|1",
+                "Primal Defence|Shifter|Ishiir|1",
+                "Animal Senses|Shifter|Ishiir|2",
+                "Fast Movement|Shifter|Ishiir|2",
+                {
+                    "classFeature": "Wild Aspect|Shifter|Ishiir|3",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Shifter|Ishiir|4",
+                "Martial Mastery|Shifter|Ishiir|4",
+                "Extra Attack|Shifter|Ishiir|5",
+                "Primal Pounce|Shifter|Ishiir|5",
+                "Primal Strikes|Shifter|Ishiir|6",
+                "Improved Animal Senses|Shifter|Ishiir|6",
+                {
+                    "classFeature": "Wild Aspect Feature|Shifter|Ishiir|7",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Shifter|Ishiir|8",
+                "Ferocious Strikes|Shifter|Ishiir|9",
+                "Feral Resilience|Shifter|Ishiir|10",
+                "Greater Formshift|Shifter|Ishiir|11",
+                "Ability Score Improvement|Shifter|Ishiir|12",
+                {
+                    "classFeature": "Wild Aspect Feature|Shifter|Ishiir|13",
+                    "gainSubclassFeature": true
+                },
+                "Ferocious Vitality|Shifter|Ishiir|14",
+                "Persistent Formshift|Shifter|Ishiir|15",
+                "Ability Score Improvement|Shifter|Ishiir|16",
+                "Wild Blessing|Shifter|Ishiir|17",
+                {
+                    "classFeature": "Wild Aspect Feature|Shifter|Ishiir|18",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Shifter|Ishiir|19",
+                "Primal Avatar|Shifter|Ishiir|20"
+            ],
+            "subclassTitle": "Wild Aspect"
+        }
+    ],
+    "subclass": [
+        {
+            "name": "Autumn's Wing",
+            "page": 1,
+            "shortName": "Autumn's Wing",
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassFeatures": [
+                "Winged Aspect|Shifter|Ishiir|Autumn's Wing|Ishiir|3",
+                "Improved Winged Aspect|Shifter|Ishiir|Autumn's Wing|Ishiir|7",
+                "Greater Winged Aspect|Shifter|Ishiir|Autumn's Wing|Ishiir|13",
+                "Superior Winged Aspect|Shifter|Ishiir|Autumn's Wing|Ishiir|18"
+            ]
+        },
+        {
+            "name": "Summer's Claw",
+            "page": 1,
+            "shortName": "Summer's Claw",
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassFeatures": [
+                "Clawed Aspect|Shifter|Ishiir|Summer's Claw|Ishiir|3",
+                "Improved Clawed Aspect|Shifter|Ishiir|Summer's Claw|Ishiir|7",
+                "Greater Clawed Aspect|Shifter|Ishiir|Summer's Claw|Ishiir|13",
+                "Superior Clawed Aspect|Shifter|Ishiir|Summer's Claw|Ishiir|18"
+            ]
+        },
+        {
+            "name": "Winter's Fang",
+            "page": 1,
+            "shortName": "Winter's Fang",
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassFeatures": [
+                "Fanged Aspect|Shifter|Ishiir|Winter's Fang|Ishiir|3",
+                "Improved Fanged Aspect|Shifter|Ishiir|Winter's Fang|Ishiir|7",
+                "Greater Fanged Aspect|Shifter|Ishiir|Winter's Fang|Ishiir|13",
+                "Superior Fanged Aspect|Shifter|Ishiir|Winter's Fang|Ishiir|18"
+            ]
+        },
+        {
+            "name": "Spring's Branch",
+            "shortName": "Spring's Branch",
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "page": 1,
+            "spellcastingAbility": "wis",
+            "casterProgression": "1/3",
+            "cantripProgression": [
+                0,
+                0,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3
+            ],
+            "spellsKnownProgression": [
+                0,
+                0,
+                3,
+                4,
+                4,
+                4,
+                5,
+                6,
+                6,
+                7,
+                8,
+                8,
+                9,
+                10,
+                10,
+                11,
+                11,
+                11,
+                12,
+                13
+            ],
+            "additionalSpells": [
+                {
+                    "ability": "wis",
+                    "expanded": {
+                        "3": [
+                            {
+                                "all": "level=0|class=Druid (Ishiir)|source=Ishiir"
+                            },
+                            {
+                                "all": "level=1|class=Druid (Ishiir)|source=Ishiir"
+                            }
+                        ],
+                        "7": [
+                            {
+                                "all": "level=2|class=Druid (Ishiir)|source=Ishiir"
+                            }
+                        ],
+                        "13": [
+                            {
+                                "all": "level=3|class=Druid (Ishiir)|source=Ishiir"
+                            }
+                        ],
+                        "19": [
+                            {
+                                "all": "level=4|class=Druid (Ishiir)|source=Ishiir"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "subclassTableGroups": [
+                {
+                    "subclasses": [
+                        {
+                            "name": "Spring's Branch",
+                            "source": "Ishiir"
+                        }
+                    ],
+                    "colLabels": [
+                        "{@filter Cantrips Known|spells|level=0|class=Druid (Ishiir)|source=Ishiir}",
+                        "{@filter Prepared Spells|spells|class=Druid (Ishiir)|source=Ishiir}"
+                    ],
+                    "rows": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            3
+                        ],
+                        [
+                            2,
+                            4
+                        ],
+                        [
+                            2,
+                            4
+                        ],
+                        [
+                            2,
+                            4
+                        ],
+                        [
+                            2,
+                            5
+                        ],
+                        [
+                            2,
+                            6
+                        ],
+                        [
+                            2,
+                            6
+                        ],
+                        [
+                            3,
+                            7
+                        ],
+                        [
+                            3,
+                            8
+                        ],
+                        [
+                            3,
+                            8
+                        ],
+                        [
+                            3,
+                            9
+                        ],
+                        [
+                            3,
+                            10
+                        ],
+                        [
+                            3,
+                            10
+                        ],
+                        [
+                            3,
+                            11
+                        ],
+                        [
+                            3,
+                            11
+                        ],
+                        [
+                            3,
+                            11
+                        ],
+                        [
+                            3,
+                            12
+                        ],
+                        [
+                            3,
+                            13
+                        ]
+                    ]
+                },
+                {
+                    "title": "Spell Slots per Spell Level",
+                    "subclasses": [
+                        {
+                            "name": "Spring's Branch",
+                            "source": "Ishiir"
+                        }
+                    ],
+                    "colLabels": [
+                        "{@filter 1st|spells|level=1|class=Druid (Ishiir)|source=Ishiir}",
+                        "{@filter 2nd|spells|level=2|class=Druid (Ishiir)|source=Ishiir}",
+                        "{@filter 3rd|spells|level=3|class=Druid (Ishiir)|source=Ishiir}",
+                        "{@filter 4th|spells|level=4|class=Druid (Ishiir)|source=Ishiir}"
+                    ],
+                    "rowsSpellProgression": [
+                        [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1
+                        ]
+                    ]
+                }
+            ],
+            "subclassFeatures": [
+                "Green Aspect|Shifter|Ishiir|Spring's Branch|Ishiir|3",
+                "Improved Green Aspect|Shifter|Ishiir|Spring's Branch|Ishiir|7",
+                "Greater Green Aspect|Shifter|Ishiir|Spring's Branch|Ishiir|13",
+                "Superior Green Aspect|Shifter|Ishiir|Spring's Branch|Ishiir|18"
+            ]
+        },
+        {
+            "name": "Dragon's Scale",
+            "page": 1,
+            "shortName": "Dragon's Scale",
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassFeatures": [
+                "Draconic Aspect|Shifter|Ishiir|Dragon's Scale|Ishiir|3",
+                "Improved Draconic Aspect|Shifter|Ishiir|Dragon's Scale|Ishiir|7",
+                "Greater Draconic Aspect|Shifter|Ishiir|Dragon's Scale|Ishiir|13",
+                "Superior Draconic Aspect|Shifter|Ishiir|Dragon's Scale|Ishiir|18"
+            ]
+        }
+    ],
+    "classFeature": [
+        {
+            "name": "Formshift",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "By choice or circumstance, you possess the ability to shift into an animal-like form that outfits you with heightened senses, swiftness, and primal ferocity in battle. You shift forms as a {@variantrule Bonus Action|Ishiir}. While shifted, you gain the following benefits as long as you aren't wearing armor heavier than light or a shield:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You have {@variantrule Advantage|Ishiir} on {@skill Perception} {@variantrule Ability Check|Ishiir|checks}.",
+                        "Your {@variantrule Speed|Ishiir} is doubled.",
+                        "When you make a melee weapon attack with your natural weapons, you gain a +2 bonus to the damage roll. This bonus increases as you level."
+                    ]
+                },
+                "If you are able to cast spells, you can't cast them or concentrate on them while shifted.",
+                "Your Formshift lasts for an amount of hours equal to your shifter level. It ends early if you fall {@condition Unconscious|Ishiir} or you are {@condition Incapacitated|Ishiir}. You can also end your Formshift as a {@variantrule Bonus Action|Ishiir}.",
+                "You can Formshift a number of times shown for your Shifter level in the Formshifts column of the Shifter Features table. You regain one expended use when you finish a {@variantrule Short Rest|Ishiir}, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}.",
+                "You choose whether your equipment falls to the ground in your space, merges into your shifted form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for your shifted form to wear a piece of equipment, based on your shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that your shifted form can't wear must either fall to the ground or merge with it. Equipment that merges with your shifted form has no effect until you leave Formshift."
+            ]
+        },
+        {
+            "name": "Natural Weapons",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "Even when not shifted, your form is permanently altered to include fangs, claws, or talons. When you make a melee weapon attack with these natural weapons, you roll a {@dice d6} and add your Strength or Dexterity modifier to the attack and damage roll (your choice).",
+                "This die changes as you gain shifter levels, as shown in the Natural Weapons column of the Shifter table."
+            ]
+        },
+        {
+            "name": "Primal Defence",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "Your animal-like swiftness or thick skin makes it more difficult to land a hit on you.",
+                "While you are wearing no armor and not wielding a shield, your AC equals 10 + your Strength or Dexterity modifier (your choice when you get this feature) and your Constitution modifier."
+            ]
+        },
+        {
+            "name": "Fast Movement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "Your {@variantrule Speed|Ishiir} increases by 10 feet while you aren't wearing any armor or wielding a shield."
+            ]
+        },
+        {
+            "name": "Animal Senses",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "You gain {@variantrule Proficiency|Ishiir} in two of the following skills: {@skill Animal Handling}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, {@skill Survival}.",
+                "Additionally, you add your Formshift Damage to the chosen skills and to your initiative rolls."
+            ]
+        },
+        {
+            "name": "Wild Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "You choose the shape of your formshift. Your choice grants you features at 3rd, 7th, 13th, and 18th levels."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 4,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Martial Mastery",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 4,
+            "entries": [
+                "You gain the mastery benefits for two {@filter weapons|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} of your choice as well as an {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} type (see {@variantrule Armor Mastery|Ishiir} and {@variantrule Weapon Mastery|Ishiir} variant rules). You must be {@variantrule Proficiency|Ishiir|proficient} in the chosen weapons and armor. If you possess the {@optfeature Unarmored Defense|Ishiir} feature, you may choose it in place of an armor type.",
+                "You can change your choices when you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 5,
+            "entries": [
+                "You can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
+            ]
+        },
+        {
+            "name": "Primal Pounce",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 5,
+            "entries": [
+                "Once per turn, as part of an attack with your natural weapons, you can move up to your {@variantrule Speed|Ishiir} in a straight line towards a target of your choice."
+            ]
+        },
+        {
+            "name": "Primal Strikes",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "Your natural weapons count as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage."
+            ]
+        },
+        {
+            "name": "Improved Animal Senses",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "You cannot be {@condition Surprised|Ishiir} unless you are {@condition Incapacitated|Ishiir}."
+            ]
+        },
+        {
+            "name": "Wild Aspect Feature",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 7,
+            "entries": [
+                "You gain one feature granted by your Wild Aspect."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 8,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Ferocious Strikes",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 9,
+            "entries": [
+                "You add your Formshift Damage to your weapon damage rolls even when not currently shifted. If you are shifted, this damage bonus is doubled."
+            ]
+        },
+        {
+            "name": "Feral Resilience",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 10,
+            "entries": [
+                "You add your Formshift Damage to all {@variantrule Saving Throw|Ishiir|Saving Throws}. You do not gain this bonus if you're unconscious."
+            ]
+        },
+        {
+            "name": "Greater Formshift",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 11,
+            "entries": [
+                "You can increase your size to Large when you use your Formshift class feature and your Natural Weapons die is doubled for calculating your base weapon damage while you are shifted. If you lack the room to become Large, your size doesn't change."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 12,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Wild Aspect Feature",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 13,
+            "entries": [
+                "You gain one feature granted by your Wild Aspect."
+            ]
+        },
+        {
+            "name": "Ferocious Vitality",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "When you are reduced to 0 hit points but not killed outright, you can expend a use of your Formshift to immediately regain hit points equal to twice your Shifter level. You can't use this feature again until you finish a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Persistent Formshift",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 15,
+            "entries": [
+                "You can remain shifted for an indefinite amount of time and your Formshift does not end when you are asleep naturally. You can still end your Formshift as usual."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 16,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Wild Blessing",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 17,
+            "entries": [
+                "Choose two ability scores from Strength, Dexterity, and Constitution. The chosen ability scores and their maximums increase by 2."
+            ]
+        },
+        {
+            "name": "Wild Aspect Feature",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 18,
+            "entries": [
+                "You gain one feature granted by your Wild Aspect."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 19,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Primal Avatar",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "level": 20,
+            "entries": [
+                "You gain the following benefits while shifted:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Your can increase your size to Huge and your Natural Weapons die is doubled for calculating your base weapon damage. If you lack the room to become Huge, your size doesn't change.",
+                        "You can't be {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir}. If you are {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir} when you use Formshift, the effect is suspended for the duration of the shift.",
+                        "The healing gained from your Ferocious Vitality feature is increased to 5x your Shifter level."
+                    ]
+                }
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Winged Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Autumn's Wing",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You adopt an avian aspect, granting you physical traits such as the piercing eyes of a bird of prey, sharp nails, and wings sprouting from your back.",
+                "You gain a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. If you are not shifted, you have to end your flying movement on the ground.",
+                "Once you reach level 10 in this class, you no longer need to end your flying movement on the ground while not shifted."
+            ]
+        },
+        {
+            "name": "Improved Winged Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Autumn's Wing",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 1,
+            "entries": [
+                "You gain one of the following features of your choice.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Night Flyer.",
+                            "entry": "You gain a {@sense darkvision} range of 120 feet. If you already possess {@sense darkvision}, add 120 ft to its range."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Agile Flyer.",
+                            "entry": "Your {@variantrule Speed|Ishiir} increases by 10 feet and you do not provoke {@action Opportunity Attack|Ishiir|Opportunity Attacks} when you fly out of an enemy's reach."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Diving Raptor.",
+                            "entry": "When you use Primal Pounce, you can move up to double your {@variantrule Speed|Ishiir} if your target is below you. If you moved at least 20 feet in this manner, the attack adds your Natural Weapons die to the damage again once."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Greater Winged Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Autumn's Wing",
+            "subclassSource": "Ishiir",
+            "level": 13,
+            "header": 1,
+            "entries": [
+                "You gain one of the following features of your choice.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Silent Flight.",
+                            "entry": "While flying, you can {@action hide|Ishiir} as a {@variantrule Bonus Action|Ishiir} and your wings cause no sound when you move while flying. If you attack while hidden, the benefits of being hidden persist against the target of your attack until the end of your turn."
+                        },
+                        {
+                            "type": "item",
+                            "name": "On Swift Wings.",
+                            "entry": "When you move, you can choose a creature that is within 5 ft and at least one size smaller than you and move the creature with you until the end of the current turn. The creature's movement doesn't provoke {@action Opportunity Attack|Ishiir|Opportunity Attacks}."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Deadly Talons.",
+                            "entry": "The critical range with your natural weapons increases by 1. When you critically hit with your natural weapons, you roll your weapon damage dice two additional times and add them to the damage."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Superior Winged Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Autumn's Wing",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "You gain one of the following features of your choice.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Death from the Dark.",
+                            "entries": [
+                                "Once per turn, when you hit a creature you are hidden from with your natural weapons, you deal additional damage equal to two rolls of your Natural Weapons die and the target has to make a Wisdom {@variantrule Saving Throw|Ishiir}.",
+                                "The DC for this is 8 + your {@variantrule Proficiency|Ishiir} + your Strength or Dexterity modifier (your choice). On a failure, the target is {@condition Frightened|Ishiir} until the end of your next turn."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Evasive Flight.",
+                            "entries": [
+                                "When you are subjected to an effect that allows you to make a Dexterity {@variantrule Saving Throw|Ishiir} to take only half damage, you instead take no damage if you succeed on the {@variantrule Saving Throw|Ishiir}, and only half damage if you fail.",
+                                "If you succeed on the {@variantrule Saving Throw|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to move up to half your {@variantrule Speed|Ishiir} to an unoccupied space that you can see. If you are carrying an ally or otherwise moving them with you, they also automatically succeed on the {@variantrule Saving Throw|Ishiir} and take no damage.",
+                                "You don't benefit from this feature if you have the {@condition Incapacitated|Ishiir} condition."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Concussive Impact.",
+                            "entries": [
+                                "When you use Primal Pounce and hit the target, it has to make a Constitution {@variantrule Saving Throw|Ishiir}. The DC for this is 8 + your {@variantrule Proficiency|Ishiir} + your Strength or Dexterity modifier (your choice). On a failure, the target suffers an effect based on the distance you travelled as part of Primal Pounce.",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        {
+                                            "type": "item",
+                                            "name": "20 feet or more:",
+                                            "entry": "The target is knocked {@condition Prone|Ishiir}."
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "40 feet or more:",
+                                            "entry": "The target is {@condition Dazed|Ishiir} until the end of your next turn."
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "60 feet or more:",
+                                            "entry": "The target is {@condition Stunned|Ishiir} until the end of your next turn."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Clawed Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Summer's Claw",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You adopt a feline aspect, granting you physical traits such as the vertical pupils, sharp nails, and elongated canines.",
+                "You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
+                "Additionally, once per turn when you hit a creature with your natural weapons, you can force the target to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, the target is {@condition Lacerated|Ishiir}. The DC for this is 8 + your {@variantrule Proficiency|Ishiir} + your Strength or Dexterity modifier (your choice). The target can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on itself on a success. Creatures who cannot bleed are {@variantrule Immunity|Ishiir|Immune} to this feature.",
+                "Once you reach level 10 in this class, any {@condition Lacerated|Ishiir|laceration} inflicted with your natural weapons deals damage equal to thrice your {@variantrule Proficiency|Ishiir}, rather than twice."
+            ]
+        },
+        {
+            "name": "Improved Clawed Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Summer's Claw",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 1,
+            "entries": [
+                "You gain one of the following features of your choice.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Stalker's Ambush.",
+                            "entry": "Any attack with your natural weapons against a creature that is {@condition Surprised|Ishiir} has {@variantrule Advantage|Ishiir} and adds an additional roll of your Natural Weapons die to the damage."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Swift Climber.",
+                            "entry": "You gain a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} and when you take fall damage, you can use your {@variantrule Reaction|Ishiir} to decrease that damage by an amount equal to five times your Shifter level."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Feral Pounce.",
+                            "entry": "When you use Primal Pounce and your attack hits, you can force the target to make a Strength {@variantrule Saving Throw|Ishiir} if it is no more than one size larger than you. The DC for this is 8 + your {@variantrule Proficiency|Ishiir} + your Strength or Dexterity modifier (your choice). On a failure, the target is knocked {@condition Prone|Ishiir}."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Greater Clawed Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Summer's Claw",
+            "subclassSource": "Ishiir",
+            "level": 13,
+            "header": 1,
+            "entries": [
+                "You gain one of the following features of your choice.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Stalker's Rake.",
+                            "entry": "You can {@action Hide|Ishiir} as a {@variantrule Bonus Action|Ishiir}. If you hit a creature with your natural weapons while hidden, it has {@variantrule Disadvantage|Ishiir} on the next {@variantrule Saving Throw|Ishiir} against your Clawed Aspect. Additionally, creatures {@condition Lacerated|Ishiir} by you cannot make {@action Opportunity Attack|Ishiir|Opportunity Attacks}."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Big Game Hunter.",
+                            "entry": "When you use Primal Pounce and your attack hits, you can also attempt to {@action Climb onto a Bigger Creature|Ishiir} as per the Additional Combat Actions as a {@variantrule Bonus Action|Ishiir}."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Disembowel.",
+                            "entry": "If you hit a {@condition Prone|Ishiir} creature with your natural weapons, you can force it to make the {@variantrule Saving Throw|Ishiir} against your Clawed Aspect again, ignoring the usual per-turn limit. Once per turn, if the {@condition Prone|Ishiir} creature is already {@condition Lacerated|Ishiir}, it takes the damage from the condition immediately after the attack if it fails the {@variantrule Saving Throw|Ishiir}."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Superior Clawed Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Summer's Claw",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "You gain one of the following features of your choice.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Spirit Claw.",
+                            "entry": "When you are {@action Hide|Ishiir|hidden}, you ignore {@variantrule Immunity|Ishiir} to the {@condition Lacerated|Ishiir} condition and healing does not remove the {@condition Lacerated|Ishiir} condition if it was applied by you unless the target was healed back to its hitpoint maximum. Additionally, you have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against creatures that are {@condition Lacerated|Ishiir}."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Feline Grace.",
+                            "entry": "No {@variantrule Attack Roll|Ishiir} has {@variantrule Advantage|Ishiir} against you and you cannot have {@variantrule Disadvantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws} and {@variantrule Ability Check|Ishiir|Ability Checks}. You lose these benefits when you are {@condition Incapacitated|Ishiir} or your {@variantrule Speed|Ishiir} is 0."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Killing Bite.",
+                            "entry": "If you hit a {@condition Prone|Ishiir} creature with your natural weapons, you can immediately make another attack with them as a {@variantrule Bonus Action|Ishiir}."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Fanged Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Winter's Fang",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You adopt a canine aspect, granting you physical traits such as the piercing eyes, sharp nails, and elongated canines.",
+                "You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
+                "Once per turn when you hit a creature with your natural weapons, you can force the target to make a Strength {@variantrule Saving Throw|Ishiir}. On a failure, the target is knocked {@condition Prone|Ishiir}. The DC for this is 8 + your {@variantrule Proficiency|Ishiir} + your Strength or Dexterity modifier (your choice). If the target creature is already {@condition Prone|Ishiir}, you can attempt to {@condition Grappled|Ishiir|grapple} it instead, using the usual skill check instead of forcing a {@variantrule Saving Throw|Ishiir}.",
+                "Once you reach level 10 in this class, you count as 1 size larger for the purposes of this feature."
+            ]
+        },
+        {
+            "name": "Improved Fanged Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Winter's Fang",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 1,
+            "entries": [
+                "You gain one of the following features of your choice.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Pack Tactics.",
+                            "entry": "You have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} with your natural weapons against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition Incapacitated|Ishiir}."
+                        },
+                        {
+                            "type": "item",
+                            "name": "A Friend in Deed.",
+                            "entry": "You can take the {@action Help|Ishiir} action as a {@variantrule Bonus Action|Ishiir} and with a range of 30 feet. You can always use the {@action Help|Ishiir} action to give someone {@variantrule Advantage|Ishiir} on a skill check, even if you are not {@variantrule Proficiency|Ishiir|proficient} in the relevant skill yourself."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Thick Hide.",
+                            "entry": "The temporary hit points gained through your Martial Mastery (Unarmored Defense) increase by half (rounded down). Additionally, you have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against becoming {@condition Poisoned|Ishiir} or {@condition Lacerated|Ishiir}."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Greater Fanged Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Winter's Fang",
+            "subclassSource": "Ishiir",
+            "level": 13,
+            "header": 1,
+            "entries": [
+                "You gain one of the following features of your choice.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Coordinated Takedown.",
+                            "entry": "When a creature within reach of your natural weapons is hit by a melee attack from one of your allies, you can use your {@variantrule Reaction|Ishiir} to immediately force that creature to make a Strength {@variantrule Saving Throw|Ishiir} as per your Fanged Aspect feature."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Bolstering Barks.",
+                            "entry": "Whenever you use the {@action Help|Ishiir} action on one of your allies, they gain temporary hit points equal to half your Shifter level."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Fierce Protector.",
+                            "entry": "When you hit a creature with your natural weapons, it has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against creatures other than you until the end of your next turn while it is within your reach. If it makes an attack against a target other than you during that time, you have {@variantrule Advantage|Ishiir} on your next {@variantrule Attack Roll|Ishiir} against it and add half your Shifter level to the damage roll (rounded down)."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Superior Fanged Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Winter's Fang",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "You gain one of the following features of your choice.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Killing Bite.",
+                            "entry": "If you hit a {@condition Prone|Ishiir} creature with your natural weapons, you can immediately make another attack with them as a {@variantrule Bonus Action|Ishiir}."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Stronger Together.",
+                            "entry": "Allies within 20 feet of you also benefit from your Feral Resilience while you are not {@condition Unconscious|Ishiir}."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Feral Defiance.",
+                            "entry": "Your Ferocious Vitality recharges on a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir} and heals for 1x Shifter level additional hit points."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Green Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spring's Branch",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You adopt a plantlike aspect, granting you physical traits such as floral skin color, twiglike fingers, and leafs or flowers sprouting from your hair.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Natural Casting|Shifter|Ishiir|Spring's Branch|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Spellcasting|Shifter|Ishiir|Spring's Branch|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Natural Casting",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spring's Branch",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You ignore all restrictions on casting or concentrating on spells caused by being shifted. Additionally, when you {@action Magic|Ishiir|cast a spell} that heals or gives the target temporary hit points, you increase the healing or temporary hit points by an amount equal to your Formshift Damage.",
+                "Once you reach level 10 in this class, this bonus doubles."
+            ]
+        },
+        {
+            "name": "Spellcasting",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spring's Branch",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "The information below details how you use those rules with Druid spells, which appear on the {@filter Druid spell list|spells|class=druid (Ishiir)|source=Ishiir}.",
+                {
+                    "type": "entries",
+                    "name": "Cantrips.",
+                    "entries": [
+                        "You know two cantrips of your choice from the {@filter Druid spell list|spells|class=druid (Ishiir)|source=Ishiir}. Whenever you gain a Shifter level, you can replace one of these cantrips with another cantrip of your choice from the Druid spell list.",
+                        "When you reach Shifter level 10, you learn another Druid cantrip of your choice, as shown in this subclass' progression table."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spell Slots.",
+                    "entries": [
+                        "The Spring's Branch Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Prepared Spells of Level 1+.",
+                    "entries": [
+                        "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the Druid spell list.",
+                        "The number of spells on your list increases as you gain Shifter levels, as shown in the Prepared Spells column of the Spring's Branch Spellcasting table. Whenever that number increases, choose additional spells from the Druid spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 7 Shifter, your list of prepared spells can include five Druid spells of levels 1 and 2 in any combination."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Changing Your Prepared Spells.",
+                    "entries": [
+                        "Whenever you gain a Shifter level, you can replace one spell on your list with another Druid spell for which you have spell slots."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Ability.",
+                    "entries": [
+                        "Wisdom is your spellcasting ability for your Druid spells."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Focus.",
+                    "entries": [
+                        "You can use a Druidic Focus as a Spellcasting Focus for your Druid spells."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Improved Green Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spring's Branch",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 1,
+            "entries": [
+                "You gain one of the following features of your choice.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Hardened Bark.",
+                            "entry": "When you take bludgeoning, piercing, or slashing damage, that damage is reduced by an amount equal to half your Shifter level. This reduction applies before all other calculations."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Dryadic Bond.",
+                            "entries": [
+                                "You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
+                                "Additionally, you can form a ranged weapon from plant material as a {@variantrule Bonus Action|Ishiir}. As part of an attack, you can automatically form ammunition for this weapon if it requires it. The ammunition disappears are hitting or missing. The weapon remains while it is within 100 feet of you and otherwise disappears. This weapon counts as a natural weapon for you and has a range of 90/360 feet."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Defensive Spores.",
+                            "entry": "When a creature within 10 feet of you hits or misses you with a melee attack, you can use your {@variantrule Reaction|Ishiir} to force it to make a Constitution {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, the target is {@condition Poisoned|Ishiir} for 1 minute. At the end of each of its turns, the target can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Greater Green Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spring's Branch",
+            "subclassSource": "Ishiir",
+            "level": 13,
+            "header": 1,
+            "entries": [
+                "You gain one of the following features of your choice.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Twisting Roots.",
+                            "entry": "While shifted, the ground in a 10 feet circle around you is {@quickref difficult terrain||3} for your enemies. When a creature starts its turn in that area or enters it for the first time on a turn, you can use your {@variantrule Reaction|Ishiir} to force it to make a Strength {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, its {@variantrule Speed|Ishiir} is reduced to 0 until the end of your next turn."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Fey Step.",
+                            "entry": "As a {@variantrule Bonus Action|Ishiir}, you can teleport up to 30 feet to an unoccupied space that you can see. You can use this feature a number of times equal to your Formshift Damage and you regain all expended uses on a {@variantrule Long Rest|Ishiir}. Alternatively, you can spend a 2nd Level Spell Slot to use this feature again."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Addling Spores.",
+                            "entries": [
+                                "As an {@variantrule Action|Ishiir}, you launch a cloud of befuddling spores at a location within 30 feet of you. Each creature within a 10 feet radius sphere around that point has to make a Constitution a {@variantrule Saving Throw|Ishiir} or be {@condition Confused|Ishiir} until the end of your next turn.",
+                                "You can use this feature a number of times equal to your Formshift Damage and you regain all expended uses on a {@variantrule Long Rest|Ishiir}. Alternatively, you can spend a 3rd Level Spell Slot to use this feature again."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Superior Green Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spring's Branch",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "You gain one of the following features of your choice.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Protective Canopy.",
+                            "entry": "While you are shifted, your reach increases by 10 feet and allies within 10 feet of you have half-cover."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Blinding Beauty.",
+                            "entries": [
+                                "As an {@variantrule Action|Ishiir}, you can force every creature of your choice within 30 feet of you that you can see and that can see you to make a Wisdom {@variantrule Saving Throw|Ishiir} against your Spell Save DC. On a failure, a target is {@condition Blinded|Ishiir} for 1 minute. At the end of each of its turns, the target can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on a success. Once a creature has succeeded on the {@variantrule Saving Throw|Ishiir}, it is {@variantrule Immunity|Ishiir|Immune} to this feature for the next 24 hours.",
+                                "You can use this feature a number of times equal to your Formshift Damage and you regain all expended uses on a {@variantrule Long Rest|Ishiir}. Alternatively, you can spend a 4th Level Spell Slot to use this feature again."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Aggressive Effluvia.",
+                            "entry": "Hostile creatures that start their turn within 30 feet of you or enter that space for the first time on a turn, take necrotic damage equal to double your Formshift Damage. Creatures that are {@condition Poisoned|Ishiir} or have hit points equal to half or less of their maximum, take double damage from this feature. If you are {@condition Unconscious|Ishiir} or dead, this effect disappears after {@dice 1d4} days."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Draconic Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dragon's Scale",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You adopt a draconic aspect, granting you physical traits such as scaled skin, vertical pupils, and sharp nails.",
+                "You gain a {@sense darkvision} range of 60 feet. If you already possess {@sense darkvision}, add 60 ft to its range.",
+                "As an {@variantrule Action|Ishiir}, you can exhale destructive energy. All creatues in the area of effect take damage equal to a number of rolls of your Natural Weapons die equal to your {@variantrule Proficiency|Ishiir}. The shape, {@variantrule Saving Throw|Ishiir}, and damage type of your breath weapon is determined by your draconic form, which you choose when you gain this feature. You can find all available options in the table below. The DC for this is 8 + your {@variantrule Proficiency|Ishiir} + your Constitution modifier. Once you have used your breath weapon, you have to roll a d6 at the start of each of your turns. On a roll of 5 or 6, you regain your use of this feature.",
+                "Once you reach level 10 in this class, the size of your breath weapon doubles.",
+                {
+                    "type": "table",
+                    "caption": "Character Advancement",
+                    "colLabels": [
+                        "Dragon",
+                        "Damage Type",
+                        "Breath Weapon Shape ({@variantrule Saving Throw|Ishiir})"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-3 text-center",
+                        "col-6"
+                    ],
+                    "rows": [
+                        [
+                            "Black",
+                            "Acid",
+                            "60x5 ft line (DEX save)"
+                        ],
+                        [
+                            "Blue",
+                            "Lightning",
+                            "60x5 ft line (DEX save)"
+                        ],
+                        [
+                            "Brass",
+                            "Fire",
+                            "30 ft cone (DEX save)"
+                        ],
+                        [
+                            "Bronze",
+                            "Lightning",
+                            "60x5 ft line (DEX save)"
+                        ],
+                        [
+                            "Copper",
+                            "Acid",
+                            "60x5 ft line (DEX save)"
+                        ],
+                        [
+                            "Gold",
+                            "Radiant",
+                            "30 ft cone (DEX save)"
+                        ],
+                        [
+                            "Green",
+                            "Poison",
+                            "30 ft cone (CON save)"
+                        ],
+                        [
+                            "Jabberwock",
+                            "Fire",
+                            "60x5 ft line (DEX save)"
+                        ],
+                        [
+                            "Night",
+                            "Force",
+                            "60x5 ft line (DEX save)"
+                        ],
+                        [
+                            "Red",
+                            "Fire",
+                            "30 ft cone (DEX save)"
+                        ],
+                        [
+                            "Shadow",
+                            "Necrotic",
+                            "30 ft cone (CON save)"
+                        ],
+                        [
+                            "Silver",
+                            "Radiant",
+                            "60x5 ft line (CON save)"
+                        ],
+                        [
+                            "Sylvan",
+                            "Poison",
+                            "30 ft cone (CON save)"
+                        ],
+                        [
+                            "White",
+                            "Cold",
+                            "30 ft cone (CON save)"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Improved Draconic Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dragon's Scale",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 1,
+            "entries": [
+                "You gain a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} when you are shifted, but you have to end your flying movement on the ground.",
+                "Additionally, you gain {@variantrule Resistance|Ishiir} to the damage type associated with your Draconic Form."
+            ]
+        },
+        {
+            "name": "Greater Draconic Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dragon's Scale",
+            "subclassSource": "Ishiir",
+            "level": 13,
+            "header": 1,
+            "entries": [
+                "You no longer have to end your flying movement on the ground when you are shifted.",
+                "Additionally, you gain {@sense blindsight} with a range of 20 feet."
+            ]
+        },
+        {
+            "name": "Superior Draconic Aspect",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Shifter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dragon's Scale",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "While you are shifted, any hostile creature that starts its turn within 60 feet of you or enters that area for the first time on a turn, must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} (DC equal to 8 + your {@variantrule Proficiency|Ishiir} bonus + your Constitution modifier) or be {@condition Frightened|Ishiir} or {@condition Charmed|Ishiir} by you (your choice) until the end of your next turn. Any affected creature also has {@variantrule Disadvantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against your breath weapon.",
+                "Once a creature succeeds on this save, it is {@variantrule Immunity|Ishiir|Immune} against this feature for the next 24 hours."
+            ]
+        }
+    ]
 }

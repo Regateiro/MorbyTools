@@ -1,427 +1,427 @@
 {
-	"_meta": {
-		"sources": [
-			{
-				"json": "Ishiir",
-				"abbreviation": "Ishiir",
-				"full": "Ishiir",
+    "_meta": {
+        "sources": [
+            {
+                "json": "Ishiir",
+                "abbreviation": "Ishiir",
+                "full": "Ishiir",
                 "color": "#d98d2a",
-				"url": "https://regateiro.pt/5etools/homebrew/ishiir-conditions.json",
-				"authors": [
-					"Sieg"
-				],
-				"convertedBy": [
-					"Morb"
-				]
-			}
-		]
-	},
-	"condition": [
-		{
-			"name": "Deafened",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A deafened creature can't hear and automatically fails any {@variantrule Ability Check|Ishiir} that requires hearing.",
-						"When a deafened creature casts a spell with a verbal component, it has to make an {@variantrule Ability Check|Ishiir} using its spellcasting ability. The DC equals 8 + the spell's level. Cantrips count as level 0 for this check. On a failure, the spell fails and has no effect."
-					]
-				}
-			]
-		},
-		{
-			"name": "Charmed",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects.",
-						"The charmer has {@variantrule Advantage|Ishiir} on any {@variantrule Ability Check|Ishiir} to interact socially with the creature."
-					]
-				}
-			]
-		},
-		{
-			"name": "Exhaustion",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in six levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description.",
-						{
-							"type": "table",
-							"colLabels": [
-								"Level",
-								"Effect"
-							],
-							"colStyles": [
-								"col-1 text-center",
-								"col-11"
-							],
-							"rows": [
-								[
-									"1",
-									"{@variantrule Disadvantage|Ishiir} on {@variantrule Ability Check|Ishiir|Ability Checks}"
-								],
-								[
-									"2",
-									"{@variantrule Speed|Ishiir} halved"
-								],
-								[
-									"3",
-									"{@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} and {@variantrule Saving Throw|Ishiir|Saving Throws}"
-								],
-								[
-									"4",
-									"Hit point maximum halved"
-								],
-								[
-									"5",
-									"{@variantrule Speed|Ishiir} reduced to 0"
-								],
-								[
-									"6",
-									"Death"
-								]
-							]
-						},
-						"If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description.",
-						"A creature suffers the effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its {@variantrule Speed|Ishiir} halved and has {@variantrule Disadvantage|Ishiir} on {@variantrule Ability Check|Ishiir|Ability Checks}.",
-						"An effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1.",
-						"Finishing a {@variantrule Long Rest|Ishiir} reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink. Also, being raised from the dead reduces a creature's exhaustion level by 1."
-					]
-				}
-			]
-		},
-		{
-			"name": "Frozen",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A frozen creature is covered along with any object it is wearing or carrying, in a thick layer of ice. Its weight increases by a factor of four, and it ceases aging.",
-						"The creature is {@condition Incapacitated|Ishiir}, can't move or speak, and is unaware of its surroundings.",
-						"{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}.",
-						"The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}.",
-						"The creature has vulnerability to bludgeoning and fire damage and {@variantrule Resistance|Ishiir} to all other damage.",
-						"The creature is {@variantrule Immunity|Ishiir|Immune} to poison and disease, although a poison or disease already in its system is suspended, not neutralized."
-					]
-				}
-			]
-		},
-		{
-			"name": "Grappled",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A grappled creature's {@variantrule Speed|Ishiir} becomes 0, and it can't benefit from any bonus to its {@variantrule Speed|Ishiir}.",
-						"The condition ends if the grappler is {@condition Incapacitated|Ishiir}.",
-						"The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the {@spell Thunderwave|Ishiir} spell."
-					]
-				}
-			]
-		},
-		{
-			"name": "Lacerated",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A lacerated creature takes damage equal to twice the original attacker's {@variantrule Proficiency|Ishiir} modifier at the start of every one of its turns.",
-						"If the affected creature receives magical healing or another regenerative effect, it is no longer lacerated.",
-						"Additionally, the creature or another creature can use a healing kit as an {@variantrule Action|Ishiir} to staunch the bleeding and remove the condition."
-					]
-				}
-			]
-		},
-		{
-			"name": "Prone",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.",
-						"The creature has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls}.",
-						"An {@variantrule Attack Roll|Ishiir} against the creature has {@variantrule Advantage|Ishiir} if the attacker is within 5 feet of the creature. Otherwise, the {@variantrule Attack Roll|Ishiir} has {@variantrule Disadvantage|Ishiir}."
-					]
-				}
-			]
-		},
-		{
-			"name": "Blinded",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A blinded creature can't see and automatically fails any {@variantrule Ability Check|Ishiir} that requires sight.",
-						"{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}, and the creature's {@variantrule Attack Roll|Ishiir|Attack Rolls} have {@variantrule Disadvantage|Ishiir}."
-					]
-				}
-			]
-		},
-		{
-			"name": "Concentration",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				"Some spells and other effects require Concentration to remain active, as specified in their descriptions. If the effect's creator loses Concentration, the effect ends. If the effect has a maximum duration, the effect's description specifies how long the creator can concentrate on it: up to 1 minute, 1 hour, or some other duration. The creator can end Concentration at any time (no action required). The following factors break Concentration.",
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": " Another Concentration Effect.",
-							"entry": "You lose Concentration on an effect the moment you start casting a spell that requires Concentration or activate another effect that requires Concentration."
-						},
-						{
-							"type": "item",
-							"name": "Damage.",
-							"entry": "If you take damage, you must succeed on a Constitution {@variantrule Saving Throw|Ishiir} to maintain Concentration. The DC equals 10 or half the damage taken (round down), whichever number is higher."
-						},
-						{
-							"type": "item",
-							"name": "Incapacitated or Dead.",
-							"entry": "Your Concentration ends if you have the {@condition Incapacitated|Ishiir} condition or you die."
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Confused",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A confused creature cannot make {@variantrule Reaction|Ishiir|Reactions} and rolls a {@dice d10} at the start of every one of its turns to determine its behaviour that turn.",
-						{
-							"type": "table",
-							"colLabels": [
-								"d10",
-								"Behavior"
-							],
-							"colStyles": [
-								"col-1 text-center",
-								"col-11"
-							],
-							"rows": [
-								[
-									"1",
-									"The creature uses all its movement to move in a random direction. To determine the direction, roll a {@dice d8} and assign a direction to each die face. The creature doesn't take an {@variantrule Action|Ishiir} this turn."
-								],
-								[
-									"2-6",
-									"The creature doesn't move or take actions this turn."
-								],
-								[
-									"7-8",
-									"The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn."
-								],
-								[
-									"9-10",
-									"The creature can act and move normally."
-								]
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Surprised",
-			"source": "Ishiir",
-			"page": 1,
-			"entries": [
-				"The DM determines who might be {@condition Surprised|Ishiir} at the start of combat. If neither side tries to be stealthy, they automatically notice each other. Otherwise, the DM compares the Dexterity ({@skill Stealth}) checks of anyone hiding with the passive Wisdom ({@skill Perception}) score of each creature on the opposing side. Any character or monster that doesn't notice a threat is {@condition Surprised|Ishiir} at the start of the encounter.",
-				"If you're {@condition Surprised|Ishiir}, you have {@variantrule Disadvantage|Ishiir} on your initiative roll and you can't take a {@variantrule Reaction|Ishiir} until the start of your first turn. A member of a group can be {@condition Surprised|Ishiir} even if the other members aren't.",
-				"If you're unnoticed at the start of combat, you have {@variantrule Advantage|Ishiir} on your initiative roll."
-			]
-		},
-		{
-			"name": "Dazed",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A dazed creature has {@variantrule Disadvantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws} and cannot take {@variantrule Reaction|Ishiir|Reactions}.",
-						"A dazed creature moves at half its {@variantrule Speed|Ishiir}.",
-						"On its turn, it can only take an {@variantrule Action|Ishiir} OR {@variantrule Bonus Action|Ishiir}, but not both; it can only make one attack with either.",
-						"If the creature attempts to {@action Magic|Ishiir|cast a spell} with a casting time of 1 action, the creature rolls a {@dice d20}. On an 11 or higher, the spell doesn't take effect until the creature's next turn and the creature must use its action to complete the spell. If it can't, the spell is wasted."
-					]
-				}
-			]
-		},
-		{
-			"name": "Frightened",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A frightened creature has {@variantrule Disadvantage|Ishiir} on {@variantrule Ability Check|Ishiir|Ability Checks} and {@variantrule Attack Roll|Ishiir|Attack Rolls} while the source of its fear is within line of sight.",
-						"The creature can't willingly move closer to the source of its fear."
-					]
-				}
-			]
-		},
-		{
-			"name": "Poisoned",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A poisoned creature has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} and {@variantrule Ability Check|Ishiir|Ability Checks}."
-					]
-				}
-			]
-		},
-		{
-			"name": "Restrained",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A restrained creature's {@variantrule Speed|Ishiir} becomes 0, and it can't benefit from any bonus to its {@variantrule Speed|Ishiir}.",
-						"{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}, and the creature's {@variantrule Attack Roll|Ishiir|Attack Rolls} have {@variantrule Disadvantage|Ishiir}.",
-						"The creature has {@variantrule Disadvantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}."
-					]
-				}
-			]
-		},
-		{
-			"name": "Dominated",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A dominated creature is beholden to its dominator's commands, overriding its own will and allegiances."
-					]
-				}
-			]
-		},
-		{
-			"name": "Incapacitated",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"An incapacitated creature can't take actions or {@variantrule Reaction|Ishiir|Reactions}.",
-						"The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}.",
-						"{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}."
-					]
-				}
-			]
-		},
-		{
-			"name": "Paralyzed",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A paralyzed creature is {@condition Incapacitated|Ishiir} and can't move or speak.",
-						"The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}. {@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}.",
-						"Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature."
-					]
-				}
-			]
-		},
-		{
-			"name": "Petrified",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.",
-						"The creature is {@condition Incapacitated|Ishiir}, can't move or speak, and is unaware of its surroundings.",
-						"{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}.",
-						"The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}.",
-						"The creature has {@variantrule Resistance|Ishiir} to all damage.",
-						"The creature is {@variantrule Immunity|Ishiir|Immune} to poison and disease, although a poison or disease already in its system is suspended, not neutralized."
-					]
-				}
-			]
-		},
-		{
-			"name": "Stunned",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"A stunned creature is {@condition Incapacitated|Ishiir}, can't move, and can speak only falteringly.",
-						"The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}.",
-						"{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}."
-					]
-				}
-			]
-		},
-		{
-			"name": "Unconscious",
-			"page": 1,
-			"source": "Ishiir",
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"An unconscious creature is {@condition Incapacitated|Ishiir}, can't move or speak, and is unaware of its surroundings.",
-						"The creature drops whatever it's holding and falls {@condition Prone|Ishiir}.",
-						"The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}.",
-						"{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}.",
-						"Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature."
-					]
-				}
-			]
-		},
-		{
-			"name": "Invisible",
-			"source": "Ishiir",
-			"page": 1,
-			"basicRules": true,
-			"entries": [
-				{
-					"type": "list",
-					"items": [
-						"An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.",
-						"{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Disadvantage|Ishiir}, and the creature's {@variantrule Attack Roll|Ishiir|Attack Rolls} have {@variantrule Advantage|Ishiir}."
-					]
-				}
-			]
-		}
-	]
+                "url": "https://regateiro.pt/5etools/homebrew/ishiir-conditions.json",
+                "authors": [
+                    "Sieg"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "condition": [
+        {
+            "name": "Deafened",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A deafened creature can't hear and automatically fails any {@variantrule Ability Check|Ishiir} that requires hearing.",
+                        "When a deafened creature casts a spell with a verbal component, it has to make an {@variantrule Ability Check|Ishiir} using its spellcasting ability. The DC equals 8 + the spell's level. Cantrips count as level 0 for this check. On a failure, the spell fails and has no effect."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Charmed",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects.",
+                        "The charmer has {@variantrule Advantage|Ishiir} on any {@variantrule Ability Check|Ishiir} to interact socially with the creature."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Exhaustion",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in six levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description.",
+                        {
+                            "type": "table",
+                            "colLabels": [
+                                "Level",
+                                "Effect"
+                            ],
+                            "colStyles": [
+                                "col-1 text-center",
+                                "col-11"
+                            ],
+                            "rows": [
+                                [
+                                    "1",
+                                    "{@variantrule Disadvantage|Ishiir} on {@variantrule Ability Check|Ishiir|Ability Checks}"
+                                ],
+                                [
+                                    "2",
+                                    "{@variantrule Speed|Ishiir} halved"
+                                ],
+                                [
+                                    "3",
+                                    "{@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} and {@variantrule Saving Throw|Ishiir|Saving Throws}"
+                                ],
+                                [
+                                    "4",
+                                    "Hit point maximum halved"
+                                ],
+                                [
+                                    "5",
+                                    "{@variantrule Speed|Ishiir} reduced to 0"
+                                ],
+                                [
+                                    "6",
+                                    "Death"
+                                ]
+                            ]
+                        },
+                        "If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description.",
+                        "A creature suffers the effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its {@variantrule Speed|Ishiir} halved and has {@variantrule Disadvantage|Ishiir} on {@variantrule Ability Check|Ishiir|Ability Checks}.",
+                        "An effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1.",
+                        "Finishing a {@variantrule Long Rest|Ishiir} reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink. Also, being raised from the dead reduces a creature's exhaustion level by 1."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Frozen",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A frozen creature is covered along with any object it is wearing or carrying, in a thick layer of ice. Its weight increases by a factor of four, and it ceases aging.",
+                        "The creature is {@condition Incapacitated|Ishiir}, can't move or speak, and is unaware of its surroundings.",
+                        "{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}.",
+                        "The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}.",
+                        "The creature has vulnerability to bludgeoning and fire damage and {@variantrule Resistance|Ishiir} to all other damage.",
+                        "The creature is {@variantrule Immunity|Ishiir|Immune} to poison and disease, although a poison or disease already in its system is suspended, not neutralized."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Grappled",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A grappled creature's {@variantrule Speed|Ishiir} becomes 0, and it can't benefit from any bonus to its {@variantrule Speed|Ishiir}.",
+                        "The condition ends if the grappler is {@condition Incapacitated|Ishiir}.",
+                        "The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the {@spell Thunderwave|Ishiir} spell."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lacerated",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A lacerated creature takes damage equal to twice the original attacker's {@variantrule Proficiency|Ishiir} modifier at the start of every one of its turns.",
+                        "If the affected creature receives magical healing or another regenerative effect, it is no longer lacerated.",
+                        "Additionally, the creature or another creature can use a healing kit as an {@variantrule Action|Ishiir} to staunch the bleeding and remove the condition."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Prone",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.",
+                        "The creature has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls}.",
+                        "An {@variantrule Attack Roll|Ishiir} against the creature has {@variantrule Advantage|Ishiir} if the attacker is within 5 feet of the creature. Otherwise, the {@variantrule Attack Roll|Ishiir} has {@variantrule Disadvantage|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blinded",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A blinded creature can't see and automatically fails any {@variantrule Ability Check|Ishiir} that requires sight.",
+                        "{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}, and the creature's {@variantrule Attack Roll|Ishiir|Attack Rolls} have {@variantrule Disadvantage|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Concentration",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                "Some spells and other effects require Concentration to remain active, as specified in their descriptions. If the effect's creator loses Concentration, the effect ends. If the effect has a maximum duration, the effect's description specifies how long the creator can concentrate on it: up to 1 minute, 1 hour, or some other duration. The creator can end Concentration at any time (no action required). The following factors break Concentration.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": " Another Concentration Effect.",
+                            "entry": "You lose Concentration on an effect the moment you start casting a spell that requires Concentration or activate another effect that requires Concentration."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Damage.",
+                            "entry": "If you take damage, you must succeed on a Constitution {@variantrule Saving Throw|Ishiir} to maintain Concentration. The DC equals 10 or half the damage taken (round down), whichever number is higher."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Incapacitated or Dead.",
+                            "entry": "Your Concentration ends if you have the {@condition Incapacitated|Ishiir} condition or you die."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Confused",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A confused creature cannot make {@variantrule Reaction|Ishiir|Reactions} and rolls a {@dice d10} at the start of every one of its turns to determine its behaviour that turn.",
+                        {
+                            "type": "table",
+                            "colLabels": [
+                                "d10",
+                                "Behavior"
+                            ],
+                            "colStyles": [
+                                "col-1 text-center",
+                                "col-11"
+                            ],
+                            "rows": [
+                                [
+                                    "1",
+                                    "The creature uses all its movement to move in a random direction. To determine the direction, roll a {@dice d8} and assign a direction to each die face. The creature doesn't take an {@variantrule Action|Ishiir} this turn."
+                                ],
+                                [
+                                    "2-6",
+                                    "The creature doesn't move or take actions this turn."
+                                ],
+                                [
+                                    "7-8",
+                                    "The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn."
+                                ],
+                                [
+                                    "9-10",
+                                    "The creature can act and move normally."
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Surprised",
+            "source": "Ishiir",
+            "page": 1,
+            "entries": [
+                "The DM determines who might be {@condition Surprised|Ishiir} at the start of combat. If neither side tries to be stealthy, they automatically notice each other. Otherwise, the DM compares the Dexterity ({@skill Stealth}) checks of anyone hiding with the passive Wisdom ({@skill Perception}) score of each creature on the opposing side. Any character or monster that doesn't notice a threat is {@condition Surprised|Ishiir} at the start of the encounter.",
+                "If you're {@condition Surprised|Ishiir}, you have {@variantrule Disadvantage|Ishiir} on your initiative roll and you can't take a {@variantrule Reaction|Ishiir} until the start of your first turn. A member of a group can be {@condition Surprised|Ishiir} even if the other members aren't.",
+                "If you're unnoticed at the start of combat, you have {@variantrule Advantage|Ishiir} on your initiative roll."
+            ]
+        },
+        {
+            "name": "Dazed",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A dazed creature has {@variantrule Disadvantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws} and cannot take {@variantrule Reaction|Ishiir|Reactions}.",
+                        "A dazed creature moves at half its {@variantrule Speed|Ishiir}.",
+                        "On its turn, it can only take an {@variantrule Action|Ishiir} OR {@variantrule Bonus Action|Ishiir}, but not both; it can only make one attack with either.",
+                        "If the creature attempts to {@action Magic|Ishiir|cast a spell} with a casting time of 1 action, the creature rolls a {@dice d20}. On an 11 or higher, the spell doesn't take effect until the creature's next turn and the creature must use its action to complete the spell. If it can't, the spell is wasted."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Frightened",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A frightened creature has {@variantrule Disadvantage|Ishiir} on {@variantrule Ability Check|Ishiir|Ability Checks} and {@variantrule Attack Roll|Ishiir|Attack Rolls} while the source of its fear is within line of sight.",
+                        "The creature can't willingly move closer to the source of its fear."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Poisoned",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A poisoned creature has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} and {@variantrule Ability Check|Ishiir|Ability Checks}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Restrained",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A restrained creature's {@variantrule Speed|Ishiir} becomes 0, and it can't benefit from any bonus to its {@variantrule Speed|Ishiir}.",
+                        "{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}, and the creature's {@variantrule Attack Roll|Ishiir|Attack Rolls} have {@variantrule Disadvantage|Ishiir}.",
+                        "The creature has {@variantrule Disadvantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dominated",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A dominated creature is beholden to its dominator's commands, overriding its own will and allegiances."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Incapacitated",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "An incapacitated creature can't take actions or {@variantrule Reaction|Ishiir|Reactions}.",
+                        "The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}.",
+                        "{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Paralyzed",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A paralyzed creature is {@condition Incapacitated|Ishiir} and can't move or speak.",
+                        "The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}. {@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}.",
+                        "Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Petrified",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.",
+                        "The creature is {@condition Incapacitated|Ishiir}, can't move or speak, and is unaware of its surroundings.",
+                        "{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}.",
+                        "The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}.",
+                        "The creature has {@variantrule Resistance|Ishiir} to all damage.",
+                        "The creature is {@variantrule Immunity|Ishiir|Immune} to poison and disease, although a poison or disease already in its system is suspended, not neutralized."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Stunned",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A stunned creature is {@condition Incapacitated|Ishiir}, can't move, and can speak only falteringly.",
+                        "The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}.",
+                        "{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Unconscious",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "An unconscious creature is {@condition Incapacitated|Ishiir}, can't move or speak, and is unaware of its surroundings.",
+                        "The creature drops whatever it's holding and falls {@condition Prone|Ishiir}.",
+                        "The creature automatically fails Strength and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}.",
+                        "{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Advantage|Ishiir}.",
+                        "Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Invisible",
+            "source": "Ishiir",
+            "page": 1,
+            "basicRules": true,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.",
+                        "{@variantrule Attack Roll|Ishiir|Attack Rolls} against the creature have {@variantrule Disadvantage|Ishiir}, and the creature's {@variantrule Attack Roll|Ishiir|Attack Rolls} have {@variantrule Advantage|Ishiir}."
+                    ]
+                }
+            ]
+        }
+    ]
 }

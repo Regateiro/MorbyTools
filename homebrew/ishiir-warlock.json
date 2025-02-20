@@ -151,7 +151,7 @@
                     "(a) a {@item scholar's pack|phb} or (b) a {@item dungeoneer's pack|phb}",
                     "{@item Leather armor|phb}, any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}, and two {@item dagger|phb|daggers}"
                 ],
-                "goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
+                "goldAlternative": "{@dice 4d4 \u00d7 10|4d4 \u00d7 10|Starting Gold}",
                 "defaultData": [
                     {
                         "a": [
@@ -425,7 +425,7 @@
                     "type": "entries",
                     "name": "Spell Slots",
                     "entries": [
-                        "The Warlock Features table shows how many spell slots you have to cast your {@filter warlock spells|spells|class=warlock (Ishiir)|source=Ishiir} of levels 1–5. The table also shows the level of those slots, all of which are the same level. You regain all expended Pact Magic spell slots when you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}.",
+                        "The Warlock Features table shows how many spell slots you have to cast your {@filter warlock spells|spells|class=warlock (Ishiir)|source=Ishiir} of levels 1\u20135. The table also shows the level of those slots, all of which are the same level. You regain all expended Pact Magic spell slots when you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}.",
                         "For example, when you're a level 5 Warlock, you have two level 3 spell slots. To cast the level 1 spell {@spell Witch Bolt|Ishiir}, you must spend one of those slots, and you cast it as a level 3 spell."
                     ]
                 },
@@ -434,7 +434,7 @@
                     "name": "Prepared Spells of Level 1+",
                     "entries": [
                         "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Warlock spells.",
-                        "The number of spells on your list increases as you gain Warlock levels, as shown in the Prepared Spells column of the Warlock Features table. Whenever that number increases, choose additional Warlock spells until the number of spells on your list matches the number in the table. The chosen spells must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach level 6, for example, you learn a new Warlock spell, which can be of levels 1–3.",
+                        "The number of spells on your list increases as you gain Warlock levels, as shown in the Prepared Spells column of the Warlock Features table. Whenever that number increases, choose additional Warlock spells until the number of spells on your list matches the number in the table. The chosen spells must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach level 6, for example, you learn a new Warlock spell, which can be of levels 1\u20133.",
                         "If another Warlock feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Warlock spells for you."
                     ]
                 },
@@ -2436,10 +2436,10 @@
                                 [
                                     "9th",
                                     "{@spell Wish|Ishiir}",
-                                    "—",
-                                    "—",
-                                    "—",
-                                    "—"
+                                    "\u2014",
+                                    "\u2014",
+                                    "\u2014",
+                                    "\u2014"
                                 ]
                             ]
                         }
@@ -2751,7 +2751,7 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "You have made your pact with a mysterious entity from the Shadowfell—a force that manifests in sentient magic weapons carved from the stuff of shadow. The mighty sword Blackrazor is the most notable of these weapons, which have been spread across the multiverse over the ages. The shadowy force behind these weapons can offer power to warlocks who form pacts with it. Many hexblade warlocks create weapons that emulate those formed in the Shadowfell. Others forgo such arms, content to weave the dark magic of that plane into their spellcasting.",
+                "You have made your pact with a mysterious entity from the Shadowfell\u2014a force that manifests in sentient magic weapons carved from the stuff of shadow. The mighty sword Blackrazor is the most notable of these weapons, which have been spread across the multiverse over the ages. The shadowy force behind these weapons can offer power to warlocks who form pacts with it. Many hexblade warlocks create weapons that emulate those formed in the Shadowfell. Others forgo such arms, content to weave the dark magic of that plane into their spellcasting.",
                 "Because the Raven Queen is known to have forged the first of these weapons, many sages speculate that she and the force are one and that the weapons, along with hexblade warlocks, are tools she uses to manipulate events on the Material Plane to her inscrutable ends.",
                 {
                     "type": "entries",
@@ -3093,15 +3093,15 @@
                     ],
                     "rows": [
                         [
-                            "1st—4th",
+                            "1st\u20144th",
                             "{@dice 1d10} poison"
                         ],
                         [
-                            "5th—10th",
+                            "5th\u201410th",
                             "{@dice 2d10} poison"
                         ],
                         [
-                            "11th—16th",
+                            "11th\u201416th",
                             "{@dice 3d10} poison"
                         ],
                         [
@@ -3228,7 +3228,7 @@
                 "While the raven is perched on your shoulder, you gain {@sense darkvision} with a range of 30 feet and a bonus to your passive Wisdom ({@skill Perception}) score and to Wisdom ({@skill Perception}) {@variantrule Ability Check|Ishiir|checks}. The bonus equals your Charisma modifier. While perched on your shoulder, the raven can't be targeted by any attack or other harmful effect; only you can cast spells on it; it can't take damage; and it is {@condition Incapacitated|Ishiir}.",
                 "You can see through the raven's eyes and hear what it hears while it is within 100 feet of you. In combat, you roll initiative for the raven and control how it acts. If it is slain by a creature, you gain {@variantrule Advantage|Ishiir} on all {@variantrule Attack Roll|Ishiir|Attack Rolls} against the killer for the next 24 hours.",
                 "The raven doesn't require sleep. While it is within 100 feet of you, it can awaken you from sleep as a {@variantrule Bonus Action|Ishiir}. The raven vanishes when it dies, if you die, or if the two of you are separated by more than 5 miles.",
-                "At the end of a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}, you can call the raven back to you—no matter where it is or whether it died—and it reappears within 5 feet of you."
+                "At the end of a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}, you can call the raven back to you\u2014no matter where it is or whether it died\u2014and it reappears within 5 feet of you."
             ]
         },
         {
@@ -3540,7 +3540,7 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "entries": [
-                "Death holds no sway over your patron, who has unlocked the secrets of everlasting life, although such a prize—like all power—comes at a price. Once mortal, the Undying has seen mortal lifetimes pass like the seasons, like the flicker of endless days and nights. It has the secrets of the ages to share, secrets of life and death. Beings of this sort include Vecna, Lord of the Hand and the Eye; the dread Iuz; the lich-queen Vol; the Undying Court of Aerenal; Vlaakith, lich-queen of the githyanki; and the deathless wizard Fistandantalus.",
+                "Death holds no sway over your patron, who has unlocked the secrets of everlasting life, although such a prize\u2014like all power\u2014comes at a price. Once mortal, the Undying has seen mortal lifetimes pass like the seasons, like the flicker of endless days and nights. It has the secrets of the ages to share, secrets of life and death. Beings of this sort include Vecna, Lord of the Hand and the Eye; the dread Iuz; the lich-queen Vol; the Undying Court of Aerenal; Vlaakith, lich-queen of the githyanki; and the deathless wizard Fistandantalus.",
                 "In the Realms, Undying patrons include Larloch the Shadow King, legendary master of Warlock's Crypt, and Gilgeam, the God-King of Unther.",
                 {
                     "type": "entries",

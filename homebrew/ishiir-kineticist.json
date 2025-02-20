@@ -1,1539 +1,1539 @@
 {
-	"_meta": {
-		"sources": [
-			{
-				"json": "Ishiir",
-				"abbreviation": "Ishiir",
-				"full": "Ishiir",
+    "_meta": {
+        "sources": [
+            {
+                "json": "Ishiir",
+                "abbreviation": "Ishiir",
+                "full": "Ishiir",
                 "color": "#d98d2a",
-				"url": "https://regateiro.pt/5etools/homebrew/ishiir-kineticist.json",
-				"authors": [
-					"Sieg"
-				],
-				"convertedBy": [
-					"Morb"
-				]
-			}
-		]
-	},
-	"class": [
-		{
-			"name": "Kineticist",
-			"page": 1,
-			"source": "Ishiir",
-			"hd": {
-				"number": 1,
-				"faces": 8
-			},
-			"proficiency": [
-				"con",
-				"cha"
-			],
-			"optionalfeatureProgression": [
-				{
-					"name": "Elemental Infusions",
-					"source": "Ishiir",
-					"featureType": [
-						"EI:K"
-					],
-					"progression": [
-						0,
-						2,
-						2,
-						2,
-						3,
-						3,
-						4,
-						4,
-						5,
-						5,
-						5,
-						6,
-						6,
-						6,
-						7,
-						7,
-						7,
-						8,
-						8,
-						8
-					]
-				}
-			],
-			"startingProficiencies": {
-				"weapons": [
-					"simple"
-				],
-				"skills": [
-					{
-						"choose": {
-							"from": [
-								"acrobatics",
-								"insight",
-								"intimidation",
-								"medicine",
-								"perception",
-								"performance"
-							],
-							"count": 2
-						}
-					}
-				]
-			},
-			"startingEquipment": {
-				"additionalFromBackground": true,
-				"default": [
-					"(a) a {@item crossbow, light|Ishiir|light crossbow} and 20 bolts or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
-					"any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon} and two {@item dagger|Ishiir|daggers}"
-				],
-				"goldAlternative": "{@dice 3d4*10|3d4 x 10|Starting Gold}",
-				"defaultData": [
-					{
-						"a": [
-							"light crossbow|phb"
-						],
-						"b": [
-							{
-								"equipmentType": "weaponSimple"
-							}
-						]
-					},
-					{
-						"a": [
-							"dungeoneer's pack|phb"
-						],
-						"b": [
-							"explorer's pack|phb"
-						]
-					},
-					{
-						"_": [
-							{
-								"equipmentType": "weaponSimple"
-							},
-							{
-								"item": "dagger|phb",
-								"quantity": 2
-							}
-						]
-					}
-				]
-			},
-			"multiclassing": {
-				"requirements": {
-					"con": 13,
-					"cha": 13
-				},
-				"proficienciesGained": {
-					"weapons": [
-						"simple"
-					]
-				}
-			},
-			"classTableGroups": [
-				{
-					"colLabels": [
-						"Kinetic Blast",
-						"Kinesis Points",
-						"{@filter Infusions Known|optionalfeatures|feature type=ei:k|source=Ishiir}"
-					],
-					"rows": [
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
-							"─",
-							"─"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
-							"2",
-							"2"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 2,
-										"faces": 6
-									}
-								]
-							},
-							"3",
-							"2"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 2,
-										"faces": 6
-									}
-								]
-							},
-							"4",
-							"2"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 3,
-										"faces": 6
-									}
-								]
-							},
-							"5",
-							"3"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 3,
-										"faces": 6
-									}
-								]
-							},
-							"6",
-							"3"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 4,
-										"faces": 6
-									}
-								]
-							},
-							"7",
-							"4"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 4,
-										"faces": 6
-									}
-								]
-							},
-							"8",
-							"4"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 5,
-										"faces": 6
-									}
-								]
-							},
-							"9",
-							"5"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 5,
-										"faces": 6
-									}
-								]
-							},
-							"10",
-							"5"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 6,
-										"faces": 6
-									}
-								]
-							},
-							"11",
-							"5"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 6,
-										"faces": 6
-									}
-								]
-							},
-							"12",
-							"6"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 7,
-										"faces": 6
-									}
-								]
-							},
-							"13",
-							"6"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 7,
-										"faces": 6
-									}
-								]
-							},
-							"14",
-							"6"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 8,
-										"faces": 6
-									}
-								]
-							},
-							"15",
-							"7"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 8,
-										"faces": 6
-									}
-								]
-							},
-							"16",
-							"7"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 9,
-										"faces": 6
-									}
-								]
-							},
-							"17",
-							"7"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 9,
-										"faces": 6
-									}
-								]
-							},
-							"18",
-							"8"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 10,
-										"faces": 6
-									}
-								]
-							},
-							"19",
-							"8"
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 10,
-										"faces": 6
-									}
-								]
-							},
-							"20",
-							"8"
-						]
-					]
-				}
-			],
-			"classFeatures": [
-				{
-					"classFeature": "Elemental School|Kineticist|Ishiir|1",
-					"gainSubclassFeature": true
-				},
-				"Elemental Attunement|Kineticist|Ishiir|1",
-				"Kinetic Shape|Kineticist|Ishiir|1",
-				"Elemental Manipulation|Kineticist|Ishiir|2",
-				"Gather Power|Kineticist|Ishiir|3",
-				"Ability Score Improvement|Kineticist|Ishiir|4",
-				"Expanded Element|Kineticist|Ishiir|6",
-				{
-					"classFeature": "Elemental School Feature|Kineticist|Ishiir|7",
-					"gainSubclassFeature": true
-				},
-				"Ability Score Improvement|Kineticist|Ishiir|8",
-				{
-					"classFeature": "Elemental School Feature|Kineticist|Ishiir|10",
-					"gainSubclassFeature": true
-				},
-				"Metakinesis|Kineticist|Ishiir|11",
-				"Ability Score Improvement|Kineticist|Ishiir|12",
-				"Elemental Overflow|Kineticist|Ishiir|13",
-				"Expanded Element|Kineticist|Ishiir|14",
-				{
-					"classFeature": "Elemental School Feature|Kineticist|Ishiir|15",
-					"gainSubclassFeature": true
-				},
-				"Ability Score Improvement|Kineticist|Ishiir|16",
-				"Harmonious Defense|Kineticist|Ishiir|18",
-				"Ability Score Improvement|Kineticist|Ishiir|19",
-				{
-					"classFeature": "Elemental School Feature|Kineticist|Ishiir|20",
-					"gainSubclassFeature": true
-				}
-			],
-			"subclassTitle": "Elemental School"
-		}
-	],
-	"subclass": [
-		{
-			"name": "Air",
-			"page": 1,
-			"shortName": "Air",
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"additionalSpells": [
-				{
-					"known": {
-						"1": [
-							"gust|Ishiir#c"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"Air|Kineticist|Ishiir|Air|Ishiir|1",
-				"Air Blast|Kineticist|Ishiir|Air|Ishiir|1",
-				"Aerokinesis|Kineticist|Ishiir|Air|Ishiir|1",
-				"Elemental Defense: Enveloping Winds|Kineticist|Ishiir|Air|Ishiir|1",
-				"Bonus Proficiency|Kineticist|Ishiir|Air|Ishiir|1",
-				"Light as Air|Kineticist|Ishiir|Air|Ishiir|7",
-				"Storm Shroud|Kineticist|Ishiir|Air|Ishiir|10",
-				"Wind Walker|Kineticist|Ishiir|Air|Ishiir|15",
-				"Hurricane Queen|Kineticist|Ishiir|Air|Ishiir|20"
-			]
-		},
-		{
-			"name": "Earth",
-			"page": 1,
-			"shortName": "Earth",
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"additionalSpells": [
-				{
-					"known": {
-						"1": [
-							"mold earth|Ishiir#c"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"Earth|Kineticist|Ishiir|Earth|Ishiir|1",
-				"Earth Blast|Kineticist|Ishiir|Earth|Ishiir|1",
-				"Geokinesis|Kineticist|Ishiir|Earth|Ishiir|1",
-				"Elemental Defense: Flesh of Stone|Kineticist|Ishiir|Earth|Ishiir|1",
-				"Bonus Proficiency|Kineticist|Ishiir|Earth|Ishiir|1",
-				"Earthen Attunement|Kineticist|Ishiir|Earth|Ishiir|7",
-				"Diamond Skin|Kineticist|Ishiir|Earth|Ishiir|10",
-				"One with the Earth|Kineticist|Ishiir|Earth|Ishiir|15",
-				"Striding Giant|Kineticist|Ishiir|Earth|Ishiir|20"
-			]
-		},
-		{
-			"name": "Fire",
-			"page": 1,
-			"shortName": "Fire",
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"additionalSpells": [
-				{
-					"known": {
-						"1": [
-							"control flames|Ishiir#c"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"Fire|Kineticist|Ishiir|Fire|Ishiir|1",
-				"Fire Blast|Kineticist|Ishiir|Fire|Ishiir|1",
-				"Pyrokinesis|Kineticist|Ishiir|Fire|Ishiir|1",
-				"Elemental Defense: Searing Flesh|Kineticist|Ishiir|Fire|Ishiir|1",
-				"Bonus Proficiency|Kineticist|Ishiir|Fire|Ishiir|1",
-				"Eyes of Fire|Kineticist|Ishiir|Fire|Ishiir|7",
-				"Consuming Flames|Kineticist|Ishiir|Fire|Ishiir|10",
-				"Fire's Fury|Kineticist|Ishiir|Fire|Ishiir|15",
-				"Fire Lord|Kineticist|Ishiir|Fire|Ishiir|20"
-			]
-		},
-		{
-			"name": "Water",
-			"page": 1,
-			"shortName": "Water",
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"additionalSpells": [
-				{
-					"known": {
-						"1": [
-							"shape water|Ishiir#c"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"Water|Kineticist|Ishiir|Water|Ishiir|1",
-				"Water Blast|Kineticist|Ishiir|Water|Ishiir|1",
-				"Hydrokinesis|Kineticist|Ishiir|Water|Ishiir|1",
-				"Elemental Defense: Shroud of Water|Kineticist|Ishiir|Water|Ishiir|1",
-				"Bonus Proficiency|Kineticist|Ishiir|Water|Ishiir|1",
-				"Like a Fish|Kineticist|Ishiir|Water|Ishiir|7",
-				"Hydrosophic Shield|Kineticist|Ishiir|Water|Ishiir|10",
-				"Be like Water|Kineticist|Ishiir|Water|Ishiir|15",
-				"Empress of the Fathoms|Kineticist|Ishiir|Water|Ishiir|20"
-			]
-		}
-	],
-	"classFeature": [
-		{
-			"name": "Elemental School",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 1,
-			"entries": [
-				"A kineticist chooses one primary element on which to focus. This element determines how she accesses the raw power of the Ethereal Plane, and grants you features at 1st level and again at 6th, 10th, 15th, and 20th level.",
-				"Regardless of your chosen element, you use your Charisma modifier when setting {@variantrule Attack Roll|Ishiir|Attack Rolls} and determining the {@variantrule Saving Throw|Ishiir} DC of your abilities.",
-				"<b>Spell save DC</b> = 8 + your {@variantrule Proficiency|Ishiir} bonus + your Charisma modifier",
-				"<b>Spell attack modifier</b> = your {@variantrule Proficiency|Ishiir} bonus + your Charisma modifier",
-				{
-					"type": "entries",
-					"name": "The Elements, intertwined",
-					"entries": [
-						"Unlike other classes, the kineticist can mix and match her subclass features, provided she has access to multiple different elements through her Expanded Element class feature.",
-						"If so, she can choose from the subclass features available to any of her schools at the appropriate level. For example, if a kineticist picked air as her school at 1st level and then fire at 6th, she can choose her subclass feature at 7th level from either school."
-					]
-				}
-			]
-		},
-		{
-			"name": "Elemental Attunement",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 1,
-			"entries": [
-				"You learn the {@spell Elementalism|Ishiir} cantrip and Charisma is your spellcasting ability for it."
-			]
-		},
-		{
-			"name": "Kinetic Shape",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 1,
-			"entries": [
-				"You learn how to channel your chosen element into destructive energy.",
-				{
-					"type": "refClassFeature",
-					"classFeature": "Kinetic Blast|Kineticist|Ishiir|1"
-				},
-				{
-					"type": "refClassFeature",
-					"classFeature": "Kinetic Blade|Kineticist|Ishiir|1"
-				}
-			]
-		},
-		{
-			"name": "Kinetic Blast",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 1,
-			"entries": [
-				"As an {@variantrule Action|Ishiir}, you can make a ranged spell attack against a target within 120 feet of you. On a hit, you deal your kinetic shape + CHA modifier damage of your chosen element's type.",
-				"The amount of the damage for both shapes increases as you gain levels in this class, as shown in the Kinetic Shape column of the Kineticist table."
-			]
-		},
-		{
-			"name": "Kinetic Blade",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 1,
-			"entries": [
-				"As a {@variantrule Bonus Action|Ishiir}, you form the energy of your element into a weapon-like shape of your choice, which lasts until you are incapacitated or dismiss it as a {@variantrule Bonus Action|Ishiir}. You cannot use this shape if you have already used your kinetic blast this turn.",
-				"As an {@variantrule Action|Ishiir}, you can make a melee spell attack with this shape against a target of your choice within 5 ft of you, dealing your kinetic shape + your CHA modifier + your {@variantrule Proficiency|Ishiir} modifier damage of your chosen element's type.",
-				"Additionally, your ability to defend yourself with this shape grants you a +1 bonus to your AC while maintaining it."
-			]
-		},
-		{
-			"name": "Elemental Manipulation",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 2,
-			"entries": [
-				"You have discovered ways to manipulate elemental energy in dynamic ways, including adapting more nuanced kinetic shapes, either temporary or persistent.",
-				{
-					"type": "entries",
-					"name": "Elemental Infusions",
-					"entries": [
-						"You gain two elemental infusions of your choice. A list of the available options can be found on the {@filter Optional Features|optionalfeatures|Feature Type=EI:K|source=Ishiir} page. When you gain certain kineticist levels, you gain additional infusions of your choice.",
-						"Additionally, when you gain a level in this class, you can choose one of the infusions you know and replace it with another infusion that you could learn at that level.",
-						"If an elemental infusion has prerequisites, you must meet them to learn it. You can learn the infusion at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.",
-						"Some infusions modify your kinetic shape. There are modifications for your kinetic blast and kinetic blade, and kinetic shape effects. You can only apply one one shape modification and one shape effect to the same use of a kinetic shape."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Kinesis Points",
-					"entries": [
-						"You have 2 kinesis points, which are used to power some of your elemental infusions. You gain one additional point every time you level up, to a maximum of 20 at level 20.",
-						"You can never have more kinesis points than shown on the table for your level. You regain all spent kinesis points when you finish a {@variantrule Long Rest|Ishiir}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Kinetic Reserves",
-					"entries": [
-						"You gain the following ways to spend your kinesis points.",
-						{
-							"type": "refClassFeature",
-							"classFeature": "Kinetic Enhancement|Kineticist|Ishiir|2"
-						},
-						{
-							"type": "refClassFeature",
-							"classFeature": "Kinetic Shield|Kineticist|Ishiir|2"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Kinetic Enhancement",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 2,
-			"entries": [
-				"When you make an {@variantrule Ability Check|Ishiir}, you can spend 1 kinesis point to gain {@variantrule Advantage|Ishiir} on the check."
-			]
-		},
-		{
-			"name": "Kinetic Shield",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 2,
-			"entries": [
-				"When you take acid, cold, fire, lightning, or thunder damage, you can spend 1 kinesis point and use your {@variantrule Reaction|Ishiir} to grant yourself {@variantrule Resistance|Ishiir} against that instance of the damage."
-			]
-		},
-		{
-			"name": "Gather Power",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 3,
-			"entries": [
-				"You have learned to regain some of your expended elemental energy through focused meditation.",
-				"Once per {@variantrule Long Rest|Ishiir} when you finish a {@variantrule Short Rest|Ishiir}, you can choose to regain a number of kinesis points equal to half your kineticist level (rounded up)."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 4,
-			"entries": [
-				"You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a feat."
-			]
-		},
-		{
-			"name": "Expanded Element",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 6,
-			"entries": [
-				"You learn to use another element or expand your understanding of your own element. You learn the damage types, cantrip, and elemental defense of that elemental school and you quality for all elemental infusions that have that elemental school as prerequisite.",
-				"This also allows you access to powerful composite kinetic shape, by either combining two different elements or focusing on a single one. You gain another element at 14th level, but you can't choose the same element a third time.",
-				"Using a composite shape requires a great deal of energy and costs 2 kinesis points each time. If you do so, increase the number of dice for that kinetic shape by half (rounded up).",
-				"If your composite shape features two of the same element, you double your Charisma modifier when determining the kinetic shape damage and the cost for using a composite shape is reduced to 1 kinesis point.",
-				"You also gain access to whatever infusion any of the included elements normally would allow, but you do pay their kinesis point cost as normal.",
-				"When you do combine elements with different damage types, half of the total damage is dealt as either damage type. For example, if you use a composite shape of the water and fire elements and roll for a total of 20 damage, 10 damage will be dealt as bludgeoning and 10 as fire.",
-				"If the damage number is uneven, you determine which damage type deals the higher amount.",
-				"You can find a table with the resulting composite elements below:",
-				{
-					"type": "table",
-					"caption": "Composite Elements",
-					"colLabels": [
-						"\\",
-						"Air",
-						"Earth",
-						"Fire",
-						"Water"
-					],
-					"colStyles": [
-						"col-2 text-center bold",
-						"col-2 text-center",
-						"col-2 text-center",
-						"col-2 text-center",
-						"col-2 text-center"
-					],
-					"rows": [
-						[
-							"Air",
-							"Storm",
-							"Sand",
-							"Plasma",
-							"Blizzard"
-						],
-						[
-							"Earth",
-							"Sand",
-							"Metal",
-							"Magma",
-							"Mud"
-						],
-						[
-							"Fire",
-							"Plasma",
-							"Magma",
-							"Blue Fire",
-							"Steam"
-						],
-						[
-							"Water",
-							"Blizzard",
-							"Mud",
-							"Steam",
-							"Frost"
-						]
-					]
-				}
-			]
-		},
-		{
-			"name": "Elemental School Feature",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 7,
-			"entries": [
-				"You gain one feature granted by your Elemental School."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 8,
-			"entries": [
-				"You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a feat."
-			]
-		},
-		{
-			"name": "Elemental School Feature",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 10,
-			"entries": [
-				"You gain one feature granted by your Elemental School."
-			]
-		},
-		{
-			"name": "Metakinesis",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 11,
-			"entries": [
-				"You further evolve your ability to twist your chosen elements to your needs. You gain access to three of the following Metakinesis options of your choice, all of which modify your kinetic shape.",
-				"You can only use one Metakinesis option with your kinetic shape, unless otherwise noted.",
-				{
-					"type": "entries",
-					"name": "Careful Kinesis",
-					"entries": [
-						"When you use your kinetic shape with an infusion that forces other creatures to make a {@variantrule Saving Throw|Ishiir}, you can protect some of those creatures from the shape's full force.",
-						"To do so, you spend 1 kinesis point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its {@variantrule Saving Throw|Ishiir} against the blast and takes no damage if it would normally take half damage on a successful save."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Distant Kinesis",
-					"entries": [
-						"When you use a kinetic shape, you can spend 1 kinesis point to double its range."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Empowered Kinesis",
-					"entries": [
-						"When you roll damage for your kinetic shape, you can spend 1 kinesis point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.",
-						"You can use Empowered Kinesis even if you have already used a different Metakinesis option during the casting of the spell."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Extended Kinesis",
-					"entries": [
-						"When you use your kinetic shape with an infusion that makes it last more than 1 round, you can spend 1 kinesis point to double its duration, to a maximum duration of 24 hours."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Heightened Kinesis",
-					"entries": [
-						"When you use your kinetic shape with an infusion that forces a creature to make a {@variantrule Saving Throw|Ishiir} to resist its effects, you can spend 2 kinesis points to give one target of the shape {@variantrule Disadvantage|Ishiir} on all its {@variantrule Saving Throw|Ishiir|Saving Throws} made against the effect."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Twinned Kinesis",
-					"entries": [
-						"When you use your kinetic shape with an infusion that doesn't have a range of self and is incapable of targeting more than one creature, you can spend 3 kinesis points to have it target a second creature within range as well."
-					]
-				}
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 12,
-			"entries": [
-				"You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a feat."
-			]
-		},
-		{
-			"name": "Elemental Overflow",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 13,
-			"entries": [
-				"A kineticist's body surges with energy from her chosen element whenever she spends kinesis points, causing her to glow with a nimbus of fire, weep water from her pores, or experience some other thematic effect.",
-				"When you have less than half your current maximum number of kinesis points, your Charisma bonus to damage on your kinetic shape is doubled. Additionally, you gain {@variantrule Resistance|Ishiir} to one damage type corresponding to one of your chosen elements."
-			]
-		},
-		{
-			"name": "Expanded Element",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 14,
-			"entries": [
-				"You gain another element, but you can't choose the same element a third time."
-			]
-		},
-		{
-			"name": "Elemental School Feature",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 15,
-			"entries": [
-				"You gain one feature granted by your Elemental School."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 16,
-			"entries": [
-				"You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a feat."
-			]
-		},
-		{
-			"name": "Harmonious Defense",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 18,
-			"entries": [
-				"You have learned to weave the energies of all your chosen elements together seamlessly.",
-				"Your Elemental Defense subclass features are no longer exclusive and you can choose to activate any number of them with the same {@variantrule Bonus Action|Ishiir} (dismissing them still requires no action on your part).",
-				"If your chosen elements grant you access to different formulas to calculate your AC, you must still decide which one to use when you activate your Elemental Defense."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 19,
-			"entries": [
-				"You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a feat."
-			]
-		},
-		{
-			"name": "Elemental School Feature",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"level": 20,
-			"entries": [
-				"You gain one feature granted by your Elemental School."
-			]
-		}
-	],
-	"subclassFeature": [
-		{
-			"name": "Air",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Air",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"entries": [
-				"Kineticists who focus on the element of air are called aerokineticists. Aerokineticists often control air flow or electricity, specializing in mobility and ranged combat."
-			]
-		},
-		{
-			"name": "Air Blast",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Air",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"When you gain access to this element, your kinetic shape gains the ability to inflict bludgeoning or lightning damage (your choice)."
-			]
-		},
-		{
-			"name": "Aerokinesis",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Air",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"When you gain access to this element, you learn the {@spell Gust|Ishiir} cantrip, which you can cast using only its somatic component."
-			]
-		},
-		{
-			"name": "Elemental Defense: Enveloping Winds",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Air",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"When you gain access to this element, as a {@variantrule Bonus Action|Ishiir}, you can surround yourself with a whirling torrent of air or a static field of crackling lightning, which lasts until you dismiss the effect (no action required).",
-				"While the effect is active and you aren't wearing any armor or shield, your AC equals 10 + your Dexterity modifier + your Charisma modifier and all ranged weapon attacks against you are made with {@variantrule Disadvantage|Ishiir}. Additionally, any gas, vapor, or fog that can be dispersed by a strong wind has no effect on you.",
-				"This effect is exclusive with Elemental Defense class features from other Elemental Schools."
-			]
-		},
-		{
-			"name": "Bonus Proficiency",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Air",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"When you gain access to this element, you gain {@variantrule Proficiency|Ishiir} in one of the following skills of your choice: {@skill Acrobatics}, {@skill Sleight of Hand}, {@skill Stealth}, or {@skill Performance}."
-			]
-		},
-		{
-			"name": "Light as Air",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Air",
-			"subclassSource": "Ishiir",
-			"level": 7,
-			"header": 2,
-			"entries": [
-				"You gain the ability to use your {@variantrule Reaction|Ishiir} when you fall to reduce any falling damage you take by an amount equal to five times your kineticist level.",
-				"Additionally, your standing and running jumps use Charisma instead of Strength to determine the distance you cover."
-			]
-		},
-		{
-			"name": "Storm Shroud",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Air",
-			"subclassSource": "Ishiir",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"You learn how to use your control of the air streams around you to help you dodge or otherwise ward off certain area effects, like the explosion of a fireball or a dragon's breath.",
-				"When you are subjected to an effect that allows you to make a Dexterity {@variantrule Saving Throw|Ishiir} to take only half damage, you instead take no damage if you succeed on the {@variantrule Saving Throw|Ishiir}, and only half damage if you fail."
-			]
-		},
-		{
-			"name": "Wind Walker",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Air",
-			"subclassSource": "Ishiir",
-			"level": 15,
-			"header": 2,
-			"entries": [
-				"Your mastery of the wind allows you to move freely through the air. You gain a {@variantrule Fly Speed|Ishiir} equal to 60 feet."
-			]
-		},
-		{
-			"name": "Hurricane Queen",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Air",
-			"subclassSource": "Ishiir",
-			"level": 20,
-			"header": 2,
-			"entries": [
-				"Your mastery of air allows you to infuse your own self with the essence of storms.",
-				"As an {@variantrule Action|Ishiir}, you undergo the transformation and gain the following benefits for 1 minute:",
-				{
-					"type": "list",
-					"items": [
-						"You ignore all wind-based effects such as the {@spell Whirlwind|Ishiir} spell or even a natural tornado.",
-						"You gain {@variantrule Immunity|Ishiir} to lightning damage.",
-						"You are surrounded by a 60 foot radius aura of stormlike winds of such intensity that they render ranged weapon attacks against you completely impossible. You and any number of creatures of your choice in the area are unaffected.",
-						"Any other creature is {@condition Deafened|Ishiir} while in this area, must spend 4 feet for every 1 foot of movement while in it, and has to succeed on a Strength {@variantrule Saving Throw|Ishiir} against your save DC at the start of its turn or when it enters the area for the first time or be knocked {@condition Prone|Ishiir} or hurled 20 feet away in a direction that you choose."
-					]
-				},
-				"Once you have used this ability, you can't use it again until you have finished a {@variantrule Long Rest|Ishiir}."
-			]
-		},
-		{
-			"name": "Earth",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Earth",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"entries": [
-				"Kineticists who focus on the element of earth are called geokineticists. Geokineticists manipulate the earth itself, and they are masters of defensive techniques."
-			]
-		},
-		{
-			"name": "Earth Blast",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Earth",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"When you gain access to this element, your kinetic shape gains the ability to inflict bludgeoning, piercing, or slashing damage (your choice)."
-			]
-		},
-		{
-			"name": "Geokinesis",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Earth",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"When you gain access to this element, you learn the {@spell Mold Earth|Ishiir} cantrip."
-			]
-		},
-		{
-			"name": "Elemental Defense: Flesh of Stone",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Earth",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"When you gain access to this element, as a {@variantrule Bonus Action|Ishiir}, you can harden your body like stone, dampening the impact of most attacks until you dismiss the effect (no action required).",
-				"While the effect is active and you aren't wearing any armor or shield, your AC equals 10 + your Constitution modifier + your Charisma modifier and any bludgeoning, piercing, or slashing you take is reduced by an amount equal to half your kineticist level (rounded down), this reduction applies before any other effect.",
-				"This effect is exclusive with Elemental Defense class features from other Elemental Schools."
-			]
-		},
-		{
-			"name": "Bonus Proficiency",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Earth",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"When you gain access to this element, you gain {@variantrule Proficiency|Ishiir} in one of the following skills of your choice: {@skill Athletics}, {@skill Intimidation}, {@skill Nature}, or {@skill Perception}."
-			]
-		},
-		{
-			"name": "Earthen Attunement",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Earth",
-			"subclassSource": "Ishiir",
-			"level": 7,
-			"header": 2,
-			"entries": [
-				"You learn how to use your connection to earth to meld slightly into stone and earthen surfaces, granting you a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} when climbing such surfaces.",
-				"Additionally, when you have to make a Strength {@variantrule Saving Throw|Ishiir} or check, you can make a Charisma {@variantrule Saving Throw|Ishiir} or check instead."
-			]
-		},
-		{
-			"name": "Diamond Skin",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Earth",
-			"subclassSource": "Ishiir",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"You learn to harden specific areas of your body in response to physical trauma. When an effect makes you take bludgeoning, piercing, or slashing damage, you can use your {@variantrule Reaction|Ishiir} to halve the effect's damage against you."
-			]
-		},
-		{
-			"name": "One with the Earth",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Earth",
-			"subclassSource": "Ishiir",
-			"level": 15,
-			"header": 2,
-			"entries": [
-				"Your mastery of the earth allows you to move freely through the ground. You gain a {@variantrule Burrow Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} and {@sense tremorsense|MM} in a radius of 60 feet around you."
-			]
-		},
-		{
-			"name": "Striding Giant",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Earth",
-			"subclassSource": "Ishiir",
-			"level": 20,
-			"header": 2,
-			"entries": [
-				"Your mastery of earth allows you to infuse your own self with the essence of the mountain.",
-				"As an {@variantrule Action|Ishiir}, you undergo the transformation and gain the following benefits for 1 minute:",
-				{
-					"type": "list",
-					"items": [
-						"Your size changes the huge and you gain temporary hit points equal to three times your kineticist level.",
-						"You are {@variantrule Immunity|Ishiir|Immune} to the {@condition Charmed|Ishiir}, {@condition Exhaustion|Ishiir|Exhausted}, {@condition Frightened|Ishiir}, {@condition Paralyzed|Ishiir}, {@condition Petrified|Ishiir}, and {@condition Poisoned|Ishiir} conditions.",
-						"You ignore all earth-based effects such as the {@spell Erupting Earth|Ishiir} spell or even a natural earthquake.",
-						"When you move for the first time on your turn, your steps shake the earth. All creatures of your choice within 60 feet of you have to make a Strength {@variantrule Saving Throw|Ishiir} against your save DC or be knocked {@condition Prone|Ishiir}."
-					]
-				},
-				"Once you have used this ability, you can't use it again until you have finished a {@variantrule Long Rest|Ishiir}."
-			]
-		},
-		{
-			"name": "Fire",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Fire",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"entries": [
-				"Kineticists who focus on the element of fire are called pyrokineticists. Pyrokineticists wield elemental fire as a potent weapon, and they possess a powerful offense."
-			]
-		},
-		{
-			"name": "Fire Blast",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Fire",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"When you gain access to this element, your kinetic shape gains the ability to inflict fire damage."
-			]
-		},
-		{
-			"name": "Pyrokinesis",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Fire",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"When you gain access to this element, you learn the {@spell Control Flames|Ishiir} cantrip."
-			]
-		},
-		{
-			"name": "Elemental Defense: Searing Flesh",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Fire",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"When you gain access to this element, as a {@variantrule Bonus Action|Ishiir}, you can superheat your body to extreme temperatures, which lasts until you dismiss the effect (no action required).",
-				"While the effect is active and you aren't wearing any armor or shield, your AC equals 10 + your Dexterity modifier + your Charisma modifier and any creature that touches you or hits you with a melee attack from within 10 feet of you takes fire damage equal to your Charisma modifier.",
-				"This effect is exclusive with Elemental Defense class features from other Elemental Schools."
-			]
-		},
-		{
-			"name": "Bonus Proficiency",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Fire",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"When you gain access to this element, you gain {@variantrule Proficiency|Ishiir} in one of the following skills of your choice: {@skill Acrobatics}, {@skill Intimidation}, {@skill Performance}, or {@skill Persuasion}."
-			]
-		},
-		{
-			"name": "Eyes of Fire",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Fire",
-			"subclassSource": "Ishiir",
-			"level": 7,
-			"header": 2,
-			"entries": [
-				"Your eyes begin to glow with your inner fire, giving you a {@sense darkvision} range of 60 feet. If you already have {@sense darkvision}, your {@sense darkvision} instead increases by 60 feet.",
-				"In addition, fire and smoke caused by fire cannot obscure your vision."
-			]
-		},
-		{
-			"name": "Consuming Flames",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Fire",
-			"subclassSource": "Ishiir",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"Your flames grow extraordinarily intense. You ignore {@variantrule Resistance|Ishiir} to fire damage and treat {@variantrule Immunity|Ishiir} to fire damage as {@variantrule Resistance|Ishiir} instead."
-			]
-		},
-		{
-			"name": "Fire's Fury",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Fire",
-			"subclassSource": "Ishiir",
-			"level": 15,
-			"header": 2,
-			"entries": [
-				"You have learned to direct your inner fire to lash out at attackers. When you are hit by a melee attack, you can use your {@variantrule Reaction|Ishiir} to make the attacker take fire damage equal to your kineticist level."
-			]
-		},
-		{
-			"name": "Fire Lord",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Fire",
-			"subclassSource": "Ishiir",
-			"level": 20,
-			"header": 2,
-			"entries": [
-				"Your mastery of fire allows you to infuse your own self with the essence of flame.",
-				"As an {@variantrule Action|Ishiir}, you undergo the transformation and gain the following benefits for 1 minute:",
-				{
-					"type": "list",
-					"items": [
-						"You shed bright light in a 60 feet radius and dim light in a radius of 30 feet beyond that.",
-						"You gain {@variantrule Immunity|Ishiir} to fire damage.",
-						"Creatures in the bright light have {@variantrule Disadvantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against infusions that include the fire element.",
-						"You radiate intense heat in a 10 feet radius around you. Any creature of your choice that enters that radius for the first time on a turn or starts its turn there, takes half your kinetic shape damage."
-					]
-				},
-				"Once you have used this ability, you can't use it again until you have finished a {@variantrule Long Rest|Ishiir}."
-			]
-		},
-		{
-			"name": "Water",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Water",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"entries": [
-				"Kineticists who focus on the element of water are called hydrokineticists. Hydrokineticists master the flow of water or the numbing chill of cold, and they are known for their versatility and flowing forms, like the ever-changing currents."
-			]
-		},
-		{
-			"name": "Water Blast",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Water",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"When you gain access to this element, your kinetic shape gains the ability to inflict cold or bludgeoning damage."
-			]
-		},
-		{
-			"name": "Hydrokinesis",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Water",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"When you gain access to this element, you learn the {@spell Shape Water|Ishiir} cantrip."
-			]
-		},
-		{
-			"name": "Elemental Defense: Shroud of Water",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Water",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"When you gain access to this element, you can surround yourself with a shroud of water, ice, or both that protects you from harm, which lasts until you dismiss the effect (no action required).",
-				"While this effect is active and you are not wearing any armor or shield, your AC equals 12 + your Dexterity modifier + your Charisma modifier.",
-				"This effect is exclusive with Elemental Defense class features from other Elemental Schools."
-			]
-		},
-		{
-			"name": "Bonus Proficiency",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Water",
-			"subclassSource": "Ishiir",
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"When you gain access to this element, you gain {@variantrule Proficiency|Ishiir} in one of the following skills of your choice: {@skill Acrobatics}, {@skill Insight}, {@skill Persuasion}, or {@skill Stealth}."
-			]
-		},
-		{
-			"name": "Like a Fish",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Water",
-			"subclassSource": "Ishiir",
-			"level": 7,
-			"header": 2,
-			"entries": [
-				"Your attunement to the element of water allows you to move within it just as easily as on land. You gain a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} and you can breathe underwater. If you already have a {@variantrule Swim Speed|Ishiir}, that {@variantrule Swim Speed|Ishiir} instead increases by 30 feet.",
-				"Additionally, you make any {@skill Athletics} {@variantrule Ability Check|Ishiir|checks} and {@variantrule Saving Throw|Ishiir|Saving Throws} related to swimming or resisting water-based effects using your Charisma modifier instead of your Strength modifer."
-			]
-		},
-		{
-			"name": "Hydrosophic Shield",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Water",
-			"subclassSource": "Ishiir",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"You have learned to summon up your water-based defenses at a split-second's notice.",
-				"When you are hit by an attack or subject to an effect that forces you to make a Dexterity {@variantrule Saving Throw|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to create a shield of water around you, granting yourself half-cover until the start of your next turn.",
-				"This cover applies even when against effects that normally ignore cover."
-			]
-		},
-		{
-			"name": "Be like Water",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Water",
-			"subclassSource": "Ishiir",
-			"level": 15,
-			"header": 2,
-			"entries": [
-				"You have learned to embody the evershifting, ungraspable nature of your element.",
-				"When you are {@condition Grappled|Ishiir} or {@condition Restrained|Ishiir} on your turn, you can spend 5 feet of movement to no longer be {@condition Grappled|Ishiir} or {@condition Restrained|Ishiir}. You also gain {@sense blindsight} in a 30 feet radius."
-			]
-		},
-		{
-			"name": "Empress of the Fathoms",
-			"page": 1,
-			"source": "Ishiir",
-			"className": "Kineticist",
-			"classSource": "Ishiir",
-			"subclassShortName": "Water",
-			"subclassSource": "Ishiir",
-			"level": 20,
-			"header": 2,
-			"entries": [
-				"Your mastery of water allows you to infuse your own self with the essence of waves.",
-				"As an {@variantrule Action|Ishiir}, you undergo the transformation and gain the following benefits for 1 minute:",
-				{
-					"type": "list",
-					"items": [
-						"You ignore all water-based effects such as the {@spell Tsunami|Ishiir} spell or a natural vortex.",
-						"You gain {@variantrule Immunity|Ishiir} to cold damage.",
-						"Water flows from everywhere, including up from the ground and dropping as rain to form a vortex of writhing watery tentacles in a 60 feet radius around you that makes the area {@quickref difficult terrain||3}. You and any number of creatures of your choice in the area unaffected.",
-						"Any other creature that enters the area for the first time on a turn or starts its turn there has to make a Dexterity {@variantrule Saving Throw|Ishiir} against your save DC or be {@condition Grappled|Ishiir} and {@condition Restrained|Ishiir}. It can make a Strength check as an {@variantrule Action|Ishiir} on its turn to no longer be {@condition Grappled|Ishiir} and {@condition Restrained|Ishiir}."
-					]
-				},
-				"Once you have used this ability, you can't use it again until you have finished a {@variantrule Long Rest|Ishiir}."
-			]
-		}
-	]
+                "url": "https://regateiro.pt/5etools/homebrew/ishiir-kineticist.json",
+                "authors": [
+                    "Sieg"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "class": [
+        {
+            "name": "Kineticist",
+            "page": 1,
+            "source": "Ishiir",
+            "hd": {
+                "number": 1,
+                "faces": 8
+            },
+            "proficiency": [
+                "con",
+                "cha"
+            ],
+            "optionalfeatureProgression": [
+                {
+                    "name": "Elemental Infusions",
+                    "source": "Ishiir",
+                    "featureType": [
+                        "EI:K"
+                    ],
+                    "progression": [
+                        0,
+                        2,
+                        2,
+                        2,
+                        3,
+                        3,
+                        4,
+                        4,
+                        5,
+                        5,
+                        5,
+                        6,
+                        6,
+                        6,
+                        7,
+                        7,
+                        7,
+                        8,
+                        8,
+                        8
+                    ]
+                }
+            ],
+            "startingProficiencies": {
+                "weapons": [
+                    "simple"
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "acrobatics",
+                                "insight",
+                                "intimidation",
+                                "medicine",
+                                "perception",
+                                "performance"
+                            ],
+                            "count": 2
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "default": [
+                    "(a) a {@item crossbow, light|Ishiir|light crossbow} and 20 bolts or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+                    "(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+                    "any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon} and two {@item dagger|Ishiir|daggers}"
+                ],
+                "goldAlternative": "{@dice 3d4*10|3d4 x 10|Starting Gold}",
+                "defaultData": [
+                    {
+                        "a": [
+                            "light crossbow|phb"
+                        ],
+                        "b": [
+                            {
+                                "equipmentType": "weaponSimple"
+                            }
+                        ]
+                    },
+                    {
+                        "a": [
+                            "dungeoneer's pack|phb"
+                        ],
+                        "b": [
+                            "explorer's pack|phb"
+                        ]
+                    },
+                    {
+                        "_": [
+                            {
+                                "equipmentType": "weaponSimple"
+                            },
+                            {
+                                "item": "dagger|phb",
+                                "quantity": 2
+                            }
+                        ]
+                    }
+                ]
+            },
+            "multiclassing": {
+                "requirements": {
+                    "con": 13,
+                    "cha": 13
+                },
+                "proficienciesGained": {
+                    "weapons": [
+                        "simple"
+                    ]
+                }
+            },
+            "classTableGroups": [
+                {
+                    "colLabels": [
+                        "Kinetic Blast",
+                        "Kinesis Points",
+                        "{@filter Infusions Known|optionalfeatures|feature type=ei:k|source=Ishiir}"
+                    ],
+                    "rows": [
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "\u2500",
+                            "\u2500"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "2",
+                            "2"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 2,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "3",
+                            "2"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 2,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "4",
+                            "2"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 3,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "5",
+                            "3"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 3,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "6",
+                            "3"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 4,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "7",
+                            "4"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 4,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "8",
+                            "4"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 5,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "9",
+                            "5"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 5,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "10",
+                            "5"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 6,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "11",
+                            "5"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 6,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "12",
+                            "6"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 7,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "13",
+                            "6"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 7,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "14",
+                            "6"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 8,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "15",
+                            "7"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 8,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "16",
+                            "7"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 9,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "17",
+                            "7"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 9,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "18",
+                            "8"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 10,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "19",
+                            "8"
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 10,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            "20",
+                            "8"
+                        ]
+                    ]
+                }
+            ],
+            "classFeatures": [
+                {
+                    "classFeature": "Elemental School|Kineticist|Ishiir|1",
+                    "gainSubclassFeature": true
+                },
+                "Elemental Attunement|Kineticist|Ishiir|1",
+                "Kinetic Shape|Kineticist|Ishiir|1",
+                "Elemental Manipulation|Kineticist|Ishiir|2",
+                "Gather Power|Kineticist|Ishiir|3",
+                "Ability Score Improvement|Kineticist|Ishiir|4",
+                "Expanded Element|Kineticist|Ishiir|6",
+                {
+                    "classFeature": "Elemental School Feature|Kineticist|Ishiir|7",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Kineticist|Ishiir|8",
+                {
+                    "classFeature": "Elemental School Feature|Kineticist|Ishiir|10",
+                    "gainSubclassFeature": true
+                },
+                "Metakinesis|Kineticist|Ishiir|11",
+                "Ability Score Improvement|Kineticist|Ishiir|12",
+                "Elemental Overflow|Kineticist|Ishiir|13",
+                "Expanded Element|Kineticist|Ishiir|14",
+                {
+                    "classFeature": "Elemental School Feature|Kineticist|Ishiir|15",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Kineticist|Ishiir|16",
+                "Harmonious Defense|Kineticist|Ishiir|18",
+                "Ability Score Improvement|Kineticist|Ishiir|19",
+                {
+                    "classFeature": "Elemental School Feature|Kineticist|Ishiir|20",
+                    "gainSubclassFeature": true
+                }
+            ],
+            "subclassTitle": "Elemental School"
+        }
+    ],
+    "subclass": [
+        {
+            "name": "Air",
+            "page": 1,
+            "shortName": "Air",
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "additionalSpells": [
+                {
+                    "known": {
+                        "1": [
+                            "gust|Ishiir#c"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Air|Kineticist|Ishiir|Air|Ishiir|1",
+                "Air Blast|Kineticist|Ishiir|Air|Ishiir|1",
+                "Aerokinesis|Kineticist|Ishiir|Air|Ishiir|1",
+                "Elemental Defense: Enveloping Winds|Kineticist|Ishiir|Air|Ishiir|1",
+                "Bonus Proficiency|Kineticist|Ishiir|Air|Ishiir|1",
+                "Light as Air|Kineticist|Ishiir|Air|Ishiir|7",
+                "Storm Shroud|Kineticist|Ishiir|Air|Ishiir|10",
+                "Wind Walker|Kineticist|Ishiir|Air|Ishiir|15",
+                "Hurricane Queen|Kineticist|Ishiir|Air|Ishiir|20"
+            ]
+        },
+        {
+            "name": "Earth",
+            "page": 1,
+            "shortName": "Earth",
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "additionalSpells": [
+                {
+                    "known": {
+                        "1": [
+                            "mold earth|Ishiir#c"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Earth|Kineticist|Ishiir|Earth|Ishiir|1",
+                "Earth Blast|Kineticist|Ishiir|Earth|Ishiir|1",
+                "Geokinesis|Kineticist|Ishiir|Earth|Ishiir|1",
+                "Elemental Defense: Flesh of Stone|Kineticist|Ishiir|Earth|Ishiir|1",
+                "Bonus Proficiency|Kineticist|Ishiir|Earth|Ishiir|1",
+                "Earthen Attunement|Kineticist|Ishiir|Earth|Ishiir|7",
+                "Diamond Skin|Kineticist|Ishiir|Earth|Ishiir|10",
+                "One with the Earth|Kineticist|Ishiir|Earth|Ishiir|15",
+                "Striding Giant|Kineticist|Ishiir|Earth|Ishiir|20"
+            ]
+        },
+        {
+            "name": "Fire",
+            "page": 1,
+            "shortName": "Fire",
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "additionalSpells": [
+                {
+                    "known": {
+                        "1": [
+                            "control flames|Ishiir#c"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Fire|Kineticist|Ishiir|Fire|Ishiir|1",
+                "Fire Blast|Kineticist|Ishiir|Fire|Ishiir|1",
+                "Pyrokinesis|Kineticist|Ishiir|Fire|Ishiir|1",
+                "Elemental Defense: Searing Flesh|Kineticist|Ishiir|Fire|Ishiir|1",
+                "Bonus Proficiency|Kineticist|Ishiir|Fire|Ishiir|1",
+                "Eyes of Fire|Kineticist|Ishiir|Fire|Ishiir|7",
+                "Consuming Flames|Kineticist|Ishiir|Fire|Ishiir|10",
+                "Fire's Fury|Kineticist|Ishiir|Fire|Ishiir|15",
+                "Fire Lord|Kineticist|Ishiir|Fire|Ishiir|20"
+            ]
+        },
+        {
+            "name": "Water",
+            "page": 1,
+            "shortName": "Water",
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "additionalSpells": [
+                {
+                    "known": {
+                        "1": [
+                            "shape water|Ishiir#c"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Water|Kineticist|Ishiir|Water|Ishiir|1",
+                "Water Blast|Kineticist|Ishiir|Water|Ishiir|1",
+                "Hydrokinesis|Kineticist|Ishiir|Water|Ishiir|1",
+                "Elemental Defense: Shroud of Water|Kineticist|Ishiir|Water|Ishiir|1",
+                "Bonus Proficiency|Kineticist|Ishiir|Water|Ishiir|1",
+                "Like a Fish|Kineticist|Ishiir|Water|Ishiir|7",
+                "Hydrosophic Shield|Kineticist|Ishiir|Water|Ishiir|10",
+                "Be like Water|Kineticist|Ishiir|Water|Ishiir|15",
+                "Empress of the Fathoms|Kineticist|Ishiir|Water|Ishiir|20"
+            ]
+        }
+    ],
+    "classFeature": [
+        {
+            "name": "Elemental School",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "A kineticist chooses one primary element on which to focus. This element determines how she accesses the raw power of the Ethereal Plane, and grants you features at 1st level and again at 6th, 10th, 15th, and 20th level.",
+                "Regardless of your chosen element, you use your Charisma modifier when setting {@variantrule Attack Roll|Ishiir|Attack Rolls} and determining the {@variantrule Saving Throw|Ishiir} DC of your abilities.",
+                "<b>Spell save DC</b> = 8 + your {@variantrule Proficiency|Ishiir} bonus + your Charisma modifier",
+                "<b>Spell attack modifier</b> = your {@variantrule Proficiency|Ishiir} bonus + your Charisma modifier",
+                {
+                    "type": "entries",
+                    "name": "The Elements, intertwined",
+                    "entries": [
+                        "Unlike other classes, the kineticist can mix and match her subclass features, provided she has access to multiple different elements through her Expanded Element class feature.",
+                        "If so, she can choose from the subclass features available to any of her schools at the appropriate level. For example, if a kineticist picked air as her school at 1st level and then fire at 6th, she can choose her subclass feature at 7th level from either school."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Elemental Attunement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "You learn the {@spell Elementalism|Ishiir} cantrip and Charisma is your spellcasting ability for it."
+            ]
+        },
+        {
+            "name": "Kinetic Shape",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "You learn how to channel your chosen element into destructive energy.",
+                {
+                    "type": "refClassFeature",
+                    "classFeature": "Kinetic Blast|Kineticist|Ishiir|1"
+                },
+                {
+                    "type": "refClassFeature",
+                    "classFeature": "Kinetic Blade|Kineticist|Ishiir|1"
+                }
+            ]
+        },
+        {
+            "name": "Kinetic Blast",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "As an {@variantrule Action|Ishiir}, you can make a ranged spell attack against a target within 120 feet of you. On a hit, you deal your kinetic shape + CHA modifier damage of your chosen element's type.",
+                "The amount of the damage for both shapes increases as you gain levels in this class, as shown in the Kinetic Shape column of the Kineticist table."
+            ]
+        },
+        {
+            "name": "Kinetic Blade",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "As a {@variantrule Bonus Action|Ishiir}, you form the energy of your element into a weapon-like shape of your choice, which lasts until you are incapacitated or dismiss it as a {@variantrule Bonus Action|Ishiir}. You cannot use this shape if you have already used your kinetic blast this turn.",
+                "As an {@variantrule Action|Ishiir}, you can make a melee spell attack with this shape against a target of your choice within 5 ft of you, dealing your kinetic shape + your CHA modifier + your {@variantrule Proficiency|Ishiir} modifier damage of your chosen element's type.",
+                "Additionally, your ability to defend yourself with this shape grants you a +1 bonus to your AC while maintaining it."
+            ]
+        },
+        {
+            "name": "Elemental Manipulation",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "You have discovered ways to manipulate elemental energy in dynamic ways, including adapting more nuanced kinetic shapes, either temporary or persistent.",
+                {
+                    "type": "entries",
+                    "name": "Elemental Infusions",
+                    "entries": [
+                        "You gain two elemental infusions of your choice. A list of the available options can be found on the {@filter Optional Features|optionalfeatures|Feature Type=EI:K|source=Ishiir} page. When you gain certain kineticist levels, you gain additional infusions of your choice.",
+                        "Additionally, when you gain a level in this class, you can choose one of the infusions you know and replace it with another infusion that you could learn at that level.",
+                        "If an elemental infusion has prerequisites, you must meet them to learn it. You can learn the infusion at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.",
+                        "Some infusions modify your kinetic shape. There are modifications for your kinetic blast and kinetic blade, and kinetic shape effects. You can only apply one one shape modification and one shape effect to the same use of a kinetic shape."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Kinesis Points",
+                    "entries": [
+                        "You have 2 kinesis points, which are used to power some of your elemental infusions. You gain one additional point every time you level up, to a maximum of 20 at level 20.",
+                        "You can never have more kinesis points than shown on the table for your level. You regain all spent kinesis points when you finish a {@variantrule Long Rest|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Kinetic Reserves",
+                    "entries": [
+                        "You gain the following ways to spend your kinesis points.",
+                        {
+                            "type": "refClassFeature",
+                            "classFeature": "Kinetic Enhancement|Kineticist|Ishiir|2"
+                        },
+                        {
+                            "type": "refClassFeature",
+                            "classFeature": "Kinetic Shield|Kineticist|Ishiir|2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kinetic Enhancement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "When you make an {@variantrule Ability Check|Ishiir}, you can spend 1 kinesis point to gain {@variantrule Advantage|Ishiir} on the check."
+            ]
+        },
+        {
+            "name": "Kinetic Shield",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "When you take acid, cold, fire, lightning, or thunder damage, you can spend 1 kinesis point and use your {@variantrule Reaction|Ishiir} to grant yourself {@variantrule Resistance|Ishiir} against that instance of the damage."
+            ]
+        },
+        {
+            "name": "Gather Power",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "You have learned to regain some of your expended elemental energy through focused meditation.",
+                "Once per {@variantrule Long Rest|Ishiir} when you finish a {@variantrule Short Rest|Ishiir}, you can choose to regain a number of kinesis points equal to half your kineticist level (rounded up)."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 4,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Expanded Element",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "You learn to use another element or expand your understanding of your own element. You learn the damage types, cantrip, and elemental defense of that elemental school and you quality for all elemental infusions that have that elemental school as prerequisite.",
+                "This also allows you access to powerful composite kinetic shape, by either combining two different elements or focusing on a single one. You gain another element at 14th level, but you can't choose the same element a third time.",
+                "Using a composite shape requires a great deal of energy and costs 2 kinesis points each time. If you do so, increase the number of dice for that kinetic shape by half (rounded up).",
+                "If your composite shape features two of the same element, you double your Charisma modifier when determining the kinetic shape damage and the cost for using a composite shape is reduced to 1 kinesis point.",
+                "You also gain access to whatever infusion any of the included elements normally would allow, but you do pay their kinesis point cost as normal.",
+                "When you do combine elements with different damage types, half of the total damage is dealt as either damage type. For example, if you use a composite shape of the water and fire elements and roll for a total of 20 damage, 10 damage will be dealt as bludgeoning and 10 as fire.",
+                "If the damage number is uneven, you determine which damage type deals the higher amount.",
+                "You can find a table with the resulting composite elements below:",
+                {
+                    "type": "table",
+                    "caption": "Composite Elements",
+                    "colLabels": [
+                        "\\",
+                        "Air",
+                        "Earth",
+                        "Fire",
+                        "Water"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center bold",
+                        "col-2 text-center",
+                        "col-2 text-center",
+                        "col-2 text-center",
+                        "col-2 text-center"
+                    ],
+                    "rows": [
+                        [
+                            "Air",
+                            "Storm",
+                            "Sand",
+                            "Plasma",
+                            "Blizzard"
+                        ],
+                        [
+                            "Earth",
+                            "Sand",
+                            "Metal",
+                            "Magma",
+                            "Mud"
+                        ],
+                        [
+                            "Fire",
+                            "Plasma",
+                            "Magma",
+                            "Blue Fire",
+                            "Steam"
+                        ],
+                        [
+                            "Water",
+                            "Blizzard",
+                            "Mud",
+                            "Steam",
+                            "Frost"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Elemental School Feature",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 7,
+            "entries": [
+                "You gain one feature granted by your Elemental School."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 8,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Elemental School Feature",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 10,
+            "entries": [
+                "You gain one feature granted by your Elemental School."
+            ]
+        },
+        {
+            "name": "Metakinesis",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 11,
+            "entries": [
+                "You further evolve your ability to twist your chosen elements to your needs. You gain access to three of the following Metakinesis options of your choice, all of which modify your kinetic shape.",
+                "You can only use one Metakinesis option with your kinetic shape, unless otherwise noted.",
+                {
+                    "type": "entries",
+                    "name": "Careful Kinesis",
+                    "entries": [
+                        "When you use your kinetic shape with an infusion that forces other creatures to make a {@variantrule Saving Throw|Ishiir}, you can protect some of those creatures from the shape's full force.",
+                        "To do so, you spend 1 kinesis point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its {@variantrule Saving Throw|Ishiir} against the blast and takes no damage if it would normally take half damage on a successful save."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Distant Kinesis",
+                    "entries": [
+                        "When you use a kinetic shape, you can spend 1 kinesis point to double its range."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Empowered Kinesis",
+                    "entries": [
+                        "When you roll damage for your kinetic shape, you can spend 1 kinesis point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.",
+                        "You can use Empowered Kinesis even if you have already used a different Metakinesis option during the casting of the spell."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Extended Kinesis",
+                    "entries": [
+                        "When you use your kinetic shape with an infusion that makes it last more than 1 round, you can spend 1 kinesis point to double its duration, to a maximum duration of 24 hours."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Heightened Kinesis",
+                    "entries": [
+                        "When you use your kinetic shape with an infusion that forces a creature to make a {@variantrule Saving Throw|Ishiir} to resist its effects, you can spend 2 kinesis points to give one target of the shape {@variantrule Disadvantage|Ishiir} on all its {@variantrule Saving Throw|Ishiir|Saving Throws} made against the effect."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Twinned Kinesis",
+                    "entries": [
+                        "When you use your kinetic shape with an infusion that doesn't have a range of self and is incapable of targeting more than one creature, you can spend 3 kinesis points to have it target a second creature within range as well."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 12,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Elemental Overflow",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 13,
+            "entries": [
+                "A kineticist's body surges with energy from her chosen element whenever she spends kinesis points, causing her to glow with a nimbus of fire, weep water from her pores, or experience some other thematic effect.",
+                "When you have less than half your current maximum number of kinesis points, your Charisma bonus to damage on your kinetic shape is doubled. Additionally, you gain {@variantrule Resistance|Ishiir} to one damage type corresponding to one of your chosen elements."
+            ]
+        },
+        {
+            "name": "Expanded Element",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "You gain another element, but you can't choose the same element a third time."
+            ]
+        },
+        {
+            "name": "Elemental School Feature",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 15,
+            "entries": [
+                "You gain one feature granted by your Elemental School."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 16,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Harmonious Defense",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 18,
+            "entries": [
+                "You have learned to weave the energies of all your chosen elements together seamlessly.",
+                "Your Elemental Defense subclass features are no longer exclusive and you can choose to activate any number of them with the same {@variantrule Bonus Action|Ishiir} (dismissing them still requires no action on your part).",
+                "If your chosen elements grant you access to different formulas to calculate your AC, you must still decide which one to use when you activate your Elemental Defense."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 19,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Elemental School Feature",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "level": 20,
+            "entries": [
+                "You gain one feature granted by your Elemental School."
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Air",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Air",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "Kineticists who focus on the element of air are called aerokineticists. Aerokineticists often control air flow or electricity, specializing in mobility and ranged combat."
+            ]
+        },
+        {
+            "name": "Air Blast",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Air",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you gain access to this element, your kinetic shape gains the ability to inflict bludgeoning or lightning damage (your choice)."
+            ]
+        },
+        {
+            "name": "Aerokinesis",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Air",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you gain access to this element, you learn the {@spell Gust|Ishiir} cantrip, which you can cast using only its somatic component."
+            ]
+        },
+        {
+            "name": "Elemental Defense: Enveloping Winds",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Air",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you gain access to this element, as a {@variantrule Bonus Action|Ishiir}, you can surround yourself with a whirling torrent of air or a static field of crackling lightning, which lasts until you dismiss the effect (no action required).",
+                "While the effect is active and you aren't wearing any armor or shield, your AC equals 10 + your Dexterity modifier + your Charisma modifier and all ranged weapon attacks against you are made with {@variantrule Disadvantage|Ishiir}. Additionally, any gas, vapor, or fog that can be dispersed by a strong wind has no effect on you.",
+                "This effect is exclusive with Elemental Defense class features from other Elemental Schools."
+            ]
+        },
+        {
+            "name": "Bonus Proficiency",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Air",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you gain access to this element, you gain {@variantrule Proficiency|Ishiir} in one of the following skills of your choice: {@skill Acrobatics}, {@skill Sleight of Hand}, {@skill Stealth}, or {@skill Performance}."
+            ]
+        },
+        {
+            "name": "Light as Air",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Air",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "You gain the ability to use your {@variantrule Reaction|Ishiir} when you fall to reduce any falling damage you take by an amount equal to five times your kineticist level.",
+                "Additionally, your standing and running jumps use Charisma instead of Strength to determine the distance you cover."
+            ]
+        },
+        {
+            "name": "Storm Shroud",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Air",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "You learn how to use your control of the air streams around you to help you dodge or otherwise ward off certain area effects, like the explosion of a fireball or a dragon's breath.",
+                "When you are subjected to an effect that allows you to make a Dexterity {@variantrule Saving Throw|Ishiir} to take only half damage, you instead take no damage if you succeed on the {@variantrule Saving Throw|Ishiir}, and only half damage if you fail."
+            ]
+        },
+        {
+            "name": "Wind Walker",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Air",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "Your mastery of the wind allows you to move freely through the air. You gain a {@variantrule Fly Speed|Ishiir} equal to 60 feet."
+            ]
+        },
+        {
+            "name": "Hurricane Queen",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Air",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "Your mastery of air allows you to infuse your own self with the essence of storms.",
+                "As an {@variantrule Action|Ishiir}, you undergo the transformation and gain the following benefits for 1 minute:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You ignore all wind-based effects such as the {@spell Whirlwind|Ishiir} spell or even a natural tornado.",
+                        "You gain {@variantrule Immunity|Ishiir} to lightning damage.",
+                        "You are surrounded by a 60 foot radius aura of stormlike winds of such intensity that they render ranged weapon attacks against you completely impossible. You and any number of creatures of your choice in the area are unaffected.",
+                        "Any other creature is {@condition Deafened|Ishiir} while in this area, must spend 4 feet for every 1 foot of movement while in it, and has to succeed on a Strength {@variantrule Saving Throw|Ishiir} against your save DC at the start of its turn or when it enters the area for the first time or be knocked {@condition Prone|Ishiir} or hurled 20 feet away in a direction that you choose."
+                    ]
+                },
+                "Once you have used this ability, you can't use it again until you have finished a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Earth",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Earth",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "Kineticists who focus on the element of earth are called geokineticists. Geokineticists manipulate the earth itself, and they are masters of defensive techniques."
+            ]
+        },
+        {
+            "name": "Earth Blast",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Earth",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you gain access to this element, your kinetic shape gains the ability to inflict bludgeoning, piercing, or slashing damage (your choice)."
+            ]
+        },
+        {
+            "name": "Geokinesis",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Earth",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you gain access to this element, you learn the {@spell Mold Earth|Ishiir} cantrip."
+            ]
+        },
+        {
+            "name": "Elemental Defense: Flesh of Stone",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Earth",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you gain access to this element, as a {@variantrule Bonus Action|Ishiir}, you can harden your body like stone, dampening the impact of most attacks until you dismiss the effect (no action required).",
+                "While the effect is active and you aren't wearing any armor or shield, your AC equals 10 + your Constitution modifier + your Charisma modifier and any bludgeoning, piercing, or slashing you take is reduced by an amount equal to half your kineticist level (rounded down), this reduction applies before any other effect.",
+                "This effect is exclusive with Elemental Defense class features from other Elemental Schools."
+            ]
+        },
+        {
+            "name": "Bonus Proficiency",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Earth",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you gain access to this element, you gain {@variantrule Proficiency|Ishiir} in one of the following skills of your choice: {@skill Athletics}, {@skill Intimidation}, {@skill Nature}, or {@skill Perception}."
+            ]
+        },
+        {
+            "name": "Earthen Attunement",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Earth",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "You learn how to use your connection to earth to meld slightly into stone and earthen surfaces, granting you a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} when climbing such surfaces.",
+                "Additionally, when you have to make a Strength {@variantrule Saving Throw|Ishiir} or check, you can make a Charisma {@variantrule Saving Throw|Ishiir} or check instead."
+            ]
+        },
+        {
+            "name": "Diamond Skin",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Earth",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "You learn to harden specific areas of your body in response to physical trauma. When an effect makes you take bludgeoning, piercing, or slashing damage, you can use your {@variantrule Reaction|Ishiir} to halve the effect's damage against you."
+            ]
+        },
+        {
+            "name": "One with the Earth",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Earth",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "Your mastery of the earth allows you to move freely through the ground. You gain a {@variantrule Burrow Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} and {@sense tremorsense|MM} in a radius of 60 feet around you."
+            ]
+        },
+        {
+            "name": "Striding Giant",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Earth",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "Your mastery of earth allows you to infuse your own self with the essence of the mountain.",
+                "As an {@variantrule Action|Ishiir}, you undergo the transformation and gain the following benefits for 1 minute:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Your size changes the huge and you gain temporary hit points equal to three times your kineticist level.",
+                        "You are {@variantrule Immunity|Ishiir|Immune} to the {@condition Charmed|Ishiir}, {@condition Exhaustion|Ishiir|Exhausted}, {@condition Frightened|Ishiir}, {@condition Paralyzed|Ishiir}, {@condition Petrified|Ishiir}, and {@condition Poisoned|Ishiir} conditions.",
+                        "You ignore all earth-based effects such as the {@spell Erupting Earth|Ishiir} spell or even a natural earthquake.",
+                        "When you move for the first time on your turn, your steps shake the earth. All creatures of your choice within 60 feet of you have to make a Strength {@variantrule Saving Throw|Ishiir} against your save DC or be knocked {@condition Prone|Ishiir}."
+                    ]
+                },
+                "Once you have used this ability, you can't use it again until you have finished a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Fire",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Fire",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "Kineticists who focus on the element of fire are called pyrokineticists. Pyrokineticists wield elemental fire as a potent weapon, and they possess a powerful offense."
+            ]
+        },
+        {
+            "name": "Fire Blast",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Fire",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you gain access to this element, your kinetic shape gains the ability to inflict fire damage."
+            ]
+        },
+        {
+            "name": "Pyrokinesis",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Fire",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you gain access to this element, you learn the {@spell Control Flames|Ishiir} cantrip."
+            ]
+        },
+        {
+            "name": "Elemental Defense: Searing Flesh",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Fire",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you gain access to this element, as a {@variantrule Bonus Action|Ishiir}, you can superheat your body to extreme temperatures, which lasts until you dismiss the effect (no action required).",
+                "While the effect is active and you aren't wearing any armor or shield, your AC equals 10 + your Dexterity modifier + your Charisma modifier and any creature that touches you or hits you with a melee attack from within 10 feet of you takes fire damage equal to your Charisma modifier.",
+                "This effect is exclusive with Elemental Defense class features from other Elemental Schools."
+            ]
+        },
+        {
+            "name": "Bonus Proficiency",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Fire",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you gain access to this element, you gain {@variantrule Proficiency|Ishiir} in one of the following skills of your choice: {@skill Acrobatics}, {@skill Intimidation}, {@skill Performance}, or {@skill Persuasion}."
+            ]
+        },
+        {
+            "name": "Eyes of Fire",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Fire",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Your eyes begin to glow with your inner fire, giving you a {@sense darkvision} range of 60 feet. If you already have {@sense darkvision}, your {@sense darkvision} instead increases by 60 feet.",
+                "In addition, fire and smoke caused by fire cannot obscure your vision."
+            ]
+        },
+        {
+            "name": "Consuming Flames",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Fire",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "Your flames grow extraordinarily intense. You ignore {@variantrule Resistance|Ishiir} to fire damage and treat {@variantrule Immunity|Ishiir} to fire damage as {@variantrule Resistance|Ishiir} instead."
+            ]
+        },
+        {
+            "name": "Fire's Fury",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Fire",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "You have learned to direct your inner fire to lash out at attackers. When you are hit by a melee attack, you can use your {@variantrule Reaction|Ishiir} to make the attacker take fire damage equal to your kineticist level."
+            ]
+        },
+        {
+            "name": "Fire Lord",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Fire",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "Your mastery of fire allows you to infuse your own self with the essence of flame.",
+                "As an {@variantrule Action|Ishiir}, you undergo the transformation and gain the following benefits for 1 minute:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You shed bright light in a 60 feet radius and dim light in a radius of 30 feet beyond that.",
+                        "You gain {@variantrule Immunity|Ishiir} to fire damage.",
+                        "Creatures in the bright light have {@variantrule Disadvantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against infusions that include the fire element.",
+                        "You radiate intense heat in a 10 feet radius around you. Any creature of your choice that enters that radius for the first time on a turn or starts its turn there, takes half your kinetic shape damage."
+                    ]
+                },
+                "Once you have used this ability, you can't use it again until you have finished a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Water",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Water",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "Kineticists who focus on the element of water are called hydrokineticists. Hydrokineticists master the flow of water or the numbing chill of cold, and they are known for their versatility and flowing forms, like the ever-changing currents."
+            ]
+        },
+        {
+            "name": "Water Blast",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Water",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you gain access to this element, your kinetic shape gains the ability to inflict cold or bludgeoning damage."
+            ]
+        },
+        {
+            "name": "Hydrokinesis",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Water",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you gain access to this element, you learn the {@spell Shape Water|Ishiir} cantrip."
+            ]
+        },
+        {
+            "name": "Elemental Defense: Shroud of Water",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Water",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you gain access to this element, you can surround yourself with a shroud of water, ice, or both that protects you from harm, which lasts until you dismiss the effect (no action required).",
+                "While this effect is active and you are not wearing any armor or shield, your AC equals 12 + your Dexterity modifier + your Charisma modifier.",
+                "This effect is exclusive with Elemental Defense class features from other Elemental Schools."
+            ]
+        },
+        {
+            "name": "Bonus Proficiency",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Water",
+            "subclassSource": "Ishiir",
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you gain access to this element, you gain {@variantrule Proficiency|Ishiir} in one of the following skills of your choice: {@skill Acrobatics}, {@skill Insight}, {@skill Persuasion}, or {@skill Stealth}."
+            ]
+        },
+        {
+            "name": "Like a Fish",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Water",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Your attunement to the element of water allows you to move within it just as easily as on land. You gain a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} and you can breathe underwater. If you already have a {@variantrule Swim Speed|Ishiir}, that {@variantrule Swim Speed|Ishiir} instead increases by 30 feet.",
+                "Additionally, you make any {@skill Athletics} {@variantrule Ability Check|Ishiir|checks} and {@variantrule Saving Throw|Ishiir|Saving Throws} related to swimming or resisting water-based effects using your Charisma modifier instead of your Strength modifer."
+            ]
+        },
+        {
+            "name": "Hydrosophic Shield",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Water",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "You have learned to summon up your water-based defenses at a split-second's notice.",
+                "When you are hit by an attack or subject to an effect that forces you to make a Dexterity {@variantrule Saving Throw|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to create a shield of water around you, granting yourself half-cover until the start of your next turn.",
+                "This cover applies even when against effects that normally ignore cover."
+            ]
+        },
+        {
+            "name": "Be like Water",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Water",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "You have learned to embody the evershifting, ungraspable nature of your element.",
+                "When you are {@condition Grappled|Ishiir} or {@condition Restrained|Ishiir} on your turn, you can spend 5 feet of movement to no longer be {@condition Grappled|Ishiir} or {@condition Restrained|Ishiir}. You also gain {@sense blindsight} in a 30 feet radius."
+            ]
+        },
+        {
+            "name": "Empress of the Fathoms",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Kineticist",
+            "classSource": "Ishiir",
+            "subclassShortName": "Water",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "Your mastery of water allows you to infuse your own self with the essence of waves.",
+                "As an {@variantrule Action|Ishiir}, you undergo the transformation and gain the following benefits for 1 minute:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You ignore all water-based effects such as the {@spell Tsunami|Ishiir} spell or a natural vortex.",
+                        "You gain {@variantrule Immunity|Ishiir} to cold damage.",
+                        "Water flows from everywhere, including up from the ground and dropping as rain to form a vortex of writhing watery tentacles in a 60 feet radius around you that makes the area {@quickref difficult terrain||3}. You and any number of creatures of your choice in the area unaffected.",
+                        "Any other creature that enters the area for the first time on a turn or starts its turn there has to make a Dexterity {@variantrule Saving Throw|Ishiir} against your save DC or be {@condition Grappled|Ishiir} and {@condition Restrained|Ishiir}. It can make a Strength check as an {@variantrule Action|Ishiir} on its turn to no longer be {@condition Grappled|Ishiir} and {@condition Restrained|Ishiir}."
+                    ]
+                },
+                "Once you have used this ability, you can't use it again until you have finished a {@variantrule Long Rest|Ishiir}."
+            ]
+        }
+    ]
 }
