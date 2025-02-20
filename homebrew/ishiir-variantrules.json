@@ -18,36 +18,6 @@
     },
     "variantrule": [
         {
-            "name": "Advantage",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "C",
-            "entries": [
-                "If you have Advantage on a {@variantrule D20 Test|Ishiir}, roll two d20s, and use the higher roll. A roll can't be affected by more than one Advantage, and Advantage and {@variantrule Disadvantage|Ishiir} on the same roll cancel each other."
-            ]
-        },
-        {
-            "name": "Disadvantage",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "C",
-            "entries": [
-                "If you have Disadvantage on a {@variantrule D20 Test|Ishiir}, roll two d20s and use the lower roll. A roll can't be affected by more than one Disadvantage, and {@variantrule Advantage|Ishiir} and Disadvantage on the same roll cancel each other."
-            ]
-        },
-        {
-            "name": "D20 Test",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "C",
-            "entries": [
-                "D20 Tests encompass the three main d20 rolls of the game: {@variantrule Ability Check|Ishiir|Ability Checks}, {@variantrule Attack Roll|Ishiir|Attack Rolls}, and {@variantrule Saving Throw|Ishiir|Saving Throws}. If something in the game affects D20 Tests, it affects all three of these rolls. The DM determines whether a D20 Test is warranted in a given circumstance."
-            ]
-        },
-        {
             "name": "Ability Check",
             "source": "Ishiir",
             "page": 1,
@@ -55,16 +25,6 @@
             "ruleType": "C",
             "entries": [
                 "An Ability Check is a {@variantrule D20 Test|Ishiir} that represents using one of the six abilities\u2014or a specific skill associated with an ability\u2014to overcome a challenge."
-            ]
-        },
-        {
-            "name": "Attack Roll",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "C",
-            "entries": [
-                "An Attack Roll is a {@variantrule D20 Test|Ishiir} that represents making an attack with a weapon, an {@variantrule Unarmed Strike|Ishiir}, or a spell."
             ]
         },
         {
@@ -78,6 +38,54 @@
             ]
         },
         {
+            "name": "Advantage",
+            "source": "Ishiir",
+            "page": 1,
+            "freeRules2024": true,
+            "ruleType": "C",
+            "entries": [
+                "If you have Advantage on a {@variantrule D20 Test|Ishiir}, roll two d20s, and use the higher roll. A roll can't be affected by more than one Advantage, and Advantage and {@variantrule Disadvantage|Ishiir} on the same roll cancel each other."
+            ]
+        },
+        {
+            "name": "Armor Mastery",
+            "source": "Ishiir",
+            "ruleType": "V",
+            "page": 1,
+            "entries": [
+                "If you possess the Martial Mastery class feature, you can apply a mastery to any {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} you have proficiency in once per rest. You can change your choice when you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}.",
+                {
+                    "type": "list",
+                    "name": "List of Armor Masteries",
+                    "items": [
+                        "{@optfeature Light|Ishiir}",
+                        "{@optfeature Medium|Ishiir}",
+                        "{@optfeature Heavy|Ishiir}",
+                        "{@optfeature Unarmored Defense|Ishiir}"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Attack Roll",
+            "source": "Ishiir",
+            "page": 1,
+            "freeRules2024": true,
+            "ruleType": "C",
+            "entries": [
+                "An Attack Roll is a {@variantrule D20 Test|Ishiir} that represents making an attack with a weapon, an {@variantrule Unarmed Strike|Ishiir}, or a spell."
+            ]
+        },
+        {
+            "name": "Bloodied",
+            "source": "Ishiir",
+            "ruleType": "C",
+            "page": 1,
+            "entries": [
+                "A creature is Bloodied while it has half its Hit Points or fewer remaining."
+            ]
+        },
+        {
             "name": "Bonus Action",
             "source": "Ishiir",
             "page": 1,
@@ -85,336 +93,6 @@
             "ruleType": "C",
             "entries": [
                 "A Bonus Action is a special action that you can take on the same turn that you take an action. You can't take more than one Bonus Action on a turn, and you have a Bonus Action to take only if a rule explicitly says so."
-            ]
-        },
-        {
-            "name": "Reaction",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "C",
-            "entries": [
-                "A Reaction is a special action taken in response to a trigger defined in the Reaction's description. You can take a Reaction on another creature's turn, and if you take it on your turn, you can do so even if you also take an action, a {@variantrule Bonus Action|Ishiir}, or both. Once you take a Reaction, you can't take another one until the start of your next turn. The {@action Opportunity Attack|Ishiir} is a Reaction available to all creatures."
-            ]
-        },
-        {
-            "name": "Saving Throw",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "C",
-            "entries": [
-                "A Saving Throw\u2014also called a save\u2014represents an attempt to avoid or resist a threat. You normally make a Saving Throw only when a rule requires you to do so, but you can decide to fail the save without rolling. The result of a save is detailed in the effect that allowed it. If a target is forced to make a save and lacks the ability score used by it, the target automatically fails."
-            ]
-        },
-        {
-            "name": "Unarmed Strike",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "C",
-            "entries": [
-                "Instead of using a weapon to make a melee attack, you can use a punch, kick, head-butt, or similar forceful blow. In game terms, this is an {@variantrule Unarmed Strike|Ishiir}\u2014a melee attack that involves you using your body to damage, grapple, or shove a target within 5 feet of you.",
-                "Whenever you use your {@variantrule Unarmed Strike|Ishiir}, choose one of the following options for its effect.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Damage",
-                            "entries": [
-                                "You make an {@variantrule Attack Roll|Ishiir} against the target. Your bonus to the roll equals your Strength modifier plus your {@variantrule Proficiency|Ishiir|Proficiency Bonus}. On a hit, the target takes Bludgeoning damage equal to 1 plus your Strength modifier."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Grapple",
-                            "entries": [
-                                "The target must succeed on a Strength or Dexterity {@variantrule Saving Throw|Ishiir} (it chooses which), or it has the {@condition Grappled|Ishiir} condition. The DC for the {@variantrule Saving Throw|Ishiir} and any escape attempts equals 8 plus your Strength modifier and {@variantrule Proficiency|Ishiir|Proficiency Bonus}. This grapple is possible only if the target is no more than one size larger than you and if you have a hand free to grab it."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Shove",
-                            "entries": [
-                                "The target must succeed on a Strength or Dexterity {@variantrule Saving Throw|Ishiir} (it chooses which), or you either push it 5 feet away or cause it to have the {@condition Prone|Ishiir} condition. The DC for the {@variantrule Saving Throw|Ishiir} equals 8 plus your Strength modifier and {@variantrule Proficiency|Ishiir|Proficiency Bonus}. This shove is possible only if the target is no more than one size larger than you."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Short Rest",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "V",
-            "entries": [
-                "A Short Rest is a period of extended downtime\u2014at least 8 hours\u2014available to any creature. During a Short Rest, you sleep for at least 6 hours and perform no more than 2 hours of light activity, such as reading, talking, eating, or standing watch. During sleep, you have the {@condition Unconscious|Ishiir} condition.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Benefits of the Rest",
-                            "entries": [
-                                "To start a Short Rest, you must have at least 1 Hit Point. When you finish the rest, you gain the following benefits:"
-                            ]
-                        },
-                        {
-                            "type": "list",
-                            "style": "list-hang-notitle",
-                            "items": [
-                                {
-                                    "type": "item",
-                                    "name": "Spend Hit Point Dice",
-                                    "entries": [
-                                        "You can spend one or more of your Hit Point Dice to regain Hit Points. For each Hit Point Die you spend in this way, roll the die and add your Constitution modifier to it. You regain Hit Points equal to the total (minimum of 1 Hit Point). You can decide to spend an additional Hit Point Die after each roll."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Special Feature",
-                                    "entries": [
-                                        "Some features are recharged by a Short Rest. If you have such a feature, it recharges in the way specified in its description."
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Long Rest",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "V",
-            "entries": [
-                "A Long Rest is a period of extended downtime\u2014at least 7 days\u2014available to any creature in a relatively safe environment.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Benefits of the Rest",
-                            "entries": [
-                                "To start a Long Rest, you must have at least 1 Hit Point. When you finish the rest, you gain the following benefits:"
-                            ]
-                        },
-                        {
-                            "type": "list",
-                            "style": "list-hang-notitle",
-                            "items": [
-                                {
-                                    "type": "item",
-                                    "name": "Regain All HP",
-                                    "entries": [
-                                        "You regain all lost Hit Points and half of your spent Hit Point Dice. If your Hit Point maximum was reduced, it returns to normal."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Ability Scores Restored",
-                                    "entries": [
-                                        "If any of your ability scores were reduced, they return to normal."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Exhaustion Reduced",
-                                    "entries": [
-                                        "If you have the {@condition Exhaustion|Ishiir} condition, its level decreases by 1."
-                                    ]
-                                },
-                                {
-                                    "type": "item",
-                                    "name": "Special Feature",
-                                    "entries": [
-                                        "Some features are recharged by a Long Rest. If you have such a feature, it recharges in the way specified in its description."
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Proficiency",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "C",
-            "entries": [
-                "If you have proficiency with something, you can add your Proficiency Bonus to any {@variantrule D20 Test|Ishiir} you make using that thing. A creature might have proficiency in a skill or {@variantrule Saving Throw|Ishiir} or with a weapon or tool."
-            ]
-        },
-        {
-            "name": "Resistance",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "C",
-            "entries": [
-                "If you have Resistance to a {@variantrule Damage Types|Ishiir|damage type}, damage of that type is halved against you (round down). Resistance is applied only once to an instance of damage."
-            ]
-        },
-        {
-            "name": "Immunity",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "C",
-            "entries": [
-                "If you have Immunity to a {@variantrule Damage Types|Ishiir|damage type} or a {@variantrule Condition|Ishiir|condition}, it doesn't affect you in any way."
-            ]
-        },
-        {
-            "name": "Damage Types",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "C",
-            "entries": [
-                "Attacks and other harmful effects deal different types of damage. Damage types have no rules of their own, but other rules, such as {@variantrule Resistance|Ishiir}, rely on the types. The Damage Types table offers examples to help a DM assign a type to a new effect.",
-                {
-                    "type": "table",
-                    "caption": "Damage Types",
-                    "colLabels": [
-                        "Type",
-                        "Examples"
-                    ],
-                    "colStyles": [
-                        "col-3",
-                        "col-9"
-                    ],
-                    "rows": [
-                        [
-                            "Acid",
-                            "Corrosive liquids, digestive enzymes"
-                        ],
-                        [
-                            "Bludgeoning",
-                            "Blunt objects, constriction, falling"
-                        ],
-                        [
-                            "Cold",
-                            "Freezing water, icy blasts"
-                        ],
-                        [
-                            "Fire",
-                            "Flames, unbearable heat"
-                        ],
-                        [
-                            "Force",
-                            "Pure magical energy"
-                        ],
-                        [
-                            "Lightning",
-                            "Electricity"
-                        ],
-                        [
-                            "Necrotic",
-                            "Life-draining energy"
-                        ],
-                        [
-                            "Piercing",
-                            "Fangs, puncturing objects"
-                        ],
-                        [
-                            "Poison",
-                            "Toxic gas, venom"
-                        ],
-                        [
-                            "Psychic",
-                            "Mind-rending energy"
-                        ],
-                        [
-                            "Radiant",
-                            "Holy energy, searing radiation"
-                        ],
-                        [
-                            "Slashing",
-                            "Claws, cutting objects"
-                        ],
-                        [
-                            "Thunder",
-                            "Concussive sound"
-                        ]
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Condition",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "C",
-            "entries": [
-                "A condition is a temporary game state. The definition of a condition says how it affects its recipient, and various rules define how to end a condition. This glossary defines these conditions:",
-                {
-                    "type": "list",
-                    "style": "list-hang-notitle",
-                    "columns": 3,
-                    "items": [
-                        "{@condition Blinded|Ishiir}",
-                        "{@condition Charmed|Ishiir}",
-                        "{@condition Concentration|Ishiir}",
-                        "{@condition Confused|Ishiir}",
-                        "{@condition Dazed|Ishiir}",
-                        "{@condition Deafened|Ishiir}",
-                        "{@condition Dominated|Ishiir}",
-                        "{@condition Exhaustion|Ishiir}",
-                        "{@condition Frightened|Ishiir}",
-                        "{@condition Frozen|Ishiir}",
-                        "{@condition Grappled|Ishiir}",
-                        "{@condition Incapacitated|Ishiir}",
-                        "{@condition Invisible|Ishiir}",
-                        "{@condition Lacerated|Ishiir}",
-                        "{@condition Paralyzed|Ishiir}",
-                        "{@condition Petrified|Ishiir}",
-                        "{@condition Poisoned|Ishiir}",
-                        "{@condition Prone|Ishiir}",
-                        "{@condition Restrained|Ishiir}",
-                        "{@condition Stunned|Ishiir}",
-                        "{@condition Surprised|Ishiir}",
-                        "{@condition Unconscious|Ishiir}"
-                    ]
-                },
-                "A condition doesn't stack with itself; a recipient either has a condition or doesn't. The {@condition Exhaustion|Ishiir} condition is an exception to that rule."
-            ]
-        },
-        {
-            "name": "Speed",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "C",
-            "entries": [
-                "A creature has a Speed, which is the distance in feet the creature can cover when it moves on its turn.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Special Speeds",
-                            "entries": [
-                                "Some creatures have special speeds, such as a {@variantrule Burrow Speed|Ishiir}, {@variantrule Climb Speed|Ishiir}, {@variantrule Fly Speed|Ishiir}, or {@variantrule Swim Speed|Ishiir}, each of which is defined in this glossary. If you have more than one speed, choose which one to use when you move; you can switch between the speeds during your move. Whenever you switch, subtract the distance already moved from the new speed. The result determines how much farther you can move. If the result is 0 or less, you can't use the new speed during the current move. For example, if you have a Speed of 30 and a {@variantrule Fly Speed|Ishiir} of 40, you could fly 10 feet, walk 10 feet, and leap into the air to fly 20 feet more."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Changes to Your Speeds",
-                            "entries": [
-                                "If an effect increases or decreases your Speed for a time, any special speed you have increases or decreases by an equal amount for the same duration. For example, if your Speed is reduced to 0 and you have a {@variantrule Climb Speed|Ishiir}, your {@variantrule Climb Speed|Ishiir} is also reduced to 0. Similarly, if your Speed is halved and you have a {@variantrule Fly Speed|Ishiir}, your {@variantrule Fly Speed|Ishiir} is also halved."
-                            ]
-                        }
-                    ]
-                }
             ]
         },
         {
@@ -428,33 +106,12 @@
             ]
         },
         {
-            "name": "Fly Speed",
+            "name": "Carrying Capacity",
             "source": "Ishiir",
+            "ruleType": "V",
             "page": 1,
-            "freeRules2024": true,
-            "ruleType": "C",
             "entries": [
-                "A Fly Speed can be used to travel through the air. While you have a Fly Speed, you can stay aloft until you land, fall, or die."
-            ]
-        },
-        {
-            "name": "Swim Speed",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "C",
-            "entries": [
-                "A Swim Speed can be used to swim without expending the extra movement normally associated with swimming."
-            ]
-        },
-        {
-            "name": "Climb Speed",
-            "source": "Ishiir",
-            "page": 1,
-            "freeRules2024": true,
-            "ruleType": "C",
-            "entries": [
-                "A Climb Speed can be used in place of {@variantrule Speed|XPHB} to traverse a vertical surface without expending the extra movement normally associated with climbing."
+                "The carrying capacity of a creature is halved if the creature is small, and halved again if the creature is tiny."
             ]
         },
         {
@@ -1005,149 +662,192 @@
             ]
         },
         {
-            "name": "Heroic Inspiration",
+            "name": "Class and Subclass Features",
             "source": "Ishiir",
+            "ruleType": "V",
             "page": 1,
-            "ruleType": "C",
             "entries": [
-                "If you (a player character) have Heroic Inspiration, you can expend it to reroll any die immediately after rolling it, and you must use the new roll."
+                "ALL classes and subclasses that gain a fighting style from a feature can choose from all styles available to the Fighter class, rather than only a limited selection.",
+                "Barbarians may add their rage damage bonus to ranged weapon attacks with thrown weapons.",
+                "Class features that require a {@variantrule Saving Throw|Ishiir} and do not normally use the spell save DC of the class and do not have a dedicated item to increase their DC, instead receive the enhancement bonus of an item used through the feature (where appropriate). Features that do not involve any items, such as certain racial abilities or other class features, instead receive a bonus to their DC equal to half proficiency, rounded down."
             ]
         },
         {
-            "name": "Mark of Fate",
+            "name": "Climb Speed",
             "source": "Ishiir",
             "page": 1,
+            "freeRules2024": true,
             "ruleType": "C",
             "entries": [
-                "If you (a player character) has a Mark of Fate, you can expend it to add a +5 bonus to any {@variantrule D20 Test|Ishiir} immediately after rolling it."
+                "A Climb Speed can be used in place of {@variantrule Speed|XPHB} to traverse a vertical surface without expending the extra movement normally associated with climbing."
             ]
         },
         {
-            "name": "Spellcasting",
+            "name": "Combat",
+            "source": "Ishiir",
+            "ruleType": "V",
+            "page": 1,
+            "entries": [
+                "Features that refer to a weapon damage die, reference the entire base damage of the weapon. E.g. for the Barbarian's Brutal Critical feature, you can roll an additional {@dice 2d6} on a critical hit with a greatsword, rather than only {@dice 1d6}.",
+                "Death {@variantrule Saving Throw|Ishiir|Saving Throws} do not reset once a creature heals, they instead recharge on a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}.",
+                "Dodging also gives disadvantage on attempts to grapple against the dodging creature."
+            ]
+        },
+        {
+            "name": "Condition",
             "source": "Ishiir",
             "page": 1,
-            "ruleType": "O",
-            "type": "section",
+            "freeRules2024": true,
+            "ruleType": "C",
             "entries": [
-                "This section expands on the spellcasting rules presented in the {@book Player's Handbook|PHB|10} and the {@book Dungeon Master's Guide|DMG}, providing clarifications and new options.",
+                "A condition is a temporary game state. The definition of a condition says how it affects its recipient, and various rules define how to end a condition. This glossary defines these conditions:",
                 {
-                    "type": "entries",
-                    "name": "Perceiving a Caster at Work",
-                    "entries": [
-                        "Many spells create obvious effects: explosions of fire, walls of ice, teleportation, and the like. Other spells, such as charm person, display no visible, audible, or otherwise perceptible sign of their effects, and could easily go unnoticed by someone unaffected by them. As noted in the {@book Player's Handbook|PHB}, you normally don't know that a spell has been cast unless the spell produces a noticeable effect.",
-                        "But what about the act of casting a spell? Is it possible for someone to perceive that a spell is being cast in their presence? To be perceptible, the casting of a spell must involve a verbal, somatic, or material component. The form of a material component doesn't matter for the purposes of perception, whether it's an object specified in the spell's description, a component pouch, or a spellcasting focus.",
-                        "If the need for a spell's components has been removed by a special ability, such as the sorcerer's Subtle Spell feature or the Innate Spellcasting trait possessed by many creatures, the casting of the spell is imperceptible. If an imperceptible casting produces a perceptible effect, it's normally impossible to determine who cast the spell in the absence of other evidence."
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "columns": 3,
+                    "items": [
+                        "{@condition Blinded|Ishiir}",
+                        "{@condition Charmed|Ishiir}",
+                        "{@condition Concentration|Ishiir}",
+                        "{@condition Confused|Ishiir}",
+                        "{@condition Dazed|Ishiir}",
+                        "{@condition Deafened|Ishiir}",
+                        "{@condition Dominated|Ishiir}",
+                        "{@condition Exhaustion|Ishiir}",
+                        "{@condition Frightened|Ishiir}",
+                        "{@condition Frozen|Ishiir}",
+                        "{@condition Grappled|Ishiir}",
+                        "{@condition Incapacitated|Ishiir}",
+                        "{@condition Invisible|Ishiir}",
+                        "{@condition Lacerated|Ishiir}",
+                        "{@condition Paralyzed|Ishiir}",
+                        "{@condition Petrified|Ishiir}",
+                        "{@condition Poisoned|Ishiir}",
+                        "{@condition Prone|Ishiir}",
+                        "{@condition Restrained|Ishiir}",
+                        "{@condition Stunned|Ishiir}",
+                        "{@condition Surprised|Ishiir}",
+                        "{@condition Unconscious|Ishiir}"
                     ]
                 },
+                "A condition doesn't stack with itself; a recipient either has a condition or doesn't. The {@condition Exhaustion|Ishiir} condition is an exception to that rule."
+            ]
+        },
+        {
+            "name": "D20 Test",
+            "source": "Ishiir",
+            "page": 1,
+            "freeRules2024": true,
+            "ruleType": "C",
+            "entries": [
+                "D20 Tests encompass the three main d20 rolls of the game: {@variantrule Ability Check|Ishiir|Ability Checks}, {@variantrule Attack Roll|Ishiir|Attack Rolls}, and {@variantrule Saving Throw|Ishiir|Saving Throws}. If something in the game affects D20 Tests, it affects all three of these rolls. The DM determines whether a D20 Test is warranted in a given circumstance."
+            ]
+        },
+        {
+            "name": "Damage Types",
+            "source": "Ishiir",
+            "page": 1,
+            "freeRules2024": true,
+            "ruleType": "C",
+            "entries": [
+                "Attacks and other harmful effects deal different types of damage. Damage types have no rules of their own, but other rules, such as {@variantrule Resistance|Ishiir}, rely on the types. The Damage Types table offers examples to help a DM assign a type to a new effect.",
                 {
-                    "type": "entries",
-                    "name": "Identifying a Spell",
-                    "entries": [
-                        "Sometimes a character wants to identify a spell that someone else is casting or that was already cast. To do so, a character can use their reaction to identify a spell as it's being cast, or they can use an action on their turn to identify a spell by its effect after it is cast.",
-                        "If the character perceived the casting, the spell's effect, or both, the character can make an Intelligence ({@skill Arcana}) check with their reaction or action. The DC equals 15 + the spell's level. If the spell is cast as a class spell and the character is a member of that class, the check is made with advantage. For example, if the spellcaster casts a spell as a cleric, another cleric has advantage on the check to identify the spell. Some spells aren't associated with any class when they're cast, such as when a monster uses its Innate Spellcasting trait.",
-                        "This Intelligence ({@skill Arcana}) check represents the fact that identifying a spell requires a quick mind and familiarity with the theory and practice of casting. This is true even for a character whose spellcasting ability is Wisdom or Charisma. Being able to cast spells doesn't by itself make you adept at deducing exactly what others are doing when they cast their spells."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Invalid Spell Targets",
-                    "entries": [
-                        "A spell specifies what a caster can target with it: any type of creature, a creature of a certain type (humanoid or beast, for instance), an object, an area, the caster, or something else. But what happens if a spell targets something that isn't a valid target? For example, someone might cast {@spell Charm Person|Ishiir} on a creature believed to be a humanoid, not knowing that the target is in fact a vampire. If this issue comes up, handle it using the following rule.",
-                        "If you {@action Magic|Ishiir|cast a spell} on someone or something that can't be affected by the spell, nothing happens to that target, but if you used a spell slot to cast the spell, the slot is still expended. If the spell normally has no effect on a target that succeeds on a saving throw, the invalid target appears to have succeeded on its saving throw, even though it didn't attempt one (giving no hint that the creature is in fact an invalid target). Otherwise, you perceive that the spell did nothing to the target."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Areas of Effect on a Grid",
-                    "entries": [
-                        "The Dungeon Master's Guide includes the following short rule for using areas of effect on a grid.",
-                        "Choose an intersection of squares as the point of origin of an area of effect, then follow the rules for that kind of area as normal (see the \"{@book Areas of Effect|PHB|10|Areas of Effect}\" section in chapter 10 of the {@book Player's Handbook|PHB}). If an area of effect is circular and covers at least half a square, it affects that square.",
-                        "That rule works, but it can require a fair amount of on-the-spot adjudication. This section offers two alternatives for determining the exact location of an area: the template method and the token method. Both of these methods assume you're using a grid and miniatures of some sort. Because these methods can yield different results for the number of squares in a given area, it's not recommended that they be combined at the table\u2014choose whichever method you and your players find easier or more intuitive.",
-                        {
-                            "type": "entries",
-                            "name": "Template Method",
-                            "entries": [
-                                "The template method uses two-dimensional shapes that represent different areas of effect. The aim of the method is to accurately portray the length and width of each area on the grid and to leave little doubt about which creatures are affected by it. You'll need to make these templates or find premade ones.",
-                                {
-                                    "type": "entries",
-                                    "name": "Making a Template",
-                                    "entries": [
-                                        "Making a template is simple. Get a piece of paper or card stock, and cut it in the shape of the area of effect you're using. Every 5 feet of the area equals 1 inch of the template's size. For example, the 20-foot-radius sphere of the {@spell Fireball|Ishiir} spell, which has a 40-foot diameter, would translate into a circular template with an 8-inch diameter."
-                                    ]
-                                },
-                                {
-                                    "type": "entries",
-                                    "name": "Using a Template",
-                                    "entries": [
-                                        "To use an area-of-effect template, apply it to the grid. If the terrain is flat, you can lay it on the surface; otherwise, hold the template above the surface and take note of which squares it covers or partially covers. If any part of a square is under the template, that square is included in the area of effect. If a creature's miniature is in an affected square, that creature is in the area. Being adjacent to the edge of the template isn't enough for a square to be included in the area of effect; the square must be entirely or partly covered by the template.",
-                                        "You can also use this method without a grid. If you do so, a creature is included in an area of effect if any part of the miniature's base is overlapped by the template.",
-                                        "When you place a template, follow all the rules in the {@book Player's Handbook|PHB} for placing the associated area of effect. If an area of effect, such as a cone or a line, originates from a spellcaster, the template should extend out from the caster and be positioned however the caster likes within the bounds of the rules.",
-                                        "Diagrams 2.1 and 2.2 show the template method in action.",
-                                        {
-                                            "type": "image",
-                                            "href": {
-                                                "type": "internal",
-                                                "path": "book/XGE/001.webp"
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Token Method",
-                            "entries": [
-                                "The token method is meant to make areas of effect tactile and fun. To use this method, grab some dice or other tokens, which you're going to use to represent your areas of effect.",
-                                "Rather than faithfully representing the shapes of the different areas of effect, this method gives you a way to create square-edged versions of them on a grid easily, as described in the following subsections.",
-                                {
-                                    "type": "entries",
-                                    "name": "Using Tokens",
-                                    "entries": [
-                                        "Every 5-foot square of an area of effect becomes a die or other token that you place on the grid. Each token goes inside a square, not at an intersection of lines. If an area's token is in a square, that square is included in the area of effect. It's that simple.",
-                                        "Diagrams 2.3 through 2.6 show this method in action, using dice as the tokens.",
-                                        {
-                                            "type": "image",
-                                            "href": {
-                                                "type": "internal",
-                                                "path": "book/XGE/002.webp"
-                                            }
-                                        },
-                                        {
-                                            "type": "image",
-                                            "href": {
-                                                "type": "internal",
-                                                "path": "book/XGE/003.webp"
-                                            }
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "entries",
-                                    "name": "Circles",
-                                    "entries": [
-                                        "This method depicts everything using squares, and a circular area of effect becomes square in it, whether the area is a sphere, cylinder, or radius. For instance, the 10-foot radius of flame strike, which has a diameter of 20 feet, is expressed as a square that is 20 feet on a side, as shown in diagram 2.3. Diagram 2.4 shows that area with {@quickref Cover||3||total cover} inside it."
-                                    ]
-                                },
-                                {
-                                    "type": "entries",
-                                    "name": "Cones",
-                                    "entries": [
-                                        "A cone is represented by rows of tokens on the grid, extending from the cone's point of origin. In the rows, the squares are adjoining side by side or corner to corner, as shown in diagram 2.5. To determine the number of rows a cone contains, divide its length by 5. For example, a 30-foot cone contains six rows.",
-                                        "Here's how to create the rows. Starting with a square adjacent to the cone's point of origin, place one token. The square can be orthogonally or diagonally adjacent to the point of origin. In every row beyond that one, place as many tokens as you placed in the previous row, plus one more token. Place this row's tokens so that their squares each share a side with a square in the previous row. If the cone is orthogonally adjacent to the point of origin, you'll have one more token to place in the row; place it on one end or the other of the row you just created (you don't have to pick the side chosen in diagram 2.5). Keep placing tokens in this way until you've created all of the cone's rows."
-                                    ]
-                                },
-                                {
-                                    "type": "entries",
-                                    "name": "Lines",
-                                    "entries": [
-                                        "A line can extend from its source orthogonally or diagonally, as shown in diagram 2.6."
-                                    ]
-                                }
-                            ]
-                        }
+                    "type": "table",
+                    "caption": "Damage Types",
+                    "colLabels": [
+                        "Type",
+                        "Examples"
+                    ],
+                    "colStyles": [
+                        "col-3",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "Acid",
+                            "Corrosive liquids, digestive enzymes"
+                        ],
+                        [
+                            "Bludgeoning",
+                            "Blunt objects, constriction, falling"
+                        ],
+                        [
+                            "Cold",
+                            "Freezing water, icy blasts"
+                        ],
+                        [
+                            "Fire",
+                            "Flames, unbearable heat"
+                        ],
+                        [
+                            "Force",
+                            "Pure magical energy"
+                        ],
+                        [
+                            "Lightning",
+                            "Electricity"
+                        ],
+                        [
+                            "Necrotic",
+                            "Life-draining energy"
+                        ],
+                        [
+                            "Piercing",
+                            "Fangs, puncturing objects"
+                        ],
+                        [
+                            "Poison",
+                            "Toxic gas, venom"
+                        ],
+                        [
+                            "Psychic",
+                            "Mind-rending energy"
+                        ],
+                        [
+                            "Radiant",
+                            "Holy energy, searing radiation"
+                        ],
+                        [
+                            "Slashing",
+                            "Claws, cutting objects"
+                        ],
+                        [
+                            "Thunder",
+                            "Concussive sound"
+                        ]
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Disadvantage",
+            "source": "Ishiir",
+            "page": 1,
+            "freeRules2024": true,
+            "ruleType": "C",
+            "entries": [
+                "If you have Disadvantage on a {@variantrule D20 Test|Ishiir}, roll two d20s and use the lower roll. A roll can't be affected by more than one Disadvantage, and {@variantrule Advantage|Ishiir} and Disadvantage on the same roll cancel each other."
+            ]
+        },
+        {
+            "name": "Feats",
+            "source": "Ishiir",
+            "ruleType": "V",
+            "page": 1,
+            "entries": [
+                "In addition to the Ability Score Increases/Feats granted as per each class section, each character gains an additional feat at first and tenth CHARACTER level.",
+                "The feat picked at first level is the character's Origin Feat and will gain additional and/or stronger features based on the character's deeds as he continues growing in power at 5th, 11th and 17th CHARACTER level. The DM decides the exact nature of these changes.",
+                "A grapple attempt counts as melee attack for the purpose of interacting with the Mobile feat."
+            ]
+        },
+        {
+            "name": "Fly Speed",
+            "source": "Ishiir",
+            "page": 1,
+            "freeRules2024": true,
+            "ruleType": "C",
+            "entries": [
+                "A Fly Speed can be used to travel through the air. While you have a Fly Speed, you can stay aloft until you land, fall, or die."
             ]
         },
         {
@@ -1750,6 +1450,100 @@
             ]
         },
         {
+            "name": "Heroic Inspiration",
+            "source": "Ishiir",
+            "page": 1,
+            "ruleType": "C",
+            "entries": [
+                "If you (a player character) have Heroic Inspiration, you can expend it to reroll any die immediately after rolling it, and you must use the new roll."
+            ]
+        },
+        {
+            "name": "Immunity",
+            "source": "Ishiir",
+            "page": 1,
+            "freeRules2024": true,
+            "ruleType": "C",
+            "entries": [
+                "If you have Immunity to a {@variantrule Damage Types|Ishiir|damage type} or a {@variantrule Condition|Ishiir|condition}, it doesn't affect you in any way."
+            ]
+        },
+        {
+            "name": "Long Rest",
+            "source": "Ishiir",
+            "page": 1,
+            "freeRules2024": true,
+            "ruleType": "V",
+            "entries": [
+                "A Long Rest is a period of extended downtime\u2014at least 7 days\u2014available to any creature in a relatively safe environment.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Benefits of the Rest",
+                            "entries": [
+                                "To start a Long Rest, you must have at least 1 Hit Point. When you finish the rest, you gain the following benefits:"
+                            ]
+                        },
+                        {
+                            "type": "list",
+                            "style": "list-hang-notitle",
+                            "items": [
+                                {
+                                    "type": "item",
+                                    "name": "Regain All HP",
+                                    "entries": [
+                                        "You regain all lost Hit Points and half of your spent Hit Point Dice. If your Hit Point maximum was reduced, it returns to normal."
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Ability Scores Restored",
+                                    "entries": [
+                                        "If any of your ability scores were reduced, they return to normal."
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Exhaustion Reduced",
+                                    "entries": [
+                                        "If you have the {@condition Exhaustion|Ishiir} condition, its level decreases by 1."
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Special Feature",
+                                    "entries": [
+                                        "Some features are recharged by a Long Rest. If you have such a feature, it recharges in the way specified in its description."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Magic",
+            "source": "Ishiir",
+            "ruleType": "V",
+            "page": 1,
+            "entries": [
+                "Being raised from the dead removes ALL {@condition Exhaustion|Ishiir} levels rather than one if the spell creates a new body as part of its effect.",
+                "Creatures that are levitating, such as through the {@spell Levitate|Ishiir} spell, can use half their fly speed to move around if they have any."
+            ]
+        },
+        {
+            "name": "Mark of Fate",
+            "source": "Ishiir",
+            "page": 1,
+            "ruleType": "C",
+            "entries": [
+                "If you (a player character) has a Mark of Fate, you can expend it to add a +5 bonus to any {@variantrule D20 Test|Ishiir} immediately after rolling it."
+            ]
+        },
+        {
             "name": "Overland Travel and Survival",
             "source": "Ishiir",
             "ruleType": "V",
@@ -2286,107 +2080,114 @@
             ]
         },
         {
-            "name": "Carrying Capacity",
+            "name": "Proficiency",
             "source": "Ishiir",
-            "ruleType": "V",
             "page": 1,
-            "entries": [
-                "The carrying capacity of a creature is halved if the creature is small, and halved again if the creature is tiny."
-            ]
-        },
-        {
-            "name": "Class and Subclass Features",
-            "source": "Ishiir",
-            "ruleType": "V",
-            "page": 1,
-            "entries": [
-                "ALL classes and subclasses that gain a fighting style from a feature can choose from all styles available to the Fighter class, rather than only a limited selection.",
-                "Barbarians may add their rage damage bonus to ranged weapon attacks with thrown weapons.",
-                "Class features that require a {@variantrule Saving Throw|Ishiir} and do not normally use the spell save DC of the class and do not have a dedicated item to increase their DC, instead receive the enhancement bonus of an item used through the feature (where appropriate). Features that do not involve any items, such as certain racial abilities or other class features, instead receive a bonus to their DC equal to half proficiency, rounded down."
-            ]
-        },
-        {
-            "name": "Combat",
-            "source": "Ishiir",
-            "ruleType": "V",
-            "page": 1,
-            "entries": [
-                "Features that refer to a weapon damage die, reference the entire base damage of the weapon. E.g. for the Barbarian's Brutal Critical feature, you can roll an additional {@dice 2d6} on a critical hit with a greatsword, rather than only {@dice 1d6}.",
-                "Death {@variantrule Saving Throw|Ishiir|Saving Throws} do not reset once a creature heals, they instead recharge on a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}.",
-                "Dodging also gives disadvantage on attempts to grapple against the dodging creature."
-            ]
-        },
-        {
-            "name": "Feats",
-            "source": "Ishiir",
-            "ruleType": "V",
-            "page": 1,
-            "entries": [
-                "In addition to the Ability Score Increases/Feats granted as per each class section, each character gains an additional feat at first and tenth CHARACTER level.",
-                "The feat picked at first level is the character's Origin Feat and will gain additional and/or stronger features based on the character's deeds as he continues growing in power at 5th, 11th and 17th CHARACTER level. The DM decides the exact nature of these changes.",
-                "A grapple attempt counts as melee attack for the purpose of interacting with the Mobile feat."
-            ]
-        },
-        {
-            "name": "Magic",
-            "source": "Ishiir",
-            "ruleType": "V",
-            "page": 1,
-            "entries": [
-                "Being raised from the dead removes ALL {@condition Exhaustion|Ishiir} levels rather than one if the spell creates a new body as part of its effect.",
-                "Creatures that are levitating, such as through the {@spell Levitate|Ishiir} spell, can use half their fly speed to move around if they have any."
-            ]
-        },
-        {
-            "name": "Armor Mastery",
-            "source": "Ishiir",
-            "ruleType": "V",
-            "page": 1,
-            "entries": [
-                "If you possess the Martial Mastery class feature, you can apply a mastery to any {@filter armor|items|source=ishiir|type=|category=|homebrew mastery=!none;light;medium;heavy} you have proficiency in once per rest. You can change your choice when you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}.",
-                {
-                    "type": "list",
-                    "name": "List of Armor Masteries",
-                    "items": [
-                        "{@optfeature Light|Ishiir}",
-                        "{@optfeature Medium|Ishiir}",
-                        "{@optfeature Heavy|Ishiir}",
-                        "{@optfeature Unarmored Defense|Ishiir}"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Weapon Mastery",
-            "source": "Ishiir",
-            "ruleType": "V",
-            "page": 1,
-            "entries": [
-                "When you make a weapon attack, you can choose a mastery available to your {@filter weapon|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} if you possess the Martial Mastery class feature. Only one mastery may be applied to any given attack.",
-                "<b>Mastery save DC</b> = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice)",
-                {
-                    "type": "list",
-                    "name": "List of Weapon Masteries",
-                    "items": [
-                        "{@optfeature Cleave|Ishiir}",
-                        "{@optfeature Flurry|Ishiir}",
-                        "{@optfeature Gash|Ishiir}",
-                        "{@optfeature Lunge|Ishiir}",
-                        "{@optfeature Pierce|Ishiir}",
-                        "{@optfeature Push|Ishiir}",
-                        "{@optfeature Sap|Ishiir}",
-                        "{@optfeature Slow|Ishiir}"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bloodied",
-            "source": "Ishiir",
+            "freeRules2024": true,
             "ruleType": "C",
-            "page": 1,
             "entries": [
-                "A creature is Bloodied while it has half its Hit Points or fewer remaining."
+                "If you have proficiency with something, you can add your Proficiency Bonus to any {@variantrule D20 Test|Ishiir} you make using that thing. A creature might have proficiency in a skill or {@variantrule Saving Throw|Ishiir} or with a weapon or tool."
+            ]
+        },
+        {
+            "name": "Reaction",
+            "source": "Ishiir",
+            "page": 1,
+            "freeRules2024": true,
+            "ruleType": "C",
+            "entries": [
+                "A Reaction is a special action taken in response to a trigger defined in the Reaction's description. You can take a Reaction on another creature's turn, and if you take it on your turn, you can do so even if you also take an action, a {@variantrule Bonus Action|Ishiir}, or both. Once you take a Reaction, you can't take another one until the start of your next turn. The {@action Opportunity Attack|Ishiir} is a Reaction available to all creatures."
+            ]
+        },
+        {
+            "name": "Resistance",
+            "source": "Ishiir",
+            "page": 1,
+            "freeRules2024": true,
+            "ruleType": "C",
+            "entries": [
+                "If you have Resistance to a {@variantrule Damage Types|Ishiir|damage type}, damage of that type is halved against you (round down). Resistance is applied only once to an instance of damage."
+            ]
+        },
+        {
+            "name": "Saving Throw",
+            "source": "Ishiir",
+            "page": 1,
+            "freeRules2024": true,
+            "ruleType": "C",
+            "entries": [
+                "A Saving Throw\u2014also called a save\u2014represents an attempt to avoid or resist a threat. You normally make a Saving Throw only when a rule requires you to do so, but you can decide to fail the save without rolling. The result of a save is detailed in the effect that allowed it. If a target is forced to make a save and lacks the ability score used by it, the target automatically fails."
+            ]
+        },
+        {
+            "name": "Short Rest",
+            "source": "Ishiir",
+            "page": 1,
+            "freeRules2024": true,
+            "ruleType": "V",
+            "entries": [
+                "A Short Rest is a period of extended downtime\u2014at least 8 hours\u2014available to any creature. During a Short Rest, you sleep for at least 6 hours and perform no more than 2 hours of light activity, such as reading, talking, eating, or standing watch. During sleep, you have the {@condition Unconscious|Ishiir} condition.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Benefits of the Rest",
+                            "entries": [
+                                "To start a Short Rest, you must have at least 1 Hit Point. When you finish the rest, you gain the following benefits:"
+                            ]
+                        },
+                        {
+                            "type": "list",
+                            "style": "list-hang-notitle",
+                            "items": [
+                                {
+                                    "type": "item",
+                                    "name": "Spend Hit Point Dice",
+                                    "entries": [
+                                        "You can spend one or more of your Hit Point Dice to regain Hit Points. For each Hit Point Die you spend in this way, roll the die and add your Constitution modifier to it. You regain Hit Points equal to the total (minimum of 1 Hit Point). You can decide to spend an additional Hit Point Die after each roll."
+                                    ]
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Special Feature",
+                                    "entries": [
+                                        "Some features are recharged by a Short Rest. If you have such a feature, it recharges in the way specified in its description."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Speed",
+            "source": "Ishiir",
+            "page": 1,
+            "freeRules2024": true,
+            "ruleType": "C",
+            "entries": [
+                "A creature has a Speed, which is the distance in feet the creature can cover when it moves on its turn.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Special Speeds",
+                            "entries": [
+                                "Some creatures have special speeds, such as a {@variantrule Burrow Speed|Ishiir}, {@variantrule Climb Speed|Ishiir}, {@variantrule Fly Speed|Ishiir}, or {@variantrule Swim Speed|Ishiir}, each of which is defined in this glossary. If you have more than one speed, choose which one to use when you move; you can switch between the speeds during your move. Whenever you switch, subtract the distance already moved from the new speed. The result determines how much farther you can move. If the result is 0 or less, you can't use the new speed during the current move. For example, if you have a Speed of 30 and a {@variantrule Fly Speed|Ishiir} of 40, you could fly 10 feet, walk 10 feet, and leap into the air to fly 20 feet more."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Changes to Your Speeds",
+                            "entries": [
+                                "If an effect increases or decreases your Speed for a time, any special speed you have increases or decreases by an equal amount for the same duration. For example, if your Speed is reduced to 0 and you have a {@variantrule Climb Speed|Ishiir}, your {@variantrule Climb Speed|Ishiir} is also reduced to 0. Similarly, if your Speed is halved and you have a {@variantrule Fly Speed|Ishiir}, your {@variantrule Fly Speed|Ishiir} is also halved."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -2446,6 +2247,205 @@
                             "9",
                             "12"
                         ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Spellcasting",
+            "source": "Ishiir",
+            "page": 1,
+            "ruleType": "O",
+            "type": "section",
+            "entries": [
+                "This section expands on the spellcasting rules presented in the {@book Player's Handbook|PHB|10} and the {@book Dungeon Master's Guide|DMG}, providing clarifications and new options.",
+                {
+                    "type": "entries",
+                    "name": "Perceiving a Caster at Work",
+                    "entries": [
+                        "Many spells create obvious effects: explosions of fire, walls of ice, teleportation, and the like. Other spells, such as charm person, display no visible, audible, or otherwise perceptible sign of their effects, and could easily go unnoticed by someone unaffected by them. As noted in the {@book Player's Handbook|PHB}, you normally don't know that a spell has been cast unless the spell produces a noticeable effect.",
+                        "But what about the act of casting a spell? Is it possible for someone to perceive that a spell is being cast in their presence? To be perceptible, the casting of a spell must involve a verbal, somatic, or material component. The form of a material component doesn't matter for the purposes of perception, whether it's an object specified in the spell's description, a component pouch, or a spellcasting focus.",
+                        "If the need for a spell's components has been removed by a special ability, such as the sorcerer's Subtle Spell feature or the Innate Spellcasting trait possessed by many creatures, the casting of the spell is imperceptible. If an imperceptible casting produces a perceptible effect, it's normally impossible to determine who cast the spell in the absence of other evidence."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Identifying a Spell",
+                    "entries": [
+                        "Sometimes a character wants to identify a spell that someone else is casting or that was already cast. To do so, a character can use their reaction to identify a spell as it's being cast, or they can use an action on their turn to identify a spell by its effect after it is cast.",
+                        "If the character perceived the casting, the spell's effect, or both, the character can make an Intelligence ({@skill Arcana}) check with their reaction or action. The DC equals 15 + the spell's level. If the spell is cast as a class spell and the character is a member of that class, the check is made with advantage. For example, if the spellcaster casts a spell as a cleric, another cleric has advantage on the check to identify the spell. Some spells aren't associated with any class when they're cast, such as when a monster uses its Innate Spellcasting trait.",
+                        "This Intelligence ({@skill Arcana}) check represents the fact that identifying a spell requires a quick mind and familiarity with the theory and practice of casting. This is true even for a character whose spellcasting ability is Wisdom or Charisma. Being able to cast spells doesn't by itself make you adept at deducing exactly what others are doing when they cast their spells."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Invalid Spell Targets",
+                    "entries": [
+                        "A spell specifies what a caster can target with it: any type of creature, a creature of a certain type (humanoid or beast, for instance), an object, an area, the caster, or something else. But what happens if a spell targets something that isn't a valid target? For example, someone might cast {@spell Charm Person|Ishiir} on a creature believed to be a humanoid, not knowing that the target is in fact a vampire. If this issue comes up, handle it using the following rule.",
+                        "If you {@action Magic|Ishiir|cast a spell} on someone or something that can't be affected by the spell, nothing happens to that target, but if you used a spell slot to cast the spell, the slot is still expended. If the spell normally has no effect on a target that succeeds on a saving throw, the invalid target appears to have succeeded on its saving throw, even though it didn't attempt one (giving no hint that the creature is in fact an invalid target). Otherwise, you perceive that the spell did nothing to the target."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Areas of Effect on a Grid",
+                    "entries": [
+                        "The Dungeon Master's Guide includes the following short rule for using areas of effect on a grid.",
+                        "Choose an intersection of squares as the point of origin of an area of effect, then follow the rules for that kind of area as normal (see the \"{@book Areas of Effect|PHB|10|Areas of Effect}\" section in chapter 10 of the {@book Player's Handbook|PHB}). If an area of effect is circular and covers at least half a square, it affects that square.",
+                        "That rule works, but it can require a fair amount of on-the-spot adjudication. This section offers two alternatives for determining the exact location of an area: the template method and the token method. Both of these methods assume you're using a grid and miniatures of some sort. Because these methods can yield different results for the number of squares in a given area, it's not recommended that they be combined at the table\u2014choose whichever method you and your players find easier or more intuitive.",
+                        {
+                            "type": "entries",
+                            "name": "Template Method",
+                            "entries": [
+                                "The template method uses two-dimensional shapes that represent different areas of effect. The aim of the method is to accurately portray the length and width of each area on the grid and to leave little doubt about which creatures are affected by it. You'll need to make these templates or find premade ones.",
+                                {
+                                    "type": "entries",
+                                    "name": "Making a Template",
+                                    "entries": [
+                                        "Making a template is simple. Get a piece of paper or card stock, and cut it in the shape of the area of effect you're using. Every 5 feet of the area equals 1 inch of the template's size. For example, the 20-foot-radius sphere of the {@spell Fireball|Ishiir} spell, which has a 40-foot diameter, would translate into a circular template with an 8-inch diameter."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Using a Template",
+                                    "entries": [
+                                        "To use an area-of-effect template, apply it to the grid. If the terrain is flat, you can lay it on the surface; otherwise, hold the template above the surface and take note of which squares it covers or partially covers. If any part of a square is under the template, that square is included in the area of effect. If a creature's miniature is in an affected square, that creature is in the area. Being adjacent to the edge of the template isn't enough for a square to be included in the area of effect; the square must be entirely or partly covered by the template.",
+                                        "You can also use this method without a grid. If you do so, a creature is included in an area of effect if any part of the miniature's base is overlapped by the template.",
+                                        "When you place a template, follow all the rules in the {@book Player's Handbook|PHB} for placing the associated area of effect. If an area of effect, such as a cone or a line, originates from a spellcaster, the template should extend out from the caster and be positioned however the caster likes within the bounds of the rules.",
+                                        "Diagrams 2.1 and 2.2 show the template method in action.",
+                                        {
+                                            "type": "image",
+                                            "href": {
+                                                "type": "internal",
+                                                "path": "book/XGE/001.webp"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Token Method",
+                            "entries": [
+                                "The token method is meant to make areas of effect tactile and fun. To use this method, grab some dice or other tokens, which you're going to use to represent your areas of effect.",
+                                "Rather than faithfully representing the shapes of the different areas of effect, this method gives you a way to create square-edged versions of them on a grid easily, as described in the following subsections.",
+                                {
+                                    "type": "entries",
+                                    "name": "Using Tokens",
+                                    "entries": [
+                                        "Every 5-foot square of an area of effect becomes a die or other token that you place on the grid. Each token goes inside a square, not at an intersection of lines. If an area's token is in a square, that square is included in the area of effect. It's that simple.",
+                                        "Diagrams 2.3 through 2.6 show this method in action, using dice as the tokens.",
+                                        {
+                                            "type": "image",
+                                            "href": {
+                                                "type": "internal",
+                                                "path": "book/XGE/002.webp"
+                                            }
+                                        },
+                                        {
+                                            "type": "image",
+                                            "href": {
+                                                "type": "internal",
+                                                "path": "book/XGE/003.webp"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Circles",
+                                    "entries": [
+                                        "This method depicts everything using squares, and a circular area of effect becomes square in it, whether the area is a sphere, cylinder, or radius. For instance, the 10-foot radius of flame strike, which has a diameter of 20 feet, is expressed as a square that is 20 feet on a side, as shown in diagram 2.3. Diagram 2.4 shows that area with {@quickref Cover||3||total cover} inside it."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Cones",
+                                    "entries": [
+                                        "A cone is represented by rows of tokens on the grid, extending from the cone's point of origin. In the rows, the squares are adjoining side by side or corner to corner, as shown in diagram 2.5. To determine the number of rows a cone contains, divide its length by 5. For example, a 30-foot cone contains six rows.",
+                                        "Here's how to create the rows. Starting with a square adjacent to the cone's point of origin, place one token. The square can be orthogonally or diagonally adjacent to the point of origin. In every row beyond that one, place as many tokens as you placed in the previous row, plus one more token. Place this row's tokens so that their squares each share a side with a square in the previous row. If the cone is orthogonally adjacent to the point of origin, you'll have one more token to place in the row; place it on one end or the other of the row you just created (you don't have to pick the side chosen in diagram 2.5). Keep placing tokens in this way until you've created all of the cone's rows."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Lines",
+                                    "entries": [
+                                        "A line can extend from its source orthogonally or diagonally, as shown in diagram 2.6."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Swim Speed",
+            "source": "Ishiir",
+            "page": 1,
+            "freeRules2024": true,
+            "ruleType": "C",
+            "entries": [
+                "A Swim Speed can be used to swim without expending the extra movement normally associated with swimming."
+            ]
+        },
+        {
+            "name": "Unarmed Strike",
+            "source": "Ishiir",
+            "page": 1,
+            "freeRules2024": true,
+            "ruleType": "C",
+            "entries": [
+                "Instead of using a weapon to make a melee attack, you can use a punch, kick, head-butt, or similar forceful blow. In game terms, this is an {@variantrule Unarmed Strike|Ishiir}\u2014a melee attack that involves you using your body to damage, grapple, or shove a target within 5 feet of you.",
+                "Whenever you use your {@variantrule Unarmed Strike|Ishiir}, choose one of the following options for its effect.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Damage",
+                            "entries": [
+                                "You make an {@variantrule Attack Roll|Ishiir} against the target. Your bonus to the roll equals your Strength modifier plus your {@variantrule Proficiency|Ishiir|Proficiency Bonus}. On a hit, the target takes Bludgeoning damage equal to 1 plus your Strength modifier."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Grapple",
+                            "entries": [
+                                "The target must succeed on a Strength or Dexterity {@variantrule Saving Throw|Ishiir} (it chooses which), or it has the {@condition Grappled|Ishiir} condition. The DC for the {@variantrule Saving Throw|Ishiir} and any escape attempts equals 8 plus your Strength modifier and {@variantrule Proficiency|Ishiir|Proficiency Bonus}. This grapple is possible only if the target is no more than one size larger than you and if you have a hand free to grab it."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Shove",
+                            "entries": [
+                                "The target must succeed on a Strength or Dexterity {@variantrule Saving Throw|Ishiir} (it chooses which), or you either push it 5 feet away or cause it to have the {@condition Prone|Ishiir} condition. The DC for the {@variantrule Saving Throw|Ishiir} equals 8 plus your Strength modifier and {@variantrule Proficiency|Ishiir|Proficiency Bonus}. This shove is possible only if the target is no more than one size larger than you."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Weapon Mastery",
+            "source": "Ishiir",
+            "ruleType": "V",
+            "page": 1,
+            "entries": [
+                "When you make a weapon attack, you can choose a mastery available to your {@filter weapon|items|source=ishiir|type=|category=|homebrew mastery=!none;!light;!medium;!heavy} if you possess the Martial Mastery class feature. Only one mastery may be applied to any given attack.",
+                "<b>Mastery save DC</b> = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice)",
+                {
+                    "type": "list",
+                    "name": "List of Weapon Masteries",
+                    "items": [
+                        "{@optfeature Cleave|Ishiir}",
+                        "{@optfeature Flurry|Ishiir}",
+                        "{@optfeature Gash|Ishiir}",
+                        "{@optfeature Lunge|Ishiir}",
+                        "{@optfeature Pierce|Ishiir}",
+                        "{@optfeature Push|Ishiir}",
+                        "{@optfeature Sap|Ishiir}",
+                        "{@optfeature Slow|Ishiir}"
                     ]
                 }
             ]

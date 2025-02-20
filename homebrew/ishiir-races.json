@@ -18,119 +18,45 @@
     },
     "race": [
         {
-            "name": "Dwarf",
+            "name": "Awakened Forest Owl",
             "page": 1,
             "source": "Ishiir",
             "size": [
-                "M"
+                "T"
             ],
-            "speed": 25,
+            "speed": {
+                "walk": 10,
+                "fly": 50
+            },
             "ability": [
                 {
-                    "con": 2
+                    "dex": 2,
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1
+                    }
                 }
             ],
             "increaseAbilityMax": true,
             "age": {
-                "mature": 20,
-                "max": 140
+                "mature": 1,
+                "max": 30
             },
-            "darkvision": 60,
-            "traitTags": [
-                "Tool Proficiency"
-            ],
-            "languageProficiencies": [
-                {
-                    "common": true,
-                    "dwarvish": true
-                }
-            ],
-            "resist": [
-                "poison"
-            ],
-            "entries": [
-                {
-                    "name": "Age",
-                    "type": "entries",
-                    "entries": [
-                        "Dwarves mature a little slower than humans, reaching adulthood between 20 and 25 years, they never lose their innate hardiness until death approaches. As a result, some dwarfs can get up to 140 years old."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Size",
-                    "entries": [
-                        "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
-                    ]
-                },
-                {
-                    "name": "Darkvision",
-                    "entries": [
-                        "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Dedicated Crafter",
-                    "entries": [
-                        "You gain {@variantrule Proficiency|Ishiir} with one tool of your choice."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Impeccable Memory",
-                    "entries": [
-                        "You have {@variantrule Advantage|Ishiir} on all INT-{@variantrule Ability Check|Ishiir|checks} to recall information about something."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Dwarven Resilience",
-                    "entries": [
-                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against poison, and you have {@variantrule Resistance|Ishiir} against poison damage."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Languages",
-                    "entries": [
-                        "You can speak, read, and write Common and Dwarvish."
-                    ],
-                    "type": "entries"
-                }
-            ]
-        },
-        {
-            "name": "Elf",
-            "page": 1,
-            "source": "Ishiir",
-            "size": [
-                "M"
-            ],
-            "speed": 30,
-            "ability": [
-                {
-                    "dex": 2
-                }
-            ],
-            "increaseAbilityMax": true,
-            "age": {
-                "mature": 18,
-                "max": 150
-            },
-            "darkvision": 60,
-            "traitTags": [
-                "Improved Resting"
-            ],
+            "darkvision": 120,
             "skillProficiencies": [
                 {
-                    "perception": true
+                    "perception": true,
+                    "stealth": true
                 }
             ],
             "languageProficiencies": [
                 {
                     "common": true,
-                    "elvish": true
+                    "any": 1
                 }
             ],
             "entries": [
@@ -138,48 +64,69 @@
                     "name": "Age",
                     "type": "entries",
                     "entries": [
-                        "Elves mature at about the same rate as humans, but never fall victim to the frailties of old age. As a result, some elves can get up to 150 years old. There are rumors of elves several centuries old, or even immortal. However, these have never been confirmed."
+                        "Forest Owls reach maturity at about 1 years old and can live to around 30."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Alignment",
+                    "entries": [
+                        "Neutral."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Size",
                     "entries": [
-                        "Elves are slightly taller than humans, some grow up to well over 6 feet. They are built more slender, however, and thus tend to be lighter in comparison. Your size is Medium."
+                        "Forest Owls can grow up to a little over 1 foot tall, with a wingspan around 3 feet. Your size is tiny."
                     ]
+                },
+                {
+                    "name": "Limited Flight",
+                    "entries": [
+                        "You have a {@variantrule Fly Speed|Ishiir} of 50 feet, but you must end your movement on a surface you can stand on."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Flyby",
+                    "entries": [
+                        "You don't provoke {@action Opportunity Attack|Ishiir|Opportunity Attacks} when you fly out of an enemy's reach."
+                    ],
+                    "type": "entries"
                 },
                 {
                     "name": "Darkvision",
                     "entries": [
-                        "Accustomed to twilit forests and night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                        "Accustomed to twilit forests and night sky, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
                     ],
                     "type": "entries"
                 },
                 {
                     "name": "Keen Senses",
                     "entries": [
-                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill."
+                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill."
                     ],
                     "type": "entries"
                 },
                 {
-                    "name": "Fey Ancestry",
+                    "name": "Silent Flight",
                     "entries": [
-                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Charmed|Ishiir}, and magic can't put you to sleep."
+                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill Stealth} skill."
                     ],
                     "type": "entries"
                 },
                 {
-                    "name": "Trance",
+                    "name": "Speak with Beasts",
                     "entries": [
-                        "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. While meditating, you can dream after a fashion; such dreams are actually mental excercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+                        "You can communicate with other beasts as if you were sharing the same language."
                     ],
                     "type": "entries"
                 },
                 {
                     "name": "Languages",
                     "entries": [
-                        "You can speak, read, and write Common and Elvish."
+                        "You can speak, read and, write Common and one additional language of your choice."
                     ],
                     "type": "entries"
                 }
@@ -390,6 +337,174 @@
             ]
         },
         {
+            "name": "Dwarf",
+            "page": 1,
+            "source": "Ishiir",
+            "size": [
+                "M"
+            ],
+            "speed": 25,
+            "ability": [
+                {
+                    "con": 2
+                }
+            ],
+            "increaseAbilityMax": true,
+            "age": {
+                "mature": 20,
+                "max": 140
+            },
+            "darkvision": 60,
+            "traitTags": [
+                "Tool Proficiency"
+            ],
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "dwarvish": true
+                }
+            ],
+            "resist": [
+                "poison"
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Dwarves mature a little slower than humans, reaching adulthood between 20 and 25 years, they never lose their innate hardiness until death approaches. As a result, some dwarfs can get up to 140 years old."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
+                    ]
+                },
+                {
+                    "name": "Darkvision",
+                    "entries": [
+                        "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Dedicated Crafter",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} with one tool of your choice."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Impeccable Memory",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on all INT-{@variantrule Ability Check|Ishiir|checks} to recall information about something."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Dwarven Resilience",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against poison, and you have {@variantrule Resistance|Ishiir} against poison damage."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Dwarvish."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Elf",
+            "page": 1,
+            "source": "Ishiir",
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "ability": [
+                {
+                    "dex": 2
+                }
+            ],
+            "increaseAbilityMax": true,
+            "age": {
+                "mature": 18,
+                "max": 150
+            },
+            "darkvision": 60,
+            "traitTags": [
+                "Improved Resting"
+            ],
+            "skillProficiencies": [
+                {
+                    "perception": true
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "elvish": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Elves mature at about the same rate as humans, but never fall victim to the frailties of old age. As a result, some elves can get up to 150 years old. There are rumors of elves several centuries old, or even immortal. However, these have never been confirmed."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Elves are slightly taller than humans, some grow up to well over 6 feet. They are built more slender, however, and thus tend to be lighter in comparison. Your size is Medium."
+                    ]
+                },
+                {
+                    "name": "Darkvision",
+                    "entries": [
+                        "Accustomed to twilit forests and night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Keen Senses",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Fey Ancestry",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Charmed|Ishiir}, and magic can't put you to sleep."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Trance",
+                    "entries": [
+                        "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. While meditating, you can dream after a fashion; such dreams are actually mental excercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Elvish."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
             "name": "Gnome",
             "page": 1,
             "source": "Ishiir",
@@ -450,236 +565,6 @@
                     "name": "Languages",
                     "entries": [
                         "You can speak, read, and write Common and Gnomish."
-                    ],
-                    "type": "entries"
-                }
-            ]
-        },
-        {
-            "name": "Harfolk",
-            "page": 1,
-            "source": "Ishiir",
-            "size": [
-                "L"
-            ],
-            "speed": 30,
-            "ability": [
-                {
-                    "str": 2,
-                    "choose": {
-                        "from": [
-                            "con",
-                            "wis",
-                            "cha"
-                        ],
-                        "count": 1
-                    }
-                }
-            ],
-            "increaseAbilityMax": true,
-            "heightAndWeight": {
-                "baseHeight": 96,
-                "heightMod": "2d12",
-                "baseWeight": 400,
-                "weightMod": "2d8"
-            },
-            "age": {
-                "mature": 25,
-                "max": 80
-            },
-            "skillProficiencies": [
-                {
-                    "athletics": true
-                }
-            ],
-            "languageProficiencies": [
-                {
-                    "common": true,
-                    "giant": true
-                }
-            ],
-            "resist": [
-                "cold"
-            ],
-            "entries": [
-                {
-                    "name": "Age",
-                    "type": "entries",
-                    "entries": [
-                        "Harfolk age slightly slower than humans, and reach adulthood sometime in their twenties. They grow slightly older too, averaging a lifespan of about 80 years."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Alignment",
-                    "entries": [
-                        "Chaotic Good. Harfolk strive above all to live life to its fullest and accomplish heroic deeds worthy of song and legend. Some Harfolk clans can support a more Lawful bend, based on a particular of code of honor or valued traditions."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Size",
-                    "entries": [
-                        "Harfolk are by far the largest race on the face of Ishiir. An average Harfolk reaches heights of over 8 feet and weighs over 300 pounds. Your size is Large. This does not increase the size of your weapon damage die."
-                    ]
-                },
-                {
-                    "name": "Natural Athlete",
-                    "entries": [
-                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Athletics} skill."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Harfolk Hardiness",
-                    "entries": [
-                        "When you take damage, you can choose to use your {@variantrule Reaction|Ishiir} to shrug off the blow. Roll a {@dice d12} + your CON modifier. And substract the result from the damage taken. You can't use this feature again until you have finished a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Mountain Born",
-                    "entries": [
-                        "Your are acclimatized to cold regions as per the DMG. You also have {@variantrule Resistance|Ishiir} to cold damage."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Languages",
-                    "entries": [
-                        "You can speak, read, and write Common and Giant."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Favored Classes",
-                    "entries": [
-                        "Barbarian, Druid, Bard"
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Harfolk Names",
-                    "entries": [
-                        "Male Names: Authulf, Bjalfi, Glum, Hafgrim, Ingifast, Njal, Orlyg, Skeggi, Thorgaut, Vebjorn",
-                        "Female Names: Alfdis, Drifa, Gyda, Halla, Ingigerd, Jorunn, Osk, Skuld, Thorgunna, Vigdis",
-                        "Last Name: Name of parent with greater achievements + s + son (male)/dottir (female)",
-                        "<a href=\"https://www.fantasynamegenerators.com/viking_names.php\">Name Generator</a>"
-                    ],
-                    "type": "entries"
-                }
-            ]
-        },
-        {
-            "name": "Awakened Forest Owl",
-            "page": 1,
-            "source": "Ishiir",
-            "size": [
-                "T"
-            ],
-            "speed": {
-                "walk": 10,
-                "fly": 50
-            },
-            "ability": [
-                {
-                    "dex": 2,
-                    "choose": {
-                        "from": [
-                            "int",
-                            "wis",
-                            "cha"
-                        ],
-                        "count": 1
-                    }
-                }
-            ],
-            "increaseAbilityMax": true,
-            "age": {
-                "mature": 1,
-                "max": 30
-            },
-            "darkvision": 120,
-            "skillProficiencies": [
-                {
-                    "perception": true,
-                    "stealth": true
-                }
-            ],
-            "languageProficiencies": [
-                {
-                    "common": true,
-                    "any": 1
-                }
-            ],
-            "entries": [
-                {
-                    "name": "Age",
-                    "type": "entries",
-                    "entries": [
-                        "Forest Owls reach maturity at about 1 years old and can live to around 30."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Alignment",
-                    "entries": [
-                        "Neutral."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Size",
-                    "entries": [
-                        "Forest Owls can grow up to a little over 1 foot tall, with a wingspan around 3 feet. Your size is tiny."
-                    ]
-                },
-                {
-                    "name": "Limited Flight",
-                    "entries": [
-                        "You have a {@variantrule Fly Speed|Ishiir} of 50 feet, but you must end your movement on a surface you can stand on."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Flyby",
-                    "entries": [
-                        "You don't provoke {@action Opportunity Attack|Ishiir|Opportunity Attacks} when you fly out of an enemy's reach."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Darkvision",
-                    "entries": [
-                        "Accustomed to twilit forests and night sky, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Keen Senses",
-                    "entries": [
-                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill Perception} skill."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Silent Flight",
-                    "entries": [
-                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill Stealth} skill."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Speak with Beasts",
-                    "entries": [
-                        "You can communicate with other beasts as if you were sharing the same language."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Languages",
-                    "entries": [
-                        "You can speak, read and, write Common and one additional language of your choice."
                     ],
                     "type": "entries"
                 }
@@ -807,143 +692,6 @@
             ]
         },
         {
-            "name": "Orc",
-            "page": 1,
-            "source": "Ishiir",
-            "size": [
-                "M"
-            ],
-            "speed": 35,
-            "ability": [
-                {
-                    "str": 2,
-                    "choose": {
-                        "from": [
-                            "dex",
-                            "con",
-                            "wis"
-                        ],
-                        "count": 1
-                    }
-                }
-            ],
-            "increaseAbilityMax": true,
-            "heightAndWeight": {
-                "baseHeight": 62,
-                "heightMod": "2d12",
-                "baseWeight": 140,
-                "weightMod": "2d6"
-            },
-            "age": {
-                "mature": 12,
-                "max": 60
-            },
-            "traitTags": [
-                "Uncommon Race"
-            ],
-            "skillProficiencies": [
-                {
-                    "intimidation": true
-                }
-            ],
-            "languageProficiencies": [
-                {
-                    "common": true,
-                    "orc": true
-                }
-            ],
-            "entries": [
-                {
-                    "name": "Age",
-                    "type": "entries",
-                    "entries": [
-                        "Orcs mature slightly faster than Humans, reaching adulthood in their early teens. They also age noticeably faster. An orc rarely lives past his 60th year."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Typical Alignment",
-                    "entries": [
-                        "Chaotic Neutral. Orcs are belligerent and quick to anger, always ready and willing to solve a conflict with violence.",
-                        "They do, however, adhere to a code of honor, such as not using backhanded tactics or killing children. Orcs value and respect displays of great strength and glory, but find little value in laws."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Size",
-                    "entries": [
-                        "Orcs are taller and much bulkier than humans. They easily surpass 6 feet in height and average over 200 pounds. Your size is Medium."
-                    ]
-                },
-                {
-                    "name": "Menacing",
-                    "entries": [
-                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill Intimidation} skill."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Fearless",
-                    "entries": [
-                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Frightened|Ishiir}."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Tireless",
-                    "entries": [
-                        "If you gain a level of {@condition Exhaustion|Ishiir}, you can use a {@variantrule Bonus Action|Ishiir} to remove it. You can't use this ability again until you finish a {@variantrule Long Rest|Ishiir}."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Furious Charge",
-                    "entries": [
-                        "Once per turn, as part of a melee weapon attack, you can move up to your {@variantrule Speed|Ishiir} in a straight line towards a target of your choice."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Relentless Endurance",
-                    "entries": [
-                        "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a {@variantrule Long Rest|Ishiir}."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Savage Attacks",
-                    "entries": [
-                        "When you score a critical hit with a melee weapon attack, you can reroll the weapon's damage dice (and only the weapon's own damage dice) again and add the result to the total."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Languages",
-                    "entries": [
-                        "You can speak, read, and write Common and Orcish."
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Favored Classes",
-                    "entries": [
-                        "Barbarian, Ranger, Druid"
-                    ],
-                    "type": "entries"
-                },
-                {
-                    "name": "Orc Names",
-                    "entries": [
-                        "Male Names: Angul, Brall, Ghamzull, Lonzag, Mavar, Ondok, Rhohzak, Uzzok, Xurl, Zutrall",
-                        "Female Names: Auvi, Bhedkua, Himdi, Kyel, Memvual, Nef, Oddil, Rhilve, Seemo, Vaatu",
-                        "Clan Names: Blackclaw, Boneshatter, Deathwind, Eyegouger, Frosttusk, Howling Axe, Marrowdrinker, Mystbraver, Raging Aurochs, Stormbringer",
-                        "<a href=\"https://www.fantasynamegenerators.com/orc_names.php\">Name Generator</a>"
-                    ],
-                    "type": "entries"
-                }
-            ]
-        },
-        {
             "name": "Halfling",
             "page": 1,
             "source": "Ishiir",
@@ -1000,6 +748,121 @@
                     "name": "Languages",
                     "entries": [
                         "You can speak, read, and write Common and Halfling."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Harfolk",
+            "page": 1,
+            "source": "Ishiir",
+            "size": [
+                "L"
+            ],
+            "speed": 30,
+            "ability": [
+                {
+                    "str": 2,
+                    "choose": {
+                        "from": [
+                            "con",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "increaseAbilityMax": true,
+            "heightAndWeight": {
+                "baseHeight": 96,
+                "heightMod": "2d12",
+                "baseWeight": 400,
+                "weightMod": "2d8"
+            },
+            "age": {
+                "mature": 25,
+                "max": 80
+            },
+            "skillProficiencies": [
+                {
+                    "athletics": true
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "giant": true
+                }
+            ],
+            "resist": [
+                "cold"
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Harfolk age slightly slower than humans, and reach adulthood sometime in their twenties. They grow slightly older too, averaging a lifespan of about 80 years."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Alignment",
+                    "entries": [
+                        "Chaotic Good. Harfolk strive above all to live life to its fullest and accomplish heroic deeds worthy of song and legend. Some Harfolk clans can support a more Lawful bend, based on a particular of code of honor or valued traditions."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Harfolk are by far the largest race on the face of Ishiir. An average Harfolk reaches heights of over 8 feet and weighs over 300 pounds. Your size is Large. This does not increase the size of your weapon damage die."
+                    ]
+                },
+                {
+                    "name": "Natural Athlete",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} in the {@skill Athletics} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Harfolk Hardiness",
+                    "entries": [
+                        "When you take damage, you can choose to use your {@variantrule Reaction|Ishiir} to shrug off the blow. Roll a {@dice d12} + your CON modifier. And substract the result from the damage taken. You can't use this feature again until you have finished a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Mountain Born",
+                    "entries": [
+                        "Your are acclimatized to cold regions as per the DMG. You also have {@variantrule Resistance|Ishiir} to cold damage."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Giant."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Barbarian, Druid, Bard"
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Harfolk Names",
+                    "entries": [
+                        "Male Names: Authulf, Bjalfi, Glum, Hafgrim, Ingifast, Njal, Orlyg, Skeggi, Thorgaut, Vebjorn",
+                        "Female Names: Alfdis, Drifa, Gyda, Halla, Ingigerd, Jorunn, Osk, Skuld, Thorgunna, Vigdis",
+                        "Last Name: Name of parent with greater achievements + s + son (male)/dottir (female)",
+                        "<a href=\"https://www.fantasynamegenerators.com/viking_names.php\">Name Generator</a>"
                     ],
                     "type": "entries"
                 }
@@ -1201,6 +1064,143 @@
                         "Last Names: Abellan, Cabal, Espinar, Garrido, Illescas, Lacasa, Quesada, Tassis, Venegas, Xaudiera ",
                         "<a href=\"https://www.fantasynamegenerators.com/dnd-tiefling-names.php\">First Name Generator</a>",
                         "<a href=\"https://www.fantasynamegenerators.com/catalan-names.php\">Last Name Generator</a>"
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Orc",
+            "page": 1,
+            "source": "Ishiir",
+            "size": [
+                "M"
+            ],
+            "speed": 35,
+            "ability": [
+                {
+                    "str": 2,
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "con",
+                            "wis"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "increaseAbilityMax": true,
+            "heightAndWeight": {
+                "baseHeight": 62,
+                "heightMod": "2d12",
+                "baseWeight": 140,
+                "weightMod": "2d6"
+            },
+            "age": {
+                "mature": 12,
+                "max": 60
+            },
+            "traitTags": [
+                "Uncommon Race"
+            ],
+            "skillProficiencies": [
+                {
+                    "intimidation": true
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "orc": true
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Orcs mature slightly faster than Humans, reaching adulthood in their early teens. They also age noticeably faster. An orc rarely lives past his 60th year."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Typical Alignment",
+                    "entries": [
+                        "Chaotic Neutral. Orcs are belligerent and quick to anger, always ready and willing to solve a conflict with violence.",
+                        "They do, however, adhere to a code of honor, such as not using backhanded tactics or killing children. Orcs value and respect displays of great strength and glory, but find little value in laws."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Orcs are taller and much bulkier than humans. They easily surpass 6 feet in height and average over 200 pounds. Your size is Medium."
+                    ]
+                },
+                {
+                    "name": "Menacing",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill Intimidation} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Fearless",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being {@condition Frightened|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Tireless",
+                    "entries": [
+                        "If you gain a level of {@condition Exhaustion|Ishiir}, you can use a {@variantrule Bonus Action|Ishiir} to remove it. You can't use this ability again until you finish a {@variantrule Long Rest|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Furious Charge",
+                    "entries": [
+                        "Once per turn, as part of a melee weapon attack, you can move up to your {@variantrule Speed|Ishiir} in a straight line towards a target of your choice."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Relentless Endurance",
+                    "entries": [
+                        "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a {@variantrule Long Rest|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Savage Attacks",
+                    "entries": [
+                        "When you score a critical hit with a melee weapon attack, you can reroll the weapon's damage dice (and only the weapon's own damage dice) again and add the result to the total."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Orcish."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Favored Classes",
+                    "entries": [
+                        "Barbarian, Ranger, Druid"
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Orc Names",
+                    "entries": [
+                        "Male Names: Angul, Brall, Ghamzull, Lonzag, Mavar, Ondok, Rhohzak, Uzzok, Xurl, Zutrall",
+                        "Female Names: Auvi, Bhedkua, Himdi, Kyel, Memvual, Nef, Oddil, Rhilve, Seemo, Vaatu",
+                        "Clan Names: Blackclaw, Boneshatter, Deathwind, Eyegouger, Frosttusk, Howling Axe, Marrowdrinker, Mystbraver, Raging Aurochs, Stormbringer",
+                        "<a href=\"https://www.fantasynamegenerators.com/orc_names.php\">Name Generator</a>"
                     ],
                     "type": "entries"
                 }

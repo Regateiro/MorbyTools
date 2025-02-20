@@ -29,121 +29,6 @@
     },
     "monster": [
         {
-            "name": "Shadow Spirit",
-            "source": "Ishiir",
-            "page": 1,
-            "summonedBySpell": "Summon Shadowspawn|Ishiir",
-            "summonedBySpellLevel": 3,
-            "size": [
-                "M"
-            ],
-            "type": "undead",
-            "alignment": [
-                "U"
-            ],
-            "ac": [
-                {
-                    "special": "11 + the level of the spell (natural armor)"
-                }
-            ],
-            "hp": {
-                "special": "35 + 15 for each spell level above 3rd"
-            },
-            "speed": {
-                "walk": 40
-            },
-            "str": 13,
-            "dex": 16,
-            "con": 15,
-            "int": 4,
-            "wis": 10,
-            "cha": 16,
-            "senses": [
-                "darkvision 120 ft."
-            ],
-            "passive": 10,
-            "immune": [
-                "necrotic",
-                "poison"
-            ],
-            "conditionImmune": [
-                "charmed",
-                "exhaustion",
-                "frightened",
-                "incapacitated",
-                "paralyzed",
-                "petrified",
-                "poisoned",
-                "prone",
-                "restrained",
-                "unconscious"
-            ],
-            "languages": [
-                "understands the languages you speak"
-            ],
-            "trait": [
-                {
-                    "name": "Terror Frenzy (Fury Only)",
-                    "entries": [
-                        "The spirit has {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against {@condition Frightened|Ishiir} creatures."
-                    ]
-                },
-                {
-                    "name": "Weight of Sorrow (Despair Only)",
-                    "entries": [
-                        "Any creature, other than you, that starts its turn within 5 feet of the spirit has its {@variantrule Speed|Ishiir} reduced by 20 feet until the start of that creature's next turn."
-                    ]
-                }
-            ],
-            "action": [
-                {
-                    "name": "Multiattack",
-                    "entries": [
-                        "The spirit makes a number of attacks equal to half this spell's level (rounded down)."
-                    ]
-                },
-                {
-                    "name": "Chilling Rend",
-                    "entries": [
-                        "{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d12 + 3 + summonSpellLevel} cold damage."
-                    ]
-                },
-                {
-                    "name": "Dreadful Scream (1/Day)",
-                    "entries": [
-                        "The spirit screams. Each creature within 30 feet of it must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC or be {@condition Frightened|Ishiir} for 1 minute. The {@condition Frightened|Ishiir} creature can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on itself on a success."
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Shadow Stealth (Fear Only)",
-                    "entries": [
-                        "While in dim light or darkness, the spirit takes the Hide action.",
-                        "The creature receives a bonus to this skill check equal to your spell attack bonus."
-                    ]
-                }
-            ],
-            "senseTags": [
-                "SD"
-            ],
-            "actionTags": [
-                "Multiattack"
-            ],
-            "languageTags": [
-                "C"
-            ],
-            "damageTags": [
-                "C"
-            ],
-            "miscTags": [
-                "MW"
-            ],
-            "conditionInflict": [
-                "frightened"
-            ]
-        },
-        {
             "name": "Aquatic Eidolon",
             "source": "Ishiir",
             "page": 1,
@@ -352,396 +237,6 @@
             ]
         },
         {
-            "name": "Quadruped Eidolon",
-            "source": "Ishiir",
-            "page": 1,
-            "summonedByClass": "Summoner|Ishiir",
-            "size": [
-                "M"
-            ],
-            "type": "any",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "12 + DEX modifier + proficiency"
-                }
-            ],
-            "hp": {
-                "special": "5 + (5 + CON modifier) x summoner level"
-            },
-            "speed": {
-                "walk": 60
-            },
-            "str": 14,
-            "dex": 14,
-            "con": 14,
-            "int": 1,
-            "wis": 1,
-            "cha": 1,
-            "save": {
-                "con": "+4",
-                "cha": "-3"
-            },
-            "skill": {
-                "perception": "-3",
-                "stealth": "+4"
-            },
-            "senses": [
-                "darkvision 60 ft."
-            ],
-            "passive": 7,
-            "languages": [
-                "all languages that you speak"
-            ],
-            "cr": "1",
-            "trait": [
-                {
-                    "name": "Strengthening Bond",
-                    "entries": [
-                        "Choose your Eidolon's Strength, Dexterity, or Constitution when you acquire your Eidolon for the first time. The chosen ability score increases by 2.",
-                        "The Eidolon's {@variantrule Proficiency|Ishiir} is always equal to yours.",
-                        "You choose whether your Eidolon uses Strength or Dexterity for the attack and damage rolls of its natural weapons (X).",
-                        "The natural weapon attacks of your Eidolon receive a bonus to their damage rolls equal to 1.5 x your {@variantrule Proficiency|Ishiir} (rounded down) if you choose Strength and half your {@variantrule Proficiency|Ishiir} (rounded down) if you choose Dexterity (Y)."
-                    ]
-                }
-            ],
-            "action": [
-                {
-                    "name": "Strike",
-                    "entries": [
-                        "{@atk mw} +4 (X+PB) to hit, reach 5 ft., one target. {@h}{@damage 1d8} + Y damage."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Serpentine Eidolon",
-            "source": "Ishiir",
-            "page": 1,
-            "summonedByClass": "Summoner|Ishiir",
-            "size": [
-                "M"
-            ],
-            "type": "any",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "12 + DEX modifier + proficiency"
-                }
-            ],
-            "hp": {
-                "special": "5 + (5 + CON modifier) x summoner level"
-            },
-            "speed": {
-                "walk": 30,
-                "climb": 30,
-                "swim": 30
-            },
-            "str": 14,
-            "dex": 14,
-            "con": 14,
-            "int": 1,
-            "wis": 1,
-            "cha": 1,
-            "save": {
-                "dex": "+4",
-                "cha": "-3"
-            },
-            "skill": {
-                "athletics": "+4",
-                "perception": "-3",
-                "stealth": "+4"
-            },
-            "senses": [
-                "darkvision 60 ft."
-            ],
-            "passive": 7,
-            "languages": [
-                "all languages that you speak"
-            ],
-            "cr": "1",
-            "trait": [
-                {
-                    "name": "Strengthening Bond",
-                    "entries": [
-                        "Choose your Eidolon's Strength, Dexterity, or Constitution when you acquire your Eidolon for the first time. The chosen ability score increases by 2.",
-                        "The Eidolon's {@variantrule Proficiency|Ishiir} is always equal to yours.",
-                        "You choose whether your Eidolon uses Strength or Dexterity for the attack and damage rolls of its natural weapons (X).",
-                        "The natural weapon attacks of your Eidolon receive a bonus to their damage rolls equal to 1.5 x your {@variantrule Proficiency|Ishiir} (rounded down) if you choose Strength and half your {@variantrule Proficiency|Ishiir} (rounded down) if you choose Dexterity (Y)."
-                    ]
-                }
-            ],
-            "action": [
-                {
-                    "name": "Strike",
-                    "entries": [
-                        "{@atk mw} +4 (X+PB) to hit, reach 5 ft., one target. {@h}{@damage 1d8} + Y damage."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Tauric Eidolon",
-            "source": "Ishiir",
-            "page": 1,
-            "summonedByClass": "Summoner|Ishiir",
-            "size": [
-                "M"
-            ],
-            "type": "any",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "12 + DEX modifier + proficiency"
-                }
-            ],
-            "hp": {
-                "special": "5 + (5 + CON modifier) x summoner level"
-            },
-            "speed": {
-                "walk": 40
-            },
-            "str": 14,
-            "dex": 14,
-            "con": 14,
-            "int": 1,
-            "wis": 1,
-            "cha": 1,
-            "save": {
-                "str": "+4",
-                "con": "+4",
-                "cha": "-3"
-            },
-            "skill": {
-                "athletics": "+4",
-                "perception": "-3"
-            },
-            "senses": [
-                "darkvision 60 ft."
-            ],
-            "passive": 7,
-            "languages": [
-                "all languages that you speak"
-            ],
-            "cr": "1",
-            "trait": [
-                {
-                    "name": "Strengthening Bond",
-                    "entries": [
-                        "Choose your Eidolon's Strength, Dexterity, or Constitution when you acquire your Eidolon for the first time. The chosen ability score increases by 2.",
-                        "The Eidolon's {@variantrule Proficiency|Ishiir} is always equal to yours.",
-                        "You choose whether your Eidolon uses Strength or Dexterity for the attack and damage rolls of its natural weapons (X).",
-                        "The natural weapon attacks of your Eidolon receive a bonus to their damage rolls equal to 1.5 x your {@variantrule Proficiency|Ishiir} (rounded down) if you choose Strength and half your {@variantrule Proficiency|Ishiir} (rounded down) if you choose Dexterity (Y)."
-                    ]
-                }
-            ],
-            "action": [
-                {
-                    "name": "Strike",
-                    "entries": [
-                        "{@atk mw} +4 (X+PB) to hit, reach 5 ft., one target. {@h}{@damage 1d8} + Y damage."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Otherworldly Steed",
-            "source": "Ishiir",
-            "page": 1,
-            "summonedBySpell": "Find Steed|Ishiir",
-            "summonedBySpellLevel": 2,
-            "size": [
-                "L"
-            ],
-            "type": {
-                "type": {
-                    "choose": [
-                        "celestial",
-                        "fey",
-                        "fiend"
-                    ]
-                }
-            },
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "12 + 1 per spell level"
-                }
-            ],
-            "hp": {
-                "special": "20 + 15 per spell level (the steed has a number of Hit Dice [d10s] equal to the spell's level)"
-            },
-            "speed": {
-                "walk": 60,
-                "fly": {
-                    "number": 60,
-                    "condition": "(requires level 4+ spell)"
-                }
-            },
-            "str": 18,
-            "dex": 12,
-            "con": 14,
-            "int": 6,
-            "wis": 12,
-            "cha": 8,
-            "passive": 11,
-            "languages": [
-                "telepathy 1 mile (works only with you)"
-            ],
-            "pbNote": "equals your Proficiency Bonus",
-            "trait": [
-                {
-                    "name": "Life Bond",
-                    "entries": [
-                        "When you regain Hit Points, the steed regains the same number of Hit Points if you're within 5 feet of it."
-                    ]
-                }
-            ],
-            "action": [
-                {
-                    "name": "Otherworldly Slam",
-                    "entries": [
-                        "{@i Melee {@variantrule Attack Roll|Ishiir}:} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@dice 1d8 + summonSpellLevel} of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage."
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Fell Glare (Fiend Only; Recharges after a {@variantrule Long Rest|Ishiir})",
-                    "entries": [
-                        "{@i Wisdom {@variantrule Saving Throw|Ishiir}:} DC equals your spell save DC, one creature within 60 feet the steed can see. {@i Failure:} The target has the {@condition Frightened|Ishiir} condition until the end of your next turn."
-                    ]
-                },
-                {
-                    "name": "Fey Step (Fey Only; Recharges after a {@variantrule Long Rest|Ishiir})",
-                    "entries": [
-                        "The steed teleports, along with its rider, to an unoccupied space of your choice up to 60 feet away from itself."
-                    ]
-                },
-                {
-                    "name": "Healing Touch (Celestial Only; Recharges after a {@variantrule Long Rest|Ishiir})",
-                    "entries": [
-                        "One creature within 5 feet of the steed regains a number of Hit Points equal to {@dice 2d8 + summonSpellLevel}."
-                    ]
-                }
-            ],
-            "languageTags": [
-                "TP"
-            ],
-            "miscTags": [
-                "MA"
-            ],
-            "conditionInflict": [
-                "frightened"
-            ]
-        },
-        {
-            "name": "Giant Insect",
-            "source": "Ishiir",
-            "page": 1,
-            "summonedBySpell": "Giant Insect|Ishiir",
-            "summonedBySpellLevel": 4,
-            "size": [
-                "L"
-            ],
-            "type": "beast",
-            "alignment": [
-                "U"
-            ],
-            "ac": [
-                {
-                    "special": "11 + the spell's level"
-                }
-            ],
-            "hp": {
-                "special": "30 + 10 for each spell level above 4"
-            },
-            "speed": {
-                "walk": 40,
-                "climb": 40,
-                "fly": {
-                    "number": 40,
-                    "condition": "(Wasp only)"
-                }
-            },
-            "str": 17,
-            "dex": 13,
-            "con": 15,
-            "int": 4,
-            "wis": 14,
-            "cha": 3,
-            "senses": [
-                "darkvision 60 ft."
-            ],
-            "passive": 12,
-            "languages": [
-                "understands the languages you know"
-            ],
-            "pbNote": "equals your Proficiency Bonus",
-            "trait": [
-                {
-                    "name": "Spider Climb",
-                    "entries": [
-                        "The insect can climb difficult surfaces, including along ceilings, without needing to make an {@variantrule Ability Check|Ishiir}."
-                    ]
-                }
-            ],
-            "action": [
-                {
-                    "name": "Multiattack",
-                    "entries": [
-                        "The insect makes a number of attacks equal to half this spell's level (round down)."
-                    ]
-                },
-                {
-                    "name": "Poison Jab",
-                    "entries": [
-                        "{@i Melee {@variantrule Attack Roll|Ishiir}:} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 10 ft. {@h}{@dice 1d6 + 3 + summonSpellLevel} Piercing damage plus {@damage 1d4} Poison damage."
-                    ]
-                },
-                {
-                    "name": "Web Bolt (Spider Only)",
-                    "entries": [
-                        "{@i Ranged {@variantrule Attack Roll|Ishiir}:} {@hitYourSpellAttack Bonus equals your spell attack modifier}, range 60 ft. {@h}{@dice 1d10 + 3 + summonSpellLevel} Bludgeoning damage, and the target's {@variantrule Speed|Ishiir} is reduced to 0 until the start of the insect's next turn if it is Huge size or smaller."
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Venomous Spew (Centipede Only)",
-                    "entries": [
-                        "{@i Constitution {@variantrule Saving Throw|Ishiir}:} Your spell save DC, one creature the insect can see within 10 feet. {@i Failure:} The target has the {@condition Poisoned|Ishiir} condition until the start of the insect's next turn."
-                    ]
-                }
-            ],
-            "traitTags": [
-                "Spider Climb"
-            ],
-            "actionTags": [
-                "Multiattack"
-            ],
-            "damageTags": [
-                "I",
-                "P"
-            ],
-            "miscTags": [
-                "MA",
-                "RA",
-                "RCH"
-            ],
-            "conditionInflict": [
-                "poisoned"
-            ]
-        },
-        {
             "name": "Celestial Spirit",
             "source": "Ishiir",
             "page": 1,
@@ -925,6 +420,193 @@
             "damageTags": [
                 "B",
                 "F"
+            ],
+            "miscTags": [
+                "MW"
+            ]
+        },
+        {
+            "name": "Dancing Item",
+            "source": "Ishiir",
+            "page": 1,
+            "summonedByClass": "Bard|Ishiir",
+            "size": [
+                "L"
+            ],
+            "sizeNote": "or smaller",
+            "type": "construct",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                {
+                    "ac": 16,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "10 + five times your bard level"
+            },
+            "speed": {
+                "walk": 30,
+                "fly": {
+                    "number": 30,
+                    "condition": "(hover)"
+                },
+                "canHover": true
+            },
+            "str": 18,
+            "dex": 14,
+            "con": 16,
+            "int": 4,
+            "wis": 10,
+            "cha": 6,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 10,
+            "immune": [
+                "poison",
+                "psychic"
+            ],
+            "conditionImmune": [
+                "charmed",
+                "exhaustion",
+                "poisoned",
+                "frightened"
+            ],
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "trait": [
+                {
+                    "name": "Immutable Form",
+                    "entries": [
+                        "The item is immune to any spell or effect that would alter its form."
+                    ]
+                },
+                {
+                    "name": "Irrepressible Dance",
+                    "entries": [
+                        "When any creature starts its turn within 10 feet of the item, the item can increase or decrease (your choice) the walking speed of that creature by 10 feet until the end of the turn, provided the item isn't {@condition incapacitated|Ishiir}."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The dancing item makes a number of attacks equal to half your proficiency (rounded down)."
+                    ]
+                },
+                {
+                    "name": "Force-Empowered Slam",
+                    "entries": [
+                        "{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target you can see. {@h}{@damage 1d10 + PB} force damage."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Immutable Form"
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "damageTags": [
+                "O"
+            ],
+            "miscTags": [
+                "MW"
+            ]
+        },
+        {
+            "name": "Drake Companion",
+            "source": "Ishiir",
+            "page": 15,
+            "summonedByClass": "Ranger|Ishiir",
+            "size": [
+                "M"
+            ],
+            "type": "dragon",
+            "ac": [
+                {
+                    "special": "14 + PB (natural armor)"
+                }
+            ],
+            "hp": {
+                "special": "5 + five times your ranger level (the drake has a number of Hit Dice [d10s] equal to your ranger level)"
+            },
+            "speed": {
+                "walk": 40
+            },
+            "str": 16,
+            "dex": 12,
+            "con": 15,
+            "int": 8,
+            "wis": 14,
+            "cha": 8,
+            "save": {
+                "dex": "+1 + PB",
+                "wis": "+2 + PB"
+            },
+            "senses": [
+                "blindsight 20 ft.",
+                "darkvision 60 ft."
+            ],
+            "passive": 12,
+            "immune": [
+                {
+                    "special": "determined by the drake's draconic essence trait"
+                }
+            ],
+            "languages": [
+                "Draconic"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "type": "entries",
+                    "name": "Skills",
+                    "entries": [
+                        "The drake is {@variantrule Proficiency|Ishiir|proficient} in the {@skill Perception} and {@skill Stealth} skills."
+                    ]
+                },
+                {
+                    "name": "Draconic Essence",
+                    "entries": [
+                        "When you summon the drake, choose a damage type: acid, cold, fire, lightning, or poison. The chosen type determines the drake's damage {@variantrule Immunity|Ishiir} and the damage of its Infused Strikes trait."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} +3 plus PB to hit, reach 5 ft., one target. {@h}{@dice 1d6} plus PB plus Strength modifier piercing damage."
+                    ]
+                },
+                {
+                    "name": "Elemental Bolt",
+                    "entries": [
+                        "{@atk rw} +3 plus PB to hit, reach 120 ft., one target. {@h}{@dice 1d6} plus PB damage of the type chosen for Draconic Essence."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Infused Strikes",
+                    "entries": [
+                        "Choose a creature within 30 feet of your Drake Companion. Until the end of its next turn that creature deals {@damage 1d6} additional damage of the type chosen for Draconic Essence with its weapon attacks."
+                    ]
+                }
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "languageTags": [
+                "DR"
             ],
             "miscTags": [
                 "MW"
@@ -1302,6 +984,511 @@
             ]
         },
         {
+            "name": "Giant Insect",
+            "source": "Ishiir",
+            "page": 1,
+            "summonedBySpell": "Giant Insect|Ishiir",
+            "summonedBySpellLevel": 4,
+            "size": [
+                "L"
+            ],
+            "type": "beast",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                {
+                    "special": "11 + the spell's level"
+                }
+            ],
+            "hp": {
+                "special": "30 + 10 for each spell level above 4"
+            },
+            "speed": {
+                "walk": 40,
+                "climb": 40,
+                "fly": {
+                    "number": 40,
+                    "condition": "(Wasp only)"
+                }
+            },
+            "str": 17,
+            "dex": 13,
+            "con": 15,
+            "int": 4,
+            "wis": 14,
+            "cha": 3,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 12,
+            "languages": [
+                "understands the languages you know"
+            ],
+            "pbNote": "equals your Proficiency Bonus",
+            "trait": [
+                {
+                    "name": "Spider Climb",
+                    "entries": [
+                        "The insect can climb difficult surfaces, including along ceilings, without needing to make an {@variantrule Ability Check|Ishiir}."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The insect makes a number of attacks equal to half this spell's level (round down)."
+                    ]
+                },
+                {
+                    "name": "Poison Jab",
+                    "entries": [
+                        "{@i Melee {@variantrule Attack Roll|Ishiir}:} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 10 ft. {@h}{@dice 1d6 + 3 + summonSpellLevel} Piercing damage plus {@damage 1d4} Poison damage."
+                    ]
+                },
+                {
+                    "name": "Web Bolt (Spider Only)",
+                    "entries": [
+                        "{@i Ranged {@variantrule Attack Roll|Ishiir}:} {@hitYourSpellAttack Bonus equals your spell attack modifier}, range 60 ft. {@h}{@dice 1d10 + 3 + summonSpellLevel} Bludgeoning damage, and the target's {@variantrule Speed|Ishiir} is reduced to 0 until the start of the insect's next turn if it is Huge size or smaller."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Venomous Spew (Centipede Only)",
+                    "entries": [
+                        "{@i Constitution {@variantrule Saving Throw|Ishiir}:} Your spell save DC, one creature the insect can see within 10 feet. {@i Failure:} The target has the {@condition Poisoned|Ishiir} condition until the start of the insect's next turn."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Spider Climb"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "damageTags": [
+                "I",
+                "P"
+            ],
+            "miscTags": [
+                "MA",
+                "RA",
+                "RCH"
+            ],
+            "conditionInflict": [
+                "poisoned"
+            ]
+        },
+        {
+            "name": "Otherworldly Steed",
+            "source": "Ishiir",
+            "page": 1,
+            "summonedBySpell": "Find Steed|Ishiir",
+            "summonedBySpellLevel": 2,
+            "size": [
+                "L"
+            ],
+            "type": {
+                "type": {
+                    "choose": [
+                        "celestial",
+                        "fey",
+                        "fiend"
+                    ]
+                }
+            },
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "12 + 1 per spell level"
+                }
+            ],
+            "hp": {
+                "special": "20 + 15 per spell level (the steed has a number of Hit Dice [d10s] equal to the spell's level)"
+            },
+            "speed": {
+                "walk": 60,
+                "fly": {
+                    "number": 60,
+                    "condition": "(requires level 4+ spell)"
+                }
+            },
+            "str": 18,
+            "dex": 12,
+            "con": 14,
+            "int": 6,
+            "wis": 12,
+            "cha": 8,
+            "passive": 11,
+            "languages": [
+                "telepathy 1 mile (works only with you)"
+            ],
+            "pbNote": "equals your Proficiency Bonus",
+            "trait": [
+                {
+                    "name": "Life Bond",
+                    "entries": [
+                        "When you regain Hit Points, the steed regains the same number of Hit Points if you're within 5 feet of it."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Otherworldly Slam",
+                    "entries": [
+                        "{@i Melee {@variantrule Attack Roll|Ishiir}:} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@dice 1d8 + summonSpellLevel} of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Fell Glare (Fiend Only; Recharges after a {@variantrule Long Rest|Ishiir})",
+                    "entries": [
+                        "{@i Wisdom {@variantrule Saving Throw|Ishiir}:} DC equals your spell save DC, one creature within 60 feet the steed can see. {@i Failure:} The target has the {@condition Frightened|Ishiir} condition until the end of your next turn."
+                    ]
+                },
+                {
+                    "name": "Fey Step (Fey Only; Recharges after a {@variantrule Long Rest|Ishiir})",
+                    "entries": [
+                        "The steed teleports, along with its rider, to an unoccupied space of your choice up to 60 feet away from itself."
+                    ]
+                },
+                {
+                    "name": "Healing Touch (Celestial Only; Recharges after a {@variantrule Long Rest|Ishiir})",
+                    "entries": [
+                        "One creature within 5 feet of the steed regains a number of Hit Points equal to {@dice 2d8 + summonSpellLevel}."
+                    ]
+                }
+            ],
+            "languageTags": [
+                "TP"
+            ],
+            "miscTags": [
+                "MA"
+            ],
+            "conditionInflict": [
+                "frightened"
+            ]
+        },
+        {
+            "name": "Quadruped Eidolon",
+            "source": "Ishiir",
+            "page": 1,
+            "summonedByClass": "Summoner|Ishiir",
+            "size": [
+                "M"
+            ],
+            "type": "any",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "12 + DEX modifier + proficiency"
+                }
+            ],
+            "hp": {
+                "special": "5 + (5 + CON modifier) x summoner level"
+            },
+            "speed": {
+                "walk": 60
+            },
+            "str": 14,
+            "dex": 14,
+            "con": 14,
+            "int": 1,
+            "wis": 1,
+            "cha": 1,
+            "save": {
+                "con": "+4",
+                "cha": "-3"
+            },
+            "skill": {
+                "perception": "-3",
+                "stealth": "+4"
+            },
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 7,
+            "languages": [
+                "all languages that you speak"
+            ],
+            "cr": "1",
+            "trait": [
+                {
+                    "name": "Strengthening Bond",
+                    "entries": [
+                        "Choose your Eidolon's Strength, Dexterity, or Constitution when you acquire your Eidolon for the first time. The chosen ability score increases by 2.",
+                        "The Eidolon's {@variantrule Proficiency|Ishiir} is always equal to yours.",
+                        "You choose whether your Eidolon uses Strength or Dexterity for the attack and damage rolls of its natural weapons (X).",
+                        "The natural weapon attacks of your Eidolon receive a bonus to their damage rolls equal to 1.5 x your {@variantrule Proficiency|Ishiir} (rounded down) if you choose Strength and half your {@variantrule Proficiency|Ishiir} (rounded down) if you choose Dexterity (Y)."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Strike",
+                    "entries": [
+                        "{@atk mw} +4 (X+PB) to hit, reach 5 ft., one target. {@h}{@damage 1d8} + Y damage."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Serpentine Eidolon",
+            "source": "Ishiir",
+            "page": 1,
+            "summonedByClass": "Summoner|Ishiir",
+            "size": [
+                "M"
+            ],
+            "type": "any",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "12 + DEX modifier + proficiency"
+                }
+            ],
+            "hp": {
+                "special": "5 + (5 + CON modifier) x summoner level"
+            },
+            "speed": {
+                "walk": 30,
+                "climb": 30,
+                "swim": 30
+            },
+            "str": 14,
+            "dex": 14,
+            "con": 14,
+            "int": 1,
+            "wis": 1,
+            "cha": 1,
+            "save": {
+                "dex": "+4",
+                "cha": "-3"
+            },
+            "skill": {
+                "athletics": "+4",
+                "perception": "-3",
+                "stealth": "+4"
+            },
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 7,
+            "languages": [
+                "all languages that you speak"
+            ],
+            "cr": "1",
+            "trait": [
+                {
+                    "name": "Strengthening Bond",
+                    "entries": [
+                        "Choose your Eidolon's Strength, Dexterity, or Constitution when you acquire your Eidolon for the first time. The chosen ability score increases by 2.",
+                        "The Eidolon's {@variantrule Proficiency|Ishiir} is always equal to yours.",
+                        "You choose whether your Eidolon uses Strength or Dexterity for the attack and damage rolls of its natural weapons (X).",
+                        "The natural weapon attacks of your Eidolon receive a bonus to their damage rolls equal to 1.5 x your {@variantrule Proficiency|Ishiir} (rounded down) if you choose Strength and half your {@variantrule Proficiency|Ishiir} (rounded down) if you choose Dexterity (Y)."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Strike",
+                    "entries": [
+                        "{@atk mw} +4 (X+PB) to hit, reach 5 ft., one target. {@h}{@damage 1d8} + Y damage."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Shadow Spirit",
+            "source": "Ishiir",
+            "page": 1,
+            "summonedBySpell": "Summon Shadowspawn|Ishiir",
+            "summonedBySpellLevel": 3,
+            "size": [
+                "M"
+            ],
+            "type": "undead",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                {
+                    "special": "11 + the level of the spell (natural armor)"
+                }
+            ],
+            "hp": {
+                "special": "35 + 15 for each spell level above 3rd"
+            },
+            "speed": {
+                "walk": 40
+            },
+            "str": 13,
+            "dex": 16,
+            "con": 15,
+            "int": 4,
+            "wis": 10,
+            "cha": 16,
+            "senses": [
+                "darkvision 120 ft."
+            ],
+            "passive": 10,
+            "immune": [
+                "necrotic",
+                "poison"
+            ],
+            "conditionImmune": [
+                "charmed",
+                "exhaustion",
+                "frightened",
+                "incapacitated",
+                "paralyzed",
+                "petrified",
+                "poisoned",
+                "prone",
+                "restrained",
+                "unconscious"
+            ],
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "trait": [
+                {
+                    "name": "Terror Frenzy (Fury Only)",
+                    "entries": [
+                        "The spirit has {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against {@condition Frightened|Ishiir} creatures."
+                    ]
+                },
+                {
+                    "name": "Weight of Sorrow (Despair Only)",
+                    "entries": [
+                        "Any creature, other than you, that starts its turn within 5 feet of the spirit has its {@variantrule Speed|Ishiir} reduced by 20 feet until the start of that creature's next turn."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The spirit makes a number of attacks equal to half this spell's level (rounded down)."
+                    ]
+                },
+                {
+                    "name": "Chilling Rend",
+                    "entries": [
+                        "{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d12 + 3 + summonSpellLevel} cold damage."
+                    ]
+                },
+                {
+                    "name": "Dreadful Scream (1/Day)",
+                    "entries": [
+                        "The spirit screams. Each creature within 30 feet of it must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC or be {@condition Frightened|Ishiir} for 1 minute. The {@condition Frightened|Ishiir} creature can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on itself on a success."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Shadow Stealth (Fear Only)",
+                    "entries": [
+                        "While in dim light or darkness, the spirit takes the Hide action.",
+                        "The creature receives a bonus to this skill check equal to your spell attack bonus."
+                    ]
+                }
+            ],
+            "senseTags": [
+                "SD"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "C"
+            ],
+            "damageTags": [
+                "C"
+            ],
+            "miscTags": [
+                "MW"
+            ],
+            "conditionInflict": [
+                "frightened"
+            ]
+        },
+        {
+            "name": "Tauric Eidolon",
+            "source": "Ishiir",
+            "page": 1,
+            "summonedByClass": "Summoner|Ishiir",
+            "size": [
+                "M"
+            ],
+            "type": "any",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "12 + DEX modifier + proficiency"
+                }
+            ],
+            "hp": {
+                "special": "5 + (5 + CON modifier) x summoner level"
+            },
+            "speed": {
+                "walk": 40
+            },
+            "str": 14,
+            "dex": 14,
+            "con": 14,
+            "int": 1,
+            "wis": 1,
+            "cha": 1,
+            "save": {
+                "str": "+4",
+                "con": "+4",
+                "cha": "-3"
+            },
+            "skill": {
+                "athletics": "+4",
+                "perception": "-3"
+            },
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 7,
+            "languages": [
+                "all languages that you speak"
+            ],
+            "cr": "1",
+            "trait": [
+                {
+                    "name": "Strengthening Bond",
+                    "entries": [
+                        "Choose your Eidolon's Strength, Dexterity, or Constitution when you acquire your Eidolon for the first time. The chosen ability score increases by 2.",
+                        "The Eidolon's {@variantrule Proficiency|Ishiir} is always equal to yours.",
+                        "You choose whether your Eidolon uses Strength or Dexterity for the attack and damage rolls of its natural weapons (X).",
+                        "The natural weapon attacks of your Eidolon receive a bonus to their damage rolls equal to 1.5 x your {@variantrule Proficiency|Ishiir} (rounded down) if you choose Strength and half your {@variantrule Proficiency|Ishiir} (rounded down) if you choose Dexterity (Y)."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Strike",
+                    "entries": [
+                        "{@atk mw} +4 (X+PB) to hit, reach 5 ft., one target. {@h}{@damage 1d8} + Y damage."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Warrior Spirit",
             "source": "Ishiir",
             "page": 1,
@@ -1406,193 +1593,6 @@
             ],
             "conditionInflict": [
                 "prone"
-            ]
-        },
-        {
-            "name": "Drake Companion",
-            "source": "Ishiir",
-            "page": 15,
-            "summonedByClass": "Ranger|Ishiir",
-            "size": [
-                "M"
-            ],
-            "type": "dragon",
-            "ac": [
-                {
-                    "special": "14 + PB (natural armor)"
-                }
-            ],
-            "hp": {
-                "special": "5 + five times your ranger level (the drake has a number of Hit Dice [d10s] equal to your ranger level)"
-            },
-            "speed": {
-                "walk": 40
-            },
-            "str": 16,
-            "dex": 12,
-            "con": 15,
-            "int": 8,
-            "wis": 14,
-            "cha": 8,
-            "save": {
-                "dex": "+1 + PB",
-                "wis": "+2 + PB"
-            },
-            "senses": [
-                "blindsight 20 ft.",
-                "darkvision 60 ft."
-            ],
-            "passive": 12,
-            "immune": [
-                {
-                    "special": "determined by the drake's draconic essence trait"
-                }
-            ],
-            "languages": [
-                "Draconic"
-            ],
-            "pbNote": "equals your bonus",
-            "trait": [
-                {
-                    "type": "entries",
-                    "name": "Skills",
-                    "entries": [
-                        "The drake is {@variantrule Proficiency|Ishiir|proficient} in the {@skill Perception} and {@skill Stealth} skills."
-                    ]
-                },
-                {
-                    "name": "Draconic Essence",
-                    "entries": [
-                        "When you summon the drake, choose a damage type: acid, cold, fire, lightning, or poison. The chosen type determines the drake's damage {@variantrule Immunity|Ishiir} and the damage of its Infused Strikes trait."
-                    ]
-                }
-            ],
-            "action": [
-                {
-                    "name": "Bite",
-                    "entries": [
-                        "{@atk mw} +3 plus PB to hit, reach 5 ft., one target. {@h}{@dice 1d6} plus PB plus Strength modifier piercing damage."
-                    ]
-                },
-                {
-                    "name": "Elemental Bolt",
-                    "entries": [
-                        "{@atk rw} +3 plus PB to hit, reach 120 ft., one target. {@h}{@dice 1d6} plus PB damage of the type chosen for Draconic Essence."
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Infused Strikes",
-                    "entries": [
-                        "Choose a creature within 30 feet of your Drake Companion. Until the end of its next turn that creature deals {@damage 1d6} additional damage of the type chosen for Draconic Essence with its weapon attacks."
-                    ]
-                }
-            ],
-            "senseTags": [
-                "D"
-            ],
-            "languageTags": [
-                "DR"
-            ],
-            "miscTags": [
-                "MW"
-            ]
-        },
-        {
-            "name": "Dancing Item",
-            "source": "Ishiir",
-            "page": 1,
-            "summonedByClass": "Bard|Ishiir",
-            "size": [
-                "L"
-            ],
-            "sizeNote": "or smaller",
-            "type": "construct",
-            "alignment": [
-                "U"
-            ],
-            "ac": [
-                {
-                    "ac": 16,
-                    "from": [
-                        "natural armor"
-                    ]
-                }
-            ],
-            "hp": {
-                "special": "10 + five times your bard level"
-            },
-            "speed": {
-                "walk": 30,
-                "fly": {
-                    "number": 30,
-                    "condition": "(hover)"
-                },
-                "canHover": true
-            },
-            "str": 18,
-            "dex": 14,
-            "con": 16,
-            "int": 4,
-            "wis": 10,
-            "cha": 6,
-            "senses": [
-                "darkvision 60 ft."
-            ],
-            "passive": 10,
-            "immune": [
-                "poison",
-                "psychic"
-            ],
-            "conditionImmune": [
-                "charmed",
-                "exhaustion",
-                "poisoned",
-                "frightened"
-            ],
-            "languages": [
-                "understands the languages you speak"
-            ],
-            "trait": [
-                {
-                    "name": "Immutable Form",
-                    "entries": [
-                        "The item is immune to any spell or effect that would alter its form."
-                    ]
-                },
-                {
-                    "name": "Irrepressible Dance",
-                    "entries": [
-                        "When any creature starts its turn within 10 feet of the item, the item can increase or decrease (your choice) the walking speed of that creature by 10 feet until the end of the turn, provided the item isn't {@condition incapacitated|Ishiir}."
-                    ]
-                }
-            ],
-            "action": [
-                {
-                    "name": "Multiattack",
-                    "entries": [
-                        "The dancing item makes a number of attacks equal to half your proficiency (rounded down)."
-                    ]
-                },
-                {
-                    "name": "Force-Empowered Slam",
-                    "entries": [
-                        "{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target you can see. {@h}{@damage 1d10 + PB} force damage."
-                    ]
-                }
-            ],
-            "traitTags": [
-                "Immutable Form"
-            ],
-            "senseTags": [
-                "D"
-            ],
-            "damageTags": [
-                "O"
-            ],
-            "miscTags": [
-                "MW"
             ]
         },
         {

@@ -3591,6 +3591,108 @@
             ]
         },
         {
+            "name": "Pact of the Blade",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EI"
+            ],
+            "entries": [
+                "You can use your {@variantrule Bonus Action|Ishiir} to create a pact weapon in your empty hand. You can choose the form that this weapon takes each time you create it (see chapter 5 for weapon options). You are {@variantrule Proficiency|Ishiir|proficient} with it while you wield it. This weapon counts as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage.",
+                "Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.",
+                "You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a {@variantrule Short Rest|Ishiir}. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.",
+                "You also gain {@variantrule Proficiency|Ishiir} in medium armor and shields."
+            ]
+        },
+        {
+            "name": "Pact of the Chain",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EI"
+            ],
+            "additionalSpells": [
+                {
+                    "ability": "cha",
+                    "innate": {
+                        "_": {
+                            "ritual": [
+                                "find familiar|Ishiir"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "You learn the {@spell Find Familiar|Ishiir} spell and can cast it as a ritual. The spell doesn't count against your number of spells known.",
+                "When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: {@creature imp}, {@creature pseudodragon}, {@creature quasit}, or {@creature sprite}.",
+                "The familiar obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions, attitudes, and so on. If you are {@condition Incapacitated|Ishiir} or absent, your familiar acts on its own."
+            ]
+        },
+        {
+            "name": "Pact of the Star Chain",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EI"
+            ],
+            "additionalSpells": [
+                {
+                    "ability": "cha",
+                    "innate": {
+                        "_": {
+                            "ritual": [
+                                "augury|Ishiir"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "A character dedicated to the {@class Warlock|Ishiir|Seeker|Seeker|Ishiir} can select this option instead of one of the warlock's existing Pact Boon options.",
+                "The Seeker grants you a chain forged from starlight, decorated with seven gleaming motes of brightness. While the chain is on your person, you know the {@spell Augury|Ishiir} spell and can cast it as a ritual. The spell doesn't count against your number of spells known.",
+                "Additionally, you can invoke the Seeker's power to gain {@variantrule Advantage|Ishiir} on an Intelligence check while you carry this item. Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}.",
+                "If you lose your Star Chain, you can perform a 1-hour ceremony to receive a replacement from the Seeker. The ceremony can be performed during a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}, and it destroys the previous chain. The chain disappears in a flash of light when you die.",
+                "The exact form of this item might be different depending on your patron."
+            ]
+        },
+        {
+            "name": "Pact of the Talisman",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EI"
+            ],
+            "entries": [
+                "Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an {@variantrule Ability Check|Ishiir}, they can add a {@dice d4} to the roll, potentially turning the roll into a success. This benefit can be used a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and all expended uses are restored when you finish a {@variantrule Long Rest|Ishiir}.",
+                "If you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}, and it destroys the previous amulet. The talisman turns to ash when you die."
+            ]
+        },
+        {
+            "name": "Pact of the Tome",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "EI"
+            ],
+            "additionalSpells": [
+                {
+                    "ability": "cha",
+                    "known": {
+                        "_": [
+                            {
+                                "choose": "level=0|source=Ishiir",
+                                "count": 3
+                            }
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three {@filter cantrips|spells|level=0|source=Ishiir} from any class's spell list. The cantrips do not need to be from the same spell list. While the book is on your person, you can cast those cantrips at will. They don't count against your number of cantrips known. Any cantrip you cast with this feature is considered a warlock cantrip for you. If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}, and it destroys the previous book. The book turns to ash when you die."
+            ]
+        },
+        {
             "name": "Path of the Seeker",
             "source": "Ishiir",
             "page": 1,
@@ -6285,108 +6387,6 @@
             ],
             "entries": [
                 "If the named creature is within range of the spell, you can target the creature with the spell even if you can't see the creature or it has total cover against the spell."
-            ]
-        },
-        {
-            "name": "Pact of the Blade",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EI"
-            ],
-            "entries": [
-                "You can use your {@variantrule Bonus Action|Ishiir} to create a pact weapon in your empty hand. You can choose the form that this weapon takes each time you create it (see chapter 5 for weapon options). You are {@variantrule Proficiency|Ishiir|proficient} with it while you wield it. This weapon counts as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage.",
-                "Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.",
-                "You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a {@variantrule Short Rest|Ishiir}. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.",
-                "You also gain {@variantrule Proficiency|Ishiir} in medium armor and shields."
-            ]
-        },
-        {
-            "name": "Pact of the Chain",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EI"
-            ],
-            "additionalSpells": [
-                {
-                    "ability": "cha",
-                    "innate": {
-                        "_": {
-                            "ritual": [
-                                "find familiar|Ishiir"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                "You learn the {@spell Find Familiar|Ishiir} spell and can cast it as a ritual. The spell doesn't count against your number of spells known.",
-                "When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: {@creature imp}, {@creature pseudodragon}, {@creature quasit}, or {@creature sprite}.",
-                "The familiar obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions, attitudes, and so on. If you are {@condition Incapacitated|Ishiir} or absent, your familiar acts on its own."
-            ]
-        },
-        {
-            "name": "Pact of the Star Chain",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EI"
-            ],
-            "additionalSpells": [
-                {
-                    "ability": "cha",
-                    "innate": {
-                        "_": {
-                            "ritual": [
-                                "augury|Ishiir"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                "A character dedicated to the {@class Warlock|Ishiir|Seeker|Seeker|Ishiir} can select this option instead of one of the warlock's existing Pact Boon options.",
-                "The Seeker grants you a chain forged from starlight, decorated with seven gleaming motes of brightness. While the chain is on your person, you know the {@spell Augury|Ishiir} spell and can cast it as a ritual. The spell doesn't count against your number of spells known.",
-                "Additionally, you can invoke the Seeker's power to gain {@variantrule Advantage|Ishiir} on an Intelligence check while you carry this item. Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}.",
-                "If you lose your Star Chain, you can perform a 1-hour ceremony to receive a replacement from the Seeker. The ceremony can be performed during a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}, and it destroys the previous chain. The chain disappears in a flash of light when you die.",
-                "The exact form of this item might be different depending on your patron."
-            ]
-        },
-        {
-            "name": "Pact of the Talisman",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EI"
-            ],
-            "entries": [
-                "Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an {@variantrule Ability Check|Ishiir}, they can add a {@dice d4} to the roll, potentially turning the roll into a success. This benefit can be used a number of times equal to your {@variantrule Proficiency|Ishiir} bonus, and all expended uses are restored when you finish a {@variantrule Long Rest|Ishiir}.",
-                "If you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}, and it destroys the previous amulet. The talisman turns to ash when you die."
-            ]
-        },
-        {
-            "name": "Pact of the Tome",
-            "source": "Ishiir",
-            "page": 1,
-            "featureType": [
-                "EI"
-            ],
-            "additionalSpells": [
-                {
-                    "ability": "cha",
-                    "known": {
-                        "_": [
-                            {
-                                "choose": "level=0|source=Ishiir",
-                                "count": 3
-                            }
-                        ]
-                    }
-                }
-            ],
-            "entries": [
-                "Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three {@filter cantrips|spells|level=0|source=Ishiir} from any class's spell list. The cantrips do not need to be from the same spell list. While the book is on your person, you can cast those cantrips at will. They don't count against your number of cantrips known. Any cantrip you cast with this feature is considered a warlock cantrip for you. If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}, and it destroys the previous book. The book turns to ash when you die."
             ]
         },
         {

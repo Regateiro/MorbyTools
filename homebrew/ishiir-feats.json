@@ -359,40 +359,6 @@
             ]
         },
         {
-            "name": "Veteran of the Wilds",
-            "page": 1,
-            "source": "Ishiir",
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 4,
-                        "class": {
-                            "name": "Ranger",
-                            "visible": true
-                        }
-                    }
-                }
-            ],
-            "skillProficiencies": [
-                {
-                    "perception": true,
-                    "stealth": true
-                }
-            ],
-            "entries": [
-                "Choose two of the following benefits when you gain this feat:",
-                {
-                    "type": "list",
-                    "items": [
-                        "Choose {@skill Animal Handling}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}. You gain {@variantrule Proficiency|Ishiir} in the chosen skill. If you are already {@variantrule Proficiency|Ishiir|proficient} with it, your {@variantrule Proficiency|Ishiir} bonus is doubled for any check you make with it. If roll a 7 or lower on the 20 for a check with the chosen skill, treat the roll as an 8.",
-                        "When you take the {@action Attack|Ishiir} action while hidden, all your attacks benefit from {@variantrule Advantage|Ishiir} rather than only the first one. Additionally, you deal your favorite enemy bonus damage to all of these attacks. If the target is already one of your favorite enemies, this damage stacks with the usual bonus damage.",
-                        "You learn the {@spell Hunter's Mark|Ishiir} spell or a different spell from the ranger spell list if you already know it. Hunter's Mark no longer requires {@condition Concentration|Ishiir} when you cast it and instead lasts for the duration or until you are {@condition Incapacitated|Ishiir}.",
-                        "Choose a creature type and add it to your favored enemies, gaining the usual benefits. Additinally, the bonus damage you deal to your favored enemies increases by an amount equal to your Wisdom modifier."
-                    ]
-                }
-            ]
-        },
-        {
             "name": "Apothecary",
             "page": 1,
             "source": "Ishiir",
@@ -695,6 +661,46 @@
                         "When you are {@condition Prone|Ishiir}, standing up uses only 5 feet of your movement.",
                         "Climbing doesn't cost you extra movement.",
                         "You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Awakened Mind",
+            "page": 1,
+            "source": "Ishiir",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "any": 1
+                }
+            ],
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "awakened forest owl"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Choose either WIS, INT, or CHA. Your chosen ability score increases by 1 and your maximum for it increases by 2.",
+                        "Additionally, you learn one skill that uses your chosen ability score."
                     ]
                 }
             ]
@@ -1072,6 +1078,38 @@
             ]
         },
         {
+            "name": "Conduit Mastery",
+            "page": 1,
+            "source": "Ishiir",
+            "prerequisite": [
+                {
+                    "spellcasting": true
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "When you gain this feat, choose a damage type.",
+                        "Spells you cast ignore {@variantrule Resistance|Ishiir} to damage of the chosen type. In addition, when you roll a 1 on a damage die for a spell you cast that deals damage of that type, you can reroll the die. You must use the new roll, even if it is a 1.",
+                        "You can select this feat multiple times. Each time you do so, you must choose a different damage type."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Critter Friend",
             "page": 1,
             "source": "Ishiir",
@@ -1184,6 +1222,31 @@
                         "When you wield a dagger, its damage die is {@dice 1d6}, not {@dice 1d4}, and its throwing range is 30/90.",
                         "A hand wielding a dagger is considered to be empty for purposes of somatic components of spells and the duelist fighting style.",
                         "If you are wielding a dagger and another melee weapon in separate hands, you gain a +1 bonus to AC."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dark Arts",
+            "page": 1,
+            "source": "Ishiir",
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Blood Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "You learn an additional Blood Curse and you gain an additional use of Blood Maledict.",
+                        "When you roll your Hemocraft Die to determine the necrotic damage you take for using a feature from this class, you can roll it a second time and take the lower result."
                     ]
                 }
             ]
@@ -1602,38 +1665,6 @@
             ]
         },
         {
-            "name": "Conduit Mastery",
-            "page": 1,
-            "source": "Ishiir",
-            "prerequisite": [
-                {
-                    "spellcasting": true
-                }
-            ],
-            "ability": [
-                {
-                    "choose": {
-                        "from": [
-                            "int",
-                            "wis",
-                            "cha"
-                        ],
-                        "amount": 1
-                    }
-                }
-            ],
-            "entries": [
-                {
-                    "type": "list",
-                    "items": [
-                        "When you gain this feat, choose a damage type.",
-                        "Spells you cast ignore {@variantrule Resistance|Ishiir} to damage of the chosen type. In addition, when you roll a 1 on a damage die for a spell you cast that deals damage of that type, you can reroll the die. You must use the new roll, even if it is a 1.",
-                        "You can select this feat multiple times. Each time you do so, you must choose a different damage type."
-                    ]
-                }
-            ]
-        },
-        {
             "name": "Elven Accuracy",
             "page": 1,
             "source": "Ishiir",
@@ -1720,31 +1751,6 @@
             ]
         },
         {
-            "name": "Keen Intuition",
-            "page": 1,
-            "source": "Ishiir",
-            "ability": [
-                {
-                    "wis": 1
-                }
-            ],
-            "skillProficiencies": [
-                {
-                    "insight": true
-                }
-            ],
-            "entries": [
-                "You possess keen insight into how other people think and feel. You gain the following benefits:",
-                {
-                    "type": "list",
-                    "items": [
-                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill Insight} skill. If you are already {@variantrule Proficiency|Ishiir|proficient} in the skill, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with it.",
-                        "You can use your action to try to get uncanny insight about one creature you can see within 30 feet of you. Make a Wisdom ({@skill Insight}) check contested by the target's Charisma ({@skill Deception}) check. If the target creature's Intelligence is 6 or lower, this feature has no effect. If your check succeeds, you have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} and {@variantrule Ability Check|Ishiir|Ability Checks} against the target until the end of your next turn."
-                    ]
-                }
-            ]
-        },
-        {
             "name": "Empathy",
             "page": 1,
             "source": "Ishiir",
@@ -1760,6 +1766,31 @@
                     "items": [
                         "You gain {@variantrule Advantage|Ishiir} on Wisdom ({@skill Insight}) {@variantrule Ability Check|Ishiir|checks} against humanoid creatures.",
                         "If you succeed on a Wisdom ({@skill Insight}) check involving a creature, the DM may tell you one piece of information about the character's personality or state of mind in addition to whatever information you gleaned. Additionally, if the creature lies to you, you will know it. This later facet lasts until you have taken a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Enchanter",
+            "page": 1,
+            "source": "Ishiir",
+            "prerequisite": [
+                {
+                    "spellcasting": true
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "enchanter's supplies": true
+                }
+            ],
+            "entries": [
+                "Your studies of magic have made you particularly adept at creating scrolls and magical items.",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain {@variantrule Proficiency|Ishiir} with the enchanter's supplies. If you are already {@variantrule Proficiency|Ishiir|proficient} in these tools, your {@variantrule Proficiency|Ishiir} bonus is doubled for any skill check you make with them.",
+                        "If you craft a magical item that has a rarity of common or uncommon, it takes you a quarter of the normal time, and it costs you half as much of the usual gold."
                     ]
                 }
             ]
@@ -1785,35 +1816,6 @@
                     "type": "list",
                     "items": [
                         "You gain {@variantrule Proficiency|Ishiir} in the {@skill Deception} and {@skill Persuasion} skills. If you're already {@variantrule Proficiency|Ishiir|proficient} in either skill, your {@variantrule Proficiency|Ishiir} bonus is doubled for any check you make with that skill."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Extraordinary Defense",
-            "page": 1,
-            "source": "Ishiir",
-            "ability": [
-                {
-                    "choose": {
-                        "from": [
-                            "str",
-                            "dex",
-                            "con",
-                            "int",
-                            "wis",
-                            "cha"
-                        ],
-                        "amount": 1
-                    }
-                }
-            ],
-            "entries": [
-                "You learn to defend yourself through special training or supernatural means, eschewing the need for armor.",
-                {
-                    "type": "list",
-                    "items": [
-                        "Choose a second ability score. While you are wearing no armor and not wielding a shield, your AC equals 10 + the modifier of your first chosen ability score + the modifier of your second chosen ability score."
                     ]
                 }
             ]
@@ -1854,6 +1856,35 @@
                     "items": [
                         "Choose one of your skill or tool proficiencies. You now have expertise with this skill or tool, allowing you to add double your normal {@variantrule Proficiency|Ishiir} bonus to any {@variantrule Ability Check|Ishiir} that would benefit from it.",
                         "When you make an {@variantrule Ability Check|Ishiir} that benefits from part or all of your {@variantrule Proficiency|Ishiir} bonus and you roll a 1 on the {@dice d20}, you may re-roll the die, though you must use the second result."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Extraordinary Defense",
+            "page": 1,
+            "source": "Ishiir",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You learn to defend yourself through special training or supernatural means, eschewing the need for armor.",
+                {
+                    "type": "list",
+                    "items": [
+                        "Choose a second ability score. While you are wearing no armor and not wielding a shield, your AC equals 10 + the modifier of your first chosen ability score + the modifier of your second chosen ability score."
                     ]
                 }
             ]
@@ -2229,32 +2260,6 @@
             ]
         },
         {
-            "name": "Hand of Faith",
-            "page": 1,
-            "source": "Ishiir",
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 4,
-                        "class": {
-                            "name": "Paladin",
-                            "visible": true
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                {
-                    "type": "list",
-                    "items": [
-                        "You learn a cantrip from the {@filter cleric spell list|spells|level=0|class=cleric (Ishiir)|source=Ishiir}.",
-                        "The number of times you can use Divine Smite without a spell slot now equals your {@variantrule Proficiency|Ishiir}. After you use Divine Smite, your weapon sheds bright light in a radius of 10 feet and dim light in a radius of 10 feet beyond that. This light is not smothered by magical darkness but does not dispel it.",
-                        "The range of your Lay on Hands increases to 30 feet."
-                    ]
-                }
-            ]
-        },
-        {
             "name": "Greater Rage",
             "page": 1,
             "source": "Ishiir",
@@ -2359,6 +2364,32 @@
                         "When you are forced to make a {@variantrule Saving Throw|Ishiir} or take damage from a creature you can see within 30 ft you, you can use your {@variantrule Reaction|Ishiir} to force the creature to make a {@variantrule Saving Throw|Ishiir} against a DC equal to 8 + your {@variantrule Proficiency|Ishiir} + your CON, INT, WIS or CHA modifier (your choice).",
                         "On a failure, the creature is under the effect of the Bane spell, which does not require {@condition Concentration|Ishiir} and lasts until its full duration.",
                         "You can use this feature a number of times equal to half your {@variantrule Proficiency|Ishiir} bonus (rounded down). You regain all expended uses after you finish a {@variantrule Long Rest|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Hand of Faith",
+            "page": 1,
+            "source": "Ishiir",
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Paladin",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "You learn a cantrip from the {@filter cleric spell list|spells|level=0|class=cleric (Ishiir)|source=Ishiir}.",
+                        "The number of times you can use Divine Smite without a spell slot now equals your {@variantrule Proficiency|Ishiir}. After you use Divine Smite, your weapon sheds bright light in a radius of 10 feet and dim light in a radius of 10 feet beyond that. This light is not smothered by magical darkness but does not dispel it.",
+                        "The range of your Lay on Hands increases to 30 feet."
                     ]
                 }
             ]
@@ -2736,6 +2767,31 @@
             ]
         },
         {
+            "name": "Keen Intuition",
+            "page": 1,
+            "source": "Ishiir",
+            "ability": [
+                {
+                    "wis": 1
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "insight": true
+                }
+            ],
+            "entries": [
+                "You possess keen insight into how other people think and feel. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill Insight} skill. If you are already {@variantrule Proficiency|Ishiir|proficient} in the skill, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with it.",
+                        "You can use your action to try to get uncanny insight about one creature you can see within 30 feet of you. Make a Wisdom ({@skill Insight}) check contested by the target's Charisma ({@skill Deception}) check. If the target creature's Intelligence is 6 or lower, this feature has no effect. If your check succeeds, you have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} and {@variantrule Ability Check|Ishiir|Ability Checks} against the target until the end of your next turn."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Keen Mind",
             "page": 1,
             "source": "Ishiir",
@@ -3084,26 +3140,36 @@
             ]
         },
         {
-            "name": "Master of Disguise",
+            "name": "Martial Excellence",
             "page": 1,
             "source": "Ishiir",
-            "ability": [
+            "prerequisite": [
                 {
-                    "cha": 1
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "class",
+                            "visible": true
+                        }
+                    }
                 }
             ],
-            "toolProficiencies": [
+            "ability": [
                 {
-                    "disguise kit": true
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex"
+                        ],
+                        "amount": 1
+                    }
                 }
             ],
             "entries": [
-                "You have honed your ability to shape your personality and to read the personalities of others. You gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
-                        "You gain {@variantrule Proficiency|Ishiir} with the {@item disguise kit|phb}. If you are already {@variantrule Proficiency|Ishiir|proficient} with it, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with it.",
-                        "If you spend 1 hour observing a creature, you can then spend 8 hours crafting a disguise you can quickly don to mimic that creature. Making the disguise requires a {@item disguise kit|PHB}. You must make {@variantrule Ability Check|Ishiir|checks} as normal to disguise yourself, but you can assume the disguise as an {@variantrule Action|Ishiir}."
+                        "You gain access to the mastery of any armor and weapon you are {@variantrule Proficiency|Ishiir|proficient} in, as per the {@classFeature Martial Mastery|Barbarian|Ishiir|4|Ishiir} class feature."
                     ]
                 }
             ]
@@ -3129,6 +3195,31 @@
                         "When you make a crafting skill check with the {@item Tinker's Tools|Ishiir}, you only expend half the materials upon rolling three failures, and you expend no materials on any other failure.",
                         "Items you craft using {@item Tinker's Tools|Ishiir} or {@item Alchemist's Supplies|Ishiir} receive the Masterwork property even if you only roll two successes for the crafting check. If you roll three successes, they receive the bonus of the Masterwork property twice (e.g. a potion that normally lasts 1 hour, lasts 2 hours with 2 successful crafting rolls, and 3 with three successful rolls).",
                         "Additionally you may research or try to craft new devices by rolling three intelligence skill {@variantrule Ability Check|Ishiir|checks}. The possibilities are determined only by the audacity of your ideas and the DM."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Master of Disguise",
+            "page": 1,
+            "source": "Ishiir",
+            "ability": [
+                {
+                    "cha": 1
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "disguise kit": true
+                }
+            ],
+            "entries": [
+                "You have honed your ability to shape your personality and to read the personalities of others. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain {@variantrule Proficiency|Ishiir} with the {@item disguise kit|phb}. If you are already {@variantrule Proficiency|Ishiir|proficient} with it, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with it.",
+                        "If you spend 1 hour observing a creature, you can then spend 8 hours crafting a disguise you can quickly don to mimic that creature. Making the disguise requires a {@item disguise kit|PHB}. You must make {@variantrule Ability Check|Ishiir|checks} as normal to disguise yourself, but you can assume the disguise as an {@variantrule Action|Ishiir}."
                     ]
                 }
             ]
@@ -3216,6 +3307,42 @@
                         "When you take the {@action Attack|Ishiir} action on your turn, you can replace one attack with an attempt to demoralize one creature you can see within 30 feet of you that can see and hear you. Make a Charisma ({@skill Intimidation}) check contested by the target's Wisdom ({@skill Insight}) check. If the target creature is more than one size category larger than you, your check automatically fails. If your check succeeds, the target is {@condition Frightened|Ishiir} until the end of your next turn. If your check fails, the target can't be {@condition Frightened|Ishiir} by you in this way for 1 hour."
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Mercurial Form",
+            "page": 1,
+            "source": "Ishiir",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Changeling"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                "You can use your Shapechanger racial features as a {@variantrule Bonus Action|Ishiir}. Any time you shapechange, you may pick a number of the following benefits equal to half your {@variantrule Proficiency|Ishiir} modifier (rounded up):",
+                {
+                    "type": "list",
+                    "items": [
+                        "You can exchange one physical ability score (STR, DEX, CON) for another of yours. You only exchange the base value, not including any bonuses from items, spells, or other effects.",
+                        "You can exchange one skill {@variantrule Proficiency|Ishiir} for another. You may take this benefit multiple times, up to the maximum granted by this feat.",
+                        "You gain a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}.",
+                        "You gain a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}.",
+                        "Your {@variantrule Speed|Ishiir} increases by 10 feet.",
+                        "When you jump, the distance you can cover is tripled.",
+                        "Your reach increases by 5 feet.",
+                        "You can breathe normally underwater.",
+                        "You become acclimatized to extreme cold or heat.",
+                        "Your {@sense darkvision} range increases by 60 feet.",
+                        "You gain the Spider Climb monster trait.",
+                        "You gain the Slippery monster trait.",
+                        "You gain the Chamaeleon Skin monster trait."
+                    ]
+                },
+                "Additionally, choose one of the skills gained through your Changeling Instincts racial feature. Your {@variantrule Proficiency|Ishiir} bonus is doubled for any check you make with it."
             ]
         },
         {
@@ -4651,6 +4778,33 @@
             ]
         },
         {
+            "name": "Summoner's Bond",
+            "page": 1,
+            "source": "Ishiir",
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Summoner",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain an additional evolution feat.",
+                        "When you are reduced to 0 hit points but not killed outright, your Eidolon can use its {@variantrule Reaction|Ishiir} to cause you to drop to 1 hit point instead.",
+                        "When your Eidolon is reduced to 0 hit points but not killed outright, you can use your {@variantrule Reaction|Ishiir} to cause it to drop to 1 hit point instead.",
+                        "You can't use this feature again until you finish a {@variantrule Long Rest|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Supernatural Constitution",
             "page": 1,
             "source": "Ishiir",
@@ -5090,6 +5244,40 @@
             ]
         },
         {
+            "name": "Veteran of the Wilds",
+            "page": 1,
+            "source": "Ishiir",
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Ranger",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "perception": true,
+                    "stealth": true
+                }
+            ],
+            "entries": [
+                "Choose two of the following benefits when you gain this feat:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Choose {@skill Animal Handling}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}. You gain {@variantrule Proficiency|Ishiir} in the chosen skill. If you are already {@variantrule Proficiency|Ishiir|proficient} with it, your {@variantrule Proficiency|Ishiir} bonus is doubled for any check you make with it. If roll a 7 or lower on the 20 for a check with the chosen skill, treat the roll as an 8.",
+                        "When you take the {@action Attack|Ishiir} action while hidden, all your attacks benefit from {@variantrule Advantage|Ishiir} rather than only the first one. Additionally, you deal your favorite enemy bonus damage to all of these attacks. If the target is already one of your favorite enemies, this damage stacks with the usual bonus damage.",
+                        "You learn the {@spell Hunter's Mark|Ishiir} spell or a different spell from the ranger spell list if you already know it. Hunter's Mark no longer requires {@condition Concentration|Ishiir} when you cast it and instead lasts for the duration or until you are {@condition Incapacitated|Ishiir}.",
+                        "Choose a creature type and add it to your favored enemies, gaining the usual benefits. Additinally, the bonus damage you deal to your favored enemies increases by an amount equal to your Wisdom modifier."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "War Caster",
             "page": 1,
             "source": "Ishiir",
@@ -5301,194 +5489,6 @@
                     "type": "list",
                     "items": [
                         "You learn the magic of the primeval woods, which are revered and protected by your people. You learn one druid cantrip of your choice. You also learn the {@spell Longstrider|Ishiir} and {@spell Pass without Trace|Ishiir} spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a {@variantrule Long Rest|Ishiir}. Wisdom is your spellcasting ability for all three spells. You can also cast them using spell slots you have of the appropriate level."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Mercurial Form",
-            "page": 1,
-            "source": "Ishiir",
-            "prerequisite": [
-                {
-                    "race": [
-                        {
-                            "name": "Changeling"
-                        }
-                    ]
-                }
-            ],
-            "entries": [
-                "You can use your Shapechanger racial features as a {@variantrule Bonus Action|Ishiir}. Any time you shapechange, you may pick a number of the following benefits equal to half your {@variantrule Proficiency|Ishiir} modifier (rounded up):",
-                {
-                    "type": "list",
-                    "items": [
-                        "You can exchange one physical ability score (STR, DEX, CON) for another of yours. You only exchange the base value, not including any bonuses from items, spells, or other effects.",
-                        "You can exchange one skill {@variantrule Proficiency|Ishiir} for another. You may take this benefit multiple times, up to the maximum granted by this feat.",
-                        "You gain a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}.",
-                        "You gain a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}.",
-                        "Your {@variantrule Speed|Ishiir} increases by 10 feet.",
-                        "When you jump, the distance you can cover is tripled.",
-                        "Your reach increases by 5 feet.",
-                        "You can breathe normally underwater.",
-                        "You become acclimatized to extreme cold or heat.",
-                        "Your {@sense darkvision} range increases by 60 feet.",
-                        "You gain the Spider Climb monster trait.",
-                        "You gain the Slippery monster trait.",
-                        "You gain the Chamaeleon Skin monster trait."
-                    ]
-                },
-                "Additionally, choose one of the skills gained through your Changeling Instincts racial feature. Your {@variantrule Proficiency|Ishiir} bonus is doubled for any check you make with it."
-            ]
-        },
-        {
-            "name": "Dark Arts",
-            "page": 1,
-            "source": "Ishiir",
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 4,
-                        "class": {
-                            "name": "Blood Hunter",
-                            "visible": true
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                {
-                    "type": "list",
-                    "items": [
-                        "You learn an additional Blood Curse and you gain an additional use of Blood Maledict.",
-                        "When you roll your Hemocraft Die to determine the necrotic damage you take for using a feature from this class, you can roll it a second time and take the lower result."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Summoner's Bond",
-            "page": 1,
-            "source": "Ishiir",
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 4,
-                        "class": {
-                            "name": "Summoner",
-                            "visible": true
-                        }
-                    }
-                }
-            ],
-            "entries": [
-                {
-                    "type": "list",
-                    "items": [
-                        "You gain an additional evolution feat.",
-                        "When you are reduced to 0 hit points but not killed outright, your Eidolon can use its {@variantrule Reaction|Ishiir} to cause you to drop to 1 hit point instead.",
-                        "When your Eidolon is reduced to 0 hit points but not killed outright, you can use your {@variantrule Reaction|Ishiir} to cause it to drop to 1 hit point instead.",
-                        "You can't use this feature again until you finish a {@variantrule Long Rest|Ishiir}."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Awakened Mind",
-            "page": 1,
-            "source": "Ishiir",
-            "ability": [
-                {
-                    "choose": {
-                        "from": [
-                            "int",
-                            "wis",
-                            "cha"
-                        ],
-                        "amount": 1
-                    }
-                }
-            ],
-            "skillProficiencies": [
-                {
-                    "any": 1
-                }
-            ],
-            "prerequisite": [
-                {
-                    "race": [
-                        {
-                            "name": "awakened forest owl"
-                        }
-                    ]
-                }
-            ],
-            "entries": [
-                {
-                    "type": "list",
-                    "items": [
-                        "Choose either WIS, INT, or CHA. Your chosen ability score increases by 1 and your maximum for it increases by 2.",
-                        "Additionally, you learn one skill that uses your chosen ability score."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Enchanter",
-            "page": 1,
-            "source": "Ishiir",
-            "prerequisite": [
-                {
-                    "spellcasting": true
-                }
-            ],
-            "toolProficiencies": [
-                {
-                    "enchanter's supplies": true
-                }
-            ],
-            "entries": [
-                "Your studies of magic have made you particularly adept at creating scrolls and magical items.",
-                {
-                    "type": "list",
-                    "items": [
-                        "You gain {@variantrule Proficiency|Ishiir} with the enchanter's supplies. If you are already {@variantrule Proficiency|Ishiir|proficient} in these tools, your {@variantrule Proficiency|Ishiir} bonus is doubled for any skill check you make with them.",
-                        "If you craft a magical item that has a rarity of common or uncommon, it takes you a quarter of the normal time, and it costs you half as much of the usual gold."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Martial Excellence",
-            "page": 1,
-            "source": "Ishiir",
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 4,
-                        "class": {
-                            "name": "class",
-                            "visible": true
-                        }
-                    }
-                }
-            ],
-            "ability": [
-                {
-                    "choose": {
-                        "from": [
-                            "str",
-                            "dex"
-                        ],
-                        "amount": 1
-                    }
-                }
-            ],
-            "entries": [
-                {
-                    "type": "list",
-                    "items": [
-                        "You gain access to the mastery of any armor and weapon you are {@variantrule Proficiency|Ishiir|proficient} in, as per the {@classFeature Martial Mastery|Barbarian|Ishiir|4|Ishiir} class feature."
                     ]
                 }
             ]
