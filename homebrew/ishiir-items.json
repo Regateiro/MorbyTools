@@ -6931,7 +6931,14 @@
             "rarity": "rare",
             "reqAttune": true,
             "entries": [
-                "While you wear this ring, {@quickref difficult terrain||3} doesn't cost you extra movement. In addition, magic can neither reduce your {@variantrule Speed|Ishiir} nor cause you to be {@condition Paralyzed|Ishiir} or {@condition Restrained|Ishiir}."
+                "While you wear this ring, {@quickref difficult terrain||3} doesn't cost you extra movement. In addition, magic can neither reduce your {@variantrule Speed|Ishiir} nor cause you to be {@condition Paralyzed|Ishiir} or {@condition Restrained|Ishiir}.",
+                {
+                    "name": "Masterworked",
+                    "type": "entries",
+                    "entries": [
+                        "Magic also cannot cause you to be {@condition Dazed|Ishiir}."
+                    ]
+                }
             ],
             "value": 190000,
             "crafted": {
@@ -7439,7 +7446,14 @@
             "grantsProficiency": true,
             "bonusWeaponDamage": "+2",
             "entries": [
-                "While wearing these bracers, you have {@variantrule Proficiency|Ishiir} with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons."
+                "While wearing these bracers, you have {@variantrule Proficiency|Ishiir} with the {@item Longbow|Ishiir} and {@item Shortbow|Ishiir}, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons.",
+                {
+                    "name": "Masterworked",
+                    "type": "entries",
+                    "entries": [
+                        "You gain a +3 bonus to damage rolls on ranged attacks made with such weapons instead."
+                    ]
+                }
             ],
             "type": "CRF",
             "value": 250000,
@@ -8571,6 +8585,13 @@
                             "Wind walking",
                             "{@spell Wind Walk|Ishiir}"
                         ]
+                    ]
+                },
+                {
+                    "name": "Masterworked",
+                    "type": "entries",
+                    "entries": [
+                        "The necklace has the maximum number of beads instead."
                     ]
                 }
             ],
