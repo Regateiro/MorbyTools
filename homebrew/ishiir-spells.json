@@ -50878,6 +50878,59 @@
             ]
         },
         {
+            "name": "Spell Trap",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 9,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when you are targeted by a spell you can see or are in its area of effect"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "s": true,
+                "m": {
+                    "text": "a lodestone in the shape of a hollow half-sphere, adorned with diamonds worth 3.000 gp",
+                    "cost": 300000
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "When you are targeted by a spell you can see or are in its area of effect, you can use your reaction to end the spell immediately before its effects are applied. You then gain a spell slot equal to the level of that spell. You gain this spell slot even if it exceeds your maximum number of slots for that spell level, but once used it cannot be regained in any way."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Spell Turning",
             "page": 1,
             "source": "Ishiir",
