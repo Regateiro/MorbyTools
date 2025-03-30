@@ -42104,30 +42104,16 @@
                 }
             ],
             "entries": [
-                "Up to five creatures of your choice who remain within range for the spell's entire casting gain the benefits of a {@variantrule Short Rest|Ishiir} and also regain {@dice 2d8} Hit Points. A creature can't be affected by this spell again until that creature finishes a {@variantrule Long Rest|Ishiir}."
+                "Up to five creatures of your choice who remain within range for the spell's entire casting can spend Hit Dice as if they had taken a {@variantrule Short Rest|Ishiir} and also regain {@dice 2d8} Hit Points. A creature can't gain the ability to spend Hit Dice through this spell again until that creature finishes a {@variantrule Long Rest|Ishiir}."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@scaledice 2d8|2-9|1d8} for each slot level above 2nd."
+                        "When you cast this spell using a spell slot of 3rd level or higher, the Healing increases by {@scaledice 2d8|2-9|2d8} for each slot level above 2nd."
                     ]
                 }
-            ],
-            "affectsCreatureType": [
-                "aberration",
-                "beast",
-                "celestial",
-                "dragon",
-                "elemental",
-                "fey",
-                "fiend",
-                "giant",
-                "humanoid",
-                "monstrosity",
-                "ooze",
-                "plant"
             ],
             "miscTags": [
                 "HL",
@@ -42144,6 +42130,58 @@
                     },
                     {
                         "name": "Paladin",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Prayer of Respite",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 5,
+            "school": "V",
+            "time": [
+                {
+                    "number": 10,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Up to five creatures of your choice who remain within range for the spell's entire casting gain the benefit of a {@variantrule Short Rest|Ishiir} and lose 1 level of {@condition Exhaustion|Ishiir}. A creature can't be affected by this spell again until that creature finishes a {@variantrule Long Rest|Ishiir}."
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ],
+            "areaTags": [
+                "MT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
                         "source": "Ishiir"
                     }
                 ]
