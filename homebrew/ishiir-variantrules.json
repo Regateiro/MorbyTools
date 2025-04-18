@@ -862,10 +862,10 @@
                 "If a creature would drop to less than 50% HP, but has FP remaining, the damage is subtracted from the FP first instead. This happens at a 1:1 ratio, so an attack doing 8 points of damage would consume 8 points of FP.",
                 {
                     "type": "table",
-                    "caption": "Effect Damage to FP",
+                    "caption": "General Effect Damage to FP",
                     "source": "Ishiir",
                     "colLabels": [
-                        "<big>Effect</big>",
+                        "<big>General Effect</big>",
                         "<big>FP Damage</big>"
                     ],
                     "colStyles": [
@@ -874,21 +874,28 @@
                     ],
                     "rows": [
                         [
-                            "<br/><big><b>--- General ---</b></big>",
-                            ""
-                        ],
-                        [
                             "{@condition Concentration|Ishiir} {@variantrule Saving Throw|Ishiir}",
                             "10/20/30 (failed/by 5 or more/by 10 or more)"
                         ],
                         [
                             "Spell",
                             "10 x Spell Level"
-                        ],
-                        [
-                            "<br/><big><b>--- Artificer ---</b><big>",
-                            ""
-                        ],
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Artificer Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Artificer Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
                         [
                             "Artillerist: Arcane Turret",
                             "10"
@@ -900,11 +907,22 @@
                         [
                             "Artillerist: Explosive Cannon",
                             "20"
-                        ],
-                        [
-                            "<br/><big><b>--- Barbarian ---</b><big>",
-                            ""
-                        ],
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Barbarian Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Barbarian Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
                         [
                             "Beast: Infectious Fury",
                             "30"
@@ -940,11 +958,22 @@
                         [
                             "Wild Magic: Wild Surge (1,3,8)",
                             "10"
-                        ],
-                        [
-                            "<br/><big><b>--- Bard ---</b><big>",
-                            ""
-                        ],
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Bard Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Bard Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
                         [
                             "Eloquence: Unsettling Words",
                             "10"
@@ -980,11 +1009,22 @@
                         [
                             "Whispers: Shadow Lore",
                             "30"
-                        ],
-                        [
-                            "<br/><big><b>--- Blood Hunter ---</b><big>",
-                            ""
-                        ],
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Blood Hunter Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Blood Hunter Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
                         [
                             "Brand of Tethering",
                             "20"
@@ -992,11 +1032,22 @@
                         [
                             "Mutant: Brand of Axiom",
                             "40"
-                        ],
-                        [
-                            "<br/><big><b>--- Cleric ---</b><big>",
-                            ""
-                        ],
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Cleric Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Cleric Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
                         [
                             "Turn Undead",
                             "20"
@@ -1044,11 +1095,22 @@
                         [
                             "Winter: Bone-Chilling Cold",
                             "50"
-                        ],
-                        [
-                            "<br/><big><b>--- Druid ---</b><big>",
-                            ""
-                        ],
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Druid Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Druid Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
                         [
                             "Land: Nature's Sanctuary",
                             "10"
@@ -1072,11 +1134,22 @@
                         [
                             "Witherbloom: Witherbloom Brew (Toxifying)",
                             "30"
-                        ],
-                        [
-                            "<br/><big><b>--- Fighter ---</b><big>",
-                            ""
-                        ],
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Fighter Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Fighter Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
                         [
                             "Arcane Archer: Arcane Shot (Banishing Arrow)",
                             "30 (40 at lvl 18)"
@@ -1124,11 +1197,22 @@
                         [
                             "Rune Knight: Rune Carver (Stone Rune)",
                             "30"
-                        ],
-                        [
-                            "<br/><big><b>--- Kineticist ---</b><big>",
-                            ""
-                        ],
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Kineticist Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Kineticist Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
                         [
                             "Air: Hurricane Queen",
                             "20"
@@ -1140,11 +1224,22 @@
                         [
                             "Water: Empress of the Fathoms",
                             "30"
-                        ],
-                        [
-                            "<br/><big><b>--- Monk ---</b><big>",
-                            ""
-                        ],
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Monk Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Monk Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
                         [
                             "Stunning Strike",
                             "20"
@@ -1208,11 +1303,22 @@
                         [
                             "Tranquility: Douse the Flames of War",
                             "10"
-                        ],
-                        [
-                            "<br/><big><b>--- Paladin ---</b><big>",
-                            ""
-                        ],
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Paladin Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Paladin Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
                         [
                             "Ancients: Channel Divinity (Nature's Wrath)",
                             "10"
@@ -1260,11 +1366,22 @@
                         [
                             "Watchers: Mortal Bulwark",
                             "60"
-                        ],
-                        [
-                            "<br/><big><b>--- Ranger ---</b><big>",
-                            ""
-                        ],
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Ranger Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Ranger Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
                         [
                             "Drake Warden: Drake's Breath",
                             "50 (60 at Lvl 15)"
@@ -1280,11 +1397,22 @@
                         [
                             "Swarmkeeper: Gathered Swarm",
                             "10"
-                        ],
-                        [
-                            "<br/><big><b>--- Rogue ---</b><big>",
-                            ""
-                        ],
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Rogue Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Rogue Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
                         [
                             "Arcane Trickster: Spell Thief",
                             "50"
@@ -1304,11 +1432,22 @@
                         [
                             "Thug: Brutal Beating",
                             "10 x Number of Sneak Attack dice spent"
-                        ],
-                        [
-                            "<br/><big><b>--- Shifter ---</b><big>",
-                            ""
-                        ],
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Shifter Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Shifter Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
                         [
                             "Autumn's Wing: Improved Winged Aspect",
                             "10"
@@ -1324,11 +1463,22 @@
                         [
                             "Winter's Fang: Winged Aspect",
                             "10"
-                        ],
-                        [
-                            "<br/><big><b>--- Sorcerer ---</b><big>",
-                            ""
-                        ],
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Sorcerer Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Sorcerer Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
                         [
                             "Aberrant Mind: Warping Implosion",
                             "20"
@@ -1352,11 +1502,22 @@
                         [
                             "Storm: Storm's Fury",
                             "10"
-                        ],
-                        [
-                            "<br/><big><b>--- Warlock ---</b><big>",
-                            ""
-                        ],
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Warlock Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Warlock Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
                         [
                             "Archfey: Fey Presence",
                             "20"
@@ -1400,11 +1561,22 @@
                         [
                             "Undying: Among the Dead",
                             "10"
-                        ],
-                        [
-                            "<br/><big><b>--- Wizard ---</b><big>",
-                            ""
-                        ],
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Wizard Effect Damage to FP",
+                    "source": "Ishiir",
+                    "colLabels": [
+                        "<big>Wizard Effect</big>",
+                        "<big>FP Damage</big>"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
                         [
                             "Chronurgy: Momentar Stasis",
                             "10"
