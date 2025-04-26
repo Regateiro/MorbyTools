@@ -4821,7 +4821,14 @@
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
-                "This pen is tipped with an emerald nib and requires no ink to write. While holding this pen, you can cast {@spell Illusory Script|Ishiir} at will, requiring no material components."
+                "This pen is tipped with an emerald nib and requires no ink to write. While holding this pen, you can cast {@spell Illusory Script|Ishiir} at will, requiring no material components.",
+                {
+                    "name": "Masterworked",
+                    "type": "entries",
+                    "entries": [
+                        "As an {@variantrule Action|Ishiir}, you can turn the pen into a sword. The sword deals a {@damage d8} of damage and has the Finesse property. While holding the sword, you can cast {@spell Green-Flame Blade|Ishiir} with it. Your spellcasting ability for it is INT, WIS, or CHA (your choice). You can use your {@variantrule Action|Ishiir} again to turn it back into a pen."
+                    ]
+                }
             ],
             "attachedSpells": [
                 "illusory script|ishiir"
@@ -6141,6 +6148,13 @@
                     "items": [
                         "Once per turn when you roll damage for a melee attack with a weapon, you can reroll the weapon's damage dice. If you do so, you must use the second total.",
                         "Your weapon attacks that deal slashing damage score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+                    ]
+                },
+                {
+                    "name": "Masterworked",
+                    "type": "entries",
+                    "entries": [
+                        "Critical hits with weapon attacks that deal slashing damage deal additional damage equal to your proficiency."
                     ]
                 }
             ],
