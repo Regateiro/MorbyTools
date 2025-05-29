@@ -1807,6 +1807,7 @@ Parser.OPT_FEATURE_TYPE_TO_FULL = {
 	"BC": "Blood Curse",
 	"MF": "Mutagen Formula",
 	MM: "Metamagic",
+	"MK": "Metakinesis",
 	"MV": "Maneuver",
 	"MV:B": "Maneuver, Battle Master",
 	"MV:C2-UA": "Maneuver, Cavalier V2 (UA)",
@@ -1987,6 +1988,7 @@ Parser.CAT_ID_BLOOD_CURSES = 55;
 Parser.CAT_ID_MUTAGEN_FORMULAS = 56;
 Parser.CAT_ID_APOTHECARY_SALVES = 57;
 Parser.CAT_ID_APOTHECARY_TONICS = 58;
+Parser.CAT_ID_METAKINESIS = 59;
 
 Parser.CAT_ID_TO_FULL = {};
 Parser.CAT_ID_TO_FULL[Parser.CAT_ID_CREATURE] = "Bestiary";
@@ -2011,6 +2013,7 @@ Parser.CAT_ID_TO_FULL[Parser.CAT_ID_CULT] = "Cult";
 Parser.CAT_ID_TO_FULL[Parser.CAT_ID_BOON] = "Boon";
 Parser.CAT_ID_TO_FULL[Parser.CAT_ID_DISEASE] = "Disease";
 Parser.CAT_ID_TO_FULL[Parser.CAT_ID_METAMAGIC] = "Metamagic";
+Parser.CAT_ID_TO_FULL[Parser.CAT_ID_METAKINESIS] = "Metakinesis";
 Parser.CAT_ID_TO_FULL[Parser.CAT_ID_MANEUVER_BATTLEMASTER] = "Maneuver; Battlemaster";
 Parser.CAT_ID_TO_FULL[Parser.CAT_ID_TABLE] = "Table";
 Parser.CAT_ID_TO_FULL[Parser.CAT_ID_TABLE_GROUP] = "Table";
@@ -2077,6 +2080,7 @@ Parser.CAT_ID_TO_PROP[Parser.CAT_ID_ARCANE_SHOT] = "optionalfeature";
 Parser.CAT_ID_TO_PROP[Parser.CAT_ID_OPTIONAL_FEATURE_OTHER] = "optionalfeature";
 Parser.CAT_ID_TO_PROP[Parser.CAT_ID_FIGHTING_STYLE] = "optionalfeature";
 Parser.CAT_ID_TO_PROP[Parser.CAT_ID_METAMAGIC] = "optionalfeature";
+Parser.CAT_ID_TO_PROP[Parser.CAT_ID_METAKINESIS] = "optionalfeature";
 Parser.CAT_ID_TO_PROP[Parser.CAT_ID_MANEUVER_BATTLEMASTER] = "optionalfeature";
 Parser.CAT_ID_TO_PROP[Parser.CAT_ID_PACT_BOON] = "optionalfeature";
 Parser.CAT_ID_TO_PROP[Parser.CAT_ID_ELEMENTAL_DISCIPLINE] = "optionalfeature";

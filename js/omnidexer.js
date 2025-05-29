@@ -683,6 +683,19 @@ class IndexableFileOptFeatures_Metamagic extends IndexableFile {
 	}
 }
 
+class IndexableFileOptFeatures_Metakinesis extends IndexableFile {
+	constructor () {
+		super({
+			category: Parser.CAT_ID_METAKINESIS,
+			file: "optionalfeatures.json",
+			listProp: "optionalfeature",
+			baseUrl: "optionalfeatures.html",
+			isHover: true,
+			include: (it) => it.featureType.includes("MK"),
+		});
+	}
+}
+
 class IndexableFileOptFeatures_ManeuverBattlemaster extends IndexableFile {
 	constructor () {
 		super({
@@ -1310,6 +1323,7 @@ Omnidexer.TO_INDEX = [
 	new IndexableFileOptFeatures_BloodCurses(),
 	new IndexableFileOptFeatures_MutagenFormulas(),
 	new IndexableFileOptFeatures_Metamagic(),
+	new IndexableFileOptFeatures_Metakinesis(),
 	new IndexableFileOptFeatures_ManeuverBattlemaster(),
 	new IndexableFileOptFeatures_ManeuverCavalier(),
 	new IndexableFileOptFeatures_ArcaneShot(),
