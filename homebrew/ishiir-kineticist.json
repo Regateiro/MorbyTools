@@ -666,37 +666,23 @@
                     "entries": [
                         "You gain the following ways to spend your kinesis points.",
                         {
-                            "type": "refClassFeature",
-                            "classFeature": "Kinetic Enhancement|Kineticist|Ishiir|2"
-                        },
-                        {
-                            "type": "refClassFeature",
-                            "classFeature": "Kinetic Shield|Kineticist|Ishiir|2"
+                            "type": "list",
+                            "style": "list-hang-notitle",
+                            "items": [
+                                {
+                                    "type": "item",
+                                    "name": "Kinetic Enhancement.",
+                                    "entry": "When you make an {@variantrule Ability Check|Ishiir}, you can spend 1 kinesis point to gain {@variantrule Advantage|Ishiir} on the check."
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Kinetic Shield.",
+                                    "entry": "When you take acid, cold, fire, lightning, or thunder damage, you can spend 1 kinesis point and use your {@variantrule Reaction|Ishiir} to grant yourself {@variantrule Resistance|Ishiir} against that instance of the damage."
+                                }
+                            ]
                         }
                     ]
                 }
-            ]
-        },
-        {
-            "name": "Kinetic Enhancement",
-            "page": 1,
-            "source": "Ishiir",
-            "className": "Kineticist",
-            "classSource": "Ishiir",
-            "level": 2,
-            "entries": [
-                "When you make an {@variantrule Ability Check|Ishiir}, you can spend 1 kinesis point to gain {@variantrule Advantage|Ishiir} on the check."
-            ]
-        },
-        {
-            "name": "Kinetic Shield",
-            "page": 1,
-            "source": "Ishiir",
-            "className": "Kineticist",
-            "classSource": "Ishiir",
-            "level": 2,
-            "entries": [
-                "When you take acid, cold, fire, lightning, or thunder damage, you can spend 1 kinesis point and use your {@variantrule Reaction|Ishiir} to grant yourself {@variantrule Resistance|Ishiir} against that instance of the damage."
             ]
         },
         {
