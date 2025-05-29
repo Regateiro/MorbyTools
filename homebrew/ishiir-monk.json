@@ -444,7 +444,6 @@
                 "Unarmored Defense|Monk|Ishiir|1",
                 "Martial Arts|Monk|Ishiir|1",
                 "Ki|Monk|Ishiir|2",
-                "Ki Features|Monk|Ishiir|2",
                 "Dedicated Weapon|Monk|Ishiir|2",
                 "Unarmored Movement|Monk|Ishiir|2",
                 "Uncanny Metabolism|Monk|Ishiir|2",
@@ -582,59 +581,100 @@
                 "When you expend Ki Points, it is unavailable until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}, at the end of which you regain all your expended Ki Points.",
                 "Some features that use Ki Points require your target to make a {@variantrule Saving Throw|Ishiir}. The save DC equals 8 plus your Wisdom modifier and {@variantrule Proficiency|Ishiir} Bonus.",
                 {
-                    "type": "list",
-                    "style": "list-hang-notitle",
-                    "items": [
-                        {
-                            "type": "item",
-                            "name": "Flurry of Blows.",
-                            "entry": "You can expend 1 Ki Point to make two {@variantrule Unarmed Strike|Ishiir|Unarmed Strikes} as a {@variantrule Bonus Action|Ishiir}."
-                        },
-                        {
-                            "type": "item",
-                            "name": "Patient Defense.",
-                            "entry": "You can take the {@action Disengage|Ishiir} action as a {@variantrule Bonus Action|Ishiir}. Alternatively, you can expend 1 Ki Point to take both the {@action Disengage|Ishiir} and the {@action Dodge|Ishiir} actions as a {@variantrule Bonus Action|Ishiir}."
-                        },
-                        {
-                            "type": "item",
-                            "name": "Step of the Wind.",
-                            "entry": "You can take the {@action Dash|Ishiir} action as a {@variantrule Bonus Action|Ishiir}. Alternatively, you can expend 1 Ki Point to take both the {@action Disengage|Ishiir} and {@action Dash|Ishiir} actions as a {@variantrule Bonus Action|Ishiir}, and your jump distance is doubled for the turn."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Ki Features",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Monk",
-            "classSource": "Ishiir",
-            "level": 2,
-            "entries": [
-                "You get access to the following features.",
+                    "type": "refClassFeature",
+                    "classFeature": "Flurry of Blows|Monk|Ishiir|2"
+                },
                 {
-                    "type": "list",
-                    "style": "list-hang-notitle",
-                    "items": [
-                        {
-                            "type": "item",
-                            "name": "Distant Eye.",
-                            "entries": [
-                                "When you make a ranged weapon attack, you can spend 1 ki point to prevent attacking at long range from imposing {@variantrule Disadvantage|Ishiir} on your {@variantrule Attack Roll|Ishiir|Attack Rolls} until the end of the current turn."
-                            ]
-                        },
-                        {
-                            "type": "item",
-                            "name": "Quickened Healing.",
-                            "entries": [
-                                "At the start of your turn, you can spend 2 ki points and roll a Martial Arts die. You regain a number of hit points equal to the number rolled."
-                            ]
-                        }
-                    ]
+                    "type": "refClassFeature",
+                    "classFeature": "Patient Defense|Monk|Ishiir|2"
+                },
+                {
+                    "type": "refClassFeature",
+                    "classFeature": "Step of the Wind|Monk|Ishiir|2"
+                },
+                {
+                    "type": "refClassFeature",
+                    "classFeature": "Distant Eye|Monk|Ishiir|2"
+                },
+                {
+                    "type": "refClassFeature",
+                    "classFeature": "Quickened Healing|Monk|Ishiir|2"
                 }
             ]
         },
+		{
+			"name": "Flurry of Blows",
+			"source": "Ishiir",
+			"page": 1,
+			"className": "Monk",
+			"classSource": "Ishiir",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Ki"
+			},
+			"entries": [
+				"You can expend 1 Ki Point to make two {@variantrule Unarmed Strike|Ishiir|Unarmed Strikes} as a {@variantrule Bonus Action|Ishiir}."
+			]
+		},
+		{
+			"name": "Patient Defense",
+			"source": "Ishiir",
+			"page": 1,
+			"className": "Monk",
+			"classSource": "Ishiir",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Ki"
+			},
+			"entries": [
+				"You can take the {@action Disengage|Ishiir} action as a {@variantrule Bonus Action|Ishiir}. Alternatively, you can expend 1 Ki Point to take both the {@action Disengage|Ishiir} and the {@action Dodge|Ishiir} actions as a {@variantrule Bonus Action|Ishiir}."
+			]
+		},
+		{
+			"name": "Step of the Wind",
+			"source": "Ishiir",
+			"page": 1,
+			"className": "Monk",
+			"classSource": "Ishiir",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"You can take the {@action Dash|Ishiir} action as a {@variantrule Bonus Action|Ishiir}. Alternatively, you can expend 1 Ki Point to take both the {@action Disengage|Ishiir} and {@action Dash|Ishiir} actions as a {@variantrule Bonus Action|Ishiir}, and your jump distance is doubled for the turn."
+			]
+		},
+		{
+			"name": "Distant Eye",
+			"source": "Ishiir",
+			"page": 1,
+			"className": "Monk",
+			"classSource": "Ishiir",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Ki"
+			},
+			"entries": [
+				"When you make a ranged weapon attack, you can spend 1 ki point to prevent attacking at long range from imposing {@variantrule Disadvantage|Ishiir} on your {@variantrule Attack Roll|Ishiir|Attack Rolls} until the end of the current turn."
+			]
+		},
+		{
+			"name": "Quickened Healing",
+			"source": "Ishiir",
+			"page": 1,
+			"className": "Monk",
+			"classSource": "Ishiir",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Ki",
+                "amount": 2
+			},
+			"entries": [
+				"At the start of your turn, you can spend 2 ki points and roll a Martial Arts die. You regain a number of hit points equal to the number rolled."
+			]
+		},
         {
             "name": "Unarmored Movement",
             "source": "Ishiir",
