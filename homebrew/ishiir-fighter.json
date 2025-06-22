@@ -836,16 +836,15 @@
             ],
             "subclassFeatures": [
                 "Arcane Archer|Fighter|Ishiir|Arcane Archer|Ishiir|3",
-                "Magic Shot|Fighter|Ishiir|Arcane Archer|Ishiir|3",
-                "Enchanted Shots|Fighter|Ishiir|Arcane Archer|Ishiir|7",
+                "Enchanted Shots|Fighter|Ishiir|Arcane Archer|Ishiir|3",
                 "Curving Shot|Fighter|Ishiir|Arcane Archer|Ishiir|7",
                 "Additional Arcane Shot Option|Fighter|Ishiir|Arcane Archer|Ishiir|7",
                 "Additional Arcane Shot Option|Fighter|Ishiir|Arcane Archer|Ishiir|10",
-                "Arcane Quiver|Fighter|Ishiir|Arcane Archer|Ishiir|10",
+                "Dispelling Shot|Fighter|Ishiir|Arcane Archer|Ishiir|10",
                 "Ever-Ready Shot|Fighter|Ishiir|Arcane Archer|Ishiir|15",
                 "Additional Arcane Shot Option|Fighter|Ishiir|Arcane Archer|Ishiir|15",
                 "Additional Arcane Shot Option|Fighter|Ishiir|Arcane Archer|Ishiir|18",
-                "Improved Arcane Quiver|Fighter|Ishiir|Arcane Archer|Ishiir|18"
+                "All-Piercing Shot|Fighter|Ishiir|Arcane Archer|Ishiir|18"
             ]
         },
         {
@@ -1514,9 +1513,9 @@
             "header": 1,
             "entries": [
                 "You learn to unleash special magical effects with some of your shots. When you gain this feature, you learn two Arcane Shot options of your choice (see \"Arcane Shot Options\" below).",
-                "Once per turn, when you make a ranged weapon attack as part of the Attack action, you can apply one of your Arcane Shot options to that attack.",
-                "You gain an additional Arcane Shot option of your choice when you reach certain levels in this class: 7th, 10th, 15th, and 18th level. Each option also improves when you become an 18th-level fighter.",
-                "You have two uses of this feature, and you regain all expended uses of it when you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}. You can also spend a use of your Second Wind to regain a use of this feature (no action required)."
+                "Once per turn, when you make a ranged weapon attack as part of the Attack action, you can apply one of your Arcane Shot options to that attack. If the attack misses, the use is not expended.",
+                "You gain an additional Arcane Shot option of your choice when you reach certain levels in this class: 7th, 10th, 15th, and 18th level.",
+                "You can use this feature a number of times equal to your {@variantrule Proficiency|Ishiir}. You regain one expended use when you finish a {@variantrule Short Rest|Ishiir}, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}. You can also spend a use of your Second Wind to regain a use of this feature (no action required)."
             ]
         },
         {
@@ -1536,7 +1535,8 @@
                     "type": "abilityDc",
                     "name": "Arcane Shot",
                     "attributes": [
-                        "int"
+                        "int",
+                        "wis"
                     ]
                 },
                 {
@@ -1557,15 +1557,15 @@
                         },
                         {
                             "type": "refOptionalfeature",
+                            "optionalfeature": "Dimensional Shot|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
                             "optionalfeature": "Enfeebling Shot|Ishiir"
                         },
                         {
                             "type": "refOptionalfeature",
                             "optionalfeature": "Grasping Shot|Ishiir"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-                            "optionalfeature": "Piercing Shot|Ishiir"
                         },
                         {
                             "type": "refOptionalfeature",
@@ -1580,7 +1580,7 @@
             ]
         },
         {
-            "name": "Magic Shot",
+            "name": "Enchanted Shots",
             "source": "Ishiir",
             "page": 1,
             "className": "Fighter",
@@ -1590,7 +1590,8 @@
             "level": 3,
             "header": 2,
             "entries": [
-                "You gain the ability to infuse projectiles with magic. Whenever you make a ranged weapon attack with a nonmagical weapon, you can make it magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage."
+                "You gain the ability to infuse projectiles with magic. Whenever you make a ranged weapon attack with a nonmagical weapon, you can make it magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage.",
+                "Additionally, whenever you make a ranged weapon attack, you can change the damage type to any other damage type of your choice except bludgeoning, piercing, or slashing."
             ]
         },
         {
@@ -1622,21 +1623,6 @@
             ]
         },
         {
-            "name": "Enchanted Shots",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Fighter",
-            "classSource": "Ishiir",
-            "subclassShortName": "Arcane Archer",
-            "subclassSource": "Ishiir",
-            "level": 7,
-            "header": 2,
-            "entries": [
-                "You learn the {@spell Booming Blade|Ishiir} and {@spell Green-Flame Blade|Ishiir} cantrips. You can use these cantrips with ranged and thrown weapons and their range is equal to the weapon's normal range.",
-                "Once per turn when you take the attack action, you can cast one of these cantrips in place of one of your ranged weapon attacks."
-            ]
-        },
-        {
             "name": "Additional Arcane Shot Option",
             "source": "Ishiir",
             "page": 1,
@@ -1651,7 +1637,7 @@
             ]
         },
         {
-            "name": "Arcane Quiver",
+            "name": "Dispelling Shot",
             "source": "Ishiir",
             "page": 1,
             "className": "Fighter",
@@ -1661,7 +1647,9 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You can cast the {@spell Flame Arrows|Ishiir} and {@spell Lightning Arrow|Ishiir} spells once each without expending a spell slot. Intelligence is your spellcasting ability for them. You cannot do so again until you have finished a {@variantrule Long Rest|Ishiir}."
+                "You learn to lace your shots with disruptive magic. Once per turn, when you hit with a ranged weapon attack, you can end any spells of 3rd level or lower on the target.",
+                "For each spell of 4th level or higher on the target, make an {@variantrule Ability Check|Ishiir} using the ability score for your Arcane Shot save DC. The DC equals 10 + the caster's spellcasting ability modifier + the difference between the spell slot level used for your dispel magic and that of the target spell. On a successful check, the spell ends.",
+                "You can use this features a number of times equal to half your {@variantrule Proficiency|Ishiir} (rounded down) and you regain all expended uses on a {@variantrule Long Rest|Ishiir}. You can also expend a use of your Arcane Shot to use this feature again (no action required)."
             ]
         },
         {
@@ -1689,7 +1677,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "Your magical archery is available whenever battle starts. If you roll initiative and have no uses of Arcane Shot remaining, you regain one use of it."
+                "When you roll initiative, you regain a use of Arcane Shot."
             ]
         },
         {
@@ -1707,7 +1695,7 @@
             ]
         },
         {
-            "name": "Improved Arcane Quiver",
+            "name": "All-Piercing Shot",
             "source": "Ishiir",
             "page": 1,
             "className": "Fighter",
@@ -1717,7 +1705,8 @@
             "level": 18,
             "header": 2,
             "entries": [
-                "You can cast the {@spell Conjure Volley|Ishiir} spell once without expending a spell slot. Intelligence is your spellcasting ability for it. You cannot do so again until you have finished a {@variantrule Long Rest|Ishiir}."
+                "As an {@variantrule Action|Ishiir}, you can supercharge a shot with arcane energy. As part of this action, you can expend up to 3 uses of your Arcane Shot. The projectile shoots forth in a line 1 foot wide and 150 feet long, before disappearing. The projectile passes harmlessly through objects and magical barriers like {@spell Wall of Force|Ishiir}, ignoring cover. Each creature in that line must make a Dexterity {@variantrule Saving Throw|Ishiir} against your Arcane Shot save DC. On a failed save, a creature takes {@damage 6d12} force damage + {@damage 2d12} additional force damage for every use of Arcane Shot you expended as part of this action.",
+                "You can use this feature once and you cannot use it again until you have finished a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
