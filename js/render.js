@@ -9029,6 +9029,9 @@ Renderer.item = class {
 		if (item.type === "GV") item._category = "Generic Variant";
 		if (item._category == null) item._category = "Other";
 		if (item.entries == null) item.entries = [];
+		if (item.type === "R" && item.strength) {
+			item._category.push(`STR ${item.strength}`);
+		}
 		if (item.type && (Renderer.item.getType(item.type)?.entries || Renderer.item.getType(item.type)?.entriesTemplate)) {
 			Renderer.item._initFullEntries(item);
 
@@ -9043,9 +9046,6 @@ Renderer.item = class {
 				Renderer.item._initFullEntries(item);
 
 				const propetyEntries = Renderer.item._enhanceItem_getItemPropertyTypeEntries({item, ent: entProperty});
-				if (item.type === "R" && item.strength) {
-					propetyEntries.push(`STR ${item.strength}`);
-				}
 				propetyEntries.forEach(e => item._fullEntries.push({type: "wrapper", wrapped: e, data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "property"}}));
 			});
 		}
