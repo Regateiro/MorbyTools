@@ -989,6 +989,21 @@
                 "Additional Eldritch Invocation|Blood Hunter|Ishiir|Profane Soul|Ishiir|15",
                 "Blood Curse of the Souleater|Blood Hunter|Ishiir|Profane Soul|Ishiir|18"
             ]
+        },
+        {
+            "name": "Order of the Serpent",
+            "page": 1,
+            "shortName": "Serpent",
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassFeatures": [
+                "Order of the Serpent|Blood Hunter|Ishiir|Serpent|Ishiir|3",
+                "Serpent's Senses|Blood Hunter|Ishiir|Serpent|Ishiir|7",
+                "Viper's Venom|Blood Hunter|Ishiir|Serpent|Ishiir|11",
+                "Blood Curse of the Adder's Kiss|Blood Hunter|Ishiir|Serpent|Ishiir|15",
+                "Serpent's Sway|Blood Hunter|Ishiir|Serpent|Ishiir|18"
+            ]
         }
     ],
     "classFeature": [
@@ -2553,6 +2568,112 @@
             "header": 1,
             "entries": [
                 "You learn to siphon the life energy from your fallen prey. You gain the Blood Curse of the Soul Eater for your Blood Maledict feature. This doesn't count against your number of blood curses known."
+            ]
+        },
+        {
+            "name": "Order of the Serpent",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Serpent",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Rite of the Viper|Blood Hunter|Ishiir|Serpent|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Viper's Arsenal|Blood Hunter|Ishiir|Serpent|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Rite of the Viper",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Serpent",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You learn the Rite of the Viper as part of your Crimson Rite feature. When you activate the Rite of the Viper, the extra damage dealt by your rite is poison damage and weapons affected by it have their crit range increased by 1 and their reach increased by 5 feet."
+            ]
+        },
+        {
+            "name": "Viper's Arsenal",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Serpent",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Your gain {@variantrule Proficiency|Ishiir} in {@skill Stealth} and the {@item Poisoner's Kit|Ishiir}."
+            ]
+        },
+        {
+            "name": "Serpent's Senses",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Serpent",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 1,
+            "entries": [
+                "You gain {@sense Darkvision} with a range of 60 feet and {@sense Blindsight} with a range of 10 feet. If you already possess either sense, its range increases by the same amount."
+            ]
+        },
+        {
+            "name": "Viper's Venom",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Serpent",
+            "subclassSource": "Ishiir",
+            "level": 11,
+            "header": 1,
+            "entries": [
+                "When you damage a creature with a weapon affected by your Rite of the Viper, it has to make a Constitution {@variantrule Saving Throw|Ishiir} against your Hemocraft save DC. You can force a creature to make this {@variantrule Saving Throw|Ishiir} only once per turn.",
+                "On a failure, a target is {@condition Poisoned|Ishiir} for 1 minute. It can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turn, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Blood Curse of the Adder's Kiss",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Serpent",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 1,
+            "entries": [
+                "You gain the Blood Curse of the Adder's Kiss for your Blood Maledict feature. This doesn't count against your number of blood curses known."
+            ]
+        },
+        {
+            "name": "Serpent's Sway",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Blood Hunter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Serpent",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "Your {@sense Blindsight} range increases by 10 feet. No attack from within your {@sense Blindsight} range has {@variantrule Advantage|Ishiir} against you as long as you are not {@condition Incapacitated|Ishiir}."
             ]
         }
     ]

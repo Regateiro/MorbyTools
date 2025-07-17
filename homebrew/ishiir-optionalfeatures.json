@@ -852,6 +852,25 @@
             ]
         },
         {
+            "name": "Blood Curse of the Adder's Kiss",
+            "page": 1,
+            "source": "Ishiir",
+            "featureType": [
+                "BC"
+            ],
+            "entries": [
+                "When you damage a creature with a weapon attack, you can afflict them with a magical venom. At the start of each of its turns, the affected creature takes poison damage equal to 2 x your {@variantrule Proficiency|Ishiir}. At the end of each of its turns, the target makes a Constitution {@variantrule Saving Throw|Ishiir}. If the target suffers from the {@condition Poisoned|Ishiir} condition, it makes this save with {@variantrule Disadvantage|Ishiir}.",
+                "If it succeeds on the {@variantrule Saving Throw|Ishiir|save} three times, the venom's effect on it ends. Every time it fails the save - up until including the third time - the poison damage increases by 2 x your {@variantrule Proficiency|Ishiir}. After the third failed save the poison lasts for 1 hour.",
+                {
+                    "name": "Amplify",
+                    "type": "item",
+                    "entries": [
+                        "The target cannot benefit from any healing while affected by the poison."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Blood Curse of Binding",
             "page": 1,
             "source": "Ishiir",
