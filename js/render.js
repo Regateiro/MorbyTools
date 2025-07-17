@@ -9033,6 +9033,9 @@ Renderer.item = class {
 			Renderer.item._initFullEntries(item);
 
 			const propetyEntries = Renderer.item._enhanceItem_getItemPropertyTypeEntries({item, ent: Renderer.item.getType(item.type)});
+			if (item.type === "R" && item.strength) {
+				propetyEntries.push(`STR ${item.strength}`);
+			}
 			propetyEntries.forEach(e => item._fullEntries.push({type: "wrapper", wrapped: e, data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "type"}}));
 		}
 		if (item.property) {
