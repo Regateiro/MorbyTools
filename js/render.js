@@ -9029,9 +9029,6 @@ Renderer.item = class {
 		if (item.type === "GV") item._category = "Generic Variant";
 		if (item._category == null) item._category = "Other";
 		if (item.entries == null) item.entries = [];
-		if (item.type === "R" && item.strength) {
-			item.entries.push(`STR ${item.strength}`);
-		}
 		if (item.type && (Renderer.item.getType(item.type)?.entries || Renderer.item.getType(item.type)?.entriesTemplate)) {
 			Renderer.item._initFullEntries(item);
 
