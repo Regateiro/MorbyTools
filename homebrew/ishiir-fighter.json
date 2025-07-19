@@ -918,7 +918,7 @@
             "subclassFeatures": [
                 "Cavalier|Fighter|Ishiir|Cavalier|Ishiir|3",
                 "Warding Maneuver|Fighter|Ishiir|Cavalier|Ishiir|7",
-                "Hold the Line|Fighter|Ishiir|Cavalier|Ishiir|10",
+                "Knightly Valor|Fighter|Ishiir|Cavalier|Ishiir|10",
                 "Ferocious Charger|Fighter|Ishiir|Cavalier|Ishiir|15",
                 "Vigilant Defender|Fighter|Ishiir|Cavalier|Ishiir|18"
             ]
@@ -2298,7 +2298,7 @@
             ]
         },
         {
-            "name": "Hold the Line",
+            "name": "Knightly Valor",
             "source": "Ishiir",
             "page": 1,
             "className": "Fighter",
@@ -2308,7 +2308,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "You become a master of locking down your enemies. Creatures provoke an {@action Opportunity Attack|Ishiir} from you when they move 5 feet or more while within your reach, and if you hit a creature with an {@action Opportunity Attack|Ishiir}, the target's {@variantrule Speed|Ishiir} is reduced to 0 until the end of the current turn."
+                "You cannot be {@condition Frightened|Ishiir} or {@condition Charmed|Ishiir}."
             ]
         },
         {
@@ -2322,7 +2322,7 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "You can run down your foes, whether you're mounted or not. If you move at least 10 feet in a straight line right before attacking a creature and you hit it with the attack, that target takes additional damage equal to half your fighter level and must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC 8 + your {@variantrule Proficiency|Ishiir} bonus + your Strength modifier) or be knocked {@condition Prone|Ishiir}. You can use this feature only once on each of your turns."
+                "You can run down your foes, whether you're mounted or not. If you move at least 10 feet in a straight line right before attacking a creature no more than 1 size larger than you (or your mount if you're mounted) and you hit it with the attack, that target takes additional damage equal to half your fighter level and must succeed on a Strength {@variantrule Saving Throw|Ishiir} (DC 8 + your {@variantrule Proficiency|Ishiir} bonus + your Strength modifier) or be knocked {@condition Prone|Ishiir}. You can use this feature only once on each of your turns."
             ]
         },
         {
@@ -3578,7 +3578,7 @@
             "level": 18,
             "header": 2,
             "entries": [
-                "Your fighting spirit can delay the grasp of death. If you take damage that reduces you to 0 hit points and doesn't kill you outright, you can use your {@variantrule Reaction|Ishiir} to delay falling {@condition Unconscious|Ishiir}, and you can immediately take an extra turn, interrupting the current turn. While you have 0 hit points during that extra turn, taking damage causes death {@variantrule Saving Throw|Ishiir} failures as normal, and three death {@variantrule Saving Throw|Ishiir} failures can still kill you. When the extra turn ends, you fall {@condition Unconscious|Ishiir} if you still have 0 hit points.",
+                "If you drop to 0 Hit Points and don't die outright, you can instead drop to 1 Hit Point and immediately move up to your {@variantrule Speed|Ishiir} and make a weapon attack.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
