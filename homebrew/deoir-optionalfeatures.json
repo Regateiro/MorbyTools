@@ -48,7 +48,7 @@
                 "A:S"
             ],
             "entries": [
-                "The creature can roll a {@dice d4} and add that to their {@variantrule Saving Throw|Ishiir|Saving Throws} and {@variantrule Ability Check|Ishiir|Ability Checks}. They can use the {@dice d4} a number of times equal to your {@variantrule Proficiency|Ishiir} bonus."
+                "The creature can roll a {@dice d4} and add that to their {@variantrule Saving Throw|Ishiir|Saving Throws} and {@variantrule Ability Check|Ishiir|Ability Checks}. They can use the {@dice d4} a number of times equal to twice your {@variantrule Proficiency|Ishiir} bonus."
             ]
         },
         {
@@ -116,7 +116,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 5
+                        "level": 5,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -134,7 +138,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 5
+                        "level": 5,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -152,7 +160,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 5
+                        "level": 5,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -170,7 +182,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 5
+                        "level": 5,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -188,7 +204,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 5
+                        "level": 5,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -206,7 +226,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 5
+                        "level": 5,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -265,7 +289,7 @@
                 }
             ],
             "entries": [
-                "The creature recovers 1 hitdie and the next hitdie they spend is maximized."
+                "The creature recovers Hit Die equal to their {@variantrule Proficiency|Ishiir} and all Hit Die they spend during this rest are maximized."
             ]
         },
         {
@@ -307,7 +331,7 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 5,
+                        "level": 10,
                         "class": {
                             "name": "Apothecary",
                             "source": "Deoir"
@@ -321,8 +345,8 @@
                 }
             ],
             "entries": [
-                "The creature gains the ability to use a Dragons Breath once during the {@variantrule Bonus Action|Ishiir} of drinking the Tonic using your Tonic save DC.",
-                "In a 20 feet cone the creature breaths either acid, cold, fire, lightning, or poison dealing {@damage 6d6} to all creatures who fail a Dexterity {@variantrule Saving Throw|Ishiir} and half on a successful save."
+                "The creature gains the ability to use a Dragons Breath once as a {@variantrule Bonus Action|Ishiir} using your Tonic save DC.",
+                "In a 20 feet cone the creature breaths either acid, cold, fire, lightning, or poison dealing {@damage 6d6} to all creatures who fail a Dexterity {@variantrule Saving Throw|Ishiir} and half on a successful save. This damage increases to {@damage 8d6} when your reach 14th level in this class and the cone increases to 40ft. At 18th level, the damage increases to {@damage 10d6} and the cone becomes 60ft."
             ]
         },
         {
@@ -335,7 +359,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -380,7 +408,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -452,7 +484,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -470,7 +506,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -488,13 +528,18 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
             "entries": [
-                "The creature gains the effect of the {@spell deathward|Ishiir} spell: The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the effect ends.",
-                "If the effect is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the effect ends."
+                "The creature gains the effect of the {@spell Death Ward|Ishiir} spell: The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the effect ends.",
+                "If the effect is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the effect ends.",
+                "This salve lasts till the next {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -507,7 +552,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -527,7 +576,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -545,7 +598,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -563,7 +620,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -581,7 +642,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -599,7 +664,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -617,7 +686,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -635,7 +708,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -653,7 +730,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -671,7 +752,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -716,7 +801,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 14
+                        "level": 14,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -761,7 +850,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 14
+                        "level": 14,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -793,7 +886,7 @@
                 }
             ],
             "entries": [
-                "The creature gains 1 HP per round if below half max HP."
+                "The creature gains 1 HP per round."
             ]
         },
         {
@@ -806,7 +899,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 14
+                        "level": 14,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -834,7 +931,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 18
+                        "level": 18,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -917,7 +1018,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 18
+                        "level": 18,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -938,7 +1043,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 18
+                        "level": 18,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -965,11 +1074,11 @@
                 "A:T"
             ],
             "entries": [
-                "As an {@variantrule Action|Ishiir} you can throw a healing Tonic at a creature within 40 feet healing them for {@damage 2d4} + your intelligence modifier. The healing increases at 5th level ({@damage 4d4}) 10th ({@damage 8d4}) 14th ({@damage 10d4}) 18th ({@damage 12d4})."
+                "As an {@variantrule Action|Ishiir} you can throw a healing Tonic at a creature within 40 feet healing them for {@damage 2d6} + your intelligence modifier. The healing increases at 5th level ({@damage 4d6}) 10th ({@damage 8d6}) 14th ({@damage 9d6}) 18th ({@damage 10d6})."
             ]
         },
         {
-            "name": "Revealing Tonic",
+            "name": "Glitterdust",
             "page": 1,
             "source": "Deoir",
             "featureType": [
@@ -1011,7 +1120,7 @@
                 "A:T"
             ],
             "entries": [
-                "As an {@variantrule Action|Ishiir} you can throw a bottle of acid within 40 feet of you. All creatures within a 10 foot radius must make a dexterity {@variantrule Saving Throw|Ishiir} against your Tonic save DC. They take {@damage 2d8} acid damage and every turn after that another {@damage 1d4}. If they save they take half the damage and the other effect does not happen.",
+                "As an {@variantrule Action|Ishiir} you can throw a bottle of acid within 40 feet of you. All creatures within a 10 foot radius must make a dexterity {@variantrule Saving Throw|Ishiir} against your Tonic save DC. They take {@damage 2d8} acid damage and every turn after that another {@damage 1d4} on a failed save, or half as much damage on a successful one and the repeated damage does not apply.",
                 "The damage increases at 5th level ({@damage 4d8}), 10th level ({@damage 6d8}), 14th level ({@damage 8d8}), 18th level ({@damage 10d8})."
             ]
         },
@@ -1066,7 +1175,7 @@
                 }
             ],
             "entries": [
-                "As an {@variantrule Action|Ishiir} you can rub this tonic on a creatures skin. After that it heals for 1 hp every round for the next 10 rounds. This tonic increases in potency at certain levels, 5th level (15 rounds), 10th level (20 rounds), 14th level (25 rounds), 18th (30 rounds)"
+                "As an {@variantrule Action|Ishiir} you can rub this tonic on a creatures skin. After that it heals for 1 hp every round for the next 10 rounds. This tonic increases in potency at certain levels, 5th level increases hp recovered to 3 (15 rounds), 10th level (20 rounds), 14th level (25 rounds), 18th (30 rounds)."
             ]
         },
         {
@@ -1079,7 +1188,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 5
+                        "level": 5,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1097,7 +1210,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 5
+                        "level": 5,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1115,12 +1232,16 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 5
+                        "level": 5,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
             "entries": [
-                "As an {@variantrule Action|Ishiir} you can throw a bottle of fire within 40 feet of you. All creatures within a 10 foot radius must make a dexterity {@variantrule Saving Throw|Ishiir} against your Tonic save DC. They take {@damage 5d6} fire damage and every turn after that another {@damage 1d4}. If they save they take half the damage and the other effect does not happen.",
+                "As an {@variantrule Action|Ishiir} you can throw a bottle of fire within 40 feet of you. All creatures within a 10 foot radius must make a dexterity {@variantrule Saving Throw|Ishiir} against your Tonic save DC. They take {@damage 5d6} fire damage and every turn after that another {@damage 1d4} on a failed save, or half as much damage on a successful one and the repeated damage does not apply.",
                 "The damage increases at 10th level ({@damage 7d6}), 14th level ({@damage 9d6}), 18th level ({@damage 11d6})."
             ]
         },
@@ -1134,7 +1255,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 5
+                        "level": 5,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1143,7 +1268,7 @@
             ]
         },
         {
-            "name": "Tonic of Healing",
+            "name": "Tonic of Mending",
             "page": 1,
             "source": "Deoir",
             "featureType": [
@@ -1152,12 +1277,17 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 5
+                        "level": 5,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
             "entries": [
-                "As an {@variantrule Action|Ishiir} a creature can drink this Tonic, for the next 5 turns they can use their {@variantrule Bonus Action|Ishiir} to heal {@dice 2d6}."
+                "As an {@variantrule Action|Ishiir} a creature can drink this Tonic, for the next 5 turns they can use their {@variantrule Bonus Action|Ishiir} to heal {@dice 2d6}.",
+                "The healing increases at 10th level ({@dice 2d8}), 14th level ({@dice 2d10}), 18th level ({@dice 2d12})."
             ]
         },
         {
@@ -1170,7 +1300,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 5
+                        "level": 5,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1202,7 +1336,8 @@
                 }
             ],
             "entries": [
-                "As an {@variantrule Action|Ishiir} you can make a thrown Tonic attack within 40 feet, on hit it deals no damage but the creatures {@variantrule Speed|Ishiir} is halved, it takes a -2 penalty to AC and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws} and it cannot use {@variantrule Reaction|Ishiir|Reactions}. On its turn it can either use an {@variantrule Action|Ishiir} or {@variantrule Bonus Action|Ishiir} but not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn. If the creature attempts to {@action Magic|Ishiir|cast a spell} with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted. This effect lasts for 5 rounds."
+                "As an {@variantrule Action|Ishiir} you can make a thrown Tonic attack within 40 feet, on hit it deals no damage but the creatures {@variantrule Speed|Ishiir} is halved, it takes a -2 penalty to AC and Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws} and it cannot use {@variantrule Reaction|Ishiir|Reactions}. On its turn it can either use an {@variantrule Action|Ishiir} or {@variantrule Bonus Action|Ishiir} but not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn. If the creature attempts to {@action Magic|Ishiir|cast a spell} with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted. This effect lasts for 5 rounds.",
+                "The creature makes a repeat wisdom save against your Tonic save DC at the end of its turn, ending the effect on a success."
             ]
         },
         {
@@ -1242,7 +1377,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     },
                     "other": "Special herbs costing 300gp that are in the Tonic"
                 }
@@ -1261,12 +1400,16 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
             "entries": [
-                "As an {@variantrule Action|Ishiir} a creature can drink this Tonic, for the next 5 turns they can use their {@variantrule Bonus Action|Ishiir} to teleport 60 feet to a unoccupied space they can see."
+                "As a {@variantrule Bonus Action|Ishiir} a creature can drink this Tonic, for the next 5 turns they can use their {@variantrule Bonus Action|Ishiir} to teleport 60 feet to a unoccupied space they can see."
             ]
         },
         {
@@ -1279,7 +1422,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1297,7 +1444,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1315,7 +1466,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1333,7 +1488,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1432,7 +1591,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 14
+                        "level": 14,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1450,7 +1613,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 14
+                        "level": 14,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1468,12 +1635,16 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 10
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
             "entries": [
-                "As an {@variantrule Action|Ishiir} a creature can drink this Tonic, when they do for the next 5 rounds they have an increased AC +2."
+                "As a {@variantrule Bonus Action|Ishiir} a creature can drink this Tonic, when they do for the next 5 rounds they have an increased AC +2."
             ]
         },
         {
@@ -1486,7 +1657,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 14
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1504,7 +1679,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 14
+                        "level": 10,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1522,7 +1701,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 14
+                        "level": 14,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1554,7 +1737,36 @@
                 }
             ],
             "entries": [
-                "As an {@variantrule Action|Ishiir} you can make a thrown Tonic attack within 40 feet, on hit it deals {@damage 7d8+30} Cold damage and they have {@variantrule Disadvantage|Ishiir} on attacks till the end of your next turn."
+                "As an {@variantrule Action|Ishiir} you can make a thrown Tonic attack within 40 feet, on hit it deals {@damage 7d8+30} Cold damage and they have {@variantrule Disadvantage|Ishiir} on attack rolls till the end of your next turn.",
+                "This tonic costs 2 tonic preparations."
+            ]
+        },
+        {
+            "name": "Scorching Bottle",
+            "page": 1,
+            "source": "Deoir",
+            "featureType": [
+                "A:T"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 14,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        },
+                        "subclass": {
+                            "name": "Chemist",
+                            "source": "Deoir",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "As an {@variantrule Action|Ishiir} you can make a thrown Tonic attack within 40 feet, on hit it deals {@damage 7d8+30} Fire damage and they have {@variantrule Disadvantage|Ishiir} on attack rolls till the end of your next turn.",
+                "This tonic costs 2 tonic preparations."
             ]
         },
         {
@@ -1581,7 +1793,8 @@
                 }
             ],
             "entries": [
-                "As an {@variantrule Action|Ishiir} a creature can drink this Tonic and recover 70 hit points and all hit point reductions are removed."
+                "As an {@variantrule Action|Ishiir} a creature can drink this Tonic and recover 70 hit points and all hit point reductions are removed.",
+                "This tonic costs 2 tonic preparations."
             ]
         },
         {
@@ -1594,7 +1807,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 18
+                        "level": 18,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1612,7 +1829,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 18
+                        "level": 18,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1630,7 +1851,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 18
+                        "level": 18,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1648,7 +1873,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 18
+                        "level": 18,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1666,7 +1895,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 18
+                        "level": 18,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1684,7 +1917,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 18
+                        "level": 18,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],
@@ -1702,7 +1939,11 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 18
+                        "level": 18,
+                        "class": {
+                            "name": "Apothecary",
+                            "source": "Deoir"
+                        }
                     }
                 }
             ],

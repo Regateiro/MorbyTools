@@ -317,15 +317,11 @@
                 }
             ],
             "classFeatures": [
-                {
-                    "classFeature": "Field of Study|Apothecary|Deoir|1",
-                    "gainSubclassFeature": true
-                },
                 "Tonics|Apothecary|Deoir|1",
                 "Bottle of Pain|Apothecary|Deoir|1",
                 "Salves|Apothecary|Deoir|2",
                 {
-                    "classFeature": "Field of Study Feature|Apothecary|Deoir|3",
+                    "classFeature": "Field of Study|Apothecary|Deoir|3",
                     "gainSubclassFeature": true
                 },
                 "Ability Score Improvement|Apothecary|Deoir|4",
@@ -369,8 +365,7 @@
             "className": "Apothecary",
             "classSource": "Deoir",
             "subclassFeatures": [
-                "Pharmacist|Apothecary|Deoir|Pharmacist|Deoir|1",
-                "Bitter Medicine|Apothecary|Deoir|Pharmacist|Deoir|3",
+                "Pharmacist|Apothecary|Deoir|Pharmacist|Deoir|3",
                 "Emergency Plan|Apothecary|Deoir|Pharmacist|Deoir|6",
                 "Double Up Salves|Apothecary|Deoir|Pharmacist|Deoir|9",
                 "Extra Protection|Apothecary|Deoir|Pharmacist|Deoir|13",
@@ -386,8 +381,7 @@
             "className": "Apothecary",
             "classSource": "Deoir",
             "subclassFeatures": [
-                "Chemist|Apothecary|Deoir|Chemist|Deoir|1",
-                "Extra knowledge|Apothecary|Deoir|Chemist|Deoir|3",
+                "Chemist|Apothecary|Deoir|Chemist|Deoir|3",
                 "Special Concoctions|Apothecary|Deoir|Chemist|Deoir|6",
                 "Vial of Debilitating Mist|Apothecary|Deoir|Chemist|Deoir|9",
                 "Effectiveness Increased|Apothecary|Deoir|Chemist|Deoir|13",
@@ -397,17 +391,6 @@
         }
     ],
     "classFeature": [
-        {
-            "name": "Field of Study",
-            "page": 1,
-            "source": "Deoir",
-            "className": "Apothecary",
-            "classSource": "Deoir",
-            "level": 1,
-            "entries": [
-                "You choose your field of study from: Pharmacist, Chemist. Your choice grants you features at 1st, 6th, 9th, 13th, and 17th and 20th levels."
-            ]
-        },
         {
             "name": "Tonics",
             "page": 1,
@@ -476,14 +459,14 @@
             ]
         },
         {
-            "name": "Field of Study Feature",
+            "name": "Field of Study",
             "page": 1,
             "source": "Deoir",
             "className": "Apothecary",
             "classSource": "Deoir",
             "level": 3,
             "entries": [
-                "You gain one feature granted by your Field of Study."
+                "You choose your field of study from: Pharmacist, Chemist. Your choice grants you features at 3rd, 6th, 9th, 13th, and 17th and 20th levels."
             ]
         },
         {
@@ -646,13 +629,17 @@
             "classSource": "Deoir",
             "subclassShortName": "Pharmacist",
             "subclassSource": "Deoir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "You follow the path of health and making your patients feel better then they ever have before.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Patching Up|Apothecary|Deoir|Pharmacist|Deoir|1"
+                    "subclassFeature": "Patching Up|Apothecary|Deoir|Pharmacist|Deoir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Bitter Medicine|Apothecary|Deoir|Pharmacist|Deoir|3"
                 }
             ]
         },
@@ -664,7 +651,7 @@
             "classSource": "Deoir",
             "subclassShortName": "Pharmacist",
             "subclassSource": "Deoir",
-            "level": 1,
+            "level": 3,
             "header": 2,
             "entries": [
                 "During a {@variantrule Short Rest|Ishiir} you can help creatures take care of the wounds they sustained. You can care for a number of creatures equal to 3 + your {@variantrule Proficiency|Ishiir} bonus. At the end of the {@variantrule Short Rest|Ishiir}, any creature you cared for and spends one or more Hit Dice to regain hit points regain an extra {@dice 1d8} hit points. This die upgrades at level 9th level to a {@dice 1d10}, at level 13th level a {@dice 1d12} and at 17th level {@dice 2d8}.",
@@ -764,13 +751,17 @@
             "classSource": "Deoir",
             "subclassShortName": "Chemist",
             "subclassSource": "Deoir",
-            "level": 1,
+            "level": 3,
             "header": 1,
             "entries": [
                 "As a Chemist you Explore your concoctions ability to do harm.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Exploding Bottle|Apothecary|Deoir|Chemist|Deoir|1"
+                    "subclassFeature": "Exploding Bottle|Apothecary|Deoir|Chemist|Deoir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Extra Knowledge|Apothecary|Deoir|Chemist|Deoir|3"
                 }
             ]
         },
@@ -782,7 +773,7 @@
             "classSource": "Deoir",
             "subclassShortName": "Chemist",
             "subclassSource": "Deoir",
-            "level": 1,
+            "level": 3,
             "header": 2,
             "entries": [
                 "When attacking with a bottle of pain you can expend a prepared Tonic to increase the initial damage by {@damage 1d8}. This extra damage increases at 5th level ({@damage 3d8}), 10th level ({@damage 5d8}), 14th level ({@damage 7d8}) and 18th level ({@damage 9d8}).",
@@ -790,7 +781,7 @@
             ]
         },
         {
-            "name": "Extra knowledge",
+            "name": "Extra Knowledge",
             "page": 1,
             "source": "Deoir",
             "className": "Apothecary",
@@ -937,7 +928,7 @@
             "level": 13,
             "header": 2,
             "entries": [
-                "Your Tonics are more potent. When you use a Tonic that deals damage, add your intelligence modifier to the damage. In addition to that you can now add a +1 on the special Concoctions roll once per {@variantrule Long Rest|Ishiir}."
+                "Your Tonics are more potent. When you use a Tonic that deals damage, add your Intelligence modifier to the damage. In addition to that you can now add a +1 or -1 on the special Concoctions roll a number of times equal to your {@variantrule Proficiency|Ishiir} modifier per {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -951,7 +942,7 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "Your constant exposure to your Tonics have made you more resistant to their damaging effects. You gain {@variantrule Resistance|Ishiir} to either Acid, Cold, Fire or Poison. You can change this {@variantrule Resistance|Ishiir} when you level up in this class."
+                "Your constant exposure to your Tonics have made you more resistant to their damaging effects. You gain {@variantrule Resistance|Ishiir} to either Acid, Cold, Fire or Poison. You can change this {@variantrule Resistance|Ishiir} when you take a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
