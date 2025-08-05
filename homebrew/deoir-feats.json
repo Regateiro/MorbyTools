@@ -727,46 +727,6 @@
             ]
         },
         {
-            "name": "Awakened Mind",
-            "page": 1,
-            "source": "Deoir",
-            "ability": [
-                {
-                    "choose": {
-                        "from": [
-                            "int",
-                            "wis",
-                            "cha"
-                        ],
-                        "amount": 1
-                    }
-                }
-            ],
-            "skillProficiencies": [
-                {
-                    "any": 1
-                }
-            ],
-            "prerequisite": [
-                {
-                    "race": [
-                        {
-                            "name": "awakened forest owl"
-                        }
-                    ]
-                }
-            ],
-            "entries": [
-                {
-                    "type": "list",
-                    "items": [
-                        "Choose either WIS, INT, or CHA. Your chosen ability score increases by 1 and your maximum for it increases by 2.",
-                        "Additionally, you learn one skill that uses your chosen ability score."
-                    ]
-                }
-            ]
-        },
-        {
             "name": "Bardic Virtuoso",
             "page": 1,
             "source": "Deoir",
@@ -1287,6 +1247,38 @@
                         "When you gain this feat, choose a damage type.",
                         "Spells you cast ignore {@variantrule Resistance|Ishiir} to damage of the chosen type. In addition, when you roll a 1 on a damage die for a spell you cast that deals damage of that type, you can reroll the die. You must use the new roll, even if it is a 1.",
                         "You can select this feat multiple times. Each time you do so, you must choose a different damage type."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Concoction Master",
+            "page": 1,
+            "source": "Deoir",
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Apothecary",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "alchemist's supplies": true,
+                    "herbalism kit": true
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain an extra tonic and salve known.",
+                        "Double your {@variantrule Proficiency|Ishiir} with {@item Alchemist's Supplies|Ishiir} and {@item Herbalism Kit|Ishiir}.",
+                        "You can use an {@variantrule Action|Ishiir} to quickly prepare an tonic once per {@variantrule Long Rest|Ishiir}."
                     ]
                 }
             ]
@@ -2425,7 +2417,7 @@
             ]
         },
         {
-            "name": "Flow like Water",
+            "name": "Flow Like Water",
             "page": 1,
             "source": "Deoir",
             "prerequisite": [
@@ -3627,42 +3619,6 @@
                         "When you take the {@action Attack|Ishiir} action on your turn, you can replace one attack with an attempt to demoralize one creature you can see within 30 feet of you that can see and hear you. Make a Charisma ({@skill Intimidation}) check contested by the target's Wisdom ({@skill Insight}) check. If the target creature is more than one size category larger than you, your check automatically fails. If your check succeeds, the target is {@condition Frightened|Ishiir} until the end of your next turn. If your check fails, the target can't be {@condition Frightened|Ishiir} by you in this way for 1 hour."
                     ]
                 }
-            ]
-        },
-        {
-            "name": "Mercurial Form",
-            "page": 1,
-            "source": "Deoir",
-            "prerequisite": [
-                {
-                    "race": [
-                        {
-                            "name": "Changeling"
-                        }
-                    ]
-                }
-            ],
-            "entries": [
-                "You can use your Shapechanger racial features as a {@variantrule Bonus Action|Ishiir}. Any time you shapechange, you may pick a number of the following benefits equal to half your {@variantrule Proficiency|Ishiir} modifier (rounded up):",
-                {
-                    "type": "list",
-                    "items": [
-                        "You can exchange one physical ability score (STR, DEX, CON) for another of yours. You only exchange the base value, not including any bonuses from items, spells, or other effects.",
-                        "You can exchange one skill {@variantrule Proficiency|Ishiir} for another. You may take this benefit multiple times, up to the maximum granted by this feat.",
-                        "You gain a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}.",
-                        "You gain a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}.",
-                        "Your {@variantrule Speed|Ishiir} increases by 10 feet.",
-                        "When you jump, the distance you can cover is tripled.",
-                        "Your reach increases by 5 feet.",
-                        "You can breathe normally underwater.",
-                        "You become acclimatized to extreme cold or heat.",
-                        "Your {@sense darkvision} range increases by 60 feet.",
-                        "You gain the Spider Climb monster trait.",
-                        "You gain the Slippery monster trait.",
-                        "You gain the Chamaeleon Skin monster trait."
-                    ]
-                },
-                "Additionally, choose one of the skills gained through your Changeling Instincts racial feature. Your {@variantrule Proficiency|Ishiir} bonus is doubled for any check you make with it."
             ]
         },
         {
