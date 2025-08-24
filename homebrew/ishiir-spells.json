@@ -43293,6 +43293,73 @@
             ]
         },
         {
+            "name": "Protection from Missiles",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 3,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You touch a willing creature. Until the spell ends, the target is surrounded by an invisible layer of magical energy that protects it from physical missiles. While under this effect, ranged weapon attack rolls have {@variantrule Disadvantage|Ishiir} against the target."
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "miscTags": [
+                "ADV"
+            ]
+        },
+        {
             "name": "Protection from Poison",
             "page": 1,
             "source": "Ishiir",
