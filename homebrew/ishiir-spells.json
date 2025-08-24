@@ -35346,6 +35346,74 @@
             ]
         },
         {
+            "name": "Magic Letter",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 2,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "miles",
+                    "amount": 100
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a slip of paper cut or folded into the likeness of a bird"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You send a short message to a creature you have met or a creature described to you by someone who has met it. If the target is within 100 miles of you, it hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. Otherwise, the spell fails.",
+                "Upon receiving your message, a creature can block your ability to reach it again with this spell for 7 days. If you try to send another message during that time, you learn that you are blocked, and the spell fails."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Magic Missile",
             "page": 1,
             "source": "Ishiir",
