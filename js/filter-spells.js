@@ -121,12 +121,12 @@ class PageFilterSpells extends PageFilter {
 	}
 
 	static sortMetaFilter (a, b) {
-		const ixA = PageFilterSpells._META_FILTER_BASE_ITEMS.indexOf(a.item);
-		const ixB = PageFilterSpells._META_FILTER_BASE_ITEMS.indexOf(b.item);
+		// const ixA = PageFilterSpells._META_FILTER_BASE_ITEMS.indexOf(a.item);
+		// const ixB = PageFilterSpells._META_FILTER_BASE_ITEMS.indexOf(b.item);
 
-		if (~ixA && ~ixB) return ixA - ixB;
-		if (~ixA) return -1;
-		if (~ixB) return 1;
+		// if (~ixA && ~ixB) return ixA - ixB;
+		// if (~ixA) return -1;
+		// if (~ixB) return 1;
 		return SortUtil.ascSortLower(a, b);
 	}
 
