@@ -120,16 +120,6 @@ class PageFilterSpells extends PageFilter {
 		}
 	}
 
-	static sortMetaFilter (a, b) {
-		// const ixA = PageFilterSpells._META_FILTER_BASE_ITEMS.indexOf(a.item);
-		// const ixB = PageFilterSpells._META_FILTER_BASE_ITEMS.indexOf(b.item);
-
-		// if (~ixA && ~ixB) return ixA - ixB;
-		// if (~ixA) return -1;
-		// if (~ixB) return 1;
-		return SortUtil.ascSortLower(a, b);
-	}
-
 	static getFilterAbilitySave (ability) { return `${ability.uppercaseFirst()} Save`; }
 	static getFilterAbilityCheck (ability) { return `${ability.uppercaseFirst()} Check`; }
 
@@ -360,8 +350,7 @@ class PageFilterSpells extends PageFilter {
 		this._optionalfeaturesFilter = new SearchableFilter({header: "Other Option/Feature"});
 		this._metaFilter = new Filter({
 			header: "Components & Miscellaneous",
-			items: [...PageFilterSpells._META_FILTER_BASE_ITEMS, "Ritual", "SRD", "Basic Rules", "Legacy", "Has Images", "Has Token"],
-			itemSortFn: PageFilterSpells.sortMetaFilter,
+			items: sort([...PageFilterSpells._META_FILTER_BASE_ITEMS, "Ritual", "SRD", "Basic Rules", "Legacy", "Has Images", "Has Token"]),
 			isMiscFilter: true,
 			displayFn: it => Parser.spMiscTagToFull(it),
 		});
