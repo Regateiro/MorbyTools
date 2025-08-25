@@ -715,15 +715,9 @@
                 "petrified",
                 "poisoned",
                 "unconscious",
-                {
-                    "immune": [
-                        "grappled",
-                        "prone",
-                        "restrained"
-                    ],
-                    "cond": true,
-                    "note": "(Air, Fire, and Water only)"
-                }
+                "grappled (Air, Fire, and Water only)",
+                "prone (Air, Fire, and Water only)",
+                "restrained (Air, Fire, and Water only)"
             ],
             "languages": [
                 "Primordial",
@@ -1733,8 +1727,8 @@
 				"darkvision 60 ft."
 			],
             "skill": {
-                "perception": "-3",
-                "stealth": "+4"
+                "perception": "+4",
+                "stealth": "+2"
             },
 			"passive": 12,
 			"languages": [
@@ -1838,7 +1832,7 @@
 				"darkvision 60 ft."
 			],
             "skill": {
-                "perception": "+8"
+                "perception": "+6"
             },
 			"passive": 12,
 			"resist": [
@@ -1973,23 +1967,11 @@
 				"frightened",
 				"paralyzed",
 				"poisoned",
-                {
-                    "immune": [
-                        "petrified",
-                        "prone",
-                        "restrained"
-                    ],
-                    "cond": true,
-                    "note": "(Ghostly only)"
-                },
-                {
-                    "immune": [
-                        "incapacitated",
-                        "unconscious"
-                    ],
-                    "cond": true,
-                    "note": "(Ghostly and Skeletal only)"
-                }
+                "incapacitated (Ghostly and Skeletal only)",
+                "petrified (Ghostly only)",
+                "prone (Ghostly only)",
+                "restrained (Ghostly only)",
+                "unconscious (Ghostly and Skeletal only)"
 			],
 			"languages": [
 				"understands the languages you speak"
