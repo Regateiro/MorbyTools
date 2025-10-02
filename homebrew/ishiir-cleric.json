@@ -1375,6 +1375,43 @@
             ]
         },
         {
+            "name": "Hunt Domain",
+            "shortName": "Hunt",
+            "source": "Ishiir",
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "hunter's mark|Ishiir",
+                            "snare|Ishiir",
+                            "locate animals or plants|Ishiir",
+                            "pass without trace|Ishiir"
+                        ],
+                        "5": [
+                            "conjure barrage|Ishiir",
+                            "conjure spirit animals|Ishiir"
+                        ],
+                        "7": [
+                            "freedom of movement|Ishiir",
+                            "locate creature|Ishiir"
+                        ],
+                        "9": [
+                            "commune with nature|Ishiir",
+                            "hold monster|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Hunt Domain|Cleric|Ishiir|Hunt|Ishiir|3",
+                "Extra Attack|Cleric|Ishiir|Hunt|Ishiir|6",
+                "Inevitable Mark|Cleric|Ishiir|Hunt|Ishiir|17"
+            ]
+        },
+        {
             "name": "Knowledge Domain",
             "shortName": "Knowledge",
             "source": "Ishiir",
@@ -3197,6 +3234,126 @@
             "header": 2,
             "entries": [
                 "You can seize a trace of vitality from a parting soul and use it to heal the living. When an enemy you can see dies within 60 feet of you, you or one creature of your choice that is within 60 feet of you regains hit points equal to the enemy's number of Hit Dice. You can use this feature only if you aren't {@condition Incapacitated|Ishiir}. Once you use it, you can't do so again until the start of your next turn."
+            ]
+        },
+        {
+            "name": "Hunt Domain",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Hunt",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "table",
+                    "caption": "Grave Domain Spells",
+                    "colLabels": [
+                        "Cleric Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Hunter's Mark|Ishiir}, {@spell Snare|Ishiir}, {@spell Locate Animals or Plants|Ishiir}, {@spell Pass without Trace|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Conjure Barrage|Ishiir}, {@spell Conjure Spirit Animals|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Freedom of Movement|Ishiir}, {@spell Locate Creature|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Commune with Nature|Ishiir}, {@spell Hold Monster|Ishiir}"
+                        ]
+                    ]
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Ordained Huntsman|Cleric|Ishiir|Hunt|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Sanctified Mark|Cleric|Ishiir|Hunt|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Ordained Huntsman",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Hunt",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain {@variantrule Proficiency|Ishiir} in three of the following skills: {@skill Animal Handling}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, {@skill Survival}. You can use your Wisdom in place any ability score normally used for any of these skills, regardless of whether you obtained them through this feature.",
+                "Additionally, you can perform up to two tasks during the Travel Phase of {@variantrule Overland Travel and Survival|Ishiir|Overland Travel}."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Sanctified Mark",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Hunt",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 2,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "When you cast the {@spell Hunter's Mark|Ishiir} spell or transfer its effect to a new target, you can transform the spell into a Sanctified Mark as part of the same {@variantrule Bonus Action|Ishiir}. The effect persists while this casting of {@spell Hunter's Mark|Ishiir} is active, including when you select a new target. Sanctified Mark retains all the usual effects of {@spell Hunter's Mark|Ishiir} in addition to the following:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        "The target of this effect cannot benefit from {@condition Invisibility|Ishiir} against you. And the range of any Locate X spell you cast to track the creature is doubled.",
+                        "When you hit the target with a weapon attack, you can choose to change the damage type of your weapon and Sanctified Mark to radiant or necrotic.",
+                        "The spell does not count towards your {@condition Concentration|Ishiir} limit, though you still have to roll Concentration {@variantrule Saving Throw|Ishiir|Saving Throws} as normal. If you fail a Concentration {@variantrule Saving Throw|Ishiir|Saving Throws}, you lose {@condition Concentration|Ishiir} on all spells you are concentrating on."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Hunt",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "You can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
+            ]
+        },
+        {
+            "name": "Inevitable Mark",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Hunt",
+            "subclassSource": "Ishiir",
+            "level": 17,
+            "header": 2,
+            "entries": [
+                "When you use Sanctified Mark, you can declare a creature known to you as the target, ignoring all range, sight, and cover restrictions. If the target is on another plane of existence, you learn which one.",
+                "Additionally, you cannot have {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against the the target of Sanctified Mark."
             ]
         },
         {
