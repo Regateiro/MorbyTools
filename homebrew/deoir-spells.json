@@ -1,0 +1,122 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Deoir",
+                "abbreviation": "Deoir",
+                "full": "Deoir",
+                "color": "#669900",
+                "url": "https://regateiro.pt/5etools/homebrew/deoir-spells.json",
+                "authors": [
+                    "Roy"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "spell": [
+        {
+            "name": "Druidcraft",
+            "page": 1,
+            "source": "Deoir",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Whispering to the spirits of nature, you create one of the following effects within range:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You create a tiny, harmless sensory effect that predicts what the natural weather will be in a 20-mile radius around you for the next 48 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.",
+                        "You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.",
+                        "You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.",
+                        "You instantly light or snuff out a candle, a torch, or a small campfire."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Fighter",
+                            "source": "Ishiir"
+                        },
+                        "subclass": {
+                            "name": "Arcane Archer",
+                            "source": "Ishiir",
+                            "shortName": "Arcane Archer"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Barbarian",
+                            "source": "Ishiir"
+                        },
+                        "subclass": {
+                            "name": "Giant",
+                            "source": "Ishiir",
+                            "shortName": "Giant"
+                        }
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                },
+                {
+                    "name": "Magic Initiate",
+                    "source": "Ishiir"
+                },
+                {
+                    "name": "Naturalist",
+                    "source": "Ishiir"
+                },
+                {
+                    "name": "Wood Elf Magic",
+                    "source": "Ishiir"
+                }
+            ],
+            "optionalfeatures": [
+                {
+                    "name": "Pact of the Tome",
+                    "source": "Ishiir"
+                },
+                {
+                    "name": "Druidic Warrior",
+                    "source": "Ishiir"
+                }
+            ]
+        }
+    ]
+}
