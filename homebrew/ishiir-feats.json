@@ -1010,13 +1010,14 @@
             ]
         },
         {
-            "name": "Combat Reflexes",
+            "name": "Combat Expertise",
             "page": 1,
             "source": "Ishiir",
             "ability": [
                 {
                     "choose": {
                         "from": [
+                            "str",
                             "dex",
                             "wis"
                         ],
@@ -1025,7 +1026,7 @@
                 }
             ],
             "entries": [
-                "Your reflexes are highly honed and you are always on the lookout for opportunities.",
+                "Your reflexes and senses are highly honed and you make opportunity attacks effortlessly.",
                 {
                     "type": "list",
                     "items": [
@@ -2014,7 +2015,7 @@
             "source": "Ishiir",
             "critEffect": true,
             "entries": [
-                "You master the {@item light hammer|Ishiir}, {@item handaxe|Ishiir}, {@item battleaxe|Ishiir}, {@item flail|Ishiir}, {@item greataxe|Ishiir}, {@item greatclub|Ishiir}, {@item mace|Ishiir}, {@item morningstar|Ishiir}, {@item warhammer|Ishiir}, {@item war pick|Ishiir}, and {@item maul|Ishiir}. You gain the following benefits when using any of them:",
+                "You master the {@item light hammer|Ishiir}, {@item handaxe|Ishiir}, {@item battleaxe|Ishiir}, {@item flail|Ishiir}, {@item greataxe|Ishiir}, {@item greatclub|Ishiir}, {@item mace|Ishiir}, {@item morningstar|Ishiir}, {@item unarmed strike|Ishiir}, {@item warhammer|Ishiir}, {@item war pick|Ishiir}, and {@item maul|Ishiir}. You gain the following benefits when using any of them:",
                 {
                     "type": "list",
                     "items": [
@@ -4647,6 +4648,21 @@
             ]
         },
         {
+            "name": "Spear Mastery",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                "You master the {@item elvish spear|Ishiir}, {@item greatspear|Ishiir}, {@item spear|Ishiir}, and {@item warspear|Ishiir}. You gain the following benefits when using any of them:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Your reach increases by 5 feet.",
+                        "While you are not {@condition Incapacitated|Ishiir}, your reach counts as {@quickref difficult terrain||3} for your enemies and your AC increases by 2 against {@variantrule Attack Roll|Ishiir|Attack Rolls} from within your reach."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Spell Sniper",
             "page": 1,
             "source": "Ishiir",
@@ -5113,6 +5129,21 @@
                     "items": [
                         "You gain {@variantrule Proficiency|Ishiir} in the {@skill Religion} skill. If you are already {@variantrule Proficiency|Ishiir|proficient} in the skill, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with it.",
                         "You learn the {@spell Thaumaturgy|Ishiir} and {@spell Detect Evil and Good|Ishiir} spells. You can cast {@spell Detect Evil and Good|Ishiir} once without expending a spell slot, and you regain the ability to do so when you finish a {@variantrule Long Rest|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Throwing Weapon Expert",
+            "page": 1,
+            "source": "Ishiir",
+            "entries": [
+                "You have mastered the art of throwing weapons in combat:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Your range (but not your long range) for thrown weapons increases by 20 ft.",
+                        "When you make a ranged weapon attack with a thrown weapon, you can use your {@variantrule Bonus Action|Ishiir} to immediately draw and throw another thrown weapon."
                     ]
                 }
             ]
