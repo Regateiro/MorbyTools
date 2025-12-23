@@ -1263,7 +1263,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 				<div><b>Armor:</b> <span>${profs.armor ? Renderer.class.getRenderedArmorProfs(profs.armor) : "none"}</span></div>
 				<div><b>Weapons:</b> <span>${profs.weapons ? Renderer.class.getRenderedWeaponProfs(profs.weapons) : "none"}</span></div>
 				<div><b>Tools:</b> <span>${profs.tools ? Renderer.class.getRenderedToolProfs(profs.tools) : "none"}</span></div>
-				<div><b>Saving Throws:</b> <span>${cls.proficiency ? Renderer.class.getRenderedSavingThrows(cls.proficiency.map(p => Parser.attAbvToFull(p))).join(", ") : "none"}</span></div>
+				<div><b>Saving Throws:</b> <span>${cls.proficiency ? Renderer.class.getRenderedSavingThrows(cls.proficiency.map(p => Parser.attAbvToFull(p)).join(", ")) : "none"}</span></div>
 				<div><b>Skills:</b> <span>${profs.skills ? Renderer.class.getRenderedSkillProfs(profs.skills) : "none"}</span></div>
 			</td>
 		</tr>`;
