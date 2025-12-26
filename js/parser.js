@@ -1474,6 +1474,7 @@ Parser.SP_MISC_TAG_TO_FULL = {
 	CMD: "Conditional Maximum Damage",
 	CTE: "Creature Type Effects",
 	EAB: "Enhances Ability",
+	GOD: "God Spell"
 };
 Parser.spMiscTagToFull = function (type) {
 	return Parser._parse_aToB(Parser.SP_MISC_TAG_TO_FULL, type);

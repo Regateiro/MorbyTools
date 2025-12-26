@@ -1059,6 +1059,77 @@
             ]
         },
         {
+            "name": "Angrosh's Enchanted Anvil",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 5,
+            "school": "C",
+            "time": [
+                {
+                    "number": 10,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a small mithral hammer and anvil worth at least 500 gp, which the spell consumes",
+                    "cost": 50000,
+                    "consume": true
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 14
+                    }
+                }
+            ],
+            "entries": [
+                "This spell can only be learned and cast by a faithful follower of Angrosh.",
+                "You summon a magical anvil inscribed with divine runes in an unoccupied space you can see within range. The anvil functions as an enchanted forge and summons all tools necessary when they are required during the crafting process, e.g. a furnace, hammers, a bucket of water, etc. - provided the requisite space is available. Any sound produced by working the anvil or any of its summoned implements only carries to a distance of 30 ft.",
+                "Once per day, the anvil can be transformed into a different crafting station of the same tier such as an enchanted well by completing a minor ritual that takes 1 minute.",
+                "In addition, the anvil and any other form it takes can be dismissed and resummoned in an unoccupied space you can see within range by spending the original cast time again.",
+                "When the spell ends, the anvil disappears and anything still on it or its summoned structures drops to the ground."
+            ],
+            "miscTags": [
+                "SGT",
+                "GOD"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Animal Friendship",
             "page": 1,
             "source": "Ishiir",
@@ -25048,6 +25119,74 @@
             ]
         },
         {
+            "name": "Gargan's Crushing Grip",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 9,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a scale from a seasnake and a droplet of salt water"
+            },
+            "duration": [
+                {
+                    "type": "instant",
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "This spell can only be learned and cast by a faithful follower of Gargan.",
+                "Choose one creature that you can see within range. The target is subjected to the crushing pressure of Gargan's deepest waters.",
+                "The target must make a Strength {@variantrule Saving Throw|Ishiir}. On a failed save the target takes {@damage 10d12} force damage and is {@condition Restrained|Ishiir}. On a success, the target takes half as much damage, isn't {@condition Restrained|Ishiir} and the spell ends.",
+                "At the end of each of its turns, the target makes the Strength {@variantrule Saving Throw|Ishiir} again. On a failed save, it takes the force damage again. On a successful save, the spell ends."
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "miscTags": [
+                "SGT",
+                "GOD"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Gaseous Form",
             "page": 1,
             "source": "Ishiir",
@@ -39859,6 +39998,108 @@
                 "blinded",
                 "charmed",
                 "incapacitated"
+            ]
+        },
+        {
+            "name": "Naushindhor's Arcane Nexus",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 7,
+            "school": "T",
+            "time": [
+                {
+                    "unit": "special"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a golden tuning fork worth at least 500 gp",
+                    "cost": 50000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "This spell can only be learned and cast by a faithful follower of Naushindhor.",
+                "With the blessing of Naushindhor, you temporarily redirect the flow of the weave, creating an artificial nexus of magical leylines. Choose a point within range you can see. Depending on the time spent casting, you can cause the following effect at the target location:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Bonus Action.",
+                            "entries": [
+                                "Spells cast within a 20 ft radius receive a +2 bonus to their attack rolls and saving throw DC and are treated as 2 spell levels higher for all purposes except the spell slot used to cast them. This version of the spell ignores the usual restrictions on casting multiple spells with a spell slot on a turn."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Action.",
+                            "entries": [
+                                "A glowing sphere of energy springs into existence and hovers 5 ft above the ground. The sphere sheds bright light in a radius of 30 ft. Creatures within the bright light have advantage on {@variantrule Saving Throw|Ishiir|Saving Throws} against spells and other magical effects.",
+                                "A creature within 5 ft of the sphere can use an Item Interaction to touch it and regain spell slots up to a total of 7 spell levels. The creature is also healed for an amount equal to 5 times the number of spell levels regained.",
+                                "A creature can only benefit from this spell in this manner until it has regained a total of 7 spell levels from it, and cannot do so again until it has finished a {@variantrule Long Rest|Ishiir}.",
+                                "The sphere disappears once spell slots with a total of 7 spell levels have been regained in this manner."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "10 Minutes.",
+                            "entries": [
+                                "You create a temporary place of power, as per the crafting rules for enchanting. This place of power can be used to craft any items on the enchantment table, provided the necessary ingredients are present. This version of the spell lasts for 14 days and does not require concentration."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "miscTags": [
+                "ADV",
+                "SGT",
+                "GOD"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
             ]
         },
         {
