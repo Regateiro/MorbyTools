@@ -439,13 +439,13 @@ class SpellParser extends BaseParser {
 
 	static _setCleanDuration (stats, line, options) {
 		const dur = ConvertUtil.getStatblockLineHeaderText({reStartStr: this._RE_START_DURATION, line});
-		const mConcOrUpTo = /^(concentration, )?up to (\d+|an?) (hour|minute|turn|round|week|month|day|year)(?:s)?$/i.exec(dur);
 
-		if (dur.toLowerCase() === "instantaneous") return stats.duration = [{type: "instant", concentration: (Boolean(mConcOrUpTo) && Boolean(mConcOrUpTo[1]) | false)}];
+		if (dur.toLowerCase() === "instantaneous") return stats.duration = [{type: "instant"}];
 		if (dur.toLowerCase() === "instantaneous (see text)") return stats.duration = [{type: "instant", condition: "see text"}];
 		if (dur.toLowerCase() === "special") return stats.duration = [{type: "special"}];
 		if (dur.toLowerCase() === "permanent") return stats.duration = [{type: "permanent"}];
 
+		const mConcOrUpTo = /^(concentration, )?up to (\d+|an?) (hour|minute|turn|round|week|month|day|year)(?:s)?$/i.exec(dur);
 		if (mConcOrUpTo) {
 			const amount = mConcOrUpTo[2].toLowerCase().startsWith("a") ? 1 : Number(mConcOrUpTo[2]);
 			const out = {type: "timed", duration: {type: this._getCleanTimeUnit(mConcOrUpTo[3], true, options), amount}, concentration: true};
@@ -467,6 +467,13 @@ class SpellParser extends BaseParser {
 		const mPermDischarged = /^permanent until discharged$/i.exec(dur);
 		if (mPermDischarged) {
 			const out = {type: "permanent", ends: ["discharge"]};
+			return stats.duration = [out];
+		}
+
+		const mUntilSaved = /^(concentration, )?until saved$/i.exec(dur);
+		if (mUntilSaved) {
+			const out = {type: "permanent", ends: ["save"]};
+			if (mUntilSaved[1]) out.concentration = true;
 			return stats.duration = [out];
 		}
 
