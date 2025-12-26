@@ -470,13 +470,6 @@ class SpellParser extends BaseParser {
 			return stats.duration = [out];
 		}
 
-		const mUntilSaved = /^(concentration, )?until saved$/i.exec(dur);
-		if (mUntilSaved) {
-			const out = {type: "permanent", ends: ["save"]};
-			if (mUntilSaved[1]) out.concentration = true;
-			return stats.duration = [out];
-		}
-
 		// TODO handle splitting "or"'d durations up as required
 
 		options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Duration part "${dur}" requires manual conversion`);
