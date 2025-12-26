@@ -1333,7 +1333,7 @@ Parser.spDurationToFull = function (dur) {
 			case "instant":
 				return `${d.concentration ? "Concentration, " : ""}${d.concentration ? "i" : "I"}nstantaneous${d.condition ? ` (${d.condition})` : ""}`;
 			case "timed":
-				return `${d.concentration ? "Concentration, " : ""}${d.concentration ? "u" : "U"}${d.concentration || d.duration.upTo ? "p to " : ""}${d.duration.amount} ${d.duration.amount === 1 ? d.duration.type : `${d.duration.type}s`}`;
+				return `${d.concentration ? "Concentration, " : ""}${d.concentration ? "u" : d.duration.upTo ? "U" : ""}${d.concentration || d.duration.upTo ? "p to " : ""}${d.duration.amount} ${d.duration.amount === 1 ? d.duration.type : `${d.duration.type}s`}`;
 			case "permanent": {
 				if (d.ends) {
 					const endsToJoin = d.ends.map(m => Parser.spEndTypeToFull(m));
