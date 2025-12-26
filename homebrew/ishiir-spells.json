@@ -40983,6 +40983,67 @@
             ]
         },
         {
+            "name": "Perinae's Plentiful Bounty",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "C",
+            "time": [
+                {
+                    "number": 10,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a bit of wicker, a seed of grain or fruit, and an emerald worth at least 2,000 gp, which the spell consumes",
+                    "cost": 200000,
+                    "consume": true
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "This spell can only be learned and cast by a faithful follower of Perinae.",
+                "You summon an enormous cornucopia full of fresh succulent produce from Perinae's divine realm. The contents of the cornucopia take 1 hour to consume and disappear at the end of that time, and the beneficial effects don't set in until this hour is over. Up to twelve creatures can partake of the contents.",
+                "A creature that partakes of the contents gains several benefits. The creature is cured of all diseases, poison, exhaustion, and reductions of their maximum hit points, becomes immune to the same effects, and makes all Constitution {@variantrule Saving Throw|Ishiir|Saving Throws} with {@variantrule Advantage|Ishiir}. These benefits last for 24 hours."
+            ],
+            "miscTags": [
+                "ADV",
+                "GOD"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Phantasmal Force",
             "page": 1,
             "source": "Ishiir",
@@ -44591,6 +44652,73 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Rahya's Radiant Bond",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a pair of gold rings connected by a steel chain, worth at least 500 gp",
+                    "cost": 50000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "This spell can only be learned and cast by a faithful follower of Rahya.",
+                "You link two willing allied creatures you can see within range together for the duration with a sacred blessing that enhances the strength and succor they draw from each other's presence.",
+                "While the targets are within 60 ft of each other, they can divide any damage and healing they take freely amongst themselves. Only effects and features on the original target are considered for influencing the amount of healing or damage done to the other.",
+                "Additionally, if either target is forced to make an {@variantrule Ability Check|Ishiir} or {@variantrule Saving Throw|Ishiir} while within that range, the other can roll instead and determine the effects on the former with that roll, unless either target is under an effect that causes the {@variantrule Ability Check|Ishiir} or {@variantrule Saving Throw|Ishiir} to automatically fail."
+            ],
+            "miscTags": [
+                "GOD"
+            ],
+            "areaTags": [
+                "MT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
         },
         {
             "name": "Raise Dead",
@@ -49827,6 +49955,71 @@
                 },
                 {
                     "name": "Shadow Touched",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Silver Sword of Vaeraustraee",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "powdered silver worth at least 222 gp, which the spell consumes",
+                    "cost": 22200,
+                    "consume": true
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
+            ],
+            "entries": [
+                "This spell can only be learned and cast by a faithful follower of Vaeraustraee.",
+                "You imbue a weapon you touch with the blessing of the Sword Dancer. Until the spell ends, the weapon emits bright light in a 30-foot radius and dim light for an additional 30 feet, which counts as moonlight and dispels any magical darkness overlapping with its area. In addition, all damage the weapon deals becomes radiant damage and when taking the {@action Attack|Ishiir} action with it, the number of attacks increases to four.",
+                "All effects of this spell except the light radius are suppressed when a creature other than you wields the affected weapon, unless they are also a faithful of Vaeraustraee."
+            ],
+            "miscTags": [
+                "GOD",
+                "LGT",
+                "OBJ"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
                     "source": "Ishiir"
                 }
             ]
