@@ -1318,6 +1318,7 @@ Parser.SP_END_TYPE_TO_FULL = {
 	"dispel": "dispelled",
 	"trigger": "triggered",
 	"discharge": "discharged",
+	"save": "saved",
 };
 Parser.spEndTypeToFull = function (type) {
 	return Parser._parse_aToB(Parser.SP_END_TYPE_TO_FULL, type);
@@ -1328,18 +1329,18 @@ Parser.spDurationToFull = function (dur) {
 	const outParts = dur.map(d => {
 		switch (d.type) {
 			case "special":
-				return "Special";
+				return `${d.concentration ? "Concentration, " : ""}${d.concentration ? "s" : "S"}pecial`;
 			case "instant":
-				return `Instantaneous${d.condition ? ` (${d.condition})` : ""}`;
+				return `${d.concentration ? "Concentration, " : ""}${d.concentration ? "i" : "I"}nstantaneous${d.condition ? ` (${d.condition})` : ""}`;
 			case "timed":
-				return `${d.concentration ? "Concentration, " : ""}${d.concentration ? "u" : d.duration.upTo ? "U" : ""}${d.concentration || d.duration.upTo ? "p to " : ""}${d.duration.amount} ${d.duration.amount === 1 ? d.duration.type : `${d.duration.type}s`}`;
+				return `${d.concentration ? "Concentration, " : ""}${d.concentration ? "u" : "U"}${d.concentration || d.duration.upTo ? "p to " : ""}${d.duration.amount} ${d.duration.amount === 1 ? d.duration.type : `${d.duration.type}s`}`;
 			case "permanent": {
 				if (d.ends) {
 					const endsToJoin = d.ends.map(m => Parser.spEndTypeToFull(m));
 					hasSubOr = hasSubOr || endsToJoin.length > 1;
-					return `Until ${endsToJoin.joinConjunct(", ", " or ")}`;
+					return `${d.concentration ? "Concentration, " : ""}${d.concentration ? "u" : "U"}ntil ${endsToJoin.joinConjunct(", ", " or ")}`;
 				} else {
-					return "Permanent";
+					return `${d.concentration ? "Concentration, " : ""}${d.concentration ? "p" : "P"}ermanent`;
 				}
 			}
 		}
