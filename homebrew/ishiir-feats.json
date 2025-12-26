@@ -549,7 +549,7 @@
                                             "type": "item",
                                             "name": "Expert Archery",
                                             "entries": [
-                                                "Your attacks no longer suffer from {@variantrule Disadvantage|Ishiir} because your target is prone. When you hit a target that currently benefits from half or three-quarters cover with a ranged weapon attack, that target can no longer benefit from half or three-quarters cover until the start of its next turn."
+                                                "Your attacks no longer suffer from {@variantrule Disadvantage|Ishiir} because your target is {@condition Prone|Ishiir}. When you hit a target that currently benefits from half or three-quarters cover with a ranged weapon attack, that target can no longer benefit from half or three-quarters cover until the start of its next turn."
                                             ]
                                         },
                                         {
@@ -557,6 +557,13 @@
                                             "name": "Expert Blindfighting",
                                             "entries": [
                                                 "The range of your blindsight increases to 20 ft."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Expert Close-Quarters Shooting",
+                                            "entries": [
+                                                "Your attacks no longer suffer from {@variantrule Disadvantage|Ishiir} because your target is {@condition Prone|Ishiir}. When you hit a target within 30 ft with a ranged weapon attack, you add half your STR of DEX modifier (your choice, rounded down) to the damage roll."
                                             ]
                                         },
                                         {
