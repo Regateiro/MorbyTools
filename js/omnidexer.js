@@ -803,19 +803,6 @@ class IndexableFileOptFeatures_ArtificerInfusion extends IndexableFile {
 	}
 }
 
-class IndexableFileOptFeatures_OnomancyResonant extends IndexableFile {
-	constructor () {
-		super({
-			category: Parser.CAT_ID_ONOMANCY_RESONANT,
-			file: "optionalfeatures.json",
-			listProp: "optionalfeature",
-			baseUrl: "optionalfeatures.html",
-			isHover: true,
-			include: (it) => it.featureType.includes("OR"),
-		});
-	}
-}
-
 class IndexableFileOptFeatures_RuneKnightRune extends IndexableFile {
 	constructor () {
 		super({
@@ -1332,7 +1319,6 @@ Omnidexer.TO_INDEX = [
 	new IndexableFileOptFeatures_PactBoon(),
 	new IndexableFileOptFeatures_ElementalDiscipline(),
 	new IndexableFileOptFeatures_ArtificerInfusion(),
-	new IndexableFileOptFeatures_OnomancyResonant(),
 	new IndexableFileOptFeatures_RuneKnightRune(),
 	new IndexableFileOptFeatures_AlchemicalFormula(),
 	new IndexableFileOptFeatures_Maneuver(),
