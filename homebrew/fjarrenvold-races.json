@@ -1077,7 +1077,7 @@
                 {
                     "name": "Bowmastery.",
                     "entries": [
-                        "You have {@variantrule Proficiency|Ishiir} with the Longbow and Shortbow, and your ranged weapon attacks ignore half cover."
+                        "You have {@variantrule Proficiency|Ishiir} with the Longbow and Shortbow. In addition, your ranged weapon attacks made using a Shortbow or Longbow ignore half cover."
                     ],
                     "type": "entries"
                 },
@@ -1257,9 +1257,9 @@
                 {
                     "name": "Divine Magic.",
                     "entries": [
-                        "Select one 1st level spell from the Cleric or Paladin spell list. You always have this spell prepared and can cast this spell once per day at level 1 without expending a spell slot.",
-                        "When you reach level 3, select one 2nd level spell from the Cleric or Paladin spell list. You also always have this spell prepared and can cast this spell once per day at level 2 without spending a spell slot.",
-                        "Intelligence or Wisdom is your spellcasting modifier for these spells, chosen when you gain this trait. Whenever you gain a level you may exchange these spells for another spell that meet these criteria."
+                        "Select one 1st level spell from the {@filter Cleric or Paladin spell list|spells|level=1|class=cleric;paladin}. You always have this spell prepared and can cast this spell a number of times per {@variantrule Long Rest|Ishiir} equal to half your {@variantrule Proficiency|Ishiir}, rounded down (minimum of 1) at spell level 1 without expending a spell slot.",
+                        "When you reach level 3, select one 2nd level spell from the {@filter Cleric or Paladin spell list|spells|level=1|class=cleric;paladin}. You also always have this spell prepared and can cast this spell a number of times per {@variantrule Long Rest|Ishiir} equal to half your {@variantrule Proficiency|Ishiir}, rounded down (minimum of 1) at spell level 2 without spending a spell slot.",
+                        "Intelligence, Wisdom or Charisma is your spellcasting modifier for these spells, chosen when you gain this trait. Whenever you gain a level you may exchange these spells for another spell that meet these criteria."
                     ],
                     "type": "entries"
                 }
@@ -1298,9 +1298,9 @@
                 {
                     "name": "Arcane Magic.",
                     "entries": [
-                        "Select one 1st level spell from the Wizard spell list. You always have this spell prepared and can cast this spell once per day at level 1 without expending a spell slot.",
-                        "When you reach level 3, select one 2nd level spell from the Wizard spell list. You also always have this spell prepared and can cast this spell once per day at level 2 without spending a spell slot.",
-                        "Intelligence or Wisdom is your spellcasting modifier for these spells, chosen when you gain this trait. Whenever you gain a level you may exchange these spells for another spell that meet these criteria."
+                        "Select one 1st level spell from the {@filter Wizard spell list|spells|level=1|class=wizard}. You always have this spell prepared and can cast this spell a number of times per {@variantrule Long Rest|Ishiir} equal to half your {@variantrule Proficiency|Ishiir}, rounded down (minimum of 1) at spell level 1 without expending a spell slot.",
+                        "When you reach level 3, select one 2nd level spell from the {@filter Wizard spell list|spells|level=1|class=wizard}. You also always have this spell prepared and can cast this spell a number of times per {@variantrule Long Rest|Ishiir} equal to half your {@variantrule Proficiency|Ishiir}, rounded down (minimum of 1) at spell level 2 without spending a spell slot.",
+                        "Intelligence, Wisdom or Charisma is your spellcasting modifier for these spells, chosen when you gain this trait. Whenever you gain a level you may exchange these spells for another spell that meet these criteria."
                     ],
                     "type": "entries"
                 }
