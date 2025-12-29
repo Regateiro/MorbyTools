@@ -564,6 +564,87 @@
                     "type": "entries"
                 }
             ]
+        },
+        {
+            "name": "High Elf",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "int",
+                            "wis"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "int",
+                            "wis"
+                        ],
+                        "count": 2,
+                        "amount": 1
+                    }
+                }
+            ],
+            "age": {
+                "mature": 100,
+                "max": 1000
+            },
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "elvish": true,
+                    "any": 1
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "A High elf is considered mature at age 100 and Will Typically live for up to 1,000 years."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Medium (6-8 feet tall)."
+                    ]
+                },
+                {
+                    "name": "Arcane Ancestry.",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} you make to maintain concentration on a spell."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "The First Wanderers.",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in {@skill History} or {@skill Religion}. You may use your Intelligence or Wisdom modifier for the selected skill and have {@variantrule Advantage|Ishiir} when making a {@skill History} or {@skill Religion} skill check related to the Pantheon of Eighteen."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "Common and Elvish and one language of your choice."
+                    ],
+                    "type": "entries"
+                }
+            ]
         }
     ],
     "subrace": [
@@ -666,6 +747,88 @@
                         "You know the {@spell Mending|Ishiir} and {@spell Prestidigitation|Ishiir} cantrips.",
                         "In addition, you can spend 10 minutes to create a Tiny clockwork device (AC 5,1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from the {@spell Prestidigitation|Ishiir} cantrip; the device produces that effect whenever you or another creature takes a {@variantrule Bonus Action|Ishiir} to activate it with a touch.",
                         "If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell's ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn't do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Descendant of the Light",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "raceName": "High Elf",
+            "raceSource": "Fjarrenvold",
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "light|Ishiir#c"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Cantrip.",
+                    "entries": [
+                        "You know the {@spell Light|Ishiir} cantrip."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Divine Magic.",
+                    "entries": [
+                        "Select one 1st level spell from the Cleric or Paladin spell list. You always have this spell prepared and can cast this spell once per day at level 1 without expending a spell slot.",
+                        "When you reach level 3, select one 2nd level spell from the Cleric of Paladin spell list. You also always have this spell prepared and can cast this spell once per day at level 2 without spending a spell slot.",
+                        "Intelligence or Wisdom is your spellcasting modifier for these spells, chosen when you gain this trait. Whenever you gain a level you may exchange these spells for another spell that meet these criteria."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Born of the Arcane",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "raceName": "High Elf",
+            "raceSource": "Fjarrenvold",
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "mage hand|Ishiir#c"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Cantrip.",
+                    "entries": [
+                        "You know the {@spell Mage Hand|Ishiir} cantrip."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Arcane Magic.",
+                    "entries": [
+                        "Select one 1st level spell from the Wizard spell list. You always have this spell prepared and can cast this spell once per day at level 1 without expending a spell slot.",
+                        "When you reach level 3, select one 2nd level spell from the Wizard spell list. You also always have this spell prepared and can cast this spell once per day at level 2 without spending a spell slot.",
+                        "Intelligence or Wisdom is your spellcasting modifier for these spells, chosen when you gain this trait. Whenever you gain a level you may exchange these spells for another spell that meet these criteria."
                     ],
                     "type": "entries"
                 }
