@@ -263,7 +263,121 @@
                 {
                     "name": "Languages",
                     "entries": [
-                        "Common and one language of your choice."
+                        "Common, Draconic and one language of your choice."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Dwarf",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "size": [
+                "M"
+            ],
+            "speed": 25,
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "wis"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "wis"
+                        ],
+                        "count": 2,
+                        "amount": 1
+                    }
+                }
+            ],
+            "age": {
+                "max": 400
+            },
+            "darkvision": 60,
+			"toolProficiencies": [
+				{
+					"anyArtisansTool": 1
+				}
+			],
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "dwarvish": true,
+                    "any": 1
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Ability Score Enhancement",
+                    "type": "entries",
+                    "entries": [
+                        "Choose one score to increase by 2, or two scores to increase by 1: Strength, Constitution, Wisdom."
+                    ]
+                },
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Dwarves typically live for up to 400 years."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Medium (4-5 feet tall)."
+                    ]
+                },
+                {
+                    "name": "Darkvision.",
+                    "entries": [
+                        "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "type": "entries",
+                    "name": "Dwarven Resilience.",
+                    "entries": [
+                        "You have {@variantrule Resistance|Ishiir} to Poison damage. You also have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} you make to avoid or end the {@condition Poisoned|Ishiir} condition."
+                    ]
+                },
+                {
+                    "name": "Dwarven Toughness.",
+                    "entries": [
+                        "Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Tool Expertise.",
+                    "entries": [
+                        "Select one artisan's tool. You gain {@variantrule Proficiency|Ishiir} in the selected tool. If you later gain {@variantrule Proficiency|Ishiir} in that tool from one of your class or background features, you instead gain Expertise."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Dwarven Combat Training.",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} with 2 simple or martial weapons of your choice. In addition you also gain Light and Medium Armour {@variantrule Proficiency|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "Common, Dwarvish and one language of your choice."
                     ],
                     "type": "entries"
                 }
