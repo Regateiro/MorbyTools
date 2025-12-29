@@ -753,7 +753,110 @@
                 {
                     "name": "Languages",
                     "entries": [
-                        "Common and Elvish and one language of your choice."
+                        "Common two languages of your choice."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Orc",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "con"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "con"
+                        ],
+                        "count": 2,
+                        "amount": 1
+                    }
+                }
+            ],
+            "age": {
+                "max": 50
+            },
+            "darkvision": 60,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "orc": true,
+                    "any": 1
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Ability Score Enhancement",
+                    "type": "entries",
+                    "entries": [
+                        "Choose one score to increase by 2, or two scores to increase by 1: Strength, Dexterity, Constitution."
+                    ]
+                },
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Orcs typically live up to 50 years."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Medium (6 - 7 feet tall)."
+                    ]
+                },
+                {
+                    "name": "Adrenaline Rush.",
+                    "entries": [
+                        "You can take the {@action Dash|Ishiir} action as a {@variantrule Bonus Action|Ishiir}. When you do so, you gain a number of Temporary Hit Points equal to your {@variantrule Proficiency|Ishiir} Bonus.",
+                        "You can use this trait a number of times equal to your {@variantrule Proficiency|Ishiir} Bonus, and you regain all expended uses when you finish a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Darkvision.",
+                    "entries": [
+                        "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Relentless Endurance.",
+                    "entries": [
+                        "When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Master Combatant.",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in 2 melee weapons and 1 ranged weapon of your choice."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "Common, Orc and one language of your choice."
                     ],
                     "type": "entries"
                 }
