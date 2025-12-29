@@ -1,0 +1,129 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Fjarrenvold",
+                "abbreviation": "Fjarrenvold",
+                "full": "Fjarrenvold",
+                "color": "#d4af37",
+                "url": "https://regateiro.pt/5etools/homebrew/fjarrenvold-races.json",
+                "authors": [
+                    "Valasca"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "race": [
+        {
+            "name": "Bestari",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "size": [
+                "M"
+            ],
+            "speed": 35,
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "wis"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "wis"
+                        ],
+                        "count": 2,
+                        "amount": 1
+                    }
+                }
+            ],
+            "age": {
+                "mature": 5,
+                "max": 30
+            },
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "any": 1
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Ability Score Enhancement",
+                    "type": "entries",
+                    "entries": [
+                        "Choose one score to increase by 2, or two scores to increase by 1: Strength, Dexterity, Wisdom."
+                    ]
+                },
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Bestari typically live up to 30 years and are considered Mature at age 5."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Medium (4 - 7 feet tall)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Claws.",
+                    "entries": [
+                        "Your sharp claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6 + your Strength or Dexterity modifier, instead of the normal unarmed strike damage."
+                    ]
+                },
+                {
+                    "name": "Primal Agility.",
+                    "entries": [
+                        "Before you move, as a {@variantrule Bonus Action|Ishiir} you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Longstrider's Stamina.",
+                    "entries": [
+                        "When you take the {@action Dash|Ishiir} action or use your Primal Agility trait, difficult terrain doesn't cost you extra movement until the end of your turn."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Pack Hunter.",
+                    "entries": [
+                        "When an ally who is not {@condition Incapacitated|Ishiir} is within 5 feet of your attack target, you can gain {@varientrule Advantage|Ishiir} on attack rolls gainst that creature until the end of turn. You may do so a number of times equal to your {@variantrule Proficiency|Ishiir} bonus. You regain one expended use upon completing a {@variantrule Short Rest|Ishiir}, and all expended uses upon completing a {@variantrule Long Rest|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Predator's Prowess.",
+                    "entries": [
+                        "Select either the {@skill Athletics} or {@skill Stealth} skill. You have {@variantrule Proficiency|Ishiir} in the chosen skill. If you later gain {@variantrule Proficiency|Ishiir} in that skill from one of your class or background features, you instead gain Expertise."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "Common and one language of your choice."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        }
+    ]
+}
