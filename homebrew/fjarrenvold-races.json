@@ -375,7 +375,7 @@
                     "type": "entries"
                 },
                 {
-                    "name": "Languages",
+                    "name": "Languages.",
                     "entries": [
                         "Common, Dwarvish and one language of your choice."
                     ],
@@ -438,27 +438,128 @@
                     "type": "entries",
                     "name": "Size",
                     "entries": [
-                        "Small (3-4 feet tall."
+                        "Small (3-4 feet tall)."
                     ]
                 },
                 {
-                    "name": "Darkvision",
+                    "name": "Darkvision.",
                     "entries": [
                         "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
                     ],
                     "type": "entries"
                 },
                 {
-                    "name": "Gnome Cunning",
+                    "name": "Gnome Cunning.",
                     "entries": [
                         "You have {@variantrule Advantage|Ishiir} on Intelligence, Wisdom, and Charisma {@variantrule Saving Throw|Ishiir|Saving Throws} against spells."
                     ],
                     "type": "entries"
                 },
                 {
+                    "name": "Languages.",
+                    "entries": [
+                        "Common, Gnomish and one language of your choice."
+                    ],
+                    "type": "entries"
+                }
+            ]
+        },
+        {
+            "name": "Halfling",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "size": [
+                "S"
+            ],
+            "speed": 25,
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "int",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "int",
+                            "cha"
+                        ],
+                        "count": 2,
+                        "amount": 1
+                    }
+                }
+            ],
+            "age": {
+                "max": 150
+            },
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "halfling": true,
+                    "any": 1
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Halfling typically live up to 150 years."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Small (2-3 feet tall)."
+                    ]
+                },
+                {
+                    "name": "Brave.",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} you make to avoid or end the {@condition Frightened|Ishiir} condition."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Friendly Demeanor.",
+                    "entries": [
+                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill Persuasion} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Halfling Nimbleness.",
+                    "entries": [
+                        "You can move through the space of any creature that is a size larger than you, but you can't stop in the same space."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Luck.",
+                    "entries": [
+                        "When you roll a 1 on the d20 of a {@variantrule D20 Test|Ishiir}, you can reroll the die, and you must use the new roll."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Naturally Stealthy.",
+                    "entries": [
+                        "You can take the {@action Hide|Ishiir} action even when you are obscured only by a creature that is at least one size larger than you."
+                    ],
+                    "type": "entries"
+                },
+                {
                     "name": "Languages",
                     "entries": [
-                        "You can speak, read, and write Common and Gnomish."
+                        "Common, Gnomish and one language of your choice."
                     ],
                     "type": "entries"
                 }
@@ -521,6 +622,13 @@
             "raceSource": "Fjarrenvold",
             "additionalSpells": [
                 {
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
                     "known": {
                         "1": [
                             "mending|Ishiir#c",
