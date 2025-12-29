@@ -1007,6 +1007,116 @@
                     "type": "entries"
                 }
             ]
+        },
+        {
+            "name": "Wood Elf",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "size": [
+                "M"
+            ],
+            "speed": 35,
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 1,
+                        "amount": 2
+                    }
+                },
+                {
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 2,
+                        "amount": 1
+                    }
+                }
+            ],
+            "darkvision": 120,
+            "age": {
+                "mature": 50,
+                "max": 750
+            },
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "elvish": true,
+                    "any": 1
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Ability Score Enhancement",
+                    "type": "entries",
+                    "entries": [
+                        "Choose one score to increase by 2, or two scores to increase by 1: Dexterity, Wisdom, Charisma."
+                    ]
+                },
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "Wood Elves typically live up to 750 years, they are considered mature at age 50."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Medium (6-7 feet tall)."
+                    ]
+                },
+                {
+                    "name": "Bowmastery.",
+                    "entries": [
+                        "You have {@variantrule Proficiency|Ishiir} with the Longbow and Shortbow, and your ranged weapon attacks ignore half cover."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Forest Stride.",
+                    "entries": [
+                        "You have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Stealth}) checks when in natural environments."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Hunter's Reflex.",
+                    "entries": [
+                        "When a creature within 5 feet of you makes an attack against you and misses, you may move 5 feet without provoking {@action Opportunity Attack|Ishiir|Opportunity Attacks}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Superior Darkvision.",
+                    "entries": [
+                        "You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Wild Grace.",
+                    "entries": [
+                        "You can climb difficult natural surfaces, such as trees and vines, without needing to make an {@variantrule Ability Check|Ishiir}, when you do your {@variantrule Climb Speed|Ishiir} is equal to your walking {@variantrule Speed|Ishiir}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "Common and Elvish and one language of your choice."
+                    ],
+                    "type": "entries"
+                }
+            ]
         }
     ],
     "subrace": [
