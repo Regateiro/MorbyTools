@@ -117,14 +117,14 @@
             },
             "startingEquipment": {
                 "additionalFromBackground": true,
-                "default": [
+                "dIshiirult": [
                     "any two {@filter simple weapons|items|source=phb|category=basic|type=simple weapon} of your choice",
                     "a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts}",
                     "(a) {@item studded leather armor|phb} or (b) {@item scale mail|phb}",
                     "{@item thieves' tools|phb} and a {@item dungeoneer's pack|phb}"
                 ],
                 "goldAlternative": "{@dice 5d4 \u00d7 10|5d4 \u00d7 10|Starting Gold}",
-                "defaultData": [
+                "dIshiirultData": [
                     {
                         "_": [
                             {
@@ -456,8 +456,9 @@
                 }
             ],
             "classFeatures": [
-                "Magical Tinkering|Artificer|Ishiir|1",
                 "Spellcasting|Artificer|Ishiir|1",
+                "Magical Tinkering|Artificer|Ishiir|1",
+                "Tinker's Magic|Artificer|Ishiir|1",
                 "Infuse Item|Artificer|Ishiir|2",
                 {
                     "classFeature": "Artificer Specialist|Artificer|Ishiir|3",
@@ -482,7 +483,7 @@
                 "Spell-Storing Item|Artificer|Ishiir|11",
                 "Ability Score Improvement|Artificer|Ishiir|12",
                 "Proficiency Versatility|Artificer|Ishiir|12",
-                "Magic Item Savant|Artificer|Ishiir|14",
+                "Advanced Artifice|Artificer|Ishiir|14",
                 {
                     "classFeature": "Artificer Specialist Feature|Artificer|Ishiir|15",
                     "gainSubclassFeature": true
@@ -526,16 +527,16 @@
                             "melf's acid arrow|Ishiir"
                         ],
                         "9": [
-                            "gaseous form|Ishiir",
+                            "corrosion|Ishiir",
                             "mass healing word|Ishiir"
                         ],
                         "13": [
-                            "blight|Ishiir",
-                            "death ward|Ishiir"
+                            "death ward|Ishiir",
+                            "vitriolic sphere|Ishiir"
                         ],
                         "17": [
                             "cloudkill|Ishiir",
-                            "raise dead|Ishiir"
+                            "mass cure wounds|Ishiir"
                         ]
                     }
                 }
@@ -666,7 +667,47 @@
                 "Arcane Jolt|Artificer|Ishiir|Battle Smith|Ishiir|9",
                 "Improved Defender|Artificer|Ishiir|Battle Smith|Ishiir|15"
             ]
-        }
+        },
+		{
+			"name": "Plane Charter",
+			"shortName": "Plane Charter",
+			"source": "Ishiir",
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"faerie fire|ishiir",
+							"guiding bolt|ishiir"
+						],
+						"5": [
+							"locate object|ishiir",
+							"mind spike|ishiir"
+						],
+						"9": [
+							"call lightning|ishiir",
+							"clairvoyance|ishiir"
+						],
+						"13": [
+							"banishment|ishiir",
+							"locate creature|ishiir"
+						],
+						"17": [
+							"scrying|ishiir",
+							"teleportation circle|ishiir"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Plane Charter|Artificer|Ishiir|Plane Charter|Ishiir|3|Ishiir",
+				"Guided Precision|Artificer|Ishiir|Plane Charter|Ishiir|5|Ishiir",
+				"Ingenious Movement|Artificer|Ishiir|Plane Charter|Ishiir|9|Ishiir",
+				"Superior Atlas|Artificer|Ishiir|Plane Charter|Ishiir|15|Ishiir"
+			],
+			"hasFluffImages": true
+		}
     ],
     "classFeature": [
         {
@@ -765,6 +806,58 @@
                 }
             ]
         },
+		{
+			"name": "Tinker's Magic",
+			"source": "Ishiir",
+            "page": 1,
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"level": 1,
+			"entries": [
+				"You know the {@spell Mending|Ishiir} cantrip.",
+				"As a {@action Magic|Ishiir} action while holding {@item Tinker's Tools|Ishiir}, you can create one item in an unoccupied space within 5 feet of yourself, choosing the item from the following list:",
+				{
+					"type": "list",
+					"style": "list-hang",
+					"columns": 3,
+					"items": [
+						"{@item Ball Bearings (bag of 1,000)}",
+						"{@item Basket}",
+						"{@item Bedroll}",
+						"{@item Bell}",
+						"{@item Blanket}",
+						"{@item Block and Tackle}",
+						"{@item Glass Bottle||Bottle, Glass}",
+						"{@item Bucket}",
+						"{@item Caltrops}",
+						"{@item Candle}",
+						"{@item Crowbar}",
+						"{@item Flask}",
+						"{@item Grappling Hook}",
+						"{@item Hunting Trap}",
+						"{@item Jug}",
+						"{@item Lamp}",
+						"{@item Manacles}",
+						"{@item Net}",
+						"{@item Oil}",
+						"{@item Paper}",
+						"{@item Parchment}",
+						"{@item Pole}",
+						"{@item Pouch}",
+						"{@item Rope}",
+						"{@item Sack}",
+						"{@item Shovel}",
+						"{@item Iron Spikes||Spikes, Iron}",
+						"{@item String}",
+						"{@item Tinderbox}",
+						"{@item Torch}",
+						"{@item Vial}"
+					]
+				},
+				"The item lasts until you finish a {@variantrule Long Rest|Ishiir}, at which point it vanishes.",
+				"You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+			]
+		},
         {
             "name": "Infuse Item",
             "source": "Ishiir",
@@ -889,8 +982,8 @@
             "classSource": "Ishiir",
             "level": 7,
             "entries": [
-                "You gain the ability to come up with solutions under pressure. When you or another creature you can see within 30 feet of you makes an {@variantrule Ability Check|Ishiir} or a {@variantrule Saving Throw|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to add your Intelligence modifier to the roll.",
-                "You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                "When you or a creature you can see within 30 feet of you fails an ability check or a saving throw, you can take a {@variantrule Reaction|Ishiir} to add a bonus to the roll, potentially causing it to succeed. The bonus equals your Intelligence modifier (minimum of +1).",
+				"You can take this {@variantrule Reaction|Ishiir} a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -954,8 +1047,9 @@
             "classSource": "Ishiir",
             "level": 11,
             "entries": [
-                "You learn how to store a spell in an object. Whenever you finish a {@variantrule Long Rest|Ishiir}, you can touch one {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} or one item that you can use as a spellcasting focus, and you store a spell in it, choosing a 1st- or 2nd-level spell from the {@filter artificer spell list|spells|class=Artificer (Ishiir)|cast time=action|level=1;2|source=Ishiir} that requires 1 action to cast (you needn't have it prepared).",
-                "While holding the object, a creature can take an {@variantrule Action|Ishiir} to produce the spell's effect from it, using your spellcasting ability modifier. If the spell requires {@condition Concentration|Ishiir}, the creature must concentrate. The spell stays in the object until it's been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object."
+                "Whenever you finish a {@variantrule Long Rest|Ishiir}, you can touch one Simple or Martial weapon or one item that you can use as a Spellcasting Focus, and you store a spell in it, choosing a level 1, 2, or 3 Artificer spell that has a casting time of an action and doesn't require a Material component that is consumed by the spell (you needn't have the spell prepared).",
+			    "While holding the object, a creature can take a {@action Magic|Ishiir} action to produce the spell's effect from it, using your spellcasting ability modifier. If the spell requires {@condition Concentration|Ishiir}, the creature must concentrate. Once a creature has used the object to produce the spell's effect, the object can't be used this way again until the start of the creature's next turn.",
+				"The spell stays in the object until it's been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object."
             ]
         },
         {
@@ -983,21 +1077,33 @@
             ]
         },
         {
-            "name": "Magic Item Savant",
+            "name": "Advanced Artifice",
             "source": "Ishiir",
             "page": 1,
             "className": "Artificer",
             "classSource": "Ishiir",
             "level": 14,
             "entries": [
-                "Your skill with magic items deepens more:",
-                {
-                    "type": "list",
-                    "items": [
-                        "You can attune to up to five magic items at once.",
-                        "You ignore all class, race, spell, and level requirements on attuning to or using a magic item."
-                    ]
-                }
+                "You gain the following benefits.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Magic Item Savant",
+							"entries": [
+								"You can now attune to up to five magic items at once."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Refreshed Genius",
+							"entries": [
+								"When you finish a {@variantrule Short Rest|Ishiir}, you regain one expended use of your Flash of Genius feature."
+							]
+						}
+					]
+				}
             ]
         },
         {
@@ -1043,7 +1149,8 @@
             "classSource": "Ishiir",
             "level": 18,
             "entries": [
-                "You can attune to up to six magic items at once."
+                "You can attune to up to six magic items at once.",
+                "Additionally, you ignore all class, race, spell, and level requirements on attuning to or using a magic item."
             ]
         },
         {
@@ -1083,7 +1190,7 @@
                     "type": "list",
                     "items": [
                         "You gain a +1 bonus to all {@variantrule Saving Throw|Ishiir|Saving Throws} per magic item you are currently attuned to.",
-                        "If you're reduced to 0 hit points but not killed outright, you can use your {@variantrule Reaction|Ishiir} to end one of your artificer infusions, causing you to drop to 1 hit point instead of 0."
+                        "If you're reduced to 0 hit points but not killed outright, you can use your {@variantrule Reaction|Ishiir} to expend a use of Flash of Genius and change your hit points to 20 instead."
                     ]
                 }
             ]
@@ -1149,15 +1256,15 @@
                         ],
                         [
                             "9th",
-                            "{@spell Gaseous Form|Ishiir}, {@spell Mass Healing Word|Ishiir}"
+                            "{@spell Corrosion|Ishiir}, {@spell Mass Healing Word|Ishiir}"
                         ],
                         [
                             "13th",
-                            "{@spell Blight|Ishiir}, {@spell Death Ward|Ishiir}"
+                            "{@spell Death Ward|Ishiir}, {@spell Vitriolic Sphere|Ishiir}"
                         ],
                         [
                             "17th",
-                            "{@spell Cloudkill|Ishiir}, {@spell Raise Dead|Ishiir}"
+                            "{@spell Cloudkill|Ishiir}, {@spell Mass Cure Wounds|Ishiir}"
                         ]
                     ]
                 }
@@ -1188,48 +1295,47 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Whenever you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}, you can magically produce an {@i experimental elixir} in an empty flask you touch. Roll on the Experimental Elixir table for the elixir's effect, which is triggered when someone drinks the elixir. As an {@variantrule Action|Ishiir}, a creature can drink the elixir or administer it to an {@condition Incapacitated|Ishiir} creature.",
-                "Creating an {@i experimental elixir} requires you to have {@item alchemist's supplies|Ishiir} on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}.",
-                "When you reach certain levels in this class, you can make more elixirs at the end of a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}: two at 6th level and three at 15th level. Roll for each elixir's effect separately. Each elixir requires its own flask.",
-                "You can create additional {@i experimental elixirs} by expending a spell slot of 1st level or higher for each one. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the elixir's effect from the Experimental Elixir table.",
-                {
-                    "type": "table",
-                    "caption": "Experimental Elixir",
-                    "colLabels": [
-                        "d6",
-                        "Effect"
-                    ],
-                    "colStyles": [
-                        "col-2 text-center",
-                        "col-10"
-                    ],
-                    "rows": [
-                        [
-                            "1",
-                            "{@b Healing}. The drinker regains a number of hit points equal to {@dice 2d4} \u00d7 your {@variantrule Proficiency|Ishiir} Bonus."
-                        ],
-                        [
-                            "2",
-                            "{@b Swiftness}. The drinker's {@variantrule Speed|Ishiir} increases by 10 feet for 1 hour."
-                        ],
-                        [
-                            "3",
-                            "{@b Resilience}. The drinker gains a +1 bonus to AC for 10 minutes."
-                        ],
-                        [
-                            "4",
-                            "{@b Boldness}. The drinker can roll a {@dice d4} and add the number rolled to every {@variantrule Attack Roll|Ishiir} and {@variantrule Saving Throw|Ishiir} they make for the next minute."
-                        ],
-                        [
-                            "5",
-                            "{@b Flight}. The drinker gains a {@variantrule Fly Speed|Ishiir} of 10 feet for 10 minutes."
-                        ],
-                        [
-                            "6",
-                            "{@b Transformation}. The drinker's body is transformed as if by the {@spell Alter Self|Ishiir} spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes."
-                        ]
-                    ]
-                }
+                "Whenever you finish a {@variantrule Long Rest|Ishiir}, you can magically produce a number of {@i experimental elixirs} equal to your {@variantrule Proficiency|Ishiir} in empty flasks you touch. Roll on the Experimental Elixir table for each elixir's effect, which is triggered when someone drinks the elixir. As an {@variantrule Action|Ishiir}, a creature can drink the elixir or administer it to an {@condition Incapacitated|Ishiir} creature.",
+				"Creating an {@i experimental elixir} requires you to have {@item alchemist's supplies|Ishiir} on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next {@variantrule Long Rest|Ishiir}.",
+				"You can create additional {@i experimental elixirs} by expending a spell slot of 1st level or higher for each one. When you do so, you use your {@variantrule Action|Ishiir} to create the elixir in an empty flask you touch, and you choose the elixir's effect from the Experimental Elixir table.",
+				{
+					"type": "table",
+					"caption": "Experimental Elixir",
+					"colLabels": [
+						"d6",
+						"Effect"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"{@b Healing}. The drinker regains a number of hit points equal to {@dice 2d4} + your Intelligence modifier."
+						],
+						[
+							"2",
+							"{@b Swiftness}. The drinker's walking {@variantrule Speed|Ishiir} increases by 10 feet for 1 hour."
+						],
+						[
+							"3",
+							"{@b Resilience}. The drinker gains a +1 bonus to AC for 10 minutes."
+						],
+						[
+							"4",
+							"{@b Boldness}. The drinker can roll a {@dice d4} and add the number rolled to every {@variantrule Attack Roll|Ishiir} and {@variantrule Saving Throw|Ishiir} they make for the next minute."
+						],
+						[
+							"5",
+							"{@b Flight}. The drinker gains a {@variantrule Fly Speed|Ishiir} of 10 feet for 10 minutes."
+						],
+						[
+							"6",
+							"{@b Transformation}. The drinker's body is transformed as if by the {@spell Alter Self|Ishiir} spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes."
+						]
+					]
+				}
             ]
         },
         {
@@ -1243,7 +1349,7 @@
             "level": 5,
             "header": 2,
             "entries": [
-                "You develop masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you {@action Magic|Ishiir|cast a spell} using your {@item alchemist's supplies|Ishiir} as the spellcasting focus, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier (minimum of +1)."
+				"You develop masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell while you have {@item alchemist's supplies|Ishiir} on your person, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier (minimum of +1)."
             ]
         },
         {
@@ -1262,7 +1368,7 @@
                     "type": "list",
                     "items": [
                         "Whenever a creature drinks an {@i experimental elixir} you created, the creature gains temporary hit points equal to {@dice 2d6} + your Intelligence modifier (minimum of 1 temporary hit point).",
-                        "You can cast {@spell Lesser Restoration|Ishiir} without expending a spell slot and without preparing the spell, provided you use {@item alchemist's supplies|Ishiir} as the spellcasting focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+                        "You can cast {@spell Lesser Restoration|Ishiir} without expending a spell slot and without preparing the spell, provided you have {@item alchemist's supplies|Ishiir} on your person. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
                     ]
                 }
             ]
@@ -1279,13 +1385,14 @@
             "header": 2,
             "entries": [
                 "You have been exposed to so many chemicals that they pose little risk to you, and you can use them to quickly end certain ailments:",
-                {
-                    "type": "list",
-                    "items": [
-                        "You gain {@variantrule Resistance|Ishiir} to acid damage and poison damage, and you are {@variantrule Immunity|Ishiir|Immune} to the {@condition Poisoned|Ishiir} condition.",
-                        "You can cast {@spell Greater Restoration|Ishiir} and {@spell Heal|Ishiir} without expending a spell slot, without preparing the spell, and without material components, provided you use {@item alchemist's supplies|Ishiir} as the spellcasting focus. Once you cast either spell with this feature, you can't cast that spell with it again until you finish a {@variantrule Long Rest|Ishiir}."
-                    ]
-                }
+				{
+					"type": "list",
+					"items": [
+						"You gain {@variantule Resistance|Ishiir} to acid damage and poison damage, and you are {@variantule Immunity|Ishiir|Immune} to the {@condition Poisoned|Ishiir} condition.",
+						"You can cast {@spell Greater Restoration|Ishiir} and {@spell Heal|Ishiir} without expending a spell slot, without preparing the spell, and without material components, provided you have {@item alchemist's supplies|Ishiir} on your person. Once you cast either spell with this feature, you can't cast that spell with it again until you finish a {@variantrule Long Rest|Ishiir}.",
+                        "{@b Potent Healing}: When you cast an Artificer spell that restores hit points, you treat the spell as two spell levels higher for the purpose of determining the amount of hit points restored."
+					]
+				}
             ]
         },
         {
@@ -1375,6 +1482,35 @@
             ]
         },
         {
+            "name": "Force Demolisher",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Artificer",
+            "classSource": "Ishiir",
+            "subclassShortName": "Armorer",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "type": "item",
+            "entries": [
+                "An arcane wrecking ball or sledgehammer projects from your armor. The demolisher counts as a Simple Melee weapon with the Reach property, and it deals {@damage 1d10} Force damage on a hit. If you hit a creature that is no more than one size larger than you with the demolisher, you can push the creature up to 10 feet straight away from yourself or pull the creature up to 10 feet toward yourself.",
+                "The damage increases when you reach 11th ({@damage 2d6}) and 17th ({@damage 2d8}) level."
+            ]
+        },
+        {
+            "name": "Giant Stature",
+            "page": 1,
+            "source": "Ishiir",
+            "className": "Artificer",
+            "classSource": "Ishiir",
+            "subclassShortName": "Armorer",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "type": "item",
+            "entries": [
+                "As a {@variantrule Bonus Action|Ishiir}, you transform and enlarge your armor for 1 minute. For the duration, your reach increases by 5 feet, and if you are smaller than Large, you become Large, along with anything you are wearing. If there isn't enough room for you to increase your size, your size doesn't change. You can use this {@variantrule Bonus Action|Ishiir} a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
             "name": "Thunder Gauntlets",
             "page": 1,
             "source": "Ishiir",
@@ -1425,11 +1561,31 @@
             "header": 1,
             "entries": [
                 "You can customize your Arcane Armor. When you do so, choose one of the following armor models: Guardian or Infiltrator. The model you choose gives you special benefits while you wear it.",
-                "Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls.",
+                "Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls. If your armor has an enhancement bonus, it is added to these attack and damage rolls.",
                 "You can change the armor's model whenever you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}, provided you have {@item armorsmith's tools|Ishiir} in hand.",
                 {
                     "type": "entries",
                     "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Dreadnought",
+                            "entries": [
+                                "You design your armor to become a towering juggernaut in battle. It has the following features:",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        {
+                                            "type": "refSubclassFeature",
+                                            "subclassFeature": "Force Demolisher|Artificer|Ishiir|Armorer|Ishiir|3"
+                                        },
+                                        {
+                                            "type": "refSubclassFeature",
+                                            "subclassFeature": "Giant Stature|Artificer|Ishiir|Armorer|Ishiir|3"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
                         {
                             "type": "entries",
                             "name": "Guardian",
@@ -1580,6 +1736,14 @@
             "header": 2,
             "entries": [
                 "Your Arcane Armor gains additional benefits based on its model, as shown below.",
+                {
+                    "type": "entries",
+                    "name": "Dreadnought",
+                    "entries": [
+						"When you use your Giant Stature, your reach increases by 10 feet, your size can increase to Large or Huge (your choice), and you have {@variantrule Advantage|Ishiir} on Strength {@variantrule Ability Check|Ishiir|Checks} and Strength {@variantrule Saving Throw|Ishiir|Saving Throws} for the duration.",
+                        "When you hit a creature with your Force Demolisher, creatures within 10 ft of it also take {@damage 2d6} force damage. Additionally, the original target and every affected creature around it have to make a Strength {@variantrule Saving Throw|Ishiir} against your Spell save DC. On a failure, they are knocked {@condition Prone|Ishiir}. A creature makes this {@variantrule Saving Throw|Ishiir} only once per turn."
+                    ]
+                },
                 {
                     "type": "entries",
                     "name": "Guardian",
@@ -1754,14 +1918,21 @@
             "level": 9,
             "header": 2,
             "entries": [
-                "Every eldritch cannon you create is more destructive:",
-                {
-                    "type": "list",
-                    "items": [
-                        "The cannon's damage rolls all increase by {@damage 1d8}.",
-                        "As an {@variantrule Action|Ishiir}, you can command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity {@variantrule Saving Throw|Ishiir} against your spell save DC, taking {@damage 3d8} force damage on a failed save or half as much damage on a successful one."
-                    ]
-                }
+                "Every Eldritch Cannon you create is now more destructive. You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Detonate",
+					"entries": [
+						"When your cannon takes damage, you can take a {@variantrule Reaction|Ishiir} to command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw against your spell save DC, taking {@damage 3d10} Force damage on a failed save or half as much damage on a successful one."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Firepower",
+					"entries": [
+						"The cannon's damage rolls and the number of Temporary Hit Points granted by Protector increase by {@dice 1d8}."
+					]
+				}
             ]
         },
         {
@@ -1972,6 +2143,212 @@
                     ]
                 }
             ]
-        }
+        },
+		{
+			"name": "Plane Charter",
+			"source": "Ishiir",
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"subclassShortName": "Plane Charter",
+			"subclassSource": "Ishiir",
+			"level": 3,
+			"entries": [
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tools of the Trade|Artificer|Ishiir|Plane Charter|Ishiir|3|Ishiir"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Plane Charter Spells|Artificer|Ishiir|Plane Charter|Ishiir|3|Ishiir"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Adventurer's Atlas|Artificer|Ishiir|Plane Charter|Ishiir|3|Ishiir"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mapping Magic|Artificer|Ishiir|Plane Charter|Ishiir|3|Ishiir"
+				}
+			]
+		},
+		{
+			"name": "Adventurer's Atlas",
+			"source": "Ishiir",
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"subclassShortName": "Plane Charter",
+			"subclassSource": "Ishiir",
+			"level": 3,
+			"entries": [
+				"Whenever you finish a {@variantrule Long Rest|Ishiir} while holding {@item Cartographer's Tools|Ishiir}, you can use that tool to create a set of magical maps by touching at least two creatures (one of whom can be yourself), up to a maximum number of creatures equal to 1 plus your Intelligence modifier (minimum of two creatures). Each target receives a magical map, which constantly updates to show the relative position of all the map holders but is illegible to all others. The maps last until you die or until you use this feature again, at which point any existing maps created by this feature immediately vanish.",
+				"While carrying the map, a target gains the following benefits.",
+				{
+					"type": "entries",
+					"name": "Awareness",
+					"entries": [
+						"The target adds {@dice 1d4} to its {@variantrule Initiative|Ishiir} rolls."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Positioning",
+					"entries": [
+						"The target knows the location of all other map holders that are on the same plane of existence as itself. When casting a spell or creating another effect that requires being able to see the effect's target, a map holder can target another map holder regardless of sight or cover, so long as the other map holder is still within the effect's range."
+					]
+				}
+			]
+		},
+		{
+			"name": "Plane Charter Spells",
+			"source": "Ishiir",
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"subclassShortName": "Plane Charter",
+			"subclassSource": "Ishiir",
+			"level": 3,
+			"entries": [
+				"When you reach an Artificer level specified in the Cartographer Spells table, you thereafter always have the listed spells prepared.",
+				{
+					"caption": "Cartographer Spells",
+					"type": "table",
+					"colLabels": [
+						"Artificer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3",
+							"{@spell Faerie Fire|Ishiir}, {@spell Guiding Bolt|Ishiir}"
+						],
+						[
+							"5",
+							"{@spell Locate Object|Ishiir}, {@spell Misty Step|Ishiir}"
+						],
+						[
+							"9",
+							"{@spell Blink|Ishiir}, {@spell Clairvoyance|Ishiir}"
+						],
+						[
+							"13",
+							"{@spell Dimension Door|Ishiir}, {@spell Locate Creature|Ishiir}"
+						],
+						[
+							"17",
+							"{@spell Scrying|Ishiir}, {@spell Teleportation Circle|Ishiir}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Mapping Magic",
+			"source": "Ishiir",
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"subclassShortName": "Plane Charter",
+			"subclassSource": "Ishiir",
+			"level": 3,
+			"entries": [
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Illuminated Cartography",
+					"entries": [
+						"You can cast {@spell Faerie Fire|Ishiir} without expending a spell slot, outlining the affected creatures as if in ink. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Portal Jump",
+					"entries": [
+						"On your turn, you can spend an amount of movement equal to half your {@variantrule Speed|Ishiir} (round down) to teleport to an unoccupied space you can see within 10 feet of yourself or within 5 feet of a creature that is within 30 feet of you and holding one of your Adventurer's Atlas maps. You can't use this benefit if your {@variantrule Speed|Ishiir} is 0."
+					]
+				}
+			]
+		},
+		{
+			"name": "Tools of the Trade",
+			"source": "Ishiir",
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"subclassShortName": "Plane Charter",
+			"subclassSource": "Ishiir",
+			"level": 3,
+			"entries": [
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Tool Proficiency",
+					"entries": [
+						"You gain proficiency with {@item Calligrapher's Supplies|Ishiir} and {@item Cartographer's Tools|Ishiir}. If you already have one of these proficiencies, you gain proficiency with one other type of {@item Artisan's Tools|Ishiir} of your choice (or with two other types if you have both)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Scroll Crafting",
+					"entries": [
+						"When you craft a Spell Scroll, the amount of time required to craft it is halved."
+					]
+				}
+			]
+		},
+		{
+			"name": "Guided Precision",
+			"source": "Ishiir",
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"subclassShortName": "Plane Charter",
+			"subclassSource": "Ishiir",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"Once per turn, whenever you cast a spell from your Cartographer Spells list or hit a creature affected by your {@spell Faerie Fire|Ishiir} with an attack roll, you can add your Intelligence modifier to one damage roll of the spell or attack.",
+				"In addition, taking damage can't cause you to lose {@condition Concentration|Ishiir} on {@spell Faerie Fire|Ishiir}."
+			]
+		},
+		{
+			"name": "Ingenious Movement",
+			"source": "Ishiir",
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"subclassShortName": "Plane Charter",
+			"subclassSource": "Ishiir",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"When you use your Flash of Genius, you or a willing creature of your choice that you can see within 30 feet of yourself can teleport up to 30 feet to an unoccupied space you can see as part of that same {@variantrule Reaction|Ishiir}."
+			]
+		},
+		{
+			"name": "Superior Atlas",
+			"source": "Ishiir",
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"subclassShortName": "Plane Charter",
+			"subclassSource": "Ishiir",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Your Adventurer's Atlas improves, gaining the following benefits.",
+				{
+					"type": "entries",
+					"name": "Safe Haven",
+					"entries": [
+						"When a map holder would be reduced to 0 {@variantrule Hit Points|Ishiir} but not killed outright, that creature can destroy its map. The creature's {@variantrule Hit Points|Ishiir} instead change to a number equal to twice your Artificer level, and the creature is teleported to an unoccupied space within 5 feet of you or another map holder of its choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unerring Path",
+					"entries": [
+						"If you are one of the map holders for your Adventurer's Atlas, you can cast {@spell Find the Path|Ishiir} without expending a spell slot, without preparing the spell, and without needing spell components. Once you use this benefit, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
+					]
+				}
+			]
+		}
     ]
 }
