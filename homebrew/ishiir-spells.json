@@ -1096,7 +1096,7 @@
                 }
             ],
             "entries": [
-                "This spell can only be learned and cast by a faithful follower of Angrosh.",
+                "{@i This spell can only be learned and cast by a faithful follower of Angrosh.}",
                 "You summon a magical anvil inscribed with divine runes in an unoccupied space you can see within range. The anvil functions as an enchanted forge and summons all tools necessary when they are required during the crafting process, e.g. a furnace, hammers, a bucket of water, etc. - provided the requisite space is available. Any sound produced by working the anvil or any of its summoned implements only carries to a distance of 30 ft.",
                 "Once per day, the anvil can be transformed into a different crafting station of the same tier such as an enchanted well by completing a minor ritual that takes 1 minute.",
                 "In addition, the anvil and any other form it takes can be dismissed and resummoned in an unoccupied space you can see within range by spending the original cast time again.",
@@ -25174,7 +25174,7 @@
                 }
             ],
             "entries": [
-                "This spell can only be learned and cast by a faithful follower of Gargan.",
+                "{@i This spell can only be learned and cast by a faithful follower of Gargan.}",
                 "Choose one creature that you can see within range. The target is subjected to the crushing pressure of Gargan's deepest waters.",
                 "The target must make a Strength {@variantrule Saving Throw|Ishiir}. On a failed save the target takes {@damage 10d12} force damage and is {@condition Restrained|Ishiir}. On a success, the target takes half as much damage, isn't {@condition Restrained|Ishiir} and the spell ends.",
                 "At the end of each of its turns, the target makes the Strength {@variantrule Saving Throw|Ishiir} again. On a failed save, it takes the force damage again. On a successful save, the spell ends."
@@ -26219,6 +26219,92 @@
             ]
         },
         {
+            "name": "Graffir's Howling Gale",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a pair of wolf fangs and a handful of ice or snow"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "{@i This spell can only be learned and cast by a faithful follower of Graffir.}",
+                "You surround yourself with a raging snowstorm from the Wolf of Winter's domain. In a 60-foot radius around you, strong winds (60 miles per hour) blow for the spell's duration and the area is heavily obscured by a flurry of snow and ice.",
+                "The wind has the following effects:",
+                {
+                    "type": "list",
+                    "items": [
+                        "It {@condition Deafened|Ishiir|Deafens} other creatures.",
+                        "It extinguishes unprotected flames in its area.",
+                        "It hedges out vapor, gas, and fog that can be dispersed by strong wind.",
+                        "The area is {@quickref difficult terrain||3} for affected creatures.",
+                        "Ranged weapon attacks from affected creatures that pass through the wind automatically miss."
+                    ]
+                },
+                "When you cast this spell, you can designate any number of creatures to be unaffected by it. When a creature enters the area for the first time on a turn or starts its turn there, it must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, the creature takes {@damage 4d6} bludgeoning and {@damage 4d10} cold damage and cannot take {@variantrule Reaction|Ishiir|Reactions} until the start of its next turn."
+            ],
+            "conditionInflict": [
+                "deafened"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "damageInflict": [
+                "bludgeoning",
+                "cold"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "miscTags": [
+                "DFT",
+                "GOD",
+                "OBS"
+            ]
+        },
+        {
             "name": "Grand Impact",
             "page": 1,
             "source": "Ishiir",
@@ -27194,6 +27280,85 @@
             "optionalfeatures": [
                 {
                     "name": "Pact of the Tome",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Gren's Cloak of Guile",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 6,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "7 fox whiskers and 100 gp, which the spell consumes",
+                    "cost": 10000,
+                    "consume": true
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "{@i This spell can only be learned and cast by a faithful follower of Gren.}",
+                "You entreat the Trickster for his blessing and receive it in the form of a magical cloak that lasts for the duration. You can determine the appearance of the cloak when you cast this spell and as an item interaction on any subsequent turn.",
+                "For the duration, you gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "As a {@variantrule Bonus Action|Ishiir}, you can turn yourself and everything you are carrying {@condition Invisible|Ishiir}. This effect ends when you perform a hostile action or you dismiss it (no action required).",
+                        "You have a +10 bonus to Charisma ({@skill Deception}) checks and magic cannot reveal when you are telling a lie.",
+                        "You can move through other creatures and objects as if they were {@quickref difficult terrain||3}. You cannot willingly end your movement in an occupied space. If you do, you take {@damage 1d10} force damage and are shunted back to the nearest unoccupied space in the direction that you came from."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "invisible"
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "miscTags": [
+                "EAB",
+                "GOD",
+                "UBA"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
                     "source": "Ishiir"
                 }
             ]
@@ -33419,6 +33584,181 @@
                             "source": "Ishiir",
                             "shortName": "Lorehold"
                         }
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Krumr's Crackling Fury",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 9,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 300
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a piece of resinite"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "{@i This spell can only be learned and cast by a faithful follower of Krumr.}",
+                "You call on the might of your patron god to create a golden crackling bolt of lightning in your hand, which you hurl at a target you can see within range.",
+                "The target has to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, it takes {@damage 12d10} lightning damage and is {@condition Stunned|Ishiir} until the end of your next turn. On a success, it takes half as much damage and isn't {@condition Stunned|Ishiir}.",
+                "You can create and hurl a new bolt as your {@variantrule Action|Ishiir} on any turn until the spell ends."
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "conditionInflict": [
+                "stunned"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "GOD"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Lanathiil's Lucent Grove",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 300
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a dew drop, a seed or leaf from a plant, and a miniature mithral harp worth at 250 gp",
+                    "cost": 25000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
+            ],
+            "entries": [
+                "{@i This spell can only be learned and cast by a faithful follower of Lanathiil.}",
+                "You invoke Lanathiil to grant you and your companions a safe haven that lasts for the duration. You choose where in range the entrance is located. It appears as a shimmering green portal 10 feet high and 5 feet wide. You and any creature you designate when you cast the spell can enter the portal as long as the portal is open. You can open or close the portal if you are within 30 feet of it. While closed, the portal is invisible.",
+                "Beyond the portal is an extradimensional space in the form of a beautiful verdant grove that fills a 500-foot-radius half-sphere. It is full of fruit-bearing bushes and trees as well as a large pond with crystal-clear water that cannot be muddied or soiled in any way. It is populated by celestial spirits that take the shape of animals, who can assist with simple tasks that their shapes allow them to. The atmosphere is clean, fresh, and warm. The Green Song, a pleasant ephemeral melody can be heard all-throughout.",
+                "You can determine the exact appearance of the grove, including what kind of trees grow there, what shape the celestial spirits take, and what size and shape the pool of water is. The celestial spirits cannot leave the grove and anything removed from the grove turns to mist.",
+                "The grove contains sufficient food to sustain 100 people every day.",
+                "Once per day, a creature may perform one of the following special activities while spending at least 8 hours in the grove:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Rest and listen to the Green Song.",
+                            "entries": [
+                                "The creature can add a {@dice d8} to its next {@variantrule Ability Check|Ishiir} before the end of the current day."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Bathe in the pool.",
+                            "entries": [
+                                "All poisons and diseases afflicting the creature end and it regains 10 hit points."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Ask the celestial spirits for guidance.",
+                            "entries": [
+                                "The creature casts the {@spell Augury|Ishiir} spell without any components."
+                            ]
+                        }
+                    ]
+                },
+                "Any creature that completes a long rest after 7 short rests within the grove regains all of its hit dice.",
+                "When the spell ends, any creatures inside the grove are expelled into the open spaces nearest to the entrance."
+            ],
+            "miscTags": [
+                "EAB",
+                "GOD",
+                "HL"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -40106,7 +40446,7 @@
                 }
             ],
             "entries": [
-                "This spell can only be learned and cast by a faithful follower of Naushindhor.",
+                "{@i This spell can only be learned and cast by a faithful follower of Naushindhor.}",
                 "With the blessing of Naushindhor, you temporarily redirect the flow of the weave, creating an artificial nexus of magical leylines. Choose a point within range you can see. Depending on the time spent casting, you can cause the following effect at the target location:",
                 {
                     "type": "list",
@@ -40811,6 +41151,71 @@
             ]
         },
         {
+            "name": "Pale Knight's Portentous Premonition",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 7,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "the skull of a corvid and an hourglass filled with black sand"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "{@i This spell can only be learned and cast by a faithful follower of The Pale Knight.}",
+                "You curse a creature you can see within range with visions of its own failures and death.",
+                "The creature has to make a Charisma {@variantrule Saving Throw|Ishiir}. On a success, the creature has {@variantrule Disadvantage|Ishiir} on the next {@variantreul D20 Test|Ishiir} it makes before the end of your next turn. On a failure, it has {@variantrule Disadvantage|Ishiir} on all {@variantrule D20 Test|Ishiir|D20 Tests} and other creatures have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against it for the duration."
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "ADV",
+                "DAV",
+                "GOD"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Pass without Trace",
             "page": 1,
             "source": "Ishiir",
@@ -41085,7 +41490,7 @@
                 }
             ],
             "entries": [
-                "This spell can only be learned and cast by a faithful follower of Perinae.",
+                "{@i This spell can only be learned and cast by a faithful follower of Perinae.}",
                 "You summon an enormous cornucopia full of fresh succulent produce from Perinae's divine realm. The contents of the cornucopia take 1 hour to consume and disappear at the end of that time, and the beneficial effects don't set in until this hour is over. Up to twelve creatures can partake of the contents.",
                 "A creature that partakes of the contents gains several benefits. The creature is cured of all diseases, poison, exhaustion, and reductions of their maximum hit points, becomes immune to the same effects, and makes all Constitution {@variantrule Saving Throw|Ishiir|Saving Throws} with {@variantrule Advantage|Ishiir}. These benefits last for 24 hours."
             ],
@@ -44759,7 +45164,7 @@
                 }
             ],
             "entries": [
-                "This spell can only be learned and cast by a faithful follower of Rahya.",
+                "{@i This spell can only be learned and cast by a faithful follower of Rahya.}",
                 "You link two willing allied creatures you can see within range together for the duration with a sacred blessing that enhances the strength and succor they draw from each other's presence.",
                 "While the targets are within 60 ft of each other, they can divide any damage and healing they take freely amongst themselves. Only effects and features on the original target are considered for influencing the amount of healing or damage done to the other.",
                 "Additionally, if either target is forced to make an {@variantrule Ability Check|Ishiir} or {@variantrule Saving Throw|Ishiir} while within that range, the other can roll instead and determine the effects on the former with that roll, unless either target is under an effect that causes the {@variantrule Ability Check|Ishiir} or {@variantrule Saving Throw|Ishiir} to automatically fail."
@@ -48584,6 +48989,73 @@
             ]
         },
         {
+            "name": "Setifor's All-Seeing Eye",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 5,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "s": true,
+                "m": "an item engraved with the holy symbol of Setifor"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "{@i This spell can only be learned and cast by a faithful follower of Setifor.}",
+                "You call on Setifor to lend you supernatural vigilance. For the duration, you gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You have {@sense Truesight} out to a range of 60 feet.",
+                        "You have a +10 bonus to Wisdom ({@skill Perception}) checks.",
+                        "When a creature you can see within 60 feet of you speaks, you know when it is telling a lie."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "EAB",
+                "GOD"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Shadow Blade",
             "page": 1,
             "source": "Ishiir",
@@ -50065,7 +50537,7 @@
                 }
             ],
             "entries": [
-                "This spell can only be learned and cast by a faithful follower of Vaeraustraee.",
+                "{@i This spell can only be learned and cast by a faithful follower of Vaeraustraee.}",
                 "You imbue a weapon you touch with the blessing of the Sword Dancer. Until the spell ends, the weapon emits bright light in a 30-foot radius and dim light for an additional 30 feet, which counts as moonlight and dispels any magical darkness overlapping with its area. In addition, all damage the weapon deals becomes radiant damage and when taking the {@action Attack|Ishiir} action with it, the number of attacks increases to four.",
                 "All effects of this spell except the light radius are suppressed when a creature other than you wields the affected weapon, unless they are also a faithful of Vaeraustraee."
             ],
