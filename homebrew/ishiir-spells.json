@@ -8708,70 +8708,6 @@
             ]
         },
         {
-            "name": "Magic Barrier",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 3,
-            "school": "A",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "self"
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 10
-                    },
-                    "concentration": true
-                }
-            ],
-            "entries": [
-                "Arcane wards protect you against magic for the duration. You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against spells and magical effects. Additionally, if you succeed on a {@variantrule Saving Throw|Ishiir} against a spell or magical effect and would normally take half as much damage, you instead take no damage."
-            ],
-            "areaTags": [
-                "ST"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Summoner",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ],
-            "miscTags": [
-                "ADV"
-            ]
-        },
-        {
             "name": "Circle of Power",
             "page": 1,
             "source": "Ishiir",
@@ -36681,6 +36617,70 @@
             ],
             "miscTags": [
                 "OBJ"
+            ]
+        },
+        {
+            "name": "Magic Barrier",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 3,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "Arcane wards protect you against magic for the duration. You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against spells and magical effects. Additionally, if you succeed on a {@variantrule Saving Throw|Ishiir} against a spell or magical effect and would normally take half as much damage, you instead take no damage."
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "miscTags": [
+                "ADV"
             ]
         },
         {
