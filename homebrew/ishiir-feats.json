@@ -3091,6 +3091,29 @@
                     }
                 },
                 {
+                    "name": "Witch Spells",
+                    "ability": "int",
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1": [
+                                    {
+                                        "choose": "level=1|class=Witch"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "known": {
+                        "_": [
+                            {
+                                "choose": "level=0|class=Witch",
+                                "count": 2
+                            }
+                        ]
+                    }
+                },
+                {
                     "name": "Wizard Spells",
                     "ability": "int",
                     "innate": {
@@ -3130,7 +3153,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "Choose a class: {@filter bard|spells|level=0;1|class=bard (Ishiir)|source=Ishiir}, {@filter cleric|spells|level=0;1|class=cleric (Ishiir)|source=Ishiir}, {@filter druid|spells|level=0;1|class=druid (Ishiir)|source=Ishiir}, {@filter sorcerer|spells|level=0;1|class=sorcerer (Ishiir)|source=Ishiir}, {@filter warlock|spells|level=0;1|class=warlock (Ishiir)|source=Ishiir}, or {@filter wizard|spells|level=0;1|class=wizard (Ishiir)|source=Ishiir}. You learn two cantrips of your choice from that class's spell list.",
+                        "Choose a class: {@filter bard|spells|level=0;1|class=bard (Ishiir)|source=Ishiir}, {@filter cleric|spells|level=0;1|class=cleric (Ishiir)|source=Ishiir}, {@filter druid|spells|level=0;1|class=druid (Ishiir)|source=Ishiir}, {@filter sorcerer|spells|level=0;1|class=sorcerer (Ishiir)|source=Ishiir}, {@filter warlock|spells|level=0;1|class=warlock (Ishiir)|source=Ishiir}, {@filter witch|spells|level=0;1|class=witch (Ishiir)|source=Ishiir}, or {@filter wizard|spells|level=0;1|class=wizard (Ishiir)|source=Ishiir}. You learn two cantrips of your choice from that class's spell list.",
                         "In addition, choose one 1st-level spell from that same list. You learn that spell and can cast it at its lowest level. Once you cast it, you must finish a {@variantrule Long Rest|Ishiir} before you can cast it again using this feat. You can also cast it using spell slots you have of the appropriate level.",
                         "Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (your choice)."
                     ]

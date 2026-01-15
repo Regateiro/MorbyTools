@@ -72,6 +72,10 @@
                     {
                         "name": "Warlock",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -161,6 +165,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -576,6 +584,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -780,6 +792,10 @@
                     {
                         "name": "Ranger",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -907,6 +923,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -1041,6 +1061,10 @@
                     },
                     {
                         "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -1203,6 +1227,10 @@
                     {
                         "name": "Ranger",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -1309,6 +1337,10 @@
                     },
                     {
                         "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -1600,6 +1632,10 @@
                     {
                         "name": "Artificer",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -1689,6 +1725,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -2051,6 +2091,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -2441,6 +2485,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -2495,6 +2543,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -2554,6 +2606,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -3023,6 +3079,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -3100,6 +3160,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -3606,6 +3670,10 @@
                     {
                         "name": "Ranger",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -3619,6 +3687,65 @@
                             "source": "Ishiir",
                             "shortName": "Beast Conclave"
                         }
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Baba's Clucking Hut",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 7,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a chicken leg, a log of rowan, and a miniature kettle made from iron, all of which the spell consumes",
+                    "consume": true
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 7
+                    }
+                }
+            ],
+            "entries": [
+                "You conjure a magical hut in an unoccupied space you can see. The hut uses the Clucking Hut stat block. Only you and people you designate can enter the hut.",
+                "The interior of the hut is 60 feet wide, 40 feet deep, and 30 feet tall. You can create any floor plan you like and the place is furnished and decorated as you choose. It contains sufficient food to sustain up to 9 people.",
+                "Any tools inside the hut, including those you and your companions bring with you, can be animated with a command word that you choose when you cast the spell. Any such tool can perform and automatically succeed at all their tasks autonomously as long as no skill check with a DC higher than 15 is required to succeed at them.",
+                "When the hut moves about, its interior is not disturbed nor affected by inertia or other exterior forces. Nothing inside the hut can be targeted by any effects when its door is closed.",
+                "The hut does not require rest and has a travel speed of 60 miles. It can only move and take the {@action Dash|Ishiir} and {@action Dodge|Ishiir} actions on its own turn.",
+                "When the spell ends or the hut is destroyed, any people and their belongings still in it fall to the ground, but take no fall damage if they hit the ground on the current turn."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -3691,6 +3818,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -3770,6 +3901,10 @@
                     },
                     {
                         "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -4049,6 +4184,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -4186,6 +4325,10 @@
                     },
                     {
                         "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -4405,6 +4548,10 @@
                     {
                         "name": "Ranger",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -4488,6 +4635,10 @@
                     {
                         "name": "Ranger",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -4520,7 +4671,7 @@
             "page": 1,
             "source": "Ishiir",
             "level": 3,
-            "school": "N",
+            "school": "E",
             "time": [
                 {
                     "number": 1,
@@ -4530,7 +4681,8 @@
             "range": {
                 "type": "point",
                 "distance": {
-                    "type": "touch"
+                    "type": "feet",
+                    "amount": 60
                 }
             },
             "components": {
@@ -4555,6 +4707,7 @@
                         "Choose one ability score. While cursed, the target has {@variantrule Disadvantage|Ishiir} on {@variantrule Ability Check|Ishiir|Ability Checks} and {@variantrule Saving Throw|Ishiir|Saving Throws} made with that ability score.",
                         "While cursed, the target has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} and it cannot target you with attacks rolls.",
                         "While cursed, the target must make a Wisdom {@variantrule Saving Throw|Ishiir} at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.",
+                        "While cursed, the target has to make a Dexterity {@variantrule Saving Throw|Ishiir} when it attempts to spend more than half of its speed on a turn. On a failure, it falls {@condition Prone|Ishiir}. The effect can only occur once per turn.",
                         "While the target is cursed, attacks and spells deal an extra {@damage 1d6} necrotic damage to the target."
                     ]
                 },
@@ -4574,10 +4727,14 @@
             ],
             "savingThrow": [
                 "charisma",
-                "wisdom"
+                "wisdom",
+                "dexterity"
             ],
             "areaTags": [
                 "ST"
+            ],
+            "conditionInflict": [
+                "prone"
             ],
             "miscTags": [
                 "DAV"
@@ -4598,6 +4755,10 @@
                     },
                     {
                         "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -4935,6 +5096,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -5302,6 +5467,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -5600,6 +5769,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -5800,6 +5973,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -6051,7 +6228,8 @@
             "range": {
                 "type": "point",
                 "distance": {
-                    "type": "touch"
+                    "type": "feet",
+                    "amount": 60
                 }
             },
             "components": {
@@ -6069,7 +6247,7 @@
                 }
             ],
             "entries": [
-                "A creature you can see within range must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or become cursed for the duration. A creature that has no blood cannot be cursed in this manner.",
+                "A creature you can see within range must succeed on a Charisma {@variantrule Saving Throw|Ishiir} or become cursed for the duration. A creature that has no blood cannot be cursed in this manner.",
                 "While it is cursed, it has {@variantrule Disadvantage|Ishiir} on Constitution {@variantrule Saving Throw|Ishiir|Saving Throws} and vulnerability to damage caused by the {@condition Lacerated|Ishiir} condition.",
                 "If it normally has {@variantrule Resistance|Ishiir} to slashing, piercing, poison, or necrotic damage, it loses those {@variantrule Resistance|Ishiir|Resistances} for the duration.",
                 "A remove curse spell ends this effect."
@@ -6084,7 +6262,7 @@
                 }
             ],
             "savingThrow": [
-                "wisdom"
+                "charisma"
             ],
             "miscTags": [
                 "BLD",
@@ -6106,6 +6284,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -7220,6 +7402,10 @@
                     {
                         "name": "Cleric",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -7455,6 +7641,10 @@
                     {
                         "name": "Artificer",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -7550,6 +7740,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -7651,6 +7845,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -8222,6 +8420,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -8347,6 +8549,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -8491,6 +8697,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -8697,6 +8907,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -8761,6 +8975,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -8913,6 +9131,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -9822,6 +10044,10 @@
                     {
                         "name": "Ranger",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -10288,6 +10514,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -10666,6 +10896,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -10834,6 +11068,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -11185,6 +11423,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -11321,6 +11563,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -11391,6 +11637,10 @@
                     },
                     {
                         "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -11475,6 +11725,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -11580,6 +11834,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -11658,6 +11916,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -11827,6 +12089,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -11896,6 +12162,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -11986,6 +12256,10 @@
                     },
                     {
                         "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -12270,6 +12544,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -12732,6 +13010,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -13295,6 +13577,10 @@
                     {
                         "name": "Artificer",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -13370,6 +13656,10 @@
                     },
                     {
                         "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -13468,6 +13758,10 @@
                     },
                     {
                         "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -13626,6 +13920,10 @@
                     },
                     {
                         "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -14010,6 +14308,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -14184,6 +14486,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -14361,6 +14667,10 @@
                     },
                     {
                         "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -14617,6 +14927,10 @@
                     },
                     {
                         "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -15140,6 +15454,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -16165,6 +16483,10 @@
                     {
                         "name": "Warlock",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -16307,6 +16629,10 @@
                     },
                     {
                         "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -16732,6 +17058,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -17032,6 +17362,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -17125,6 +17459,10 @@
                     },
                     {
                         "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -17410,6 +17748,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -17694,6 +18036,10 @@
                     {
                         "name": "Ranger",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -17863,6 +18209,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -17949,6 +18299,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -18135,6 +18489,10 @@
                     },
                     {
                         "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -18562,6 +18920,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -18933,6 +19295,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -19011,6 +19377,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -19803,6 +20173,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -19888,6 +20262,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -19984,6 +20362,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -20170,6 +20552,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -20316,6 +20702,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -20505,6 +20895,10 @@
                     {
                         "name": "Ranger",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -20591,6 +20985,10 @@
                     },
                     {
                         "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -20763,6 +21161,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -20839,6 +21241,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -20939,6 +21345,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -21324,6 +21734,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -21474,6 +21888,10 @@
                     },
                     {
                         "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -21969,6 +22387,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -22104,6 +22526,10 @@
                     {
                         "name": "Artificer",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -22215,6 +22641,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -22640,6 +23070,10 @@
                     {
                         "name": "Druid",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -22709,6 +23143,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -24181,6 +24619,10 @@
                     {
                         "name": "Sorcerer",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -24469,6 +24911,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -24869,6 +25315,10 @@
                     {
                         "name": "Sorcerer",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -24960,6 +25410,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -25060,6 +25514,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -25150,6 +25608,10 @@
                     },
                     {
                         "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -25267,6 +25729,10 @@
                     },
                     {
                         "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -25495,6 +25961,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -25693,6 +26163,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -26298,6 +26772,10 @@
                     {
                         "name": "Druid",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -26409,6 +26887,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -26749,6 +27231,10 @@
                     {
                         "name": "Artificer",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -26802,6 +27288,10 @@
                     },
                     {
                         "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -27105,6 +27595,10 @@
                     },
                     {
                         "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -27582,6 +28076,68 @@
             ]
         },
         {
+            "name": "Greater Malison",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 4,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a black opal worth at least 100 gp, which the spell consumes",
+                    "cost": 10000,
+                    "consume": true
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You cast a powerful curse upon a point you choose within range that weakens the defenses of your foes. Each creature of your choice in a 20-foot-radius sphere centered on that point must make a Charisma {@variantrule Saving Throw|Ishiir}. On a failure, a target subtracts a {@dice d8} from any {@variantrule Saving Throw|Ishiir} it makes for the duration.",
+                "At the end of each of its turns, an affected target can make a Charisma {@variantrule Saving Throw|Ishiir}, ignoring the penalty from this spell. If it succeeds, this effect ends for that target."
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Greater Restoration",
             "page": 1,
             "source": "Ishiir",
@@ -27652,6 +28208,10 @@
                     },
                     {
                         "name": "Paladin",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -28383,6 +28943,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -28744,6 +29308,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -28852,6 +29420,10 @@
                     },
                     {
                         "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -29286,6 +29858,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -29369,6 +29945,10 @@
                 "fromClassList": [
                     {
                         "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -29625,6 +30205,10 @@
                     {
                         "name": "Druid",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -29726,6 +30310,10 @@
                     {
                         "name": "Ranger",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -29816,6 +30404,10 @@
                     },
                     {
                         "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -29929,6 +30521,10 @@
                     },
                     {
                         "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -30135,6 +30731,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -30203,6 +30803,10 @@
                     },
                     {
                         "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -30603,6 +31207,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -30807,6 +31415,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -32492,6 +33104,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -32841,6 +33457,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -32944,6 +33564,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -33162,6 +33786,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -34019,6 +34647,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -34429,6 +35061,10 @@
                     {
                         "name": "Druid",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -34721,6 +35357,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -34805,6 +35445,10 @@
                     },
                     {
                         "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -35740,6 +36384,10 @@
                     {
                         "name": "Ranger",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -35828,6 +36476,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -36125,6 +36777,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -36553,6 +37209,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -36777,6 +37437,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -36940,6 +37604,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -37124,6 +37792,10 @@
                     {
                         "name": "Artificer",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -37204,6 +37876,10 @@
                     },
                     {
                         "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -37665,6 +38341,10 @@
                     {
                         "name": "Druid",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -38112,6 +38792,10 @@
                     {
                         "name": "Druid",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -38364,6 +39048,10 @@
                     },
                     {
                         "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -38757,6 +39445,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -38922,6 +39614,10 @@
                     {
                         "name": "Bard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -38992,6 +39688,10 @@
                     },
                     {
                         "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -39316,6 +40016,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -39585,6 +40289,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -39777,6 +40485,10 @@
                     },
                     {
                         "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -40221,6 +40933,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -40329,6 +41045,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -40432,6 +41152,10 @@
                     {
                         "name": "Ranger",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -40507,6 +41231,10 @@
                 "fromClassList": [
                     {
                         "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -40646,6 +41374,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -40725,6 +41457,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -40795,6 +41531,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -41477,6 +42217,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -41960,6 +42704,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -42025,6 +42773,10 @@
                     {
                         "name": "Cleric",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -42082,6 +42834,10 @@
                     },
                     {
                         "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -42327,6 +43083,10 @@
                     {
                         "name": "Druid",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -42335,6 +43095,85 @@
                     "name": "Circle Adept",
                     "source": "Ishiir"
                 }
+            ]
+        },
+        {
+            "name": "Petty Jinx",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 0,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 9
+                    }
+                }
+            ],
+            "entries": [
+                "You place a minor curse on a creature or object you can see within range. If the target is a creature, it does not know it was cursed by you unless it observed you casting this spell. You can cause one of the following effects:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You instantly spoil a single serving of food for 1 person or liquid in a container holding no more than 3 gallons.",
+                        "The target creature has to make a Charisma {@variantule Saving Throw|Ishiir} or emit an unpleasant odor, such as that of rotten eggs or animal manure for the duration. You can also use this effect on a non-magical object up to 5 feet in all dimensions.",
+                        "The target creature has to make a Charisma {@variantule Saving Throw|Ishiir} or experience a distracting sensation, such as a deep itch or light pain for the duration. While cursed in this manner, the creature subtracts 1 from all of its ability checks.",
+                        "The target creature has to make a Charisma {@variantule Saving Throw|Ishiir} or be infertile for the duration. Any physiological process required to facilitate intercourse, such as an erection, is also impossible during this time.",
+                        "The target creature has to make a Charisma {@variantule Saving Throw|Ishiir} or its skin color changes to one of your choosing for the duration. You can also use this effect on a non-magical object up to 5 feet in all dimensions.",
+                        "The target creature has to make a Charisma {@variantule Saving Throw|Ishiir}. On failure, it attracts or repels (your choice) small animals that can see it within 60 feet. You can also use this effect on a non-magical object up to 5 feet in all dimensions."
+                    ]
+                },
+                "At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect.",
+                "Once a target has succeeded on a {@variantule Saving Throw|Ishiir} against any of these effects, it is immune to this spell for the next 9 days.",
+                "If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an {@variantrule Action|Ishiir}."
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                },
+                {
+                    "name": "Magic Initiate",
+                    "source": "Ishiir"
+                }
+            ],
+            "optionalfeatures": [
+                {
+                    "name": "Pact of the Tome",
+                    "source": "Ishiir"
+                }
+            ],
+            "miscTags": [
+                "OBJ"
             ]
         },
         {
@@ -42603,6 +43442,10 @@
                     },
                     {
                         "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -42909,6 +43752,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -43010,6 +43857,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -43074,6 +43925,10 @@
                     },
                     {
                         "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -43209,6 +44064,10 @@
                     },
                     {
                         "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -43458,6 +44317,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -43560,6 +44423,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -43614,6 +44481,10 @@
                     },
                     {
                         "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -43689,6 +44560,10 @@
                     {
                         "name": "Druid",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -43754,6 +44629,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -43824,6 +44703,10 @@
                     {
                         "name": "Bard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -43891,6 +44774,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -43974,6 +44861,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -44865,6 +45756,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -45024,6 +45919,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -45193,6 +46092,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -45418,6 +46321,10 @@
                     },
                     {
                         "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -45774,6 +46681,10 @@
                     },
                     {
                         "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -46518,6 +47429,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -46780,6 +47695,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -47036,6 +47955,10 @@
                     {
                         "name": "Druid",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -47253,6 +48176,10 @@
                     {
                         "name": "Druid",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -47312,6 +48239,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -47381,6 +48312,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -48312,6 +49247,10 @@
                     {
                         "name": "Artificer",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -48681,6 +49620,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -48827,6 +49770,10 @@
                     },
                     {
                         "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -49130,6 +50077,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -49442,6 +50393,10 @@
                     {
                         "name": "Artificer",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -49550,6 +50505,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -49657,6 +50616,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -50016,6 +50979,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -50202,6 +51169,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -50311,6 +51282,10 @@
                     },
                     {
                         "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -51060,6 +52035,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -51127,6 +52106,10 @@
                     },
                     {
                         "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -51584,6 +52567,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -51747,6 +52734,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -52589,6 +53580,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -52795,6 +53790,10 @@
                     {
                         "name": "Warlock",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -52930,6 +53929,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -53128,6 +54131,10 @@
                     {
                         "name": "Ranger",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -53208,6 +54215,10 @@
                     },
                     {
                         "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -53610,6 +54621,10 @@
                     },
                     {
                         "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -54219,6 +55234,10 @@
                     {
                         "name": "Druid",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -54762,6 +55781,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -55457,6 +56480,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -55703,6 +56730,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -55917,6 +56948,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -56002,6 +57037,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -56075,6 +57114,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -56199,6 +57242,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -57006,6 +58053,10 @@
                     {
                         "name": "Druid",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -57138,6 +58189,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -57207,6 +58262,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -57312,6 +58371,10 @@
                     },
                     {
                         "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -58436,6 +59499,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -58536,6 +59603,10 @@
                 "fromClassList": [
                     {
                         "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -58652,6 +59723,10 @@
                     },
                     {
                         "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -58997,6 +60072,10 @@
                     },
                     {
                         "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -59501,6 +60580,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -59626,6 +60709,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -59805,6 +60892,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -59927,6 +61018,10 @@
                     {
                         "name": "Artificer",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -60034,6 +61129,10 @@
                     },
                     {
                         "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -60185,6 +61284,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -60318,6 +61421,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -60385,6 +61492,10 @@
                     },
                     {
                         "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -60555,6 +61666,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -60650,6 +61765,10 @@
                     },
                     {
                         "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -60928,6 +62047,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -61098,6 +62221,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -61943,6 +63070,10 @@
                     {
                         "name": "Druid",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -62198,6 +63329,10 @@
                     {
                         "name": "Wizard",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -62272,6 +63407,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -62467,6 +63606,10 @@
                     {
                         "name": "Artificer",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -62619,6 +63762,10 @@
                     },
                     {
                         "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -62888,6 +64035,10 @@
                     {
                         "name": "Summoner",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -63003,6 +64154,10 @@
                     },
                     {
                         "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]
@@ -63252,6 +64407,10 @@
                     {
                         "name": "Ranger",
                         "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
                     }
                 ],
                 "fromSubclass": [
@@ -63486,6 +64645,10 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ],
@@ -63781,6 +64944,10 @@
                     },
                     {
                         "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
                         "source": "Ishiir"
                     }
                 ]

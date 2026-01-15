@@ -1,0 +1,968 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Ishiir",
+                "abbreviation": "Ishiir",
+                "full": "Ishiir",
+                "color": "#d98d2a",
+                "url": "https://regateiro.pt/5etools/homebrew/ishiir-Witch.json",
+                "authors": [
+                    "Sieg"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "class": [
+        {
+            "name": "Witch",
+            "source": "Ishiir",
+            "page": 1,
+            "hd": {
+                "number": 1,
+                "faces": 6
+            },
+            "proficiency": [
+                "a) Intelligence + 1 Major + 1 Minor save or b) Wisdom + 1 Major or 2 Minor saves or c) Charisma + 1 Major + 1 Minor save."
+            ],
+            "spellcastingAbility": "int",
+            "casterProgression": "full",
+            "preparedSpells": "<$level$> + <$int_mod$>",
+            "cantripProgression": [
+                3,
+                3,
+                3,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
+            ],
+            "spellsKnownProgression": [
+                4,
+                5,
+                6,
+                7,
+                9,
+                10,
+                11,
+                12,
+                14,
+                15,
+                16,
+                16,
+                17,
+                17,
+                18,
+                18,
+                19,
+                20,
+                21,
+                22
+            ],
+            "startingProficiencies": {
+                "tools": [
+                    "three from among the following: {@item Alchemist's Supplies|Ishiir}, {@item Cook's Utensils|Ishiir}, {@item Enchanter's Supplies|Ishiir}, {@item Herbalist's Kit|Ishiir}, {@item Poisoner's Kit|Ishiir}."
+                ],
+                "weapons": [
+                    "simple"
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "animal handling",
+                                "arcana",
+                                "insight",
+                                "investigation",
+                                "medicine",
+                                "nature",
+                                "perception",
+                                "survival"
+                            ],
+                            "count": 3
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "default": [
+                    "(a) a {@item quarterstaff|phb} or (b) a {@item dagger|phb}",
+                    "(a) a {@item component pouch|phb} or (b) an {@item druidic focus|phb} or (c) an {@item arcane focus|phb}",
+                    "(a) a {@item scholar's pack|phb} or (b) an {@item explorer's pack|phb}"
+                ],
+                "goldAlternative": "{@dice 3d4 \u00d7 10|3d4 \u00d7 10|Starting Gold}",
+                "defaultData": [
+                    {
+                        "a": [
+                            "quarterstaff|phb"
+                        ],
+                        "b": [
+                            "dagger|phb"
+                        ]
+                    },
+                    {
+                        "a": [
+                            "component pouch|phb"
+                        ],
+                        "b": [
+                            "druidic focus|phb"
+                        ],
+                        "c": [
+                            "arcane focus|phb"
+                        ]
+                    },
+                    {
+                        "a": [
+                            "scholar's pack|phb"
+                        ],
+                        "b": [
+                            "explorer's pack|phb"
+                        ]
+                    }
+                ]
+            },
+            "multiclassing": {
+                "requirements": {
+                    "int": 13,
+                    "wis": 13,
+                    "cha": 13
+                },
+                "proficienciesGained": {
+                    "weapon": [
+                        "simple"
+                    ],
+                    "skills": [
+                        {
+                            "choose": {
+                                "from": [
+                                    "animal handling",
+                                    "arcana",
+                                    "insight",
+                                    "investigation",
+                                    "medicine",
+                                    "nature",
+                                    "perception",
+                                    "survival"
+                                ],
+                                "count": 2
+                            }
+                        }
+                    ]
+                }
+            },
+            "classTableGroups": [
+                {
+                    "colLabels": [
+                        "{@filter Cantrips|spells|level=0|class=Witch (Ishiir)|source=Ishiir}",
+                        "{@filter Spells Known|spells|class=Witch (Ishiir)|source=Ishiir}"
+                    ],
+                    "rows": [
+                        [
+                            3,
+                            4
+                        ],
+                        [
+                            3,
+                            5
+                        ],
+                        [
+                            3,
+                            6
+                        ],
+                        [
+                            4,
+                            7
+                        ],
+                        [
+                            4,
+                            9
+                        ],
+                        [
+                            4,
+                            10
+                        ],
+                        [
+                            4,
+                            11
+                        ],
+                        [
+                            4,
+                            12
+                        ],
+                        [
+                            4,
+                            14
+                        ],
+                        [
+                            5,
+                            15
+                        ],
+                        [
+                            5,
+                            16
+                        ],
+                        [
+                            5,
+                            16
+                        ],
+                        [
+                            5,
+                            17
+                        ],
+                        [
+                            5,
+                            17
+                        ],
+                        [
+                            5,
+                            18
+                        ],
+                        [
+                            5,
+                            18
+                        ],
+                        [
+                            5,
+                            19
+                        ],
+                        [
+                            5,
+                            20
+                        ],
+                        [
+                            5,
+                            21
+                        ],
+                        [
+                            5,
+                            22
+                        ]
+                    ]
+                },
+                {
+                    "title": "Spell Slots per Spell Level",
+                    "colLabels": [
+                        "{@filter 1st|spells|level=1|class=Witch (Ishiir)|source=Ishiir}",
+                        "{@filter 2nd|spells|level=2|class=Witch (Ishiir)|source=Ishiir}",
+                        "{@filter 3rd|spells|level=3|class=Witch (Ishiir)|source=Ishiir}",
+                        "{@filter 4th|spells|level=4|class=Witch (Ishiir)|source=Ishiir}",
+                        "{@filter 5th|spells|level=5|class=Witch (Ishiir)|source=Ishiir}",
+                        "{@filter 6th|spells|level=6|class=Witch (Ishiir)|source=Ishiir}",
+                        "{@filter 7th|spells|level=7|class=Witch (Ishiir)|source=Ishiir}",
+                        "{@filter 8th|spells|level=8|class=Witch (Ishiir)|source=Ishiir}",
+                        "{@filter 9th|spells|level=9|class=Witch (Ishiir)|source=Ishiir}"
+                    ],
+                    "rowsSpellProgression": [
+                        [
+                            2,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            2,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1,
+                            1,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1,
+                            1,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1,
+                            1,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            3,
+                            1,
+                            1,
+                            1,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            3,
+                            2,
+                            2,
+                            1,
+                            1
+                        ]
+                    ]
+                }
+            ],
+            "classFeatures": [
+                "Spellcasting|Witch|Ishiir|1",
+                "Bonded Familiar|Witch|Ishiir|1",
+                "Witchcraft|Witch|Ishiir|1",
+                "Bountiful Harvest|Witch|Ishiir|2",
+                {
+                    "classFeature": "Witch Coven|Witch|Ishiir|3",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Witch|Ishiir|4",
+                "Improved Bonded Familiar|Witch|Ishiir|5",
+                {
+                    "classFeature": "Witch Coven Feature|Witch|Ishiir|6",
+                    "gainSubclassFeature": true
+                },
+                "Caldron Rituals|Witch|Ishiir|7",
+                "Ability Score Improvement|Witch|Ishiir|8",
+                "Improved Witchcraft|Witch|Ishiir|9",
+                {
+                    "classFeature": "Witch Coven Feature|Witch|Ishiir|10",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Witch|Ishiir|12",
+                "Greater Bonded Familiar|Witch|Ishiir|14",
+                {
+                    "classFeature": "Witch Coven Feature|Witch|Ishiir|14",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Witch|Ishiir|16",
+                {
+                    "classFeature": "Witch Coven Feature|Witch|Ishiir|18",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Witch|Ishiir|19",
+                "Archfamiliar|Witch|Ishiir|20"
+            ],
+            "subclassTitle": "Witch Coven"
+        }
+    ],
+    "subclass": [],
+    "classFeature": [
+        {
+            "name": "Spellcasting",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "You have learned to cast spells through your familiar and communion with the ancient forces that you are sworn to. The information below details how you use those rules with Witch spells, which appear on the {@filter Witch spell list|spells|class=witch (Ishiir)|source=Ishiir}.",
+                {
+                    "type": "entries",
+                    "name": "Cantrips.",
+                    "entries": [
+                        "You know two cantrips of your choice from the Witch spell list. You learn additional witch cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Witch table."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spell Slots.",
+                    "entries": [
+                        "The Witch Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Prepared Spells of Level 1+.",
+                    "entries": [
+                        "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the {@filter Witch spell list|spells|class=witch (Ishiir)|source=Ishiir}.",
+                        "The number of spells on your list increases as you gain Witch levels, as shown in the Prepared Spells column of the Witch Features table. Whenever that number increases, choose additional spells from the Witch spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Witch, your list of prepared spells can include six spells of levels 1 and 2 in any combination.",
+                        "If another Witch feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Witch spells for you."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Changing Your Prepared Spells.",
+                    "entries": [
+                        "Whenever you finish a {@variantrule Short Rest|Ishiir}, you can replace one of your prepared spells with another Witch spell for which you have spell slots.",
+                        "Whenever you finish a {@variantrule Long Rest|Ishiir}, you can change your list of prepared spells, replacing any of the spells there with other Witch spells for which you have spell slots."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Ability.",
+                    "entries": [
+                        "Intelligence, Wisdom, or Charisma (your choice) is the spellcasting ability for your Witch spells."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Focus.",
+                    "entries": [
+                        "You can use an arcane or druidic focus as a spellcasting focus for your witch spells."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bonded Familiar",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "Through the vagaries of fate, your own study of the supernatural, or other circumstances you have come into contact with a mystical force or great entity whom you are sworn to serve. As a proxy and teacher, you are provided with a constant companion in the form of a bonded familiar.",
+                "This familiar takes the form of a beast, celestial, elemental, fiend, plant, or undead of CR 0, which you choose. It uses the corresponding statblock of the creature, but uses your proficiency bonus and mental ability scores in place of its own. In addition to its own, it also shares your saving throw proficiencies and any of your skill proficiencies that use Intelligence, Wisdom, or Charisma. For each level in this class, it also gains 4 additional hit points. When you finish a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}, your bonded familiar regains all its hit points.",
+                "Your bonded familiar can understand and speak all languages you speak. While it is on the same plane of existence as you, you can communicate with it telepathically.",
+                "Your bonded familiar acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn.",
+                "As a {@variantrule Bonus Action|Ishiir}, you can shunt your bonded familiar into a safe pocket dimension. You can recall it to an unoccupied space within 5 feet of you in the same manner.",
+                "Should your bonded familiar die, you can resummon it with a special ritual that takes 10 minutes. Alternatively, you can resummon it as an {@variantrule Action|Ishiir} by spending a spell slot of 1st level or higher."
+            ]
+        },
+        {
+            "name": "Witchcraft",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "Through arcane study and the guidance of your bonded familiar, you learn special occult practices and abilities. You gain four witchcraft options of your choice. When you finish a {@variantrule Long Rest|Ishiir} you can replace one witchcraft you know with another one.",
+                {
+                    "type": "entries",
+                    "name": "Amelioration.",
+                    "entries": [
+                        "As an {@variantrule Action|Ishiir}, you touch a creature that is {@condition Blinded|Ishiir}, {@condition Deafened|Ishiir}, {@condition Poisoned|Ishiir}, or is afflicted with a disease and magically alleviate its affliction. The target does not suffer the effects of your choice of one of these conditions until the start of your next turn. This does not remove the effects from the target and has no effect on them if they are reapplied during this time."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Cackle.",
+                    "entries": [
+                        "As an {@variantrule Action|Ishiir}, you magically disrupt the ability to recover of one creature that can hear you within 60 feet. Until the start of your next turn, the target makes {@variantule Saving Throw|Ishiir|Saving Throws} against ongoing effects on it with {@variantrule Disadvantage|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Evil Eye.",
+                    "entries": [
+                        "As an {@variantrule Action|Ishiir}, you can curse a creature that you can see within 60 feet. The target has to make a Charisma {@variantule Saving Throw|Ishiir} againt your spell save DC. On a failure, it subtracts {@dice 1d4} from the result of all {@variantrule D20 Test|Ishiir|D20 Tests} it makes until the start of your next turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Familiar Focus.",
+                    "entries": [
+                        "As an {@variantrule Action|Ishiir}, you can perceive through your bonded familiar's senses in addition to your own. You can end this effect again as an {@variantrule Action|Ishiir}. Additionally, you can cast any spell or use any witchcraft option from your bonded familiar's space."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Kettle Chant.",
+                    "entries": [
+                        "When you make a crafting check using {@item alchemist's supplies|Ishiir}, {@item cook's utensils|Ishiir}, {@item herbalist's kit|Ishiir}, or {@item poisoner's kit|Ishiir}, you add half your spellcasting ability modifier (rounded down)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Mind Fog.",
+                    "entries": [
+                        "As an {@variantrule Action|Ishiir}, you can befuddle the mind of a creature you can see within 60 feet and that is currently concentrating. The target immedidately has to make a Concentration {@variantrule Saving Throw|Ishiir}. The DC is equal to 10 + half your Witch level (rounded up) + your spellcasting ability modifier."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Minor Prophecy.",
+                    "entries": [
+                        "Your gift for divination allows you to foresee minor events. When a creature you can see within 60 feet succeeds on or fails a {@variantrule D20 Test|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to turn the roll on the D20 into a 9 or 11 (your choice). You cannot use this feature again until you have finished a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Witch Spittle.",
+                    "entries": [
+                        "As an {@variantrule Action|Ishiir}, you touch a creature and rub spit laced with a minor healing enchantment over its injuries. The target regains hit points equal to your spellcasting ability modifier. If the target is your bonded familiar, it regains additional hit points equal to your Witch level. A creature cannot benefit from this effect again until it has finished a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bountiful Harvest",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 2,
+            "entries": [
+                "Choose two tools from among {@item alchemist's supplies|Ishiir}, {@item cook's utensils|Ishiir}, {@item herbalist's kit|Ishiir}, or {@item poisoner's kit|Ishiir}. Your {@variantrule Proficiency|Ishiir|Proficiency Bonus} for checks with the chosen tools is doubled.",
+                "Additionally, when you forage for food or ingredients, you can roll the die on the result column twice and take the higher result."
+            ]
+        },
+        {
+            "name": "Witch Coven",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "Choose a witch coven that you join from the list of available covens. Your choice grants you features at 3rd level and again at 6th, 10th, 14th, and 18th levels."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 4,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Improved Bonded Familiar",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 5,
+            "entries": [
+                "Your bonded familiar can now also use the special actions gained through your Witchcraft. This does not change the number of uses a given feature has or how many times it can affect the same creature.",
+                "Additionally, your bonded familiar now also adds your {@variantrule Proficiency|Ishiir} to its AC."
+            ]
+        },
+        {
+            "name": "Witch Coven Feature",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 6,
+            "entries": [
+                "You gain a feature granted by your Witch Coven choice."
+            ]
+        },
+        {
+            "name": "Cauldron Rituals",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 7,
+            "entries": [
+                "You learn a number of special rituals that you can complete as part of a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}. You may only choose one of these rituals at a time and the effects last until you complete your next {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}.",
+                {
+                    "type": "entries",
+                    "name": "Bounty of the Earth.",
+                    "entries": [
+                        "When you forage for food or ingredients, you can treat a d20 roll of 8 or lower as a 9. If your Foraging check is successful, you roll an additional d4 and add it to the result of the die on the result column."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Eye of Newt, Wing of Bat.",
+                    "entries": [
+                        "Select a number of non-masterwork consumables equal to your spellcasting ability modifier that your group crafted on this Adventuring Day using {@item alchemist's supplies|Ishiir}, {@item cook's utensils|Ishiir}, {@item herbalist's kit|Ishiir}, or {@item poisoner's kit|Ishiir}. The selected items receive the masterwork property."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Nature's Veil.",
+                    "entries": [
+                        "When your group makes a Prepare Campsite check, you can treat a d20 roll of 8 or lower as a 9. Additionally, you and up to 8 other creatures of your choice regain additional hit points equal to your spellcasting ability modifier + half your Witch Level when you complete your next {@variantrule Short Rest|Ishiir} on this Adventuring Day."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Snake Stomach.",
+                    "entries": [
+                        "If your group consumes a meal as part of this rest, the duration of the effect is increased by 1 day. The same meal can only be affected by this ritual once."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Whispers of the Wild.",
+                    "entries": [
+                        "When your group makes a Lookout check, you can treat a d20 roll of 8 or lower as a 9. Additionally, you add your spellcasting ability modifier to your passive Perception and that of up to 8 other creatures of your choice."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Witch Path.",
+                    "entries": [
+                        "{@quickref Difficult terrain||3} doesn't slow your group's travel and whenever your group makes a Pathfinding check, you can treat a d20 roll of 8 or lower as a 9."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 8,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Improved Witchcraft",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "Your knowledge of your craft deepens. You learn two additional Witchcraft options. Additionally, you can select two Witchcraft options you know, which improve as described below: ",
+                {
+                    "type": "entries",
+                    "name": "Amelioration.",
+                    "entries": [
+                        "You can also use this feature on targets with the {@condition Confused|Ishiir}, {@condition Dazed|Ishiir}, {@condition Exhausted|Ishiir}, {@condition Incapacitated|Ishiir}, {@condition Paralyzed|Ishiir}, and {@condition Stunned|Ishiir} conditions."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Cackle.",
+                    "entries": [
+                        "You affect all creatures of your choice that can hear you within 60 feet."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Evil Eye.",
+                    "entries": [
+                        "You can use this feature as an {@variantrule Action|Ishiir} or {@variantrule Bonus Action|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Familiar Focus.",
+                    "entries": [
+                        "As an {@variantrule Action|Ishiir}, you can switch positions with your bonded familiar if you can see it."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Kettle Chant.",
+                    "entries": [
+                        "The bonus to the listed crafting checks is now equal to your spellcasting ability modifier."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Mind Fog.",
+                    "entries": [
+                        "If the target fails the Concentration {@variantrule Saving Throw|Ishiir}, it takes psychic damage equal to half your Witch level + your spellcasting ability modifier."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Minor Prophecy.",
+                    "entries": [
+                        "You gain 1 additional use of this feature. You regain all expended uses when you finish a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Witch Spittle.",
+                    "entries": [
+                        "The healing from this feature is doubled."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Witch Coven Feature",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 10,
+            "entries": [
+                "You gain a feature granted by your Witch Coven choice."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 12,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Greater Bonded Familiar",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "Your familiar learns all Witch cantrips you know and can cast them without material components. It uses your spellcasting attack bonus and spell save DC for these cantrips."
+            ]
+        },
+        {
+            "name": "Witch Coven Feature",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 14,
+            "entries": [
+                "You gain a feature granted by your Witch Coven choice."
+            ]
+        },
+        {
+            "name": "Witch Coven Feature",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 18,
+            "entries": [
+                "You gain a feature granted by your Witch Coven choice."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 19,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Archfamiliar",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "level": 1,
+            "entries": [
+                "Your occult bond with your familiar is at the height of its power, granting you the following benefits:",
+                {
+                    "type": "entries",
+                    "name": "Bonded Magic.",
+                    "entries": [
+                        "Choose three Witch spells of 1st or 2nd level. You always have the chosen spells prepared. Your bonded familiar also learns these spells. Both of you can cast these spells without spell slots and without material components. It uses your spellcasting attack bonus and spell save DC for these spells."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Life Ward.",
+                    "entries": [
+                        "When either you or your bonded familiar drop to 0 hit points but aren't killed out right, you can change the affected target's hit points to a number equal to triple your Witch level. You cannot use this feature again until you have completed a {@variantrule Long Rest|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Longevity.",
+                    "entries": [
+                        "The mystical powers coursing through you grant you an extended life span. For every nine years that pass, your body ages only one year."
+                    ]
+                }
+            ]
+        }
+    ],
+    "subclassFeature": []
+}
