@@ -992,6 +992,45 @@
                 "Mirror, Mirror|Witch|Ishiir|Alleyways|Ishiir|14",
                 "Rat Father's Blessing|Witch|Ishiir|Alleyways|Ishiir|18"
             ]
+        },
+        {
+            "name": "Dark Sisters",
+            "shortName": "Dark Sisters",
+            "source": "Ishiir",
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "known": {
+                        "3": [
+                            "bane|Ishiir",
+                            "dissonant whispers|Ishiir",
+                            "arcane rend|Ishiir",
+                            "blindness/deafness|Ishiir"
+                        ],
+                        "5": [
+                            "dark orb|Ishiir",
+                            "hunger of hadar|Ishiir"
+                        ],
+                        "7": [
+                            "doomtide|Ishiir",
+                            "greater malison|Ishiir"
+                        ],
+                        "9": [
+                            "dominate person|Ishiir",
+                            "insect plague|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Coven of Dark Sisters|Witch|Ishiir|Dark Sisters|Ishiir|3",
+                "Curse Specialist|Witch|Ishiir|Dark Sisters|Ishiir|6",
+                "Contagious Curse|Witch|Ishiir|Dark Sisters|Ishiir|10",
+                "Dark Sister's Scorn|Witch|Ishiir|Dark Sisters|Ishiir|14",
+                "Tenebrous Trinity|Witch|Ishiir|Dark Sisters|Ishiir|18"
+            ]
         }
     ],
     "subclassFeature": [
@@ -1170,6 +1209,142 @@
             "entries": [
                 "You can now target other creatures beside your bonded familiar for the purposes of your Mirror, Mirror feature.",
                 "You and any other creature that are currently {@condition Invisible|Ishiir} through a spell or feature of yours have their speed doubled and can {@action Hide|Ishiir} as a {@variantrule Bonus Action|Ishiir}."
+            ]
+        },
+
+        {
+            "name": "Coven of Dark Sisters",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dark Sisters",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Coven of Dark Sisters Spells|Witch|Ishiir|Dark Sisters|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Grim Satisfaction|Witch|Ishiir|Dark Sisters|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Coven of Dark Sisters Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dark Sisters",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "At each indicated Witch level, add the listed spells to your spells prepared.",
+                {
+                    "type": "table",
+                    "caption": "Coven of Dark Sisters Spells",
+                    "colLabels": [
+                        "Witch Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Bane|Ishiir}, {@spell Dissonant Whispers|Ishiir}, {@spell Arcane Rend|Ishiir}, {@spell Blindness/Deafness|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Dark Orb|Ishiir}, {@spell Hunger of Hadar|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Doomtide|Ishiir}, {@spell Greater Malison|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Dominate Person|Ishiir}, {@spell Insect Plague|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Grim Satisfaction",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dark Sisters",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Whenever a creature fails a {@variantrule Saving Throw|Ishiir} against one of your Witch spells or features, you and your bonded familiar gain temporary hit points equal to your spellcasting ability modifier + half your Witch level (rounded down)."
+            ]
+        },
+        {
+            "name": "Curse Specialist",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dark Sisters",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 1,
+            "entries": [
+                "You always have the {@spell Bestow Curse|Ishiir} spell prepared and it does not count against your Concentration limit, though the initial instance of the spell ends if you cast it again. If you fail a Concentration {@variantrule Saving Throw|Ishiir} and you are currently concentrating on more than one spell, you lose concentration on both spells."
+            ]
+        },
+        {
+            "name": "Contagious Curse",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dark Sisters",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 1,
+            "entries": [
+                "If the target of {@spell Bestow Curse|Ishiir} drops to 0 hit points before the end of their duration, you can take a {@variantrule Bonus Action|Ishiir} to move the curse to a new creature you can see within range."
+            ]
+        },
+        {
+            "name": "Dark Sister's Scorn",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dark Sisters",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "header": 1,
+            "entries": [
+                "When a creature you can see within 60 feet hits you or your bonded familiar with an attack or forces you to make a {@variantrule Saving Throw|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to curse that creature. The target has to make a Charisma {@variantrule Saving Throw|Ishiir}. On a failure, it is subject to one of the effects of the {@spell Bestow Curse|Ishiir} spell until the start of its next turn.",
+                "If the target is already under the effect of {@spell Bestow Curse|Ishiir}, it stacks with this feature as long as you choose a different curse effect."
+            ]
+        },
+        {
+            "name": "Tenebrous Trinity",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dark Sisters",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "When you cast {@spell Bestow Curse|Ishiir}, its range increases to 120 feet and you can choose up to three targets instead of one."
             ]
         }
     ]
