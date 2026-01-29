@@ -1031,6 +1031,45 @@
                 "Dark Sister's Scorn|Witch|Ishiir|Dark Sisters|Ishiir|14",
                 "Tenebrous Trinity|Witch|Ishiir|Dark Sisters|Ishiir|18"
             ]
+        },
+        {
+            "name": "Fateweavers",
+            "shortName": "Fateweavers",
+            "source": "Ishiir",
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "known": {
+                        "3": [
+                            "heroism|Ishiir",
+                            "silvery barbs|Ishiir",
+                            "augury|Ishiir",
+                            "fortune's favor|Ishiir"
+                        ],
+                        "5": [
+                            "clairvoyance|Ishiir",
+                            "counterspell|Ishiir"
+                        ],
+                        "7": [
+                            "divination|Ishiir",
+                            "spell turning|Ishiir"
+                        ],
+                        "9": [
+                            "dream|Ishiir",
+                            "scrying|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Coven of Fateweavers|Witch|Ishiir|Fateweavers|Ishiir|3",
+                "Weaver of Weal and Woe|Witch|Ishiir|Fateweavers|Ishiir|6",
+                "Join Fates|Witch|Ishiir|Fateweavers|Ishiir|10",
+                "Doom Ward|Witch|Ishiir|Fateweavers|Ishiir|14",
+                "Farseer|Witch|Ishiir|Fateweavers|Ishiir|18"
+            ]
         }
     ],
     "subclassFeature": [
@@ -1211,7 +1250,6 @@
                 "You and any other creature that are currently {@condition Invisible|Ishiir} through a spell or feature of yours have their speed doubled and can {@action Hide|Ishiir} as a {@variantrule Bonus Action|Ishiir}."
             ]
         },
-
         {
             "name": "Coven of Dark Sisters",
             "source": "Ishiir",
@@ -1345,6 +1383,143 @@
             "header": 1,
             "entries": [
                 "When you cast {@spell Bestow Curse|Ishiir}, its range increases to 120 feet and you can choose up to three targets instead of one."
+            ]
+        },
+        {
+            "name": "Coven of Fateweavers",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Fateweavers",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Coven of Fateweavers Spells|Witch|Ishiir|Fateweavers|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Omen Seer|Witch|Ishiir|Fateweavers|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Coven of Fateweavers Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Fateweavers",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "At each indicated Witch level, add the listed spells to your spells prepared.",
+                {
+                    "type": "table",
+                    "caption": "Coven of Fateweavers Spells",
+                    "colLabels": [
+                        "Witch Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Heroism|Ishiir}, {@spell Silvery Barbs|Ishiir}, {@spell Augury|Ishiir}, {@spell Fortune's Favor|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Clairvoyance|Ishiir}, {@spell Counterspell|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Divination|Ishiir}, {@spell Spell Turning|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Dream|Ishiir}, {@spell Scrying|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Omen Seer",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Fateweavers",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You learn the Minor Prophecy Witchcraft option. If you already know it, you can choose a different Witchcraft option.",
+                "Additionally, you gain two additional uses for Minor Prophecy and you regain all expended uses when you finish a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Weaver of Weal and Woe",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Fateweavers",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 1,
+            "entries": [
+                "You always have the {@spell Bane|Ishiir} and {@spell Fortune's Favor|Ishiir} spells prepared.",
+                "When you cast {@spell Bane|Ishiir}, its range increases to 60 feet and you can cast {@spell Fortune's Favor|Ishiir} without providing the material component. You can cast {@spell Fortune's Favor|Ishiir} in this manner three times and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Join Fates",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Fateweavers",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 1,
+            "entries": [
+                "Through a ritual that lasts 10 minutes, you can touch two other creatures and temporarily tie their fates together. Whenever either creature makes an {@variantrule Ability Check|Ishiir} or {@variantrule Saving Throw|Ishiir}, the other also rolls and the original creature uses the average of the two rolls to determine the effect (rounded up)."
+            ]
+        },
+        {
+            "name": "Doom Ward",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Fateweavers",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "header": 1,
+            "entries": [
+                "As an {@variantrule Action|Ishiir}, your or your bonded familiar can touch a creature you can see and weave a protective charm that wards against ill luck for 1 hour. The target cannot have {@variantrule Disadvantage|Ishiir} on any {@variantrule D20 Test|Ishiir|D20 Tests}. You can use this feature three times and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Farseer",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Fateweavers",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "The range of your Minor Prophecy increases to 120 feet and you can turn the roll on the D20 into a 7 or 13 (your choice).",
+                "When you roll Initiative, you regain one use of Minor Prophecy."
             ]
         }
     ]
