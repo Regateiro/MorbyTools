@@ -631,7 +631,7 @@
                     "type": "item",
                     "name": "Mind Fog",
                     "entries": [
-                        "As an {@variantrule Action|Ishiir}, you can befuddle the mind of a creature you can see within 60 feet and that is currently concentrating. The target immedidately has to make a Concentration {@variantrule Saving Throw|Ishiir}. The DC is equal to 10 + half your Witch level (rounded up) + your spellcasting ability modifier."
+                        "As an {@variantrule Action|Ishiir}, you can befuddle the mind of a creature you can see within 60 feet and that is currently concentrating. The target immedidately has to make a {@condition Concentration|Ishiir} {@variantrule Saving Throw|Ishiir}. The DC is equal to 10 + half your Witch level (rounded up) + your spellcasting ability modifier."
                     ]
                 },
                 {
@@ -821,7 +821,7 @@
                     "type": "item",
                     "name": "Mind Fog",
                     "entries": [
-                        "If the target fails the Concentration {@variantrule Saving Throw|Ishiir}, it takes psychic damage equal to half your Witch level + your spellcasting ability modifier."
+                        "If the target fails the {@condition Concentration|Ishiir} {@variantrule Saving Throw|Ishiir}, it takes psychic damage equal to half your Witch level + your spellcasting ability modifier."
                     ]
                 },
                 {
@@ -1217,6 +1217,45 @@
                 "Lunar Gaze|Witch|Ishiir|Silver Sisters|Ishiir|14",
                 "Argent Conjunction|Witch|Ishiir|Silver Sisters|Ishiir|18"
             ]
+        },
+        {
+            "name": "Veil Wardens",
+            "shortName": "Veil Wardens",
+            "source": "Ishiir",
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "known": {
+                        "3": [
+                            "detect evil and good|Ishiir",
+                            "protection from evil and good|Ishiir",
+                            "darkvision|Ishiir",
+                            "mental barrier|Ishiir"
+                        ],
+                        "5": [
+                            "intellect fortress|Ishiir",
+                            "magic circle|Ishiir"
+                        ],
+                        "7": [
+                            "arcane storm|Ishiir",
+                            "banishment|Ishiir"
+                        ],
+                        "9": [
+                            "circle of power|Ishiir",
+                            "planar binding|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Coven of Veil Wardens|Witch|Ishiir|Veil Wardens|Ishiir|3",
+                "Fortified Mind|Witch|Ishiir|Veil Wardens|Ishiir|6",
+                "Banishment Specialist|Witch|Ishiir|Veil Wardens|Ishiir|10",
+                "Warded Mind|Witch|Ishiir|Veil Wardens|Ishiir|14",
+                "Protector of the Prime Material|Witch|Ishiir|Veil Wardens|Ishiir|18"
+            ]
         }
     ],
     "subclassFeature": [
@@ -1486,7 +1525,7 @@
             "level": 6,
             "header": 1,
             "entries": [
-                "You always have the {@spell Bestow Curse|Ishiir} spell prepared and it does not count against your Concentration limit, though the initial instance of the spell ends if you cast it again. If you fail a Concentration {@variantrule Saving Throw|Ishiir} and you are currently concentrating on more than one spell, you lose concentration on both spells."
+                "You always have the {@spell Bestow Curse|Ishiir} spell prepared and it does not count against your {@condition Concentration|Ishiir} limit, though the initial instance of the spell ends if you cast it again. If you fail a {@condition Concentration|Ishiir} {@variantrule Saving Throw|Ishiir} and you are currently concentrating on more than one spell, you lose concentration on both spells."
             ]
         },
         {
@@ -1825,7 +1864,7 @@
                     "type": "item",
                     "name": "Madcap",
                     "entries": [
-                        "The triggering creature and all creatures in the area have to make an Intelligence {@variantrule Saving Throw|Ishiir}. On a failure, they are {@spell Confused|Ishiir} until the start of the triggering creature's next turn."
+                        "The triggering creature and all creatures in the area have to make an Intelligence {@variantrule Saving Throw|Ishiir}. On a failure, they are {@condition Confused|Ishiir} until the start of the triggering creature's next turn."
                     ]
                 },
                 {
@@ -2425,6 +2464,143 @@
             "entries": [
                 "At the start of your turn, you can choose to gain the effects of all Lunar Phases at the same time (no action required). If you choose to activate the effect of a Lunar Phase, you likewise trigger the active effects of all Lunar Phases.",
                 "You can use this feature twice and you regain all expended uses when you finish a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Coven of Veil Wardens",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Veil Wardens",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Coven of Veil Wardens Spells|Witch|Ishiir|Veil Wardens|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Scholar of the Beyond|Witch|Ishiir|Veil Wardens|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Coven of Veil Wardens Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Veil Wardens",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "At each indicated Witch level, add the listed spells to your spells prepared.",
+                {
+                    "type": "table",
+                    "caption": "Coven of Veil Wardens Spells",
+                    "colLabels": [
+                        "Witch Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Detect Evil and Good|Ishiir}, {@spell Protection from Evil and Good|Ishiir}, {@spell Darkvision|Ishiir}, {@spell Mental Barrier|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Intellect Fortress|Ishiir}, {@spell Magic Circle|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Arcane Storm|Ishiir}, {@spell Banishment|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Circle of Power|Ishiir}, {@spell Planar Binding|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Scholar of the Beyond",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Veil Wardens",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You and your bonded familiar gain {@variantrule Proficiency|Ishiir} in the {@skill Arcana} and {@skill Religion} skills and both of you can use your spellcasting ability score in place of the usual ability score for these skills.",
+                "Additionally, you can cast {@spell Detect Evil and Good|Ishiir} without expending a spell slot a number of times equal to your spellcasting ability modifier. You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Fortified Mind",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Veil Wardens",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 1,
+            "entries": [
+                "You add your half your Witch Level + spellcasting ability modifier to {@variantrule Saving Throw|Ishiir|Saving Throws} to maintain {@condition Concentration|Ishiir}. This bonus is doubled for your Coven spells."
+            ]
+        },
+        {
+            "name": "Banishment Specialist",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Veil Wardens",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 1,
+            "entries": [
+                "When you cast {@spell Banishment|Ishiir}, you can treat it as one spell level higher than the Spell Slot you expended for the purpose of determining its effects and it does not count against your {@condition Concentration|Ishiir} limit, though the initial instance of the spell ends if you cast it again.",
+                "If you fail a {@condition Concentration|Ishiir} {@variantrule Saving Throw|Ishiir} and you are currently {@condition Concentration|Ishiir} on more than one spell, you lose {@condition Concentration|Ishiir} on both spells."
+            ]
+        },
+        {
+            "name": "Warded Mind",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Veil Wardens",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "header": 1,
+            "entries": [
+                "You and your bonded familiar have {@variantrule Immunity|Ishiir} to the {@condition Confused|Ishiir} condition and {@variantrule Resistance|Ishiir} to psychic damage."
+            ]
+        },
+        {
+            "name": "Protector of the Prime Material",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Veil Wardens",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "You and your bonded familiar are always under the effects of a {@spell Protection from Evil and Good|Ishiir} spell.",
+                "Additionally, when you cast {@spell Banishment|Ishiir} on a creature that has the Magic Resistance trait and is not native to the Prime Material Plane, you ignore the effects of that trait."
             ]
         }
     ]
