@@ -1109,6 +1109,75 @@
                 "Game of Caps|Witch|Ishiir|Mushroom Circles|Ishiir|14",
                 "Step through the Circle|Witch|Ishiir|Mushroom Circles|Ishiir|18"
             ]
+        },
+        {
+            "name": "Seasons",
+            "shortName": "Seasons",
+            "source": "Ishiir",
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "known": {
+                        "3": [
+                            "goodberry|Ishiir",
+                            "healing word|Ishiir",
+                            "healing spirit|Ishiir",
+                            "lesser restoration|Ishiir",
+                            "color spray|Ishiir",
+                            "entangle|Ishiir",
+                            "heat metal|Ishiir",
+                            "scorching ray|Ishiir",
+                            "fog cloud|Ishiir",
+                            "witch bolt|Ishiir",
+                            "death armor|Ishiir",
+                            "warding wind|Ishiir",
+                            "armor of agathys|Ishiir",
+                            "ice knife|Ishiir",
+                            "rime's binding ice|Ishiir",
+                            "snilloc's snowball swarm|Ishiir"
+                        ],
+                        "5": [
+                            "mass healing word|Ishiir",
+                            "plant growth|Ishiir",
+                            "fireball|Ishiir",
+                            "haste|Ishiir",
+                            "call lightning|Ishiir",
+                            "thunder step|Ishiir",
+                            "glacial spike|Ishiir",
+                            "sleet storm|Ishiir"
+                        ],
+                        "7": [
+                            "aura of purity|Ishiir",
+                            "conjure woodland beings|Ishiir",
+                            "aura of life|Ishiir",
+                            "death ward|Ishiir",
+                            "blight|Ishiir",
+                            "storm sphere|Ishiir",
+                            "ice storm|Ishiir",
+                            "stoneskin|Ishiir"
+                        ],
+                        "9": [
+                            "greater restoration|Ishiir",
+                            "raise dead|Ishiir",
+                            "dawn|Ishiir",
+                            "flame strike|Ishiir",
+                            "enervation|Ishiir",
+                            "jallarzi's storm of radiance|Ishiir",
+                            "cone of cold|Ishiir",
+                            "dream|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Coven of Seasons|Witch|Ishiir|Seasons|Ishiir|3",
+                "Improved Awakened Season|Witch|Ishiir|Seasons|Ishiir|6",
+                "Seasonal Attunement|Witch|Ishiir|Seasons|Ishiir|10",
+                "Improved Coven Spells|Witch|Ishiir|Seasons|Ishiir|14",
+                "Seasonal Avatar|Witch|Ishiir|Seasons|Ishiir|18"
+            ]
         }
     ],
     "subclassFeature": [
@@ -1772,6 +1841,371 @@
                     ]
                 },
                 "Once you have triggered one of the above effects, you cannot do so again until you have finished a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Coven of Seasons",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Seasons",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Coven of Seasons Spells|Witch|Ishiir|Seasons|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Awakened Season|Witch|Ishiir|Seasons|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Coven of Seasons Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Seasons",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Choose a season. At each indicated Witch level, add the corresponding listed spells to your spells prepared.",
+                {
+                    "type": "table",
+                    "caption": "Coven of Spring Spells",
+                    "colLabels": [
+                        "Witch Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Goodberry|Ishiir}, {@spell Healing Word|Ishiir}, {@spell Healing Spirit|Ishiir}, {@spell Lesser Restoration|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Mass Healing Word|Ishiir}, {@spell Plant Growth|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Aura of Purity|Ishiir}, {@spell Conjure Woodland Beings|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Greater Restoration|Ishiir}, {@spell Raise Dead|Ishiir}"
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Coven of Summer Spells",
+                    "colLabels": [
+                        "Witch Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Color Spray|Ishiir}, {@spell Entangle|Ishiir}, {@spell Heat Metal|Ishiir}, {@spell Scorching Ray|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Fireball|Ishiir}, {@spell Haste|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Aura of Life|Ishiir}, {@spell Death Ward|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Dawn|Ishiir}, {@spell Flame Strike|Ishiir}"
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Coven of Autumn Spells",
+                    "colLabels": [
+                        "Witch Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Fog Cloud|Ishiir}, {@spell Witch Bolt|Ishiir}, {@spell Death Armor|Ishiir}, {@spell Warding Wind|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Call Lightning|Ishiir}, {@spell Thunder Step|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Blight|Ishiir}, {@spell Storm Sphere|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Enervation|Ishiir}, {@spell Jallarzi's Storm of Radiance|Ishiir}"
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Coven of Winter Spells",
+                    "colLabels": [
+                        "Witch Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Armor of Agathys|Ishiir}, {@spell Ice Knife|Ishiir}, {@spell Rime's Binding Ice|Ishiir}, {@spell Snilloc's Snowball Swarm|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Glacial Spike|Ishiir}, {@spell Sleet Storm|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Ice Storm|Ishiir}, {@spell Stoneskin|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Cone of Cold|Ishiir}, {@spell Dream|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Awakened Season",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Seasons",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "As an {@variantrule Action|Ishiir}, you or your bonded familiar awaken the power of your chosen season in a 30-feet radius sphere around a point you can see within 60 feet, affecting creatures of your choice in the area in the following ways for 1 minute.",
+                "Either of you can dismiss this effect as a {@variantrule Bonus Action|Ishiir} and only one instance of the effect can be active at a time.",
+                {
+                    "type": "item",
+                    "name": "Spring",
+                    "entries": [
+                        "An affected creature regains additional hit points equal to your spellcasting ability modifier when healed."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Summer",
+                    "entries": [
+                        "An affected creature that starts its turn in the area or enters it for the first time on turn, its {@variantrule Speed|Ishiir} is increased by 10 feet. Additionally, the area is brightly lit. This light counts as sunlight."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Autumn",
+                    "entries": [
+                        "Healing on affected creatures is halved."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Winter",
+                    "entries": [
+                        "The area is {@quickref difficult terrain||3} for affected creatures."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Improved Awakened Season",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Seasons",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 1,
+            "entries": [
+                "The effect of your Awakened Season improves in the following ways:",
+                {
+                    "type": "item",
+                    "name": "Spring",
+                    "entries": [
+                        "Affected creatures that start their turn in the area or enter it for the first time on a turn, regain hit points equal to your spellcasting ability modifier. This effect does not receive the bonus healing from Awakened Season."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Summer",
+                    "entries": [
+                        "You add your spellcasting ability modifier to any radiant or fire damage you deal to affected creatures in the area."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Autumn",
+                    "entries": [
+                        "You add your spellcasting ability modifier to any lightning or necrotic damage you deal to affected creatures in the area."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Winter",
+                    "entries": [
+                        "You add your spellcasting ability modifier to any cold damage you deal to affected creatures in the area."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Seasonal Attunement",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Seasons",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 1,
+            "entries": [
+                "You and your bonded familiar gain the following benefits based on your chosen season:",
+                {
+                    "type": "item",
+                    "name": "Spring",
+                    "entries": [
+                        "You are {@variantrule Immunity|Ishiir|Immune} to poison and disease."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Summer",
+                    "entries": [
+                        "You are {@variantrule Resistance|Ishiir} to fire and radiant damage, and you are acclimatized to extreme heat."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Autumn",
+                    "entries": [
+                        "You are {@variantrule Resistance|Ishiir} to necrotic and lightning damage, and your maximum hit points cannot be reduced."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Winter",
+                    "entries": [
+                        "You are {@variantrule Resistance|Ishiir} to cold damage and you are acclimatized to extreme cold. Any temporary hit points that you gain are increased by an amount equal to your {@variantrule Proficiency|Ishiir} bonus."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Improved Coven Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Seasons",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "header": 1,
+            "entries": [
+                "Based on your chosen season, you always have the following spells prepared. You can cast each of those spells without expending a spell slot. And you cannot do so again until you have finished a {@variantrule Long Rest|Ishiir}.",
+                {
+                    "type": "item",
+                    "name": "Spring",
+                    "entries": [
+                        "{@spell Heal|Ishiir}, {@spell Regenerate|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Summer",
+                    "entries": [
+                        "{@spell Sunbeam|Ishiir}, {@spell Firestorm|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Autumn",
+                    "entries": [
+                        "{@spell Chain Lightning|Ishiir}, {@spell Circle of Death|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Winter",
+                    "entries": [
+                        "{@spell Wall of Ice|Ishiir}, {@spell Icy Prison|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Seasonal Avatar",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Seasons",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "The radius of your Awakened Season increases to 60 feet. Additionally, you have the following spell prepared based on your chosen season. You can cast this spell once without expending a spell slot. You cannot do so again until you have finished a {@variantrule Long Rest|Ishiir}.",
+                {
+                    "type": "item",
+                    "name": "Spring",
+                    "entries": [
+                        "{@spell Power Word Fortify|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Summer",
+                    "entries": [
+                        "{@spell Sunburst|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Autumn",
+                    "entries": [
+                        "{@spell Abi-Dalzim's Horrid Wilting|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Winter",
+                    "entries": [
+                        "{@spell Polar Ray|Ishiir}."
+                    ]
+                }
             ]
         }
     ]
