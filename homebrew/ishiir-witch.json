@@ -1256,6 +1256,95 @@
                 "Warded Mind|Witch|Ishiir|Veil Wardens|Ishiir|14",
                 "Protector of the Prime Material|Witch|Ishiir|Veil Wardens|Ishiir|18"
             ]
+        },
+        {
+            "name": "Wildkeepers",
+            "shortName": "Wildkeepers",
+            "source": "Ishiir",
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "known": {
+                        "3": [
+                            "earth tremor|Ishiir",
+                            "silent image|Ishiir",
+                            "dust devil|Ishiir",
+                            "mirror image|Ishiir",
+                            "grease|Ishiir",
+                            "ray of sickness|Ishiir",
+                            "envenom|Ishiir",
+                            "ray of enfeeblement|Ishiir",
+                            "feather fall|Ishiir",
+                            "witch bolt|Ishiir",
+                            "earthbind|Ishiir",
+                            "darkvision|Ishiir",
+                            "fog cloud|Ishiir",
+                            "ice knife|Ishiir",
+                            "blindness/deafness|Ishiir",
+                            "snilloc's snowball swarm|Ishiir",
+                            "charm person|Ishiir",
+                            "fog cloud|Ishiir",
+                            "enthrall|Ishiir",
+                            "water blast|Ishiir",
+                            "animal friendship|Ishiir",
+                            "beast bond|Ishiir",
+                            "barkskin|Ishiir",
+                            "pass without trace|Ishiir"
+                        ],
+                        "5": [
+                            "haste|Ishiir",
+                            "wall of sand|Ishiir",
+                            "corrosion|Ishiir",
+                            "water walk|Ishiir",
+                            "erupting earth|Ishiir",
+                            "lightning bolt|Ishiir",
+                            "slow|Ishiir",
+                            "glacial spike|Ishiir",
+                            "tidal wave|Ishiir",
+                            "water breathing|Ishiir",
+                            "conjure animals|Ishiir",
+                            "speak with plants|Ishiir"
+                        ],
+                        "7": [
+                            "blight|Ishiir",
+                            "hallucinatory terrain|Ishiir",
+                            "evard's black tentacles|Ishiir",
+                            "vitriolic sphere|Ishiir",
+                            "stoneskin|Ishiir",
+                            "wall of stone|Ishiir",
+                            "ice storm|Ishiir",
+                            "freedom of movement|Ishiir",
+                            "control water|Ishiir",
+                            "watery sphere|Ishiir",
+                            "conjure nature spirits|Ishiir",
+                            "guardian of nature|Ishiir"
+                        ],
+                        "9": [
+                            "maelstrom|Ishiir",
+                            "mislead|Ishiir",
+                            "acid pit|Ishiir",
+                            "insect plague|Ishiir",
+                            "blindsense|Ishiir",
+                            "transmute rock|Ishiir",
+                            "cone of cold|Ishiir",
+                            "control winds|Ishiir",
+                            "dominate person|Ishiir",
+                            "maelstrom|Ishiir",
+                            "tree stride|Ishiir",
+                            "wrath of nature|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Coven of Wildkeepers|Witch|Ishiir|Wildkeepers|Ishiir|3",
+                "Improved Battle Familiar|Witch|Ishiir|Wildkeepers|Ishiir|6",
+                "Resilience of the Wilds|Witch|Ishiir|Wildkeepers|Ishiir|10",
+                "Wrath of the Wilds|Witch|Ishiir|Wildkeepers|Ishiir|14",
+                "Giant Familiar|Witch|Ishiir|Wildkeepers|Ishiir|18"
+            ]
         }
     ],
     "subclassFeature": [
@@ -2601,6 +2690,436 @@
             "entries": [
                 "You and your bonded familiar are always under the effects of a {@spell Protection from Evil and Good|Ishiir} spell.",
                 "Additionally, when you cast {@spell Banishment|Ishiir} on a creature that has the Magic Resistance trait and is not native to the Prime Material Plane, you ignore the effects of that trait."
+            ]
+        },
+        {
+            "name": "Coven of Wildkeepers",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wildkeepers",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Coven of Wildkeepers Spells|Witch|Ishiir|Wildkeepers|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Wanderer of the Wilds|Witch|Ishiir|Wildkeepers|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Battle Familiar|Witch|Ishiir|Wildkeepers|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Coven of Wildkeepers Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wildkeepers",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Choose a Wild Domain. At each indicated Witch level, add the corresponding listed spells to your spells prepared.",
+                {
+                    "type": "table",
+                    "caption": "Coven of Dunes Spells",
+                    "colLabels": [
+                        "Witch Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Earth Tremor|Ishiir}, {@spell Silent Image|Ishiir}, {@spell Dust Devil|Ishiir}, {@spell Mirror Image|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Haste|Ishiir}, {@spell Wall of Sand|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Blight|Ishiir}, {@spell Hallucinatory Terrain|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Maelstrom|Ishiir}, {@spell Mislead|Ishiir}"
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Coven of Marshes Spells",
+                    "colLabels": [
+                        "Witch Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Grease|Ishiir}, {@spell Ray of Sickness|Ishiir}, {@spell Envenom|Ishiir}, {@spell Ray of Enfeeblement|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Corrosion|Ishiir}, {@spell Water Walk|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Evard's Black Tentacles|Ishiir}, {@spell Vitriolic Sphere|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Acid Pit|Ishiir}, {@spell Insect Plague|Ishiir}"
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Coven of Peaks Spells",
+                    "colLabels": [
+                        "Witch Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Feather Fall|Ishiir}, {@spell Witch Bolt|Ishiir}, {@spell Earthbind|Ishiir}, {@spell Darkvision|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Erupting Earth|Ishiir}, {@spell Lightning Bolt|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Stoneskin|Ishiir}, {@spell Wall of Stone|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Blindsense|Ishiir}, {@spell Transmute Rock|Ishiir}"
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Coven of Tundras Spells",
+                    "colLabels": [
+                        "Witch Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Fog Cloud|Ishiir}, {@spell Ice Knife|Ishiir}, {@spell Blindness/Deafness|Ishiir}, {@spell Snilloc's Snowball Swarm|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Slow|Ishiir}, {@spell Glacial Spike|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Ice Storm|Ishiir}, {@spell Freedom of Movement|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Cone of Cold|Ishiir}, {@spell Control Winds|Ishiir}"
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Coven of Waves Spells",
+                    "colLabels": [
+                        "Witch Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Charm Person|Ishiir}, {@spell Fog Cloud|Ishiir}, {@spell Enthrall|Ishiir}, {@spell Water Blast|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Tidal Wave|Ishiir}, {@spell Water Breathing|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Control Water|Ishiir}, {@spell Watery Sphere|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Dominate Person|Ishiir}, {@spell Maelstrom|Ishiir}"
+                        ]
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Coven of Wealds Spells",
+                    "colLabels": [
+                        "Witch Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Animal Friendship|Ishiir}, {@spell Beast Bond|Ishiir}, {@spell Barkskin|Ishiir}, {@spell Pass without Trace|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Conjure Animals|Ishiir}, {@spell Speak with Plants|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Conjure Nature Spirits|Ishiir}, {@spell Guardian of Nature|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Tree Stride|Ishiir}, {@spell Wrath of Nature|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Wanderer of the Wilds",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wildkeepers",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You and your bonded familiar gain {@variantrule Proficiency|Ishiir} in the {@skill Survival} skill and both of you can use your spellcasting ability score in place of the usual ability score for this skill.",
+                "Additionally, you gain one of the following benefits based on your chosen Wild Domain:",
+                {
+                    "type": "table",
+                    "caption": "Wild Domain Feature",
+                    "colLabels": [
+                        "Wild Domain",
+                        "Effect"
+                    ],
+                    "colStyles": [
+                        "col-2",
+                        "col-10 text-center"
+                    ],
+                    "rows": [
+                        [
+                            "Dunes",
+                            "You are acclimatized to extreme heat and your {@variantrule Speed|Ishiir} increases by 5 feet."
+                        ],
+                        [
+                            "Marshes",
+                            "You and your bonded familiar cannot be {@condition Surprised|Ishiir} unless you are {@condition Incapacitated|Ishiir}."
+                        ],
+                        [
+                            "Peaks",
+                            "You gain a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}."
+                        ],
+                        [
+                            "Tundras",
+                            "You are acclimatized to extreme cold and you ignore {@quickref difficult terrain||3} caused by ice and snow, magical or otherwise."
+                        ],
+                        [
+                            "Waves",
+                            "You gain a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. If you already have a {@variantrule Swim Speed|Ishiir}, you add 30 feet to it."
+                        ],
+                        [
+                            "Wealds",
+                            "You and your bonded familiar gain {@variantrule Proficiency|Ishiir} in the {@skill Stealth} skill and both of you can use your spellcasting ability score in place of the usual ability score for this skill."
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Battle Familiar",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wildkeepers",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Your familiar gains 1 additional hit point for each of your Witch levels and its AC increases by 2. It uses your spellcasting attack bonus in place of its own attack bonus and your spellcasting save DC in place of any DC for its features.",
+                "Your familiar's weapon attacks deal an additional {@damage 1d4} damage of a type determined by your chosen Wild Domain, as seen in the table below. This additional damage increases at 5th level (1d6), 11th level (1d8), and 17th level (1d10) in this class.",
+                {
+                    "type": "table",
+                    "caption": "Familiar Bonus Damage",
+                    "colLabels": [
+                        "Wild Domain",
+                        "Damage Type"
+                    ],
+                    "colStyles": [
+                        "col-2",
+                        "col-10 text-center"
+                    ],
+                    "rows": [
+                        [
+                            "Dunes",
+                            "Fire"
+                        ],
+                        [
+                            "Marshes",
+                            "Acid"
+                        ],
+                        [
+                            "Peaks",
+                            "Lightning"
+                        ],
+                        [
+                            "Tundras",
+                            "Cold"
+                        ],
+                        [
+                            "Waves",
+                            "Cold"
+                        ],
+                        [
+                            "Wealds",
+                            "Radiant"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Improved Battle Familiar",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wildkeepers",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 1,
+            "entries": [
+                "Your bonded familiar can attack twice, instead of once, whenever it takes the {@action Attack|Ishiir} action on its turn. Moreover, it can use any Witchcraft options or spells it gained through your class features that require an {@variantrule Action|Ishiir} in place of one of those attacks."
+            ]
+        },
+        {
+            "name": "Resilience of the Wilds",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wildkeepers",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 1,
+            "entries": [
+                "Every time you cast a Witch spell of 1st level or higher, your bonded familiar gains temporary hit points equal to four times the spell's level.",
+                "Additionally, you and your bonded familiar gain {@variantrule Resistance|Ishiir} to the same damage type gained through the Battle Familiar feature."
+            ]
+        },
+        {
+            "name": "Wrath of the Wilds",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wildkeepers",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "header": 1,
+            "entries": [
+                "When your bonded familiar hits a creature you can see within 60 feet of you with a weapon attack on its turn, you can use your {@variantrule Reaction|Ishiir} to expend a Spell Slot of 1st level or higher. The target creature takes damage of the type gained through your Familiar Bonus Damage equal to {@damage 1d8} per level of the spell slot.",
+                "Additionally, it has to make a Constitution {@variantrule Saving Throw|Ishiir} or suffer one of the following effects until the end of your bonded familiar's next turn, based on your chosen Wild Domain:",
+                {
+                    "type": "table",
+                    "caption": "Familiar Bonus Damage",
+                    "colLabels": [
+                        "Wild Domain",
+                        "Damage Type"
+                    ],
+                    "colStyles": [
+                        "col-2",
+                        "col-10 text-center"
+                    ],
+                    "rows": [
+                        [
+                            "Dunes",
+                            "Target is {@condition Blinded|Ishiir}."
+                        ],
+                        [
+                            "Marshes",
+                            "{@variantrule Attack Roll|Ishiir|Attack Rolls} against the target have {@variantrule Advantage|Ishiir} and any healing it receives is halved."
+                        ],
+                        [
+                            "Peaks",
+                            "Target is {@condition Dazed|Ishiir}."
+                        ],
+                        [
+                            "Tundras",
+                            "Target is {@condition Restrained|Ishiir}."
+                        ],
+                        [
+                            "Waves",
+                            "Target is knocked {@condition Prone|Ishiir} and moved to an unoccupied space you can see within 30 feet of its original position."
+                        ],
+                        [
+                            "Wealds",
+                            "{@variantrule Attack Roll|Ishiir|Attack Rolls} against the target have {@variantrule Advantage|Ishiir}. You or any of your allies regain hit points equal to your Witch level + your spellcasting ability modifier if they reduce the target to 0 hit points."
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Giant Familiar",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Wildkeepers",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "As a {@variantrule Bonus Action|Ishiir}, you can magically empower your bonded familiar for 10 minutes if it is within 60 feet of you. It gains the following benefits for the duration:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Your bonded familiar grows to Huge size. If it lacks the room to become Huge, its size does not change.",
+                        "Your bonded familiar's Strength and Constitution score are equal to your spellcasting ability score. If the latter is lower, your bonded familiar's stats do not change. It does not gain any hit points from this increase in Constitution, instead its current and maximum hit points increase by an amount equal to 5 x your Witch level.",
+                        "Your bonded familiar has {@variantrule Advantage|Ishiir} on Strength and Constitution {@variantrule Saving Throw|Ishiir|Saving Throws}.",
+                        "The damage dice gained through the Battle Familiar feature are tripled."
+                    ]
+                },
+                "Once you use this feature you cannot use it against until you have finished a {@variantrule Long Rest|Ishiir}, unless you expend a 5th-level spell slot to use it again."
             ]
         }
     ]
