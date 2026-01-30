@@ -1178,6 +1178,45 @@
                 "Improved Coven Spells|Witch|Ishiir|Seasons|Ishiir|14",
                 "Seasonal Avatar|Witch|Ishiir|Seasons|Ishiir|18"
             ]
+        },
+        {
+            "name": "Silver Sisters",
+            "shortName": "Silver Sisters",
+            "source": "Ishiir",
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "known": {
+                        "3": [
+                            "shield|Ishiir",
+                            "zephyr strike|Ishiir",
+                            "magic weapon|Ishiir",
+                            "branding smite|Ishiir"
+                        ],
+                        "5": [
+                            "blinding smite|Ishiir",
+                            "spirit guardians|Ishiir"
+                        ],
+                        "7": [
+                            "fount of moonlight|Ishiir",
+                            "freedom of movement|Ishiir"
+                        ],
+                        "9": [
+                            "moon cloak|Ishiir",
+                            "steel wind strike|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Coven of Silver Sisters|Witch|Ishiir|Silver Sisters|Ishiir|3",
+                "Extra Attack|Witch|Ishiir|Silver Sisters|Ishiir|6",
+                "Stay the Cycle|Witch|Ishiir|Silver Sisters|Ishiir|10",
+                "Lunar Gaze|Witch|Ishiir|Silver Sisters|Ishiir|14",
+                "Argent Conjunction|Witch|Ishiir|Silver Sisters|Ishiir|18"
+            ]
         }
     ],
     "subclassFeature": [
@@ -2206,6 +2245,186 @@
                         "{@spell Polar Ray|Ishiir}."
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Coven of Silver Sisters",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Silver Sisters",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Coven of Silver Sisters Spells|Witch|Ishiir|Silver Sisters|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Silver Sisters Training|Witch|Ishiir|Silver Sisters|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Lunar Cycle|Witch|Ishiir|Silver Sisters|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Coven of Silver Sisters Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Silver Sisters",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "At each indicated Witch level, add the listed spells to your spells prepared.",
+                {
+                    "type": "table",
+                    "caption": "Coven of Silver Sisters Spells",
+                    "colLabels": [
+                        "Witch Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Shield|Ishiir}, {@spell Zephyr Strike|Ishiir}, {@spell Magic Weapon|Ishiir}, {@spell Branding Smite|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Blinding Smite|Ishiir}, {@spell Spirit Guardians|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Fount of Moonlight|Ishiir}, {@spell Freedom of Movement|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Moon Cloak|Ishiir}, {@spell Steel Wind Strike|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Silver Sisters Training",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Silver Sisters",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "While you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your spellcasting ability modifier.",
+                "Additionally, You gain {@variantrule Proficiency|Ishiir} in martial weapons with the finesse property."
+            ]
+        },
+        {
+            "name": "Lunar Cycle",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Silver Sisters",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When Initiative is rolled, you enter one of the below Lunar Phases of your choice, as long as you are not wearing any armor or shield.",
+                "Each Lunar Phase has a passive and an active effect. You can trigger the active effect at the start of your turn (no action required). After you do so, you automatically enter the next Lunar Phase on the start of your next turn.",
+                "The order of Lunar Phases is New Moon -> Crescent Moon -> Full Moon, after which the cycle repeats.",
+                {
+                    "type": "item",
+                    "name": "New Moon",
+                    "entries": [
+                        "You gain temporary hit points equal to your spellcasting ability modifier. If you activate this effect, you gain additional temporary hit points equal to twice your Witch level."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Crescent Moon",
+                    "entries": [
+                        "Your {@variantrule Speed|Ishiir} increases by 10 feet. If you activate this effect, your speed is doubled and you cannot be targeted by Attacks of Opportunity."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Full Moon",
+                    "entries": [
+                        "Your melee weapon attacks deal additional {@damage 1d4} radiant damage. If you activate this effect, the radiant damage increases to {@damage 2d4}.",
+                        "The additional damage increases at 5th level (1d6/2d6), 11th level (1d8/2d8), and 17th level (1d10/2d10) in this class."
+                    ]
+                },
+                "You lose the benefits of any Lunar Phase when you don armor or a shield."
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Silver Sisters",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 1,
+            "entries": [
+                "You can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
+            ]
+        },
+        {
+            "name": "Stay the Cycle",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Silver Sisters",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 1,
+            "entries": [
+                "An a {@variantrule Reaction|Ishiir} when you activate the effect of a Lunar Phase, your familiar can prevent you from entering the next one in the cycle if it is within 120 feet of you.",
+                "Your bonded familiar can use this feature twice and it regains all expended uses when you finish a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Lunar Gaze",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Silver Sisters",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "header": 1,
+            "entries": [
+                "You and your bonded familiar gain {@sense Truesight} to a distance of 30 feet."
+            ]
+        },
+        {
+            "name": "Argent Conjunction",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Silver Sisters",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "At the start of your turn, you can choose to gain the effects of all Lunar Phases at the same time (no action required). If you choose to activate the effect of a Lunar Phase, you likewise trigger the active effects of all Lunar Phases.",
+                "You can use this feature twice and you regain all expended uses when you finish a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}."
             ]
         }
     ]
