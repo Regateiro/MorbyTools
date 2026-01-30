@@ -781,7 +781,7 @@
             "classSource": "Ishiir",
             "level": 9,
             "entries": [
-                "Your knowledge of your craft deepens. You learn two additional Witchcraft options. Additionally, you can select two Witchcraft options you know, which improve as described below: ",
+                "Your knowledge of your craft deepens. You learn two additional Witchcraft options. Additionally, you can select two Witchcraft options you know, which improve as described below:",
                 {
                     "type": "item",
                     "name": "Amelioration",
@@ -1069,6 +1069,45 @@
                 "Join Fates|Witch|Ishiir|Fateweavers|Ishiir|10",
                 "Doom Ward|Witch|Ishiir|Fateweavers|Ishiir|14",
                 "Farseer|Witch|Ishiir|Fateweavers|Ishiir|18"
+            ]
+        },
+        {
+            "name": "Mushroom Circles",
+            "shortName": "Mushroom Circles",
+            "source": "Ishiir",
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "known": {
+                        "3": [
+                            "faerie fire|Ishiir",
+                            "sleep|Ishiir",
+                            "fortune's favor|Ishiir",
+                            "misty step|Ishiir"
+                        ],
+                        "5": [
+                            "hypnotic pattern|Ishiir",
+                            "summon fey|Ishiir"
+                        ],
+                        "7": [
+                            "charm monster|Ishiir",
+                            "confusion|Ishiir"
+                        ],
+                        "9": [
+                            "mislead|Ishiir",
+                            "seeming|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Coven of Mushroom Circles|Witch|Ishiir|Mushroom Circles|Ishiir|3",
+                "Friendly Fungi|Witch|Ishiir|Mushroom Circles|Ishiir|6",
+                "Mushroom Master|Witch|Ishiir|Mushroom Circles|Ishiir|10",
+                "Game of Caps|Witch|Ishiir|Mushroom Circles|Ishiir|14",
+                "Step through the Circle|Witch|Ishiir|Mushroom Circles|Ishiir|18"
             ]
         }
     ],
@@ -1520,6 +1559,219 @@
             "entries": [
                 "The range of your Minor Prophecy increases to 120 feet and you can turn the roll on the D20 into a 7 or 13 (your choice).",
                 "When you roll Initiative, you regain one use of Minor Prophecy."
+            ]
+        },
+        {
+            "name": "Coven of Mushroom Circles",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mushroom Circles",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Coven of Mushroom Circles Spells|Witch|Ishiir|Mushroom Circles|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "There and Back Again|Witch|Ishiir|Mushroom Circles|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Magic Mushrooms|Witch|Ishiir|Mushroom Circles|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Coven of Mushroom Circles Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mushroom Circles",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "At each indicated Witch level, add the listed spells to your spells prepared.",
+                {
+                    "type": "table",
+                    "caption": "Coven of Mushroom Circles Spells",
+                    "colLabels": [
+                        "Witch Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Faerie Fire|Ishiir}, {@spell Sleep|Ishiir}, {@spell Fortune's Favor|Ishiir}, {@spell Misty Step|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Hypnotic Pattern|Ishiir}, {@spell Summon Fey|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Charm Monster|Ishiir}, {@spell Confusion|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Mislead|Ishiir}, {@spell Seeming|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "There and Back Again",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mushroom Circles",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You learn to speak, read, and write Sylvan. You make Pathfinding checks in the Feywild with {@variantrule Advantage|Ishiir}."
+            ]
+        },
+        {
+            "name": "Magic Mushrooms",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mushroom Circles",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "As an {@variantrule Action|Ishiir}, you or your bonded familiar can cause enchanted mushrooms to spring up from the ground in a 10-feet circle around a point you can see within 60 feet.",
+                "The effect of the mushrooms depends on the type you choose from the options below, which you can activate as a {@variantrule Reaction|Ishiir} when a creature steps into the area. Immediately afterwards, the mushrooms disappear.",
+                {
+                    "type": "item",
+                    "name": "Fortifying Fungus",
+                    "entries": [
+                        "The triggering creature and all other creatures in the area gain temporary hit points equal to your spellcasting ability modifier + half your Witch level."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Nightcap",
+                    "entries": [
+                        "The triggering creature and all creatures in the area have to make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failure, they fall asleep until the start of the triggering creature's next turn. An affected creature wakes up early if it takes damage or another creature uses an {@variantrule Action|Ishiir} to shake it awake."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Venomgill",
+                    "entries": [
+                        "The triggering creature and all creatures in the area have to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, they are {@condition Poisoned|Ishiir} until the start of the triggering creature's next turn."
+                    ]
+                },
+                "You can use this feature three times and you regain all expended uses when you finish a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Friendly Fungi",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mushroom Circles",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 1,
+            "entries": [
+                "The radius of your mushroom circles increases to 20 feet and when you activate your Magic Mushrooms, you can exempt a number of creatures equal to your spellcasting ability modifier from the effect."
+            ]
+        },
+        {
+            "name": "Mushroom Master",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mushroom Circles",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 1,
+            "entries": [
+                "You learn the following additional options for your Magic Mushrooms:",
+                {
+                    "type": "item",
+                    "name": "Boom Shroom",
+                    "entries": [
+                        "The triggering creature and all creatures in the area have to make a Dexterity {@variantrule Saving Throw|Ishiir}. They take force damage equal to 1d6 x your {@variantrule Proficiency|Ishiir} on a failure, and half as much on a success."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Madcap",
+                    "entries": [
+                        "The triggering creature and all creatures in the area have to make an Intelligence {@variantrule Saving Throw|Ishiir}. On a failure, they are {@spell Confused|Ishiir} until the start of the triggering creature's next turn."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Waxy Webber",
+                    "entries": [
+                        "The triggering creature and all creatures in the area have to make an Strength {@variantrule Saving Throw|Ishiir}. On a failure, they are {@condition Restrained|Ishiir} until the start of the triggering creature's next turn."
+                    ]
+                },
+                "Additionally, you regain one use of Magic Mushrooms when you roll Initiative."
+            ]
+        },
+        {
+            "name": "Game of Caps",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mushroom Circles",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "header": 1,
+            "entries": [
+                "Your Magic Mushrooms are {@condition Invisible|Ishiir} to anyone other than you and any number of creatures you designate when you initially create them.",
+                "As a {@variantrule Bonus Action|Ishiir}, you can move any circle of mushrooms to a different point you can see within 60 feet of its original position."
+            ]
+        },
+        {
+            "name": "Step through the Circle",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Witch",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mushroom Circles",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "As an {@variantrule Action|Ishiir}, you create a 10-feet radius circle of mushrooms at a point you can see within 30 feet. You can only have up to three of these circles at the same time. Whenever you create an additional one beyond that number, the oldest one disappears. A circle lasts for 1 year or until you trigger one of the following effects an {@variantrule Action|Ishiir}:",
+                {
+                    "type": "item",
+                    "name": "Travel Back",
+                    "entries": [
+                        "You and up to 8 other willing creatures of your choice within 10 feet are teleported to the circle's location."
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "Travel Forth",
+                    "entries": [
+                        "You and up to 8 other willing creatures within the circle are teleported as per the effect of the {@spell Plane Shift|Ishiir} spell."
+                    ]
+                },
+                "Once you have triggered one of the above effects, you cannot do so again until you have finished a {@variantrule Long Rest|Ishiir}."
             ]
         }
     ]
