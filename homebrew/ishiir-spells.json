@@ -3004,84 +3004,6 @@
             ]
         },
         {
-            "name": "Ashardalon's Stride",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 3,
-            "school": "T",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "bonus"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "self"
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    },
-                    "concentration": true
-                }
-            ],
-            "entries": [
-                "The billowing flames of a dragon blast from your feet, granting you explosive speed. For the duration, your {@variantrule Speed|Ishiir} increases by 20 feet and moving doesn't provoke {@action Opportunity Attack|Ishiir|Opportunity Attacks}.",
-                "When you move within 5 feet of a creature or an object that isn't being worn or carried, it takes {@damage 1d6} fire damage from your trail of heat. A creature or object can take this damage only once during a turn."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 4th level or higher, increase your {@variantrule Speed|Ishiir} by 5 feet for each spell slot level above 3rd. The spell deals an additional {@scaledamage 1d6|3-9|1d6} fire damage for each slot level above 3rd."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "fire"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Artificer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Ranger",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ],
-            "miscTags": [
-                "OBJ"
-            ]
-        },
-        {
             "name": "Astral Projection",
             "page": 1,
             "source": "Ishiir",
@@ -24593,106 +24515,6 @@
             ]
         },
         {
-            "name": "Fizban's Platinum Shield",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 6,
-            "school": "A",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "bonus"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 60
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": {
-                    "text": "a platinum-plated dragon scale, worth at least 500 gp",
-                    "cost": 50000
-                }
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    },
-                    "concentration": true
-                }
-            ],
-            "entries": [
-                "You create a field of silvery light that surrounds a creature of your choice within range (you can choose yourself). The field sheds dim light out to 5 feet. While surrounded by the field, a creature gains the following benefits:",
-                {
-                    "type": "list",
-                    "style": "list-hang-notitle",
-                    "items": [
-                        {
-                            "type": "item",
-                            "name": "Cover",
-                            "entries": [
-                                "The creature has half cover."
-                            ]
-                        },
-                        {
-                            "type": "item",
-                            "name": "Damage Resistance",
-                            "entries": [
-                                "The creature has {@variantrule Resistance|Ishiir} to acid, cold, fire, lightning, and poison damage."
-                            ]
-                        },
-                        {
-                            "type": "item",
-                            "name": "Evasion",
-                            "entries": [
-                                "If the creature is subjected to an effect that allows it to make a Dexterity {@variantrule Saving Throw|Ishiir} to take only half damage, the creature instead takes no damage if it succeeds on the {@variantrule Saving Throw|Ishiir}, and only half damage if it fails."
-                            ]
-                        }
-                    ]
-                },
-                "As a {@variantrule Bonus Action|Ishiir} on subsequent turns, you can move the field to another creature within 60 feet of the field."
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ],
-            "savingThrow": [
-                "dexterity"
-            ],
-            "damageResist": [
-                "acid",
-                "cold",
-                "fire",
-                "lightning",
-                "poison"
-            ],
-            "miscTags": [
-                "UBA"
-            ]
-        },
-        {
             "name": "Flame Arrows",
             "page": 1,
             "source": "Ishiir",
@@ -24861,6 +24683,84 @@
                     "name": "Circle Adept",
                     "source": "Ishiir"
                 }
+            ]
+        },
+        {
+            "name": "Flame Stride",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 3,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "The billowing flames of a dragon blast from your feet, granting you explosive speed. For the duration, your {@variantrule Speed|Ishiir} increases by 20 feet and moving doesn't provoke {@action Opportunity Attack|Ishiir|Opportunity Attacks}.",
+                "When you move within 5 feet of a creature or an object that isn't being worn or carried, it takes {@damage 1d6} fire damage from your trail of heat. A creature or object can take this damage only once during a turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, increase your {@variantrule Speed|Ishiir} by 5 feet for each spell slot level above 3rd. The spell deals an additional {@scaledamage 1d6|3-9|1d6} fire damage for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "miscTags": [
+                "OBJ"
             ]
         },
         {
@@ -26721,6 +26621,80 @@
                     "source": "Ishiir"
                 }
             ],
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Freezing Sphere",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 6,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 300
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a small crystal sphere"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A frigid globe of cold energy streaks from your fingertips to a point of your choice within range, where it explodes in a 60-foot-radius sphere. Each creature within the area must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a creature takes {@damage 10d6} cold damage. On a successful save, it takes half as much damage.",
+                "If the globe strikes a body of water or a liquid that is principally water (not including water-based creatures), it freezes the liquid to a depth of 6 inches over an area 30 feet square. This ice lasts for 1 minute. Creatures that were swimming on the surface of frozen water are trapped in the ice. A trapped creature can use an {@variantrule Action|Ishiir} to make a Strength check against your spell save DC to break free.",
+                "You can refrain from firing the globe after completing the spell, if you wish. A small globe about the size of a sling stone, cool to the touch, appears in your hand. At any time, you or a creature you give the globe to can throw the globe or hurl it with a sling. The range for either is equal to the spell's range. It shatters on impact, with the same effect as the normal casting of the spell. You can also set the globe down without shattering it. After 1 minute, if the globe hasn't already shattered, it explodes."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@scaledamage 10d6|6-9|2d6} for each slot level above 6th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "cold"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "abilityCheck": [
+                "strength"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
             "feats": [
                 {
                     "name": "Circle Adept",
@@ -43795,80 +43769,6 @@
             ]
         },
         {
-            "name": "Otiluke's Freezing Sphere",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 6,
-            "school": "V",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 300
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": "a small crystal sphere"
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "A frigid globe of cold energy streaks from your fingertips to a point of your choice within range, where it explodes in a 60-foot-radius sphere. Each creature within the area must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a creature takes {@damage 10d6} cold damage. On a successful save, it takes half as much damage.",
-                "If the globe strikes a body of water or a liquid that is principally water (not including water-based creatures), it freezes the liquid to a depth of 6 inches over an area 30 feet square. This ice lasts for 1 minute. Creatures that were swimming on the surface of frozen water are trapped in the ice. A trapped creature can use an {@variantrule Action|Ishiir} to make a Strength check against your spell save DC to break free.",
-                "You can refrain from firing the globe after completing the spell, if you wish. A small globe about the size of a sling stone, cool to the touch, appears in your hand. At any time, you or a creature you give the globe to can throw the globe or hurl it with a sling. The range for either is equal to the spell's range. It shatters on impact, with the same effect as the normal casting of the spell. You can also set the globe down without shattering it. After 1 minute, if the globe hasn't already shattered, it explodes."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@scaledamage 10d6|6-9|2d6} for each slot level above 6th."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "cold"
-            ],
-            "savingThrow": [
-                "constitution"
-            ],
-            "abilityCheck": [
-                "strength"
-            ],
-            "areaTags": [
-                "S"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Wizard",
-                        "source": "Ishiir"
-                    },
-                    {
-                        "name": "Sorcerer",
-                        "source": "Ishiir"
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ]
-        },
-        {
             "name": "Otiluke's Resilient Sphere",
             "page": 1,
             "source": "Ishiir",
@@ -45367,6 +45267,106 @@
             ],
             "miscTags": [
                 "DFT"
+            ]
+        },
+        {
+            "name": "Platinum Shield",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 6,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a platinum-plated dragon scale, worth at least 500 gp",
+                    "cost": 50000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You create a field of silvery light that surrounds a creature of your choice within range (you can choose yourself). The field sheds dim light out to 5 feet. While surrounded by the field, a creature gains the following benefits:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Cover",
+                            "entries": [
+                                "The creature has half cover."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Damage Resistance",
+                            "entries": [
+                                "The creature has {@variantrule Resistance|Ishiir} to acid, cold, fire, lightning, and poison damage."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Evasion",
+                            "entries": [
+                                "If the creature is subjected to an effect that allows it to make a Dexterity {@variantrule Saving Throw|Ishiir} to take only half damage, the creature instead takes no damage if it succeeds on the {@variantrule Saving Throw|Ishiir}, and only half damage if it fails."
+                            ]
+                        }
+                    ]
+                },
+                "As a {@variantrule Bonus Action|Ishiir} on subsequent turns, you can move the field to another creature within 60 feet of the field."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "damageResist": [
+                "acid",
+                "cold",
+                "fire",
+                "lightning",
+                "poison"
+            ],
+            "miscTags": [
+                "UBA"
             ]
         },
         {
