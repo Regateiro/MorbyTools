@@ -755,6 +755,33 @@
             ]
         },
         {
+            "name": "Battlefield Veteran",
+            "page": 1,
+            "source": "Ishiir",
+            "critEffect": true,
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Warlord",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain a +4 bonus to Initiative.",
+                        "When you use your Field Commander feature to give {@variantrule Speed|Ishiir} to a creature, the amount it receives is doubled.",
+                        "Inspiring Surge heals for an additional amount equal to half your Warlord level (rounded down)."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Beast Shape",
             "page": 1,
             "source": "Ishiir",
@@ -5038,6 +5065,33 @@
                         "You are {@variantrule Proficiency|Ishiir|proficient} with improvised weapons.",
                         "Your {@variantrule Unarmed Strike|Ishiir} uses a {@damage d4} for damage. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step.",
                         "When you hit a creature with an {@variantrule Unarmed Strike|Ishiir} or an improvised weapon on your turn, you can use a {@variantrule Bonus Action|Ishiir} to attempt to {@action Grapple|Ishiir} the target."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Teachings of the Coven",
+            "page": 1,
+            "source": "Ishiir",
+            "critEffect": true,
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Witch",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "You learn one additional Witchcraft option.",
+                        "Choose one Witchcraft option you know. The chosen option gains the benefits of the Improved Witchcraft feature.",
+                        "When you resummon your bonded familiar with a spell slot, you can spend a 2nd level spell slot or higher to do so as a {@variantrule Bonus Action|Ishiir}."
                     ]
                 }
             ]
