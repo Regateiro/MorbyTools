@@ -6477,8 +6477,19 @@
                 "WM"
             ],
             "entries": [
-                "When you hit a creature with this weapon, you can also deal damage equal to your STR or DEX modifier (your choice) to any other creature that is within range of your attack and within 5 ft of the original target, provided that your {@variantrule Attack Roll|Ishiir} would've also hit these targets. This damage is doubled if the {@variantrule Attack Roll|Ishiir} was a critical hit.",
-                "If the attack reduced the original target to 0 hitpoints, you instead deal your full weapon damage to one of the additional targets."
+                "Once per turn when you hit a creature with this weapon, you can also deal damage equal to your STR or DEX (your choice) to any other creature that is within range of your attack and within 5 ft of the original target, provided that your {@variantrule Attack Roll|Ishiir} would've also hit these targets. This damage is doubled if the {@variantrule Attack Roll|Ishiir} was a critical hit.",
+                "If the attack reduced the original target to 0 hitpoints, you add the excess damage to cleave's effect on one of the additional targets."
+            ]
+        },
+        {
+            "name": "Concuss",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "WM"
+            ],
+            "entries": [
+                "Once per turn when you hit a creature with this weapon, you can force it to make a CON {@variantrule Saving Throw|Ishiir}. On a failure, the target is {@condition Deafened|Ishiir} until the start of your next turn and makes Concentration {@variantrule Saving Throw|Ishiir|Saving Throws} with {@variantrule Disadvantage|Ishiir}."
             ]
         },
         {
@@ -6505,6 +6516,17 @@
             ]
         },
         {
+            "name": "Overwhelm",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "WM"
+            ],
+            "entries": [
+                "Once per turn when you hit a creature that is no more than 1 size category larger than you with this weapon, you can force it to make a STR or DEX {@variantrule Saving Throw|Ishiir} (target's choice). On a failure, the target cannot take {@variantrule Reaction|Ishiir|Reactions} or {@variantrule Bonus Action|Ishiir|Bonus Actions} (your choice) until the start of your next turn"
+            ]
+        },
+        {
             "name": "Lunge",
             "source": "Ishiir",
             "page": 1,
@@ -6523,7 +6545,7 @@
                 "WM"
             ],
             "entries": [
-                "Once per turn when you hit a creature with this weapon, you can roll a {@dice d4} and it add it to the next weapon attack you make against it before the end of your next turn."
+                "Once per turn when you hit a creature with this weapon, you can roll a {@dice d4} and add it to the next weapon attack roll you make against the target before the end of your next turn."
             ]
         },
         {
