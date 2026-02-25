@@ -1188,6 +1188,41 @@
             ]
         },
         {
+            "name": "Ranger Knight Conclave",
+            "shortName": "Ranger Knight",
+            "source": "Ishiir",
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "known": {
+                        "3": [
+                            "shield of faith|Ishiir"
+                        ],
+                        "5": [
+                            "find steed|Ishiir"
+                        ],
+                        "9": [
+                            "blinding smite|Ishiir"
+                        ],
+                        "13": [
+                            "guardian of nature|Ishiir"
+                        ],
+                        "17": [
+                            "circle of power|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Ranger Knight Conclave|Ranger|Ishiir|Ranger Knight|Ishiir|3",
+                "Verdant Reprisal|Ranger|Ishiir|Ranger Knight|Ishiir|7",
+                "Knightly Vigilance|Ranger|Ishiir|Ranger Knight|Ishiir|11",
+                "Beacon of Leadership|Ranger|Ishiir|Ranger Knight|Ishiir|15"
+            ]
+        },
+        {
             "name": "Swarmkeeper",
             "shortName": "Swarmkeeper",
             "source": "Ishiir",
@@ -2875,6 +2910,152 @@
             "header": 2,
             "entries": [
                 "Your guardian form emanates a magical aura that fortifies your injured allies. When any ally starts their turn within 30 feet of your guardian form, that ally regains a number of hit points equal to half your ranger level. This aura has no effect on undead and constructs."
+            ]
+        },
+        {
+            "name": "Ranger Knight Conclave",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ranger Knight",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Ranger Knight Magic|Ranger|Ishiir|Ranger Knight|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Protector's Mark|Ranger|Ishiir|Ranger Knight|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Ranger Knight Training|Ranger|Ishiir|Ranger Knight|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Protector's Mark",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ranger Knight",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you hit a creature with a weapon, you can deal an extra {@damage 1d6} damage of the weapon's type to the target, which can take this extra damage only once per turn. The creature is then marked by you until the end of your next turn. While it is within 5 feet of you, the marked creature has {@variantrule Disadvantage|Ishiir} on attack rolls against targets other than you and counts as your Favored Enemy. This mark ends early if you are {@condition Incapacitated|Ishiir} or die.",
+                "The extra damage increases to {@damage 2d6} when you reach 11th level in this class."
+            ]
+        },
+        {
+            "name": "Ranger Knight Training",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ranger Knight",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain {@variantrule Proficiency|Ishiir} with Heavy Armor and do not suffer {@variantrule Disadvantage|Ishiir} on Stealth checks caused by Heavy Armor.",
+                "Additionally, you have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} and {@variantrule Ability Check|Ishiir|Ability Checks} against being dismounted."
+            ]
+        },
+        {
+            "name": "Ranger Knight Magic",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ranger Knight",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "At each indicated Ranger level, add the listed spells to your spells prepared.",
+                {
+                    "type": "table",
+                    "caption": "Ranger Knight Spells",
+                    "colLabels": [
+                        "Ranger Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Shield of Faith|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Find Steed|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Blinding Smite|Ishiir}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell Guardian of Nature|Ishiir}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell Circle of Power|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Verdant Reprisal",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ranger Knight",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Enemies affected by your Protector's Mark have {@variantrule Disadvantage|Ishiir} on attack rolls against targets other than you while they are within 30 feet of you.",
+                "Additionally, if an affected enemy attacks a creature other than you while within that range, you can use your {@variantrule Reaction|Ishiir} to move up to your {@variantrule Speed|Ishiir} and make a weapon attack against that enemy. If you are mounted, your mount moves up to its own {@variantrule Speed|Ishiir} instead. This movement does not provoke Attacks of Opportunity.",
+                "You can use this feature a number of times equal to your Wisdom modifier (minimum of 1) and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}. Alternatively, you can spend a spell slot of 2nd level or higher to regain a use of this feature (no action required)."
+            ]
+        },
+        {
+            "name": "Knightly Vigilance",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ranger Knight",
+            "subclassSource": "Ishiir",
+            "level": 11,
+            "header": 2,
+            "entries": [
+                "You can't be {@condition Surprised|Ishiir} while you are conscious. Additionally, you add your Wisdom modifier to your Initiative rolls."
+            ]
+        },
+        {
+            "name": "Beacon of Leadership",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Ranger",
+            "classSource": "Ishiir",
+            "subclassShortName": "Ranger Knight",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "All allied creatures within 30 feet of you gain the benefits of your Favored Enemy and Greater Favored Enemy features. This feature has no effect while you are {@condition Incapacitated|Ishiir}."
             ]
         },
         {
