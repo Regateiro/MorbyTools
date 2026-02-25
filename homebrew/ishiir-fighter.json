@@ -952,6 +952,21 @@
             ]
         },
         {
+            "name": "Dervish",
+            "shortName": "Dervish",
+            "source": "Ishiir",
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "page": 1,
+            "subclassFeatures": [
+                "Dervish|Fighter|Ishiir|Dervish|Ishiir|3",
+                "Gale Stride|Fighter|Ishiir|Dervish|Ishiir|7",
+                "Extraordinary Acrobatics|Fighter|Ishiir|Dervish|Ishiir|10",
+                "Zephyr Defense|Fighter|Ishiir|Dervish|Ishiir|15",
+                "Whirling Death|Fighter|Ishiir|Dervish|Ishiir|18"
+            ]
+        },
+        {
             "name": "Echo Knight",
             "shortName": "Echo Knight",
             "source": "Ishiir",
@@ -2455,6 +2470,106 @@
             "header": 2,
             "entries": [
                 "You can use your {@variantrule Reaction|Ishiir} to recover hitpoints equal to half your hitpoint maximum. Once you use this feature, you cannot use it again until you complete a {@variantrule Long Rest|Ishiir}. You can spend three uses of your Indomitable feature to regain a use of this feature."
+            ]
+        },
+        {
+            "name": "Dervish",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dervish",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Dervish Dance|Fighter|Ishiir|Dervish|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Dervish Dance",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dervish",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "While you are wearing light or no armor and using no shield, you can use a {@variantrule Bonus Action|Ishiir} to enter the Dervish Dance for 1 minute, gaining the benefits below. It ends early if you are {@condition Incapacitated|Ishiir} and if you don medium or heavy armor or a shield. You can also end it early (no action required).",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        "Your {@variantrule Speed|Ishiir} increases by 10 feet.",
+                        "On each of your turns, you can give all your melee weapon attacks the benefits of the {@optfeature Flurry|Ishiir} or {@optfeature Cleave|Ishiir} mastery (your choice). These do not limit your use of other masteries on your attacks, but you cannot use the same mastery twice on the same attack.",
+                        "You have advantage on Dexterity (Acrobatics) {@variantrule Ability Check|Ishiir|checks}.",
+                        "Your AC increases by 1 + half your {@variantrule Proficiency|Ishiir} (rounded down)."
+                    ]
+                },
+                "You can use this feature twice, and you regain all expended uses of it when you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}. Additionally, you can expend a use of your Second Wind to use it again (no action required)."
+            ]
+        },
+        {
+            "name": "Gale Stride",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dervish",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "When you use Second Wind and Tactical Shift, you can move up to your full {@variantrule Speed|Ishiir} instead. If you choose to not receive healing from Second Wind, you can activate it without a {@variantrule Bonus Action|Ishiir}. You can do so only once on your turn.",
+                "Additionally, this movement allows you to move through the spaces of hostile creatures, treating them as {@quickref Difficult Terrain||3}."
+            ]
+        },
+        {
+            "name": "Extraordinary Acrobatics",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dervish",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "You gain the ability to move along vertical surfaces on your turn without falling during the move and you can use your Dexterity in place of your Strength to determine the distance of your jumps.",
+                "In addition, once per turn when you take the {@action Attack|Ishiir} action, you can replace one of your attacks with an attempt to {@action Climb onto a Bigger Creature|Ishiir}, as per the Additional Combat Actions. You can attempt and maintain this special grapple even when you don't have a free hand."
+            ]
+        },
+        {
+            "name": "Zephyr Defense",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dervish",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "When you are hit by an attack, you can use your {@variantrule Reaction|Ishiir} to make a Dexterity (Acrobatics) {@variantrule Ability Check|Ishiir|check} and subtract the result of the roll from the damage taken.",
+                "You can use this feature a number of times equal to your Dexterity modifier and you can regain all expended uses when you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}. You can also spend a use of your Second Wind to regain a use of this feature (no action required)."
+            ]
+        },
+        {
+            "name": "Whirling Death",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Dervish",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 2,
+            "entries": [
+                "You gain an additional {@variantrule Bonus Action|Ishiir} on your turn, which you can use to make a melee weapon attack."
             ]
         },
         {
