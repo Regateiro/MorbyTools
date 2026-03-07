@@ -1080,6 +1080,329 @@
     ],
     "subclass": [
         {
+            "name": "Warrior of the Mystic Arts",
+            "shortName": "Mystic Arts",
+            "source": "Ishiir",
+            "className": "Monk",
+            "page": 1,
+            "spellcastingAbility": "wis",
+            "casterProgression": "1/3",
+            "cantripProgression": [
+                0,
+                0,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3
+            ],
+            "spellsKnownProgression": [
+                0,
+                0,
+                3,
+                4,
+                4,
+                4,
+                5,
+                6,
+                6,
+                7,
+                8,
+                8,
+                9,
+                10,
+                10,
+                11,
+                11,
+                11,
+                12,
+                13
+            ],
+            "additionalSpells": [
+                {
+                    "ability": "wis",
+                    "expanded": {
+                        "3": [
+                            {
+                                "all": "level=0|class=Sorcerer (Ishiir)|source=Ishiir"
+                            },
+                            {
+                                "all": "level=1|class=Sorcerer (Ishiir)|source=Ishiir"
+                            }
+                        ],
+                        "7": [
+                            {
+                                "all": "level=2|class=Sorcerer (Ishiir)|source=Ishiir"
+                            }
+                        ],
+                        "13": [
+                            {
+                                "all": "level=3|class=Sorcerer (Ishiir)|source=Ishiir"
+                            }
+                        ],
+                        "19": [
+                            {
+                                "all": "level=4|class=Sorcerer (Ishiir)|source=Ishiir"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "subclassTableGroups": [
+                {
+                    "subclasses": [
+                        {
+                            "name": "Mystic Arts",
+                            "source": "Ishiir"
+                        }
+                    ],
+                    "colLabels": [
+                        "{@filter Cantrips Known|spells|level=0|class=Sorcerer (Ishiir)|source=Ishiir}",
+                        "{@filter Prepared Spells|spells|class=Sorcerer (Ishiir)|source=Ishiir}"
+                    ],
+                    "rows": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            3
+                        ],
+                        [
+                            2,
+                            4
+                        ],
+                        [
+                            2,
+                            4
+                        ],
+                        [
+                            2,
+                            4
+                        ],
+                        [
+                            2,
+                            5
+                        ],
+                        [
+                            2,
+                            6
+                        ],
+                        [
+                            2,
+                            6
+                        ],
+                        [
+                            3,
+                            7
+                        ],
+                        [
+                            3,
+                            8
+                        ],
+                        [
+                            3,
+                            8
+                        ],
+                        [
+                            3,
+                            9
+                        ],
+                        [
+                            3,
+                            10
+                        ],
+                        [
+                            3,
+                            10
+                        ],
+                        [
+                            3,
+                            11
+                        ],
+                        [
+                            3,
+                            11
+                        ],
+                        [
+                            3,
+                            11
+                        ],
+                        [
+                            3,
+                            12
+                        ],
+                        [
+                            3,
+                            13
+                        ]
+                    ]
+                },
+                {
+                    "title": "Spell Slots per Spell Level",
+                    "subclasses": [
+                        {
+                            "name": "Mystic Arts",
+                            "source": "Ishiir"
+                        }
+                    ],
+                    "colLabels": [
+                        "{@filter 1st|spells|level=1|class=Sorcerer (Ishiir)|source=Ishiir}",
+                        "{@filter 2nd|spells|level=2|class=Sorcerer (Ishiir)|source=Ishiir}",
+                        "{@filter 3rd|spells|level=3|class=Sorcerer (Ishiir)|source=Ishiir}",
+                        "{@filter 4th|spells|level=4|class=Sorcerer (Ishiir)|source=Ishiir}"
+                    ],
+                    "rowsSpellProgression": [
+                        [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1
+                        ]
+                    ]
+                }
+            ],
+            "subclassFeatures": [
+                "Warrior of the Mystic Arts|Monk|Ishiir|Mystic Arts|Ishiir|3",
+                "Mystic Fighting Style|Monk|Ishiir|Mystic Arts|Ishiir|6",
+                "Metamystic Arts|Monk|Ishiir|Mystic Arts|Ishiir|11",
+                "Improved Mystic Fighting Style|Monk|Ishiir|Mystic Arts|Ishiir|17"
+            ],
+            "classSource": "Ishiir"
+        },
+        {
             "name": "Way of Shadow",
             "shortName": "Shadow",
             "source": "Ishiir",
@@ -1307,6 +1630,223 @@
         }
     ],
     "subclassFeature": [
+        {
+            "name": "Warrior of the Mystic Arts",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Monk",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mystic Arts",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "Warriors of the Mystic Arts wield magic to supplement their martial skill. They harness their supernatural focus to enhance their magical and physical abilities.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Spellcasting|Monk|Ishiir|Mystic Arts|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Mystic Focus|Monk|Ishiir|Mystic Arts|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Spellcasting",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Monk",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mystic Arts",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You have learned to cast spells. See the Player's Handbook for the rules on spellcasting. The information below details how you  use those rules as a Warrior of the Mystic Arts.",
+                {
+                    "type": "entries",
+                    "name": "Cantrips.",
+                    "entries": [
+                        "You know two cantrips of your choice from the {@filter Sorcerer spell list|spells|class=sorcerer (Ishiir)|source=Ishiir}. Whenever you gain a Monk level, you can replace one of these cantrips with another cantrip of your choice from the Sorcerer spell list.",
+                        "When you reach Monk level 10, you learn another Sorcerer cantrip of your choice, as shown in this subclass' progression table."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spell Slots.",
+                    "entries": [
+                        "The Warrior of the Mystic Arts Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|Ishiir}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Prepared Spells of Level 1+.",
+                    "entries": [
+                        "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the Sorcerer spell list.",
+                        "The number of spells on your list increases as you gain Monk levels, as shown in the Prepared Spells column of the Mystic Arts Spellcasting table. Whenever that number increases, choose additional spells from the Sorcerer spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 7 Monk, your list of prepared spells can include five Sorcerer spells of levels 1 and 2 in any combination."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Changing Your Prepared Spells.",
+                    "entries": [
+                        "Whenever you gain a Monk level, you can replace one spell on your list with another Sorcerer spell for which you have spell slots."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Ability.",
+                    "entries": [
+                        "Wisdom is your spellcasting ability for your Sorcerer spells."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Focus.",
+                    "entries": [
+                        "You can use an {@item Arcane Focus|PHB} as a Spellcasting Focus for your Sorcerer spells."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Multiclassing.",
+                    "entries": [
+                        "If you multiclass and have the Spellcasting feature from more than one class, add one third of your Monk levels (round down) to determine your available spell slots."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mystic Focus",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Monk",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mystic Arts",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You keep your magical power and martial focus in perfect balance, allowing you to convert spell slots into Ki Points, or convert Ki Points into spell slots.",
+                {
+                    "type": "entries",
+                    "name": "Converting Spell Slots to Ki Points.",
+                    "entries": [
+                        "You can expend a spell slot to regain a number of expended Ki Points equal to the slot's level (no action required)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Recovering Spell Slots.",
+                    "entries": [
+                        "As a {@variantrule Bonus Action|Ishiir}, you can transform unexpended Ki Points to recover one expended spell slot. The Recovering Spell Slots table shows the cost of recovering a spell slot of a given level, and it lists the minimum Monk level you must be to recover a slot. You can recover a spell slot no higher than level 4."
+                    ]
+                },
+                {
+                    "type": "table",
+                    "caption": "Recovering Spell Slots",
+                    "colLabels": [
+                        "Spell Slot Level",
+                        "Ki Point Cost",
+                        "Min. Monk Level"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-2 text-center",
+                        "col-2 text-center"
+                    ],
+                    "rows": [
+                        [
+                            1,
+                            2,
+                            6
+                        ],
+                        [
+                            2,
+                            3,
+                            7
+                        ],
+                        [
+                            3,
+                            5,
+                            13
+                        ],
+                        [
+                            4,
+                            6,
+                            19
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mystic Fighting Style",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Monk",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mystic Arts",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "When you take the {@action Attack|Ishiir} {@variantrule Action|Ishiir} on your turn, you can replace one of the attacks with a casting of one of your Sorcerer cantrips that has a casting time of an {@variantrule Action|Ishiir}.",
+                "Any feature that increases the damage die size of your Unarmed Attack also increases the size of one of your damaging cantrips' dice by the same number of steps. For the purposes of this feature, the initial effect of your Martial Arts feature counts as one step, as do any further increments acquired through Monk levels. This feature has no effect when you are wielding a weapon."
+            ]
+        },
+        {
+            "name": "Metamystic Arts",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Monk",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mystic Arts",
+            "subclassSource": "Ishiir",
+            "level": 11,
+            "header": 2,
+            "entries": [
+                "You learn to blend your mastery of body and mind with your mystic arts to modify your spells and Unarmed Attacks; you gain two Metamystic options of your choice from the list below. You use the chosen options to temporarily modify one spell you cast, with additional benefits to your Unarmed Attacks as described. To use an option, you must spend the number of Ki Points that it costs. You can use only one Metamystic option on a spell and subsequent Unarmed Attacks this turn.",
+                "When you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir} you can replace one metamystic art you know with another one. ",
+                {
+                    "type": "options",
+                    "name": "Metamystic Options",
+                    "count": 2,
+                    "entries": [
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Distant Arts|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Empowered Arts|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Swift Arts|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Twinned Arts|Ishiir"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Improved Mystic Fighting Style",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Monk",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mystic Arts",
+            "subclassSource": "Ishiir",
+            "level": 17,
+            "header": 2,
+            "entries": [
+                "Once per turn when you take the {@action Attack|Ishiir} {@variantrule Action|Ishiir} or use your Flurry of Blows, you can cast a spell in place of two of your Unarmed Weapon attacks. You can use this feature only once per turn."
+            ]
+        },
         {
             "name": "Way of the Ascendant Dragon",
             "source": "Ishiir",
