@@ -1088,20 +1088,20 @@
                             "wrathful smite|Ishiir"
                         ],
                         "s2": [
-                            "blur|Ishiir",
+                            "magic weapon|Ishiir",
                             "branding smite|Ishiir"
                         ],
                         "s3": [
-                            "blink|Ishiir",
+                            "bestow curse|Ishiir",
                             "elemental weapon|Ishiir"
                         ],
                         "s4": [
-                            "phantasmal killer|Ishiir",
+                            "backlash|Ishiir",
                             "staggering smite|Ishiir"
                         ],
                         "s5": [
                             "banishing smite|Ishiir",
-                            "cone of cold|Ishiir"
+                            "steel wind strike|Ishiir"
                         ]
                     }
                 }
@@ -2776,19 +2776,19 @@
                                 ],
                                 [
                                     "2nd",
-                                    "{@spell Blur|Ishiir}, {@spell Branding Smite|Ishiir}"
+                                    "{@spell Magic Weapon|Ishiir}, {@spell Branding Smite|Ishiir}"
                                 ],
                                 [
                                     "3rd",
-                                    "{@spell Blink|Ishiir}, {@spell Elemental Weapon|Ishiir}"
+                                    "{@spell Bestow Curse|Ishiir}, {@spell Elemental Weapon|Ishiir}"
                                 ],
                                 [
                                     "4th",
-                                    "{@spell Phantasmal Killer|Ishiir}, {@spell Staggering Smite|Ishiir}"
+                                    "{@spell Backlash|Ishiir}, {@spell Staggering Smite|Ishiir}"
                                 ],
                                 [
                                     "5th",
-                                    "{@spell Banishing Smite|Ishiir}, {@spell Cone of Cold|Ishiir}"
+                                    "{@spell Banishing Smite|Ishiir}, {@spell Steel Wind Strike|Ishiir}"
                                 ]
                             ]
                         }
@@ -2834,7 +2834,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Your hex grows more powerful. If the target cursed by your Hexblade's Curse hits you with an {@variantrule Attack Roll|Ishiir}, you can use your {@variantrule Reaction|Ishiir} to roll a {@dice d6}. On a 4 or higher, the attack instead misses you, regardless of its roll."
+                "Once per turn, when a creature hits you with an attack, that creature has to make a Charisma {@variantrule Saving Throw|Ishiir}. On a failure, it is subject to the effects of the {@spell Bane|Ishiir} spell until the start of its next turn (no Concentration required). The effect applies to the triggering attack roll, possibly causing it to miss."
             ]
         },
         {
@@ -3078,38 +3078,46 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain the ability to transform into the Spider Queen's most beloved servitor, a giant spider. As a {@variantrule Bonus Action|Ishiir} you turn into a spider. You gain a +2 bonus to AC. You gain 3 temporary hit points per Warlock level. You gain a {@variantrule Climb Speed|Ishiir} equal to your normal {@variantrule Speed|Ishiir}. You can climb difficult surfaces, such as along a ceiling, without needing to make a check. You gain a bite attack. You are {@variantrule Proficiency|Ishiir|proficient} with this attack and it inflicts poison damage based on your level. You can use your choice of Strength or Dexterity to modify your bite attack's attack and damage rolls. While in this form, you lack hands and cannot do anything that normally requires them. However, you can cast spells but can only cast the ones listed on your expanded spell list for the Spider Queen.",
-                "Once you use this ability, you cannot use it again until you complete a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}.",
+                "You gain the ability to transform into the Spider Queen's most beloved servitor, a giant spider. As a {@variantrule Bonus Action|Ishiir}, you turn into a spider until you turn back as a {@variantrule Bonus Action|Ishiir} or you die. You gain a +2 bonus to AC. You gain 3 temporary hit points per Warlock level.You gain a {@variantrule Climb Speed|Ishiir} equal to your normal {@variantrule Speed|Ishiir} and the Spiderclimb trait. Additionally, your Unarmed Attack turns into venomous bite. You are {@variantrule Proficiency|Ishiir|Proficient} with this attack and it inflicts piercing and poison damage based on your level, as per the table below. You can use your choice of Strength or Dexterity to modify your bite attack's attack and damage rolls (you choose whether to add them to the poison or piercing damage). This attack benefits from all Warlock class features that affect a pact weapon.",
+                "While in spider form, you retain the ability to speak, but you cannot cast any spells except those from your Expanded Spell List, which do not require any material components in this form. The spider form doesn't break your Concentration or otherwise interfere with a spell you've already cast.",
+                "Your ability to handle objects is determined by the form's limbs rather than your own. In addition, you choose whether your equipment falls in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it's practical for the new form to wear a piece of equipment based on the creature's size and shape. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with the form. Equipment that merges with the form has no effect while you're in that form.",
                 {
                     "type": "table",
                     "caption": "Spider Form Bite Damage",
                     "colLabels": [
                         "Level",
-                        "Damage"
+                        "Piercing Damage",
+                        "Poison Damage"
                     ],
                     "colStyles": [
-                        "col-6 text-center",
-                        "col-6 text-center"
+                        "col-1 text-center",
+                        "col-2 text-center",
+                        "col-2 text-center"
                     ],
                     "rows": [
                         [
-                            "1st\u20144th",
-                            "{@dice 1d10} poison"
+                            "3rd",
+                            "{@dice 1d4}",
+                            "{@dice 1d6}"
                         ],
                         [
-                            "5th\u201410th",
-                            "{@dice 2d10} poison"
+                            "5th",
+                            "{@dice 1d6}",
+                            "{@dice 1d12}"
                         ],
                         [
-                            "11th\u201416th",
-                            "{@dice 3d10} poison"
+                            "11th",
+                            "{@dice 1d8}",
+                            "{@dice 2d12}"
                         ],
                         [
-                            "17th+",
-                            "{@dice 4d10} poison"
+                            "17th",
+                            "{@dice 1d10}",
+                            "{@dice 3d12}"
                         ]
                     ]
-                }
+                },
+                "You can use this feature twice and you regain all uses when you finish a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -3485,8 +3493,26 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Your patron's powers have a profound effect on your body and magic. You don't need to eat, drink, or breathe.",
-                "In addition, once during each of your turns, when you hit a creature with an {@variantrule Attack Roll|Ishiir} and roll damage against the creature, you can replace the damage type with necrotic damage. While you are using your Form of Dread, you can roll one additional damage die when determining the necrotic damage the target takes."
+                "Your patron's powers have a profound effect on your body and magic, granting you the following benefits.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Arcane Necrosis",
+                            "entries": [
+                                "Whenever you cast a spell or hit a creature with an attack roll and deal Necrotic damage, the damage dealt ignores {@variantrule Resistance|Ishiir} to Necrotic damage.",
+                                "Additionally, once per turn when you cast a spell that deals damage while using your Form of Dread, you can change that spell's damage type to Necrotic."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Undead Endurance",
+                            "entry": "You don't gain Exhaustion levels from dehydration, malnutrition, or suffocation. In addition, you don't need to sleep, and magic can't put you to sleep."
+                        }
+                    ]
+                }
             ]
         },
         {
