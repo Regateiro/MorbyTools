@@ -706,8 +706,49 @@
 				"Ingenious Movement|Artificer|Ishiir|Plane Charter|Ishiir|9|Ishiir",
 				"Superior Atlas|Artificer|Ishiir|Plane Charter|Ishiir|15|Ishiir"
 			],
-			"hasFluffImages": true
-		}
+            "hasFluffImages": true
+        },
+        {
+            "name": "Vivisectionist",
+            "shortName": "Vivisectionist",
+            "source": "Ishiir",
+            "className": "Artificer",
+            "classSource": "Ishiir",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "false life|ishiir",
+                            "shocking grasp|ishiir",
+                            "witch bolt|ishiir"
+                        ],
+                        "5": [
+                            "envenom|ishiir",
+                            "enhance ability|ishiir"
+                        ],
+                        "9": [
+                            "animate dead|ishiir",
+                            "call lightning|ishiir"
+                        ],
+                        "13": [
+                            "blight|ishiir",
+                            "death ward|ishiir"
+                        ],
+                        "17": [
+                            "antilife shell|ishiir",
+                            "raise dead|ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Vivisectionist|Artificer|Ishiir|Vivisectionist|Ishiir|3|Ishiir",
+                "Profane Augmentation|Artificer|Ishiir|Vivisectionist|Ishiir|5|Ishiir",
+                "Improved Reanimated Companion|Artificer|Ishiir|Vivisectionist|Ishiir|9|Ishiir",
+                "Ascendant Augmentation|Artificer|Ishiir|Vivisectionist|Ishiir|15|Ishiir"
+            ],
+            "hasFluffImages": true
+        }
     ],
     "classFeature": [
         {
@@ -2207,9 +2248,9 @@
 			"subclassSource": "Ishiir",
 			"level": 3,
 			"entries": [
-				"When you reach an Artificer level specified in the Cartographer Spells table, you thereafter always have the listed spells prepared.",
+				"When you reach an Artificer level specified in the Plane Charter Spells table, you thereafter always have the listed spells prepared.",
 				{
-					"caption": "Cartographer Spells",
+					"caption": "Plane Charter Spells",
 					"type": "table",
 					"colLabels": [
 						"Artificer Level",
@@ -2306,7 +2347,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
-				"Once per turn, whenever you cast a spell from your Cartographer Spells list or hit a creature affected by your {@spell Faerie Fire|Ishiir} with an attack roll, you can add your Intelligence modifier to one damage roll of the spell or attack.",
+				"Once per turn, whenever you cast a spell from your Plane Charter Spells list or hit a creature affected by your {@spell Faerie Fire|Ishiir} with an attack roll, you can add your Intelligence modifier to one damage roll of the spell or attack.",
 				"In addition, taking damage can't cause you to lose {@condition Concentration|Ishiir} on {@spell Faerie Fire|Ishiir}."
 			]
 		},
@@ -2348,6 +2389,253 @@
 						"If you are one of the map holders for your Adventurer's Atlas, you can cast {@spell Find the Path|Ishiir} without expending a spell slot, without preparing the spell, and without needing spell components. Once you use this benefit, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
 					]
 				}
+			]
+		},
+		{
+			"name": "Vivisectionist",
+			"source": "Ishiir",
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"subclassShortName": "Vivisectionist",
+			"subclassSource": "Ishiir",
+			"level": 3,
+			"entries": [
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vivisectionist Spells|Artificer|Ishiir|Vivisectionist|Ishiir|3|Ishiir"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Forbidden Studies|Artificer|Ishiir|Vivisectionist|Ishiir|3|Ishiir"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Reanimated Companion|Artificer|Ishiir|Vivisectionist|Ishiir|3|Ishiir"
+				}
+			]
+		},
+		{
+			"name": "Forbidden Studies",
+			"source": "Ishiir",
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"subclassShortName": "Vivisectionist",
+			"subclassSource": "Ishiir",
+			"level": 3,
+			"entries": [
+				"You gain {@variantrule Proficiency|Ishiir|Proficient} in the {@skill Medicine} skill. If you are already {@variantrule Proficiency|Ishiir|Proficient} in the skill, you add double your {@variantrule Proficiency|Ishiir} bonus to checks you make with it.",
+				"Additionally, you can target a friendly dying creature with {@spell Shocking Grasp|Ishiir} to resuscitate it. If you hit, the attack does not count as a critical hit, but the target still suffers one Death Saving Throw failure. It then regains hit points equal to half the lightning damage done. This feature cannot target creatures that have already incurred two Death Saving Throw failures."
+			]
+		},
+		{
+			"name": "Vivisectionist Spells",
+			"source": "Ishiir",
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"subclassShortName": "Vivisectionist",
+			"subclassSource": "Ishiir",
+			"level": 3,
+			"entries": [
+				"When you reach an Artificer level specified in the Vivisectionist Spells table, you thereafter always have the listed spells prepared.",
+				{
+					"caption": "Vivisectionist Spells",
+					"type": "table",
+					"colLabels": [
+						"Artificer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3",
+							"{@spell False Life|Ishiir}, {@spell Shocking Grasp|Ishiir}, {@spell Witch Bolt|Ishiir}"
+						],
+						[
+							"5",
+							"{@spell Envenom|Ishiir}, {@spell Enhance Ability|Ishiir}"
+						],
+						[
+							"9",
+							"{@spell Animate Dead|Ishiir}, {@spell Call Lightning|Ishiir}"
+						],
+						[
+							"13",
+							"{@spell Blight|Ishiir}, {@spell Death Ward|Ishiir}"
+						],
+						[
+							"17",
+							"{@spell Antilife Shell|Ishiir}, {@spell Raise Dead|Ishiir}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Reanimated Companion",
+			"source": "Ishiir",
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"subclassShortName": "Vivisectionist",
+			"subclassSource": "Ishiir",
+			"level": 3,
+			"entries": [
+				"Using {@item Tinker's Tools|Ishiir} or another type of {@item Artisan's Tools|Ishiir} with which you have {@variantrule Proficiency|Ishiir|Proficient}, you can take a {@action Magic|Ishiir} action to create a {@creature Reanimated Companion|Ishiir} (see the stat block) through the power of necromancy and science. The companion manifests in an unoccupied space within 5 feet of you. You determine the companion's appearance; your choices don't affect the companion's game statistics.",
+				"The companion is Friendly to you and your allies and obeys you. It lasts until you finish a {@variantrule Long Rest|Ishiir} or until you take a {@action Magic|Ishiir} action to dismiss it early, at which point it harmlessly collapses into a pile of viscera. It immediately drops to 0 Hit Points and dies if you die.",
+				"Once you create a companion, you can't do so again until you finish a {@variantrule Long Rest|Ishiir} or expend a spell slot to create one. You can have only one companion at a time and can't create one while your companion is present.",
+				{
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "The Companion in Combat.",
+                            "entries": [
+								"The Reanimated Companion shares your initiative count, but it takes its turn immediately after yours. If you are small enough to ride it, you can direct it to use its movement on your turn (no action required). It otherwise prioritizes following you and defending you from threats and then itself. If you take a {@variantrule Bonus Action|Ishiir} on your turn, you can command it to take specific actions. These actions can be one in its stat block or some other action and can be taken during your turn rather than the companion's."
+							]
+                        }
+                    ]
+                }
+			]
+		},
+		{
+			"name": "Profane Augmentation",
+			"source": "Ishiir",
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"subclassShortName": "Vivisectionist",
+			"subclassSource": "Ishiir",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"You can harvest body parts from slain creatures and graft them onto your companion to give it new capabilities. You use your {@skill Medicine} in place of the usual skill for harvesting each creature type. However, the attempt only succeeds if you meet the DC for a pristine ingredient.",
+				"You can graft or remove body parts to your companion as part of completing a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}. The maximum number of grafted body parts is two and you cannot choose the same creature type more than once. You automatically preserve any body parts that aren't currently grafted, though you need a method of storing and carrying them to bring them with you.",
+				"Your companion gains the ability associated with each grafted body part as per the list below.",
+				{
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Aberration",
+                            "entries": [
+								"Your companion's Intelligence is replaced with that of the aberration, up to a maximum of 20. Additionally, it gains a new ability, which it can use in place of its slam attack: Psychic Rend: 60 ft range, Intelligence {@variantrule Saving Throw|Ishiir}: DC equals your spell save DC. Failure: 1d6 + the aberration's proficiency + your companion's Intelligence modifier psychic damage."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Beast",
+                            "entries": [
+								"Your companion's Strength or Dexterity (your choice) is replaced with that of the beast, up to a maximum of 20, and your companion can use its Dexterity in place of its Strength for melee damage rolls with its slam. Additionally, your companion gains any special movement type of the harvested creature, equal to its own {@variantrule Speed|Ishiir}."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Construct",
+                            "entries": [
+								"Your companion's AC is replaced with that of the harvested creature, up to a maximum of 20."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Dragon",
+                            "entries": [
+								"Your companion gains a breath weapon which it can use as an {@variantrule Action|Ishiir}. The damage type and shape of the breath weapon is the same as that of the dragon. The size of the breath weapon is 30 feet if it is a cone and 5 x 60 feet if it is a line. The damage is equal to that of your companion's death burst feature + the {@variantrule Proficiency|Ishiir} of the dragon.",
+								"Once has used its breath weapon, you have to roll a d6 at the start of each of your turns. On a roll of 5 or 6, it regains its use of this feature."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Elemental",
+                            "entries": [
+								"Your companion gains a damage {@variantrule Resistance|Ishiir} based on the elemental's {@variantrule Immunity|Ishiir}. If the elemental has multiple {@variantrule Immunity|Ishiir|Immunities}, you choose which one to use. Additionally, your companion deals bonus damage of the same type equal to the elemental's {@variantrule Proficiency|Ishiir} when it hits with its slam attack."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Fey",
+                            "entries": [
+								"Your companion's alignment and its Charisma is replaced with that of the fey, up to a maximum of 20. Your companion also gains its own personality, based on that of the fey, and may act on its own when not currently ordered to do something.",
+								"Additionally, if your companion has to make a Intelligence, Wisdom, or Charisma saving throw, it adds half the fey's {@variantrule Proficiency|Ishiir} (rounded down). This augmentation is exclusive with those gained from fiends."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Fiend",
+                            "entries": [
+								"Your companion's alignment and two Ability Scores of your choice are replaced with those of the fiend. Your companion also gains its own personality, based on that of the fiend, and may act on its own when not currently ordered to do something.",
+								"Additionally, your companion regenerates hit points equal to the fiend's {@variantrule Proficiency|Ishiir} at the start of each of its turn, unless it has taken radiant damage since its last turn. This augmentation is exclusive with those gained from fey."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Giant",
+                            "entries": [
+								"Your companion's Strength is replaced with that of the giant, up to a maximum of 20. Additionally, your companion's size changes to Large and it has advantage on Strength checks and Strength {@variantrule Saving Throw|Ishiir|Saving Throws}. When your companion hits with its slam attack, it deals additional damage of the same type equal to the giant's {@variantrule Proficiency|Ishiir}."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Ooze",
+                            "entries": [
+								"Your companion's Constitution is replaced with that of the ooze, up to a maximum of 20. Additionally, its current and maximum hit points increase by four times the ooze's {@variantrule Proficiency|Ishiir} and it can spend 5 feet of its movement to remove the {@condition Grappled|Ishiir} or {@condition Restrained|Ishiir} condition from itself."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Plant",
+                            "entries": [
+								"Your companion's current and maximum hit points increase by double the plant's {@variantrule Proficiency|Ishiir}. Additionally, the reach of its slam attack increases by 10 feet. Once per turn, a creature hit by your companion's slam attack has to make a Strength saving throw against your spell save DC. On a failure, it is {@condition Grappled|Ishiir} by your companion. Any creature that starts its turn {@condition Grappled|Ishiir} in this manner, takes bludgeoning damage equal to the plant's {@variantrule Proficiency|Ishiir}."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Undead",
+                            "entries": [
+								"As part of the {@variantrule Bonus Action|Ishiir} used to command it, you can tell your companion to exude an aura of necrotic energy. When you do so, you can exempt a number of creatures equal to your Intelligence modifier from the effect. On subsequent turns, you can deactivate the aura the same way.",
+								"The size of the aura is 10 feet, but increases to 20 feet if the undead's CR was 10 or higher, and to 30 feet if its CR was 20 or higher.",
+								"Any creature that ends its turn in the aura or enters it for the first time on a turn, takes necrotic damage equal to the undead's proficiency."
+                            ]
+                        }
+                    ]
+                }
+			]
+		},
+		{
+			"name": "Improved Reanimated Companion",
+			"source": "Ishiir",
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"subclassShortName": "Vivisectionist",
+			"subclassSource": "Ishiir",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"Your companion attacks twice instead of once when you command it to take the {@variantrule Attack|Ishiir} action. In addition, you can give it two out of the following benefits. You can change your choice each time you complete a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}.",
+				{
+                    "type": "list",
+                    "items": [
+						"Your companion gains {@variantrule Proficiency|Ishiir} in Strength or Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws} (your choice).",
+						"Your companion's {@variantrule Speed|Ishiir} increases by 10 feet.",
+						"Your companion's current and maximum hit points increase by an amount equal to your Artificer level.",
+						"You can cast spells is if you were in your companion's space."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ascendant Augmentation",
+			"source": "Ishiir",
+			"className": "Artificer",
+			"classSource": "Ishiir",
+			"subclassShortName": "Vivisectionist",
+			"subclassSource": "Ishiir",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"The maximum number of Profane Augmentations that can be grafted to your companion increases to three and the maximum for ability scores and AC conferred by the grafted body part increases to 22."
 			]
 		}
     ]
