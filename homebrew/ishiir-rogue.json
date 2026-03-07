@@ -727,7 +727,7 @@
                 "Arcane Trickster|Rogue|Ishiir|Arcane Trickster|Ishiir|3",
                 "Magical Ambush|Rogue|Ishiir|Arcane Trickster|Ishiir|9",
                 "Versatile Trickster|Rogue|Ishiir|Arcane Trickster|Ishiir|13",
-                "Spell Thief|Rogue|Ishiir|Arcane Trickster|Ishiir|17"
+                "Arcane Sneak Attack|Rogue|Ishiir|Arcane Trickster|Ishiir|17"
             ]
         },
         {
@@ -1418,6 +1418,21 @@
                 "Aura of Malevolence|Rogue|Ishiir|Slayer|Ishiir|13",
                 "Dread Incarnate|Rogue|Ishiir|Slayer|Ishiir|17"
             ]
+        },
+        {
+            "name": "Spelljacker",
+            "page": 1,
+            "shortName": "Spelljacker",
+            "source": "Ishiir",
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "subclassFeatures": [
+                "Spelljacker|Rogue|Ishiir|Spelljacker|Ishiir|3",
+                "Magical Sabotage|Rogue|Ishiir|Spelljacker|Ishiir|9",
+                "Occult Shroud|Rogue|Ishiir|Spelljacker|Ishiir|13",
+                "Improved Drain Magic|Rogue|Ishiir|Spelljacker|Ishiir|13",
+                "Spell Thief|Rogue|Ishiir|Spelljacker|Ishiir|17"
+            ]
         }
     ],
     "classFeature": [
@@ -2001,7 +2016,7 @@
             ]
         },
         {
-            "name": "Spell Thief",
+            "name": "Arcane Sneak Attack",
             "source": "Ishiir",
             "page": 1,
             "className": "Rogue",
@@ -2011,9 +2026,8 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "You gain the ability to magically steal the knowledge of how to {@action Magic|Ishiir|cast a spell} from another spellcaster.",
-                "Immediately after a creature casts a spell that targets you or includes you in its area of effect, you can take a {@variantrule Reaction|Ishiir} to force the creature to make a {@variantrule Saving Throw|Ishiir} with its spellcasting ability. The DC equals your spell save DC. On a failed save, you negate the spell's effect, and you steal the knowledge of the spell. For the next 7 days, you have the spell prepared. You can cast this spell once without expending a spell slot. You can also cast this spell normally if you have spell slots for its level (it doesn't have to be a Wizard spell). The creature can't cast it until the 7 days have passed.",
-                "Once you have stolen a spell with this feature, you can't use it again until you have finished a {@variantrule Long Rest|Ishiir}."
+                "When you spend a Spell Slot to cast a spell of 1st level or higher that requires a spell attack roll, you can use your Sneak Attack on it, adhering to all other conditions as usual. If you do so, the damage die of your Sneak Attack increases to a {@damage d8} and its damage type to that of the spell.",
+                "Additionally, the cost of any Cunning Strike you use with such a spell is reduced by a number of dice equal to half the spell's level (rounded up)."
             ]
         },
         {
@@ -3102,18 +3116,131 @@
             ]
         },
         {
-            "name": "Rend Mind",
+            "name": "Spelljacker",
             "source": "Ishiir",
             "page": 1,
             "className": "Rogue",
             "classSource": "Ishiir",
-            "subclassShortName": "Soulknife",
+            "subclassShortName": "Spelljacker",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Empower Sneak Attack|Rogue|Ishiir|Spelljacker|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Drain Magic|Rogue|Ishiir|Spelljacker|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Empower Sneak Attack",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spelljacker",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Immediately after a creature you can see within 30 feet of you casts a level 1+ spell, you can take a {@variantrule Reaction|Ishiir} to absorb magical energy from the spell. When you do so, until the end of your next turn, the next time you hit with your Sneak Attack you deal extra Force damage. To determine the extra damage, roll a number of d6s equal to the spell's level, and add them together.",
+                "You can take this {@variantrule Reaction|Ishiir} a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Drain Magic",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spelljacker",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You can drain power from ongoing spells to recharge your allies' magic. As a {@action Magic|Ishiir} Action, you can touch a willing creature and end one ongoing level 1 or level 2 spell on it; the creature immediately recovers one expended spell slot of level 2 or lower (the target's choice). Alternatively, you regain a number of Empower Sneak Attack uses equal to the spell's level.",
+                "Once you use this feature, you can't do so again until you finish a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Magical Sabotage",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spelljacker",
+            "subclassSource": "Ishiir",
+            "level": 9,
+            "header": 2,
+            "entries": [
+                "You gain the following Cunning Strike options.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Spell Susceptibility (Cost: 2d6)",
+                            "entries": [
+                                "The target has {@variantrule Disadvantage|Ishiir} on the next {@variantrule Saving Throw|Ishiir} it makes against a spell until the start of your next turn."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Steal Resistance (Cost: 2d6)",
+                            "entries": [
+                                "Choose one kind of damage. If the target has {@variantrule Resistance|Ishiir} to that kind of damage, until the start of your next turn, the target loses that {@variantrule Resistance|Ishiir} and you gain {@variantrule Resistance|Ishiir} to that damage type."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Occult Shroud",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spelljacker",
+            "subclassSource": "Ishiir",
+            "level": 13,
+            "header": 2,
+            "entries": [
+                "Whenever you finish a {@variantrule Long Rest|Ishiir}, you can cast the {@spell Nondetection|Ishiir} spell, using Intelligence as your spellcasting ability. When you do so, you can target only yourself, and the duration increases to 7 days."
+            ]
+        },
+        {
+            "name": "Improved Drain Magic",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spelljacker",
+            "subclassSource": "Ishiir",
+            "level": 13,
+            "header": 2,
+            "entries": [
+                "You can now use Drain Magic as a {@variantrule Bonus Action|Ishiir}. In addition, when you use Drain Magic, you can end one ongoing level 1, level 2, or level 3 spell on the target, and the target recovers one expended spell slot of level 3 or lower (the target's choice). Alternatively, you regain a number of Empower Sneak Attack uses equal to the spell's level."
+            ]
+        },
+        {
+            "name": "Spell Thief",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Rogue",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spelljacker",
             "subclassSource": "Ishiir",
             "level": 17,
             "header": 2,
             "entries": [
-                "You can sweep your Psychic Blades directly through a creature's mind. When you use your Psychic Blades to deal Sneak Attack damage to a creature, you can force that target to make an Intelligence {@variantrule Saving Throw|Ishiir} (DC equal to 8 + your {@variantrule Proficiency|Ishiir} bonus + your Dexterity modifier). If the save fails, the target is {@condition Stunned|Ishiir} for 1 minute. The {@condition Stunned|Ishiir} target can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on itself on a success.",
-                "Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend three Psionic Energy dice to use it again."
+                "When you use Empower Sneak Attack, you can try to steal the knowledge of how to cast a spell from the caster. The DC equals 8 + your proficiency + your Intelligence. On a failed save, you negate the spell's effect, and you steal the knowledge of the spell. You can cast this spell once without expending a spell slot and without material components during the next 7 days. You can also cast it again by expending a number of uses of your Empower Sneak Attack equal to the spell's level. The original caster can't cast it until the 7 days have passed.",
+                "Once you have stolen a spell with this feature, you can't use it again until you have finished a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
