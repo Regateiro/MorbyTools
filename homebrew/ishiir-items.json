@@ -13616,57 +13616,6 @@
             ]
         },
         {
-            "name": "Tattoo of Sanguine Fury",
-            "source": "Ishiir",
-            "page": 1,
-            "rarity": "legendary",
-            "reqAttune": true,
-            "wondrous": true,
-            "tattoo": true,
-            "recharge": "dawn",
-            "rechargeAmount": 10,
-            "charges": 10,
-            "entries": [
-                "Produced by a special needle, this magic tattoo evokes fury in its form and colors.",
-                {
-                    "type": "entries",
-                    "name": "Tattoo Attunement",
-                    "entries": [
-                        "To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
-                        "If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Bloodthirsty Strikes",
-                    "entries": [
-                        "The tattoo has 10 charges, and it regains all expended charges daily at dawn. While this tattoo is on your skin, you gain the following benefits:",
-                        {
-                            "type": "list",
-                            "items": [
-                                "When you hit a creature with a weapon attack, you can expend a charge to deal an extra {@damage 4d6} necrotic damage to the target, and you regain a number of hit points equal to the necrotic damage dealt.",
-                                "When a creature you can see damages you, you can expend a charge and use your {@variantrule Reaction|Ishiir} to make a melee attack against that creature, with {@variantrule Advantage|Ishiir} on your {@variantrule Attack Roll|Ishiir}."
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "type": "CRF",
-            "value": 1000000,
-            "crafted": {
-                "skill": [
-                    "Enchanting"
-                ],
-                "dc": 19,
-                "ingredient": [
-                    "Accursed Heart"
-                ]
-            },
-            "dmgType": [
-                "N"
-            ]
-        },
-        {
             "name": "Wand of Polymorph",
             "source": "Ishiir",
             "page": 1,
@@ -16709,6 +16658,29 @@
             ]
         },
         {
+            "name": "Talisman of Curse Protection",
+            "source": "Ishiir",
+            "page": 1,
+            "tier": "major",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "While this talisman is on your person, you are {@variantrule Immunity|Ishiir|Immune} to minor curses, including spells of 2nd level or lower that produce curses or curse-like effects, such as the {@spell Bane|Ishiir} or {@spell Hex|Ishiir} spell. You have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against all other curses and {@variantrule Resistance|Ishiir} to damage caused by curses."
+            ],
+            "type": "CRF",
+            "value": 300000,
+            "crafted": {
+                "skill": [
+                    "Enchanting"
+                ],
+                "dc": 16,
+                "ingredient": [
+                    "Sylvan Dust",
+                    "Spectral Dust"
+                ]
+            }
+        },
+        {
             "name": "Rod of Resurrection",
             "source": "Ishiir",
             "page": 1,
@@ -16865,8 +16837,8 @@
                     "type": "list",
                     "items": [
                         "Your {@variantrule Attack Roll|Ishiir|Attack Rolls} score a critical hit on a d20 roll of 19 or 20.",
-                        "When you score a critical hit against a creature, that target takes an extra {@damage 4d6} necrotic damage, and you gain a number of temporary hit points equal to the necrotic damage dealt.",
-                        "When a creature you can see damages you, you can use your {@variantrule Reaction|Ishiir} to make a melee attack against that creature, with {@variantrule Advantage|Ishiir} on your {@variantrule Attack Roll|Ishiir}."
+                        "When you score a hit a creature with a weapon attack, that target takes an extra {@damage 4d6} necrotic damage, and you regain hit points equal to the necrotic damage dealt.",
+                        "When a creature you can see damages you, you can use your {@variantrule Reaction|Ishiir} to make a weapon attack against that creature, with {@variantrule Advantage|Ishiir} on your {@variantrule Attack Roll|Ishiir}."
                     ]
                 },
                 {
@@ -16879,12 +16851,12 @@
                 }
             ],
             "type": "CRF",
-            "value": 3710000,
+            "value": 4250000,
             "crafted": {
                 "skill": [
                     "Enchanting"
                 ],
-                "dc": 25,
+                "dc": 26,
                 "ingredient": [
                     "Blessing of Golgathor"
                 ]
