@@ -1354,6 +1354,46 @@
             ]
         },
         {
+            "name": "Oath of the Spellguard",
+            "shortName": "Spellguard",
+            "source": "Ishiir",
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "detect magic|Ishiir",
+                            "shield|Ishiir"
+                        ],
+                        "5": [
+                            "see invisibility|Ishiir",
+                            "silence|Ishiir"
+                        ],
+                        "9": [
+                            "counterspell|Ishiir",
+                            "dispel magic|Ishiir"
+                        ],
+                        "13": [
+                            "freedom of movement|Ishiir",
+                            "Otiluke's resilient sphere|Ishiir"
+                        ],
+                        "17": [
+                            "circle of power|Ishiir",
+                            "spell mantle|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Oath of the Spellguard|Paladin|Ishiir|Spellguard|Ishiir|3",
+                "Aura of Concentration|Paladin|Ishiir|Spellguard|Ishiir|7",
+                "Spell-Breaking Blade|Paladin|Ishiir|Spellguard|Ishiir|15",
+                "Eternal Spellguard|Paladin|Ishiir|Spellguard|Ishiir|20"
+            ]
+        },
+        {
             "name": "Oath of the Watchers",
             "shortName": "Watchers",
             "source": "Ishiir",
@@ -3532,6 +3572,222 @@
                     ]
                 },
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}, unless you expend a 5th-level spell slot to use it again."
+            ]
+        },
+        {
+            "name": "Oath of the Spellguard",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spellguard",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "Paladins who take the Oath of the Spellguard are sworn to battle those who use magic to harm others. They often serve as bodyguards to upstanding mages, but their most important role is protecting allies from devastating magical attacks. Those who swear this oath ensure that villains who misuse magic are brought to justice.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tenets of the Spellguard|Paladin|Ishiir|Spellguard|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath of the Spellguard Spells|Paladin|Ishiir|Spellguard|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Spell Ward|Paladin|Ishiir|Spellguard|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Arcane Warrior Scholar|Paladin|Ishiir|Spellguard|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Spellguard Strike|Paladin|Ishiir|Spellguard|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity: Spell Ward",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spellguard",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "As an {@variantrule Action|Ishiir}, you can choose another creatue you can see within 30 feet and surround it with a protective barrier that wards against spells. For 1 hour, the target gains {@variantrule Resistance|Ishiir} against the damage of spells. At level 6, it also benefits from your Aura of Protection even when outside its radius or when you're {@condition Incapacitated|Ishiir}."
+            ]
+        },
+        {
+            "name": "Arcane Warrior Scholar",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spellguard",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain {@variantrule Proficiency|Ishiir} in {@skill Arcana}. When you use your Lay on Hands, the target also can immediately repeat a {@variantrule Saving Throw|Ishiir} against one on-going spell effect on it."
+            ]
+        },
+        {
+            "name": "Spellguard Strike",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spellguard",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you see a creature within your reach casting a spell with Verbal, Somatic, or Material components, you can take a {@variantrule Reaction|Ishiir} to make a melee attack with a weapon or an Unarmed Strike against that creature."
+            ]
+        },
+        {
+            "name": "Oath of the Spellguard Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spellguard",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of the Spellguard Spells table, you thereafter always have the listed spells prepared.",
+                {
+                    "type": "table",
+                    "caption": "Oath of the Spellguard Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Detect Magic|Ishiir}, {@spell Shield|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell See Invisibility|Ishiir}, {@spell Silence|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Counterspell|Ishiir}, {@spell Dispel Magic|Ishiir}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell Freedom of Movement|Ishiir}, {@spell Otiluke's Resilient Sphere|Ishiir}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell Circle of Power|Ishiir}, {@spell Spell Mantle|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tenets of the Spellguard",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spellguard",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "A paladin who swears this oath ensure that villains who misuse magic are brought to justice.",
+                {
+                    "type": "list",
+                    "items": [
+                        "Protect the innocent from wicked mages.",
+                        "Prevent magic from falling into villains' hands.",
+                        "Protect mages who use magic honorably."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Aura of Concentration",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spellguard",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Your aura of protection fosters mental focus. You and your allies have {@variantrule Advantage|Ishiir} on Constitution saving throws to maintain Concentration while in your Aura of Protection.",
+                "At 18th level, the range of this aura increases to 30 feet."
+            ]
+        },
+        {
+            "name": "Spell-Breaking Blade",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spellguard",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "Immediately after you hit a creature with your Spellguard Strike, you can cast {@spell Counterspell|Ishiir} as part of the same {@variantrule Reaction|Ishiir}.",
+                "Additionally, once per turn when you hit a creature with a melee weapon attack, you can cast {@spell Dispel Magic|Ishiir} as a {@variantrule Bonus Action|Ishiir}."
+            ]
+        },
+        {
+            "name": "Eternal Spellguard",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Paladin",
+            "classSource": "Ishiir",
+            "subclassShortName": "Spellguard",
+            "subclassSource": "Ishiir",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "As a {@variantrule Bonus Action|Ishiir}, you can empower your Aura of Protection, granting the benefits below for 1 minute or until you end them (no action required). Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}. You can restore your use of this ability by expending a level 5 spell slot (no action required).",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Improved Spell-Breaking Blade",
+                            "entry": "You add your Charisma modifier to the {@variantrule Ability Check|Ishiir} of {@spell Counterspell|Ishiir} and {@spell Dispel Magic|Ishiir} when using Spell-Breaking Blade."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Protection from Magic",
+                            "entry": "You and your allies in the aura have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against spells."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Spell Ward",
+                            "entry": "Spell attack rolls against you and your allies in the aura have {@variantrule Disadvantage|Ishiir}."
+                        }
+                    ]
+                }
             ]
         },
         {
