@@ -3502,16 +3502,11 @@ globalThis.DataUtil = {
 	_merged: {},
 
 	async _pLoad ({url, id, isBustCache = false}) {
-		if (DataUtil._loading[id] && !isBustCache) {
-			await DataUtil._loading[id];
-			return DataUtil._loaded[id];
-		}
-
 		DataUtil._loading[id] = new Promise((resolve, reject) => {
 			const request = new XMLHttpRequest();
 
 			request.open("GET", url, true);
-			
+
 			request.setRequestHeader("Cache-Control", "no-cache, no-store");
 			request.setRequestHeader("Content-Type", "application/json");
 			request.setRequestHeader("Referrer-Policy", "no-referrer");
