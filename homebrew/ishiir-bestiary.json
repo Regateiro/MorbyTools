@@ -1514,6 +1514,83 @@
             ]
         },
         {
+            "name": "Reanimated Companion",
+            "source": "Ishiir",
+            "page": 1,
+            "size": [
+                "M"
+            ],
+            "type": "undead",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "10 + your INT modifier"
+                }
+            ],
+            "hp": {
+                "average": 19,
+                "formula": "4 + 5 x artificer level"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "pbNote": "equals your bonus",
+            "str": 14,
+            "dex": 10,
+            "con": 16,
+            "int": 4,
+            "wis": 10,
+            "cha": 6,
+            "save": {
+                "con": "+5"
+            },
+            "senses": [
+                "blindsight 60 ft."
+            ],
+            "resist": [
+                "necrotic",
+                "poison"
+            ],
+            "immune": [
+                "lightning"
+            ],
+            "conditionImmune": [
+                "charmed|Ishiir",
+                "exhaustion|Ishiir",
+                "poisoned|Ishiir",
+                "unconscious|Ishiir"
+            ],
+            "languages": [
+                "understands the languages you know"
+            ],
+            "passive": 10,
+            "cr": "1",
+            "trait": [
+                {
+                    "name": "Death Burst",
+                    "entries": [
+                        "The companion explodes when it dies. Dexterity Saving Throw: DC equals your spell save DC, each creature in a 10-foot Emanation originating from the companion. Failure: {@variantrule Proficiency|Ishiir} x 1d6 Lightning damage."
+                    ]
+                },
+                {
+                    "name": "Lightning Absorption",
+                    "entries": [
+                        "Whenever the companion is subjected to Lightning damage, it regains a number of Hit Points equal to the Lightning damage dealt."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Slam",
+                    "entries": [
+                        "{@atk mw} +(Your Spell Attack Modifier) to hit, reach 5 ft., one target. {@h}{@damage 1d6} + 2 + (Your INT Modifier) Bludgeoning damage."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Serpentine Eidolon",
             "source": "Ishiir",
             "page": 1,
