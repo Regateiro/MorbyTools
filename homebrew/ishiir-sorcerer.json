@@ -1295,8 +1295,7 @@
             "subclassFeatures": [
                 "Storm Sorcery|Sorcerer|Ishiir|Storm|Ishiir|3",
                 "Heart of the Storm|Sorcerer|Ishiir|Storm|Ishiir|6",
-                "Storm Guide|Sorcerer|Ishiir|Storm|Ishiir|6",
-                "Storm's Fury|Sorcerer|Ishiir|Storm|Ishiir|14",
+                "Storm Guide|Sorcerer|Ishiir|Storm|Ishiir|14",
                 "Wind Soul|Sorcerer|Ishiir|Storm|Ishiir|18"
             ]
         },
@@ -3444,7 +3443,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Curse of the Sea|Sorcerer|Ishiir|Sea|Ishiir|3"
+                    "subclassFeature": "Magic Currents|Sorcerer|Ishiir|Sea|Ishiir|3"
                 },
                 {
                     "type": "refSubclassFeature",
@@ -3478,7 +3477,7 @@
                     "rows": [
                         [
                             "3rd",
-                            "{@spell Create Or Destroy Water|Ishiir}, {@spell Witch Bolt|Ishiir}, {@spell Mirror Image|Ishiir}, {@spell Misty Step|Ishiir}"
+                            "{@spell Create Or Destroy Water|Ishiir}, {@spell Fog Cloud|Ishiir}, {@spell Mirror Image|Ishiir}, {@spell Misty Step|Ishiir}"
                         ],
                         [
                             "5th",
@@ -3490,14 +3489,14 @@
                         ],
                         [
                             "9th",
-                            "{@spell Destructive Wave|Ishiir}, {@spell Maelstrom|Ishiir}"
+                            "{@spell Conjure Elemental Spirit|Ishiir}, {@spell Maelstrom|Ishiir}"
                         ]
                     ]
                 }
             ]
         },
         {
-            "name": "Curse of the Sea",
+            "name": "Magic Currents",
             "source": "Ishiir",
             "page": 1,
             "className": "Sorcerer",
@@ -3507,35 +3506,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You learn the secret of infusing your spells with a watery curse.",
-                "When you hit a creature with a cantrip's attack or when a creature fails a {@variantrule Saving Throw|Ishiir} against your cantrip, you can curse the target until the end of your next turn or until you curse a different creature with this feature.",
-                "Once per turn when you {@action Magic|Ishiir|cast a spell}, you can trigger the curse if that spell deals cold or lightning damage to the cursed target or forces it to move. Doing so subjects the target to the appropriate additional effect below, and then the curse ends if the spell isn't a cantrip (you choose the effect to use if more than one effect applies):",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Cold damage",
-                            "entries": [
-                                "If the affected target takes cold damage from your spell, the target's {@variantrule Speed|Ishiir} is also reduced by 15 feet until the end of your next turn. If the spell already reduces the target's {@variantrule Speed|Ishiir}, use whichever reduction is greater."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Lightning Damage",
-                            "entries": [
-                                "If the affected target takes lightning damage from your spell, the target takes additional lightning damage equal to your Charisma modifier."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Forced Movement",
-                            "entries": [
-                                "If the target is moved by your spell, increase the distance it is moved by 15 feet."
-                            ]
-                        }
-                    ]
-                }
+                "Whenever you hit a creature with a spell of 1st level higher it fails a {@variantrule Saving Throw|Ishiir|Save} against such a spell, you can move the affected creature up to 5 x your {@variantrule Proficiency|Ishiir} feet to an unoccupied square of your choice."
             ]
         },
         {
@@ -3563,8 +3534,8 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You gain {@variantrule Resistance|Ishiir} to fire damage.",
-                "You also gain the ability to defend yourself by momentarily assuming a watery form. As a {@variantrule Reaction|Ishiir} when you are hit by an attack and take bludgeoning, piercing, or slashing damage from it, you can reduce that damage by an amount equal to your sorcerer level plus your Charisma score, and then you can move up to 30 feet without provoking {@action Opportunity Attack|Ishiir|Opportunity Attacks}. Once you use this special {@variantrule Reaction|Ishiir}, you can't use it again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}, or you use 3 sorcery points to use this feature again."
+                "You gain {@variantrule Resistance|Ishiir} to Fire and Acid damage.",
+                "You also gain the ability to defend yourself by momentarily assuming a watery form. As a {@variantrule Reaction|Ishiir} when you are hit by an attack, you can reduce that damage by an amount equal to your sorcerer level plus your Charisma score, and then you can move up to 30 feet without provoking {@action Opportunity Attack|Ishiir|Opportunity Attacks}. You cannot use this feature again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}, or you use 3 sorcery points to use it again."
             ]
         },
         {
@@ -3955,6 +3926,10 @@
                 "Storm sorcerers are invaluable members of a ship's crew. Their magic allows them to exert control over wind and weather in their immediate area. Their abilities also prove useful in repelling attacks by sahuagin, pirates, and other waterborne threats.",
                 {
                     "type": "refSubclassFeature",
+                    "subclassFeature": "Storm Magic|Sorcerer|Ishiir|Storm|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
                     "subclassFeature": "Wind Speaker|Sorcerer|Ishiir|Storm|Ishiir|3"
                 },
                 {
@@ -3974,8 +3949,22 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You can use a {@variantrule Bonus Action|Ishiir} on your turn to cause whirling gusts of elemental air to briefly surround you, immediately before or after you {@action Magic|Ishiir|cast a spell} of 1st level or higher. Doing so allows you to fly up to 30 feet without provoking {@action Opportunity Attack|Ishiir|Opportunity Attacks}.",
-                "Additionally, you learn additional spells when you reach certain levels in this class, as shown on the table below. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
+                "On your turn, you can cause whirling gusts of elemental air to briefly surround you, immediately before or after you cast a spell of 1st level or higher. Doing so allows you to {@variantrule Fly Speed|Ishiir|Fly} up to 30 feet without provoking {@action Opportunity Attack|Ishiir|Opportunity Attacks}.",
+                "The {@variantrule Fly Speed|Ishiir|Fly} distance granted by this feature increases to 60 feet at 11th level."
+            ]
+        },
+        {
+            "name": "Storm Magic",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Sorcerer",
+            "classSource": "Ishiir",
+            "subclassShortName": "Storm",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You learn additional spells when you reach certain levels in this class, as shown on the table below. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
                 {
                     "type": "table",
                     "caption": "Storm Spells",
@@ -4033,7 +4022,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You gain {@variantrule Resistance|Ishiir} to lightning and thunder damage. In addition, whenever you start casting a spell of 1st level or higher that deals lightning or thunder damage, stormy magic erupts from you. This eruption causes creatures of your choice that you can see within 10 feet of you to take lightning or thunder damage (choose each time this ability activates) equal to half your sorcerer level."
+                "You gain {@variantrule Resistance|Ishiir} to lightning and thunder damage. In addition, whenever you start casting a spell of 1st level or higher that deals lightning or thunder damage, stormy magic erupts from you. This eruption causes creatures of your choice that you can see within 10 feet of you to take lightning or thunder damage (choose each time this ability activates) equal to half your sorcerer level. You can deal this damage before, during, or after the movement granted by your Tempestuous Magic."
             ]
         },
         {
@@ -4044,26 +4033,10 @@
             "classSource": "Ishiir",
             "subclassShortName": "Storm",
             "subclassSource": "Ishiir",
-            "level": 6,
-            "header": 2,
-            "entries": [
-                "You gain the ability to subtly control the weather around you.",
-                "If it is raining, you can use an {@variantrule Action|Ishiir} to cause the rain to stop falling in a 20-foot-radius sphere centered on you. You can end this effect as a {@variantrule Bonus Action|Ishiir}.",
-                "If it is windy, you can use a {@variantrule Bonus Action|Ishiir} each round to choose the direction that the wind blows in a 100-foot-radius sphere centered on you. The wind blows in that direction until the end of your next turn. This feature doesn't alter the speed of the wind."
-            ]
-        },
-        {
-            "name": "Storm's Fury",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Sorcerer",
-            "classSource": "Ishiir",
-            "subclassShortName": "Storm",
-            "subclassSource": "Ishiir",
             "level": 14,
             "header": 2,
             "entries": [
-                "When you are hit by a melee attack, you can use your {@variantrule Reaction|Ishiir} to deal lightning or thunder (your choice) damage to the attacker. The damage equals your sorcerer level. The attacker must also make a Strength {@variantrule Saving Throw|Ishiir} against your sorcerer spell save DC. On a failed save, the attacker is pushed in a straight line up to 20 feet away from you."
+                "You learn to control the weather in your vicinity. You and your companions do not suffer the effects of bad weather. Additionally, your travel speed is doubled if you are using a naval vessel for {@variantrule Overland Travel and Survival|Ishiir|Overland Travel}. Said vessel is likewise protected from bad weather effects."
             ]
         },
         {
@@ -4078,7 +4051,7 @@
             "header": 2,
             "entries": [
                 "You gain {@variantrule Immunity|Ishiir} to lightning and thunder damage.",
-                "You also gain a magical {@variantrule Fly Speed|Ishiir} of 60 feet. As an {@variantrule Action|Ishiir}, you can reduce your {@variantrule Fly Speed|Ishiir} to 30 feet for 1 hour and choose a number of creatures within 30 feet of you equal to 3 + your Charisma modifier. The chosen creatures gain a magical {@variantrule Fly Speed|Ishiir} of 30 feet for 1 hour. Once you reduce your {@variantrule Fly Speed|Ishiir} in this way, you can't do so again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
+                "You also gain a magical {@variantrule Fly Speed|Ishiir} of 60 feet. As an {@variantrule Action|Ishiir}, you can choose a number of creatures within 30 feet of you equal to 3 + your Charisma modifier and grant them a {@variantrule Fly Speed|Ishiir} of 60 feet for 1 hour. Once you use this feature, you can't do so again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir} or until you spend 5 Sorcery Points to use it again.."
             ]
         },
         {

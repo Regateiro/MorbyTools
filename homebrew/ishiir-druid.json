@@ -743,23 +743,23 @@
                 {
                     "prepared": {
                         "3": [
+                            "absorb elements|Ishiir",
                             "fog cloud|Ishiir",
                             "gust of wind|Ishiir",
-                            "ray of frost|Ishiir",
-                            "shatter|Ishiir",
-                            "thunderwave|Ishiir"
+                            "shape water|Ishiir",
+                            "water blast|Ishiir"
                         ],
                         "5": [
-                            "lightning bolt|Ishiir",
+                            "tidal wave|Ishiir",
                             "water breathing|Ishiir"
                         ],
                         "7": [
                             "control water|Ishiir",
-                            "ice storm|Ishiir"
+                            "watery sphere|Ishiir"
                         ],
                         "9": [
                             "conjure elemental|Ishiir",
-                            "hold monster|Ishiir"
+                            "maelstrom|Ishiir"
                         ]
                     }
                 }
@@ -767,7 +767,7 @@
             "subclassFeatures": [
                 "Circle of the Sea|Druid|Ishiir|Sea|Ishiir|3",
                 "Aquatic Affinity|Druid|Ishiir|Sea|Ishiir|6",
-                "Stormborn|Druid|Ishiir|Sea|Ishiir|10",
+                "Sea Dance|Druid|Ishiir|Sea|Ishiir|10",
                 "Oceanic Gift|Druid|Ishiir|Sea|Ishiir|14"
             ]
         },
@@ -2340,19 +2340,19 @@
                     "rows": [
                         [
                             "3rd",
-                            "{@spell Fog Cloud|Ishiir}, {@spell Gust of Wind|Ishiir}, {@spell Ray of Frost|Ishiir}, {@spell Shatter|Ishiir}, {@spell Thunderwave|Ishiir}"
+                            "{@spell Absorb Elements|Ishiir}, {@spell Fog Cloud|Ishiir}, {@spell Gust of Wind|Ishiir}, {@spell Shape Water|Ishiir}, {@spell Water Blast|Ishiir}"
                         ],
                         [
                             "5th",
-                            "{@spell Lightning Bolt|Ishiir}, {@spell Water Breathing|Ishiir}"
+                            "{@spell Tidal Wave|Ishiir}, {@spell Water Breathing|Ishiir}"
                         ],
                         [
                             "7th",
-                            "{@spell Control Water|Ishiir}, {@spell Ice Storm|Ishiir}"
+                            "{@spell Control Water|Ishiir}, {@spell Watery Sphere|Ishiir}"
                         ],
                         [
                             "9th",
-                            "{@spell Conjure Elemental|Ishiir}, {@spell Hold Monster|Ishiir}"
+                            "{@spell Conjure Elemental|Ishiir}, {@spell Maelstrom|Ishiir}"
                         ]
                     ]
                 }
@@ -2372,8 +2372,8 @@
                 "name": "Wild Shape"
             },
             "entries": [
-                "As a {@variantrule Bonus Action|Ishiir}, you can expend a use of your Wild Shape to manifest a 5-foot Emanation that takes the form of ocean spray that surrounds you for 10 minutes. It ends early if you dismiss it (no action required), manifest it again, or have the {@condition Incapacitated|Ishiir} condition.",
-                "When you manifest the Emanation and as a {@variantrule Bonus Action|Ishiir} on your subsequent turns, you can choose another creature you can see in the Emanation. The target must succeed on a Constitution {@variantrule Saving Throw|Ishiir} against your spell save DC or take Cold damage and, if the creature is Large or smaller, be pushed up to 15 feet away from you. To determine this damage, roll a number of d6s equal to your Wisdom modifier (minimum of one die)."
+                "As a {@variantrule Bonus Action|Ishiir}, you can expend a use of your Wild Shape to manifest a floating orb of water over your hand. The orb remains for 10 minutes. It ends early if you dismiss it (no action required), manifest it again, or have the {@condition Incapacitated|Ishiir} condition.",
+                "When you manifest the orb and as a {@variantrule Bonus Action|Ishiir} on your subsequent turns, you can move the orb up to 30 feet and make a melee spell attack against a creature within 5 feet of it. On a hit, the target takes bludgeoning damage equal to a number of d6 x {@variantrule Proficiency|Ishiir}."
             ]
         },
         {
@@ -2387,12 +2387,12 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "The size of the Emanation created by your Wrath of the Sea increases to 10 feet.",
-                "In addition, you gain a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}."
+                "You gain a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. If you already have a {@variantrule Swim Speed|Ishiir}, it instead increases by 30 feet.",
+                "Additionally the distance you can move your water orb increases to 60 feet."
             ]
         },
         {
-            "name": "Stormborn",
+            "name": "Sea Dance",
             "source": "Ishiir",
             "page": 1,
             "className": "Druid",
@@ -2402,23 +2402,8 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "Your Wrath of the Sea confers two more benefits while active, as detailed below.",
-                {
-                    "type": "list",
-                    "style": "list-hang-notitle",
-                    "items": [
-                        {
-                            "type": "item",
-                            "name": "Flight.",
-                            "entry": "You gain a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}."
-                        },
-                        {
-                            "type": "item",
-                            "name": "Resistance.",
-                            "entry": "You have {@variantrule Resistance|Ishiir} to Cold, Lightning, and Thunder damage."
-                        }
-                    ]
-                }
+                "Once on your turn, you can move up to your {@variantrule Speed|Ishiir} without provoking {@action Opportunity Attack|Ishiir|Opportunity Attacks} and teleport your water orb to your position. You can do so before, during, or after this movement.",
+                "You can use this feature a number of times equal to your Wisdom modifier and you can regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2432,8 +2417,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "Instead of manifesting the Emanation of Wrath of the Sea around yourself, you can manifest it around one willing creature within 60 feet of yourself. That creature gains all the benefits of the Emanation and uses your spell save DC and Wisdom modifier for it.",
-                "In addition, you can manifest the Emanation around both the other creature and yourself if you expend two uses of your Wild Shape instead of one when manifesting it."
+                "You can manifest two water orbs instead of one when you use Wrath of the Sea and all features that affect one water orb, affect both."
             ]
         },
         {
