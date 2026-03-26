@@ -473,6 +473,38 @@
             ]
         },
         {
+            "name": "Armorer",
+            "page": 1,
+            "source": "Ishiir",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "armorsmith's tools": true,
+                    "leatherworker's tools": true
+                }
+            ],
+            "entries": [
+                "You are particularly adept at forging and maintaining armor.",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain {@variantrule Proficiency|Ishiir} with the {@item Armorsmith's Tools|Ishiir} or {@item Leatherworker's Tools|Ishiir} tools. If you are already {@variantrule Proficiency|Ishiir|proficient} in these tools, your {@variantrule Proficiency|Ishiir} bonus is doubled for any skill check made with them.",
+                        "As part of a {@variantrule Short Rest|Ishiir}, you can repair and maintain a number of armors equal to 2 + your proficiency. At the end of the {@variantrule Short Rest|Ishiir}, you restore all temporary hit points granted by their {@variantrule Armor Mastery|Ishiir} and only pay half the usual cost. Additionally, the selected armors provide additional temporary hit points equal to your {@variantrule Proficiency|Ishiir} to their wearer. This bonus applies even if the wearer does not have an {@variantrule Armor Mastery|Ishiir} and is increased by half (rounded down) for heavy armor."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Artificer Initiate",
             "page": 1,
             "source": "Ishiir",
@@ -978,7 +1010,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "When you use your action to {@action Dash|Ishiir}, you can use a {@variantrule Bonus Action|Ishiir} to make one melee weapon attack or to {@action shove|Ishiir} a creature.",
+                        "When you use your action to {@action Dash|Ishiir}, you can make one melee weapon attack or to {@action shove|Ishiir} a creature as part of that {@variantrule Action|Ishiir}.",
                         "Once per turn, if you move at least 10 feet in a straight line before making a melee attack, you either gain a +5 bonus to the attack's damage roll (if you chose to make a melee attack and hit) or push the target up to 10 feet away from you (if you chose to shove and you succeed)."
                     ]
                 }
@@ -1230,7 +1262,7 @@
                     "items": [
                         "You ignore the loading quality of crossbows with which you are {@variantrule Proficiency|Ishiir|proficient}.",
                         "Being within 5 feet of a hostile creature doesn't impose {@variantrule Disadvantage|Ishiir} on your ranged {@variantrule Attack Roll|Ishiir|Attack Rolls}.",
-                        "When you use the {@action Attack|Ishiir} action and attack with a one-handed weapon, you can use a {@variantrule Bonus Action|Ishiir} to attack with a {@item crossbow, hand|Ishiir|hand crossbow} you are holding."
+                        "You can use {@optfeature Two-Weapon Fighting|Ishiir} with one-handed crossbows."
                     ]
                 }
             ]
@@ -1256,8 +1288,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "Once per turn, when you hit a creature with an attack that deals bludgeoning damage, you can move it 5 feet to an unoccupied space, provided the target is no more than one size larger than you.",
-                        "When you score a critical hit that deals bludgeoning damage to a creature, {@variantrule Attack Roll|Ishiir|Attack Rolls} against that creature are made with {@variantrule Advantage|Ishiir} until the start of your next turn."
+                        "Once per turn, when a creature fails a {@variantrule Saving Throw|Ishiir} against one of your {@variantrule Weapon Mastery|Ishiir|Weapon Masteries}, you can grant {@variantrule Advantage|Ishiir} to the next {@variantrule Attack Roll|Ishiir} against it before the end of your next turn.",
+                        "You gain the {@optfeature Sap|Ishiir} mastery when using weapons that deal bludgeoning damage. Additionally, you can use {@optfeature Sap|Ishiir} on the same attack as another mastery and its die size increases to a d6."
                     ]
                 }
             ]
@@ -1609,7 +1641,8 @@
                     "items": [
                         "You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.",
                         "You can use two-weapon fighting even when the one-handed melee weapons you are wielding aren't light.",
-                        "You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one."
+                        "You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.",
+                        "You gain the {@optfeature Flurry|Ishiir} mastery when you use two-weapon fighting. Additionally, you ignore the usual restriction on other masteries when you use {@optfeature Flurry|Ishiir}."
                     ]
                 }
             ]
@@ -2255,6 +2288,31 @@
             ]
         },
         {
+            "name": "Fletcher",
+            "page": 1,
+            "source": "Ishiir",
+            "ability": [
+                {
+                    "dex": 1
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "fletcher's tools": true
+                }
+            ],
+            "entries": [
+                "You are skilled at crafting ranged weapons and ammunitions.",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain {@variantrule Proficiency|Ishiir} with the {@item Fletcher's Tools|Ishiir} tools. If you are already {@variantrule Proficiency|Ishiir|proficient} in these tools, your {@variantrule Proficiency|Ishiir} bonus is doubled for any skill check made with them.",
+                        "When you successfully craft ammunition, the number of resulting items is increased to 60."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Free Runner",
             "page": 1,
             "source": "Ishiir",
@@ -2284,13 +2342,18 @@
                     ]
                 }
             ],
+            "ability": [
+                {
+                    "str": 1
+                }
+            ],
             "entries": [
                 "You've developed the skills necessary to hold your own in close-quarters grappling. You gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
                         "You have {@variantrule Advantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} against a creature you are grappling.",
-                        "You can use your action to try to pin a creature {@condition Grappled|Ishiir} by you. To do so, make another {@action Grapple|Ishiir} check. If you succeed, you and the creature are both {@condition Restrained|Ishiir} until the grapple ends. You do not suffer {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir} from this {@condition Restrained|Ishiir} condition."
+                        "Creatures you are grappling have {@variantrule Disadvantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}."
                     ]
                 }
             ]
@@ -2299,14 +2362,18 @@
             "name": "Great Weapon Master",
             "page": 1,
             "source": "Ishiir",
-            "critEffect": true,
+            "ability": [
+                {
+                    "str": 1
+                }
+            ],
             "entries": [
                 "You've learned to put the weight of a weapon to your {@variantrule Advantage|Ishiir}, letting its momentum empower your strikes. You gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
-                        "On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a {@variantrule Bonus Action|Ishiir}.",
-                        "When you hit a creature with a weapon that has the Heavy property, you can cause the weapon to deal extra damage to the target. The extra damage equals your {@variantrule Proficiency|Ishiir} Bonus."
+                        "You gain the {@optfeature Cleave|Ishiir} mastery when using melee weapons that have the Heavy property. Additionally, you can use {@optfeature Cleave|Ishiir} on the same attack as another mastery and you deal the full damage of your attack to the secondary target if the original one is reduced to 0 hit points.",
+                        "When you hit a creature with a melee weapon that has the Heavy property, you can cause the weapon to deal extra damage to the target. The extra damage equals your {@variantrule Proficiency|Ishiir} Bonus."
                     ]
                 }
             ]
@@ -2900,6 +2967,18 @@
             "page": 1,
             "source": "Ishiir",
             "critEffect": true,
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
             "entries": [
                 {
                     "type": "list",
@@ -3427,6 +3506,18 @@
             "prerequisite": [
                 {
                     "spellcasting": true
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
                 }
             ],
             "optionalfeatureProgression": [
@@ -3995,7 +4086,6 @@
             "name": "Piercer",
             "page": 1,
             "source": "Ishiir",
-            "critEffect": true,
             "ability": [
                 {
                     "choose": {
@@ -4012,8 +4102,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "Once per turn, when you hit a creature with an attack that deals piercing damage, you can reroll one of the attack's damage dice, and you must use the new roll.",
-                        "When you score a critical hit that deals piercing damage to a creature, you can roll one additional damage die when determining the extra piercing damage the target takes."
+                        "Once per turn, when you deal damage with a weapon that does piercing damage, you can reroll the weapon's damage dice and take either result.",
+                        "You gain the {@optfeature Pierce|Ishiir} mastery when using weapons that deal piercing damage. Additionally, you can use {@optfeature Pierce|Ishiir} on the same attack as another mastery and its die size increases to a d6."
                     ]
                 }
             ]
@@ -4043,13 +4133,23 @@
             "name": "Polearm Master",
             "page": 1,
             "source": "Ishiir",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
             "entries": [
                 "You can keep your enemies at bay with reach weapons. You gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
-                        "When you take the {@action Attack|Ishiir} action and attack with only an {@item elvish spear|Ishiir}, {@item faunish spear|Ishiir}, {@item glaive|Ishiir}, {@item greatspear|Ishiir}, {@item halberd|Ishiir}, {@item quarterstaff|Ishiir}, {@item spear|Ishiir}, or {@item trident|Ishiir} using two hands, you can use a {@variantrule Bonus Action|Ishiir} to make a melee attack with the opposite end of the weapon; this attack uses the same ability modifier as the primary attack. The weapon's damage die for this attack is a {@dice d4}, and the attack deals bludgeoning damage.",
-                        "While you are wielding any of the above weapons, other creatures provoke an {@action Opportunity Attack|Ishiir} from you when they enter your reach."
+                        "When you are wielding a {@item elvish|Ishiir}/{@item faunish spear|Ishiir}, {@item glaive|Ishiir}, {@item greatspear|Ishiir}, {@item halberd|Ishiir}, {@item quarterstaff|Ishiir}, {@item spear|Ishiir}, or {@item trident|Ishiir} using two hands, you can use your {@variantrule Reaction|Ishiir} to make a melee weapon attack against a creature when it enters your reach. If the target moved at least 10 feet before, you double your weapon's damage dice for the purpose of this attack."
                     ]
                 }
             ]
@@ -4382,6 +4482,7 @@
             "name": "Savage Attacker",
             "page": 1,
             "source": "Ishiir",
+            "critEffect": true,
             "ability": [
                 {
                     "choose": {
@@ -4397,7 +4498,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "Once per turn when you roll damage for a melee weapon attack, you can reroll the weapon's damage dice and use either total."
+                        "Once per turn when you roll damage for a melee weapon attack, you can reroll the weapon's damage dice and use either total.",
+                        "When you land a critical hit with a melee weapon, you also double all flat damage bonuses to the weapon's damage, excluding those that only apply on a critical hit."
                     ]
                 }
             ]
@@ -4530,7 +4632,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "You can use a {@variantrule Bonus Action|Ishiir} on your turn to make a melee weapon attack with your {@item shield|Ishiir}. Your {@item shield|Ishiir} counts as a simple weapon with which you are {@variantrule Proficiency|Ishiir|Proficient}. If you have access to {@variantrule Weapon Mastery|Ishiir|Weapon Masteries}, your {@item shield|Ishiir} gives you the {@optfeature Push|Ishiir}, {@optfeature Sap|Ishiir}, and {@optfeature Slow|Ishiir} options. On a hit, it deals {@damage 1d4} bludgeoning damage. Any enhancement bonus to your {@item shield|Ishiir} is also added to attack and damage rolls with it.",
+                        "When you take the {@action Attack|Ishiir} action on your turn, you can make one additional melee weapon attack with your {@item shield|Ishiir}. Your {@item shield|Ishiir} counts as a simple weapon with which you are {@variantrule Proficiency|Ishiir|Proficient}. If you have access to {@variantrule Weapon Mastery|Ishiir|Weapon Masteries}, your {@item shield|Ishiir} gives you the {@optfeature Push|Ishiir}, {@optfeature Sap|Ishiir}, and {@optfeature Slow|Ishiir} options. On a hit, it deals {@damage 1d4} bludgeoning damage. Any enhancement bonus to your {@item shield|Ishiir} is also added to attack and damage rolls with it.",
                         "Once per turn, when you successfully hit a creature with a melee weapon attack using your {@item shield|Ishiir}, you can also make a {@action Shove|Ishiir} attempt against it as part of that same attack."
                     ]
                 }
@@ -4672,8 +4774,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "Once per turn when you hit a creature with an attack that deals slashing damage, you can reduce the {@variantrule Speed|Ishiir} of the target by 10 feet until the start of your next turn.",
-                        "When you score a critical hit that deals slashing damage to a creature, you grievously wound it. Until the start of your next turn, the target has {@variantrule Disadvantage|Ishiir} on all {@variantrule Attack Roll|Ishiir|Attack Rolls}."
+                        "Once per turn, when you hit a creature affected by the {@condition Lacerated|Ishiir} condition or the {@optfeature Gash|Ishiir} mastery with a weapon attack that does slashing damage or inflict either effect with a weapon attack that does slashing damage, you can cause the target of your attack to have {@variantrule Disadvantage|Ishiir} on its next {@variantrule Attack Roll|Ishiir} before the start of your next turn.",
+                        "You gain the {@optfeature Gash|Ishiir} mastery when using weapons that deal slashing damage. Additionally, you can use {@optfeature Gash|Ishiir} on the same attack as another mastery and its damage is doubled."
                     ]
                 }
             ]
@@ -5064,7 +5166,7 @@
                     "items": [
                         "You are {@variantrule Proficiency|Ishiir|proficient} with improvised weapons.",
                         "Your {@variantrule Unarmed Strike|Ishiir} uses a {@damage d4} for damage. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step.",
-                        "When you hit a creature with an {@variantrule Unarmed Strike|Ishiir} or an improvised weapon on your turn, you can use a {@variantrule Bonus Action|Ishiir} to attempt to {@action Grapple|Ishiir} the target."
+                        "Once per turn, when you hit a creature with an {@variantrule Unarmed Strike|Ishiir} or an improvised weapon on your turn, you can attempt to {@action Grapple|Ishiir} the target as part of that attack."
                     ]
                 }
             ]
@@ -5441,6 +5543,19 @@
                     "spellcasting": true
                 }
             ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
             "entries": [
                 "You have practiced casting spells in the midst of combat, learning techniques that grant you the following benefits:",
                 {
@@ -5457,14 +5572,24 @@
             "name": "Way of the Bow",
             "page": 1,
             "source": "Ishiir",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
             "entries": [
                 "You have practiced a style of archery that relies on intuition as much as perception. This allows you to attack with fluid rapidity or with great deliberation, as the situation demands.",
                 {
                     "type": "list",
                     "items": [
-                        "When you take the {@action Disengage|Ishiir} or {@action Dash|Ishiir} action on your turn, you can make a single ranged weapon attack with a {@item Shortbow|Ishiir}, a {@item Longbow|Ishiir}, or a {@item Greatbow|Ishiir} as a {@variantrule Bonus Action|Ishiir}.",
-                        "When an ally takes the {@action Help|Ishiir} action to give you {@variantrule Advantage|Ishiir} on an attack against another creature, you can make a ranged weapon attack using a {@item Shortbow|Ishiir}, a {@item Longbow|Ishiir}, or a {@item Greatbow|Ishiir} against that creature as a {@variantrule Reaction|Ishiir}.",
-                        "As a {@variantrule Bonus Action|Ishiir}, you may aim at a creature who has less than total cover from you. This gives you {@variantrule Advantage|Ishiir} on the next ranged weapon attack you make against that creature before the end of your turn."
+                        "When you take the {@action Disengage|Ishiir} or {@action Dash|Ishiir} action on your turn, you can make a single ranged weapon attack with a {@item Shortbow|Ishiir}, a {@item Longbow|Ishiir}, or a {@item Greatbow|Ishiir} as part of that action.",
+                        "When an ally takes the {@action Help|Ishiir} action to give you {@variantrule Advantage|Ishiir} on an attack against another creature, you can make a ranged weapon attack using a {@item Shortbow|Ishiir}, a {@item Longbow|Ishiir}, or a {@item Greatbow|Ishiir} against that creature as a {@variantrule Reaction|Ishiir}."
                     ]
                 }
             ]
@@ -5500,6 +5625,31 @@
                     "type": "list",
                     "items": [
                         "You gain {@variantrule Proficiency|Ishiir} with martial weapons and shields."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Weaponsmith",
+            "page": 1,
+            "source": "Ishiir",
+            "ability": [
+                {
+                    "str": 1
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "weaponsmith's tools": true
+                }
+            ],
+            "entries": [
+                "You are skilled at metallurgy and crafting weapons.",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain {@variantrule Proficiency|Ishiir} with the {@item Weaponsmith's Tools|Ishiir} tools. If you are already {@variantrule Proficiency|Ishiir|proficient} in these tools, your {@variantrule Proficiency|Ishiir} bonus is doubled for any skill check made with them.",
+                        "When you are using your {@item Weaponsmith's Tools|Ishiir} to craft a weapon, you lower the DC of the base material by 2. In the case of steel, this does make the modifier negative. When you are adding new properties to a mastercrafted weapon, the resulting item does not lose its mastercrafted property if you only succeed on 2 of the crafting checks."
                     ]
                 }
             ]

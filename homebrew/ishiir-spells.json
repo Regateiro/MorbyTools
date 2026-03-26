@@ -19419,6 +19419,117 @@
             ]
         },
         {
+            "name": "Dramaturgy",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You magically amplify an aspect of your performance with minor magics. You create one of the effects below. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Altered Voice",
+                            "entries": [
+                                "You can alter your voice to sound deeper or higher and younger or older for 1 minute."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Dramatic Air",
+                            "entries": [
+                                "You can cause wind to blow dramatically through your hair and your cape, if you wear one."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Heightened Deftness",
+                            "entries": [
+                                "You give yourself a heightened sense of balance and coordination for 1 minute, allowing you to more easily juggle objects or perform acrobatic stunts. For the duration, you have {@variantrule Advantage|Ishiir} on Dexterity ({@skill Acrobatics}) checks."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Method Acting",
+                            "entries": [
+                                "You lace your words with a subtle enchantment for 1 minute that makes your act more convincing to your audience. For the duration, you have {@variantrule Advantage|Ishiir} on Charisma ({@skill Performance}) checks."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Phantom Band",
+                            "entries": [
+                                "You cause music to be played for 1 minute, which is audible in a 60 feet radius around you."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Swift Preparation",
+                            "entries": [
+                                "You instantly apply any make-up, don a costume, or use a {@item Disguise Kit|Ishiir} within 5 feet of you."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "miscTags": [
+                "EAB"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                },
+                {
+                    "name": "Magic Initiate",
+                    "source": "Ishiir"
+                }
+            ],
+            "optionalfeatures": [
+                {
+                    "name": "Pact of the Tome",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
             "name": "Drawmij's Instant Summons",
             "page": 1,
             "source": "Ishiir",
@@ -34478,7 +34589,8 @@
             ],
             "entries": [
                 "Choose a willing creature that you can see within range. Until the spell ends, the target's {@variantrule Speed|Ishiir} is doubled, it gains a +2 bonus to AC, it has {@variantrule Advantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}, and it gains an additional action on each of its turns. That action can be used only to take the {@action Attack|Ishiir} (two weapon attacks), {@action Dash|Ishiir}, {@action Disengage|Ishiir}, {@action Hide|Ishiir}, or {@action Use an Object|Ishiir} action.",
-                "Additionally, the creature is {@variantrule Immunity|Ishiir|Immune} to the Slow spell for the duration, as well as any reductions to its {@variantrule Speed|Ishiir} caused by spells of 5th level or lower."
+                "Additionally, the creature is {@variantrule Immunity|Ishiir|Immune} to the Slow spell for the duration, as well as any reductions to its {@variantrule Speed|Ishiir} caused by spells of 5th level or lower.",
+                "The effects of this spell are not cumulative with the {@spell Haste|Ishiir} spell."
             ],
             "areaTags": [
                 "ST"
@@ -43982,6 +44094,86 @@
                             "source": "Ishiir",
                             "shortName": "Arcane"
                         }
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ]
+        },
+        {
+            "name": "Oceanic Fury",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 9,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You summon elemental spirits in the shape of three massive watery tentacles that each sprout from a surface in an unoccupied 2x2 space you can see within range. The tentacles cannot move or be moved, are {@variantrule Immunity|Ishiir|Immune} to all damage and conditions, and last for the duration.",
+                "Make a melee spell attack against a creature within 60 feet of each tentacle. On a hit, the target takes {@damage 4d12} Bludgeoning damage. You can then force the target to make a Strength or Constitution {@variantrule Saving Throw|Ishiir} (your choice). If it fails the Strength {@variantrule Saving Throw|Ishiir}, it becomes {@condition Grappled|Ishiir} and {@condition Restrained|Ishiir} for the duration. If it fails the Constitution {@variantrule Saving Throw|Ishiir}, it is {@condition Dazed|Ishiir} for the duration. A target can repeat the {@variantrule Saving Throw|Ishiir} against either condition, ending it on a success.",
+                "A tentacle can only grapple one creature at a time, and you can cause any tentacle to release a {@condition Grappled|Ishiir} creature (no action required). As an {@variantrule Action|Ishiir} on your later turns, you can repeat the attacks against creatures within 60 feet of the tentacles."
+            ],
+            "savingThrow": [
+                "strength",
+                "constitution"
+            ],
+            "conditionInflict": [
+                "grappled",
+                "restrained",
+                "dazed"
+            ],
+            "damageInflict": [
+                "bludgeoning"
+            ],
+            "spellAttack": [
+                "M"
+            ],
+            "miscTags": [
+                "SGT",
+                "SMN"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
                     }
                 ]
             },
@@ -61391,7 +61583,7 @@
                 }
             ],
             "entries": [
-                "You endow yourself with endurance and martial prowess fueled by magic. Until the spell ends, you can't cast spells, and you gain the following benefits:",
+                "You endow yourself with endurance and martial prowess fueled by magic. Until the spell ends, you can't cast spells of 2nd level or higher, and you gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
