@@ -1,0 +1,164 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Deoir",
+                "abbreviation": "Deoir",
+                "full": "Deoir",
+                "color": "#669900",
+                "url": "https://regateiro.pt/5etools/homebrew/ishiir-warlock.json",
+                "authors": [
+                    "Roy"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "subclass": [
+        {
+            "name": "Mycelium Patron",
+            "shortName": "Mycelium",
+            "source": "Deoir",
+            "className": "Warlock",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "entangle|Ishiir",
+                            "command|Ishiir",
+                            "blindness/deafness|Ishiir",
+                            "see invisibility|Ishiir"
+                        ],
+                        "5": [
+                            "create food and water|Ishiir",
+                            "plant growth|Ishiir"
+                        ],
+                        "7": [
+                            "evard's black tentacles|Ishiir",
+                            "polymorph|Ishiir"
+                        ],
+                        "9": [
+                            "commune with nature|Ishiir",
+                            "contagion|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Mycelium Patron|Warlock|Ishiir|Mycelium|Deoir|3",
+                "Ear Mushrooms|Warlock|Ishiir|Mycelium|Deoir|6",
+                "Unseen Threads|Warlock|Ishiir|Mycelium|Deoir|10",
+                "Network of Decay|Warlock|Ishiir|Mycelium|Deoir|14"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Mycelium Patron",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Warlock",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mycelium",
+            "subclassSource": "Deoir",
+            "level": 3,
+            "entries": [
+                "You learn additional spells when you reach certain levels in this class, as shown on the table below. Each of these spells counts as a Warlock spell for you, but it doesn’t count against the number of Warlock spells you have prepared.",
+                {
+                    "type": "table",
+                    "caption": "Mycelium Patron Spells",
+                    "colLabels": [
+                        "Warlock Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Entangle|Ishiir}, {@spell Command|Ishiir}, {@spell Blindness/Deafness|Ishiir}, {@spell See Invisibility|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Create Food and Water|Ishiir}, {@spell Plant Growth|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Evard's Black Tentacles|Ishiir}, {@spell Polymorph|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Commune with Nature|Ishiir}, {@spell Contagion|Ishiir}"
+                        ]
+                    ]
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Spread the Network|Warlock|Ishiir|Mycelium|Deoir|3"
+                }
+            ]
+        },
+        {
+            "name": "Spread the Network",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Warlock",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mycelium",
+            "subclassSource": "Deoir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Your spells leave an invisible trail connecting your targets to you and each other in a fragile network. When you damage a creature with a spell, you can add the target to your network for 1 minute or until your {@condition Concentration|Ishiir} is broken (as if you are concentrating on a spell). You can do this in addition to concentrating on spells. When you damage a creature in your network with a spell, you can deal {@damage 1d4} Necrotic damage to all other creatures in your network as a {@variantrule Bonus Action|Ishiir}. You can have a number of creatures in your network equal to your {@variantrule Proficiency|Ishiir} Bonus. When a creature dies, it is no longer part of your network. The damage you deal to creatures in your network increases to {@damage 2d4} when you reach 10th level in this class and {@damage 3d4} when you reach 17th level in this class."
+            ]
+        },
+        {
+            "name": "Ear Mushrooms",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Warlock",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mycelium",
+            "subclassSource": "Deoir",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "You gain the ability to sprout watchful mushrooms. As an {@variantrule Action|Ishiir}, you can create a mushroom on a surface you can touch. You decide the appearance and type of mushroom when you create it. As an {@variantrule Action|Ishiir}, you can telepathically hear everything that the mushroom hears across any distance as long as you are on the same plane of existence. This effect lasts until the mushroom is destroyed or you sever the connection (no action required). You can have a number of mushrooms equal to your Spellcasting modifier active at one time."
+            ]
+        },
+        {
+            "name": "Unseen Threads",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Warlock",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mycelium",
+            "subclassSource": "Deoir",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "Your interconnectedness with the great unseen network of the Fungus grows deeper. You gain {@variantrule Resistance|Ishiir} to Necrotic damage and {@sense Blindsight} with a range of 15 feet."
+            ]
+        },
+        {
+            "name": "Network of Decay",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Warlock",
+            "classSource": "Ishiir",
+            "subclassShortName": "Mycelium",
+            "subclassSource": "Deoir",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "As an {@variantrule Action|Ishiir} you can incite paranoia in the creatures part of your Network. Every creature within the network makes a Wisdom {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failure, the creature perceives the other creatures in the network as hostile to them. They make a repeat {@variantrule Saving Throw|Ishiir} at the end of their turn, and after 3 failures the effect is permanent. You can use this feature an amount of times equal to your {@variantrule Proficiency|Ishiir} modifier per {@variantrule Long Rest|Ishiir}."
+            ]
+        }
+    ]
+}
