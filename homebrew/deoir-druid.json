@@ -1,0 +1,237 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Deoir",
+                "abbreviation": "Deoir",
+                "full": "Deoir",
+                "color": "#669900",
+                "url": "https://regateiro.pt/5etools/homebrew/ishiir-druid.json",
+                "authors": [
+                    "Roy"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "subclass": [
+        {
+            "name": "Circle of Flowers",
+            "shortName": "Flowers",
+            "source": "Deoir",
+            "className": "Druid",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "goodberry|Ishiir",
+                            "inflict wounds|Ishiir",
+                            "barkskin|Ishiir",
+                            "enthrall|Ishiir"
+                        ],
+                        "5": [
+                            "vampiric touch|Ishiir",
+                            "plant growth|Ishiir"
+                        ],
+                        "7": [
+                            "backlash|Ishiir",
+                            "grasping vine|Ishiir"
+                        ],
+                        "9": [
+                            "awaken|Ishiir",
+                            "contagion|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Circle of Flowers|Druid|Ishiir|Flowers|Deoir|3",
+                "Dendrologogy|Druid|Ishiir|Flowers|Deoir|6",
+                "Flower Circle|Druid|Ishiir|Flowers|Deoir|10",
+                "Full Bloom|Druid|Ishiir|Flowers|Deoir|14"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Circle of Flowers",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Druid",
+            "classSource": "Ishiir",
+            "subclassShortName": "Flowers",
+            "subclassSource": "Deoir",
+            "level": 3,
+            "entries": [
+                "You learn additional spells when you reach certain levels in this class, as shown on the table below. Each of these spells counts as a druid spell for you, but it doesn't count against the number of druid spells you have prepared.",
+                {
+                    "type": "table",
+                    "caption": "Circle of Flowers Spells",
+                    "colLabels": [
+                        "Druid Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Goodberry|Ishiir}, {@spell Inflict Wounds|Ishiir}, {@spell Barkskin|Ishiir}, {@spell Enthrall|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Vampiric Touch|Ishiir}, {@spell Plant Growth|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Backlash|Ishiir}, {@spell Grasping Vine|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Awaken|Ishiir}, {@spell Contagion|Ishiir}"
+                        ]
+                    ]
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Floral Form|Druid|Ishiir|Flowers|Deoir|1"
+                }
+            ]
+        },
+        {
+            "name": "Floral Form",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Druid",
+            "classSource": "Ishiir",
+            "subclassShortName": "Flowers",
+            "subclassSource": "Deoir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "As a {@variantrule Bonus Action|Ishiir}, you can spend one use of your Wild Shape to transform into a floral shape. Choose one of the following Reproduction types (Seed, Bulb, Rootstalk, Pollen). Depending on your choice, you gain the following benefits for 10 minutes:",
+                {
+                    "type": "table",
+                    "caption": "Reproduction Effects",
+                    "colLabels": [
+                        "Reproduction Type",
+                        "Effect"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "Seed",
+                            "While in this form you can plant a seed as a {@variantrule Bonus Action|Ishiir} up to 5ft away from you. You can plant an amount of seeds up to your {@variantrule Proficiency|Ishiir}. Once a seed is planted it grows into a tiny flower creature with 1hp, an AC of 10 and a movement speed of 0. These creatures take their turn immediately after yours and the only {@variantrule Action|Ishiir} they can take is Shoot Seed. This attack uses your spell casting modifier and your {@variantrule Proficiency|Ishiir} to hit and deals {@damage 1d4} piercing damage on a hit and has a range of 40ft."
+                        ],
+                        [
+                            "Bulb",
+                            "While in this form you gain {@variantrule Resistance|Ishiir} to Poison damage, in addition you increase your Max HP by thrice your Druid level for the duration of this form."
+                        ],
+                        [
+                            "Rootstalk",
+                            "While in this form you exude roots into the ground below or slither over it in a 15ft radius, making this area {@quickref difficult terrain||3}. An hostile creature that is large or smaller that enter or starts their turn in this radius must make a Strength {@variantrule Saving Throw|Ishiir} against your spell save DC or be {@condition Grappled|Ishiir} by the vines."
+                        ],
+                        [
+                            "Pollen",
+                            "While in this form you exude a constant stream of pollen in a 15ft radius around you. You can use touch spells on any creature within this radius as if you were in a space next to them. In addition, when you deal damage or restore hit points with a touch spell, the target takes additional damage or regains additional hit points equal to your {@variantrule Proficiency|Ishiir} bonus."
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dendrologogy",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Druid",
+            "classSource": "Ishiir",
+            "subclassShortName": "Flowers",
+            "subclassSource": "Deoir",
+            "level": 6,
+            "header": 2,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "As your connection with flowers deepens, you take on more plant-like traits. You are always under the effect of the {@spell Barkskin|Ishiir} spell.",
+                "Additionally, when you cast {@spell Barkskin|Ishiir} with a spell slot, the spell counts as 1 level higher. You can also speak with plants as if they were animated by a speak with plants spell."
+            ]
+        },
+        {
+            "name": "Flower Circle",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Druid",
+            "classSource": "Ishiir",
+            "subclassShortName": "Flowers",
+            "subclassSource": "Deoir",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "Your connection with flowers lets you summon them from the earth to soothe yourself and your companions. During a {@variantrule Short Rest|Ishiir}, you can cause an area of flowers to bloom on the ground in a 15-foot radius centered on you that lasts for 1 hour, until you become {@condition Incapacitated|Ishiir}, or you leave the circle.",
+                "Creatures of your choice within the area gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When they regain hit points by spending hit dice or with magic, they regain additional hit points equal to your {@variantrule Proficiency|Ishiir} bonus. Creatures can only benefit from this once per {@variantrule Short Rest|Ishiir}.",
+                        "They can't be {@condition Surprised|Ishiir}.",
+                        "If they spend the full rest within the circle, they gain {@variantrule Resistance|Ishiir} to Poison damage for 24 hours. Once you have used this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir} or you spend 2 charges of your wildshape feature to regain a use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Full Bloom",
+            "source": "Deoir",
+            "page": 1,
+            "className": "Druid",
+            "classSource": "Ishiir",
+            "subclassShortName": "Flowers",
+            "subclassSource": "Deoir",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "Your Floral form strengthens and you gain new benefits depending on your Reproduction type.",
+                {
+                    "type": "table",
+                    "caption": "Reproduction Effects",
+                    "colLabels": [
+                        "Reproduction Type",
+                        "Effect"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "Seed",
+                            "Your flower creatures now add your Wisdom modifier to the damage and you can plant seeds up to 15ft away."
+                        ],
+                        [
+                            "Bulb",
+                            "Your body is able to protect itself with multiple layers. When a creature hits you with an attack, you can use your {@variantrule Reaction|Ishiir} to roll a d6. On a 5 or higher, the attack misses regardless of the roll."
+                        ],
+                        [
+                            "Rootstalk",
+                            "Your roots expand to 30ft radius around you and you can now {@condition Grappled|Ishiir|Grapple} up to huge creatures. In addition, you can now use a {@variantrule Bonus Action|Ishiir} on a creature {@condition Grappled|Ishiir} by your vines to force them to make a Strength {@variantrule Saving Throw|Ishiir}. On a failurem they become {@condition Restrained|Ishiir} and {@condition Grappled|Ishiir}."
+                        ],
+                        [
+                            "Pollen",
+                            "Your pollen now spreads in a 30ft radius around you. In addition, when you hit a creature with a touch spell once per transformation, you can target a second creature within your pollen with the same spell using the same attack roll if applicable."
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+}
