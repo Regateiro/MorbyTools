@@ -864,7 +864,7 @@
                     "name": "Amplify",
                     "type": "item",
                     "entries": [
-                        "This curse lasts for 1 minute and can affect any creature regardless of size. The cursed creature can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the curse on itself on a success."
+                        "This curse lasts for 1 minute and can affect any creature regardless of size. The cursed creature can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the curse on itself at the end of your next turn on a success."
                     ]
                 }
             ]
@@ -913,12 +913,12 @@
                 }
             ],
             "entries": [
-                "As a {@variantrule Bonus Action|Ishiir}, you deal acid damage equal to 2 x {@variantrule Proficiency|Ishiir} to a creature you can see within 30 feet of you and reduce its AC by 2 until the start of your next turn. The target then has to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, the target takes this damage again and has {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} and {@variantrule Ability Check|Ishiir|Ability Checks} and the AC reduction lasts until the end of its next turn. The cursed creature can make a Constitution {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the curse on itself on a success.",
+                "As a {@variantrule Bonus Action|Ishiir}, you deal acid damage equal to three rolls of your hemocraft die to a creature you can see within 30 feet of you. The target then has to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failure, attack rolls against the target have {@variantrule Advantage|Ishiir} until the end of your next turn. On a success, only the first attack roll has {@variantrule Advantage|Ishiir}.",
                 {
                     "name": "Amplify",
                     "type": "item",
                     "entries": [
-                        "The cursed creature has {@variantrule Disadvantage|Ishiir} on the initial {@variantrule Saving Throw|Ishiir}."
+                        "Every time the target takes damage while under this curse's effect, it takes additional acid damage equal to one roll of your hemocraft die."
                     ]
                 }
             ]
@@ -936,7 +936,7 @@
                     "name": "Amplify",
                     "type": "item",
                     "entries": [
-                        "This curse lasts for 1 minute. The cursed creature can make a Constitution {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the curse on itself on a success."
+                        "This curse lasts for 1 minute. The cursed creature can make a Constitution {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the curse on itself at the end of its next turn on a success."
                     ]
                 }
             ]
@@ -1130,12 +1130,12 @@
                 "BC"
             ],
             "entries": [
-                "As a bonus action, you curse a creature that you can see within 30 feet of you that is {@condition Concentration|Ishiir|concentrating} on a spell or using a feature that requires {@condition Concentration|Ishiir}. The target has to make a Charisma {@variantrule Saving Throw|Ishiir}. On a failure, the affected creature has {@variantrule Disadvantage|Ishiir} on Wisdom, Intelligence, and {@condition Concentration|Ishiir} {@variantrule Saving Throw|Ishiir|Saving Throws} until the start of your next turn.",
+                "As a {@variantrule Bonus Action|Ishiir}, you curse a creature that you can see within 30 feet of you that is {@condition Concentration|Ishiir|concentrating} on a spell or using a feature that requires {@condition Concentration|Ishiir}. The target has to make a Charisma {@variantrule Saving Throw|Ishiir}. On a failure, the affected creature has {@variantrule Disadvantage|Ishiir} on Wisdom, Intelligence, and {@condition Concentration|Ishiir} {@variantrule Saving Throw|Ishiir|Saving Throws} until the start of your next turn.",
                 {
                     "name": "Amplify",
                     "type": "item",
                     "entries": [
-                        "This curse lasts for 1 minute. The cursed creature can make a Charisma {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the curse on itself on a success. You can choose any number of creatures you can see to be unaffected by the howl."
+                        "This curse lasts for 1 minute. The cursed creature can make a Charisma {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the curse on itself at the start of your next turn on a success."
                     ]
                 }
             ]
@@ -5579,7 +5579,7 @@
                 }
             ],
             "entries": [
-                "You have a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} for 1 hour. However, you have {@variantrule Disadvantage|Ishiir} on strength {@variantrule Ability Check|Ishiir|checks} and Dexterity {@variantrule Ability Check|Ishiir|checks} during this time."
+                "You have a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir} for 1 hour and you can hover."
             ]
         },
         {
@@ -5590,7 +5590,7 @@
                 "MF"
             ],
             "entries": [
-                "Your skin and voice become malleable, allowing you to enhance your appearance and presence. You have {@variantrule Advantage|Ishiir} on Charisma {@variantrule Ability Check|Ishiir|checks}. However, you have {@variantrule Disadvantage|Ishiir} on STR {@variantrule Ability Check|Ishiir|checks}."
+                "Your Charisma score increases by 2, as does your maximum for that score. At 11th level in this class, both bonuses increase to 4. You can have only one Ability Score-increasing mutagen active on you at a time."
             ]
         },
         {
@@ -5601,7 +5601,7 @@
                 "MF"
             ],
             "entries": [
-                "If a creature within 5 feet of you deals piercing or slashing to you, it takes acid damage equal to your {@variantrule Proficiency|Ishiir} and it cannot regain hit points until the start of its next turn. However, all healing you receive is halved."
+                "If a creature within 10 feet of you deals piercing or slashing to you, it takes acid damage equal to your two rolls of your hemocraft die and any healing it receives is halved until the end of its next turn."
             ]
         },
         {
@@ -5612,7 +5612,7 @@
                 "MF"
             ],
             "entries": [
-                "You can breathe underwater and gain a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}, but you have {@variantrule Disadvantage|Ishiir} on initiative rolls."
+                "You can breathe underwater and gain a {@variantrule Swim Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. At 11th level in this class, your {@variantrule Swim Speed|Ishiir} is doubled."
             ]
         },
         {
@@ -5623,7 +5623,7 @@
                 "MF"
             ],
             "entries": [
-                "Your Dexterity score increases by 4, as does your maximum for that score. However, you have {@variantrule Disadvantage|Ishiir} on Wisdom {@variantrule Saving Throw|Ishiir|Saving Throws}."
+                "Your Dexterity score increases by 2, as does your maximum for that score. At 11th level in this class, both bonuses increase to 4. You can have only one Ability Score-increasing mutagen active on you at a time."
             ]
         },
         {
@@ -5634,7 +5634,7 @@
                 "MF"
             ],
             "entries": [
-                "You have {@variantrule Advantage|Ishiir} on Intelligence {@variantrule Ability Check|Ishiir|checks}. However, you have {@variantrule Disadvantage|Ishiir} on Wisdom {@variantrule Ability Check|Ishiir|checks}."
+                "Your Intelligence score increases by 2, as does your maximum for that score. At 11th level in this class, both bonuses increase to 4. You can have only one Ability Score-increasing mutagen active on you at a time."
             ]
         },
         {
@@ -5650,18 +5650,7 @@
                 }
             ],
             "entries": [
-                "When you use the {@action Attack|Ishiir} action, you can make one additional weapon attack as a {@variantrule Bonus Action|Ishiir}. However, you have {@variantrule Disadvantage|Ishiir} on Intelligence, Wisdom, and Charisma {@variantrule Saving Throw|Ishiir|Saving Throws}."
-            ]
-        },
-        {
-            "name": "Deftness",
-            "page": 1,
-            "source": "Ishiir",
-            "featureType": [
-                "MF"
-            ],
-            "entries": [
-                "You have {@variantrule Advantage|Ishiir} on Dexterity {@variantrule Ability Check|Ishiir|checks}. However, you have {@variantrule Disadvantage|Ishiir} on Wisdom {@variantrule Ability Check|Ishiir|checks}."
+                "For 10 minutes, you can make one additional attack when you take the {@action Attack|Ishiir} action."
             ]
         },
         {
@@ -5672,7 +5661,7 @@
                 "MF"
             ],
             "entries": [
-                "You have {@variantrule Resistance|Ishiir} to lightning damage, and you have vulnerability to acid damage."
+                "You have {@variantrule Resistance|Ishiir} to lightning damage. You can have only mutagen that grants you a {@variantrule Resistance|Ishiir} active at one time."
             ]
         },
         {
@@ -5683,7 +5672,7 @@
                 "MF"
             ],
             "entries": [
-                "You have {@variantrule Resistance|Ishiir} to fire damage and vulnerability to cold damage."
+                "You have {@variantrule Resistance|Ishiir} to fire damage. You can have only mutagen that grants you a {@variantrule Resistance|Ishiir} active at one time."
             ]
         },
         {
@@ -5694,7 +5683,7 @@
                 "MF"
             ],
             "entries": [
-                "You have {@variantrule Resistance|Ishiir} to cold damage and vulnerability to fire damage."
+                "You have {@variantrule Resistance|Ishiir} to cold damage. You can have only mutagen that grants you a {@variantrule Resistance|Ishiir} active at one time."
             ]
         },
         {
@@ -5705,7 +5694,7 @@
                 "MF"
             ],
             "entries": [
-                "You have {@variantrule Resistance|Ishiir} to piercing damage and vulnerability to slashing damage."
+                "You have {@variantrule Resistance|Ishiir} to piercing damage. You can have only mutagen that grants you a {@variantrule Resistance|Ishiir} active at one time."
             ]
         },
         {
@@ -5716,7 +5705,7 @@
                 "MF"
             ],
             "entries": [
-                "You have {@variantrule Immunity|Ishiir} to the {@condition Grappled|Ishiir} and {@condition Restrained|Ishiir} conditions. However, you have {@variantrule Disadvantage|Ishiir} on Constitution {@variantrule Saving Throw|Ishiir|Saving Throws}. At 11th level, you are also {@variantrule Immunity|Ishiir|Immune} to the {@condition Paralyzed|Ishiir} condition."
+                "You have {@variantrule Immunity|Ishiir} to the {@condition Grappled|Ishiir} and {@condition Restrained|Ishiir} conditions. At 11th level, you are also {@variantrule Immunity|Ishiir|Immune} to the {@condition Paralyzed|Ishiir} condition."
             ]
         },
         {
@@ -5727,18 +5716,7 @@
                 "MF"
             ],
             "entries": [
-                "You have {@sense darkvision} out to a range of 60 feet. If you already have {@sense darkvision}, its range increases by 60 feet. However, you have {@variantrule Disadvantage|Ishiir} on {@variantrule Attack Roll|Ishiir|Attack Rolls} and on Wisdom ({@skill Perception}) {@variantrule Ability Check|Ishiir|checks} that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
-            ]
-        },
-        {
-            "name": "Percipient",
-            "page": 1,
-            "source": "Ishiir",
-            "featureType": [
-                "MF"
-            ],
-            "entries": [
-                "You have {@variantrule Advantage|Ishiir} on Wisdom {@variantrule Ability Check|Ishiir|checks}. However, you have {@variantrule Disadvantage|Ishiir} on Charisma {@variantrule Ability Check|Ishiir|checks}."
+                "You have {@sense darkvision} out to a range of 60 feet. If you already have {@sense darkvision}, its range increases by 60 feet. At 11th level in this class, you can see normally in complete darkness."
             ]
         },
         {
@@ -5749,7 +5727,7 @@
                 "MF"
             ],
             "entries": [
-                "Your Strength score increases by 4, as does your maximum for that score. However, you have {@variantrule Disadvantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir|Saving Throws}."
+                "Your Strength score increases by 2, as does your maximum for that score. At 11th level in this class, both bonuses increase to 4. You can have only one Ability Score-increasing mutagen active on you at a time."
             ]
         },
         {
@@ -5765,7 +5743,7 @@
                 }
             ],
             "entries": [
-                "Your weapon attacks score a critical hit on a roll of 19 or 20. However, you have {@variantrule Disadvantage|Ishiir} on Strength {@variantrule Saving Throw|Ishiir|Saving Throws}."
+                "Your critical range with weapon attacks increases by 1. If you critically hit with a weapon, you deal additional damage equal to two rolls of your hemocraft die."
             ]
         },
         {
@@ -5776,7 +5754,7 @@
                 "MF"
             ],
             "entries": [
-                "Your {@variantrule Speed|Ishiir} increases by 10 feet. However, you have {@variantrule Disadvantage|Ishiir} on Intelligence {@variantrule Ability Check|Ishiir|checks}. At 15th level, your {@variantrule Speed|Ishiir} increases by an additional 5 feet."
+                "Your {@variantrule Speed|Ishiir} increases by 10 feet. At 11th level in this class, it increases by an additional 10 feet."
             ]
         },
         {
@@ -5788,11 +5766,11 @@
             ],
             "prerequisite": [
                 {
-                    "level": 7
+                    "level": 11
                 }
             ],
             "entries": [
-                "For 1 hour, at the start of each of your turns when you have at least 1 hit point, you regain hit points equal to your {@variantrule Proficiency|Ishiir} bonus. However, your {@variantrule Speed|Ishiir} is reduced by 10 feet during this time."
+                "While you have at least 1 hit point, you can expend a Hit Die and regain hit points as if you had taken a {@variantrule Short Rest|Ishiir|Rest} at the beginning of each of your turns."
             ]
         },
         {
@@ -5803,7 +5781,7 @@
                 "MF"
             ],
             "entries": [
-                "Your Intelligence or Wisdom score increases by 4, as does your maximum for that score. However, you have {@variantrule Disadvantage|Ishiir} on Constitution {@variantrule Saving Throw|Ishiir|Saving Throws}."
+                "Your Wisdom score increases by 2, as does your maximum for that score. At 11th level in this class, both bonuses increase to 4. You can have only one Ability Score-increasing mutagen active on you at a time."
             ]
         },
         {
@@ -5814,7 +5792,7 @@
                 "MF"
             ],
             "entries": [
-                "You have {@variantrule Resistance|Ishiir} to acid damage, and you have vulnerability to lightning damage."
+                "You have {@variantrule Resistance|Ishiir} to acid damage. You can have only mutagen that grants you a {@variantrule Resistance|Ishiir} active at one time."
             ]
         },
         {
@@ -5825,7 +5803,7 @@
                 "MF"
             ],
             "entries": [
-                "You have {@variantrule Resistance|Ishiir} to slashing damage, and you have vulnerability to bludgeoning damage."
+                "You have {@variantrule Resistance|Ishiir} to slashing damage. You can have only mutagen that grants you a {@variantrule Resistance|Ishiir} active at one time."
             ]
         },
         {
@@ -5836,7 +5814,7 @@
                 "MF"
             ],
             "entries": [
-                "You have {@variantrule Resistance|Ishiir} to bludgeoning damage, and you have vulnerability to piercing damage."
+                "You have {@variantrule Resistance|Ishiir} to bludgeoning damage. You can have only mutagen that grants you a {@variantrule Resistance|Ishiir} active at one time."
             ]
         },
         {
@@ -5847,7 +5825,18 @@
                 "MF"
             ],
             "entries": [
-                "You gain an additional use of your Blood Maledict feature. However, you have {@variantrule Disadvantage|Ishiir} on death {@variantrule Saving Throw|Ishiir|Saving Throws}."
+                "When you regain a Hit Die through your Crimson Rite, you can choose to regain a use of your Blood Maledict instead."
+            ]
+        },
+        {
+            "name": "Vitality",
+            "page": 1,
+            "source": "Ishiir",
+            "featureType": [
+                "MF"
+            ],
+            "entries": [
+                "Your Constitution score increases by 2, as does your maximum for that score. At 11th level in this class, both bonuses increase to 4. You can have only one Ability Score-increasing mutagen active on you at a time."
             ]
         },
         {
