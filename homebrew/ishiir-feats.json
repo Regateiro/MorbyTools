@@ -1377,8 +1377,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "Your {@sense darkvision} range increases to 120 feet.",
-                        "When you have to make a Wisdom {@variantrule Saving Throw|Ishiir} against effects that cause you to be {@condition Charmed|Ishiir}, {@condition Confused|Ishiir}, {@condition Dominated|Ishiir}, {@condition Frightened|Ishiir}, {@condition Paralyzed|Ishiir}, or {@condition Stunned|Ishiir}, you can make a Constitution {@variantrule Saving Throw|Ishiir} instead."
+                        "Your {@sense darkvision} range increases by 60 feet and you can see normally in complete darkness.",
+                        "If you are subject to an effect that requires you to make a Wisdom {@variantrule Saving Throw|Ishiir}, you can make a Constitution {@variantrule Saving Throw|Ishiir} instead."
                     ]
                 }
             ]
@@ -1570,24 +1570,13 @@
                     ]
                 }
             ],
-            "ability": [
-                {
-                    "choose": {
-                        "from": [
-                            "str",
-                            "con",
-                            "cha"
-                        ],
-                        "amount": 1
-                    }
-                }
-            ],
             "entries": [
                 "When angered, you radiate menace. You gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
-                        "Instead of exhaling destructive energy, you can expend a use of your Breath Weapon trait to roar, forcing each creature of your choice within 30 feet of you to make a Wisdom {@variantrule Saving Throw|Ishiir} (DC 8 + your {@variantrule Proficiency|Ishiir} bonus + your Charisma modifier). A target automatically succeeds on the save if it can't hear or see you. On a failed save, a target becomes {@condition Frightened|Ishiir} of you for 1 minute. If the {@condition Frightened|Ishiir} target takes any damage, it can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on itself on a success. If you also have Ancient Blood feat, the radius of this feature increases to 60 feet."
+                        "You gain an additional use of your racial breath weapon. You regain all expended uses when you finish a Short or Long Rest.",
+                        "Instead of exhaling destructive energy, you can expend a use of your Breath Weapon trait to roar, forcing each creature of your choice within 30 feet of you to make a Wisdom {@variantrule Saving Throw|Ishiir} (DC 8 + your {@variantrule Proficiency|Ishiir} bonus + your Intelligence or Charisma modifier). A target automatically succeeds on the save if it can't hear or see you. On a failed save, a target becomes {@condition Frightened|Ishiir} of you for 1 minute. If the {@condition Frightened|Ishiir} target takes any damage, it can repeat the {@variantrule Saving Throw|Ishiir}, ending the effect on itself on a success. If you also have Ancient Blood feat, the radius of this feature increases to 60 feet."
                     ]
                 }
             ]
@@ -1611,8 +1600,7 @@
                         "from": [
                             "str",
                             "dex",
-                            "con",
-                            "cha"
+                            "con"
                         ],
                         "amount": 1
                     }
@@ -1623,7 +1611,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "Your scales harden. While you aren't wearing armor, you can calculate your AC as 13 + {@variantrule Proficiency|Ishiir}. You can use a shield and still gain this benefit.",
+                        "Your scales harden. While you aren't wearing armor, you can calculate your AC as 13 + {@variantrule Proficiency|Ishiir}. You can use a shield and still gain this benefit. If you already have a different feature that grants you an alternate AC formula, you can instead increase your AC by 1.",
                         "You grow retractable claws from the tips of your fingers. Extending or retracting the claws requires no action. The claws are natural weapons, which you can use to make {@variantrule Unarmed Strike|Ishiir|Unarmed Strikes}, and deal {@dice 1d6} slashing damage on a hit. You can choose your whether to use your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.",
                         "If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your claws to attack."
                     ]
@@ -1707,8 +1695,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "Whenever you take the {@action Dodge|Ishiir} action in combat, you can spend one Hit Die to heal yourself. Roll the die, add your Constitution modifier, and regain a number of hit points equal to the total (minimum of 1).",
-                        "You can spend Hit Dice outside combat as if you had taken a {@variantrule Short Rest|Ishiir}, as long as do so during a period of downtime at least 10 minutes long and you perform no strenuous activity during that time."
+                        "Once per turn, when you take the {@action Dodge|Ishiir} action in combat or when you end your turn without having moved from your original position, you can spend one Hit Die and regain hit points as if you had taken a Rest.",
+                        "Whenever you roll Hit Dice to regain hit points, you add your Constitution modifier twice, rather than once."
                     ]
                 }
             ]
@@ -1822,13 +1810,13 @@
                 {
                     "type": "list",
                     "items": [
-                        "You gain {@variantrule Proficiency|Ishiir} in one skill of your choice. Choose an elven sub-race to which you do not belong, and gain the following benefits:",
+                        "Choose an elven sub-race to which you do not belong. You count as a member of the chosen elven sub-race for the purpose of meeting any prerequisites, such as items or feats. Additionally, you gain the following benefits:",
                         {
                             "type": "list",
                             "items": [
-                                "High Elf: Your Intelligence, Wisdom, or Charisma (your choice) increases by 1, to a maximum of 20, and you gain your choice of one of the following High Elf subrace features: one skill from High Elf Education, Cantrip, or Extra Language.",
-                                "Wood Elf: Your Strength, Constitution, or Wisdom (your choice) increases by 1, to a maximum of 20, and you gain your choice of one of the following Wood Elf subrace features: Elf Weapon Training, Fleet of Foot, Born Predator, One with the Wild, Mask of the Wild.",
-                                "Dark Elf: Your Strength, Wisdom, or Charisma (your choice) increases by 1, to a maximum of 20, and you gain your choice of one the following Dark Elf subrace features: Elf Weapon Training, Dark Elf Spellcasting (except Healing Spirit)."
+                                "High Elf: Your Intelligence, Wisdom, or Charisma (your choice) increases by 1, to a maximum of 20, and you gain the following High Elf subrace features: High Elf Education, Cantrip, and Extra Language.",
+                                "Wood Elf: Your Strength, Constitution, or Wisdom (your choice) increases by 1, to a maximum of 20, and you gain the following Wood Elf subrace features: Elf Weapon Training, Fleet of Foot, Born Predator, One with the Wild, and Mask of the Wild.",
+                                "Dark Elf: Your Strength, Wisdom, or Charisma (your choice) increases by 1, to a maximum of 20, and you gain the following Dark Elf subrace features: Elf Weapon Training, and Dark Elf Spellcasting."
                             ]
                         }
                     ]
@@ -2246,8 +2234,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "When you roll fire damage for a spell you cast, you can reroll any roll of 1 on the fire damage dice, but you must use the new roll, even if it is another 1. If you already have a feature that allows you to reroll spell damage, you instead increase the reroll threshold to 2 if the spell deals fire damage.",
-                        "Whenever you {@action Magic|Ishiir|cast a spell} that deals fire damage, you can cause flames to wreathe you until the end of your next turn. The flames don't harm you or your possessions, and they shed bright light out to 30 feet and dim light for an additional 30 feet. While the flames are present, any creature within 5 feet of you that hits you with a melee attack takes {@dice 1d4} fire damage."
+                        "When you cast a spell that deals fire damage by expending one of your spell slots, you can treat it as one spell level higher than the spell slot you expended for the purpose of determining its effects. It's still considered the same spell level as the spell slot expended for all other interactions (such as with an opposing {@spell Dispel Magic|Ishiir}).",
+                        "If you deal fire damage to a creature, any healing it receives is halved until the start of your next turn."
                     ]
                 }
             ]
@@ -4714,7 +4702,7 @@
                                 "anySkill",
                                 "anyTool"
                             ],
-                            "count": 3
+                            "count": 2
                         }
                     ]
                 }
@@ -4723,7 +4711,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "You gain {@variantrule Proficiency|Ishiir} in any combination of three {@table skills|phb} or {@filter tools|items|type=tools;artisan's tools;instrument;gaming set;vehicle (land);vehicle (water)} of your choice."
+                        "You gain {@variantrule Proficiency|Ishiir} in any combination of two {@table skills|phb} or {@filter tools|items|type=tools;artisan's tools;instrument;gaming set;vehicle (land);vehicle (water)} of your choice.",
+                        "You can substitute the ability score used for the chosen skills or tools with a different one. The new ability score has to be of the same subcategory of ability scores as the original one: physical (STR, DEX, CON) or mental (INT, WIS, CHA)."
                     ]
                 }
             ]
@@ -5494,7 +5483,7 @@
                     "type": "list",
                     "items": [
                         "You gain {@variantrule Proficiency|Ishiir} with the {@item poisoner's kit|Ishiir} and you have {@variantrule Advantage|Ishiir} on nature {@variantrule Ability Check|Ishiir|checks} to extract poison from natural creatures. If you already have {@variantrule Proficiency|Ishiir} in it, your {@variantrule Proficiency|Ishiir} bonus is doubled for all {@variantrule Ability Check|Ishiir|checks} you make with it.",
-                        "{@condition Surprised|Ishiir} creatures make {@variantrule Saving Throw|Ishiir|Saving Throws} against poison-based effects and poison damage caused by you with {@variantrule Disadvantage|Ishiir}.",
+                        "Creatures that haven't taken a turn in combat yet make {@variantrule Saving Throw|Ishiir|Saving Throws} against poison-based effects and poison damage caused by you with {@variantrule Disadvantage|Ishiir}.",
                         "Poisons you use and spells cast by you that deal poison damage ignore {@variantrule Resistance|Ishiir} to poison damage."
                     ]
                 }
