@@ -644,7 +644,7 @@
                                             "type": "item",
                                             "name": "Expert Superior Technique",
                                             "entries": [
-                                                "You gain an additional superiority die and learn an additional maneuver available to the Battle Master archetype. Additionally, the die size of the superiority die increases by one."
+                                                "You gain an additional superiority die and learn an additional maneuver available to the Battle Master archetype."
                                             ]
                                         },
                                         {
@@ -881,7 +881,7 @@
                     "type": "list",
                     "items": [
                         "When you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your {@variantrule Proficiency|Ishiir} modifier + your character level. These temporary hit points last until you are no longer in combat.",
-                        "Additionally, when you use your Relentless Endurance feature, you can also remove all conditions from yourself that allow for a repeat save at the end of your turn."
+                        "Additionally, when you reduce a hostile creature to 0 hit points or you land a critical hit, you can immediately repeat a {@variantrule Saving Throw|Ishiir} against one on-going condition on you."
                     ]
                 }
             ]
@@ -1165,11 +1165,6 @@
             "name": "Conduit Mastery",
             "page": 1,
             "source": "Ishiir",
-            "prerequisite": [
-                {
-                    "spellcasting": true
-                }
-            ],
             "ability": [
                 {
                     "choose": {
@@ -1187,7 +1182,7 @@
                     "type": "list",
                     "items": [
                         "When you gain this feat, choose a damage type.",
-                        "Spells you cast ignore {@variantrule Resistance|Ishiir} to damage of the chosen type. In addition, when you roll a 1 on a damage die for a spell you cast that deals damage of that type, you can reroll the die. You must use the new roll, even if it is a 1.",
+                        "You ignore {@variantrule Resistance|Ishiir} to damage of the chosen type. In addition, when you roll a 1 on a damage die that deals damage of that type, you can reroll the die. You must use the new roll, even if it is a 1.",
                         "You can select this feat multiple times. Each time you do so, you must choose a different damage type."
                     ]
                 }
@@ -1494,12 +1489,13 @@
                 }
             ],
             "entries": [
+                "You gain the following benefits when using melee weapons that do not have heavy or two-handed property:",
                 {
                     "type": "list",
                     "items": [
-                        "When you hit a creature with a melee weapon that does not have the heavy or two-handed property, you can cause the weapon to deal extra damage to the target. The extra damage equals your {@variantrule Proficiency|Ishiir} Bonus.",
-                        "Your critical range with melee weapons increases by 1. This effect does not apply to weapons with the heavy or two-handed property.",
-                        "Once per turn, when you use the {@optfeature Lunge|Ishiir} mastery or attack a target with a melee weapon after moving at least 10 feet towards it in a straight line, you can choose to ignore {@variantrule Disadvantage|Ishiir} for your {@variantrule Attack Roll|Ishiir} and the target cannot use a {@variantrule Reaction|Ishiir} that uses this attack as a trigger."
+                        "When you hit a creature, you can cause the weapon to deal extra damage to the target. The extra damage equals your {@variantrule Proficiency|Ishiir} Bonus.",
+                        "Your critical range increases by 1.",
+                        "You gain the {@optfeature Lunge|Ishiir} mastery. Additionally, you can use {@optfeature Lunge|Ishiir} on the same attack as another mastery. Once per turn when you use the {@optfeature Lunge|Ishiir} mastery and the attack roll has {@variantrule Disadvantage|Ishiir}, you can choose to roll normally instead."
                     ]
                 }
             ]
@@ -3274,7 +3270,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "You learn two {@filter maneuvers|optionalfeatures|feature type=MV:B|source=Ishiir} of your choice from among those available to the {@class fighter|Ishiir|Battle Master|Battle Master|Ishiir|2-0} archetype in the fighter class. If a maneuver you use requires your target to make a {@variantrule Saving Throw|Ishiir} to resist the maneuver's effects, the {@variantrule Saving Throw|Ishiir} DC equals 8 + your {@variantrule Proficiency|Ishiir} bonus + your Strength or Dexterity modifier (your choice).",
+                        "You learn two {@filter maneuvers|optionalfeatures|feature type=MV:B|source=Ishiir} or other effects using Combat Superiority Dice of your choice from among those available to any archetype in the fighter class. If a maneuver you use requires your target to make a {@variantrule Saving Throw|Ishiir} to resist the maneuver's effects, the {@variantrule Saving Throw|Ishiir} DC equals 8 + your {@variantrule Proficiency|Ishiir} bonus + your Strength or Dexterity modifier (your choice).",
                         "You gain two superiority die, which is a {@dice d6} (this dice are added to any superiority dice you have from another source). These dice are used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}.",
                         "When you reach level 10, the size of these dice increases to a {@dice d8}."
                     ]
@@ -3936,7 +3932,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "When you hit with an attack using a simple or martial weapon, you can roll the weapon's damage dice an additional time and add it as extra damage of the weapon's damage type. Once you use this ability, you can't use it again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}.",
+                        "When you move at least 20 feet as part of your Furious Charge, you have {@variantrule Advantage|Ishiir} on the attack roll.",
                         "Immediately after you use your Relentless Endurance trait, you can use your {@variantrule Reaction|Ishiir} to make one weapon attack."
                     ]
                 }

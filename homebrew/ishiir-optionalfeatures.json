@@ -696,6 +696,25 @@
             ]
         },
         {
+            "name": "Surgical Weapon",
+            "source": "Ishiir",
+            "page": 23,
+            "featureType": [
+                "AI"
+            ],
+            "prerequisite": [
+                {
+                    "item": [
+                        "A simple or martial melee weapon that deals slashing damage"
+                    ]
+                }
+            ],
+            "entries": [
+                "This magic weapon grants a +2 bonus to damage rolls and skill checks to harvest ingredients from monsters made with it.",
+                "The bonus increases to +4 when you reach 10th level in this class. This bonus is subject to the enhancement bonus limit from items."
+            ]
+        },
+        {
             "name": "Heavy",
             "source": "Ishiir",
             "page": 1,
@@ -5299,7 +5318,8 @@
             ],
             "entries": [
                 "You learn one {@filter maneuver|optionalfeatures|feature type=MV:B|source=Ishiir} of your choice from among those available to the {@class fighter|Ishiir|Battle Master|Battle Master|Ishiir|2-0} archetype. If a maneuver you use requires your target to make a {@variantrule Saving Throw|Ishiir} to resist the maneuver's effects, the {@variantrule Saving Throw|Ishiir} DC equals 8 + your {@variantrule Proficiency|Ishiir} bonus + your Strength or Dexterity modifier (your choice).",
-                "You gain one superiority die, which is a {@dice d6} (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
+                "You gain one superiority die, which is a {@dice d6} (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}.",
+                "When you reach level 10, the size of this die increases to a d8."
             ]
         },
         {
@@ -6102,7 +6122,7 @@
             },
             "entries": [
                 "When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't {@condition Incapacitated|Ishiir}. This movement doesn't provoke {@action Opportunity Attack|Ishiir|Opportunity Attacks}.",
-                "Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled."
+                "Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled. This effect ends early if either of you become {@condition Incapaciated|Ishiir} or you are more than 5 feet away from each other. The AC bonus from this maneuver does not stack with that from {@optfeature Evasive Footwork|Ishiir}."
             ]
         },
         {
@@ -6200,7 +6220,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "You can expend one superiority die and use a {@variantrule Bonus Action|Ishiir} on your turn to feint, choosing one creature within 5 feet of you as your target. You have {@variantrule Advantage|Ishiir} on your next {@variantrule Attack Roll|Ishiir} against that creature this turn. If that attack hits, add the superiority die to the attack's damage roll."
+                "When you make a melee weapon attack, you can expend one superiority die to perform a feint. The target of the attack has to make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failure, you have {@variantrule Advantage|Ishiir} on this attack roll against the target and you add your superiority die to the damage if the attack hits."
             ]
         },
         {
@@ -6228,7 +6248,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "Immediately after you hit a creature with a melee attack on your turn, you can expend one superiority die and then try to grapple the target as a {@variantrule Bonus Action|Ishiir} (see the Player's Handbook for rules on grappling). Add the superiority die to your Strength ({@skill Athletics}) check."
+                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to grapple the target. You add the superiority die to the attack's damage roll, and if the target is no more than 1 size larger than you, it must make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failed save, the target becomes {@condition Grappled|Ishiir} by you."
             ]
         },
         {
@@ -6382,7 +6402,7 @@
                 "name": "Superiority Dice"
             },
             "entries": [
-                "When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within your reach. If the original {@variantrule Attack Roll|Ishiir} would hit the second creature, it takes damage equal to the number you roll on your superiority die. The damage is of the same type dealt by the original attack."
+                "When you make a melee weapon attack, you can expend one superiority die to perform a powerful arcing swing around you. The original target and any other creature within your reach has to make a Dexterity {@variantrule Saving Throw|Ishiir}. On a failure, a target takes damage equal to one roll of your superiority die."
             ]
         },
         {

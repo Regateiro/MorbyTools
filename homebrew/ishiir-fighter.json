@@ -872,7 +872,7 @@
                 "Battle Master|Fighter|Ishiir|Battle Master|Ishiir|3",
                 "Additional Maneuvers|Fighter|Ishiir|Battle Master|Ishiir|7",
                 "Additional Superiority Die|Fighter|Ishiir|Battle Master|Ishiir|7",
-                "Know Your Enemy|Fighter|Ishiir|Battle Master|Ishiir|7",
+                "Honed Technique|Fighter|Ishiir|Battle Master|Ishiir|7",
                 "Additional Maneuvers|Fighter|Ishiir|Battle Master|Ishiir|10",
                 "Improved Combat Superiority (d10)|Fighter|Ishiir|Battle Master|Ishiir|10",
                 "Additional Maneuvers|Fighter|Ishiir|Battle Master|Ishiir|15",
@@ -1968,7 +1968,7 @@
             ]
         },
         {
-            "name": "Know Your Enemy",
+            "name": "Honed Technique",
             "source": "Ishiir",
             "page": 1,
             "className": "Fighter",
@@ -1978,7 +1978,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "Your keen sense of observation allows you to spot weaknesses in your foe's defense. As a {@variantrule Bonus Action|Ishiir}, you can make a Wisdom ({@skill Insight}) check against a creature you can see within 60 feet. The DC is equal to 10 + half the creature's challenge rating (rounded down) or the creature's passive deception, whichever is higher. On a success, the creature has {@variantrule Disadvantage|Ishiir} on the next {@variantrule Saving Throw|Ishiir} against one of your maneuvers before the end of your next turn."
+                "Once per turn, you can reroll your superiority die and take either result."
             ]
         },
         {
@@ -2914,11 +2914,36 @@
                                 "You can expend superiority dice to gain a number of different benefits:",
                                 {
                                     "type": "list",
+                                    "style": "list-hang-notitle",
                                     "items": [
-                                        "When you miss with an {@variantrule Attack Roll|Ishiir}, you can expend one Superiority Die, roll that die, and add it to the {@variantrule Attack Roll|Ishiir}, potentially causing the attack to hit.",
-                                        "When you damage a creature with a weapon attack, you can expend one superiority die to add it to the damage roll. You can use this ability after rolling damage. If the attack causes the target to make a Constitution {@variantrule Saving Throw|Ishiir} to maintain {@condition Concentration|Ishiir}, it has {@variantrule Disadvantage|Ishiir} on that save.",
-                                        "When you fail an Intelligence, a Wisdom, or a Charisma {@variantrule Saving Throw|Ishiir}, you can expend one superiority die to add it to the roll, possibly turning the failure into a success.",
-                                        "When you make a Wisdom ({@skill Perception}) check to detect a hidden creature or object, or a Wisdom ({@skill Insight}) check to determine if someone is lying to you, you can expend one superiority die to add it to the roll. You can use this feature after seeing the total but before learning if you succeeded or failed."
+                                        {
+                                            "type": "item",
+                                            "name": "Precision Attack",
+                                            "entries": [
+                                                "When you miss with an {@variantrule Attack Roll|Ishiir}, you can expend one Superiority Die, roll that die, and add it to the {@variantrule Attack Roll|Ishiir}, potentially causing the attack to hit."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Monster's Bane",
+                                            "entries": [
+                                                "When you damage a creature with a weapon attack, you can expend one superiority die to add it to the damage roll. You can use this ability after rolling damage. If the attack causes the target to make a Constitution {@variantrule Saving Throw|Ishiir} to maintain {@condition Concentration|Ishiir}, it has {@variantrule Disadvantage|Ishiir} on that save."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Hunter's Resilience",
+                                            "entries": [
+                                                "When you fail an Intelligence, a Wisdom, or a Charisma {@variantrule Saving Throw|Ishiir}, you can expend one superiority die to add it to the roll, possibly turning the failure into a success."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Hunter's Knowledge",
+                                            "entries": [
+                                                "When you make a check that allows you to apply your {@variantrule Proficiency|Ishiir} in {@skill Arcana}, {@skill Insight}, {@skill Religion}, {@skill Perception}, or {@skill Survival}, you can expend one superiority die to bolster the check. Add the number rolled on the superiority die to your check. You apply this bonus after making the check but before learning if it was successful."
+                                            ]
+                                        }
                                     ]
                                 }
                             ]
@@ -2967,7 +2992,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "You can choose three creature types, except humanoids. Whenever you expend superiority dice to add to a damage roll, you can expend up to two dice instead of just one, adding both to the roll. Both dice are expended as normal. If the target of your attack has one of your chosen creature types, you deal maximum damage with all combat superiority dice you expended, instead of rolling them."
+                "You can choose three creature types, except humanoids. Whenever you use Monster's Bane, you can expend up to two dice instead of just one, adding both to the roll. Both dice are expended as normal. If the target of your attack has one of your chosen creature types, you deal maximum damage with all combat superiority dice you expended, instead of rolling them."
             ]
         },
         {
@@ -3769,10 +3794,29 @@
                                 "You can expend superiority dice to gain a number of different benefits:",
                                 {
                                     "type": "list",
+                                    "style": "list-hang-notitle",
                                     "items": [
-                                        "When you make a check that allows you to apply your {@variantrule Proficiency|Ishiir} in {@skill Athletics}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}, you can expend one superiority die to bolster the check. Add the number rolled on the superiority die to your check. You apply this bonus after making the check but before learning if it was successful.",
-                                        "When you miss with an {@variantrule Attack Roll|Ishiir}, you can expend one Superiority Die, roll that die, and add it to the {@variantrule Attack Roll|Ishiir}, potentially causing the attack to hit.",
-                                        "If you are hit by an attack while wearing light or medium armor, you can expend one superiority die as a {@variantrule Reaction|Ishiir}, adding the number rolled to your AC. If the attack still hits, you take half damage from it."
+                                        {
+                                            "type": "item",
+                                            "name": "Scout's Knowledge",
+                                            "entries": [
+                                                "When you make a check that allows you to apply your {@variantrule Proficiency|Ishiir} in {@skill Acrobatics}, {@skill Athletics}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}, you can expend one superiority die to bolster the check. Add the number rolled on the superiority die to your check. You apply this bonus after making the check but before learning if it was successful."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Precision Attack",
+                                            "entries": [
+                                                "When you miss with an {@variantrule Attack Roll|Ishiir}, you can expend one Superiority Die, roll that die, and add it to the {@variantrule Attack Roll|Ishiir}, potentially causing the attack to hit."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Scout's Deflection",
+                                            "entries": [
+                                                "If you are hit by an attack while wearing light or medium armor, you can expend one superiority die as a {@variantrule Reaction|Ishiir}, adding the number rolled to your AC. If the attack still hits, you take half damage from it."
+                                            ]
+                                        }
                                     ]
                                 }
                             ]
