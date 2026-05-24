@@ -4535,7 +4535,7 @@
             "header": 1,
             "entries": [
                 "As a {@variantrule Magic Action|Ishiir}, you can present your Holy Symbol and expend a use of Channel Divinity to manifest a 5-foot Emanation withering plague that surrounds you or one willing creature you touch for 1 minute. It ends early if you dismiss it (no action required), manifest it again, or have the {@condition Incapacitated|Ishiir} condition.",
-                "Each creature of your choice that starts its turn in the Emanation must succeed on a Constitution {@variantrule Saving Throw|Ishiir} against your spell save DC or gain 1 Exhaustion level. This feature can't increase a creature's Exhaustion level higher than a level equal to your Wisdom modifier (minimum of 1).",
+                "Each creature of your choice that starts its turn in the Emanation must succeed on a Constitution {@variantrule Saving Throw|Ishiir} against your spell save DC or gain 1 Exhaustion level. This feature can't increase a creature's Exhaustion level higher than a level equal to your Wisdom modifier (minimum of 1). For example, if you have a Wisdom score of 16, this feature can't increase a creature's Exhaustion level higher than 3.",
                 "The plague spread by this feature manifests with a specific symptom. Choose it from the Plague Symptoms table or determine it randomly.",
                 {
                     "type": "table",
@@ -4596,12 +4596,12 @@
                         {
                             "type": "item",
                             "name": "Putrid Shock.",
-                            "entry": "The target has the {@condition Incapacitated|Ishiir} condition until the end of its next turn. While Incapacitated, the target's Speed is 0."
+                            "entry": "The target has the {@condition Incapacitated|Ishiir} condition until the end of its next turn. While {@condition Incapacitated|Ishiir}, the target's Speed is 0."
                         },
                         {
                             "type": "item",
                             "name": "Toxic Infection.",
-                            "entry": "The target takes 3d6 Necrotic or Poison damage (your choice)."
+                            "entry": "The target takes {@damage 3d6} Necrotic or Poison damage (your choice)."
                         }
                     ]
                 },
@@ -4626,17 +4626,17 @@
                         {
                             "type": "item",
                             "name": "Condition Immunities.",
-                            "entry": "You have {@variantrule Immunity|Ishiir} to the Grappled, Paralyzed, Prone, and Restrained conditions."
+                            "entry": "You have {@variantrule Immunity|Ishiir} to the {@condition Grappled|Ishiir}, {@condition Paralyzed|Ishiir}, {@condition Prone|Ishiir}, and {@condition Restrained|Ishiir} conditions."
                         },
                         {
                             "type": "item",
                             "name": "Movement.",
-                            "entry": "You can enter and occupy another creature's space and vice versa. Additionally, you have a Climb Speed equal to your Speed, and you can climb difficult surfaces\u2014including along ceilings\u2014without needing to make an ability check."
+                            "entry": "You can enter and occupy another creature's space and vice versa. Additionally, you have a {@variantrule Climb Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}, and you can climb difficult surfaces\u2014including along ceilings\u2014without needing to make an ability check."
                         },
                         {
                             "type": "item",
                             "name": "Empowered Plague.",
-                            "entry": "While you are in this form, the areas of effect for your <i>Plague Blessing</i> and your <i>Virulent Burst</i> double. Additionally, the maximum number of Exhaustion levels your <i>Plague Blessing</i> can inflict increases to 6 and the damage of your <i>Virulent Burst</i> increases by your Cleric level."
+                            "entry": "While in this form, the areas of effect for your <i>Plague Blessing</i> and your <i>Virulent Burst</i> double. Additionally, the maximum number of Exhaustion levels your <i>Plague Blessing</i> can inflict increases to 6 and the damage of your <i>Virulent Burst</i> increases by your Cleric level."
                         }
                     ]
                 },
