@@ -6001,8 +6001,7 @@
                 "name": "Sorcery Point"
             },
             "entries": [
-                "When you {@action Magic|Ishiir|cast a spell} that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.",
-                "If the affected spell requires {@condition Concentration|Ishiir}, you have {@variantrule Advantage|Ishiir} on any {@variantrule Saving Throw|Ishiir} you make to maintain that {@condition Concentration|Ishiir}."
+                "When you {@action Magic|Ishiir|cast a spell} that has a duration of 1 minute or longer, you can spend 1 sorcery point per duration step to increase its duration by 1 step, to a maximum duration of 24 hours. If the affected spell requires {@condition Concentration|Ishiir}, you have {@variantrule Advantage|Ishiir} on any {@variantrule Saving Throw|Ishiir} you make to maintain that {@condition Concentration|Ishiir}."
             ]
         },
         {
@@ -6094,6 +6093,21 @@
             "entries": [
                 "When you {@action Magic|Ishiir|cast a spell} that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).",
                 "To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, {@spell Magic Missile|Ishiir} and {@spell Scorching Ray|Ishiir} aren't eligible, but {@spell Ray of Frost|Ishiir} and {@spell Chromatic Orb|Ishiir} are."
+            ]
+        },
+        {
+            "name": "Widen Spell",
+            "source": "Ishiir",
+            "page": 1,
+            "featureType": [
+                "MM"
+            ],
+            "consumes": {
+                "name": "Sorcery Point",
+                "amount": 2
+            },
+            "entries": [
+                "When you {@action Magic|Ishiir|cast a spell} that has an area of effect, you can expend 2 sorcery points to double the area of effect in all dimensions."
             ]
         },
         {
