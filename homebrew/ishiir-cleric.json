@@ -1722,6 +1722,43 @@
             ]
         },
         {
+            "name": "Pestilence Domain",
+            "shortName": "Pestilence",
+            "source": "Ishiir",
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "detect poison and disease|Ishiir",
+                            "protection from poison|Ishiir",
+                            "ray of enfeeblement|Ishiir",
+                            "ray of sickness|Ishiir"
+                        ],
+                        "5": [
+                            "stinking cloud|Ishiir",
+                            "vampiric touch|Ishiir"
+                        ],
+                        "7": [
+                            "blight|Ishiir",
+                            "giant insect|Ishiir"
+                        ],
+                        "9": [
+                            "contagion|Ishiir",
+                            "insect plague|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Pestilence Domain|Cleric|Ishiir|Pestilence|Ishiir|3",
+                "Virulent Burst|Cleric|Ishiir|Pestilence|Ishiir|6",
+                "Vermin Form|Cleric|Ishiir|Pestilence|Ishiir|17"
+            ]
+        },
+        {
             "name": "Solidarity Domain",
             "shortName": "Solidarity",
             "source": "Ishiir",
@@ -4403,6 +4440,212 @@
             "entries": [
                 "You gain {@variantrule Resistance|Ishiir} to two damage types of your choice. Whenever you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}, you can change the damage types you chose.",
                 "As an {@variantrule Action|Ishiir}, you can temporarily give up this {@variantrule Resistance|Ishiir} and transfer it to one creature you touch. The creature keeps the {@variantrule Resistance|Ishiir} until the end of your next {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir} or until you transfer it back to yourself as a {@variantrule Bonus Action|Ishiir}."
+            ]
+        },
+        {
+            "name": "Pestilence Domain",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Pestilence",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "Foment Plague and Rot. Clerics of the Pestilence Domain harness supernatural plague and decay to erode their enemies' vitality.",
+                "When you reach a Cleric level specified in the Pestilence Domain Spells table, you thereafter always have the listed spells prepared.",
+                {
+                    "type": "table",
+                    "caption": "Pestilence Domain Spells",
+                    "colLabels": [
+                        "Cleric Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Detect Poison and Disease|Ishiir}, {@spell Protection from Poison|Ishiir}, {@spell Ray of Enfeeblement|Ishiir}, {@spell Ray of Sickness|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Stinking Cloud|Ishiir}, {@spell Vampiric Touch|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Blight|Ishiir}, {@spell Giant Insect|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Contagion|Ishiir}, {@spell Insect Plague|Ishiir}"
+                        ]
+                    ]
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Blight Weaver|Cleric|Ishiir|Pestilence|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Plague Blessing|Cleric|Ishiir|Pestilence|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Blight Weaver",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Pestilence",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Inoculated Soul.",
+                            "entry": "You have {@variantrule Resistance|Ishiir} to Necrotic and Poison damage, and you can't be infected by magical contagions."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Rot and Fester.",
+                            "entry": "When you cast a Cleric spell that deals damage, you can change the damage to either Necrotic or Poison damage."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity: Plague Blessing",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Pestilence",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "As a {@variantrule Magic Action|Ishiir}, you can present your Holy Symbol and expend a use of Channel Divinity to manifest a 5-foot Emanation withering plague that surrounds you or one willing creature you touch for 1 minute. It ends early if you dismiss it (no action required), manifest it again, or have the {@condition Incapacitated|Ishiir} condition.",
+                "Each creature of your choice that starts its turn in the Emanation must succeed on a Constitution {@variantrule Saving Throw|Ishiir} against your spell save DC or gain 1 Exhaustion level. This feature can't increase a creature's Exhaustion level higher than a level equal to your Wisdom modifier (minimum of 1).",
+                "The plague spread by this feature manifests with a specific symptom. Choose it from the Plague Symptoms table or determine it randomly.",
+                {
+                    "type": "table",
+                    "caption": "Plague Symptoms",
+                    "colLabels": [
+                        "1d6",
+                        "While Infected, a Creature\u2026"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "1",
+                            "Is drained of all color, appearing in monochromatic grays."
+                        ],
+                        [
+                            "2",
+                            "Sheds metallic, rust-hued flakes and creaks while moving."
+                        ],
+                        [
+                            "3",
+                            "Secretes foul-smelling mucus."
+                        ],
+                        [
+                            "4",
+                            "Is surrounded by a cloud of buzzing insects."
+                        ],
+                        [
+                            "5",
+                            "Sprouts fungi or other foliage from its flesh."
+                        ],
+                        [
+                            "6",
+                            "Is covered in glowing pustules."
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Virulent Burst",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Pestilence",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "When an enemy within 60 feet of you is reduced to 0 Hit Points, you can take a {@variantrule Reaction|Ishiir} to cause plague to burst from that creature, spreading pestilence in a 10-foot Emanation originating from the enemy; if the enemy had at least 1 Exhaustion level, the size of the Emanation increases to 20 feet.",
+                "Each creature of your choice in the Emanation makes a Constitution {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failed save, a target suffers one of the following effects:",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Putrid Shock.",
+                            "entry": "The target has the {@condition Incapacitated|Ishiir} condition until the end of its next turn. While Incapacitated, the target's Speed is 0."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Toxic Infection.",
+                            "entry": "The target takes 3d6 Necrotic or Poison damage (your choice)."
+                        }
+                    ],
+                    "style": "list-hang-notitle"
+                },
+                "You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Vermin Form",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Pestilence",
+            "subclassSource": "Ishiir",
+            "level": 17,
+            "header": 2,
+            "entries": [
+                "As a {@variantrule Bonus Action|Ishiir}, you can shape-shift into a Medium swarm of Tiny pests, such as cockroaches, maggots, or rats. While you're in this form, you retain your general shape, personality, memories, and the ability to speak; any equipment you're wearing or carrying doesn't transform with you, but you can continue using that equipment while in this form. Your game statistics remain the same, apart from the following changes:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Condition Immunities.",
+                            "entry": "You have {@variantrule Immunity|Ishiir} to the Grappled, Paralyzed, Prone, and Restrained conditions."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Movement.",
+                            "entry": "You can enter and occupy another creature's space and vice versa. Additionally, you have a Climb Speed equal to your Speed, and you can climb difficult surfaces\u2014including along ceilings\u2014without needing to make an ability check."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Empowered Plague.",
+                            "entry": "While you are in this form, the areas of effect for your <i>Plague Blessing</i> and your <i>Virulent Burst</i> double. Additionally, the maximum number of Exhaustion levels your <i>Plague Blessing</i> can inflict increases to 6 and the damage of your <i>Virulent Burst</i> increases by your Cleric level."
+                        }
+                    ]
+                },
+                "You revert to your true form after 10 minutes, if you choose to end the transformation (no action required), if you have the {@condition Incapacitated|Ishiir} condition, or if you die.",
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir} unless you expend a level 5+ spell slot (no action required) to restore your use of it."
             ]
         },
         {
