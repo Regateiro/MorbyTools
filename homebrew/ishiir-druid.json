@@ -936,6 +936,40 @@
                 "Cauterizing Flames|Druid|Ishiir|Wildfire|Ishiir|10",
                 "Blazing Revival|Druid|Ishiir|Wildfire|Ishiir|14"
             ]
+        },
+        {
+            "name": "Circle of the Titan",
+            "shortName": "Titan",
+            "source": "Ishiir",
+            "className": "Druid",
+            "classSource": "Ishiir",
+            "page": 1,
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "cure wounds|Ishiir",
+                            "longstrider|Ishiir",
+                            "thaumaturgy|Ishiir"
+                        ],
+                        "5": [
+                            "fear|Ishiir"
+                        ],
+                        "7": [
+                            "stoneskin|Ishiir"
+                        ],
+                        "9": [
+                            "destructive wave|Ishiir"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Circle of the Titan|Druid|Ishiir|Titan|Ishiir|3",
+                "Titan's Blessing|Druid|Ishiir|Titan|Ishiir|6",
+                "Primal Havoc|Druid|Ishiir|Titan|Ishiir|10",
+                "Walking Catastrophe|Druid|Ishiir|Titan|Ishiir|14"
+            ]
         }
     ],
     "classFeature": [
@@ -3092,6 +3126,182 @@
             "entries": [
                 "The bond with your wildfire spirit can save you from death. If the spirit is within 120 feet of you when you are reduced to 0 hit points and thereby fall {@condition Unconscious|Ishiir}, you can cause the spirit to drop to 0 hit points. You then regain half your hit points and immediately rise to your feet.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Circle of the Titan",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Druid",
+            "classSource": "Ishiir",
+            "subclassShortName": "Titan",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "When civilization violates the natural world—by deforesting ancient groves, polluting sacred waters, or hunting wildlife to the brink of extinction—Druids of the Circle of the Titan intervene. Druids of this order believe that for nature to thrive, society must sometimes fall. To this end, they assume towering, monstrous forms to mete out cataclysmic retribution and forcibly restore the natural order.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Circle Spells|Druid|Ishiir|Titan|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Titan Form|Druid|Ishiir|Titan|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Circle Spells",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Druid",
+            "classSource": "Ishiir",
+            "subclassShortName": "Titan",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you reach a Druid level specified in the Circle of the Titan Spells table, you thereafter always have the listed spells prepared.",
+                "In addition, you can cast the spells from this feature while you're in your Titan Form.",
+                {
+                    "type": "table",
+                    "caption": "Circle of the Titan Spells",
+                    "colLabels": [
+                        "Druid Level",
+                        "Prepared Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Cure Wounds|Ishiir}, {@spell Longstrider|Ishiir}, {@spell Thaumaturgy|Ishiir}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Fear|Ishiir}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Stoneskin|Ishiir}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Destructive Wave|Ishiir}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Titan Form",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Druid",
+            "classSource": "Ishiir",
+            "subclassShortName": "Titan",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "consumes": {
+                "name": "Wild Shape",
+                "amount": 2
+            },
+            "entries": [
+                "When you use Wild Shape, you can expend two of its uses instead of one to adopt a Titan Form, choosing from the {@creature Behemoth|Ishiir}, {@creature Leviathan|Ishiir}, and {@creature Insectoid|Ishiir} stat blocks.",
+                "While you are in Titan Form, your Strength and Constitution score are equal to your Wisdom score. Your current and maximum hit points change accordingly. You do not lose any hit points gained in this manner when you revert to your original form unless they exceed your maximum. Otherwise, all the usual rules for Wildshape apply to your Titan Form as well."
+            ]
+        },
+        {
+            "name": "Titan's Blessing",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Druid",
+            "classSource": "Ishiir",
+            "subclassShortName": "Titan",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "While in Titan Form, you gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Titan's Might",
+                    "entries": [
+                        "Your attacks count as magical for the purpose of overcoming {@variantrule Resistance|Ishiir} and {@variantrule Immunity|Ishiir} to nonmagical attacks and damage."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Titan's Vigor",
+                    "entries": [
+                        "You current and maximum hit points increase by an additional amount equal to twice your Druid level."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Primal Havoc",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Druid",
+            "classSource": "Ishiir",
+            "subclassShortName": "Titan",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "The unbridled power of nature surges within you, granting you the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Improved Titan Form",
+                    "entries": [
+                        "You can choose to become Huge when assuming your Titan Form. Each Titan Form also gains an additional benefit, as noted in its respective stat block."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Above It All",
+                    "entries": [
+                        "While you are Huge or larger in your Titan Form, you ignore {@quickref Difficult Terrain||3}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Primal Infusion",
+                    "entries": [
+                        "When you assume your Titan Form, you can expend a level 3+ spell slot to increase your Strength and Constitution by 2 for the duration."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Walking Catastrophe",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Druid",
+            "classSource": "Ishiir",
+            "subclassShortName": "Titan",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "Your transformation embodies the vast size and terror of nature's titans. You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Supreme Titan Form",
+                    "entries": [
+                        "You can choose to become Gargantuan when assuming your Titan Form. Each Titan Form also gains an additional benefit, as noted in its respective stat block."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Greater Primal Infusion",
+                    "entries": [
+                        "When you use Primal Infusion, you can expend a level 5+ spell slot instead to increase your Strength and Constitution by 4 for the duration of your Titan Form."
+                    ]
+                }
             ]
         }
     ]

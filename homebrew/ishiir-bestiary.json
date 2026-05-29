@@ -2133,6 +2133,266 @@
                 }
             ],
             "hasToken": true
+        },
+        {
+            "name": "Behemoth",
+            "source": "Ishiir",
+            "page": 1,
+            "size": [
+                "L"
+            ],
+            "type": "beast",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + your Wisdom modifier"
+                }
+            ],
+            "hp": {
+                "special": "your druid hit points + temporary hit points from Titan's Vigor"
+            },
+            "speed": {
+                "walk": 40,
+                "climb": 40
+            },
+            "pbNote": "equals your proficiency bonus",
+            "str": 10,
+            "dex": 10,
+            "con": 10,
+            "int": 10,
+            "wis": 10,
+            "cha": 10,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 10,
+            "languages": [],
+            "cr": "1",
+            "trait": [
+                {
+                    "name": "Siege Monster",
+                    "entries": [
+                        "You deal double damage to objects and structures."
+                    ]
+                },
+                {
+                    "name": "Rampage (Requires Druid Level 10+)",
+                    "entries": [
+                        "When you can move through the spaces of enemy creatures at least 1 size smaller than you. If you do so, they have to make a Strength saving throw or take bludgeoning damage equal to half your Druid level + your Strength modifier and be knocked prone. This damage is doubled if a target is already prone."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack (Requires Druid Level 5+)",
+                    "entries": [
+                        "You use Rend twice."
+                    ]
+                },
+                {
+                    "name": "Rend",
+                    "entries": [
+                        "{@atk mw} +2 to hit, reach 5 ft., one target. {@h}{@damage 2d8} slashing damage.",
+                        "On a hit, the target has to make a Strength saving throw against your spell save DC or be knocked prone.",
+                        "The damage increases to 4d8 at 10th and 6d8 at 14th level in this class. Its range increases to 10 and 15 ft respectively."
+                    ]
+                },
+                {
+                    "name": "Destructive Breath",
+                    "entries": [
+                        "You expend a level 1+ spell slot to breathe destructive energy in a line 60 feet long and 5 feet wide. Any creature in the area has to make a Dexterity saving throw. On a failure, a target takes 2d6 \u00d7 the expended spell slot's level + your Wisdom modifier acid, cold, fire, or lightning damage (your choice when you use this feature). On a success, it takes half that damage.",
+                        "At 10th level, the size of the line increases to 100 feet long and 10 feet wide."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Behemoth's Rage (Requires Druid Level 14+)",
+                    "entries": [
+                        "You expend a level 5+ spell slot to enter a monstrous rage that lasts for 10 minutes or until you become incapacitated or your wildshape ends. While in this rage, you gain the following benefits:",
+                        "{@b You gain resistance to bludgeoning, slashing, and piercing damage.}",
+                        "{@b You have advantage on Strength saving throws and Strength checks.}",
+                        "{@b Your Rend deals additional force damage equal to a number of d8s \u00d7 half the expended spell slot's level (rounded down).}"
+                    ]
+                }
+            ],
+            "hasToken": true
+        },
+        {
+            "name": "Leviathan",
+            "source": "Ishiir",
+            "page": 1,
+            "size": [
+                "L"
+            ],
+            "type": "beast",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "13 + your Wisdom modifier"
+                }
+            ],
+            "hp": {
+                "special": "your druid hit points + temporary hit points from Titan's Vigor"
+            },
+            "speed": {
+                "walk": 30,
+                "swim": 60
+            },
+            "pbNote": "equals your proficiency bonus",
+            "str": 10,
+            "dex": 10,
+            "con": 10,
+            "int": 10,
+            "wis": 10,
+            "cha": 10,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 10,
+            "languages": [],
+            "cr": "1",
+            "trait": [
+                {
+                    "name": "Amphibious",
+                    "entries": [
+                        "You can breathe air and water."
+                    ]
+                },
+                {
+                    "name": "Siege Monster",
+                    "entries": [
+                        "You deal double damage to objects and structures."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack (Requires Druid Level 5+)",
+                    "entries": [
+                        "You use Bite twice. You can replace one Bite with a Constrict."
+                    ]
+                },
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} +2 to hit, reach 10 ft., one target. {@h}{@damage 2d6} piercing damage.",
+                        "On a hit, a target no more than 1 size larger than you has to make a Dexterity saving throw against your spell save DC or be grappled.",
+                        "The damage increases to 4d6 at 10th and 6d6 at 14th level in this class. Its range increases to 15 and 20 ft respectively."
+                    ]
+                },
+                {
+                    "name": "Constrict",
+                    "entries": [
+                        "{@atk mw} +2 to hit, reach 5 ft., one target. {@h}{@damage 2d8} bludgeoning damage.",
+                        "You can only use this attack against targets you have grappled. The target creature has to make a Strength save against spell save DC or be restrained until the end of your next turn.",
+                        "The damage increases to 4d8 at 10th and 6d8 at 14th level in this class. Its range increases to 10 and 15 ft respectively."
+                    ]
+                },
+                {
+                    "name": "Levinfall (Requires Druid Level 14+)",
+                    "entries": [
+                        "You expend a level 5+ spell slot to strike your foes with lightning. Choose a number of creatures up to your Wisdom modifier within 60 feet of you that you can see. Each target has to make a Dexterity saving throw against your spell save DC or take lightning damage equal to 1d8 \u00d7 the expended spell slot's level + your Wisdom modifier and become dazed until start of your next turn."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Whirling Vortex (Requires Druid Level 10+)",
+                    "entries": [
+                        "You expend a level 3+ spell slot to surround yourself with raging waves and winds in a 30 feet radius for 1 minute. This effect ends early if you end it (no action required), you become incapacitated or your wildshape ends.",
+                        "When you use this feature, you can exempt a number of creatures up to your Wisdom modifiers from its effects.",
+                        "Any creature has to make a Strength saving throw when they start their turn in the area of effect or enter it for the first time on a turn. On a failure, they are pulled towards the nearest space within 5 feet of you.",
+                        "Additionally, the area counts as difficult terrain and ranged weapon attack rolls that pass through it are made with disadvantage."
+                    ]
+                }
+            ],
+            "hasToken": true
+        },
+        {
+            "name": "Insectoid",
+            "source": "Ishiir",
+            "page": 1,
+            "size": [
+                "L"
+            ],
+            "type": "beast",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "12 + your Wisdom modifier"
+                }
+            ],
+            "hp": {
+                "special": "your druid hit points + temporary hit points from Titan's Vigor"
+            },
+            "speed": {
+                "walk": 20,
+                "fly": 60
+            },
+            "pbNote": "equals your proficiency bonus",
+            "str": 10,
+            "dex": 10,
+            "con": 10,
+            "int": 10,
+            "wis": 10,
+            "cha": 10,
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 10,
+            "languages": [],
+            "cr": "1",
+            "trait": [
+                {
+                    "name": "Hive Mind (Requires Druid Level 10+)",
+                    "entries": [
+                        "When you assume this form, you forge a telepathic link with a number of creatures of your choice you can see and that can communicate in at least one language; the maximum number of creatures is equal to your Druid level. You and the chosen creatures can communicate telepathically with each other whether or not you share a language as long as you are on the same plane."
+                    ]
+                },
+                {
+                    "name": "Flyby",
+                    "entries": [
+                        "The creature doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack (Requires Druid Level 5+)",
+                    "entries": [
+                        "You use Psychic Rend twice."
+                    ]
+                },
+                {
+                    "name": "Psychic Rend",
+                    "entries": [
+                        "{@atk mw} +2 to hit, reach 60 ft., one target. {@h}{@damage 2d4} psychic damage.",
+                        "The damage increases to 4d4 at 10th and 6d4 at 14th level in this class. Its range increases to 90 and 120 ft respectively."
+                    ]
+                },
+                {
+                    "name": "Invigorating Dust",
+                    "entries": [
+                        "You expend a level 1+ spell slot and emit a cloud of healing dust that can restore a number of hit points equal to 2d8 \u00d7 the expended spell slot's level + your Wisdom modifier. Choose any number of creatures within 30 feet of you and divide those hit points among them."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Reinforce Mind (Requires Druid Level 14+)",
+                    "entries": [
+                        "When a creature you can see affected by your Hive Mind feature fails an Intelligence, Wisdom, or Charisma saving throw, you can expend a level 2+ spell slot to add your Wisdom modifier to the roll, possibly turning it into a success."
+                    ]
+                }
+            ],
+            "hasToken": true
         }
     ]
 }
