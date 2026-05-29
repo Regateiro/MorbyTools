@@ -1474,6 +1474,21 @@
                 "Fight as One|Fighter|Ishiir|Wyvern Knight|Ishiir|15",
                 "Terror of the Skies|Fighter|Ishiir|Wyvern Knight|Ishiir|18"
             ]
+        },
+        {
+            "name": "Imperial Fist",
+            "shortName": "Imperial Fist",
+            "source": "Ishiir",
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "page": 1,
+            "subclassFeatures": [
+                "Imperial Fist|Fighter|Ishiir|Imperial Fist|Ishiir|3",
+                "Moving Wall|Fighter|Ishiir|Imperial Fist|Ishiir|7",
+                "Tip of the Spear|Fighter|Ishiir|Imperial Fist|Ishiir|10",
+                "Ruthless Tactics|Fighter|Ishiir|Imperial Fist|Ishiir|15",
+                "Empire's Finest|Fighter|Ishiir|Imperial Fist|Ishiir|18"
+            ]
         }
     ],
     "subclassFeature": [
@@ -4172,6 +4187,117 @@
             "entries": [
                 "Your companion grows to Huge size and the reach of its bite attack increases to 15 feet, its Strength and Constitution also increase by 2, to a maximum of 22.",
                 "Additionally, the damage of its Breath Weapon increases to {@damage 10d6} and the cone size increases to 60 feet."
+            ]
+        },
+        {
+            "name": "Imperial Fist",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Imperial Fist",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "The Imperial Fist is the elite of Nessus's military, the largest and self-proclaimed most disciplined army in the world of Ishiir. They embody the Empire's culturally ingrained striving for excellence, its emphasis on hierarchies, and its ruthless pursuit of its goals.",
+                "Not just any Nessian soldier can become an Imperial Fist. Years of training and service in the Imperial Guard with distinction are often only the first step on the path to bear the crown-clutching fist embossed on one's armor. Mastery is demanded and, once acquired, regularly tested. Only the best and most ambitious make the cut. And even among those, only the ones that live and breathe the idea of Nessian superiority and possess unfailing loyalty to the Emperor ever have a chance of ascending to its highest eschelons.",
+                "As such, being a member is rightly treated as a position of substantial prestige and high-ranking officers of the Fist are some of the most influential people in the City of Tiers.",
+                "The Imperial Fist specializes in tight formation fighting, presenting the enemy with an impenetrable wall of heavy infantry that can shatter any offense as well as exploit any openings with ruthless precision, especially those created by the other infamous branch of the Nessian military - the War Mages. Their special training also includes certain minor magical abilities, such as their iconic flaming weapons and the ability to create wards against allied spellcaster bombardment for deep strikes into enemy formations.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Emperor's Scourge|Fighter|Ishiir|Imperial Fist|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Military Poise|Fighter|Ishiir|Imperial Fist|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Emperor's Scourge",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Imperial Fist",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "As a {@variantrule Bonus Action|Ishiir}, you can light a melee weapon you are holding aflame. The fire is harmless to you and remains for 10 minutes or until you are no longer holding the weapon. Alternatively, you can end the effect yourself (no Action required).",
+                "While aflame, the weapon sheds bright light in a 20 feet radius and dim light in a 20 feet radius beyond that. When you deal damage with a weapon under this effect, you can choose to deal fire damage instead of the weapon's normal damage type.",
+                "Once on your turn, you can also deal an additional {@damage 1d6} fire damage with this weapon. If you have {@variantrule Advantage|Ishiir} on the attack roll or an ally of yours that is not {@condition Incapacitated|Ishiir} is within 5 feet of the target, this fire damage increases by a number of d6s equal to half your {@variantrule Proficiency|Ishiir} (rounded down)."
+            ]
+        },
+        {
+            "name": "Military Poise",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Imperial Fist",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You add your Charisma modifier to {@variantrule Saving Throw|Ishiir|saving throws} and {@variantrule Ability Check|Ishiir|ability checks} against being knocked {@condition Prone|Ishiir}, pulled, or pushed."
+            ]
+        },
+        {
+            "name": "Moving Wall",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Imperial Fist",
+            "subclassSource": "Ishiir",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "While you are within 5 feet of an allied creature and neither of you are {@condition Incapacitated|Ishiir}, both of you have {@variantrule Half Cover|Ishiir}.",
+                "When you move away from one or more allied creatures that are within 5 feet of you, they can use their {@variantrule Reaction|Ishiir} to move up to their {@variantrule Speed|Ishiir} to an unoccupied space within 5 feet of your new position."
+            ]
+        },
+        {
+            "name": "Tip of the Spear",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Imperial Fist",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "When you finish a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}, you can select any number of allied creatures you can see within 30 feet of you. Until the end of your next {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}, you and all allied creatures within 5 feet of you automatically succeed on all {@variantrule Saving Throw|Ishiir|saving throws} against the chosen creatures' spells, and you take no damage if you would normally take half damage on a successful save."
+            ]
+        },
+        {
+            "name": "Ruthless Tactics",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Imperial Fist",
+            "subclassSource": "Ishiir",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "You have {@variantrule Advantage|Ishiir} on all attack rolls against creatures that are afflicted by a Tier 2+ Condition or an on-going spell effect originating from a creature hostile to them."
+            ]
+        },
+        {
+            "name": "Empire's Finest",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Fighter",
+            "classSource": "Ishiir",
+            "subclassShortName": "Imperial Fist",
+            "subclassSource": "Ishiir",
+            "level": 18,
+            "header": 2,
+            "entries": [
+                "When you make a D20 test that you are proficient in during {@variantrule Combat|Ishiir}, you can treat a d20 roll of 9 or lower as a 10. You cannot use this feature again until the start of your next turn."
             ]
         }
     ]
