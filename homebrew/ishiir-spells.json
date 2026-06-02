@@ -4179,6 +4179,125 @@
             ]
         },
         {
+            "name": "Banish Object",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 4,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You send one object that you can see within range and that is no larger than 10 feet in any dimension and not being worn or held by another creature to another plane of existence. The target disappears with a faint popping noise and appears in a random location on another Inner Plane (Prime Material, Feywild, Shadowfell, or any of the Elemental Planes) determined by you.",
+                "If the object is magical, it makes a Charisma {@variantrule Saving Throw|Ishiir} to resist the effect. If the object does not have a Charisma score, it is assumed to be 10 for the purpose of this roll. If it is currently attuned to by a creature on the same plane, it makes this {@variantrule Saving Throw|Ishiir} with {@variantrule Advantage|Ishiir}. Depending on the rarity of the magical object, it receives a bonus to this roll as per the table below. If the object is magical but does not have a rarity, the DM determines its rarity instead.",
+                {
+                    "type": "table",
+                    "caption": "Magical Object Rarity",
+                    "colLabels": [
+                        "Magical Object Rarity",
+                        "Save Modifier"
+                    ],
+                    "colStyles": [
+                        "col-11",
+                        "col-1 text-center"
+                    ],
+                    "rows": [
+                        [
+                            "Rare",
+                            "+5"
+                        ],
+                        [
+                            "Very Rare",
+                            "+10"
+                        ],
+                        [
+                            "Legendary",
+                            "+15"
+                        ]
+                    ]
+                },
+                "If the magical object is native to the plane of existence you're on, you banish the target to a harmless demiplane. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
+                "If the target is native to a different plane of existence than the one you're on, it disappears instead as a non-magical object would, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, you can target one additional object or increase the maximum dimensions of the object by 10 feet in each dimension for each slot level above 4th."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "miscTags": [
+                "PS",
+                "OBJ",
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ],
+                "fromSubclass": []
+            }
+        },
+        {
             "name": "Banishment",
             "page": 1,
             "source": "Ishiir",
