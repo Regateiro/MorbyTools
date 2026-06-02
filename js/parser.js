@@ -1476,7 +1476,17 @@ Parser.SP_MISC_TAG_TO_FULL = {
 	CTE: "Creature Type Effects",
 	EAB: "Enhances Ability",
 	GOD: "God Spell",
-	CUR: "Curse"
+	CUR: "Curse",
+	FLY: "Grants Flight",
+	SWIM: "Grants Swim Speed",
+	SENS: "Enhanced Senses",
+	COMM: "Communication",
+	SHAPE: "Shapechanging",
+	RES: "Grants Resistance",
+	WARD: "Protective Ward",
+	CRWD: "Crowd Control",
+	UTIL: "Utility",
+	RED: "Reduces Damage"
 };
 Parser.spMiscTagToFull = function (type) {
 	return Parser._parse_aToB(Parser.SP_MISC_TAG_TO_FULL, type);
