@@ -231,7 +231,7 @@
                 "Proficiency Versatility|Fighter|Ishiir|4",
                 "Martial Versatility|Fighter|Ishiir|4",
                 "Extra Attack|Fighter|Ishiir|5",
-                "Tactical Shift|Fighter|Ishiir|5",
+                "Tactical Acumen|Fighter|Ishiir|5",
                 "Ability Score Improvement|Fighter|Ishiir|6",
                 "Proficiency Versatility|Fighter|Ishiir|6",
                 {
@@ -397,7 +397,7 @@
             "classSource": "Ishiir",
             "level": 2,
             "entries": [
-                "You have a mind for tactics on and off the battlefield. When you fail an {@variantrule Ability Check|Ishiir}, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining Hit Points, you roll {@dice 1d10} and add the number rolled to the {@variantrule Ability Check|Ishiir}, potentially turning it into a success. If the check still fails, this use of Second Wind isn't expended."
+                "You have a mind for tactics on the battlefield. When you roll Initiative, you roll a {@dice d10} and add it to the result. When you fail a Skill Check you are {@variantrule Proficiency|Ishiir|proficient} in during Combat, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining Hit Points, you roll {@dice 1d10} and add the number rolled to the {@variantrule Ability Check|Ishiir}, potentially turning it into a success. If the check still fails, this use of Second Wind isn't expended."
             ]
         },
         {
@@ -478,14 +478,22 @@
             ]
         },
         {
-            "name": "Tactical Shift",
+            "name": "Tactical Acumen",
             "source": "Ishiir",
             "page": 1,
             "className": "Fighter",
             "classSource": "Ishiir",
             "level": 5,
             "entries": [
-                "You can move up to half your {@variantrule Speed|Ishiir} without provoking {@action Opportunity Attack|Ishiir|Opportunity Attacks} when you use your Second Wind feature."
+                "When you use your Second Wind feature, you can choose one of the following additional effects:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You can move up to half your {@variantrule Speed|Ishiir} without provoking {@action Opportunity Attack|Ishiir|Attacks of Opportunity}.",
+                        "If you are under the effect of the {@action Dodge|Ishiir} action, you also have {@variantrule Advantage|Ishiir} on Strength and Constitution {@variantrule Saving Throw|Ishiir|Saving Throws} for its duration.",
+                        "If you are under the effect of the {@action Dash|Ishiir} action, you can make a single weapon attack with a weapon you are holding."
+                    ]
+                }
             ]
         },
         {
@@ -2538,7 +2546,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "When you use Second Wind and Tactical Shift, you can move up to your full {@variantrule Speed|Ishiir} instead. If you choose to not receive healing from Second Wind, you can activate it without a {@variantrule Bonus Action|Ishiir}. You can do so only once on your turn.",
+                "When you use Second Wind and Tactical Acumen, you can move up to your full {@variantrule Speed|Ishiir} instead. If you choose to not receive healing from Second Wind, you can activate it without a {@variantrule Bonus Action|Ishiir}. You can do so only once on your turn.",
                 "Additionally, this movement allows you to move through the spaces of hostile creatures, treating them as {@quickref Difficult Terrain||3}."
             ]
         },

@@ -18373,7 +18373,7 @@
                 }
             ],
             "entries": [
-                "Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an {@variantrule Ability Check|Ishiir} using your spellcasting ability. The DC equals 10 + the caster's spellcasting ability modifier + the difference between the spell slot level used for your dispel magic and that of the target spell. On a successful check, the spell ends."
+                "Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an {@variantrule Ability Check|Ishiir} using your spellcasting ability. The DC equals 10 + the spell slot level of the target spell + the difference between the spell slot level used for your dispel magic and that of the target spell. On a successful check, the spell ends."
             ],
             "entriesHigherLevel": [
                 {
@@ -32113,16 +32113,16 @@
                 }
             ],
             "entries": [
-                "You call forth a nature spirit to soothe the wounded. The intangible spirit appears in a space that is a 5-foot cube you can see within range. The spirit looks like a transparent beast or fey (your choice).",
-                "Until the spell ends, whenever you or a creature you can see moves into the spirit's space for the first time on a turn or starts its turn there, you can cause the spirit to restore {@dice 1d6} hit points to that creature (no action required). The spirit can't heal constructs or undead. The spirit can heal a number of times equal to 1 + your spellcasting ability modifier (minimum of twice). After healing that number of times, the spirit disappears.",
-                "As a {@variantrule Bonus Action|Ishiir} on your turn, you can move the spirit up to 30 feet to a space you can see."
+                "You call forth a nature spirit to soothe the wounded. Choose an allied creature you can see within range. The spirit appears in the target's space. Whenever the target moves, including teleportation, the spirit moves as well. The spirit is intangible and looks like a transparent beast or fey (your choice).",
+                "Until the spell ends, the spirit heals the target for {@dice 1d6} hit points at the start of each of the target's turns. If you cast another spell that restores hit points during that time, you can choose use the target as the point of origin.",
+                "As a {@variantrule Bonus Action|Ishiir} on subsequent turns, you can transfer the spirit to a different allied creature you can see within 30 feet of the current target."
             ],
             "entriesHigherLevel": [
                 {
                     "type": "entries",
                     "name": "At Higher Levels",
                     "entries": [
-                        "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@scaledice 1d6|2-9|1d6} for each slot level above 2nd."
+                        "When you cast this spell using a spell slot of 3rd level or higher, you can select an additional creature within range to also receive a healing spirit for every two slot levels above 2nd."
                     ]
                 }
             ],
@@ -66727,7 +66727,7 @@
                 }
             ],
             "entries": [
-                "When you cast the spell and as a {@variantrule Bonus Action|Ishiir} on your subsequent turns, you can choose one creature, object, or magical effect within range. Any spell of 7th level or lower on the target ends. For each spell of 8th level or higher on the target, make an {@variantrule Ability Check|Ishiir} using your spellcasting ability. The DC equals 10 + the caster's spellcasting ability modifier + the difference between the spell slot level used for your warding whip and that of the target spell. On a successful check, the spell ends."
+                "When you cast the spell and as a {@variantrule Bonus Action|Ishiir} on your subsequent turns, you can choose one creature, object, or magical effect within range. Any spell of 7th level or lower on the target ends. For each spell of 8th level or higher on the target, make an {@variantrule Ability Check|Ishiir} using your spellcasting ability. The DC equals 10 + the spell slot level of the target spell + the difference between the spell slot level used for your warding whip and that of the target spell. On a successful check, the spell ends."
             ],
             "classes": {
                 "fromClassList": [
