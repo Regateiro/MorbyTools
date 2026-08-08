@@ -506,6 +506,23 @@
                 "Zealous Presence|Barbarian|Ishiir|Zealot|Ishiir|10",
                 "Rage of the Gods|Barbarian|Ishiir|Zealot|Ishiir|14"
             ]
+        },
+        {
+            "name": "Path of Lament",
+            "shortName": "Lament",
+            "source": "Ishiir",
+            "className": "Barbarian",
+            "classSource": "Ishiir",
+            "page": 1,
+            "spellcastingAbility": "wis",
+            "subclassFeatures": [
+                "Path of Lament|Barbarian|Ishiir|Lament|Ishiir|3",
+                "Banshee's Wail|Barbarian|Ishiir|Lament|Ishiir|3",
+                "Commune with the Dead|Barbarian|Ishiir|Lament|Ishiir|6",
+                "Horrifying Strike|Barbarian|Ishiir|Lament|Ishiir|6",
+                "Otherworldly Anguish|Barbarian|Ishiir|Lament|Ishiir|10",
+                "Sorrow Form|Barbarian|Ishiir|Lament|Ishiir|14"
+            ]
         }
     ],
     "classFeature": [
@@ -2625,6 +2642,170 @@
                             "type": "item",
                             "name": "Revivification.",
                             "entry": "When a creature within 30 feet of you would drop to 0 Hit Points, you can take a {@variantrule Reaction|Ishiir} to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Path of Lament",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Barbarian",
+            "classSource": "Ishiir",
+            "subclassShortName": "Lament",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "entries": [
+                "Barbarians who walk the Path of Lament hone their regrets into deadly weapons and channel their deepest sorrows into rageful action. Propelled by supernatural grief, their fury grants them gifts from beyond the grave.",
+                "A Barbarian may choose the Path of Lament, but more often the path is thrust on the Barbarian by unhappy accident. At the heart of the Barbarian's rage are great trauma and unresolved grief\u2014painful emotions fueled by haunting memories that rise to the surface during adrenaline-filled moments. You can roll on or choose a result from the Path of Lament Origins table to inspire the incident that forms the root of your despair.",
+                {
+                    "type": "table",
+                    "caption": "Path of Lament Origins",
+                    "colLabels": [
+                        "1d6",
+                        "Your Rage Stems from the Time \u2026"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "1",
+                            "A lost loved one rose as an undead monster."
+                        ],
+                        [
+                            "2",
+                            "Enemies slew your animal companion."
+                        ],
+                        [
+                            "3",
+                            "You (and you alone) escaped brutal captors."
+                        ],
+                        [
+                            "4",
+                            "You found your family's charred remains."
+                        ],
+                        [
+                            "5",
+                            "Your decision led to a devastating shipwreck."
+                        ],
+                        [
+                            "6",
+                            "Your elders banished you from your home."
+                        ]
+                    ]
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Banshee's Wail|Barbarian|Ishiir|Lament|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Banshee's Wail",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Barbarian",
+            "classSource": "Ishiir",
+            "subclassShortName": "Lament",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you activate your Rage or as a {@variantrule Bonus Action|Ishiir} while your Rage is active, you can let out a doleful wail. Each creature of your choice in a 30-foot Emanation originating from you makes a Constitution {@variantrule Saving Throw|Ishiir} (DC 8 plus your Constitution modifier and {@variantrule Proficiency|Ishiir} bonus). On a failed save, a creature takes Psychic damage and has the {@condition Deafened|Ishiir} condition for 1 minute. On a successful save, a creature takes half as much damage only. To determine the Psychic damage, roll a number of d12s equal to your Rage Damage bonus, and add them together.",
+                "You can use this feature a number of times equal to your Constitution modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}. You can also regain all uses by expending a use of your Rage (no action required)."
+            ]
+        },
+        {
+            "name": "Commune with the Dead",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Barbarian",
+            "classSource": "Ishiir",
+            "subclassShortName": "Lament",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "You can cast the {@spell Speak with Dead|Ishiir} spell but only as a Ritual. Wisdom is your spellcasting ability for it."
+            ]
+        },
+        {
+            "name": "Horrifying Strike",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Barbarian",
+            "classSource": "Ishiir",
+            "subclassShortName": "Lament",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Once per turn when you hit a creature with a Strength-based attack roll while your Rage is active, you can attempt to horrify the target. The target must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} (DC 8 plus your Constitution modifier and {@variantrule Proficiency|Ishiir} bonus) or have the {@condition Frightened|Ishiir} condition until the start of your next turn."
+            ]
+        },
+        {
+            "name": "Otherworldly Anguish",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Barbarian",
+            "classSource": "Ishiir",
+            "subclassShortName": "Lament",
+            "subclassSource": "Ishiir",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "You draw power from a sorrow so deep it extends beyond the boundaries of the realm of the living. You gain the following benefits.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Deathly Wail.",
+                            "entry": "If a target fails its {@variantrule Saving Throw|Ishiir} against your Banshee's Wail and it has Hit Points equal to twice your Barbarian level or fewer, it drops to 0 Hit Points instead of taking damage."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Impenetrable Sorrow.",
+                            "entry": "You can't be possessed."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Resistance.",
+                            "entry": "You have {@variantrule Resistance|Ishiir} to Cold and Necrotic damage while your Rage is active."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sorrow Form",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Barbarian",
+            "classSource": "Ishiir",
+            "subclassShortName": "Lament",
+            "subclassSource": "Ishiir",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "When you activate your Rage, you can empower yourself with undeath. You gain the benefits below for 1 minute or until you drop to 0 Hit Points. Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|Ishiir}.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Immunities.",
+                            "entry": "You have {@variantrule Immunity|Ishiir} to the {@condition Charmed|Ishiir} and {@condition Frightened|Ishiir} conditions. If you're {@condition Charmed|Ishiir} or {@condition Frightened|Ishiir} when you empower yourself, the condition ends on you. In addition, you can't gain Exhaustion levels."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Life-Draining Strike.",
+                            "entry": "When a creature fails its {@variantrule Saving Throw|Ishiir} against your Horrifying Strike, the creature takes {@damage 2d10} Necrotic damage. You regain Hit Points equal to the Necrotic damage dealt."
                         }
                     ]
                 }
