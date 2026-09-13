@@ -85,27 +85,27 @@
                     "type": "entries",
                     "name": "Claws",
                     "entries": [
-                        "Your sharp claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6 + your Strength or Dexterity modifier, instead of the normal unarmed strike damage."
+                        "Your sharp claws are natural weapons, which you can use to make {@variantrule Unarmed Strike|Ishiir|unarmed strikes}. If you hit with them, you deal slashing damage equal to {@dice 1d6} + your Strength modifier, instead of the normal unarmed strike damage. If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your claws to attack."
                     ]
                 },
                 {
                     "name": "Primal Agility",
                     "entries": [
-                        "Before you move, as a {@variantrule Bonus Action|Ishiir} you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns."
+                        "Before you move, as a {@variantrule Bonus Action|Ishiir} you can double your speed until the end of the turn. Your movement does not provoke {@action Opportunity Attack|Ishiir|opportunity attacks} until the end of your turn. Once you use this feature you may not do so again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
                     ],
                     "type": "entries"
                 },
                 {
                     "name": "Longstrider's Stamina",
                     "entries": [
-                        "When you take the {@action Dash|Ishiir} action or use your Primal Agility trait, difficult terrain doesn't cost you extra movement until the end of your turn."
+                        "When you take the {@action Dash|Ishiir} action or use your Primal Agility trait, {@quickref difficult terrain||3} doesn't cost you extra movement until the end of your turn. In addition your jump distance is doubled, and you don't need to move before making a long jump."
                     ],
                     "type": "entries"
                 },
                 {
-                    "name": "Pack Hunter",
+                    "name": "Thick Hide",
                     "entries": [
-                        "When an ally who is not {@condition Incapacitated|Ishiir} is within 5 feet of your attack target, you can gain {@variantrule Advantage|Ishiir} on attack rolls gainst that creature until the end of turn. You may do so a number of times equal to your {@variantrule Proficiency|Ishiir} bonus. You regain one expended use upon completing a {@variantrule Short Rest|Ishiir}, and all expended uses upon completing a {@variantrule Long Rest|Ishiir}."
+                        "As a {@variantrule Reaction|Ishiir}, when you are hit by a melee or spell attack, you may roll a number of {@dice d4}s equal to your {@variantrule Proficiency|Ishiir} bonus. You may reduce the damage you take from the attack by the result. You cannot reduce the damage to below 0. Once you use this feature you may not do so again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
                     ],
                     "type": "entries"
                 },
@@ -200,9 +200,8 @@
                 {
                     "name": "Breath Weapon",
                     "entries": [
-                        "When you take the {@action Attack|Ishiir} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide.",
-                        "Each creature in that area must make a Dexterity {@variantrule Saving Throw|Ishiir} (DC 8 plus your chosen modifier and {@variantrule Proficiency|Ishiir} Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).",
-                        "You can use this Breath Weapon a number of times equal to your {@variantrule Proficiency|Ishiir} Bonus, and you regain one expended use when you finish a {@variantrule Short Rest|Ishiir} and all expended uses when you finish a {@variantrule Long Rest|Ishiir}. Intelligence, Wisdom or Charisma is your ability modifier for your breath weapon, chosen when selecting this species."
+                        "You can use your {@variantrule Action|Ishiir} to exhale destructive energy. When you select this race you decide the Shape of the breath weapon (choose (a) a 5 by 30 ft. line or (b) a 15 ft. cone). Your draconic ancestry determines the damage type of the exhalation. Every creature in the area of effect needs to make a Dexterity {@variantrule Saving Throw|Ishiir} against a DC of 8 + any ability score bonus of your choice + your {@variantrule Proficiency|Ishiir} Bonus. The damage equals {@dice 4d6} on a failed save, and half as much on a successful one. The damage increases by {@dice 1d6} at levels 6, 11, and 16.",
+                        "After you use your Breath Weapon, you can't use it again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
                     ],
                     "type": "entries"
                 },
@@ -216,7 +215,7 @@
                 {
                     "name": "Draconic Flight",
                     "entries": [
-                        "When you reach character level 5, you can channel draconic magic to give yourself temporary flight. As a {@variantrule Bonus Action|Ishiir}, you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the {@condition Incapacitated|Ishiir} condition. During that time, you have a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. Once you use this trait, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
+                        "When you reach character level 5, you can channel draconic magic to give yourself temporary flight. As a {@variantrule Bonus Action|Ishiir}, you sprout spectral wings on your back that last for 1 minute or until you retract the wings (no action required) or have the {@condition Incapacitated|Ishiir} condition. During that time, you have a {@variantrule Fly Speed|Ishiir} equal to your {@variantrule Speed|Ishiir}. Once you use this trait, you can't use it again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
                     ],
                     "type": "entries"
                 },

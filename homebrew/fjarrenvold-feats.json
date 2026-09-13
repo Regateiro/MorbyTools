@@ -1,0 +1,143 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "FRV",
+                "abbreviation": "FRV",
+                "full": "Fjarrenvold",
+                "url": "https://regateiro.pt/5etools/homebrew/fjarrenvold-feats.json",
+                "version": "1.0.5",
+                "authors": [
+                    "Valasca"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ],
+        "dateAdded": 1734824400,
+        "dateLastModified": 1734963917
+    },
+    "feat": [
+        {
+            "name": "Bestial Wrath",
+            "page": 1,
+            "source": "FRV",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Bestari"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                "You gain the following features:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Choose one of the following:",
+                        {
+                            "type": "list",
+                            "items": [
+                                "You gain a {@variantrule Climb Speed|Ishiir} equal to your walking speed",
+                                "You gain a {@variantrule Swim Speed|Ishiir} equal to your walking speed",
+                                "Your walking speed increases by 10 feet."
+                            ]
+                        },
+                        "Increase the size of your unarmed strike damage for your Claws by 1 step.",
+                        "When you are reduced below half your maximum hit points, you gain temporary hit points equal to your Constitution modifier. The temporary hit points are gained after all damage is applied. Once you gain these temporary hit points, you cannot do so again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}. When you reach level 9, the temporary hit points are equal to double your Constitution modifier. When you reach level 17, the temporary hit points are equal to triple your Constitution modifier.",
+                        "Upon finishing a {@variantrule Short Rest|Ishiir}, you may regain hit points as though you rolled a hit die without expending a hit die. You may do so a number of times equal to half your {@variantrule Proficiency|Ishiir} bonus (rounded down), recovering all expended uses upon finishing a {@variantrule Long Rest|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Human Adaptability",
+            "page": 1,
+            "source": "FRV",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Human"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                "Select one of the options below, you gain the benefits relating to your choice:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Circle Adept",
+                            "entries": [
+                                "Choose one arcane school: Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, Transmutation.",
+                                "You learn a number of additional spells from your chosen school equal to half your {@variantrule Proficiency|Ishiir} bonus (rounded down). These spells can come from any spell list and count as class spells for you. You can only choose spells for which you have spell slots. When you level up, you can exchange one of these spells with a different one of your choice that meets the same criteria.",
+                                "When you cast a spell of your chosen school by expending one of your spell slots, you can treat it as one spell level higher than the spell slot you expended for the purpose of determining its effects. It's still considered the same spell level as the spell slot expended for all other interactions (such as with an opposing {@spell Dispel Magic|Ishiir}). You may use this feature a number of times equal to your spellcasting ability modifier. You regain all expended uses upon finishing a {@variantrule Long Rest|Ishiir}."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Disciple of the Eighteen",
+                            "entries": [
+                                "You learn the {@spell Guidance|Ishiir} cantrip. You also learn the {@spell Augury|Ishiir} spell, which you can cast once without expending a spell slot and without material components. You can't cast {@spell Augury|Ishiir} again in this manner until you finish a {@variantrule Long Rest|Ishiir}. You can also cast it using spell slots you have of the appropriate level.",
+                                "You gain {@variantrule Darkvision|Ishiir} up to a distance of 30 ft. You ignore heavy obscurement caused by fog and rain up to the same distance.",
+                                "As a {@variantrule Reaction|Ishiir}, when you or an ally that you can see within 30 feet of you suffers a critical hit, you can turn that attack into a normal hit. Any effects triggered by a critical hit are canceled. You can use this feature a number of times equal to half your {@variantrule Proficiency|Ishiir} modifier (rounded down). You regain all expended uses on a {@variantrule Long Rest|Ishiir}."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Hardened Survivor",
+                            "entries": [
+                                "When you take damage that drops you below 0 hit points but doesn't outright kill you, you drop to 1 hit point instead. You can't use this feature again until you finish a {@variantrule Long Rest|Ishiir}. In addition, you make death {@variantrule Saving Throw|Ishiir|Saving Throws} with {@variantrule Advantage|Ishiir}.",
+                                "When you drop to 50% of your maximum hit points or lower in combat, you make {@variantrule Saving Throw|Ishiir|Saving Throws} against ongoing effects on you at the beginning of your turn instead of at the end.",
+                                "You roll these {@variantrule Saving Throw|Ishiir|Saving Throws} before determining any of the effects that happen at the beginning of your turn."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Human Determination",
+                            "entries": [
+                                "Increase one ability score of your choice by 1, to a maximum of 20.",
+                                "You now gain {@variantrule Heroic Inspiration|Ishiir} from your {@b Resourceful} feature whenever you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}. You may still only have a maximum of one {@variantrule Heroic Inspiration|Ishiir} at a time.",
+                                "Choose one of the Skills selected from your {@b Skillful} feature, your proficiency bonus is doubled for skill checks made using the chosen skill."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Mind Fray",
+                            "entries": [
+                                "When you cast a spell that forces one or more creatures to make a STR, DEX, or CON {@variantrule Saving Throw|Ishiir}, you can instead force them to make a different {@variantrule Saving Throw|Ishiir} from among these three.",
+                                "When you cast a spell that forces one or more creatures to make an INT, WIS, or CHA {@variantrule Saving Throw|Ishiir}, you can instead force them to make a different {@variantrule Saving Throw|Ishiir} from among these three.",
+                                "{@variantrule Ability Check|Ishiir|Ability Checks} to counterspell, dispel, or otherwise disrupt or remove your spells have {@variantrule Disadvantage|Ishiir}."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Shadow Dancer's Curse",
+                            "entries": [
+                                "You radiate bad luck in a radius of 30 ft around you.",
+                                "When a creature inside this area rolls a d20 to make an attack, a {@variantrule Saving Throw|Ishiir}, or a skill check, you can roll a {@dice d8} and subtract the result of your roll from theirs. Once you reach level 11, you roll a {@dice d10} instead.",
+                                "You can use this feature three times. You can regain all expended uses on a {@variantrule Long Rest|Ishiir}."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Teachings of the Warchief",
+                            "entries": [
+                                "When you land a critical hit with a melee weapon, roll an additional weapon die and add it to the damage total.",
+                                "Once on your turn, when you take the {@action Attack|Ishiir} action, you can attempt to {@action Shove|Ishiir} a creature without replacing one of your attacks.",
+                                "You can attempt a {@action Grapple|Ishiir} while wielding a two-handed or versatile weapon in one hand. While grappling a creature, you can still make attacks with your weapon as if you were wielding it in two hands."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
