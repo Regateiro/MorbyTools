@@ -18,6 +18,110 @@
     },
     "feat": [
         {
+            "name": "Ancient Blood",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Dragonborn",
+                            "source": "Fjarrenvold"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "The damage of your Breath Weapon racial feature increases by {@dice 1d6} ({@dice 5d6}). The damage increment doubles at the levels 6 ({@dice 7d6}), 11 ({@dice 9d6}), and 16 ({@dice 11d6}).",
+                        "Additionally, your breath weapon increases in size as you grow stronger. For each point of {@variantrule Proficiency|Ishiir} above 2 your breath weapon grows by 10 feet if it is a line and by 5 feet if it is a cone.",
+                        "Further, you gain additional features related to your Breath Weapon based on your Draconic Ancestry:",
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "type": "list",
+                                    "style": "list-hang-notitle",
+                                    "items": [
+                                        {
+                                            "type": "item",
+                                            "name": "Black",
+                                            "entries": [
+                                                "Every creature that failed its {@variantrule Saving Throw|Ishiir} against your breath weapon also takes acid damage equal to double your {@variantrule Proficiency|Ishiir} at the beginning of each of its turns for 1 minute and its AC is reduced by 2. An affected creature can make a CON save at the end of each of its turns to end this effect."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Blue",
+                                            "entries": [
+                                                "Every creature that failed its {@variantrule Saving Throw|Ishiir} against your breath weapon is also {@condition Dazed|Ishiir} for 1 minute. An affected creature can make a CON save at the end of each of its turns to end this effect."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Green",
+                                            "entries": [
+                                                "Every creature that failed its {@variantrule Saving Throw|Ishiir} against your breath weapon is also {@condition Poisoned|Ishiir} for 1 minute. An affected creature can make a CON save at the end of each of its turns to end this effect."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Red",
+                                            "entries": [
+                                                "Your breath weapon's damage increases by {@dice 2d6} times half your {@variantrule Proficiency|Ishiir} (rounded down). Additionally every creature that failed its {@variantrule Saving Throw|Ishiir} against your breath weapon is also set aflame and takes fire damage equal to double your {@variantrule Proficiency|Ishiir} modifier at the beginning of each of its turns for 1 minute. An affected creature can make a DEX save at the end of each of its turns to end this effect."
+                                            ]
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "White",
+                                            "entries": [
+                                                "Every creature that failed its {@variantrule Saving Throw|Ishiir} against your breath weapon is also {@condition Restrained|Ishiir} for 1 minute. An affected creature can make a STR save at the end of each of its turns to end this effect."
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Arcane Denial",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "High Elf",
+                            "source": "Fjarrenvold"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                "You understand the underlying structure of hostile magic well enough to pull them apart. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When a creature you can see within 60 feet of you casts a spell, you can use your {@variantrule Reaction|Ishiir} to attempt to unravel it. The caster must make an ability check using its spellcasting ability, the DC equals 8 + your {@variantrule Proficiency|Ishiir} bonus + your Intelligence/Wisdom/Charisma modifier (your choice). On a failure, choose one of the below effects:",
+                        {
+                            "type": "list",
+                            "items": [
+                                "The spell's damage is halved (calculated before applying resistances and immunities)",
+                                "If the spell targets one creature, they have advantage on their saving throw",
+                                "If the spell requires concentration, the next Constitution saving throw the creature makes to maintain concentration on the spell is made at disadvantage"
+                            ]
+                        },
+                        "You may use this feature once before requiring a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir} to do so again. When you reach level 9, you gain an additional use, recovering one expended use upon finishing a {@variantrule Short Rest|Ishiir|Short} rest and all expended uses upon finishing a {@variantrule Long Rest|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Bestial Wrath",
             "page": 1,
             "source": "Fjarrenvold",
@@ -47,6 +151,245 @@
                         "Increase the size of your unarmed strike damage for your Claws by 1 step.",
                         "When you are reduced below half your maximum hit points, you gain temporary hit points equal to your Constitution modifier. The temporary hit points are gained after all damage is applied. Once you gain these temporary hit points, you cannot do so again until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}. When you reach level 9, the temporary hit points are equal to double your Constitution modifier. When you reach level 17, the temporary hit points are equal to triple your Constitution modifier.",
                         "Upon finishing a {@variantrule Short Rest|Ishiir}, you may regain hit points as though you rolled a hit die without expending a hit die. You may do so a number of times equal to half your {@variantrule Proficiency|Ishiir} bonus (rounded down), recovering all expended uses upon finishing a {@variantrule Long Rest|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bountiful Luck",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Halfling"
+                        }
+                    ]
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "int",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Your people have extraordinary luck, which you have learned to mystically lend to your companions when you see them falter.",
+                {
+                    "type": "list",
+                    "items": [
+                        "When an ally you can see within 30 feet of you rolls a 1 on the {@dice d20} for an attack roll, an ability check, or a saving throw, you can use your {@variantrule Reaction|Ishiir} to let the ally reroll the die. The ally must use the new roll."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dawnfather's Embrace",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "High Elf",
+                            "source": "Fjarrenvold"
+                        }
+                    ],
+                    "subrace": [
+                        {
+                            "name": "Descendant of the Light"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                "You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When you cast a spell without needing to expend a spell slot using your Divine Magic feature, the spell's level increases by 1.",
+                        "If you selected {@spell Bless|Ishiir} as your chosen spell for your Divine Magic feature you may target one additional creature when casting using your Divine Magic feature. Otherwise, you gain the ability to cast the {@spell Bless|Ishiir} spell once without expending a spell slot. You regain this ability when you finish a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}.",
+                        "When you make a Religion check, you may use your Wisdom or Charisma modifier in place of Intelligence."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dragon Hide",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Dragonborn",
+                            "source": "Fjarrenvold"
+                        }
+                    ]
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You manifest scales and claws reminiscent of draconic creatures. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Your scales harden. While you aren't wearing armor, you can calculate your AC as 13 + {@variantrule Proficiency|Ishiir}. You can use a shield and still gain this benefit. If you already have a different feature that grants you an alternate AC formula, you can instead increase your AC by 1.",
+                        "You grow retractable claws from the tips of your fingers. Extending or retracting the claws requires no action. The claws are natural weapons, which you can use to make {@variantrule Unarmed Strike|Ishiir|unarmed strikes}, and deal {@dice 1d6} slashing damage on a hit. You can choose your whether to use your Strength modifier for the attack and damage rolls.",
+                        "If you have another feature or effect that modifies the die size of your unarmed attacks, that die size instead increases by 1 step if you use your claws to attack."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Forge Hammer's Blessing",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Dwarf"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                "You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Choose an {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools} with which you are {@variantrule Proficiency|Ishiir}. You gain expertise in the chosen tool. In addition, choose a second artisan tool, you gain {@variantrule Proficiency|Ishiir} in the chosen tool.",
+                        "When you craft something, using a tool in which you are {@variantrule Proficiency|Ishiir|proficient} the item receives the masterwork property even if you only roll two successes for the crafting check.",
+                        "If a crafting check that uses a tool in which you are {@variantrule Proficiency|Ishiir|proficient} fails by only succeeding on 1 of the dice rolls, you do not expend any materials.",
+                        "If a crafting check that uses a tool in which you have {@variantrule Proficiency|Ishiir|expertise} fails by not succeeding on any of the dice rolls, you only expend half of the materials."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Forest Friends",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Gnome",
+                            "source": "Fjarrenvold"
+                        }
+                    ],
+                    "subrace": [
+                        {
+                            "name": "Forest"
+                        }
+                    ]
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain {@variantrule Proficiency|Ishiir} in the {@skill Animal Handling} skill. If you are already {@variantrule Proficiency|Ishiir|proficient} in the skill, you add double your {@variantrule Proficiency|Ishiir} bonus to {@variantrule Ability Check|Ishiir|checks} you make with it.",
+                        "Once per {@variantrule Long Rest|Ishiir}, if you fail an animal handling check you may treat the dice roll as a 9 potentially turning the failure into a success.",
+                        "You learn the {@spell Animal Friendship|Ishiir} spell, and you can cast it once expending a spell slot. You regain the ability to cast it in this way when you finish a {@variantrule Short Rest|Ishiir|Short} or {@variantrule Long Rest|Ishiir}. You can also cast it using spell slots you have of the appropriate level."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Forgotten Legacy",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Tiefling"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                "You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Increase one ability score of your choice by 1, and your maximum for it becomes 22.",
+                        "You gain proficiency one skill that uses your chosen ability score. If you are proficient in all skills that use your chosen ability score, instead gain proficiency in any skill of your choice.",
+                        "You learn one language of your choice."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gnomish Tinkering",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Gnome",
+                            "source": "Fjarrenvold"
+                        }
+                    ],
+                    "subrace": [
+                        {
+                            "name": "Rock"
+                        }
+                    ]
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When you make a crafting skill check with the {@item Tinker's Tools|PHB} you reduce the time required to finish the craft by an amount of hours equal to your {@variantrule Proficiency|Ishiir} bonus. You cannot reduce a craft time to below 1 hour.",
+                        "When you craft something, using {@item Tinker's Tools|PHB} in which you are {@variantrule Proficiency|Ishiir|proficient} the item receives the masterwork property even if you only roll two successes for the crafting check."
                     ]
                 }
             ]
@@ -84,7 +427,7 @@
                             "name": "Disciple of the Eighteen",
                             "items": [
                                 "You learn the {@spell Guidance|Ishiir} cantrip. You also learn the {@spell Augury|Ishiir} spell, which you can cast once without expending a spell slot and without material components. You can't cast {@spell Augury|Ishiir} again in this manner until you finish a {@variantrule Long Rest|Ishiir}. You can also cast it using spell slots you have of the appropriate level.",
-                                "You gain {@variantrule Darkvision|Ishiir} up to a distance of 30 ft. You ignore heavy obscurement caused by fog and rain up to the same distance.",
+                                "You gain {@sense darkvision} up to a distance of 30 ft. You ignore heavy obscurement caused by fog and rain up to the same distance.",
                                 "As a {@variantrule Reaction|Ishiir}, when you or an ally that you can see within 30 feet of you suffers a critical hit, you can turn that attack into a normal hit. Any effects triggered by a critical hit are canceled. You can use this feature a number of times equal to half your {@variantrule Proficiency|Ishiir} modifier (rounded down). You regain all expended uses on a {@variantrule Long Rest|Ishiir}."
                             ]
                         },
@@ -133,6 +476,269 @@
                                 "You can attempt a {@action Grapple|Ishiir} while wielding a two-handed or versatile weapon in one hand. While grappling a creature, you can still make attacks with your weapon as if you were wielding it in two hands."
                             ]
                         }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Natural Hunter",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Wood Elf"
+                        }
+                    ]
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "wis"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain {@variantrule Proficiency|Ishiir} in {@skill Survival}. If you already have {@variantrule Proficiency|Ishiir|proficiency}, you instead gain expertise.",
+                        "You have {@variantrule Advantage|Ishiir} on Wisdom ({@skill Survival}) {@variantrule Ability Check|Ishiir|checks} made to track creatures in natural environments.",
+                        "When travelling at a fast pace, you do not suffer the -2 penalty on foraging tasks."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Orcish Savagery",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Orc"
+                        }
+                    ]
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When you reduce a hostile creature to 0 hit points, you may immediately make one additional weapon attack against a target within your reach.",
+                        "Immediately after you use your Relentless Endurance feature, you may use your {@variantrule Reaction|Ishiir} to make one weapon attack with advantage. On a successful attack, the attack deals additional damage equal to either your Strength or Dexterity modifier."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Perfect Archery",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Wood Elf"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                "You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When you make a ranged weapon attack with a weapon of which you are {@variantrule Proficiency|Ishiir|proficient}, you double the normal range of the weapon.",
+                        "You gain a +1 bonus to any ranged weapon attack roll that targets a creature more than 60 feet away from you.",
+                        "Once per turn, when you hit a creature with a ranged weapon attack, you can force the creature to make strength saving throw, the DC equals 8 + your {@variantrule Proficiency|Ishiir} bonus + your Dexterity modifier. On a failed save, the creature takes additional damage equal to your Dexterity modifier * half your proficiency bonus (rounded down) and the arrow pierces the creatures foot reducing its speed to 0 until the end of its next turn.",
+                        "You may use Leg Graze a number of times equal to your {@variantrule Proficiency|Ishiir} bonus. You recover one expended use upon finishing a {@variantrule Short Rest|Ishiir|Short} and all expended uses upon finishing a {@variantrule Long Rest|Ishiir}. At level 9, you instead recover two expended uses when finishing a {@variantrule Short Rest|Ishiir|Short}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Second Chance",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Halfling"
+                        }
+                    ]
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "dex",
+                            "int",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Fortune favors you when someone tries to strike you. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When a creature you can see hits you with an Attack Roll, you can force that creature to reroll (no action required), taking the lower result. Once you use this ability, you can't use it again until you roll initiative at the start of combat or until you finish a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Supreme Spellcraft",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "High Elf",
+                            "source": "Fjarrenvold"
+                        }
+                    ],
+                    "subrace": [
+                        {
+                            "name": "Born of the Arcane"
+                        }
+                    ]
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You learn one cantrip that requires an attack roll. Choose the cantrip from the Sorcerer, Warlock, or Wizard spell list. Your spellcasting ability for this cantrip is Intelligence, Wisdom, or Charisma (your choice).",
+                        "When you cast the chosen cantrip, you may use your bonus action to reflect the spell to a second target within the spell's range of the original target. The reflected spell uses the same attack roll and damage roll as the original casting. The reflected spell affects the second target as though you had cast the cantrip on it.",
+                        "You may use this feature a number of times equal to your spellcasting ability modifier (minimum of one), recovering one expended use upon finishing a {@variantrule Short Rest|Ishiir|Short} or all expended uses upon finishing a {@variantrule Long Rest|Ishiir}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tyrant's Flames",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Tiefling"
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                "You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Once per turn, when you deal fire damage as part of an attack or spell that targets one creature you can force the creature to make a Constitution saving throw, the DC equals 8 + your {@variantrule Proficiency|Ishiir} bonus + any ability score bonus of your choice. On a failure, the creature is set aflame and takes fire damage equal to double your {@variantrule Proficiency|Ishiir} modifier at the beginning of each of its turns for 1 minute. A creature can repeat the saving throw at the end of each of its turns to end the effect.",
+                        "You are Immune to fire damage."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Unbroken",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Orc"
+                        }
+                    ]
+                }
+            ],
+            "ability": [
+                {
+                    "con": 1
+                }
+            ],
+            "entries": [
+                "You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "While you are standing on solid ground, you have {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against being knocked prone or forcibly moved.",
+                        "Whenever you gain temporary hit points from your Adrenaline Rush feature, choose a damage type: Bludgeoning, Piercing or Slashing. Whilst you have the temporary hit points from Adrenaline Rush you have {@variantrule Resistance|Ishiir} to the chosen damage type."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Unyielding Resilience",
+            "page": 1,
+            "source": "Fjarrenvold",
+            "prerequisite": [
+                {
+                    "race": [
+                        {
+                            "name": "Dwarf"
+                        }
+                    ]
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "The endurance of the mountains runs through your veins. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Whenever you roll Hit Dice to regain hit points, you add your Constitution modifier twice, rather than once.",
+                        "When you fail a saving throw of which you are {@variantrule Proficiency|Ishiir|proficient}, you can choose to succeed instead. You may use this feature a number of times equal to half your {@variantrule Proficiency|Ishiir} bonus (rounded down) before regaining all uses upon finishing a {@variantrule Long Rest|Ishiir}."
                     ]
                 }
             ]
