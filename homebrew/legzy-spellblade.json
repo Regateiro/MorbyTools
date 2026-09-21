@@ -1,0 +1,340 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Legzy",
+                "abbreviation": "Legzy",
+                "full": "Legzy",
+                "color": "#9933ff",
+                "url": "https://regateiro.pt/5etools/homebrew/legzy-spellblade.json",
+                "authors": [
+                    "Legzy"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "class": [
+        {
+            "name": "Spellblade",
+            "source": "Legzy",
+            "page": 1,
+            "hd": {
+                "number": 1,
+                "faces": 10
+            },
+            "proficiency": [
+                "dexterity",
+                "intelligence"
+            ],
+            "spellcastingAbility": "int",
+            "casterProgression": "1/2",
+            "spellsKnownProgression": [
+                2,
+                2,
+                3,
+                3,
+                4,
+                4,
+                5,
+                5,
+                6,
+                6,
+                7,
+                7,
+                8,
+                8,
+                9,
+                9,
+                10,
+                10,
+                11,
+                11
+            ],
+            "startingProficiencies": {
+                "armor": [
+                    "light",
+                    "medium",
+                    "{@item shield|Ishiir|shields}"
+                ],
+                "weapons": [
+                    "simple",
+                    "martial"
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "acrobatics",
+                                "arcana",
+                                "athletics",
+                                "history",
+                                "investigation",
+                                "perception",
+                                "sleight of hand"
+                            ],
+                            "count": 2
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "default": [
+                    "(a) a {@item Light Chain|Ishiir}, or (b) {@item Studded Leather Armor|Ishiir}",
+                    "(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item Shield|Ishiir}, or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
+                    "(a) a {@item Crossbow, Light|Ishiir} and {@item Crossbow Bolts (20)|Ishiir}, or (b) two {@filter simple weapons|items|source=phb|category=basic|type=simple weapon}",
+                    "(a) a {@item explorer's pack|phb} or (b) a {@item scholar's pack|phb}",
+                    "A component pouch"
+                ],
+                "goldAlternative": "{@dice 5d4 \u00d7 10|5d4 \u00d7 10|Starting Gold}",
+                "defaultData": [
+                    {
+                        "a": [
+                            "light chain|ishir"
+                        ],
+                        "b": [
+                            "studded leather armor|ishir"
+                        ]
+                    },
+                    {
+                        "a": [
+                            {
+                                "equipmentType": "weaponMartial"
+                            },
+                            "shield"
+                        ],
+                        "b": [
+                            {
+                                "equipmentType": "weaponMartial",
+                                "quantity": 2
+                            }
+                        ]
+                    },
+                    {
+                        "a": [
+                            "crossbow, light|ishir",
+                            "crossbow bolts (20)|ishir"
+                        ],
+                        "b": [
+                            {
+                                "item": "simple weapon|phb",
+                                "quantity": 2
+                            }
+                        ]
+                    },
+                    {
+                        "a": [
+                            "explorer's pack|phb"
+                        ],
+                        "b": [
+                            "scholar's pack|phb"
+                        ]
+                    },
+                    {
+                        "_": [
+                            {
+                                "item": "component pouch|phb",
+                                "quantity": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            "multiclassing": {
+                "requirements": {
+                    "dex": 13,
+                    "int": 13
+                },
+                "proficienciesGained": {
+                    "armor": [
+                        "light",
+                        "medium",
+                        "{@item shield|Ishiir|shields}"
+                    ],
+                    "weapons": [
+                        "simple",
+                        "martial"
+                    ]
+                }
+            },
+            "classTableGroups": [
+                {
+                    "colLabels": [
+                        "{@filter Spells Known|spells|level=0|class=Spellblade (Legzy)|source=Legzy}"
+                    ],
+                    "rows": [
+                        [2],
+                        [2],
+                        [3],
+                        [3],
+                        [4],
+                        [4],
+                        [5],
+                        [5],
+                        [6],
+                        [6],
+                        [7],
+                        [7],
+                        [8],
+                        [8],
+                        [9],
+                        [9],
+                        [10],
+                        [10],
+                        [11],
+                        [11]
+                    ]
+                },
+                {
+                    "title": "Spell Slots per Spell Level",
+                    "colLabels": [
+                        "{@filter 1st|spells|level=1|class=Spellblade (Legzy)|source=Legzy}",
+                        "{@filter 2nd|spells|level=2|class=Spellblade (Legzy)|source=Legzy}",
+                        "{@filter 3rd|spells|level=3|class=Spellblade (Legzy)|source=Legzy}",
+                        "{@filter 4th|spells|level=4|class=Spellblade (Legzy)|source=Legzy}",
+                        "{@filter 5th|spells|level=5|class=Spellblade (Legzy)|source=Legzy}"
+                    ],
+                    "rowsSpellProgression": [
+                        [2, 0, 0, 0, 0],
+                        [2, 0, 0, 0, 0],
+                        [3, 0, 0, 0, 0],
+                        [3, 0, 0, 0, 0],
+                        [4, 2, 0, 0, 0],
+                        [4, 2, 0, 0, 0],
+                        [4, 3, 0, 0, 0],
+                        [4, 3, 0, 0, 0],
+                        [4, 3, 2, 0, 0],
+                        [4, 3, 2, 0, 0],
+                        [4, 3, 3, 0, 0],
+                        [4, 3, 3, 0, 0],
+                        [4, 3, 3, 1, 0],
+                        [4, 3, 3, 1, 0],
+                        [4, 3, 3, 2, 0],
+                        [4, 3, 3, 2, 0],
+                        [4, 3, 3, 3, 1],
+                        [4, 3, 3, 3, 1],
+                        [4, 3, 3, 3, 2],
+                        [4, 3, 3, 3, 2]
+                    ]
+                }
+            ],
+            "classFeatures": [
+                "Spellcasting|Spellblade|Legzy|1",
+                "Arcana Points|Spellblade|Legzy|1",
+                "Fighting Style|Spellblade|Legzy|2",
+                "Weave Sense|Spellblade|Legzy|2",
+                {
+                    "classFeature": "Arcane Discipline|Spellblade|Legzy|3",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Spellblade|Legzy|4",
+                "Martial Versatility|Spellblade|Legzy|4",
+                "Extra Attack|Spellblade|Legzy|5",
+                {
+                    "classFeature": "Arcane Discipline feature|Spellblade|Legzy|6",
+                    "gainSubclassFeature": true
+                },
+                "Unwavering Focus|Spellblade|Legzy|7",
+                "Ability Score Improvement|Spellblade|Legzy|8",
+                "Learned Warrior|Spellblade|Legzy|8",
+                {
+                    "classFeature": "Arcane Discipline feature|Spellblade|Legzy|10",
+                    "gainSubclassFeature": true
+                },
+                "Arcane Strike|Spellblade|Legzy|11",
+                "Ability Score Improvement|Spellblade|Legzy|12",
+                {
+                    "classFeature": "Arcane Discipline feature|Spellblade|Legzy|14",
+                    "gainSubclassFeature": true
+                },
+                "Magic Resistance|Spellblade|Legzy|15",
+                "Ability Score Improvement|Spellblade|Legzy|16",
+                "Preparation|Spellblade|Legzy|18",
+                "Ability Score Improvement|Spellblade|Legzy|19",
+                "Equilibrium|Spellblade|Legzy|20"
+            ],
+            "subclassTitle": "Arcane Discipline"
+        }
+    ],
+    "classFeature": [
+        {
+            "name": "Spellcasting",
+            "source": "Legzy",
+            "page": 1,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 1,
+            "entries": [
+                "You have learned to use the most basic of arcane power. The information below details how you use those rules with Spellblade spells, which appear in the {@filter Spellblade spell list|spells|class=spellblade (Legzy)|source=Legzy}.",
+                {
+                    "type": "entries",
+                    "name": "Spell Slots.",
+                    "entries": [
+                        "The Spellblade Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|Legzy}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spells Known of Level 1+.",
+                    "entries": [
+                        "You know one 1st-level spells of your choice from the {@filter Spellblade spells|spells|class=spellblade (Legzy)|source=Legzy}.",
+                        "The Spells Known column of the Spellblade table shows when you learn more spellblade spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
+                        "Additionally, when you gain a level in this class, you can choose one of the spellblade spells you know and replace it with another spell from the spellblade spell list, which also must be of a level for which you have spell slots."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Ability.",
+                    "entries": [
+                        "Intelligence is your spellcasting ability for your Spellblade spells, since you learn your spells through dedicated study. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a spellblade spell you cast and when making an attack roll with one.",
+                        "Spell save DC = 8 + your proficiency bonus + your Intelligence modifier",
+                        "Spell attack modifier = your proficiency bonus + your Intelligence modifier"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Focus",
+                    "entries": [
+                        "You can use a weapon as a Spellcasting Focus for your Spellblade spells."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Arcana Points",
+            "source": "Legzy",
+            "page": 1,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 1,
+            "entries": [
+                "Whenever you cast a spell, you retain a fraction of that spell's power and hold it. When you cast a spell of first level or higher and expend a spell slot, you gain a number of Arcana Points equal to the spell slot you expended. You can hold a number of Arcana Points equal to your {@variantrule Proficiency|Ishiir} bonus, and they last until you complete a {@variantrule Long Rest|Ishiir}.",
+                "While you have Arcana Points, you may expend one to perform the following minor magical feats.",
+                {
+                    "type": "entries",
+                    "name": "Quickstep.",
+                    "entries": [
+                        "As a {@variantrule Bonus Action|Ishiir}, you teleport to an unoccupied space up to 15 feet from your position."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Displacement.",
+                    "entries": [
+                        "As a {@variantrule Bonus Action|Ishiir}, you create an illusion that blurs your image by a few inches, causing any creature to have {@variantrule Disadvantage|Ishiir} on attack rolls against you until the start of your next turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Encumber.",
+                    "entries": [
+                        "As a {@variantrule Reaction|Ishiir} when a creature is within 30 feet of you, you slow their {@variantrule Speed|Ishiir} by 10 feet."
+                    ]
+                }
+            ]
+        }
+    ]
+}
