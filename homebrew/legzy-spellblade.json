@@ -163,7 +163,7 @@
             "classTableGroups": [
                 {
                     "colLabels": [
-                        "{@filter Spells Known|spells|level=0|class=Spellblade (Legzy)|source=Legzy}"
+                        "{@filter Spells Known|spells|level=0|class=Spellblade (Legzy)}"
                     ],
                     "rows": [
                         [2],
@@ -191,11 +191,11 @@
                 {
                     "title": "Spell Slots per Spell Level",
                     "colLabels": [
-                        "{@filter 1st|spells|level=1|class=Spellblade (Legzy)|source=Legzy}",
-                        "{@filter 2nd|spells|level=2|class=Spellblade (Legzy)|source=Legzy}",
-                        "{@filter 3rd|spells|level=3|class=Spellblade (Legzy)|source=Legzy}",
-                        "{@filter 4th|spells|level=4|class=Spellblade (Legzy)|source=Legzy}",
-                        "{@filter 5th|spells|level=5|class=Spellblade (Legzy)|source=Legzy}"
+                        "{@filter 1st|spells|level=1|class=Spellblade (Legzy)}",
+                        "{@filter 2nd|spells|level=2|class=Spellblade (Legzy)}",
+                        "{@filter 3rd|spells|level=3|class=Spellblade (Legzy)}",
+                        "{@filter 4th|spells|level=4|class=Spellblade (Legzy)}",
+                        "{@filter 5th|spells|level=5|class=Spellblade (Legzy)}"
                     ],
                     "rowsSpellProgression": [
                         [2, 0, 0, 0, 0],
@@ -239,21 +239,25 @@
                 },
                 "Unwavering Focus|Spellblade|Legzy|7",
                 "Ability Score Improvement|Spellblade|Legzy|8",
-                "Learned Warrior|Spellblade|Legzy|8",
+                "Martial Versatility|Spellblade|Legzy|8",
+                "Learned Warrior|Spellblade|Legzy|9",
                 {
                     "classFeature": "Arcane Discipline feature|Spellblade|Legzy|10",
                     "gainSubclassFeature": true
                 },
                 "Arcane Strike|Spellblade|Legzy|11",
                 "Ability Score Improvement|Spellblade|Legzy|12",
+                "Martial Versatility|Spellblade|Legzy|12",
                 {
                     "classFeature": "Arcane Discipline feature|Spellblade|Legzy|14",
                     "gainSubclassFeature": true
                 },
                 "Magic Resistance|Spellblade|Legzy|15",
                 "Ability Score Improvement|Spellblade|Legzy|16",
+                "Martial Versatility|Spellblade|Legzy|16",
                 "Preparation|Spellblade|Legzy|18",
                 "Ability Score Improvement|Spellblade|Legzy|19",
+                "Martial Versatility|Spellblade|Legzy|19",
                 "Equilibrium|Spellblade|Legzy|20"
             ],
             "subclassTitle": "Arcane Discipline"
@@ -268,7 +272,7 @@
             "classSource": "Legzy",
             "level": 1,
             "entries": [
-                "You have learned to use the most basic of arcane power. The information below details how you use those rules with Spellblade spells, which appear in the {@filter Spellblade spell list|spells|class=spellblade (Legzy)|source=Legzy}.",
+                "You have learned to use the most basic of arcane power. The information below details how you use those rules with Spellblade spells, which appear in the {@filter Spellblade spell list|spells|class=spellblade (Legzy)}.",
                 {
                     "type": "entries",
                     "name": "Spell Slots.",
@@ -280,7 +284,7 @@
                     "type": "entries",
                     "name": "Spells Known of Level 1+.",
                     "entries": [
-                        "You know one 1st-level spells of your choice from the {@filter Spellblade spells|spells|class=spellblade (Legzy)|source=Legzy}.",
+                        "You know one 1st-level spells of your choice from the {@filter Spellblade spells|spells|class=spellblade (Legzy)}.",
                         "The Spells Known column of the Spellblade table shows when you learn more spellblade spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
                         "Additionally, when you gain a level in this class, you can choose one of the spellblade spells you know and replace it with another spell from the spellblade spell list, which also must be of a level for which you have spell slots."
                     ]
@@ -334,6 +338,673 @@
                         "As a {@variantrule Reaction|Ishiir} when a creature is within 30 feet of you, you slow their {@variantrule Speed|Ishiir} by 10 feet."
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Fighting Style",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 2,
+            "entries": [
+                "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.",
+                {
+                    "type": "options",
+                    "count": 1,
+                    "entries": [
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Arcane Warrior|Legzy"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Blind Fighting|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Defense|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Dueling|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Interception|Ishiir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Two-Weapon Fighting|Ishiir"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Weave Sense",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 2,
+            "entries": [
+                "Your senses have attuned to the energies of magic in the world around you, warding you against potential danger. You can sense glyphs or magical traps with your passive Intelligence ({@skill Investigation}) or with an Intelligence ({@skill Investigation}) check as an {@variantrule Action|Ishiir}. When using an Intelligence ({@skill Investigation}) check, you can pinpoint hidden glyphs or magical traps within 30 feet of you.",
+                "You may use this feature a number of times equal to 1 + your Intelligence modifier. You regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Arcane Discipline",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 3,
+            "entries": [
+                "You choose the discipline that defines your style of martial magic: Glyphwarden, Occultist, Vanguard, or Wyrdknight. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th level."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 4,
+            "header": 1,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Martial Versatility",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 4,
+            "entries": [
+                "You can replace a fighting style you know with another fighting style available to a spellblade. This replacement represents a shift of focus in your martial practice."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 8,
+            "header": 1,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Martial Versatility",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 8,
+            "entries": [
+                "You can replace a fighting style you know with another fighting style available to a spellblade. This replacement represents a shift of focus in your martial practice."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 12,
+            "header": 1,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Martial Versatility",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 12,
+            "entries": [
+                "You can replace a fighting style you know with another fighting style available to a spellblade. This replacement represents a shift of focus in your martial practice."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 16,
+            "header": 1,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Martial Versatility",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 16,
+            "entries": [
+                "You can replace a fighting style you know with another fighting style available to a spellblade. This replacement represents a shift of focus in your martial practice."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 19,
+            "header": 1,
+            "entries": [
+                "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a feat."
+            ]
+        },
+        {
+            "name": "Martial Versatility",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 19,
+            "entries": [
+                "You can replace a fighting style you know with another fighting style available to a spellblade. This replacement represents a shift of focus in your martial practice."
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 5,
+            "entries": [
+                "You can attack twice, instead of once, whenever you take the {@action Attack|Ishiir} action on your turn."
+            ]
+        },
+        {
+            "name": "Unwavering Focus",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 7,
+            "entries": [
+                "You can maintain your focus in the most tumultuous of situations. You have a +2 bonus to Constitution {@variantrule Saving Throw|Ishiir|Saving Throws} that you make to maintain concentration on a spell when you take damage."
+            ]
+        },
+        {
+            "name": "Learned Warrior",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 9,
+            "entries": [
+                "You have honed your ability to balance your martial and magical power. You learn a number of additional spells from the {@filter Spellblade spell list|spells|class=Spellblade (Legzy)} equal to your Intelligence modifier (minimum of 1). These spells do not count against the number of spellblade spells you know. Each of these spells must be of a level for which you have spell slots. You may replace any number of these spells when you reach 13th level and again at 17th level."
+            ]
+        },
+        {
+            "name": "Arcane Strike",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 11,
+            "entries": [
+                "You learn how to rend your foes with both blade and magic simultaneously. Whenever you roll to attack and hit your target, you deal an additional {@damage 1d10} force damage."
+            ]
+        },
+        {
+            "name": "Magic Resistance",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 15,
+            "entries": [
+                "You have become resistant to many of the harmful magics of the multiverse. When you make a {@variantrule Saving Throw|Ishiir|Saving Throw} against a spell, you gain a bonus to your roll equal to your Intelligence modifier. You cannot use this feature if you are {@condition Incapacitated|Ishiir}."
+            ]
+        },
+        {
+            "name": "Preparation",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 18,
+            "entries": [
+                "You are always prepared for combat. You cannot be surprised. Additionally, whenever you make an initiative roll, you can treat any roll of 9 or lower on the d20 as a 10."
+            ]
+        },
+        {
+            "name": "Equilibrium",
+            "source": "Legzy",
+            "page": 3,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "level": 20,
+            "entries": [
+                "When you begin combat and you have no arcana points remaining, you gain 2 arcana points.",
+                "Furthermore, you add your Intelligence modifier to the attack roll and the damage roll of any weapon attack you make."
+            ]
+        }
+    ],
+    "subclass": [
+        {
+            "name": "Glyphwarden",
+            "shortName": "Glyphwarden",
+            "source": "Legzy",
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "page": 4,
+            "subclassFeatures": [
+                "Glyphwarden|Spellblade|Legzy|Glyphwarden|Legzy|3",
+                "Cunning Calculation|Spellblade|Legzy|Glyphwarden|Legzy|3",
+                "Improved Weave Sense|Spellblade|Legzy|Glyphwarden|Legzy|6",
+                "Battlefield Awareness|Spellblade|Legzy|Glyphwarden|Legzy|10",
+                "Glyph Artisan|Spellblade|Legzy|Glyphwarden|Legzy|10",
+                "Martial Transpositioning|Spellblade|Legzy|Glyphwarden|Legzy|14"
+            ]
+        },
+        {
+            "name": "Occultist",
+            "shortName": "Occultist",
+            "source": "Legzy",
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "page": 5,
+            "subclassFeatures": [
+                "Occultist|Spellblade|Legzy|Occultist|Legzy|3",
+                "Magical Insight|Spellblade|Legzy|Occultist|Legzy|3",
+                "Master of Secrets|Spellblade|Legzy|Occultist|Legzy|3",
+                "Disarming Flair|Spellblade|Legzy|Occultist|Legzy|6",
+                "Seeker of Secrets|Spellblade|Legzy|Occultist|Legzy|10",
+                "Steel Trap Mind|Spellblade|Legzy|Occultist|Legzy|14"
+            ]
+        },
+        {
+            "name": "Vanguard",
+            "shortName": "Vanguard",
+            "source": "Legzy",
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "page": 6,
+            "subclassFeatures": [
+                "Vanguard|Spellblade|Legzy|Vanguard|Legzy|3",
+                "Arcane Bolt|Spellblade|Legzy|Vanguard|Legzy|3",
+                "Tandem Offensive|Spellblade|Legzy|Vanguard|Legzy|6",
+                "Focused Assault|Spellblade|Legzy|Vanguard|Legzy|10",
+                "Arcane Surge|Spellblade|Legzy|Vanguard|Legzy|14"
+            ]
+        },
+        {
+            "name": "Wyrdknight",
+            "shortName": "Wyrdknight",
+            "source": "Legzy",
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "page": 7,
+            "subclassFeatures": [
+                "Wyrdknight|Spellblade|Legzy|Wyrdknight|Legzy|3",
+                "Hold the Line|Spellblade|Legzy|Wyrdknight|Legzy|3",
+                "Contingency Ward|Spellblade|Legzy|Wyrdknight|Legzy|6",
+                "Resist and Bite|Spellblade|Legzy|Wyrdknight|Legzy|10",
+                "Diamond Skin|Spellblade|Legzy|Wyrdknight|Legzy|14"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Glyphwarden",
+            "source": "Legzy",
+            "page": 4,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Glyphwarden",
+            "subclassSource": "Legzy",
+            "level": 3,
+            "entries": [
+                "The Warden is the spellblade that specialises in preparation and battlefield manipulation. Those who study this discipline are often measured and thorough, believing that perfect preparation all but guarantees success.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Cunning Calculation|Spellblade|Legzy|Glyphwarden|Legzy|3"
+                }
+            ]
+        },
+        {
+            "name": "Cunning Calculation",
+            "source": "Legzy",
+            "page": 4,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Glyphwarden",
+            "subclassSource": "Legzy",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You have sharpened your battlefield senses. When initiative is rolled at the beginning of combat, you may choose one other creature within 30 feet of you and grant them a bonus to their roll equal to your Intelligence modifier.",
+                "If you have any Arcana Points, you may also spend one to grant this benefit to one other creature within range."
+            ]
+        },
+        {
+            "name": "Improved Weave Sense",
+            "source": "Legzy",
+            "page": 4,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Glyphwarden",
+            "subclassSource": "Legzy",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Your senses are so attuned to the magic around you that you can pinpoint magical traps and decipher hidden glyphs much more effectively. When you sense a glyph or a magical trap, you may attempt to discern the type of spell or magic held within it. Make an Intelligence ({@skill Arcana}) check, with a DC of 10 + the spell's level. On a success, you discern the school of magic that the spell within the glyph or trap belongs to.",
+                "If you beat the check by 5 or more, you learn the exact spell held within the glyph or trap."
+            ]
+        },
+        {
+            "name": "Battlefield Awareness",
+            "source": "Legzy",
+            "page": 4,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Glyphwarden",
+            "subclassSource": "Legzy",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "Your constant vigilance and awareness makes it difficult to catch you by surprise. You gain a bonus to your passive Wisdom ({@skill Perception}) score and any Wisdom ({@skill Perception}) checks you make equal to your Intelligence modifier.",
+                "In addition, your ability to respond to dangerous situations is unparalleled. When you fail a Dexterity {@variantrule Saving Throw|Ishiir}, you can choose to add your Intelligence modifier to the roll, possibly turning it into a success. Once you use this feature and succeed, you can't use it again until you finish a short or {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Glyph Artisan",
+            "source": "Legzy",
+            "page": 4,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Glyphwarden",
+            "subclassSource": "Legzy",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "You learn the {@spell Glyph of Warding|Ishiir} spell. It is a spellblade spell for you, but does not count against your number of spellblade spells known. Additionally, you may cast the spell as a ritual at 3rd level, and may do so a number of times equal to your Intelligence modifier per long rest."
+            ]
+        },
+        {
+            "name": "Martial Transpositioning",
+            "source": "Legzy",
+            "page": 4,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Glyphwarden",
+            "subclassSource": "Legzy",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "You are a marvel to behold on the battlefield, dictating combat without parallel. As a {@variantrule Bonus Action|Ishiir}, you can weave transpositional magic around two willing creatures (including yourself) that are no more than 30 feet apart. The two creatures switch positions and gain temporary hit points equal to your Intelligence modifier + your spellblade level.",
+                "If this feature would place a creature within 5 feet of another creature, they may use their {@variantrule Reaction|Ishiir} to make a single attack on that creature.",
+                "You can use this feature a number of times equal to your Intelligence modifier, and regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Occultist",
+            "source": "Legzy",
+            "page": 5,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Occultist",
+            "subclassSource": "Legzy",
+            "level": 3,
+            "entries": [
+                "A master of preserving and uncovering secrets, Occultists are often hired as investigators, protectors of great knowledge, or for counter-espionage.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Magical Insight|Spellblade|Legzy|Occultist|Legzy|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Master of Secrets|Spellblade|Legzy|Occultist|Legzy|3"
+                }
+            ]
+        },
+        {
+            "name": "Magical Insight",
+            "source": "Legzy",
+            "page": 5,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Occultist",
+            "subclassSource": "Legzy",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You may spend an arcana point to add your proficiency bonus to a skill check that you do not already have proficiency in for one minute.",
+                "You also learn the {@spell Guidance|Ishiir} cantrip."
+            ]
+        },
+        {
+            "name": "Master of Secrets",
+            "source": "Legzy",
+            "page": 5,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Occultist",
+            "subclassSource": "Legzy",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain proficiency in {@skill Deception} and {@skill Insight}. Additionally, any checks you make with those skills uses your Intelligence modifier rather than their usual ability."
+            ]
+        },
+        {
+            "name": "Disarming Flair",
+            "source": "Legzy",
+            "page": 5,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Occultist",
+            "subclassSource": "Legzy",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "When you hit a creature with an attack and deal damage, you may spend an Arcana Point to force the creature to make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failure, the creature becomes {@condition Charmed|Ishiir} by you for 1 minute. It can repeat the {@variantrule Saving Throw|Ishiir} at the end of each of its turns, ending the effect on a success.",
+                "Additionally, any effect or spell you cast ignores {@variantrule Advantage|Ishiir} on {@variantrule Saving Throw|Ishiir|Saving Throws} against the {@condition Charmed|Ishiir} condition."
+            ]
+        },
+        {
+            "name": "Seeker of Secrets",
+            "source": "Legzy",
+            "page": 5,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Occultist",
+            "subclassSource": "Legzy",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "You learn the {@spell Clairvoyance|Ishiir} spell. It is a spellblade spell for you, but does not count against your number of spellblade spells known. Additionally, you may cast the spell as a ritual at 3rd level, and may do so a number of times equal to your Intelligence modifier per long rest."
+            ]
+        },
+        {
+            "name": "Steel Trap Mind",
+            "source": "Legzy",
+            "page": 5,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Occultist",
+            "subclassSource": "Legzy",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "You gain proficiency in Wisdom and Charisma {@variantrule Saving Throw|Ishiir|Saving Throws}.",
+                "Your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by succeeding on a Charisma ({@skill Deception}) check contested by the mind reader's Wisdom ({@skill Insight}) check. You are also immune to the {@condition Charmed|Ishiir} condition.",
+                "Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful if you so choose, and you can't be compelled to tell the truth by magic."
+            ]
+        },
+        {
+            "name": "Vanguard",
+            "source": "Legzy",
+            "page": 6,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Vanguard",
+            "subclassSource": "Legzy",
+            "level": 3,
+            "entries": [
+                "Brute force and quick-wit makes the Vanguard a threatening wallbreaker. They are often employed to break the enemy lines and sow confusion and chaos within their ranks.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Arcane Bolt|Spellblade|Legzy|Vanguard|Legzy|3"
+                }
+            ]
+        },
+        {
+            "name": "Arcane Bolt",
+            "source": "Legzy",
+            "page": 6,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Vanguard",
+            "subclassSource": "Legzy",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You are able to fire a bolt of arcane energy at an enemy from range. As a part of your attack action, in place of one of your attacks, you can spend an arcana point to make a ranged spell attack at a creature, using your spell attack modifier. On a hit, you deal force damage equal to {@damage 1d8} + your Intelligence modifier to the target."
+            ]
+        },
+        {
+            "name": "Tandem Offensive",
+            "source": "Legzy",
+            "page": 6,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Vanguard",
+            "subclassSource": "Legzy",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "You may take the {@action Help|Ishiir} action as a {@variantrule Bonus Action|Ishiir} on your turn. You may target one creature within 15 feet of you. The next {@variantrule Attack Roll|Ishiir|attack roll} on the target from a creature other than you is made with {@variantrule Advantage|Ishiir}.",
+                "You can use this feature a number of times up to your Intelligence modifier, and regain all expended uses on a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Focused Assault",
+            "source": "Legzy",
+            "page": 6,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Vanguard",
+            "subclassSource": "Legzy",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "You can mark a creature as a primary target. Choose one creature that you can see within 30 feet. When you attack that creature and deal damage, you deal additional force damage equal to your proficiency bonus. The mark lasts for 1 minute, and for the duration you always know the location of the marked creature.",
+                "You can use this feature a number of times equal to your Intelligence modifier, and regain all expended uses on a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Arcane Surge",
+            "source": "Legzy",
+            "page": 6,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Vanguard",
+            "subclassSource": "Legzy",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "When you deal damage to a creature, you may spend Arcana Points to amplify that damage. You deal {@damage 2d6} force damage for each Arcana Point that you spend, to a maximum of {@damage 12d6}.",
+                "Once you have used this feature, you cannot do so again until you complete a short or {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Wyrdknight",
+            "source": "Legzy",
+            "page": 7,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Wyrdknight",
+            "subclassSource": "Legzy",
+            "level": 3,
+            "entries": [
+                "A Wyrdknight is a bulwark, a stalwart guardian who uses magic along with their own body in order to protect their allies.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Hold the Line|Spellblade|Legzy|Wyrdknight|Legzy|3"
+                }
+            ]
+        },
+        {
+            "name": "Hold the Line",
+            "source": "Legzy",
+            "page": 7,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Wyrdknight",
+            "subclassSource": "Legzy",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You learn how to shield your allies at a moment's notice. As a {@variantrule Reaction|Ishiir} when a creature within 30 feet of you would be hit by an attack, you may spend an Arcana Point to teleport to an unoccupied space within 5 feet of that creature's position and you become the new target for that attack."
+            ]
+        },
+        {
+            "name": "Contingency Ward",
+            "source": "Legzy",
+            "page": 7,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Wyrdknight",
+            "subclassSource": "Legzy",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "You may target a number of creatures (including yourself) equal to your Intelligence modifier, that you can see within 10 feet of you, and draw a protective ward on each of them as an {@variantrule Action|Ishiir}. The creatures must be willing and not {@condition Incapacitated|Ishiir}. Each creature gains temporary hit points equal to 2 times your proficiency bonus. This increases to 3 times your proficiency bonus at 11th level, and 4 times your proficiency bonus at 17th level.",
+                "Once you have used this feature, you may not do so again until you complete a short or {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Resist and Bite",
+            "source": "Legzy",
+            "page": 7,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Wyrdknight",
+            "subclassSource": "Legzy",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "You are able to punish those who would do harm to your allies. When an allied creature within 30 feet of you is hit by an attack, you may use your {@variantrule Reaction|Ishiir} to grant that creature {@variantrule Resistance|Ishiir} to the triggering damage. The attacker then takes damage equal to half the damage they dealt to the target (rounded down).",
+                "You can use this feature a number of times equal to your Intelligence modifier, and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Diamond Skin",
+            "source": "Legzy",
+            "page": 7,
+            "className": "Spellblade",
+            "classSource": "Legzy",
+            "subclassShortName": "Wyrdknight",
+            "subclassSource": "Legzy",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "You are a master of protective wards. You gain {@variantrule Resistance|Ishiir} to bludgeoning, piercing, and slashing damage. Additionally, when you're subjected to an effect that allows you to make a {@variantrule Saving Throw|Ishiir|Saving Throw} to take only half damage, you instead take no damage if you succeed on the {@variantrule Saving Throw|Ishiir}, and only half damage if you fail.",
+                "You don't benefit from this feature if you have the {@condition Incapacitated|Ishiir} condition."
             ]
         }
     ]
