@@ -4778,10 +4778,15 @@
                 "v": true,
                 "s": true
             },
-            "duration": {
-                "type": "hour",
-                "amount": 1
-            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
             "entries": [
                 "You target one familiar bound to you and empower its combat capabilities. The chosen target gains the following benefits for the duration.",
                 {
@@ -18019,9 +18024,11 @@
                 "s": true,
                 "m": "a piece of tinder"
             },
-            "duration": {
-                "type": "instant"
-            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
             "entries": [
                 "You create a magical, explosive seed inside a creature you can see within range. The target makes a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, it takes {@damage 10d10} fire damage and is {@condition Dazed|Ishiir} until the end of your next turn. On a successful one, it only takes half as much damage.",
                 "An explosion then originates from the target. Each creature in a 60-foot Emanation originating from the target (not including the target) makes a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a target takes {@damage 10d10} fire damage and is knocked {@condition Prone|Ishiir}. On a successful one, it only takes half as much damage.",
@@ -18893,10 +18900,15 @@
                 "v": true,
                 "s": true
             },
-            "duration": {
-                "type": "minute",
-                "amount": 1
-            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
             "entries": [
                 "A distracting melody momentarily fills a 20-foot-radius Sphere centered on a point you choose within range. Each creature in the Sphere makes a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a target loses {@variantrule Concentration|Ishiir} and is {@condition Deafened|Ishiir} for 1 minute. At the end of each of its turns, an affected creature can repeat the saving throw, ending the effect on itself on a success."
             ],
@@ -24879,10 +24891,15 @@
                 "v": true,
                 "s": true
             },
-            "duration": {
-                "type": "minute",
-                "amount": 1
-            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
             "entries": [
                 "A 60-foot-long, 10-foot-wide Line of miasma blasts from you in a direction you choose. Each creature in the Line must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a target takes {@damage 4d10} Necrotic damage and has the {@condition Poisoned|Ishiir} condition for the duration.",
                 "A creature {@condition Poisoned|Ishiir} by this spell takes {@damage 2d10} Poison damage at the start of each of its turns. At the end of each of its turns, a {@condition Poisoned|Ishiir} target repeats the save, ending the spell on itself on a success."
@@ -44709,9 +44726,11 @@
                 "v": true,
                 "s": true
             },
-            "duration": {
-                "type": "instant"
-            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
             "entries": [
                 "You have a powerful sixth sense that guides you at just the right time. Turn the roll of your failed {@variantrule D20 Test|Ishiir} into a 20, or turn the roll of the triggering attack roll into a 1."
             ],
@@ -52898,9 +52917,11 @@
                 "v": true,
                 "s": true
             },
-            "duration": {
-                "type": "instant"
-            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
             "entries": [
                 "You untangle a single thread of fate to encourage a different result. The creature that failed the {@variantrule D20 Test|Ishiir} can reroll it with {@variantrule Advantage|Ishiir}, and the creature must use the new roll. If the {@variantrule D20 Test|Ishiir} is successful, the creature gains {@damage 6d10} Temporary Hit Points from its strengthened fate."
             ],
@@ -67355,10 +67376,15 @@
                 "v": true,
                 "s": true
             },
-            "duration": {
-                "type": "minute",
-                "amount": 1
-            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
             "entries": [
                 "You trick a creature you can see within range into believing it is watching itself and its surroundings crumble away, as if eons were passing in moments. The target must succeed on an Intelligence {@variantrule Saving Throw|Ishiir} or take {@damage 10d12} Psychic damage and have the {@condition Paralyzed|Ishiir} condition for the duration, even if it is normally immune to the condition.",
                 "While {@condition Paralyzed|Ishiir}, the target repeats the save at the end of each of its turns. On a failed save, it gains 1 {@condition Exhaustion|Ishiir} level. On a successful save, the spell ends. The spell ends early if someone within 5 feet of the target takes an {@variantrule Action|Ishiir} to shake it free from the illusion."
@@ -67627,10 +67653,15 @@
                 "v": true,
                 "s": true
             },
-            "duration": {
-                "type": "minute",
-                "amount": 1
-            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
             "entries": [
                 "You emit a terrible scream that can kill those who hear it. Choose any number of creatures within range. Each target suffers an effect based on its current hit points:",
                 {
@@ -70477,9 +70508,11 @@
                 "s": true,
                 "m": "a withered vine twisted into a loop"
             },
-            "duration": {
-                "type": "instant"
-            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
             "entries": [
                 "You invoke both death and life in a 20-foot-radius Sphere centered on a point within range. Each creature of your choice in that area makes a Constitution {@variantrule Saving Throw|Ishiir}, taking {@damage 4d6} Necrotic damage on a failed save or half as much damage on a successful one. Nonmagical plants in that area that aren't creatures, such as trees and shrubs, wither.",
                 "In addition, one creature of your choice in that area can roll one of its unexpended Hit Point Dice and regain a number of Hit Points equal to the roll plus your spellcasting ability modifier. That die is then expended."
