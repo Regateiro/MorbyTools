@@ -3369,6 +3369,83 @@
             ]
         },
         {
+            "name": "Aura of Evasion",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 4,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "An aura of alacrity radiates from you in a 30-foot Emanation for the duration. While in the aura, you and your allies have {@variantrule Advantage|Ishiir} on Dexterity {@variantrule Saving Throw|Ishiir}s. When an affected creature is subjected to an effect that allows it to make a Dexterity {@variantrule Saving Throw|Ishiir} to take only half damage, it takes no damage if it succeeds on the save and only half damage if it fails. A creature with the {@condition Incapacacitated|Ishiir} condition doesn't gain any benefit from being in the aura."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "miscTags": [
+                "ADV",
+                "WARD"
+            ],
+            "areaTags": [
+                "S"
+            ]
+        },
+        {
             "name": "Aura of Life",
             "page": 1,
             "source": "Ishiir",
@@ -4156,125 +4233,6 @@
             ]
         },
         {
-            "name": "Banishing Smite",
-            "page": 1,
-            "source": "Ishiir",
-            "level": 5,
-            "school": "A",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "bonus",
-                    "condition": "when you hit a creature with a melee weapon attack"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "self"
-                }
-            },
-            "components": {
-                "v": true
-            },
-            "duration": [
-                {
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    },
-                    "type": "timed"
-                }
-            ],
-            "entries": [
-                "Your weapon crackles with force, and the attack deals an extra {@damage 5d10} force damage to the target. The target must succeed on a Charisma {@variantrule Saving Throw|Ishiir} or be banished. If the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is {@condition Incapacitated|Ishiir}. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
-            ],
-            "savingThrow": [
-                "charisma"
-            ],
-            "damageInflict": [
-                "force"
-            ],
-            "conditionInflict": [
-                "incapacitated"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Paladin",
-                        "source": "Ishiir"
-                    }
-                ],
-                "fromSubclass": [
-                    {
-                        "class": {
-                            "name": "Paladin",
-                            "source": "Ishiir"
-                        },
-                        "subclass": {
-                            "name": "Noble Genie",
-                            "source": "Ishiir",
-                            "shortName": "Noble Genie"
-                        }
-                    },
-                    {
-                        "class": {
-                            "name": "Warlock",
-                            "source": "Ishiir"
-                        },
-                        "subclass": {
-                            "name": "Hexblade",
-                            "source": "Ishiir",
-                            "shortName": "Hexblade"
-                        }
-                    },
-                    {
-                        "class": {
-                            "name": "Artificer",
-                            "source": "Ishiir"
-                        },
-                        "subclass": {
-                            "name": "Battle Smith",
-                            "source": "Ishiir",
-                            "shortName": "Battle Smith"
-                        }
-                    },
-                    {
-                        "class": {
-                            "name": "Sorcerer",
-                            "source": "Ishiir"
-                        },
-                        "subclass": {
-                            "name": "Stone",
-                            "source": "Ishiir",
-                            "shortName": "Stone"
-                        }
-                    },
-                    {
-                        "class": {
-                            "name": "Sorcerer",
-                            "source": "Ishiir"
-                        },
-                        "subclass": {
-                            "name": "Sword Mage",
-                            "source": "Ishiir",
-                            "shortName": "Sword Mage"
-                        }
-                    }
-                ]
-            },
-            "feats": [
-                {
-                    "name": "Circle Adept",
-                    "source": "Ishiir"
-                }
-            ],
-            "miscTags": [
-                "AAD",
-                "UBA"
-            ]
-        },
-        {
             "name": "Banish Object",
             "page": 1,
             "source": "Ishiir",
@@ -4393,6 +4351,125 @@
                 ],
                 "fromSubclass": []
             }
+        },
+        {
+            "name": "Banishing Smite",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 5,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus",
+                    "condition": "when you hit a creature with a melee weapon attack"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "type": "timed"
+                }
+            ],
+            "entries": [
+                "Your weapon crackles with force, and the attack deals an extra {@damage 5d10} force damage to the target. The target must succeed on a Charisma {@variantrule Saving Throw|Ishiir} or be banished. If the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is {@condition Incapacitated|Ishiir}. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "conditionInflict": [
+                "incapacitated"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "Ishiir"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Paladin",
+                            "source": "Ishiir"
+                        },
+                        "subclass": {
+                            "name": "Noble Genie",
+                            "source": "Ishiir",
+                            "shortName": "Noble Genie"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Warlock",
+                            "source": "Ishiir"
+                        },
+                        "subclass": {
+                            "name": "Hexblade",
+                            "source": "Ishiir",
+                            "shortName": "Hexblade"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Artificer",
+                            "source": "Ishiir"
+                        },
+                        "subclass": {
+                            "name": "Battle Smith",
+                            "source": "Ishiir",
+                            "shortName": "Battle Smith"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "Ishiir"
+                        },
+                        "subclass": {
+                            "name": "Stone",
+                            "source": "Ishiir",
+                            "shortName": "Stone"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "Ishiir"
+                        },
+                        "subclass": {
+                            "name": "Sword Mage",
+                            "source": "Ishiir",
+                            "shortName": "Sword Mage"
+                        }
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "miscTags": [
+                "AAD",
+                "UBA"
+            ]
         },
         {
             "name": "Banishment",
@@ -4676,6 +4753,92 @@
                     "name": "Circle Adept",
                     "source": "Ishiir"
                 }
+            ]
+        },
+        {
+            "name": "Battle Familiar",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 2,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": {
+                "type": "hour",
+                "amount": 1
+            },
+            "entries": [
+                "You target one familiar bound to you and empower its combat capabilities. The chosen target gains the following benefits for the duration.",
+                {
+                    "type": "entries",
+                    "name": "Familiar's Competence",
+                    "entries": [
+                        "The familiar uses your spell attack bonus in place of its attack bonus and your spell save DC in place of any DC."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Familiar's Might",
+                    "entries": [
+                        "Any damage the familiar deals receives a bonus equal to the spell slot level used to cast this spell."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Familiar's Resilience",
+                    "entries": [
+                        "The familiar gains additional maximum and current Hit Points equal to 10 x the spell slot level used to cast this spell. Its AC increases by an amount equal to half the spell slot level used to cast this spell (rounded down). Additionally, you can decide to increase the familiar's size by one step."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "miscTags": [
+                "AAD",
+                "MAC",
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
             ]
         },
         {
@@ -17833,6 +17996,80 @@
             ]
         },
         {
+            "name": "Detonate",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 9,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 500
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a piece of tinder"
+            },
+            "duration": {
+                "type": "instant"
+            },
+            "entries": [
+                "You create a magical, explosive seed inside a creature you can see within range. The target makes a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, it takes {@damage 10d10} fire damage and is {@condition Dazed|Ishiir} until the end of your next turn. On a successful one, it only takes half as much damage.",
+                "An explosion then originates from the target. Each creature in a 60-foot Emanation originating from the target (not including the target) makes a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a target takes {@damage 10d10} fire damage and is knocked {@condition Prone|Ishiir}. On a successful one, it only takes half as much damage.",
+                "If the original target was reduced to 0 hit points by this spell, its body is completely destroyed and the spell deals maximum damage to all other targets.",
+                "A nonmagical object that isn't being worn or carried also takes the damage if it's in the Emanation, and the object starts burning if it's flammable."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "damageInflict": [
+                "fire"
+            ],
+            "conditionInflict": [
+                "dazed",
+                "prone"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "CMD",
+                "OBJ"
+            ],
+            "areaTags": [
+                "ST",
+                "S"
+            ]
+        },
+        {
             "name": "Dimension Door",
             "page": 1,
             "source": "Ishiir",
@@ -18634,6 +18871,72 @@
             ]
         },
         {
+            "name": "Disruptive Tune",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": {
+                "type": "minute",
+                "amount": 1
+            },
+            "entries": [
+                "A distracting melody momentarily fills a 20-foot-radius Sphere centered on a point you choose within range. Each creature in the Sphere makes a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a target loses {@variantrule Concentration|Ishiir} and is {@condition Deafened|Ishiir} for 1 minute. At the end of each of its turns, an affected creature can repeat the saving throw, ending the effect on itself on a success."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "CRWD"
+            ],
+            "areaTags": [
+                "S"
+            ]
+        },
+        {
             "name": "Dissonant Whispers",
             "page": 1,
             "source": "Ishiir",
@@ -18779,6 +19082,105 @@
             ],
             "miscTags": [
                 "SCL"
+            ]
+        },
+        {
+            "name": "Distorted Distance",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 4,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You create an illusory spatial dilation that fills a 60-foot-radius Sphere centered on a point within range. For each creature you can see in the Sphere, you can choose one of the following effects for it:",
+                {
+                    "type": "entries",
+                    "name": "Dizzying Elongation",
+                    "entries": [
+                        "The creature makes an Intelligence {@variantrule Saving Throw|Ishiir}. On a failed save, the creature takes {@damage 2d10} Psychic damage, and the Sphere is Difficult Terrain for it until the end of its turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Shortened Space",
+                    "entries": [
+                        "The creature's {@variantrule Speed|Ishiir} increases by 20 feet until the end of its next turn."
+                    ]
+                },
+                "Until the spell ends, whenever a creature enters the Sphere or ends its turn there, you can choose for it to receive one of these effects. A creature can be affected by this spell only once per turn."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "miscTags": [
+                "DFT",
+                "SGT"
+            ],
+            "areaTags": [
+                "S"
             ]
         },
         {
@@ -22438,6 +22840,92 @@
             ]
         },
         {
+            "name": "Entrancing Mirrors",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a mirror shard"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You create dozens of illusory mirrors to confuse up to three creatures of your choice that you can see within range.",
+                "Each target makes an Intelligence {@variantrule Saving Throw|Ishiir}. On a failed save, a target takes {@damage 12d6} Psychic damage and has the {@condition Stunned|Ishiir} condition. On a successful save, a target takes half as much damage only.",
+                "A {@condition Stunned|Ishiir} target repeats the Intelligence saving throw at the end of each of its turns, ending the spell on itself on a success."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "conditionInflict": [
+                "stunned"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "miscTags": [
+                "CRWD",
+                "SGT"
+            ],
+            "areaTags": [
+                "MT"
+            ]
+        },
+        {
             "name": "Entropic Ray",
             "page": 1,
             "source": "Ishiir",
@@ -24367,6 +24855,92 @@
             "miscTags": [
                 "RES",
                 "UTIL"
+            ]
+        },
+        {
+            "name": "Festering Blast",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 4,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": {
+                "type": "minute",
+                "amount": 1
+            },
+            "entries": [
+                "A 60-foot-long, 10-foot-wide Line of miasma blasts from you in a direction you choose. Each creature in the Line must make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, a target takes {@damage 4d10} Necrotic damage and has the {@condition Poisoned|Ishiir} condition for the duration.",
+                "A creature {@condition Poisoned|Ishiir} by this spell takes {@damage 2d10} Poison damage at the start of each of its turns. At the end of each of its turns, a {@condition Poisoned|Ishiir} target repeats the save, ending the spell on itself on a success."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "The initial damage increases by {@scaledamage 1d10|4-9|1d10} for each spell slot level above 4."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "damageInflict": [
+                "necrotic",
+                "poison"
+            ],
+            "conditionInflict": [
+                "poisoned"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "L"
             ]
         },
         {
@@ -27289,6 +27863,87 @@
             ]
         },
         {
+            "name": "Fractured Awareness",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 7,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You cause a creature to receive conflicting visions of multiple possible futures. Choose a creature you can see within range. The target makes an Intelligence {@variantrule Saving Throw|Ishiir}. On a failed save, the target takes {@damage 12d10} Psychic damage and has {@variantrule Disadvantage|Ishiir} on {@variantrule D20 Test|Ishiir} Tests for the duration. On a successful save, the target takes half as much damage only, and the spell ends.",
+                "At the end of each of its turns, an affected target repeats the save, ending the spell on a success. This repeat saving throw is not affected by the effect of this spell."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "miscTags": [
+                "DAV",
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
             "name": "Freedom of Movement",
             "page": 1,
             "source": "Ishiir",
@@ -29459,6 +30114,90 @@
             ],
             "conditionInflict": [
                 "restrained"
+            ]
+        },
+        {
+            "name": "Grave Ground",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 5,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a handful of grave dirt"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "Skeletal hands burst from an area on the ground within range. The area consists of up to four 10-foot squares, which you arrange as you like. Each square must be contiguous with at least one other square. That area is Difficult Terrain for your enemies.",
+                "Any enemy in that area when the skeletal hands appear makes a Strength {@variantrule Saving Throw|Ishiir}. On a failed save, a creature takes {@damage 6d6} Necrotic damage and its {@variantrule Speed|Ishiir} is reduced to 0. At the end of each of its turns, the target can repeat the saving throw, ending the effect on a success.",
+                "An enemy also makes the initial save if it enters the area or ends its turn there. A creature makes this save only once per turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "You can cause the effect in one additional 10-foot square for each spell slot level above 5, obeying all other restrictions for placing it."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "miscTags": [
+                "DFT",
+                "SCL"
+            ],
+            "areaTags": [
+                "Q"
             ]
         },
         {
@@ -33174,6 +33913,90 @@
             ]
         },
         {
+            "name": "Hindsight",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 9,
+            "school": "D",
+            "time": [
+                {
+                    "number": 10,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 500
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a tiny hourglass worth 500+ GP, which the spell consumes",
+                    "cost": 50000,
+                    "consume": true
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 8
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You peer backward through the fabric of time. You see visions of events that occurred within range throughout the past 100 years, racing by at approximately 1 day per second. Throughout the spell's duration, you can freely slow down, pause, rewind, or fast-forward through these visions.",
+                "You can choose to peer back further into the past at great risk to yourself. If you choose to do so, make a DC 20 Intelligence {@variantrule Saving Throw|Ishiir}. On a failure, you take {@damage 10d12} psychic damage and are insane until you finish a {@variantrule Long Rest|Ishiir}. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. Only {@spell Wish|Ishiir} or {@spell Greater Restoration|Ishiir} cast with a 9th-level spell slot can end these effects. This DC increases by 2 and the damage by 5d12 for every increment of 100 years past 200.",
+                "On a success, you apply the spell's usual effects to the chosen span of time."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "miscTags": [
+                "SENS",
+                "UTIL"
+            ]
+        },
+        {
             "name": "Hold Monster",
             "page": 1,
             "source": "Ishiir",
@@ -34848,6 +35671,84 @@
             ]
         },
         {
+            "name": "Illusory Obstacles",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 2,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a distorted lens"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You create images of obstructions or difficult terrain such as rocks or spikes in an attempt to confuse up to three creatures you can see within range, affecting their ability to move. Each target makes an Intelligence {@variantrule Saving Throw|Ishiir}. On a failed save, a target's {@variantrule Speed|Ishiir} is halved, and it can't take the {@action Dash|Ishiir} action. A hampered target repeats the save at the end of each of its turns, ending the spell on itself on a success."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "miscTags": [
+                "DFT",
+                "SGT"
+            ],
+            "areaTags": [
+                "MT"
+            ]
+        },
+        {
             "name": "Illusory Script",
             "page": 1,
             "source": "Ishiir",
@@ -35745,6 +36646,79 @@
                     "name": "Circle Adept",
                     "source": "Ishiir"
                 }
+            ]
+        },
+        {
+            "name": "Inflict Doubt",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 3,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You inflict self-doubt on a creature you can see within range. The target must succeed on a Wisdom {@variantrule Saving Throw|Ishiir} or have {@variantrule Disadvantage|Ishiir} on {@variantrule D20 Test|Ishiir} Tests for the duration. At the end of each of its turns, the target repeats the save, ending the spell on itself on a success. This repeat saving throw is not affected by the effect of this spell."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "miscTags": [
+                "DAV",
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
             ]
         },
         {
@@ -36726,6 +37700,93 @@
             ],
             "miscTags": [
                 "WARD"
+            ]
+        },
+        {
+            "name": "Iron Body",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "diamond dust worth 250+ GP, which the spell consumes",
+                    "cost": 25000,
+                    "consume": true
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 8
+                    }
+                }
+            ],
+            "entries": [
+                "One willing creature you touch transforms into living metal. Until the spell ends, the target's {@condition Exhaustion|Ishiir} level can't increase; the target has {@variantrule Resistance|Ishiir} to Bludgeoning, Fire, Piercing, and Slashing damage; and it has {@variantrule Immunity|Ishiir} to Poison damage and the {@condition Lacerated|Ishiir}, {@condition Paralyzed|Ishiir}, {@condition Petrified|Ishiir}, and {@condition Poisoned|Ishiir} conditions as well as all diseases. If the target is {@condition Lacerated|Ishiir}, {@condition Paralyzed|Ishiir}, {@condition Petrified|Ishiir}, {@condition Poisoned|Ishiir} or suffering from one or more diseases when you cast the spell, those conditions immediately end for the target."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "damageResist": [
+                "bludgeoning",
+                "fire",
+                "piercing",
+                "slashing"
+            ],
+            "damageImmune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "lacerated",
+                "paralyzed",
+                "petrified",
+                "poisoned"
+            ],
+            "miscTags": [
+                "RES"
+            ],
+            "areaTags": [
+                "ST"
             ]
         },
         {
@@ -38566,6 +39627,81 @@
                     "name": "Pact of the Tome",
                     "source": "Ishiir"
                 }
+            ]
+        },
+        {
+            "name": "Lightning Ring",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a bit of fur and a glass ring"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "A ring of crackling electricity fills a 10-foot Emanation originating from you. Whenever the Emanation enters a creature's space and whenever a creature enters the Emanation or ends its turn there, you can force that creature to make a Constitution {@variantrule Saving Throw|Ishiir}. On a failed save, the creature takes {@damage 6d6} Lightning damage. On a successful save, the creature takes half as much damage only.",
+                "As a {@action Magic|Ishiir} action while the spell is active, you can emit a 60-foot-long, 5-foot-wide Line out from you in a direction you choose. Each creature in the Line makes a Dexterity {@variantrule Saving Throw|Ishiir}, taking {@damage 8d6} Lightning damage on a failed save or half as much damage on a successful one."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "savingThrow": [
+                "constitution",
+                "dexterity"
+            ],
+            "areaTags": [
+                "S",
+                "L"
             ]
         },
         {
@@ -43548,6 +44684,72 @@
                     "name": "Druidic Warrior",
                     "source": "Ishiir"
                 }
+            ]
+        },
+        {
+            "name": "Moment of Prescience",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 8,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when you fail a {@variantrule D20 Test|Ishiir} or when a creature hits you with an attack roll"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": {
+                "type": "instant"
+            },
+            "entries": [
+                "You have a powerful sixth sense that guides you at just the right time. Turn the roll of your failed {@variantrule D20 Test|Ishiir} into a 20, or turn the roll of the triggering attack roll into a 1."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "miscTags": [
+                "UTIL"
+            ],
+            "areaTags": [
+                "ST"
             ]
         },
         {
@@ -51673,6 +52875,74 @@
             ]
         },
         {
+            "name": "Reweave Fate",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 7,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when a creature you can see within 60 feet of you fails a {@variantrule D20 Test|Ishiir}"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": {
+                "type": "instant"
+            },
+            "entries": [
+                "You untangle a single thread of fate to encourage a different result. The creature that failed the {@variantrule D20 Test|Ishiir} can reroll it with {@variantrule Advantage|Ishiir}, and the creature must use the new roll. If the {@variantrule D20 Test|Ishiir} is successful, the creature gains {@damage 6d10} Temporary Hit Points from its strengthened fate."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "miscTags": [
+                "ADV",
+                "THP"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
             "name": "Rime's Binding Ice",
             "page": 1,
             "source": "Ishiir",
@@ -58219,6 +59489,100 @@
             ]
         },
         {
+            "name": "Spirit Lantern",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 5,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a black lantern"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                "You conjure a floating, ghostly black lantern that hovers above you and sheds Dim Light in a 60-foot radius. Six motes of ghostly light dance within the lantern.",
+                "As a {@variantrule Bonus Action|Ishiir}, you can expend one mote to create one of the following effects:",
+                {
+                    "type": "entries",
+                    "name": "Ghost Light",
+                    "entries": [
+                        "You launch the mote towards a creature of your choice within 60 feet of you in a streak of pale blue light. Make a spell attack roll. On a hit, the target takes necrotic damage equal to {@damage 4d8} plus your spellcasting ability modifier."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fortify Undead",
+                    "entries": [
+                        "You snuff out one mote and imbue an allied undead creature you can see within 60 feet of you with its energy. The target regains Hit Points equal to {@damage 4d8} plus your spellcasting ability modifier."
+                    ]
+                },
+                "For the duration, you regain a mote every time a creature dies within the light's radius. The spirit lantern can never hold more than six motes at a time."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "miscTags": [
+                "CTE",
+                "HL",
+                "LGT",
+                "UBA"
+            ],
+            "areaTags": [
+                "S"
+            ]
+        },
+        {
             "name": "Spirit Shroud",
             "page": 1,
             "source": "Ishiir",
@@ -60237,6 +61601,75 @@
             ]
         },
         {
+            "name": "Summon Dinosaur",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 6,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "polished scale worth 600+ GP",
+                    "cost": 60000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You call forth the spirit of a primeval dinosaur. It manifests in an unoccupied space that you can see within range and uses the Dinosaur Spirit stat block. When you cast the spell, choose Ankylosaur, Triceratops, or Tyrannosaur. The creature resembles a dinosaur of the chosen type, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.",
+                "The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge|Ishiir} action and uses its movement to avoid danger."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "Use the spell slot's level for the spell's level in the stat block."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "miscTags": [
+                "SCL",
+                "SMN"
+            ]
+        },
+        {
             "name": "Summon Dragon",
             "page": 1,
             "source": "Ishiir",
@@ -60765,6 +62198,87 @@
                     "name": "Circle Adept",
                     "source": "Ishiir"
                 }
+            ]
+        },
+        {
+            "name": "Summon Plant",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 5,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "herbs worth 500+ GP",
+                    "cost": 50000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You call forth the spirit of an animated plant. It manifests in an unoccupied space that you can see within range and uses the Plant Spirit stat block. When you cast the spell, choose Fungus, Tree, or Vine. The creature resembles a plant of the chosen type, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.",
+                "The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge|Ishiir} action and uses its movement to avoid danger."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "Use the spell slot's level for the spell's level in the stat block."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Summoner",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "miscTags": [
+                "SCL",
+                "SMN"
             ]
         },
         {
@@ -64554,6 +66068,99 @@
             ]
         },
         {
+            "name": "Transfix",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 7,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "For the duration, your appearance becomes otherworldly and alluring. One creature of your choice that you can see within 60 feet of you must succeed on a Charisma {@variantrule Saving Throw|Ishiir} or have the {@condition Charmed|Ishiir} condition for the duration.",
+                "While {@condition Charmed|Ishiir}, the target has the {@condition Incapacacitated|Ishiir} condition, and if the target is more than 5 feet away from you, it moves on its turn toward you by the most direct route, trying to get within 5 feet of you. If the {@condition Charmed|Ishiir} creature ends its turn within 5 feet of you, it takes {@damage 4d8} Psychic damage.",
+                "The target doesn't avoid Opportunity Attacks when moving toward you, but before moving into damaging terrain (such as lava or a pit), the target repeats the save, ending the spell on itself on a success.",
+                "Until the spell ends, you can take a {@action Magic|Ishiir} action on subsequent turns to target another creature, but you can't target a creature again if it has succeeded on a save against this casting of the spell."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "The damage increases by {@scaledamage 1d8|7-9|1d8} for each spell slot level above 7."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "conditionInflict": [
+                "charmed",
+                "incapacitated"
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "miscTags": [
+                "CRWD",
+                "FMV",
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
             "name": "Transmute Rock",
             "page": 1,
             "source": "Ishiir",
@@ -65726,6 +67333,85 @@
             ]
         },
         {
+            "name": "Vision of Elapsing Eons",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 9,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": {
+                "type": "minute",
+                "amount": 1
+            },
+            "entries": [
+                "You trick a creature you can see within range into believing it is watching itself and its surroundings crumble away, as if eons were passing in moments. The target must succeed on an Intelligence {@variantrule Saving Throw|Ishiir} or take {@damage 10d12} Psychic damage and have the {@condition Paralyzed|Ishiir} condition for the duration, even if it is normally immune to the condition.",
+                "While {@condition Paralyzed|Ishiir}, the target repeats the save at the end of each of its turns. On a failed save, it gains 1 {@condition Exhaustion|Ishiir} level. On a successful save, the spell ends. The spell ends early if someone within 5 feet of the target takes an {@variantrule Action|Ishiir} to shake it free from the illusion."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "conditionInflict": [
+                "exhaustion",
+                "paralyzed"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "miscTags": [
+                "CRWD",
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
             "name": "Vitriolic Sphere",
             "page": 1,
             "source": "Ishiir",
@@ -65916,6 +67602,116 @@
             ],
             "miscTags": [
                 "BLD"
+            ]
+        },
+        {
+            "name": "Wail of the Banshee",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 9,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": {
+                "type": "minute",
+                "amount": 1
+            },
+            "entries": [
+                "You emit a terrible scream that can kill those who hear it. Choose any number of creatures within range. Each target suffers an effect based on its current hit points:",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "101 Hit Points or More",
+                            "entries": [
+                                "The target has to make a Wisdom {@variantrule Saving Throw|Ishiir}. On a failure, it is {@condition Frightened|Ishiir} for 1 minute. At the end of each of its turn, the target can repeat the saving throw, ending the effect on a success."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "100 Hit Points or Fewer",
+                            "entries": [
+                                "The target is {@condition Frightened|Ishiir} for 1 minute. At the end of each of an affected target's turns, it must make a Wisdom {@variantrule Saving Throw|Ishiir}. If a target succeeds on 3 of these saves, it is no longer {@condition Frightened|Ishiir}. If a target fails 3 of these saves, it dies."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "75 Hit Points or Fewer",
+                            "entries": [
+                                "The target is {@condition Frightened|Ishiir} for 1 minute. At the end of each of an affected target's turns, it must make a Wisdom {@variantrule Saving Throw|Ishiir}. If a target succeeds on 3 of these saves, it is no longer {@condition Frightened|Ishiir}. If a target fails 1 of these saves, it dies."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "50 Hit Points or Fewer",
+                            "entries": [
+                                "The target is killed instantly."
+                            ]
+                        }
+                    ]
+                },
+                "This spell has no effect on undead and constructs."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "conditionInflict": [
+                "frightened"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "miscTags": [
+                "CRWD",
+                "CTE",
+                "SGT"
+            ],
+            "areaTags": [
+                "MT"
             ]
         },
         {
@@ -67790,6 +69586,78 @@
             ]
         },
         {
+            "name": "Waves of Exhaustion",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 5,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a piece of dried meat"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You evoke a nimbus of flickering gray light around your body. For the duration, you can take a {@action Magic|Ishiir} action to emit a wave of gray light in a 60-foot Cone. Creatures in that area must succeed on a Constitution {@variantrule Saving Throw|Ishiir} or gain 1 {@condition Exhaustion|Ishiir} level.",
+                "{@condition Exhaustion|Ishiir} levels gained from this spell are removed when the spell ends."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "conditionInflict": [
+                "exhaustion"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "UBA"
+            ],
+            "areaTags": [
+                "N"
+            ]
+        },
+        {
             "name": "Web",
             "page": 1,
             "source": "Ishiir",
@@ -68586,6 +70454,86 @@
             ]
         },
         {
+            "name": "Wither and Bloom",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 3,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a withered vine twisted into a loop"
+            },
+            "duration": {
+                "type": "instant"
+            },
+            "entries": [
+                "You invoke both death and life in a 20-foot-radius Sphere centered on a point within range. Each creature of your choice in that area makes a Constitution {@variantrule Saving Throw|Ishiir}, taking {@damage 4d6} Necrotic damage on a failed save or half as much damage on a successful one. Nonmagical plants in that area that aren't creatures, such as trees and shrubs, wither.",
+                "In addition, one creature of your choice in that area can roll one of its unexpended Hit Point Dice and regain a number of Hit Points equal to the roll plus your spellcasting ability modifier. That die is then expended."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "The damage increases by {@scaledamage 1d6|3-9|1d6} for each spell slot level above 3. The number of Hit Point Dice that can be rolled and expended increases by one for each spell slot level above 3. You add your spellcasting modifier to the number of Hit Points regained by this spell only once, regardless of the number of Hit Point Dice rolled and expended."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Witch",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "HL",
+                "SCL"
+            ],
+            "areaTags": [
+                "S"
+            ]
+        },
+        {
             "name": "Word of Radiance",
             "page": 1,
             "source": "Ishiir",
@@ -69264,6 +71212,67 @@
                 "ADV",
                 "SCL",
                 "UBA"
+            ]
+        },
+        {
+            "name": "Zone of Amicability",
+            "page": 1,
+            "source": "Ishiir",
+            "level": 4,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                "A magical zone of amicability radiates from you in a 60-foot Emanation for the duration. When you make an ability check to influence a creature in that area, you can treat a {@dice d20} roll of 9 or lower as a 10."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "Ishiir"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "Ishiir"
+                    }
+                ]
+            },
+            "feats": [
+                {
+                    "name": "Circle Adept",
+                    "source": "Ishiir"
+                }
+            ],
+            "miscTags": [
+                "EAB",
+                "UTIL"
+            ],
+            "areaTags": [
+                "S"
             ]
         },
         {
