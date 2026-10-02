@@ -442,6 +442,84 @@
             ]
         },
         {
+            "name": "Clucking Hut",
+            "source": "Ishiir",
+            "page": 1,
+            "summonedBySpell": "Baba's Clucking Hut|Ishiir",
+            "summonedBySpellLevel": 7,
+            "size": [
+                "G"
+            ],
+            "type": "construct",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                {
+                    "ac": 15,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "special": "333"
+            },
+            "speed": {
+                "walk": 60
+            },
+            "str": 23,
+            "dex": 14,
+            "con": 24,
+            "int": 1,
+            "wis": 1,
+            "cha": 1,
+            "passive": 5,
+            "resist": [
+                "bludgeoning",
+                "piercing",
+                "slashing"
+            ],
+            "immune": [
+                "poison",
+                "psychic"
+            ],
+            "vulnerable": [
+                "fire"
+            ],
+            "conditionImmune": [
+                "blinded|Ishiir",
+                "charmed|Ishiir",
+                "deafened|Ishiir",
+                "exhaustion|Ishiir",
+                "frightened|Ishiir",
+                "incapacitated|Ishiir",
+                "paralyzed|Ishiir",
+                "petrified|Ishiir",
+                "poisoned|Ishiir",
+                "stunned|Ishiir",
+                "unconscious|Ishiir"
+            ],
+            "trait": [
+                {
+                    "name": "Clucking Stride",
+                    "entries": [
+                        "The hut ignores {@quickref difficult terrain||3}.",
+                        "Its long jump is up to 60 ft. and its high jump is up to 30 ft., with or without a running start."
+                    ]
+                },
+                {
+                    "name": "Camouflage",
+                    "entries": [
+                        "When still and sitting down, the hut is indistinguishable from a regular building and any non-magical attempts to discern its true nature automatically fail."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "False Appearance"
+            ]
+        },
+        {
             "name": "Construct Spirit",
             "source": "Ishiir",
             "page": 1,
@@ -639,6 +717,100 @@
             ]
         },
         {
+            "name": "Dinosaur Spirit",
+            "source": "Ishiir",
+            "page": 1,
+            "summonedBySpell": "Summon Dinosaur|Ishiir",
+            "summonedBySpellLevel": 6,
+            "size": [
+                "H"
+            ],
+            "type": "beast",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                {
+                    "special": "11 + the level of the spell (natural armor) + 2 (Ankylosaur only)"
+                }
+            ],
+            "hp": {
+                "special": "65"
+            },
+            "speed": {
+                "walk": 40
+            },
+            "pbNote": "equals your bonus",
+            "str": 21,
+            "dex": 11,
+            "con": 15,
+            "int": 4,
+            "wis": 12,
+            "cha": 9,
+            "passive": 19,
+            "trait": [
+                {
+                    "name": "Tough",
+                    "entries": [
+                        "Add half the spell's level (rounded down) to any Strength or Constitution saving throw the spirit makes."
+                    ]
+                },
+                {
+                    "name": "Siege Monster (Ankylosaur Only)",
+                    "entries": [
+                        "The spirit deals double damage to objects and structures."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The spirit makes a number of attacks equal to half this spell's level (rounded down)."
+                    ]
+                },
+                {
+                    "name": "Slam (Ankylosaur Only)",
+                    "entries": [
+                        "{@atk mw} {@hitYourSpellAttack} to hit, reach 10 ft., one target. {@h}{@damage 1d10 + 5 + summonSpellLevel} bludgeoning damage."
+                    ]
+                },
+                {
+                    "name": "Bite (Tyrannosaur Only)",
+                    "entries": [
+                        "{@atk mw} {@hitYourSpellAttack} to hit, reach 10 ft., one target. {@h}{@damage 2d10 + 5 + summonSpellLevel} piercing damage.",
+                        "If the target is a Large or smaller creature, it has to make a Dexterity {@variantrule Saving Throw|Ishiir} or be {@condition Grappled} by the spirit. The target can use an {@variantrule Action|Ishiir} to make a Strength or Dexterity {@variantrule Ability Check|Ishiir} against your spell save DC to escape."
+                    ]
+                },
+                {
+                    "name": "Horns (Triceratops Only)",
+                    "entries": [
+                        "{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d10 + 5 + summonSpellLevel} piercing damage.",
+                        "If the spirit moved 20 ft. or more straight toward it immediately before the hit, the target takes an extra {@damage 1d10 x half this spell's level (rounded down)} piercing damage and has to make a Strength {@variantrule Saving Throw|Ishiir}. On a failure, it is knocked {@condition Prone}."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Siege Monster"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "damageTags": [
+                "B",
+                "P"
+            ],
+            "miscTags": [
+                "MLW",
+                "MW",
+                "RCH"
+            ],
+            "conditionInflict": [
+                "grappled",
+                "prone"
+            ]
+        },
+        {
             "name": "Draconic Spirit",
             "source": "Ishiir",
             "page": 1,
@@ -749,7 +921,6 @@
                 "D"
             ],
             "actionTags": [
-                "Breath Weapon",
                 "Multiattack"
             ],
             "languageTags": [
@@ -1045,7 +1216,7 @@
             ],
             "skill": {
                 "perception": "+2",
-                "stealth": "+5 (Tricksty only)"
+                "stealth": "+5 (Tricksy only)"
             },
             "passive": 10,
             "resist": [
@@ -1346,8 +1517,8 @@
                 "P"
             ],
             "miscTags": [
-                "MA",
-                "RA",
+                "MW",
+                "RW",
                 "RCH"
             ],
             "conditionInflict": [
@@ -1441,10 +1612,103 @@
                 "TP"
             ],
             "miscTags": [
-                "MA"
+                "MW"
             ],
             "conditionInflict": [
                 "frightened"
+            ]
+        },
+        {
+            "name": "Plant Spirit",
+            "source": "Ishiir",
+            "page": 1,
+            "summonedBySpell": "Summon Plant|Ishiir",
+            "summonedBySpellLevel": 5,
+            "size": [
+                "L"
+            ],
+            "type": "plant",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                {
+                    "special": "11 + the level of the spell (natural armor) + 2 (Tree only)"
+                }
+            ],
+            "hp": {
+                "special": "60"
+            },
+            "speed": {
+                "walk": 40,
+                "climb": {
+                    "number": 40,
+                    "condition": "(vine only)"
+                }
+            },
+            "pbNote": "equals your bonus",
+            "str": 17,
+            "dex": 13,
+            "con": 14,
+            "int": 10,
+            "wis": 13,
+            "cha": 10,
+            "passive": 11,
+            "trait": [
+                {
+                    "name": "Siege Monster (Tree Only)",
+                    "entries": [
+                        "The spirit deals double damage to objects and structures."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The spirit makes a number of attacks equal to half this spell's level (rounded down)."
+                    ]
+                },
+                {
+                    "name": "Spore Spray (Fungus Only)",
+                    "entries": [
+                        "{@atk rw} {@hitYourSpellAttack} to hit, range 30 ft., one target. {@h}{@damage 1d4 + 1 + summonSpellLevel} poison damage.",
+                        "The target has to make a Constitution {@variantrule Saving Throw|Ishiir} or have the {@condition Poisoned|Ishiir} condition until the end of the spirit's next turn. If it already has that condition, it takes {@damage 3d4} additional poison damage.",
+                        "This attack does not incur {@variantrule Disadvantage|Ishiir} when the spirit is within 5 ft. of a hostile creature."
+                    ]
+                },
+                {
+                    "name": "Slam (Tree and Vine Only)",
+                    "entries": [
+                        "{@atk mw} {@hitYourSpellAttack} to hit, reach 10 ft., one target. {@h}{@damage 1d10 + 3 + summonSpellLevel} bludgeoning damage."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Twist Away (Vine Only)",
+                    "entries": [
+                        "The spirit takes the {@action Dash} or {@action Disengage} action."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Siege Monster"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "damageTags": [
+                "B",
+                "I"
+            ],
+            "miscTags": [
+                "MLW",
+                "MW",
+                "RW"
+            ],
+            "conditionInflict": [
+                "poisoned"
             ]
         },
         {
