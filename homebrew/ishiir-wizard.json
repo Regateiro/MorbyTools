@@ -2327,21 +2327,21 @@
                             "type": "entries",
                             "name": "Undead Familiar",
                             "entries": [
-                                "You gain the {@spell Find Familiar|Ishiir} spell. When you cast the spell, you choose one of the normal forms or one of the special forms: a skeleton or a zombie. When you choose one of the normal forms, you can choose Undead as its creature type. When you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its {@variantrule Reaction|Ishiir}."
+                                "The {@spell Find Familiar|Ishiir} spell appears in your spellbook. When you cast the spell, you choose one of the normal forms for your familiar or one of the following special forms: Skeleton or Zombie. When you choose one of the normal forms, you can choose Undead as its creature type."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Necromantic Attunement",
                             "entries": [
-                                "When you cast a necromancy spell using a spell slot, you can choose an undead creature you can see within 60 feet of you. It regains hit points equal to the level of the spell slot you expended plus your Wizard level."
+                                "Undead creatures you control automatically succeed on {@variantrule Saving Throw|Ishiir|Saving Throws} against features from this subclass and Necromancy spells that you cast and do not take damage from them. When you cast a Necromancy spell with a spell slot, you can choose one Undead creature you control that you can see within 60 feet of yourself. The target regains hit points equal to twice the expended spell slot's level + your Intelligence modifier + half your Wizard level (rounded down)."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Grim Harvest",
                             "entries": [
-                                "Once per turn, when you kill one or more creatures with a spell of 1st level or higher, you regain hit points equal to twice the spell's level, or three times its level if the spell belongs to the necromancy school. You don't gain this benefit for killing constructs or undead."
+                                "Whenever a hostile creature or an Undead creature you control dies within 60 feet of you, you can use your {@variantrule Reaction|Ishiir} to regain hit points equal to your Wizard level. This feature has no effect if the hostile creature is a construct."
                             ]
                         }
                     ]
@@ -2359,15 +2359,25 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You always have the {@spell Animate Dead|Ishiir} and {@spell Summon Undead|Ishiir} spells prepared and they do not count against the number of your prepared spells. For you, these two spells count as one spell level higher than they actually are. When you cast {@spell Animate Dead|Ishiir}, you can target one additional corpse or pile of bones, creating another zombie or skeleton, as appropriate.",
-                "You can reassert control over the undead you created with {@spell Animate Dead|Ishiir} without expending a spell slot. Once you use this benefit, you can't use it again until you finish a {@variantrule Short Rest|Ishiir}.",
-                "Any undead creature you control has the following additional benefits:",
+                "You always have the {@spell Animate Dead|Ishiir} and {@spell Summon Undead|Ishiir} spells prepared. For you, these two spells count as one spell level higher than they actually are. Whenever you start casting either spell, you can increase the spell's effective level by 1. Additionally, you can cast Animate Dead without expending a spell slot, but only to reassert control over Undead that you have raised with the spell. Once you have done so, you cannot do so again until you have finished a {@variantrule Short Rest|Ishiir|Short} or a {@variantrule Long Rest|Ishiir}.",
+                "In addition, you gain the following benefits.",
                 {
-                    "type": "list",
-                    "items": [
-                        "The creature's hit point maximum is increased by an amount equal to your wizard level.",
-                        "The creature adds your {@variantrule Proficiency|Ishiir} bonus to its weapon damage rolls.",
-                        "The creature can deal necrotic damage instead of bludgeoning, piercing, or slashing damage when it makes a weapon attack."
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Undead Fortitude",
+                            "entries": [
+                                "Whenever you cast a Necromancy spell that creates or summons an Undead, the Undead's Hit Point maximum and current Hit Points increase by a number equal to your Wizard level."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Imbued with Death",
+                            "entries": [
+                                "When an Undead creature you control deals damage, you can change the damage type to Necrotic. Additionally, Undead creatures controlled by you deal additional damage equal to your proficiency with their attacks and features."
+                            ]
+                        }
                     ]
                 }
             ]
@@ -2397,7 +2407,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "Your dominion over the dead reaches its zenith. You have the following benefits.",
+                "Through your mastery of the necromantic art you gain the following benefits:",
                 {
                     "type": "entries",
                     "entries": [
@@ -2405,21 +2415,23 @@
                             "type": "entries",
                             "name": "Death Denied",
                             "entries": [
-                                "When a creature you can see within 30 feet of you is reduced to 0 hit points, you can use your {@variantrule Reaction|Ishiir} to deny its death, restoring the creature to 1 hit point. Once you use this benefit, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
+                                "When you are reduced to 0 hit points but not killed outright, you can use your Reaction to instantly destroy an Undead within 60 feet you control and instead change your hit points to twice your Wizard level. You cannot use this feature again until you have finished a {@variantrule Long Rest|Ishiir} or expend a level 5+ spell slot to use this feature again."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Necrotic Rupture",
                             "entries": [
-                                "When an undead creature you control is reduced to 0 hit points, you can cause it to explode with necrotic energy. Roll a number of d6s equal to half the creature's unexpended Hit Point Dice (round up, minimum of {@dice 1d6}) and add them together. Each creature within 10 feet of the undead makes a Dexterity {@variantrule Saving Throw|Ishiir}, taking necrotic damage equal to the number rolled on a failed save, or half as much on a successful one."
+                                "Once per turn, when an Undead creature within 60 feet you control is reduced to 0 hit points, you can choose it to explode in a burst of negative energy (no action required). All creatures in a 20-feet radius of the target have to make a Dexterity {@variantrule Saving Throw|Ishiir} or take {@damage 6d6} necrotic damage. On a success, they take half as much damage."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Dominate Undead",
                             "entries": [
-                                "As an {@variantrule Action|Ishiir}, you can choose one undead creature you can see within 60 feet of you. It must make a Charisma {@variantrule Saving Throw|Ishiir} against your wizard spell save DC. If it fails, it obeys your commands until you use this benefit again or the creature dies. An undead with an Intelligence of 8 or higher has {@variantrule Advantage|Ishiir} on this saving throw."
+                                "Choose an Undead creature you can see within 60 feet of you. The target has to make a Charisma {@variantrule Saving Throw|Ishiir} against your spell save DC. On a failure, the target falls under your control as if you had raised it with the {@spell Animate Dead|Ishiir} spell. On a success, it is immune to this feature for the next 24 hours.",
+                                "If the target's CR is equal to or higher than your level in this class, it can repeat the {@variantrule Saving Throw|Ishiir} at the end of every hour, ending the effect on a success. Otherwise, this effect lasts until 24 hours have passed, you die, or use this feature again.",
+                                "Additionally, you can direct all Undead created or summoned by you with the same {@variantrule Bonus Action|Ishiir} (if an action cost is specified)."
                             ]
                         }
                     ]
