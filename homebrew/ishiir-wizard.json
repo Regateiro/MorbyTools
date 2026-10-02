@@ -538,6 +538,7 @@
             "page": 1,
             "subclassFeatures": [
                 "School of Conjuration|Wizard|Ishiir|Conjuration|Ishiir|3",
+                "Distant Transposition|Wizard|Ishiir|Conjuration|Ishiir|6",
                 "Enhanced Summons|Wizard|Ishiir|Conjuration|Ishiir|6",
                 "Focused Conjuration|Wizard|Ishiir|Conjuration|Ishiir|10",
                 "Durable Summons|Wizard|Ishiir|Conjuration|Ishiir|14"
@@ -619,7 +620,7 @@
                 "School of Necromancy|Wizard|Ishiir|Necromancy|Ishiir|3",
                 "Undead Thralls|Wizard|Ishiir|Necromancy|Ishiir|6",
                 "Inured to Undeath|Wizard|Ishiir|Necromancy|Ishiir|10",
-                "Command Undead|Wizard|Ishiir|Necromancy|Ishiir|14"
+                "Lord of the Undead|Wizard|Ishiir|Necromancy|Ishiir|14"
             ]
         },
         {
@@ -1527,7 +1528,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Benign Transporation|Wizard|Ishiir|Conjuration|Ishiir|3"
+                    "subclassFeature": "Benign Transposition|Wizard|Ishiir|Conjuration|Ishiir|3"
                 }
             ]
         },
@@ -1547,7 +1548,7 @@
             ]
         },
         {
-            "name": "Benign Transporation",
+            "name": "Benign Transposition",
             "source": "Ishiir",
             "page": 1,
             "className": "Wizard",
@@ -1557,8 +1558,22 @@
             "level": 3,
             "header": 2,
             "entries": [
-                "You can use your {@variantrule Bonus Action|Ishiir} to teleport up to 30 feet to an unoccupied space that you can see. Alternatively, you can choose a space within range that is occupied by a Small or Medium creature. If that creature is willing, you both teleport, swapping places.",
-                "Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|Ishiir} or you expend a 2+ spell slot to use it again."
+                "You can use your {@variantrule Bonus Action|Ishiir} to teleport up to 30 feet to an unoccupied space that you can see. Alternatively, you can choose a space within range that is occupied by a Medium or smaller creature. If that creature is willing, you both teleport, swapping places.",
+                "You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|Ishiir}."
+            ]
+        },
+        {
+            "name": "Distant Transposition",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Wizard",
+            "classSource": "Ishiir",
+            "subclassShortName": "Conjuration",
+            "subclassSource": "Ishiir",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "The range of your Benign Transposition feature increases to 60 feet. Additionally, you can restore one use of it by expending a level 3+ spell slot (no action required)."
             ]
         },
         {
@@ -1600,7 +1615,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "Any creature that you summon or create with a conjuration spell has temporary hit points equal to twice your Wizard level."
+                "When you cast a conjuration spell to summon or create a creature using a spell slot, that creature gains temporary hit points equal to twice your Wizard level when it first appears. While it has these temporary hit points, the creature has {@variantrule Resistance|Ishiir} to every damage type except Force, Necrotic, Psychic, and Radiant."
             ]
         },
         {
@@ -2274,25 +2289,8 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Negative Energy Manipulation|Wizard|Ishiir|Necromancy|Ishiir|3"
+                    "subclassFeature": "Student of Death|Wizard|Ishiir|Necromancy|Ishiir|3"
                 }
-            ]
-        },
-        {
-            "name": "Negative Energy Manipulation",
-            "source": "Ishiir",
-            "page": 1,
-            "className": "Wizard",
-            "classSource": "Ishiir",
-            "subclassShortName": "Necromancy",
-            "subclassSource": "Ishiir",
-            "level": 3,
-            "header": 1,
-            "entries": [
-                "You have a pool of deathly energy represented by a number of points equal to twice your Wizard level + your Intelligence modifier.",
-                "When you roll damage for a necromancy spell or an undead you control, you can deal additional necrotic damage by spending points from the pool, up to its current maximum.",
-                "When a creature of at least CR 1/8 dies within 60 feet of you, you can use your {@variantrule Reaction|Ishiir} to harvest part of its remaining life force, regaining a number of points equal to the creature's CR (minimum of 1). You cannot do so if the creature is an undead or construct.",
-                "You regain expended points equal to your {@variantrule Proficiency|Ishiir} when you finish a {@variantrule Short Rest|Ishiir} and all expended points when you finish a {@variantrule Long Rest|Ishiir}."
             ]
         },
         {
@@ -2311,6 +2309,46 @@
             ]
         },
         {
+            "name": "Student of Death",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Wizard",
+            "classSource": "Ishiir",
+            "subclassShortName": "Necromancy",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Your study of death grants you the following benefits.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Undead Familiar",
+                            "entries": [
+                                "You gain the {@spell Find Familiar|Ishiir} spell. When you cast the spell, you choose one of the normal forms or one of the special forms: a skeleton or a zombie. When you choose one of the normal forms, you can choose Undead as its creature type. When you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its {@variantrule Reaction|Ishiir}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Necromantic Attunement",
+                            "entries": [
+                                "When you cast a necromancy spell using a spell slot, you can choose an undead creature you can see within 60 feet of you. It regains hit points equal to the level of the spell slot you expended plus your Wizard level."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Grim Harvest",
+                            "entries": [
+                                "Once per turn, when you kill one or more creatures with a spell of 1st level or higher, you regain hit points equal to twice the spell's level, or three times its level if the spell belongs to the necromancy school. You don't gain this benefit for killing constructs or undead."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Undead Thralls",
             "source": "Ishiir",
             "page": 1,
@@ -2321,13 +2359,15 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You always have the {@spell Animate Dead|Ishiir} and {@spell Summon Undead|Ishiir} spells prepared and they do not count against the number of your prepared spells. When you cast {@spell Animate Dead|Ishiir}, you can target one additional corpse or pile of bones, creating another zombie or skeleton, as appropriate.",
+                "You always have the {@spell Animate Dead|Ishiir} and {@spell Summon Undead|Ishiir} spells prepared and they do not count against the number of your prepared spells. For you, these two spells count as one spell level higher than they actually are. When you cast {@spell Animate Dead|Ishiir}, you can target one additional corpse or pile of bones, creating another zombie or skeleton, as appropriate.",
+                "You can reassert control over the undead you created with {@spell Animate Dead|Ishiir} without expending a spell slot. Once you use this benefit, you can't use it again until you finish a {@variantrule Short Rest|Ishiir}.",
                 "Any undead creature you control has the following additional benefits:",
                 {
                     "type": "list",
                     "items": [
                         "The creature's hit point maximum is increased by an amount equal to your wizard level.",
-                        "The creature adds your {@variantrule Proficiency|Ishiir} bonus to its weapon damage rolls."
+                        "The creature adds your {@variantrule Proficiency|Ishiir} bonus to its weapon damage rolls.",
+                        "The creature can deal necrotic damage instead of bludgeoning, piercing, or slashing damage when it makes a weapon attack."
                     ]
                 }
             ]
@@ -2347,7 +2387,7 @@
             ]
         },
         {
-            "name": "Command Undead",
+            "name": "Lord of the Undead",
             "source": "Ishiir",
             "page": 1,
             "className": "Wizard",
@@ -2357,8 +2397,33 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "You can use magic to bring undead under your control, even those created by other wizards. As an {@variantrule Action|Ishiir}, you can choose one undead that you can see within 60 feet of you. That creature must make a Charisma {@variantrule Saving Throw|Ishiir} against your wizard spell save DC. If it succeeds, you can't use this feature on it again. If it fails, it becomes friendly to you and obeys your commands until you use this feature again.",
-                "Intelligent undead are harder to control in this way. If the target has an Intelligence of 8 or higher, it has {@variantrule Advantage|Ishiir} on the {@variantrule Saving Throw|Ishiir}. If it fails the {@variantrule Saving Throw|Ishiir} and has an Intelligence of 12 or higher, it can repeat the {@variantrule Saving Throw|Ishiir} at the end of every hour until it succeeds and breaks free."
+                "Your dominion over the dead reaches its zenith. You have the following benefits.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Death Denied",
+                            "entries": [
+                                "When a creature you can see within 30 feet of you is reduced to 0 hit points, you can use your {@variantrule Reaction|Ishiir} to deny its death, restoring the creature to 1 hit point. Once you use this benefit, you can't use it again until you finish a {@variantrule Long Rest|Ishiir}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Necrotic Rupture",
+                            "entries": [
+                                "When an undead creature you control is reduced to 0 hit points, you can cause it to explode with necrotic energy. Roll a number of d6s equal to half the creature's unexpended Hit Point Dice (round up, minimum of {@dice 1d6}) and add them together. Each creature within 10 feet of the undead makes a Dexterity {@variantrule Saving Throw|Ishiir}, taking necrotic damage equal to the number rolled on a failed save, or half as much on a successful one."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Dominate Undead",
+                            "entries": [
+                                "As an {@variantrule Action|Ishiir}, you can choose one undead creature you can see within 60 feet of you. It must make a Charisma {@variantrule Saving Throw|Ishiir} against your wizard spell save DC. If it fails, it obeys your commands until you use this benefit again or the creature dies. An undead with an Intelligence of 8 or higher has {@variantrule Advantage|Ishiir} on this saving throw."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {

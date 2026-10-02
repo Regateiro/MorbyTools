@@ -1025,7 +1025,7 @@
                         ],
                         "5": [
                             "dispel magic|Ishiir",
-                            "magic circle|Ishiir"
+                            "counterspell|Ishiir"
                         ],
                         "7": [
                             "arcane eye|Ishiir",
@@ -1054,8 +1054,8 @@
             ],
             "subclassFeatures": [
                 "Arcana Domain|Cleric|Ishiir|Arcana|Ishiir|3",
-                "Spell Breaker|Cleric|Ishiir|Arcana|Ishiir|6",
                 "Blessed Arcana|Cleric|Ishiir|Arcana|Ishiir|6",
+                "Dispelling Recovery|Cleric|Ishiir|Arcana|Ishiir|6",
                 "Arcane Mastery|Cleric|Ishiir|Arcana|Ishiir|17"
             ]
         },
@@ -2265,7 +2265,7 @@
                         ],
                         [
                             "5th",
-                            "{@spell Dispel Magic|Ishiir}, {@spell Magic Circle|Ishiir}"
+                            "{@spell Dispel Magic|Ishiir}, {@spell Counterspell|Ishiir}"
                         ],
                         [
                             "7th",
@@ -2283,7 +2283,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity: Arcane Abjuration|Cleric|Ishiir|Arcana|Ishiir|3"
+                    "subclassFeature": "Modify Magic|Cleric|Ishiir|Arcana|Ishiir|3"
                 }
             ]
         },
@@ -2303,7 +2303,7 @@
             ]
         },
         {
-            "name": "Channel Divinity: Arcane Abjuration",
+            "name": "Modify Magic",
             "source": "Ishiir",
             "page": 1,
             "className": "Cleric",
@@ -2312,15 +2312,54 @@
             "subclassSource": "Ishiir",
             "level": 3,
             "header": 1,
+            "entries": [
+                "You can use your Channel Divinity to alter your spells as you cast them. When you cast a spell, you can expend one use of your Channel Divinity and change the spell in one of the following ways (no action required).",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Fortifying Spell|Cleric|Ishiir|Arcana|Ishiir|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tenacious Spell|Cleric|Ishiir|Arcana|Ishiir|3"
+                }
+            ]
+        },
+        {
+            "name": "Fortifying Spell",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Arcana",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 2,
             "consumes": {
                 "name": "Channel Divinity"
             },
             "entries": [
-                "As a {@action Magic|Ishiir} action, you present your Holy Symbol and censure extraplanar creatures. Each celestial, elemental, fey, and fiend of your choice within 30 feet of you must make a Wisdom {@variantrule Saving Throw|Ishiir}. If the creature fails its save, it has the {@condition Frightened|Ishiir} and {@condition Incapacitated|Ishiir} conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die."
+                "One target of the spell gains a number of temporary hit points equal to {@dice 2d8} plus your Cleric level."
             ]
         },
         {
-            "name": "Spell Breaker",
+            "name": "Tenacious Spell",
+            "source": "Ishiir",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "Ishiir",
+            "subclassShortName": "Arcana",
+            "subclassSource": "Ishiir",
+            "level": 3,
+            "header": 2,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "When you cast a spell that forces a creature to make a saving throw, and a creature you can see succeeds on that saving throw, roll {@dice 1d6} and subtract the number rolled from the target's first saving throw against the spell's effect."
+            ]
+        },
+        {
+            "name": "Dispelling Recovery",
             "source": "Ishiir",
             "page": 1,
             "className": "Cleric",
@@ -2330,7 +2369,8 @@
             "level": 6,
             "header": 1,
             "entries": [
-                "When you restore hit points to an ally with a spell of 1st level or higher, you can also end one spell of your choice on that creature. The level of the spell you end must be equal to or lower than the level of the spell slot you use to cast the healing spell."
+                "Immediately after you cast a spell with a spell slot that restores hit points to a creature or ends a condition on a creature, you can cast {@spell Dispel Magic|Ishiir} as part of that {@variantrule Action|Ishiir}, {@variantrule Bonus Action|Ishiir}, or {@variantrule Reaction|Ishiir}, and without expending a spell slot.",
+                "Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|Ishiir} or {@variantrule Long Rest|Ishiir}. You also restore your use of it by expending one use of Channel Divinity (no action required)."
             ]
         },
         {
