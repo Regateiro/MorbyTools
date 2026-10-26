@@ -1,0 +1,1973 @@
+{
+	"homestead": [
+		{
+			"name": "Homesteads",
+			"page": 1,
+			"source": "Fjarrenvold",
+			"entries": [
+				"There comes a point in an adventurer’s life where they yearn for a bed to call their own. Homesteads allow you to leave a tangible mark on the world through base building that gives adventurers a new outlet outside of typical adventures, with long-term goals, strategic planning, and downtime activities. There are multiple factors to consider when building a Homestead of your own.",
+				"{@b Homestead Type.} The type of Homestead you wish to build will offer a resource bonus and a Homestead feature. The type of Homestead you build will also affect how the local people will perceive you. For example a Mansion is likely to curry favour with Nobles, but can cause resentment with the commoners.",
+				"{@b Location.} Where you choose to settle makes a difference of which location bonuses your Homestead will offer. Each base type will benefit from a neighbour bonus and a location feature. Building a Homestead comes with a cost that the location can influence, a Homestead in a crowded city will cost more to develop than in a rural town either by demand or inconvenience of labourers.",
+				"The Homestead Location table shows you the cost multiplier for building a Homestead, building modules and hiring staff as well as the neighbourhood bonus and location feature.",
+				"{@b Homestead Modules.} Modules allow you to personalise your Homestead and build a home that truly belongs to you. A Homestead can have a number of modules built shown in the Homestead Type table, with further modules being allowed through Homestead Expansion. Each Module you build grants additional resource bonuses.",
+				"Some modules are built with facilities required for crafting. A list of available facilities is shown in the Facilities Table.",
+				"Some modules also allow you to hire staff to assist you in your journey and look after the Homestead in your absence. Each Module allows you to hire one suitable staff member shown in the Homestead Staff table.",
+				"{@b Homestead Expansion.} As you adventure, be it through means of gold or reward your Homestead may grow alongside you. What may start as a simple shelter for a bunch of outcast warriors can grow and develop into a world famous stronghold of heroes. As you grow and gain glory, or notoriety, settlements will take note of your deeds and offer expansions to your land.",
+				"Each expansion will allow you to build additional modules in your Homestead. The amount of additional modules available per expansion is shown in the Homestead Type table.",
+				"{@b Staff.} Staff can be hired to assist you in crafting or can craft on your behalf should you provide them materials. The Staff members available for you to hire are shown in the Staff Table. Each staff member requires a Salary per day hired, which is affected by your Homestead Location. Some Staff offer services other than crafting."
+			]
+		},
+		{
+			"name": "Homestead Types",
+			"page": 2,
+			"source": "Fjarrenvold",
+			"entries": [
+				{
+					"type": "table",
+					"caption": "Homestead Types",
+					"colLabels": [
+						"Type",
+						"Cost (GP)",
+						"Modules Available",
+						"Modules Per Expansion",
+						"Resource Bonus",
+						"Homestead Feature"
+					],
+					"colStyles": [
+						"col-1-5",
+						"col-1",
+						"col-1",
+						"col-1",
+						"col-3-5",
+						"col-4"
+					],
+					"rows": [
+						[
+							"Keep",
+							"7,500",
+							"2",
+							"2",
+							"While you own a Keep, you may add a 1d4 Bonus to your initiative rolls.",
+							"{@b Private Armory.} Once per day, when crafting using Armorsmith's or Weaponsmith's tools within your keep. If you fail a crafting check you may reroll one of the dice, you must use the new result even if that result is lower."
+						],
+						[
+							"Mansion",
+							"15,000",
+							"4",
+							"2",
+							"While you own a Mansion, once per day you may gain an additional +5 to the Neighbour Bonus this Homestead provides.",
+							"{@b Personal Vaults.} Once per long rest, while at your mansion, you may buy any costed components needed for crafting at 50% of their usual price. The amount of components that can be bought this way equals 100 times Your Level GP's worth. This feature can only be used by one player in the party per long rest."
+						],
+						[
+							"Simple Home",
+							"1000",
+							"1",
+							"1",
+							"When crafting using Cook's Utensils within your Simple Home, The DC to craft food is reduced by 1.",
+							"{@b Stocked Pantry.} At the start of a long rest using your Simple House you may select one non-pristine cooking ingredient to cure, season or otherwise enhance. At the end of the long rest, you turn the items into pristine quality. This feature can only be used by one player in the party per long rest."
+						],
+						[
+							"Temple",
+							"5,000",
+							"2",
+							"1",
+							"While you own a Temple, once per day you can call upon the divine might of your temple’s god to help them you in battle. As a reaction, you may invoke divine protection, gaining a bonus equal to your proficiency bonus to all saving throws until the start of your next turn.",
+							"{@b Diving Guidance .} During a long rest spent in your Temple, you may spend three days of downtime in prayer. If you do, upon completing the long rest, as an action you may roll a d20, on a result equal to or less than your current level you may use the Cleric ability, Divine Intervention. An unspent use of this feature is lost upon starting a long rest. This feature can only be used by one player in the party per long rest."
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Homestead Expansions",
+			"page": 2,
+			"source": "Fjarrenvold",
+			"entries": [
+				{
+					"type": "table",
+					"caption": "Homestead Expansions",
+					"colLabels": [
+						"Average Party Level",
+						"Total Homestead Expansions"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
+					],
+					"rows": [
+						[
+							"1",
+							"-"
+						],
+						[
+							"6",
+							"1"
+						],
+						[
+							"11",
+							"2"
+						],
+						[
+							"16",
+							"3"
+						],
+						[
+							"20",
+							"4"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Homestead Locations",
+			"page": 3,
+			"source": "Fjarrenvold",
+			"entries": [
+				{
+					"type": "table",
+					"caption": "Homestead Locations",
+					"colLabels": [
+						"Location",
+						"Cost Multiplier",
+						"Neighbourhood Bonus",
+						"Location Feature"
+					],
+					"colStyles": [
+						"col-2",
+						"col-1 text-center",
+						"col-4-5",
+						"col-4-5"
+					],
+					"rows": [
+						[
+							"City",
+							"1.5",
+							"Owning a Homestead in the city grants you the notice of nobles and courtiers, and your name begins to circulate in high society. You Gain +2 on Deception, Intimidation, and Persuasion checks when interacting with aristocrats, Nobles and royalty.",
+							"Once per day, you may host a dinner for up to five guests. After the meal, these guests are Charmed by your party for the next 24 hours. The DM determines whether the guests you invite attend."
+						],
+						[
+							"Coastal",
+							"1.5",
+							"Owning a coastal Homestead gives you +3 History in relation to Naval and aquatic information. Sailors love to talk and share tales of the sights they have seen.",
+							"Any harbour who is not hostile towards you will give you free mooring for any water vehicles you own. In addition you may acquire passage on boats for half the usual cost."
+						],
+						[
+							"Desert",
+							"1.75",
+							"Owning a Desert Homestead grants you access to a community of traders, hermits, and wanderers alike and their wealth of knowledge. You gain +2 to Arcana and Investigation checks to identify unknown texts and magic.",
+							"You can spend a day of downtime when taking a long rest in your Homestead to conjure a swirling sandstorm, obscuring it from sight. While active, any attempt to locate the base or anything inside it (including scrying) has its DC increased by 10 until the end of the long rest."
+						],
+						[
+							"Forest",
+							"1.25",
+							"Owning a Homestead in the forest strengthens your bond with nature. Gain +2 to Animal Handling checks when dealing with beasts of Challenge rating equal to or less than your proficiency bonus",
+							"While in your Homestead, you may cast Animal Messenger once per day, even if they cannot normally cast spells. This feature can only be used by one player per day."
+						],
+						[
+							"Mountain",
+							"2",
+							"Owning a Homestead in the mountains, the neighbours have grown tough and rugged from its challenges. The same can be said for you. You gain a +2 to Athletics checks.",
+							"Whilst travelling within 10 miles of your Homestead, you are not impeded by difficult mountainous terrain and automatically succeed on saving throws the effects of extreme cold weather"
+						],
+						[
+							"Open Grassland",
+							"1.25",
+							"Owning a Homestead in open Grassland grants you access to different forms of wildlife. You gain a +2 bonus to Nature checks.",
+							"While in your Homestead, when spending downtime to forage for ingredients, on a successful forage you can reroll one the dice result to determine how many ingredients you receive. When you do so you must take the new result even if it is lower than the first."
+						],
+						[
+							"Town",
+							"1",
+							"Owning a Homestead in a town, you meet a variety of different common-folk and merchants. You gain a +2 to persuasion checks you make when bartering for cheaper prices at shops, Inns and taverns.",
+							"Whilst in your Homestead, When you finish a long rest you gain temporary hit points equal to your proficiency bonus. These temporary hit points can be gained in addition to any other source and are always used first when taking damage."
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Homestead Modules",
+			"page": 4,
+			"source": "Fjarrenvold",
+			"entries": [
+				{
+					"type": "table",
+					"caption": "Homestead Modules",
+					"colLabels": [
+						"Module",
+						"Cost (GP)",
+						"Facilities",
+						"Resource Bonus",
+						"Staff",
+						"Construction Time"
+					],
+					"colStyles": [
+						"col-2",
+						"col-1 text-center",
+						"col-1-5 text-center",
+						"col-5",
+						"col-1-5 text-center",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"Artifice Workshop",
+							"300",
+							"-",
+							"Whilst crafting in your Homestead that contains a Artifice Workshop, you gain +2 to crafting checks made with Enchanter's Supplies .",
+							"Enchanter",
+							"7 Days"
+						],
+						[
+							"Dungeon",
+							"100",
+							"-",
+							"You may detain other creatures in your Homestead. You gain +2 to Intimidation checks against creatures you have detained.",
+							"Guard",
+							"5 Days"
+						],
+						[
+							"Forge",
+							"300",
+							"Forge",
+							"Whilst crafting in your Homestead that contains a Forge, you gain +2 to crafting checks made with Armorsmith's or Weaponsmith's Tools.",
+							"Blacksmith",
+							"7 Days"
+						],
+						[
+							"Greenhouse",
+							"200",
+							"-",
+							"Whilst crafting in your Homestead that contains a Greenhouse, you gain +2 to crafting checks made with Herbalist's or Poisoner's Kit.",
+							"Gardener",
+							"7 Days"
+						],
+						[
+							"Gymnasium",
+							"100",
+							"-",
+							"Whilst you have a Gymnasium in your Homestead and you are proficient in Acrobatics or Athletics, you gain a +2 bonus to Acrobatics or Athletics checks, you choose when the Gymnasium is built. You may change your choice when you complete a long rest at your Homestead.",
+							"-",
+							"2 Days"
+						],
+						[
+							"Kitchen",
+							"150",
+							"-",
+							"Whilst crafting in your Homestead that contains a Kitchen, you gain +2 to crafting checks made with Cook's Utensils.",
+							"Chef",
+							"5 Days"
+						],
+						[
+							"Laboratory",
+							"200",
+							"-",
+							"Whilst crafting in your Homestead that contains a Laboratory, you gain +2 to crafting checks made with Alchemist's Supplies.",
+							"Alchemist",
+							"7 Days"
+						],
+						[
+							"Library",
+							"150",
+							"-",
+							"When you take a long rest in your homestead, you may spend a number of days of downtime to study a topic, the number of days required is equal to 7 - your proficiency bonus (minimum of 1). When you complete the long rest choose a skill from Arcana, History, Nature or Religion. You gain a +2 bonus to checks made with the chosen skill for the next 7 days. You may only benefit from one bonus at a time.",
+							"Librarian",
+							"5 Days"
+						],
+						[
+							"Lodestone",
+							"500",
+							"-",
+							"Whilst you have a Lodestone in your Homestead, and you have the spellcasting feature, you learn the {@b Call of Home} spell. This spell is always prepared and does not count against the total spells you know and prepare.",
+							"-",
+							"14 Days"
+						],
+						[
+							"Menagerie",
+							"150",
+							"-",
+							"Whilst you have a Menagerie in your Homestead and you are proficient in Animal Handling, you gain a +2 bonus to Animal Handling checks.",
+							"-",
+							"2 Days"
+						],
+						[
+							"Surgery",
+							"200",
+							"-",
+							"Whilst you have a Surgery in your Homestead and you are proficient in Medicine, you gain a +2 bonus to Medicine checks.",
+							"-",
+							"2 Days"
+						],
+						[
+							"Tannery",
+							"250",
+							"Well",
+							"Whilst crafting in your Homestead that contains a Tannery, you gain +2 to crafting checks made with Leatherworker's Tools.",
+							"Leatherworker",
+							"5 Days"
+						],
+						[
+							"Woodwork Shop",
+							"250",
+							"Well",
+							"Whilst crafting in your Homestead that contains a Woodwork Shop, you gain +2 to crafting checks made with Fletcher's Tools.",
+							"Woodworker",
+							"5 Days"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Staff",
+			"page": 5,
+			"source": "Fjarrenvold",
+			"entries": [
+				{
+					"type": "table",
+					"caption": "Staff",
+					"colLabels": [
+						"Staff",
+						"Tool Proficienies",
+						"Crafting Modifier",
+						"Salary (GP per Day)",
+						"Module Required"
+					],
+					"colStyles": [
+						"col-2-5",
+						"col-3-5",
+						"col-1-5 text-center",
+						"col-2-5",
+						"col-2"
+					],
+					"rows": [
+						[
+							"Alchemist (Novice)",
+							"Alchemist's Supplies",
+							"+4",
+							"10",
+							"Laboratory"
+						],
+						[
+							"Alchemist (Adept)",
+							"Alchemist's Supplies",
+							"+6",
+							"35",
+							"Laboratory"
+						],
+						[
+							"Alchemist (Expert)",
+							"Alchemist's Supplies",
+							"+9",
+							"75",
+							"Laboratory"
+						],
+						[
+							"Blacksmith (Novice)",
+							"Armoursmith's Tools, Weaponsmith's Tools",
+							"+4",
+							"10",
+							"Forge"
+						],
+						[
+							"Blacksmith (Adept)",
+							"Armoursmith's Tools, Weaponsmith's Tools",
+							"+6",
+							"35",
+							"Forge"
+						],
+						[
+							"Blacksmith (Expert)",
+							"Armoursmith's Tools, Weaponsmith's Tools",
+							"+9",
+							"75",
+							"Forge"
+						],
+						[
+							"Chef (Novice)",
+							"Cook's Utensils",
+							"+4",
+							"10",
+							"Kitchen"
+						],
+						[
+							"Chef (Adept)",
+							"Cook's Utensils",
+							"+6",
+							"35",
+							"Kitchen"
+						],
+						[
+							"Chef (Expert)",
+							"Cook's Utensils",
+							"+9",
+							"75",
+							"Kitchen"
+						],
+						[
+							"Enchanter (Novice)",
+							"Enchanter's Supplies",
+							"+4",
+							"10",
+							"Artifice Workshop"
+						],
+						[
+							"Enchanter (Adept)",
+							"Enchanter's Supplies",
+							"+6",
+							"35",
+							"Artifice Workshop"
+						],
+						[
+							"Enchanter (Expert)",
+							"Enchanter's Supplies",
+							"+9",
+							"75",
+							"Artifice Workshop"
+						],
+						[
+							"Gardener (Novice)",
+							"Herbalist's Kit, Poisoner's Kit",
+							"+4",
+							"10",
+							"Greenhouse"
+						],
+						[
+							"Gardener (Adept)",
+							"Herbalist's Kit, Poisoner's Kit",
+							"+6",
+							"35",
+							"Greenhouse"
+						],
+						[
+							"Gardener (Expert)",
+							"Herbalist's Kit, Poisoner's Kit",
+							"+9",
+							"75",
+							"Greenhouse"
+						],
+						[
+							"Guard",
+							"-",
+							"-",
+							"5 Times your level",
+							"Dungeon"
+						],
+						[
+							"Leatherworker (Novice)",
+							"Leatherworker's Tools",
+							"+4",
+							"10",
+							"Tannery"
+						],
+						[
+							"Leatherworker (Adept)",
+							"Leatherworker's Tools",
+							"+6",
+							"35",
+							"Tannery"
+						],
+						[
+							"Leatherworker (Expert)",
+							"Leatherworker's Tools",
+							"+9",
+							"75",
+							"Tannery"
+						],
+						[
+							"Librarian",
+							"-",
+							"-",
+							"5 Times your level",
+							"Library"
+						],
+						[
+							"Woodworker (Novice)",
+							"Fletcher's Tools",
+							"+4",
+							"10",
+							"Woodwork Shop"
+						],
+						[
+							"Woodworker (Adept)",
+							"Fletcher's Tools",
+							"+6",
+							"35",
+							"Woodwork Shop"
+						],
+						[
+							"Woodworker (Expert)",
+							"Fletcher's Tools",
+							"+9",
+							"75",
+							"Woodwork Shop"
+						]
+					]
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Alchemist (Novice)",
+						"source": "Fjarrenvold",
+						"page": 5,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 11
+							}
+						],
+						"hp": {
+							"average": 9,
+							"formula": "2d8"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 9,
+						"dex": 11,
+						"con": 11,
+						"int": 14,
+						"wis": 12,
+						"cha": 10,
+						"cr": "0",
+						"skill": {
+							"arcana": "+4",
+							"nature": "+4"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+2",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Alchemist's Supplies +4"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Alchemist can assist a Homestead owner a crafting check made using a Laboratory.",
+									"In addition, the Alchemist can craft using a Laboratory in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Alchemist (Adept)",
+						"source": "Fjarrenvold",
+						"page": 5,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 12
+							}
+						],
+						"hp": {
+							"average": 22,
+							"formula": "5d8"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 9,
+						"dex": 12,
+						"con": 12,
+						"int": 17,
+						"wis": 13,
+						"cha": 12,
+						"cr": "0",
+						"skill": {
+							"arcana": "+6",
+							"nature": "+6"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+3",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Alchemist's Supplies +6"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Alchemist can assist a Homestead owner a crafting check made using a Laboratory.",
+									"In addition, the Alchemist can craft using a Laboratory in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Alchemist (Expert)",
+						"source": "Fjarrenvold",
+						"page": 6,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 13
+							}
+						],
+						"hp": {
+							"average": 45,
+							"formula": "10d8"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 10,
+						"dex": 13,
+						"con": 13,
+						"int": 20,
+						"wis": 15,
+						"cha": 13,
+						"cr": "0",
+						"skill": {
+							"arcana": "+9",
+							"nature": "+9"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+4",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Alchemist's Supplies +9"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Alchemist can assist a Homestead owner a crafting check made using a Laboratory.",
+									"In addition, the Alchemist can craft using a Laboratory in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Blacksmith (Novice)",
+						"source": "Fjarrenvold",
+						"page": 6,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 12
+							}
+						],
+						"hp": {
+							"average": 11,
+							"formula": "2d8+2"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 14,
+						"dex": 11,
+						"con": 12,
+						"int": 12,
+						"wis": 11,
+						"cha": 10,
+						"cr": "0",
+						"skill": {
+							"athletics": "+4",
+							"history": "+3"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+2",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Armoursmith’s Tools +4, Weaponsmith’s Tools+4"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Blacksmith can assist a Homestead owner a crafting check made using a Forge.",
+									"In addition, the Blacksmith can craft using a Forge in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Blacksmith (Adept)",
+						"source": "Fjarrenvold",
+						"page": 6,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 13
+							}
+						],
+						"hp": {
+							"average": 31,
+							"formula": "6d8+4"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 17,
+						"dex": 12,
+						"con": 14,
+						"int": 14,
+						"wis": 12,
+						"cha": 11,
+						"cr": "0",
+						"skill": {
+							"athletics": "+6",
+							"history": "+5"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+3",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Armoursmith’s Tools +6, Weaponsmith’s Tools+6"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Blacksmith can assist a Homestead owner a crafting check made using a Forge.",
+									"In addition, the Blacksmith can craft using a Forge in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Blacksmith (Expert)",
+						"source": "Fjarrenvold",
+						"page": 6,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 14
+							}
+						],
+						"hp": {
+							"average": 52,
+							"formula": "8d8+16"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 20,
+						"dex": 14,
+						"con": 16,
+						"int": 16,
+						"wis": 13,
+						"cha": 12,
+						"cr": "0",
+						"skill": {
+							"athletics": "+9",
+							"history": "+7"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+4",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Armoursmith’s Tools +9, Weaponsmith’s Tools+9"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Blacksmith can assist a Homestead owner a crafting check made using a Forge.",
+									"In addition, the Blacksmith can craft using a Forge in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Chef (Novice)",
+						"source": "Fjarrenvold",
+						"page": 7,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 10
+							}
+						],
+						"hp": {
+							"average": 9,
+							"formula": "2d8"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 10,
+						"dex": 10,
+						"con": 12,
+						"int": 12,
+						"wis": 14,
+						"cha": 12,
+						"cr": "0",
+						"skill": {
+							"insight": "+4",
+							"persuasion": "+3"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+2",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Cook’s Utensils +4"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Chef can assist a Homestead owner a crafting check made using a Kitchen.",
+									"In addition, the Chef can craft using a Kitchen in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Chef (Adept)",
+						"source": "Fjarrenvold",
+						"page": 7,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 11
+							}
+						],
+						"hp": {
+							"average": 22,
+							"formula": "5d8"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 10,
+						"dex": 11,
+						"con": 13,
+						"int": 13,
+						"wis": 17,
+						"cha": 14,
+						"cr": "0",
+						"skill": {
+							"insight": "+6",
+							"persuasion": "+5"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+3",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Cook’s Utensils +6"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Chef can assist a Homestead owner a crafting check made using a Kitchen.",
+									"In addition, the Chef can craft using a Kitchen in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Chef (Expert)",
+						"source": "Fjarrenvold",
+						"page": 7,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 12
+							}
+						],
+						"hp": {
+							"average": 45,
+							"formula": "10d8"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 10,
+						"dex": 12,
+						"con": 14,
+						"int": 14,
+						"wis": 20,
+						"cha": 16,
+						"cr": "0",
+						"skill": {
+							"insight": "+9",
+							"persuasion": "+7"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+4",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Cook’s Utensils +9"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Chef can assist a Homestead owner a crafting check made using a Kitchen.",
+									"In addition, the Chef can craft using a Kitchen in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Enchanter (Novice)",
+						"source": "Fjarrenvold",
+						"page": 7,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 11
+							}
+						],
+						"hp": {
+							"average": 9,
+							"formula": "2d8"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 9,
+						"dex": 11,
+						"con": 12,
+						"int": 14,
+						"wis": 12,
+						"cha": 10,
+						"cr": "0",
+						"skill": {
+							"arcana": "+4",
+							"history": "+4"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+2",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Enchanter’s Supplies +4"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Enchanter can assist a Homestead owner a crafting check made using a Artifice Workshop.",
+									"In addition, the Enchanter can craft using a Artifice Workshop in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Enchanter (Adept)",
+						"source": "Fjarrenvold",
+						"page": 8,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 12
+							}
+						],
+						"hp": {
+							"average": 22,
+							"formula": "5d8"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 9,
+						"dex": 12,
+						"con": 13,
+						"int": 17,
+						"wis": 14,
+						"cha": 11,
+						"cr": "0",
+						"skill": {
+							"arcana": "+6",
+							"history": "+6"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+3",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Enchanter’s Supplies +6"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Enchanter can assist a Homestead owner a crafting check made using a Artifice Workshop.",
+									"In addition, the Enchanter can craft using a Artifice Workshop in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Enchanter (Expert)",
+						"source": "Fjarrenvold",
+						"page": 8,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 13
+							}
+						],
+						"hp": {
+							"average": 45,
+							"formula": "10d8"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 9,
+						"dex": 12,
+						"con": 14,
+						"int": 20,
+						"wis": 16,
+						"cha": 12,
+						"cr": "0",
+						"skill": {
+							"arcana": "+9",
+							"history": "+9"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+4",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Enchanter’s Supplies +9"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Enchanter can assist a Homestead owner a crafting check made using a Artifice Workshop.",
+									"In addition, the Enchanter can craft using a Artifice Workshop in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Gardener (Novice)",
+						"source": "Fjarrenvold",
+						"page": 8,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 10
+							}
+						],
+						"hp": {
+							"average": 10,
+							"formula": "2d8+1"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 11,
+						"dex": 10,
+						"con": 12,
+						"int": 14,
+						"wis": 14,
+						"cha": 7,
+						"cr": "0",
+						"skill": {
+							"medicine": "+4",
+							"nature": "+4"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+2",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Herbalist’s Kit +4, Poisoner’s Kit +4"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Gardener can assist a Homestead owner a crafting check made using a Greenhouse.",
+									"In addition, the Gardener can craft using a Greenhouse in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Gardener (Adept)",
+						"source": "Fjarrenvold",
+						"page": 8,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 11
+							}
+						],
+						"hp": {
+							"average": 25,
+							"formula": "5d8+3"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 11,
+						"dex": 11,
+						"con": 13,
+						"int": 17,
+						"wis": 17,
+						"cha": 9,
+						"cr": "0",
+						"skill": {
+							"medicine": "+6",
+							"nature": "+6"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+3",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Herbalist’s Kit +6, Poisoner’s Kit +6"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Gardener can assist a Homestead owner a crafting check made using a Greenhouse.",
+									"In addition, the Gardener can craft using a Greenhouse in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Gardener (Expert)",
+						"source": "Fjarrenvold",
+						"page": 9,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 12
+							}
+						],
+						"hp": {
+							"average": 54,
+							"formula": "10d8+9"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 12,
+						"dex": 12,
+						"con": 14,
+						"int": 20,
+						"wis": 20,
+						"cha": 10,
+						"cr": "0",
+						"skill": {
+							"medicine": "+9",
+							"nature": "+9"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+4",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Herbalist’s Kit +9, Poisoner’s Kit +9"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Gardener can assist a Homestead owner a crafting check made using a Greenhouse.",
+									"In addition, the Gardener can craft using a Greenhouse in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Guard",
+						"source": "Fjarrenvold",
+						"page": 9,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 15
+							}
+						],
+						"hp": {
+							"special": "11 (1d8+3) + 8 times your level above first"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 14,
+						"dex": 14,
+						"con": 16,
+						"int": 12,
+						"wis": 12,
+						"cha": 12,
+						"cr": "0",
+						"skill": {
+							"athletics": "+4",
+							"insight": "+3",
+							"perception": "+3"
+						},
+						"save": {
+							"str": "+4",
+							"con": "+5"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+2",
+						"action": [
+							{
+								"name": "Longsword",
+								"entries": [
+									"{@i Melee Weapon Attack:} {@hit 4} to hit, reach 5ft., one target. {@i Hit} 7 ({@damage 1d8 + 2})"
+								]
+							}
+						],
+						"trait": [
+							{
+								"name": "Homestead Guardian",
+								"entries": [
+									"The Guard will protect your Homestead and watch over your detained Prisoners in your absence."
+								]
+							},
+							{
+								"name": "Scaling Proficiency",
+								"entries": [
+									"When you reach levels 5, 9, 13 and 17, the Guard's Proficiency Bonus increases by 1. In addition at these levels the Guard gains +1 AC"
+								]
+							},
+							{
+								"name": "Scaling Attributes",
+								"entries": [
+									"When you reach levels 4,8,12,16 and 19, The Guard's Strength and Constitution increase by 2."
+								]
+							},
+							{
+								"name": "Extra Attack",
+								"entries": [
+									"When you reach level 5, the Guard makes two attacks when taking the attack action. When you reach level 11, the Guard instead makes 3 attacks. In addition, their Longsword damage becomes 2d8."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Leatherworker (Novice)",
+						"source": "Fjarrenvold",
+						"page": 9,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 11
+							}
+						],
+						"hp": {
+							"average": 9,
+							"formula": "2d8"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 10,
+						"dex": 14,
+						"con": 12,
+						"int": 12,
+						"wis": 12,
+						"cha": 10,
+						"cr": "0",
+						"skill": {
+							"sleight of hand": "+4",
+							"survival": "+3"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+2",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Leatherworker’s Tools +4"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Leatherworker can assist a Homestead owner a crafting check made using a Tannery.",
+									"In addition, the Leatherworker can craft using a Tannery in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Leatherworker (Adept)",
+						"source": "Fjarrenvold",
+						"page": 9,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 12
+							}
+						],
+						"hp": {
+							"average": 22,
+							"formula": "5d8"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 10,
+						"dex": 17,
+						"con": 13,
+						"int": 13,
+						"wis": 14,
+						"cha": 11,
+						"cr": "0",
+						"skill": {
+							"sleight of hand": "+6",
+							"survival": "+5"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+3",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Leatherworker’s Tools +6"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Leatherworker can assist a Homestead owner a crafting check made using a Tannery.",
+									"In addition, the Leatherworker can craft using a Tannery in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Leatherworker (Expert)",
+						"source": "Fjarrenvold",
+						"page": 10,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 13
+							}
+						],
+						"hp": {
+							"average": 45,
+							"formula": "10d8"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 11,
+						"dex": 20,
+						"con": 14,
+						"int": 14,
+						"wis": 17,
+						"cha": 12,
+						"cr": "0",
+						"skill": {
+							"sleight of hand": "+9",
+							"survival": "+6"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+4",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Leatherworker’s Tools +9"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Leatherworker can assist a Homestead owner a crafting check made using a Tannery.",
+									"In addition, the Leatherworker can craft using a Tannery in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Librarian",
+						"source": "Fjarrenvold",
+						"page": 10,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 11
+							}
+						],
+						"hp": {
+							"average": 9,
+							"formula": "1d8+1"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 10,
+						"dex": 12,
+						"con": 13,
+						"int": 16,
+						"wis": 16,
+						"cha": 12,
+						"cr": "0",
+						"skill": {
+							"arcana": "+5",
+							"history": "+5",
+							"nature": "+5",
+							"religion": "+5"
+						},
+						"save": {
+							"int": "+5",
+							"cha": "+3"
+						},
+						"languages": [
+							"Common",
+							"2 languages"
+						],
+						"pbNote": "+2",
+						"trait": [
+							{
+								"name": "Researcher",
+								"entries": [
+									"The Librarian can assist a Homestead owner with a research task using the Library. When the Librarian assists in this way, the time needed to study a topic is reduced by one day."
+								]
+							},
+							{
+								"name": "Knowledgeable Assistant",
+								"entries": [
+									"The Librarian can assist a Homestead owner with any crafting checks that use artisan's tools. When the Librarian assists with a crafting check, instead of rolling with advantage the DC reduces by 1. Whilst you are level 11 or higher the DC is instead reduced by 2."
+								]
+							},
+							{
+								"name": "Bi-lingual",
+								"entries": [
+									"When you hire the Librarian roll 2d4 twice. The Librarian knows 2 additional languages equal to the results. If you get the same result you may reroll. {@b 2} - Draconic, {@b 3} - Dwarvish, {@b 4} - Elvish, {@b 5} - Giant, {@b 6} - Gnomish, {@b 7} - Halfling, {@b 8} - Orcish."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Woodworker (Novice)",
+						"source": "Fjarrenvold",
+						"page": 10,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 11
+							}
+						],
+						"hp": {
+							"average": 9,
+							"formula": "2d8"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 11,
+						"dex": 14,
+						"con": 11,
+						"int": 12,
+						"wis": 10,
+						"cha": 10,
+						"cr": "0",
+						"skill": {
+							"nature": "+3",
+							"sleight of hand": "+4"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+2",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Fletcher’s Tools +4"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Woodworker can assist a Homestead owner a crafting check made using a Woodwork Shop.",
+									"In addition, the Woodworker can craft using a Woodwork Shop in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Woodworker (Adept)",
+						"source": "Fjarrenvold",
+						"page": 10,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 12
+							}
+						],
+						"hp": {
+							"average": 22,
+							"formula": "5d8"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 11,
+						"dex": 17,
+						"con": 11,
+						"int": 14,
+						"wis": 11,
+						"cha": 12,
+						"cr": "0",
+						"skill": {
+							"nature": "+5",
+							"sleight of hand": "+6"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+3",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Fletcher’s Tools +6"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Woodworker can assist a Homestead owner a crafting check made using a Woodwork Shop.",
+									"In addition, the Woodworker can craft using a Woodwork Shop in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				},
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "monster",
+					"data": {
+						"name": "Woodworker (Expert)",
+						"source": "Fjarrenvold",
+						"page": 11,
+						"size": [
+							"M"
+						],
+						"type": "humanoid",
+						"alignment": [
+							"L",
+							"N"
+						],
+						"ac": [
+							{
+								"ac": 12
+							}
+						],
+						"hp": {
+							"average": 22,
+							"formula": "5d8"
+						},
+						"speed": {
+							"walk": 30
+						},
+						"str": 12,
+						"dex": 20,
+						"con": 12,
+						"int": 16,
+						"wis": 11,
+						"cha": 13,
+						"cr": "0",
+						"skill": {
+							"nature": "+7",
+							"sleight of hand": "+9"
+						},
+						"languages": [
+							"Common"
+						],
+						"pbNote": "+4",
+						"trait": [
+							{
+								"name": "Tool Proficiencies",
+								"entries": [
+									"Fletcher’s Tools +9"
+								]
+							},
+							{
+								"name": "Crafting Assistant",
+								"entries": [
+									"The Woodworker can assist a Homestead owner a crafting check made using a Woodwork Shop.",
+									"In addition, the Woodworker can craft using a Woodwork Shop in the Homestead Owner's absence. When doing so they will use any crafting materials they are left with."
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Spells",
+			"page": 11,
+			"source": "Fjarrenvold",
+			"entries": [
+				{
+					"type": "statblockInline",
+					"style": "inset",
+					"dataType": "spell",
+					"data": {
+						"name": "Call of Home",
+						"source": "Fjarrenvold",
+						"page": 11,
+						"level": 5,
+						"school": "C",
+						"time": [
+							{
+								"number": 1,
+								"unit": "hour"
+							}
+						],
+						"range": {
+							"type": "point",
+							"distance": {
+								"type": "feet",
+								"amount": 10
+							}
+						},
+						"components": {
+							"v": true,
+							"s": true
+						},
+						"duration": [
+							{
+								"type": "instant"
+							}
+						],
+						"meta": {
+							"ritual": true
+						},
+						"entries": [
+							"This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, to a Homestead you own that contains a Lodestone Module. The destination must be on the same plane of existence as you."
+						]
+					}
+				}
+			]
+		}
+	]
+}

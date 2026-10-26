@@ -88,6 +88,7 @@ class NavBar {
 		this._addElement_li(NavBar._CAT_REFERENCES, "crafting.html#information_ishiir", "Crafting & Research");
 		this._addElement_li(NavBar._CAT_REFERENCES, "decks.html", "Decks");
 		this._addElement_li(NavBar._CAT_REFERENCES, "deities.html", "Deities and Patrons");
+		this._addElement_li(NavBar._CAT_REFERENCES, "homesteads.html#homesteads_fjarrenvold", "Homesteads and Settlements");
 		this._addElement_li(NavBar._CAT_REFERENCES, "items.html", "Items");
 		this._addElement_li(NavBar._CAT_REFERENCES, "languages.html", "Languages");
 		this._addElement_li(NavBar._CAT_REFERENCES, "rewards.html", "Supernatural Gifts & Rewards");
