@@ -1,0 +1,56 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Fjarrenvold",
+                "abbreviation": "Fjarrenvold",
+                "full": "Fjarrenvold",
+                "color": "#1785bd",
+                "url": "https://regateiro.pt/5etools/homebrew/fjarrenvold-spells.json",
+                "authors": [
+                    "Valasca"
+                ],
+                "convertedBy": [
+                    "Morb"
+                ]
+            }
+        ]
+    },
+    "spell": [
+        {
+            "name": "Call of Home",
+            "page": 11,
+            "source": "Fjarrenvold",
+            "level": 5,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "hour"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "entries": [
+                "This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, to a Homestead you own that contains a Lodestone Module. The destination must be on the same plane of existence as you."
+            ]
+        }
+    ]
+}

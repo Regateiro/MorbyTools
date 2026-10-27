@@ -314,7 +314,7 @@
 							"Lodestone",
 							"500",
 							"-",
-							"Whilst you have a Lodestone in your Homestead, and you have the spellcasting feature, you learn the {@b Call of Home} spell. This spell is always prepared and does not count against the total spells you know and prepare.",
+							"Whilst you have a Lodestone in your Homestead, and you have the spellcasting feature, you learn the {@spell Call of Home|Fjarrenvold} spell. This spell is always prepared and does not count against the total spells you know and prepare.",
 							"-",
 							"14 Days"
 						],
@@ -1962,46 +1962,7 @@
 			"page": 11,
 			"source": "Fjarrenvold",
 			"entries": [
-				{
-					"type": "statblockInline",
-					"style": "inset",
-					"dataType": "spell",
-					"data": {
-						"name": "Call of Home",
-						"source": "Fjarrenvold",
-						"page": 11,
-						"level": 5,
-						"school": "C",
-						"time": [
-							{
-								"number": 1,
-								"unit": "hour"
-							}
-						],
-						"range": {
-							"type": "point",
-							"distance": {
-								"type": "feet",
-								"amount": 10
-							}
-						},
-						"components": {
-							"v": true,
-							"s": true
-						},
-						"duration": [
-							{
-								"type": "instant"
-							}
-						],
-						"meta": {
-							"ritual": true
-						},
-						"entries": [
-							"This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, to a Homestead you own that contains a Lodestone Module. The destination must be on the same plane of existence as you."
-						]
-					}
-				}
+				"{@spell Call of Home|Fjarrenvold}"
 			]
 		}
 	]
